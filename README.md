@@ -18,14 +18,6 @@ And this R package:
 
 You can install these using the following commands:
 
-### Using pip
-
-If you prefer to use `pip`, you can install the required packages with:
-
-```bash
-pip install prompt_toolkit rich
-```
-### Using conda
 For those who prefer using `conda`, you can install the packages using:
 ```
 conda install -c conda-forge prompt_toolkit rich r-base bioconductor-bsgenome
