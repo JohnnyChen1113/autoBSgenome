@@ -34,11 +34,11 @@ After installing the required packages, you can clone this repository to your lo
 ```
 git clone https://github.com/JohnnyChen1113/autoBSgenome.git
 ```
-
+It will generate the `build.R` file for you!
 # Alternative to BSgenomeForge
 You also can try [BSgenomeForge](https://github.com/Bioconductor/BSgenomeForge), but it have some bug:
 1. It cannot deal with ambiguous nucleotides in sequence (like Y means C or T, M means A or C, FYI: [IUPAC Codes](https://www.bioinformatics.org/sms/iupac.html))
 2. It will verify the genome information with NCBI, but the information it gets is always the latest version, not the input version you used.
 
-In these cases, you can try autoBSgenome.
-It will generate the `build.R` file for you!
+In these cases, you can try autoBSgenome :)
+
