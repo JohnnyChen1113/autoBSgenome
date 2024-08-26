@@ -36,7 +36,7 @@ else:
 ####### prompt information zone #######
 # Prompt user for package information
 package_info = """
-# Package Information
+# (1/15) Package Information
 **Package**: Name to give to the target package.
 
 The convention used for the packages built by the Bioconductor project is to use a name made of 4 parts separated by a dot.
@@ -49,7 +49,7 @@ The convention used for the packages built by the Bioconductor project is to use
 
 # title information
 title_info = """
-# Title: The title of the target package
+# (2/15) Title: The title of the target package
 **Example**: Full genome sequences for Rattus norvegicus (UCSC version rn4)
 - Give a short description of the package. Some package listings may truncate the title to 65 characters.
 
@@ -62,7 +62,7 @@ title_info = """
 
 # discription
 discription_info = """
-# Description
+# (3/15) Description
 
 Give a comprehensive description of what the package does. (optional! You can just left it blank if you have no idea how to set it)
 
@@ -75,7 +75,7 @@ Give a comprehensive description of what the package does. (optional! You can ju
 
 # Version information
 version_info = """
-# Version information
+# (4/15) Version information
 gives the version of the package.
 - This is a sequence of at least two (and usually three) non-negative integers separated by single ‘.’ or ‘-’ characters.
 - The canonical form is as shown in the example, and a version such as **‘0.01’** or **‘0.01.0’** will be handled as if it were **‘0.1-0’**.
@@ -84,18 +84,19 @@ gives the version of the package.
 
 # organism information
 organism_info = """
-# Organism information
+# (5/15) Organism information
 The **scientific name** of the organism in the format Genus species (e.g. Triticum aestivum, Homo sapiens) or Genus species subspecies (e.g. Homo sapiens neanderthalensis).
 """
 
 # common_name information
 common_name_info = """
-# Common name information
+# (6/15) Common name information
 The **common name** of the organism (e.g. Rat or Human). For organisms that have **more than one** commmon name (e.g. Bovine or Cow for Bos taurus), choose one.
 """
 
 # genome information
 genome_info = """
+# (7/15) Genome information
 The name of the genome. 
 - Typically the name of an NCBI assembly (e.g. GRCh38.p12, WBcel235, TAIR10.1, ARS-UCD1.2, etc...) or UCSC genome (e.g. hg38, bosTau9, galGal6, ce11, etc...). 
 - Should preferably match part 4 of the package name (field Package).
@@ -104,21 +105,21 @@ The name of the genome.
 
 # provider information
 provider_info = """
-# Provider information
+# (8/15) Provider information
 The provider of the sequence data files e.g. UCSC, NCBI, BDGP, FlyBase, etc... 
 - Should preferably match part 3 of the package name (field Package).
 """
 
 # release_date information
 release_date_info = """
-# Release date information
+# (9/15) Release date information
 When this assembly of the genome was released in MM. YYYY format. 
 - e.g.:Apr. 2011
 """
 
 # source_url information
 source_url_info = """
-# Source URL information
+# (10/15) Source URL information
 == (optional! You can just left it blank if you have no idea how to set it) ==
 The permanent URL where the sequence data files used to forge the target package can be found. 
 - If the target package is for an NCBI assembly, use the link to the NCBI landing page for the assembly 
@@ -127,7 +128,7 @@ The permanent URL where the sequence data files used to forge the target package
 
 # organism_biocview information
 organism_biocview_info = """
-# Organism biocview information
+# (11/15) Organism biocview information
 (optional! You can just left it blank if you have no idea how to set it)
 The official biocViews term for this organism. 
 - This is generally the same as the organism field except that spaces should be replaced with underscores. 
@@ -138,12 +139,13 @@ because it will determine where the package will show up in the biocViews tree(h
 
 # BSgenomeObjname information
 BSgenomeObjname_info = """
-# BSgenomeObjname information
+# (12/15) BSgenomeObjname information
 Should match part 2 of the package name (see Package field above).
 """
 
 # circ_seqs information
 circ_seqs_info = """
+# (13/15) circ_seqs information
 Not needed if your NCBI assembly or UCSC genome is registered in the GenomeInfoDb package. 
 - An R expression returning the names of the circular sequences (in a character vector). 
 - If the seqnames field is specified, then circ_seqs must be a subset of it. E.g. "chrM" for rn4 or c("chrM", "2micron") for the sacCer2 genome (Yeast) from UCSC. 
@@ -152,12 +154,13 @@ Not needed if your NCBI assembly or UCSC genome is registered in the GenomeInfoD
 
 # seqs_srcdir information
 seqs_srcdir_info = """
-# seqs_srcdir information
+# (14/15) seqs_srcdir information
 The absolute path to the folder containing the sequence data files.
 """
 
 # seqfile_name information
 seqfile_name_info = """
+# (15/15) seqfile_name information
 Required if the sequence data files is a single twoBit file. 
 If you dot have a twoBit file, just input a fasta file name, I will automatic cover it to .2bit format for you!
 """
