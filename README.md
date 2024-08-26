@@ -13,6 +13,9 @@ The script relies on the following Python libraries:
 - `rich`
 - Standard libraries: `os`, `datetime`, `subprocess`, `glob`
 
+And this R package:
+- `BSgenome`
+
 You can install these using the following commands:
 
 ### Using pip
@@ -25,7 +28,7 @@ pip install prompt_toolkit rich
 ### Using conda
 For those who prefer using `conda`, you can install the packages using:
 ```
-conda install -c conda-forge prompt_toolkit rich
+conda install -c conda-forge prompt_toolkit rich bioconductor-bsgenome
 ```
 If some of the required libraries are not available directly via conda, they might already be included in your Python installation as they are part of the Python Standard Library (os, datetime, subprocess, glob).
 
