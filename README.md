@@ -28,7 +28,7 @@ pip install prompt_toolkit rich
 ### Using conda
 For those who prefer using `conda`, you can install the packages using:
 ```
-conda install -c conda-forge prompt_toolkit rich bioconductor-bsgenome
+conda install -c conda-forge prompt_toolkit rich r-base bioconductor-bsgenome
 ```
 If some of the required libraries are not available directly via conda, they might already be included in your Python installation as they are part of the Python Standard Library (os, datetime, subprocess, glob).
 
