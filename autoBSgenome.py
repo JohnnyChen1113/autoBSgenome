@@ -4,7 +4,7 @@
 Script Name: autoBSgenome
 Author: Junhao Chen
 Date: 2024-08-26
-Version: 0.2.0
+Version: 0.3.0
 Description: A wrap for build a BSgenome
 """
 
