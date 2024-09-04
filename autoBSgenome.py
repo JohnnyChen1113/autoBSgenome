@@ -12,6 +12,7 @@ import os
 import datetime
 import subprocess
 import glob
+import shutil
 
 from prompt_toolkit import prompt
 from prompt_toolkit.completion import WordCompleter
@@ -312,14 +313,29 @@ subprocess.run(generate_2bit, shell=True)
 file_name = input("Please enter the script name or press enter to use 'build.R': ")
 if not file_name.strip():
     file_name = "build.R"
-with open(file_name, 'wt') as seed_file:
-    seed_file.write("library(BSgenome)\n")
-    seed_file.write(f"forgeBSgenomeDataPkg('{filename}')\n")
-    seed_file.write(f"dir.create('./{package_name}/inst/extdata/', recursive = TRUE)\n") # Create folder
-    seed_file.write(f"file.copy('./{TowBit_name}', './{package_name}/inst/extdata/single_sequences.2bit')\n") # Copy file
-    seed_file.write(f"system('R CMD build {package_name}')\n")
-    seed_file.write(f"system('R CMD INSTALL {package_name}')\n")    
 
+if os.path.exists(package_name):
+    shutil.rmtree(package_name)
+
+#with open(file_name, 'wt') as seed_file:
+#    seed_file.write("suppressPackageStartupMessages(library(BSgenome))\n")
+#    seed_file.write(f"forgeBSgenomeDataPkg('{filename}')\n")
+#    seed_file.write(f"dir.create('./{package_name}/inst/extdata/', recursive = TRUE, showWarnings = FALSE)\n")  # Create folder
+#    seed_file.write(f"file.copy('./{TowBit_name}', './{package_name}/inst/extdata/single_sequences.2bit')\n") # Copy file
+#    seed_file.write(f"system('R CMD build {package_name}')\n")
+#    seed_file.write(f"system('R CMD INSTALL {package_name}')\n")    
+
+with open(file_name, 'wt') as seed_file:
+    seed_file.write("suppressPackageStartupMessages(library(BSgenome))\n")
+    seed_file.write("tryCatch({\n")
+    seed_file.write(f"  forgeBSgenomeDataPkg('{filename}')\n")
+    seed_file.write("}, error = function(e) {\n")
+    seed_file.write("  message('Error occurred: ', e$message)\n")
+    seed_file.write(f"  dir.create('./{package_name}/inst/extdata/', recursive = TRUE, showWarnings = FALSE)\n")  # Create folder
+    seed_file.write(f"  file.copy('./{TowBit_name}', './{package_name}/inst/extdata/single_sequences.2bit')\n") # Copy file
+    seed_file.write("})\n")
+    seed_file.write(f"system('R CMD build {package_name}')\n")
+    seed_file.write(f"system('R CMD INSTALL {package_name}')\n")
 
 build_package = f"Rscript {file_name}"
 subprocess.run(build_package, shell=True)
