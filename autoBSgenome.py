@@ -5,7 +5,7 @@ Script Name: autoBSgenome
 Author: Junhao Chen
 Date: 2024-08-26
 Updated date: 2024-10-22
-Version: 0.3.5
+Version: 0.3.6
 Description: A wrap for build a BSgenome
 """
 
@@ -365,9 +365,11 @@ subprocess.run(generate_2bit, shell=True)
 #generate_2bit = f"faToTwoBit  {seqfile_name} {TowBit_name}"
 #subprocess.run(generate_2bit, shell=True)
 
-file_name = input("Please enter the script name or press enter to use 'build.R': ")
+file_name = input("Press ENTER to use default script name 'build.R', or enter a new name: ")
 if not file_name.strip():
     file_name = "build.R"
+
+
 
 if os.path.exists(package_name):
     shutil.rmtree(package_name)
@@ -383,6 +385,7 @@ if os.path.exists(package_name):
 with open(file_name, 'wt') as seed_file:
     seed_file.write("suppressPackageStartupMessages(library(BSgenome))\n")
     seed_file.write("tryCatch({\n")
+    seed_file.write(f"  if (dir.exists('{package_name}')) {{ unlink('{package_name}', recursive = TRUE) }}\n")
     seed_file.write(f"  forgeBSgenomeDataPkg('{filename}')\n")
     seed_file.write("}, error = function(e) {\n")
     seed_file.write("  message('Error occurred: ', e$message)\n")
