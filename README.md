@@ -17,7 +17,13 @@ And this R package:
 - `BSgenome`
 
 You can install these using the following commands:
+### Using pip
+You can install the dependencies with pip
+```
+python -m pip install rich prompt_toolkit
+```
 
+### Using conda
 For those who prefer using `conda`, you can install the packages using:
 ```
 conda install -c conda-forge prompt_toolkit rich r-base bioconductor-bsgenome
