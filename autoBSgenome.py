@@ -4,7 +4,8 @@
 Script Name: autoBSgenome
 Author: Junhao Chen
 Date: 2024-08-26
-Version: 0.3.0
+Updated date: 2024-10-22
+Version: 0.3.5
 Description: A wrap for build a BSgenome
 """
 
@@ -21,16 +22,45 @@ import rich as rich
 from rich import print
 from rich.markdown import Markdown
 
+#if os.system('which faToTwoBit >/dev/null 2>&1') == 0:
+#    print('faToTwoBit is already installed.')
+#else:
+#    answer = input('faToTwoBit is not found. Do you want to download and install it? (yes/no) ').strip().lower()
+#    if answer == 'yes':
+#        print('Downloading faToTwoBit...')
+#        os.system('curl -O http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit')
+#        os.system('chmod +x faToTwoBit')
+#        os.system('sudo mv faToTwoBit /usr/local/bin/')
+#        print('faToTwoBit has been installed successfully.')
+#    else:
+#        print('faToTwoBit is not installed.')
+
+# Check if faToTwoBit is already installed
 if os.system('which faToTwoBit >/dev/null 2>&1') == 0:
     print('faToTwoBit is already installed.')
 else:
-    answer = input('faToTwoBit is not found. Do you want to download and install it? (yes/no) ').strip().lower()
+    # faToTwoBit not found, ask the user if they want to install it
+    answer = prompt('faToTwoBit is not found. Do you want to download and install it? (yes/no) ').strip().lower()
     if answer == 'yes':
         print('Downloading faToTwoBit...')
         os.system('curl -O http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit')
         os.system('chmod +x faToTwoBit')
-        os.system('sudo mv faToTwoBit /usr/local/bin/')
-        print('faToTwoBit has been installed successfully.')
+        
+        # Check if the user has write permissions to /usr/local/bin
+        if os.access('/usr/local/bin', os.W_OK):
+            try:
+                shutil.move('faToTwoBit', '/usr/local/bin/')
+                print('faToTwoBit has been installed successfully in /usr/local/bin/.')
+            except Exception as e:
+                print(f'Failed to move faToTwoBit to /usr/local/bin: {e}')
+        else:
+            # If no permissions, install faToTwoBit in the current directory
+            try:
+                shutil.move('faToTwoBit', './')
+                print('faToTwoBit has been installed successfully in the current directory.')
+                print('Please run it from the current directory or add this directory to your PATH.')
+            except Exception as e:
+                print(f'Failed to move faToTwoBit to the current directory: {e}')
     else:
         print('faToTwoBit is not installed.')
 
@@ -251,39 +281,58 @@ TowBit_name = seqfile_name.rsplit('.', 1)[0] + '.2bit' if seqfile_name.endswith(
 
 ##########################
 
-yes_no_completer = WordCompleter(['Y', 'N'], ignore_case=True)
+#yes_no_completer = WordCompleter(['Y', 'N'], ignore_case=True)
 
-def get_user_decision():
-    while True:
-        user_decision = prompt("Do you want to print the content? (Y/N): ", completer=yes_no_completer).strip().upper()
-        if user_decision in ['Y', 'N']:
-            return user_decision
-        else:
-            print("Invalid input. Please enter 'Y' or 'N'.")
+#def get_user_decision():
+#    while True:
+#        user_decision = prompt("Do you want to print the content? (Y/N): ", completer=yes_no_completer).strip().upper()
+#        if user_decision in ['Y', 'N']:
+#            return user_decision
+#        else:
+#            print("Invalid input. Please enter 'Y' or 'N'.")
 
-user_print_decision = get_user_decision()
-if user_print_decision == 'Y':
-    print()
-    print('Here is the seed file information:')
-    print('==================================================')
-    print("Package: ", package_name)
-    print("Title: ", Title)
-    print("Description: ", Description)
-    print("Version: ", Version)
-    print("Organism: ", organism)
-    print("Common name: ", common_name)
-    print("Genome: ", genome)
-    print("Provider: ", provider)
-    print("Release date: ", release_date)
-    print("Source URL: ", source_url)
-    print("Organism BiocView: ", organism_biocview)
-    print("BSgenome Objname: ", BSgenomeObjname)
-    print("Circular sequences: ", circ_seqs)
-    print("Sequences source directory: ", seqs_srcdir)
-    print("Two-bit file name: ", TowBit_name)
-elif user_print_decision == 'N':
-    print("Skipping content printing.")
+#user_print_decision = get_user_decision()
+#if user_print_decision == 'Y':
+#    print()
+#    print('Here is the seed file information:')
+#    print('==================================================')
+#    print("Package: ", package_name)
+#    print("Title: ", Title)
+#    print("Description: ", Description)
+#    print("Version: ", Version)
+#    print("Organism: ", organism)
+#    print("Common name: ", common_name)
+#    print("Genome: ", genome)
+#    print("Provider: ", provider)
+#    print("Release date: ", release_date)
+#    print("Source URL: ", source_url)
+#    print("Organism BiocView: ", organism_biocview)
+#    print("BSgenome Objname: ", BSgenomeObjname)
+#    print("Circular sequences: ", circ_seqs)
+#    print("Sequences source directory: ", seqs_srcdir)
+#    print("Two-bit file name: ", TowBit_name)
+#elif user_print_decision == 'N':
+#    print("Skipping content printing.")
 
+# Print the seed file information
+print()
+print('Here is the seed file information:')
+print('==================================================')
+print("Package: ", package_name)
+print("Title: ", Title)
+print("Description: ", Description)
+print("Version: ", Version)
+print("Organism: ", organism)
+print("Common name: ", common_name)
+print("Genome: ", genome)
+print("Provider: ", provider)
+print("Release date: ", release_date)
+print("Source URL: ", source_url)
+print("Organism BiocView: ", organism_biocview)
+print("BSgenome Objname: ", BSgenomeObjname)
+print("Circular sequences: ", circ_seqs)
+print("Sequences source directory: ", seqs_srcdir)
+print("Two-bit file name: ", TowBit_name)
 
 filename=package_name + '.seed'
 with open(filename,'wt') as seed_file:
@@ -309,8 +358,12 @@ print('library(BSgenome)')
 print('forgeBSgenomeDataPkg("%s/%s")' % (seqs_srcdir,filename))
 print('system("R CMD build %s")' % package_name)
 
-generate_2bit = f"faToTwoBit  {seqfile_name} {TowBit_name}"
+faToTwoBit_path = 'faToTwoBit' if os.system('which faToTwoBit >/dev/null 2>&1') == 0 else './faToTwoBit'
+generate_2bit = f"{faToTwoBit_path} {seqfile_name} {TowBit_name}"
 subprocess.run(generate_2bit, shell=True)
+
+#generate_2bit = f"faToTwoBit  {seqfile_name} {TowBit_name}"
+#subprocess.run(generate_2bit, shell=True)
 
 file_name = input("Please enter the script name or press enter to use 'build.R': ")
 if not file_name.strip():
@@ -339,6 +392,14 @@ with open(file_name, 'wt') as seed_file:
     seed_file.write(f"system('R CMD build {package_name}')\n")
     seed_file.write(f"system('R CMD INSTALL {package_name}')\n")
 
-build_package = f"Rscript {file_name}"
-subprocess.run(build_package, shell=True)
+#build_package = f"Rscript {file_name}"
+#subprocess.run(build_package, shell=True)
+
+# Ask user if they want to install the package
+install_answer = prompt("Do you want to install the package? (yes/no): ").strip().lower()
+if install_answer == 'yes':
+    build_package = f"Rscript {file_name}"
+    subprocess.run(build_package, shell=True)
+else:
+    print("Skipping package installation.")
 
