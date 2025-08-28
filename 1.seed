@@ -1,0 +1,15 @@
+package_name: 1
+title: 3e
+description: 3
+version: 4
+organism: 5
+common_name: 6
+genome: 7
+provider: 8
+release_date: 9
+source_url: s
+organism_biocview: 11
+BSgenomeObjname: 12
+circ_seqs: 13
+seqs_srcdir: 14
+seqfile_name: 15
