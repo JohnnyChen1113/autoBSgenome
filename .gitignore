@@ -160,9 +160,10 @@ cython_debug/
 #.idea/
 
 # autoBSgenome generated files
-*.seed
-build.R
-*.tar.gz
-BSgenome.*.*.*.*/
-faToTwoBit
-*.2bit
+# Ignore these only in the root directory
+/*.seed
+/build.R
+/*.tar.gz
+/BSgenome.*.*.*.*/
+/faToTwoBit
+/*.2bit

@@ -1,0 +1,15 @@
+Package: BSgenome.Aluchuensis.NCBI.IFO4308
+Title: Full genome sequences for Akawachii luchuensis
+Description: 
+Version: 1.0.0
+organism: Akawachii luchuensis
+common_name: Akawachii luchuensis
+genome: IFO4308
+provider: NCBI
+release_date: Aug. 2025
+source_url: 
+organism_biocview: 
+BSgenomeObjname: Aluchuensis
+circ_seqs: character(0)
+seqs_srcdir: /home/junhaochen/autoBSgenome
+seqfile_name: GCF_016861625.1_AkawachiiIFO4308_assembly01_genomic.2bit
