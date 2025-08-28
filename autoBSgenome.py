@@ -4,8 +4,8 @@
 Script Name: autoBSgenome
 Author: Junhao Chen
 Date: 2024-08-26
-Updated date: 2024-10-22
-Version: 0.5.0
+Updated date: 2025-08-27
+Version: 0.6.1
 Description: A wrap for build a BSgenome
 """
 
@@ -185,7 +185,7 @@ def create_and_run_build_script(metadata, seed_filename):
 
     r_script_content = f"""
 suppressPackageStartupMessages(library(BSgenome))
-tryCatch {{
+tryCatch({{
   if (dir.exists('{package_name}')) {{ unlink('{package_name}', recursive = TRUE) }}
   forgeBSgenomeDataPkg('{seed_filename}')
 }}, error = function(e) {{
