@@ -1,45 +1,49 @@
 # autoBSgenome
-A python warp of BSgenome. Build BSgenome like filling in a questionnaire!
 
+A user-friendly, interactive command-line tool for building R BSgenome packages. This script turns the complex process of creating a BSgenome package into a simple, guided questionnaire.
 
-# Installation
+## Why use autoBSgenome?
 
-This script requires the installation of several packages and libraries to function correctly. You can install the necessary packages using either `conda` or `pip`. Ensure that Python is already installed on your system before proceeding.
+While official tools like `BSgenomeForge` exist, `autoBSgenome` provides a smoother experience for certain use cases, especially when:
+- Your source FASTA file contains ambiguous IUPAC nucleotide codes (e.g., N, Y, R, M).
+- You need to build a package for a specific genome assembly version that may not be the absolute latest one on NCBI.
 
-## Dependencies
+`autoBSgenome` is designed to be robust and forgiving, guiding you through the process from start to finish.
 
-The script relies on the following Python libraries:
-- `prompt_toolkit`
-- `rich`
-- Standard libraries: `os`, `datetime`, `subprocess`, `glob`
+## Features
 
-And this R package:
-- `BSgenome`
+- **Interactive Wizard:** A step-by-step guided process for entering all the necessary metadata.
+- **Flexible Navigation:** Made a mistake? No problem. You can type `back` at any prompt to return to the previous question and correct your input.
+- **Automatic Dependency Checking:** The script automatically checks for required command-line tools (`faToTwoBit`) and R packages (`BSgenome`, `BSgenomeForge`) and will prompt you to install them if they are missing.
+- **Generates All Necessary Files:** Automatically creates the `.seed` file and the `build.R` script required for the final package.
 
-You can install these using the following commands:
-### Using pip
-You can install the dependencies with pip
-```
-python -m pip install rich prompt_toolkit
-```
+## Requirements
 
-### Using conda
-For those who prefer using `conda`, you can install the packages using:
-```
-conda install -c conda-forge prompt_toolkit rich r-base bioconductor-bsgenome
-```
-If some of the required libraries are not available directly via conda, they might already be included in your Python installation as they are part of the Python Standard Library (os, datetime, subprocess, glob).
+- Python 3.x
+- An R environment
 
-After installing the required packages, you can clone this repository to your local machine to get started. Use the following command to clone the repository:
+The script will handle the installation of all other Python and R package dependencies for you.
 
-```
-git clone https://github.com/JohnnyChen1113/autoBSgenome.git
-```
-It will generate the `build.R` file for you!
-# Alternative to BSgenomeForge
-You also can try [BSgenomeForge](https://github.com/Bioconductor/BSgenomeForge), but it have some bug:
-1. It cannot deal with ambiguous nucleotides in sequence (like Y means C or T, M means A or C, FYI: [IUPAC Codes](https://www.bioinformatics.org/sms/iupac.html))
-2. It will verify the genome information with NCBI, but the information it gets is always the latest version, not the input version you used.
+## Usage
 
-In these cases, you can try autoBSgenome :)
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/JohnnyChen1113/autoBSgenome.git
+    cd autoBSgenome
+    ```
 
+2.  **Make the script executable (optional but recommended):**
+    ```bash
+    chmod +x autoBSgenome.py
+    ```
+
+3.  **Run the script:**
+    ```bash
+    ./autoBSgenome.py
+    ```
+
+4.  **Follow the interactive prompts:**
+    - The script will first check for all required dependencies and ask for permission to install any that are missing.
+    - It will then guide you through entering the metadata for your BSgenome package.
+    - At any point during metadata entry, you can type `back` to return to the previous question.
+    - Once all information is gathered, the script will generate the necessary files and ask if you want to proceed with the build and installation.

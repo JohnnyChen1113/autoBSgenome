@@ -5,7 +5,7 @@ Script Name: autoBSgenome
 Author: Junhao Chen
 Date: 2024-08-26
 Updated date: 2025-08-27
-Version: 0.6.1
+Version: 0.7.0
 Description: A wrap for build a BSgenome
 """
 
@@ -22,10 +22,20 @@ from prompts import PROMPT_TEXTS
 
 def check_and_install_dependencies():
     """Checks for faToTwoBit and installs it if necessary."""
-    if shutil.which("faToTwoBit"):
-        print('faToTwoBit is already installed.')
-        return "faToTwoBit"
+    # 1. Check if it's in the PATH
+    faToTwoBit_path = shutil.which("faToTwoBit")
+    if faToTwoBit_path:
+        print(f'faToTwoBit is already installed at: {faToTwoBit_path}')
+        return faToTwoBit_path
 
+    # 2. Check if it's in the current directory
+    if os.path.exists('./faToTwoBit'):
+        print('faToTwoBit found in the current directory.')
+        # Make sure it's executable
+        subprocess.run(['chmod', '+x', './faToTwoBit'], check=True)
+        return './faToTwoBit'
+
+    # 3. If not found, ask to download
     answer = prompt('faToTwoBit is not found. Do you want to download and install it? (yes/no) ').strip().lower()
     if answer != 'yes':
         print('faToTwoBit is not installed. Exiting.')
@@ -33,100 +43,178 @@ def check_and_install_dependencies():
 
     print('Downloading faToTwoBit...')
     try:
+        # Download to the current directory
         subprocess.run(['curl', '-O', 'http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit'], check=True)
         subprocess.run(['chmod', '+x', 'faToTwoBit'], check=True)
     except (subprocess.CalledProcessError, FileNotFoundError) as e:
         print(f"[bold red]Failed to download or set permissions for faToTwoBit: {e}[/bold red]")
         exit()
 
+    # Try to move to a bin directory, but fall back to current dir
     install_path = ""
     if os.access('/usr/local/bin', os.W_OK):
         try:
             shutil.move('faToTwoBit', '/usr/local/bin/')
             install_path = '/usr/local/bin/faToTwoBit'
             print(f'faToTwoBit has been installed successfully in {install_path}.')
+            return install_path
         except Exception as e:
             print(f'[bold red]Failed to move faToTwoBit to /usr/local/bin: {e}[/bold red]')
+            print('[yellow]Using faToTwoBit from the current directory instead.[/yellow]')
     
-    if not install_path:
-        try:
-            shutil.move('faToTwoBit', './faToTwoBit')
-            install_path = './faToTwoBit'
-            print('faToTwoBit has been installed successfully in the current directory.')
-            print('Please run it from the current directory or add this directory to your PATH.')
-        except Exception as e:
-            print(f'[bold red]Failed to move faToTwoBit to the current directory: {e}[/bold red]')
-            exit()
-            
-    return install_path
+    # If move failed or was not attempted, the file is in the current directory
+    print('faToTwoBit is available in the current directory.')
+    return './faToTwoBit'
+
+def check_r_dependencies():
+    """Checks for required R packages and prompts for installation if missing."""
+    required_packages = ['BSgenome', 'BSgenomeForge']
+    print("[bold green]Checking for required R packages...[/bold green]")
+    
+    # Command to find missing packages
+    r_check_command = f"""
+    packages <- c('{required_packages[0]}', '{required_packages[1]}');
+    missing_packages <- packages[!sapply(packages, function(p) requireNamespace(p, quietly = TRUE))];
+    cat(paste(missing_packages, collapse=','))
+    """
+    
+    result = subprocess.run(['Rscript', '-e', r_check_command], capture_output=True, text=True)
+    missing_packages_str = result.stdout.strip()
+    
+    if not missing_packages_str:
+        print("All required R packages are already installed.")
+        return
+
+    missing_packages = missing_packages_str.split(',')
+    print(f"[yellow]The following R packages are missing: {', '.join(missing_packages)}[/yellow]")
+    
+    answer = prompt("Do you want to install them now? (yes/no) ").strip().lower()
+    if answer != 'yes':
+        print("[bold red]Missing R packages are required to proceed. Exiting.[/bold red]")
+        exit()
+        
+    print("[bold green]Installing missing R packages...[/bold green]")
+    # Command to install packages
+    packages_to_install_str = 'c(' + ','.join([f'\"{p}\"' for p in missing_packages]) + ')'
+    r_install_command = f"""
+    if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager");
+    BiocManager::install({packages_to_install_str}, update=FALSE, ask=FALSE);
+    """
+    
+    install_process = subprocess.run(['Rscript', '-e', r_install_command])
+    if install_process.returncode != 0:
+        print("[bold red]Failed to install R packages. Please install them manually and try again.[/bold red]")
+        exit()
+    
+    print("[bold green]R packages installed successfully.[/bold green]")
 
 def get_user_input():
-    """Gathers all necessary metadata from the user via prompts."""
+    """Gathers all necessary metadata from the user via prompts in a wizard-like fashion."""
+    
+    print(Markdown("\n---\n*Entering interactive metadata entry mode. At any prompt, type `back` to return to the previous question.*---\n"))
     
     metadata = {}
-
-    # --- Package Name ---
-    print(Markdown(PROMPT_TEXTS["package"]))
-    package_name = prompt("Please enter the package name: ").strip()
-    parts = package_name.split(".")
-    if len(parts) != 4 or parts[0] != "BSgenome":
-        print("[bold red]Not valid name! Please start with 'BSgenome.' and have 4 parts.[/bold red]")
-        exit("Exiting due to invalid package name.")
-    print("[bold green]The package name is valid.[/bold green]")
-    metadata['package_name'] = package_name
-
-    # --- Other Metadata ---
-    print(Markdown(PROMPT_TEXTS["title"]))
-    metadata['title'] = prompt("Please enter the title: ").strip()
-
-    print(Markdown(PROMPT_TEXTS["description"]))
-    metadata['description'] = prompt("Please enter the Description: ").strip()
-
-    print(Markdown(PROMPT_TEXTS["version"]))
-    metadata['version'] = prompt("Please enter the Version: ").strip()
-
-    print(Markdown(PROMPT_TEXTS["organism"]))
-    metadata['organism'] = prompt("Please enter the organism: ").strip()
-
-    print(Markdown(PROMPT_TEXTS["common_name"]))
-    metadata['common_name'] = prompt("Please enter the common_name: ").strip()
-
-    print(Markdown(PROMPT_TEXTS["genome"]))
-    print(f"According to your input, I suggest this field set to: {parts[3]}")
-    metadata['genome'] = prompt("Please enter the genome: ", default=parts[3]).strip()
-
-    print(Markdown(PROMPT_TEXTS["provider"]))
-    print(f"According to your input, I suggest this field set to: {parts[2]}")
-    metadata['provider'] = prompt("Please enter the provider: ", default=parts[2]).strip()
-
-    print(Markdown(PROMPT_TEXTS["release_date"]))
-    today_str = datetime.date.today().strftime("%b. %Y")
-    print(f"Today is: {today_str}")
-    metadata['release_date'] = prompt("Please enter the release_date: ", default=today_str).strip()
-
-    print(Markdown(PROMPT_TEXTS["source_url"]))
-    metadata['source_url'] = prompt("Please enter the source_url: ").strip()
-
-    print(Markdown(PROMPT_TEXTS["organism_biocview"]))
-    metadata['organism_biocview'] = prompt("Please enter the organism_biocview: ").strip()
-
-    print(Markdown(PROMPT_TEXTS["BSgenomeObjname"]))
-    print(f"According to your input, I suggest this field set to: {parts[1]}")
-    metadata['BSgenomeObjname'] = prompt("Please enter the BSgenomeObjname: ", default=parts[1]).strip()
-
-    print(Markdown(PROMPT_TEXTS["circ_seqs"]))
-    metadata['circ_seqs'] = prompt("Please enter the circ_seqs: ").strip()
-
-    print(Markdown(PROMPT_TEXTS["seqs_srcdir"]))
-    print(f"Now you are in {os.getcwd()}")
-    metadata['seqs_srcdir'] = prompt("Please enter the seqs_srcdir: ", default=os.getcwd()).strip()
-
-    print(Markdown(PROMPT_TEXTS["seqfile_name"]))
-    fasta_files = glob.glob("*.fasta") + glob.glob("*.fa") + glob.glob("*.fas") + glob.glob("*.fna")
-    print('All the fa/fasta files in current folder list here:', fasta_files)
-    metadata['seqfile_name'] = prompt("Please enter the seqfile_name: ").strip()
     
-    metadata['twobit_name'] = metadata['seqfile_name'].rsplit('.', 1)[0] + '.2bit' if metadata['seqfile_name'].endswith(('.fa', '.fna', '.fasta', '.fas')) else metadata['seqfile_name']
+    steps = [
+        {
+            'key': 'package_name',
+            'prompt_text_key': "package",
+            'display_text': "Please enter the package name: ",
+            'validate': lambda val, data: len(val.split(".")) == 4 and val.split(".")[0] == "BSgenome",
+            'on_error': lambda val, data: print("[bold red]Not valid name! Please start with 'BSgenome.' and have 4 parts.[/bold red]"),
+            'on_success': lambda val, data: print("[bold green]The package name is valid.[/bold green]")
+        },
+        {'key': 'title', 'prompt_text_key': "title", 'display_text': "Please enter the title: "},
+        {'key': 'description', 'prompt_text_key': "description", 'display_text': "Please enter the Description: "},
+        {'key': 'version', 'prompt_text_key': "version", 'display_text': "Please enter the Version: "},
+        {'key': 'organism', 'prompt_text_key': "organism", 'display_text': "Please enter the organism: "},
+        {'key': 'common_name', 'prompt_text_key': "common_name", 'display_text': "Please enter the common_name: "},
+        {
+            'key': 'genome',
+            'prompt_text_key': "genome",
+            'display_text': "Please enter the genome: ",
+            'get_default': lambda data: data.get('package_name', '').split('.')[3] if data.get('package_name') and len(data.get('package_name').split('.')) == 4 else ''
+        },
+        {
+            'key': 'provider',
+            'prompt_text_key': "provider",
+            'display_text': "Please enter the provider: ",
+            'get_default': lambda data: data.get('package_name', '').split('.')[2] if data.get('package_name') and len(data.get('package_name').split('.')) == 4 else ''
+        },
+        {
+            'key': 'release_date',
+            'prompt_text_key': "release_date",
+            'display_text': "Please enter the release_date: ",
+            'get_default': lambda data: datetime.date.today().strftime("%b. %Y")
+        },
+        {'key': 'source_url', 'prompt_text_key': "source_url", 'display_text': "Please enter the source_url: "},
+        {'key': 'organism_biocview', 'prompt_text_key': "organism_biocview", 'display_text': "Please enter the organism_biocview: "},
+        {
+            'key': 'BSgenomeObjname',
+            'prompt_text_key': "BSgenomeObjname",
+            'display_text': "Please enter the BSgenomeObjname: ",
+            'get_default': lambda data: data.get('package_name', '').split('.')[1] if data.get('package_name') and len(data.get('package_name').split('.')) == 4 else ''
+        },
+        {'key': 'circ_seqs', 'prompt_text_key': "circ_seqs", 'display_text': "Please enter the circ_seqs: "},
+        {
+            'key': 'seqs_srcdir',
+            'prompt_text_key': "seqs_srcdir",
+            'display_text': "Please enter the seqs_srcdir: ",
+            'pre_prompt_action': lambda data: print(f"Now you are in {os.getcwd()}"),
+            'get_default': lambda data: os.getcwd()
+        },
+        {
+            'key': 'seqfile_name',
+            'prompt_text_key': "seqfile_name",
+            'display_text': "Please enter the seqfile_name: ",
+            'pre_prompt_action': lambda data: print('All the fa/fasta files in current folder list here:', glob.glob("*.fasta") + glob.glob("*.fa") + glob.glob("*.fas") + glob.glob("*.fna"))
+        },
+    ]
+
+    i = 0
+    while i < len(steps):
+        step = steps[i]
+        
+        print(Markdown(PROMPT_TEXTS[step['prompt_text_key']]))
+
+        if 'pre_prompt_action' in step:
+            step['pre_prompt_action'](metadata)
+
+        default_value = metadata.get(step['key'], '')
+        if 'get_default' in step:
+            suggested_default = step['get_default'](metadata)
+            if suggested_default:
+                print(f"Suggested value: [cyan]{suggested_default}[/cyan]")
+                default_value = suggested_default
+        
+        user_input = prompt(step['display_text'], default=default_value).strip()
+
+        if user_input.lower() == 'back':
+            if i > 0:
+                i -= 1
+            else:
+                print("[yellow]Cannot go back further.[/yellow]")
+            print(Markdown("---"))
+            continue
+
+        if 'validate' in step and not step['validate'](user_input, metadata):
+            if 'on_error' in step:
+                step['on_error'](user_input, metadata)
+            continue
+        
+        if 'on_success' in step:
+            step['on_success'](user_input, metadata)
+
+        metadata[step['key']] = user_input
+        
+        i += 1
+        print(Markdown("---"))
+
+    seqfile = metadata.get('seqfile_name', '')
+    if seqfile.endswith(('.fa', '.fna', '.fasta', '.fas')):
+        metadata['twobit_name'] = seqfile.rsplit('.', 1)[0] + '.2bit'
+    else:
+        metadata['twobit_name'] = seqfile
 
     return metadata
 
@@ -153,7 +241,7 @@ seqs_srcdir: {metadata['seqs_srcdir']}
 seqfile_name: {metadata['twobit_name']}
 """
     with open(seed_filename, 'w') as f:
-        f.write(content.strip())
+        f.write(content.strip() + '\n')
     
     print('--- Seed File Content ---')
     print(content.strip())
@@ -185,6 +273,7 @@ def create_and_run_build_script(metadata, seed_filename):
 
     r_script_content = f"""
 suppressPackageStartupMessages(library(BSgenome))
+
 tryCatch({{
   if (dir.exists('{package_name}')) {{ unlink('{package_name}', recursive = TRUE) }}
   forgeBSgenomeDataPkg('{seed_filename}')
@@ -214,6 +303,7 @@ system('R CMD INSTALL {package_name}')
 def main():
     """Main function to orchestrate the BSgenome package creation."""
     faToTwoBit_path = check_and_install_dependencies()
+    check_r_dependencies()
     metadata = get_user_input()
     seed_filename = create_seed_file(metadata)
     run_faToTwoBit(faToTwoBit_path, metadata)
