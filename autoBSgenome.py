@@ -5,20 +5,67 @@ Script Name: autoBSgenome
 Author: Junhao Chen
 Date: 2024-08-26
 Updated date: 2025-08-27
-Version: 0.7.0
+Version: 0.8.0
 Description: A wrap for build a BSgenome
 """
 
 import os
+import sys
 import datetime
 import subprocess
 import glob
 import shutil
+import argparse
 from prompt_toolkit import prompt
 from rich import print
 from rich.markdown import Markdown
+from rich.table import Table
+from rich.console import Console
 
 from prompts import PROMPT_TEXTS
+
+console = Console()
+
+def parse_arguments():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(
+        prog='autoBSgenome',
+        description='Interactive tool for building R BSgenome packages',
+        epilog='For more information, visit: https://github.com/JohnnyChen1113/autoBSgenome',
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+
+    parser.add_argument(
+        '--version',
+        action='version',
+        version='%(prog)s 0.8.0'
+    )
+
+    parser.add_argument(
+        '--config',
+        metavar='FILE',
+        help='Load configuration from a JSON file (future feature)'
+    )
+
+    parser.add_argument(
+        '--dry-run',
+        action='store_true',
+        help='Validate configuration without building the package'
+    )
+
+    parser.add_argument(
+        '--skip-deps-check',
+        action='store_true',
+        help='Skip dependency checks (use with caution)'
+    )
+
+    parser.add_argument(
+        '--verbose',
+        action='store_true',
+        help='Enable verbose output'
+    )
+
+    return parser.parse_args()
 
 def check_and_install_dependencies():
     """Checks for faToTwoBit and installs it if necessary."""
@@ -36,19 +83,27 @@ def check_and_install_dependencies():
         return './faToTwoBit'
 
     # 3. If not found, ask to download
-    answer = prompt('faToTwoBit is not found. Do you want to download and install it? (yes/no) ').strip().lower()
+    console.print('[yellow]⚠ faToTwoBit tool is not found on your system.[/yellow]')
+    console.print('This tool is required to convert FASTA files to 2bit format.')
+    answer = prompt('Would you like to download and install it now? (yes/no) ').strip().lower()
     if answer != 'yes':
-        print('faToTwoBit is not installed. Exiting.')
-        exit()
+        console.print('[bold red]✗ Cannot proceed without faToTwoBit. Exiting.[/bold red]')
+        console.print('[dim]You can manually install it from: http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit[/dim]')
+        sys.exit(1)
 
-    print('Downloading faToTwoBit...')
+    console.print('[cyan]↓ Downloading faToTwoBit...[/cyan]')
     try:
         # Download to the current directory
         subprocess.run(['curl', '-O', 'http://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit'], check=True)
         subprocess.run(['chmod', '+x', 'faToTwoBit'], check=True)
-    except (subprocess.CalledProcessError, FileNotFoundError) as e:
-        print(f"[bold red]Failed to download or set permissions for faToTwoBit: {e}[/bold red]")
-        exit()
+    except subprocess.CalledProcessError as e:
+        console.print(f"[bold red]✗ Download failed: {e}[/bold red]")
+        console.print('[yellow]Please check your internet connection and try again.[/yellow]')
+        sys.exit(1)
+    except FileNotFoundError:
+        console.print("[bold red]✗ 'curl' command not found.[/bold red]")
+        console.print('[yellow]Please install curl or manually download faToTwoBit.[/yellow]')
+        sys.exit(1)
 
     # Try to move to a bin directory, but fall back to current dir
     install_path = ""
@@ -69,44 +124,64 @@ def check_and_install_dependencies():
 def check_r_dependencies():
     """Checks for required R packages and prompts for installation if missing."""
     required_packages = ['BSgenome', 'BSgenomeForge']
-    print("[bold green]Checking for required R packages...[/bold green]")
-    
+    console.print("[bold cyan]Checking R dependencies...[/bold cyan]")
+
+    # First check if R is installed
+    try:
+        subprocess.run(['Rscript', '--version'], capture_output=True, check=True)
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        console.print("[bold red]✗ R is not installed or not in PATH.[/bold red]")
+        console.print("[yellow]Please install R (version 4.2.0 or higher) and try again.[/yellow]")
+        console.print("[dim]Visit: https://www.r-project.org/[/dim]")
+        sys.exit(1)
+
     # Command to find missing packages
     r_check_command = f"""
     packages <- c('{required_packages[0]}', '{required_packages[1]}');
     missing_packages <- packages[!sapply(packages, function(p) requireNamespace(p, quietly = TRUE))];
     cat(paste(missing_packages, collapse=','))
     """
-    
-    result = subprocess.run(['Rscript', '-e', r_check_command], capture_output=True, text=True)
-    missing_packages_str = result.stdout.strip()
-    
+
+    try:
+        result = subprocess.run(['Rscript', '-e', r_check_command], capture_output=True, text=True, check=True)
+        missing_packages_str = result.stdout.strip()
+    except subprocess.CalledProcessError as e:
+        console.print(f"[bold red]✗ Error checking R packages: {e}[/bold red]")
+        sys.exit(1)
+
     if not missing_packages_str:
-        print("All required R packages are already installed.")
+        console.print("[bold green]✓ All required R packages are installed.[/bold green]")
         return
 
     missing_packages = missing_packages_str.split(',')
-    print(f"[yellow]The following R packages are missing: {', '.join(missing_packages)}[/yellow]")
-    
-    answer = prompt("Do you want to install them now? (yes/no) ").strip().lower()
+    console.print(f"[yellow]⚠ Missing R packages: {', '.join(missing_packages)}[/yellow]")
+    console.print("[dim]These packages are required from Bioconductor.[/dim]")
+
+    answer = prompt("Would you like to install them now? (yes/no) ").strip().lower()
     if answer != 'yes':
-        print("[bold red]Missing R packages are required to proceed. Exiting.[/bold red]")
-        exit()
-        
-    print("[bold green]Installing missing R packages...[/bold green]")
+        console.print("[bold red]✗ Cannot proceed without required R packages. Exiting.[/bold red]")
+        pkg_list = "', '".join(missing_packages)
+        console.print(f"[dim]Manual installation: BiocManager::install(c('{pkg_list}'))[/dim]")
+        sys.exit(1)
+
+    console.print("[bold cyan]Installing R packages from Bioconductor...[/bold cyan]")
+    console.print("[dim]This may take a few minutes...[/dim]")
     # Command to install packages
     packages_to_install_str = 'c(' + ','.join([f'\"{p}\"' for p in missing_packages]) + ')'
     r_install_command = f"""
     if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager");
     BiocManager::install({packages_to_install_str}, update=FALSE, ask=FALSE);
     """
-    
+
     install_process = subprocess.run(['Rscript', '-e', r_install_command])
     if install_process.returncode != 0:
-        print("[bold red]Failed to install R packages. Please install them manually and try again.[/bold red]")
-        exit()
-    
-    print("[bold green]R packages installed successfully.[/bold green]")
+        console.print("[bold red]✗ Failed to install R packages.[/bold red]")
+        console.print("[yellow]Please try installing manually in R:[/yellow]")
+        pkg_list = "', '".join(missing_packages)
+        console.print(f"[dim]  BiocManager::install(c('{pkg_list}'))[/dim]")
+        sys.exit(1)
+
+    console.print("[bold green]✓ R packages installed successfully.[/bold green]")
 
 def get_user_input():
     """Gathers all necessary metadata from the user via prompts in a wizard-like fashion."""
@@ -218,6 +293,69 @@ def get_user_input():
 
     return metadata
 
+def preview_configuration(metadata):
+    """Display configuration summary and ask for confirmation."""
+    console.print("\n" + "=" * 60)
+    console.print("[bold cyan]Configuration Summary[/bold cyan]")
+    console.print("=" * 60 + "\n")
+
+    table = Table(show_header=True, header_style="bold magenta")
+    table.add_column("Field", style="cyan", width=20)
+    table.add_column("Value", style="green")
+
+    # Display metadata in a nice table
+    field_labels = {
+        'package_name': 'Package Name',
+        'title': 'Title',
+        'description': 'Description',
+        'version': 'Version',
+        'organism': 'Organism',
+        'common_name': 'Common Name',
+        'genome': 'Genome',
+        'provider': 'Provider',
+        'release_date': 'Release Date',
+        'source_url': 'Source URL',
+        'organism_biocview': 'Organism BiocView',
+        'BSgenomeObjname': 'BSgenome Object Name',
+        'circ_seqs': 'Circular Sequences',
+        'seqs_srcdir': 'Sequences Source Dir',
+        'seqfile_name': 'Sequence File Name',
+        'twobit_name': '2bit File Name'
+    }
+
+    for key, label in field_labels.items():
+        value = metadata.get(key, '')
+        # Truncate long values
+        if len(str(value)) > 60:
+            value = str(value)[:57] + '...'
+        table.add_row(label, str(value))
+
+    console.print(table)
+    console.print("\n" + "=" * 60 + "\n")
+
+    # Ask for confirmation
+    while True:
+        choice = prompt(
+            "Please review the configuration above. Choose an option:\n"
+            "  [c] Continue with this configuration\n"
+            "  [e] Edit a field\n"
+            "  [q] Quit\n"
+            "Your choice (c/e/q): "
+        ).strip().lower()
+
+        if choice == 'c':
+            console.print("[bold green]✓ Configuration confirmed. Proceeding...[/bold green]\n")
+            return True
+        elif choice == 'e':
+            console.print("\n[yellow]Edit functionality will be available in a future version.[/yellow]")
+            console.print("[yellow]For now, please restart the script if you need to change values.[/yellow]\n")
+            continue
+        elif choice == 'q':
+            console.print("[yellow]Configuration cancelled by user. Exiting.[/yellow]")
+            return False
+        else:
+            console.print("[red]Invalid choice. Please enter 'c', 'e', or 'q'.[/red]")
+
 def create_seed_file(metadata):
     """Creates the .seed file from the provided metadata."""
     seed_filename = metadata['package_name'] + '.seed'
@@ -302,13 +440,71 @@ system('R CMD INSTALL {package_name}')
 
 def main():
     """Main function to orchestrate the BSgenome package creation."""
-    faToTwoBit_path = check_and_install_dependencies()
-    check_r_dependencies()
+    # Parse command line arguments
+    args = parse_arguments()
+
+    # Display welcome message
+    console.print("\n[bold cyan]═══════════════════════════════════════[/bold cyan]")
+    console.print("[bold cyan]   autoBSgenome - BSgenome Package Builder[/bold cyan]")
+    console.print("[bold cyan]═══════════════════════════════════════[/bold cyan]\n")
+
+    # Check dependencies unless skipped
+    if not args.skip_deps_check:
+        faToTwoBit_path = check_and_install_dependencies()
+        check_r_dependencies()
+    else:
+        console.print("[yellow]⚠ Skipping dependency checks (--skip-deps-check)[/yellow]")
+        faToTwoBit_path = shutil.which("faToTwoBit") or './faToTwoBit'
+
+    # Get user input
     metadata = get_user_input()
+
+    # Preview configuration and get confirmation
+    if not preview_configuration(metadata):
+        console.print("[yellow]Exiting without building package.[/yellow]")
+        sys.exit(0)
+
+    # Handle dry-run mode
+    if args.dry_run:
+        console.print("\n[bold yellow]DRY RUN MODE - No files will be created[/bold yellow]")
+        console.print("[green]✓ Configuration is valid[/green]")
+        console.print("[dim]Would create seed file: {}.seed[/dim]".format(metadata['package_name']))
+        console.print("[dim]Would convert: {} -> {}[/dim]".format(
+            metadata['seqfile_name'], metadata['twobit_name']))
+        console.print("\n[bold green]✓ Dry run completed successfully.[/bold green]")
+        return
+
+    # Create seed file
     seed_filename = create_seed_file(metadata)
-    run_faToTwoBit(faToTwoBit_path, metadata)
-    create_and_run_build_script(metadata, seed_filename)
-    print("\n[bold green]Process completed.[/bold green]")
+
+    # Convert FASTA to 2bit
+    try:
+        run_faToTwoBit(faToTwoBit_path, metadata)
+    except Exception as e:
+        console.print(f"[bold red]✗ Error during FASTA to 2bit conversion: {e}[/bold red]")
+        console.print("[yellow]Please check your input file and try again.[/yellow]")
+        sys.exit(1)
+
+    # Build and install package
+    try:
+        create_and_run_build_script(metadata, seed_filename)
+    except Exception as e:
+        console.print(f"[bold red]✗ Error during package build: {e}[/bold red]")
+        sys.exit(1)
+
+    console.print("\n[bold green]═══════════════════════════════════════[/bold green]")
+    console.print("[bold green]✓ Process completed successfully![/bold green]")
+    console.print("[bold green]═══════════════════════════════════════[/bold green]\n")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        console.print("\n[yellow]Process interrupted by user. Exiting...[/yellow]")
+        sys.exit(130)
+    except Exception as e:
+        console.print(f"\n[bold red]✗ Unexpected error: {e}[/bold red]")
+        if '--verbose' in sys.argv:
+            import traceback
+            console.print("\n[dim]" + traceback.format_exc() + "[/dim]")
+        sys.exit(1)
