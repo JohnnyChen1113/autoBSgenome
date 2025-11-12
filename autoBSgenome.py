@@ -233,14 +233,9 @@ def check_r_dependencies():
 
     console.print("[bold green]✓ R packages installed successfully.[/bold green]")
 
-def get_user_input():
-    """Gathers all necessary metadata from the user via prompts in a wizard-like fashion."""
-    
-    print(Markdown("\n---\n*Entering interactive metadata entry mode. At any prompt, type `back` to return to the previous question.*---\n"))
-    
-    metadata = {}
-    
-    steps = [
+def get_input_steps():
+    """Returns the configuration steps for metadata collection."""
+    return [
         {
             'key': 'package_name',
             'prompt_text_key': "package",
@@ -296,6 +291,60 @@ def get_user_input():
         },
     ]
 
+def edit_single_field(metadata, field_key):
+    """Edit a single metadata field."""
+    steps = get_input_steps()
+    step = next((s for s in steps if s['key'] == field_key), None)
+
+    if not step:
+        console.print(f"[red]Error: Unknown field '{field_key}'[/red]")
+        return False
+
+    console.print(f"\n[bold cyan]Editing: {field_key}[/bold cyan]")
+    console.print(f"[dim]Current value: {metadata.get(field_key, '(empty)')}[/dim]\n")
+
+    # Show help text
+    print(Markdown(PROMPT_TEXTS[step['prompt_text_key']]))
+
+    # Run pre-prompt action if exists
+    if 'pre_prompt_action' in step:
+        step['pre_prompt_action'](metadata)
+
+    # Get default value
+    default_value = metadata.get(field_key, '')
+    if 'get_default' in step:
+        suggested_default = step['get_default'](metadata)
+        if suggested_default:
+            print(f"Suggested value: [cyan]{suggested_default}[/cyan]")
+            default_value = suggested_default
+
+    # Get new value
+    while True:
+        user_input = prompt(step['display_text'], default=default_value).strip()
+
+        # Validate if validation function exists
+        if 'validate' in step:
+            if not step['validate'](user_input, metadata):
+                if 'on_error' in step:
+                    step['on_error'](user_input, metadata)
+                continue
+            else:
+                if 'on_success' in step:
+                    step['on_success'](user_input, metadata)
+
+        # Update metadata
+        metadata[field_key] = user_input
+        console.print(f"[green]✓ Updated {field_key}[/green]")
+        return True
+
+def get_user_input():
+    """Gathers all necessary metadata from the user via prompts in a wizard-like fashion."""
+
+    print(Markdown("\n---\n*Entering interactive metadata entry mode. At any prompt, type `back` to return to the previous question.*---\n"))
+
+    metadata = {}
+    steps = get_input_steps()
+
     i = 0
     while i < len(steps):
         step = steps[i]
@@ -345,15 +394,7 @@ def get_user_input():
 
 def preview_configuration(metadata):
     """Display configuration summary and ask for confirmation."""
-    console.print("\n" + "=" * 60)
-    console.print("[bold cyan]Configuration Summary[/bold cyan]")
-    console.print("=" * 60 + "\n")
-
-    table = Table(show_header=True, header_style="bold magenta")
-    table.add_column("Field", style="cyan", width=20)
-    table.add_column("Value", style="green")
-
-    # Display metadata in a nice table
+    # Define field labels and editable fields
     field_labels = {
         'package_name': 'Package Name',
         'title': 'Title',
@@ -373,18 +414,33 @@ def preview_configuration(metadata):
         'twobit_name': '2bit File Name'
     }
 
-    for key, label in field_labels.items():
-        value = metadata.get(key, '')
-        # Truncate long values
-        if len(str(value)) > 60:
-            value = str(value)[:57] + '...'
-        table.add_row(label, str(value))
+    # Editable fields (exclude auto-generated twobit_name)
+    editable_fields = [k for k in field_labels.keys() if k != 'twobit_name']
 
-    console.print(table)
-    console.print("\n" + "=" * 60 + "\n")
-
-    # Ask for confirmation
     while True:
+        # Display configuration table
+        console.print("\n" + "=" * 60)
+        console.print("[bold cyan]Configuration Summary[/bold cyan]")
+        console.print("=" * 60 + "\n")
+
+        table = Table(show_header=True, header_style="bold magenta")
+        table.add_column("#", style="dim", width=3)
+        table.add_column("Field", style="cyan", width=20)
+        table.add_column("Value", style="green")
+
+        for idx, (key, label) in enumerate(field_labels.items(), 1):
+            value = metadata.get(key, '')
+            # Truncate long values
+            if len(str(value)) > 60:
+                value = str(value)[:57] + '...'
+            # Show number only for editable fields
+            num = str(idx) if key in editable_fields else ""
+            table.add_row(num, label, str(value))
+
+        console.print(table)
+        console.print("\n" + "=" * 60 + "\n")
+
+        # Ask for confirmation
         choice = prompt(
             "Please review the configuration above. Choose an option:\n"
             "  [c] Continue with this configuration\n"
@@ -396,13 +452,58 @@ def preview_configuration(metadata):
         if choice == 'c':
             console.print("[bold green]✓ Configuration confirmed. Proceeding...[/bold green]\n")
             return True
+
         elif choice == 'e':
-            console.print("\n[yellow]Edit functionality will be available in a future version.[/yellow]")
-            console.print("[yellow]For now, please restart the script if you need to change values.[/yellow]\n")
+            # Show editable fields
+            console.print("\n[bold cyan]Editable Fields:[/bold cyan]")
+            for idx, field_key in enumerate(editable_fields, 1):
+                console.print(f"  [{idx}] {field_labels[field_key]}")
+
+            # Get field selection
+            field_choice = prompt("\nEnter field number or name to edit (or 'b' to go back): ").strip()
+
+            if field_choice.lower() == 'b':
+                continue
+
+            # Parse field choice
+            selected_field = None
+            if field_choice.isdigit():
+                field_idx = int(field_choice) - 1
+                if 0 <= field_idx < len(editable_fields):
+                    selected_field = editable_fields[field_idx]
+                else:
+                    console.print(f"[red]Invalid field number. Please enter 1-{len(editable_fields)}[/red]")
+                    continue
+            else:
+                # Try to match field name
+                field_choice_lower = field_choice.lower().replace(' ', '_')
+                for field_key in editable_fields:
+                    if field_key.lower() == field_choice_lower or field_labels[field_key].lower() == field_choice.lower():
+                        selected_field = field_key
+                        break
+
+                if not selected_field:
+                    console.print(f"[red]Field '{field_choice}' not found.[/red]")
+                    continue
+
+            # Edit the selected field
+            if edit_single_field(metadata, selected_field):
+                # Update twobit_name if seqfile_name was changed
+                if selected_field == 'seqfile_name':
+                    seqfile = metadata.get('seqfile_name', '')
+                    if seqfile.endswith(('.fa', '.fna', '.fasta', '.fas')):
+                        metadata['twobit_name'] = seqfile.rsplit('.', 1)[0] + '.2bit'
+                    else:
+                        metadata['twobit_name'] = seqfile
+                    console.print(f"[dim]→ Auto-updated 2bit file name to: {metadata['twobit_name']}[/dim]")
+
+            # Loop back to show updated configuration
             continue
+
         elif choice == 'q':
             console.print("[yellow]Configuration cancelled by user. Exiting.[/yellow]")
             return False
+
         else:
             console.print("[red]Invalid choice. Please enter 'c', 'e', or 'q'.[/red]")
 
