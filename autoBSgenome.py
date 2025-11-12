@@ -135,6 +135,54 @@ def check_r_dependencies():
         console.print("[dim]Visit: https://www.r-project.org/[/dim]")
         sys.exit(1)
 
+    # Check if BiocManager is installed
+    console.print("[dim]Checking for BiocManager...[/dim]")
+    biocmanager_check = """
+    if (!requireNamespace("BiocManager", quietly = TRUE)) {
+        cat("missing")
+    } else {
+        cat("installed")
+    }
+    """
+
+    try:
+        result = subprocess.run(['Rscript', '-e', biocmanager_check],
+                              capture_output=True, text=True, check=True)
+        biocmanager_status = result.stdout.strip()
+    except subprocess.CalledProcessError as e:
+        console.print(f"[bold red]✗ Error checking BiocManager: {e}[/bold red]")
+        sys.exit(1)
+
+    # Install BiocManager if missing
+    if biocmanager_status == "missing":
+        console.print("[yellow]⚠ BiocManager is not installed.[/yellow]")
+        console.print("[dim]BiocManager is required to install Bioconductor packages.[/dim]")
+
+        answer = prompt("Would you like to install BiocManager now? (yes/no) ").strip().lower()
+        if answer != 'yes':
+            console.print("[bold red]✗ Cannot proceed without BiocManager. Exiting.[/bold red]")
+            console.print("[dim]Manual installation in R: install.packages('BiocManager')[/dim]")
+            sys.exit(1)
+
+        console.print("[cyan]Installing BiocManager...[/cyan]")
+        biocmanager_install = """
+        options(repos = c(CRAN = "https://cloud.r-project.org"))
+        install.packages("BiocManager", quiet = TRUE)
+        """
+
+        install_result = subprocess.run(['Rscript', '-e', biocmanager_install],
+                                       capture_output=True, text=True)
+        if install_result.returncode != 0:
+            console.print("[bold red]✗ Failed to install BiocManager.[/bold red]")
+            console.print(f"[dim]Error: {install_result.stderr}[/dim]")
+            console.print("[yellow]Please install manually in R:[/yellow]")
+            console.print("[dim]  install.packages('BiocManager')[/dim]")
+            sys.exit(1)
+
+        console.print("[bold green]✓ BiocManager installed successfully.[/bold green]")
+    else:
+        console.print("[dim]✓ BiocManager is already installed.[/dim]")
+
     # Command to find missing packages
     r_check_command = f"""
     packages <- c('{required_packages[0]}', '{required_packages[1]}');
@@ -166,16 +214,18 @@ def check_r_dependencies():
 
     console.print("[bold cyan]Installing R packages from Bioconductor...[/bold cyan]")
     console.print("[dim]This may take a few minutes...[/dim]")
+
     # Command to install packages
     packages_to_install_str = 'c(' + ','.join([f'\"{p}\"' for p in missing_packages]) + ')'
     r_install_command = f"""
-    if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager");
-    BiocManager::install({packages_to_install_str}, update=FALSE, ask=FALSE);
+    BiocManager::install({packages_to_install_str}, update=FALSE, ask=FALSE)
     """
 
-    install_process = subprocess.run(['Rscript', '-e', r_install_command])
+    install_process = subprocess.run(['Rscript', '-e', r_install_command],
+                                    capture_output=True, text=True)
     if install_process.returncode != 0:
         console.print("[bold red]✗ Failed to install R packages.[/bold red]")
+        console.print(f"[dim]Error output: {install_process.stderr[:500]}[/dim]")
         console.print("[yellow]Please try installing manually in R:[/yellow]")
         pkg_list = "', '".join(missing_packages)
         console.print(f"[dim]  BiocManager::install(c('{pkg_list}'))[/dim]")
