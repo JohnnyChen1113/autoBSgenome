@@ -137,3 +137,7 @@ NeedsCompilation: no
 Package: BSgenome.Mnatalensis.NCBI.Mnatv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mlucifugus.NCBI.Myoluc20
+Version: 1.0.0
+NeedsCompilation: no

@@ -519,6 +519,25 @@
       ]
     },
     {
+      "organism": "Myotis lucifugus",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Mlucifugus.NCBI.Myoluc20",
+          "version": "1.0.0",
+          "organism": "Myotis lucifugus",
+          "assembly": "Myoluc2.0",
+          "provider": "NCBI",
+          "accession": "",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+          "file_name": "BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz",
+          "size": 515894987,
+          "published": "2026-04-03T20:54:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.NCBI.Myoluc20/BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nematocida ausubeli",
       "common_name": "",
       "builds": [
@@ -1245,6 +1264,19 @@
       "size": 458567760,
       "published": "2026-04-03T20:53:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnatalensis.NCBI.Mnatv1/BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mlucifugus.NCBI.Myoluc20",
+      "version": "1.0.0",
+      "organism": "Myotis lucifugus",
+      "assembly": "Myoluc2.0",
+      "provider": "NCBI",
+      "accession": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+      "file_name": "BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz",
+      "size": 515894987,
+      "published": "2026-04-03T20:54:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.NCBI.Myoluc20/BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz"
     }
   ]
 }
