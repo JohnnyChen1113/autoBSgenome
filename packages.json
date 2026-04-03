@@ -226,6 +226,54 @@
       ]
     },
     {
+      "organism": "Crocuta crocuta",
+      "common_name": "spotted hyena",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Hyaenidae",
+        "genus": "Crocuta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccrocuta.NCBI.BGICrCroc10",
+          "version": "1.0.0",
+          "organism": "Crocuta crocuta",
+          "assembly": "BGI_CrCroc_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_008692635.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008692635.1/",
+          "file_name": "BSgenome.Ccrocuta.NCBI.BGICrCroc10_1.0.0.tar.gz",
+          "size": 609490668,
+          "seq_ids": [
+            "NW_027526902.1",
+            "NW_027526903.1",
+            "NW_027526904.1",
+            "NW_027526905.1",
+            "NW_027526906.1"
+          ],
+          "seq_count": 24678,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Hyaenidae",
+            "genus": "Crocuta"
+          },
+          "common_name": "spotted hyena",
+          "published": "2026-04-03T21:40:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccrocuta.NCBI.BGICrCroc10/BSgenome.Ccrocuta.NCBI.BGICrCroc10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyclopterus lumpus",
       "common_name": "lumpfish",
       "group": "vertebrate_other",
@@ -1759,6 +1807,38 @@
       "common_name": "Pacific white-sided dolphin",
       "published": "2026-04-03T21:40:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sobliquidens.NCBI.ASM367639v1/BSgenome.Sobliquidens.NCBI.ASM367639v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccrocuta.NCBI.BGICrCroc10",
+      "version": "1.0.0",
+      "organism": "Crocuta crocuta",
+      "assembly": "BGI_CrCroc_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_008692635.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008692635.1/",
+      "file_name": "BSgenome.Ccrocuta.NCBI.BGICrCroc10_1.0.0.tar.gz",
+      "size": 609490668,
+      "seq_ids": [
+        "NW_027526902.1",
+        "NW_027526903.1",
+        "NW_027526904.1",
+        "NW_027526905.1",
+        "NW_027526906.1"
+      ],
+      "seq_count": 24678,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Hyaenidae",
+        "genus": "Crocuta"
+      },
+      "common_name": "spotted hyena",
+      "published": "2026-04-03T21:40:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccrocuta.NCBI.BGICrCroc10/BSgenome.Ccrocuta.NCBI.BGICrCroc10_1.0.0.tar.gz"
     }
   ]
 }

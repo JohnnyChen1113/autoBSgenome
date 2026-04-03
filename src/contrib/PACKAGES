@@ -181,3 +181,7 @@ NeedsCompilation: no
 Package: BSgenome.Sobliquidens.NCBI.ASM367639v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccrocuta.NCBI.BGICrCroc10
+Version: 1.0.0
+NeedsCompilation: no
