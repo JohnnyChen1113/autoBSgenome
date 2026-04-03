@@ -213,3 +213,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgriseus.NCBI.CriGri10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pvitulina.NCBI.GSCHSeal10
+Version: 1.0.0
+NeedsCompilation: no

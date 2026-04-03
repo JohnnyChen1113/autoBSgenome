@@ -1151,6 +1151,54 @@
       ]
     },
     {
+      "organism": "Phoca vitulina",
+      "common_name": "harbor seal",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Phocidae",
+        "genus": "Phoca"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pvitulina.NCBI.GSCHSeal10",
+          "version": "1.0.0",
+          "organism": "Phoca vitulina",
+          "assembly": "GSC_HSeal_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_004348235.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004348235.1/",
+          "file_name": "BSgenome.Pvitulina.NCBI.GSCHSeal10_1.0.0.tar.gz",
+          "size": 607784724,
+          "seq_ids": [
+            "NW_022589704.1",
+            "NW_022589705.1",
+            "NW_022589706.1",
+            "NW_022589707.1",
+            "NW_022589708.1"
+          ],
+          "seq_count": 5541,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Phocidae",
+            "genus": "Phoca"
+          },
+          "common_name": "harbor seal",
+          "published": "2026-04-03T21:41:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvitulina.NCBI.GSCHSeal10/BSgenome.Pvitulina.NCBI.GSCHSeal10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phocoena sinus",
       "common_name": "vaquita",
       "group": "vertebrate_mammalian",
@@ -2399,6 +2447,38 @@
       "common_name": "Chinese hamster",
       "published": "2026-04-03T21:41:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgriseus.NCBI.CriGri10/BSgenome.Cgriseus.NCBI.CriGri10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pvitulina.NCBI.GSCHSeal10",
+      "version": "1.0.0",
+      "organism": "Phoca vitulina",
+      "assembly": "GSC_HSeal_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_004348235.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004348235.1/",
+      "file_name": "BSgenome.Pvitulina.NCBI.GSCHSeal10_1.0.0.tar.gz",
+      "size": 607784724,
+      "seq_ids": [
+        "NW_022589704.1",
+        "NW_022589705.1",
+        "NW_022589706.1",
+        "NW_022589707.1",
+        "NW_022589708.1"
+      ],
+      "seq_count": 5541,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Phocidae",
+        "genus": "Phoca"
+      },
+      "common_name": "harbor seal",
+      "published": "2026-04-03T21:41:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvitulina.NCBI.GSCHSeal10/BSgenome.Pvitulina.NCBI.GSCHSeal10_1.0.0.tar.gz"
     }
   ]
 }
