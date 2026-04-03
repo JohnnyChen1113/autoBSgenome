@@ -167,12 +167,17 @@ const BASE = '';  // relative to current URL
 
 async function loadPackages() {
   try {
-    const res = await fetch(`${BASE}/packages.json?t=${Date.now()}`);
+    const url = `${BASE}/packages.json?t=${Date.now()}`;
+    console.log('Fetching:', url);
+    const res = await fetch(url);
+    console.log('Response status:', res.status);
     const packages = await res.json();
+    console.log('Packages loaded:', packages.length);
     renderPackages(packages);
     setupSearch(packages);
   } catch (e) {
-    document.getElementById('loading').innerHTML = '<p>No packages yet. <a href="https://autobsgenome.pages.dev">Build the first one!</a></p>';
+    console.error('loadPackages error:', e);
+    document.getElementById('loading').innerHTML = '<p>Error loading packages: ' + e.message + '</p>';
     document.getElementById('pkg-count').textContent = '0';
     document.getElementById('org-count').textContent = '0';
     document.getElementById('provider-count').textContent = '0';
@@ -229,7 +234,7 @@ function copyInstall(name) {
   setTimeout(() => { event.target.textContent = 'Copy R command'; }, 2000);
 }
 
-loadPackages();
+document.addEventListener('DOMContentLoaded', loadPackages);
 </script>
 
 </body>
