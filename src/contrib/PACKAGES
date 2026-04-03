@@ -149,3 +149,7 @@ NeedsCompilation: no
 Package: BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mdavidii.NCBI.ASM32734v1
+Version: 1.0.0
+NeedsCompilation: no
