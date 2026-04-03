@@ -67,6 +67,54 @@
       ]
     },
     {
+      "organism": "Balaenoptera musculus",
+      "common_name": "blue whale",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Balaenopteridae",
+        "genus": "Balaenoptera"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bmusculus.NCBI.mBalMus1priv3",
+          "version": "1.0.0",
+          "organism": "Balaenoptera musculus",
+          "assembly": "mBalMus1.pri.v3",
+          "provider": "NCBI",
+          "accession": "GCF_009873245.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009873245.2/",
+          "file_name": "BSgenome.Bmusculus.NCBI.mBalMus1priv3_1.0.0.tar.gz",
+          "size": 608423291,
+          "seq_ids": [
+            "NC_045785.1",
+            "NC_045786.1",
+            "NC_045787.1",
+            "NC_045788.1",
+            "NC_045789.1"
+          ],
+          "seq_count": 106,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Balaenopteridae",
+            "genus": "Balaenoptera"
+          },
+          "common_name": "blue whale",
+          "published": "2026-04-03T21:42:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bmusculus.NCBI.mBalMus1priv3/BSgenome.Bmusculus.NCBI.mBalMus1priv3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bathycoccus prasinos",
       "common_name": "",
       "group": "plant",
@@ -2479,6 +2527,38 @@
       "common_name": "harbor seal",
       "published": "2026-04-03T21:41:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvitulina.NCBI.GSCHSeal10/BSgenome.Pvitulina.NCBI.GSCHSeal10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bmusculus.NCBI.mBalMus1priv3",
+      "version": "1.0.0",
+      "organism": "Balaenoptera musculus",
+      "assembly": "mBalMus1.pri.v3",
+      "provider": "NCBI",
+      "accession": "GCF_009873245.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009873245.2/",
+      "file_name": "BSgenome.Bmusculus.NCBI.mBalMus1priv3_1.0.0.tar.gz",
+      "size": 608423291,
+      "seq_ids": [
+        "NC_045785.1",
+        "NC_045786.1",
+        "NC_045787.1",
+        "NC_045788.1",
+        "NC_045789.1"
+      ],
+      "seq_count": 106,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Balaenopteridae",
+        "genus": "Balaenoptera"
+      },
+      "common_name": "blue whale",
+      "published": "2026-04-03T21:42:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bmusculus.NCBI.mBalMus1priv3/BSgenome.Bmusculus.NCBI.mBalMus1priv3_1.0.0.tar.gz"
     }
   ]
 }

@@ -217,3 +217,7 @@ NeedsCompilation: no
 Package: BSgenome.Pvitulina.NCBI.GSCHSeal10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmusculus.NCBI.mBalMus1priv3
+Version: 1.0.0
+NeedsCompilation: no
