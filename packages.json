@@ -721,6 +721,25 @@
       ]
     },
     {
+      "organism": "Phyllostomus discolor",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Pdiscolor.NCBI.mPhyDis1priv3",
+          "version": "1.0.0",
+          "organism": "Phyllostomus discolor",
+          "assembly": "mPhyDis1.pri.v3",
+          "provider": "NCBI",
+          "accession": "",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+          "file_name": "BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz",
+          "size": 546065844,
+          "published": "2026-04-03T20:55:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdiscolor.NCBI.mPhyDis1priv3/BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pteropus alecto",
       "common_name": "",
       "builds": [
@@ -1437,6 +1456,19 @@
       "size": 521705601,
       "published": "2026-04-03T20:55:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrandtii.NCBI.ASM41265v1/BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pdiscolor.NCBI.mPhyDis1priv3",
+      "version": "1.0.0",
+      "organism": "Phyllostomus discolor",
+      "assembly": "mPhyDis1.pri.v3",
+      "provider": "NCBI",
+      "accession": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+      "file_name": "BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz",
+      "size": 546065844,
+      "published": "2026-04-03T20:55:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdiscolor.NCBI.mPhyDis1priv3/BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz"
     }
   ]
 }
