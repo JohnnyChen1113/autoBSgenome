@@ -112,6 +112,54 @@
       ]
     },
     {
+      "organism": "Canis lupus dingo",
+      "common_name": "dingo",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae",
+        "genus": "Canis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Clupus.NCBI.ASM325472v2",
+          "version": "1.0.0",
+          "organism": "Canis lupus dingo",
+          "assembly": "ASM325472v2",
+          "provider": "NCBI",
+          "accession": "GCF_003254725.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003254725.2/",
+          "file_name": "BSgenome.Clupus.NCBI.ASM325472v2_1.0.0.tar.gz",
+          "size": 607529958,
+          "seq_ids": [
+            "NC_064243.1",
+            "NC_064244.1",
+            "NC_064245.1",
+            "NC_064246.1",
+            "NC_064247.1"
+          ],
+          "seq_count": 159,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis"
+          },
+          "common_name": "dingo",
+          "published": "2026-04-03T21:40:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.NCBI.ASM325472v2/BSgenome.Clupus.NCBI.ASM325472v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Capsella rubella",
       "common_name": "",
       "group": "plant",
@@ -1839,6 +1887,38 @@
       "common_name": "spotted hyena",
       "published": "2026-04-03T21:40:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccrocuta.NCBI.BGICrCroc10/BSgenome.Ccrocuta.NCBI.BGICrCroc10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Clupus.NCBI.ASM325472v2",
+      "version": "1.0.0",
+      "organism": "Canis lupus dingo",
+      "assembly": "ASM325472v2",
+      "provider": "NCBI",
+      "accession": "GCF_003254725.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003254725.2/",
+      "file_name": "BSgenome.Clupus.NCBI.ASM325472v2_1.0.0.tar.gz",
+      "size": 607529958,
+      "seq_ids": [
+        "NC_064243.1",
+        "NC_064244.1",
+        "NC_064245.1",
+        "NC_064246.1",
+        "NC_064247.1"
+      ],
+      "seq_count": 159,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae",
+        "genus": "Canis"
+      },
+      "common_name": "dingo",
+      "published": "2026-04-03T21:40:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.NCBI.ASM325472v2/BSgenome.Clupus.NCBI.ASM325472v2_1.0.0.tar.gz"
     }
   ]
 }

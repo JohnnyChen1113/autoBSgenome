@@ -185,3 +185,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccrocuta.NCBI.BGICrCroc10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clupus.NCBI.ASM325472v2
+Version: 1.0.0
+NeedsCompilation: no
