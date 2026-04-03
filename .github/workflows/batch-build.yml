@@ -1,0 +1,169 @@
+name: Batch Build BSgenome Packages
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"  # Every 2 hours
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: "Number of packages to build in this batch"
+        default: "5"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bsgenome-batch
+  cancel-in-progress: false
+
+jobs:
+  build-batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout gh-pages (for queue state)
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Check for pending builds
+        id: queue
+        run: |
+          if [ ! -f build-queue.json ]; then
+            echo "No build queue found. Run generate-build-queue.py first."
+            echo "has_work=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          BATCH_SIZE="${{ inputs.batch_size || '5' }}"
+
+          # Extract next N pending items
+          python3 -c "
+          import json
+          with open('build-queue.json') as f:
+              queue = json.load(f)
+          pending = [item for item in queue if item['status'] == 'pending']
+          batch = pending[:${BATCH_SIZE}]
+          print(f'Pending: {len(pending)}, Batch size: {len(batch)}')
+          if not batch:
+              print('NO_WORK')
+          else:
+              with open('batch.json', 'w') as f:
+                  json.dump(batch, f)
+              for item in batch:
+                  print(f'  - {item[\"accession\"]} {item[\"organism\"]} ({item[\"genome_size_mb\"]} MB)')
+          " > /tmp/queue_check.txt
+          cat /tmp/queue_check.txt
+
+          if grep -q "NO_WORK" /tmp/queue_check.txt; then
+            echo "has_work=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_work=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Checkout main (for build tools)
+        if: steps.queue.outputs.has_work == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main-repo
+
+      - name: Trigger builds via API
+        if: steps.queue.outputs.has_work == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 -c "
+          import json, urllib.request, time, os
+
+          with open('batch.json') as f:
+              batch = json.load(f)
+
+          token = os.environ['GH_TOKEN']
+          repo = '${{ github.repository }}'
+
+          for item in batch:
+              accession = item['accession']
+              organism = item['organism']
+              parts = organism.split()
+              abbrev = parts[0][0].upper() + parts[1].lower() if len(parts) >= 2 else parts[0]
+              assembly = item['assembly'].replace('.','').replace(' ','').replace('-','').replace('_','')
+              package_name = f'BSgenome.{abbrev}.NCBI.{assembly}'
+
+              payload = {
+                  'event_type': 'build_bsgenome',
+                  'client_payload': {
+                      'job_id': accession.replace('_','').replace('.','')[-8:],
+                      'package_name': package_name,
+                      'organism': organism,
+                      'common_name': '',
+                      'genome': item['assembly'],
+                      'provider': 'NCBI',
+                      'version': '1.0.0',
+                      'circ_seqs': 'character(0)',
+                      'accession': accession,
+                      'extra': json.dumps({
+                          'data_source': 'ncbi',
+                          'release_date': '',
+                          'title': f'Full genome sequences for {organism} (NCBI version {item[\"assembly\"]})',
+                          'source_url': f'https://www.ncbi.nlm.nih.gov/datasets/genome/{accession}/',
+                      })
+                  }
+              }
+
+              req = urllib.request.Request(
+                  f'https://api.github.com/repos/{repo}/dispatches',
+                  data=json.dumps(payload).encode(),
+                  headers={
+                      'Authorization': f'Bearer {token}',
+                      'Accept': 'application/vnd.github+json',
+                      'Content-Type': 'application/json',
+                      'X-GitHub-Api-Version': '2022-11-28',
+                  },
+                  method='POST'
+              )
+              try:
+                  urllib.request.urlopen(req)
+                  print(f'Triggered: {accession} -> {package_name}')
+              except Exception as e:
+                  print(f'Failed: {accession} -> {e}')
+
+              # Wait between dispatches to avoid rate limits
+              time.sleep(10)
+          "
+
+      - name: Update queue status
+        if: steps.queue.outputs.has_work == 'true'
+        run: |
+          # Switch back to gh-pages to update the queue
+          cd ${{ github.workspace }}
+
+          python3 -c "
+          import json
+
+          with open('batch.json') as f:
+              batch = json.load(f)
+          batch_accessions = {item['accession'] for item in batch}
+
+          with open('build-queue.json') as f:
+              queue = json.load(f)
+
+          for item in queue:
+              if item['accession'] in batch_accessions:
+                  item['status'] = 'building'
+
+          with open('build-queue.json', 'w') as f:
+              json.dump(queue, f, indent=2)
+
+          building = sum(1 for item in queue if item['status'] == 'building')
+          done = sum(1 for item in queue if item['status'] == 'done')
+          pending = sum(1 for item in queue if item['status'] == 'pending')
+          print(f'Queue: {pending} pending, {building} building, {done} done')
+          "
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add build-queue.json
+          git diff --cached --quiet || git commit -m "batch: Mark $(cat batch.json | python3 -c 'import json,sys;print(len(json.load(sys.stdin)))') packages as building"
+          git push origin gh-pages
