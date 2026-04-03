@@ -301,3 +301,7 @@ NeedsCompilation: no
 Package: BSgenome.Hglaber.NCBI.HetGlafemale10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bbison.NCBI.BisonUMD10
+Version: 1.0.0
+NeedsCompilation: no

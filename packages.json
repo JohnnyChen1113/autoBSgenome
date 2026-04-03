@@ -186,6 +186,54 @@
       ]
     },
     {
+      "organism": "Bison bison bison",
+      "common_name": "",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bison"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bbison.NCBI.BisonUMD10",
+          "version": "1.0.0",
+          "organism": "Bison bison bison",
+          "assembly": "Bison_UMD1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000754665.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000754665.1/",
+          "file_name": "BSgenome.Bbison.NCBI.BisonUMD10_1.0.0.tar.gz",
+          "size": 680223810,
+          "seq_ids": [
+            "NW_011371415.1",
+            "NW_011371416.1",
+            "NW_011371417.1",
+            "NW_011371418.1",
+            "NW_011371419.1"
+          ],
+          "seq_count": 128431,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Bison"
+          },
+          "common_name": "",
+          "published": "2026-04-03T23:41:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbison.NCBI.BisonUMD10/BSgenome.Bbison.NCBI.BisonUMD10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bos indicus x Bos taurus",
       "common_name": "hybrid cattle",
       "group": "vertebrate_mammalian",
@@ -4159,6 +4207,38 @@
       "common_name": "naked mole-rat",
       "published": "2026-04-03T23:41:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hglaber.NCBI.HetGlafemale10/BSgenome.Hglaber.NCBI.HetGlafemale10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bbison.NCBI.BisonUMD10",
+      "version": "1.0.0",
+      "organism": "Bison bison bison",
+      "assembly": "Bison_UMD1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000754665.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000754665.1/",
+      "file_name": "BSgenome.Bbison.NCBI.BisonUMD10_1.0.0.tar.gz",
+      "size": 680223810,
+      "seq_ids": [
+        "NW_011371415.1",
+        "NW_011371416.1",
+        "NW_011371417.1",
+        "NW_011371418.1",
+        "NW_011371419.1"
+      ],
+      "seq_count": 128431,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bison"
+      },
+      "common_name": "",
+      "published": "2026-04-03T23:41:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbison.NCBI.BisonUMD10/BSgenome.Bbison.NCBI.BisonUMD10_1.0.0.tar.gz"
     }
   ]
 }
