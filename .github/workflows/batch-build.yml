@@ -2,12 +2,12 @@ name: Batch Build BSgenome Packages
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Every hour
+    - cron: "*/30 * * * *"  # Every 30 minutes
   workflow_dispatch:
     inputs:
       batch_size:
         description: "Number of packages to build in this batch"
-        default: "10"
+        default: "15"
         type: string
 
 permissions:
