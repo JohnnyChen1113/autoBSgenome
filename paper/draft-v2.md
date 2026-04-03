@@ -24,7 +24,7 @@ Despite their central role, the availability of pre-built BSgenome packages is l
 
 Constructing a custom BSgenome package, however, presents a substantial procedural barrier. The process requires a local R/Bioconductor environment, the UCSC faToTwoBit utility for FASTA-to-2bit conversion (Kent et al. 2002), and the BSgenomeForge package (Pages). Users must compose a seed file in Debian Control File (DCF) format containing 15 or more fields, adhering to a strict four-part naming convention (BSgenome.Organism.Provider.Assembly) and specific title/description wording conventions. Each step is prone to subtle errors — missing trailing newlines in the seed file, IUPAC ambiguity codes in the FASTA, platform-specific binary compatibility issues with faToTwoBit — that are difficult to diagnose for researchers whose primary expertise lies outside software engineering.
 
-The BSgenomeForge package provides convenience functions such as `forgeBSgenomeDataPkgFromNCBI()` that automate portions of this workflow. In practice, however, these functions operate smoothly only for the approximately 50–60 organisms whose assemblies are registered in GenomeInfoDb (Lawrence et al. 2009). For unregistered organisms, the functions either fail or require manual specification of metadata and circular sequence information. Moreover, when assembly names map to multiple accession versions, the resolution is ambiguous, and older assembly versions cannot be readily targeted.
+The BSgenomeForge package provides convenience functions such as `forgeBSgenomeDataPkgFromNCBI()` that automate portions of this workflow. In practice, however, these functions operate smoothly only for the approximately 50–60 organisms whose assemblies are registered in GenomeInfoDb (Arora et al. 2025). For unregistered organisms, the functions either fail or require manual specification of metadata and circular sequence information. Moreover, when assembly names map to multiple accession versions, the resolution is ambiguous, and older assembly versions cannot be readily targeted.
 
 The practical consequences of this complexity are evident in real-world usage. Users of the TSSr package have repeatedly requested removal of the BSgenome dependency, not because the BSgenome framework is inadequate, but because constructing a custom package for their organism of interest proved prohibitively difficult. This feedback reveals a critical insight: the barrier to adoption lies not in the BSgenome infrastructure itself, but in the difficulty of generating BSgenome packages for organisms outside the narrow set of well-supported model species.
 
@@ -126,7 +126,11 @@ This work was supported by the National Science Foundation [grant number 1951332
 
 ## References
 
-Cox E, Tsuchiya MTN, Ciufo S, et al (2025) NCBI Taxonomy: enhanced access via NCBI Datasets. Nucleic Acids Research 53:D1313–D1319
+Arora S, Morgan M, Carlson M, Pages H (2025) GenomeInfoDb: Utilities for manipulating chromosome names. R/Bioconductor package version 1.46.0. https://doi.org/10.18129/B9.bioc.GenomeInfoDb
+
+Cox E, Tsuchiya MTN, Ciufo S, et al (2025) NCBI Taxonomy: enhanced access via NCBI Datasets. Nucleic Acids Research 53:D1711–D1715
+
+Gentleman RC, Carey VJ, Bates DM, et al (2004) Bioconductor: open software development for computational biology and bioinformatics. Genome Biology 5:R80
 
 Huber W, Carey VJ, Gentleman R, et al (2015) Orchestrating high-throughput genomic analysis with Bioconductor. Nature Methods 12:115–121
 
@@ -142,9 +146,9 @@ Pages H, Aboyoun P, Gentleman R, DebRoy S. BSgenome: Software infrastructure for
 
 Pages H. BSgenomeForge: Forge BSgenome data packages. R/Bioconductor package. https://bioconductor.org/packages/BSgenomeForge
 
-Sayers EW, Bolton EJ, Brister JR, et al (2023) Database resources of the National Center for Biotechnology Information in 2023. Nucleic Acids Research 51:D483–D488
+Sayers EW, Bolton EJ, Brister JR, et al (2023) Database resources of the National Center for Biotechnology Information in 2023. Nucleic Acids Research 51:D29–D38
 
-Wren JD (2017) Bioinformatics programs are 31-fold over-represented among the highest impact scientific papers. Bioinformatics 33:2773–2779
+Wren JD (2016) Bioinformatics programs are 31-fold over-represented among the highest impact scientific papers of the past two decades. Bioinformatics 32:2686–2691
 
 Yates A, Beal K, Keenan S, et al (2015) The Ensembl REST API: Ensembl Data for Any Language. Bioinformatics 31:143–145
 
