@@ -96,6 +96,12 @@
   .tax-children { display: block; }
   .tax-children.collapsed { display: none; }
   .tax-chevron.collapsed { transform: rotate(-90deg); }
+  .alpha-bar { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 16px; }
+  .alpha-btn { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid var(--border); background: var(--bg); color: var(--text-secondary); transition: all 0.1s; }
+  .alpha-btn:hover { border-color: var(--primary); color: var(--primary); }
+  .alpha-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+  .alpha-btn.disabled { opacity: 0.3; cursor: default; }
+  .alpha-btn.disabled:hover { border-color: var(--border); color: var(--text-muted); }
   .empty { text-align: center; padding: 48px 0; color: var(--text-muted); }
   footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 48px; text-align: center; font-size: 13px; color: var(--text-muted); }
 
@@ -144,6 +150,8 @@
     <input type="text" id="search" placeholder="Search by organism, assembly, or package name..." />
   </div>
 
+  <div class="alpha-bar" id="alpha-bar"></div>
+
   <div class="org-list" id="org-list">
     <div class="empty" id="loading">Loading packages...</div>
   </div>
@@ -183,6 +191,7 @@ async function loadPackages() {
     }
 
     renderOrganisms(organisms, flat);
+    setupAlphaBar(organisms);
     setupSearch(organisms);
   } catch (e) {
     document.getElementById('loading').innerHTML = '<p>Error: ' + e.message + '</p>';
@@ -353,6 +362,49 @@ function toggleOrg(header) {
   const chevron = header.querySelector('.chevron');
   buildList.classList.toggle('open');
   chevron.classList.toggle('open');
+}
+
+function setupAlphaBar(organisms) {
+  const bar = document.getElementById('alpha-bar');
+  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const available = new Set(organisms.map(o => speciesName(o.organism)[0]?.toUpperCase()).filter(Boolean));
+
+  // Add "All" button
+  let html = `<button class="alpha-btn active" onclick="filterAlpha(this, '')">All</button>`;
+  for (const letter of letters) {
+    const has = available.has(letter);
+    html += `<button class="alpha-btn${has ? '' : ' disabled'}" onclick="${has ? `filterAlpha(this, '${letter}')` : ''}">${letter}</button>`;
+  }
+  bar.innerHTML = html;
+}
+
+function filterAlpha(btn, letter) {
+  // Update active state
+  document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  // Filter organisms
+  document.querySelectorAll('.org-card').forEach(card => {
+    if (!letter) {
+      card.style.display = '';
+    } else {
+      const name = card.querySelector('.org-name')?.textContent || '';
+      card.style.display = name[0]?.toUpperCase() === letter ? '' : 'none';
+    }
+  });
+
+  // Show/hide empty tax nodes
+  document.querySelectorAll('.tax-node').forEach(node => {
+    const cards = node.querySelectorAll('.org-card');
+    const visible = [...cards].some(c => c.style.display !== 'none');
+    const hasChildren = node.querySelector('.tax-children');
+    if (hasChildren && cards.length === 0) {
+      // Intermediate node — check if any descendant is visible
+      const allDescendant = node.querySelectorAll('.org-card');
+      const anyVisible = [...allDescendant].some(c => c.style.display !== 'none');
+      node.style.display = anyVisible ? '' : 'none';
+    }
+  });
 }
 
 function setupSearch(organisms) {
