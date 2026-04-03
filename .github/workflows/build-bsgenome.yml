@@ -4,6 +4,9 @@ on:
   repository_dispatch:
     types: [build_bsgenome]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -87,6 +90,11 @@ jobs:
         run: |
           ./faToTwoBit genome.fa genome.2bit
           ls -lh genome.2bit
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
