@@ -2,6 +2,10 @@ Package: BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2
 Version: 1.0.0
 NeedsCompilation: no
 
+Package: BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3
+Version: 1.0.0
+NeedsCompilation: no
+
 Package: BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01
 Version: 1.0.0
 NeedsCompilation: no
