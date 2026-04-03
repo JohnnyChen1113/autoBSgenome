@@ -190,9 +190,9 @@ function renderOrganisms(organisms, flat) {
   const ensemblCount = flat ? flat.filter(p => p.provider === 'Ensembl').length : 0;
   const providerEl = document.getElementById('provider-stats');
   const parts = [];
-  if (ncbiCount) parts.push(`${ncbiCount} from NCBI`);
-  if (ensemblCount) parts.push(`${ensemblCount} from Ensembl`);
-  providerEl.textContent = parts.join(' · ') || '';
+  if (ncbiCount) parts.push(`<strong>${ncbiCount}</strong> from NCBI`);
+  if (ensemblCount) parts.push(`<strong>${ensemblCount}</strong> from Ensembl`);
+  providerEl.innerHTML = parts.join(' &middot; ') || '';
 
   if (organisms.length === 0) {
     list.innerHTML = '<div class="empty"><p>No packages yet. <a href="https://autobsgenome.pages.dev">Build the first one!</a></p></div>';
@@ -210,7 +210,7 @@ function renderOrganisms(organisms, flat) {
     <div class="org-card" data-search="${searchText}">
       <div class="org-header" onclick="toggleOrg(this)">
         <div>
-          <span class="org-name">${org.organism}</span>
+          <span class="org-name">${speciesName(org.organism)}</span>
           ${org.common_name ? `<span class="org-common">(${org.common_name})</span>` : ''}
         </div>
         <div class="org-badge-row">
@@ -223,6 +223,7 @@ function renderOrganisms(organisms, flat) {
         <div class="build-item">
           <div class="build-info">
             <div class="build-pkg">${b.package}</div>
+            ${strainInfo(org.organism) ? `<div style="font-size:12px;color:var(--text-muted);margin-top:1px;">Strain: ${strainInfo(org.organism)}</div>` : ''}
             <div class="build-meta">
               <span>${b.assembly || 'N/A'}</span>
               <span><span class="badge ${b.provider === 'Ensembl' ? 'badge-ensembl' : 'badge-ncbi'}">${b.provider || 'NCBI'}</span></span>
@@ -246,6 +247,18 @@ function renderOrganisms(organisms, flat) {
   if (organisms.length <= 5) {
     document.querySelectorAll('.chevron').forEach(c => c.classList.add('open'));
   }
+}
+
+function speciesName(fullName) {
+  // "Encephalitozoon cuniculi GB-M1" -> "Encephalitozoon cuniculi"
+  // Keep only genus + species (first 2 words)
+  const parts = fullName.trim().split(/\s+/);
+  return parts.length >= 2 ? parts.slice(0, 2).join(' ') : fullName;
+}
+
+function strainInfo(fullName) {
+  const parts = fullName.trim().split(/\s+/);
+  return parts.length > 2 ? parts.slice(2).join(' ') : '';
 }
 
 function toggleOrg(header) {
