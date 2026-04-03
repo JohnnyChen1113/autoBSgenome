@@ -1139,7 +1139,7 @@ export default function Home() {
                         <div
                           className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
                             done
-                              ? "bg-[--success] text-white"
+                              ? "bg-primary text-primary-foreground"
                               : active
                               ? "bg-primary text-primary-foreground animate-pulse"
                               : "bg-secondary text-muted-foreground"
@@ -1150,7 +1150,7 @@ export default function Home() {
                         <span
                           className={
                             done
-                              ? "text-muted-foreground line-through"
+                              ? "text-foreground"
                               : active
                               ? "text-foreground font-medium"
                               : "text-muted-foreground"
