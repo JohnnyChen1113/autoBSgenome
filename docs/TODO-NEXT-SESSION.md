@@ -1,5 +1,26 @@
 # TODO — Next Session
 
+## URGENT — Browse Page Bugs & Improvements
+
+### 0a. Fix "Other" group — new packages missing taxonomy group
+- `update-repo-index.yml` doesn't pass `group` field
+- Need to either: pass group from build workflow, or look it up from build-queue.json in the index updater
+- All 12 newly batch-built packages show as "Other" instead of proper kingdom
+
+### 0b. Key-value display in package cards
+- Current: `GSC_Weel_1.0 · NCBI · v1.0.0 · 143.0 MB · GCF_004355925.1 ↗`
+- Should be: `Assembly: GSC_Weel_1.0 | Provider: NCBI | Version: 1.0.0 | Package size: 143.0 MB | Accession: GCF_004355925.1`
+- Users can't tell what each value means without labels
+
+### 0c. FASTA sequence ID preview
+- Show first 3 FASTA headers (e.g., `>NC_047562.1`, `>chr1`) in each package card
+- This tells users whether the sequence IDs match their BAM/BED files
+- Requires: extracting headers during build, storing in packages.json metadata
+- Build pipeline change: after faToTwoBit, run `head -n 100 genome.fa | grep "^>" | head -3`
+
+### 0d. Update paper v2 with corrected references
+- Fix 4 reference errors found by verification (see paper/references-apa7.md)
+
 ## API & Skills
 
 ### 1. Claude Code / Claw Skill
