@@ -1,4 +1,5 @@
 name: Build BSgenome Package
+run-name: "Build ${{ github.event.client_payload.package_name }} (${{ github.event.client_payload.organism }})"
 
 on:
   repository_dispatch:
