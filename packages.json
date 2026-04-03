@@ -910,6 +910,54 @@
       ]
     },
     {
+      "organism": "Lipotes vexillifer",
+      "common_name": "Yangtze River dolphin",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Lipotidae",
+        "genus": "Lipotes"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11",
+          "version": "1.0.0",
+          "organism": "Lipotes vexillifer",
+          "assembly": "Lipotes_vexillifer_v1.1",
+          "provider": "NCBI",
+          "accession": "GCF_000442215.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000442215.2/",
+          "file_name": "BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11_1.0.0.tar.gz",
+          "size": 622633072,
+          "seq_ids": [
+            "NW_006769228.1",
+            "NW_006769229.1",
+            "NW_006769230.1",
+            "NW_006769231.1",
+            "NW_006769235.1"
+          ],
+          "seq_count": 24810,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Lipotidae",
+            "genus": "Lipotes"
+          },
+          "common_name": "Yangtze River dolphin",
+          "published": "2026-04-03T22:40:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11/BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lynx canadensis",
       "common_name": "Canada lynx",
       "group": "vertebrate_mammalian",
@@ -2959,6 +3007,38 @@
       "common_name": "Steller sea lion",
       "published": "2026-04-03T22:39:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ejubatus.NCBI.ASM402803v1/BSgenome.Ejubatus.NCBI.ASM402803v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11",
+      "version": "1.0.0",
+      "organism": "Lipotes vexillifer",
+      "assembly": "Lipotes_vexillifer_v1.1",
+      "provider": "NCBI",
+      "accession": "GCF_000442215.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000442215.2/",
+      "file_name": "BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11_1.0.0.tar.gz",
+      "size": 622633072,
+      "seq_ids": [
+        "NW_006769228.1",
+        "NW_006769229.1",
+        "NW_006769230.1",
+        "NW_006769231.1",
+        "NW_006769235.1"
+      ],
+      "seq_count": 24810,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Lipotidae",
+        "genus": "Lipotes"
+      },
+      "common_name": "Yangtze River dolphin",
+      "published": "2026-04-03T22:40:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11/BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11_1.0.0.tar.gz"
     }
   ]
 }

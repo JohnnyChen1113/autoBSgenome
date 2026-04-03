@@ -241,3 +241,7 @@ NeedsCompilation: no
 Package: BSgenome.Ejubatus.NCBI.ASM402803v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11
+Version: 1.0.0
+NeedsCompilation: no
