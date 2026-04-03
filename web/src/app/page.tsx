@@ -278,6 +278,15 @@ export default function Home() {
 
   const WORKER_API = "https://autobsgenome-api.dailylifecjh.workers.dev";
 
+  // 1-second timer for display (independent of 5s poll)
+  useEffect(() => {
+    if (step !== "building" || buildStartTime === 0) return;
+    const tick = setInterval(() => {
+      setBuildElapsed(Math.floor((Date.now() - buildStartTime) / 1000));
+    }, 1000);
+    return () => clearInterval(tick);
+  }, [step, buildStartTime]);
+
   const handleBuild = async () => {
     setStep("building");
     setBuildError("");
@@ -328,10 +337,10 @@ export default function Home() {
 
   const pollBuildStatus = (id: string) => {
     let errorCount = 0;
+    let pollCount = 0;
     const interval = setInterval(async () => {
-      const now = Date.now();
-      const elapsedSec = Math.floor((now - buildStartTime) / 1000);
-      setBuildElapsed(elapsedSec);
+      pollCount++;
+      const elapsedSec = Math.floor((Date.now() - buildStartTime) / 1000);
 
       // Animate build steps based on elapsed time
       if (elapsedSec > 5) setBuildStep(1);
@@ -1162,9 +1171,48 @@ export default function Home() {
 
                 <div className="bg-accent border-l-[3px] border-primary rounded-r-md px-4 py-3 text-sm text-muted-foreground">
                   This package will remain available for{" "}
-                  <strong className="text-foreground">14 days</strong>. Download
-                  a local copy for permanent use.
+                  <strong className="text-foreground">14 days</strong> at{" "}
+                  <a
+                    href="https://github.com/JohnnyChen1113/autoBSgenome/releases"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    GitHub Releases
+                  </a>
+                  . Download a local copy for permanent use.
                 </div>
+
+                {/* AI tool prompt */}
+                <Accordion>
+                  <AccordionItem value="ai-prompt">
+                    <AccordionTrigger className="text-sm">
+                      Use with AI coding tools (Claude Code, Claw, Cursor...)
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-sm text-muted-foreground mb-2">
+                        Copy this prompt and paste it into your AI coding assistant:
+                      </p>
+                      <div className="relative">
+                        <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
+                          Help me install this BSgenome R package:{" "}
+                          {downloadUrl || `https://github.com/JohnnyChen1113/autoBSgenome/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}
+                        </div>
+                        <button
+                          type="button"
+                          className="absolute top-2 right-2 p-1.5 rounded bg-background border border-border text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                          onClick={() => {
+                            const prompt = `Help me install this BSgenome R package: ${downloadUrl || `https://github.com/JohnnyChen1113/autoBSgenome/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}`;
+                            navigator.clipboard.writeText(prompt);
+                          }}
+                          title="Copy to clipboard"
+                        >
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                        </button>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
 
                 <Button
                   variant="outline"
