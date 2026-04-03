@@ -189,3 +189,7 @@ NeedsCompilation: no
 Package: BSgenome.Clupus.NCBI.ASM325472v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmonoceros.NCBI.NGINarwhal1
+Version: 1.0.0
+NeedsCompilation: no

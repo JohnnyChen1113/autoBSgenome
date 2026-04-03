@@ -687,6 +687,54 @@
       ]
     },
     {
+      "organism": "Monodon monoceros",
+      "common_name": "narwhal",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Monodontidae",
+        "genus": "Monodon"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mmonoceros.NCBI.NGINarwhal1",
+          "version": "1.0.0",
+          "organism": "Monodon monoceros",
+          "assembly": "NGI_Narwhal_1",
+          "provider": "NCBI",
+          "accession": "GCF_005190385.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_005190385.1/",
+          "file_name": "BSgenome.Mmonoceros.NCBI.NGINarwhal1_1.0.0.tar.gz",
+          "size": 607930991,
+          "seq_ids": [
+            "NW_021696815.1",
+            "NW_021696816.1",
+            "NW_021696817.1",
+            "NW_021696818.1",
+            "NW_021696819.1"
+          ],
+          "seq_count": 6972,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Monodontidae",
+            "genus": "Monodon"
+          },
+          "common_name": "narwhal",
+          "published": "2026-04-03T21:41:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmonoceros.NCBI.NGINarwhal1/BSgenome.Mmonoceros.NCBI.NGINarwhal1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Monoraphidium neglectum",
       "common_name": "",
       "group": "plant",
@@ -1919,6 +1967,38 @@
       "common_name": "dingo",
       "published": "2026-04-03T21:40:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.NCBI.ASM325472v2/BSgenome.Clupus.NCBI.ASM325472v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmonoceros.NCBI.NGINarwhal1",
+      "version": "1.0.0",
+      "organism": "Monodon monoceros",
+      "assembly": "NGI_Narwhal_1",
+      "provider": "NCBI",
+      "accession": "GCF_005190385.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_005190385.1/",
+      "file_name": "BSgenome.Mmonoceros.NCBI.NGINarwhal1_1.0.0.tar.gz",
+      "size": 607930991,
+      "seq_ids": [
+        "NW_021696815.1",
+        "NW_021696816.1",
+        "NW_021696817.1",
+        "NW_021696818.1",
+        "NW_021696819.1"
+      ],
+      "seq_count": 6972,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Monodontidae",
+        "genus": "Monodon"
+      },
+      "common_name": "narwhal",
+      "published": "2026-04-03T21:41:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmonoceros.NCBI.NGINarwhal1/BSgenome.Mmonoceros.NCBI.NGINarwhal1_1.0.0.tar.gz"
     }
   ]
 }
