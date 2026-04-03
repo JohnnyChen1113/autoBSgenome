@@ -400,6 +400,54 @@
       ]
     },
     {
+      "organism": "Capra hircus",
+      "common_name": "goat",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Capra"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Chircus.NCBI.ARS12",
+          "version": "1.0.0",
+          "organism": "Capra hircus",
+          "assembly": "ARS1.2",
+          "provider": "NCBI",
+          "accession": "GCF_001704415.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001704415.2/",
+          "file_name": "BSgenome.Chircus.NCBI.ARS12_1.0.0.tar.gz",
+          "size": 723529156,
+          "seq_ids": [
+            "NC_030808.1",
+            "NC_030809.1",
+            "NC_030810.1",
+            "NC_030811.1",
+            "NC_030812.1"
+          ],
+          "seq_count": 29886,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Capra"
+          },
+          "common_name": "goat",
+          "published": "2026-04-03T23:43:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chircus.NCBI.ARS12/BSgenome.Chircus.NCBI.ARS12_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Capsella rubella",
       "common_name": "",
       "group": "plant",
@@ -4719,6 +4767,38 @@
       "common_name": "gelada",
       "published": "2026-04-03T23:43:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgelada.NCBI.Tgel10/BSgenome.Tgelada.NCBI.Tgel10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Chircus.NCBI.ARS12",
+      "version": "1.0.0",
+      "organism": "Capra hircus",
+      "assembly": "ARS1.2",
+      "provider": "NCBI",
+      "accession": "GCF_001704415.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001704415.2/",
+      "file_name": "BSgenome.Chircus.NCBI.ARS12_1.0.0.tar.gz",
+      "size": 723529156,
+      "seq_ids": [
+        "NC_030808.1",
+        "NC_030809.1",
+        "NC_030810.1",
+        "NC_030811.1",
+        "NC_030812.1"
+      ],
+      "seq_count": 29886,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Capra"
+      },
+      "common_name": "goat",
+      "published": "2026-04-03T23:43:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chircus.NCBI.ARS12/BSgenome.Chircus.NCBI.ARS12_1.0.0.tar.gz"
     }
   ]
 }
