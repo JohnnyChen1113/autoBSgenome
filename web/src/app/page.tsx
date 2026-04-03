@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
+import confetti from "canvas-confetti";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -301,6 +302,31 @@ export default function Home() {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Celebration confetti on build success
+  useEffect(() => {
+    if (step !== "result") return;
+    const duration = 2000;
+    const end = Date.now() + duration;
+    const frame = () => {
+      confetti({
+        particleCount: 3,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0, y: 0.6 },
+        colors: ["#003DA5", "#4a7ec7", "#0f7b3f", "#f0f4fa"],
+      });
+      confetti({
+        particleCount: 3,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1, y: 0.6 },
+        colors: ["#003DA5", "#4a7ec7", "#0f7b3f", "#f0f4fa"],
+      });
+      if (Date.now() < end) requestAnimationFrame(frame);
+    };
+    frame();
+  }, [step]);
 
   // 1-second timer for display (independent of 5s poll)
   useEffect(() => {
@@ -1173,12 +1199,22 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-5">
+                {/* Build time highlight */}
+                {buildTotalTime > 0 && (
+                  <div className="text-center py-2">
+                    <p className="text-4xl font-mono font-bold text-primary">
+                      {buildTotalTime}s
+                    </p>
+                    <p className="text-sm text-muted-foreground mt-1">Total build time</p>
+                  </div>
+                )}
+
                 <div className="flex gap-3 justify-center">
                   {downloadUrl ? (
                     <a
                       href={downloadUrl}
                       download
-                      className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-2.5 text-base font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+                      className="inline-flex items-center justify-center rounded-md bg-primary h-11 px-8 text-base font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
                     >
                       Download .tar.gz
                     </a>
@@ -1187,7 +1223,7 @@ export default function Home() {
                   )}
                   <Button
                     variant="outline"
-                    size="lg"
+                    className="h-11 px-8 text-base"
                     onClick={() => {
                       const cmd = `install.packages("${downloadUrl}", repos = NULL, type = "source")`;
                       navigator.clipboard.writeText(cmd);
