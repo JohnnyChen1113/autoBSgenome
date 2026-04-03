@@ -205,3 +205,7 @@ NeedsCompilation: no
 Package: BSgenome.Hhyaena.NCBI.ASM300989v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psinus.NCBI.mPhoSin1pri
+Version: 1.0.0
+NeedsCompilation: no

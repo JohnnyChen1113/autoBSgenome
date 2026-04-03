@@ -1103,6 +1103,54 @@
       ]
     },
     {
+      "organism": "Phocoena sinus",
+      "common_name": "vaquita",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Phocoenidae",
+        "genus": "Phocoena"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psinus.NCBI.mPhoSin1pri",
+          "version": "1.0.0",
+          "organism": "Phocoena sinus",
+          "assembly": "mPhoSin1.pri",
+          "provider": "NCBI",
+          "accession": "GCF_008692025.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008692025.1/",
+          "file_name": "BSgenome.Psinus.NCBI.mPhoSin1pri_1.0.0.tar.gz",
+          "size": 609657895,
+          "seq_ids": [
+            "NC_045763.1",
+            "NC_045764.1",
+            "NC_045765.1",
+            "NC_045766.1",
+            "NC_045767.1"
+          ],
+          "seq_count": 64,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Phocoenidae",
+            "genus": "Phocoena"
+          },
+          "common_name": "vaquita",
+          "published": "2026-04-03T21:41:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psinus.NCBI.mPhoSin1pri/BSgenome.Psinus.NCBI.mPhoSin1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phyllostomus discolor",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -2239,6 +2287,38 @@
       "common_name": "striped hyena",
       "published": "2026-04-03T21:41:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhyaena.NCBI.ASM300989v1/BSgenome.Hhyaena.NCBI.ASM300989v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psinus.NCBI.mPhoSin1pri",
+      "version": "1.0.0",
+      "organism": "Phocoena sinus",
+      "assembly": "mPhoSin1.pri",
+      "provider": "NCBI",
+      "accession": "GCF_008692025.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008692025.1/",
+      "file_name": "BSgenome.Psinus.NCBI.mPhoSin1pri_1.0.0.tar.gz",
+      "size": 609657895,
+      "seq_ids": [
+        "NC_045763.1",
+        "NC_045764.1",
+        "NC_045765.1",
+        "NC_045766.1",
+        "NC_045767.1"
+      ],
+      "seq_count": 64,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Phocoenidae",
+        "genus": "Phocoena"
+      },
+      "common_name": "vaquita",
+      "published": "2026-04-03T21:41:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psinus.NCBI.mPhoSin1pri/BSgenome.Psinus.NCBI.mPhoSin1pri_1.0.0.tar.gz"
     }
   ]
 }
