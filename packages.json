@@ -2159,6 +2159,54 @@
       ]
     },
     {
+      "organism": "Papio anubis",
+      "common_name": "olive baboon",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Papio"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Panubis.NCBI.Panubis10",
+          "version": "1.0.0",
+          "organism": "Papio anubis",
+          "assembly": "Panubis1.0",
+          "provider": "NCBI",
+          "accession": "GCF_008728515.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008728515.1/",
+          "file_name": "BSgenome.Panubis.NCBI.Panubis10_1.0.0.tar.gz",
+          "size": 739862668,
+          "seq_ids": [
+            "NC_044976.1",
+            "NC_044977.1",
+            "NC_044978.1",
+            "NC_044979.1",
+            "NC_044980.1"
+          ],
+          "seq_count": 11145,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Papio"
+          },
+          "common_name": "olive baboon",
+          "published": "2026-04-03T23:42:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panubis.NCBI.Panubis10/BSgenome.Panubis.NCBI.Panubis10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Peromyscus californicus insignis",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -4559,6 +4607,38 @@
       "common_name": "sooty mangabey",
       "published": "2026-04-03T23:42:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Catys.NCBI.Caty10/BSgenome.Catys.NCBI.Caty10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Panubis.NCBI.Panubis10",
+      "version": "1.0.0",
+      "organism": "Papio anubis",
+      "assembly": "Panubis1.0",
+      "provider": "NCBI",
+      "accession": "GCF_008728515.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008728515.1/",
+      "file_name": "BSgenome.Panubis.NCBI.Panubis10_1.0.0.tar.gz",
+      "size": 739862668,
+      "seq_ids": [
+        "NC_044976.1",
+        "NC_044977.1",
+        "NC_044978.1",
+        "NC_044979.1",
+        "NC_044980.1"
+      ],
+      "seq_count": 11145,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Papio"
+      },
+      "common_name": "olive baboon",
+      "published": "2026-04-03T23:42:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panubis.NCBI.Panubis10/BSgenome.Panubis.NCBI.Panubis10_1.0.0.tar.gz"
     }
   ]
 }
