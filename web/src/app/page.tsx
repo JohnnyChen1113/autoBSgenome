@@ -512,6 +512,16 @@ export default function Home() {
             Paste an NCBI accession or Ensembl URL, review auto-filled metadata,
             and download a ready-to-install BSgenome package. No local R setup required.
           </p>
+          <p className="mt-3">
+            <a
+              href="https://johnnychen1113.github.io/autoBSgenome"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline font-medium"
+            >
+              Browse all available packages &rarr;
+            </a>
+          </p>
         </section>
 
         {/* How it works */}
@@ -1122,7 +1132,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Building Package...</CardTitle>
                 <CardDescription>
-                  Fungi/bacteria: ~45s &middot; Plants/insects: ~1–2 min &middot; Mammals: ~3–5 min. You can keep this tab open.
+                  Build time depends on genome size: &lt;100 MB: ~45s &middot; 100–500 MB: ~1–2 min &middot; &gt;1 GB: ~3–5 min
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 py-8">
