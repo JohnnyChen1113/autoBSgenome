@@ -141,3 +141,7 @@ NeedsCompilation: no
 Package: BSgenome.Mlucifugus.NCBI.Myoluc20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Palecto.NCBI.ASM32557v1
+Version: 1.0.0
+NeedsCompilation: no

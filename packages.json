@@ -664,6 +664,25 @@
       ]
     },
     {
+      "organism": "Pteropus alecto",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Palecto.NCBI.ASM32557v1",
+          "version": "1.0.0",
+          "organism": "Pteropus alecto",
+          "assembly": "ASM32557v1",
+          "provider": "NCBI",
+          "accession": "",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+          "file_name": "BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz",
+          "size": 513546758,
+          "published": "2026-04-03T20:54:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palecto.NCBI.ASM32557v1/BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Saccharomyces cerevisiae",
       "common_name": "",
       "builds": [
@@ -1277,6 +1296,19 @@
       "size": 515894987,
       "published": "2026-04-03T20:54:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.NCBI.Myoluc20/BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Palecto.NCBI.ASM32557v1",
+      "version": "1.0.0",
+      "organism": "Pteropus alecto",
+      "assembly": "ASM32557v1",
+      "provider": "NCBI",
+      "accession": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+      "file_name": "BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz",
+      "size": 513546758,
+      "published": "2026-04-03T20:54:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palecto.NCBI.ASM32557v1/BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz"
     }
   ]
 }
