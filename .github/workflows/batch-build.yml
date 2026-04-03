@@ -36,9 +36,43 @@ jobs:
             exit 0
           fi
 
-          BATCH_SIZE="${{ inputs.batch_size || '5' }}"
+          BATCH_SIZE="${{ inputs.batch_size || '15' }}"
 
-          # Extract next N pending items
+          # First: mark 'building' items as 'done' if their pkg- release exists
+          python3 -c "
+          import json, subprocess
+          with open('build-queue.json') as f:
+              queue = json.load(f)
+
+          # Get existing pkg- releases
+          result = subprocess.run(
+              ['gh', 'release', 'list', '--repo', '${{ github.repository }}', '--limit', '500', '--json', 'tagName'],
+              capture_output=True, text=True
+          )
+          existing_tags = set()
+          try:
+              existing_tags = {r['tagName'] for r in json.loads(result.stdout)}
+          except:
+              pass
+
+          updated = 0
+          for item in queue:
+              if item['status'] in ('building', 'pending'):
+                  parts = item['organism'].split()
+                  abbrev = parts[0][0].upper() + parts[1].lower() if len(parts) >= 2 else parts[0]
+                  assembly = item['assembly'].replace('.','').replace(' ','').replace('-','').replace('_','')
+                  pkg_tag = f'pkg-BSgenome.{abbrev}.NCBI.{assembly}'
+                  if pkg_tag in existing_tags:
+                      item['status'] = 'done'
+                      updated += 1
+
+          if updated > 0:
+              with open('build-queue.json', 'w') as f:
+                  json.dump(queue, f)
+              print(f'Marked {updated} items as done')
+          " || true
+
+          # Then: pick next batch
           python3 -c "
           import json
           with open('build-queue.json') as f:
