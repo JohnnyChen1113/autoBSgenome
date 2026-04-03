@@ -170,3 +170,4 @@ cython_debug/
 .superpowers/
 web/node_modules/
 web/.next/
+worker/node_modules/

@@ -1,0 +1,26 @@
+name: Cleanup Old Releases
+
+on:
+  schedule:
+    - cron: "0 4 * * 0" # Every Sunday at 4am UTC
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete releases older than 14 days
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CUTOFF=$(date -d '14 days ago' --iso-8601=seconds)
+          echo "Deleting releases created before ${CUTOFF}..."
+
+          gh api repos/${{ github.repository }}/releases --paginate --jq '.[] | select(.tag_name | startswith("build-")) | "\(.id) \(.tag_name) \(.created_at)"' | while read -r ID TAG CREATED; do
+            if [[ "${CREATED}" < "${CUTOFF}" ]]; then
+              echo "Deleting: ${TAG} (created ${CREATED})"
+              gh release delete "${TAG}" --yes --cleanup-tag 2>/dev/null || true
+            fi
+          done
+
+          echo "Cleanup complete."

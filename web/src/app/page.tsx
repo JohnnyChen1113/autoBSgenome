@@ -235,13 +235,102 @@ export default function Home() {
     }
   };
 
+  const [jobId, setJobId] = useState("");
+  const [buildError, setBuildError] = useState("");
+  const [downloadUrl, setDownloadUrl] = useState("");
+  const [fileName, setFileName] = useState("");
+  const [fileSize, setFileSize] = useState(0);
+  const [buildStep, setBuildStep] = useState(0); // 0-4 progress steps
+
+  const WORKER_API = "https://autobsgenome-api.dailylifecjh.workers.dev";
+
   const handleBuild = async () => {
     setStep("building");
-    // TODO: Call Worker API to trigger GitHub Actions build
-    // For now, simulate a build with a timeout
-    setTimeout(() => {
-      setStep("result");
-    }, 3000);
+    setBuildError("");
+    setBuildStep(0);
+
+    try {
+      // Trigger build via Worker API
+      const res = await fetch(`${WORKER_API}/api/build`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          package_name: form.packageName,
+          organism: form.organism,
+          common_name: form.commonName,
+          genome: form.assembly,
+          provider: form.provider,
+          release_date: form.releaseDate,
+          version: form.version,
+          circ_seqs: form.circSeqs,
+          title: form.title,
+          description: form.description,
+          source_url: form.sourceUrl,
+          accession: accessionInput,
+          fasta_source: form.fastaSource,
+          data_source: dataSource,
+        }),
+      });
+
+      const data = await res.json() as { job_id?: string; error?: string };
+      if (!res.ok || !data.job_id) {
+        throw new Error(data.error ?? "Failed to start build");
+      }
+
+      setJobId(data.job_id);
+      setBuildStep(1);
+
+      // Poll for status
+      pollBuildStatus(data.job_id);
+    } catch (e) {
+      setBuildError(e instanceof Error ? e.message : "Build request failed");
+      setStep("review");
+    }
+  };
+
+  const pollBuildStatus = (id: string) => {
+    let elapsed = 0;
+    const interval = setInterval(async () => {
+      elapsed += 5;
+
+      // Animate build steps based on elapsed time
+      if (elapsed > 10) setBuildStep(1);
+      if (elapsed > 30) setBuildStep(2);
+      if (elapsed > 60) setBuildStep(3);
+
+      try {
+        const res = await fetch(`${WORKER_API}/api/status/${id}`);
+        const data = await res.json() as {
+          status: string;
+          download_url?: string;
+          file_name?: string;
+          file_size?: number;
+          message?: string;
+        };
+
+        if (data.status === "complete") {
+          clearInterval(interval);
+          setBuildStep(4);
+          setDownloadUrl(data.download_url ?? "");
+          setFileName(data.file_name ?? "");
+          setFileSize(data.file_size ?? 0);
+          setStep("result");
+        } else if (data.status === "failed") {
+          clearInterval(interval);
+          setBuildError(data.message ?? "Build failed");
+          setStep("review");
+        }
+      } catch {
+        // Network error, keep polling
+      }
+
+      // Timeout after 20 minutes
+      if (elapsed > 1200) {
+        clearInterval(interval);
+        setBuildError("Build timed out. Please try again.");
+        setStep("review");
+      }
+    }, 5000);
   };
 
   return (
@@ -458,6 +547,13 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent className="space-y-5">
+                {/* Build error */}
+                {buildError && (
+                  <div className="bg-destructive/10 border border-destructive/20 text-destructive rounded-md px-4 py-3 text-sm">
+                    <strong>Build failed:</strong> {buildError}
+                  </div>
+                )}
+
                 {/* GCA → GCF suggestion */}
                 {gcfSuggestion && (
                   <div className="bg-amber-50 border border-amber-200 rounded-md px-4 py-3 text-sm">
@@ -804,37 +900,47 @@ export default function Home() {
               <CardContent className="space-y-6 py-8">
                 <div className="space-y-4">
                   {[
-                    { label: "Downloading FASTA from NCBI", done: true },
-                    { label: "Converting to 2bit format", done: true },
-                    { label: "Building R package", done: false, active: true },
-                    { label: "Uploading to repository", done: false },
-                  ].map((s, i) => (
-                    <div key={i} className="flex items-center gap-3">
-                      <div
-                        className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                          s.done
-                            ? "bg-[--success] text-white"
-                            : s.active
-                            ? "bg-primary text-primary-foreground animate-pulse"
-                            : "bg-secondary text-muted-foreground"
-                        }`}
-                      >
-                        {s.done ? "✓" : i + 1}
+                    "Queuing build on GitHub Actions",
+                    "Downloading FASTA",
+                    "Converting to 2bit format",
+                    "Building R package",
+                    "Uploading to repository",
+                  ].map((label, i) => {
+                    const done = i < buildStep;
+                    const active = i === buildStep;
+                    return (
+                      <div key={i} className="flex items-center gap-3">
+                        <div
+                          className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
+                            done
+                              ? "bg-[--success] text-white"
+                              : active
+                              ? "bg-primary text-primary-foreground animate-pulse"
+                              : "bg-secondary text-muted-foreground"
+                          }`}
+                        >
+                          {done ? "✓" : i + 1}
+                        </div>
+                        <span
+                          className={
+                            done
+                              ? "text-muted-foreground line-through"
+                              : active
+                              ? "text-foreground font-medium"
+                              : "text-muted-foreground"
+                          }
+                        >
+                          {label}
+                        </span>
                       </div>
-                      <span
-                        className={
-                          s.done
-                            ? "text-muted-foreground"
-                            : s.active
-                            ? "text-foreground font-medium"
-                            : "text-muted-foreground"
-                        }
-                      >
-                        {s.label}
-                      </span>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
+                {jobId && (
+                  <p className="text-sm text-muted-foreground text-center">
+                    Job ID: <code className="font-mono">{jobId}</code>
+                  </p>
+                )}
               </CardContent>
             </Card>
           )}
@@ -850,14 +956,31 @@ export default function Home() {
                   Package Built Successfully
                 </CardTitle>
                 <CardDescription>
-                  {form.packageName}_
-                  {form.version}.tar.gz
+                  {fileName || `${form.packageName}_${form.version}.tar.gz`}
+                  {fileSize > 0 && ` · ${(fileSize / 1024 / 1024).toFixed(1)} MB`}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-5">
                 <div className="flex gap-3 justify-center">
-                  <Button size="lg">Download .tar.gz</Button>
-                  <Button variant="outline" size="lg">
+                  {downloadUrl ? (
+                    <a
+                      href={downloadUrl}
+                      download
+                      className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-2.5 text-base font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+                    >
+                      Download .tar.gz
+                    </a>
+                  ) : (
+                    <Button size="lg" disabled>Download .tar.gz</Button>
+                  )}
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    onClick={() => {
+                      const cmd = `install.packages("${downloadUrl}", repos = NULL, type = "source")`;
+                      navigator.clipboard.writeText(cmd);
+                    }}
+                  >
                     Copy Install Command
                   </Button>
                 </div>
@@ -871,8 +994,7 @@ export default function Home() {
                     <br />
                     &nbsp;&nbsp;
                     <span className="text-primary">
-                      &quot;https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-xxx/
-                      {form.packageName}_{form.version}.tar.gz&quot;
+                      &quot;{downloadUrl || "loading..."}&quot;
                     </span>
                     ,
                     <br />
@@ -882,27 +1004,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <Label>Or from the temporary repository:</Label>
-                  <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
-                    install.packages(
-                    <br />
-                    &nbsp;&nbsp;
-                    <span className="text-primary">
-                      &quot;{form.packageName}&quot;
-                    </span>
-                    ,
-                    <br />
-                    &nbsp;&nbsp;repos ={" "}
-                    <span className="text-primary">
-                      &quot;https://autobsgenome.pages.dev/repo&quot;
-                    </span>
-                    <br />)
-                  </div>
-                </div>
-
                 <div className="bg-accent border-l-[3px] border-primary rounded-r-md px-4 py-3 text-sm text-muted-foreground">
-                  This package will remain in the temporary repository for{" "}
+                  This package will remain available for{" "}
                   <strong className="text-foreground">14 days</strong>. Download
                   a local copy for permanent use.
                 </div>

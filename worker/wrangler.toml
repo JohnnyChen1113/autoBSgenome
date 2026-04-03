@@ -1,0 +1,7 @@
+name = "autobsgenome-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+GITHUB_REPO = "JohnnyChen1113/autoBSgenome"
+ALLOWED_ORIGIN = "https://autobsgenome.pages.dev"

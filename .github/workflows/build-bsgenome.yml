@@ -1,0 +1,224 @@
+name: Build BSgenome Package
+
+on:
+  repository_dispatch:
+    types: [build_bsgenome]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Parse build parameters
+        id: params
+        run: |
+          echo "job_id=${{ github.event.client_payload.job_id }}" >> $GITHUB_OUTPUT
+          echo "package_name=${{ github.event.client_payload.package_name }}" >> $GITHUB_OUTPUT
+          echo "organism=${{ github.event.client_payload.organism }}" >> $GITHUB_OUTPUT
+          echo "common_name=${{ github.event.client_payload.common_name }}" >> $GITHUB_OUTPUT
+          echo "genome=${{ github.event.client_payload.genome }}" >> $GITHUB_OUTPUT
+          echo "provider=${{ github.event.client_payload.provider }}" >> $GITHUB_OUTPUT
+          echo "release_date=${{ github.event.client_payload.release_date }}" >> $GITHUB_OUTPUT
+          echo "version=${{ github.event.client_payload.version }}" >> $GITHUB_OUTPUT
+          echo "circ_seqs=${{ github.event.client_payload.circ_seqs }}" >> $GITHUB_OUTPUT
+          echo "title=${{ github.event.client_payload.title }}" >> $GITHUB_OUTPUT
+          echo "source_url=${{ github.event.client_payload.source_url }}" >> $GITHUB_OUTPUT
+          echo "accession=${{ github.event.client_payload.accession }}" >> $GITHUB_OUTPUT
+          echo "fasta_source=${{ github.event.client_payload.fasta_source }}" >> $GITHUB_OUTPUT
+          echo "data_source=${{ github.event.client_payload.data_source }}" >> $GITHUB_OUTPUT
+
+      - name: Download FASTA from NCBI
+        if: steps.params.outputs.data_source == 'ncbi'
+        run: |
+          ACCESSION="${{ steps.params.outputs.accession }}"
+          echo "Downloading FASTA for ${ACCESSION} from NCBI..."
+          # Use NCBI datasets CLI to download
+          curl -sL https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/v2/linux-amd64/datasets > datasets
+          chmod +x datasets
+          ./datasets download genome accession "${ACCESSION}" --include genome --filename genome.zip
+          unzip -o genome.zip
+          # Find the FASTA file
+          FASTA=$(find ncbi_dataset/data -name "*.fna" | head -1)
+          if [ -z "$FASTA" ]; then
+            echo "ERROR: No FASTA file found in download"
+            exit 1
+          fi
+          cp "$FASTA" genome.fa
+          echo "fasta_file=genome.fa" >> $GITHUB_OUTPUT
+          ls -lh genome.fa
+
+      - name: Download FASTA from Ensembl
+        if: steps.params.outputs.data_source == 'ensembl'
+        run: |
+          ACCESSION="${{ steps.params.outputs.accession }}"
+          ORGANISM="${{ steps.params.outputs.organism }}"
+          GENOME="${{ steps.params.outputs.genome }}"
+
+          # Convert organism to ensembl format: "Danio rerio" -> "danio_rerio"
+          SPECIES=$(echo "$ORGANISM" | tr '[:upper:]' '[:lower:]' | tr ' ' '_')
+          echo "Downloading FASTA for ${SPECIES} from Ensembl..."
+
+          # Get current Ensembl release number
+          RELEASE=$(curl -s "https://rest.ensembl.org/info/data/?content-type=application/json" | python3 -c "import json,sys; print(json.load(sys.stdin)['releases'][0])")
+          echo "Ensembl release: ${RELEASE}"
+
+          # Download top-level DNA FASTA
+          URL="https://ftp.ensembl.org/pub/release-${RELEASE}/fasta/${SPECIES}/dna/${SPECIES^}.${GENOME}.dna.toplevel.fa.gz"
+          echo "Trying: ${URL}"
+          if ! curl -sfL -o genome.fa.gz "${URL}"; then
+            # Fallback: try with capitalized species name
+            SPECIES_CAP="$(echo ${SPECIES} | sed 's/\b\(.\)/\u\1/')"
+            URL="https://ftp.ensembl.org/pub/release-${RELEASE}/fasta/${SPECIES}/dna/${SPECIES_CAP}.${GENOME}.dna.toplevel.fa.gz"
+            echo "Fallback: ${URL}"
+            curl -sfL -o genome.fa.gz "${URL}"
+          fi
+          gunzip genome.fa.gz
+          ls -lh genome.fa
+
+      - name: Install faToTwoBit
+        run: |
+          curl -sL https://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit -o faToTwoBit
+          chmod +x faToTwoBit
+
+      - name: Convert FASTA to 2bit
+        run: |
+          ./faToTwoBit genome.fa genome.2bit
+          ls -lh genome.2bit
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+
+      - name: Cache R packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/R
+          key: r-pkgs-${{ runner.os }}-${{ hashFiles('.github/workflows/build-bsgenome.yml') }}
+          restore-keys: r-pkgs-${{ runner.os }}-
+
+      - name: Install R dependencies
+        run: |
+          Rscript -e '
+            if (!requireNamespace("BiocManager", quietly = TRUE))
+              install.packages("BiocManager", repos = "https://cloud.r-project.org")
+            BiocManager::install(c("BSgenome", "BSgenomeForge"), update = FALSE, ask = FALSE)
+          '
+
+      - name: Generate seed file
+        run: |
+          PACKAGE="${{ steps.params.outputs.package_name }}"
+          TITLE="${{ steps.params.outputs.title }}"
+          ORGANISM="${{ steps.params.outputs.organism }}"
+          COMMON="${{ steps.params.outputs.common_name }}"
+          GENOME="${{ steps.params.outputs.genome }}"
+          PROVIDER="${{ steps.params.outputs.provider }}"
+          RELEASE_DATE="${{ steps.params.outputs.release_date }}"
+          VERSION="${{ steps.params.outputs.version }}"
+          CIRC="${{ steps.params.outputs.circ_seqs }}"
+          SOURCE_URL="${{ steps.params.outputs.source_url }}"
+
+          # Extract BSgenomeObjname (part 2 of package name)
+          OBJNAME=$(echo "$PACKAGE" | cut -d. -f2)
+
+          # Format circ_seqs for R
+          if [ "$CIRC" = "character(0)" ] || [ -z "$CIRC" ]; then
+            CIRC_R="character(0)"
+          else
+            # Convert "MT, Pltd" -> c("MT", "Pltd")
+            CIRC_R="c($(echo "$CIRC" | sed 's/[[:space:]]*,[[:space:]]*/", "/g' | sed 's/^/"/' | sed 's/$/"/'))"
+          fi
+
+          cat > "${PACKAGE}.seed" << SEED
+          Package: ${PACKAGE}
+          Title: ${TITLE}
+          Description: Full genome sequences for ${ORGANISM} (${COMMON}) as provided by ${PROVIDER} (${GENOME}, ${RELEASE_DATE}) and stored in Biostrings objects.
+          Version: ${VERSION}
+          organism: ${ORGANISM}
+          common_name: ${COMMON}
+          genome: ${GENOME}
+          provider: ${PROVIDER}
+          release_date: ${RELEASE_DATE}
+          source_url: ${SOURCE_URL}
+          organism_biocview: $(echo "${ORGANISM}" | tr ' ' '_')
+          BSgenomeObjname: ${OBJNAME}
+          circ_seqs: ${CIRC_R}
+          seqs_srcdir: $(pwd)
+          seqfile_name: genome.2bit
+          SEED
+
+          # Remove leading whitespace from heredoc
+          sed -i 's/^          //' "${PACKAGE}.seed"
+
+          echo "=== Seed file ==="
+          cat "${PACKAGE}.seed"
+
+      - name: Build BSgenome package
+        run: |
+          PACKAGE="${{ steps.params.outputs.package_name }}"
+
+          Rscript -e "
+            suppressPackageStartupMessages(library(BSgenome))
+            tryCatch({
+              forgeBSgenomeDataPkg('${PACKAGE}.seed')
+            }, error = function(e) {
+              message('forgeBSgenomeDataPkg error: ', e\$message)
+              message('Attempting manual package creation...')
+              dir.create('./${PACKAGE}/inst/extdata/', recursive = TRUE, showWarnings = FALSE)
+              file.copy('./genome.2bit', './${PACKAGE}/inst/extdata/single_sequences.2bit')
+            })
+          "
+
+          R CMD build "${PACKAGE}"
+          ls -lh ${PACKAGE}_*.tar.gz
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          JOB_ID="${{ steps.params.outputs.job_id }}"
+          PACKAGE="${{ steps.params.outputs.package_name }}"
+          VERSION="${{ steps.params.outputs.version }}"
+          TAG="build-${JOB_ID}"
+          TARBALL="${PACKAGE}_${VERSION}.tar.gz"
+
+          # Delete existing release with same tag if any
+          gh release delete "${TAG}" --yes 2>/dev/null || true
+          git tag -d "${TAG}" 2>/dev/null || true
+          git push origin ":refs/tags/${TAG}" 2>/dev/null || true
+
+          # Create release
+          gh release create "${TAG}" \
+            "${TARBALL}" \
+            --title "${PACKAGE} ${VERSION}" \
+            --notes "Built by AutoBSgenome Web Tool.
+
+          **Package:** ${PACKAGE}
+          **Version:** ${VERSION}
+          **Organism:** ${{ steps.params.outputs.organism }}
+          **Assembly:** ${{ steps.params.outputs.genome }}
+          **Provider:** ${{ steps.params.outputs.provider }}
+
+          Install in R:
+          \`\`\`r
+          install.packages(\"$(gh api repos/${{ github.repository }}/releases/tags/${TAG} --jq '.assets[0].browser_download_url' 2>/dev/null || echo "URL_PENDING")\", repos = NULL, type = \"source\")
+          \`\`\`
+
+          > This release will be automatically cleaned up after 14 days."
+
+          echo "Release created: ${TAG}"
+
+      - name: Report failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          JOB_ID="${{ steps.params.outputs.job_id }}"
+          TAG="build-${JOB_ID}"
+
+          # Create a "failed" release so the frontend knows
+          gh release create "${TAG}" \
+            --title "Build Failed - ${JOB_ID}" \
+            --notes "BUILD_FAILED: The BSgenome package build encountered an error. Please check your input parameters and try again." \
+            2>/dev/null || true
