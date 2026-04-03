@@ -663,7 +663,7 @@ export default function Home() {
                   <div>
                     <CardTitle>Review Metadata</CardTitle>
                     <CardDescription>
-                      Auto-filled from NCBI. All fields are editable.
+                      Auto-filled from {dataSource === "ensembl" ? "Ensembl" : "NCBI"}. All fields are editable.
                     </CardDescription>
                   </div>
                   <Button
