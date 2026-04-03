@@ -186,6 +186,54 @@
       ]
     },
     {
+      "organism": "Bos indicus x Bos taurus",
+      "common_name": "hybrid cattle",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bos"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bindicus.NCBI.UOABrahman1",
+          "version": "1.0.0",
+          "organism": "Bos indicus x Bos taurus",
+          "assembly": "UOA_Brahman_1",
+          "provider": "NCBI",
+          "accession": "GCF_003369695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003369695.1/",
+          "file_name": "BSgenome.Bindicus.NCBI.UOABrahman1_1.0.0.tar.gz",
+          "size": 680053067,
+          "seq_ids": [
+            "NC_040076.1",
+            "NC_040077.1",
+            "NC_040078.1",
+            "NC_040079.1",
+            "NC_040080.1"
+          ],
+          "seq_count": 1250,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Bos"
+          },
+          "common_name": "hybrid cattle",
+          "published": "2026-04-03T23:40:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bindicus.NCBI.UOABrahman1/BSgenome.Bindicus.NCBI.UOABrahman1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Callorhinus ursinus",
       "common_name": "northern fur seal",
       "group": "vertebrate_mammalian",
@@ -3919,6 +3967,38 @@
       "common_name": "small-eared galago",
       "published": "2026-04-03T23:40:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ogarnettii.NCBI.OtoGar3/BSgenome.Ogarnettii.NCBI.OtoGar3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bindicus.NCBI.UOABrahman1",
+      "version": "1.0.0",
+      "organism": "Bos indicus x Bos taurus",
+      "assembly": "UOA_Brahman_1",
+      "provider": "NCBI",
+      "accession": "GCF_003369695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003369695.1/",
+      "file_name": "BSgenome.Bindicus.NCBI.UOABrahman1_1.0.0.tar.gz",
+      "size": 680053067,
+      "seq_ids": [
+        "NC_040076.1",
+        "NC_040077.1",
+        "NC_040078.1",
+        "NC_040079.1",
+        "NC_040080.1"
+      ],
+      "seq_count": 1250,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bos"
+      },
+      "common_name": "hybrid cattle",
+      "published": "2026-04-03T23:40:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bindicus.NCBI.UOABrahman1/BSgenome.Bindicus.NCBI.UOABrahman1_1.0.0.tar.gz"
     }
   ]
 }
