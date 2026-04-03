@@ -644,9 +644,9 @@ export default function Home() {
                       <button
                         type="button"
                         className="font-mono text-primary hover:underline cursor-pointer"
-                        onClick={() => setAccessionInput("GCA_000002515.2")}
+                        onClick={() => setAccessionInput("GCA_000003195.3")}
                       >
-                        GCA_000002515.2
+                        GCA_000003195.3
                       </button>
                     </p>
                   ) : (
