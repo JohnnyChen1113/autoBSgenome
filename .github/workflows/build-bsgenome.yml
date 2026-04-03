@@ -183,17 +183,26 @@ jobs:
           # Delete existing permanent release if any
           gh release delete "${PERM_TAG}" --yes --cleanup-tag 2>/dev/null || true
 
+          ACCESSION="${{ steps.params.outputs.accession }}"
+
           gh release create "${PERM_TAG}" \
             "${TARBALL}" \
             --title "${PACKAGE} ${VERSION}" \
-            --notes "**Organism:** ${ORGANISM}
-          **Assembly:** ${ASSEMBLY}
-          **Provider:** ${PROVIDER}
+            --notes "| | |
+          |---|---|
+          | **Organism** | ${ORGANISM} |
+          | **Assembly** | ${ASSEMBLY} |
+          | **Provider** | ${PROVIDER} |
+          | **Accession** | [\`${ACCESSION}\`](https://www.ncbi.nlm.nih.gov/datasets/genome/${ACCESSION}/) |
+          | **Version** | ${VERSION} |
+          | **Package** | \`${PACKAGE}\` |
 
-          Install in R:
+          **Install in R:**
           \`\`\`r
           install.packages(\"${PACKAGE}\", repos = \"https://johnnychen1113.github.io/autoBSgenome\")
           \`\`\`
+
+          > [Browse all packages](https://johnnychen1113.github.io/autoBSgenome) | [Build your own](https://autobsgenome.pages.dev)
 
           Published via [AutoBSgenome](https://autobsgenome.pages.dev)."
 
