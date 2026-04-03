@@ -169,3 +169,7 @@ NeedsCompilation: no
 Package: BSgenome.Dordii.NCBI.Dord20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mochrogaster.NCBI.MicOch10
+Version: 1.0.0
+NeedsCompilation: no

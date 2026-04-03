@@ -475,6 +475,25 @@
       ]
     },
     {
+      "organism": "Microtus ochrogaster",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Mochrogaster.NCBI.MicOch10",
+          "version": "1.0.0",
+          "organism": "Microtus ochrogaster",
+          "assembly": "MicOch1.0",
+          "provider": "NCBI",
+          "accession": "",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+          "file_name": "BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz",
+          "size": 553448484,
+          "published": "2026-04-03T20:56:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.NCBI.MicOch10/BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Miniopterus natalensis",
       "common_name": "",
       "builds": [
@@ -1501,6 +1520,19 @@
       "size": 516739502,
       "published": "2026-04-03T20:56:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.NCBI.Dord20/BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mochrogaster.NCBI.MicOch10",
+      "version": "1.0.0",
+      "organism": "Microtus ochrogaster",
+      "assembly": "MicOch1.0",
+      "provider": "NCBI",
+      "accession": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+      "file_name": "BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz",
+      "size": 553448484,
+      "published": "2026-04-03T20:56:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.NCBI.MicOch10/BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz"
     }
   ]
 }
