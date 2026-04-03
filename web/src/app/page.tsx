@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -283,6 +283,9 @@ export default function Home() {
   const [buildTotalTime, setBuildTotalTime] = useState(0);
 
   const WORKER_API = "https://autobsgenome-api.dailylifecjh.workers.dev";
+  const buildStartTimeRef = useRef(0);
+  const formRef = useRef(form);
+  formRef.current = form;
 
   // Restore build state from URL on page load
   useEffect(() => {
@@ -290,7 +293,9 @@ export default function Home() {
     const resumeJob = params.get("job");
     if (resumeJob) {
       setJobId(resumeJob);
-      setBuildStartTime(Date.now());
+      const now = Date.now();
+      setBuildStartTime(now);
+      buildStartTimeRef.current = now;
       setStep("building");
       pollBuildStatus(resumeJob);
     }
@@ -312,6 +317,7 @@ export default function Home() {
     setBuildStep(0);
     const startTime = Date.now();
     setBuildStartTime(startTime);
+    buildStartTimeRef.current = startTime;
     setBuildElapsed(0);
     setBuildTotalTime(0);
 
@@ -362,7 +368,7 @@ export default function Home() {
     let pollCount = 0;
     const interval = setInterval(async () => {
       pollCount++;
-      const elapsedSec = Math.floor((Date.now() - buildStartTime) / 1000);
+      const elapsedSec = Math.floor((Date.now() - buildStartTimeRef.current) / 1000);
 
       // Animate build steps based on elapsed time
       if (elapsedSec > 5) setBuildStep(1);
@@ -382,15 +388,15 @@ export default function Home() {
         if (data.status === "complete") {
           clearInterval(interval);
           setBuildStep(4);
-          setBuildTotalTime(Math.floor((Date.now() - buildStartTime) / 1000));
+          const totalTime = Math.floor((Date.now() - buildStartTimeRef.current) / 1000);
+          setBuildTotalTime(totalTime);
           setDownloadUrl(data.download_url ?? "");
           setFileName(data.file_name ?? "");
           setFileSize(data.file_size ?? 0);
-          const totalTime = Math.floor((Date.now() - buildStartTime) / 1000);
           const record: BuildRecord = {
             jobId: id,
-            packageName: form.packageName,
-            organism: form.organism,
+            packageName: formRef.current.packageName,
+            organism: formRef.current.organism,
             downloadUrl: data.download_url ?? "",
             buildTime: totalTime,
             timestamp: Date.now(),
