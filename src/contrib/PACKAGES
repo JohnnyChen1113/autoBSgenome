@@ -157,3 +157,7 @@ NeedsCompilation: no
 Package: BSgenome.Cferus.NCBI.BCGSACCfer10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mbrandtii.NCBI.ASM41265v1
+Version: 1.0.0
+NeedsCompilation: no

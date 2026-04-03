@@ -538,6 +538,25 @@
       ]
     },
     {
+      "organism": "Myotis brandtii",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Mbrandtii.NCBI.ASM41265v1",
+          "version": "1.0.0",
+          "organism": "Myotis brandtii",
+          "assembly": "ASM41265v1",
+          "provider": "NCBI",
+          "accession": "",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+          "file_name": "BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz",
+          "size": 521705601,
+          "published": "2026-04-03T20:55:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrandtii.NCBI.ASM41265v1/BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Myotis davidii",
       "common_name": "",
       "builds": [
@@ -1405,6 +1424,19 @@
       "size": 531968088,
       "published": "2026-04-03T20:54:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cferus.NCBI.BCGSACCfer10/BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mbrandtii.NCBI.ASM41265v1",
+      "version": "1.0.0",
+      "organism": "Myotis brandtii",
+      "assembly": "ASM41265v1",
+      "provider": "NCBI",
+      "accession": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+      "file_name": "BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz",
+      "size": 521705601,
+      "published": "2026-04-03T20:55:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrandtii.NCBI.ASM41265v1/BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz"
     }
   ]
 }
