@@ -23,7 +23,39 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "AutoBSgenome — Build BSgenome R Packages Online",
   description:
-    "Build BSgenome R packages for any organism in minutes. Paste an NCBI accession, review auto-filled metadata, and download your package.",
+    "Build BSgenome R packages for any organism in minutes. Paste an NCBI or Ensembl accession, review auto-filled metadata, and download a ready-to-install package. No local R setup required. Free and open source.",
+  keywords: [
+    "BSgenome",
+    "Bioconductor",
+    "R package",
+    "genome",
+    "NCBI",
+    "Ensembl",
+    "bioinformatics",
+    "genomics",
+    "BSgenomeForge",
+    "reference genome",
+  ],
+  authors: [{ name: "Junhao Chen", url: "https://github.com/JohnnyChen1113" }],
+  openGraph: {
+    title: "AutoBSgenome — Build BSgenome R Packages Online",
+    description:
+      "Build BSgenome R packages for any organism in under a minute. Supports NCBI and Ensembl. Free, open source, zero setup.",
+    url: "https://autobsgenome.pages.dev",
+    siteName: "AutoBSgenome",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AutoBSgenome — Build BSgenome R Packages Online",
+    description:
+      "Build BSgenome R packages for any organism in under a minute. Supports NCBI and Ensembl.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
