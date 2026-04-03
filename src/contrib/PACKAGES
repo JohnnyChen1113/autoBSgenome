@@ -22,6 +22,10 @@ Package: BSgenome.Ecuniculi.NCBI.ASM9122v2
 Version: 1.0.0
 NeedsCompilation: no
 
+Package: BSgenome.Eintestinalis.NCBI.ASM14646v1
+Version: 1.0.0
+NeedsCompilation: no
+
 Package: BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01
 Version: 1.0.0
 NeedsCompilation: no
