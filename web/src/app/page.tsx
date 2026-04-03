@@ -1370,7 +1370,7 @@ export default function Home() {
           )}
 
           {/* Recent Builds */}
-          {buildHistory.length > 0 && step === "input" && (
+          {buildHistory.filter(r => r.packageName && r.organism).length > 0 && step === "input" && (
             <Card className="mt-6">
               <CardHeader>
                 <CardTitle className="text-lg">Recent Builds</CardTitle>
@@ -1380,7 +1380,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  {buildHistory.slice(0, 5).map((record) => (
+                  {buildHistory.filter(r => r.packageName && r.organism).slice(0, 5).map((record) => (
                     <div
                       key={record.jobId}
                       className="flex items-center justify-between gap-4 p-3 rounded-md bg-secondary/50 border border-border"
