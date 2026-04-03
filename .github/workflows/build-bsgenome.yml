@@ -8,9 +8,9 @@ permissions:
   contents: write
   packages: read
 
-# Only 1 build at a time — rest queue automatically. Never cancel in-progress builds.
+# Use unique concurrency group per job_id so builds don't cancel each other
 concurrency:
-  group: bsgenome-build
+  group: build-${{ github.event.client_payload.job_id }}
   cancel-in-progress: false
 
 jobs:
