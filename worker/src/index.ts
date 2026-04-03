@@ -160,19 +160,8 @@ async function handleBuild(
     );
   }
 
-  // Check queue depth — reject if too many builds pending
+  // Check queue depth for user info (never reject — always accept)
   const queue = await getQueueInfo(env);
-  if (queue.running + queue.queued >= MAX_QUEUE_SIZE) {
-    return jsonResponse(
-      {
-        error: `Build queue is full (${queue.running} running, ${queue.queued} waiting). Please try again in a few minutes.`,
-        queue: { running: queue.running, queued: queue.queued },
-      },
-      429,
-      origin,
-      env.ALLOWED_ORIGIN
-    );
-  }
 
   // Generate job ID
   const jobId = crypto.randomUUID().slice(0, 8);
@@ -224,7 +213,11 @@ async function handleBuild(
   }
 
   return jsonResponse(
-    { job_id: jobId, status: "queued" },
+    {
+      job_id: jobId,
+      status: "queued",
+      queue_position: queue.running + queue.queued,
+    },
     200,
     origin,
     env.ALLOWED_ORIGIN

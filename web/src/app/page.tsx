@@ -382,13 +382,16 @@ export default function Home() {
         }),
       });
 
-      const data = await res.json() as { job_id?: string; error?: string };
+      const data = await res.json() as { job_id?: string; error?: string; queue_position?: number };
       if (!res.ok || !data.job_id) {
         throw new Error(data.error ?? "Failed to start build");
       }
 
       setJobId(data.job_id);
       setBuildStep(1);
+      if (data.queue_position && data.queue_position > 0) {
+        setBuildError(`Your build is #${data.queue_position + 1} in queue. It will start automatically.`);
+      }
 
       // Save jobId to URL so page refresh can resume polling
       window.history.replaceState(null, "", `?job=${data.job_id}`);
