@@ -814,6 +814,54 @@
       ]
     },
     {
+      "organism": "Lynx canadensis",
+      "common_name": "Canada lynx",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Lynx"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lcanadensis.NCBI.mLynCan4priv2",
+          "version": "1.0.0",
+          "organism": "Lynx canadensis",
+          "assembly": "mLynCan4.pri.v2",
+          "provider": "NCBI",
+          "accession": "GCF_007474595.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007474595.2/",
+          "file_name": "BSgenome.Lcanadensis.NCBI.mLynCan4priv2_1.0.0.tar.gz",
+          "size": 621534262,
+          "seq_ids": [
+            "NC_044303.2",
+            "NC_044304.2",
+            "NC_044305.1",
+            "NC_044306.2",
+            "NC_044307.1"
+          ],
+          "seq_count": 54,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Lynx"
+          },
+          "common_name": "Canada lynx",
+          "published": "2026-04-03T21:42:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcanadensis.NCBI.mLynCan4priv2/BSgenome.Lcanadensis.NCBI.mLynCan4priv2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Micromonas commoda",
       "common_name": "",
       "group": "plant",
@@ -2639,6 +2687,38 @@
       "common_name": "long-tailed chinchilla",
       "published": "2026-04-03T21:42:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanigera.NCBI.ChiLan10/BSgenome.Clanigera.NCBI.ChiLan10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lcanadensis.NCBI.mLynCan4priv2",
+      "version": "1.0.0",
+      "organism": "Lynx canadensis",
+      "assembly": "mLynCan4.pri.v2",
+      "provider": "NCBI",
+      "accession": "GCF_007474595.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007474595.2/",
+      "file_name": "BSgenome.Lcanadensis.NCBI.mLynCan4priv2_1.0.0.tar.gz",
+      "size": 621534262,
+      "seq_ids": [
+        "NC_044303.2",
+        "NC_044304.2",
+        "NC_044305.1",
+        "NC_044306.2",
+        "NC_044307.1"
+      ],
+      "seq_count": 54,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Lynx"
+      },
+      "common_name": "Canada lynx",
+      "published": "2026-04-03T21:42:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcanadensis.NCBI.mLynCan4priv2/BSgenome.Lcanadensis.NCBI.mLynCan4priv2_1.0.0.tar.gz"
     }
   ]
 }
