@@ -264,19 +264,19 @@ function renderOrgCard(org) {
       </div>
       <div class="build-list">
         ${org.builds.map(b => `
-        <div class="build-item">
-          <div class="build-info">
-            <div class="build-pkg">${b.package}</div>
-            ${strainInfo(org.organism) ? `<div style="font-size:12px;color:var(--text-muted);margin-top:1px;">Strain: ${strainInfo(org.organism)}</div>` : ''}
-            <div class="build-meta">
-              <span>${b.assembly || 'N/A'}</span>
-              <span><span class="badge ${b.provider === 'Ensembl' ? 'badge-ensembl' : 'badge-ncbi'}">${b.provider || 'NCBI'}</span></span>
-              <span>v${b.version || '1.0.0'}</span>
-              ${b.size ? `<span>${(b.size / 1024 / 1024).toFixed(1)} MB</span>` : ''}
-              ${b.accession ? `<span><a href="${b.source_url || '#'}" target="_blank" class="link-icon">${b.accession} ↗</a></span>` : ''}
-            </div>
+        <div class="build-item" style="flex-direction:column;align-items:stretch;">
+          <div class="build-pkg">${b.package}</div>
+          ${strainInfo(org.organism) ? `<div style="font-size:12px;color:var(--text-muted);margin-top:2px;">Strain: ${strainInfo(org.organism)}</div>` : ''}
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:13px;margin-top:8px;">
+            <span style="color:var(--text-muted);">Assembly:</span><span>${b.assembly || 'N/A'}</span>
+            <span style="color:var(--text-muted);">Provider:</span><span><span class="badge ${b.provider === 'Ensembl' ? 'badge-ensembl' : 'badge-ncbi'}">${b.provider || 'NCBI'}</span></span>
+            ${b.accession ? `<span style="color:var(--text-muted);">Accession:</span><span><a href="${b.source_url || 'https://www.ncbi.nlm.nih.gov/datasets/genome/' + b.accession + '/'}" target="_blank">${b.accession} ↗</a></span>` : ''}
+            <span style="color:var(--text-muted);">Version:</span><span>${b.version || '1.0.0'}</span>
+            ${b.size ? `<span style="color:var(--text-muted);">Package size:</span><span>${(b.size / 1024 / 1024).toFixed(1)} MB</span>` : ''}
+            ${b.seq_count ? `<span style="color:var(--text-muted);">Sequences:</span><span>${b.seq_count} contigs/chromosomes</span>` : ''}
+            ${b.seq_ids && b.seq_ids.length && b.seq_ids[0] ? `<span style="color:var(--text-muted);">Seq IDs:</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;">${b.seq_ids.slice(0,5).join(', ')}${b.seq_ids.length > 5 ? ', ...' : ''}</span>` : ''}
           </div>
-          <div class="build-actions">
+          <div class="build-actions" style="margin-top:10px;">
             <a class="btn btn-primary" href="${b.download_url || (BASE + '/src/contrib/' + b.file_name)}">Download</a>
             <button class="btn btn-outline" onclick="copyInstall('${b.package}')">Copy R cmd</button>
           </div>
