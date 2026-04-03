@@ -1122,7 +1122,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Building Package...</CardTitle>
                 <CardDescription>
-                  This usually takes 3–10 minutes. You can keep this tab open.
+                  Fungi/bacteria: ~45s &middot; Plants/insects: ~1–2 min &middot; Mammals: ~3–5 min. You can keep this tab open.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 py-8">
@@ -1346,8 +1346,21 @@ export default function Home() {
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f7b3f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
                       Published to Community Repository
                     </p>
-                    <p className="mt-1 text-muted-foreground">
-                      Anyone can now install with: <code className="font-mono text-foreground">install.packages(&quot;{form.packageName}&quot;, repos = &quot;https://johnnychen1113.github.io/autoBSgenome&quot;)</code>
+                    <p className="mt-2 text-muted-foreground">
+                      Anyone can now install with:
+                    </p>
+                    <code className="block mt-1 font-mono text-xs text-foreground bg-white/60 rounded p-2 overflow-x-auto">
+                      install.packages(&quot;{form.packageName}&quot;, repos = &quot;https://johnnychen1113.github.io/autoBSgenome&quot;)
+                    </code>
+                    <p className="mt-2">
+                      <a
+                        href="https://johnnychen1113.github.io/autoBSgenome"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#0f7b3f] underline font-medium"
+                      >
+                        Browse all available packages &rarr;
+                      </a>
                     </p>
                   </div>
                 )}
