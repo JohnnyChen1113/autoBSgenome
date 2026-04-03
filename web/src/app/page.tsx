@@ -319,9 +319,31 @@ export default function Home() {
       .catch(() => setQueueInfo(null));
   }, [step]);
 
-  // Celebration confetti on build success
+  const [notifyEnabled, setNotifyEnabled] = useState(false);
+
+  function playChime() {
+    try {
+      const ctx = new AudioContext();
+      const notes = [523.25, 659.25, 783.99]; // C5, E5, G5 major chord
+      notes.forEach((freq, i) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = "sine";
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0.15, ctx.currentTime + i * 0.15);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.15 + 0.8);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(ctx.currentTime + i * 0.15);
+        osc.stop(ctx.currentTime + i * 0.15 + 0.8);
+      });
+    } catch {}
+  }
+
+  // Celebration confetti + sound on build success
   useEffect(() => {
     if (step !== "result") return;
+    if (notifyEnabled) playChime();
     const duration = 2000;
     const end = Date.now() + duration;
     const frame = () => {
@@ -1213,6 +1235,23 @@ export default function Home() {
                     </p>
                   )}
                 </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setNotifyEnabled(!notifyEnabled);
+                    if (!notifyEnabled) playChime(); // Preview the sound
+                  }}
+                  className={`flex items-center gap-2 mx-auto px-4 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer ${
+                    notifyEnabled
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-secondary text-muted-foreground border border-border hover:bg-accent"
+                  }`}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                  </svg>
+                  {notifyEnabled ? "Sound notification on" : "Notify me when done"}
+                </button>
                 {buildError && step === "building" && (
                   <div className="bg-amber-50 border border-amber-200 rounded-md px-4 py-3 text-sm text-amber-800">
                     {buildError}
