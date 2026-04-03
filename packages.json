@@ -231,6 +231,54 @@
       ]
     },
     {
+      "organism": "Chinchilla lanigera",
+      "common_name": "long-tailed chinchilla",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Chinchillidae",
+        "genus": "Chinchilla"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Clanigera.NCBI.ChiLan10",
+          "version": "1.0.0",
+          "organism": "Chinchilla lanigera",
+          "assembly": "ChiLan1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000276665.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000276665.1/",
+          "file_name": "BSgenome.Clanigera.NCBI.ChiLan10_1.0.0.tar.gz",
+          "size": 599432153,
+          "seq_ids": [
+            "NW_004955402.1",
+            "NW_004955403.1",
+            "NW_004955404.1",
+            "NW_004955405.1",
+            "NW_004955406.1"
+          ],
+          "seq_count": 2839,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Chinchillidae",
+            "genus": "Chinchilla"
+          },
+          "common_name": "long-tailed chinchilla",
+          "published": "2026-04-03T21:42:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanigera.NCBI.ChiLan10/BSgenome.Clanigera.NCBI.ChiLan10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chlamydomonas reinhardtii",
       "common_name": "",
       "group": "plant",
@@ -2559,6 +2607,38 @@
       "common_name": "blue whale",
       "published": "2026-04-03T21:42:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bmusculus.NCBI.mBalMus1priv3/BSgenome.Bmusculus.NCBI.mBalMus1priv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Clanigera.NCBI.ChiLan10",
+      "version": "1.0.0",
+      "organism": "Chinchilla lanigera",
+      "assembly": "ChiLan1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000276665.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000276665.1/",
+      "file_name": "BSgenome.Clanigera.NCBI.ChiLan10_1.0.0.tar.gz",
+      "size": 599432153,
+      "seq_ids": [
+        "NW_004955402.1",
+        "NW_004955403.1",
+        "NW_004955404.1",
+        "NW_004955405.1",
+        "NW_004955406.1"
+      ],
+      "seq_count": 2839,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Chinchillidae",
+        "genus": "Chinchilla"
+      },
+      "common_name": "long-tailed chinchilla",
+      "published": "2026-04-03T21:42:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanigera.NCBI.ChiLan10/BSgenome.Clanigera.NCBI.ChiLan10_1.0.0.tar.gz"
     }
   ]
 }
