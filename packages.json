@@ -2439,6 +2439,54 @@
       ]
     },
     {
+      "organism": "Sapajus apella",
+      "common_name": "tufted capuchin",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cebidae",
+        "genus": "Sapajus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sapella.NCBI.GSCmonkey10",
+          "version": "1.0.0",
+          "organism": "Sapajus apella",
+          "assembly": "GSC_monkey_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_009761245.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009761245.1/",
+          "file_name": "BSgenome.Sapella.NCBI.GSCmonkey10_1.0.0.tar.gz",
+          "size": 695121122,
+          "seq_ids": [
+            "NW_022436941.1",
+            "NW_022436942.1",
+            "NW_022436943.1",
+            "NW_022436944.1",
+            "NW_022436945.1"
+          ],
+          "seq_count": 17902,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cebidae",
+            "genus": "Sapajus"
+          },
+          "common_name": "tufted capuchin",
+          "published": "2026-04-03T23:41:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sapella.NCBI.GSCmonkey10/BSgenome.Sapella.NCBI.GSCmonkey10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sorghum bicolor",
       "common_name": "sorghum",
       "group": "plant",
@@ -4239,6 +4287,38 @@
       "common_name": "",
       "published": "2026-04-03T23:41:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbison.NCBI.BisonUMD10/BSgenome.Bbison.NCBI.BisonUMD10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sapella.NCBI.GSCmonkey10",
+      "version": "1.0.0",
+      "organism": "Sapajus apella",
+      "assembly": "GSC_monkey_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_009761245.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009761245.1/",
+      "file_name": "BSgenome.Sapella.NCBI.GSCmonkey10_1.0.0.tar.gz",
+      "size": 695121122,
+      "seq_ids": [
+        "NW_022436941.1",
+        "NW_022436942.1",
+        "NW_022436943.1",
+        "NW_022436944.1",
+        "NW_022436945.1"
+      ],
+      "seq_count": 17902,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cebidae",
+        "genus": "Sapajus"
+      },
+      "common_name": "tufted capuchin",
+      "published": "2026-04-03T23:41:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sapella.NCBI.GSCmonkey10/BSgenome.Sapella.NCBI.GSCmonkey10_1.0.0.tar.gz"
     }
   ]
 }

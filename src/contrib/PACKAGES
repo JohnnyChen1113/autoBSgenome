@@ -305,3 +305,7 @@ NeedsCompilation: no
 Package: BSgenome.Bbison.NCBI.BisonUMD10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sapella.NCBI.GSCmonkey10
+Version: 1.0.0
+NeedsCompilation: no
