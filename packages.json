@@ -82,6 +82,25 @@
       ]
     },
     {
+      "organism": "Camelus ferus",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Cferus.NCBI.BCGSACCfer10",
+          "version": "1.0.0",
+          "organism": "Camelus ferus",
+          "assembly": "BCGSAC_Cfer_1.0",
+          "provider": "NCBI",
+          "accession": "",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+          "file_name": "BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz",
+          "size": 531968088,
+          "published": "2026-04-03T20:54:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cferus.NCBI.BCGSACCfer10/BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Capsella rubella",
       "common_name": "",
       "builds": [
@@ -1373,6 +1392,19 @@
       "size": 498507770,
       "published": "2026-04-03T20:54:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdavidii.NCBI.ASM32734v1/BSgenome.Mdavidii.NCBI.ASM32734v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cferus.NCBI.BCGSACCfer10",
+      "version": "1.0.0",
+      "organism": "Camelus ferus",
+      "assembly": "BCGSAC_Cfer_1.0",
+      "provider": "NCBI",
+      "accession": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+      "file_name": "BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz",
+      "size": 531968088,
+      "published": "2026-04-03T20:54:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cferus.NCBI.BCGSACCfer10/BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz"
     }
   ]
 }
