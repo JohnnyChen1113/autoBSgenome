@@ -14,6 +14,10 @@ Package: BSgenome.Ndisplodere.NCBI.ASM164239v1
 Version: 1.0.0
 NeedsCompilation: no
 
+Package: BSgenome.Ocolligata.NCBI.ASM80326v1
+Version: 1.0.0
+NeedsCompilation: no
+
 Package: BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01
 Version: 1.0.0
 NeedsCompilation: no

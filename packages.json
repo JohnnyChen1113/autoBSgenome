@@ -44,6 +44,17 @@
     "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ndisplodere.NCBI.ASM164239v1/BSgenome.Ndisplodere.NCBI.ASM164239v1_1.0.0.tar.gz"
   },
   {
+    "package": "BSgenome.Ocolligata.NCBI.ASM80326v1",
+    "version": "1.0.0",
+    "organism": "",
+    "assembly": "",
+    "provider": "NCBI",
+    "file_name": "BSgenome.Ocolligata.NCBI.ASM80326v1_1.0.0.tar.gz",
+    "size": 0,
+    "published": "2026-04-03T19:34:27Z",
+    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.NCBI.ASM80326v1/BSgenome.Ocolligata.NCBI.ASM80326v1_1.0.0.tar.gz"
+  },
+  {
     "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01",
     "version": "1.0.0",
     "organism": "Aspergillus luchuensis",
