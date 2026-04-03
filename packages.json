@@ -1252,6 +1252,54 @@
       ]
     },
     {
+      "organism": "Neomonachus schauinslandi",
+      "common_name": "Hawaiian monk seal",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Phocidae",
+        "genus": "Neomonachus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nschauinslandi.NCBI.ASM220157v2",
+          "version": "1.0.0",
+          "organism": "Neomonachus schauinslandi",
+          "assembly": "ASM220157v2",
+          "provider": "NCBI",
+          "accession": "GCF_002201575.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002201575.2/",
+          "file_name": "BSgenome.Nschauinslandi.NCBI.ASM220157v2_1.0.0.tar.gz",
+          "size": 614139345,
+          "seq_ids": [
+            "NC_058403.1",
+            "NC_058404.1",
+            "NC_058405.1",
+            "NC_058406.1",
+            "NC_058407.1"
+          ],
+          "seq_count": 8094,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Phocidae",
+            "genus": "Neomonachus"
+          },
+          "common_name": "Hawaiian monk seal",
+          "published": "2026-04-03T22:39:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nschauinslandi.NCBI.ASM220157v2/BSgenome.Nschauinslandi.NCBI.ASM220157v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Neophocaena asiaeorientalis asiaeorientalis",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -2799,6 +2847,38 @@
       "common_name": "",
       "published": "2026-04-03T22:39:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsurdaster.NCBI.NIHTR10/BSgenome.Gsurdaster.NCBI.NIHTR10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nschauinslandi.NCBI.ASM220157v2",
+      "version": "1.0.0",
+      "organism": "Neomonachus schauinslandi",
+      "assembly": "ASM220157v2",
+      "provider": "NCBI",
+      "accession": "GCF_002201575.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002201575.2/",
+      "file_name": "BSgenome.Nschauinslandi.NCBI.ASM220157v2_1.0.0.tar.gz",
+      "size": 614139345,
+      "seq_ids": [
+        "NC_058403.1",
+        "NC_058404.1",
+        "NC_058405.1",
+        "NC_058406.1",
+        "NC_058407.1"
+      ],
+      "seq_count": 8094,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Phocidae",
+        "genus": "Neomonachus"
+      },
+      "common_name": "Hawaiian monk seal",
+      "published": "2026-04-03T22:39:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nschauinslandi.NCBI.ASM220157v2/BSgenome.Nschauinslandi.NCBI.ASM220157v2_1.0.0.tar.gz"
     }
   ]
 }
