@@ -1,6 +1,54 @@
 {
   "organisms": [
     {
+      "organism": "Ailuropoda melanoleuca",
+      "common_name": "giant panda",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ursidae",
+        "genus": "Ailuropoda"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Amelanoleuca.NCBI.ASM200744v3",
+          "version": "1.0.0",
+          "organism": "Ailuropoda melanoleuca",
+          "assembly": "ASM200744v3",
+          "provider": "NCBI",
+          "accession": "GCF_002007445.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002007445.2/",
+          "file_name": "BSgenome.Amelanoleuca.NCBI.ASM200744v3_1.0.0.tar.gz",
+          "size": 624671285,
+          "seq_ids": [
+            "NC_048218.1",
+            "NC_048219.1",
+            "NC_048220.1",
+            "NC_048221.1",
+            "NC_048222.1"
+          ],
+          "seq_count": 73514,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Ursidae",
+            "genus": "Ailuropoda"
+          },
+          "common_name": "giant panda",
+          "published": "2026-04-03T22:40:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amelanoleuca.NCBI.ASM200744v3/BSgenome.Amelanoleuca.NCBI.ASM200744v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Anarrhichthys ocellatus",
       "common_name": "wolf-eel",
       "group": "vertebrate_other",
@@ -3039,6 +3087,38 @@
       "common_name": "Yangtze River dolphin",
       "published": "2026-04-03T22:40:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11/BSgenome.Lvexillifer.NCBI.Lipotesvexilliferv11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Amelanoleuca.NCBI.ASM200744v3",
+      "version": "1.0.0",
+      "organism": "Ailuropoda melanoleuca",
+      "assembly": "ASM200744v3",
+      "provider": "NCBI",
+      "accession": "GCF_002007445.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002007445.2/",
+      "file_name": "BSgenome.Amelanoleuca.NCBI.ASM200744v3_1.0.0.tar.gz",
+      "size": 624671285,
+      "seq_ids": [
+        "NC_048218.1",
+        "NC_048219.1",
+        "NC_048220.1",
+        "NC_048221.1",
+        "NC_048222.1"
+      ],
+      "seq_count": 73514,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ursidae",
+        "genus": "Ailuropoda"
+      },
+      "common_name": "giant panda",
+      "published": "2026-04-03T22:40:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amelanoleuca.NCBI.ASM200744v3/BSgenome.Amelanoleuca.NCBI.ASM200744v3_1.0.0.tar.gz"
     }
   ]
 }
