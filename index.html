@@ -84,6 +84,9 @@
   .btn-outline:hover { border-color: var(--primary); color: var(--primary); text-decoration: none; }
   .link-icon { font-size: 12px; }
 
+  .group-section { margin-bottom: 32px; }
+  .group-title { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary); }
+  .group-count { font-size: 14px; font-weight: 400; color: var(--text-muted); }
   .empty { text-align: center; padding: 48px 0; color: var(--text-muted); }
   footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 48px; text-align: center; font-size: 13px; color: var(--text-muted); }
 
@@ -199,10 +202,51 @@ function renderOrganisms(organisms, flat) {
     return;
   }
 
-  // Sort organisms alphabetically
-  organisms.sort((a, b) => a.organism.localeCompare(b.organism));
+  // Group by kingdom
+  const groupLabels = {
+    'vertebrate_mammalian': { emoji: '', label: 'Mammals' },
+    'vertebrate_other': { emoji: '', label: 'Vertebrates (other)' },
+    'invertebrate': { emoji: '', label: 'Invertebrates' },
+    'plant': { emoji: '', label: 'Plants & Algae' },
+    'fungi': { emoji: '', label: 'Fungi & Microsporidia' },
+    'protozoa': { emoji: '', label: 'Protozoa' },
+    'bacteria': { emoji: '', label: 'Bacteria' },
+    'archaea': { emoji: '', label: 'Archaea' },
+    'other': { emoji: '', label: 'Other' },
+  };
+  const groupOrder = ['vertebrate_mammalian', 'vertebrate_other', 'invertebrate', 'plant', 'fungi', 'protozoa', 'bacteria', 'archaea', 'other'];
 
-  list.innerHTML = organisms.map((org, idx) => {
+  const grouped = {};
+  organisms.forEach(org => {
+    const g = org.group || 'other';
+    if (!grouped[g]) grouped[g] = [];
+    grouped[g].push(org);
+  });
+
+  // Sort within groups
+  Object.values(grouped).forEach(arr => arr.sort((a, b) => a.organism.localeCompare(b.organism)));
+
+  let html = '';
+  for (const g of groupOrder) {
+    if (!grouped[g] || grouped[g].length === 0) continue;
+    const info = groupLabels[g] || { emoji: '', label: g };
+    html += `<div class="group-section">
+      <h2 class="group-title">${info.label} <span class="group-count">(${grouped[g].length})</span></h2>
+    `;
+    html += grouped[g].map(org => renderOrgCard(org)).join('');
+    html += `</div>`;
+  }
+
+  list.innerHTML = html;
+
+  // Auto-expand all if few organisms total
+  if (organisms.length <= 10) {
+    document.querySelectorAll('.build-list').forEach(bl => bl.classList.add('open'));
+    document.querySelectorAll('.chevron').forEach(c => c.classList.add('open'));
+  }
+}
+
+function renderOrgCard(org) {
     const searchText = [org.organism, org.common_name, ...org.builds.map(b => b.package + ' ' + b.assembly + ' ' + b.accession)].join(' ').toLowerCase();
     const buildCount = org.builds.length;
 
@@ -218,7 +262,7 @@ function renderOrganisms(organisms, flat) {
           <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
       </div>
-      <div class="build-list${organisms.length <= 5 ? ' open' : ''}">
+      <div class="build-list">
         ${org.builds.map(b => `
         <div class="build-item">
           <div class="build-info">
@@ -241,12 +285,6 @@ function renderOrganisms(organisms, flat) {
       </div>
     </div>
     `;
-  }).join('');
-
-  // Auto-open all if few organisms
-  if (organisms.length <= 5) {
-    document.querySelectorAll('.chevron').forEach(c => c.classList.add('open'));
-  }
 }
 
 function speciesName(fullName) {
