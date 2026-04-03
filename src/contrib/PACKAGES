@@ -257,3 +257,7 @@ NeedsCompilation: no
 Package: BSgenome.Cursinus.NCBI.GSCfseal20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Merminea.NCBI.mMusErm1Pri
+Version: 1.0.0
+NeedsCompilation: no
