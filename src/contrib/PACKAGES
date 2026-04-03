@@ -277,3 +277,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmarmota.NCBI.marMar
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmacrocephalus.NCBI.ASM283717v5
+Version: 1.0.0
+NeedsCompilation: no

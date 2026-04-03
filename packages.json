@@ -1941,6 +1941,54 @@
       ]
     },
     {
+      "organism": "Physeter macrocephalus",
+      "common_name": "sperm whale",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Physeteridae",
+        "genus": "Physeter"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pmacrocephalus.NCBI.ASM283717v5",
+          "version": "1.0.0",
+          "organism": "Physeter macrocephalus",
+          "assembly": "ASM283717v5",
+          "provider": "NCBI",
+          "accession": "GCF_002837175.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002837175.3/",
+          "file_name": "BSgenome.Pmacrocephalus.NCBI.ASM283717v5_1.0.0.tar.gz",
+          "size": 621172210,
+          "seq_ids": [
+            "NC_041214.2",
+            "NC_041215.1",
+            "NC_041216.1",
+            "NC_041217.1",
+            "NC_041218.1"
+          ],
+          "seq_count": 12169,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Physeteridae",
+            "genus": "Physeter"
+          },
+          "common_name": "sperm whale",
+          "published": "2026-04-03T22:41:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmacrocephalus.NCBI.ASM283717v5/BSgenome.Pmacrocephalus.NCBI.ASM283717v5_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pteropus alecto",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -3679,6 +3727,38 @@
       "common_name": "Alpine marmot",
       "published": "2026-04-03T22:41:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmarmota.NCBI.marMar/BSgenome.Mmarmota.NCBI.marMar_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pmacrocephalus.NCBI.ASM283717v5",
+      "version": "1.0.0",
+      "organism": "Physeter macrocephalus",
+      "assembly": "ASM283717v5",
+      "provider": "NCBI",
+      "accession": "GCF_002837175.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002837175.3/",
+      "file_name": "BSgenome.Pmacrocephalus.NCBI.ASM283717v5_1.0.0.tar.gz",
+      "size": 621172210,
+      "seq_ids": [
+        "NC_041214.2",
+        "NC_041215.1",
+        "NC_041216.1",
+        "NC_041217.1",
+        "NC_041218.1"
+      ],
+      "seq_count": 12169,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Physeteridae",
+        "genus": "Physeter"
+      },
+      "common_name": "sperm whale",
+      "published": "2026-04-03T22:41:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmacrocephalus.NCBI.ASM283717v5/BSgenome.Pmacrocephalus.NCBI.ASM283717v5_1.0.0.tar.gz"
     }
   ]
 }
