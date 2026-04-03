@@ -167,7 +167,7 @@ const BASE = '';  // relative to current URL
 
 async function loadPackages() {
   try {
-    const res = await fetch(`${BASE}/packages.json`);
+    const res = await fetch(`${BASE}/packages.json?t=${Date.now()}`);
     const packages = await res.json();
     renderPackages(packages);
     setupSearch(packages);
