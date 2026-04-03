@@ -1,5 +1,16 @@
 [
   {
+    "package": "BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2",
+    "version": "1.0.0",
+    "organism": "",
+    "assembly": "",
+    "provider": "NCBI",
+    "file_name": "BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2_1.0.0.tar.gz",
+    "size": 0,
+    "published": "2026-04-03T19:33:59Z",
+    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2/BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2_1.0.0.tar.gz"
+  },
+  {
     "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01",
     "version": "1.0.0",
     "organism": "Aspergillus luchuensis",
