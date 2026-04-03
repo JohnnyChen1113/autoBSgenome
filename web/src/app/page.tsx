@@ -1460,48 +1460,56 @@ export default function Home() {
           )}
 
           {/* Active Builds */}
-          {step === "input" && queueInfo && queueInfo.runs && queueInfo.runs.length > 0 && (
+          {step === "input" && queueInfo && (
             <Card className="mt-6">
               <CardHeader>
                 <div className="flex items-center gap-2">
-                  <svg className="animate-spin h-4 w-4 text-primary" viewBox="0 0 24 24" fill="none">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
-                  </svg>
-                  <CardTitle className="text-lg">Active Builds</CardTitle>
+                  {queueInfo.runs && queueInfo.runs.length > 0 ? (
+                    <svg className="animate-spin h-4 w-4 text-primary" viewBox="0 0 24 24" fill="none">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
+                    </svg>
+                  ) : (
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f7b3f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                  )}
+                  <CardTitle className="text-lg">Build Status</CardTitle>
                 </div>
                 <CardDescription>
-                  {queueInfo.running} running, {queueInfo.queued} waiting
+                  {queueInfo.runs && queueInfo.runs.length > 0
+                    ? `${queueInfo.running} running, ${queueInfo.queued} waiting`
+                    : "All clear — the build server is idle. Your build will start immediately!"}
                 </CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-2">
-                  {queueInfo.runs.map((run, idx) => (
-                    <div
-                      key={run.id}
-                      className="flex items-center justify-between gap-3 p-2.5 rounded-md bg-secondary/50 border border-border"
-                    >
-                      <div className="flex items-center gap-2.5 min-w-0">
-                        <div className={`w-2 h-2 rounded-full shrink-0 ${
-                          run.status === "running" ? "bg-primary animate-pulse" : "bg-muted-foreground"
-                        }`} />
-                        <div className="min-w-0">
-                          <p className="text-sm font-medium text-foreground truncate">
-                            {run.name || "BSgenome build"}
-                          </p>
-                          <p className="text-xs text-muted-foreground">
-                            {run.status === "running" ? "Building now" : `Queue #${idx + 1}`}
-                            {run.status !== "running" && ` · ~${(idx + 1) * 2} min wait`}
-                          </p>
+              {queueInfo.runs && queueInfo.runs.length > 0 && (
+                <CardContent>
+                  <div className="space-y-2">
+                    {queueInfo.runs.map((run, idx) => (
+                      <div
+                        key={run.id}
+                        className="flex items-center justify-between gap-3 p-2.5 rounded-md bg-secondary/50 border border-border"
+                      >
+                        <div className="flex items-center gap-2.5 min-w-0">
+                          <div className={`w-2 h-2 rounded-full shrink-0 ${
+                            run.status === "running" ? "bg-primary animate-pulse" : "bg-muted-foreground"
+                          }`} />
+                          <div className="min-w-0">
+                            <p className="text-sm font-medium text-foreground truncate">
+                              {run.name || "BSgenome build"}
+                            </p>
+                            <p className="text-xs text-muted-foreground">
+                              {run.status === "running" ? "Building now" : `Queue #${idx + 1}`}
+                              {run.status !== "running" && ` · ~${(idx + 1) * 2} min wait`}
+                            </p>
+                          </div>
                         </div>
+                        <Badge variant="outline" className="shrink-0 text-xs">
+                          {run.status === "running" ? "Running" : "Queued"}
+                        </Badge>
                       </div>
-                      <Badge variant="outline" className="shrink-0 text-xs">
-                        {run.status === "running" ? "Running" : "Queued"}
-                      </Badge>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
+                    ))}
+                  </div>
+                </CardContent>
+              )}
             </Card>
           )}
 
