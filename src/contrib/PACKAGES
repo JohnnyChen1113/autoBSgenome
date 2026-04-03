@@ -209,3 +209,7 @@ NeedsCompilation: no
 Package: BSgenome.Psinus.NCBI.mPhoSin1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgriseus.NCBI.CriGri10
+Version: 1.0.0
+NeedsCompilation: no

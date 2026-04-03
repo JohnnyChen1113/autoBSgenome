@@ -274,6 +274,54 @@
       ]
     },
     {
+      "organism": "Cricetulus griseus",
+      "common_name": "Chinese hamster",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Cricetulus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cgriseus.NCBI.CriGri10",
+          "version": "1.0.0",
+          "organism": "Cricetulus griseus",
+          "assembly": "CriGri_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000223135.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000223135.1/",
+          "file_name": "BSgenome.Cgriseus.NCBI.CriGri10_1.0.0.tar.gz",
+          "size": 610881250,
+          "seq_ids": [
+            "NW_003613580.1",
+            "NW_003613581.1",
+            "NW_003613582.1",
+            "NW_003613583.1",
+            "NW_003613584.1"
+          ],
+          "seq_count": 109152,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Cricetidae",
+            "genus": "Cricetulus"
+          },
+          "common_name": "Chinese hamster",
+          "published": "2026-04-03T21:41:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgriseus.NCBI.CriGri10/BSgenome.Cgriseus.NCBI.CriGri10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Crocuta crocuta",
       "common_name": "spotted hyena",
       "group": "vertebrate_mammalian",
@@ -2319,6 +2367,38 @@
       "common_name": "vaquita",
       "published": "2026-04-03T21:41:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psinus.NCBI.mPhoSin1pri/BSgenome.Psinus.NCBI.mPhoSin1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cgriseus.NCBI.CriGri10",
+      "version": "1.0.0",
+      "organism": "Cricetulus griseus",
+      "assembly": "CriGri_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000223135.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000223135.1/",
+      "file_name": "BSgenome.Cgriseus.NCBI.CriGri10_1.0.0.tar.gz",
+      "size": 610881250,
+      "seq_ids": [
+        "NW_003613580.1",
+        "NW_003613581.1",
+        "NW_003613582.1",
+        "NW_003613583.1",
+        "NW_003613584.1"
+      ],
+      "seq_count": 109152,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Cricetulus"
+      },
+      "common_name": "Chinese hamster",
+      "published": "2026-04-03T21:41:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgriseus.NCBI.CriGri10/BSgenome.Cgriseus.NCBI.CriGri10_1.0.0.tar.gz"
     }
   ]
 }
