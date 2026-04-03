@@ -197,3 +197,7 @@ NeedsCompilation: no
 Package: BSgenome.Dleucas.NCBI.ASM228892v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC
+Version: 1.0.0
+NeedsCompilation: no

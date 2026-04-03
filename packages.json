@@ -1214,6 +1214,54 @@
       ]
     },
     {
+      "organism": "Suricata suricatta",
+      "common_name": "meerkat",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Herpestidae",
+        "genus": "Suricata"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC",
+          "version": "1.0.0",
+          "organism": "Suricata suricatta",
+          "assembly": "meerkat_22Aug2017_6uvM2_HiC",
+          "provider": "NCBI",
+          "accession": "GCF_006229205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_006229205.1/",
+          "file_name": "BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC_1.0.0.tar.gz",
+          "size": 612190882,
+          "seq_ids": [
+            "NC_043700.1",
+            "NC_043701.1",
+            "NC_043702.1",
+            "NC_043703.1",
+            "NC_043704.1"
+          ],
+          "seq_count": 63791,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Herpestidae",
+            "genus": "Suricata"
+          },
+          "common_name": "meerkat",
+          "published": "2026-04-03T21:41:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC/BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Takifugu flavidus",
       "common_name": "sansaifugu",
       "group": "vertebrate_other",
@@ -2079,6 +2127,38 @@
       "common_name": "beluga whale",
       "published": "2026-04-03T21:41:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dleucas.NCBI.ASM228892v3/BSgenome.Dleucas.NCBI.ASM228892v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC",
+      "version": "1.0.0",
+      "organism": "Suricata suricatta",
+      "assembly": "meerkat_22Aug2017_6uvM2_HiC",
+      "provider": "NCBI",
+      "accession": "GCF_006229205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_006229205.1/",
+      "file_name": "BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC_1.0.0.tar.gz",
+      "size": 612190882,
+      "seq_ids": [
+        "NC_043700.1",
+        "NC_043701.1",
+        "NC_043702.1",
+        "NC_043703.1",
+        "NC_043704.1"
+      ],
+      "seq_count": 63791,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Herpestidae",
+        "genus": "Suricata"
+      },
+      "common_name": "meerkat",
+      "published": "2026-04-03T21:41:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC/BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC_1.0.0.tar.gz"
     }
   ]
 }
