@@ -1246,6 +1246,54 @@
       ]
     },
     {
+      "organism": "Mastomys coucha",
+      "common_name": "southern multimammate mouse",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Mastomys"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mcoucha.NCBI.UCSFMcou1",
+          "version": "1.0.0",
+          "organism": "Mastomys coucha",
+          "assembly": "UCSF_Mcou_1",
+          "provider": "NCBI",
+          "accession": "GCF_008632895.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008632895.1/",
+          "file_name": "BSgenome.Mcoucha.NCBI.UCSFMcou1_1.0.0.tar.gz",
+          "size": 599957322,
+          "seq_ids": [
+            "NC_045030.1",
+            "NC_045031.1",
+            "NW_022196891.1",
+            "NW_022196892.1",
+            "NW_022196893.1"
+          ],
+          "seq_count": 28,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Mastomys"
+          },
+          "common_name": "southern multimammate mouse",
+          "published": "2026-04-03T22:41:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcoucha.NCBI.UCSFMcou1/BSgenome.Mcoucha.NCBI.UCSFMcou1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Micromonas commoda",
       "common_name": "",
       "group": "plant",
@@ -3759,6 +3807,38 @@
       "common_name": "sperm whale",
       "published": "2026-04-03T22:41:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmacrocephalus.NCBI.ASM283717v5/BSgenome.Pmacrocephalus.NCBI.ASM283717v5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mcoucha.NCBI.UCSFMcou1",
+      "version": "1.0.0",
+      "organism": "Mastomys coucha",
+      "assembly": "UCSF_Mcou_1",
+      "provider": "NCBI",
+      "accession": "GCF_008632895.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008632895.1/",
+      "file_name": "BSgenome.Mcoucha.NCBI.UCSFMcou1_1.0.0.tar.gz",
+      "size": 599957322,
+      "seq_ids": [
+        "NC_045030.1",
+        "NC_045031.1",
+        "NW_022196891.1",
+        "NW_022196892.1",
+        "NW_022196893.1"
+      ],
+      "seq_count": 28,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Mastomys"
+      },
+      "common_name": "southern multimammate mouse",
+      "published": "2026-04-03T22:41:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcoucha.NCBI.UCSFMcou1/BSgenome.Mcoucha.NCBI.UCSFMcou1_1.0.0.tar.gz"
     }
   ]
 }
