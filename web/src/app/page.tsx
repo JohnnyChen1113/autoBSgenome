@@ -240,7 +240,10 @@ export default function Home() {
   const [downloadUrl, setDownloadUrl] = useState("");
   const [fileName, setFileName] = useState("");
   const [fileSize, setFileSize] = useState(0);
-  const [buildStep, setBuildStep] = useState(0); // 0-4 progress steps
+  const [buildStep, setBuildStep] = useState(0);
+  const [buildStartTime, setBuildStartTime] = useState(0);
+  const [buildElapsed, setBuildElapsed] = useState(0);
+  const [buildTotalTime, setBuildTotalTime] = useState(0);
 
   const WORKER_API = "https://autobsgenome-api.dailylifecjh.workers.dev";
 
@@ -248,6 +251,10 @@ export default function Home() {
     setStep("building");
     setBuildError("");
     setBuildStep(0);
+    const startTime = Date.now();
+    setBuildStartTime(startTime);
+    setBuildElapsed(0);
+    setBuildTotalTime(0);
 
     try {
       // Trigger build via Worker API
@@ -289,14 +296,15 @@ export default function Home() {
   };
 
   const pollBuildStatus = (id: string) => {
-    let elapsed = 0;
     const interval = setInterval(async () => {
-      elapsed += 5;
+      const now = Date.now();
+      const elapsedSec = Math.floor((now - buildStartTime) / 1000);
+      setBuildElapsed(elapsedSec);
 
       // Animate build steps based on elapsed time
-      if (elapsed > 10) setBuildStep(1);
-      if (elapsed > 30) setBuildStep(2);
-      if (elapsed > 60) setBuildStep(3);
+      if (elapsedSec > 5) setBuildStep(1);
+      if (elapsedSec > 15) setBuildStep(2);
+      if (elapsedSec > 30) setBuildStep(3);
 
       try {
         const res = await fetch(`${WORKER_API}/api/status/${id}`);
@@ -311,6 +319,7 @@ export default function Home() {
         if (data.status === "complete") {
           clearInterval(interval);
           setBuildStep(4);
+          setBuildTotalTime(Math.floor((Date.now() - buildStartTime) / 1000));
           setDownloadUrl(data.download_url ?? "");
           setFileName(data.file_name ?? "");
           setFileSize(data.file_size ?? 0);
@@ -325,7 +334,7 @@ export default function Home() {
       }
 
       // Timeout after 20 minutes
-      if (elapsed > 1200) {
+      if (elapsedSec > 1200) {
         clearInterval(interval);
         setBuildError("Build timed out. Please try again.");
         setStep("review");
@@ -936,11 +945,17 @@ export default function Home() {
                     );
                   })}
                 </div>
-                {jobId && (
-                  <p className="text-sm text-muted-foreground text-center">
-                    Job ID: <code className="font-mono">{jobId}</code>
+                <div className="text-center space-y-1">
+                  <p className="text-2xl font-mono font-semibold text-foreground">
+                    {Math.floor(buildElapsed / 60)}:{String(buildElapsed % 60).padStart(2, "0")}
                   </p>
-                )}
+                  <p className="text-sm text-muted-foreground">Elapsed time</p>
+                  {jobId && (
+                    <p className="text-sm text-muted-foreground">
+                      Job ID: <code className="font-mono">{jobId}</code>
+                    </p>
+                  )}
+                </div>
               </CardContent>
             </Card>
           )}
@@ -958,6 +973,7 @@ export default function Home() {
                 <CardDescription>
                   {fileName || `${form.packageName}_${form.version}.tar.gz`}
                   {fileSize > 0 && ` · ${(fileSize / 1024 / 1024).toFixed(1)} MB`}
+                  {buildTotalTime > 0 && ` · Built in ${buildTotalTime}s`}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-5">

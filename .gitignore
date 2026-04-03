@@ -171,3 +171,4 @@ cython_debug/
 web/node_modules/
 web/.next/
 worker/node_modules/
+.wrangler/
