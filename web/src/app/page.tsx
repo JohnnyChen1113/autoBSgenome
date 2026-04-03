@@ -1,0 +1,954 @@
+"use client";
+
+import { useState, useCallback } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  extractAccession,
+  fetchAssemblyInfo,
+  fetchCircularSequences,
+  generatePackageName,
+  generateTitle,
+  generateDescription,
+  type CircularSequence,
+} from "@/lib/ncbi";
+import {
+  extractEnsemblSpecies,
+  fetchEnsemblAssemblyInfo,
+  detectCircularFromKaryotype,
+} from "@/lib/ensembl";
+
+type DataSource = "ncbi" | "ensembl";
+
+interface FormData {
+  packageName: string;
+  organism: string;
+  commonName: string;
+  assembly: string;
+  provider: string;
+  releaseDate: string;
+  version: string;
+  circSeqs: string;
+  title: string;
+  description: string;
+  sourceUrl: string;
+  fastaSource: "ncbi" | "upload";
+}
+
+const EMPTY_FORM: FormData = {
+  packageName: "",
+  organism: "",
+  commonName: "",
+  assembly: "",
+  provider: "",
+  releaseDate: "",
+  version: "1.0.0",
+  circSeqs: "",
+  title: "",
+  description: "",
+  sourceUrl: "",
+  fastaSource: "ncbi",
+};
+
+type Step = "input" | "review" | "building" | "result";
+
+export default function Home() {
+  const [step, setStep] = useState<Step>("input");
+  const [dataSource, setDataSource] = useState<DataSource>("ncbi");
+  const [accessionInput, setAccessionInput] = useState("");
+  const [form, setForm] = useState<FormData>(EMPTY_FORM);
+  const [circularSeqs, setCircularSeqs] = useState<CircularSequence[]>([]);
+  const [fetching, setFetching] = useState(false);
+  const [error, setError] = useState("");
+  const [gcfSuggestion, setGcfSuggestion] = useState<string | null>(null);
+  const [packageValidation, setPackageValidation] = useState<{
+    status: "idle" | "valid" | "invalid";
+    errors: string[];
+  }>({ status: "idle", errors: [] });
+
+  const validatePackageName = useCallback((name: string) => {
+    const errors: string[] = [];
+    const parts = name.split(".");
+
+    if (parts.length !== 4) {
+      errors.push("Must have exactly 4 parts separated by dots.");
+    } else {
+      if (parts[0] !== "BSgenome") {
+        errors.push('Part 1 must be "BSgenome".');
+      }
+      if (!/^[A-Z][a-z]+$/.test(parts[1])) {
+        errors.push(
+          "Part 2 (organism) must start with uppercase followed by lowercase (e.g. Hsapiens)."
+        );
+      }
+      if (!/^[A-Za-z]+$/.test(parts[2])) {
+        errors.push("Part 3 (provider) must be letters only (e.g. NCBI, UCSC).");
+      }
+      if (!/^[A-Za-z0-9]+$/.test(parts[3])) {
+        errors.push(
+          "Part 4 (assembly) must be alphanumeric only (e.g. GRCh38, hg38)."
+        );
+      }
+    }
+
+    if (errors.length === 0) {
+      setPackageValidation({ status: "valid", errors: [] });
+    } else {
+      setPackageValidation({ status: "invalid", errors });
+    }
+  }, []);
+
+  const updateField = useCallback(
+    (field: keyof FormData, value: string) => {
+      setForm((prev) => ({ ...prev, [field]: value }));
+      // Reset validation when package name changes
+      if (field === "packageName") {
+        setPackageValidation({ status: "idle", errors: [] });
+      }
+    },
+    []
+  );
+
+  const handleFetch = async () => {
+    setError("");
+    setFetching(true);
+
+    try {
+      let newForm: FormData;
+      let circs: CircularSequence[] = [];
+
+      if (dataSource === "ensembl") {
+        // ── Ensembl path ──
+        const species = extractEnsemblSpecies(accessionInput.trim());
+        if (!species) {
+          setError(
+            "Could not detect species. Paste an Ensembl URL (e.g. https://www.ensembl.org/Danio_rerio/Info/Index) or enter a species name (e.g. danio_rerio)."
+          );
+          setFetching(false);
+          return;
+        }
+
+        const ensInfo = await fetchEnsemblAssemblyInfo(species);
+        const circNames = detectCircularFromKaryotype(ensInfo.karyotype);
+
+        // Build abbreviation from organism
+        const orgParts = ensInfo.organism.trim().split(/\s+/);
+        const abbrev =
+          orgParts.length >= 2
+            ? orgParts[0][0].toUpperCase() + orgParts[1].toLowerCase()
+            : orgParts[0];
+        const assembly = ensInfo.assemblyName.replace(/\./g, "").replace(/[^a-zA-Z0-9]/g, "");
+
+        newForm = {
+          packageName: `BSgenome.${abbrev}.Ensembl.${assembly}`,
+          organism: ensInfo.organism,
+          commonName: ensInfo.commonName,
+          assembly: ensInfo.assemblyName,
+          provider: "Ensembl",
+          releaseDate: "",
+          version: "1.0.0",
+          circSeqs: circNames.length > 0 ? circNames.join(", ") : "character(0)",
+          title: `Full genome sequences for ${ensInfo.organism} (Ensembl version ${ensInfo.assemblyName})`,
+          description: `Full genome sequences for ${ensInfo.organism} (${ensInfo.commonName}) as provided by Ensembl (${ensInfo.assemblyName}) and stored in Biostrings objects.`,
+          sourceUrl: `https://www.ensembl.org/${species.charAt(0).toUpperCase() + species.slice(1)}/Info/Index`,
+          fastaSource: "ncbi",
+        };
+
+        setGcfSuggestion(null);
+      } else {
+        // ── NCBI path ──
+        const accession = extractAccession(accessionInput.trim());
+        if (!accession) {
+          setError(
+            "Invalid accession. Enter a valid NCBI accession (e.g. GCF_000001405.40) or paste a full URL."
+          );
+          setFetching(false);
+          return;
+        }
+
+        const [info, ncbiCircs] = await Promise.all([
+          fetchAssemblyInfo(accession),
+          fetchCircularSequences(accession),
+        ]);
+        circs = ncbiCircs;
+
+        const circSeqsStr =
+          circs.length > 0
+            ? circs.map((c) => c.name).join(", ")
+            : "character(0)";
+
+        newForm = {
+          packageName: generatePackageName(info),
+          organism: info.organism,
+          commonName: info.commonName,
+          assembly: info.assemblyName,
+          provider: info.provider,
+          releaseDate: info.releaseDate,
+          version: "1.0.0",
+          circSeqs: circSeqsStr,
+          title: generateTitle(info),
+          description: generateDescription(info, info.commonName),
+          sourceUrl: info.sourceUrl,
+          fastaSource: "ncbi",
+        };
+
+        // If GCA_ has no circular seqs but has a paired GCF_, suggest switching
+        if (
+          accession.startsWith("GCA_") &&
+          circs.length === 0 &&
+          info.pairedAccession
+        ) {
+          setGcfSuggestion(info.pairedAccession);
+        } else {
+          setGcfSuggestion(null);
+        }
+      }
+
+      setCircularSeqs(circs);
+      setForm(newForm);
+      validatePackageName(newForm.packageName);
+      setStep("review");
+    } catch (e) {
+      setError(
+        e instanceof Error
+          ? e.message
+          : "Failed to fetch assembly info. Please check your accession."
+      );
+    } finally {
+      setFetching(false);
+    }
+  };
+
+  const handleBuild = async () => {
+    setStep("building");
+    // TODO: Call Worker API to trigger GitHub Actions build
+    // For now, simulate a build with a timeout
+    setTimeout(() => {
+      setStep("result");
+    }, 3000);
+  };
+
+  return (
+    <div className="flex flex-col flex-1 bg-background">
+      {/* Header */}
+      <header className="border-b border-border">
+        <div className="mx-auto max-w-4xl px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded bg-primary flex items-center justify-center">
+              <span className="text-primary-foreground font-mono text-xs font-bold">
+                BS
+              </span>
+            </div>
+            <span className="font-heading text-lg font-semibold text-foreground">
+              AutoBSgenome
+            </span>
+          </div>
+          <nav className="flex items-center gap-5 text-base text-muted-foreground">
+            <a
+              href="https://github.com/JohnnyChen1113/autoBSgenome"
+              className="hover:text-foreground transition-colors"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://bioconductor.org/packages/BSgenome/"
+              className="hover:text-foreground transition-colors"
+            >
+              BSgenome Docs
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main className="flex-1">
+        {/* Hero */}
+        <section className="mx-auto max-w-4xl px-6 pt-16 pb-12 text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
+            Build BSgenome R Packages Online
+          </h1>
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Paste an NCBI accession or Ensembl URL, review auto-filled metadata,
+            and download a ready-to-install BSgenome package. No local R setup required.
+          </p>
+        </section>
+
+        <div className="mx-auto max-w-4xl px-6 pb-20">
+          {/* ─── Step 1: Input ─── */}
+          {step === "input" && (
+            <Card>
+              <CardHeader>
+                <CardTitle>Enter Genome Information</CardTitle>
+                <CardDescription>
+                  Choose a data source and provide an accession or URL to auto-fill all metadata.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {/* Data source toggle */}
+                <div className="space-y-2">
+                  <Label>Data Source</Label>
+                  <div className="grid grid-cols-2 gap-2">
+                    <button
+                      type="button"
+                      className={`rounded-md border px-4 py-2.5 text-sm font-medium transition-colors cursor-pointer ${
+                        dataSource === "ncbi"
+                          ? "bg-accent border-primary text-primary"
+                          : "bg-background border-border text-muted-foreground hover:bg-secondary"
+                      }`}
+                      onClick={() => {
+                        setDataSource("ncbi");
+                        setAccessionInput("");
+                        setError("");
+                      }}
+                    >
+                      NCBI
+                    </button>
+                    <button
+                      type="button"
+                      className={`rounded-md border px-4 py-2.5 text-sm font-medium transition-colors cursor-pointer ${
+                        dataSource === "ensembl"
+                          ? "bg-accent border-primary text-primary"
+                          : "bg-background border-border text-muted-foreground hover:bg-secondary"
+                      }`}
+                      onClick={() => {
+                        setDataSource("ensembl");
+                        setAccessionInput("");
+                        setError("");
+                      }}
+                    >
+                      Ensembl
+                    </button>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="accession">
+                    {dataSource === "ncbi"
+                      ? "NCBI Assembly Accession or URL"
+                      : "Ensembl Species URL or Name"}
+                  </Label>
+                  <div className="flex gap-2">
+                    <Input
+                      id="accession"
+                      placeholder={
+                        dataSource === "ncbi"
+                          ? "e.g. GCF_000001405.40 or https://ncbi.nlm.nih.gov/assembly/..."
+                          : "e.g. https://www.ensembl.org/Danio_rerio/Info/Index or danio_rerio"
+                      }
+                      className="font-mono flex-1"
+                      value={accessionInput}
+                      onChange={(e) => setAccessionInput(e.target.value)}
+                      onKeyDown={(e) => e.key === "Enter" && handleFetch()}
+                    />
+                    <Button onClick={handleFetch} disabled={fetching}>
+                      {fetching ? "Fetching..." : "Fetch"}
+                    </Button>
+                  </div>
+                  {dataSource === "ncbi" ? (
+                    <p className="text-sm text-muted-foreground">
+                      Supports GCF_ (RefSeq) and GCA_ (GenBank) accessions.
+                      Examples:{" "}
+                      <button
+                        type="button"
+                        className="font-mono text-primary hover:underline cursor-pointer"
+                        onClick={() => setAccessionInput("GCF_016861625.1")}
+                      >
+                        GCF_016861625.1
+                      </button>
+                      {" · "}
+                      <button
+                        type="button"
+                        className="font-mono text-primary hover:underline cursor-pointer"
+                        onClick={() => setAccessionInput("GCA_000002515.2")}
+                      >
+                        GCA_000002515.2
+                      </button>
+                    </p>
+                  ) : (
+                    <p className="text-sm text-muted-foreground">
+                      Paste an Ensembl species page URL or enter a species name.
+                      Examples:{" "}
+                      <button
+                        type="button"
+                        className="font-mono text-primary hover:underline cursor-pointer"
+                        onClick={() =>
+                          setAccessionInput(
+                            "https://www.ensembl.org/Danio_rerio/Info/Index"
+                          )
+                        }
+                      >
+                        Danio_rerio
+                      </button>
+                      {" · "}
+                      <button
+                        type="button"
+                        className="font-mono text-primary hover:underline cursor-pointer"
+                        onClick={() =>
+                          setAccessionInput(
+                            "https://www.ensembl.org/Saccharomyces_cerevisiae/Info/Index"
+                          )
+                        }
+                      >
+                        Saccharomyces_cerevisiae
+                      </button>
+                    </p>
+                  )}
+                </div>
+
+                {error && (
+                  <div className="bg-destructive/10 border border-destructive/20 text-destructive rounded-md px-4 py-3 text-sm">
+                    {error}
+                  </div>
+                )}
+
+                <div className="relative py-2">
+                  <Separator />
+                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-card px-3 text-sm text-muted-foreground">
+                    or fill in manually
+                  </span>
+                </div>
+
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => setStep("review")}
+                >
+                  Skip to manual entry
+                </Button>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* ─── Step 2: Review ─── */}
+          {step === "review" && (
+            <Card>
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <CardTitle>Review Metadata</CardTitle>
+                    <CardDescription>
+                      Auto-filled from NCBI. All fields are editable.
+                    </CardDescription>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => {
+                      setStep("input");
+                      setError("");
+                    }}
+                  >
+                    &larr; Back
+                  </Button>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-5">
+                {/* GCA → GCF suggestion */}
+                {gcfSuggestion && (
+                  <div className="bg-amber-50 border border-amber-200 rounded-md px-4 py-3 text-sm">
+                    <p className="text-amber-800">
+                      <strong>Note:</strong> You used a GenBank accession (GCA_), which may not include
+                      organelle sequences like mitochondria. A paired RefSeq version is available:{" "}
+                      <code className="font-mono text-amber-900 font-medium">{gcfSuggestion}</code>
+                    </p>
+                    <div className="mt-2 flex gap-2">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="text-amber-800 border-amber-300 hover:bg-amber-100 cursor-pointer"
+                        onClick={() => {
+                          setAccessionInput(gcfSuggestion);
+                          setGcfSuggestion(null);
+                          setStep("input");
+                        }}
+                      >
+                        Switch to {gcfSuggestion}
+                      </Button>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        className="text-amber-600 cursor-pointer"
+                        onClick={() => setGcfSuggestion(null)}
+                      >
+                        Keep current (GCA_)
+                      </Button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Package Name */}
+                <div className="space-y-2">
+                  <Label htmlFor="packageName">Package Name</Label>
+                  <div className="flex gap-2">
+                    <Input
+                      id="packageName"
+                      className={`font-mono flex-1 ${
+                        packageValidation.status === "valid"
+                          ? "border-[--success] focus-visible:border-[--success]"
+                          : packageValidation.status === "invalid"
+                          ? "border-destructive focus-visible:border-destructive"
+                          : ""
+                      }`}
+                      placeholder="BSgenome.Organism.Provider.Assembly"
+                      value={form.packageName}
+                      onChange={(e) =>
+                        updateField("packageName", e.target.value)
+                      }
+                    />
+                    <Button
+                      variant={
+                        packageValidation.status === "valid"
+                          ? "outline"
+                          : "secondary"
+                      }
+                      onClick={() => validatePackageName(form.packageName)}
+                      className={
+                        packageValidation.status === "valid"
+                          ? "text-[--success] border-[--success]/30 cursor-pointer"
+                          : "cursor-pointer"
+                      }
+                    >
+                      {packageValidation.status === "valid"
+                        ? "✓ Valid"
+                        : "Validate"}
+                    </Button>
+                  </div>
+                  {packageValidation.status === "invalid" && (
+                    <div className="bg-destructive/10 border border-destructive/20 text-destructive rounded-md px-3 py-2 text-sm space-y-1">
+                      {packageValidation.errors.map((err, i) => (
+                        <p key={i}>{err}</p>
+                      ))}
+                    </div>
+                  )}
+                  {packageValidation.status === "valid" && (
+                    <p className="text-sm font-medium flex items-center gap-1.5" style={{ color: "#0f7b3f" }}>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f7b3f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                      Package name format is correct.
+                    </p>
+                  )}
+                  {packageValidation.status === "idle" && (
+                    <p className="text-sm text-muted-foreground">
+                      4-part format: BSgenome.Organism.Provider.Assembly — click Validate to check
+                    </p>
+                  )}
+                </div>
+
+                {/* Organism + Common Name */}
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="organism">Organism</Label>
+                    <Input
+                      id="organism"
+                      placeholder="e.g. Homo sapiens"
+                      className="italic"
+                      value={form.organism}
+                      onChange={(e) =>
+                        updateField("organism", e.target.value)
+                      }
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="commonName">Common Name</Label>
+                    <Input
+                      id="commonName"
+                      placeholder="e.g. Human"
+                      value={form.commonName}
+                      onChange={(e) =>
+                        updateField("commonName", e.target.value)
+                      }
+                    />
+                  </div>
+                </div>
+
+                {/* Assembly + Provider */}
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="assembly">Assembly</Label>
+                    <Input
+                      id="assembly"
+                      className="font-mono"
+                      placeholder="e.g. GRCh38.p14"
+                      value={form.assembly}
+                      onChange={(e) =>
+                        updateField("assembly", e.target.value)
+                      }
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="provider">Provider</Label>
+                    <Input
+                      id="provider"
+                      placeholder="e.g. NCBI"
+                      value={form.provider}
+                      onChange={(e) =>
+                        updateField("provider", e.target.value)
+                      }
+                    />
+                  </div>
+                </div>
+
+                {/* Release Date + Version */}
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="releaseDate">Release Date</Label>
+                    <Input
+                      id="releaseDate"
+                      placeholder="e.g. Feb. 2022"
+                      value={form.releaseDate}
+                      onChange={(e) =>
+                        updateField("releaseDate", e.target.value)
+                      }
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="version">Version</Label>
+                    <Input
+                      id="version"
+                      className="font-mono"
+                      placeholder="1.0.0"
+                      value={form.version}
+                      onChange={(e) =>
+                        updateField("version", e.target.value)
+                      }
+                    />
+                  </div>
+                </div>
+
+                {/* Circular Sequences */}
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Label htmlFor="circSeqs">Circular Sequences</Label>
+                    {circularSeqs.length > 0 && (
+                      <Badge
+                        variant="outline"
+                        className="text-[--success] border-[--success]/30 text-[10px]"
+                      >
+                        Auto-detected
+                      </Badge>
+                    )}
+                  </div>
+                  <Input
+                    id="circSeqs"
+                    className="font-mono"
+                    placeholder='character(0)'
+                    value={form.circSeqs}
+                    onChange={(e) =>
+                      updateField("circSeqs", e.target.value)
+                    }
+                  />
+                  {circularSeqs.length > 0 ? (
+                    <p className="text-sm text-muted-foreground">
+                      Detected:{" "}
+                      {circularSeqs
+                        .map((c) => `${c.name} (${c.type})`)
+                        .join(", ")}
+                    </p>
+                  ) : (
+                    <p className="text-sm text-muted-foreground">
+                      Enter circular sequence names (e.g. MT, chrM) separated by
+                      commas. Use{" "}
+                      <code className="font-mono text-[11px]">character(0)</code>{" "}
+                      only if the genome has no circular sequences.
+                    </p>
+                  )}
+                </div>
+
+                {/* FASTA Source */}
+                <div className="space-y-2">
+                  <Label>FASTA Source</Label>
+                  <div className="grid grid-cols-2 gap-2">
+                    <button
+                      type="button"
+                      className={`rounded-md border px-4 py-2.5 text-sm font-medium transition-colors cursor-pointer ${
+                        form.fastaSource === "ncbi"
+                          ? "bg-accent border-primary text-primary"
+                          : "bg-background border-border text-muted-foreground hover:bg-secondary"
+                      }`}
+                      onClick={() => updateField("fastaSource", "ncbi")}
+                    >
+                      Use official FASTA
+                    </button>
+                    <button
+                      type="button"
+                      className={`rounded-md border px-4 py-2.5 text-sm font-medium transition-colors cursor-pointer ${
+                        form.fastaSource === "upload"
+                          ? "bg-accent border-primary text-primary"
+                          : "bg-background border-border text-muted-foreground hover:bg-secondary"
+                      }`}
+                      onClick={() => updateField("fastaSource", "upload")}
+                    >
+                      Upload my own file
+                    </button>
+                  </div>
+                </div>
+
+                {/* Upload area (shown when "upload" selected) */}
+                {form.fastaSource === "upload" && (
+                  <div className="border-2 border-dashed border-border rounded-lg p-8 text-center cursor-pointer hover:border-primary/40 transition-colors">
+                    <svg
+                      className="mx-auto mb-2"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                    >
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="17 8 12 3 7 8" />
+                      <line x1="12" y1="3" x2="12" y2="15" />
+                    </svg>
+                    <p className="text-sm text-muted-foreground">
+                      Drop FASTA file here or{" "}
+                      <span className="text-primary underline">browse</span>
+                    </p>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      .fa, .fasta, .fna, .fas
+                    </p>
+                  </div>
+                )}
+
+                {/* Advanced Options */}
+                <Accordion>
+                  <AccordionItem value="advanced">
+                    <AccordionTrigger className="text-sm">
+                      Advanced options (Title, Description, Source URL...)
+                    </AccordionTrigger>
+                    <AccordionContent className="space-y-4 pt-2">
+                      <div className="space-y-2">
+                        <Label htmlFor="title">Title</Label>
+                        <Input
+                          id="title"
+                          placeholder="Full genome sequences for..."
+                          value={form.title}
+                          onChange={(e) =>
+                            updateField("title", e.target.value)
+                          }
+                        />
+                        <p className="text-sm text-muted-foreground">
+                          Auto-generated from BSgenome convention
+                        </p>
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="description">Description</Label>
+                        <textarea
+                          id="description"
+                          rows={2}
+                          className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                          placeholder="Full genome sequences for..."
+                          value={form.description}
+                          onChange={(e) =>
+                            updateField("description", e.target.value)
+                          }
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="sourceUrl">Source URL</Label>
+                        <Input
+                          id="sourceUrl"
+                          className="font-mono text-xs"
+                          placeholder="https://www.ncbi.nlm.nih.gov/datasets/genome/..."
+                          value={form.sourceUrl}
+                          onChange={(e) =>
+                            updateField("sourceUrl", e.target.value)
+                          }
+                        />
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+
+                {/* Build button */}
+                <Button
+                  size="lg"
+                  className="w-full text-base cursor-pointer"
+                  onClick={handleBuild}
+                  disabled={
+                    !form.packageName ||
+                    !form.organism ||
+                    packageValidation.status !== "valid"
+                  }
+                >
+                  {packageValidation.status !== "valid"
+                    ? "Validate Package Name First"
+                    : "Build BSgenome Package"}
+                </Button>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* ─── Step 3: Building ─── */}
+          {step === "building" && (
+            <Card>
+              <CardHeader>
+                <CardTitle>Building Package...</CardTitle>
+                <CardDescription>
+                  This usually takes 3–10 minutes. You can keep this tab open.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6 py-8">
+                <div className="space-y-4">
+                  {[
+                    { label: "Downloading FASTA from NCBI", done: true },
+                    { label: "Converting to 2bit format", done: true },
+                    { label: "Building R package", done: false, active: true },
+                    { label: "Uploading to repository", done: false },
+                  ].map((s, i) => (
+                    <div key={i} className="flex items-center gap-3">
+                      <div
+                        className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
+                          s.done
+                            ? "bg-[--success] text-white"
+                            : s.active
+                            ? "bg-primary text-primary-foreground animate-pulse"
+                            : "bg-secondary text-muted-foreground"
+                        }`}
+                      >
+                        {s.done ? "✓" : i + 1}
+                      </div>
+                      <span
+                        className={
+                          s.done
+                            ? "text-muted-foreground"
+                            : s.active
+                            ? "text-foreground font-medium"
+                            : "text-muted-foreground"
+                        }
+                      >
+                        {s.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* ─── Step 4: Result ─── */}
+          {step === "result" && (
+            <Card>
+              <CardHeader className="text-center pb-2">
+                <div className="mx-auto w-14 h-14 rounded-full bg-[--success-foreground] text-[--success] flex items-center justify-center text-2xl font-bold mb-3">
+                  ✓
+                </div>
+                <CardTitle className="text-xl">
+                  Package Built Successfully
+                </CardTitle>
+                <CardDescription>
+                  {form.packageName}_
+                  {form.version}.tar.gz
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-5">
+                <div className="flex gap-3 justify-center">
+                  <Button size="lg">Download .tar.gz</Button>
+                  <Button variant="outline" size="lg">
+                    Copy Install Command
+                  </Button>
+                </div>
+
+                <Separator />
+
+                <div className="space-y-2">
+                  <Label>Install directly in R:</Label>
+                  <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
+                    install.packages(
+                    <br />
+                    &nbsp;&nbsp;
+                    <span className="text-primary">
+                      &quot;https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-xxx/
+                      {form.packageName}_{form.version}.tar.gz&quot;
+                    </span>
+                    ,
+                    <br />
+                    &nbsp;&nbsp;repos = NULL, type ={" "}
+                    <span className="text-primary">&quot;source&quot;</span>
+                    <br />)
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label>Or from the temporary repository:</Label>
+                  <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
+                    install.packages(
+                    <br />
+                    &nbsp;&nbsp;
+                    <span className="text-primary">
+                      &quot;{form.packageName}&quot;
+                    </span>
+                    ,
+                    <br />
+                    &nbsp;&nbsp;repos ={" "}
+                    <span className="text-primary">
+                      &quot;https://autobsgenome.pages.dev/repo&quot;
+                    </span>
+                    <br />)
+                  </div>
+                </div>
+
+                <div className="bg-accent border-l-[3px] border-primary rounded-r-md px-4 py-3 text-sm text-muted-foreground">
+                  This package will remain in the temporary repository for{" "}
+                  <strong className="text-foreground">14 days</strong>. Download
+                  a local copy for permanent use.
+                </div>
+
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => {
+                    setStep("input");
+                    setForm(EMPTY_FORM);
+                    setAccessionInput("");
+                    setCircularSeqs([]);
+                  }}
+                >
+                  Build Another Package
+                </Button>
+              </CardContent>
+            </Card>
+          )}
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="border-t border-border bg-secondary">
+        <div className="mx-auto max-w-4xl px-6 py-6 text-center text-sm text-muted-foreground">
+          <p>
+            <a
+              href="https://github.com/JohnnyChen1113/autoBSgenome"
+              className="text-primary hover:underline"
+            >
+              AutoBSgenome
+            </a>{" "}
+            &mdash; Making BSgenome accessible for every organism.
+          </p>
+          <p className="mt-1 text-xs">
+            Built by{" "}
+            <a
+              href="https://github.com/JohnnyChen1113"
+              className="hover:underline"
+            >
+              Junhao Chen
+            </a>{" "}
+            at Saint Louis University
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}

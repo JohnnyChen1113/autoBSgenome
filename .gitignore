@@ -14,8 +14,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -167,3 +167,6 @@ cython_debug/
 /BSgenome.*.*.*.*/
 /faToTwoBit
 /*.2bit
+.superpowers/
+web/node_modules/
+web/.next/
