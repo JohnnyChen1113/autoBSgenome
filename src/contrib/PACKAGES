@@ -317,3 +317,7 @@ NeedsCompilation: no
 Package: BSgenome.Tchinensis.NCBI.TupChi10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Catys.NCBI.Caty10
+Version: 1.0.0
+NeedsCompilation: no

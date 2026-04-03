@@ -519,6 +519,54 @@
       ]
     },
     {
+      "organism": "Cercocebus atys",
+      "common_name": "sooty mangabey",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Cercocebus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Catys.NCBI.Caty10",
+          "version": "1.0.0",
+          "organism": "Cercocebus atys",
+          "assembly": "Caty_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000955945.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000955945.1/",
+          "file_name": "BSgenome.Catys.NCBI.Caty10_1.0.0.tar.gz",
+          "size": 724438897,
+          "seq_ids": [
+            "NW_011999143.1",
+            "NW_011999144.1",
+            "NW_011999145.1",
+            "NW_011999146.1",
+            "NW_011999147.1"
+          ],
+          "seq_count": 11433,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Cercocebus"
+          },
+          "common_name": "sooty mangabey",
+          "published": "2026-04-03T23:42:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Catys.NCBI.Caty10/BSgenome.Catys.NCBI.Caty10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chinchilla lanigera",
       "common_name": "long-tailed chinchilla",
       "group": "vertebrate_mammalian",
@@ -4479,6 +4527,38 @@
       "common_name": "Chinese tree shrew",
       "published": "2026-04-03T23:42:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tchinensis.NCBI.TupChi10/BSgenome.Tchinensis.NCBI.TupChi10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Catys.NCBI.Caty10",
+      "version": "1.0.0",
+      "organism": "Cercocebus atys",
+      "assembly": "Caty_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000955945.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000955945.1/",
+      "file_name": "BSgenome.Catys.NCBI.Caty10_1.0.0.tar.gz",
+      "size": 724438897,
+      "seq_ids": [
+        "NW_011999143.1",
+        "NW_011999144.1",
+        "NW_011999145.1",
+        "NW_011999146.1",
+        "NW_011999147.1"
+      ],
+      "seq_count": 11433,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Cercocebus"
+      },
+      "common_name": "sooty mangabey",
+      "published": "2026-04-03T23:42:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Catys.NCBI.Caty10/BSgenome.Catys.NCBI.Caty10_1.0.0.tar.gz"
     }
   ]
 }
