@@ -674,6 +674,54 @@
       ]
     },
     {
+      "organism": "Grammomys surdaster",
+      "common_name": "",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Grammomys"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gsurdaster.NCBI.NIHTR10",
+          "version": "1.0.0",
+          "organism": "Grammomys surdaster",
+          "assembly": "NIH_TR_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_004785775.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004785775.1/",
+          "file_name": "BSgenome.Gsurdaster.NCBI.NIHTR10_1.0.0.tar.gz",
+          "size": 619253213,
+          "seq_ids": [
+            "NW_021604551.1",
+            "NW_021604552.1",
+            "NW_021604553.1",
+            "NW_021604554.1",
+            "NW_021604555.1"
+          ],
+          "seq_count": 23656,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Grammomys"
+          },
+          "common_name": "",
+          "published": "2026-04-03T22:39:26Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsurdaster.NCBI.NIHTR10/BSgenome.Gsurdaster.NCBI.NIHTR10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Hippocampus comes",
       "common_name": "tiger tail seahorse",
       "group": "vertebrate_other",
@@ -2719,6 +2767,38 @@
       "common_name": "Canada lynx",
       "published": "2026-04-03T21:42:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcanadensis.NCBI.mLynCan4priv2/BSgenome.Lcanadensis.NCBI.mLynCan4priv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gsurdaster.NCBI.NIHTR10",
+      "version": "1.0.0",
+      "organism": "Grammomys surdaster",
+      "assembly": "NIH_TR_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_004785775.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004785775.1/",
+      "file_name": "BSgenome.Gsurdaster.NCBI.NIHTR10_1.0.0.tar.gz",
+      "size": 619253213,
+      "seq_ids": [
+        "NW_021604551.1",
+        "NW_021604552.1",
+        "NW_021604553.1",
+        "NW_021604554.1",
+        "NW_021604555.1"
+      ],
+      "seq_count": 23656,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Grammomys"
+      },
+      "common_name": "",
+      "published": "2026-04-03T22:39:26Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsurdaster.NCBI.NIHTR10/BSgenome.Gsurdaster.NCBI.NIHTR10_1.0.0.tar.gz"
     }
   ]
 }

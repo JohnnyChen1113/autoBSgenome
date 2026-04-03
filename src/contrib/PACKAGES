@@ -229,3 +229,7 @@ NeedsCompilation: no
 Package: BSgenome.Lcanadensis.NCBI.mLynCan4priv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gsurdaster.NCBI.NIHTR10
+Version: 1.0.0
+NeedsCompilation: no
