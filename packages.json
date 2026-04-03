@@ -19,7 +19,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aocellatus.NCBI.GSCWeel10/BSgenome.Aocellatus.NCBI.GSCWeel10_1.0.0.tar.gz",
           "group": "vertebrate_other"
         }
-      ]
+      ],
+      "group": "vertebrate_other"
     },
     {
       "organism": "Aspergillus luchuensis",
@@ -37,7 +38,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01/BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01_1.0.0.tar.gz",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Auxenochlorella protothecoides",
@@ -58,7 +60,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aprotothecoides.NCBI.ASM73321v1/BSgenome.Aprotothecoides.NCBI.ASM73321v1_1.0.0.tar.gz",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Bathycoccus prasinos",
@@ -79,7 +82,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bprasinos.NCBI.ASM222023v1/BSgenome.Bprasinos.NCBI.ASM222023v1_1.0.0.tar.gz",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Camelus ferus",
@@ -96,9 +100,11 @@
           "file_name": "BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz",
           "size": 531968088,
           "published": "2026-04-03T20:54:55Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cferus.NCBI.BCGSACCfer10/BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cferus.NCBI.BCGSACCfer10/BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Capsella rubella",
@@ -119,7 +125,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Crubella.NCBI.Caprub10/BSgenome.Crubella.NCBI.Caprub10_1.0.0.tar.gz",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Chlamydomonas reinhardtii",
@@ -140,7 +147,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55/BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55_1.0.0.tar.gz",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Chlorella variabilis",
@@ -161,7 +169,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvariabilis.NCBI.v10/BSgenome.Cvariabilis.NCBI.v10_1.0.0.tar.gz",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Coccomyxa subellipsoidea C-169",
@@ -182,7 +191,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20/BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20_1.0.0.tar.gz",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Condylura cristata",
@@ -199,9 +209,11 @@
           "file_name": "BSgenome.Ccristata.NCBI.ConCri10_1.0.0.tar.gz",
           "size": 437760675,
           "published": "2026-04-03T20:53:06Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccristata.NCBI.ConCri10/BSgenome.Ccristata.NCBI.ConCri10_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccristata.NCBI.ConCri10/BSgenome.Ccristata.NCBI.ConCri10_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Cyclopterus lumpus",
@@ -222,7 +234,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clumpus.NCBI.fCycLum1pri/BSgenome.Clumpus.NCBI.fCycLum1pri_1.0.0.tar.gz",
           "group": "vertebrate_other"
         }
-      ]
+      ],
+      "group": "vertebrate_other"
     },
     {
       "organism": "Cynoglossus semilaevis",
@@ -243,7 +256,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csemilaevis.NCBI.Csev10/BSgenome.Csemilaevis.NCBI.Csev10_1.0.0.tar.gz",
           "group": "vertebrate_other"
         }
-      ]
+      ],
+      "group": "vertebrate_other"
     },
     {
       "organism": "Dipodomys ordii",
@@ -260,9 +274,11 @@
           "file_name": "BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz",
           "size": 516739502,
           "published": "2026-04-03T20:56:01Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.NCBI.Dord20/BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.NCBI.Dord20/BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Encephalitozoon cuniculi GB-M1",
@@ -283,7 +299,8 @@
           "accession": "GCF_000091225.2",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Encephalitozoon hellem ATCC 50504",
@@ -304,7 +321,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehellem.NCBI.ASM27781v3/BSgenome.Ehellem.NCBI.ASM27781v3_1.0.0.tar.gz",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Encephalitozoon intestinalis ATCC 50506",
@@ -325,7 +343,8 @@
           "accession": "GCF_000146465.1",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Encephalitozoon romaleae SJ-2008",
@@ -346,7 +365,8 @@
           "accession": "GCF_000280035.1",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Hippocampus comes",
@@ -367,7 +387,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcomes.NCBI.HcomesQL1v11/BSgenome.Hcomes.NCBI.HcomesQL1v11_1.0.0.tar.gz",
           "group": "vertebrate_other"
         }
-      ]
+      ],
+      "group": "vertebrate_other"
     },
     {
       "organism": "Hippoglossus hippoglossus",
@@ -388,7 +409,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhippoglossus.NCBI.fHipHip1pri/BSgenome.Hhippoglossus.NCBI.fHipHip1pri_1.0.0.tar.gz",
           "group": "vertebrate_other"
         }
-      ]
+      ],
+      "group": "vertebrate_other"
     },
     {
       "organism": "Larimichthys crocea",
@@ -409,7 +431,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcrocea.NCBI.Lcrocea20/BSgenome.Lcrocea.NCBI.Lcrocea20_1.0.0.tar.gz",
           "group": "vertebrate_other"
         }
-      ]
+      ],
+      "group": "vertebrate_other"
     },
     {
       "organism": "Lates calcarifer",
@@ -430,7 +453,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcalcarifer.NCBI.TLLLatcalv3/BSgenome.Lcalcarifer.NCBI.TLLLatcalv3_1.0.0.tar.gz",
           "group": "vertebrate_other"
         }
-      ]
+      ],
+      "group": "vertebrate_other"
     },
     {
       "organism": "Micromonas commoda",
@@ -451,7 +475,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcommoda.NCBI.ASM9098v2/BSgenome.Mcommoda.NCBI.ASM9098v2_1.0.0.tar.gz",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Micromonas pusilla CCMP1545",
@@ -472,7 +497,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20/BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20_1.0.0.tar.gz",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Microtus ochrogaster",
@@ -489,9 +515,11 @@
           "file_name": "BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz",
           "size": 553448484,
           "published": "2026-04-03T20:56:16Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.NCBI.MicOch10/BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.NCBI.MicOch10/BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Miniopterus natalensis",
@@ -508,9 +536,11 @@
           "file_name": "BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz",
           "size": 458567760,
           "published": "2026-04-03T20:53:39Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnatalensis.NCBI.Mnatv1/BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnatalensis.NCBI.Mnatv1/BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Mitosporidium daphniae",
@@ -531,7 +561,8 @@
           "accession": "GCF_000760515.2",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Monoraphidium neglectum",
@@ -552,7 +583,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mneglectum.NCBI.monov1/BSgenome.Mneglectum.NCBI.monov1_1.0.0.tar.gz",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Morone saxatilis",
@@ -573,7 +605,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msaxatilis.NCBI.NCSUSB20/BSgenome.Msaxatilis.NCBI.NCSUSB20_1.0.0.tar.gz",
           "group": "vertebrate_other"
         }
-      ]
+      ],
+      "group": "vertebrate_other"
     },
     {
       "organism": "Myotis brandtii",
@@ -590,9 +623,11 @@
           "file_name": "BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz",
           "size": 521705601,
           "published": "2026-04-03T20:55:19Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrandtii.NCBI.ASM41265v1/BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrandtii.NCBI.ASM41265v1/BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Myotis davidii",
@@ -609,9 +644,11 @@
           "file_name": "BSgenome.Mdavidii.NCBI.ASM32734v1_1.0.0.tar.gz",
           "size": 498507770,
           "published": "2026-04-03T20:54:52Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdavidii.NCBI.ASM32734v1/BSgenome.Mdavidii.NCBI.ASM32734v1_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdavidii.NCBI.ASM32734v1/BSgenome.Mdavidii.NCBI.ASM32734v1_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Myotis lucifugus",
@@ -628,9 +665,11 @@
           "file_name": "BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz",
           "size": 515894987,
           "published": "2026-04-03T20:54:07Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.NCBI.Myoluc20/BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.NCBI.Myoluc20/BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Nematocida ausubeli",
@@ -651,7 +690,8 @@
           "accession": "GCF_000738915.1",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Nematocida displodere",
@@ -672,7 +712,8 @@
           "accession": "GCF_001642395.1",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Nematocida parisii ERTm1",
@@ -693,7 +734,8 @@
           "accession": "GCF_000250985.1",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Neophocaena asiaeorientalis asiaeorientalis",
@@ -710,9 +752,11 @@
           "file_name": "BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz",
           "size": 592841468,
           "published": "2026-04-03T20:56:28Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11/BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11/BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Notothenia coriiceps",
@@ -733,7 +777,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncoriiceps.NCBI.NC01/BSgenome.Ncoriiceps.NCBI.NC01_1.0.0.tar.gz",
           "group": "vertebrate_other"
         }
-      ]
+      ],
+      "group": "vertebrate_other"
     },
     {
       "organism": "Ordospora colligata OC4",
@@ -754,7 +799,8 @@
           "accession": "GCF_000803265.1",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Ostreococcus tauri",
@@ -775,7 +821,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Otauri.NCBI.version140606/BSgenome.Otauri.NCBI.version140606_1.0.0.tar.gz",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Phyllostomus discolor",
@@ -792,9 +839,11 @@
           "file_name": "BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz",
           "size": 546065844,
           "published": "2026-04-03T20:55:33Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdiscolor.NCBI.mPhyDis1priv3/BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdiscolor.NCBI.mPhyDis1priv3/BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Pteropus alecto",
@@ -811,9 +860,11 @@
           "file_name": "BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz",
           "size": 513546758,
           "published": "2026-04-03T20:54:09Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palecto.NCBI.ASM32557v1/BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palecto.NCBI.ASM32557v1/BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Rhinolophus ferrumequinum",
@@ -830,9 +881,11 @@
           "file_name": "BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p_1.0.0.tar.gz",
           "size": 540596261,
           "published": "2026-04-03T20:54:48Z",
-          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p/BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p_1.0.0.tar.gz"
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p/BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p_1.0.0.tar.gz",
+          "group": "vertebrate_mammalian"
         }
-      ]
+      ],
+      "group": "vertebrate_mammalian"
     },
     {
       "organism": "Saccharomyces cerevisiae",
@@ -852,7 +905,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.NCBI.R64/BSgenome.Scerevisiae.NCBI.R64_1.0.0.tar.gz",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     },
     {
       "organism": "Sorghum bicolor",
@@ -873,7 +927,8 @@
           "accession": "GCA_000003195.3",
           "group": "plant"
         }
-      ]
+      ],
+      "group": "plant"
     },
     {
       "organism": "Takifugu flavidus",
@@ -894,7 +949,8 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tflavidus.NCBI.ASM371156v2/BSgenome.Tflavidus.NCBI.ASM371156v2_1.0.0.tar.gz",
           "group": "vertebrate_other"
         }
-      ]
+      ],
+      "group": "vertebrate_other"
     },
     {
       "organism": "Vittaforma corneae ATCC 50505",
@@ -915,7 +971,8 @@
           "accession": "GCF_000231115.1",
           "group": "fungi"
         }
-      ]
+      ],
+      "group": "fungi"
     }
   ],
   "flat": [
@@ -1421,7 +1478,8 @@
       "file_name": "BSgenome.Ccristata.NCBI.ConCri10_1.0.0.tar.gz",
       "size": 437760675,
       "published": "2026-04-03T20:53:06Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccristata.NCBI.ConCri10/BSgenome.Ccristata.NCBI.ConCri10_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccristata.NCBI.ConCri10/BSgenome.Ccristata.NCBI.ConCri10_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Mnatalensis.NCBI.Mnatv1",
@@ -1434,7 +1492,8 @@
       "file_name": "BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz",
       "size": 458567760,
       "published": "2026-04-03T20:53:39Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnatalensis.NCBI.Mnatv1/BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnatalensis.NCBI.Mnatv1/BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Mlucifugus.NCBI.Myoluc20",
@@ -1447,7 +1506,8 @@
       "file_name": "BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz",
       "size": 515894987,
       "published": "2026-04-03T20:54:07Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.NCBI.Myoluc20/BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.NCBI.Myoluc20/BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Palecto.NCBI.ASM32557v1",
@@ -1460,7 +1520,8 @@
       "file_name": "BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz",
       "size": 513546758,
       "published": "2026-04-03T20:54:09Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palecto.NCBI.ASM32557v1/BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palecto.NCBI.ASM32557v1/BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p",
@@ -1473,7 +1534,8 @@
       "file_name": "BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p_1.0.0.tar.gz",
       "size": 540596261,
       "published": "2026-04-03T20:54:48Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p/BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p/BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Mdavidii.NCBI.ASM32734v1",
@@ -1486,7 +1548,8 @@
       "file_name": "BSgenome.Mdavidii.NCBI.ASM32734v1_1.0.0.tar.gz",
       "size": 498507770,
       "published": "2026-04-03T20:54:52Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdavidii.NCBI.ASM32734v1/BSgenome.Mdavidii.NCBI.ASM32734v1_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdavidii.NCBI.ASM32734v1/BSgenome.Mdavidii.NCBI.ASM32734v1_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Cferus.NCBI.BCGSACCfer10",
@@ -1499,7 +1562,8 @@
       "file_name": "BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz",
       "size": 531968088,
       "published": "2026-04-03T20:54:55Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cferus.NCBI.BCGSACCfer10/BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cferus.NCBI.BCGSACCfer10/BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Mbrandtii.NCBI.ASM41265v1",
@@ -1512,7 +1576,8 @@
       "file_name": "BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz",
       "size": 521705601,
       "published": "2026-04-03T20:55:19Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrandtii.NCBI.ASM41265v1/BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrandtii.NCBI.ASM41265v1/BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Pdiscolor.NCBI.mPhyDis1priv3",
@@ -1525,7 +1590,8 @@
       "file_name": "BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz",
       "size": 546065844,
       "published": "2026-04-03T20:55:33Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdiscolor.NCBI.mPhyDis1priv3/BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdiscolor.NCBI.mPhyDis1priv3/BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Dordii.NCBI.Dord20",
@@ -1538,7 +1604,8 @@
       "file_name": "BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz",
       "size": 516739502,
       "published": "2026-04-03T20:56:01Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.NCBI.Dord20/BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.NCBI.Dord20/BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Mochrogaster.NCBI.MicOch10",
@@ -1551,7 +1618,8 @@
       "file_name": "BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz",
       "size": 553448484,
       "published": "2026-04-03T20:56:16Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.NCBI.MicOch10/BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.NCBI.MicOch10/BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     },
     {
       "package": "BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11",
@@ -1564,7 +1632,8 @@
       "file_name": "BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz",
       "size": 592841468,
       "published": "2026-04-03T20:56:28Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11/BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz"
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11/BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz",
+      "group": "vertebrate_mammalian"
     }
   ]
 }
