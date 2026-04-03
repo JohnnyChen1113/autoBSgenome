@@ -101,15 +101,17 @@ async function handleBuild(
           common_name: body.common_name ?? "",
           genome: body.genome ?? "",
           provider: body.provider ?? "",
-          release_date: body.release_date ?? "",
           version: body.version ?? "1.0.0",
           circ_seqs: body.circ_seqs ?? "character(0)",
-          title: body.title ?? "",
-          description: body.description ?? "",
-          source_url: body.source_url ?? "",
           accession: body.accession ?? "",
-          fasta_source: body.fasta_source ?? "ncbi",
-          data_source: body.data_source ?? "ncbi",
+          // Pack remaining fields into JSON to stay within 10-property limit
+          extra: JSON.stringify({
+            data_source: body.data_source ?? "ncbi",
+            release_date: body.release_date ?? "",
+            title: body.title ?? "",
+            description: body.description ?? "",
+            source_url: body.source_url ?? "",
+          }),
         },
       }),
     }

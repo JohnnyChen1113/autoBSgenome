@@ -19,14 +19,16 @@ jobs:
           echo "common_name=${{ github.event.client_payload.common_name }}" >> $GITHUB_OUTPUT
           echo "genome=${{ github.event.client_payload.genome }}" >> $GITHUB_OUTPUT
           echo "provider=${{ github.event.client_payload.provider }}" >> $GITHUB_OUTPUT
-          echo "release_date=${{ github.event.client_payload.release_date }}" >> $GITHUB_OUTPUT
           echo "version=${{ github.event.client_payload.version }}" >> $GITHUB_OUTPUT
           echo "circ_seqs=${{ github.event.client_payload.circ_seqs }}" >> $GITHUB_OUTPUT
-          echo "title=${{ github.event.client_payload.title }}" >> $GITHUB_OUTPUT
-          echo "source_url=${{ github.event.client_payload.source_url }}" >> $GITHUB_OUTPUT
           echo "accession=${{ github.event.client_payload.accession }}" >> $GITHUB_OUTPUT
-          echo "fasta_source=${{ github.event.client_payload.fasta_source }}" >> $GITHUB_OUTPUT
-          echo "data_source=${{ github.event.client_payload.data_source }}" >> $GITHUB_OUTPUT
+
+          # Parse extra JSON field
+          EXTRA='${{ github.event.client_payload.extra }}'
+          echo "data_source=$(echo "$EXTRA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('data_source','ncbi'))")" >> $GITHUB_OUTPUT
+          echo "release_date=$(echo "$EXTRA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('release_date',''))")" >> $GITHUB_OUTPUT
+          echo "title=$(echo "$EXTRA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('title',''))")" >> $GITHUB_OUTPUT
+          echo "source_url=$(echo "$EXTRA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('source_url',''))")" >> $GITHUB_OUTPUT
 
       - name: Download FASTA from NCBI
         if: steps.params.outputs.data_source == 'ncbi'
