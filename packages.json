@@ -246,6 +246,25 @@
       ]
     },
     {
+      "organism": "Dipodomys ordii",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Dordii.NCBI.Dord20",
+          "version": "1.0.0",
+          "organism": "Dipodomys ordii",
+          "assembly": "Dord_2.0",
+          "provider": "NCBI",
+          "accession": "",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+          "file_name": "BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz",
+          "size": 516739502,
+          "published": "2026-04-03T20:56:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.NCBI.Dord20/BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Encephalitozoon cuniculi GB-M1",
       "common_name": "",
       "builds": [
@@ -1469,6 +1488,19 @@
       "size": 546065844,
       "published": "2026-04-03T20:55:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdiscolor.NCBI.mPhyDis1priv3/BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dordii.NCBI.Dord20",
+      "version": "1.0.0",
+      "organism": "Dipodomys ordii",
+      "assembly": "Dord_2.0",
+      "provider": "NCBI",
+      "accession": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+      "file_name": "BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz",
+      "size": 516739502,
+      "published": "2026-04-03T20:56:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.NCBI.Dord20/BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz"
     }
   ]
 }

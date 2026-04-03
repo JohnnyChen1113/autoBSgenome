@@ -165,3 +165,7 @@ NeedsCompilation: no
 Package: BSgenome.Pdiscolor.NCBI.mPhyDis1priv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dordii.NCBI.Dord20
+Version: 1.0.0
+NeedsCompilation: no
