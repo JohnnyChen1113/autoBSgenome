@@ -166,9 +166,15 @@ async function handleStatus(
   }
 
   if (!ghResponse.ok) {
+    const errBody = await ghResponse.text();
     return jsonResponse(
-      { job_id: jobId, status: "error", message: "Failed to check status" },
-      500,
+      {
+        job_id: jobId,
+        status: "error",
+        message: `GitHub API returned ${ghResponse.status}`,
+        details: errBody,
+      },
+      200,
       origin,
       env.ALLOWED_ORIGIN
     );
