@@ -65,8 +65,8 @@ jobs:
           RELEASE=$(curl -s "https://rest.ensembl.org/info/data/?content-type=application/json" | python3 -c "import json,sys; print(json.load(sys.stdin)['releases'][0])")
           echo "Ensembl release: ${RELEASE}"
 
-          # Capitalize first letter of species for filename
-          SPECIES_CAP="$(echo ${SPECIES:0:1} | tr '[:lower:]' '[:upper:]')${SPECIES:1}"
+          # Capitalize first letter of species for filename (POSIX-compatible)
+          SPECIES_CAP=$(echo "$SPECIES" | python3 -c "import sys; s=sys.stdin.read().strip(); print(s[0].upper()+s[1:])")
           URL="https://ftp.ensembl.org/pub/release-${RELEASE}/fasta/${SPECIES}/dna/${SPECIES_CAP}.${GENOME}.dna.toplevel.fa.gz"
           echo "Downloading: ${URL}"
           curl -fL -o genome.fa.gz "${URL}"

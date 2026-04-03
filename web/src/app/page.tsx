@@ -101,6 +101,12 @@ function loadBuildHistory(): BuildRecord[] {
 
 export default function Home() {
   const [step, setStep] = useState<Step>("input");
+  const [buildHistory, setBuildHistory] = useState<BuildRecord[]>([]);
+
+  // Load build history on mount
+  useEffect(() => {
+    setBuildHistory(loadBuildHistory());
+  }, []);
   const [dataSource, setDataSource] = useState<DataSource>("ncbi");
   const [accessionInput, setAccessionInput] = useState("");
   const [form, setForm] = useState<FormData>(EMPTY_FORM);
@@ -364,6 +370,17 @@ export default function Home() {
           setDownloadUrl(data.download_url ?? "");
           setFileName(data.file_name ?? "");
           setFileSize(data.file_size ?? 0);
+          const totalTime = Math.floor((Date.now() - buildStartTime) / 1000);
+          const record: BuildRecord = {
+            jobId: id,
+            packageName: form.packageName,
+            organism: form.organism,
+            downloadUrl: data.download_url ?? "",
+            buildTime: totalTime,
+            timestamp: Date.now(),
+          };
+          saveBuildRecord(record);
+          setBuildHistory(loadBuildHistory());
           setStep("result");
           return;
         } else if (data.status === "failed") {
@@ -1226,6 +1243,47 @@ export default function Home() {
                 >
                   Build Another Package
                 </Button>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Recent Builds */}
+          {buildHistory.length > 0 && step === "input" && (
+            <Card className="mt-6">
+              <CardHeader>
+                <CardTitle className="text-lg">Recent Builds</CardTitle>
+                <CardDescription>
+                  Your previous builds (stored locally in this browser)
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  {buildHistory.slice(0, 5).map((record) => (
+                    <div
+                      key={record.jobId}
+                      className="flex items-center justify-between gap-4 p-3 rounded-md bg-secondary/50 border border-border"
+                    >
+                      <div className="min-w-0">
+                        <p className="font-mono text-sm font-medium text-foreground truncate">
+                          {record.packageName}
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          {record.organism} &middot; {record.buildTime}s &middot;{" "}
+                          {new Date(record.timestamp).toLocaleDateString()}
+                        </p>
+                      </div>
+                      {record.downloadUrl && (
+                        <a
+                          href={record.downloadUrl}
+                          className="shrink-0 inline-flex items-center gap-1 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+                        >
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                          Download
+                        </a>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </CardContent>
             </Card>
           )}
