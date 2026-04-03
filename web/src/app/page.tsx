@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -67,6 +67,37 @@ const EMPTY_FORM: FormData = {
 };
 
 type Step = "input" | "review" | "building" | "result";
+
+interface BuildRecord {
+  jobId: string;
+  packageName: string;
+  organism: string;
+  downloadUrl: string;
+  buildTime: number;
+  timestamp: number;
+}
+
+function saveBuildRecord(record: BuildRecord) {
+  try {
+    const history: BuildRecord[] = JSON.parse(
+      localStorage.getItem("autobsgenome_history") ?? "[]"
+    );
+    history.unshift(record);
+    // Keep last 20
+    localStorage.setItem(
+      "autobsgenome_history",
+      JSON.stringify(history.slice(0, 20))
+    );
+  } catch {}
+}
+
+function loadBuildHistory(): BuildRecord[] {
+  try {
+    return JSON.parse(localStorage.getItem("autobsgenome_history") ?? "[]");
+  } catch {
+    return [];
+  }
+}
 
 export default function Home() {
   const [step, setStep] = useState<Step>("input");
@@ -296,6 +327,7 @@ export default function Home() {
   };
 
   const pollBuildStatus = (id: string) => {
+    let errorCount = 0;
     const interval = setInterval(async () => {
       const now = Date.now();
       const elapsedSec = Math.floor((now - buildStartTime) / 1000);
@@ -324,19 +356,38 @@ export default function Home() {
           setFileName(data.file_name ?? "");
           setFileSize(data.file_size ?? 0);
           setStep("result");
+          return;
         } else if (data.status === "failed") {
           clearInterval(interval);
           setBuildError(data.message ?? "Build failed");
           setStep("review");
+          return;
+        } else if (data.status === "error") {
+          errorCount++;
+          // After 6 consecutive errors (30s), show a helpful message but keep polling
+          if (errorCount >= 6 && errorCount % 6 === 0) {
+            setBuildError(
+              `Status check temporarily unavailable (${data.message ?? "API error"}). ` +
+              `Your build is likely still running. You can check GitHub Actions directly: ` +
+              `https://github.com/JohnnyChen1113/autoBSgenome/actions`
+            );
+          }
+        } else {
+          // "building" status — reset error count
+          errorCount = 0;
+          setBuildError("");
         }
       } catch {
-        // Network error, keep polling
+        errorCount++;
       }
 
-      // Timeout after 20 minutes
-      if (elapsedSec > 1200) {
+      // Timeout after 10 minutes
+      if (elapsedSec > 600) {
         clearInterval(interval);
-        setBuildError("Build timed out. Please try again.");
+        setBuildError(
+          "Status polling timed out after 10 minutes. Your build may still be running — " +
+          "check https://github.com/JohnnyChen1113/autoBSgenome/releases for your package."
+        );
         setStep("review");
       }
     }, 5000);
@@ -1040,6 +1091,11 @@ export default function Home() {
                     </p>
                   )}
                 </div>
+                {buildError && step === "building" && (
+                  <div className="bg-amber-50 border border-amber-200 rounded-md px-4 py-3 text-sm text-amber-800">
+                    {buildError}
+                  </div>
+                )}
               </CardContent>
             </Card>
           )}
