@@ -8,6 +8,11 @@ permissions:
   contents: write
   packages: read
 
+# Only 1 build at a time — rest queue automatically. Never cancel in-progress builds.
+concurrency:
+  group: bsgenome-build
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -282,6 +282,7 @@ export default function Home() {
   const [buildStartTime, setBuildStartTime] = useState(0);
   const [isPublished, setIsPublished] = useState(false);
   const [publishing, setPublishing] = useState(false);
+  const [queueInfo, setQueueInfo] = useState<{ running: number; queued: number } | null>(null);
   const [buildElapsed, setBuildElapsed] = useState(0);
   const [buildTotalTime, setBuildTotalTime] = useState(0);
 
@@ -304,6 +305,15 @@ export default function Home() {
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Fetch queue status when entering review step
+  useEffect(() => {
+    if (step !== "review") return;
+    fetch(`${WORKER_API}/api/queue`)
+      .then(r => r.json())
+      .then((data: { running: number; queued: number }) => setQueueInfo(data))
+      .catch(() => setQueueInfo(null));
+  }, [step]);
 
   // Celebration confetti on build success
   useEffect(() => {
@@ -1108,6 +1118,17 @@ export default function Home() {
                 </Accordion>
 
                 {/* Build button */}
+                {/* Queue status */}
+                {queueInfo && (queueInfo.running > 0 || queueInfo.queued > 0) && (
+                  <div className="bg-accent border border-border rounded-md px-4 py-2.5 text-sm text-muted-foreground flex items-center gap-2">
+                    <svg className="animate-spin h-4 w-4 text-primary" viewBox="0 0 24 24" fill="none">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
+                    </svg>
+                    Build queue: {queueInfo.running} running, {queueInfo.queued} waiting
+                  </div>
+                )}
+
                 <Button
                   size="lg"
                   className="w-full text-base cursor-pointer"

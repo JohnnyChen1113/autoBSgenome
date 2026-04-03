@@ -46,6 +46,11 @@ export default {
       });
     }
 
+    // GET /api/queue — check current build queue status
+    if (url.pathname === "/api/queue" && request.method === "GET") {
+      return handleQueue(env, origin);
+    }
+
     // POST /api/build — trigger a BSgenome build
     if (url.pathname === "/api/build" && request.method === "POST") {
       return handleBuild(request, env, origin);
@@ -66,6 +71,78 @@ export default {
   },
 };
 
+const MAX_QUEUE_SIZE = 5;
+
+async function getQueueInfo(env: Env): Promise<{
+  running: number;
+  queued: number;
+  runs: { id: number; status: string; name: string; created_at: string }[];
+}> {
+  const ghHeaders = {
+    Authorization: `Bearer ${env.GITHUB_PAT}`,
+    Accept: "application/vnd.github+json",
+    "User-Agent": "AutoBSgenome-Worker",
+  };
+  const res = await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/actions/workflows/build-bsgenome.yml/runs?status=in_progress&per_page=10`,
+    { headers: ghHeaders }
+  );
+  const queuedRes = await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/actions/workflows/build-bsgenome.yml/runs?status=queued&per_page=10`,
+    { headers: ghHeaders }
+  );
+  const waitingRes = await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/actions/workflows/build-bsgenome.yml/runs?status=waiting&per_page=10`,
+    { headers: ghHeaders }
+  );
+
+  let running = 0, queued = 0;
+  const runs: { id: number; status: string; name: string; created_at: string }[] = [];
+
+  if (res.ok) {
+    const data = await res.json<{ total_count: number; workflow_runs: { id: number; status: string; display_title: string; created_at: string }[] }>();
+    running = data.total_count;
+    for (const r of data.workflow_runs) {
+      runs.push({ id: r.id, status: "running", name: r.display_title, created_at: r.created_at });
+    }
+  }
+  if (queuedRes.ok) {
+    const data = await queuedRes.json<{ total_count: number; workflow_runs: { id: number; status: string; display_title: string; created_at: string }[] }>();
+    queued += data.total_count;
+    for (const r of data.workflow_runs) {
+      runs.push({ id: r.id, status: "queued", name: r.display_title, created_at: r.created_at });
+    }
+  }
+  if (waitingRes.ok) {
+    const data = await waitingRes.json<{ total_count: number; workflow_runs: { id: number; status: string; display_title: string; created_at: string }[] }>();
+    queued += data.total_count;
+    for (const r of data.workflow_runs) {
+      runs.push({ id: r.id, status: "waiting", name: r.display_title, created_at: r.created_at });
+    }
+  }
+
+  return { running, queued, runs };
+}
+
+async function handleQueue(
+  env: Env,
+  origin: string
+): Promise<Response> {
+  const queue = await getQueueInfo(env);
+  return jsonResponse(
+    {
+      running: queue.running,
+      queued: queue.queued,
+      total: queue.running + queue.queued,
+      max_queue: MAX_QUEUE_SIZE,
+      runs: queue.runs,
+    },
+    200,
+    origin,
+    env.ALLOWED_ORIGIN
+  );
+}
+
 async function handleBuild(
   request: Request,
   env: Env,
@@ -78,6 +155,20 @@ async function handleBuild(
     return jsonResponse(
       { error: "Missing required fields: package_name, organism" },
       400,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  // Check queue depth — reject if too many builds pending
+  const queue = await getQueueInfo(env);
+  if (queue.running + queue.queued >= MAX_QUEUE_SIZE) {
+    return jsonResponse(
+      {
+        error: `Build queue is full (${queue.running} running, ${queue.queued} waiting). Please try again in a few minutes.`,
+        queue: { running: queue.running, queued: queue.queued },
+      },
+      429,
       origin,
       env.ALLOWED_ORIGIN
     );
