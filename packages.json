@@ -437,6 +437,25 @@
       ]
     },
     {
+      "organism": "Miniopterus natalensis",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Mnatalensis.NCBI.Mnatv1",
+          "version": "1.0.0",
+          "organism": "Miniopterus natalensis",
+          "assembly": "Mnat.v1",
+          "provider": "NCBI",
+          "accession": "",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+          "file_name": "BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz",
+          "size": 458567760,
+          "published": "2026-04-03T20:53:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnatalensis.NCBI.Mnatv1/BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mitosporidium daphniae",
       "common_name": "",
       "builds": [
@@ -1213,6 +1232,19 @@
       "size": 437760675,
       "published": "2026-04-03T20:53:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccristata.NCBI.ConCri10/BSgenome.Ccristata.NCBI.ConCri10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mnatalensis.NCBI.Mnatv1",
+      "version": "1.0.0",
+      "organism": "Miniopterus natalensis",
+      "assembly": "Mnat.v1",
+      "provider": "NCBI",
+      "accession": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+      "file_name": "BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz",
+      "size": 458567760,
+      "published": "2026-04-03T20:53:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnatalensis.NCBI.Mnatv1/BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz"
     }
   ]
 }
