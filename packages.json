@@ -375,6 +375,54 @@
       ]
     },
     {
+      "organism": "Cebus imitator",
+      "common_name": "Panamanian white-faced capuchin",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cebidae",
+        "genus": "Cebus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cimitator.NCBI.Cebusimitator10",
+          "version": "1.0.0",
+          "organism": "Cebus imitator",
+          "assembly": "Cebus_imitator-1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001604975.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001604975.1/",
+          "file_name": "BSgenome.Cimitator.NCBI.Cebusimitator10_1.0.0.tar.gz",
+          "size": 681292995,
+          "seq_ids": [
+            "NW_016107315.1",
+            "NW_016107316.1",
+            "NW_016107317.1",
+            "NW_016107318.1",
+            "NW_016107319.1"
+          ],
+          "seq_count": 7156,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cebidae",
+            "genus": "Cebus"
+          },
+          "common_name": "Panamanian white-faced capuchin",
+          "published": "2026-04-03T23:41:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cimitator.NCBI.Cebusimitator10/BSgenome.Cimitator.NCBI.Cebusimitator10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ceratotherium simum simum",
       "common_name": "southern white rhinoceros",
       "group": "vertebrate_mammalian",
@@ -3999,6 +4047,38 @@
       "common_name": "hybrid cattle",
       "published": "2026-04-03T23:40:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bindicus.NCBI.UOABrahman1/BSgenome.Bindicus.NCBI.UOABrahman1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cimitator.NCBI.Cebusimitator10",
+      "version": "1.0.0",
+      "organism": "Cebus imitator",
+      "assembly": "Cebus_imitator-1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001604975.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001604975.1/",
+      "file_name": "BSgenome.Cimitator.NCBI.Cebusimitator10_1.0.0.tar.gz",
+      "size": 681292995,
+      "seq_ids": [
+        "NW_016107315.1",
+        "NW_016107316.1",
+        "NW_016107317.1",
+        "NW_016107318.1",
+        "NW_016107319.1"
+      ],
+      "seq_count": 7156,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cebidae",
+        "genus": "Cebus"
+      },
+      "common_name": "Panamanian white-faced capuchin",
+      "published": "2026-04-03T23:41:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cimitator.NCBI.Cebusimitator10/BSgenome.Cimitator.NCBI.Cebusimitator10_1.0.0.tar.gz"
     }
   ]
 }
