@@ -45,3 +45,7 @@ NeedsCompilation: no
 Package: BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.NCBI.R64
+Version: 1.0.0
+NeedsCompilation: no
