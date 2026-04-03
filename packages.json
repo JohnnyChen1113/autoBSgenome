@@ -77,6 +77,17 @@
     "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eintestinalis.NCBI.ASM14646v1/BSgenome.Eintestinalis.NCBI.ASM14646v1_1.0.0.tar.gz"
   },
   {
+    "package": "BSgenome.Mdaphniae.NCBI.UGP11",
+    "version": "1.0.0",
+    "organism": "",
+    "assembly": "",
+    "provider": "NCBI",
+    "file_name": "BSgenome.Mdaphniae.NCBI.UGP11_1.0.0.tar.gz",
+    "size": 0,
+    "published": "2026-04-03T19:34:44Z",
+    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdaphniae.NCBI.UGP11/BSgenome.Mdaphniae.NCBI.UGP11_1.0.0.tar.gz"
+  },
+  {
     "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01",
     "version": "1.0.0",
     "organism": "Aspergillus luchuensis",

@@ -26,6 +26,10 @@ Package: BSgenome.Eintestinalis.NCBI.ASM14646v1
 Version: 1.0.0
 NeedsCompilation: no
 
+Package: BSgenome.Mdaphniae.NCBI.UGP11
+Version: 1.0.0
+NeedsCompilation: no
+
 Package: BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01
 Version: 1.0.0
 NeedsCompilation: no
