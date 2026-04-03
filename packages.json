@@ -1198,6 +1198,54 @@
       ]
     },
     {
+      "organism": "Marmota marmota marmota",
+      "common_name": "Alpine marmot",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Sciuridae",
+        "genus": "Marmota"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mmarmota.NCBI.marMar",
+          "version": "1.0.0",
+          "organism": "Marmota marmota marmota",
+          "assembly": "marMar",
+          "provider": "NCBI",
+          "accession": "GCF_001458135.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001458135.2/",
+          "file_name": "BSgenome.Mmarmota.NCBI.marMar_1.0.0.tar.gz",
+          "size": 627443628,
+          "seq_ids": [
+            "NW_025999842.1",
+            "NW_025999843.1",
+            "NW_025999844.1",
+            "NW_025999845.1",
+            "NW_025999846.1"
+          ],
+          "seq_count": 14031,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Sciuridae",
+            "genus": "Marmota"
+          },
+          "common_name": "Alpine marmot",
+          "published": "2026-04-03T22:41:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmarmota.NCBI.marMar/BSgenome.Mmarmota.NCBI.marMar_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Micromonas commoda",
       "common_name": "",
       "group": "plant",
@@ -3599,6 +3647,38 @@
       "common_name": "",
       "published": "2026-04-03T22:41:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcalifornicus.NCBI.ASM782708v3/BSgenome.Pcalifornicus.NCBI.ASM782708v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmarmota.NCBI.marMar",
+      "version": "1.0.0",
+      "organism": "Marmota marmota marmota",
+      "assembly": "marMar",
+      "provider": "NCBI",
+      "accession": "GCF_001458135.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001458135.2/",
+      "file_name": "BSgenome.Mmarmota.NCBI.marMar_1.0.0.tar.gz",
+      "size": 627443628,
+      "seq_ids": [
+        "NW_025999842.1",
+        "NW_025999843.1",
+        "NW_025999844.1",
+        "NW_025999845.1",
+        "NW_025999846.1"
+      ],
+      "seq_count": 14031,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Sciuridae",
+        "genus": "Marmota"
+      },
+      "common_name": "Alpine marmot",
+      "published": "2026-04-03T22:41:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmarmota.NCBI.marMar/BSgenome.Mmarmota.NCBI.marMar_1.0.0.tar.gz"
     }
   ]
 }

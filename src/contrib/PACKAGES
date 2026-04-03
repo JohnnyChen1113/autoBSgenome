@@ -273,3 +273,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcalifornicus.NCBI.ASM782708v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmarmota.NCBI.marMar
+Version: 1.0.0
+NeedsCompilation: no
