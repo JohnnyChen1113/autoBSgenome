@@ -1823,6 +1823,54 @@
       ]
     },
     {
+      "organism": "Otolemur garnettii",
+      "common_name": "small-eared galago",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Galagidae",
+        "genus": "Otolemur"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ogarnettii.NCBI.OtoGar3",
+          "version": "1.0.0",
+          "organism": "Otolemur garnettii",
+          "assembly": "OtoGar3",
+          "provider": "NCBI",
+          "accession": "GCF_000181295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000181295.1/",
+          "file_name": "BSgenome.Ogarnettii.NCBI.OtoGar3_1.0.0.tar.gz",
+          "size": 618525878,
+          "seq_ids": [
+            "NW_003852396.1",
+            "NW_003852397.1",
+            "NW_003852398.1",
+            "NW_003852399.1",
+            "NW_003852400.1"
+          ],
+          "seq_count": 7793,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Galagidae",
+            "genus": "Otolemur"
+          },
+          "common_name": "small-eared galago",
+          "published": "2026-04-03T23:40:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ogarnettii.NCBI.OtoGar3/BSgenome.Ogarnettii.NCBI.OtoGar3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Peromyscus californicus insignis",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -3839,6 +3887,38 @@
       "common_name": "southern multimammate mouse",
       "published": "2026-04-03T22:41:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcoucha.NCBI.UCSFMcou1/BSgenome.Mcoucha.NCBI.UCSFMcou1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ogarnettii.NCBI.OtoGar3",
+      "version": "1.0.0",
+      "organism": "Otolemur garnettii",
+      "assembly": "OtoGar3",
+      "provider": "NCBI",
+      "accession": "GCF_000181295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000181295.1/",
+      "file_name": "BSgenome.Ogarnettii.NCBI.OtoGar3_1.0.0.tar.gz",
+      "size": 618525878,
+      "seq_ids": [
+        "NW_003852396.1",
+        "NW_003852397.1",
+        "NW_003852398.1",
+        "NW_003852399.1",
+        "NW_003852400.1"
+      ],
+      "seq_count": 7793,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Galagidae",
+        "genus": "Otolemur"
+      },
+      "common_name": "small-eared galago",
+      "published": "2026-04-03T23:40:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ogarnettii.NCBI.OtoGar3/BSgenome.Ogarnettii.NCBI.OtoGar3_1.0.0.tar.gz"
     }
   ]
 }
