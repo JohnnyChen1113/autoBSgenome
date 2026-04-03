@@ -249,3 +249,7 @@ NeedsCompilation: no
 Package: BSgenome.Amelanoleuca.NCBI.ASM200744v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pconcolor.NCBI.PumCon10
+Version: 1.0.0
+NeedsCompilation: no

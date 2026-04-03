@@ -1675,6 +1675,54 @@
       ]
     },
     {
+      "organism": "Puma concolor",
+      "common_name": "puma",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Puma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pconcolor.NCBI.PumCon10",
+          "version": "1.0.0",
+          "organism": "Puma concolor",
+          "assembly": "PumCon1.0",
+          "provider": "NCBI",
+          "accession": "GCF_003327715.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003327715.1/",
+          "file_name": "BSgenome.Pconcolor.NCBI.PumCon10_1.0.0.tar.gz",
+          "size": 604641691,
+          "seq_ids": [
+            "NW_020337919.1",
+            "NW_020337920.1",
+            "NW_020337921.1",
+            "NW_020337922.1",
+            "NW_020337923.1"
+          ],
+          "seq_count": 2175,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Puma"
+          },
+          "common_name": "puma",
+          "published": "2026-04-03T22:40:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pconcolor.NCBI.PumCon10/BSgenome.Pconcolor.NCBI.PumCon10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhinolophus ferrumequinum",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -3119,6 +3167,38 @@
       "common_name": "giant panda",
       "published": "2026-04-03T22:40:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amelanoleuca.NCBI.ASM200744v3/BSgenome.Amelanoleuca.NCBI.ASM200744v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pconcolor.NCBI.PumCon10",
+      "version": "1.0.0",
+      "organism": "Puma concolor",
+      "assembly": "PumCon1.0",
+      "provider": "NCBI",
+      "accession": "GCF_003327715.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003327715.1/",
+      "file_name": "BSgenome.Pconcolor.NCBI.PumCon10_1.0.0.tar.gz",
+      "size": 604641691,
+      "seq_ids": [
+        "NW_020337919.1",
+        "NW_020337920.1",
+        "NW_020337921.1",
+        "NW_020337922.1",
+        "NW_020337923.1"
+      ],
+      "seq_count": 2175,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Puma"
+      },
+      "common_name": "puma",
+      "published": "2026-04-03T22:40:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pconcolor.NCBI.PumCon10/BSgenome.Pconcolor.NCBI.PumCon10_1.0.0.tar.gz"
     }
   ]
 }
