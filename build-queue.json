@@ -503,7 +503,7 @@
     "genome_size_bp": 2519724550,
     "genome_size_mb": 2519.7,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_000247695.1",
@@ -514,7 +514,7 @@
     "genome_size_bp": 2618188253,
     "genome_size_mb": 2618.2,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_003369695.1",
@@ -525,7 +525,7 @@
     "genome_size_bp": 2680953056,
     "genome_size_mb": 2681.0,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_001604975.1",
@@ -536,7 +536,7 @@
     "genome_size_bp": 2717703182,
     "genome_size_mb": 2717.7,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_009761245.1",
@@ -547,7 +547,7 @@
     "genome_size_bp": 2729201088,
     "genome_size_mb": 2729.2,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_000956105.1",
@@ -558,7 +558,7 @@
     "genome_size_bp": 2798135037,
     "genome_size_mb": 2798.1,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_000754665.1",
@@ -569,7 +569,7 @@
     "genome_size_bp": 2828015366,
     "genome_size_mb": 2828.0,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_006542625.1",
@@ -580,7 +580,7 @@
     "genome_size_bp": 2843966406,
     "genome_size_mb": 2844.0,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_000334495.1",
@@ -591,7 +591,7 @@
     "genome_size_bp": 2846580235,
     "genome_size_mb": 2846.6,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_000955945.1",
@@ -602,7 +602,7 @@
     "genome_size_bp": 2848246356,
     "genome_size_mb": 2848.2,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_009828535.3",
@@ -613,7 +613,7 @@
     "genome_size_bp": 2848323459,
     "genome_size_mb": 2848.3,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_008728515.1",
@@ -624,7 +624,7 @@
     "genome_size_bp": 2869804647,
     "genome_size_mb": 2869.8,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_009764315.1",
@@ -635,7 +635,7 @@
     "genome_size_bp": 2875554650,
     "genome_size_mb": 2875.6,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_003255815.1",
@@ -646,7 +646,7 @@
     "genome_size_bp": 2889614139,
     "genome_size_mb": 2889.6,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_001704415.2",
@@ -657,7 +657,7 @@
     "genome_size_bp": 2922600443,
     "genome_size_mb": 2922.6,
     "priority": 1,
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCF_000313985.2",
