@@ -313,3 +313,7 @@ NeedsCompilation: no
 Package: BSgenome.Nleucogenys.NCBI.AsiaNLEv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tchinensis.NCBI.TupChi10
+Version: 1.0.0
+NeedsCompilation: no
