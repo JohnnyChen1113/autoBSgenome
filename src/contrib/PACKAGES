@@ -265,3 +265,7 @@ NeedsCompilation: no
 Package: BSgenome.Elutris.NCBI.ASM228890v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csimum.NCBI.CerSimSim10
+Version: 1.0.0
+NeedsCompilation: no

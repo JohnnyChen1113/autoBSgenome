@@ -327,6 +327,54 @@
       ]
     },
     {
+      "organism": "Ceratotherium simum simum",
+      "common_name": "southern white rhinoceros",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Rhinocerotidae",
+        "genus": "Ceratotherium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Csimum.NCBI.CerSimSim10",
+          "version": "1.0.0",
+          "organism": "Ceratotherium simum simum",
+          "assembly": "CerSimSim1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000283155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000283155.1/",
+          "file_name": "BSgenome.Csimum.NCBI.CerSimSim10_1.0.0.tar.gz",
+          "size": 623925407,
+          "seq_ids": [
+            "NW_004454156.1",
+            "NW_004454157.1",
+            "NW_004454158.1",
+            "NW_004454159.1",
+            "NW_004454160.1"
+          ],
+          "seq_count": 3087,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Rhinocerotidae",
+            "genus": "Ceratotherium"
+          },
+          "common_name": "southern white rhinoceros",
+          "published": "2026-04-03T22:41:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csimum.NCBI.CerSimSim10/BSgenome.Csimum.NCBI.CerSimSim10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chinchilla lanigera",
       "common_name": "long-tailed chinchilla",
       "group": "vertebrate_mammalian",
@@ -3439,6 +3487,38 @@
       "common_name": "northern sea otter",
       "published": "2026-04-03T22:41:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Elutris.NCBI.ASM228890v2/BSgenome.Elutris.NCBI.ASM228890v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Csimum.NCBI.CerSimSim10",
+      "version": "1.0.0",
+      "organism": "Ceratotherium simum simum",
+      "assembly": "CerSimSim1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000283155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000283155.1/",
+      "file_name": "BSgenome.Csimum.NCBI.CerSimSim10_1.0.0.tar.gz",
+      "size": 623925407,
+      "seq_ids": [
+        "NW_004454156.1",
+        "NW_004454157.1",
+        "NW_004454158.1",
+        "NW_004454159.1",
+        "NW_004454160.1"
+      ],
+      "seq_count": 3087,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Rhinocerotidae",
+        "genus": "Ceratotherium"
+      },
+      "common_name": "southern white rhinoceros",
+      "published": "2026-04-03T22:41:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csimum.NCBI.CerSimSim10/BSgenome.Csimum.NCBI.CerSimSim10_1.0.0.tar.gz"
     }
   ]
 }
