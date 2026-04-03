@@ -22,6 +22,17 @@
     "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3/BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3_1.0.0.tar.gz"
   },
   {
+    "package": "BSgenome.Vcorneae.NCBI.VittcornV1",
+    "version": "1.0.0",
+    "organism": "",
+    "assembly": "",
+    "provider": "NCBI",
+    "file_name": "BSgenome.Vcorneae.NCBI.VittcornV1_1.0.0.tar.gz",
+    "size": 0,
+    "published": "2026-04-03T19:34:09Z",
+    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vcorneae.NCBI.VittcornV1/BSgenome.Vcorneae.NCBI.VittcornV1_1.0.0.tar.gz"
+  },
+  {
     "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01",
     "version": "1.0.0",
     "organism": "Aspergillus luchuensis",
