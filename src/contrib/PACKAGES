@@ -309,3 +309,7 @@ NeedsCompilation: no
 Package: BSgenome.Sapella.NCBI.GSCmonkey10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nleucogenys.NCBI.AsiaNLEv1
+Version: 1.0.0
+NeedsCompilation: no
