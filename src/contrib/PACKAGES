@@ -297,3 +297,7 @@ NeedsCompilation: no
 Package: BSgenome.Cimitator.NCBI.Cebusimitator10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hglaber.NCBI.HetGlafemale10
+Version: 1.0.0
+NeedsCompilation: no

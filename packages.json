@@ -1058,6 +1058,54 @@
       ]
     },
     {
+      "organism": "Heterocephalus glaber",
+      "common_name": "naked mole-rat",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Bathyergidae",
+        "genus": "Heterocephalus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hglaber.NCBI.HetGlafemale10",
+          "version": "1.0.0",
+          "organism": "Heterocephalus glaber",
+          "assembly": "HetGla_female_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000247695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000247695.1/",
+          "file_name": "BSgenome.Hglaber.NCBI.HetGlafemale10_1.0.0.tar.gz",
+          "size": 606865000,
+          "seq_ids": [
+            "NW_004624730.1",
+            "NW_004624731.1",
+            "NW_004624732.1",
+            "NW_004624733.1",
+            "NW_004624734.1"
+          ],
+          "seq_count": 4229,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Bathyergidae",
+            "genus": "Heterocephalus"
+          },
+          "common_name": "naked mole-rat",
+          "published": "2026-04-03T23:41:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hglaber.NCBI.HetGlafemale10/BSgenome.Hglaber.NCBI.HetGlafemale10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Hippocampus comes",
       "common_name": "tiger tail seahorse",
       "group": "vertebrate_other",
@@ -4079,6 +4127,38 @@
       "common_name": "Panamanian white-faced capuchin",
       "published": "2026-04-03T23:41:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cimitator.NCBI.Cebusimitator10/BSgenome.Cimitator.NCBI.Cebusimitator10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hglaber.NCBI.HetGlafemale10",
+      "version": "1.0.0",
+      "organism": "Heterocephalus glaber",
+      "assembly": "HetGla_female_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000247695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000247695.1/",
+      "file_name": "BSgenome.Hglaber.NCBI.HetGlafemale10_1.0.0.tar.gz",
+      "size": 606865000,
+      "seq_ids": [
+        "NW_004624730.1",
+        "NW_004624731.1",
+        "NW_004624732.1",
+        "NW_004624733.1",
+        "NW_004624734.1"
+      ],
+      "seq_count": 4229,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Bathyergidae",
+        "genus": "Heterocephalus"
+      },
+      "common_name": "naked mole-rat",
+      "published": "2026-04-03T23:41:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hglaber.NCBI.HetGlafemale10/BSgenome.Hglaber.NCBI.HetGlafemale10_1.0.0.tar.gz"
     }
   ]
 }
