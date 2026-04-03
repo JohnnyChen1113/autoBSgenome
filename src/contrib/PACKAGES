@@ -261,3 +261,7 @@ NeedsCompilation: no
 Package: BSgenome.Merminea.NCBI.mMusErm1Pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Elutris.NCBI.ASM228890v2
+Version: 1.0.0
+NeedsCompilation: no
