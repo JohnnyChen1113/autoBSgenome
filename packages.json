@@ -1727,6 +1727,54 @@
       ]
     },
     {
+      "organism": "Peromyscus californicus insignis",
+      "common_name": "",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Peromyscus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcalifornicus.NCBI.ASM782708v3",
+          "version": "1.0.0",
+          "organism": "Peromyscus californicus insignis",
+          "assembly": "ASM782708v3",
+          "provider": "NCBI",
+          "accession": "GCF_007827085.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007827085.1/",
+          "file_name": "BSgenome.Pcalifornicus.NCBI.ASM782708v3_1.0.0.tar.gz",
+          "size": 634567517,
+          "seq_ids": [
+            "NW_026294381.1",
+            "NW_026294382.1",
+            "NW_026294383.1",
+            "NW_026294384.1",
+            "NW_026294385.1"
+          ],
+          "seq_count": 237,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Cricetidae",
+            "genus": "Peromyscus"
+          },
+          "common_name": "",
+          "published": "2026-04-03T22:41:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcalifornicus.NCBI.ASM782708v3/BSgenome.Pcalifornicus.NCBI.ASM782708v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phoca vitulina",
       "common_name": "harbor seal",
       "group": "vertebrate_mammalian",
@@ -3519,6 +3567,38 @@
       "common_name": "southern white rhinoceros",
       "published": "2026-04-03T22:41:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csimum.NCBI.CerSimSim10/BSgenome.Csimum.NCBI.CerSimSim10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcalifornicus.NCBI.ASM782708v3",
+      "version": "1.0.0",
+      "organism": "Peromyscus californicus insignis",
+      "assembly": "ASM782708v3",
+      "provider": "NCBI",
+      "accession": "GCF_007827085.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007827085.1/",
+      "file_name": "BSgenome.Pcalifornicus.NCBI.ASM782708v3_1.0.0.tar.gz",
+      "size": 634567517,
+      "seq_ids": [
+        "NW_026294381.1",
+        "NW_026294382.1",
+        "NW_026294383.1",
+        "NW_026294384.1",
+        "NW_026294385.1"
+      ],
+      "seq_count": 237,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Peromyscus"
+      },
+      "common_name": "",
+      "published": "2026-04-03T22:41:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcalifornicus.NCBI.ASM782708v3/BSgenome.Pcalifornicus.NCBI.ASM782708v3_1.0.0.tar.gz"
     }
   ]
 }
