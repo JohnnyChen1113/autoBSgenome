@@ -139,6 +139,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           JOB_ID="${{ steps.params.outputs.job_id }}"
           PACKAGE="${{ steps.params.outputs.package_name }}"
           VERSION="${{ steps.params.outputs.version }}"
@@ -166,6 +167,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
           JOB_ID="${{ steps.params.outputs.job_id }}"
           TAG="build-${JOB_ID}"
           gh release create "${TAG}" \
