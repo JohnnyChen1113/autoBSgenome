@@ -35,10 +35,21 @@ Within each group: smallest genome first (faster builds = faster progress).
 
 ## Rate Limiting
 
-- **5 builds per batch, every 2 hours** = 60 builds/day
-- **Estimated completion: ~170 days** (~6 months)
+- **10 builds per batch, every hour** = 240 builds/day
+- **Estimated completion: ~42 days** (~6 weeks)
 - All builds queue behind user-triggered builds (user builds always have priority)
 - Concurrency: 1 build at a time (GitHub Actions concurrency group)
+
+## Oversized Genomes (>2 GB package)
+
+Genomes whose .tar.gz exceeds GitHub's 2 GB per-file Release limit:
+
+| Organism | Accession | Genome Size | Est. Package |
+|----------|-----------|-------------|-------------|
+| *Triticum dicoccoides* | GCF_002162155.2 | 10.7 GB | ~2.1 GB |
+
+**Strategy:** Upload these to [Zenodo](https://zenodo.org/) (free, DOI-backed, 50 GB per record).
+The browse page will link to the Zenodo record instead of GitHub Releases.
 
 ## How to Start
 
