@@ -193,3 +193,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmonoceros.NCBI.NGINarwhal1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dleucas.NCBI.ASM228892v3
+Version: 1.0.0
+NeedsCompilation: no
