@@ -201,3 +201,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hhyaena.NCBI.ASM300989v1
+Version: 1.0.0
+NeedsCompilation: no

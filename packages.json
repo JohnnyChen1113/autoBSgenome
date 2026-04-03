@@ -576,6 +576,54 @@
       ]
     },
     {
+      "organism": "Hyaena hyaena",
+      "common_name": "striped hyena",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Hyaenidae",
+        "genus": "Hyaena"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hhyaena.NCBI.ASM300989v1",
+          "version": "1.0.0",
+          "organism": "Hyaena hyaena",
+          "assembly": "ASM300989v1",
+          "provider": "NCBI",
+          "accession": "GCF_003009895.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003009895.1/",
+          "file_name": "BSgenome.Hhyaena.NCBI.ASM300989v1_1.0.0.tar.gz",
+          "size": 617631541,
+          "seq_ids": [
+            "NW_024080632.1",
+            "NW_024080633.1",
+            "NW_024080634.1",
+            "NW_024080635.1",
+            "NW_024080636.1"
+          ],
+          "seq_count": 5761,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Hyaenidae",
+            "genus": "Hyaena"
+          },
+          "common_name": "striped hyena",
+          "published": "2026-04-03T21:41:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhyaena.NCBI.ASM300989v1/BSgenome.Hhyaena.NCBI.ASM300989v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Larimichthys crocea",
       "common_name": "large yellow croaker",
       "group": "vertebrate_other",
@@ -2159,6 +2207,38 @@
       "common_name": "meerkat",
       "published": "2026-04-03T21:41:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC/BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hhyaena.NCBI.ASM300989v1",
+      "version": "1.0.0",
+      "organism": "Hyaena hyaena",
+      "assembly": "ASM300989v1",
+      "provider": "NCBI",
+      "accession": "GCF_003009895.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003009895.1/",
+      "file_name": "BSgenome.Hhyaena.NCBI.ASM300989v1_1.0.0.tar.gz",
+      "size": 617631541,
+      "seq_ids": [
+        "NW_024080632.1",
+        "NW_024080633.1",
+        "NW_024080634.1",
+        "NW_024080635.1",
+        "NW_024080636.1"
+      ],
+      "seq_count": 5761,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Hyaenidae",
+        "genus": "Hyaena"
+      },
+      "common_name": "striped hyena",
+      "published": "2026-04-03T21:41:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhyaena.NCBI.ASM300989v1/BSgenome.Hhyaena.NCBI.ASM300989v1_1.0.0.tar.gz"
     }
   ]
 }
