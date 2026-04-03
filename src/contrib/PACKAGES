@@ -325,3 +325,7 @@ NeedsCompilation: no
 Package: BSgenome.Panubis.NCBI.Panubis10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tgelada.NCBI.Tgel10
+Version: 1.0.0
+NeedsCompilation: no

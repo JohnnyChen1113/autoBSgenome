@@ -2725,6 +2725,54 @@
       ]
     },
     {
+      "organism": "Theropithecus gelada",
+      "common_name": "gelada",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Theropithecus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tgelada.NCBI.Tgel10",
+          "version": "1.0.0",
+          "organism": "Theropithecus gelada",
+          "assembly": "Tgel_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_003255815.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003255815.1/",
+          "file_name": "BSgenome.Tgelada.NCBI.Tgel10_1.0.0.tar.gz",
+          "size": 729954717,
+          "seq_ids": [
+            "NC_037668.1",
+            "NC_037669.1",
+            "NC_037670.1",
+            "NC_037671.1",
+            "NC_037672.1"
+          ],
+          "seq_count": 15308,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Theropithecus"
+          },
+          "common_name": "gelada",
+          "published": "2026-04-03T23:43:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgelada.NCBI.Tgel10/BSgenome.Tgelada.NCBI.Tgel10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tupaia chinensis",
       "common_name": "Chinese tree shrew",
       "group": "vertebrate_mammalian",
@@ -4639,6 +4687,38 @@
       "common_name": "olive baboon",
       "published": "2026-04-03T23:42:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panubis.NCBI.Panubis10/BSgenome.Panubis.NCBI.Panubis10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tgelada.NCBI.Tgel10",
+      "version": "1.0.0",
+      "organism": "Theropithecus gelada",
+      "assembly": "Tgel_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_003255815.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003255815.1/",
+      "file_name": "BSgenome.Tgelada.NCBI.Tgel10_1.0.0.tar.gz",
+      "size": 729954717,
+      "seq_ids": [
+        "NC_037668.1",
+        "NC_037669.1",
+        "NC_037670.1",
+        "NC_037671.1",
+        "NC_037672.1"
+      ],
+      "seq_count": 15308,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Theropithecus"
+      },
+      "common_name": "gelada",
+      "published": "2026-04-03T23:43:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgelada.NCBI.Tgel10/BSgenome.Tgelada.NCBI.Tgel10_1.0.0.tar.gz"
     }
   ]
 }
