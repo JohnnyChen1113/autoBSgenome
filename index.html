@@ -87,6 +87,15 @@
   .group-section { margin-bottom: 32px; }
   .group-title { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary); }
   .group-count { font-size: 14px; font-weight: 400; color: var(--text-muted); }
+  .tax-node { margin-bottom: 4px; }
+  .tax-header { display: flex; align-items: center; gap: 6px; padding: 6px 10px; cursor: pointer; border-radius: 6px; transition: background 0.1s; }
+  .tax-header:hover { background: var(--bg-secondary); }
+  .tax-name { font-weight: 600; font-size: 15px; color: var(--text); }
+  .tax-count { font-size: 12px; color: var(--text-muted); background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 10px; padding: 0 8px; margin-left: 4px; }
+  .tax-chevron { transition: transform 0.2s; flex-shrink: 0; }
+  .tax-children { display: block; }
+  .tax-children.collapsed { display: none; }
+  .tax-chevron.collapsed { transform: rotate(-90deg); }
   .empty { text-align: center; padding: 48px 0; color: var(--text-muted); }
   footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 48px; text-align: center; font-size: 13px; color: var(--text-muted); }
 
@@ -202,48 +211,81 @@ function renderOrganisms(organisms, flat) {
     return;
   }
 
-  // Group by kingdom
-  const groupLabels = {
-    'vertebrate_mammalian': { emoji: '', label: 'Mammals' },
-    'vertebrate_other': { emoji: '', label: 'Vertebrates (other)' },
-    'invertebrate': { emoji: '', label: 'Invertebrates' },
-    'plant': { emoji: '', label: 'Plants & Algae' },
-    'fungi': { emoji: '', label: 'Fungi & Microsporidia' },
-    'protozoa': { emoji: '', label: 'Protozoa' },
-    'bacteria': { emoji: '', label: 'Bacteria' },
-    'archaea': { emoji: '', label: 'Archaea' },
-    'other': { emoji: '', label: 'Other' },
-  };
-  const groupOrder = ['vertebrate_mammalian', 'vertebrate_other', 'invertebrate', 'plant', 'fungi', 'protozoa', 'bacteria', 'archaea', 'other'];
-
-  const grouped = {};
+  // Build taxonomy tree from organism classifications
+  const tree = {};
   organisms.forEach(org => {
-    const g = org.group || 'other';
-    if (!grouped[g]) grouped[g] = [];
-    grouped[g].push(org);
+    const tax = org.taxonomy || {};
+    // Build path: domain > kingdom/phylum > class > order
+    const path = [];
+    if (tax.domain) path.push(tax.domain);
+    if (tax.kingdom) path.push(tax.kingdom);
+    if (tax.phylum) path.push(tax.phylum);
+    if (tax.class) path.push(tax.class);
+    if (tax.order) path.push(tax.order);
+    if (path.length === 0) path.push('Unclassified');
+
+    let node = tree;
+    for (const level of path) {
+      if (!node[level]) node[level] = { _organisms: [], _children: {} };
+      node = node[level]._children;
+    }
+    // Leaf: store organism at the deepest classified level
+    const lastKey = path[path.length - 1];
+    let leaf = tree;
+    for (const level of path.slice(0, -1)) {
+      leaf = leaf[level]._children;
+    }
+    leaf[lastKey]._organisms.push(org);
   });
 
-  // Sort within groups
-  Object.values(grouped).forEach(arr => arr.sort((a, b) => a.organism.localeCompare(b.organism)));
-
-  let html = '';
-  for (const g of groupOrder) {
-    if (!grouped[g] || grouped[g].length === 0) continue;
-    const info = groupLabels[g] || { emoji: '', label: g };
-    html += `<div class="group-section">
-      <h2 class="group-title">${info.label} <span class="group-count">(${grouped[g].length})</span></h2>
-    `;
-    html += grouped[g].map(org => renderOrgCard(org)).join('');
-    html += `</div>`;
+  function countOrgsInNode(node) {
+    let count = (node._organisms || []).length;
+    for (const [key, child] of Object.entries(node._children || {})) {
+      count += countOrgsInNode(child);
+    }
+    return count;
   }
 
-  list.innerHTML = html;
+  function renderTree(nodeMap, depth = 0) {
+    let html = '';
+    const entries = Object.entries(nodeMap).sort((a, b) => a[0].localeCompare(b[0]));
+    for (const [name, node] of entries) {
+      const orgCount = countOrgsInNode(node);
+      const isLeafLevel = Object.keys(node._children).length === 0;
+      const indent = depth * 20;
 
-  // Auto-expand all if few organisms total
-  if (organisms.length <= 10) {
-    document.querySelectorAll('.build-list').forEach(bl => bl.classList.add('open'));
-    document.querySelectorAll('.chevron').forEach(c => c.classList.add('open'));
+      html += `<div class="tax-node" style="margin-left:${indent}px;">`;
+      if (!isLeafLevel) {
+        html += `<div class="tax-header" onclick="toggleTax(this)">
+          <svg class="tax-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          <span class="tax-name">${name}</span>
+          <span class="tax-count">${orgCount}</span>
+        </div>`;
+        html += `<div class="tax-children">`;
+      }
+
+      // Render organisms at this level
+      for (const org of (node._organisms || [])) {
+        if (isLeafLevel || Object.keys(node._children).length === 0) {
+          html += renderOrgCard(org);
+        }
+      }
+
+      // Render children
+      if (!isLeafLevel) {
+        // Organisms that are at this node (not deeper)
+        for (const org of (node._organisms || [])) {
+          html += renderOrgCard(org);
+        }
+        html += renderTree(node._children, depth + 1);
+        html += `</div>`;
+      }
+      html += `</div>`;
+    }
+    return html;
   }
+
+  list.innerHTML = renderTree(tree);
 }
 
 function renderOrgCard(org) {
@@ -297,6 +339,13 @@ function speciesName(fullName) {
 function strainInfo(fullName) {
   const parts = fullName.trim().split(/\s+/);
   return parts.length > 2 ? parts.slice(2).join(' ') : '';
+}
+
+function toggleTax(header) {
+  const children = header.nextElementSibling;
+  const chevron = header.querySelector('.tax-chevron');
+  children.classList.toggle('collapsed');
+  chevron.classList.toggle('collapsed');
 }
 
 function toggleOrg(header) {

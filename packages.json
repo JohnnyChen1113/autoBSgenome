@@ -20,7 +20,17 @@
           "group": "vertebrate_other"
         }
       ],
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Anarhichadidae",
+        "genus": "Anarrhichthys"
+      },
+      "group_name": "ray-finned fishes"
     },
     {
       "organism": "Aspergillus luchuensis",
@@ -39,7 +49,17 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "group_name": "ascomycete fungi"
     },
     {
       "organism": "Auxenochlorella protothecoides",
@@ -61,7 +81,17 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Trebouxiophyceae",
+        "order": "Chlorellales",
+        "family": "Chlorellaceae",
+        "genus": "Auxenochlorella"
+      },
+      "group_name": "green algae"
     },
     {
       "organism": "Bathycoccus prasinos",
@@ -83,7 +113,17 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Bathycoccaceae",
+        "genus": "Bathycoccus"
+      },
+      "group_name": "green algae"
     },
     {
       "organism": "Camelus ferus",
@@ -104,7 +144,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Camelidae",
+        "genus": "Camelus"
+      },
+      "group_name": "even-toed ungulates & whales"
     },
     {
       "organism": "Capsella rubella",
@@ -126,7 +176,17 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Capsella"
+      },
+      "group_name": "eudicots"
     },
     {
       "organism": "Chlamydomonas reinhardtii",
@@ -148,7 +208,17 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Chlorophyceae",
+        "order": "Chlamydomonadales",
+        "family": "Chlamydomonadaceae",
+        "genus": "Chlamydomonas"
+      },
+      "group_name": "green algae"
     },
     {
       "organism": "Chlorella variabilis",
@@ -170,7 +240,17 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Trebouxiophyceae",
+        "order": "Chlorellales",
+        "family": "Chlorellaceae",
+        "genus": "Chlorella"
+      },
+      "group_name": "green algae"
     },
     {
       "organism": "Coccomyxa subellipsoidea C-169",
@@ -192,7 +272,16 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Trebouxiophyceae",
+        "family": "Coccomyxaceae",
+        "genus": "Coccomyxa"
+      },
+      "group_name": "green algae"
     },
     {
       "organism": "Condylura cristata",
@@ -213,7 +302,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Eulipotyphla",
+        "family": "Talpidae",
+        "genus": "Condylura"
+      },
+      "group_name": "insectivores"
     },
     {
       "organism": "Cyclopterus lumpus",
@@ -235,7 +334,17 @@
           "group": "vertebrate_other"
         }
       ],
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Cyclopteridae",
+        "genus": "Cyclopterus"
+      },
+      "group_name": "ray-finned fishes"
     },
     {
       "organism": "Cynoglossus semilaevis",
@@ -257,7 +366,17 @@
           "group": "vertebrate_other"
         }
       ],
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Pleuronectiformes",
+        "family": "Cynoglossidae",
+        "genus": "Cynoglossus"
+      },
+      "group_name": "ray-finned fishes"
     },
     {
       "organism": "Dipodomys ordii",
@@ -278,7 +397,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Heteromyidae",
+        "genus": "Dipodomys"
+      },
+      "group_name": "rodents"
     },
     {
       "organism": "Encephalitozoon cuniculi GB-M1",
@@ -300,7 +429,15 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "group_name": "microsporidians"
     },
     {
       "organism": "Encephalitozoon hellem ATCC 50504",
@@ -322,7 +459,15 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "group_name": "microsporidians"
     },
     {
       "organism": "Encephalitozoon intestinalis ATCC 50506",
@@ -344,7 +489,15 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "group_name": "microsporidians"
     },
     {
       "organism": "Encephalitozoon romaleae SJ-2008",
@@ -366,7 +519,15 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "group_name": "microsporidians"
     },
     {
       "organism": "Hippocampus comes",
@@ -388,7 +549,17 @@
           "group": "vertebrate_other"
         }
       ],
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Syngnathiformes",
+        "family": "Syngnathidae",
+        "genus": "Hippocampus"
+      },
+      "group_name": "ray-finned fishes"
     },
     {
       "organism": "Hippoglossus hippoglossus",
@@ -410,7 +581,17 @@
           "group": "vertebrate_other"
         }
       ],
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Pleuronectiformes",
+        "family": "Pleuronectidae",
+        "genus": "Hippoglossus"
+      },
+      "group_name": "ray-finned fishes"
     },
     {
       "organism": "Larimichthys crocea",
@@ -432,7 +613,16 @@
           "group": "vertebrate_other"
         }
       ],
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Sciaenidae",
+        "genus": "Larimichthys"
+      },
+      "group_name": "ray-finned fishes"
     },
     {
       "organism": "Lates calcarifer",
@@ -454,7 +644,16 @@
           "group": "vertebrate_other"
         }
       ],
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Centropomidae",
+        "genus": "Lates"
+      },
+      "group_name": "ray-finned fishes"
     },
     {
       "organism": "Micromonas commoda",
@@ -476,7 +675,17 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Mamiellaceae",
+        "genus": "Micromonas"
+      },
+      "group_name": "green algae"
     },
     {
       "organism": "Micromonas pusilla CCMP1545",
@@ -498,7 +707,17 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Mamiellaceae",
+        "genus": "Micromonas"
+      },
+      "group_name": "green algae"
     },
     {
       "organism": "Microtus ochrogaster",
@@ -519,7 +738,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Microtus"
+      },
+      "group_name": "rodents"
     },
     {
       "organism": "Miniopterus natalensis",
@@ -540,7 +769,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Miniopteridae",
+        "genus": "Miniopterus"
+      },
+      "group_name": "bats"
     },
     {
       "organism": "Mitosporidium daphniae",
@@ -562,7 +801,14 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Mitosporidium"
+      },
+      "group_name": "microsporidians"
     },
     {
       "organism": "Monoraphidium neglectum",
@@ -584,7 +830,17 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Chlorophyceae",
+        "order": "Sphaeropleales",
+        "family": "Selenastraceae",
+        "genus": "Monoraphidium"
+      },
+      "group_name": "green algae"
     },
     {
       "organism": "Morone saxatilis",
@@ -606,7 +862,16 @@
           "group": "vertebrate_other"
         }
       ],
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Moronidae",
+        "genus": "Morone"
+      },
+      "group_name": "ray-finned fishes"
     },
     {
       "organism": "Myotis brandtii",
@@ -627,7 +892,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Vespertilionidae",
+        "genus": "Myotis"
+      },
+      "group_name": "bats"
     },
     {
       "organism": "Myotis davidii",
@@ -648,7 +923,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Vespertilionidae",
+        "genus": "Myotis"
+      },
+      "group_name": "bats"
     },
     {
       "organism": "Myotis lucifugus",
@@ -669,7 +954,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Vespertilionidae",
+        "genus": "Myotis"
+      },
+      "group_name": "bats"
     },
     {
       "organism": "Nematocida ausubeli",
@@ -691,7 +986,14 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
+      "group_name": "microsporidians"
     },
     {
       "organism": "Nematocida displodere",
@@ -713,7 +1015,14 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
+      "group_name": "microsporidians"
     },
     {
       "organism": "Nematocida parisii ERTm1",
@@ -735,7 +1044,14 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
+      "group_name": "microsporidians"
     },
     {
       "organism": "Neophocaena asiaeorientalis asiaeorientalis",
@@ -756,7 +1072,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Phocoenidae",
+        "genus": "Neophocaena"
+      },
+      "group_name": "whales & dolphins"
     },
     {
       "organism": "Notothenia coriiceps",
@@ -778,7 +1104,17 @@
           "group": "vertebrate_other"
         }
       ],
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Nototheniidae",
+        "genus": "Notothenia"
+      },
+      "group_name": "ray-finned fishes"
     },
     {
       "organism": "Ordospora colligata OC4",
@@ -800,7 +1136,15 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Ordosporidae",
+        "genus": "Ordospora"
+      },
+      "group_name": "microsporidians"
     },
     {
       "organism": "Ostreococcus tauri",
@@ -822,7 +1166,17 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Bathycoccaceae",
+        "genus": "Ostreococcus"
+      },
+      "group_name": "green algae"
     },
     {
       "organism": "Phyllostomus discolor",
@@ -843,7 +1197,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Phyllostomidae",
+        "genus": "Phyllostomus"
+      },
+      "group_name": "bats"
     },
     {
       "organism": "Pteropus alecto",
@@ -864,7 +1228,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Pteropodidae",
+        "genus": "Pteropus"
+      },
+      "group_name": "bats"
     },
     {
       "organism": "Rhinolophus ferrumequinum",
@@ -885,7 +1259,17 @@
           "group": "vertebrate_mammalian"
         }
       ],
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Rhinolophidae",
+        "genus": "Rhinolophus"
+      },
+      "group_name": "bats"
     },
     {
       "organism": "Saccharomyces cerevisiae",
@@ -906,7 +1290,17 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "group_name": "budding yeasts & allies"
     },
     {
       "organism": "Sorghum bicolor",
@@ -928,7 +1322,17 @@
           "group": "plant"
         }
       ],
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Sorghum"
+      },
+      "group_name": "monocots"
     },
     {
       "organism": "Takifugu flavidus",
@@ -950,7 +1354,17 @@
           "group": "vertebrate_other"
         }
       ],
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Tetraodontiformes",
+        "family": "Tetraodontidae",
+        "genus": "Takifugu"
+      },
+      "group_name": "ray-finned fishes"
     },
     {
       "organism": "Vittaforma corneae ATCC 50505",
@@ -972,7 +1386,15 @@
           "group": "fungi"
         }
       ],
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Nosematidae",
+        "genus": "Vittaforma"
+      },
+      "group_name": "microsporidians"
     }
   ],
   "flat": [
