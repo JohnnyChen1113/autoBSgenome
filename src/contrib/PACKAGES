@@ -34,6 +34,10 @@ Package: BSgenome.Eromaleae.NCBI.ASM28003v2
 Version: 1.0.0
 NeedsCompilation: no
 
+Package: BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3
+Version: 1.0.0
+NeedsCompilation: no
+
 Package: BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01
 Version: 1.0.0
 NeedsCompilation: no

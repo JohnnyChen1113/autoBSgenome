@@ -99,6 +99,17 @@
     "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eromaleae.NCBI.ASM28003v2/BSgenome.Eromaleae.NCBI.ASM28003v2_1.0.0.tar.gz"
   },
   {
+    "package": "BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3",
+    "version": "1.0.0",
+    "organism": "",
+    "assembly": "",
+    "provider": "NCBI",
+    "file_name": "BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3_1.0.0.tar.gz",
+    "size": 0,
+    "published": "2026-04-03T19:36:42Z",
+    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3/BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3_1.0.0.tar.gz"
+  },
+  {
     "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01",
     "version": "1.0.0",
     "organism": "Aspergillus luchuensis",
