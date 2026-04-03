@@ -696,6 +696,25 @@
       ]
     },
     {
+      "organism": "Neophocaena asiaeorientalis asiaeorientalis",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11",
+          "version": "1.0.0",
+          "organism": "Neophocaena asiaeorientalis asiaeorientalis",
+          "assembly": "Neophocaena_asiaeorientalis_V1.1",
+          "provider": "NCBI",
+          "accession": "",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+          "file_name": "BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz",
+          "size": 592841468,
+          "published": "2026-04-03T20:56:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11/BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Notothenia coriiceps",
       "common_name": "black rockcod",
       "builds": [
@@ -1533,6 +1552,19 @@
       "size": 553448484,
       "published": "2026-04-03T20:56:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.NCBI.MicOch10/BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11",
+      "version": "1.0.0",
+      "organism": "Neophocaena asiaeorientalis asiaeorientalis",
+      "assembly": "Neophocaena_asiaeorientalis_V1.1",
+      "provider": "NCBI",
+      "accession": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/",
+      "file_name": "BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz",
+      "size": 592841468,
+      "published": "2026-04-03T20:56:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11/BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz"
     }
   ]
 }
