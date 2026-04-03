@@ -1,0 +1,433 @@
+AutoBSgenome 投稿反馈文档
+
+当前判断
+
+当前目标期刊定为 Molecular Genetics and Genomics (MGG) 是合理的。
+
+原因很明确：
+	•	你的工作本质上是 methodology / software / infrastructure 类型，而不是以新生物学发现为核心的论文。
+	•	MGG 的 scope 明确接受 new or substantially improved methods, approaches, software, or databases。
+	•	MGG 对这种“能被广泛使用的遗传学/基因组学方法工具”比 The FEBS Journal 更匹配。
+	•	你目前还希望尽量避免版面费，MGG 的传统发表路线也更现实。
+
+当前总体判断：
+	•	期刊匹配度：较高
+	•	直接投稿准备度：中等
+	•	核心短板：验证深度、比较证据、novelty 表达方式仍需加强
+
+⸻
+
+一句话定位建议
+
+不要把文章定义成：
+
+a web tool to build BSgenome packages
+
+更建议定义成：
+
+a bridge infrastructure that converts public genome assemblies into standardized, Bioconductor-ready BSgenome packages for non-model organism research
+
+中文可写为：
+
+AutoBSgenome 是一个面向非模式物种研究的桥接型生物信息学基础设施工具，可将公共数据库中的基因组装配自动转换为标准化、可直接用于 Bioconductor 工作流的 BSgenome 包。
+
+这个定位比“只是一个方便的网站工具”更有学术说服力。
+
+⸻
+
+这篇文章目前最值得保留的优点
+
+1. 问题定义是成立的
+
+你抓住的不是一个伪需求，而是一个真实存在的 workflow bottleneck：
+	•	BSgenome 是 Bioconductor 生态中的标准化 genome resource
+	•	但非模式物种研究者往往拿不到现成包
+	•	手工构建门槛高，BSgenomeForge 对长尾物种也不总是顺畅
+
+这套逻辑是成立的，而且也和你自己的 TSSr 用户反馈相呼应。
+
+2. 稿件结构已经接近方法论文的标准形态
+
+目前 draft 已经具备：
+	•	明确的问题背景
+	•	系统架构说明
+	•	方法流程描述
+	•	benchmark / case study
+	•	limitations / future directions
+
+说明基础框架没有问题，不需要推倒重来。
+
+3. 工具的实际使用场景很清楚
+
+这个工具不是为了炫技，而是服务一个很具体的下游生态：
+	•	TSS analysis
+	•	motif analysis
+	•	genome-aware annotation
+	•	其他依赖 BSgenome 的 Bioconductor 工作流
+
+这类“入口型基础设施工具”是可以写成论文的。
+
+⸻
+
+当前最需要改进的 6 个方面
+
+1. 把“意义”从省事升级成基础设施可达性
+
+当前稿子已经在讲“更方便”，但还可以进一步拔高。
+
+建议的核心表述
+
+你的工作意义不应只是：
+	•	节省用户几步操作
+	•	做了一个 web 界面
+
+而应写成：
+	•	降低了标准化 genome representation 的进入门槛
+	•	扩展了 Bioconductor genome infrastructure 在长尾物种中的可及性
+	•	提高了非模式物种研究使用标准化、可复现、可互操作 genome 对象的可能性
+
+推荐关键词
+
+建议在摘要、引言结尾、discussion 开头反复使用这些概念：
+	•	accessibility
+	•	interoperability
+	•	reproducibility
+	•	standardized genome resources
+	•	non-model organisms
+	•	bridge infrastructure
+	•	gateway to genome-aware workflows
+
+不建议的表述
+
+尽量少用或不用：
+	•	revolutionary
+	•	transformative
+	•	transaction-like foundational work
+	•	merely convenient
+
+“事务型基础性工作”这个方向不是完全不行，但英文不太好包装，也不够学术。更建议用：
+	•	bridge infrastructure
+	•	enabling infrastructure
+	•	workflow infrastructure
+	•	accessibility-enabling resource
+
+⸻
+
+2. 强化 benchmark，不能只靠一个真菌例子
+
+这是当前最明显的短板。
+
+目前 draft 主要 benchmark 是：
+	•	Aspergillus luchuensis 一个案例
+	•	人类基因组时间是估计值
+
+这对投稿来说偏弱。
+
+建议补成一个小型系统验证集
+
+至少补 5–10 个 genome，覆盖：
+	•	小基因组：细菌或小真菌
+	•	中等基因组：典型真菌 / 动物 / 植物之一
+	•	大基因组：人类或典型脊椎动物
+	•	NCBI 来源和 Ensembl 来源都要有
+	•	至少包含一个带 circular sequence 的例子
+	•	至少包含一个非 GenomeInfoDb 常见物种
+
+建议汇报的指标
+
+每个 genome 至少汇报：
+	•	accession / species
+	•	genome size
+	•	source (NCBI or Ensembl)
+	•	build success/failure
+	•	wall-clock time
+	•	generated package size
+	•	whether circular sequence was detected correctly
+	•	whether package installs successfully in a clean R session
+
+更好的写法
+
+把“under one minute”写成：
+	•	median build time
+	•	range
+	•	number of replicates
+	•	with cached container / without cached container
+
+这样更像论文，不像宣传页。
+
+⸻
+
+3. 把比较从“概念表”升级成“实证对比”
+
+你现在的 comparison table 方向是对的，但还不够硬。
+
+当前问题
+
+目前表格更多是作者总结：
+	•	manual process 怎样
+	•	BSgenomeForge 怎样
+	•	AutoBSgenome 怎样
+
+但缺少一个看起来像实验结果的证据层。
+
+建议做法
+
+挑 3–5 个物种，分别尝试：
+	•	manual workflow
+	•	BSgenomeForge workflow
+	•	AutoBSgenome
+
+比较以下项目：
+	•	是否需要本地安装 R
+	•	是否需要额外安装 faToTwoBit / datasets CLI
+	•	用户手动填写字段数
+	•	实际步骤数
+	•	首次成功所需时间
+	•	是否需要人工判断 circular sequence
+	•	对非注册物种是否成功
+	•	失败的主要原因
+
+目标
+
+让审稿人看到：
+不是你“感觉 AutoBSgenome 更方便”，而是它在一个可复现的比较框架中，确实显著降低了门槛。
+
+⸻
+
+4. 重新组织 novelty，避免被认为只是“套壳”
+
+这是投稿时最危险的问题。
+
+审稿人可能会问：
+
+既然已经有 BSgenomeForge，你这是不是只是把现有流程放到网页上？
+
+你的 novelty 不能写成
+	•	can build BSgenome packages
+	•	automates package generation
+
+因为这些很容易被归结为“已有工作流的包装”。
+
+更合理的 novelty 表达
+
+你的创新点应写成下面几层：
+
+(a) 入口形态创新
+	•	zero-setup
+	•	web-native
+	•	no local software installation
+	•	no command-line requirement
+
+(b) 数据整合创新
+	•	direct assembly accession driven workflow
+	•	automated metadata retrieval from NCBI / Ensembl
+	•	automatic circular sequence detection across non-registered organisms
+
+(c) 基础设施创新
+	•	serverless, zero-cost deployment model
+	•	sustainable maintenance without dedicated hosting budget
+	•	public build-and-deliver architecture for genome resource generation
+
+一句话模板
+
+AutoBSgenome does not replace BSgenomeForge at the algorithmic level; rather, it operationalizes BSgenome package generation as an accessible, accession-driven, web-based infrastructure for the long tail of sequenced organisms.
+
+这类表述会更稳。
+
+⸻
+
+5. 修正容易被挑刺的表述和引用
+
+这部分建议你认真逐条改。
+
+(a) “only approximately 30 model organisms have pre-built BSgenome packages”
+
+这个数字建议重新核实。
+
+问题在于：
+	•	package 数和物种数不是一回事
+	•	provider / assembly 版本也可能重复
+	•	审稿人可能会直接去 Bioconductor 页面核对
+
+建议改法
+
+改成更稳的写法：
+	•	Bioconductor provides pre-built BSgenome packages for a limited set of commonly used organisms.
+	•	Although more than one hundred BSgenome data packages are available, they cover only a small subset of sequenced species.
+
+(b) “millions of sequenced genomes”
+
+这个表述偏大，最好不要写得太夸张。
+
+更稳的表达：
+	•	the rapidly growing diversity of publicly available genome assemblies
+	•	the expanding long tail of sequenced organisms
+
+(c) GenomeInfoDb 相关引用
+
+目前草稿里这一块引用似乎不稳，容易被挑出来。
+
+建议：
+	•	单独找正确支持 GenomeInfoDb / Bioconductor sequence naming infrastructure 的引用
+	•	不要让它和 rtracklayer 混在一起
+
+(d) “under one minute”
+
+建议避免绝对化。
+
+改成：
+	•	in typical cached builds
+	•	under one minute for small to medium-sized genomes under our test conditions
+	•	median X seconds across tested genomes
+
+(e) “indefinitely”
+
+关于 zero-cost serverless sustainability，建议不要写得太绝对。
+
+因为：
+	•	free tier 政策可能会变
+	•	GitHub / Cloudflare 配额未来可能调整
+
+建议改成：
+	•	with zero current operating cost
+	•	within currently available free-tier allocations
+	•	without dedicated infrastructure funding under the present deployment model
+
+⸻
+
+6. 文章包装上要更像 MGG，而不是软件产品介绍
+
+MGG 接收方法和软件，但稿件仍然应该像一篇 genetics/genomics methodology paper，而不是产品说明书。
+
+建议增加的学术语气
+
+在写法上，适度减少：
+	•	网站功能宣传语
+	•	free tier / no cost 的营销式重复
+	•	“只需一步即可完成”这类产品语言
+
+增加：
+	•	standardized genome representation
+	•	adoption barrier
+	•	non-model genome analysis
+	•	reproducible infrastructure
+	•	workflow interoperability
+
+文章的主线建议
+
+推荐主线如下：
+	1.	BSgenome 是 Bioconductor genome-aware workflows 的标准对象
+	2.	长尾物种缺乏现成包，用户在入口步骤被挡住
+	3.	现有构建路径对非计算背景用户不友好
+	4.	AutoBSgenome 把 accession-driven package generation 变成可直接使用的 web infrastructure
+	5.	这扩展了标准化 genome resource 在非模式物种中的实际覆盖范围
+
+⸻
+
+建议新增或重写的几个关键部分
+
+1. 摘要最后一句
+
+建议从“工具介绍”拔高到“生态意义”。
+
+可参考：
+
+By lowering the expertise barrier to standardized genome resource generation, AutoBSgenome broadens practical access to BSgenome-dependent Bioconductor workflows for the growing diversity of non-model organisms.
+
+2. 引言最后一段
+
+建议不要只写“我们开发了一个 web tool”，而要写：
+	•	解决的是哪个 bottleneck
+	•	为什么这个 bottleneck 会阻断整个下游生态
+	•	你的工作如何让标准化 infrastructure 真正变得可获得
+
+3. Discussion 第一段
+
+建议改成文章的“意义总括段”，强调：
+	•	你不是替代 BSgenome，而是降低其 adoption cost
+	•	你不是替代分析工具，而是打通进入这些工具的第一道门
+	•	对 non-model organism genomics 尤其有意义
+
+⸻
+
+建议补充的数据或图表
+
+图表优先级最高
+	1.	Workflow figure
+	•	用户输入 accession
+	•	metadata retrieval
+	•	seed generation
+	•	package build
+	•	downloadable artifact
+	2.	Benchmark summary table
+	•	5–10 个 genome
+	•	size / source / time / success
+	3.	Comparison figure or table
+	•	manual vs BSgenomeForge vs AutoBSgenome
+	4.	Example output figure
+	•	展示生成 package 后在 R 中的简单调用结果
+	•	如 library()、seqnames()、getSeq()
+
+可选补充
+	5.	Failure handling example
+	•	如 GCA 提示 GCF 替代
+	•	circular metadata 缺失时如何处理
+
+这类边缘处理其实很能体现工具成熟度。
+
+⸻
+
+你可以如何定义这项工作的意义
+
+以下几种表述里，最推荐前两种。
+
+推荐 1
+
+桥接型基础设施
+
+连接公共 genome assemblies 与 Bioconductor 标准对象之间的桥接基础设施
+
+推荐 2
+
+入口型基础设施
+
+为 genome-aware Bioconductor workflows 提供低门槛入口的基础设施工具
+
+推荐 3
+
+使能型基础设施
+
+通过降低专业门槛，使标准化 genome resources 为更广泛研究者所用的使能型工具
+
+不太推荐
+
+事务型基础性工作
+这个中文意思你自己能理解，但学术包装不够强，也不太容易自然翻成英文方法论文的风格。
+
+⸻
+
+当前最推荐的投稿策略
+
+目标期刊
+
+Molecular Genetics and Genomics (MGG)
+
+投稿前建议先完成的事情
+	1.	补一个更系统的 benchmark 数据集
+	2.	把 comparison 改成实证对比
+	3.	重新修正 novelty 表达
+	4.	修正数字、引用和绝对化表述
+	5.	让全文从“软件介绍”更明显转向“genomics infrastructure methodology”
+
+当前不建议的做法
+	•	现在就急着投 The FEBS Journal
+	•	继续把卖点主要写成“free tier”“under one minute”“超方便”
+	•	继续只靠一个 case study
+
+⸻
+
+最后一句总体评价
+
+这篇工作是可以投 MGG 的，而且方向上是对的；它的问题不是“值不值得发”，而是“还需要把证据做得更像一篇成熟的方法论文”。
+
+只要把验证、比较和 framing 再补强一轮，这篇稿子的说服力会明显上一个台阶。

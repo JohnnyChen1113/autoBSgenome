@@ -79,6 +79,20 @@ jobs:
           gunzip genome.fa.gz
           ls -lh genome.fa
 
+      - name: Extract FASTA headers and stats
+        id: fasta_info
+        run: |
+          # Get first 5 sequence IDs
+          SEQ_IDS=$(grep "^>" genome.fa | head -5 | sed 's/^>//' | cut -d' ' -f1 | tr '\n' ',' | sed 's/,$//')
+          echo "seq_ids=${SEQ_IDS}" >> $GITHUB_OUTPUT
+          # Get total sequence count
+          SEQ_COUNT=$(grep -c "^>" genome.fa)
+          echo "seq_count=${SEQ_COUNT}" >> $GITHUB_OUTPUT
+          # Get FASTA file size
+          FASTA_SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo "0")
+          echo "fasta_size=${FASTA_SIZE}" >> $GITHUB_OUTPUT
+          echo "Sequences: ${SEQ_COUNT}, First IDs: ${SEQ_IDS}, FASTA size: ${FASTA_SIZE}"
+
       - name: Convert FASTA to 2bit
         run: |
           faToTwoBit genome.fa genome.2bit
@@ -209,6 +223,8 @@ jobs:
 
           # Trigger index update on gh-pages
           FILESIZE=$(stat -c%s "${TARBALL}" 2>/dev/null || stat -f%z "${TARBALL}" 2>/dev/null || echo "0")
+          SEQ_IDS="${{ steps.fasta_info.outputs.seq_ids }}"
+          SEQ_COUNT="${{ steps.fasta_info.outputs.seq_count }}"
           gh api repos/${{ github.repository }}/dispatches \
             --method POST \
             -f event_type=update_repo_index \
@@ -217,8 +233,11 @@ jobs:
             -f "client_payload[organism]=${ORGANISM}" \
             -f "client_payload[assembly]=${ASSEMBLY}" \
             -f "client_payload[provider]=${PROVIDER}" \
+            -f "client_payload[accession]=${ACCESSION}" \
             -f "client_payload[file_name]=${TARBALL}" \
-            -f "client_payload[file_size]=${FILESIZE}"
+            -f "client_payload[file_size]=${FILESIZE}" \
+            -f "client_payload[seq_ids]=${SEQ_IDS}" \
+            -f "client_payload[seq_count]=${SEQ_COUNT}"
 
       - name: Report failure
         if: failure()

@@ -23,8 +23,11 @@ jobs:
           ORGANISM='${{ github.event.client_payload.organism }}'
           ASSEMBLY='${{ github.event.client_payload.assembly }}'
           PROVIDER='${{ github.event.client_payload.provider }}'
+          ACCESSION='${{ github.event.client_payload.accession }}'
           FILE_NAME='${{ github.event.client_payload.file_name }}'
           FILE_SIZE='${{ github.event.client_payload.file_size }}'
+          SEQ_IDS='${{ github.event.client_payload.seq_ids }}'
+          SEQ_COUNT='${{ github.event.client_payload.seq_count }}'
 
           # Add or update entry in packages.json (supports organism-centric format)
           python3 -c "
@@ -43,6 +46,18 @@ jobs:
           # Remove existing entry for this package
           flat = [p for p in flat if p.get('package') != '${PACKAGE}']
 
+          # Auto-detect group from build-queue if available
+          group = 'other'
+          try:
+              with open('build-queue.json') as qf:
+                  queue = json.loads(qf.read()) if qf else []
+              for item in queue:
+                  if item.get('accession') == '${ACCESSION}' or item.get('organism','').startswith('${ORGANISM}'.split()[0] if '${ORGANISM}' else ''):
+                      group = item.get('group', 'other')
+                      break
+          except:
+              pass
+
           # Add new entry
           new_entry = {
               'package': '${PACKAGE}',
@@ -50,10 +65,13 @@ jobs:
               'organism': '${ORGANISM}',
               'assembly': '${ASSEMBLY}',
               'provider': '${PROVIDER}',
-              'accession': '',
-              'source_url': 'https://www.ncbi.nlm.nih.gov/datasets/genome/',
+              'accession': '${ACCESSION}',
+              'source_url': 'https://www.ncbi.nlm.nih.gov/datasets/genome/${ACCESSION}/' if '${ACCESSION}' else '',
               'file_name': '${FILE_NAME}',
               'size': int('${FILE_SIZE}') if '${FILE_SIZE}'.isdigit() else 0,
+              'seq_ids': '${SEQ_IDS}'.split(',') if '${SEQ_IDS}' else [],
+              'seq_count': int('${SEQ_COUNT}') if '${SEQ_COUNT}'.isdigit() else 0,
+              'group': group,
               'published': '$(date -u +%Y-%m-%dT%H:%M:%SZ)',
               'download_url': 'https://github.com/${{ github.repository }}/releases/download/pkg-${PACKAGE}/${FILE_NAME}'
           }
@@ -64,8 +82,11 @@ jobs:
           for pkg in flat:
               org = pkg.get('organism', 'Unknown') or 'Unknown'
               if org not in organisms:
-                  organisms[org] = {'organism': org, 'common_name': pkg.get('common_name', ''), 'builds': []}
+                  organisms[org] = {'organism': org, 'common_name': pkg.get('common_name', ''), 'group': pkg.get('group', 'other'), 'builds': []}
               organisms[org]['builds'].append(pkg)
+              # Update group if this package has one and the organism doesn't yet
+              if pkg.get('group') and pkg['group'] != 'other' and organisms[org].get('group') == 'other':
+                  organisms[org]['group'] = pkg['group']
 
           result = {
               'organisms': sorted(organisms.values(), key=lambda o: o['organism']),
