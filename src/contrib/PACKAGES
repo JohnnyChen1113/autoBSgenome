@@ -253,3 +253,7 @@ NeedsCompilation: no
 Package: BSgenome.Pconcolor.NCBI.PumCon10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cursinus.NCBI.GSCfseal20
+Version: 1.0.0
+NeedsCompilation: no
