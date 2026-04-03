@@ -26,33 +26,54 @@ jobs:
           FILE_NAME='${{ github.event.client_payload.file_name }}'
           FILE_SIZE='${{ github.event.client_payload.file_size }}'
 
-          # Add or update entry in packages.json
+          # Add or update entry in packages.json (supports organism-centric format)
           python3 -c "
           import json
           with open('packages.json', 'r') as f:
-              pkgs = json.load(f)
+              data = json.load(f)
 
-          # Remove existing entry for this package if any
-          pkgs = [p for p in pkgs if p.get('package') != '${PACKAGE}']
+          # Handle both formats
+          if isinstance(data, dict) and 'flat' in data:
+              flat = data['flat']
+          elif isinstance(data, list):
+              flat = data
+          else:
+              flat = []
+
+          # Remove existing entry for this package
+          flat = [p for p in flat if p.get('package') != '${PACKAGE}']
 
           # Add new entry
-          pkgs.append({
+          new_entry = {
               'package': '${PACKAGE}',
               'version': '${VERSION}',
               'organism': '${ORGANISM}',
               'assembly': '${ASSEMBLY}',
               'provider': '${PROVIDER}',
+              'accession': '',
+              'source_url': 'https://www.ncbi.nlm.nih.gov/datasets/genome/',
               'file_name': '${FILE_NAME}',
               'size': int('${FILE_SIZE}') if '${FILE_SIZE}'.isdigit() else 0,
               'published': '$(date -u +%Y-%m-%dT%H:%M:%SZ)',
               'download_url': 'https://github.com/${{ github.repository }}/releases/download/pkg-${PACKAGE}/${FILE_NAME}'
-          })
+          }
+          flat.append(new_entry)
 
-          # Sort by organism name
-          pkgs.sort(key=lambda p: p.get('organism', ''))
+          # Rebuild organism-centric format
+          organisms = {}
+          for pkg in flat:
+              org = pkg.get('organism', 'Unknown') or 'Unknown'
+              if org not in organisms:
+                  organisms[org] = {'organism': org, 'common_name': pkg.get('common_name', ''), 'builds': []}
+              organisms[org]['builds'].append(pkg)
+
+          result = {
+              'organisms': sorted(organisms.values(), key=lambda o: o['organism']),
+              'flat': flat
+          }
 
           with open('packages.json', 'w') as f:
-              json.dump(pkgs, f, indent=2)
+              json.dump(result, f, indent=2)
           "
           echo "Updated packages.json:"
           cat packages.json
@@ -63,7 +84,8 @@ jobs:
           python3 -c "
           import json
           with open('packages.json', 'r') as f:
-              pkgs = json.load(f)
+              data = json.load(f)
+          pkgs = data.get('flat', data) if isinstance(data, dict) else data
           lines = []
           for p in pkgs:
               lines.append(f'Package: {p[\"package\"]}')
