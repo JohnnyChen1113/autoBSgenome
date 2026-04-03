@@ -46,17 +46,42 @@ jobs:
           # Remove existing entry for this package
           flat = [p for p in flat if p.get('package') != '${PACKAGE}']
 
-          # Auto-detect group from build-queue if available
+          # Fetch taxonomy from NCBI
+          taxonomy = {}
           group = 'other'
+          common_name = ''
           try:
-              with open('build-queue.json') as qf:
-                  queue = json.loads(qf.read()) if qf else []
-              for item in queue:
-                  if item.get('accession') == '${ACCESSION}' or item.get('organism','').startswith('${ORGANISM}'.split()[0] if '${ORGANISM}' else ''):
-                      group = item.get('group', 'other')
-                      break
-          except:
-              pass
+              import urllib.request, urllib.parse
+              encoded = urllib.parse.quote('${ORGANISM}')
+              url = f'https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/{encoded}/dataset_report'
+              req = urllib.request.Request(url, headers={'Accept': 'application/json'})
+              with urllib.request.urlopen(req, timeout=10) as resp:
+                  tdata = json.loads(resp.read())
+              tax = tdata.get('reports', [{}])[0].get('taxonomy', {})
+              classification = tax.get('classification', {})
+              for rank in ['domain', 'kingdom', 'phylum', 'class', 'order', 'family', 'genus']:
+                  if rank in classification:
+                      taxonomy[rank] = classification[rank]['name']
+              common_name = tax.get('curator_common_name', '')
+              # Set group from taxonomy
+              kingdom = taxonomy.get('kingdom', '')
+              phylum = taxonomy.get('phylum', '')
+              if kingdom == 'Metazoa' and taxonomy.get('class') == 'Mammalia':
+                  group = 'vertebrate_mammalian'
+              elif kingdom == 'Metazoa' and phylum == 'Chordata':
+                  group = 'vertebrate_other'
+              elif kingdom == 'Metazoa':
+                  group = 'invertebrate'
+              elif kingdom == 'Viridiplantae' or phylum in ('Streptophyta', 'Chlorophyta'):
+                  group = 'plant'
+              elif kingdom == 'Fungi':
+                  group = 'fungi'
+              elif taxonomy.get('domain') == 'Bacteria':
+                  group = 'bacteria'
+              elif taxonomy.get('domain') == 'Archaea':
+                  group = 'archaea'
+          except Exception as e:
+              print(f'Taxonomy lookup failed: {e}')
 
           # Add new entry
           new_entry = {
@@ -72,6 +97,8 @@ jobs:
               'seq_ids': '${SEQ_IDS}'.split(',') if '${SEQ_IDS}' else [],
               'seq_count': int('${SEQ_COUNT}') if '${SEQ_COUNT}'.isdigit() else 0,
               'group': group,
+              'taxonomy': taxonomy,
+              'common_name': common_name,
               'published': '$(date -u +%Y-%m-%dT%H:%M:%SZ)',
               'download_url': 'https://github.com/${{ github.repository }}/releases/download/pkg-${PACKAGE}/${FILE_NAME}'
           }
@@ -82,11 +109,20 @@ jobs:
           for pkg in flat:
               org = pkg.get('organism', 'Unknown') or 'Unknown'
               if org not in organisms:
-                  organisms[org] = {'organism': org, 'common_name': pkg.get('common_name', ''), 'group': pkg.get('group', 'other'), 'builds': []}
+                  organisms[org] = {
+                      'organism': org,
+                      'common_name': pkg.get('common_name', ''),
+                      'group': pkg.get('group', 'other'),
+                      'taxonomy': pkg.get('taxonomy', {}),
+                      'builds': []
+                  }
               organisms[org]['builds'].append(pkg)
-              # Update group if this package has one and the organism doesn't yet
               if pkg.get('group') and pkg['group'] != 'other' and organisms[org].get('group') == 'other':
                   organisms[org]['group'] = pkg['group']
+              if pkg.get('taxonomy') and not organisms[org].get('taxonomy'):
+                  organisms[org]['taxonomy'] = pkg['taxonomy']
+              if pkg.get('common_name') and not organisms[org].get('common_name'):
+                  organisms[org]['common_name'] = pkg['common_name']
 
           result = {
               'organisms': sorted(organisms.values(), key=lambda o: o['organism']),
