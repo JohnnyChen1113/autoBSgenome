@@ -1,134 +1,393 @@
-[
-  {
-    "package": "BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:33:59Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2/BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:34:03Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3/BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Vcorneae.NCBI.VittcornV1",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Vcorneae.NCBI.VittcornV1_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:34:09Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vcorneae.NCBI.VittcornV1/BSgenome.Vcorneae.NCBI.VittcornV1_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Ndisplodere.NCBI.ASM164239v1",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Ndisplodere.NCBI.ASM164239v1_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:34:18Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ndisplodere.NCBI.ASM164239v1/BSgenome.Ndisplodere.NCBI.ASM164239v1_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Ocolligata.NCBI.ASM80326v1",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Ocolligata.NCBI.ASM80326v1_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:34:27Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.NCBI.ASM80326v1/BSgenome.Ocolligata.NCBI.ASM80326v1_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Ecuniculi.NCBI.ASM9122v2",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Ecuniculi.NCBI.ASM9122v2_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:34:35Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecuniculi.NCBI.ASM9122v2/BSgenome.Ecuniculi.NCBI.ASM9122v2_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Eintestinalis.NCBI.ASM14646v1",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Eintestinalis.NCBI.ASM14646v1_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:34:41Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eintestinalis.NCBI.ASM14646v1/BSgenome.Eintestinalis.NCBI.ASM14646v1_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Mdaphniae.NCBI.UGP11",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Mdaphniae.NCBI.UGP11_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:34:44Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdaphniae.NCBI.UGP11/BSgenome.Mdaphniae.NCBI.UGP11_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Eromaleae.NCBI.ASM28003v2",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Eromaleae.NCBI.ASM28003v2_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:35:15Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eromaleae.NCBI.ASM28003v2/BSgenome.Eromaleae.NCBI.ASM28003v2_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:36:42Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3/BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308",
-    "version": "1.0.0",
-    "organism": "",
-    "assembly": "",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308_1.0.0.tar.gz",
-    "size": 0,
-    "published": "2026-04-03T19:37:05Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308/BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308_1.0.0.tar.gz"
-  },
-  {
-    "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01",
-    "version": "1.0.0",
-    "organism": "Aspergillus luchuensis",
-    "assembly": "AkawachiiIFO4308_assembly01",
-    "provider": "NCBI",
-    "file_name": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01_1.0.0.tar.gz",
-    "size": 9758160,
-    "published": "2026-04-03T19:09:45Z",
-    "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01/BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01_1.0.0.tar.gz"
-  }
-]
+{
+  "organisms": [
+    {
+      "organism": "Nematocida ausubeli",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2",
+          "assembly": "Nema_sp_1_ERTm6_V2",
+          "provider": "NCBI",
+          "accession": "GCF_000738915.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000738915.1/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:33:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2/BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2_1.0.0.tar.gz",
+          "file_name": "BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Nematocida parisii ERTm1",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3",
+          "assembly": "Nema_parisii_ERTm1_V3",
+          "provider": "NCBI",
+          "accession": "GCF_000250985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000250985.1/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:34:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3/BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3_1.0.0.tar.gz",
+          "file_name": "BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Vittaforma corneae ATCC 50505",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Vcorneae.NCBI.VittcornV1",
+          "assembly": "Vitt_corn_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000231115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000231115.1/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:34:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vcorneae.NCBI.VittcornV1/BSgenome.Vcorneae.NCBI.VittcornV1_1.0.0.tar.gz",
+          "file_name": "BSgenome.Vcorneae.NCBI.VittcornV1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Nematocida displodere",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Ndisplodere.NCBI.ASM164239v1",
+          "assembly": "ASM164239v1",
+          "provider": "NCBI",
+          "accession": "GCF_001642395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001642395.1/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:34:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ndisplodere.NCBI.ASM164239v1/BSgenome.Ndisplodere.NCBI.ASM164239v1_1.0.0.tar.gz",
+          "file_name": "BSgenome.Ndisplodere.NCBI.ASM164239v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Ordospora colligata OC4",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Ocolligata.NCBI.ASM80326v1",
+          "assembly": "ASM80326v1",
+          "provider": "NCBI",
+          "accession": "GCF_000803265.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000803265.1/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:34:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.NCBI.ASM80326v1/BSgenome.Ocolligata.NCBI.ASM80326v1_1.0.0.tar.gz",
+          "file_name": "BSgenome.Ocolligata.NCBI.ASM80326v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Encephalitozoon cuniculi GB-M1",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Ecuniculi.NCBI.ASM9122v2",
+          "assembly": "ASM9122v2",
+          "provider": "NCBI",
+          "accession": "GCF_000091225.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000091225.2/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:34:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecuniculi.NCBI.ASM9122v2/BSgenome.Ecuniculi.NCBI.ASM9122v2_1.0.0.tar.gz",
+          "file_name": "BSgenome.Ecuniculi.NCBI.ASM9122v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Encephalitozoon intestinalis ATCC 50506",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Eintestinalis.NCBI.ASM14646v1",
+          "assembly": "ASM14646v1",
+          "provider": "NCBI",
+          "accession": "GCF_000146465.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000146465.1/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:34:41Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eintestinalis.NCBI.ASM14646v1/BSgenome.Eintestinalis.NCBI.ASM14646v1_1.0.0.tar.gz",
+          "file_name": "BSgenome.Eintestinalis.NCBI.ASM14646v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Mitosporidium daphniae",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Mdaphniae.NCBI.UGP11",
+          "assembly": "UGP1.1",
+          "provider": "NCBI",
+          "accession": "GCF_000760515.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000760515.2/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:34:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdaphniae.NCBI.UGP11/BSgenome.Mdaphniae.NCBI.UGP11_1.0.0.tar.gz",
+          "file_name": "BSgenome.Mdaphniae.NCBI.UGP11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Encephalitozoon romaleae SJ-2008",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Eromaleae.NCBI.ASM28003v2",
+          "assembly": "ASM28003v2",
+          "provider": "NCBI",
+          "accession": "GCF_000280035.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000280035.1/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:35:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eromaleae.NCBI.ASM28003v2/BSgenome.Eromaleae.NCBI.ASM28003v2_1.0.0.tar.gz",
+          "file_name": "BSgenome.Eromaleae.NCBI.ASM28003v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Sorghum bicolor",
+      "common_name": "sorghum",
+      "builds": [
+        {
+          "package": "BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3",
+          "assembly": "Sorghum_bicolor_NCBIv3",
+          "provider": "NCBI",
+          "accession": "GCA_000003195.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000003195.3/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:36:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3/BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3_1.0.0.tar.gz",
+          "file_name": "BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Aspergillus luchuensis",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308",
+          "assembly": "AkawachiiIFO4308_assembly01",
+          "provider": "NCBI",
+          "accession": "GCF_016861625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_016861625.1/",
+          "version": "1.0.0",
+          "size": 0,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:37:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308/BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308_1.0.0.tar.gz",
+          "file_name": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01",
+          "assembly": "AkawachiiIFO4308_assembly01",
+          "provider": "NCBI",
+          "accession": "",
+          "source_url": "",
+          "version": "1.0.0",
+          "size": 9758160,
+          "circ_seqs": [],
+          "published": "2026-04-03T19:09:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01/BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01_1.0.0.tar.gz",
+          "file_name": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01_1.0.0.tar.gz"
+        }
+      ]
+    }
+  ],
+  "flat": [
+    {
+      "package": "BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2",
+      "version": "1.0.0",
+      "organism": "Nematocida ausubeli",
+      "assembly": "Nema_sp_1_ERTm6_V2",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:33:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2/BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2_1.0.0.tar.gz",
+      "common_name": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000738915.1/",
+      "accession": "GCF_000738915.1"
+    },
+    {
+      "package": "BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3",
+      "version": "1.0.0",
+      "organism": "Nematocida parisii ERTm1",
+      "assembly": "Nema_parisii_ERTm1_V3",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:34:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3/BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3_1.0.0.tar.gz",
+      "common_name": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000250985.1/",
+      "accession": "GCF_000250985.1"
+    },
+    {
+      "package": "BSgenome.Vcorneae.NCBI.VittcornV1",
+      "version": "1.0.0",
+      "organism": "Vittaforma corneae ATCC 50505",
+      "assembly": "Vitt_corn_V1",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Vcorneae.NCBI.VittcornV1_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:34:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vcorneae.NCBI.VittcornV1/BSgenome.Vcorneae.NCBI.VittcornV1_1.0.0.tar.gz",
+      "common_name": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000231115.1/",
+      "accession": "GCF_000231115.1"
+    },
+    {
+      "package": "BSgenome.Ndisplodere.NCBI.ASM164239v1",
+      "version": "1.0.0",
+      "organism": "Nematocida displodere",
+      "assembly": "ASM164239v1",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Ndisplodere.NCBI.ASM164239v1_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:34:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ndisplodere.NCBI.ASM164239v1/BSgenome.Ndisplodere.NCBI.ASM164239v1_1.0.0.tar.gz",
+      "common_name": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001642395.1/",
+      "accession": "GCF_001642395.1"
+    },
+    {
+      "package": "BSgenome.Ocolligata.NCBI.ASM80326v1",
+      "version": "1.0.0",
+      "organism": "Ordospora colligata OC4",
+      "assembly": "ASM80326v1",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Ocolligata.NCBI.ASM80326v1_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:34:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.NCBI.ASM80326v1/BSgenome.Ocolligata.NCBI.ASM80326v1_1.0.0.tar.gz",
+      "common_name": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000803265.1/",
+      "accession": "GCF_000803265.1"
+    },
+    {
+      "package": "BSgenome.Ecuniculi.NCBI.ASM9122v2",
+      "version": "1.0.0",
+      "organism": "Encephalitozoon cuniculi GB-M1",
+      "assembly": "ASM9122v2",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Ecuniculi.NCBI.ASM9122v2_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:34:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecuniculi.NCBI.ASM9122v2/BSgenome.Ecuniculi.NCBI.ASM9122v2_1.0.0.tar.gz",
+      "common_name": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000091225.2/",
+      "accession": "GCF_000091225.2"
+    },
+    {
+      "package": "BSgenome.Eintestinalis.NCBI.ASM14646v1",
+      "version": "1.0.0",
+      "organism": "Encephalitozoon intestinalis ATCC 50506",
+      "assembly": "ASM14646v1",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Eintestinalis.NCBI.ASM14646v1_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:34:41Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eintestinalis.NCBI.ASM14646v1/BSgenome.Eintestinalis.NCBI.ASM14646v1_1.0.0.tar.gz",
+      "common_name": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000146465.1/",
+      "accession": "GCF_000146465.1"
+    },
+    {
+      "package": "BSgenome.Mdaphniae.NCBI.UGP11",
+      "version": "1.0.0",
+      "organism": "Mitosporidium daphniae",
+      "assembly": "UGP1.1",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Mdaphniae.NCBI.UGP11_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:34:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdaphniae.NCBI.UGP11/BSgenome.Mdaphniae.NCBI.UGP11_1.0.0.tar.gz",
+      "common_name": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000760515.2/",
+      "accession": "GCF_000760515.2"
+    },
+    {
+      "package": "BSgenome.Eromaleae.NCBI.ASM28003v2",
+      "version": "1.0.0",
+      "organism": "Encephalitozoon romaleae SJ-2008",
+      "assembly": "ASM28003v2",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Eromaleae.NCBI.ASM28003v2_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:35:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eromaleae.NCBI.ASM28003v2/BSgenome.Eromaleae.NCBI.ASM28003v2_1.0.0.tar.gz",
+      "common_name": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000280035.1/",
+      "accession": "GCF_000280035.1"
+    },
+    {
+      "package": "BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3",
+      "version": "1.0.0",
+      "organism": "Sorghum bicolor",
+      "assembly": "Sorghum_bicolor_NCBIv3",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:36:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3/BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3_1.0.0.tar.gz",
+      "common_name": "sorghum",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000003195.3/",
+      "accession": "GCA_000003195.3"
+    },
+    {
+      "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308",
+      "version": "1.0.0",
+      "organism": "Aspergillus luchuensis",
+      "assembly": "AkawachiiIFO4308_assembly01",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308_1.0.0.tar.gz",
+      "size": 0,
+      "published": "2026-04-03T19:37:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308/BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308_1.0.0.tar.gz",
+      "common_name": "",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_016861625.1/",
+      "accession": "GCF_016861625.1"
+    },
+    {
+      "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01",
+      "version": "1.0.0",
+      "organism": "Aspergillus luchuensis",
+      "assembly": "AkawachiiIFO4308_assembly01",
+      "provider": "NCBI",
+      "file_name": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01_1.0.0.tar.gz",
+      "size": 9758160,
+      "published": "2026-04-03T19:09:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01/BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01_1.0.0.tar.gz"
+    }
+  ]
+}

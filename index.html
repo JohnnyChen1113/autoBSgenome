@@ -23,11 +23,10 @@
   h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; }
   a { color: var(--primary); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  code, .mono { font-family: 'JetBrains Mono', monospace; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
 
   .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
 
-  /* Header */
   header { border-bottom: 1px solid var(--border); padding: 16px 0; }
   header .inner { display: flex; align-items: center; justify-content: space-between; }
   .logo { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 600; color: var(--text); }
@@ -36,23 +35,18 @@
   nav a { color: var(--text-secondary); }
   nav a:hover { color: var(--text); text-decoration: none; }
 
-  /* Hero */
-  .hero { text-align: center; padding: 48px 0 32px; }
+  .hero { text-align: center; padding: 48px 0 24px; }
   .hero h1 { font-size: 32px; font-weight: 700; color: var(--primary); }
   .hero p { margin-top: 8px; font-size: 16px; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto; }
 
-  /* Stats */
-  .stats { display: flex; justify-content: center; gap: 32px; padding: 16px 0 32px; }
-  .stat { text-align: center; }
-  .stat-num { font-size: 28px; font-weight: 700; color: var(--primary); font-family: 'JetBrains Mono'; }
-  .stat-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+  .stats { display: flex; justify-content: center; gap: 16px; padding: 16px 0 24px; flex-wrap: wrap; align-items: baseline; }
+  .stat { font-size: 15px; color: var(--text-secondary); }
+  .stat strong { font-size: 22px; font-weight: 700; color: var(--primary); font-family: 'JetBrains Mono'; }
 
-  /* Install box */
-  .install-box { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 32px; }
+  .install-box { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; }
   .install-box label { font-size: 13px; font-weight: 500; color: var(--text-secondary); display: block; margin-bottom: 6px; }
-  .install-box code { display: block; font-size: 13px; line-height: 1.6; color: var(--text); }
+  .install-box code { display: block; font-family: 'JetBrains Mono'; font-size: 13px; line-height: 1.6; color: var(--text); }
 
-  /* Search */
   .search-bar { margin-bottom: 24px; }
   .search-bar input {
     width: 100%; padding: 10px 16px; border: 1px solid var(--border); border-radius: 8px;
@@ -60,47 +54,43 @@
   }
   .search-bar input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,61,165,0.1); }
 
-  /* Package list */
-  .pkg-list { display: flex; flex-direction: column; gap: 12px; }
-  .pkg-card {
-    border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px;
-    display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    transition: border-color 0.15s;
-  }
-  .pkg-card:hover { border-color: var(--primary); }
-  .pkg-info { min-width: 0; }
-  .pkg-name { font-family: 'JetBrains Mono'; font-size: 14px; font-weight: 500; color: var(--text); word-break: break-all; }
-  .pkg-meta { font-size: 13px; color: var(--text-secondary); margin-top: 2px; }
-  .pkg-meta span { display: inline-flex; align-items: center; gap: 4px; }
-  .pkg-meta span + span::before { content: "\00b7"; margin: 0 6px; color: var(--border); }
-  .pkg-organism { font-style: italic; }
-  .pkg-badge {
-    display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;
-    text-transform: uppercase; letter-spacing: 0.5px;
-  }
+  .org-list { display: flex; flex-direction: column; gap: 16px; }
+  .org-card { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .org-header { padding: 16px 20px; background: var(--bg); cursor: pointer; display: flex; align-items: center; justify-content: space-between; }
+  .org-header:hover { background: var(--bg-secondary); }
+  .org-name { font-size: 18px; font-weight: 600; font-style: italic; color: var(--text); }
+  .org-common { font-size: 14px; color: var(--text-muted); font-style: normal; margin-left: 8px; }
+  .org-badge-row { display: flex; gap: 6px; align-items: center; }
+  .org-count { font-size: 12px; color: var(--text-muted); background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; padding: 2px 10px; }
+  .chevron { transition: transform 0.2s; color: var(--text-muted); }
+  .chevron.open { transform: rotate(180deg); }
+
+  .build-list { border-top: 1px solid var(--border); padding: 0; display: none; }
+  .build-list.open { display: block; }
+  .build-item { padding: 14px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .build-item:last-child { border-bottom: none; }
+  .build-info { min-width: 0; flex: 1; }
+  .build-pkg { font-family: 'JetBrains Mono'; font-size: 13px; font-weight: 500; color: var(--text); word-break: break-all; }
+  .build-meta { font-size: 13px; color: var(--text-secondary); margin-top: 3px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+  .build-meta > span + span::before { content: "\00b7"; margin: 0 4px; color: var(--border); }
+  .badge { display: inline-block; padding: 1px 7px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; }
   .badge-ncbi { background: #e8f0fe; color: #1a4a8a; }
   .badge-ensembl { background: #fef3e8; color: #8a4a1a; }
-  .pkg-actions { display: flex; gap: 8px; flex-shrink: 0; }
-  .btn {
-    padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 500;
-    cursor: pointer; border: 1px solid transparent; transition: all 0.15s;
-  }
+  .build-actions { display: flex; gap: 6px; flex-shrink: 0; }
+  .btn { padding: 7px 14px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; border: 1px solid transparent; transition: all 0.15s; text-decoration: none; }
   .btn-primary { background: var(--primary); color: white; }
   .btn-primary:hover { opacity: 0.9; text-decoration: none; }
   .btn-outline { background: white; border-color: var(--border); color: var(--text-secondary); }
   .btn-outline:hover { border-color: var(--primary); color: var(--primary); text-decoration: none; }
+  .link-icon { font-size: 12px; }
 
   .empty { text-align: center; padding: 48px 0; color: var(--text-muted); }
-  .empty p { margin-top: 8px; }
-
-  /* Footer */
   footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 48px; text-align: center; font-size: 13px; color: var(--text-muted); }
 
   @media (max-width: 640px) {
-    .pkg-card { flex-direction: column; align-items: flex-start; }
-    .pkg-actions { width: 100%; }
+    .build-item { flex-direction: column; align-items: flex-start; }
+    .build-actions { width: 100%; }
     .btn { flex: 1; text-align: center; }
-    .stats { gap: 16px; }
   }
 </style>
 </head>
@@ -122,22 +112,15 @@
 <div class="container">
   <div class="hero">
     <h1>Community BSgenome Repository</h1>
-    <p>Browse and install BSgenome R packages built by the community. The largest unofficial collection of BSgenome packages for non-model organisms.</p>
+    <p>Browse and install BSgenome R packages built by the community. The largest unofficial collection for non-model organisms.</p>
   </div>
 
-  <div class="stats">
-    <div class="stat">
-      <div class="stat-num" id="pkg-count">-</div>
-      <div class="stat-label">Packages</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num" id="org-count">-</div>
-      <div class="stat-label">Organisms</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num" id="provider-count">-</div>
-      <div class="stat-label">Data Sources</div>
-    </div>
+  <div class="stats" id="stats">
+    <div class="stat"><strong id="pkg-count">-</strong> packages</div>
+    <div class="stat">&middot;</div>
+    <div class="stat"><strong id="org-count">-</strong> organisms</div>
+    <div class="stat">&middot;</div>
+    <div class="stat" id="provider-stats"></div>
   </div>
 
   <div class="install-box">
@@ -149,7 +132,7 @@
     <input type="text" id="search" placeholder="Search by organism, assembly, or package name..." />
   </div>
 
-  <div class="pkg-list" id="pkg-list">
+  <div class="org-list" id="org-list">
     <div class="empty" id="loading">Loading packages...</div>
   </div>
 </div>
@@ -163,66 +146,125 @@
 </footer>
 
 <script>
-const BASE = '.';  // relative to current URL
+const BASE = '.';
 
 async function loadPackages() {
   try {
-    const url = `${BASE}/packages.json?t=${Date.now()}`;
-    console.log('Fetching:', url);
-    const res = await fetch(url);
-    console.log('Response status:', res.status);
-    const packages = await res.json();
-    console.log('Packages loaded:', packages.length);
-    renderPackages(packages);
-    setupSearch(packages);
+    const res = await fetch(`${BASE}/packages.json?t=${Date.now()}`);
+    const data = await res.json();
+
+    // Support both old flat format and new organism-centric format
+    let organisms, flat;
+    if (data.organisms) {
+      organisms = data.organisms;
+      flat = data.flat;
+    } else {
+      // Old flat format — group by organism
+      flat = data;
+      const grouped = {};
+      for (const pkg of flat) {
+        const org = pkg.organism || 'Unknown';
+        if (!grouped[org]) grouped[org] = { organism: org, common_name: pkg.common_name || '', builds: [] };
+        grouped[org].builds.push(pkg);
+      }
+      organisms = Object.values(grouped);
+    }
+
+    renderOrganisms(organisms, flat);
+    setupSearch(organisms);
   } catch (e) {
-    console.error('loadPackages error:', e);
-    document.getElementById('loading').innerHTML = '<p>Error loading packages: ' + e.message + '</p>';
-    document.getElementById('pkg-count').textContent = '0';
-    document.getElementById('org-count').textContent = '0';
-    document.getElementById('provider-count').textContent = '0';
+    document.getElementById('loading').innerHTML = '<p>Error: ' + e.message + '</p>';
   }
 }
 
-function renderPackages(packages) {
-  const list = document.getElementById('pkg-list');
-  const organisms = new Set(packages.map(p => p.organism));
-  const providers = new Set(packages.map(p => p.provider));
+function renderOrganisms(organisms, flat) {
+  const list = document.getElementById('org-list');
 
-  document.getElementById('pkg-count').textContent = packages.length;
-  document.getElementById('org-count').textContent = organisms.size;
-  document.getElementById('provider-count').textContent = providers.size;
+  // Stats
+  const totalPkgs = flat ? flat.length : organisms.reduce((s, o) => s + o.builds.length, 0);
+  document.getElementById('pkg-count').textContent = totalPkgs;
+  document.getElementById('org-count').textContent = organisms.length;
 
-  if (packages.length === 0) {
+  // Provider stats
+  const ncbiCount = flat ? flat.filter(p => p.provider === 'NCBI').length : 0;
+  const ensemblCount = flat ? flat.filter(p => p.provider === 'Ensembl').length : 0;
+  const providerEl = document.getElementById('provider-stats');
+  const parts = [];
+  if (ncbiCount) parts.push(`${ncbiCount} from NCBI`);
+  if (ensemblCount) parts.push(`${ensemblCount} from Ensembl`);
+  providerEl.textContent = parts.join(' · ') || '';
+
+  if (organisms.length === 0) {
     list.innerHTML = '<div class="empty"><p>No packages yet. <a href="https://autobsgenome.pages.dev">Build the first one!</a></p></div>';
     return;
   }
 
-  list.innerHTML = packages.map(pkg => `
-    <div class="pkg-card" data-search="${(pkg.package + ' ' + pkg.organism + ' ' + pkg.assembly + ' ' + pkg.provider).toLowerCase()}">
-      <div class="pkg-info">
-        <div class="pkg-name">${pkg.package}</div>
-        <div class="pkg-meta">
-          <span class="pkg-organism">${pkg.organism}</span>
-          <span>${pkg.assembly}</span>
-          <span><span class="pkg-badge ${pkg.provider === 'Ensembl' ? 'badge-ensembl' : 'badge-ncbi'}">${pkg.provider}</span></span>
-          <span>${pkg.version}</span>
-          ${pkg.size ? `<span>${(pkg.size / 1024 / 1024).toFixed(1)} MB</span>` : ''}
+  // Sort organisms alphabetically
+  organisms.sort((a, b) => a.organism.localeCompare(b.organism));
+
+  list.innerHTML = organisms.map((org, idx) => {
+    const searchText = [org.organism, org.common_name, ...org.builds.map(b => b.package + ' ' + b.assembly + ' ' + b.accession)].join(' ').toLowerCase();
+    const buildCount = org.builds.length;
+
+    return `
+    <div class="org-card" data-search="${searchText}">
+      <div class="org-header" onclick="toggleOrg(this)">
+        <div>
+          <span class="org-name">${org.organism}</span>
+          ${org.common_name ? `<span class="org-common">(${org.common_name})</span>` : ''}
+        </div>
+        <div class="org-badge-row">
+          <span class="org-count">${buildCount} build${buildCount > 1 ? 's' : ''}</span>
+          <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
       </div>
-      <div class="pkg-actions">
-        <a class="btn btn-primary" href="${BASE}/src/contrib/${pkg.package}_${pkg.version}.tar.gz">Download</a>
-        <button class="btn btn-outline" onclick="copyInstall('${pkg.package}')">Copy R command</button>
+      <div class="build-list${organisms.length <= 5 ? ' open' : ''}">
+        ${org.builds.map(b => `
+        <div class="build-item">
+          <div class="build-info">
+            <div class="build-pkg">${b.package}</div>
+            <div class="build-meta">
+              <span>${b.assembly || 'N/A'}</span>
+              <span><span class="badge ${b.provider === 'Ensembl' ? 'badge-ensembl' : 'badge-ncbi'}">${b.provider || 'NCBI'}</span></span>
+              <span>v${b.version || '1.0.0'}</span>
+              ${b.size ? `<span>${(b.size / 1024 / 1024).toFixed(1)} MB</span>` : ''}
+              ${b.accession ? `<span><a href="${b.source_url || '#'}" target="_blank" class="link-icon">${b.accession} ↗</a></span>` : ''}
+            </div>
+          </div>
+          <div class="build-actions">
+            <a class="btn btn-primary" href="${b.download_url || (BASE + '/src/contrib/' + b.file_name)}">Download</a>
+            <button class="btn btn-outline" onclick="copyInstall('${b.package}')">Copy R cmd</button>
+          </div>
+        </div>
+        `).join('')}
       </div>
     </div>
-  `).join('');
+    `;
+  }).join('');
+
+  // Auto-open all if few organisms
+  if (organisms.length <= 5) {
+    document.querySelectorAll('.chevron').forEach(c => c.classList.add('open'));
+  }
 }
 
-function setupSearch(packages) {
+function toggleOrg(header) {
+  const buildList = header.nextElementSibling;
+  const chevron = header.querySelector('.chevron');
+  buildList.classList.toggle('open');
+  chevron.classList.toggle('open');
+}
+
+function setupSearch(organisms) {
   document.getElementById('search').addEventListener('input', (e) => {
     const q = e.target.value.toLowerCase();
-    document.querySelectorAll('.pkg-card').forEach(card => {
-      card.style.display = card.dataset.search.includes(q) ? '' : 'none';
+    document.querySelectorAll('.org-card').forEach(card => {
+      const match = card.dataset.search.includes(q);
+      card.style.display = match ? '' : 'none';
+      if (match && q) {
+        card.querySelector('.build-list').classList.add('open');
+        card.querySelector('.chevron').classList.add('open');
+      }
     });
   });
 }
@@ -231,7 +273,7 @@ function copyInstall(name) {
   const cmd = `install.packages("${name}", repos = "https://johnnychen1113.github.io/autoBSgenome")`;
   navigator.clipboard.writeText(cmd);
   event.target.textContent = 'Copied!';
-  setTimeout(() => { event.target.textContent = 'Copy R command'; }, 2000);
+  setTimeout(() => { event.target.textContent = 'Copy R cmd'; }, 2000);
 }
 
 document.addEventListener('DOMContentLoaded', loadPackages);
