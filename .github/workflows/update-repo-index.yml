@@ -1,0 +1,85 @@
+name: Update Repository Index
+
+on:
+  repository_dispatch:
+    types: [update_repo_index]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Update packages.json
+        run: |
+          PACKAGE='${{ github.event.client_payload.package_name }}'
+          VERSION='${{ github.event.client_payload.version }}'
+          ORGANISM='${{ github.event.client_payload.organism }}'
+          ASSEMBLY='${{ github.event.client_payload.assembly }}'
+          PROVIDER='${{ github.event.client_payload.provider }}'
+          FILE_NAME='${{ github.event.client_payload.file_name }}'
+          FILE_SIZE='${{ github.event.client_payload.file_size }}'
+
+          # Add or update entry in packages.json
+          python3 -c "
+          import json
+          with open('packages.json', 'r') as f:
+              pkgs = json.load(f)
+
+          # Remove existing entry for this package if any
+          pkgs = [p for p in pkgs if p.get('package') != '${PACKAGE}']
+
+          # Add new entry
+          pkgs.append({
+              'package': '${PACKAGE}',
+              'version': '${VERSION}',
+              'organism': '${ORGANISM}',
+              'assembly': '${ASSEMBLY}',
+              'provider': '${PROVIDER}',
+              'file_name': '${FILE_NAME}',
+              'size': int('${FILE_SIZE}') if '${FILE_SIZE}'.isdigit() else 0,
+              'published': '$(date -u +%Y-%m-%dT%H:%M:%SZ)',
+              'download_url': 'https://github.com/${{ github.repository }}/releases/download/pkg-${PACKAGE}/${FILE_NAME}'
+          })
+
+          # Sort by organism name
+          pkgs.sort(key=lambda p: p.get('organism', ''))
+
+          with open('packages.json', 'w') as f:
+              json.dump(pkgs, f, indent=2)
+          "
+          echo "Updated packages.json:"
+          cat packages.json
+
+      - name: Regenerate PACKAGES index
+        run: |
+          # Generate PACKAGES file from packages.json
+          python3 -c "
+          import json
+          with open('packages.json', 'r') as f:
+              pkgs = json.load(f)
+          lines = []
+          for p in pkgs:
+              lines.append(f'Package: {p[\"package\"]}')
+              lines.append(f'Version: {p[\"version\"]}')
+              lines.append('NeedsCompilation: no')
+              lines.append('')
+          with open('src/contrib/PACKAGES', 'w') as f:
+              f.write('\n'.join(lines))
+          "
+          echo "Updated PACKAGES:"
+          cat src/contrib/PACKAGES
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packages.json src/contrib/PACKAGES
+          git diff --cached --quiet || git commit -m "Update repository index: ${{ github.event.client_payload.package_name }}"
+          git push

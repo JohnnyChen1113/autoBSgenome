@@ -280,6 +280,8 @@ export default function Home() {
   const [fileSize, setFileSize] = useState(0);
   const [buildStep, setBuildStep] = useState(0);
   const [buildStartTime, setBuildStartTime] = useState(0);
+  const [isPublished, setIsPublished] = useState(false);
+  const [publishing, setPublishing] = useState(false);
   const [buildElapsed, setBuildElapsed] = useState(0);
   const [buildTotalTime, setBuildTotalTime] = useState(0);
 
@@ -1297,6 +1299,59 @@ export default function Home() {
                   </AccordionItem>
                 </Accordion>
 
+                {/* Publish to permanent repo */}
+                {!isPublished ? (
+                  <div className="border border-border rounded-lg p-4 space-y-3">
+                    <div>
+                      <h4 className="font-heading font-semibold text-foreground">Publish to Community Repository</h4>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Make this package permanently available so anyone can install it with a single R command.
+                        It will appear on the <a href="https://johnnychen1113.github.io/autoBSgenome" target="_blank" className="text-primary hover:underline">package browse page</a>.
+                      </p>
+                    </div>
+                    <Button
+                      className="w-full cursor-pointer"
+                      variant="outline"
+                      disabled={publishing}
+                      onClick={async () => {
+                        setPublishing(true);
+                        try {
+                          const res = await fetch(`${WORKER_API}/api/publish`, {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({
+                              job_id: jobId,
+                              metadata: {
+                                organism: form.organism,
+                                assembly: form.assembly,
+                                provider: form.provider,
+                                version: form.version,
+                              },
+                            }),
+                          });
+                          if (res.ok) {
+                            setIsPublished(true);
+                          }
+                        } finally {
+                          setPublishing(false);
+                        }
+                      }}
+                    >
+                      {publishing ? "Publishing..." : "Publish to Repository"}
+                    </Button>
+                  </div>
+                ) : (
+                  <div className="bg-[--success-foreground] border border-[--success]/20 rounded-lg p-4 text-sm" style={{ color: "#0f7b3f" }}>
+                    <p className="font-medium flex items-center gap-1.5">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f7b3f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                      Published to Community Repository
+                    </p>
+                    <p className="mt-1 text-muted-foreground">
+                      Anyone can now install with: <code className="font-mono text-foreground">install.packages(&quot;{form.packageName}&quot;, repos = &quot;https://johnnychen1113.github.io/autoBSgenome&quot;)</code>
+                    </p>
+                  </div>
+                )}
+
                 <Button
                   variant="outline"
                   className="w-full"
@@ -1305,6 +1360,7 @@ export default function Home() {
                     setForm(EMPTY_FORM);
                     setAccessionInput("");
                     setCircularSeqs([]);
+                    setIsPublished(false);
                   }}
                 >
                   Build Another Package

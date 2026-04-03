@@ -57,6 +57,11 @@ export default {
       return handleStatus(statusMatch[1], env, origin);
     }
 
+    // POST /api/publish — publish a temp build to the permanent repository
+    if (url.pathname === "/api/publish" && request.method === "POST") {
+      return handlePublish(request, env, origin);
+    }
+
     return jsonResponse({ error: "Not found" }, 404, origin, env.ALLOWED_ORIGIN);
   },
 };
@@ -198,6 +203,21 @@ async function handleStatus(
 
   // Success — return download info
   const asset = release.assets?.[0];
+
+  // Check if this package is already published to the permanent repo
+  const permTag = `pkg-${asset?.name?.replace(/_\d+\.\d+\.\d+\.tar\.gz$/, "") ?? ""}`;
+  const permCheck = await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/releases/tags/${permTag}`,
+    {
+      headers: {
+        Authorization: `Bearer ${env.GITHUB_PAT}`,
+        Accept: "application/vnd.github+json",
+        "User-Agent": "AutoBSgenome-Worker",
+      },
+    }
+  );
+  const published = permCheck.status === 200;
+
   return jsonResponse(
     {
       job_id: jobId,
@@ -206,7 +226,139 @@ async function handleStatus(
       download_url: asset?.browser_download_url ?? "",
       file_name: asset?.name ?? "",
       file_size: asset?.size ?? 0,
+      published,
     },
+    200,
+    origin,
+    env.ALLOWED_ORIGIN
+  );
+}
+
+async function handlePublish(
+  request: Request,
+  env: Env,
+  origin: string
+): Promise<Response> {
+  const body = await request.json<{ job_id: string; metadata: Record<string, string> }>();
+  if (!body.job_id) {
+    return jsonResponse({ error: "Missing job_id" }, 400, origin, env.ALLOWED_ORIGIN);
+  }
+
+  const tempTag = `build-${body.job_id}`;
+  const ghHeaders = {
+    Authorization: `Bearer ${env.GITHUB_PAT}`,
+    Accept: "application/vnd.github+json",
+    "User-Agent": "AutoBSgenome-Worker",
+    "X-GitHub-Api-Version": "2022-11-28",
+  };
+
+  // 1. Get the temp release
+  const tempRes = await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/releases/tags/${tempTag}`,
+    { headers: ghHeaders }
+  );
+  if (!tempRes.ok) {
+    return jsonResponse({ error: "Build not found" }, 404, origin, env.ALLOWED_ORIGIN);
+  }
+  const tempRelease = await tempRes.json<{
+    assets: { name: string; browser_download_url: string; size: number; url: string }[];
+  }>();
+  const asset = tempRelease.assets?.[0];
+  if (!asset) {
+    return jsonResponse({ error: "No package file in build" }, 404, origin, env.ALLOWED_ORIGIN);
+  }
+
+  // 2. Download the asset
+  const assetRes = await fetch(asset.browser_download_url);
+  if (!assetRes.ok) {
+    return jsonResponse({ error: "Failed to download package" }, 500, origin, env.ALLOWED_ORIGIN);
+  }
+  const assetBlob = await assetRes.blob();
+
+  // 3. Create permanent release
+  const packageBaseName = asset.name.replace(/_\d+\.\d+\.\d+\.tar\.gz$/, "");
+  const permTag = `pkg-${packageBaseName}`;
+
+  // Delete existing permanent release if any (update)
+  const existingRes = await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/releases/tags/${permTag}`,
+    { headers: ghHeaders }
+  );
+  if (existingRes.ok) {
+    const existing = await existingRes.json<{ id: number }>();
+    await fetch(
+      `https://api.github.com/repos/${env.GITHUB_REPO}/releases/${existing.id}`,
+      { method: "DELETE", headers: ghHeaders }
+    );
+  }
+
+  const meta = body.metadata ?? {};
+  const createRes = await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/releases`,
+    {
+      method: "POST",
+      headers: { ...ghHeaders, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        tag_name: permTag,
+        name: `${packageBaseName} ${meta.version ?? "1.0.0"}`,
+        body: [
+          `**Organism:** ${meta.organism ?? ""}`,
+          `**Assembly:** ${meta.assembly ?? ""}`,
+          `**Provider:** ${meta.provider ?? ""}`,
+          "",
+          `Install in R:`,
+          "```r",
+          `install.packages("${packageBaseName}", repos = "https://johnnychen1113.github.io/autoBSgenome")`,
+          "```",
+          "",
+          "Published via [AutoBSgenome Web](https://autobsgenome.pages.dev).",
+        ].join("\n"),
+      }),
+    }
+  );
+  if (!createRes.ok) {
+    const err = await createRes.text();
+    return jsonResponse({ error: "Failed to create release", details: err }, 500, origin, env.ALLOWED_ORIGIN);
+  }
+  const permRelease = await createRes.json<{ upload_url: string; id: number }>();
+
+  // 4. Upload asset to permanent release
+  const uploadUrl = permRelease.upload_url.replace("{?name,label}", `?name=${encodeURIComponent(asset.name)}`);
+  const uploadRes = await fetch(uploadUrl, {
+    method: "POST",
+    headers: {
+      ...ghHeaders,
+      "Content-Type": "application/gzip",
+    },
+    body: assetBlob,
+  });
+  if (!uploadRes.ok) {
+    return jsonResponse({ error: "Failed to upload package" }, 500, origin, env.ALLOWED_ORIGIN);
+  }
+
+  // 5. Trigger gh-pages update (via repository_dispatch)
+  await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/dispatches`,
+    {
+      method: "POST",
+      headers: { ...ghHeaders, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        event_type: "update_repo_index",
+        client_payload: {
+          package_name: packageBaseName,
+          version: meta.version ?? "1.0.0",
+          organism: meta.organism ?? "",
+          assembly: meta.assembly ?? "",
+          provider: meta.provider ?? "",
+          file_name: asset.name,
+          file_size: String(asset.size),
+        },
+      }),
+    }
+  );
+
+  return jsonResponse(
+    { status: "published", tag: permTag, package_name: packageBaseName },
     200,
     origin,
     env.ALLOWED_ORIGIN
