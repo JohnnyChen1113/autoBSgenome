@@ -49,3 +49,87 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.NCBI.R64
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lcalcarifer.NCBI.TLLLatcalv3
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Crubella.NCBI.Caprub10
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Lcrocea.NCBI.Lcrocea20
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Msaxatilis.NCBI.NCSUSB20
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Aocellatus.NCBI.GSCWeel10
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Ncoriiceps.NCBI.NC01
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Mneglectum.NCBI.monov1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Hhippoglossus.NCBI.fHipHip1pri
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Cvariabilis.NCBI.v10
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Clumpus.NCBI.fCycLum1pri
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Csemilaevis.NCBI.Csev10
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Hcomes.NCBI.HcomesQL1v11
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Aprotothecoides.NCBI.ASM73321v1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Otauri.NCBI.version140606
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Mcommoda.NCBI.ASM9098v2
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Bprasinos.NCBI.ASM222023v1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Tflavidus.NCBI.ASM371156v2
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Ehellem.NCBI.ASM27781v3
+Version: 1.0.0
+NeedsCompilation: no

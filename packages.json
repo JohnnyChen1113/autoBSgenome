@@ -1,6 +1,26 @@
 {
   "organisms": [
     {
+      "organism": "Anarrhichthys ocellatus",
+      "common_name": "wolf-eel",
+      "builds": [
+        {
+          "package": "BSgenome.Aocellatus.NCBI.GSCWeel10",
+          "version": "1.0.0",
+          "organism": "Anarrhichthys ocellatus",
+          "common_name": "wolf-eel",
+          "assembly": "GSC_Weel_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_004355925.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004355925.1/",
+          "file_name": "BSgenome.Aocellatus.NCBI.GSCWeel10_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aocellatus.NCBI.GSCWeel10/BSgenome.Aocellatus.NCBI.GSCWeel10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus luchuensis",
       "common_name": "",
       "builds": [
@@ -32,6 +52,166 @@
       ]
     },
     {
+      "organism": "Auxenochlorella protothecoides",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Aprotothecoides.NCBI.ASM73321v1",
+          "version": "1.0.0",
+          "organism": "Auxenochlorella protothecoides",
+          "common_name": "",
+          "assembly": "ASM73321v1",
+          "provider": "NCBI",
+          "accession": "GCF_000733215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000733215.1/",
+          "file_name": "BSgenome.Aprotothecoides.NCBI.ASM73321v1_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aprotothecoides.NCBI.ASM73321v1/BSgenome.Aprotothecoides.NCBI.ASM73321v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Bathycoccus prasinos",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Bprasinos.NCBI.ASM222023v1",
+          "version": "1.0.0",
+          "organism": "Bathycoccus prasinos",
+          "common_name": "",
+          "assembly": "ASM222023v1",
+          "provider": "NCBI",
+          "accession": "GCF_002220235.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002220235.1/",
+          "file_name": "BSgenome.Bprasinos.NCBI.ASM222023v1_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bprasinos.NCBI.ASM222023v1/BSgenome.Bprasinos.NCBI.ASM222023v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Capsella rubella",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Crubella.NCBI.Caprub10",
+          "version": "1.0.0",
+          "organism": "Capsella rubella",
+          "common_name": "",
+          "assembly": "Caprub1_0",
+          "provider": "NCBI",
+          "accession": "GCF_000375325.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000375325.1/",
+          "file_name": "BSgenome.Crubella.NCBI.Caprub10_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Crubella.NCBI.Caprub10/BSgenome.Crubella.NCBI.Caprub10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Chlamydomonas reinhardtii",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55",
+          "version": "1.0.0",
+          "organism": "Chlamydomonas reinhardtii",
+          "common_name": "",
+          "assembly": "Chlamydomonas_reinhardtii_v5.5",
+          "provider": "NCBI",
+          "accession": "GCF_000002595.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002595.2/",
+          "file_name": "BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55/BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Chlorella variabilis",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Cvariabilis.NCBI.v10",
+          "version": "1.0.0",
+          "organism": "Chlorella variabilis",
+          "common_name": "",
+          "assembly": "v 1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000147415.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000147415.1/",
+          "file_name": "BSgenome.Cvariabilis.NCBI.v10_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvariabilis.NCBI.v10/BSgenome.Cvariabilis.NCBI.v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Coccomyxa subellipsoidea C-169",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20",
+          "version": "1.0.0",
+          "organism": "Coccomyxa subellipsoidea C-169",
+          "common_name": "",
+          "assembly": "Coccomyxa subellipsoidae v2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000258705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000258705.1/",
+          "file_name": "BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20/BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Cyclopterus lumpus",
+      "common_name": "lumpfish",
+      "builds": [
+        {
+          "package": "BSgenome.Clumpus.NCBI.fCycLum1pri",
+          "version": "1.0.0",
+          "organism": "Cyclopterus lumpus",
+          "common_name": "lumpfish",
+          "assembly": "fCycLum1.pri",
+          "provider": "NCBI",
+          "accession": "GCF_009769545.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009769545.1/",
+          "file_name": "BSgenome.Clumpus.NCBI.fCycLum1pri_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clumpus.NCBI.fCycLum1pri/BSgenome.Clumpus.NCBI.fCycLum1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Cynoglossus semilaevis",
+      "common_name": "tongue sole",
+      "builds": [
+        {
+          "package": "BSgenome.Csemilaevis.NCBI.Csev10",
+          "version": "1.0.0",
+          "organism": "Cynoglossus semilaevis",
+          "common_name": "tongue sole",
+          "assembly": "Cse_v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000523025.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000523025.1/",
+          "file_name": "BSgenome.Csemilaevis.NCBI.Csev10_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csemilaevis.NCBI.Csev10/BSgenome.Csemilaevis.NCBI.Csev10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Encephalitozoon cuniculi GB-M1",
       "common_name": "",
       "builds": [
@@ -48,6 +228,26 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000091225.2/",
           "accession": "GCF_000091225.2"
+        }
+      ]
+    },
+    {
+      "organism": "Encephalitozoon hellem ATCC 50504",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Ehellem.NCBI.ASM27781v3",
+          "version": "1.0.0",
+          "organism": "Encephalitozoon hellem ATCC 50504",
+          "common_name": "",
+          "assembly": "ASM27781v3",
+          "provider": "NCBI",
+          "accession": "GCF_000277815.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000277815.2/",
+          "file_name": "BSgenome.Ehellem.NCBI.ASM27781v3_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehellem.NCBI.ASM27781v3/BSgenome.Ehellem.NCBI.ASM27781v3_1.0.0.tar.gz"
         }
       ]
     },
@@ -92,6 +292,126 @@
       ]
     },
     {
+      "organism": "Hippocampus comes",
+      "common_name": "tiger tail seahorse",
+      "builds": [
+        {
+          "package": "BSgenome.Hcomes.NCBI.HcomesQL1v11",
+          "version": "1.0.0",
+          "organism": "Hippocampus comes",
+          "common_name": "tiger tail seahorse",
+          "assembly": "H_comes_QL1_v1.1",
+          "provider": "NCBI",
+          "accession": "GCF_001891065.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001891065.2/",
+          "file_name": "BSgenome.Hcomes.NCBI.HcomesQL1v11_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcomes.NCBI.HcomesQL1v11/BSgenome.Hcomes.NCBI.HcomesQL1v11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Hippoglossus hippoglossus",
+      "common_name": "Atlantic halibut",
+      "builds": [
+        {
+          "package": "BSgenome.Hhippoglossus.NCBI.fHipHip1pri",
+          "version": "1.0.0",
+          "organism": "Hippoglossus hippoglossus",
+          "common_name": "Atlantic halibut",
+          "assembly": "fHipHip1.pri",
+          "provider": "NCBI",
+          "accession": "GCF_009819705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009819705.1/",
+          "file_name": "BSgenome.Hhippoglossus.NCBI.fHipHip1pri_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhippoglossus.NCBI.fHipHip1pri/BSgenome.Hhippoglossus.NCBI.fHipHip1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Larimichthys crocea",
+      "common_name": "large yellow croaker",
+      "builds": [
+        {
+          "package": "BSgenome.Lcrocea.NCBI.Lcrocea20",
+          "version": "1.0.0",
+          "organism": "Larimichthys crocea",
+          "common_name": "large yellow croaker",
+          "assembly": "L_crocea_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000972845.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000972845.2/",
+          "file_name": "BSgenome.Lcrocea.NCBI.Lcrocea20_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcrocea.NCBI.Lcrocea20/BSgenome.Lcrocea.NCBI.Lcrocea20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Lates calcarifer",
+      "common_name": "barramundi perch",
+      "builds": [
+        {
+          "package": "BSgenome.Lcalcarifer.NCBI.TLLLatcalv3",
+          "version": "1.0.0",
+          "organism": "Lates calcarifer",
+          "common_name": "barramundi perch",
+          "assembly": "TLL_Latcal_v3",
+          "provider": "NCBI",
+          "accession": "GCF_001640805.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001640805.2/",
+          "file_name": "BSgenome.Lcalcarifer.NCBI.TLLLatcalv3_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcalcarifer.NCBI.TLLLatcalv3/BSgenome.Lcalcarifer.NCBI.TLLLatcalv3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Micromonas commoda",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Mcommoda.NCBI.ASM9098v2",
+          "version": "1.0.0",
+          "organism": "Micromonas commoda",
+          "common_name": "",
+          "assembly": "ASM9098v2",
+          "provider": "NCBI",
+          "accession": "GCF_000090985.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000090985.2/",
+          "file_name": "BSgenome.Mcommoda.NCBI.ASM9098v2_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcommoda.NCBI.ASM9098v2/BSgenome.Mcommoda.NCBI.ASM9098v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Micromonas pusilla CCMP1545",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20",
+          "version": "1.0.0",
+          "organism": "Micromonas pusilla CCMP1545",
+          "common_name": "",
+          "assembly": "Micromonas pusilla CCMP1545 v2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000151265.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000151265.4/",
+          "file_name": "BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20/BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mitosporidium daphniae",
       "common_name": "",
       "builds": [
@@ -108,6 +428,46 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000760515.2/",
           "accession": "GCF_000760515.2"
+        }
+      ]
+    },
+    {
+      "organism": "Monoraphidium neglectum",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Mneglectum.NCBI.monov1",
+          "version": "1.0.0",
+          "organism": "Monoraphidium neglectum",
+          "common_name": "",
+          "assembly": "mono_v1",
+          "provider": "NCBI",
+          "accession": "GCF_000611645.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000611645.1/",
+          "file_name": "BSgenome.Mneglectum.NCBI.monov1_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mneglectum.NCBI.monov1/BSgenome.Mneglectum.NCBI.monov1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
+      "organism": "Morone saxatilis",
+      "common_name": "striped sea-bass",
+      "builds": [
+        {
+          "package": "BSgenome.Msaxatilis.NCBI.NCSUSB20",
+          "version": "1.0.0",
+          "organism": "Morone saxatilis",
+          "common_name": "striped sea-bass",
+          "assembly": "NCSU_SB_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_004916995.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004916995.1/",
+          "file_name": "BSgenome.Msaxatilis.NCBI.NCSUSB20_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msaxatilis.NCBI.NCSUSB20/BSgenome.Msaxatilis.NCBI.NCSUSB20_1.0.0.tar.gz"
         }
       ]
     },
@@ -172,6 +532,26 @@
       ]
     },
     {
+      "organism": "Notothenia coriiceps",
+      "common_name": "black rockcod",
+      "builds": [
+        {
+          "package": "BSgenome.Ncoriiceps.NCBI.NC01",
+          "version": "1.0.0",
+          "organism": "Notothenia coriiceps",
+          "common_name": "black rockcod",
+          "assembly": "NC01",
+          "provider": "NCBI",
+          "accession": "GCF_000735185.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000735185.1/",
+          "file_name": "BSgenome.Ncoriiceps.NCBI.NC01_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncoriiceps.NCBI.NC01/BSgenome.Ncoriiceps.NCBI.NC01_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ordospora colligata OC4",
       "common_name": "",
       "builds": [
@@ -188,6 +568,26 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000803265.1/",
           "accession": "GCF_000803265.1"
+        }
+      ]
+    },
+    {
+      "organism": "Ostreococcus tauri",
+      "common_name": "",
+      "builds": [
+        {
+          "package": "BSgenome.Otauri.NCBI.version140606",
+          "version": "1.0.0",
+          "organism": "Ostreococcus tauri",
+          "common_name": "",
+          "assembly": "version 140606",
+          "provider": "NCBI",
+          "accession": "GCF_000214015.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000214015.3/",
+          "file_name": "BSgenome.Otauri.NCBI.version140606_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Otauri.NCBI.version140606/BSgenome.Otauri.NCBI.version140606_1.0.0.tar.gz"
         }
       ]
     },
@@ -227,6 +627,26 @@
           "common_name": "sorghum",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000003195.3/",
           "accession": "GCA_000003195.3"
+        }
+      ]
+    },
+    {
+      "organism": "Takifugu flavidus",
+      "common_name": "sansaifugu",
+      "builds": [
+        {
+          "package": "BSgenome.Tflavidus.NCBI.ASM371156v2",
+          "version": "1.0.0",
+          "organism": "Takifugu flavidus",
+          "common_name": "sansaifugu",
+          "assembly": "ASM371156v2",
+          "provider": "NCBI",
+          "accession": "GCF_003711565.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003711565.1/",
+          "file_name": "BSgenome.Tflavidus.NCBI.ASM371156v2_1.0.0.tar.gz",
+          "size": 0,
+          "published": "",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tflavidus.NCBI.ASM371156v2/BSgenome.Tflavidus.NCBI.ASM371156v2_1.0.0.tar.gz"
         }
       ]
     },
@@ -429,6 +849,300 @@
       "size": 3201712,
       "published": "2026-04-03T20:37:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.NCBI.R64/BSgenome.Scerevisiae.NCBI.R64_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lcalcarifer.NCBI.TLLLatcalv3",
+      "version": "1.0.0",
+      "organism": "Lates calcarifer",
+      "common_name": "barramundi perch",
+      "assembly": "TLL_Latcal_v3",
+      "provider": "NCBI",
+      "accession": "GCF_001640805.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001640805.2/",
+      "file_name": "BSgenome.Lcalcarifer.NCBI.TLLLatcalv3_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcalcarifer.NCBI.TLLLatcalv3/BSgenome.Lcalcarifer.NCBI.TLLLatcalv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Crubella.NCBI.Caprub10",
+      "version": "1.0.0",
+      "organism": "Capsella rubella",
+      "common_name": "",
+      "assembly": "Caprub1_0",
+      "provider": "NCBI",
+      "accession": "GCF_000375325.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000375325.1/",
+      "file_name": "BSgenome.Crubella.NCBI.Caprub10_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Crubella.NCBI.Caprub10/BSgenome.Crubella.NCBI.Caprub10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lcrocea.NCBI.Lcrocea20",
+      "version": "1.0.0",
+      "organism": "Larimichthys crocea",
+      "common_name": "large yellow croaker",
+      "assembly": "L_crocea_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000972845.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000972845.2/",
+      "file_name": "BSgenome.Lcrocea.NCBI.Lcrocea20_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcrocea.NCBI.Lcrocea20/BSgenome.Lcrocea.NCBI.Lcrocea20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Msaxatilis.NCBI.NCSUSB20",
+      "version": "1.0.0",
+      "organism": "Morone saxatilis",
+      "common_name": "striped sea-bass",
+      "assembly": "NCSU_SB_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_004916995.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004916995.1/",
+      "file_name": "BSgenome.Msaxatilis.NCBI.NCSUSB20_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msaxatilis.NCBI.NCSUSB20/BSgenome.Msaxatilis.NCBI.NCSUSB20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aocellatus.NCBI.GSCWeel10",
+      "version": "1.0.0",
+      "organism": "Anarrhichthys ocellatus",
+      "common_name": "wolf-eel",
+      "assembly": "GSC_Weel_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_004355925.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004355925.1/",
+      "file_name": "BSgenome.Aocellatus.NCBI.GSCWeel10_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aocellatus.NCBI.GSCWeel10/BSgenome.Aocellatus.NCBI.GSCWeel10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55",
+      "version": "1.0.0",
+      "organism": "Chlamydomonas reinhardtii",
+      "common_name": "",
+      "assembly": "Chlamydomonas_reinhardtii_v5.5",
+      "provider": "NCBI",
+      "accession": "GCF_000002595.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002595.2/",
+      "file_name": "BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55/BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ncoriiceps.NCBI.NC01",
+      "version": "1.0.0",
+      "organism": "Notothenia coriiceps",
+      "common_name": "black rockcod",
+      "assembly": "NC01",
+      "provider": "NCBI",
+      "accession": "GCF_000735185.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000735185.1/",
+      "file_name": "BSgenome.Ncoriiceps.NCBI.NC01_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncoriiceps.NCBI.NC01/BSgenome.Ncoriiceps.NCBI.NC01_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mneglectum.NCBI.monov1",
+      "version": "1.0.0",
+      "organism": "Monoraphidium neglectum",
+      "common_name": "",
+      "assembly": "mono_v1",
+      "provider": "NCBI",
+      "accession": "GCF_000611645.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000611645.1/",
+      "file_name": "BSgenome.Mneglectum.NCBI.monov1_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mneglectum.NCBI.monov1/BSgenome.Mneglectum.NCBI.monov1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20",
+      "version": "1.0.0",
+      "organism": "Coccomyxa subellipsoidea C-169",
+      "common_name": "",
+      "assembly": "Coccomyxa subellipsoidae v2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000258705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000258705.1/",
+      "file_name": "BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20/BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hhippoglossus.NCBI.fHipHip1pri",
+      "version": "1.0.0",
+      "organism": "Hippoglossus hippoglossus",
+      "common_name": "Atlantic halibut",
+      "assembly": "fHipHip1.pri",
+      "provider": "NCBI",
+      "accession": "GCF_009819705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009819705.1/",
+      "file_name": "BSgenome.Hhippoglossus.NCBI.fHipHip1pri_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhippoglossus.NCBI.fHipHip1pri/BSgenome.Hhippoglossus.NCBI.fHipHip1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cvariabilis.NCBI.v10",
+      "version": "1.0.0",
+      "organism": "Chlorella variabilis",
+      "common_name": "",
+      "assembly": "v 1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000147415.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000147415.1/",
+      "file_name": "BSgenome.Cvariabilis.NCBI.v10_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvariabilis.NCBI.v10/BSgenome.Cvariabilis.NCBI.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Clumpus.NCBI.fCycLum1pri",
+      "version": "1.0.0",
+      "organism": "Cyclopterus lumpus",
+      "common_name": "lumpfish",
+      "assembly": "fCycLum1.pri",
+      "provider": "NCBI",
+      "accession": "GCF_009769545.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009769545.1/",
+      "file_name": "BSgenome.Clumpus.NCBI.fCycLum1pri_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clumpus.NCBI.fCycLum1pri/BSgenome.Clumpus.NCBI.fCycLum1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Csemilaevis.NCBI.Csev10",
+      "version": "1.0.0",
+      "organism": "Cynoglossus semilaevis",
+      "common_name": "tongue sole",
+      "assembly": "Cse_v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000523025.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000523025.1/",
+      "file_name": "BSgenome.Csemilaevis.NCBI.Csev10_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csemilaevis.NCBI.Csev10/BSgenome.Csemilaevis.NCBI.Csev10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hcomes.NCBI.HcomesQL1v11",
+      "version": "1.0.0",
+      "organism": "Hippocampus comes",
+      "common_name": "tiger tail seahorse",
+      "assembly": "H_comes_QL1_v1.1",
+      "provider": "NCBI",
+      "accession": "GCF_001891065.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001891065.2/",
+      "file_name": "BSgenome.Hcomes.NCBI.HcomesQL1v11_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcomes.NCBI.HcomesQL1v11/BSgenome.Hcomes.NCBI.HcomesQL1v11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20",
+      "version": "1.0.0",
+      "organism": "Micromonas pusilla CCMP1545",
+      "common_name": "",
+      "assembly": "Micromonas pusilla CCMP1545 v2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000151265.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000151265.4/",
+      "file_name": "BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20/BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aprotothecoides.NCBI.ASM73321v1",
+      "version": "1.0.0",
+      "organism": "Auxenochlorella protothecoides",
+      "common_name": "",
+      "assembly": "ASM73321v1",
+      "provider": "NCBI",
+      "accession": "GCF_000733215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000733215.1/",
+      "file_name": "BSgenome.Aprotothecoides.NCBI.ASM73321v1_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aprotothecoides.NCBI.ASM73321v1/BSgenome.Aprotothecoides.NCBI.ASM73321v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Otauri.NCBI.version140606",
+      "version": "1.0.0",
+      "organism": "Ostreococcus tauri",
+      "common_name": "",
+      "assembly": "version 140606",
+      "provider": "NCBI",
+      "accession": "GCF_000214015.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000214015.3/",
+      "file_name": "BSgenome.Otauri.NCBI.version140606_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Otauri.NCBI.version140606/BSgenome.Otauri.NCBI.version140606_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mcommoda.NCBI.ASM9098v2",
+      "version": "1.0.0",
+      "organism": "Micromonas commoda",
+      "common_name": "",
+      "assembly": "ASM9098v2",
+      "provider": "NCBI",
+      "accession": "GCF_000090985.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000090985.2/",
+      "file_name": "BSgenome.Mcommoda.NCBI.ASM9098v2_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcommoda.NCBI.ASM9098v2/BSgenome.Mcommoda.NCBI.ASM9098v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bprasinos.NCBI.ASM222023v1",
+      "version": "1.0.0",
+      "organism": "Bathycoccus prasinos",
+      "common_name": "",
+      "assembly": "ASM222023v1",
+      "provider": "NCBI",
+      "accession": "GCF_002220235.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002220235.1/",
+      "file_name": "BSgenome.Bprasinos.NCBI.ASM222023v1_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bprasinos.NCBI.ASM222023v1/BSgenome.Bprasinos.NCBI.ASM222023v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tflavidus.NCBI.ASM371156v2",
+      "version": "1.0.0",
+      "organism": "Takifugu flavidus",
+      "common_name": "sansaifugu",
+      "assembly": "ASM371156v2",
+      "provider": "NCBI",
+      "accession": "GCF_003711565.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003711565.1/",
+      "file_name": "BSgenome.Tflavidus.NCBI.ASM371156v2_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tflavidus.NCBI.ASM371156v2/BSgenome.Tflavidus.NCBI.ASM371156v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ehellem.NCBI.ASM27781v3",
+      "version": "1.0.0",
+      "organism": "Encephalitozoon hellem ATCC 50504",
+      "common_name": "",
+      "assembly": "ASM27781v3",
+      "provider": "NCBI",
+      "accession": "GCF_000277815.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000277815.2/",
+      "file_name": "BSgenome.Ehellem.NCBI.ASM27781v3_1.0.0.tar.gz",
+      "size": 0,
+      "published": "",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehellem.NCBI.ASM27781v3/BSgenome.Ehellem.NCBI.ASM27781v3_1.0.0.tar.gz"
     }
   ]
 }
