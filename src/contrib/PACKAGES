@@ -1109,3 +1109,7 @@ NeedsCompilation: no
 Package: BSgenome.Eguineensis.NCBI.EG11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ghirsutum.NCBI.Gossypiumhirsutumv21
+Version: 1.0.0
+NeedsCompilation: no

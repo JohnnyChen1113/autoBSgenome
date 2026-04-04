@@ -5030,6 +5030,54 @@
       ]
     },
     {
+      "organism": "Gossypium hirsutum",
+      "common_name": "cotton",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Gossypium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ghirsutum.NCBI.Gossypiumhirsutumv21",
+          "version": "1.0.0",
+          "organism": "Gossypium hirsutum",
+          "assembly": "Gossypium_hirsutum_v2.1",
+          "provider": "NCBI",
+          "accession": "GCF_007990345.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007990345.1/",
+          "file_name": "BSgenome.Ghirsutum.NCBI.Gossypiumhirsutumv21_1.0.0.tar.gz",
+          "size": 585371896,
+          "seq_ids": [
+            "NC_053424.1",
+            "NC_053425.1",
+            "NC_053426.1",
+            "NC_053427.1",
+            "NC_053428.1"
+          ],
+          "seq_count": 1027,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Malvales",
+            "family": "Malvaceae",
+            "genus": "Gossypium"
+          },
+          "common_name": "cotton",
+          "published": "2026-04-04T17:38:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ghirsutum.NCBI.Gossypiumhirsutumv21/BSgenome.Ghirsutum.NCBI.Gossypiumhirsutumv21_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Grammomys surdaster",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -20295,6 +20343,38 @@
       "common_name": "African oil palm",
       "published": "2026-04-04T17:36:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eguineensis.NCBI.EG11/BSgenome.Eguineensis.NCBI.EG11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ghirsutum.NCBI.Gossypiumhirsutumv21",
+      "version": "1.0.0",
+      "organism": "Gossypium hirsutum",
+      "assembly": "Gossypium_hirsutum_v2.1",
+      "provider": "NCBI",
+      "accession": "GCF_007990345.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007990345.1/",
+      "file_name": "BSgenome.Ghirsutum.NCBI.Gossypiumhirsutumv21_1.0.0.tar.gz",
+      "size": 585371896,
+      "seq_ids": [
+        "NC_053424.1",
+        "NC_053425.1",
+        "NC_053426.1",
+        "NC_053427.1",
+        "NC_053428.1"
+      ],
+      "seq_count": 1027,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Gossypium"
+      },
+      "common_name": "cotton",
+      "published": "2026-04-04T17:38:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ghirsutum.NCBI.Gossypiumhirsutumv21/BSgenome.Ghirsutum.NCBI.Gossypiumhirsutumv21_1.0.0.tar.gz"
     }
   ]
 }
