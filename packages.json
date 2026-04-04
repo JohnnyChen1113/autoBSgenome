@@ -12597,6 +12597,54 @@
       ]
     },
     {
+      "organism": "Trichoplax adhaerens",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Placozoa",
+        "class": "Uniplacotomia",
+        "order": "Trichoplacea",
+        "family": "Trichoplacidae",
+        "genus": "Trichoplax"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tadhaerens.NCBI.v10",
+          "version": "1.0.0",
+          "organism": "Trichoplax adhaerens",
+          "assembly": "v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000150275.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150275.1/",
+          "file_name": "BSgenome.Tadhaerens.NCBI.v10_1.0.0.tar.gz",
+          "size": 25079183,
+          "seq_ids": [
+            "NW_002062356.1",
+            "NW_002062355.1",
+            "NW_002062354.1",
+            "NW_002062353.1",
+            "NW_002062352.1"
+          ],
+          "seq_count": 1414,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Placozoa",
+            "class": "Uniplacotomia",
+            "order": "Trichoplacea",
+            "family": "Trichoplacidae",
+            "genus": "Trichoplax"
+          },
+          "common_name": "",
+          "published": "2026-04-04T19:33:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tadhaerens.NCBI.v10/BSgenome.Tadhaerens.NCBI.v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Triticum urartu",
       "common_name": "",
       "group": "plant",
@@ -21815,6 +21863,38 @@
       "common_name": "",
       "published": "2026-04-04T18:53:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Turartu.NCBI.Tu21/BSgenome.Turartu.NCBI.Tu21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tadhaerens.NCBI.v10",
+      "version": "1.0.0",
+      "organism": "Trichoplax adhaerens",
+      "assembly": "v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000150275.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150275.1/",
+      "file_name": "BSgenome.Tadhaerens.NCBI.v10_1.0.0.tar.gz",
+      "size": 25079183,
+      "seq_ids": [
+        "NW_002062356.1",
+        "NW_002062355.1",
+        "NW_002062354.1",
+        "NW_002062353.1",
+        "NW_002062352.1"
+      ],
+      "seq_count": 1414,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Placozoa",
+        "class": "Uniplacotomia",
+        "order": "Trichoplacea",
+        "family": "Trichoplacidae",
+        "genus": "Trichoplax"
+      },
+      "common_name": "",
+      "published": "2026-04-04T19:33:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tadhaerens.NCBI.v10/BSgenome.Tadhaerens.NCBI.v10_1.0.0.tar.gz"
     }
   ]
 }
