@@ -665,3 +665,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccaeruleus.NCBI.cyaCae2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Arowi.NCBI.aptRow1
+Version: 1.0.0
+NeedsCompilation: no
