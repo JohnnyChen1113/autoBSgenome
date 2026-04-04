@@ -621,3 +621,7 @@ NeedsCompilation: no
 Package: BSgenome.Ldiscolor.NCBI.ASM69178v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fglacialis.NCBI.ASM69083v1
+Version: 1.0.0
+NeedsCompilation: no
