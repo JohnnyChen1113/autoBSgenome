@@ -1293,3 +1293,7 @@ NeedsCompilation: no
 Package: BSgenome.Smosellana.NCBI.AAFCSMos10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnasturtii.NCBI.AAFCCNas11
+Version: 1.0.0
+NeedsCompilation: no

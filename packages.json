@@ -3342,6 +3342,54 @@
       ]
     },
     {
+      "organism": "Contarinia nasturtii",
+      "common_name": "swede midge",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Cecidomyiidae",
+        "genus": "Contarinia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cnasturtii.NCBI.AAFCCNas11",
+          "version": "1.0.0",
+          "organism": "Contarinia nasturtii",
+          "assembly": "AAFC_CNas_1.1",
+          "provider": "NCBI",
+          "accession": "GCF_009176525.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009176525.2/",
+          "file_name": "BSgenome.Cnasturtii.NCBI.AAFCCNas11_1.0.0.tar.gz",
+          "size": 45885780,
+          "seq_ids": [
+            "NW_022197360.1",
+            "NW_022197361.1",
+            "NW_022197362.1",
+            "NW_022197364.1",
+            "NW_022197365.1"
+          ],
+          "seq_count": 5545,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Cecidomyiidae",
+            "genus": "Contarinia"
+          },
+          "common_name": "swede midge",
+          "published": "2026-04-04T21:34:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cnasturtii.NCBI.AAFCCNas11/BSgenome.Cnasturtii.NCBI.AAFCCNas11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Corapipo altera",
       "common_name": "White-ruffed manakin",
       "group": "vertebrate_other",
@@ -23975,6 +24023,38 @@
       "common_name": "orange wheat blossom midge",
       "published": "2026-04-04T20:38:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smosellana.NCBI.AAFCSMos10/BSgenome.Smosellana.NCBI.AAFCSMos10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cnasturtii.NCBI.AAFCCNas11",
+      "version": "1.0.0",
+      "organism": "Contarinia nasturtii",
+      "assembly": "AAFC_CNas_1.1",
+      "provider": "NCBI",
+      "accession": "GCF_009176525.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009176525.2/",
+      "file_name": "BSgenome.Cnasturtii.NCBI.AAFCCNas11_1.0.0.tar.gz",
+      "size": 45885780,
+      "seq_ids": [
+        "NW_022197360.1",
+        "NW_022197361.1",
+        "NW_022197362.1",
+        "NW_022197364.1",
+        "NW_022197365.1"
+      ],
+      "seq_count": 5545,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Cecidomyiidae",
+        "genus": "Contarinia"
+      },
+      "common_name": "swede midge",
+      "published": "2026-04-04T21:34:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cnasturtii.NCBI.AAFCCNas11/BSgenome.Cnasturtii.NCBI.AAFCCNas11_1.0.0.tar.gz"
     }
   ]
 }
