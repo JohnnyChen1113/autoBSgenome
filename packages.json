@@ -4716,6 +4716,54 @@
       ]
     },
     {
+      "organism": "Sturnus vulgaris",
+      "common_name": "Common starling",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Sturnidae",
+        "genus": "Sturnus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Svulgaris.NCBI.Sturnusvulgaris10",
+          "version": "1.0.0",
+          "organism": "Sturnus vulgaris",
+          "assembly": "Sturnus_vulgaris-1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001447265.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001447265.1/",
+          "file_name": "BSgenome.Svulgaris.NCBI.Sturnusvulgaris10_1.0.0.tar.gz",
+          "size": 266391634,
+          "seq_ids": [
+            "NW_014650461.1",
+            "NW_014650462.1",
+            "NW_014650463.1",
+            "NW_014650464.1",
+            "NW_014650465.1"
+          ],
+          "seq_count": 2361,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Sturnidae",
+            "genus": "Sturnus"
+          },
+          "common_name": "Common starling",
+          "published": "2026-04-04T07:06:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Svulgaris.NCBI.Sturnusvulgaris10/BSgenome.Svulgaris.NCBI.Sturnusvulgaris10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Suricata suricatta",
       "common_name": "meerkat",
       "group": "vertebrate_mammalian",
@@ -8476,6 +8524,38 @@
       "common_name": "rifleman",
       "published": "2026-04-04T07:06:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Achloris.NCBI.ASM69581v1/BSgenome.Achloris.NCBI.ASM69581v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Svulgaris.NCBI.Sturnusvulgaris10",
+      "version": "1.0.0",
+      "organism": "Sturnus vulgaris",
+      "assembly": "Sturnus_vulgaris-1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001447265.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001447265.1/",
+      "file_name": "BSgenome.Svulgaris.NCBI.Sturnusvulgaris10_1.0.0.tar.gz",
+      "size": 266391634,
+      "seq_ids": [
+        "NW_014650461.1",
+        "NW_014650462.1",
+        "NW_014650463.1",
+        "NW_014650464.1",
+        "NW_014650465.1"
+      ],
+      "seq_count": 2361,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Sturnidae",
+        "genus": "Sturnus"
+      },
+      "common_name": "Common starling",
+      "published": "2026-04-04T07:06:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Svulgaris.NCBI.Sturnusvulgaris10/BSgenome.Svulgaris.NCBI.Sturnusvulgaris10_1.0.0.tar.gz"
     }
   ]
 }
