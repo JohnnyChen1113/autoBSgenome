@@ -757,6 +757,54 @@
       ]
     },
     {
+      "organism": "Chrysochloris asiatica",
+      "common_name": "Cape golden mole",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Afrosoricida",
+        "family": "Chrysochloridae",
+        "genus": "Chrysochloris"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Casiatica.NCBI.ChrAsi10",
+          "version": "1.0.0",
+          "organism": "Chrysochloris asiatica",
+          "assembly": "ChrAsi1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000296735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000296735.1/",
+          "file_name": "BSgenome.Casiatica.NCBI.ChrAsi10_1.0.0.tar.gz",
+          "size": 881370117,
+          "seq_ids": [
+            "NW_006408519.1",
+            "NW_006408520.1",
+            "NW_006408521.1",
+            "NW_006408522.1",
+            "NW_006408523.1"
+          ],
+          "seq_count": 20500,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Afrosoricida",
+            "family": "Chrysochloridae",
+            "genus": "Chrysochloris"
+          },
+          "common_name": "Cape golden mole",
+          "published": "2026-04-04T02:31:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Casiatica.NCBI.ChrAsi10/BSgenome.Casiatica.NCBI.ChrAsi10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Coccomyxa subellipsoidea C-169",
       "common_name": "",
       "group": "plant",
@@ -5759,6 +5807,38 @@
       "common_name": "koala",
       "published": "2026-04-04T02:31:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcinereus.NCBI.phaCinHiC/BSgenome.Pcinereus.NCBI.phaCinHiC_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Casiatica.NCBI.ChrAsi10",
+      "version": "1.0.0",
+      "organism": "Chrysochloris asiatica",
+      "assembly": "ChrAsi1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000296735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000296735.1/",
+      "file_name": "BSgenome.Casiatica.NCBI.ChrAsi10_1.0.0.tar.gz",
+      "size": 881370117,
+      "seq_ids": [
+        "NW_006408519.1",
+        "NW_006408520.1",
+        "NW_006408521.1",
+        "NW_006408522.1",
+        "NW_006408523.1"
+      ],
+      "seq_count": 20500,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Afrosoricida",
+        "family": "Chrysochloridae",
+        "genus": "Chrysochloris"
+      },
+      "common_name": "Cape golden mole",
+      "published": "2026-04-04T02:31:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Casiatica.NCBI.ChrAsi10/BSgenome.Casiatica.NCBI.ChrAsi10_1.0.0.tar.gz"
     }
   ]
 }

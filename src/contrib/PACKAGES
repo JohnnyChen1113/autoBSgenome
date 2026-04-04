@@ -381,3 +381,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcinereus.NCBI.phaCinHiC
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Casiatica.NCBI.ChrAsi10
+Version: 1.0.0
+NeedsCompilation: no
