@@ -341,3 +341,7 @@ NeedsCompilation: no
 Package: BSgenome.Rbieti.NCBI.ASM169854v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Etelfairi.NCBI.ASM31398v2
+Version: 1.0.0
+NeedsCompilation: no

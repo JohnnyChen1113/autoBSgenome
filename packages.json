@@ -1014,6 +1014,54 @@
       ]
     },
     {
+      "organism": "Echinops telfairi",
+      "common_name": "small Madagascar hedgehog",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Afrosoricida",
+        "family": "Tenrecidae",
+        "genus": "Echinops"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Etelfairi.NCBI.ASM31398v2",
+          "version": "1.0.0",
+          "organism": "Echinops telfairi",
+          "assembly": "ASM31398v2",
+          "provider": "NCBI",
+          "accession": "GCF_000313985.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000313985.2/",
+          "file_name": "BSgenome.Etelfairi.NCBI.ASM31398v2_1.0.0.tar.gz",
+          "size": 696060410,
+          "seq_ids": [
+            "NW_022103896.1",
+            "NW_022103897.1",
+            "NW_022103898.1",
+            "NW_022103899.1",
+            "NW_022103900.1"
+          ],
+          "seq_count": 7490,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Afrosoricida",
+            "family": "Tenrecidae",
+            "genus": "Echinops"
+          },
+          "common_name": "small Madagascar hedgehog",
+          "published": "2026-04-04T02:28:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Etelfairi.NCBI.ASM31398v2/BSgenome.Etelfairi.NCBI.ASM31398v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Encephalitozoon cuniculi GB-M1",
       "common_name": "",
       "group": "fungi",
@@ -4959,6 +5007,38 @@
       "common_name": "black snub-nosed monkey",
       "published": "2026-04-04T02:28:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rbieti.NCBI.ASM169854v2/BSgenome.Rbieti.NCBI.ASM169854v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Etelfairi.NCBI.ASM31398v2",
+      "version": "1.0.0",
+      "organism": "Echinops telfairi",
+      "assembly": "ASM31398v2",
+      "provider": "NCBI",
+      "accession": "GCF_000313985.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000313985.2/",
+      "file_name": "BSgenome.Etelfairi.NCBI.ASM31398v2_1.0.0.tar.gz",
+      "size": 696060410,
+      "seq_ids": [
+        "NW_022103896.1",
+        "NW_022103897.1",
+        "NW_022103898.1",
+        "NW_022103899.1",
+        "NW_022103900.1"
+      ],
+      "seq_count": 7490,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Afrosoricida",
+        "family": "Tenrecidae",
+        "genus": "Echinops"
+      },
+      "common_name": "small Madagascar hedgehog",
+      "published": "2026-04-04T02:28:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Etelfairi.NCBI.ASM31398v2/BSgenome.Etelfairi.NCBI.ASM31398v2_1.0.0.tar.gz"
     }
   ]
 }
