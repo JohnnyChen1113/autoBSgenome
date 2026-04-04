@@ -2620,6 +2620,54 @@
       ]
     },
     {
+      "organism": "Cucurbita moschata",
+      "common_name": "crookneck pumpkin",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Cucurbita"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cmoschata.NCBI.Cmos10",
+          "version": "1.0.0",
+          "organism": "Cucurbita moschata",
+          "assembly": "Cmos_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_002738365.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002738365.1/",
+          "file_name": "BSgenome.Cmoschata.NCBI.Cmos10_1.0.0.tar.gz",
+          "size": 66859830,
+          "seq_ids": [
+            "NW_019268517.1",
+            "NW_019268518.1",
+            "NW_019268519.1",
+            "NW_019268520.1",
+            "NW_019268521.1"
+          ],
+          "seq_count": 3500,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Cucurbitales",
+            "family": "Cucurbitaceae",
+            "genus": "Cucurbita"
+          },
+          "common_name": "crookneck pumpkin",
+          "published": "2026-04-04T13:58:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmoschata.NCBI.Cmos10/BSgenome.Cmoschata.NCBI.Cmos10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cucurbita pepo subsp. pepo",
       "common_name": "vegetable marrow",
       "group": "plant",
@@ -15335,6 +15383,38 @@
       "common_name": "vegetable marrow",
       "published": "2026-04-04T13:58:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpepo.NCBI.ASM280686v2/BSgenome.Cpepo.NCBI.ASM280686v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cmoschata.NCBI.Cmos10",
+      "version": "1.0.0",
+      "organism": "Cucurbita moschata",
+      "assembly": "Cmos_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_002738365.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002738365.1/",
+      "file_name": "BSgenome.Cmoschata.NCBI.Cmos10_1.0.0.tar.gz",
+      "size": 66859830,
+      "seq_ids": [
+        "NW_019268517.1",
+        "NW_019268518.1",
+        "NW_019268519.1",
+        "NW_019268520.1",
+        "NW_019268521.1"
+      ],
+      "seq_count": 3500,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Cucurbita"
+      },
+      "common_name": "crookneck pumpkin",
+      "published": "2026-04-04T13:58:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmoschata.NCBI.Cmos10/BSgenome.Cmoschata.NCBI.Cmos10_1.0.0.tar.gz"
     }
   ]
 }

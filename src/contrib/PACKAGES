@@ -861,3 +861,7 @@ NeedsCompilation: no
 Package: BSgenome.Cpepo.NCBI.ASM280686v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmoschata.NCBI.Cmos10
+Version: 1.0.0
+NeedsCompilation: no
