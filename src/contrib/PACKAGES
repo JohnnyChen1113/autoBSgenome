@@ -1053,3 +1053,7 @@ NeedsCompilation: no
 Package: BSgenome.Qlobata.NCBI.ValleyOak32
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bhispida.NCBI.ASM972705v1
+Version: 1.0.0
+NeedsCompilation: no
