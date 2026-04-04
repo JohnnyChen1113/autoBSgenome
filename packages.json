@@ -5367,6 +5367,54 @@
       ]
     },
     {
+      "organism": "Oncorhynchus kisutch",
+      "common_name": "coho salmon",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Oncorhynchus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Okisutch.NCBI.OkisV2",
+          "version": "1.0.0",
+          "organism": "Oncorhynchus kisutch",
+          "assembly": "Okis_V2",
+          "provider": "NCBI",
+          "accession": "GCF_002021735.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002021735.2/",
+          "file_name": "BSgenome.Okisutch.NCBI.OkisV2_1.0.0.tar.gz",
+          "size": 523198302,
+          "seq_ids": [
+            "NC_034174.2",
+            "NC_034175.2",
+            "NC_034176.2",
+            "NC_034177.2",
+            "NC_034178.2"
+          ],
+          "seq_count": 4087,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Salmoniformes",
+            "family": "Salmonidae",
+            "genus": "Oncorhynchus"
+          },
+          "common_name": "coho salmon",
+          "published": "2026-04-04T11:42:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Okisutch.NCBI.OkisV2/BSgenome.Okisutch.NCBI.OkisV2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ordospora colligata OC4",
       "common_name": "",
       "group": "fungi",
@@ -13901,6 +13949,38 @@
       "common_name": "",
       "published": "2026-04-04T11:42:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gjaponicus.NCBI.GekkojaponicusV11/BSgenome.Gjaponicus.NCBI.GekkojaponicusV11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Okisutch.NCBI.OkisV2",
+      "version": "1.0.0",
+      "organism": "Oncorhynchus kisutch",
+      "assembly": "Okis_V2",
+      "provider": "NCBI",
+      "accession": "GCF_002021735.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002021735.2/",
+      "file_name": "BSgenome.Okisutch.NCBI.OkisV2_1.0.0.tar.gz",
+      "size": 523198302,
+      "seq_ids": [
+        "NC_034174.2",
+        "NC_034175.2",
+        "NC_034176.2",
+        "NC_034177.2",
+        "NC_034178.2"
+      ],
+      "seq_count": 4087,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Oncorhynchus"
+      },
+      "common_name": "coho salmon",
+      "published": "2026-04-04T11:42:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Okisutch.NCBI.OkisV2/BSgenome.Okisutch.NCBI.OkisV2_1.0.0.tar.gz"
     }
   ]
 }
