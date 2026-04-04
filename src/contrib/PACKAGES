@@ -793,3 +793,7 @@ NeedsCompilation: no
 Package: BSgenome.Okisutch.NCBI.OkisV2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ggangeticus.NCBI.GavGancomp1
+Version: 1.0.0
+NeedsCompilation: no
