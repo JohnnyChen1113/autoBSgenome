@@ -2476,6 +2476,54 @@
       ]
     },
     {
+      "organism": "Cucurbita maxima",
+      "common_name": "winter squash",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Cucurbita"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cmaxima.NCBI.Cmax10",
+          "version": "1.0.0",
+          "organism": "Cucurbita maxima",
+          "assembly": "Cmax_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_002738345.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002738345.1/",
+          "file_name": "BSgenome.Cmaxima.NCBI.Cmax10_1.0.0.tar.gz",
+          "size": 65913351,
+          "seq_ids": [
+            "NW_019272017.1",
+            "NW_019272018.1",
+            "NW_019272019.1",
+            "NW_019272020.1",
+            "NW_019272021.1"
+          ],
+          "seq_count": 8299,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Cucurbitales",
+            "family": "Cucurbitaceae",
+            "genus": "Cucurbita"
+          },
+          "common_name": "winter squash",
+          "published": "2026-04-04T13:02:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmaxima.NCBI.Cmax10/BSgenome.Cmaxima.NCBI.Cmax10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyanistes caeruleus",
       "common_name": "blue tit",
       "group": "vertebrate_other",
@@ -14855,6 +14903,38 @@
       "common_name": "sweet cherry",
       "published": "2026-04-04T13:02:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pavium.NCBI.PAVr10/BSgenome.Pavium.NCBI.PAVr10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cmaxima.NCBI.Cmax10",
+      "version": "1.0.0",
+      "organism": "Cucurbita maxima",
+      "assembly": "Cmax_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_002738345.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002738345.1/",
+      "file_name": "BSgenome.Cmaxima.NCBI.Cmax10_1.0.0.tar.gz",
+      "size": 65913351,
+      "seq_ids": [
+        "NW_019272017.1",
+        "NW_019272018.1",
+        "NW_019272019.1",
+        "NW_019272020.1",
+        "NW_019272021.1"
+      ],
+      "seq_count": 8299,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Cucurbita"
+      },
+      "common_name": "winter squash",
+      "published": "2026-04-04T13:02:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmaxima.NCBI.Cmax10/BSgenome.Cmaxima.NCBI.Cmax10_1.0.0.tar.gz"
     }
   ]
 }

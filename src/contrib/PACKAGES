@@ -837,3 +837,7 @@ NeedsCompilation: no
 Package: BSgenome.Pavium.NCBI.PAVr10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmaxima.NCBI.Cmax10
+Version: 1.0.0
+NeedsCompilation: no
