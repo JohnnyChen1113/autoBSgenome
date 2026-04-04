@@ -2098,6 +2098,52 @@
       ]
     },
     {
+      "organism": "Crocodylus porosus",
+      "common_name": "Australian saltwater crocodile",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Crocodylia",
+        "family": "Crocodylidae",
+        "genus": "Crocodylus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cporosus.NCBI.CroPorcomp1",
+          "version": "1.0.0",
+          "organism": "Crocodylus porosus",
+          "assembly": "CroPor_comp1",
+          "provider": "NCBI",
+          "accession": "GCF_001723895.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001723895.1/",
+          "file_name": "BSgenome.Cporosus.NCBI.CroPorcomp1_1.0.0.tar.gz",
+          "size": 511980673,
+          "seq_ids": [
+            "NW_017728886.1",
+            "NW_017728887.1",
+            "NW_017728888.1",
+            "NW_017728889.1",
+            "NW_017728890.1"
+          ],
+          "seq_count": 70,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Crocodylia",
+            "family": "Crocodylidae",
+            "genus": "Crocodylus"
+          },
+          "common_name": "Australian saltwater crocodile",
+          "published": "2026-04-04T11:05:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cporosus.NCBI.CroPorcomp1/BSgenome.Cporosus.NCBI.CroPorcomp1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Crocuta crocuta",
       "common_name": "spotted hyena",
       "group": "vertebrate_mammalian",
@@ -12876,6 +12922,37 @@
       "common_name": "Western terrestrial garter snake",
       "published": "2026-04-04T11:04:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Telegans.NCBI.rThaEle1pri/BSgenome.Telegans.NCBI.rThaEle1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cporosus.NCBI.CroPorcomp1",
+      "version": "1.0.0",
+      "organism": "Crocodylus porosus",
+      "assembly": "CroPor_comp1",
+      "provider": "NCBI",
+      "accession": "GCF_001723895.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001723895.1/",
+      "file_name": "BSgenome.Cporosus.NCBI.CroPorcomp1_1.0.0.tar.gz",
+      "size": 511980673,
+      "seq_ids": [
+        "NW_017728886.1",
+        "NW_017728887.1",
+        "NW_017728888.1",
+        "NW_017728889.1",
+        "NW_017728890.1"
+      ],
+      "seq_count": 70,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Crocodylia",
+        "family": "Crocodylidae",
+        "genus": "Crocodylus"
+      },
+      "common_name": "Australian saltwater crocodile",
+      "published": "2026-04-04T11:05:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cporosus.NCBI.CroPorcomp1/BSgenome.Cporosus.NCBI.CroPorcomp1_1.0.0.tar.gz"
     }
   ]
 }

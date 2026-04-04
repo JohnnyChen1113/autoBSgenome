@@ -737,3 +737,7 @@ NeedsCompilation: no
 Package: BSgenome.Telegans.NCBI.rThaEle1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cporosus.NCBI.CroPorcomp1
+Version: 1.0.0
+NeedsCompilation: no
