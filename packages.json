@@ -4696,6 +4696,54 @@
       ]
     },
     {
+      "organism": "Glycine soja",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Glycine"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gsoja.NCBI.ASM419377v2",
+          "version": "1.0.0",
+          "organism": "Glycine soja",
+          "assembly": "ASM419377v2",
+          "provider": "NCBI",
+          "accession": "GCF_004193775.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004193775.1/",
+          "file_name": "BSgenome.Gsoja.NCBI.ASM419377v2_1.0.0.tar.gz",
+          "size": 247668496,
+          "seq_ids": [
+            "NC_041002.1",
+            "NC_041003.1",
+            "NC_041004.1",
+            "NC_041005.1",
+            "NC_041006.1"
+          ],
+          "seq_count": 1120,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Glycine"
+          },
+          "common_name": "",
+          "published": "2026-04-04T16:42:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsoja.NCBI.ASM419377v2/BSgenome.Gsoja.NCBI.ASM419377v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Gopherus evgoodei",
       "common_name": "Goodes thornscrub tortoise",
       "group": "vertebrate_other",
@@ -19415,6 +19463,38 @@
       "common_name": "",
       "published": "2026-04-04T16:42:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spennellii.NCBI.SPENNV200/BSgenome.Spennellii.NCBI.SPENNV200_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gsoja.NCBI.ASM419377v2",
+      "version": "1.0.0",
+      "organism": "Glycine soja",
+      "assembly": "ASM419377v2",
+      "provider": "NCBI",
+      "accession": "GCF_004193775.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004193775.1/",
+      "file_name": "BSgenome.Gsoja.NCBI.ASM419377v2_1.0.0.tar.gz",
+      "size": 247668496,
+      "seq_ids": [
+        "NC_041002.1",
+        "NC_041003.1",
+        "NC_041004.1",
+        "NC_041005.1",
+        "NC_041006.1"
+      ],
+      "seq_count": 1120,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Glycine"
+      },
+      "common_name": "",
+      "published": "2026-04-04T16:42:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsoja.NCBI.ASM419377v2/BSgenome.Gsoja.NCBI.ASM419377v2_1.0.0.tar.gz"
     }
   ]
 }

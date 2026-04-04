@@ -1065,3 +1065,7 @@ NeedsCompilation: no
 Package: BSgenome.Spennellii.NCBI.SPENNV200
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gsoja.NCBI.ASM419377v2
+Version: 1.0.0
+NeedsCompilation: no
