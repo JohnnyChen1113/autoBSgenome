@@ -3354,6 +3354,52 @@
       ]
     },
     {
+      "organism": "Gopherus evgoodei",
+      "common_name": "Goodes thornscrub tortoise",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Testudinidae",
+        "genus": "Gopherus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gevgoodei.NCBI.rGopEvg1v1p",
+          "version": "1.0.0",
+          "organism": "Gopherus evgoodei",
+          "assembly": "rGopEvg1_v1.p",
+          "provider": "NCBI",
+          "accession": "GCF_007399415.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007399415.2/",
+          "file_name": "BSgenome.Gevgoodei.NCBI.rGopEvg1v1p_1.0.0.tar.gz",
+          "size": 590458370,
+          "seq_ids": [
+            "NC_044322.1",
+            "NC_044323.1",
+            "NC_044324.1",
+            "NC_044325.1",
+            "NC_044326.1"
+          ],
+          "seq_count": 383,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Testudinidae",
+            "genus": "Gopherus"
+          },
+          "common_name": "Goodes thornscrub tortoise",
+          "published": "2026-04-04T11:41:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gevgoodei.NCBI.rGopEvg1v1p/BSgenome.Gevgoodei.NCBI.rGopEvg1v1p_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Grammomys surdaster",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -13744,6 +13790,37 @@
       "common_name": "smalltooth sawfish",
       "published": "2026-04-04T11:41:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppectinata.NCBI.sPriPec21pri/BSgenome.Ppectinata.NCBI.sPriPec21pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gevgoodei.NCBI.rGopEvg1v1p",
+      "version": "1.0.0",
+      "organism": "Gopherus evgoodei",
+      "assembly": "rGopEvg1_v1.p",
+      "provider": "NCBI",
+      "accession": "GCF_007399415.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007399415.2/",
+      "file_name": "BSgenome.Gevgoodei.NCBI.rGopEvg1v1p_1.0.0.tar.gz",
+      "size": 590458370,
+      "seq_ids": [
+        "NC_044322.1",
+        "NC_044323.1",
+        "NC_044324.1",
+        "NC_044325.1",
+        "NC_044326.1"
+      ],
+      "seq_count": 383,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Testudinidae",
+        "genus": "Gopherus"
+      },
+      "common_name": "Goodes thornscrub tortoise",
+      "published": "2026-04-04T11:41:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gevgoodei.NCBI.rGopEvg1v1p/BSgenome.Gevgoodei.NCBI.rGopEvg1v1p_1.0.0.tar.gz"
     }
   ]
 }
