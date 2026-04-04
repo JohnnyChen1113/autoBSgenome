@@ -6156,6 +6156,54 @@
       ]
     },
     {
+      "organism": "Strigops habroptila",
+      "common_name": "Kakapo",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Psittaciformes",
+        "family": "Psittacidae",
+        "genus": "Strigops"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Shabroptila.NCBI.bStrHab12pri",
+          "version": "1.0.0",
+          "organism": "Strigops habroptila",
+          "assembly": "bStrHab1.2.pri",
+          "provider": "NCBI",
+          "accession": "GCF_004027225.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004027225.2/",
+          "file_name": "BSgenome.Shabroptila.NCBI.bStrHab12pri_1.0.0.tar.gz",
+          "size": 294949203,
+          "seq_ids": [
+            "NC_044277.2",
+            "NC_044278.2",
+            "NC_044279.2",
+            "NC_046358.1",
+            "NC_044281.2"
+          ],
+          "seq_count": 89,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Psittaciformes",
+            "family": "Psittacidae",
+            "genus": "Strigops"
+          },
+          "common_name": "Kakapo",
+          "published": "2026-04-04T10:05:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shabroptila.NCBI.bStrHab12pri/BSgenome.Shabroptila.NCBI.bStrHab12pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sturnus vulgaris",
       "common_name": "Common starling",
       "group": "vertebrate_other",
@@ -11196,6 +11244,38 @@
       "common_name": "red-crested turaco",
       "published": "2026-04-04T10:05:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Terythrolophus.NCBI.ASM70936v1/BSgenome.Terythrolophus.NCBI.ASM70936v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Shabroptila.NCBI.bStrHab12pri",
+      "version": "1.0.0",
+      "organism": "Strigops habroptila",
+      "assembly": "bStrHab1.2.pri",
+      "provider": "NCBI",
+      "accession": "GCF_004027225.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004027225.2/",
+      "file_name": "BSgenome.Shabroptila.NCBI.bStrHab12pri_1.0.0.tar.gz",
+      "size": 294949203,
+      "seq_ids": [
+        "NC_044277.2",
+        "NC_044278.2",
+        "NC_044279.2",
+        "NC_046358.1",
+        "NC_044281.2"
+      ],
+      "seq_count": 89,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Psittaciformes",
+        "family": "Psittacidae",
+        "genus": "Strigops"
+      },
+      "common_name": "Kakapo",
+      "published": "2026-04-04T10:05:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shabroptila.NCBI.bStrHab12pri/BSgenome.Shabroptila.NCBI.bStrHab12pri_1.0.0.tar.gz"
     }
   ]
 }
