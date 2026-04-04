@@ -205,61 +205,112 @@ let ACTIVE_FILTER = 'all';
 
 async function loadPackages() {
   try {
-    // Load both community and Bioconductor packages in parallel
-    const [communityRes, biocRes] = await Promise.all([
+    // Load all data sources in parallel
+    const [communityRes, biocRes, catalogRes] = await Promise.all([
       fetch(`${BASE}/packages.json?t=${Date.now()}`),
-      fetch(`${BASE}/bioc-packages.json?t=${Date.now()}`).catch(() => null)
+      fetch(`${BASE}/bioc-packages.json?t=${Date.now()}`).catch(() => null),
+      fetch(`${BASE}/catalog.json?t=${Date.now()}`).catch(() => null)
     ]);
 
+    // 1. Parse community packages (already built)
     const data = await communityRes.json();
-    let organisms, flat;
-    if (data.organisms) {
-      organisms = data.organisms;
-      flat = data.flat;
-    } else {
-      flat = data;
-      const grouped = {};
-      for (const pkg of flat) {
-        const org = pkg.organism || 'Unknown';
-        if (!grouped[org]) grouped[org] = { organism: org, common_name: pkg.common_name || '', builds: [] };
-        grouped[org].builds.push(pkg);
-      }
-      organisms = Object.values(grouped);
-    }
-    // Mark community organisms
-    organisms.forEach(o => { o._source = 'community'; });
+    let flat;
+    if (data.organisms) { flat = data.flat; } else { flat = data; }
+    const publishedMap = {};  // organism -> org object with builds
+    const publishedPkgs = new Set();
+    (data.organisms || []).forEach(o => {
+      publishedMap[o.organism.toLowerCase()] = o;
+      o._source = 'community';
+      o.builds.forEach(b => publishedPkgs.add(b.package));
+    });
 
-    // Merge Bioconductor packages
+    // 2. Parse Bioconductor packages
+    const biocByOrg = {};
     if (biocRes) {
       const biocPkgs = await biocRes.json();
-      // Group bioc packages by organism
-      const biocOrgs = {};
       biocPkgs.forEach(p => {
         const org = p.organism || p.organism_abbrev;
-        if (!biocOrgs[org]) biocOrgs[org] = {
+        const key = org.toLowerCase();
+        if (!biocByOrg[key]) biocByOrg[key] = {
           organism: org, common_name: p.common_name || '', group: p.group || 'other',
           taxonomy: p.taxonomy || {}, builds: [], _source: 'bioconductor'
         };
-        biocOrgs[org].builds.push({
+        biocByOrg[key].builds.push({
           package: p.package, version: p.version, provider: p.provider,
           assembly: p.assembly, bioc_url: p.bioc_url, _bioc: true
         });
       });
-      // Merge: if same organism exists in community, add bioc builds to it
-      const communityMap = {};
-      organisms.forEach(o => { communityMap[o.organism] = o; });
-      for (const [orgName, biocOrg] of Object.entries(biocOrgs)) {
-        if (communityMap[orgName]) {
-          // Merge builds, mark bioc ones
-          communityMap[orgName].builds.push(...biocOrg.builds);
-          communityMap[orgName]._source = 'both';
-        } else {
-          organisms.push(biocOrg);
-        }
+    }
+
+    // 3. Parse full catalog (all NCBI + Ensembl species)
+    const catalogByOrg = {};
+    if (catalogRes) {
+      const catalog = await catalogRes.json();
+      catalog.forEach(e => {
+        // e = {a: accession, o: organism, m: assembly, g: group, s: source, z: size_mb}
+        const key = e.o.toLowerCase();
+        if (!catalogByOrg[key]) catalogByOrg[key] = {
+          organism: e.o, group: e.g, accessions: [], _source: 'catalog'
+        };
+        catalogByOrg[key].accessions.push({
+          accession: e.a, assembly: e.m, source: e.s, size_mb: e.z || 0
+        });
+      });
+    }
+
+    // 4. Merge everything into a unified organism list
+    const merged = {};
+
+    // Start with published community packages
+    for (const [key, org] of Object.entries(publishedMap)) {
+      merged[key] = { ...org };
+    }
+
+    // Add Bioconductor builds
+    for (const [key, biocOrg] of Object.entries(biocByOrg)) {
+      if (merged[key]) {
+        merged[key].builds.push(...biocOrg.builds);
+        merged[key]._source = merged[key]._source === 'community' ? 'both' : merged[key]._source;
+      } else {
+        merged[key] = { ...biocOrg };
       }
     }
 
+    // Add catalog entries (species not yet built)
+    for (const [key, catOrg] of Object.entries(catalogByOrg)) {
+      if (!merged[key]) {
+        // New species - no builds yet, show "Build" button
+        merged[key] = {
+          organism: catOrg.organism,
+          common_name: '',
+          group: catOrg.group,
+          taxonomy: {},
+          builds: [],
+          _source: 'catalog',
+          _accessions: catOrg.accessions,
+        };
+      } else {
+        // Already have builds - still store catalog accessions for "build more" options
+        if (!merged[key]._accessions) merged[key]._accessions = [];
+        // Add accessions not already built
+        catOrg.accessions.forEach(a => {
+          merged[key]._accessions.push(a);
+        });
+      }
+    }
+
+    const organisms = Object.values(merged);
     ALL_ORGANISMS = organisms;
+
+    // Stats
+    const builtCount = flat ? flat.length : 0;
+    const biocCount = Object.values(biocByOrg).reduce((s, o) => s + o.builds.length, 0);
+    const catalogCount = Object.keys(catalogByOrg).length;
+    document.getElementById('pkg-count').textContent = builtCount + biocCount;
+    document.getElementById('org-count').textContent = organisms.length.toLocaleString();
+    const providerEl = document.getElementById('provider-stats');
+    providerEl.innerHTML = `<strong>${builtCount}</strong> community · <strong>${biocCount}</strong> Bioconductor · <strong>${catalogCount.toLocaleString()}</strong> buildable`;
+
     renderOrganisms(organisms, flat);
     setupFilterBar(organisms);
     setupAlphaBar(organisms);
@@ -271,25 +322,29 @@ async function loadPackages() {
 
 function setupFilterBar(organisms) {
   const bar = document.getElementById('filter-bar');
-  const counts = { all: organisms.length, community: 0, bioconductor: 0, animal: 0, plant: 0, fungi: 0, microorganism: 0 };
+  const counts = { all: organisms.length, built: 0, bioconductor: 0, animal: 0, plant: 0, fungi: 0, virus: 0, bacteria: 0, protozoa: 0 };
   organisms.forEach(o => {
-    if (o._source === 'community' || o._source === 'both') counts.community++;
+    if (o._source === 'community' || o._source === 'both') counts.built++;
     if (o._source === 'bioconductor' || o._source === 'both') counts.bioconductor++;
     const g = o.group || 'other';
-    if (['vertebrate_mammalian','vertebrate_other','invertebrate'].includes(g)) counts.animal++;
-    else if (g === 'plant') counts.plant++;
+    if (['vertebrate_mammalian','vertebrate_other','invertebrate','metazoa'].includes(g)) counts.animal++;
+    else if (g === 'plant' || g === 'plants') counts.plant++;
     else if (g === 'fungi') counts.fungi++;
-    else if (['bacteria','archaea','other','protozoa'].includes(g)) counts.microorganism++;
+    else if (g === 'viral') counts.virus++;
+    else if (g === 'bacteria' || g === 'archaea') counts.bacteria++;
+    else if (g === 'protozoa' || g === 'protists') counts.protozoa++;
   });
 
   const filters = [
     { key: 'all', label: 'All', count: counts.all },
-    { key: 'community', label: 'Community', count: counts.community },
+    { key: 'built', label: 'Ready to Install', count: counts.built },
     { key: 'bioconductor', label: 'Bioconductor', count: counts.bioconductor },
     { key: 'animal', label: 'Animals', count: counts.animal },
     { key: 'plant', label: 'Plants', count: counts.plant },
     { key: 'fungi', label: 'Fungi', count: counts.fungi },
-    { key: 'microorganism', label: 'Microorganisms', count: counts.microorganism },
+    { key: 'virus', label: 'Viruses', count: counts.virus },
+    { key: 'bacteria', label: 'Bacteria & Archaea', count: counts.bacteria },
+    { key: 'protozoa', label: 'Protozoa', count: counts.protozoa },
   ];
 
   bar.innerHTML = filters.filter(f => f.count > 0).map(f =>
@@ -306,12 +361,14 @@ function applyFilter(key, btn) {
     const g = o.group || 'other';
     switch (key) {
       case 'all': return true;
-      case 'community': return o._source === 'community' || o._source === 'both';
+      case 'built': return o._source === 'community' || o._source === 'both';
       case 'bioconductor': return o._source === 'bioconductor' || o._source === 'both';
-      case 'animal': return ['vertebrate_mammalian','vertebrate_other','invertebrate'].includes(g);
-      case 'plant': return g === 'plant';
+      case 'animal': return ['vertebrate_mammalian','vertebrate_other','invertebrate','metazoa'].includes(g);
+      case 'plant': return g === 'plant' || g === 'plants';
       case 'fungi': return g === 'fungi';
-      case 'microorganism': return ['bacteria','archaea','other','protozoa'].includes(g);
+      case 'virus': return g === 'viral';
+      case 'bacteria': return g === 'bacteria' || g === 'archaea';
+      case 'protozoa': return g === 'protozoa' || g === 'protists';
       default: return true;
     }
   });
@@ -321,19 +378,7 @@ function applyFilter(key, btn) {
 function renderOrganisms(organisms, flat) {
   const list = document.getElementById('org-list');
 
-  // Stats
-  const totalPkgs = flat ? flat.length : organisms.reduce((s, o) => s + o.builds.length, 0);
-  document.getElementById('pkg-count').textContent = totalPkgs;
-  document.getElementById('org-count').textContent = organisms.length;
-
-  // Provider stats
-  const ncbiCount = flat ? flat.filter(p => p.provider === 'NCBI').length : 0;
-  const ensemblCount = flat ? flat.filter(p => p.provider === 'Ensembl').length : 0;
-  const providerEl = document.getElementById('provider-stats');
-  const parts = [];
-  if (ncbiCount) parts.push(`<strong>${ncbiCount}</strong> from NCBI`);
-  if (ensemblCount) parts.push(`<strong>${ensemblCount}</strong> from Ensembl`);
-  providerEl.innerHTML = parts.join(' &middot; ') || '';
+  // Stats are set in loadPackages()
 
   if (organisms.length === 0) {
     list.innerHTML = '<div class="empty"><p>No packages yet. <a href="https://autobsgenome.pages.dev">Build the first one!</a></p></div>';
@@ -351,7 +396,17 @@ function renderOrganisms(organisms, flat) {
     if (tax.phylum) path.push(tax.phylum);
     if (tax.class) path.push(tax.class);
     if (tax.order) path.push(tax.order);
-    if (path.length === 0) path.push('Unclassified');
+    // Fallback for catalog entries without taxonomy
+    if (path.length === 0) {
+      const g = org.group || 'other';
+      const groupLabels = {
+        vertebrate_mammalian: 'Animals', vertebrate_other: 'Animals', invertebrate: 'Animals', metazoa: 'Animals',
+        plant: 'Plants', plants: 'Plants', fungi: 'Fungi',
+        bacteria: 'Bacteria', archaea: 'Archaea', viral: 'Viruses',
+        protozoa: 'Protozoa', protists: 'Protozoa'
+      };
+      path.push(groupLabels[g] || 'Other');
+    }
 
     let node = tree;
     for (const level of path) {
@@ -418,13 +473,17 @@ function renderOrganisms(organisms, flat) {
 }
 
 function renderOrgCard(org) {
-    const searchText = [org.organism, org.common_name, ...org.builds.map(b => b.package + ' ' + b.assembly + ' ' + b.accession)].join(' ').toLowerCase();
-    const buildCount = org.builds.length;
+    const builds = org.builds || [];
+    const accessions = org._accessions || [];
+    const searchText = [org.organism, org.common_name, ...builds.map(b => b.package + ' ' + (b.assembly||'') + ' ' + (b.accession||'')), ...accessions.map(a => a.accession + ' ' + a.assembly)].join(' ').toLowerCase();
+    const buildCount = builds.length;
+    const isCatalogOnly = buildCount === 0 && accessions.length > 0;
 
-    const firstBuild = org.builds[0];
-    const accession = firstBuild?.accession || '';
-    const sourceUrl = firstBuild?.source_url || (accession ? 'https://www.ncbi.nlm.nih.gov/datasets/genome/' + accession + '/' : '');
-    const provider = firstBuild?.provider || 'NCBI';
+    const firstBuild = builds[0];
+    const firstAcc = accessions[0];
+    const accession = firstBuild?.accession || firstAcc?.accession || '';
+    const sourceUrl = firstBuild?.source_url || (accession ? (accession.startsWith('GC') ? 'https://www.ncbi.nlm.nih.gov/datasets/genome/' + accession + '/' : '') : '');
+    const provider = firstBuild?.provider || firstAcc?.source?.toUpperCase() || '';
 
     // Taxonomy breadcrumb
     const tax = org.taxonomy || {};
@@ -445,12 +504,15 @@ function renderOrgCard(org) {
           </div>
         </div>
         <div class="org-badge-row">
-          <span class="org-count">${buildCount} build${buildCount > 1 ? 's' : ''}</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          ${isCatalogOnly
+            ? `<a class="btn btn-primary" style="padding:4px 12px;font-size:12px;" href="https://autobsgenome.pages.dev?accession=${accession}" target="_blank" onclick="event.stopPropagation();">Build</a>`
+            : `<span class="org-count">${buildCount} build${buildCount > 1 ? 's' : ''}</span>
+               <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>`
+          }
         </div>
       </div>
       ${taxCrumbs.length ? `<div class="tax-breadcrumb">${taxCrumbs.map(c => `<span>${c}</span>`).join('<span class="sep"> › </span>')}</div>` : ''}
-      <div class="build-list">
+      ${isCatalogOnly ? '' : `<div class="build-list">
         ${org.builds.map(b => b._bioc ? `
         <div class="build-item" style="flex-direction:column;align-items:stretch;">
           <div class="build-pkg">${b.package} <span class="badge badge-bioc" style="font-size:10px;vertical-align:middle;margin-left:6px;">Bioconductor</span></div>
@@ -483,7 +545,7 @@ function renderOrgCard(org) {
           </div>
         </div>
         `).join('')}
-      </div>
+      </div>`}
     </div>
     `;
 }
