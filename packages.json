@@ -7449,6 +7449,54 @@
       ]
     },
     {
+      "organism": "Populus alba",
+      "common_name": "white poplar",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Populus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Palba.NCBI.ASM523922v2",
+          "version": "1.0.0",
+          "organism": "Populus alba",
+          "assembly": "ASM523922v2",
+          "provider": "NCBI",
+          "accession": "GCF_005239225.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_005239225.2/",
+          "file_name": "BSgenome.Palba.NCBI.ASM523922v2_1.0.0.tar.gz",
+          "size": 104868552,
+          "seq_ids": [
+            "NC_133284.1",
+            "NC_133285.1",
+            "NC_133286.1",
+            "NC_133287.1",
+            "NC_133288.1"
+          ],
+          "seq_count": 97,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Malpighiales",
+            "family": "Salicaceae",
+            "genus": "Populus"
+          },
+          "common_name": "white poplar",
+          "published": "2026-04-04T14:41:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palba.NCBI.ASM523922v2/BSgenome.Palba.NCBI.ASM523922v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Populus trichocarpa",
       "common_name": "black cottonwood",
       "group": "plant",
@@ -16375,6 +16423,38 @@
       "common_name": "pocket water lily",
       "published": "2026-04-04T14:01:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncolorata.NCBI.ASM883128v2/BSgenome.Ncolorata.NCBI.ASM883128v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Palba.NCBI.ASM523922v2",
+      "version": "1.0.0",
+      "organism": "Populus alba",
+      "assembly": "ASM523922v2",
+      "provider": "NCBI",
+      "accession": "GCF_005239225.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_005239225.2/",
+      "file_name": "BSgenome.Palba.NCBI.ASM523922v2_1.0.0.tar.gz",
+      "size": 104868552,
+      "seq_ids": [
+        "NC_133284.1",
+        "NC_133285.1",
+        "NC_133286.1",
+        "NC_133287.1",
+        "NC_133288.1"
+      ],
+      "seq_count": 97,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Populus"
+      },
+      "common_name": "white poplar",
+      "published": "2026-04-04T14:41:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palba.NCBI.ASM523922v2/BSgenome.Palba.NCBI.ASM523922v2_1.0.0.tar.gz"
     }
   ]
 }
