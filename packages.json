@@ -3000,6 +3000,54 @@
       ]
     },
     {
+      "organism": "Oreochromis niloticus",
+      "common_name": "Nile tilapia",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Oreochromis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU",
+          "version": "1.0.0",
+          "organism": "Oreochromis niloticus",
+          "assembly": "O_niloticus_UMD_NMBU",
+          "provider": "NCBI",
+          "accession": "GCF_001858045.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001858045.2/",
+          "file_name": "BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU_1.0.0.tar.gz",
+          "size": 254585618,
+          "seq_ids": [
+            "NC_031965.2",
+            "NC_031966.2",
+            "NC_031969.2",
+            "NC_031970.2",
+            "NC_031971.2"
+          ],
+          "seq_count": 2460,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cichliformes",
+            "family": "Cichlidae",
+            "genus": "Oreochromis"
+          },
+          "common_name": "Nile tilapia",
+          "published": "2026-04-04T05:46:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU/BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Orycteropus afer afer",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -7836,6 +7884,38 @@
       "common_name": "flier cichlid",
       "published": "2026-04-04T05:46:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acentrarchus.NCBI.fArcCen1/BSgenome.Acentrarchus.NCBI.fArcCen1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU",
+      "version": "1.0.0",
+      "organism": "Oreochromis niloticus",
+      "assembly": "O_niloticus_UMD_NMBU",
+      "provider": "NCBI",
+      "accession": "GCF_001858045.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001858045.2/",
+      "file_name": "BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU_1.0.0.tar.gz",
+      "size": 254585618,
+      "seq_ids": [
+        "NC_031965.2",
+        "NC_031966.2",
+        "NC_031969.2",
+        "NC_031970.2",
+        "NC_031971.2"
+      ],
+      "seq_count": 2460,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Oreochromis"
+      },
+      "common_name": "Nile tilapia",
+      "published": "2026-04-04T05:46:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU/BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU_1.0.0.tar.gz"
     }
   ]
 }
