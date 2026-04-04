@@ -141,6 +141,21 @@
     <div class="stat" id="provider-stats"></div>
   </div>
 
+  <!-- Build Progress Dashboard -->
+  <div id="progress-dashboard" style="display:none;margin-bottom:20px;padding:16px 20px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:8px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+      <div style="font-size:14px;font-weight:600;color:var(--text);">RefSeq Reference Genome Coverage</div>
+      <div style="font-size:12px;color:var(--text-muted);" id="progress-text"></div>
+    </div>
+    <div style="width:100%;height:8px;background:var(--border);border-radius:4px;overflow:hidden;">
+      <div id="progress-bar" style="height:100%;background:var(--primary);border-radius:4px;transition:width 0.5s;width:0%;"></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-top:6px;font-size:12px;color:var(--text-muted);">
+      <span id="progress-detail"></span>
+      <span id="progress-eta"></span>
+    </div>
+  </div>
+
   <div class="install-box">
     <label>Install any package from this repository in R:</label>
     <code>install.packages("<span style="color:var(--primary)">PACKAGE_NAME</span>",<br>&nbsp;&nbsp;repos = "<span style="color:var(--primary)">https://johnnychen1113.github.io/autoBSgenome</span>")</code>
@@ -428,7 +443,33 @@ function copyInstall(name) {
   setTimeout(() => { event.target.textContent = 'Copy R cmd'; }, 2000);
 }
 
-document.addEventListener('DOMContentLoaded', loadPackages);
+async function loadProgress() {
+  try {
+    const res = await fetch(`${BASE}/build-queue.json?t=${Date.now()}`);
+    const queue = await res.json();
+    const total = queue.length;
+    const done = queue.filter(i => i.status === 'done').length;
+    const building = queue.filter(i => i.status === 'building').length;
+    const pending = queue.filter(i => i.status === 'pending').length;
+    const skipped = queue.filter(i => i.status === 'skip_oversized').length;
+    const pct = total > 0 ? ((done / total) * 100).toFixed(1) : 0;
+
+    const dashboard = document.getElementById('progress-dashboard');
+    dashboard.style.display = 'block';
+    document.getElementById('progress-bar').style.width = pct + '%';
+    document.getElementById('progress-text').textContent = `${pct}% complete`;
+    document.getElementById('progress-detail').textContent = `${done.toLocaleString()} built · ${building} in progress · ${pending.toLocaleString()} remaining`;
+    const daysLeft = pending > 0 ? Math.ceil(pending / 720) : 0;
+    document.getElementById('progress-eta').textContent = daysLeft > 0 ? `~${daysLeft} days to full coverage` : 'All reference genomes covered!';
+  } catch (e) {
+    // build-queue.json not available, hide dashboard
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadPackages();
+  loadProgress();
+});
 </script>
 
 </body>
