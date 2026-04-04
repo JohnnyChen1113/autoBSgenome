@@ -945,3 +945,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppatens.NCBI.PhypaV5
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Peuphratica.NCBI.PopEup10
+Version: 1.0.0
+NeedsCompilation: no

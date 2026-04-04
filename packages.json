@@ -7737,6 +7737,54 @@
       ]
     },
     {
+      "organism": "Populus euphratica",
+      "common_name": "Euphrates poplar",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Populus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Peuphratica.NCBI.PopEup10",
+          "version": "1.0.0",
+          "organism": "Populus euphratica",
+          "assembly": "PopEup_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000495115.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000495115.2/",
+          "file_name": "BSgenome.Peuphratica.NCBI.PopEup10_1.0.0.tar.gz",
+          "size": 121048750,
+          "seq_ids": [
+            "NW_011499845.1",
+            "NW_011499856.1",
+            "NW_011499985.1",
+            "NW_011500863.1",
+            "NW_011500862.1"
+          ],
+          "seq_count": 9502,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Malpighiales",
+            "family": "Salicaceae",
+            "genus": "Populus"
+          },
+          "common_name": "Euphrates poplar",
+          "published": "2026-04-04T14:43:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Peuphratica.NCBI.PopEup10/BSgenome.Peuphratica.NCBI.PopEup10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Populus trichocarpa",
       "common_name": "black cottonwood",
       "group": "plant",
@@ -17015,6 +17063,38 @@
       "common_name": "",
       "published": "2026-04-04T14:42:45Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppatens.NCBI.PhypaV5/BSgenome.Ppatens.NCBI.PhypaV5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Peuphratica.NCBI.PopEup10",
+      "version": "1.0.0",
+      "organism": "Populus euphratica",
+      "assembly": "PopEup_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000495115.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000495115.2/",
+      "file_name": "BSgenome.Peuphratica.NCBI.PopEup10_1.0.0.tar.gz",
+      "size": 121048750,
+      "seq_ids": [
+        "NW_011499845.1",
+        "NW_011499856.1",
+        "NW_011499985.1",
+        "NW_011500863.1",
+        "NW_011500862.1"
+      ],
+      "seq_count": 9502,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Populus"
+      },
+      "common_name": "Euphrates poplar",
+      "published": "2026-04-04T14:43:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Peuphratica.NCBI.PopEup10/BSgenome.Peuphratica.NCBI.PopEup10_1.0.0.tar.gz"
     }
   ]
 }
