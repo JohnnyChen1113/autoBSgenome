@@ -2240,6 +2240,54 @@
       ]
     },
     {
+      "organism": "Cucumis sativus",
+      "common_name": "cucumber",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Cucumis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Csativus.NCBI.Cucumber9930V3",
+          "version": "1.0.0",
+          "organism": "Cucumis sativus",
+          "assembly": "Cucumber_9930_V3",
+          "provider": "NCBI",
+          "accession": "GCF_000004075.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004075.3/",
+          "file_name": "BSgenome.Csativus.NCBI.Cucumber9930V3_1.0.0.tar.gz",
+          "size": 58781612,
+          "seq_ids": [
+            "NC_026655.2",
+            "NC_026656.2",
+            "NC_026657.2",
+            "NC_026658.2",
+            "NC_026659.2"
+          ],
+          "seq_count": 88,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Cucurbitales",
+            "family": "Cucurbitaceae",
+            "genus": "Cucumis"
+          },
+          "common_name": "cucumber",
+          "published": "2026-04-04T11:40:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativus.NCBI.Cucumber9930V3/BSgenome.Csativus.NCBI.Cucumber9930V3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyanistes caeruleus",
       "common_name": "blue tit",
       "group": "vertebrate_other",
@@ -13350,6 +13398,38 @@
       "common_name": "",
       "published": "2026-04-04T11:40:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smoellendorffii.NCBI.v10/BSgenome.Smoellendorffii.NCBI.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Csativus.NCBI.Cucumber9930V3",
+      "version": "1.0.0",
+      "organism": "Cucumis sativus",
+      "assembly": "Cucumber_9930_V3",
+      "provider": "NCBI",
+      "accession": "GCF_000004075.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004075.3/",
+      "file_name": "BSgenome.Csativus.NCBI.Cucumber9930V3_1.0.0.tar.gz",
+      "size": 58781612,
+      "seq_ids": [
+        "NC_026655.2",
+        "NC_026656.2",
+        "NC_026657.2",
+        "NC_026658.2",
+        "NC_026659.2"
+      ],
+      "seq_count": 88,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Cucumis"
+      },
+      "common_name": "cucumber",
+      "published": "2026-04-04T11:40:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativus.NCBI.Cucumber9930V3/BSgenome.Csativus.NCBI.Cucumber9930V3_1.0.0.tar.gz"
     }
   ]
 }
