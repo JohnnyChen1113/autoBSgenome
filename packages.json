@@ -8597,6 +8597,54 @@
       ]
     },
     {
+      "organism": "Rosa chinensis",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rosa"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rchinensis.NCBI.RchiOBHmV2",
+          "version": "1.0.0",
+          "organism": "Rosa chinensis",
+          "assembly": "RchiOBHm-V2",
+          "provider": "NCBI",
+          "accession": "GCF_002994745.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002994745.2/",
+          "file_name": "BSgenome.Rchinensis.NCBI.RchiOBHmV2_1.0.0.tar.gz",
+          "size": 130892915,
+          "seq_ids": [
+            "NC_037088.1",
+            "NC_037089.1",
+            "NC_037090.1",
+            "NC_037091.1",
+            "NC_037092.1"
+          ],
+          "seq_count": 53,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Rosales",
+            "family": "Rosaceae",
+            "genus": "Rosa"
+          },
+          "common_name": "",
+          "published": "2026-04-04T14:43:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rchinensis.NCBI.RchiOBHmV2/BSgenome.Rchinensis.NCBI.RchiOBHmV2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Saccharomyces cerevisiae",
       "common_name": "",
       "group": "fungi",
@@ -17175,6 +17223,38 @@
       "common_name": "riverbank grape",
       "published": "2026-04-04T14:43:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vriparia.NCBI.EGFVVitrip10/BSgenome.Vriparia.NCBI.EGFVVitrip10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rchinensis.NCBI.RchiOBHmV2",
+      "version": "1.0.0",
+      "organism": "Rosa chinensis",
+      "assembly": "RchiOBHm-V2",
+      "provider": "NCBI",
+      "accession": "GCF_002994745.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002994745.2/",
+      "file_name": "BSgenome.Rchinensis.NCBI.RchiOBHmV2_1.0.0.tar.gz",
+      "size": 130892915,
+      "seq_ids": [
+        "NC_037088.1",
+        "NC_037089.1",
+        "NC_037090.1",
+        "NC_037091.1",
+        "NC_037092.1"
+      ],
+      "seq_count": 53,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rosa"
+      },
+      "common_name": "",
+      "published": "2026-04-04T14:43:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rchinensis.NCBI.RchiOBHmV2/BSgenome.Rchinensis.NCBI.RchiOBHmV2_1.0.0.tar.gz"
     }
   ]
 }
