@@ -1149,3 +1149,7 @@ NeedsCompilation: no
 Package: BSgenome.Lloa.NCBI.LoaloaV31
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nsylvestris.NCBI.ASM39365v2
+Version: 1.0.0
+NeedsCompilation: no

@@ -7550,6 +7550,54 @@
       ]
     },
     {
+      "organism": "Nicotiana sylvestris",
+      "common_name": "wood tobacco",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Nicotiana"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nsylvestris.NCBI.ASM39365v2",
+          "version": "1.0.0",
+          "organism": "Nicotiana sylvestris",
+          "assembly": "ASM39365v2",
+          "provider": "NCBI",
+          "accession": "GCF_000393655.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000393655.2/",
+          "file_name": "BSgenome.Nsylvestris.NCBI.ASM39365v2_1.0.0.tar.gz",
+          "size": 591268240,
+          "seq_ids": [
+            "NC_091057.1",
+            "NC_091058.1",
+            "NC_091059.1",
+            "NC_091060.1",
+            "NC_091061.1"
+          ],
+          "seq_count": 153,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Solanaceae",
+            "genus": "Nicotiana"
+          },
+          "common_name": "wood tobacco",
+          "published": "2026-04-04T18:49:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nsylvestris.NCBI.ASM39365v2/BSgenome.Nsylvestris.NCBI.ASM39365v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nicotiana tomentosiformis",
       "common_name": "",
       "group": "plant",
@@ -21095,6 +21143,38 @@
       "common_name": "African eye worm",
       "published": "2026-04-04T18:48:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lloa.NCBI.LoaloaV31/BSgenome.Lloa.NCBI.LoaloaV31_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nsylvestris.NCBI.ASM39365v2",
+      "version": "1.0.0",
+      "organism": "Nicotiana sylvestris",
+      "assembly": "ASM39365v2",
+      "provider": "NCBI",
+      "accession": "GCF_000393655.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000393655.2/",
+      "file_name": "BSgenome.Nsylvestris.NCBI.ASM39365v2_1.0.0.tar.gz",
+      "size": 591268240,
+      "seq_ids": [
+        "NC_091057.1",
+        "NC_091058.1",
+        "NC_091059.1",
+        "NC_091060.1",
+        "NC_091061.1"
+      ],
+      "seq_count": 153,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Nicotiana"
+      },
+      "common_name": "wood tobacco",
+      "published": "2026-04-04T18:49:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nsylvestris.NCBI.ASM39365v2/BSgenome.Nsylvestris.NCBI.ASM39365v2_1.0.0.tar.gz"
     }
   ]
 }
