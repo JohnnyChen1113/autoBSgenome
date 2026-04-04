@@ -4270,6 +4270,54 @@
       ]
     },
     {
+      "organism": "Drosophila subobscura",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dsubobscura.NCBI.UCBerkDsub10",
+          "version": "1.0.0",
+          "organism": "Drosophila subobscura",
+          "assembly": "UCBerk_Dsub_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_008121235.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008121235.1/",
+          "file_name": "BSgenome.Dsubobscura.NCBI.UCBerkDsub10_1.0.0.tar.gz",
+          "size": 33706231,
+          "seq_ids": [
+            "NC_048530.1",
+            "NC_048531.1",
+            "NC_048532.1",
+            "NC_048533.1",
+            "NC_048534.1"
+          ],
+          "seq_count": 32,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T19:33:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dsubobscura.NCBI.UCBerkDsub10/BSgenome.Dsubobscura.NCBI.UCBerkDsub10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Durio zibethinus",
       "common_name": "",
       "group": "plant",
@@ -22135,6 +22183,38 @@
       "common_name": "",
       "published": "2026-04-04T19:33:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Egranulosus.NCBI.ASM52419v1/BSgenome.Egranulosus.NCBI.ASM52419v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dsubobscura.NCBI.UCBerkDsub10",
+      "version": "1.0.0",
+      "organism": "Drosophila subobscura",
+      "assembly": "UCBerk_Dsub_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_008121235.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008121235.1/",
+      "file_name": "BSgenome.Dsubobscura.NCBI.UCBerkDsub10_1.0.0.tar.gz",
+      "size": 33706231,
+      "seq_ids": [
+        "NC_048530.1",
+        "NC_048531.1",
+        "NC_048532.1",
+        "NC_048533.1",
+        "NC_048534.1"
+      ],
+      "seq_count": 32,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T19:33:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dsubobscura.NCBI.UCBerkDsub10/BSgenome.Dsubobscura.NCBI.UCBerkDsub10_1.0.0.tar.gz"
     }
   ]
 }

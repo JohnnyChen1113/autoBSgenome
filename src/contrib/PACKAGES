@@ -1201,3 +1201,7 @@ NeedsCompilation: no
 Package: BSgenome.Egranulosus.NCBI.ASM52419v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dsubobscura.NCBI.UCBerkDsub10
+Version: 1.0.0
+NeedsCompilation: no
