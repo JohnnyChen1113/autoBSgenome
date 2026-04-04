@@ -3546,6 +3546,54 @@
       ]
     },
     {
+      "organism": "Erythranthe guttata",
+      "common_name": "spotted monkey flower",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Phrymaceae",
+        "genus": "Erythranthe"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Eguttata.NCBI.Mimgu10",
+          "version": "1.0.0",
+          "organism": "Erythranthe guttata",
+          "assembly": "Mimgu1_0",
+          "provider": "NCBI",
+          "accession": "GCF_000504015.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000504015.1/",
+          "file_name": "BSgenome.Eguttata.NCBI.Mimgu10_1.0.0.tar.gz",
+          "size": 74515630,
+          "seq_ids": [
+            "NW_012192829.1",
+            "NW_012192830.1",
+            "NW_012192831.1",
+            "NW_012192832.1",
+            "NW_012192833.1"
+          ],
+          "seq_count": 2212,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Lamiales",
+            "family": "Phrymaceae",
+            "genus": "Erythranthe"
+          },
+          "common_name": "spotted monkey flower",
+          "published": "2026-04-04T14:41:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eguttata.NCBI.Mimgu10/BSgenome.Eguttata.NCBI.Mimgu10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Etheostoma spectabile",
       "common_name": "orangethroat darter",
       "group": "vertebrate_other",
@@ -16615,6 +16663,38 @@
       "common_name": "radish",
       "published": "2026-04-04T14:41:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsativus.NCBI.ASM80110v3/BSgenome.Rsativus.NCBI.ASM80110v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Eguttata.NCBI.Mimgu10",
+      "version": "1.0.0",
+      "organism": "Erythranthe guttata",
+      "assembly": "Mimgu1_0",
+      "provider": "NCBI",
+      "accession": "GCF_000504015.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000504015.1/",
+      "file_name": "BSgenome.Eguttata.NCBI.Mimgu10_1.0.0.tar.gz",
+      "size": 74515630,
+      "seq_ids": [
+        "NW_012192829.1",
+        "NW_012192830.1",
+        "NW_012192831.1",
+        "NW_012192832.1",
+        "NW_012192833.1"
+      ],
+      "seq_count": 2212,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Phrymaceae",
+        "genus": "Erythranthe"
+      },
+      "common_name": "spotted monkey flower",
+      "published": "2026-04-04T14:41:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eguttata.NCBI.Mimgu10/BSgenome.Eguttata.NCBI.Mimgu10_1.0.0.tar.gz"
     }
   ]
 }

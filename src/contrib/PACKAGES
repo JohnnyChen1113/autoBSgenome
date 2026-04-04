@@ -925,3 +925,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsativus.NCBI.ASM80110v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eguttata.NCBI.Mimgu10
+Version: 1.0.0
+NeedsCompilation: no
