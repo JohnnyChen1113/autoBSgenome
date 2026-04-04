@@ -1381,3 +1381,7 @@ NeedsCompilation: no
 Package: BSgenome.Cfloridanus.NCBI.Cflov75
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dgigantea.NCBI.DenGig10
+Version: 1.0.0
+NeedsCompilation: no

@@ -4634,6 +4634,54 @@
       ]
     },
     {
+      "organism": "Dendronephthya gigantea",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Cnidaria",
+        "class": "Anthozoa",
+        "order": "Malacalcyonacea",
+        "family": "Nephtheidae",
+        "genus": "Dendronephthya"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dgigantea.NCBI.DenGig10",
+          "version": "1.0.0",
+          "organism": "Dendronephthya gigantea",
+          "assembly": "DenGig_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_004324835.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004324835.1/",
+          "file_name": "BSgenome.Dgigantea.NCBI.DenGig10_1.0.0.tar.gz",
+          "size": 72199093,
+          "seq_ids": [
+            "NW_021163010.1",
+            "NW_021163011.1",
+            "NW_021163012.1",
+            "NW_021163013.1",
+            "NW_021163014.1"
+          ],
+          "seq_count": 1321,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Cnidaria",
+            "class": "Anthozoa",
+            "order": "Malacalcyonacea",
+            "family": "Nephtheidae",
+            "genus": "Dendronephthya"
+          },
+          "common_name": "",
+          "published": "2026-04-04T22:35:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dgigantea.NCBI.DenGig10/BSgenome.Dgigantea.NCBI.DenGig10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dermochelys coriacea",
       "common_name": "leatherback sea turtle",
       "group": "vertebrate_other",
@@ -25735,6 +25783,38 @@
       "common_name": "Florida carpenter ant",
       "published": "2026-04-04T22:35:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfloridanus.NCBI.Cflov75/BSgenome.Cfloridanus.NCBI.Cflov75_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dgigantea.NCBI.DenGig10",
+      "version": "1.0.0",
+      "organism": "Dendronephthya gigantea",
+      "assembly": "DenGig_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_004324835.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004324835.1/",
+      "file_name": "BSgenome.Dgigantea.NCBI.DenGig10_1.0.0.tar.gz",
+      "size": 72199093,
+      "seq_ids": [
+        "NW_021163010.1",
+        "NW_021163011.1",
+        "NW_021163012.1",
+        "NW_021163013.1",
+        "NW_021163014.1"
+      ],
+      "seq_count": 1321,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Cnidaria",
+        "class": "Anthozoa",
+        "order": "Malacalcyonacea",
+        "family": "Nephtheidae",
+        "genus": "Dendronephthya"
+      },
+      "common_name": "",
+      "published": "2026-04-04T22:35:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dgigantea.NCBI.DenGig10/BSgenome.Dgigantea.NCBI.DenGig10_1.0.0.tar.gz"
     }
   ]
 }
