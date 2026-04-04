@@ -1209,3 +1209,7 @@ NeedsCompilation: no
 Package: BSgenome.Darizonae.NCBI.ASM165402v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Derecta.NCBI.DereRS2
+Version: 1.0.0
+NeedsCompilation: no

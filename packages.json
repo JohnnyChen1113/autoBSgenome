@@ -4318,6 +4318,54 @@
       ]
     },
     {
+      "organism": "Drosophila erecta",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Derecta.NCBI.DereRS2",
+          "version": "1.0.0",
+          "organism": "Drosophila erecta",
+          "assembly": "DereRS2",
+          "provider": "NCBI",
+          "accession": "GCF_003286155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003286155.1/",
+          "file_name": "BSgenome.Derecta.NCBI.DereRS2_1.0.0.tar.gz",
+          "size": 37224741,
+          "seq_ids": [
+            "NW_020825194.1",
+            "NW_020825195.1",
+            "NW_020825196.1",
+            "NW_020825197.1",
+            "NW_020825198.1"
+          ],
+          "seq_count": 94,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T19:34:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Derecta.NCBI.DereRS2/BSgenome.Derecta.NCBI.DereRS2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila subobscura",
       "common_name": "",
       "group": "invertebrate",
@@ -22295,6 +22343,38 @@
       "common_name": "",
       "published": "2026-04-04T19:34:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Darizonae.NCBI.ASM165402v1/BSgenome.Darizonae.NCBI.ASM165402v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Derecta.NCBI.DereRS2",
+      "version": "1.0.0",
+      "organism": "Drosophila erecta",
+      "assembly": "DereRS2",
+      "provider": "NCBI",
+      "accession": "GCF_003286155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003286155.1/",
+      "file_name": "BSgenome.Derecta.NCBI.DereRS2_1.0.0.tar.gz",
+      "size": 37224741,
+      "seq_ids": [
+        "NW_020825194.1",
+        "NW_020825195.1",
+        "NW_020825196.1",
+        "NW_020825197.1",
+        "NW_020825198.1"
+      ],
+      "seq_count": 94,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T19:34:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Derecta.NCBI.DereRS2/BSgenome.Derecta.NCBI.DereRS2_1.0.0.tar.gz"
     }
   ]
 }
