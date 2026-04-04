@@ -717,3 +717,7 @@ NeedsCompilation: no
 Package: BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Srhinocerous.NCBI.SAMN03320098v11
+Version: 1.0.0
+NeedsCompilation: no

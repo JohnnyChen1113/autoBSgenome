@@ -6711,6 +6711,54 @@
       ]
     },
     {
+      "organism": "Sinocyclocheilus rhinocerous",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Sinocyclocheilus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Srhinocerous.NCBI.SAMN03320098v11",
+          "version": "1.0.0",
+          "organism": "Sinocyclocheilus rhinocerous",
+          "assembly": "SAMN03320098_v1.1",
+          "provider": "NCBI",
+          "accession": "GCF_001515625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001515625.1/",
+          "file_name": "BSgenome.Srhinocerous.NCBI.SAMN03320098v11_1.0.0.tar.gz",
+          "size": 402523110,
+          "seq_ids": [
+            "NW_015623055.1",
+            "NW_015623056.1",
+            "NW_015623057.1",
+            "NW_015623058.1",
+            "NW_015623059.1"
+          ],
+          "seq_count": 164173,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Sinocyclocheilus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T11:03:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Srhinocerous.NCBI.SAMN03320098v11/BSgenome.Srhinocerous.NCBI.SAMN03320098v11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sorghum bicolor",
       "common_name": "sorghum",
       "group": "plant",
@@ -12476,6 +12524,38 @@
       "common_name": "",
       "published": "2026-04-04T11:03:14Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11/BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Srhinocerous.NCBI.SAMN03320098v11",
+      "version": "1.0.0",
+      "organism": "Sinocyclocheilus rhinocerous",
+      "assembly": "SAMN03320098_v1.1",
+      "provider": "NCBI",
+      "accession": "GCF_001515625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001515625.1/",
+      "file_name": "BSgenome.Srhinocerous.NCBI.SAMN03320098v11_1.0.0.tar.gz",
+      "size": 402523110,
+      "seq_ids": [
+        "NW_015623055.1",
+        "NW_015623056.1",
+        "NW_015623057.1",
+        "NW_015623058.1",
+        "NW_015623059.1"
+      ],
+      "seq_count": 164173,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Sinocyclocheilus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T11:03:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Srhinocerous.NCBI.SAMN03320098v11/BSgenome.Srhinocerous.NCBI.SAMN03320098v11_1.0.0.tar.gz"
     }
   ]
 }
