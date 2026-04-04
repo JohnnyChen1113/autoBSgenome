@@ -8051,6 +8051,54 @@
       ]
     },
     {
+      "organism": "Phalaenopsis equestris",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Asparagales",
+        "family": "Orchidaceae",
+        "genus": "Phalaenopsis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pequestris.NCBI.ASM126359v1",
+          "version": "1.0.0",
+          "organism": "Phalaenopsis equestris",
+          "assembly": "ASM126359v1",
+          "provider": "NCBI",
+          "accession": "GCF_001263595.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001263595.1/",
+          "file_name": "BSgenome.Pequestris.NCBI.ASM126359v1_1.0.0.tar.gz",
+          "size": 264963565,
+          "seq_ids": [
+            "NW_018164443.1",
+            "NW_018164444.1",
+            "NW_018164445.1",
+            "NW_018164446.1",
+            "NW_018164447.1"
+          ],
+          "seq_count": 89584,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Asparagales",
+            "family": "Orchidaceae",
+            "genus": "Phalaenopsis"
+          },
+          "common_name": "",
+          "published": "2026-04-04T16:42:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pequestris.NCBI.ASM126359v1/BSgenome.Pequestris.NCBI.ASM126359v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phascolarctos cinereus",
       "common_name": "koala",
       "group": "vertebrate_mammalian",
@@ -19495,6 +19543,38 @@
       "common_name": "",
       "published": "2026-04-04T16:42:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsoja.NCBI.ASM419377v2/BSgenome.Gsoja.NCBI.ASM419377v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pequestris.NCBI.ASM126359v1",
+      "version": "1.0.0",
+      "organism": "Phalaenopsis equestris",
+      "assembly": "ASM126359v1",
+      "provider": "NCBI",
+      "accession": "GCF_001263595.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001263595.1/",
+      "file_name": "BSgenome.Pequestris.NCBI.ASM126359v1_1.0.0.tar.gz",
+      "size": 264963565,
+      "seq_ids": [
+        "NW_018164443.1",
+        "NW_018164444.1",
+        "NW_018164445.1",
+        "NW_018164446.1",
+        "NW_018164447.1"
+      ],
+      "seq_count": 89584,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Asparagales",
+        "family": "Orchidaceae",
+        "genus": "Phalaenopsis"
+      },
+      "common_name": "",
+      "published": "2026-04-04T16:42:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pequestris.NCBI.ASM126359v1/BSgenome.Pequestris.NCBI.ASM126359v1_1.0.0.tar.gz"
     }
   ]
 }
