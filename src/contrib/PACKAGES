@@ -1137,3 +1137,7 @@ NeedsCompilation: no
 Package: BSgenome.Tspiralis.NCBI.Trichinellaspiralis371
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmalayi.NCBI.Bmalayi40
+Version: 1.0.0
+NeedsCompilation: no
