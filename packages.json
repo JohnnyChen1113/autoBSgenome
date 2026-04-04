@@ -4366,6 +4366,54 @@
       ]
     },
     {
+      "organism": "Drosophila mauritiana",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dmauritiana.NCBI.ASM438214v1",
+          "version": "1.0.0",
+          "organism": "Drosophila mauritiana",
+          "assembly": "ASM438214v1",
+          "provider": "NCBI",
+          "accession": "GCF_004382145.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004382145.1/",
+          "file_name": "BSgenome.Dmauritiana.NCBI.ASM438214v1_1.0.0.tar.gz",
+          "size": 37588221,
+          "seq_ids": [
+            "NC_046667.1",
+            "NC_046668.1",
+            "NC_046669.1",
+            "NC_046670.1",
+            "NC_046671.1"
+          ],
+          "seq_count": 353,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T19:34:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dmauritiana.NCBI.ASM438214v1/BSgenome.Dmauritiana.NCBI.ASM438214v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila navojoa",
       "common_name": "",
       "group": "invertebrate",
@@ -22535,6 +22583,38 @@
       "common_name": "western predatory mite",
       "published": "2026-04-04T19:34:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Goccidentalis.NCBI.Mocc11/BSgenome.Goccidentalis.NCBI.Mocc11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dmauritiana.NCBI.ASM438214v1",
+      "version": "1.0.0",
+      "organism": "Drosophila mauritiana",
+      "assembly": "ASM438214v1",
+      "provider": "NCBI",
+      "accession": "GCF_004382145.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004382145.1/",
+      "file_name": "BSgenome.Dmauritiana.NCBI.ASM438214v1_1.0.0.tar.gz",
+      "size": 37588221,
+      "seq_ids": [
+        "NC_046667.1",
+        "NC_046668.1",
+        "NC_046669.1",
+        "NC_046670.1",
+        "NC_046671.1"
+      ],
+      "seq_count": 353,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T19:34:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dmauritiana.NCBI.ASM438214v1/BSgenome.Dmauritiana.NCBI.ASM438214v1_1.0.0.tar.gz"
     }
   ]
 }
