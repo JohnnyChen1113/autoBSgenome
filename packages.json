@@ -5410,6 +5410,54 @@
       ]
     },
     {
+      "organism": "Manihot esculenta",
+      "common_name": "cassava",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malpighiales",
+        "family": "Euphorbiaceae",
+        "genus": "Manihot"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mesculenta.NCBI.Mesculentav8",
+          "version": "1.0.0",
+          "organism": "Manihot esculenta",
+          "assembly": "M.esculenta_v8",
+          "provider": "NCBI",
+          "accession": "GCF_001659605.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001659605.2/",
+          "file_name": "BSgenome.Mesculenta.NCBI.Mesculentav8_1.0.0.tar.gz",
+          "size": 156044249,
+          "seq_ids": [
+            "NC_035161.2",
+            "NC_035162.2",
+            "NC_035163.2",
+            "NC_035164.2",
+            "NC_035165.2"
+          ],
+          "seq_count": 86,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Malpighiales",
+            "family": "Euphorbiaceae",
+            "genus": "Manihot"
+          },
+          "common_name": "cassava",
+          "published": "2026-04-04T15:37:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mesculenta.NCBI.Mesculentav8/BSgenome.Mesculenta.NCBI.Mesculentav8_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Marmota marmota marmota",
       "common_name": "Alpine marmot",
       "group": "vertebrate_mammalian",
@@ -17975,6 +18023,38 @@
       "common_name": "narrow-leaved blue lupine",
       "published": "2026-04-04T15:36:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Langustifolius.NCBI.LupAngTanjilv10/BSgenome.Langustifolius.NCBI.LupAngTanjilv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mesculenta.NCBI.Mesculentav8",
+      "version": "1.0.0",
+      "organism": "Manihot esculenta",
+      "assembly": "M.esculenta_v8",
+      "provider": "NCBI",
+      "accession": "GCF_001659605.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001659605.2/",
+      "file_name": "BSgenome.Mesculenta.NCBI.Mesculentav8_1.0.0.tar.gz",
+      "size": 156044249,
+      "seq_ids": [
+        "NC_035161.2",
+        "NC_035162.2",
+        "NC_035163.2",
+        "NC_035164.2",
+        "NC_035165.2"
+      ],
+      "seq_count": 86,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malpighiales",
+        "family": "Euphorbiaceae",
+        "genus": "Manihot"
+      },
+      "common_name": "cassava",
+      "published": "2026-04-04T15:37:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mesculenta.NCBI.Mesculentav8/BSgenome.Mesculenta.NCBI.Mesculentav8_1.0.0.tar.gz"
     }
   ]
 }
