@@ -2243,6 +2243,54 @@
       ]
     },
     {
+      "organism": "Chenopodium quinoa",
+      "common_name": "quinoa",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Chenopodium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cquinoa.NCBI.ASM168347v1",
+          "version": "1.0.0",
+          "organism": "Chenopodium quinoa",
+          "assembly": "ASM168347v1",
+          "provider": "NCBI",
+          "accession": "GCF_001683475.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001683475.1/",
+          "file_name": "BSgenome.Cquinoa.NCBI.ASM168347v1_1.0.0.tar.gz",
+          "size": 325233928,
+          "seq_ids": [
+            "NW_018742204.1",
+            "NW_018742205.1",
+            "NW_018742206.1",
+            "NW_018742207.1",
+            "NW_018742208.1"
+          ],
+          "seq_count": 3487,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Caryophyllales",
+            "family": "Amaranthaceae",
+            "genus": "Chenopodium"
+          },
+          "common_name": "quinoa",
+          "published": "2026-04-04T17:35:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cquinoa.NCBI.ASM168347v1/BSgenome.Cquinoa.NCBI.ASM168347v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chiloscyllium plagiosum",
       "common_name": "whitespotted bambooshark",
       "group": "vertebrate_other",
@@ -19895,6 +19943,38 @@
       "common_name": "garden asparagus",
       "published": "2026-04-04T17:35:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aofficinalis.NCBI.AspofV1/BSgenome.Aofficinalis.NCBI.AspofV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cquinoa.NCBI.ASM168347v1",
+      "version": "1.0.0",
+      "organism": "Chenopodium quinoa",
+      "assembly": "ASM168347v1",
+      "provider": "NCBI",
+      "accession": "GCF_001683475.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001683475.1/",
+      "file_name": "BSgenome.Cquinoa.NCBI.ASM168347v1_1.0.0.tar.gz",
+      "size": 325233928,
+      "seq_ids": [
+        "NW_018742204.1",
+        "NW_018742205.1",
+        "NW_018742206.1",
+        "NW_018742207.1",
+        "NW_018742208.1"
+      ],
+      "seq_count": 3487,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Chenopodium"
+      },
+      "common_name": "quinoa",
+      "published": "2026-04-04T17:35:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cquinoa.NCBI.ASM168347v1/BSgenome.Cquinoa.NCBI.ASM168347v1_1.0.0.tar.gz"
     }
   ]
 }

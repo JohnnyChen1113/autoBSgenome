@@ -1089,3 +1089,7 @@ NeedsCompilation: no
 Package: BSgenome.Aofficinalis.NCBI.AspofV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cquinoa.NCBI.ASM168347v1
+Version: 1.0.0
+NeedsCompilation: no
