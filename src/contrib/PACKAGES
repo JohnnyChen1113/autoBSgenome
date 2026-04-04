@@ -1077,3 +1077,7 @@ NeedsCompilation: no
 Package: BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp
+Version: 1.0.0
+NeedsCompilation: no

@@ -8387,6 +8387,54 @@
       ]
     },
     {
+      "organism": "Phoenix dactylifera",
+      "common_name": "date palm",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Arecales",
+        "family": "Arecaceae",
+        "genus": "Phoenix"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp",
+          "version": "1.0.0",
+          "organism": "Phoenix dactylifera",
+          "assembly": "palm_55x_up_171113_PBpolish2nd_filt_p",
+          "provider": "NCBI",
+          "accession": "GCF_009389715.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009389715.1/",
+          "file_name": "BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp_1.0.0.tar.gz",
+          "size": 194734855,
+          "seq_ids": [
+            "NC_052392.1",
+            "NC_052393.1",
+            "NC_052394.1",
+            "NC_052395.1",
+            "NC_052396.1"
+          ],
+          "seq_count": 2391,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Arecales",
+            "family": "Arecaceae",
+            "genus": "Phoenix"
+          },
+          "common_name": "date palm",
+          "published": "2026-04-04T17:34:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp/BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phyllostomus discolor",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -19655,6 +19703,38 @@
       "common_name": "",
       "published": "2026-04-04T16:42:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH/BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp",
+      "version": "1.0.0",
+      "organism": "Phoenix dactylifera",
+      "assembly": "palm_55x_up_171113_PBpolish2nd_filt_p",
+      "provider": "NCBI",
+      "accession": "GCF_009389715.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009389715.1/",
+      "file_name": "BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp_1.0.0.tar.gz",
+      "size": 194734855,
+      "seq_ids": [
+        "NC_052392.1",
+        "NC_052393.1",
+        "NC_052394.1",
+        "NC_052395.1",
+        "NC_052396.1"
+      ],
+      "seq_count": 2391,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Arecales",
+        "family": "Arecaceae",
+        "genus": "Phoenix"
+      },
+      "common_name": "date palm",
+      "published": "2026-04-04T17:34:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp/BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp_1.0.0.tar.gz"
     }
   ]
 }
