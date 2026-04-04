@@ -3360,6 +3360,54 @@
       ]
     },
     {
+      "organism": "Lacerta agilis",
+      "common_name": "Sand lizard",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Lacertidae",
+        "genus": "Lacerta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lagilis.NCBI.rLacAgi1pri",
+          "version": "1.0.0",
+          "organism": "Lacerta agilis",
+          "assembly": "rLacAgi1.pri",
+          "provider": "NCBI",
+          "accession": "GCF_009819535.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009819535.1/",
+          "file_name": "BSgenome.Lagilis.NCBI.rLacAgi1pri_1.0.0.tar.gz",
+          "size": 360012335,
+          "seq_ids": [
+            "NC_046312.1",
+            "NC_046313.1",
+            "NC_046314.1",
+            "NC_046315.1",
+            "NC_046316.1"
+          ],
+          "seq_count": 29,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Lacertidae",
+            "genus": "Lacerta"
+          },
+          "common_name": "Sand lizard",
+          "published": "2026-04-04T11:02:24Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lagilis.NCBI.rLacAgi1pri/BSgenome.Lagilis.NCBI.rLacAgi1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Larimichthys crocea",
       "common_name": "large yellow croaker",
       "group": "vertebrate_other",
@@ -12076,6 +12124,38 @@
       "common_name": "emperor penguin",
       "published": "2026-04-04T11:02:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aforsteri.NCBI.ASM69914v1/BSgenome.Aforsteri.NCBI.ASM69914v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lagilis.NCBI.rLacAgi1pri",
+      "version": "1.0.0",
+      "organism": "Lacerta agilis",
+      "assembly": "rLacAgi1.pri",
+      "provider": "NCBI",
+      "accession": "GCF_009819535.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009819535.1/",
+      "file_name": "BSgenome.Lagilis.NCBI.rLacAgi1pri_1.0.0.tar.gz",
+      "size": 360012335,
+      "seq_ids": [
+        "NC_046312.1",
+        "NC_046313.1",
+        "NC_046314.1",
+        "NC_046315.1",
+        "NC_046316.1"
+      ],
+      "seq_count": 29,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Lacertidae",
+        "genus": "Lacerta"
+      },
+      "common_name": "Sand lizard",
+      "published": "2026-04-04T11:02:24Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lagilis.NCBI.rLacAgi1pri/BSgenome.Lagilis.NCBI.rLacAgi1pri_1.0.0.tar.gz"
     }
   ]
 }
