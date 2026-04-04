@@ -721,3 +721,7 @@ NeedsCompilation: no
 Package: BSgenome.Srhinocerous.NCBI.SAMN03320098v11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmucrosquamatus.NCBI.PMucros10
+Version: 1.0.0
+NeedsCompilation: no

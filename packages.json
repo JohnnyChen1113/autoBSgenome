@@ -5973,6 +5973,54 @@
       ]
     },
     {
+      "organism": "Protobothrops mucrosquamatus",
+      "common_name": "brown spotted pit viper",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Viperidae",
+        "genus": "Protobothrops"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pmucrosquamatus.NCBI.PMucros10",
+          "version": "1.0.0",
+          "organism": "Protobothrops mucrosquamatus",
+          "assembly": "P.Mucros_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001527695.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001527695.2/",
+          "file_name": "BSgenome.Pmucrosquamatus.NCBI.PMucros10_1.0.0.tar.gz",
+          "size": 402969972,
+          "seq_ids": [
+            "NW_015386077.1",
+            "NW_015386078.1",
+            "NW_015386079.1",
+            "NW_015386080.1",
+            "NW_015386081.1"
+          ],
+          "seq_count": 52280,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Viperidae",
+            "genus": "Protobothrops"
+          },
+          "common_name": "brown spotted pit viper",
+          "published": "2026-04-04T11:04:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmucrosquamatus.NCBI.PMucros10/BSgenome.Pmucrosquamatus.NCBI.PMucros10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudopodoces humilis",
       "common_name": "Tibetan ground-tit",
       "group": "vertebrate_other",
@@ -12556,6 +12604,38 @@
       "common_name": "",
       "published": "2026-04-04T11:03:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Srhinocerous.NCBI.SAMN03320098v11/BSgenome.Srhinocerous.NCBI.SAMN03320098v11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pmucrosquamatus.NCBI.PMucros10",
+      "version": "1.0.0",
+      "organism": "Protobothrops mucrosquamatus",
+      "assembly": "P.Mucros_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001527695.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001527695.2/",
+      "file_name": "BSgenome.Pmucrosquamatus.NCBI.PMucros10_1.0.0.tar.gz",
+      "size": 402969972,
+      "seq_ids": [
+        "NW_015386077.1",
+        "NW_015386078.1",
+        "NW_015386079.1",
+        "NW_015386080.1",
+        "NW_015386081.1"
+      ],
+      "seq_count": 52280,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Viperidae",
+        "genus": "Protobothrops"
+      },
+      "common_name": "brown spotted pit viper",
+      "published": "2026-04-04T11:04:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmucrosquamatus.NCBI.PMucros10/BSgenome.Pmucrosquamatus.NCBI.PMucros10_1.0.0.tar.gz"
     }
   ]
 }
