@@ -497,3 +497,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcolchicus.NCBI.ASM414374v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmajor.NCBI.Parusmajor11
+Version: 1.0.0
+NeedsCompilation: no

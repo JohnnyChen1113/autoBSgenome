@@ -3311,6 +3311,54 @@
       ]
     },
     {
+      "organism": "Parus major",
+      "common_name": "Great Tit",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Parus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pmajor.NCBI.Parusmajor11",
+          "version": "1.0.0",
+          "organism": "Parus major",
+          "assembly": "Parus_major1.1",
+          "provider": "NCBI",
+          "accession": "GCF_001522545.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001522545.3/",
+          "file_name": "BSgenome.Pmajor.NCBI.Parusmajor11_1.0.0.tar.gz",
+          "size": 261924140,
+          "seq_ids": [
+            "NC_031768.1",
+            "NC_031769.1",
+            "NC_031770.1",
+            "NC_031771.1",
+            "NC_031772.1"
+          ],
+          "seq_count": 1675,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Paridae",
+            "genus": "Parus"
+          },
+          "common_name": "Great Tit",
+          "published": "2026-04-04T05:46:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmajor.NCBI.Parusmajor11/BSgenome.Pmajor.NCBI.Parusmajor11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Perca flavescens",
       "common_name": "yellow perch",
       "group": "vertebrate_other",
@@ -8076,6 +8124,38 @@
       "common_name": "ring-necked pheasant",
       "published": "2026-04-04T05:46:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcolchicus.NCBI.ASM414374v1/BSgenome.Pcolchicus.NCBI.ASM414374v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pmajor.NCBI.Parusmajor11",
+      "version": "1.0.0",
+      "organism": "Parus major",
+      "assembly": "Parus_major1.1",
+      "provider": "NCBI",
+      "accession": "GCF_001522545.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001522545.3/",
+      "file_name": "BSgenome.Pmajor.NCBI.Parusmajor11_1.0.0.tar.gz",
+      "size": 261924140,
+      "seq_ids": [
+        "NC_031768.1",
+        "NC_031769.1",
+        "NC_031770.1",
+        "NC_031771.1",
+        "NC_031772.1"
+      ],
+      "seq_count": 1675,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Parus"
+      },
+      "common_name": "Great Tit",
+      "published": "2026-04-04T05:46:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmajor.NCBI.Parusmajor11/BSgenome.Pmajor.NCBI.Parusmajor11_1.0.0.tar.gz"
     }
   ]
 }
