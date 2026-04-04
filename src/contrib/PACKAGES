@@ -1117,3 +1117,7 @@ NeedsCompilation: no
 Package: BSgenome.Ahypogaea.NCBI.arahyTifrunnergnm2J5K5
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lsativa.NCBI.LsatSalinasv15
+Version: 1.0.0
+NeedsCompilation: no

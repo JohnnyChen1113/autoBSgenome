@@ -5796,6 +5796,54 @@
       ]
     },
     {
+      "organism": "Lactuca sativa",
+      "common_name": "garden lettuce",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Asterales",
+        "family": "Asteraceae",
+        "genus": "Lactuca"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lsativa.NCBI.LsatSalinasv15",
+          "version": "1.0.0",
+          "organism": "Lactuca sativa",
+          "assembly": "Lsat_Salinas_v15",
+          "provider": "NCBI",
+          "accession": "GCF_002870075.5",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002870075.5/",
+          "file_name": "BSgenome.Lsativa.NCBI.LsatSalinasv15_1.0.0.tar.gz",
+          "size": 652420933,
+          "seq_ids": [
+            "NC_056623.3",
+            "NC_056624.3",
+            "NC_056625.3",
+            "NC_056626.3",
+            "NC_056627.3"
+          ],
+          "seq_count": 11,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Asterales",
+            "family": "Asteraceae",
+            "genus": "Lactuca"
+          },
+          "common_name": "garden lettuce",
+          "published": "2026-04-04T17:38:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lsativa.NCBI.LsatSalinasv15/BSgenome.Lsativa.NCBI.LsatSalinasv15_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Larimichthys crocea",
       "common_name": "large yellow croaker",
       "group": "vertebrate_other",
@@ -20455,6 +20503,38 @@
       "common_name": "peanut",
       "published": "2026-04-04T17:38:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahypogaea.NCBI.arahyTifrunnergnm2J5K5/BSgenome.Ahypogaea.NCBI.arahyTifrunnergnm2J5K5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lsativa.NCBI.LsatSalinasv15",
+      "version": "1.0.0",
+      "organism": "Lactuca sativa",
+      "assembly": "Lsat_Salinas_v15",
+      "provider": "NCBI",
+      "accession": "GCF_002870075.5",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002870075.5/",
+      "file_name": "BSgenome.Lsativa.NCBI.LsatSalinasv15_1.0.0.tar.gz",
+      "size": 652420933,
+      "seq_ids": [
+        "NC_056623.3",
+        "NC_056624.3",
+        "NC_056625.3",
+        "NC_056626.3",
+        "NC_056627.3"
+      ],
+      "seq_count": 11,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Asterales",
+        "family": "Asteraceae",
+        "genus": "Lactuca"
+      },
+      "common_name": "garden lettuce",
+      "published": "2026-04-04T17:38:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lsativa.NCBI.LsatSalinasv15/BSgenome.Lsativa.NCBI.LsatSalinasv15_1.0.0.tar.gz"
     }
   ]
 }
