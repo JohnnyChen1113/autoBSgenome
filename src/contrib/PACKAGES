@@ -869,3 +869,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgranatum.NCBI.ASM765513v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mnotabilis.NCBI.ASM41409v2
+Version: 1.0.0
+NeedsCompilation: no
