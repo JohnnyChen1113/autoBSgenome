@@ -34,6 +34,7 @@ import {
   fetchEnsemblAssemblyInfo,
   detectCircularFromKaryotype,
 } from "@/lib/ensembl";
+import BatchMode from "@/components/BatchMode";
 
 type DataSource = "ncbi" | "ensembl";
 
@@ -102,6 +103,7 @@ function loadBuildHistory(): BuildRecord[] {
 
 export default function Home() {
   const [step, setStep] = useState<Step>("input");
+  const [batchMode, setBatchMode] = useState(false);
   const [buildHistory, setBuildHistory] = useState<BuildRecord[]>([]);
 
   // Load build history on mount
@@ -306,6 +308,11 @@ export default function Home() {
       buildStartTimeRef.current = now;
       setStep("building");
       pollBuildStatus(resumeJob);
+      return;
+    }
+    // Batch mode from URL
+    if (params.get("batch") === "true") {
+      setBatchMode(true);
       return;
     }
     // Pre-fill accession from URL and auto-fetch metadata
@@ -619,14 +626,26 @@ export default function Home() {
         )}
 
         <div className="mx-auto max-w-4xl px-6 pb-20">
+          {/* ─── Batch Mode ─── */}
+          {step === "input" && batchMode && (
+            <BatchMode onExit={() => setBatchMode(false)} />
+          )}
+
           {/* ─── Step 1: Input ─── */}
-          {step === "input" && (
+          {step === "input" && !batchMode && (
             <Card>
               <CardHeader>
-                <CardTitle>Enter Genome Information</CardTitle>
-                <CardDescription>
-                  Choose a data source and provide an accession or URL to auto-fill all metadata.
-                </CardDescription>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <CardTitle>Enter Genome Information</CardTitle>
+                    <CardDescription>
+                      Choose a data source and provide an accession or URL to auto-fill all metadata.
+                    </CardDescription>
+                  </div>
+                  <Button variant="outline" size="sm" onClick={() => setBatchMode(true)}>
+                    Batch Mode
+                  </Button>
+                </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 {/* Data source toggle */}
