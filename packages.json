@@ -1000,6 +1000,54 @@
       ]
     },
     {
+      "organism": "Brassica oleracea var. oleracea",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Brassica"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Boleracea.NCBI.BOL",
+          "version": "1.0.0",
+          "organism": "Brassica oleracea var. oleracea",
+          "assembly": "BOL",
+          "provider": "NCBI",
+          "accession": "GCF_000695525.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000695525.1/",
+          "file_name": "BSgenome.Boleracea.NCBI.BOL_1.0.0.tar.gz",
+          "size": 108418122,
+          "seq_ids": [
+            "NC_027748.1",
+            "NC_027749.1",
+            "NC_027750.1",
+            "NC_027751.1",
+            "NC_027752.1"
+          ],
+          "seq_count": 32886,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Brassica"
+          },
+          "common_name": "",
+          "published": "2026-04-04T15:35:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Boleracea.NCBI.BOL/BSgenome.Boleracea.NCBI.BOL_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Brassica rapa",
       "common_name": "field mustard",
       "group": "plant",
@@ -17495,6 +17543,38 @@
       "common_name": "chickpea",
       "published": "2026-04-04T14:43:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Carietinum.NCBI.CicarCDCFrontierv20/BSgenome.Carietinum.NCBI.CicarCDCFrontierv20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Boleracea.NCBI.BOL",
+      "version": "1.0.0",
+      "organism": "Brassica oleracea var. oleracea",
+      "assembly": "BOL",
+      "provider": "NCBI",
+      "accession": "GCF_000695525.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000695525.1/",
+      "file_name": "BSgenome.Boleracea.NCBI.BOL_1.0.0.tar.gz",
+      "size": 108418122,
+      "seq_ids": [
+        "NC_027748.1",
+        "NC_027749.1",
+        "NC_027750.1",
+        "NC_027751.1",
+        "NC_027752.1"
+      ],
+      "seq_count": 32886,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Brassica"
+      },
+      "common_name": "",
+      "published": "2026-04-04T15:35:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Boleracea.NCBI.BOL/BSgenome.Boleracea.NCBI.BOL_1.0.0.tar.gz"
     }
   ]
 }

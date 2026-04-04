@@ -969,3 +969,7 @@ NeedsCompilation: no
 Package: BSgenome.Carietinum.NCBI.CicarCDCFrontierv20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Boleracea.NCBI.BOL
+Version: 1.0.0
+NeedsCompilation: no
