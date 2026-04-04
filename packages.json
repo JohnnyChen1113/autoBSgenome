@@ -2456,6 +2456,54 @@
       ]
     },
     {
+      "organism": "Coffea eugenioides",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Gentianales",
+        "family": "Rubiaceae",
+        "genus": "Coffea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ceugenioides.NCBI.Ceug10",
+          "version": "1.0.0",
+          "organism": "Coffea eugenioides",
+          "assembly": "Ceug_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_003713205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003713205.1/",
+          "file_name": "BSgenome.Ceugenioides.NCBI.Ceug10_1.0.0.tar.gz",
+          "size": 171222194,
+          "seq_ids": [
+            "NC_040035.1",
+            "NC_040036.1",
+            "NC_040037.1",
+            "NC_040038.1",
+            "NC_040039.1"
+          ],
+          "seq_count": 3530,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Gentianales",
+            "family": "Rubiaceae",
+            "genus": "Coffea"
+          },
+          "common_name": "",
+          "published": "2026-04-04T15:37:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ceugenioides.NCBI.Ceug10/BSgenome.Ceugenioides.NCBI.Ceug10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Colobus angolensis palliatus",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -18135,6 +18183,38 @@
       "common_name": "false flax",
       "published": "2026-04-04T15:37:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativa.NCBI.Cs/BSgenome.Csativa.NCBI.Cs_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ceugenioides.NCBI.Ceug10",
+      "version": "1.0.0",
+      "organism": "Coffea eugenioides",
+      "assembly": "Ceug_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_003713205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003713205.1/",
+      "file_name": "BSgenome.Ceugenioides.NCBI.Ceug10_1.0.0.tar.gz",
+      "size": 171222194,
+      "seq_ids": [
+        "NC_040035.1",
+        "NC_040036.1",
+        "NC_040037.1",
+        "NC_040038.1",
+        "NC_040039.1"
+      ],
+      "seq_count": 3530,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Gentianales",
+        "family": "Rubiaceae",
+        "genus": "Coffea"
+      },
+      "common_name": "",
+      "published": "2026-04-04T15:37:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ceugenioides.NCBI.Ceug10/BSgenome.Ceugenioides.NCBI.Ceug10_1.0.0.tar.gz"
     }
   ]
 }
