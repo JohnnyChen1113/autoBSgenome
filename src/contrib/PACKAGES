@@ -605,3 +605,7 @@ NeedsCompilation: no
 Package: BSgenome.Caltera.NCBI.ASM394572v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acarolinensis.NCBI.ASM70074v2
+Version: 1.0.0
+NeedsCompilation: no
