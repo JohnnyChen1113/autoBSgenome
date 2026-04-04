@@ -1029,3 +1029,7 @@ NeedsCompilation: no
 Package: BSgenome.Pvera.NCBI.PisVerv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Inil.NCBI.Asagao11
+Version: 1.0.0
+NeedsCompilation: no

@@ -4932,6 +4932,54 @@
       ]
     },
     {
+      "organism": "Ipomoea nil",
+      "common_name": "Japanese morning glory",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Convolvulaceae",
+        "genus": "Ipomoea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Inil.NCBI.Asagao11",
+          "version": "1.0.0",
+          "organism": "Ipomoea nil",
+          "assembly": "Asagao_1.1",
+          "provider": "NCBI",
+          "accession": "GCF_001879475.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001879475.1/",
+          "file_name": "BSgenome.Inil.NCBI.Asagao11_1.0.0.tar.gz",
+          "size": 183762103,
+          "seq_ids": [
+            "NW_017616429.1",
+            "NW_017616430.1",
+            "NW_017616431.1",
+            "NW_017616432.1",
+            "NW_017616433.1"
+          ],
+          "seq_count": 3418,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Convolvulaceae",
+            "genus": "Ipomoea"
+          },
+          "common_name": "Japanese morning glory",
+          "published": "2026-04-04T16:40:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Inil.NCBI.Asagao11/BSgenome.Inil.NCBI.Asagao11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ipomoea triloba",
       "common_name": "trilobed morning glory",
       "group": "plant",
@@ -18695,6 +18743,38 @@
       "common_name": "",
       "published": "2026-04-04T16:39:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvera.NCBI.PisVerv2/BSgenome.Pvera.NCBI.PisVerv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Inil.NCBI.Asagao11",
+      "version": "1.0.0",
+      "organism": "Ipomoea nil",
+      "assembly": "Asagao_1.1",
+      "provider": "NCBI",
+      "accession": "GCF_001879475.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001879475.1/",
+      "file_name": "BSgenome.Inil.NCBI.Asagao11_1.0.0.tar.gz",
+      "size": 183762103,
+      "seq_ids": [
+        "NW_017616429.1",
+        "NW_017616430.1",
+        "NW_017616431.1",
+        "NW_017616432.1",
+        "NW_017616433.1"
+      ],
+      "seq_count": 3418,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Convolvulaceae",
+        "genus": "Ipomoea"
+      },
+      "common_name": "Japanese morning glory",
+      "published": "2026-04-04T16:40:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Inil.NCBI.Asagao11/BSgenome.Inil.NCBI.Asagao11_1.0.0.tar.gz"
     }
   ]
 }
