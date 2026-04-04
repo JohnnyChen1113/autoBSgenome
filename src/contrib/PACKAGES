@@ -1449,3 +1449,7 @@ NeedsCompilation: no
 Package: BSgenome.Aplanipennis.NCBI.Apla20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sflava.NCBI.YSAversion1
+Version: 1.0.0
+NeedsCompilation: no

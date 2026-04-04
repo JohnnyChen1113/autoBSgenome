@@ -14475,6 +14475,54 @@
       ]
     },
     {
+      "organism": "Sipha flava",
+      "common_name": "yellow sugarcane aphid",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hemiptera",
+        "family": "Aphididae",
+        "genus": "Sipha"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sflava.NCBI.YSAversion1",
+          "version": "1.0.0",
+          "organism": "Sipha flava",
+          "assembly": "YSA_version1",
+          "provider": "NCBI",
+          "accession": "GCF_003268045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003268045.1/",
+          "file_name": "BSgenome.Sflava.NCBI.YSAversion1_1.0.0.tar.gz",
+          "size": 93061202,
+          "seq_ids": [
+            "NW_020271713.1",
+            "NW_020271714.1",
+            "NW_020271715.1",
+            "NW_020271716.1",
+            "NW_020271717.1"
+          ],
+          "seq_count": 1923,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hemiptera",
+            "family": "Aphididae",
+            "genus": "Sipha"
+          },
+          "common_name": "yellow sugarcane aphid",
+          "published": "2026-04-04T23:36:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sflava.NCBI.YSAversion1/BSgenome.Sflava.NCBI.YSAversion1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sitodiplosis mosellana",
       "common_name": "orange wheat blossom midge",
       "group": "invertebrate",
@@ -27095,6 +27143,38 @@
       "common_name": "emerald ash borer",
       "published": "2026-04-04T23:36:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aplanipennis.NCBI.Apla20/BSgenome.Aplanipennis.NCBI.Apla20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sflava.NCBI.YSAversion1",
+      "version": "1.0.0",
+      "organism": "Sipha flava",
+      "assembly": "YSA_version1",
+      "provider": "NCBI",
+      "accession": "GCF_003268045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003268045.1/",
+      "file_name": "BSgenome.Sflava.NCBI.YSAversion1_1.0.0.tar.gz",
+      "size": 93061202,
+      "seq_ids": [
+        "NW_020271713.1",
+        "NW_020271714.1",
+        "NW_020271715.1",
+        "NW_020271716.1",
+        "NW_020271717.1"
+      ],
+      "seq_count": 1923,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hemiptera",
+        "family": "Aphididae",
+        "genus": "Sipha"
+      },
+      "common_name": "yellow sugarcane aphid",
+      "published": "2026-04-04T23:36:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sflava.NCBI.YSAversion1/BSgenome.Sflava.NCBI.YSAversion1_1.0.0.tar.gz"
     }
   ]
 }
