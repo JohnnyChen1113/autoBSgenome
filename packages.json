@@ -2609,6 +2609,54 @@
       ]
     },
     {
+      "organism": "Rhinopithecus bieti",
+      "common_name": "black snub-nosed monkey",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Rhinopithecus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rbieti.NCBI.ASM169854v2",
+          "version": "1.0.0",
+          "organism": "Rhinopithecus bieti",
+          "assembly": "ASM169854v2",
+          "provider": "NCBI",
+          "accession": "GCF_001698545.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001698545.2/",
+          "file_name": "BSgenome.Rbieti.NCBI.ASM169854v2_1.0.0.tar.gz",
+          "size": 732890856,
+          "seq_ids": [
+            "NW_016802824.1",
+            "NW_016802825.1",
+            "NW_016802826.1",
+            "NW_016802827.1",
+            "NW_016802828.1"
+          ],
+          "seq_count": 103882,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Rhinopithecus"
+          },
+          "common_name": "black snub-nosed monkey",
+          "published": "2026-04-04T02:28:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rbieti.NCBI.ASM169854v2/BSgenome.Rbieti.NCBI.ASM169854v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Saccharomyces cerevisiae",
       "common_name": "",
       "group": "fungi",
@@ -4879,6 +4927,38 @@
       "common_name": "",
       "published": "2026-04-04T02:28:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cangolensis.NCBI.Cangpa10/BSgenome.Cangolensis.NCBI.Cangpa10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rbieti.NCBI.ASM169854v2",
+      "version": "1.0.0",
+      "organism": "Rhinopithecus bieti",
+      "assembly": "ASM169854v2",
+      "provider": "NCBI",
+      "accession": "GCF_001698545.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001698545.2/",
+      "file_name": "BSgenome.Rbieti.NCBI.ASM169854v2_1.0.0.tar.gz",
+      "size": 732890856,
+      "seq_ids": [
+        "NW_016802824.1",
+        "NW_016802825.1",
+        "NW_016802826.1",
+        "NW_016802827.1",
+        "NW_016802828.1"
+      ],
+      "seq_count": 103882,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Rhinopithecus"
+      },
+      "common_name": "black snub-nosed monkey",
+      "published": "2026-04-04T02:28:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rbieti.NCBI.ASM169854v2/BSgenome.Rbieti.NCBI.ASM169854v2_1.0.0.tar.gz"
     }
   ]
 }
