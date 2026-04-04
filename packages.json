@@ -2878,6 +2878,54 @@
       ]
     },
     {
+      "organism": "Leptosomus discolor",
+      "common_name": "cuckoo roller",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Leptosomiformes",
+        "family": "Leptosomidae",
+        "genus": "Leptosomus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ldiscolor.NCBI.ASM69178v1",
+          "version": "1.0.0",
+          "organism": "Leptosomus discolor",
+          "assembly": "ASM69178v1",
+          "provider": "NCBI",
+          "accession": "GCF_000691785.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000691785.1/",
+          "file_name": "BSgenome.Ldiscolor.NCBI.ASM69178v1_1.0.0.tar.gz",
+          "size": 305920544,
+          "seq_ids": [
+            "NW_009842061.1",
+            "NW_009842062.1",
+            "NW_009842063.1",
+            "NW_009842064.1",
+            "NW_009842065.1"
+          ],
+          "seq_count": 57160,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Leptosomiformes",
+            "family": "Leptosomidae",
+            "genus": "Leptosomus"
+          },
+          "common_name": "cuckoo roller",
+          "published": "2026-04-04T09:11:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ldiscolor.NCBI.ASM69178v1/BSgenome.Ldiscolor.NCBI.ASM69178v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lipotes vexillifer",
       "common_name": "Yangtze River dolphin",
       "group": "vertebrate_mammalian",
@@ -10476,6 +10524,38 @@
       "common_name": "tufted duck",
       "published": "2026-04-04T09:11:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afuligula.NCBI.bAytFul2pri/BSgenome.Afuligula.NCBI.bAytFul2pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ldiscolor.NCBI.ASM69178v1",
+      "version": "1.0.0",
+      "organism": "Leptosomus discolor",
+      "assembly": "ASM69178v1",
+      "provider": "NCBI",
+      "accession": "GCF_000691785.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000691785.1/",
+      "file_name": "BSgenome.Ldiscolor.NCBI.ASM69178v1_1.0.0.tar.gz",
+      "size": 305920544,
+      "seq_ids": [
+        "NW_009842061.1",
+        "NW_009842062.1",
+        "NW_009842063.1",
+        "NW_009842064.1",
+        "NW_009842065.1"
+      ],
+      "seq_count": 57160,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Leptosomiformes",
+        "family": "Leptosomidae",
+        "genus": "Leptosomus"
+      },
+      "common_name": "cuckoo roller",
+      "published": "2026-04-04T09:11:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ldiscolor.NCBI.ASM69178v1/BSgenome.Ldiscolor.NCBI.ASM69178v1_1.0.0.tar.gz"
     }
   ]
 }
