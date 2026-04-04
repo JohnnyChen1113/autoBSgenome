@@ -287,6 +287,54 @@
       ]
     },
     {
+      "organism": "Amphimedon queenslandica",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Porifera",
+        "class": "Demospongiae",
+        "order": "Haplosclerida",
+        "family": "Niphatidae",
+        "genus": "Amphimedon"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aqueenslandica.NCBI.v11",
+          "version": "1.0.0",
+          "organism": "Amphimedon queenslandica",
+          "assembly": "v1.1",
+          "provider": "NCBI",
+          "accession": "GCF_000090795.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000090795.2/",
+          "file_name": "BSgenome.Aqueenslandica.NCBI.v11_1.0.0.tar.gz",
+          "size": 37882424,
+          "seq_ids": [
+            "NW_003546242.1",
+            "NW_003546243.1",
+            "NW_003546244.1",
+            "NW_003546245.1",
+            "NW_003546246.1"
+          ],
+          "seq_count": 13133,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Porifera",
+            "class": "Demospongiae",
+            "order": "Haplosclerida",
+            "family": "Niphatidae",
+            "genus": "Amphimedon"
+          },
+          "common_name": "",
+          "published": "2026-04-04T20:35:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aqueenslandica.NCBI.v11/BSgenome.Aqueenslandica.NCBI.v11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ananas comosus",
       "common_name": "pineapple",
       "group": "plant",
@@ -23015,6 +23063,38 @@
       "common_name": "",
       "published": "2026-04-04T19:35:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dpseudoobscura.NCBI.UCIDpseMV25/BSgenome.Dpseudoobscura.NCBI.UCIDpseMV25_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aqueenslandica.NCBI.v11",
+      "version": "1.0.0",
+      "organism": "Amphimedon queenslandica",
+      "assembly": "v1.1",
+      "provider": "NCBI",
+      "accession": "GCF_000090795.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000090795.2/",
+      "file_name": "BSgenome.Aqueenslandica.NCBI.v11_1.0.0.tar.gz",
+      "size": 37882424,
+      "seq_ids": [
+        "NW_003546242.1",
+        "NW_003546243.1",
+        "NW_003546244.1",
+        "NW_003546245.1",
+        "NW_003546246.1"
+      ],
+      "seq_count": 13133,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Porifera",
+        "class": "Demospongiae",
+        "order": "Haplosclerida",
+        "family": "Niphatidae",
+        "genus": "Amphimedon"
+      },
+      "common_name": "",
+      "published": "2026-04-04T20:35:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aqueenslandica.NCBI.v11/BSgenome.Aqueenslandica.NCBI.v11_1.0.0.tar.gz"
     }
   ]
 }
