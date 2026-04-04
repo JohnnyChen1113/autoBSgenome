@@ -849,3 +849,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcharantia.NCBI.ASM199503v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sindicum.NCBI.Sindicumv10
+Version: 1.0.0
+NeedsCompilation: no

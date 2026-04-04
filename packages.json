@@ -7947,6 +7947,54 @@
       ]
     },
     {
+      "organism": "Sesamum indicum",
+      "common_name": "sesame",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Pedaliaceae",
+        "genus": "Sesamum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sindicum.NCBI.Sindicumv10",
+          "version": "1.0.0",
+          "organism": "Sesamum indicum",
+          "assembly": "S_indicum_v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000512975.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000512975.1/",
+          "file_name": "BSgenome.Sindicum.NCBI.Sindicumv10_1.0.0.tar.gz",
+          "size": 70882353,
+          "seq_ids": [
+            "NC_026145.1",
+            "NC_026146.1",
+            "NC_026147.1",
+            "NC_026148.1",
+            "NC_026149.1"
+          ],
+          "seq_count": 16236,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Lamiales",
+            "family": "Pedaliaceae",
+            "genus": "Sesamum"
+          },
+          "common_name": "sesame",
+          "published": "2026-04-04T13:02:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sindicum.NCBI.Sindicumv10/BSgenome.Sindicum.NCBI.Sindicumv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sinocyclocheilus anshuiensis",
       "common_name": "",
       "group": "vertebrate_other",
@@ -15095,6 +15143,38 @@
       "common_name": "bitter melon",
       "published": "2026-04-04T13:02:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcharantia.NCBI.ASM199503v1/BSgenome.Mcharantia.NCBI.ASM199503v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sindicum.NCBI.Sindicumv10",
+      "version": "1.0.0",
+      "organism": "Sesamum indicum",
+      "assembly": "S_indicum_v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000512975.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000512975.1/",
+      "file_name": "BSgenome.Sindicum.NCBI.Sindicumv10_1.0.0.tar.gz",
+      "size": 70882353,
+      "seq_ids": [
+        "NC_026145.1",
+        "NC_026146.1",
+        "NC_026147.1",
+        "NC_026148.1",
+        "NC_026149.1"
+      ],
+      "seq_count": 16236,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Pedaliaceae",
+        "genus": "Sesamum"
+      },
+      "common_name": "sesame",
+      "published": "2026-04-04T13:02:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sindicum.NCBI.Sindicumv10/BSgenome.Sindicum.NCBI.Sindicumv10_1.0.0.tar.gz"
     }
   ]
 }
