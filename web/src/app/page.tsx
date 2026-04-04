@@ -295,6 +295,8 @@ export default function Home() {
   const formRef = useRef(form);
   formRef.current = form;
 
+  const [autoFetchPending, setAutoFetchPending] = useState(false);
+
   // Restore build state or pre-fill accession from URL on page load
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -307,13 +309,28 @@ export default function Home() {
       setStep("building");
       pollBuildStatus(resumeJob);
     }
-    // Pre-fill accession from URL (e.g., ?accession=GCF_000001215.4)
+    // Pre-fill accession from URL and auto-fetch metadata
+    // e.g., ?accession=GCF_000001215.4 or ?accession=danio_rerio&source=ensembl
     const prefillAccession = params.get("accession");
+    const prefillSource = params.get("source");
     if (prefillAccession && !resumeJob) {
+      if (prefillSource === "ensembl") {
+        setDataSource("ensembl");
+      }
       setAccessionInput(prefillAccession);
+      setAutoFetchPending(true);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Auto-trigger lookup when accession is pre-filled from URL
+  useEffect(() => {
+    if (autoFetchPending && accessionInput) {
+      setAutoFetchPending(false);
+      handleFetch();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoFetchPending, accessionInput]);
 
   // Fetch queue status on input and review steps
   useEffect(() => {
