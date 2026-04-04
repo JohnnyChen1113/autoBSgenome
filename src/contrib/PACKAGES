@@ -741,3 +741,7 @@ NeedsCompilation: no
 Package: BSgenome.Cporosus.NCBI.CroPorcomp1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nparkeri.NCBI.ASM93562v1
+Version: 1.0.0
+NeedsCompilation: no

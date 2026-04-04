@@ -4397,6 +4397,54 @@
       ]
     },
     {
+      "organism": "Nanorana parkeri",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Anura",
+        "family": "Dicroglossidae",
+        "genus": "Nanorana"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nparkeri.NCBI.ASM93562v1",
+          "version": "1.0.0",
+          "organism": "Nanorana parkeri",
+          "assembly": "ASM93562v1",
+          "provider": "NCBI",
+          "accession": "GCF_000935625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000935625.1/",
+          "file_name": "BSgenome.Nparkeri.NCBI.ASM93562v1_1.0.0.tar.gz",
+          "size": 522506862,
+          "seq_ids": [
+            "NW_017306269.1",
+            "NW_017306270.1",
+            "NW_017306271.1",
+            "NW_017306272.1",
+            "NW_017306273.1"
+          ],
+          "seq_count": 25188,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Amphibia",
+            "order": "Anura",
+            "family": "Dicroglossidae",
+            "genus": "Nanorana"
+          },
+          "common_name": "",
+          "published": "2026-04-04T11:05:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparkeri.NCBI.ASM93562v1/BSgenome.Nparkeri.NCBI.ASM93562v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nematocida ausubeli",
       "common_name": "",
       "group": "fungi",
@@ -12953,6 +13001,38 @@
       "common_name": "Australian saltwater crocodile",
       "published": "2026-04-04T11:05:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cporosus.NCBI.CroPorcomp1/BSgenome.Cporosus.NCBI.CroPorcomp1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nparkeri.NCBI.ASM93562v1",
+      "version": "1.0.0",
+      "organism": "Nanorana parkeri",
+      "assembly": "ASM93562v1",
+      "provider": "NCBI",
+      "accession": "GCF_000935625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000935625.1/",
+      "file_name": "BSgenome.Nparkeri.NCBI.ASM93562v1_1.0.0.tar.gz",
+      "size": 522506862,
+      "seq_ids": [
+        "NW_017306269.1",
+        "NW_017306270.1",
+        "NW_017306271.1",
+        "NW_017306272.1",
+        "NW_017306273.1"
+      ],
+      "seq_count": 25188,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Anura",
+        "family": "Dicroglossidae",
+        "genus": "Nanorana"
+      },
+      "common_name": "",
+      "published": "2026-04-04T11:05:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparkeri.NCBI.ASM93562v1/BSgenome.Nparkeri.NCBI.ASM93562v1_1.0.0.tar.gz"
     }
   ]
 }
