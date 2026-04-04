@@ -1205,3 +1205,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsubobscura.NCBI.UCBerkDsub10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Darizonae.NCBI.ASM165402v1
+Version: 1.0.0
+NeedsCompilation: no

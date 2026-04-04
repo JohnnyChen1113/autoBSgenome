@@ -4270,6 +4270,54 @@
       ]
     },
     {
+      "organism": "Drosophila arizonae",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Darizonae.NCBI.ASM165402v1",
+          "version": "1.0.0",
+          "organism": "Drosophila arizonae",
+          "assembly": "ASM165402v1",
+          "provider": "NCBI",
+          "accession": "GCF_001654025.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001654025.1/",
+          "file_name": "BSgenome.Darizonae.NCBI.ASM165402v1_1.0.0.tar.gz",
+          "size": 36590029,
+          "seq_ids": [
+            "NW_017127682.1",
+            "NW_017127683.1",
+            "NW_017127684.1",
+            "NW_017127685.1",
+            "NW_017127686.1"
+          ],
+          "seq_count": 3178,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T19:34:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Darizonae.NCBI.ASM165402v1/BSgenome.Darizonae.NCBI.ASM165402v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila subobscura",
       "common_name": "",
       "group": "invertebrate",
@@ -22215,6 +22263,38 @@
       "common_name": "",
       "published": "2026-04-04T19:33:45Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dsubobscura.NCBI.UCBerkDsub10/BSgenome.Dsubobscura.NCBI.UCBerkDsub10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Darizonae.NCBI.ASM165402v1",
+      "version": "1.0.0",
+      "organism": "Drosophila arizonae",
+      "assembly": "ASM165402v1",
+      "provider": "NCBI",
+      "accession": "GCF_001654025.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001654025.1/",
+      "file_name": "BSgenome.Darizonae.NCBI.ASM165402v1_1.0.0.tar.gz",
+      "size": 36590029,
+      "seq_ids": [
+        "NW_017127682.1",
+        "NW_017127683.1",
+        "NW_017127684.1",
+        "NW_017127685.1",
+        "NW_017127686.1"
+      ],
+      "seq_count": 3178,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T19:34:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Darizonae.NCBI.ASM165402v1/BSgenome.Darizonae.NCBI.ASM165402v1_1.0.0.tar.gz"
     }
   ]
 }
