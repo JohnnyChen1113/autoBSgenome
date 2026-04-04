@@ -1105,3 +1105,7 @@ NeedsCompilation: no
 Package: BSgenome.Ntomentosiformis.NCBI.ASM39032v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eguineensis.NCBI.EG11
+Version: 1.0.0
+NeedsCompilation: no

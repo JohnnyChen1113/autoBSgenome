@@ -3982,6 +3982,54 @@
       ]
     },
     {
+      "organism": "Elaeis guineensis",
+      "common_name": "African oil palm",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Arecales",
+        "family": "Arecaceae",
+        "genus": "Elaeis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Eguineensis.NCBI.EG11",
+          "version": "1.0.0",
+          "organism": "Elaeis guineensis",
+          "assembly": "EG11",
+          "provider": "NCBI",
+          "accession": "GCF_000442705.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000442705.2/",
+          "file_name": "BSgenome.Eguineensis.NCBI.EG11_1.0.0.tar.gz",
+          "size": 427400250,
+          "seq_ids": [
+            "NC_025993.2",
+            "NC_025994.2",
+            "NC_025995.2",
+            "NC_025996.2",
+            "NC_025997.2"
+          ],
+          "seq_count": 30,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Arecales",
+            "family": "Arecaceae",
+            "genus": "Elaeis"
+          },
+          "common_name": "African oil palm",
+          "published": "2026-04-04T17:36:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eguineensis.NCBI.EG11/BSgenome.Eguineensis.NCBI.EG11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Elephantulus edwardii",
       "common_name": "Cape elephant shrew",
       "group": "vertebrate_mammalian",
@@ -20215,6 +20263,38 @@
       "common_name": "",
       "published": "2026-04-04T17:36:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ntomentosiformis.NCBI.ASM39032v3/BSgenome.Ntomentosiformis.NCBI.ASM39032v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Eguineensis.NCBI.EG11",
+      "version": "1.0.0",
+      "organism": "Elaeis guineensis",
+      "assembly": "EG11",
+      "provider": "NCBI",
+      "accession": "GCF_000442705.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000442705.2/",
+      "file_name": "BSgenome.Eguineensis.NCBI.EG11_1.0.0.tar.gz",
+      "size": 427400250,
+      "seq_ids": [
+        "NC_025993.2",
+        "NC_025994.2",
+        "NC_025995.2",
+        "NC_025996.2",
+        "NC_025997.2"
+      ],
+      "seq_count": 30,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Arecales",
+        "family": "Arecaceae",
+        "genus": "Elaeis"
+      },
+      "common_name": "African oil palm",
+      "published": "2026-04-04T17:36:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eguineensis.NCBI.EG11/BSgenome.Eguineensis.NCBI.EG11_1.0.0.tar.gz"
     }
   ]
 }
