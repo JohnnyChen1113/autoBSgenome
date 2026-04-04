@@ -3804,6 +3804,54 @@
       ]
     },
     {
+      "organism": "Xiphophorus hellerii",
+      "common_name": "green swordtail",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Poeciliidae",
+        "genus": "Xiphophorus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Xhellerii.NCBI.Xiphophorushellerii41",
+          "version": "1.0.0",
+          "organism": "Xiphophorus hellerii",
+          "assembly": "Xiphophorus_hellerii-4.1",
+          "provider": "NCBI",
+          "accession": "GCF_003331165.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003331165.1/",
+          "file_name": "BSgenome.Xhellerii.NCBI.Xiphophorushellerii41_1.0.0.tar.gz",
+          "size": 189796800,
+          "seq_ids": [
+            "NC_045672.1",
+            "NC_045673.1",
+            "NC_045674.1",
+            "NC_045675.1",
+            "NC_045676.1"
+          ],
+          "seq_count": 87,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Poeciliidae",
+            "genus": "Xiphophorus"
+          },
+          "common_name": "green swordtail",
+          "published": "2026-04-04T04:32:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xhellerii.NCBI.Xiphophorushellerii41/BSgenome.Xhellerii.NCBI.Xiphophorushellerii41_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Xiphophorus maculatus",
       "common_name": "southern platyfish",
       "group": "vertebrate_other",
@@ -6399,6 +6447,38 @@
       "common_name": "",
       "published": "2026-04-04T04:32:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slalandi.NCBI.Sedor1/BSgenome.Slalandi.NCBI.Sedor1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Xhellerii.NCBI.Xiphophorushellerii41",
+      "version": "1.0.0",
+      "organism": "Xiphophorus hellerii",
+      "assembly": "Xiphophorus_hellerii-4.1",
+      "provider": "NCBI",
+      "accession": "GCF_003331165.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003331165.1/",
+      "file_name": "BSgenome.Xhellerii.NCBI.Xiphophorushellerii41_1.0.0.tar.gz",
+      "size": 189796800,
+      "seq_ids": [
+        "NC_045672.1",
+        "NC_045673.1",
+        "NC_045674.1",
+        "NC_045675.1",
+        "NC_045676.1"
+      ],
+      "seq_count": 87,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Poeciliidae",
+        "genus": "Xiphophorus"
+      },
+      "common_name": "green swordtail",
+      "published": "2026-04-04T04:32:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xhellerii.NCBI.Xiphophorushellerii41/BSgenome.Xhellerii.NCBI.Xiphophorushellerii41_1.0.0.tar.gz"
     }
   ]
 }
