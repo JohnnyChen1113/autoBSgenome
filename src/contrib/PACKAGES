@@ -769,3 +769,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cabingdonii.NCBI.CheloAbing20
+Version: 1.0.0
+NeedsCompilation: no

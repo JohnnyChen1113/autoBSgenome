@@ -1527,6 +1527,52 @@
       ]
     },
     {
+      "organism": "Chelonoidis abingdonii",
+      "common_name": "Abingdon island giant tortoise",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Testudinidae",
+        "genus": "Chelonoidis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cabingdonii.NCBI.CheloAbing20",
+          "version": "1.0.0",
+          "organism": "Chelonoidis abingdonii",
+          "assembly": "CheloAbing_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_003597395.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003597395.2/",
+          "file_name": "BSgenome.Cabingdonii.NCBI.CheloAbing20_1.0.0.tar.gz",
+          "size": 574836080,
+          "seq_ids": [
+            "NC_133769.1",
+            "NC_133770.1",
+            "NC_133771.1",
+            "NC_133772.1",
+            "NC_133773.1"
+          ],
+          "seq_count": 3850,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Testudinidae",
+            "genus": "Chelonoidis"
+          },
+          "common_name": "Abingdon island giant tortoise",
+          "published": "2026-04-04T11:41:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cabingdonii.NCBI.CheloAbing20/BSgenome.Cabingdonii.NCBI.CheloAbing20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chinchilla lanigera",
       "common_name": "long-tailed chinchilla",
       "group": "vertebrate_mammalian",
@@ -13510,6 +13556,37 @@
       "common_name": "peach",
       "published": "2026-04-04T11:40:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2/BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cabingdonii.NCBI.CheloAbing20",
+      "version": "1.0.0",
+      "organism": "Chelonoidis abingdonii",
+      "assembly": "CheloAbing_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_003597395.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003597395.2/",
+      "file_name": "BSgenome.Cabingdonii.NCBI.CheloAbing20_1.0.0.tar.gz",
+      "size": 574836080,
+      "seq_ids": [
+        "NC_133769.1",
+        "NC_133770.1",
+        "NC_133771.1",
+        "NC_133772.1",
+        "NC_133773.1"
+      ],
+      "seq_count": 3850,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Testudinidae",
+        "genus": "Chelonoidis"
+      },
+      "common_name": "Abingdon island giant tortoise",
+      "published": "2026-04-04T11:41:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cabingdonii.NCBI.CheloAbing20/BSgenome.Cabingdonii.NCBI.CheloAbing20_1.0.0.tar.gz"
     }
   ]
 }
