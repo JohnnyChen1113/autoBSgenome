@@ -1353,3 +1353,7 @@ NeedsCompilation: no
 Package: BSgenome.Adorsata.NCBI.Apisdorsata13
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ediaphana.NCBI.Aiptasiagenome11
+Version: 1.0.0
+NeedsCompilation: no

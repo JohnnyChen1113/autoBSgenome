@@ -5994,6 +5994,54 @@
       ]
     },
     {
+      "organism": "Exaiptasia diaphana",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Cnidaria",
+        "class": "Anthozoa",
+        "order": "Actiniaria",
+        "family": "Aiptasiidae",
+        "genus": "Exaiptasia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ediaphana.NCBI.Aiptasiagenome11",
+          "version": "1.0.0",
+          "organism": "Exaiptasia diaphana",
+          "assembly": "Aiptasia genome 1.1",
+          "provider": "NCBI",
+          "accession": "GCF_001417965.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001417965.1/",
+          "file_name": "BSgenome.Ediaphana.NCBI.Aiptasiagenome11_1.0.0.tar.gz",
+          "size": 58056371,
+          "seq_ids": [
+            "NW_018384101.1",
+            "NW_018384102.1",
+            "NW_018384103.1",
+            "NW_018384104.1",
+            "NW_018384105.1"
+          ],
+          "seq_count": 4312,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Cnidaria",
+            "class": "Anthozoa",
+            "order": "Actiniaria",
+            "family": "Aiptasiidae",
+            "genus": "Exaiptasia"
+          },
+          "common_name": "",
+          "published": "2026-04-04T22:33:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ediaphana.NCBI.Aiptasiagenome11/BSgenome.Ediaphana.NCBI.Aiptasiagenome11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ficedula albicollis",
       "common_name": "Collared flycatcher",
       "group": "vertebrate_other",
@@ -25175,6 +25223,38 @@
       "common_name": "giant honeybee",
       "published": "2026-04-04T22:33:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Adorsata.NCBI.Apisdorsata13/BSgenome.Adorsata.NCBI.Apisdorsata13_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ediaphana.NCBI.Aiptasiagenome11",
+      "version": "1.0.0",
+      "organism": "Exaiptasia diaphana",
+      "assembly": "Aiptasia genome 1.1",
+      "provider": "NCBI",
+      "accession": "GCF_001417965.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001417965.1/",
+      "file_name": "BSgenome.Ediaphana.NCBI.Aiptasiagenome11_1.0.0.tar.gz",
+      "size": 58056371,
+      "seq_ids": [
+        "NW_018384101.1",
+        "NW_018384102.1",
+        "NW_018384103.1",
+        "NW_018384104.1",
+        "NW_018384105.1"
+      ],
+      "seq_count": 4312,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Cnidaria",
+        "class": "Anthozoa",
+        "order": "Actiniaria",
+        "family": "Aiptasiidae",
+        "genus": "Exaiptasia"
+      },
+      "common_name": "",
+      "published": "2026-04-04T22:33:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ediaphana.NCBI.Aiptasiagenome11/BSgenome.Ediaphana.NCBI.Aiptasiagenome11_1.0.0.tar.gz"
     }
   ]
 }
