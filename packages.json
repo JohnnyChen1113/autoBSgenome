@@ -9011,6 +9011,54 @@
       ]
     },
     {
+      "organism": "Pediculus humanus corporis",
+      "common_name": "human body louse",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Psocodea",
+        "family": "Pediculidae",
+        "genus": "Pediculus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Phumanus.NCBI.JCVILOUSE10",
+          "version": "1.0.0",
+          "organism": "Pediculus humanus corporis",
+          "assembly": "JCVI_LOUSE_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000006295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000006295.1/",
+          "file_name": "BSgenome.Phumanus.NCBI.JCVILOUSE10_1.0.0.tar.gz",
+          "size": 28143262,
+          "seq_ids": [
+            "NW_002988870.1",
+            "NW_002988869.1",
+            "NW_002988868.1",
+            "NW_002988867.1",
+            "NW_002988866.1"
+          ],
+          "seq_count": 1882,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Psocodea",
+            "family": "Pediculidae",
+            "genus": "Pediculus"
+          },
+          "common_name": "human body louse",
+          "published": "2026-04-04T19:33:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phumanus.NCBI.JCVILOUSE10/BSgenome.Phumanus.NCBI.JCVILOUSE10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Perca flavescens",
       "common_name": "yellow perch",
       "group": "vertebrate_other",
@@ -21975,6 +22023,38 @@
       "common_name": "",
       "published": "2026-04-04T19:33:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbriggsae.NCBI.CB4/BSgenome.Cbriggsae.NCBI.CB4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Phumanus.NCBI.JCVILOUSE10",
+      "version": "1.0.0",
+      "organism": "Pediculus humanus corporis",
+      "assembly": "JCVI_LOUSE_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000006295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000006295.1/",
+      "file_name": "BSgenome.Phumanus.NCBI.JCVILOUSE10_1.0.0.tar.gz",
+      "size": 28143262,
+      "seq_ids": [
+        "NW_002988870.1",
+        "NW_002988869.1",
+        "NW_002988868.1",
+        "NW_002988867.1",
+        "NW_002988866.1"
+      ],
+      "seq_count": 1882,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Psocodea",
+        "family": "Pediculidae",
+        "genus": "Pediculus"
+      },
+      "common_name": "human body louse",
+      "published": "2026-04-04T19:33:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phumanus.NCBI.JCVILOUSE10/BSgenome.Phumanus.NCBI.JCVILOUSE10_1.0.0.tar.gz"
     }
   ]
 }
