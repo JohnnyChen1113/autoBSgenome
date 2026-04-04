@@ -1432,6 +1432,54 @@
       ]
     },
     {
+      "organism": "Bombus impatiens",
+      "common_name": "common eastern bumble bee",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Apidae",
+        "genus": "Bombus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bimpatiens.NCBI.BIMP22",
+          "version": "1.0.0",
+          "organism": "Bombus impatiens",
+          "assembly": "BIMP_2.2",
+          "provider": "NCBI",
+          "accession": "GCF_000188095.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000188095.3/",
+          "file_name": "BSgenome.Bimpatiens.NCBI.BIMP22_1.0.0.tar.gz",
+          "size": 65099308,
+          "seq_ids": [
+            "NT_176420.1",
+            "NT_176421.1",
+            "NT_176422.1",
+            "NT_176423.1",
+            "NT_176424.1"
+          ],
+          "seq_count": 5460,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Apidae",
+            "genus": "Bombus"
+          },
+          "common_name": "common eastern bumble bee",
+          "published": "2026-04-04T21:36:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bimpatiens.NCBI.BIMP22/BSgenome.Bimpatiens.NCBI.BIMP22_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bos indicus x Bos taurus",
       "common_name": "hybrid cattle",
       "group": "vertebrate_mammalian",
@@ -24935,6 +24983,38 @@
       "common_name": "Australian red waratah sea anemone",
       "published": "2026-04-04T21:36:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atenebrosa.NCBI.ASM960242v1/BSgenome.Atenebrosa.NCBI.ASM960242v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bimpatiens.NCBI.BIMP22",
+      "version": "1.0.0",
+      "organism": "Bombus impatiens",
+      "assembly": "BIMP_2.2",
+      "provider": "NCBI",
+      "accession": "GCF_000188095.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000188095.3/",
+      "file_name": "BSgenome.Bimpatiens.NCBI.BIMP22_1.0.0.tar.gz",
+      "size": 65099308,
+      "seq_ids": [
+        "NT_176420.1",
+        "NT_176421.1",
+        "NT_176422.1",
+        "NT_176423.1",
+        "NT_176424.1"
+      ],
+      "seq_count": 5460,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Apidae",
+        "genus": "Bombus"
+      },
+      "common_name": "common eastern bumble bee",
+      "published": "2026-04-04T21:36:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bimpatiens.NCBI.BIMP22/BSgenome.Bimpatiens.NCBI.BIMP22_1.0.0.tar.gz"
     }
   ]
 }
