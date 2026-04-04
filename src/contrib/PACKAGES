@@ -533,3 +533,7 @@ NeedsCompilation: no
 Package: BSgenome.Canna.NCBI.bCalAnn1v1p
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mnubicus.NCBI.ASM69184v1
+Version: 1.0.0
+NeedsCompilation: no

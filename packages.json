@@ -2446,6 +2446,54 @@
       ]
     },
     {
+      "organism": "Merops nubicus",
+      "common_name": "carmine bee-eater",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Coraciiformes",
+        "family": "Meropidae",
+        "genus": "Merops"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mnubicus.NCBI.ASM69184v1",
+          "version": "1.0.0",
+          "organism": "Merops nubicus",
+          "assembly": "ASM69184v1",
+          "provider": "NCBI",
+          "accession": "GCF_000691845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000691845.1/",
+          "file_name": "BSgenome.Mnubicus.NCBI.ASM69184v1_1.0.0.tar.gz",
+          "size": 285203590,
+          "seq_ids": [
+            "NW_008580627.1",
+            "NW_008580628.1",
+            "NW_008580629.1",
+            "NW_008580630.1",
+            "NW_008580631.1"
+          ],
+          "seq_count": 53499,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Coraciiformes",
+            "family": "Meropidae",
+            "genus": "Merops"
+          },
+          "common_name": "carmine bee-eater",
+          "published": "2026-04-04T07:07:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnubicus.NCBI.ASM69184v1/BSgenome.Mnubicus.NCBI.ASM69184v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Micromonas commoda",
       "common_name": "",
       "group": "plant",
@@ -8796,6 +8844,38 @@
       "common_name": "Anna's hummingbird",
       "published": "2026-04-04T07:07:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Canna.NCBI.bCalAnn1v1p/BSgenome.Canna.NCBI.bCalAnn1v1p_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mnubicus.NCBI.ASM69184v1",
+      "version": "1.0.0",
+      "organism": "Merops nubicus",
+      "assembly": "ASM69184v1",
+      "provider": "NCBI",
+      "accession": "GCF_000691845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000691845.1/",
+      "file_name": "BSgenome.Mnubicus.NCBI.ASM69184v1_1.0.0.tar.gz",
+      "size": 285203590,
+      "seq_ids": [
+        "NW_008580627.1",
+        "NW_008580628.1",
+        "NW_008580629.1",
+        "NW_008580630.1",
+        "NW_008580631.1"
+      ],
+      "seq_count": 53499,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Coraciiformes",
+        "family": "Meropidae",
+        "genus": "Merops"
+      },
+      "common_name": "carmine bee-eater",
+      "published": "2026-04-04T07:07:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnubicus.NCBI.ASM69184v1/BSgenome.Mnubicus.NCBI.ASM69184v1_1.0.0.tar.gz"
     }
   ]
 }
