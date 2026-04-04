@@ -1309,3 +1309,7 @@ NeedsCompilation: no
 Package: BSgenome.Fcandida.NCBI.ASM221717v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pxuthus.NCBI.Pxut11
+Version: 1.0.0
+NeedsCompilation: no

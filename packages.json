@@ -10019,6 +10019,54 @@
       ]
     },
     {
+      "organism": "Papilio xuthus",
+      "common_name": "Asian swallowtail",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Papilionidae",
+        "genus": "Papilio"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pxuthus.NCBI.Pxut11",
+          "version": "1.0.0",
+          "organism": "Papilio xuthus",
+          "assembly": "Pxut_1.1",
+          "provider": "NCBI",
+          "accession": "GCF_000836235.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836235.2/",
+          "file_name": "BSgenome.Pxuthus.NCBI.Pxut11_1.0.0.tar.gz",
+          "size": 59021122,
+          "seq_ids": [
+            "NW_013528584.1",
+            "NW_013528585.1",
+            "NW_013528587.1",
+            "NW_013528588.1",
+            "NW_013528589.1"
+          ],
+          "seq_count": 4763,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Lepidoptera",
+            "family": "Papilionidae",
+            "genus": "Papilio"
+          },
+          "common_name": "Asian swallowtail",
+          "published": "2026-04-04T21:35:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pxuthus.NCBI.Pxut11/BSgenome.Pxuthus.NCBI.Pxut11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Papio anubis",
       "common_name": "olive baboon",
       "group": "vertebrate_mammalian",
@@ -24295,6 +24343,38 @@
       "common_name": "",
       "published": "2026-04-04T21:34:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcandida.NCBI.ASM221717v1/BSgenome.Fcandida.NCBI.ASM221717v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pxuthus.NCBI.Pxut11",
+      "version": "1.0.0",
+      "organism": "Papilio xuthus",
+      "assembly": "Pxut_1.1",
+      "provider": "NCBI",
+      "accession": "GCF_000836235.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836235.2/",
+      "file_name": "BSgenome.Pxuthus.NCBI.Pxut11_1.0.0.tar.gz",
+      "size": 59021122,
+      "seq_ids": [
+        "NW_013528584.1",
+        "NW_013528585.1",
+        "NW_013528587.1",
+        "NW_013528588.1",
+        "NW_013528589.1"
+      ],
+      "seq_count": 4763,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Papilionidae",
+        "genus": "Papilio"
+      },
+      "common_name": "Asian swallowtail",
+      "published": "2026-04-04T21:35:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pxuthus.NCBI.Pxut11/BSgenome.Pxuthus.NCBI.Pxut11_1.0.0.tar.gz"
     }
   ]
 }
