@@ -295,7 +295,7 @@ export default function Home() {
   const formRef = useRef(form);
   formRef.current = form;
 
-  const [autoFetchPending, setAutoFetchPending] = useState(false);
+  const autoFetchRef = useRef(false);
 
   // Restore build state or pre-fill accession from URL on page load
   useEffect(() => {
@@ -318,19 +318,21 @@ export default function Home() {
         setDataSource("ensembl");
       }
       setAccessionInput(prefillAccession);
-      setAutoFetchPending(true);
+      autoFetchRef.current = true;
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Auto-trigger lookup when accession is pre-filled from URL
+  // Auto-trigger lookup after accessionInput state is committed
   useEffect(() => {
-    if (autoFetchPending && accessionInput) {
-      setAutoFetchPending(false);
-      handleFetch();
+    if (autoFetchRef.current && accessionInput) {
+      autoFetchRef.current = false;
+      // Small delay to ensure all state is settled
+      const timer = setTimeout(() => handleFetch(), 100);
+      return () => clearTimeout(timer);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [autoFetchPending, accessionInput]);
+  }, [accessionInput]);
 
   // Fetch queue status on input and review steps
   useEffect(() => {
