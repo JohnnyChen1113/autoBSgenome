@@ -474,6 +474,54 @@
       ]
     },
     {
+      "organism": "Calypte anna",
+      "common_name": "Anna's hummingbird",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Apodiformes",
+        "family": "Trochilidae",
+        "genus": "Calypte"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Canna.NCBI.bCalAnn1v1p",
+          "version": "1.0.0",
+          "organism": "Calypte anna",
+          "assembly": "bCalAnn1_v1.p",
+          "provider": "NCBI",
+          "accession": "GCF_003957555.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003957555.1/",
+          "file_name": "BSgenome.Canna.NCBI.bCalAnn1v1p_1.0.0.tar.gz",
+          "size": 270075551,
+          "seq_ids": [
+            "NC_044244.1",
+            "NC_044245.1",
+            "NC_044246.1",
+            "NC_044247.1",
+            "NC_044248.1"
+          ],
+          "seq_count": 159,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Apodiformes",
+            "family": "Trochilidae",
+            "genus": "Calypte"
+          },
+          "common_name": "Anna's hummingbird",
+          "published": "2026-04-04T07:07:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Canna.NCBI.bCalAnn1v1p/BSgenome.Canna.NCBI.bCalAnn1v1p_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Camelus ferus",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -8716,6 +8764,38 @@
       "common_name": "Kea",
       "published": "2026-04-04T07:07:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnotabilis.NCBI.ASM69687v1/BSgenome.Nnotabilis.NCBI.ASM69687v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Canna.NCBI.bCalAnn1v1p",
+      "version": "1.0.0",
+      "organism": "Calypte anna",
+      "assembly": "bCalAnn1_v1.p",
+      "provider": "NCBI",
+      "accession": "GCF_003957555.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003957555.1/",
+      "file_name": "BSgenome.Canna.NCBI.bCalAnn1v1p_1.0.0.tar.gz",
+      "size": 270075551,
+      "seq_ids": [
+        "NC_044244.1",
+        "NC_044245.1",
+        "NC_044246.1",
+        "NC_044247.1",
+        "NC_044248.1"
+      ],
+      "seq_count": 159,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Apodiformes",
+        "family": "Trochilidae",
+        "genus": "Calypte"
+      },
+      "common_name": "Anna's hummingbird",
+      "published": "2026-04-04T07:07:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Canna.NCBI.bCalAnn1v1p/BSgenome.Canna.NCBI.bCalAnn1v1p_1.0.0.tar.gz"
     }
   ]
 }
