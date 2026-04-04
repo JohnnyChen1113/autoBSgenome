@@ -312,6 +312,54 @@
       ]
     },
     {
+      "organism": "Arabidopsis lyrata subsp. lyrata",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Arabidopsis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Alyrata.NCBI.v10",
+          "version": "1.0.0",
+          "organism": "Arabidopsis lyrata subsp. lyrata",
+          "assembly": "v.1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000004255.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004255.2/",
+          "file_name": "BSgenome.Alyrata.NCBI.v10_1.0.0.tar.gz",
+          "size": 47412941,
+          "seq_ids": [
+            "NW_003302555.1",
+            "NW_003302554.1",
+            "NW_003302553.1",
+            "NW_003302552.1",
+            "NW_003302551.1"
+          ],
+          "seq_count": 696,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Arabidopsis"
+          },
+          "common_name": "",
+          "published": "2026-04-04T11:40:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alyrata.NCBI.v10/BSgenome.Alyrata.NCBI.v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Archocentrus centrarchus",
       "common_name": "flier cichlid",
       "group": "vertebrate_other",
@@ -13190,6 +13238,38 @@
       "common_name": "",
       "published": "2026-04-04T11:39:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vcarteri.NCBI.v10/BSgenome.Vcarteri.NCBI.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Alyrata.NCBI.v10",
+      "version": "1.0.0",
+      "organism": "Arabidopsis lyrata subsp. lyrata",
+      "assembly": "v.1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000004255.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004255.2/",
+      "file_name": "BSgenome.Alyrata.NCBI.v10_1.0.0.tar.gz",
+      "size": 47412941,
+      "seq_ids": [
+        "NW_003302555.1",
+        "NW_003302554.1",
+        "NW_003302553.1",
+        "NW_003302552.1",
+        "NW_003302551.1"
+      ],
+      "seq_count": 696,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Arabidopsis"
+      },
+      "common_name": "",
+      "published": "2026-04-04T11:40:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alyrata.NCBI.v10/BSgenome.Alyrata.NCBI.v10_1.0.0.tar.gz"
     }
   ]
 }
