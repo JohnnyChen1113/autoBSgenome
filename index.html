@@ -151,7 +151,7 @@
   <!-- Build Progress Dashboard -->
   <div id="progress-dashboard" style="display:none;margin-bottom:20px;padding:16px 20px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:8px;">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-      <div style="font-size:14px;font-weight:600;color:var(--text);">RefSeq Reference Genome Coverage</div>
+      <div style="font-size:14px;font-weight:600;color:var(--text);">Eukaryotic Reference Genome Coverage</div>
       <div style="font-size:12px;color:var(--text-muted);" id="progress-text"></div>
     </div>
     <div style="width:100%;height:8px;background:var(--border);border-radius:4px;overflow:hidden;">
@@ -471,11 +471,12 @@ async function loadProgress() {
   try {
     const res = await fetch(`${BASE}/build-queue.json?t=${Date.now()}`);
     const queue = await res.json();
-    const total = queue.length;
-    const done = queue.filter(i => i.status === 'done').length;
-    const building = queue.filter(i => i.status === 'building').length;
-    const pending = queue.filter(i => i.status === 'pending').length;
-    const skipped = queue.filter(i => i.status === 'skip_oversized').length;
+    // Only count eukaryotes (exclude skip_prokaryote)
+    const euk = queue.filter(i => !i.status.startsWith('skip_prokaryote'));
+    const total = euk.length;
+    const done = euk.filter(i => i.status === 'done').length;
+    const building = euk.filter(i => i.status === 'building').length;
+    const pending = euk.filter(i => i.status === 'pending').length;
     const pct = total > 0 ? ((done / total) * 100).toFixed(1) : 0;
 
     const dashboard = document.getElementById('progress-dashboard');
@@ -484,7 +485,7 @@ async function loadProgress() {
     document.getElementById('progress-text').textContent = `${pct}% complete`;
     document.getElementById('progress-detail').textContent = `${done.toLocaleString()} built · ${building} in progress · ${pending.toLocaleString()} remaining`;
     const daysLeft = pending > 0 ? Math.ceil(pending / 720) : 0;
-    document.getElementById('progress-eta').textContent = daysLeft > 0 ? `~${daysLeft} days to full coverage` : 'All reference genomes covered!';
+    document.getElementById('progress-eta').textContent = daysLeft > 0 ? `~${daysLeft} days to full coverage` : 'All eukaryotic reference genomes covered!';
   } catch (e) {
     // build-queue.json not available, hide dashboard
   }
