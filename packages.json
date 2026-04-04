@@ -3854,6 +3854,52 @@
       ]
     },
     {
+      "organism": "Stegastes partitus",
+      "common_name": "bicolor damselfish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Pomacentridae",
+        "genus": "Stegastes"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Spartitus.NCBI.Stegastespartitus102",
+          "version": "1.0.0",
+          "organism": "Stegastes partitus",
+          "assembly": "Stegastes_partitus-1.0.2",
+          "provider": "NCBI",
+          "accession": "GCF_000690725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000690725.1/",
+          "file_name": "BSgenome.Spartitus.NCBI.Stegastespartitus102_1.0.0.tar.gz",
+          "size": 202994801,
+          "seq_ids": [
+            "NW_007577731.1",
+            "NW_007577732.1",
+            "NW_007577733.1",
+            "NW_007577734.1",
+            "NW_007577735.1"
+          ],
+          "seq_count": 5818,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "family": "Pomacentridae",
+            "genus": "Stegastes"
+          },
+          "common_name": "bicolor damselfish",
+          "published": "2026-04-04T05:44:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spartitus.NCBI.Stegastespartitus102/BSgenome.Spartitus.NCBI.Stegastespartitus102_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Suricata suricatta",
       "common_name": "meerkat",
       "group": "vertebrate_mammalian",
@@ -7039,6 +7085,37 @@
       "common_name": "",
       "published": "2026-04-04T04:35:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oafer.NCBI.OryAfe10/BSgenome.Oafer.NCBI.OryAfe10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Spartitus.NCBI.Stegastespartitus102",
+      "version": "1.0.0",
+      "organism": "Stegastes partitus",
+      "assembly": "Stegastes_partitus-1.0.2",
+      "provider": "NCBI",
+      "accession": "GCF_000690725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000690725.1/",
+      "file_name": "BSgenome.Spartitus.NCBI.Stegastespartitus102_1.0.0.tar.gz",
+      "size": 202994801,
+      "seq_ids": [
+        "NW_007577731.1",
+        "NW_007577732.1",
+        "NW_007577733.1",
+        "NW_007577734.1",
+        "NW_007577735.1"
+      ],
+      "seq_count": 5818,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Pomacentridae",
+        "genus": "Stegastes"
+      },
+      "common_name": "bicolor damselfish",
+      "published": "2026-04-04T05:44:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spartitus.NCBI.Stegastespartitus102/BSgenome.Spartitus.NCBI.Stegastespartitus102_1.0.0.tar.gz"
     }
   ]
 }

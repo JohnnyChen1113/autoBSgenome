@@ -445,3 +445,7 @@ NeedsCompilation: no
 Package: BSgenome.Oafer.NCBI.OryAfe10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Spartitus.NCBI.Stegastespartitus102
+Version: 1.0.0
+NeedsCompilation: no
