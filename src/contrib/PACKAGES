@@ -877,3 +877,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcacao.NCBI.CriollococoagenomeV2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aprecatorius.NCBI.Abrus2018
+Version: 1.0.0
+NeedsCompilation: no
