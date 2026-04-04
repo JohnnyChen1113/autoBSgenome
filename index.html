@@ -540,9 +540,12 @@ function renderOrgCard(org) {
             <span style="color:var(--text-muted);">Provider:</span><span><span class="badge ${b.provider === 'Ensembl' ? 'badge-ensembl' : (b.provider === 'UCSC' ? 'badge-ncbi' : 'badge-ncbi')}">${b.provider}</span></span>
             <span style="color:var(--text-muted);">Version:</span><span>${b.version}</span>
           </div>
-          <div class="build-actions" style="margin-top:10px;">
+          <div style="margin-top:10px;display:flex;align-items:center;gap:8px;">
             <a class="btn btn-primary" href="${b.bioc_url}" target="_blank">Bioconductor ↗</a>
-            <button class="btn btn-outline" onclick="copyBiocInstall('${b.package}')">Copy install</button>
+          </div>
+          <div style="margin-top:8px;background:#f5f7fa;border-radius:6px;padding:8px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;">
+            <code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text);white-space:nowrap;overflow:auto;">BiocManager::install("${b.package}")</code>
+            <button class="btn btn-outline" style="padding:3px 10px;font-size:11px;flex-shrink:0;" onclick="copyText('BiocManager::install(&quot;${b.package}&quot;)', this)">Copy</button>
           </div>
         </div>
         ` : `
@@ -558,9 +561,12 @@ function renderOrgCard(org) {
             ${b.seq_ids && b.seq_ids.length && b.seq_ids[0] ? `<span style="color:var(--text-muted);">Seq IDs:</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;">${b.seq_ids.slice(0,5).join(', ')}${b.seq_ids.length > 5 ? ', ...' : ''}</span>` : ''}
             ${b.published ? `<span style="color:var(--text-muted);">Published:</span><span>${new Date(b.published).toLocaleDateString()}</span>` : ''}
           </div>
-          <div class="build-actions" style="margin-top:10px;">
+          <div style="margin-top:10px;display:flex;align-items:center;gap:8px;">
             <a class="btn btn-primary" href="${b.download_url || (BASE + '/src/contrib/' + b.file_name)}">Download</a>
-            <button class="btn btn-outline" onclick="copyInstall('${b.package}')">Copy R cmd</button>
+          </div>
+          <div style="margin-top:8px;background:#f5f7fa;border-radius:6px;padding:8px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;">
+            <code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text);white-space:nowrap;overflow:auto;">install.packages("${b.package}", repos="https://johnnychen1113.github.io/autoBSgenome")</code>
+            <button class="btn btn-outline" style="padding:3px 10px;font-size:11px;flex-shrink:0;" onclick="copyText('install.packages(&quot;${b.package}&quot;, repos=&quot;https://johnnychen1113.github.io/autoBSgenome&quot;)', this)">Copy</button>
           </div>
         </div>
         `).join('')}
@@ -694,11 +700,11 @@ function loadMore(currentCount) {
   }
 }
 
-function copyInstall(name) {
-  const cmd = `install.packages("${name}", repos = "https://johnnychen1113.github.io/autoBSgenome")`;
-  navigator.clipboard.writeText(cmd);
-  event.target.textContent = 'Copied!';
-  setTimeout(() => { event.target.textContent = 'Copy R cmd'; }, 2000);
+function copyText(text, btn) {
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+  });
 }
 
 async function loadProgress() {
@@ -725,14 +731,6 @@ async function loadProgress() {
   }
 }
 
-function copyBiocInstall(pkg) {
-  const cmd = `BiocManager::install("${pkg}")`;
-  navigator.clipboard.writeText(cmd).then(() => {
-    const btn = event.target;
-    btn.textContent = 'Copied!';
-    setTimeout(() => btn.textContent = 'Copy install', 1500);
-  });
-}
 
 document.addEventListener('DOMContentLoaded', () => {
   loadPackages();
