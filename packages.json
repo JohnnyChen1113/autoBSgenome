@@ -2954,6 +2954,54 @@
       ]
     },
     {
+      "organism": "Nestor notabilis",
+      "common_name": "Kea",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Psittaciformes",
+        "family": "Psittacidae",
+        "genus": "Nestor"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nnotabilis.NCBI.ASM69687v1",
+          "version": "1.0.0",
+          "organism": "Nestor notabilis",
+          "assembly": "ASM69687v1",
+          "provider": "NCBI",
+          "accession": "GCF_000696875.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000696875.1/",
+          "file_name": "BSgenome.Nnotabilis.NCBI.ASM69687v1_1.0.0.tar.gz",
+          "size": 280583149,
+          "seq_ids": [
+            "NW_009909477.1",
+            "NW_009909478.1",
+            "NW_009909479.1",
+            "NW_009909480.1",
+            "NW_009909481.1"
+          ],
+          "seq_count": 42180,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Psittaciformes",
+            "family": "Psittacidae",
+            "genus": "Nestor"
+          },
+          "common_name": "Kea",
+          "published": "2026-04-04T07:07:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnotabilis.NCBI.ASM69687v1/BSgenome.Nnotabilis.NCBI.ASM69687v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nomascus leucogenys",
       "common_name": "northern white-cheeked gibbon",
       "group": "vertebrate_mammalian",
@@ -8636,6 +8684,38 @@
       "common_name": "helmeted guineafowl",
       "published": "2026-04-04T07:06:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nmeleagris.NCBI.NumMel10/BSgenome.Nmeleagris.NCBI.NumMel10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nnotabilis.NCBI.ASM69687v1",
+      "version": "1.0.0",
+      "organism": "Nestor notabilis",
+      "assembly": "ASM69687v1",
+      "provider": "NCBI",
+      "accession": "GCF_000696875.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000696875.1/",
+      "file_name": "BSgenome.Nnotabilis.NCBI.ASM69687v1_1.0.0.tar.gz",
+      "size": 280583149,
+      "seq_ids": [
+        "NW_009909477.1",
+        "NW_009909478.1",
+        "NW_009909479.1",
+        "NW_009909480.1",
+        "NW_009909481.1"
+      ],
+      "seq_count": 42180,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Psittaciformes",
+        "family": "Psittacidae",
+        "genus": "Nestor"
+      },
+      "common_name": "Kea",
+      "published": "2026-04-04T07:07:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnotabilis.NCBI.ASM69687v1/BSgenome.Nnotabilis.NCBI.ASM69687v1_1.0.0.tar.gz"
     }
   ]
 }

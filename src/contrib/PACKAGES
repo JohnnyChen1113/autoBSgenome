@@ -525,3 +525,7 @@ NeedsCompilation: no
 Package: BSgenome.Nmeleagris.NCBI.NumMel10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nnotabilis.NCBI.ASM69687v1
+Version: 1.0.0
+NeedsCompilation: no
