@@ -1047,6 +1047,54 @@
       ]
     },
     {
+      "organism": "Carassius auratus",
+      "common_name": "goldfish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Carassius"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cauratus.NCBI.ASM336829v1",
+          "version": "1.0.0",
+          "organism": "Carassius auratus",
+          "assembly": "ASM336829v1",
+          "provider": "NCBI",
+          "accession": "GCF_003368295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003368295.1/",
+          "file_name": "BSgenome.Cauratus.NCBI.ASM336829v1_1.0.0.tar.gz",
+          "size": 464250468,
+          "seq_ids": [
+            "NC_039243.1",
+            "NC_039244.1",
+            "NC_039245.1",
+            "NC_039246.1",
+            "NC_039247.1"
+          ],
+          "seq_count": 6216,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Carassius"
+          },
+          "common_name": "goldfish",
+          "published": "2026-04-04T11:04:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauratus.NCBI.ASM336829v1/BSgenome.Cauratus.NCBI.ASM336829v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cariama cristata",
       "common_name": "Red-legged seriema",
       "group": "vertebrate_other",
@@ -12716,6 +12764,38 @@
       "common_name": "",
       "published": "2026-04-04T11:04:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sgrahami.NCBI.SAMN03320097WGSv11/BSgenome.Sgrahami.NCBI.SAMN03320097WGSv11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cauratus.NCBI.ASM336829v1",
+      "version": "1.0.0",
+      "organism": "Carassius auratus",
+      "assembly": "ASM336829v1",
+      "provider": "NCBI",
+      "accession": "GCF_003368295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003368295.1/",
+      "file_name": "BSgenome.Cauratus.NCBI.ASM336829v1_1.0.0.tar.gz",
+      "size": 464250468,
+      "seq_ids": [
+        "NC_039243.1",
+        "NC_039244.1",
+        "NC_039245.1",
+        "NC_039246.1",
+        "NC_039247.1"
+      ],
+      "seq_count": 6216,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Carassius"
+      },
+      "common_name": "goldfish",
+      "published": "2026-04-04T11:04:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauratus.NCBI.ASM336829v1/BSgenome.Cauratus.NCBI.ASM336829v1_1.0.0.tar.gz"
     }
   ]
 }
