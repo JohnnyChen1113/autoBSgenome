@@ -6729,6 +6729,54 @@
       ]
     },
     {
+      "organism": "Prunus mume",
+      "common_name": "Japanese apricot",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pmume.NCBI.PmumeV10",
+          "version": "1.0.0",
+          "organism": "Prunus mume",
+          "assembly": "P.mume_V1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000346735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000346735.1/",
+          "file_name": "BSgenome.Pmume.NCBI.PmumeV10_1.0.0.tar.gz",
+          "size": 56727826,
+          "seq_ids": [
+            "NC_024126.1",
+            "NC_024127.1",
+            "NC_024128.1",
+            "NC_024129.1",
+            "NC_024130.1"
+          ],
+          "seq_count": 8164,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Rosales",
+            "family": "Rosaceae",
+            "genus": "Prunus"
+          },
+          "common_name": "Japanese apricot",
+          "published": "2026-04-04T13:00:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmume.NCBI.PmumeV10/BSgenome.Pmume.NCBI.PmumeV10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Prunus persica",
       "common_name": "peach",
       "group": "plant",
@@ -14295,6 +14343,38 @@
       "common_name": "",
       "published": "2026-04-04T13:00:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fvesca.NCBI.FraVesHawaii10/BSgenome.Fvesca.NCBI.FraVesHawaii10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pmume.NCBI.PmumeV10",
+      "version": "1.0.0",
+      "organism": "Prunus mume",
+      "assembly": "P.mume_V1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000346735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000346735.1/",
+      "file_name": "BSgenome.Pmume.NCBI.PmumeV10_1.0.0.tar.gz",
+      "size": 56727826,
+      "seq_ids": [
+        "NC_024126.1",
+        "NC_024127.1",
+        "NC_024128.1",
+        "NC_024129.1",
+        "NC_024130.1"
+      ],
+      "seq_count": 8164,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "common_name": "Japanese apricot",
+      "published": "2026-04-04T13:00:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmume.NCBI.PmumeV10/BSgenome.Pmume.NCBI.PmumeV10_1.0.0.tar.gz"
     }
   ]
 }

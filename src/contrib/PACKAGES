@@ -809,3 +809,7 @@ NeedsCompilation: no
 Package: BSgenome.Fvesca.NCBI.FraVesHawaii10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmume.NCBI.PmumeV10
+Version: 1.0.0
+NeedsCompilation: no
