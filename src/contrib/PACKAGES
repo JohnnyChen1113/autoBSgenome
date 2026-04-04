@@ -509,3 +509,7 @@ NeedsCompilation: no
 Package: BSgenome.Emoara.NCBI.YSFRIEMoa10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cvariegatus.NCBI.Cvariegatus10
+Version: 1.0.0
+NeedsCompilation: no
