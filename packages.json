@@ -4584,6 +4584,54 @@
       ]
     },
     {
+      "organism": "Dinoponera quadriceps",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Dinoponera"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dquadriceps.NCBI.ASM131382v1",
+          "version": "1.0.0",
+          "organism": "Dinoponera quadriceps",
+          "assembly": "ASM131382v1",
+          "provider": "NCBI",
+          "accession": "GCF_001313825.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001313825.1/",
+          "file_name": "BSgenome.Dquadriceps.NCBI.ASM131382v1_1.0.0.tar.gz",
+          "size": 69940696,
+          "seq_ids": [
+            "NW_014554123.1",
+            "NW_014554124.1",
+            "NW_014554125.1",
+            "NW_014554126.1",
+            "NW_014554127.1"
+          ],
+          "seq_count": 14123,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Dinoponera"
+          },
+          "common_name": "",
+          "published": "2026-04-04T22:34:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dquadriceps.NCBI.ASM131382v1/BSgenome.Dquadriceps.NCBI.ASM131382v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dioscorea cayenensis subsp. rotundata",
       "common_name": "Guinea yam",
       "group": "plant",
@@ -25255,6 +25303,38 @@
       "common_name": "",
       "published": "2026-04-04T22:33:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ediaphana.NCBI.Aiptasiagenome11/BSgenome.Ediaphana.NCBI.Aiptasiagenome11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dquadriceps.NCBI.ASM131382v1",
+      "version": "1.0.0",
+      "organism": "Dinoponera quadriceps",
+      "assembly": "ASM131382v1",
+      "provider": "NCBI",
+      "accession": "GCF_001313825.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001313825.1/",
+      "file_name": "BSgenome.Dquadriceps.NCBI.ASM131382v1_1.0.0.tar.gz",
+      "size": 69940696,
+      "seq_ids": [
+        "NW_014554123.1",
+        "NW_014554124.1",
+        "NW_014554125.1",
+        "NW_014554126.1",
+        "NW_014554127.1"
+      ],
+      "seq_count": 14123,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Dinoponera"
+      },
+      "common_name": "",
+      "published": "2026-04-04T22:34:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dquadriceps.NCBI.ASM131382v1/BSgenome.Dquadriceps.NCBI.ASM131382v1_1.0.0.tar.gz"
     }
   ]
 }

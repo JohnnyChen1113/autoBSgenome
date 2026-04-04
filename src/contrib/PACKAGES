@@ -1357,3 +1357,7 @@ NeedsCompilation: no
 Package: BSgenome.Ediaphana.NCBI.Aiptasiagenome11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dquadriceps.NCBI.ASM131382v1
+Version: 1.0.0
+NeedsCompilation: no
