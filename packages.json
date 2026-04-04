@@ -6349,6 +6349,54 @@
       ]
     },
     {
+      "organism": "Pristis pectinata",
+      "common_name": "smalltooth sawfish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Chondrichthyes",
+        "order": "Rhinopristiformes",
+        "family": "Pristidae",
+        "genus": "Pristis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ppectinata.NCBI.sPriPec21pri",
+          "version": "1.0.0",
+          "organism": "Pristis pectinata",
+          "assembly": "sPriPec2.1.pri",
+          "provider": "NCBI",
+          "accession": "GCF_009764475.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009764475.1/",
+          "file_name": "BSgenome.Ppectinata.NCBI.sPriPec21pri_1.0.0.tar.gz",
+          "size": 583514677,
+          "seq_ids": [
+            "NC_067405.1",
+            "NC_067406.1",
+            "NC_067407.1",
+            "NC_067408.1",
+            "NC_067409.1"
+          ],
+          "seq_count": 172,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Chondrichthyes",
+            "order": "Rhinopristiformes",
+            "family": "Pristidae",
+            "genus": "Pristis"
+          },
+          "common_name": "smalltooth sawfish",
+          "published": "2026-04-04T11:41:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppectinata.NCBI.sPriPec21pri/BSgenome.Ppectinata.NCBI.sPriPec21pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Protobothrops mucrosquamatus",
       "common_name": "brown spotted pit viper",
       "group": "vertebrate_other",
@@ -13664,6 +13712,38 @@
       "common_name": "Chinese alligator",
       "published": "2026-04-04T11:41:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asinensis.NCBI.ASM45574v1/BSgenome.Asinensis.NCBI.ASM45574v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ppectinata.NCBI.sPriPec21pri",
+      "version": "1.0.0",
+      "organism": "Pristis pectinata",
+      "assembly": "sPriPec2.1.pri",
+      "provider": "NCBI",
+      "accession": "GCF_009764475.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009764475.1/",
+      "file_name": "BSgenome.Ppectinata.NCBI.sPriPec21pri_1.0.0.tar.gz",
+      "size": 583514677,
+      "seq_ids": [
+        "NC_067405.1",
+        "NC_067406.1",
+        "NC_067407.1",
+        "NC_067408.1",
+        "NC_067409.1"
+      ],
+      "seq_count": 172,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Chondrichthyes",
+        "order": "Rhinopristiformes",
+        "family": "Pristidae",
+        "genus": "Pristis"
+      },
+      "common_name": "smalltooth sawfish",
+      "published": "2026-04-04T11:41:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppectinata.NCBI.sPriPec21pri/BSgenome.Ppectinata.NCBI.sPriPec21pri_1.0.0.tar.gz"
     }
   ]
 }
