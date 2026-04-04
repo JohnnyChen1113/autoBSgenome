@@ -1061,3 +1061,7 @@ NeedsCompilation: no
 Package: BSgenome.Gmax.NCBI.Glycinemaxv40
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Spennellii.NCBI.SPENNV200
+Version: 1.0.0
+NeedsCompilation: no

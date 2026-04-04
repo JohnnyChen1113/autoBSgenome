@@ -10395,6 +10395,54 @@
       ]
     },
     {
+      "organism": "Solanum pennellii",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Solanum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Spennellii.NCBI.SPENNV200",
+          "version": "1.0.0",
+          "organism": "Solanum pennellii",
+          "assembly": "SPENNV200",
+          "provider": "NCBI",
+          "accession": "GCF_001406875.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001406875.1/",
+          "file_name": "BSgenome.Spennellii.NCBI.SPENNV200_1.0.0.tar.gz",
+          "size": 222306550,
+          "seq_ids": [
+            "NC_028637.1",
+            "NC_028638.1",
+            "NC_028639.1",
+            "NC_028640.1",
+            "NC_028641.1"
+          ],
+          "seq_count": 12,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Solanaceae",
+            "genus": "Solanum"
+          },
+          "common_name": "",
+          "published": "2026-04-04T16:42:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spennellii.NCBI.SPENNV200/BSgenome.Spennellii.NCBI.SPENNV200_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Solanum tuberosum",
       "common_name": "potato",
       "group": "plant",
@@ -19335,6 +19383,38 @@
       "common_name": "soybean",
       "published": "2026-04-04T16:42:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmax.NCBI.Glycinemaxv40/BSgenome.Gmax.NCBI.Glycinemaxv40_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Spennellii.NCBI.SPENNV200",
+      "version": "1.0.0",
+      "organism": "Solanum pennellii",
+      "assembly": "SPENNV200",
+      "provider": "NCBI",
+      "accession": "GCF_001406875.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001406875.1/",
+      "file_name": "BSgenome.Spennellii.NCBI.SPENNV200_1.0.0.tar.gz",
+      "size": 222306550,
+      "seq_ids": [
+        "NC_028637.1",
+        "NC_028638.1",
+        "NC_028639.1",
+        "NC_028640.1",
+        "NC_028641.1"
+      ],
+      "seq_count": 12,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Solanum"
+      },
+      "common_name": "",
+      "published": "2026-04-04T16:42:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spennellii.NCBI.SPENNV200/BSgenome.Spennellii.NCBI.SPENNV200_1.0.0.tar.gz"
     }
   ]
 }
