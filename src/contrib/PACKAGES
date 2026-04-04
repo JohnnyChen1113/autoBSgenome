@@ -1281,3 +1281,7 @@ NeedsCompilation: no
 Package: BSgenome.Dserrata.NCBI.Dser11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccalcarata.NCBI.ASM165200v1
+Version: 1.0.0
+NeedsCompilation: no

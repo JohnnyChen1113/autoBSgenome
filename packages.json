@@ -2485,6 +2485,54 @@
       ]
     },
     {
+      "organism": "Ceratina calcarata",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Apidae",
+        "genus": "Ceratina"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccalcarata.NCBI.ASM165200v1",
+          "version": "1.0.0",
+          "organism": "Ceratina calcarata",
+          "assembly": "ASM165200v1",
+          "provider": "NCBI",
+          "accession": "GCF_001652005.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001652005.2/",
+          "file_name": "BSgenome.Ccalcarata.NCBI.ASM165200v1_1.0.0.tar.gz",
+          "size": 49817138,
+          "seq_ids": [
+            "NW_017130860.1",
+            "NW_017130861.1",
+            "NW_017130862.1",
+            "NW_017130863.1",
+            "NW_017130864.1"
+          ],
+          "seq_count": 48691,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Apidae",
+            "genus": "Ceratina"
+          },
+          "common_name": "",
+          "published": "2026-04-04T20:37:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccalcarata.NCBI.ASM165200v1/BSgenome.Ccalcarata.NCBI.ASM165200v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ceratotherium simum simum",
       "common_name": "southern white rhinoceros",
       "group": "vertebrate_mammalian",
@@ -23735,6 +23783,38 @@
       "common_name": "",
       "published": "2026-04-04T20:37:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dserrata.NCBI.Dser11/BSgenome.Dserrata.NCBI.Dser11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccalcarata.NCBI.ASM165200v1",
+      "version": "1.0.0",
+      "organism": "Ceratina calcarata",
+      "assembly": "ASM165200v1",
+      "provider": "NCBI",
+      "accession": "GCF_001652005.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001652005.2/",
+      "file_name": "BSgenome.Ccalcarata.NCBI.ASM165200v1_1.0.0.tar.gz",
+      "size": 49817138,
+      "seq_ids": [
+        "NW_017130860.1",
+        "NW_017130861.1",
+        "NW_017130862.1",
+        "NW_017130863.1",
+        "NW_017130864.1"
+      ],
+      "seq_count": 48691,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Apidae",
+        "genus": "Ceratina"
+      },
+      "common_name": "",
+      "published": "2026-04-04T20:37:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccalcarata.NCBI.ASM165200v1/BSgenome.Ccalcarata.NCBI.ASM165200v1_1.0.0.tar.gz"
     }
   ]
 }
