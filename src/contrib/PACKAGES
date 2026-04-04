@@ -1345,3 +1345,7 @@ NeedsCompilation: no
 Package: BSgenome.Bimpatiens.NCBI.BIMP22
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Slebanonensis.NCBI.SlebRS2
+Version: 1.0.0
+NeedsCompilation: no
