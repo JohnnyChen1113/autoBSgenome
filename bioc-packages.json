@@ -7,7 +7,20 @@
     "organism_abbrev": "Alyrata",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Alyrata.JGI.v1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Alyrata.JGI.v1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Alyrata.JGI.v1\")",
+    "organism": "Arabidopsis lyrata",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Magnoliopsida",
+      "order": "Brassicales",
+      "family": "Brassicaceae",
+      "genus": "Arabidopsis"
+    },
+    "common_name": "",
+    "group": "plant",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Amellifera.BeeBase.assembly4",
@@ -17,7 +30,20 @@
     "organism_abbrev": "Amellifera",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Amellifera.BeeBase.assembly4.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Amellifera.BeeBase.assembly4\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Amellifera.BeeBase.assembly4\")",
+    "organism": "Apis mellifera",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Hymenoptera",
+      "family": "Apidae",
+      "genus": "Apis"
+    },
+    "common_name": "honey bee",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Amellifera.NCBI.AmelHAv3.1",
@@ -27,7 +53,20 @@
     "organism_abbrev": "Amellifera",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Amellifera.NCBI.AmelHAv3.1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Amellifera.NCBI.AmelHAv3.1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Amellifera.NCBI.AmelHAv3.1\")",
+    "organism": "Apis mellifera",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Hymenoptera",
+      "family": "Apidae",
+      "genus": "Apis"
+    },
+    "common_name": "honey bee",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Amellifera.UCSC.apiMel2",
@@ -37,7 +76,20 @@
     "organism_abbrev": "Amellifera",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Amellifera.UCSC.apiMel2.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Amellifera.UCSC.apiMel2\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Amellifera.UCSC.apiMel2\")",
+    "organism": "Apis mellifera",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Hymenoptera",
+      "family": "Apidae",
+      "genus": "Apis"
+    },
+    "common_name": "honey bee",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Amellifera.UCSC.apiMel2.masked",
@@ -47,7 +99,20 @@
     "organism_abbrev": "Amellifera",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Amellifera.UCSC.apiMel2.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Amellifera.UCSC.apiMel2.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Amellifera.UCSC.apiMel2.masked\")",
+    "organism": "Apis mellifera",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Hymenoptera",
+      "family": "Apidae",
+      "genus": "Apis"
+    },
+    "common_name": "honey bee",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Aofficinalis.NCBI.V1",
@@ -57,7 +122,20 @@
     "organism_abbrev": "Aofficinalis",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Aofficinalis.NCBI.V1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Aofficinalis.NCBI.V1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Aofficinalis.NCBI.V1\")",
+    "organism": "Asparagus officinalis",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Magnoliopsida",
+      "order": "Asparagales",
+      "family": "Asparagaceae",
+      "genus": "Asparagus"
+    },
+    "common_name": "garden asparagus",
+    "group": "plant",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Athaliana.TAIR.04232008",
@@ -67,7 +145,20 @@
     "organism_abbrev": "Athaliana",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Athaliana.TAIR.04232008.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Athaliana.TAIR.04232008\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Athaliana.TAIR.04232008\")",
+    "organism": "Arabidopsis thaliana",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Magnoliopsida",
+      "order": "Brassicales",
+      "family": "Brassicaceae",
+      "genus": "Arabidopsis"
+    },
+    "common_name": "thale cress",
+    "group": "plant",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Athaliana.TAIR.TAIR9",
@@ -77,7 +168,20 @@
     "organism_abbrev": "Athaliana",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Athaliana.TAIR.TAIR9.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Athaliana.TAIR.TAIR9\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Athaliana.TAIR.TAIR9\")",
+    "organism": "Arabidopsis thaliana",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Magnoliopsida",
+      "order": "Brassicales",
+      "family": "Brassicaceae",
+      "genus": "Arabidopsis"
+    },
+    "common_name": "thale cress",
+    "group": "plant",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Btaurus.UCSC.bosTau3",
@@ -87,7 +191,20 @@
     "organism_abbrev": "Btaurus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Btaurus.UCSC.bosTau3.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau3\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau3\")",
+    "organism": "Bos taurus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "genus": "Bos"
+    },
+    "common_name": "domestic cattle",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Btaurus.UCSC.bosTau3.masked",
@@ -97,7 +214,20 @@
     "organism_abbrev": "Btaurus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Btaurus.UCSC.bosTau3.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau3.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau3.masked\")",
+    "organism": "Bos taurus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "genus": "Bos"
+    },
+    "common_name": "domestic cattle",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Btaurus.UCSC.bosTau4",
@@ -107,7 +237,20 @@
     "organism_abbrev": "Btaurus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Btaurus.UCSC.bosTau4.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau4\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau4\")",
+    "organism": "Bos taurus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "genus": "Bos"
+    },
+    "common_name": "domestic cattle",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Btaurus.UCSC.bosTau4.masked",
@@ -117,7 +260,20 @@
     "organism_abbrev": "Btaurus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Btaurus.UCSC.bosTau4.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau4.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau4.masked\")",
+    "organism": "Bos taurus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "genus": "Bos"
+    },
+    "common_name": "domestic cattle",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Btaurus.UCSC.bosTau6",
@@ -127,7 +283,20 @@
     "organism_abbrev": "Btaurus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Btaurus.UCSC.bosTau6.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau6\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau6\")",
+    "organism": "Bos taurus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "genus": "Bos"
+    },
+    "common_name": "domestic cattle",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Btaurus.UCSC.bosTau6.masked",
@@ -137,7 +306,20 @@
     "organism_abbrev": "Btaurus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Btaurus.UCSC.bosTau6.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau6.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau6.masked\")",
+    "organism": "Bos taurus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "genus": "Bos"
+    },
+    "common_name": "domestic cattle",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Btaurus.UCSC.bosTau8",
@@ -147,7 +329,20 @@
     "organism_abbrev": "Btaurus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Btaurus.UCSC.bosTau8.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau8\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau8\")",
+    "organism": "Bos taurus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "genus": "Bos"
+    },
+    "common_name": "domestic cattle",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Btaurus.UCSC.bosTau9",
@@ -157,7 +352,20 @@
     "organism_abbrev": "Btaurus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Btaurus.UCSC.bosTau9.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau9\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau9\")",
+    "organism": "Bos taurus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "genus": "Bos"
+    },
+    "common_name": "domestic cattle",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Btaurus.UCSC.bosTau9.masked",
@@ -167,7 +375,20 @@
     "organism_abbrev": "Btaurus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Btaurus.UCSC.bosTau9.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau9.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Btaurus.UCSC.bosTau9.masked\")",
+    "organism": "Bos taurus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Bovidae",
+      "genus": "Bos"
+    },
+    "common_name": "domestic cattle",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Carietinum.NCBI.v1",
@@ -177,7 +398,20 @@
     "organism_abbrev": "Carietinum",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Carietinum.NCBI.v1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Carietinum.NCBI.v1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Carietinum.NCBI.v1\")",
+    "organism": "Cicer arietinum",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Magnoliopsida",
+      "order": "Fabales",
+      "family": "Fabaceae",
+      "genus": "Cicer"
+    },
+    "common_name": "chickpea",
+    "group": "plant",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Celegans.UCSC.ce10",
@@ -187,7 +421,20 @@
     "organism_abbrev": "Celegans",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Celegans.UCSC.ce10.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Celegans.UCSC.ce10\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Celegans.UCSC.ce10\")",
+    "organism": "Caenorhabditis elegans",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Rhabditidae",
+      "genus": "Caenorhabditis"
+    },
+    "common_name": "",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Celegans.UCSC.ce11",
@@ -197,7 +444,20 @@
     "organism_abbrev": "Celegans",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Celegans.UCSC.ce11.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Celegans.UCSC.ce11\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Celegans.UCSC.ce11\")",
+    "organism": "Caenorhabditis elegans",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Rhabditidae",
+      "genus": "Caenorhabditis"
+    },
+    "common_name": "",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Celegans.UCSC.ce2",
@@ -207,7 +467,20 @@
     "organism_abbrev": "Celegans",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Celegans.UCSC.ce2.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Celegans.UCSC.ce2\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Celegans.UCSC.ce2\")",
+    "organism": "Caenorhabditis elegans",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Rhabditidae",
+      "genus": "Caenorhabditis"
+    },
+    "common_name": "",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Celegans.UCSC.ce6",
@@ -217,7 +490,20 @@
     "organism_abbrev": "Celegans",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Celegans.UCSC.ce6.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Celegans.UCSC.ce6\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Celegans.UCSC.ce6\")",
+    "organism": "Caenorhabditis elegans",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Rhabditidae",
+      "genus": "Caenorhabditis"
+    },
+    "common_name": "",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Cfamiliaris.UCSC.canFam2",
@@ -227,7 +513,20 @@
     "organism_abbrev": "Cfamiliaris",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Cfamiliaris.UCSC.canFam2.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Cfamiliaris.UCSC.canFam2\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Cfamiliaris.UCSC.canFam2\")",
+    "organism": "Canis lupus familiaris",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Canidae",
+      "genus": "Canis"
+    },
+    "common_name": "dog",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Cfamiliaris.UCSC.canFam2.masked",
@@ -237,7 +536,20 @@
     "organism_abbrev": "Cfamiliaris",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Cfamiliaris.UCSC.canFam2.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Cfamiliaris.UCSC.canFam2.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Cfamiliaris.UCSC.canFam2.masked\")",
+    "organism": "Canis lupus familiaris",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Canidae",
+      "genus": "Canis"
+    },
+    "common_name": "dog",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Cfamiliaris.UCSC.canFam3",
@@ -247,7 +559,20 @@
     "organism_abbrev": "Cfamiliaris",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Cfamiliaris.UCSC.canFam3.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Cfamiliaris.UCSC.canFam3\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Cfamiliaris.UCSC.canFam3\")",
+    "organism": "Canis lupus familiaris",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Canidae",
+      "genus": "Canis"
+    },
+    "common_name": "dog",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Cfamiliaris.UCSC.canFam3.masked",
@@ -257,7 +582,20 @@
     "organism_abbrev": "Cfamiliaris",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Cfamiliaris.UCSC.canFam3.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Cfamiliaris.UCSC.canFam3.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Cfamiliaris.UCSC.canFam3.masked\")",
+    "organism": "Canis lupus familiaris",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Canidae",
+      "genus": "Canis"
+    },
+    "common_name": "dog",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Cjacchus.UCSC.calJac3",
@@ -267,7 +605,20 @@
     "organism_abbrev": "Cjacchus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Cjacchus.UCSC.calJac3.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Cjacchus.UCSC.calJac3\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Cjacchus.UCSC.calJac3\")",
+    "organism": "Callithrix jacchus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cebidae",
+      "genus": "Callithrix"
+    },
+    "common_name": "white-tufted-ear marmoset",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Cjacchus.UCSC.calJac4",
@@ -277,7 +628,20 @@
     "organism_abbrev": "Cjacchus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Cjacchus.UCSC.calJac4.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Cjacchus.UCSC.calJac4\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Cjacchus.UCSC.calJac4\")",
+    "organism": "Callithrix jacchus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cebidae",
+      "genus": "Callithrix"
+    },
+    "common_name": "white-tufted-ear marmoset",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.CneoformansVarGrubiiKN99.NCBI.ASM221672v1",
@@ -287,7 +651,20 @@
     "organism_abbrev": "CneoformansVarGrubiiKN99",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.CneoformansVarGrubiiKN99.NCBI.ASM221672v1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.CneoformansVarGrubiiKN99.NCBI.ASM221672v1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.CneoformansVarGrubiiKN99.NCBI.ASM221672v1\")",
+    "organism": "Cryptococcus neoformans",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Basidiomycota",
+      "class": "Tremellomycetes",
+      "order": "Tremellales",
+      "family": "Cryptococcaceae",
+      "genus": "Cryptococcus"
+    },
+    "common_name": "",
+    "group": "fungi",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Creinhardtii.JGI.v5.6",
@@ -297,7 +674,20 @@
     "organism_abbrev": "Creinhardtii",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Creinhardtii.JGI.v5.6.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Creinhardtii.JGI.v5.6\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Creinhardtii.JGI.v5.6\")",
+    "organism": "Chlamydomonas reinhardtii",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Chlorophyta",
+      "class": "Chlorophyceae",
+      "order": "Chlamydomonadales",
+      "family": "Chlamydomonadaceae",
+      "genus": "Chlamydomonas"
+    },
+    "common_name": "",
+    "group": "plant",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Dmelanogaster.UCSC.dm2",
@@ -307,7 +697,20 @@
     "organism_abbrev": "Dmelanogaster",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Dmelanogaster.UCSC.dm2.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Dmelanogaster.UCSC.dm2\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Dmelanogaster.UCSC.dm2\")",
+    "organism": "Drosophila melanogaster",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Drosophilidae",
+      "genus": "Drosophila"
+    },
+    "common_name": "fruit fly",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Dmelanogaster.UCSC.dm2.masked",
@@ -317,7 +720,20 @@
     "organism_abbrev": "Dmelanogaster",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Dmelanogaster.UCSC.dm2.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Dmelanogaster.UCSC.dm2.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Dmelanogaster.UCSC.dm2.masked\")",
+    "organism": "Drosophila melanogaster",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Drosophilidae",
+      "genus": "Drosophila"
+    },
+    "common_name": "fruit fly",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Dmelanogaster.UCSC.dm3",
@@ -327,7 +743,20 @@
     "organism_abbrev": "Dmelanogaster",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Dmelanogaster.UCSC.dm3.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Dmelanogaster.UCSC.dm3\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Dmelanogaster.UCSC.dm3\")",
+    "organism": "Drosophila melanogaster",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Drosophilidae",
+      "genus": "Drosophila"
+    },
+    "common_name": "fruit fly",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Dmelanogaster.UCSC.dm3.masked",
@@ -337,7 +766,20 @@
     "organism_abbrev": "Dmelanogaster",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Dmelanogaster.UCSC.dm3.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Dmelanogaster.UCSC.dm3.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Dmelanogaster.UCSC.dm3.masked\")",
+    "organism": "Drosophila melanogaster",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Drosophilidae",
+      "genus": "Drosophila"
+    },
+    "common_name": "fruit fly",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Dmelanogaster.UCSC.dm6",
@@ -347,7 +789,20 @@
     "organism_abbrev": "Dmelanogaster",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Dmelanogaster.UCSC.dm6.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Dmelanogaster.UCSC.dm6\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Dmelanogaster.UCSC.dm6\")",
+    "organism": "Drosophila melanogaster",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Drosophilidae",
+      "genus": "Drosophila"
+    },
+    "common_name": "fruit fly",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Drerio.UCSC.danRer10",
@@ -357,7 +812,20 @@
     "organism_abbrev": "Drerio",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Drerio.UCSC.danRer10.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer10\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer10\")",
+    "organism": "Danio rerio",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Actinopteri",
+      "order": "Cypriniformes",
+      "family": "Danionidae",
+      "genus": "Danio"
+    },
+    "common_name": "zebrafish",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Drerio.UCSC.danRer11",
@@ -367,7 +835,20 @@
     "organism_abbrev": "Drerio",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Drerio.UCSC.danRer11.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer11\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer11\")",
+    "organism": "Danio rerio",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Actinopteri",
+      "order": "Cypriniformes",
+      "family": "Danionidae",
+      "genus": "Danio"
+    },
+    "common_name": "zebrafish",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Drerio.UCSC.danRer5",
@@ -377,7 +858,20 @@
     "organism_abbrev": "Drerio",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Drerio.UCSC.danRer5.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer5\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer5\")",
+    "organism": "Danio rerio",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Actinopteri",
+      "order": "Cypriniformes",
+      "family": "Danionidae",
+      "genus": "Danio"
+    },
+    "common_name": "zebrafish",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Drerio.UCSC.danRer5.masked",
@@ -387,7 +881,20 @@
     "organism_abbrev": "Drerio",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Drerio.UCSC.danRer5.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer5.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer5.masked\")",
+    "organism": "Danio rerio",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Actinopteri",
+      "order": "Cypriniformes",
+      "family": "Danionidae",
+      "genus": "Danio"
+    },
+    "common_name": "zebrafish",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Drerio.UCSC.danRer6",
@@ -397,7 +904,20 @@
     "organism_abbrev": "Drerio",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Drerio.UCSC.danRer6.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer6\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer6\")",
+    "organism": "Danio rerio",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Actinopteri",
+      "order": "Cypriniformes",
+      "family": "Danionidae",
+      "genus": "Danio"
+    },
+    "common_name": "zebrafish",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Drerio.UCSC.danRer6.masked",
@@ -407,7 +927,20 @@
     "organism_abbrev": "Drerio",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Drerio.UCSC.danRer6.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer6.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer6.masked\")",
+    "organism": "Danio rerio",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Actinopteri",
+      "order": "Cypriniformes",
+      "family": "Danionidae",
+      "genus": "Danio"
+    },
+    "common_name": "zebrafish",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Drerio.UCSC.danRer7",
@@ -417,7 +950,20 @@
     "organism_abbrev": "Drerio",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Drerio.UCSC.danRer7.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer7\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer7\")",
+    "organism": "Danio rerio",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Actinopteri",
+      "order": "Cypriniformes",
+      "family": "Danionidae",
+      "genus": "Danio"
+    },
+    "common_name": "zebrafish",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Drerio.UCSC.danRer7.masked",
@@ -427,7 +973,20 @@
     "organism_abbrev": "Drerio",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Drerio.UCSC.danRer7.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer7.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Drerio.UCSC.danRer7.masked\")",
+    "organism": "Danio rerio",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Actinopteri",
+      "order": "Cypriniformes",
+      "family": "Danionidae",
+      "genus": "Danio"
+    },
+    "common_name": "zebrafish",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Dvirilis.Ensembl.dvircaf1",
@@ -437,7 +996,20 @@
     "organism_abbrev": "Dvirilis",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Dvirilis.Ensembl.dvircaf1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Dvirilis.Ensembl.dvircaf1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Dvirilis.Ensembl.dvircaf1\")",
+    "organism": "Drosophila virilis",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Drosophilidae",
+      "genus": "Drosophila"
+    },
+    "common_name": "",
+    "group": "invertebrate",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ecoli.NCBI.20080805",
@@ -447,7 +1019,20 @@
     "organism_abbrev": "Ecoli",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ecoli.NCBI.20080805.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ecoli.NCBI.20080805\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ecoli.NCBI.20080805\")",
+    "organism": "Escherichia coli",
+    "taxonomy": {
+      "domain": "Bacteria",
+      "kingdom": "Pseudomonadati",
+      "phylum": "Pseudomonadota",
+      "class": "Gammaproteobacteria",
+      "order": "Enterobacterales",
+      "family": "Enterobacteriaceae",
+      "genus": "Escherichia"
+    },
+    "common_name": "",
+    "group": "bacteria",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Gaculeatus.UCSC.gasAcu1",
@@ -457,7 +1042,20 @@
     "organism_abbrev": "Gaculeatus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Gaculeatus.UCSC.gasAcu1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Gaculeatus.UCSC.gasAcu1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Gaculeatus.UCSC.gasAcu1\")",
+    "organism": "Gasterosteus aculeatus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Actinopteri",
+      "order": "Perciformes",
+      "family": "Gasterosteidae",
+      "genus": "Gasterosteus"
+    },
+    "common_name": "three-spined stickleback",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Gaculeatus.UCSC.gasAcu1.masked",
@@ -467,7 +1065,20 @@
     "organism_abbrev": "Gaculeatus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Gaculeatus.UCSC.gasAcu1.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Gaculeatus.UCSC.gasAcu1.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Gaculeatus.UCSC.gasAcu1.masked\")",
+    "organism": "Gasterosteus aculeatus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Actinopteri",
+      "order": "Perciformes",
+      "family": "Gasterosteidae",
+      "genus": "Gasterosteus"
+    },
+    "common_name": "three-spined stickleback",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ggallus.UCSC.galGal3",
@@ -477,7 +1088,20 @@
     "organism_abbrev": "Ggallus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ggallus.UCSC.galGal3.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal3\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal3\")",
+    "organism": "Gallus gallus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Galliformes",
+      "family": "Phasianidae",
+      "genus": "Gallus"
+    },
+    "common_name": "chicken",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ggallus.UCSC.galGal3.masked",
@@ -487,7 +1111,20 @@
     "organism_abbrev": "Ggallus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ggallus.UCSC.galGal3.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal3.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal3.masked\")",
+    "organism": "Gallus gallus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Galliformes",
+      "family": "Phasianidae",
+      "genus": "Gallus"
+    },
+    "common_name": "chicken",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ggallus.UCSC.galGal4",
@@ -497,7 +1134,20 @@
     "organism_abbrev": "Ggallus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ggallus.UCSC.galGal4.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal4\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal4\")",
+    "organism": "Gallus gallus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Galliformes",
+      "family": "Phasianidae",
+      "genus": "Gallus"
+    },
+    "common_name": "chicken",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ggallus.UCSC.galGal4.masked",
@@ -507,7 +1157,20 @@
     "organism_abbrev": "Ggallus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ggallus.UCSC.galGal4.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal4.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal4.masked\")",
+    "organism": "Gallus gallus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Galliformes",
+      "family": "Phasianidae",
+      "genus": "Gallus"
+    },
+    "common_name": "chicken",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ggallus.UCSC.galGal5",
@@ -517,7 +1180,20 @@
     "organism_abbrev": "Ggallus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ggallus.UCSC.galGal5.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal5\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal5\")",
+    "organism": "Gallus gallus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Galliformes",
+      "family": "Phasianidae",
+      "genus": "Gallus"
+    },
+    "common_name": "chicken",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ggallus.UCSC.galGal6",
@@ -527,7 +1203,20 @@
     "organism_abbrev": "Ggallus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ggallus.UCSC.galGal6.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal6\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ggallus.UCSC.galGal6\")",
+    "organism": "Gallus gallus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Galliformes",
+      "family": "Phasianidae",
+      "genus": "Gallus"
+    },
+    "common_name": "chicken",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Gmax.NCBI.Gmv40",
@@ -537,7 +1226,20 @@
     "organism_abbrev": "Gmax",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Gmax.NCBI.Gmv40.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Gmax.NCBI.Gmv40\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Gmax.NCBI.Gmv40\")",
+    "organism": "Glycine max",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Magnoliopsida",
+      "order": "Fabales",
+      "family": "Fabaceae",
+      "genus": "Glycine"
+    },
+    "common_name": "soybean",
+    "group": "plant",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.1000genomes.hs37d5",
@@ -547,7 +1249,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.1000genomes.hs37d5.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.1000genomes.hs37d5\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.1000genomes.hs37d5\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.NCBI.GRCh38",
@@ -557,7 +1272,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.NCBI.GRCh38.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.NCBI.GRCh38\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.NCBI.GRCh38\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0",
@@ -567,7 +1295,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hg17",
@@ -577,7 +1318,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg17.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg17\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg17\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hg17.masked",
@@ -587,7 +1341,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg17.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg17.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg17.masked\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hg18",
@@ -597,7 +1364,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg18.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg18\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg18\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hg18.masked",
@@ -607,7 +1387,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg18.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg18.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg18.masked\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hg19",
@@ -617,7 +1410,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg19.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg19\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg19\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hg19.masked",
@@ -627,7 +1433,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg19.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg19.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg19.masked\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hg38",
@@ -637,7 +1456,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg38.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg38\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg38\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major",
@@ -647,7 +1479,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hg38.dbSNP151.minor",
@@ -657,7 +1502,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.minor.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg38.dbSNP151.minor\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg38.dbSNP151.minor\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hg38.masked",
@@ -667,7 +1525,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hg38.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg38.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hg38.masked\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Hsapiens.UCSC.hs1",
@@ -677,7 +1548,20 @@
     "organism_abbrev": "Hsapiens",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Hsapiens.UCSC.hs1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hs1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Hsapiens.UCSC.hs1\")",
+    "organism": "Homo sapiens",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Homo"
+    },
+    "common_name": "human",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mdomestica.UCSC.monDom5",
@@ -687,7 +1571,20 @@
     "organism_abbrev": "Mdomestica",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mdomestica.UCSC.monDom5.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mdomestica.UCSC.monDom5\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mdomestica.UCSC.monDom5\")",
+    "organism": "Monodelphis domestica",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Didelphimorphia",
+      "family": "Didelphidae",
+      "genus": "Monodelphis"
+    },
+    "common_name": "gray short-tailed opossum",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mfascicularis.NCBI.5.0",
@@ -697,7 +1594,20 @@
     "organism_abbrev": "Mfascicularis",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mfascicularis.NCBI.5.0.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mfascicularis.NCBI.5.0\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mfascicularis.NCBI.5.0\")",
+    "organism": "Macaca fascicularis",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cercopithecidae",
+      "genus": "Macaca"
+    },
+    "common_name": "crab-eating macaque",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mfascicularis.NCBI.6.0",
@@ -707,7 +1617,20 @@
     "organism_abbrev": "Mfascicularis",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mfascicularis.NCBI.6.0.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mfascicularis.NCBI.6.0\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mfascicularis.NCBI.6.0\")",
+    "organism": "Macaca fascicularis",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cercopithecidae",
+      "genus": "Macaca"
+    },
+    "common_name": "crab-eating macaque",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mfuro.UCSC.musFur1",
@@ -717,7 +1640,20 @@
     "organism_abbrev": "Mfuro",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mfuro.UCSC.musFur1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mfuro.UCSC.musFur1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mfuro.UCSC.musFur1\")",
+    "organism": "Mustela putorius furo",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Mustelidae",
+      "genus": "Mustela"
+    },
+    "common_name": "domestic ferret",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmulatta.UCSC.rheMac10",
@@ -727,7 +1663,20 @@
     "organism_abbrev": "Mmulatta",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmulatta.UCSC.rheMac10.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac10\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac10\")",
+    "organism": "Macaca mulatta",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cercopithecidae",
+      "genus": "Macaca"
+    },
+    "common_name": "Rhesus monkey",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmulatta.UCSC.rheMac2",
@@ -737,7 +1686,20 @@
     "organism_abbrev": "Mmulatta",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmulatta.UCSC.rheMac2.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac2\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac2\")",
+    "organism": "Macaca mulatta",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cercopithecidae",
+      "genus": "Macaca"
+    },
+    "common_name": "Rhesus monkey",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmulatta.UCSC.rheMac2.masked",
@@ -747,7 +1709,20 @@
     "organism_abbrev": "Mmulatta",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmulatta.UCSC.rheMac2.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac2.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac2.masked\")",
+    "organism": "Macaca mulatta",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cercopithecidae",
+      "genus": "Macaca"
+    },
+    "common_name": "Rhesus monkey",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmulatta.UCSC.rheMac3",
@@ -757,7 +1732,20 @@
     "organism_abbrev": "Mmulatta",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmulatta.UCSC.rheMac3.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac3\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac3\")",
+    "organism": "Macaca mulatta",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cercopithecidae",
+      "genus": "Macaca"
+    },
+    "common_name": "Rhesus monkey",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmulatta.UCSC.rheMac3.masked",
@@ -767,7 +1755,20 @@
     "organism_abbrev": "Mmulatta",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmulatta.UCSC.rheMac3.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac3.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac3.masked\")",
+    "organism": "Macaca mulatta",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cercopithecidae",
+      "genus": "Macaca"
+    },
+    "common_name": "Rhesus monkey",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmulatta.UCSC.rheMac8",
@@ -777,7 +1778,20 @@
     "organism_abbrev": "Mmulatta",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmulatta.UCSC.rheMac8.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac8\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmulatta.UCSC.rheMac8\")",
+    "organism": "Macaca mulatta",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cercopithecidae",
+      "genus": "Macaca"
+    },
+    "common_name": "Rhesus monkey",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmusculus.UCSC.mm10",
@@ -787,7 +1801,20 @@
     "organism_abbrev": "Mmusculus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmusculus.UCSC.mm10.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm10\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm10\")",
+    "organism": "Mus musculus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Mus"
+    },
+    "common_name": "house mouse",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmusculus.UCSC.mm10.masked",
@@ -797,7 +1824,20 @@
     "organism_abbrev": "Mmusculus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmusculus.UCSC.mm10.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm10.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm10.masked\")",
+    "organism": "Mus musculus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Mus"
+    },
+    "common_name": "house mouse",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmusculus.UCSC.mm39",
@@ -807,7 +1847,20 @@
     "organism_abbrev": "Mmusculus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmusculus.UCSC.mm39.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm39\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm39\")",
+    "organism": "Mus musculus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Mus"
+    },
+    "common_name": "house mouse",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmusculus.UCSC.mm8",
@@ -817,7 +1870,20 @@
     "organism_abbrev": "Mmusculus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmusculus.UCSC.mm8.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm8\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm8\")",
+    "organism": "Mus musculus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Mus"
+    },
+    "common_name": "house mouse",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmusculus.UCSC.mm8.masked",
@@ -827,7 +1893,20 @@
     "organism_abbrev": "Mmusculus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmusculus.UCSC.mm8.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm8.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm8.masked\")",
+    "organism": "Mus musculus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Mus"
+    },
+    "common_name": "house mouse",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmusculus.UCSC.mm9",
@@ -837,7 +1916,20 @@
     "organism_abbrev": "Mmusculus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmusculus.UCSC.mm9.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm9\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm9\")",
+    "organism": "Mus musculus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Mus"
+    },
+    "common_name": "house mouse",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Mmusculus.UCSC.mm9.masked",
@@ -847,7 +1939,20 @@
     "organism_abbrev": "Mmusculus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Mmusculus.UCSC.mm9.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm9.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Mmusculus.UCSC.mm9.masked\")",
+    "organism": "Mus musculus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Mus"
+    },
+    "common_name": "house mouse",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Osativa.MSU.MSU7",
@@ -857,7 +1962,20 @@
     "organism_abbrev": "Osativa",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Osativa.MSU.MSU7.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Osativa.MSU.MSU7\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Osativa.MSU.MSU7\")",
+    "organism": "Oryza sativa",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Magnoliopsida",
+      "order": "Poales",
+      "family": "Poaceae",
+      "genus": "Oryza"
+    },
+    "common_name": "Asian cultivated rice",
+    "group": "plant",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ppaniscus.UCSC.panPan1",
@@ -867,7 +1985,20 @@
     "organism_abbrev": "Ppaniscus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ppaniscus.UCSC.panPan1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ppaniscus.UCSC.panPan1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ppaniscus.UCSC.panPan1\")",
+    "organism": "Pan paniscus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Pan"
+    },
+    "common_name": "pygmy chimpanzee",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ppaniscus.UCSC.panPan2",
@@ -877,7 +2008,20 @@
     "organism_abbrev": "Ppaniscus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ppaniscus.UCSC.panPan2.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ppaniscus.UCSC.panPan2\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ppaniscus.UCSC.panPan2\")",
+    "organism": "Pan paniscus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Pan"
+    },
+    "common_name": "pygmy chimpanzee",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ptroglodytes.UCSC.panTro2",
@@ -887,7 +2031,20 @@
     "organism_abbrev": "Ptroglodytes",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ptroglodytes.UCSC.panTro2.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro2\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro2\")",
+    "organism": "Pan troglodytes",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Pan"
+    },
+    "common_name": "chimpanzee",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ptroglodytes.UCSC.panTro2.masked",
@@ -897,7 +2054,20 @@
     "organism_abbrev": "Ptroglodytes",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ptroglodytes.UCSC.panTro2.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro2.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro2.masked\")",
+    "organism": "Pan troglodytes",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Pan"
+    },
+    "common_name": "chimpanzee",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ptroglodytes.UCSC.panTro3",
@@ -907,7 +2077,20 @@
     "organism_abbrev": "Ptroglodytes",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ptroglodytes.UCSC.panTro3.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro3\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro3\")",
+    "organism": "Pan troglodytes",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Pan"
+    },
+    "common_name": "chimpanzee",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ptroglodytes.UCSC.panTro3.masked",
@@ -917,7 +2100,20 @@
     "organism_abbrev": "Ptroglodytes",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ptroglodytes.UCSC.panTro3.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro3.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro3.masked\")",
+    "organism": "Pan troglodytes",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Pan"
+    },
+    "common_name": "chimpanzee",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ptroglodytes.UCSC.panTro5",
@@ -927,7 +2123,20 @@
     "organism_abbrev": "Ptroglodytes",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ptroglodytes.UCSC.panTro5.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro5\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro5\")",
+    "organism": "Pan troglodytes",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Pan"
+    },
+    "common_name": "chimpanzee",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Ptroglodytes.UCSC.panTro6",
@@ -937,7 +2146,20 @@
     "organism_abbrev": "Ptroglodytes",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Ptroglodytes.UCSC.panTro6.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro6\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Ptroglodytes.UCSC.panTro6\")",
+    "organism": "Pan troglodytes",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Hominidae",
+      "genus": "Pan"
+    },
+    "common_name": "chimpanzee",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Rnorvegicus.UCSC.rn4",
@@ -947,7 +2169,20 @@
     "organism_abbrev": "Rnorvegicus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Rnorvegicus.UCSC.rn4.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn4\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn4\")",
+    "organism": "Rattus norvegicus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Rattus"
+    },
+    "common_name": "Norway rat",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Rnorvegicus.UCSC.rn4.masked",
@@ -957,7 +2192,20 @@
     "organism_abbrev": "Rnorvegicus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Rnorvegicus.UCSC.rn4.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn4.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn4.masked\")",
+    "organism": "Rattus norvegicus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Rattus"
+    },
+    "common_name": "Norway rat",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Rnorvegicus.UCSC.rn5",
@@ -967,7 +2215,20 @@
     "organism_abbrev": "Rnorvegicus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Rnorvegicus.UCSC.rn5.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn5\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn5\")",
+    "organism": "Rattus norvegicus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Rattus"
+    },
+    "common_name": "Norway rat",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Rnorvegicus.UCSC.rn5.masked",
@@ -977,7 +2238,20 @@
     "organism_abbrev": "Rnorvegicus",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Rnorvegicus.UCSC.rn5.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn5.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn5.masked\")",
+    "organism": "Rattus norvegicus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Rattus"
+    },
+    "common_name": "Norway rat",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Rnorvegicus.UCSC.rn6",
@@ -987,7 +2261,20 @@
     "organism_abbrev": "Rnorvegicus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Rnorvegicus.UCSC.rn6.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn6\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn6\")",
+    "organism": "Rattus norvegicus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Rattus"
+    },
+    "common_name": "Norway rat",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Rnorvegicus.UCSC.rn7",
@@ -997,7 +2284,20 @@
     "organism_abbrev": "Rnorvegicus",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Rnorvegicus.UCSC.rn7.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn7\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Rnorvegicus.UCSC.rn7\")",
+    "organism": "Rattus norvegicus",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Muridae",
+      "genus": "Rattus"
+    },
+    "common_name": "Norway rat",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Scerevisiae.UCSC.sacCer1",
@@ -1007,7 +2307,20 @@
     "organism_abbrev": "Scerevisiae",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Scerevisiae.UCSC.sacCer1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Scerevisiae.UCSC.sacCer1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Scerevisiae.UCSC.sacCer1\")",
+    "organism": "Saccharomyces cerevisiae",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Ascomycota",
+      "class": "Saccharomycetes",
+      "order": "Saccharomycetales",
+      "family": "Saccharomycetaceae",
+      "genus": "Saccharomyces"
+    },
+    "common_name": "brewer's yeast",
+    "group": "fungi",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Scerevisiae.UCSC.sacCer2",
@@ -1017,7 +2330,20 @@
     "organism_abbrev": "Scerevisiae",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Scerevisiae.UCSC.sacCer2.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Scerevisiae.UCSC.sacCer2\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Scerevisiae.UCSC.sacCer2\")",
+    "organism": "Saccharomyces cerevisiae",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Ascomycota",
+      "class": "Saccharomycetes",
+      "order": "Saccharomycetales",
+      "family": "Saccharomycetaceae",
+      "genus": "Saccharomyces"
+    },
+    "common_name": "brewer's yeast",
+    "group": "fungi",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Scerevisiae.UCSC.sacCer3",
@@ -1027,7 +2353,20 @@
     "organism_abbrev": "Scerevisiae",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Scerevisiae.UCSC.sacCer3.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Scerevisiae.UCSC.sacCer3\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Scerevisiae.UCSC.sacCer3\")",
+    "organism": "Saccharomyces cerevisiae",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Fungi",
+      "phylum": "Ascomycota",
+      "class": "Saccharomycetes",
+      "order": "Saccharomycetales",
+      "family": "Saccharomycetaceae",
+      "genus": "Saccharomyces"
+    },
+    "common_name": "brewer's yeast",
+    "group": "fungi",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Sscrofa.UCSC.susScr11",
@@ -1037,7 +2376,20 @@
     "organism_abbrev": "Sscrofa",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Sscrofa.UCSC.susScr11.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Sscrofa.UCSC.susScr11\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Sscrofa.UCSC.susScr11\")",
+    "organism": "Sus scrofa",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Suidae",
+      "genus": "Sus"
+    },
+    "common_name": "pig",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Sscrofa.UCSC.susScr3",
@@ -1047,7 +2399,20 @@
     "organism_abbrev": "Sscrofa",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Sscrofa.UCSC.susScr3.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Sscrofa.UCSC.susScr3\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Sscrofa.UCSC.susScr3\")",
+    "organism": "Sus scrofa",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Suidae",
+      "genus": "Sus"
+    },
+    "common_name": "pig",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Sscrofa.UCSC.susScr3.masked",
@@ -1057,7 +2422,20 @@
     "organism_abbrev": "Sscrofa",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Sscrofa.UCSC.susScr3.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Sscrofa.UCSC.susScr3.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Sscrofa.UCSC.susScr3.masked\")",
+    "organism": "Sus scrofa",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Suidae",
+      "genus": "Sus"
+    },
+    "common_name": "pig",
+    "group": "vertebrate_mammalian",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Tgondii.ToxoDB.7.0",
@@ -1067,7 +2445,19 @@
     "organism_abbrev": "Tgondii",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Tgondii.ToxoDB.7.0.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Tgondii.ToxoDB.7.0\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Tgondii.ToxoDB.7.0\")",
+    "organism": "Toxoplasma gondii",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Sarcocystidae",
+      "genus": "Toxoplasma"
+    },
+    "common_name": "",
+    "group": "other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Tguttata.UCSC.taeGut1",
@@ -1077,7 +2467,20 @@
     "organism_abbrev": "Tguttata",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Tguttata.UCSC.taeGut1.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Tguttata.UCSC.taeGut1\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Tguttata.UCSC.taeGut1\")",
+    "organism": "Taeniopygia guttata",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Passeriformes",
+      "family": "Estrildidae",
+      "genus": "Taeniopygia"
+    },
+    "common_name": "zebra finch",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Tguttata.UCSC.taeGut1.masked",
@@ -1087,7 +2490,20 @@
     "organism_abbrev": "Tguttata",
     "masked": true,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Tguttata.UCSC.taeGut1.masked.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Tguttata.UCSC.taeGut1.masked\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Tguttata.UCSC.taeGut1.masked\")",
+    "organism": "Taeniopygia guttata",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Passeriformes",
+      "family": "Estrildidae",
+      "genus": "Taeniopygia"
+    },
+    "common_name": "zebra finch",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Tguttata.UCSC.taeGut2",
@@ -1097,7 +2513,20 @@
     "organism_abbrev": "Tguttata",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Tguttata.UCSC.taeGut2.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Tguttata.UCSC.taeGut2\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Tguttata.UCSC.taeGut2\")",
+    "organism": "Taeniopygia guttata",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Metazoa",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Passeriformes",
+      "family": "Estrildidae",
+      "genus": "Taeniopygia"
+    },
+    "common_name": "zebra finch",
+    "group": "vertebrate_other",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Vvinifera.URGI.IGGP12Xv0",
@@ -1107,7 +2536,20 @@
     "organism_abbrev": "Vvinifera",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Vvinifera.URGI.IGGP12Xv0.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Vvinifera.URGI.IGGP12Xv0\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Vvinifera.URGI.IGGP12Xv0\")",
+    "organism": "Vitis vinifera",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Magnoliopsida",
+      "order": "Vitales",
+      "family": "Vitaceae",
+      "genus": "Vitis"
+    },
+    "common_name": "wine grape",
+    "group": "plant",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Vvinifera.URGI.IGGP12Xv2",
@@ -1117,7 +2559,20 @@
     "organism_abbrev": "Vvinifera",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Vvinifera.URGI.IGGP12Xv2.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Vvinifera.URGI.IGGP12Xv2\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Vvinifera.URGI.IGGP12Xv2\")",
+    "organism": "Vitis vinifera",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Magnoliopsida",
+      "order": "Vitales",
+      "family": "Vitaceae",
+      "genus": "Vitis"
+    },
+    "common_name": "wine grape",
+    "group": "plant",
+    "source": "bioconductor"
   },
   {
     "package": "BSgenome.Vvinifera.URGI.IGGP8X",
@@ -1127,6 +2582,19 @@
     "organism_abbrev": "Vvinifera",
     "masked": false,
     "bioc_url": "https://bioconductor.org/packages/release/data/annotation/html/BSgenome.Vvinifera.URGI.IGGP8X.html",
-    "install_cmd": "BiocManager::install(\"BSgenome.Vvinifera.URGI.IGGP8X\")"
+    "install_cmd": "BiocManager::install(\"BSgenome.Vvinifera.URGI.IGGP8X\")",
+    "organism": "Vitis vinifera",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Viridiplantae",
+      "phylum": "Streptophyta",
+      "class": "Magnoliopsida",
+      "order": "Vitales",
+      "family": "Vitaceae",
+      "genus": "Vitis"
+    },
+    "common_name": "wine grape",
+    "group": "plant",
+    "source": "bioconductor"
   }
 ]

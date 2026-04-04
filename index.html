@@ -111,22 +111,13 @@
   .alpha-btn.disabled:hover { border-color: var(--border); color: var(--text-muted); }
   .empty { text-align: center; padding: 48px 0; color: var(--text-muted); }
 
-  /* Bioconductor section */
-  .bioc-section { margin-top: 40px; padding-top: 32px; border-top: 2px solid var(--border); }
-  .bioc-section h2 { font-family: 'Source Serif 4', serif; font-size: 22px; color: var(--text); margin-bottom: 4px; }
-  .bioc-section .subtitle { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
-  .bioc-org { margin-bottom: 12px; }
-  .bioc-org-header { font-size: 15px; font-weight: 600; font-style: italic; color: var(--text); padding: 8px 0; cursor: pointer; display: flex; align-items: center; gap: 8px; }
-  .bioc-org-header .pkg-count { font-style: normal; font-size: 12px; color: var(--text-muted); background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 10px; padding: 0 8px; }
-  .bioc-pkg { display: flex; align-items: center; justify-content: space-between; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; margin: 4px 0; font-size: 13px; }
-  .bioc-pkg:hover { border-color: var(--primary); background: #f8f9fe; }
-  .bioc-pkg-name { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; color: var(--text); }
-  .bioc-pkg-meta { display: flex; gap: 8px; align-items: center; }
-  .bioc-pkg-meta .badge-bioc { background: #e8f5e9; color: #2e7d32; }
-  .bioc-pkg-meta a { font-size: 12px; color: var(--primary); text-decoration: none; }
-  .bioc-pkg-meta a:hover { text-decoration: underline; }
-  .bioc-masked { opacity: 0.6; }
-  .bioc-search-info { font-size: 12px; color: var(--text-muted); margin-bottom: 12px; }
+  /* Filter tags */
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+  .filter-tag { padding: 5px 14px; border-radius: 16px; font-size: 13px; font-weight: 500; cursor: pointer; border: 1px solid var(--border); background: var(--bg); color: var(--text-muted); transition: all 0.15s; }
+  .filter-tag:hover { border-color: var(--primary); color: var(--primary); }
+  .filter-tag.active { background: var(--primary); color: white; border-color: var(--primary); }
+  .filter-tag .tag-count { font-size: 11px; opacity: 0.7; margin-left: 4px; }
+  .badge-bioc { background: #e8f5e9; color: #2e7d32; }
 
   footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 48px; text-align: center; font-size: 13px; color: var(--text-muted); }
 
@@ -190,17 +181,11 @@
     <input type="text" id="search" placeholder="Search by organism, assembly, or package name..." />
   </div>
 
+  <div class="filter-bar" id="filter-bar"></div>
   <div class="alpha-bar" id="alpha-bar"></div>
 
   <div class="org-list" id="org-list">
     <div class="empty" id="loading">Loading packages...</div>
-  </div>
-
-  <div class="bioc-section" id="bioc-section" style="display:none;">
-    <h2>Official Bioconductor BSgenome Packages</h2>
-    <p class="subtitle">113 packages from Bioconductor for 33 model organisms. Install with <code>BiocManager::install()</code>.</p>
-    <div class="bioc-search-info" id="bioc-search-info"></div>
-    <div id="bioc-list"></div>
   </div>
 </div>
 
@@ -215,18 +200,23 @@
 <script>
 const BASE = '.';
 
+let ALL_ORGANISMS = [];
+let ACTIVE_FILTER = 'all';
+
 async function loadPackages() {
   try {
-    const res = await fetch(`${BASE}/packages.json?t=${Date.now()}`);
-    const data = await res.json();
+    // Load both community and Bioconductor packages in parallel
+    const [communityRes, biocRes] = await Promise.all([
+      fetch(`${BASE}/packages.json?t=${Date.now()}`),
+      fetch(`${BASE}/bioc-packages.json?t=${Date.now()}`).catch(() => null)
+    ]);
 
-    // Support both old flat format and new organism-centric format
+    const data = await communityRes.json();
     let organisms, flat;
     if (data.organisms) {
       organisms = data.organisms;
       flat = data.flat;
     } else {
-      // Old flat format — group by organism
       flat = data;
       const grouped = {};
       for (const pkg of flat) {
@@ -236,13 +226,96 @@ async function loadPackages() {
       }
       organisms = Object.values(grouped);
     }
+    // Mark community organisms
+    organisms.forEach(o => { o._source = 'community'; });
 
+    // Merge Bioconductor packages
+    if (biocRes) {
+      const biocPkgs = await biocRes.json();
+      // Group bioc packages by organism
+      const biocOrgs = {};
+      biocPkgs.forEach(p => {
+        const org = p.organism || p.organism_abbrev;
+        if (!biocOrgs[org]) biocOrgs[org] = {
+          organism: org, common_name: p.common_name || '', group: p.group || 'other',
+          taxonomy: p.taxonomy || {}, builds: [], _source: 'bioconductor'
+        };
+        biocOrgs[org].builds.push({
+          package: p.package, version: p.version, provider: p.provider,
+          assembly: p.assembly, bioc_url: p.bioc_url, _bioc: true
+        });
+      });
+      // Merge: if same organism exists in community, add bioc builds to it
+      const communityMap = {};
+      organisms.forEach(o => { communityMap[o.organism] = o; });
+      for (const [orgName, biocOrg] of Object.entries(biocOrgs)) {
+        if (communityMap[orgName]) {
+          // Merge builds, mark bioc ones
+          communityMap[orgName].builds.push(...biocOrg.builds);
+          communityMap[orgName]._source = 'both';
+        } else {
+          organisms.push(biocOrg);
+        }
+      }
+    }
+
+    ALL_ORGANISMS = organisms;
     renderOrganisms(organisms, flat);
+    setupFilterBar(organisms);
     setupAlphaBar(organisms);
     setupSearch(organisms);
   } catch (e) {
     document.getElementById('loading').innerHTML = '<p>Error: ' + e.message + '</p>';
   }
+}
+
+function setupFilterBar(organisms) {
+  const bar = document.getElementById('filter-bar');
+  const counts = { all: organisms.length, community: 0, bioconductor: 0, animal: 0, plant: 0, fungi: 0, microorganism: 0 };
+  organisms.forEach(o => {
+    if (o._source === 'community' || o._source === 'both') counts.community++;
+    if (o._source === 'bioconductor' || o._source === 'both') counts.bioconductor++;
+    const g = o.group || 'other';
+    if (['vertebrate_mammalian','vertebrate_other','invertebrate'].includes(g)) counts.animal++;
+    else if (g === 'plant') counts.plant++;
+    else if (g === 'fungi') counts.fungi++;
+    else if (['bacteria','archaea','other','protozoa'].includes(g)) counts.microorganism++;
+  });
+
+  const filters = [
+    { key: 'all', label: 'All', count: counts.all },
+    { key: 'community', label: 'Community', count: counts.community },
+    { key: 'bioconductor', label: 'Bioconductor', count: counts.bioconductor },
+    { key: 'animal', label: 'Animals', count: counts.animal },
+    { key: 'plant', label: 'Plants', count: counts.plant },
+    { key: 'fungi', label: 'Fungi', count: counts.fungi },
+    { key: 'microorganism', label: 'Microorganisms', count: counts.microorganism },
+  ];
+
+  bar.innerHTML = filters.filter(f => f.count > 0).map(f =>
+    `<span class="filter-tag${f.key === 'all' ? ' active' : ''}" data-filter="${f.key}" onclick="applyFilter('${f.key}', this)">${f.label}<span class="tag-count">${f.count}</span></span>`
+  ).join('');
+}
+
+function applyFilter(key, btn) {
+  document.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  ACTIVE_FILTER = key;
+
+  const filtered = ALL_ORGANISMS.filter(o => {
+    const g = o.group || 'other';
+    switch (key) {
+      case 'all': return true;
+      case 'community': return o._source === 'community' || o._source === 'both';
+      case 'bioconductor': return o._source === 'bioconductor' || o._source === 'both';
+      case 'animal': return ['vertebrate_mammalian','vertebrate_other','invertebrate'].includes(g);
+      case 'plant': return g === 'plant';
+      case 'fungi': return g === 'fungi';
+      case 'microorganism': return ['bacteria','archaea','other','protozoa'].includes(g);
+      default: return true;
+    }
+  });
+  renderOrganisms(filtered, null);
 }
 
 function renderOrganisms(organisms, flat) {
@@ -378,7 +451,20 @@ function renderOrgCard(org) {
       </div>
       ${taxCrumbs.length ? `<div class="tax-breadcrumb">${taxCrumbs.map(c => `<span>${c}</span>`).join('<span class="sep"> › </span>')}</div>` : ''}
       <div class="build-list">
-        ${org.builds.map(b => `
+        ${org.builds.map(b => b._bioc ? `
+        <div class="build-item" style="flex-direction:column;align-items:stretch;">
+          <div class="build-pkg">${b.package} <span class="badge badge-bioc" style="font-size:10px;vertical-align:middle;margin-left:6px;">Bioconductor</span></div>
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:13px;margin-top:8px;">
+            <span style="color:var(--text-muted);">Assembly:</span><span>${b.assembly || 'N/A'}</span>
+            <span style="color:var(--text-muted);">Provider:</span><span><span class="badge ${b.provider === 'Ensembl' ? 'badge-ensembl' : (b.provider === 'UCSC' ? 'badge-ncbi' : 'badge-ncbi')}">${b.provider}</span></span>
+            <span style="color:var(--text-muted);">Version:</span><span>${b.version}</span>
+          </div>
+          <div class="build-actions" style="margin-top:10px;">
+            <a class="btn btn-primary" href="${b.bioc_url}" target="_blank">Bioconductor ↗</a>
+            <button class="btn btn-outline" onclick="copyBiocInstall('${b.package}')">Copy install</button>
+          </div>
+        </div>
+        ` : `
         <div class="build-item" style="flex-direction:column;align-items:stretch;">
           <div class="build-pkg">${b.package}</div>
           <div style="display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:13px;margin-top:8px;">
@@ -516,71 +602,6 @@ async function loadProgress() {
   }
 }
 
-async function loadBiocPackages() {
-  try {
-    const res = await fetch(`${BASE}/bioc-packages.json?t=${Date.now()}`);
-    const pkgs = await res.json();
-
-    // Group by organism abbreviation
-    const orgs = {};
-    pkgs.forEach(p => {
-      const key = p.organism_abbrev;
-      if (!orgs[key]) orgs[key] = [];
-      orgs[key].push(p);
-    });
-
-    const section = document.getElementById('bioc-section');
-    const list = document.getElementById('bioc-list');
-    section.style.display = '';
-
-    let html = '';
-    for (const org of Object.keys(orgs).sort()) {
-      const orgPkgs = orgs[org];
-      html += `<div class="bioc-org">`;
-      html += `<div class="bioc-org-header">${org} <span class="pkg-count">${orgPkgs.length}</span></div>`;
-      for (const p of orgPkgs) {
-        const masked = p.masked ? ' bioc-masked' : '';
-        html += `<div class="bioc-pkg${masked}" data-bioc-search="${p.package.toLowerCase()}">`;
-        html += `<span class="bioc-pkg-name">${p.package}</span>`;
-        html += `<span class="bioc-pkg-meta">`;
-        html += `<span class="badge badge-bioc">${p.provider}</span>`;
-        html += `<span style="font-size:12px;color:var(--text-muted);">${p.version}</span>`;
-        html += `<a href="${p.bioc_url}" target="_blank">Bioconductor ↗</a>`;
-        html += `<button class="btn btn-outline" style="padding:3px 8px;font-size:11px;" onclick="copyBiocInstall('${p.package}')">Copy install</button>`;
-        html += `</span></div>`;
-      }
-      html += `</div>`;
-    }
-    list.innerHTML = html;
-
-    // Connect search to also filter bioc packages
-    const searchInput = document.getElementById('search');
-    searchInput.addEventListener('input', () => {
-      const q = searchInput.value.trim().toLowerCase();
-      const biocInfo = document.getElementById('bioc-search-info');
-      if (!q) {
-        document.querySelectorAll('.bioc-pkg').forEach(el => el.style.display = '');
-        document.querySelectorAll('.bioc-org').forEach(el => el.style.display = '');
-        biocInfo.textContent = '';
-        return;
-      }
-      let visible = 0;
-      document.querySelectorAll('.bioc-pkg').forEach(el => {
-        const match = el.dataset.biocSearch.includes(q);
-        el.style.display = match ? '' : 'none';
-        if (match) visible++;
-      });
-      document.querySelectorAll('.bioc-org').forEach(el => {
-        const anyVisible = [...el.querySelectorAll('.bioc-pkg')].some(p => p.style.display !== 'none');
-        el.style.display = anyVisible ? '' : 'none';
-      });
-      biocInfo.textContent = visible > 0 ? `${visible} Bioconductor package(s) match` : '';
-    });
-  } catch (e) {
-    // bioc-packages.json not available
-  }
-}
-
 function copyBiocInstall(pkg) {
   const cmd = `BiocManager::install("${pkg}")`;
   navigator.clipboard.writeText(cmd).then(() => {
@@ -593,7 +614,6 @@ function copyBiocInstall(pkg) {
 document.addEventListener('DOMContentLoaded', () => {
   loadPackages();
   loadProgress();
-  loadBiocPackages();
 });
 </script>
 
