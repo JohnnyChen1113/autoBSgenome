@@ -1361,3 +1361,7 @@ NeedsCompilation: no
 Package: BSgenome.Dquadriceps.NCBI.ASM131382v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mzeteki.NCBI.Tzet10
+Version: 1.0.0
+NeedsCompilation: no
