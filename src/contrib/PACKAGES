@@ -1389,3 +1389,7 @@ NeedsCompilation: no
 Package: BSgenome.Dmiranda.NCBI.DmirandaPacBio21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vemeryi.NCBI.VemeryV10
+Version: 1.0.0
+NeedsCompilation: no

@@ -15356,6 +15356,54 @@
       ]
     },
     {
+      "organism": "Vollenhovia emeryi",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Vollenhovia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vemeryi.NCBI.VemeryV10",
+          "version": "1.0.0",
+          "organism": "Vollenhovia emeryi",
+          "assembly": "V.emery_V1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000949405.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000949405.1/",
+          "file_name": "BSgenome.Vemeryi.NCBI.VemeryV10_1.0.0.tar.gz",
+          "size": 72593650,
+          "seq_ids": [
+            "NW_011953989.1",
+            "NW_011953990.1",
+            "NW_011953991.1",
+            "NW_011953992.1",
+            "NW_011953993.1"
+          ],
+          "seq_count": 13258,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Vollenhovia"
+          },
+          "common_name": "",
+          "published": "2026-04-04T22:35:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vemeryi.NCBI.VemeryV10/BSgenome.Vemeryi.NCBI.VemeryV10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Volvox carteri f. nagariensis",
       "common_name": "",
       "group": "plant",
@@ -25895,6 +25943,38 @@
       "common_name": "",
       "published": "2026-04-04T22:35:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dmiranda.NCBI.DmirandaPacBio21/BSgenome.Dmiranda.NCBI.DmirandaPacBio21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vemeryi.NCBI.VemeryV10",
+      "version": "1.0.0",
+      "organism": "Vollenhovia emeryi",
+      "assembly": "V.emery_V1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000949405.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000949405.1/",
+      "file_name": "BSgenome.Vemeryi.NCBI.VemeryV10_1.0.0.tar.gz",
+      "size": 72593650,
+      "seq_ids": [
+        "NW_011953989.1",
+        "NW_011953990.1",
+        "NW_011953991.1",
+        "NW_011953992.1",
+        "NW_011953993.1"
+      ],
+      "seq_count": 13258,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Vollenhovia"
+      },
+      "common_name": "",
+      "published": "2026-04-04T22:35:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vemeryi.NCBI.VemeryV10/BSgenome.Vemeryi.NCBI.VemeryV10_1.0.0.tar.gz"
     }
   ]
 }
