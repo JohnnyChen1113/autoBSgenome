@@ -6851,6 +6851,54 @@
       ]
     },
     {
+      "organism": "Selaginella moellendorffii",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Lycopodiopsida",
+        "order": "Selaginellales",
+        "family": "Selaginellaceae",
+        "genus": "Selaginella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Smoellendorffii.NCBI.v10",
+          "version": "1.0.0",
+          "organism": "Selaginella moellendorffii",
+          "assembly": "v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000143415.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143415.4/",
+          "file_name": "BSgenome.Smoellendorffii.NCBI.v10_1.0.0.tar.gz",
+          "size": 53441326,
+          "seq_ids": [
+            "NW_003314261.1",
+            "NW_003314262.1",
+            "NW_003314263.1",
+            "NW_003314264.1",
+            "NW_003314265.1"
+          ],
+          "seq_count": 757,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Lycopodiopsida",
+            "order": "Selaginellales",
+            "family": "Selaginellaceae",
+            "genus": "Selaginella"
+          },
+          "common_name": "",
+          "published": "2026-04-04T11:40:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smoellendorffii.NCBI.v10/BSgenome.Smoellendorffii.NCBI.v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Seriola dumerili",
       "common_name": "greater amberjack",
       "group": "vertebrate_other",
@@ -13270,6 +13318,38 @@
       "common_name": "",
       "published": "2026-04-04T11:40:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alyrata.NCBI.v10/BSgenome.Alyrata.NCBI.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Smoellendorffii.NCBI.v10",
+      "version": "1.0.0",
+      "organism": "Selaginella moellendorffii",
+      "assembly": "v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000143415.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143415.4/",
+      "file_name": "BSgenome.Smoellendorffii.NCBI.v10_1.0.0.tar.gz",
+      "size": 53441326,
+      "seq_ids": [
+        "NW_003314261.1",
+        "NW_003314262.1",
+        "NW_003314263.1",
+        "NW_003314264.1",
+        "NW_003314265.1"
+      ],
+      "seq_count": 757,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Lycopodiopsida",
+        "order": "Selaginellales",
+        "family": "Selaginellaceae",
+        "genus": "Selaginella"
+      },
+      "common_name": "",
+      "published": "2026-04-04T11:40:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smoellendorffii.NCBI.v10/BSgenome.Smoellendorffii.NCBI.v10_1.0.0.tar.gz"
     }
   ]
 }
