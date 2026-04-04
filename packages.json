@@ -1336,6 +1336,54 @@
       ]
     },
     {
+      "organism": "Camelina sativa",
+      "common_name": "false flax",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Camelina"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Csativa.NCBI.Cs",
+          "version": "1.0.0",
+          "organism": "Camelina sativa",
+          "assembly": "Cs",
+          "provider": "NCBI",
+          "accession": "GCF_000633955.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000633955.1/",
+          "file_name": "BSgenome.Csativa.NCBI.Cs_1.0.0.tar.gz",
+          "size": 154454521,
+          "seq_ids": [
+            "NC_025685.1",
+            "NC_025686.1",
+            "NC_025687.1",
+            "NC_025688.1",
+            "NC_025689.1"
+          ],
+          "seq_count": 37212,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Camelina"
+          },
+          "common_name": "false flax",
+          "published": "2026-04-04T15:37:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativa.NCBI.Cs/BSgenome.Csativa.NCBI.Cs_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Camelus ferus",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -18055,6 +18103,38 @@
       "common_name": "cassava",
       "published": "2026-04-04T15:37:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mesculenta.NCBI.Mesculentav8/BSgenome.Mesculenta.NCBI.Mesculentav8_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Csativa.NCBI.Cs",
+      "version": "1.0.0",
+      "organism": "Camelina sativa",
+      "assembly": "Cs",
+      "provider": "NCBI",
+      "accession": "GCF_000633955.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000633955.1/",
+      "file_name": "BSgenome.Csativa.NCBI.Cs_1.0.0.tar.gz",
+      "size": 154454521,
+      "seq_ids": [
+        "NC_025685.1",
+        "NC_025686.1",
+        "NC_025687.1",
+        "NC_025688.1",
+        "NC_025689.1"
+      ],
+      "seq_count": 37212,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Camelina"
+      },
+      "common_name": "false flax",
+      "published": "2026-04-04T15:37:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativa.NCBI.Cs/BSgenome.Csativa.NCBI.Cs_1.0.0.tar.gz"
     }
   ]
 }

@@ -997,3 +997,7 @@ NeedsCompilation: no
 Package: BSgenome.Mesculenta.NCBI.Mesculentav8
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csativa.NCBI.Cs
+Version: 1.0.0
+NeedsCompilation: no
