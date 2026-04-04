@@ -946,6 +946,54 @@
       ]
     },
     {
+      "organism": "Coturnix japonica",
+      "common_name": "Japanese quail",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Coturnix"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cjaponica.NCBI.Coturnixjaponica21",
+          "version": "1.0.0",
+          "organism": "Coturnix japonica",
+          "assembly": "Coturnix japonica 2.1",
+          "provider": "NCBI",
+          "accession": "GCF_001577835.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001577835.2/",
+          "file_name": "BSgenome.Cjaponica.NCBI.Coturnixjaponica21_1.0.0.tar.gz",
+          "size": 239220014,
+          "seq_ids": [
+            "NC_029516.1",
+            "NW_015438968.1",
+            "NW_015438969.1",
+            "NW_015438970.1",
+            "NW_015438971.1"
+          ],
+          "seq_count": 2012,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Galliformes",
+            "family": "Phasianidae",
+            "genus": "Coturnix"
+          },
+          "common_name": "Japanese quail",
+          "published": "2026-04-04T05:46:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cjaponica.NCBI.Coturnixjaponica21/BSgenome.Cjaponica.NCBI.Coturnixjaponica21_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cricetulus griseus",
       "common_name": "Chinese hamster",
       "group": "vertebrate_mammalian",
@@ -7676,6 +7724,38 @@
       "common_name": "pikeperch",
       "published": "2026-04-04T05:45:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slucioperca.NCBI.SLUCFBN12/BSgenome.Slucioperca.NCBI.SLUCFBN12_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cjaponica.NCBI.Coturnixjaponica21",
+      "version": "1.0.0",
+      "organism": "Coturnix japonica",
+      "assembly": "Coturnix japonica 2.1",
+      "provider": "NCBI",
+      "accession": "GCF_001577835.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001577835.2/",
+      "file_name": "BSgenome.Cjaponica.NCBI.Coturnixjaponica21_1.0.0.tar.gz",
+      "size": 239220014,
+      "seq_ids": [
+        "NC_029516.1",
+        "NW_015438968.1",
+        "NW_015438969.1",
+        "NW_015438970.1",
+        "NW_015438971.1"
+      ],
+      "seq_count": 2012,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Coturnix"
+      },
+      "common_name": "Japanese quail",
+      "published": "2026-04-04T05:46:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cjaponica.NCBI.Coturnixjaponica21/BSgenome.Cjaponica.NCBI.Coturnixjaponica21_1.0.0.tar.gz"
     }
   ]
 }
