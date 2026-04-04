@@ -999,6 +999,54 @@
       ]
     },
     {
+      "organism": "Chiroxiphia lanceolata",
+      "common_name": "lance-tailed manakin",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Pipridae",
+        "genus": "Chiroxiphia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Clanceolata.NCBI.bChiLan1pri",
+          "version": "1.0.0",
+          "organism": "Chiroxiphia lanceolata",
+          "assembly": "bChiLan1.pri",
+          "provider": "NCBI",
+          "accession": "GCF_009829145.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009829145.1/",
+          "file_name": "BSgenome.Clanceolata.NCBI.bChiLan1pri_1.0.0.tar.gz",
+          "size": 282587616,
+          "seq_ids": [
+            "NC_045637.1",
+            "NC_045638.1",
+            "NC_045639.1",
+            "NC_045640.1",
+            "NC_045641.1"
+          ],
+          "seq_count": 93,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Pipridae",
+            "genus": "Chiroxiphia"
+          },
+          "common_name": "lance-tailed manakin",
+          "published": "2026-04-04T08:07:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanceolata.NCBI.bChiLan1pri/BSgenome.Clanceolata.NCBI.bChiLan1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chlamydomonas reinhardtii",
       "common_name": "",
       "group": "plant",
@@ -9836,6 +9884,38 @@
       "common_name": "sunbittern",
       "published": "2026-04-04T08:06:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehelias.NCBI.ASM69077v1/BSgenome.Ehelias.NCBI.ASM69077v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Clanceolata.NCBI.bChiLan1pri",
+      "version": "1.0.0",
+      "organism": "Chiroxiphia lanceolata",
+      "assembly": "bChiLan1.pri",
+      "provider": "NCBI",
+      "accession": "GCF_009829145.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009829145.1/",
+      "file_name": "BSgenome.Clanceolata.NCBI.bChiLan1pri_1.0.0.tar.gz",
+      "size": 282587616,
+      "seq_ids": [
+        "NC_045637.1",
+        "NC_045638.1",
+        "NC_045639.1",
+        "NC_045640.1",
+        "NC_045641.1"
+      ],
+      "seq_count": 93,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Pipridae",
+        "genus": "Chiroxiphia"
+      },
+      "common_name": "lance-tailed manakin",
+      "published": "2026-04-04T08:07:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanceolata.NCBI.bChiLan1pri/BSgenome.Clanceolata.NCBI.bChiLan1pri_1.0.0.tar.gz"
     }
   ]
 }

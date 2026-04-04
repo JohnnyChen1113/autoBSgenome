@@ -585,3 +585,7 @@ NeedsCompilation: no
 Package: BSgenome.Ehelias.NCBI.ASM69077v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clanceolata.NCBI.bChiLan1pri
+Version: 1.0.0
+NeedsCompilation: no
