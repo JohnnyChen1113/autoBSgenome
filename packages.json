@@ -13509,6 +13509,54 @@
       ]
     },
     {
+      "organism": "Trichogramma pretiosum",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Trichogrammatidae",
+        "genus": "Trichogramma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tpretiosum.NCBI.Tpre20",
+          "version": "1.0.0",
+          "organism": "Trichogramma pretiosum",
+          "assembly": "Tpre_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000599845.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000599845.2/",
+          "file_name": "BSgenome.Tpretiosum.NCBI.Tpre20_1.0.0.tar.gz",
+          "size": 50997914,
+          "seq_ids": [
+            "NW_019640787.1",
+            "NW_019640788.1",
+            "NW_019640789.1",
+            "NW_019640790.1",
+            "NW_019640791.1"
+          ],
+          "seq_count": 925,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Trichogrammatidae",
+            "genus": "Trichogramma"
+          },
+          "common_name": "",
+          "published": "2026-04-04T20:36:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tpretiosum.NCBI.Tpre20/BSgenome.Tpretiosum.NCBI.Tpre20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichoplax adhaerens",
       "common_name": "",
       "group": "invertebrate",
@@ -23415,6 +23463,38 @@
       "common_name": "",
       "published": "2026-04-04T20:36:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oabietinus.NCBI.Oabi20/BSgenome.Oabietinus.NCBI.Oabi20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tpretiosum.NCBI.Tpre20",
+      "version": "1.0.0",
+      "organism": "Trichogramma pretiosum",
+      "assembly": "Tpre_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000599845.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000599845.2/",
+      "file_name": "BSgenome.Tpretiosum.NCBI.Tpre20_1.0.0.tar.gz",
+      "size": 50997914,
+      "seq_ids": [
+        "NW_019640787.1",
+        "NW_019640788.1",
+        "NW_019640789.1",
+        "NW_019640790.1",
+        "NW_019640791.1"
+      ],
+      "seq_count": 925,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Trichogrammatidae",
+        "genus": "Trichogramma"
+      },
+      "common_name": "",
+      "published": "2026-04-04T20:36:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tpretiosum.NCBI.Tpre20/BSgenome.Tpretiosum.NCBI.Tpre20_1.0.0.tar.gz"
     }
   ]
 }
