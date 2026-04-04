@@ -825,3 +825,7 @@ NeedsCompilation: no
 Package: BSgenome.Thassleriana.NCBI.ASM46358v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Obrachyantha.NCBI.ObraRS2
+Version: 1.0.0
+NeedsCompilation: no
