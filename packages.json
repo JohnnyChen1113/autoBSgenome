@@ -2389,6 +2389,54 @@
       ]
     },
     {
+      "organism": "Cephus cinctus",
+      "common_name": "wheat stem sawfly",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Cephidae",
+        "genus": "Cephus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccinctus.NCBI.Ccin1v2",
+          "version": "1.0.0",
+          "organism": "Cephus cinctus",
+          "assembly": "Ccin1v2",
+          "provider": "NCBI",
+          "accession": "GCF_000341935.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000341935.2/",
+          "file_name": "BSgenome.Ccinctus.NCBI.Ccin1v2_1.0.0.tar.gz",
+          "size": 42512905,
+          "seq_ids": [
+            "NW_014332639.1",
+            "NW_014332640.1",
+            "NW_014332641.1",
+            "NW_014332643.1",
+            "NW_014332644.1"
+          ],
+          "seq_count": 1898,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Cephidae",
+            "genus": "Cephus"
+          },
+          "common_name": "wheat stem sawfly",
+          "published": "2026-04-04T19:35:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccinctus.NCBI.Ccin1v2/BSgenome.Ccinctus.NCBI.Ccin1v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ceratotherium simum simum",
       "common_name": "southern white rhinoceros",
       "group": "vertebrate_mammalian",
@@ -22855,6 +22903,38 @@
       "common_name": "",
       "published": "2026-04-04T19:35:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dhydei.NCBI.DhydRS2/BSgenome.Dhydei.NCBI.DhydRS2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccinctus.NCBI.Ccin1v2",
+      "version": "1.0.0",
+      "organism": "Cephus cinctus",
+      "assembly": "Ccin1v2",
+      "provider": "NCBI",
+      "accession": "GCF_000341935.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000341935.2/",
+      "file_name": "BSgenome.Ccinctus.NCBI.Ccin1v2_1.0.0.tar.gz",
+      "size": 42512905,
+      "seq_ids": [
+        "NW_014332639.1",
+        "NW_014332640.1",
+        "NW_014332641.1",
+        "NW_014332643.1",
+        "NW_014332644.1"
+      ],
+      "seq_count": 1898,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Cephidae",
+        "genus": "Cephus"
+      },
+      "common_name": "wheat stem sawfly",
+      "published": "2026-04-04T19:35:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccinctus.NCBI.Ccin1v2/BSgenome.Ccinctus.NCBI.Ccin1v2_1.0.0.tar.gz"
     }
   ]
 }
