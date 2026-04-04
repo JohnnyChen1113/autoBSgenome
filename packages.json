@@ -6947,6 +6947,54 @@
       ]
     },
     {
+      "organism": "Panicum hallii",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Panicum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Phallii.NCBI.PHalliiv31",
+          "version": "1.0.0",
+          "organism": "Panicum hallii",
+          "assembly": "PHallii_v3.1",
+          "provider": "NCBI",
+          "accession": "GCF_002211085.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002211085.1/",
+          "file_name": "BSgenome.Phallii.NCBI.PHalliiv31_1.0.0.tar.gz",
+          "size": 135591190,
+          "seq_ids": [
+            "NC_038042.1",
+            "NC_038043.1",
+            "NC_038044.1",
+            "NC_038045.1",
+            "NC_038046.1"
+          ],
+          "seq_count": 291,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Panicum"
+          },
+          "common_name": "",
+          "published": "2026-04-04T15:35:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phallii.NCBI.PHalliiv31/BSgenome.Phallii.NCBI.PHalliiv31_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Papio anubis",
       "common_name": "olive baboon",
       "group": "vertebrate_mammalian",
@@ -17575,6 +17623,38 @@
       "common_name": "",
       "published": "2026-04-04T15:35:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Boleracea.NCBI.BOL/BSgenome.Boleracea.NCBI.BOL_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Phallii.NCBI.PHalliiv31",
+      "version": "1.0.0",
+      "organism": "Panicum hallii",
+      "assembly": "PHallii_v3.1",
+      "provider": "NCBI",
+      "accession": "GCF_002211085.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002211085.1/",
+      "file_name": "BSgenome.Phallii.NCBI.PHalliiv31_1.0.0.tar.gz",
+      "size": 135591190,
+      "seq_ids": [
+        "NC_038042.1",
+        "NC_038043.1",
+        "NC_038044.1",
+        "NC_038045.1",
+        "NC_038046.1"
+      ],
+      "seq_count": 291,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Panicum"
+      },
+      "common_name": "",
+      "published": "2026-04-04T15:35:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phallii.NCBI.PHalliiv31/BSgenome.Phallii.NCBI.PHalliiv31_1.0.0.tar.gz"
     }
   ]
 }
