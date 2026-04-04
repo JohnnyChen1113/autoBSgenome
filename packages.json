@@ -9541,6 +9541,54 @@
       ]
     },
     {
+      "organism": "Ooceraea biroi",
+      "common_name": "clonal raider ant",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Ooceraea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Obiroi.NCBI.Obirv54",
+          "version": "1.0.0",
+          "organism": "Ooceraea biroi",
+          "assembly": "Obir_v5.4",
+          "provider": "NCBI",
+          "accession": "GCF_003672135.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003672135.2/",
+          "file_name": "BSgenome.Obiroi.NCBI.Obirv54_1.0.0.tar.gz",
+          "size": 57858956,
+          "seq_ids": [
+            "NC_039506.1",
+            "NC_039507.1",
+            "NC_039508.1",
+            "NC_039509.1",
+            "NC_039510.1"
+          ],
+          "seq_count": 140,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Ooceraea"
+          },
+          "common_name": "clonal raider ant",
+          "published": "2026-04-04T21:35:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Obiroi.NCBI.Obirv54/BSgenome.Obiroi.NCBI.Obirv54_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ordospora colligata OC4",
       "common_name": "",
       "group": "fungi",
@@ -24375,6 +24423,38 @@
       "common_name": "Asian swallowtail",
       "published": "2026-04-04T21:35:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pxuthus.NCBI.Pxut11/BSgenome.Pxuthus.NCBI.Pxut11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Obiroi.NCBI.Obirv54",
+      "version": "1.0.0",
+      "organism": "Ooceraea biroi",
+      "assembly": "Obir_v5.4",
+      "provider": "NCBI",
+      "accession": "GCF_003672135.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003672135.2/",
+      "file_name": "BSgenome.Obiroi.NCBI.Obirv54_1.0.0.tar.gz",
+      "size": 57858956,
+      "seq_ids": [
+        "NC_039506.1",
+        "NC_039507.1",
+        "NC_039508.1",
+        "NC_039509.1",
+        "NC_039510.1"
+      ],
+      "seq_count": 140,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Ooceraea"
+      },
+      "common_name": "clonal raider ant",
+      "published": "2026-04-04T21:35:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Obiroi.NCBI.Obirv54/BSgenome.Obiroi.NCBI.Obirv54_1.0.0.tar.gz"
     }
   ]
 }
