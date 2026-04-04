@@ -6178,6 +6178,54 @@
       ]
     },
     {
+      "organism": "Loa loa",
+      "common_name": "African eye worm",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Nematoda",
+        "class": "Chromadorea",
+        "order": "Rhabditida",
+        "family": "Onchocercidae",
+        "genus": "Loa"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lloa.NCBI.LoaloaV31",
+          "version": "1.0.0",
+          "organism": "Loa loa",
+          "assembly": "Loa_loa_V3.1",
+          "provider": "NCBI",
+          "accession": "GCF_000183805.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000183805.2/",
+          "file_name": "BSgenome.Lloa.NCBI.LoaloaV31_1.0.0.tar.gz",
+          "size": 23524296,
+          "seq_ids": [
+            "NW_018108181.1",
+            "NW_018108182.1",
+            "NW_018108183.1",
+            "NW_018108184.1",
+            "NW_018108185.1"
+          ],
+          "seq_count": 5764,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Nematoda",
+            "class": "Chromadorea",
+            "order": "Rhabditida",
+            "family": "Onchocercidae",
+            "genus": "Loa"
+          },
+          "common_name": "African eye worm",
+          "published": "2026-04-04T18:48:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lloa.NCBI.LoaloaV31/BSgenome.Lloa.NCBI.LoaloaV31_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lupinus angustifolius",
       "common_name": "narrow-leaved blue lupine",
       "group": "plant",
@@ -21015,6 +21063,38 @@
       "common_name": "two-spotted spider mite",
       "published": "2026-04-04T18:47:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Turticae.NCBI.ASM23943v1/BSgenome.Turticae.NCBI.ASM23943v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lloa.NCBI.LoaloaV31",
+      "version": "1.0.0",
+      "organism": "Loa loa",
+      "assembly": "Loa_loa_V3.1",
+      "provider": "NCBI",
+      "accession": "GCF_000183805.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000183805.2/",
+      "file_name": "BSgenome.Lloa.NCBI.LoaloaV31_1.0.0.tar.gz",
+      "size": 23524296,
+      "seq_ids": [
+        "NW_018108181.1",
+        "NW_018108182.1",
+        "NW_018108183.1",
+        "NW_018108184.1",
+        "NW_018108185.1"
+      ],
+      "seq_count": 5764,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Nematoda",
+        "class": "Chromadorea",
+        "order": "Rhabditida",
+        "family": "Onchocercidae",
+        "genus": "Loa"
+      },
+      "common_name": "African eye worm",
+      "published": "2026-04-04T18:48:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lloa.NCBI.LoaloaV31/BSgenome.Lloa.NCBI.LoaloaV31_1.0.0.tar.gz"
     }
   ]
 }
