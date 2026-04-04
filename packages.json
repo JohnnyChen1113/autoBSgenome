@@ -1970,6 +1970,54 @@
       ]
     },
     {
+      "organism": "Eurypyga helias",
+      "common_name": "sunbittern",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Eurypygiformes",
+        "family": "Eurypygidae",
+        "genus": "Eurypyga"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ehelias.NCBI.ASM69077v1",
+          "version": "1.0.0",
+          "organism": "Eurypyga helias",
+          "assembly": "ASM69077v1",
+          "provider": "NCBI",
+          "accession": "GCF_000690775.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000690775.1/",
+          "file_name": "BSgenome.Ehelias.NCBI.ASM69077v1_1.0.0.tar.gz",
+          "size": 292235449,
+          "seq_ids": [
+            "NW_010223515.1",
+            "NW_010223516.1",
+            "NW_010223517.1",
+            "NW_010223518.1",
+            "NW_010223519.1"
+          ],
+          "seq_count": 62699,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Eurypygiformes",
+            "family": "Eurypygidae",
+            "genus": "Eurypyga"
+          },
+          "common_name": "sunbittern",
+          "published": "2026-04-04T08:06:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehelias.NCBI.ASM69077v1/BSgenome.Ehelias.NCBI.ASM69077v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Galeopterus variegatus",
       "common_name": "Sunda flying lemur",
       "group": "vertebrate_mammalian",
@@ -9756,6 +9804,38 @@
       "common_name": "blue-crowned manakin",
       "published": "2026-04-04T08:06:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcoronata.NCBI.Lepidothrixcoronata10/BSgenome.Lcoronata.NCBI.Lepidothrixcoronata10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ehelias.NCBI.ASM69077v1",
+      "version": "1.0.0",
+      "organism": "Eurypyga helias",
+      "assembly": "ASM69077v1",
+      "provider": "NCBI",
+      "accession": "GCF_000690775.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000690775.1/",
+      "file_name": "BSgenome.Ehelias.NCBI.ASM69077v1_1.0.0.tar.gz",
+      "size": 292235449,
+      "seq_ids": [
+        "NW_010223515.1",
+        "NW_010223516.1",
+        "NW_010223517.1",
+        "NW_010223518.1",
+        "NW_010223519.1"
+      ],
+      "seq_count": 62699,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Eurypygiformes",
+        "family": "Eurypygidae",
+        "genus": "Eurypyga"
+      },
+      "common_name": "sunbittern",
+      "published": "2026-04-04T08:06:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehelias.NCBI.ASM69077v1/BSgenome.Ehelias.NCBI.ASM69077v1_1.0.0.tar.gz"
     }
   ]
 }
