@@ -745,3 +745,7 @@ NeedsCompilation: no
 Package: BSgenome.Nparkeri.NCBI.ASM93562v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dcoriacea.NCBI.rDerCor1priv4
+Version: 1.0.0
+NeedsCompilation: no

@@ -2430,6 +2430,52 @@
       ]
     },
     {
+      "organism": "Dermochelys coriacea",
+      "common_name": "leatherback sea turtle",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Dermochelyidae",
+        "genus": "Dermochelys"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dcoriacea.NCBI.rDerCor1priv4",
+          "version": "1.0.0",
+          "organism": "Dermochelys coriacea",
+          "assembly": "rDerCor1.pri.v4",
+          "provider": "NCBI",
+          "accession": "GCF_009764565.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009764565.3/",
+          "file_name": "BSgenome.Dcoriacea.NCBI.rDerCor1priv4_1.0.0.tar.gz",
+          "size": 558035303,
+          "seq_ids": [
+            "NC_050068.2",
+            "NC_050069.1",
+            "NC_050070.1",
+            "NC_050071.1",
+            "NC_050072.1"
+          ],
+          "seq_count": 40,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Dermochelyidae",
+            "genus": "Dermochelys"
+          },
+          "common_name": "leatherback sea turtle",
+          "published": "2026-04-04T11:05:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcoriacea.NCBI.rDerCor1priv4/BSgenome.Dcoriacea.NCBI.rDerCor1priv4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dipodomys ordii",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -13033,6 +13079,37 @@
       "common_name": "",
       "published": "2026-04-04T11:05:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparkeri.NCBI.ASM93562v1/BSgenome.Nparkeri.NCBI.ASM93562v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dcoriacea.NCBI.rDerCor1priv4",
+      "version": "1.0.0",
+      "organism": "Dermochelys coriacea",
+      "assembly": "rDerCor1.pri.v4",
+      "provider": "NCBI",
+      "accession": "GCF_009764565.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009764565.3/",
+      "file_name": "BSgenome.Dcoriacea.NCBI.rDerCor1priv4_1.0.0.tar.gz",
+      "size": 558035303,
+      "seq_ids": [
+        "NC_050068.2",
+        "NC_050069.1",
+        "NC_050070.1",
+        "NC_050071.1",
+        "NC_050072.1"
+      ],
+      "seq_count": 40,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Dermochelyidae",
+        "genus": "Dermochelys"
+      },
+      "common_name": "leatherback sea turtle",
+      "published": "2026-04-04T11:05:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcoriacea.NCBI.rDerCor1priv4/BSgenome.Dcoriacea.NCBI.rDerCor1priv4_1.0.0.tar.gz"
     }
   ]
 }
