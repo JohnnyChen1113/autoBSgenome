@@ -705,3 +705,7 @@ NeedsCompilation: no
 Package: BSgenome.Pbivittatus.NCBI.Pythonmolurusbivittatus502
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tsirtalis.NCBI.Thamnophissirtalis60
+Version: 1.0.0
+NeedsCompilation: no
