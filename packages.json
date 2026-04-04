@@ -1906,6 +1906,54 @@
       ]
     },
     {
+      "organism": "Cyanistes caeruleus",
+      "common_name": "blue tit",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Cyanistes"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccaeruleus.NCBI.cyaCae2",
+          "version": "1.0.0",
+          "organism": "Cyanistes caeruleus",
+          "assembly": "cyaCae2",
+          "provider": "NCBI",
+          "accession": "GCF_002901205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002901205.1/",
+          "file_name": "BSgenome.Ccaeruleus.NCBI.cyaCae2_1.0.0.tar.gz",
+          "size": 285684953,
+          "seq_ids": [
+            "NW_019776190.1",
+            "NW_019776191.1",
+            "NW_019776192.1",
+            "NW_019776193.1",
+            "NW_019776194.1"
+          ],
+          "seq_count": 29297,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Paridae",
+            "genus": "Cyanistes"
+          },
+          "common_name": "blue tit",
+          "published": "2026-04-04T10:05:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccaeruleus.NCBI.cyaCae2/BSgenome.Ccaeruleus.NCBI.cyaCae2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyclopterus lumpus",
       "common_name": "lumpfish",
       "group": "vertebrate_other",
@@ -11356,6 +11404,38 @@
       "common_name": "burrowing owl",
       "published": "2026-04-04T10:05:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acunicularia.NCBI.athCun1/BSgenome.Acunicularia.NCBI.athCun1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccaeruleus.NCBI.cyaCae2",
+      "version": "1.0.0",
+      "organism": "Cyanistes caeruleus",
+      "assembly": "cyaCae2",
+      "provider": "NCBI",
+      "accession": "GCF_002901205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002901205.1/",
+      "file_name": "BSgenome.Ccaeruleus.NCBI.cyaCae2_1.0.0.tar.gz",
+      "size": 285684953,
+      "seq_ids": [
+        "NW_019776190.1",
+        "NW_019776191.1",
+        "NW_019776192.1",
+        "NW_019776193.1",
+        "NW_019776194.1"
+      ],
+      "seq_count": 29297,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Cyanistes"
+      },
+      "common_name": "blue tit",
+      "published": "2026-04-04T10:05:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccaeruleus.NCBI.cyaCae2/BSgenome.Ccaeruleus.NCBI.cyaCae2_1.0.0.tar.gz"
     }
   ]
 }

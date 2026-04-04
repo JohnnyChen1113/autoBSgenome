@@ -661,3 +661,7 @@ NeedsCompilation: no
 Package: BSgenome.Acunicularia.NCBI.athCun1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccaeruleus.NCBI.cyaCae2
+Version: 1.0.0
+NeedsCompilation: no
