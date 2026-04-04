@@ -6307,6 +6307,54 @@
       ]
     },
     {
+      "organism": "Neltuma alba",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Neltuma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nalba.NCBI.ASM479914v2",
+          "version": "1.0.0",
+          "organism": "Neltuma alba",
+          "assembly": "ASM479914v2",
+          "provider": "NCBI",
+          "accession": "GCF_004799145.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004799145.2/",
+          "file_name": "BSgenome.Nalba.NCBI.ASM479914v2_1.0.0.tar.gz",
+          "size": 183786997,
+          "seq_ids": [
+            "NW_021631890.1",
+            "NW_021631891.1",
+            "NW_021631892.1",
+            "NW_021631893.1",
+            "NW_021631894.1"
+          ],
+          "seq_count": 6085,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Neltuma"
+          },
+          "common_name": "",
+          "published": "2026-04-04T15:37:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nalba.NCBI.ASM479914v2/BSgenome.Nalba.NCBI.ASM479914v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nematocida ausubeli",
       "common_name": "",
       "group": "fungi",
@@ -18375,6 +18423,38 @@
       "common_name": "",
       "published": "2026-04-04T15:37:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atrichopoda.NCBI.AMTR10/BSgenome.Atrichopoda.NCBI.AMTR10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nalba.NCBI.ASM479914v2",
+      "version": "1.0.0",
+      "organism": "Neltuma alba",
+      "assembly": "ASM479914v2",
+      "provider": "NCBI",
+      "accession": "GCF_004799145.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004799145.2/",
+      "file_name": "BSgenome.Nalba.NCBI.ASM479914v2_1.0.0.tar.gz",
+      "size": 183786997,
+      "seq_ids": [
+        "NW_021631890.1",
+        "NW_021631891.1",
+        "NW_021631892.1",
+        "NW_021631893.1",
+        "NW_021631894.1"
+      ],
+      "seq_count": 6085,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Neltuma"
+      },
+      "common_name": "",
+      "published": "2026-04-04T15:37:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nalba.NCBI.ASM479914v2/BSgenome.Nalba.NCBI.ASM479914v2_1.0.0.tar.gz"
     }
   ]
 }
