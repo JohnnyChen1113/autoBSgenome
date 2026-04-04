@@ -7235,6 +7235,54 @@
       ]
     },
     {
+      "organism": "Thamnophis elegans",
+      "common_name": "Western terrestrial garter snake",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Colubridae",
+        "genus": "Thamnophis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Telegans.NCBI.rThaEle1pri",
+          "version": "1.0.0",
+          "organism": "Thamnophis elegans",
+          "assembly": "rThaEle1.pri",
+          "provider": "NCBI",
+          "accession": "GCF_009769535.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009769535.1/",
+          "file_name": "BSgenome.Telegans.NCBI.rThaEle1pri_1.0.0.tar.gz",
+          "size": 417747389,
+          "seq_ids": [
+            "NC_045541.1",
+            "NC_045542.1",
+            "NC_045543.1",
+            "NC_045544.1",
+            "NC_045545.1"
+          ],
+          "seq_count": 365,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Colubridae",
+            "genus": "Thamnophis"
+          },
+          "common_name": "Western terrestrial garter snake",
+          "published": "2026-04-04T11:04:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Telegans.NCBI.rThaEle1pri/BSgenome.Telegans.NCBI.rThaEle1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Thamnophis sirtalis",
       "common_name": "",
       "group": "vertebrate_other",
@@ -12796,6 +12844,38 @@
       "common_name": "goldfish",
       "published": "2026-04-04T11:04:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauratus.NCBI.ASM336829v1/BSgenome.Cauratus.NCBI.ASM336829v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Telegans.NCBI.rThaEle1pri",
+      "version": "1.0.0",
+      "organism": "Thamnophis elegans",
+      "assembly": "rThaEle1.pri",
+      "provider": "NCBI",
+      "accession": "GCF_009769535.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009769535.1/",
+      "file_name": "BSgenome.Telegans.NCBI.rThaEle1pri_1.0.0.tar.gz",
+      "size": 417747389,
+      "seq_ids": [
+        "NC_045541.1",
+        "NC_045542.1",
+        "NC_045543.1",
+        "NC_045544.1",
+        "NC_045545.1"
+      ],
+      "seq_count": 365,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Colubridae",
+        "genus": "Thamnophis"
+      },
+      "common_name": "Western terrestrial garter snake",
+      "published": "2026-04-04T11:04:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Telegans.NCBI.rThaEle1pri/BSgenome.Telegans.NCBI.rThaEle1pri_1.0.0.tar.gz"
     }
   ]
 }

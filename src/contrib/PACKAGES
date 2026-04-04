@@ -733,3 +733,7 @@ NeedsCompilation: no
 Package: BSgenome.Cauratus.NCBI.ASM336829v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Telegans.NCBI.rThaEle1pri
+Version: 1.0.0
+NeedsCompilation: no
