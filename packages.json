@@ -4394,6 +4394,54 @@
       ]
     },
     {
+      "organism": "Nipponia nippon",
+      "common_name": "crested ibis",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Pelecaniformes",
+        "family": "Threskiornithidae",
+        "genus": "Nipponia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nnippon.NCBI.ASM70822v1",
+          "version": "1.0.0",
+          "organism": "Nipponia nippon",
+          "assembly": "ASM70822v1",
+          "provider": "NCBI",
+          "accession": "GCF_000708225.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000708225.1/",
+          "file_name": "BSgenome.Nnippon.NCBI.ASM70822v1_1.0.0.tar.gz",
+          "size": 315022094,
+          "seq_ids": [
+            "NW_008997734.1",
+            "NW_008997735.1",
+            "NW_008997736.1",
+            "NW_008997737.1",
+            "NW_008997738.1"
+          ],
+          "seq_count": 59555,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Pelecaniformes",
+            "family": "Threskiornithidae",
+            "genus": "Nipponia"
+          },
+          "common_name": "crested ibis",
+          "published": "2026-04-04T10:06:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnippon.NCBI.ASM70822v1/BSgenome.Nnippon.NCBI.ASM70822v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nomascus leucogenys",
       "common_name": "northern white-cheeked gibbon",
       "group": "vertebrate_mammalian",
@@ -11596,6 +11644,38 @@
       "common_name": "bald eagle",
       "published": "2026-04-04T10:06:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40/BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nnippon.NCBI.ASM70822v1",
+      "version": "1.0.0",
+      "organism": "Nipponia nippon",
+      "assembly": "ASM70822v1",
+      "provider": "NCBI",
+      "accession": "GCF_000708225.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000708225.1/",
+      "file_name": "BSgenome.Nnippon.NCBI.ASM70822v1_1.0.0.tar.gz",
+      "size": 315022094,
+      "seq_ids": [
+        "NW_008997734.1",
+        "NW_008997735.1",
+        "NW_008997736.1",
+        "NW_008997737.1",
+        "NW_008997738.1"
+      ],
+      "seq_count": 59555,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Pelecaniformes",
+        "family": "Threskiornithidae",
+        "genus": "Nipponia"
+      },
+      "common_name": "crested ibis",
+      "published": "2026-04-04T10:06:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnippon.NCBI.ASM70822v1/BSgenome.Nnippon.NCBI.ASM70822v1_1.0.0.tar.gz"
     }
   ]
 }

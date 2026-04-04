@@ -673,3 +673,7 @@ NeedsCompilation: no
 Package: BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nnippon.NCBI.ASM70822v1
+Version: 1.0.0
+NeedsCompilation: no
