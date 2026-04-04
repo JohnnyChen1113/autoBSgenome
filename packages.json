@@ -1158,6 +1158,54 @@
       ]
     },
     {
+      "organism": "Elephantulus edwardii",
+      "common_name": "Cape elephant shrew",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Macroscelidea",
+        "family": "Macroscelididae",
+        "genus": "Elephantulus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Eedwardii.NCBI.EleEdw10",
+          "version": "1.0.0",
+          "organism": "Elephantulus edwardii",
+          "assembly": "EleEdw1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000299155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000299155.1/",
+          "file_name": "BSgenome.Eedwardii.NCBI.EleEdw10_1.0.0.tar.gz",
+          "size": 875586770,
+          "seq_ids": [
+            "NW_006399751.1",
+            "NW_006399752.1",
+            "NW_006399753.1",
+            "NW_006399754.1",
+            "NW_006399755.1"
+          ],
+          "seq_count": 8768,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Macroscelidea",
+            "family": "Macroscelididae",
+            "genus": "Elephantulus"
+          },
+          "common_name": "Cape elephant shrew",
+          "published": "2026-04-04T02:32:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eedwardii.NCBI.EleEdw10/BSgenome.Eedwardii.NCBI.EleEdw10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Encephalitozoon cuniculi GB-M1",
       "common_name": "",
       "group": "fungi",
@@ -5839,6 +5887,38 @@
       "common_name": "Cape golden mole",
       "published": "2026-04-04T02:31:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Casiatica.NCBI.ChrAsi10/BSgenome.Casiatica.NCBI.ChrAsi10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Eedwardii.NCBI.EleEdw10",
+      "version": "1.0.0",
+      "organism": "Elephantulus edwardii",
+      "assembly": "EleEdw1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000299155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000299155.1/",
+      "file_name": "BSgenome.Eedwardii.NCBI.EleEdw10_1.0.0.tar.gz",
+      "size": 875586770,
+      "seq_ids": [
+        "NW_006399751.1",
+        "NW_006399752.1",
+        "NW_006399753.1",
+        "NW_006399754.1",
+        "NW_006399755.1"
+      ],
+      "seq_count": 8768,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Macroscelidea",
+        "family": "Macroscelididae",
+        "genus": "Elephantulus"
+      },
+      "common_name": "Cape elephant shrew",
+      "published": "2026-04-04T02:32:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eedwardii.NCBI.EleEdw10/BSgenome.Eedwardii.NCBI.EleEdw10_1.0.0.tar.gz"
     }
   ]
 }
