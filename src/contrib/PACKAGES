@@ -1189,3 +1189,7 @@ NeedsCompilation: no
 Package: BSgenome.Tadhaerens.NCBI.v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cbriggsae.NCBI.CB4
+Version: 1.0.0
+NeedsCompilation: no

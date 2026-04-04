@@ -1576,6 +1576,54 @@
       ]
     },
     {
+      "organism": "Caenorhabditis briggsae",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Nematoda",
+        "class": "Chromadorea",
+        "order": "Rhabditida",
+        "family": "Rhabditidae",
+        "genus": "Caenorhabditis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cbriggsae.NCBI.CB4",
+          "version": "1.0.0",
+          "organism": "Caenorhabditis briggsae",
+          "assembly": "CB4",
+          "provider": "NCBI",
+          "accession": "GCF_000004555.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004555.2/",
+          "file_name": "BSgenome.Cbriggsae.NCBI.CB4_1.0.0.tar.gz",
+          "size": 27785692,
+          "seq_ids": [
+            "NC_013489.2",
+            "NW_025543431.1",
+            "NW_025543438.1",
+            "NC_013486.2",
+            "NC_013490.2"
+          ],
+          "seq_count": 367,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Nematoda",
+            "class": "Chromadorea",
+            "order": "Rhabditida",
+            "family": "Rhabditidae",
+            "genus": "Caenorhabditis"
+          },
+          "common_name": "",
+          "published": "2026-04-04T19:33:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbriggsae.NCBI.CB4/BSgenome.Cbriggsae.NCBI.CB4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cajanus cajan",
       "common_name": "pigeon pea",
       "group": "plant",
@@ -21895,6 +21943,38 @@
       "common_name": "",
       "published": "2026-04-04T19:33:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tadhaerens.NCBI.v10/BSgenome.Tadhaerens.NCBI.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cbriggsae.NCBI.CB4",
+      "version": "1.0.0",
+      "organism": "Caenorhabditis briggsae",
+      "assembly": "CB4",
+      "provider": "NCBI",
+      "accession": "GCF_000004555.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004555.2/",
+      "file_name": "BSgenome.Cbriggsae.NCBI.CB4_1.0.0.tar.gz",
+      "size": 27785692,
+      "seq_ids": [
+        "NC_013489.2",
+        "NW_025543431.1",
+        "NW_025543438.1",
+        "NC_013486.2",
+        "NC_013490.2"
+      ],
+      "seq_count": 367,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Nematoda",
+        "class": "Chromadorea",
+        "order": "Rhabditida",
+        "family": "Rhabditidae",
+        "genus": "Caenorhabditis"
+      },
+      "common_name": "",
+      "published": "2026-04-04T19:33:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbriggsae.NCBI.CB4/BSgenome.Cbriggsae.NCBI.CB4_1.0.0.tar.gz"
     }
   ]
 }
