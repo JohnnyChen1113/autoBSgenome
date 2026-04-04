@@ -1957,6 +1957,54 @@
       ]
     },
     {
+      "organism": "Capsicum annuum",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Capsicum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cannuum.NCBI.UCD10Xv11",
+          "version": "1.0.0",
+          "organism": "Capsicum annuum",
+          "assembly": "UCD10Xv1.1",
+          "provider": "NCBI",
+          "accession": "GCF_002878395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002878395.1/",
+          "file_name": "BSgenome.Cannuum.NCBI.UCD10Xv11_1.0.0.tar.gz",
+          "size": 828955948,
+          "seq_ids": [
+            "NC_061111.1",
+            "NC_061112.1",
+            "NC_061113.1",
+            "NC_061114.1",
+            "NC_061115.1"
+          ],
+          "seq_count": 81202,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Solanaceae",
+            "genus": "Capsicum"
+          },
+          "common_name": "",
+          "published": "2026-04-04T18:51:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cannuum.NCBI.UCD10Xv11/BSgenome.Cannuum.NCBI.UCD10Xv11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Carassius auratus",
       "common_name": "goldfish",
       "group": "vertebrate_other",
@@ -21495,6 +21543,38 @@
       "common_name": "",
       "published": "2026-04-04T18:50:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csinensis.NCBI.AHAUCSS1/BSgenome.Csinensis.NCBI.AHAUCSS1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cannuum.NCBI.UCD10Xv11",
+      "version": "1.0.0",
+      "organism": "Capsicum annuum",
+      "assembly": "UCD10Xv1.1",
+      "provider": "NCBI",
+      "accession": "GCF_002878395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002878395.1/",
+      "file_name": "BSgenome.Cannuum.NCBI.UCD10Xv11_1.0.0.tar.gz",
+      "size": 828955948,
+      "seq_ids": [
+        "NC_061111.1",
+        "NC_061112.1",
+        "NC_061113.1",
+        "NC_061114.1",
+        "NC_061115.1"
+      ],
+      "seq_count": 81202,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Capsicum"
+      },
+      "common_name": "",
+      "published": "2026-04-04T18:51:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cannuum.NCBI.UCD10Xv11/BSgenome.Cannuum.NCBI.UCD10Xv11_1.0.0.tar.gz"
     }
   ]
 }
