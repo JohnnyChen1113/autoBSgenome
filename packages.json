@@ -15884,6 +15884,54 @@
       ]
     },
     {
+      "organism": "Wasmannia auropunctata",
+      "common_name": "little fire ant",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Wasmannia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Wauropunctata.NCBI.wasmanniaA10",
+          "version": "1.0.0",
+          "organism": "Wasmannia auropunctata",
+          "assembly": "wasmannia.A_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000956235.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000956235.1/",
+          "file_name": "BSgenome.Wauropunctata.NCBI.wasmanniaA10_1.0.0.tar.gz",
+          "size": 77198411,
+          "seq_ids": [
+            "NW_012020309.1",
+            "NW_012020310.1",
+            "NW_012020311.1",
+            "NW_012020312.1",
+            "NW_012020313.1"
+          ],
+          "seq_count": 77788,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Wasmannia"
+          },
+          "common_name": "little fire ant",
+          "published": "2026-04-04T23:35:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wauropunctata.NCBI.wasmanniaA10/BSgenome.Wauropunctata.NCBI.wasmanniaA10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Xiphophorus couchianus",
       "common_name": "Monterrey platyfish",
       "group": "vertebrate_other",
@@ -26695,6 +26743,38 @@
       "common_name": "",
       "published": "2026-04-04T23:35:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acephalotes.NCBI.Attacep10/BSgenome.Acephalotes.NCBI.Attacep10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Wauropunctata.NCBI.wasmanniaA10",
+      "version": "1.0.0",
+      "organism": "Wasmannia auropunctata",
+      "assembly": "wasmannia.A_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000956235.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000956235.1/",
+      "file_name": "BSgenome.Wauropunctata.NCBI.wasmanniaA10_1.0.0.tar.gz",
+      "size": 77198411,
+      "seq_ids": [
+        "NW_012020309.1",
+        "NW_012020310.1",
+        "NW_012020311.1",
+        "NW_012020312.1",
+        "NW_012020313.1"
+      ],
+      "seq_count": 77788,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Wasmannia"
+      },
+      "common_name": "little fire ant",
+      "published": "2026-04-04T23:35:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wauropunctata.NCBI.wasmanniaA10/BSgenome.Wauropunctata.NCBI.wasmanniaA10_1.0.0.tar.gz"
     }
   ]
 }
