@@ -2618,6 +2618,54 @@
       ]
     },
     {
+      "organism": "Notolabrus celidotus",
+      "common_name": "New Zealand spotty",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Labriformes",
+        "family": "Labridae",
+        "genus": "Notolabrus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ncelidotus.NCBI.fNotCel1pri",
+          "version": "1.0.0",
+          "organism": "Notolabrus celidotus",
+          "assembly": "fNotCel1.pri",
+          "provider": "NCBI",
+          "accession": "GCF_009762535.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009762535.1/",
+          "file_name": "BSgenome.Ncelidotus.NCBI.fNotCel1pri_1.0.0.tar.gz",
+          "size": 212639378,
+          "seq_ids": [
+            "NC_048272.1",
+            "NC_048273.1",
+            "NC_048274.1",
+            "NC_048275.1",
+            "NC_048276.1"
+          ],
+          "seq_count": 467,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Labriformes",
+            "family": "Labridae",
+            "genus": "Notolabrus"
+          },
+          "common_name": "New Zealand spotty",
+          "published": "2026-04-04T05:44:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncelidotus.NCBI.fNotCel1pri/BSgenome.Ncelidotus.NCBI.fNotCel1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Notothenia coriiceps",
       "common_name": "black rockcod",
       "group": "vertebrate_other",
@@ -7196,6 +7244,38 @@
       "common_name": "channel catfish",
       "published": "2026-04-04T05:44:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ipunctatus.NCBI.Coco20/BSgenome.Ipunctatus.NCBI.Coco20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ncelidotus.NCBI.fNotCel1pri",
+      "version": "1.0.0",
+      "organism": "Notolabrus celidotus",
+      "assembly": "fNotCel1.pri",
+      "provider": "NCBI",
+      "accession": "GCF_009762535.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009762535.1/",
+      "file_name": "BSgenome.Ncelidotus.NCBI.fNotCel1pri_1.0.0.tar.gz",
+      "size": 212639378,
+      "seq_ids": [
+        "NC_048272.1",
+        "NC_048273.1",
+        "NC_048274.1",
+        "NC_048275.1",
+        "NC_048276.1"
+      ],
+      "seq_count": 467,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Labriformes",
+        "family": "Labridae",
+        "genus": "Notolabrus"
+      },
+      "common_name": "New Zealand spotty",
+      "published": "2026-04-04T05:44:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncelidotus.NCBI.fNotCel1pri/BSgenome.Ncelidotus.NCBI.fNotCel1pri_1.0.0.tar.gz"
     }
   ]
 }
