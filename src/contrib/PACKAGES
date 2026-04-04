@@ -537,3 +537,7 @@ NeedsCompilation: no
 Package: BSgenome.Mnubicus.NCBI.ASM69184v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gfortis.NCBI.GeoFor10
+Version: 1.0.0
+NeedsCompilation: no
