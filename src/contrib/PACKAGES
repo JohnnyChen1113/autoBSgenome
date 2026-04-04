@@ -885,3 +885,7 @@ NeedsCompilation: no
 Package: BSgenome.Oglaberrima.NCBI.OglaRS2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Brapa.NCBI.CAASBrapv301
+Version: 1.0.0
+NeedsCompilation: no
