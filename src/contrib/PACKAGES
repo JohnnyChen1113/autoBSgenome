@@ -429,3 +429,7 @@ NeedsCompilation: no
 Package: BSgenome.Omelastigma.NCBI.ASM292280v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmexicana.NCBI.Pmexicana10
+Version: 1.0.0
+NeedsCompilation: no

@@ -3237,6 +3237,54 @@
       ]
     },
     {
+      "organism": "Poecilia mexicana",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Poeciliidae",
+        "genus": "Poecilia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pmexicana.NCBI.Pmexicana10",
+          "version": "1.0.0",
+          "organism": "Poecilia mexicana",
+          "assembly": "P_mexicana-1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001443325.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001443325.1/",
+          "file_name": "BSgenome.Pmexicana.NCBI.Pmexicana10_1.0.0.tar.gz",
+          "size": 184976864,
+          "seq_ids": [
+            "NW_015094511.1",
+            "NW_015094512.1",
+            "NW_015094513.1",
+            "NW_015094514.1",
+            "NW_015094515.1"
+          ],
+          "seq_count": 18105,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Poeciliidae",
+            "genus": "Poecilia"
+          },
+          "common_name": "",
+          "published": "2026-04-04T04:33:26Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmexicana.NCBI.Pmexicana10/BSgenome.Pmexicana.NCBI.Pmexicana10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pteropus alecto",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -6719,6 +6767,38 @@
       "common_name": "Indian medaka",
       "published": "2026-04-04T04:33:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Omelastigma.NCBI.ASM292280v2/BSgenome.Omelastigma.NCBI.ASM292280v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pmexicana.NCBI.Pmexicana10",
+      "version": "1.0.0",
+      "organism": "Poecilia mexicana",
+      "assembly": "P_mexicana-1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001443325.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001443325.1/",
+      "file_name": "BSgenome.Pmexicana.NCBI.Pmexicana10_1.0.0.tar.gz",
+      "size": 184976864,
+      "seq_ids": [
+        "NW_015094511.1",
+        "NW_015094512.1",
+        "NW_015094513.1",
+        "NW_015094514.1",
+        "NW_015094515.1"
+      ],
+      "seq_count": 18105,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Poeciliidae",
+        "genus": "Poecilia"
+      },
+      "common_name": "",
+      "published": "2026-04-04T04:33:26Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmexicana.NCBI.Pmexicana10/BSgenome.Pmexicana.NCBI.Pmexicana10_1.0.0.tar.gz"
     }
   ]
 }
