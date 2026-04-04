@@ -60,10 +60,17 @@
   .org-header:hover { background: var(--bg-secondary); }
   .org-name { font-size: 18px; font-weight: 600; font-style: italic; color: var(--text); }
   .org-common { font-size: 14px; color: var(--text-muted); font-style: normal; margin-left: 8px; }
+  .org-meta { font-size: 12px; color: var(--text-muted); margin-top: 3px; display: flex; gap: 12px; align-items: center; }
+  .org-meta .acc-link { color: var(--primary); text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+  .org-meta .acc-link:hover { text-decoration: underline; }
   .org-badge-row { display: flex; gap: 6px; align-items: center; }
   .org-count { font-size: 12px; color: var(--text-muted); background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; padding: 2px 10px; }
   .chevron { transition: transform 0.2s; color: var(--text-muted); }
   .chevron.open { transform: rotate(180deg); }
+
+  .tax-breadcrumb { font-size: 11px; color: var(--text-muted); padding: 8px 20px; background: #f8f9fb; border-top: 1px solid var(--border); }
+  .tax-breadcrumb span { padding: 1px 6px; background: #eef1f6; border-radius: 3px; }
+  .tax-breadcrumb .sep { background: none; padding: 0; color: #ccc; }
 
   .build-list { border-top: 1px solid var(--border); padding: 0; display: none; }
   .build-list.open { display: block; }
@@ -316,31 +323,48 @@ function renderOrgCard(org) {
     const searchText = [org.organism, org.common_name, ...org.builds.map(b => b.package + ' ' + b.assembly + ' ' + b.accession)].join(' ').toLowerCase();
     const buildCount = org.builds.length;
 
+    const firstBuild = org.builds[0];
+    const accession = firstBuild?.accession || '';
+    const sourceUrl = firstBuild?.source_url || (accession ? 'https://www.ncbi.nlm.nih.gov/datasets/genome/' + accession + '/' : '');
+    const provider = firstBuild?.provider || 'NCBI';
+
+    // Taxonomy breadcrumb
+    const tax = org.taxonomy || {};
+    const taxCrumbs = ['phylum', 'class', 'order', 'family'].map(r => tax[r]).filter(Boolean);
+
     return `
     <div class="org-card" data-search="${searchText}">
       <div class="org-header" onclick="toggleOrg(this)">
         <div>
-          <span class="org-name">${speciesName(org.organism)}</span>
-          ${org.common_name ? `<span class="org-common">(${org.common_name})</span>` : ''}
+          <div>
+            <span class="org-name">${speciesName(org.organism)}</span>
+            ${org.common_name ? `<span class="org-common">(${org.common_name})</span>` : ''}
+          </div>
+          <div class="org-meta">
+            ${accession ? `<a class="acc-link" href="${sourceUrl}" target="_blank" onclick="event.stopPropagation();">${accession}</a>` : ''}
+            <span class="badge ${provider === 'Ensembl' ? 'badge-ensembl' : 'badge-ncbi'}">${provider}</span>
+            ${strainInfo(org.organism) ? `<span>Strain: ${strainInfo(org.organism)}</span>` : ''}
+          </div>
         </div>
         <div class="org-badge-row">
           <span class="org-count">${buildCount} build${buildCount > 1 ? 's' : ''}</span>
           <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
       </div>
+      ${taxCrumbs.length ? `<div class="tax-breadcrumb">${taxCrumbs.map(c => `<span>${c}</span>`).join('<span class="sep"> › </span>')}</div>` : ''}
       <div class="build-list">
         ${org.builds.map(b => `
         <div class="build-item" style="flex-direction:column;align-items:stretch;">
           <div class="build-pkg">${b.package}</div>
-          ${strainInfo(org.organism) ? `<div style="font-size:12px;color:var(--text-muted);margin-top:2px;">Strain: ${strainInfo(org.organism)}</div>` : ''}
           <div style="display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:13px;margin-top:8px;">
             <span style="color:var(--text-muted);">Assembly:</span><span>${b.assembly || 'N/A'}</span>
             <span style="color:var(--text-muted);">Provider:</span><span><span class="badge ${b.provider === 'Ensembl' ? 'badge-ensembl' : 'badge-ncbi'}">${b.provider || 'NCBI'}</span></span>
             ${b.accession ? `<span style="color:var(--text-muted);">Accession:</span><span><a href="${b.source_url || 'https://www.ncbi.nlm.nih.gov/datasets/genome/' + b.accession + '/'}" target="_blank">${b.accession} ↗</a></span>` : ''}
             <span style="color:var(--text-muted);">Version:</span><span>${b.version || '1.0.0'}</span>
             ${b.size ? `<span style="color:var(--text-muted);">Package size:</span><span>${(b.size / 1024 / 1024).toFixed(1)} MB</span>` : ''}
-            ${b.seq_count ? `<span style="color:var(--text-muted);">Sequences:</span><span>${b.seq_count} contigs/chromosomes</span>` : ''}
+            ${b.seq_count ? `<span style="color:var(--text-muted);">Sequences:</span><span>${b.seq_count.toLocaleString()} contigs/chromosomes</span>` : ''}
             ${b.seq_ids && b.seq_ids.length && b.seq_ids[0] ? `<span style="color:var(--text-muted);">Seq IDs:</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;">${b.seq_ids.slice(0,5).join(', ')}${b.seq_ids.length > 5 ? ', ...' : ''}</span>` : ''}
+            ${b.published ? `<span style="color:var(--text-muted);">Published:</span><span>${new Date(b.published).toLocaleDateString()}</span>` : ''}
           </div>
           <div class="build-actions" style="margin-top:10px;">
             <a class="btn btn-primary" href="${b.download_url || (BASE + '/src/contrib/' + b.file_name)}">Download</a>
