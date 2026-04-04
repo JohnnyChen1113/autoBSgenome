@@ -8482,6 +8482,52 @@
       ]
     },
     {
+      "organism": "Lottia gigantea",
+      "common_name": "owl limpet",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Gastropoda",
+        "family": "Lottiidae",
+        "genus": "Lottia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lgigantea.NCBI.Helro1",
+          "version": "1.0.0",
+          "organism": "Lottia gigantea",
+          "assembly": "Helro1",
+          "provider": "NCBI",
+          "accession": "GCF_000327385.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000327385.1/",
+          "file_name": "BSgenome.Lgigantea.NCBI.Helro1_1.0.0.tar.gz",
+          "size": 76364974,
+          "seq_ids": [
+            "NW_008706746.1",
+            "NW_008706747.1",
+            "NW_008706748.1",
+            "NW_008706749.1",
+            "NW_008706750.1"
+          ],
+          "seq_count": 4469,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Mollusca",
+            "class": "Gastropoda",
+            "family": "Lottiidae",
+            "genus": "Lottia"
+          },
+          "common_name": "owl limpet",
+          "published": "2026-04-04T23:36:41Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lgigantea.NCBI.Helro1/BSgenome.Lgigantea.NCBI.Helro1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lupinus angustifolius",
       "common_name": "narrow-leaved blue lupine",
       "group": "plant",
@@ -27175,6 +27221,37 @@
       "common_name": "yellow sugarcane aphid",
       "published": "2026-04-04T23:36:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sflava.NCBI.YSAversion1/BSgenome.Sflava.NCBI.YSAversion1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lgigantea.NCBI.Helro1",
+      "version": "1.0.0",
+      "organism": "Lottia gigantea",
+      "assembly": "Helro1",
+      "provider": "NCBI",
+      "accession": "GCF_000327385.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000327385.1/",
+      "file_name": "BSgenome.Lgigantea.NCBI.Helro1_1.0.0.tar.gz",
+      "size": 76364974,
+      "seq_ids": [
+        "NW_008706746.1",
+        "NW_008706747.1",
+        "NW_008706748.1",
+        "NW_008706749.1",
+        "NW_008706750.1"
+      ],
+      "seq_count": 4469,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Gastropoda",
+        "family": "Lottiidae",
+        "genus": "Lottia"
+      },
+      "common_name": "owl limpet",
+      "published": "2026-04-04T23:36:41Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lgigantea.NCBI.Helro1/BSgenome.Lgigantea.NCBI.Helro1_1.0.0.tar.gz"
     }
   ]
 }
