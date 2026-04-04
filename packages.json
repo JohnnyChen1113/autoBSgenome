@@ -1022,6 +1022,54 @@
       ]
     },
     {
+      "organism": "Chlamydotis macqueenii",
+      "common_name": "Macqueen's bustard",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Otidiformes",
+        "family": "Otididae",
+        "genus": "Chlamydotis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cmacqueenii.NCBI.ASM69519v1",
+          "version": "1.0.0",
+          "organism": "Chlamydotis macqueenii",
+          "assembly": "ASM69519v1",
+          "provider": "NCBI",
+          "accession": "GCF_000695195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000695195.1/",
+          "file_name": "BSgenome.Cmacqueenii.NCBI.ASM69519v1_1.0.0.tar.gz",
+          "size": 293383420,
+          "seq_ids": [
+            "NW_010449894.1",
+            "NW_010449895.1",
+            "NW_010449896.1",
+            "NW_010449897.1",
+            "NW_010449898.1"
+          ],
+          "seq_count": 59693,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Otidiformes",
+            "family": "Otididae",
+            "genus": "Chlamydotis"
+          },
+          "common_name": "Macqueen's bustard",
+          "published": "2026-04-04T08:06:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmacqueenii.NCBI.ASM69519v1/BSgenome.Cmacqueenii.NCBI.ASM69519v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chlorella variabilis",
       "common_name": "",
       "group": "plant",
@@ -9596,6 +9644,38 @@
       "common_name": "Wire-tailed manakin",
       "published": "2026-04-04T08:06:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfilicauda.NCBI.ASM394559v2/BSgenome.Pfilicauda.NCBI.ASM394559v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cmacqueenii.NCBI.ASM69519v1",
+      "version": "1.0.0",
+      "organism": "Chlamydotis macqueenii",
+      "assembly": "ASM69519v1",
+      "provider": "NCBI",
+      "accession": "GCF_000695195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000695195.1/",
+      "file_name": "BSgenome.Cmacqueenii.NCBI.ASM69519v1_1.0.0.tar.gz",
+      "size": 293383420,
+      "seq_ids": [
+        "NW_010449894.1",
+        "NW_010449895.1",
+        "NW_010449896.1",
+        "NW_010449897.1",
+        "NW_010449898.1"
+      ],
+      "seq_count": 59693,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Otidiformes",
+        "family": "Otididae",
+        "genus": "Chlamydotis"
+      },
+      "common_name": "Macqueen's bustard",
+      "published": "2026-04-04T08:06:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmacqueenii.NCBI.ASM69519v1/BSgenome.Cmacqueenii.NCBI.ASM69519v1_1.0.0.tar.gz"
     }
   ]
 }
