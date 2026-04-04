@@ -11433,6 +11433,54 @@
       ]
     },
     {
+      "organism": "Pogonomyrmex barbatus",
+      "common_name": "red harvester ant",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Pogonomyrmex"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pbarbatus.NCBI.PbarUMDV03",
+          "version": "1.0.0",
+          "organism": "Pogonomyrmex barbatus",
+          "assembly": "Pbar_UMD_V03",
+          "provider": "NCBI",
+          "accession": "GCF_000187915.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000187915.1/",
+          "file_name": "BSgenome.Pbarbatus.NCBI.PbarUMDV03_1.0.0.tar.gz",
+          "size": 59582041,
+          "seq_ids": [
+            "NW_011929472.1",
+            "NW_011929473.1",
+            "NW_011929474.1",
+            "NW_011929475.1",
+            "NW_011929476.1"
+          ],
+          "seq_count": 4645,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Pogonomyrmex"
+          },
+          "common_name": "red harvester ant",
+          "published": "2026-04-04T21:36:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pbarbatus.NCBI.PbarUMDV03/BSgenome.Pbarbatus.NCBI.PbarUMDV03_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Polistes canadensis",
       "common_name": "",
       "group": "invertebrate",
@@ -24775,6 +24823,38 @@
       "common_name": "",
       "published": "2026-04-04T21:36:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hrobusta.NCBI.Helobdellarobustav10/BSgenome.Hrobusta.NCBI.Helobdellarobustav10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pbarbatus.NCBI.PbarUMDV03",
+      "version": "1.0.0",
+      "organism": "Pogonomyrmex barbatus",
+      "assembly": "Pbar_UMD_V03",
+      "provider": "NCBI",
+      "accession": "GCF_000187915.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000187915.1/",
+      "file_name": "BSgenome.Pbarbatus.NCBI.PbarUMDV03_1.0.0.tar.gz",
+      "size": 59582041,
+      "seq_ids": [
+        "NW_011929472.1",
+        "NW_011929473.1",
+        "NW_011929474.1",
+        "NW_011929475.1",
+        "NW_011929476.1"
+      ],
+      "seq_count": 4645,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Pogonomyrmex"
+      },
+      "common_name": "red harvester ant",
+      "published": "2026-04-04T21:36:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pbarbatus.NCBI.PbarUMDV03/BSgenome.Pbarbatus.NCBI.PbarUMDV03_1.0.0.tar.gz"
     }
   ]
 }
