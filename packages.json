@@ -5026,6 +5026,54 @@
       ]
     },
     {
+      "organism": "Medicago truncatula",
+      "common_name": "barrel medic",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Medicago"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR",
+          "version": "1.0.0",
+          "organism": "Medicago truncatula",
+          "assembly": "MtrunA17r5.0-ANR",
+          "provider": "NCBI",
+          "accession": "GCF_003473485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003473485.1/",
+          "file_name": "BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR_1.0.0.tar.gz",
+          "size": 108646762,
+          "seq_ids": [
+            "NC_053042.1",
+            "NC_053043.1",
+            "NC_053044.1",
+            "NC_053045.1",
+            "NC_053046.1"
+          ],
+          "seq_count": 42,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Medicago"
+          },
+          "common_name": "barrel medic",
+          "published": "2026-04-04T14:41:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR/BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Merops nubicus",
       "common_name": "carmine bee-eater",
       "group": "vertebrate_other",
@@ -16455,6 +16503,38 @@
       "common_name": "white poplar",
       "published": "2026-04-04T14:41:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palba.NCBI.ASM523922v2/BSgenome.Palba.NCBI.ASM523922v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR",
+      "version": "1.0.0",
+      "organism": "Medicago truncatula",
+      "assembly": "MtrunA17r5.0-ANR",
+      "provider": "NCBI",
+      "accession": "GCF_003473485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003473485.1/",
+      "file_name": "BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR_1.0.0.tar.gz",
+      "size": 108646762,
+      "seq_ids": [
+        "NC_053042.1",
+        "NC_053043.1",
+        "NC_053044.1",
+        "NC_053045.1",
+        "NC_053046.1"
+      ],
+      "seq_count": 42,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Medicago"
+      },
+      "common_name": "barrel medic",
+      "published": "2026-04-04T14:41:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR/BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR_1.0.0.tar.gz"
     }
   ]
 }

@@ -917,3 +917,7 @@ NeedsCompilation: no
 Package: BSgenome.Palba.NCBI.ASM523922v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR
+Version: 1.0.0
+NeedsCompilation: no
