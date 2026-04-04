@@ -1737,6 +1737,54 @@
       ]
     },
     {
+      "organism": "Cygnus olor",
+      "common_name": "mute swan",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Cygnus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Color.NCBI.bCygOlo1priv2",
+          "version": "1.0.0",
+          "organism": "Cygnus olor",
+          "assembly": "bCygOlo1.pri.v2",
+          "provider": "NCBI",
+          "accession": "GCF_009769625.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009769625.2/",
+          "file_name": "BSgenome.Color.NCBI.bCygOlo1priv2_1.0.0.tar.gz",
+          "size": 294154994,
+          "seq_ids": [
+            "NC_049169.1",
+            "NW_024429046.1",
+            "NC_049170.1",
+            "NW_024429047.1",
+            "NC_049171.1"
+          ],
+          "seq_count": 171,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Anseriformes",
+            "family": "Anatidae",
+            "genus": "Cygnus"
+          },
+          "common_name": "mute swan",
+          "published": "2026-04-04T09:11:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Color.NCBI.bCygOlo1priv2/BSgenome.Color.NCBI.bCygOlo1priv2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cynoglossus semilaevis",
       "common_name": "tongue sole",
       "group": "vertebrate_other",
@@ -10636,6 +10684,38 @@
       "common_name": "Northern fulmar",
       "published": "2026-04-04T09:11:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fglacialis.NCBI.ASM69083v1/BSgenome.Fglacialis.NCBI.ASM69083v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Color.NCBI.bCygOlo1priv2",
+      "version": "1.0.0",
+      "organism": "Cygnus olor",
+      "assembly": "bCygOlo1.pri.v2",
+      "provider": "NCBI",
+      "accession": "GCF_009769625.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009769625.2/",
+      "file_name": "BSgenome.Color.NCBI.bCygOlo1priv2_1.0.0.tar.gz",
+      "size": 294154994,
+      "seq_ids": [
+        "NC_049169.1",
+        "NW_024429046.1",
+        "NC_049170.1",
+        "NW_024429047.1",
+        "NC_049171.1"
+      ],
+      "seq_count": 171,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Cygnus"
+      },
+      "common_name": "mute swan",
+      "published": "2026-04-04T09:11:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Color.NCBI.bCygOlo1priv2/BSgenome.Color.NCBI.bCygOlo1priv2_1.0.0.tar.gz"
     }
   ]
 }
