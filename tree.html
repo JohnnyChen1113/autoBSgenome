@@ -203,10 +203,11 @@ async function init() {
     path.push(speciesName);
 
     let node = root;
-    for (const name of path) {
+    for (let i = 0; i < path.length; i++) {
+      const name = path[i];
       let child = node.children?.find(c => c.name === name);
       if (!child) {
-        child = { name, children: [] };
+        child = { name, children: [], _rank: ranks[i] || 'species' };
         node.children.push(child);
       }
       node = child;
@@ -224,11 +225,34 @@ async function init() {
   }
   sortTree(root);
 
+  // Compute dominant group for each internal node (for branch coloring)
+  function computeGroup(node) {
+    if (META[node.name]) return META[node.name].group;
+    if (!node.children || !node.children.length) return 'other';
+    const childGroups = node.children.map(c => computeGroup(c));
+    node._group = childGroups.every(g => g === childGroups[0]) ? childGroups[0] : null;
+    return node._group;
+  }
+  computeGroup(root);
+
+  // Collect internal node names at certain ranks for initial collapsing
+  const collapsedIds = [];
+  function collectCollapsible(node, depth) {
+    if (!node.children || !node.children.length) return;
+    // Collapse at family level (depth ~6) if it has 3+ leaves
+    if (node._rank === 'family' && node.children.length >= 3) {
+      collapsedIds.push(node.name);
+    }
+    node.children.forEach(c => collectCollapsible(c, depth + 1));
+  }
+  collectCollapsible(root, 0);
+
   // Convert to Newick
   const newick = toNewick(root) + ';';
 
-  // Build per-leaf styles
+  // Build styles for ALL nodes (leaves + internal)
   const styles = {};
+  // Leaf styles
   for (const [name, { group }] of Object.entries(META)) {
     const gc = GROUP_COLORS[group] || GROUP_COLORS.other;
     styles[name] = {
@@ -238,6 +262,19 @@ async function init() {
       label: name,
     };
   }
+  // Internal node styles — color branches by dominant group
+  function applyInternalStyles(node) {
+    if (!node.children || !node.children.length) return;
+    if (node._group) {
+      const gc = GROUP_COLORS[node._group] || GROUP_COLORS.other;
+      styles[node.name] = {
+        fillColour: gc.color,
+        strokeColour: gc.color,
+      };
+    }
+    node.children.forEach(applyInternalStyles);
+  }
+  applyInternalStyles(root);
 
   // Stats
   const orders = new Set();
@@ -272,14 +309,16 @@ async function init() {
     interactive: true,
     showLabels: true,
     showLeafLabels: true,
-    showInternalLabels: false,
+    showInternalLabels: true,
     fontFamily: 'Inter',
     fontSize: 12,
+    internalLabelStyle: { fontSize: 10, colour: '#666666' },
     nodeSize: 3,
     lineWidth: 1,
     padding: 24,
     alignLabels: true,
     styles: styles,
+    collapsedIds: collapsedIds,
     fillColour: '#003DA5',
     strokeColour: '#444444',
     highlightColour: '#003DA5',
