@@ -355,6 +355,54 @@
       ]
     },
     {
+      "organism": "Aythya fuligula",
+      "common_name": "tufted duck",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Aythya"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Afuligula.NCBI.bAytFul2pri",
+          "version": "1.0.0",
+          "organism": "Aythya fuligula",
+          "assembly": "bAytFul2.pri",
+          "provider": "NCBI",
+          "accession": "GCF_009819795.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009819795.1/",
+          "file_name": "BSgenome.Afuligula.NCBI.bAytFul2pri_1.0.0.tar.gz",
+          "size": 291188304,
+          "seq_ids": [
+            "NC_045559.1",
+            "NC_045560.1",
+            "NC_045561.1",
+            "NC_045562.1",
+            "NC_045563.1"
+          ],
+          "seq_count": 105,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Anseriformes",
+            "family": "Anatidae",
+            "genus": "Aythya"
+          },
+          "common_name": "tufted duck",
+          "published": "2026-04-04T09:11:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afuligula.NCBI.bAytFul2pri/BSgenome.Afuligula.NCBI.bAytFul2pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Balaenoptera musculus",
       "common_name": "blue whale",
       "group": "vertebrate_mammalian",
@@ -10396,6 +10444,38 @@
       "common_name": "Collared flycatcher",
       "published": "2026-04-04T09:10:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Falbicollis.NCBI.FicAlb15/BSgenome.Falbicollis.NCBI.FicAlb15_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Afuligula.NCBI.bAytFul2pri",
+      "version": "1.0.0",
+      "organism": "Aythya fuligula",
+      "assembly": "bAytFul2.pri",
+      "provider": "NCBI",
+      "accession": "GCF_009819795.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009819795.1/",
+      "file_name": "BSgenome.Afuligula.NCBI.bAytFul2pri_1.0.0.tar.gz",
+      "size": 291188304,
+      "seq_ids": [
+        "NC_045559.1",
+        "NC_045560.1",
+        "NC_045561.1",
+        "NC_045562.1",
+        "NC_045563.1"
+      ],
+      "seq_count": 105,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Aythya"
+      },
+      "common_name": "tufted duck",
+      "published": "2026-04-04T09:11:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afuligula.NCBI.bAytFul2pri/BSgenome.Afuligula.NCBI.bAytFul2pri_1.0.0.tar.gz"
     }
   ]
 }
