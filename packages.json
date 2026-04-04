@@ -598,6 +598,54 @@
       ]
     },
     {
+      "organism": "Apis dorsata",
+      "common_name": "giant honeybee",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Apidae",
+        "genus": "Apis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Adorsata.NCBI.Apisdorsata13",
+          "version": "1.0.0",
+          "organism": "Apis dorsata",
+          "assembly": "Apis dorsata 1.3",
+          "provider": "NCBI",
+          "accession": "GCF_000469605.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000469605.1/",
+          "file_name": "BSgenome.Adorsata.NCBI.Apisdorsata13_1.0.0.tar.gz",
+          "size": 58583059,
+          "seq_ids": [
+            "NW_006263304.1",
+            "NW_006263305.1",
+            "NW_006263306.1",
+            "NW_006263307.1",
+            "NW_006263308.1"
+          ],
+          "seq_count": 4040,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Apidae",
+            "genus": "Apis"
+          },
+          "common_name": "giant honeybee",
+          "published": "2026-04-04T22:33:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Adorsata.NCBI.Apisdorsata13/BSgenome.Adorsata.NCBI.Apisdorsata13_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Apis florea",
       "common_name": "little honeybee",
       "group": "invertebrate",
@@ -25095,6 +25143,38 @@
       "common_name": "",
       "published": "2026-04-04T21:36:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slebanonensis.NCBI.SlebRS2/BSgenome.Slebanonensis.NCBI.SlebRS2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Adorsata.NCBI.Apisdorsata13",
+      "version": "1.0.0",
+      "organism": "Apis dorsata",
+      "assembly": "Apis dorsata 1.3",
+      "provider": "NCBI",
+      "accession": "GCF_000469605.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000469605.1/",
+      "file_name": "BSgenome.Adorsata.NCBI.Apisdorsata13_1.0.0.tar.gz",
+      "size": 58583059,
+      "seq_ids": [
+        "NW_006263304.1",
+        "NW_006263305.1",
+        "NW_006263306.1",
+        "NW_006263307.1",
+        "NW_006263308.1"
+      ],
+      "seq_count": 4040,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Apidae",
+        "genus": "Apis"
+      },
+      "common_name": "giant honeybee",
+      "published": "2026-04-04T22:33:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Adorsata.NCBI.Apisdorsata13/BSgenome.Adorsata.NCBI.Apisdorsata13_1.0.0.tar.gz"
     }
   ]
 }
