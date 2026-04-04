@@ -97,6 +97,54 @@
       ]
     },
     {
+      "organism": "Acromyrmex echinatior",
+      "common_name": "Panamanian leafcutter ant",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Acromyrmex"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aechinatior.NCBI.Aech39",
+          "version": "1.0.0",
+          "organism": "Acromyrmex echinatior",
+          "assembly": "Aech_3.9",
+          "provider": "NCBI",
+          "accession": "GCF_000204515.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000204515.1/",
+          "file_name": "BSgenome.Aechinatior.NCBI.Aech39_1.0.0.tar.gz",
+          "size": 77626811,
+          "seq_ids": [
+            "NW_011623521.1",
+            "NW_011623522.1",
+            "NW_011623523.1",
+            "NW_011623524.1",
+            "NW_011623525.1"
+          ],
+          "seq_count": 4339,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Acromyrmex"
+          },
+          "common_name": "Panamanian leafcutter ant",
+          "published": "2026-04-04T22:36:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aechinatior.NCBI.Aech39/BSgenome.Aechinatior.NCBI.Aech39_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Actinia tenebrosa",
       "common_name": "Australian red waratah sea anemone",
       "group": "invertebrate",
@@ -26135,6 +26183,38 @@
       "common_name": "",
       "published": "2026-04-04T22:36:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tseptentrionalis.NCBI.Tsep10/BSgenome.Tseptentrionalis.NCBI.Tsep10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aechinatior.NCBI.Aech39",
+      "version": "1.0.0",
+      "organism": "Acromyrmex echinatior",
+      "assembly": "Aech_3.9",
+      "provider": "NCBI",
+      "accession": "GCF_000204515.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000204515.1/",
+      "file_name": "BSgenome.Aechinatior.NCBI.Aech39_1.0.0.tar.gz",
+      "size": 77626811,
+      "seq_ids": [
+        "NW_011623521.1",
+        "NW_011623522.1",
+        "NW_011623523.1",
+        "NW_011623524.1",
+        "NW_011623525.1"
+      ],
+      "seq_count": 4339,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Acromyrmex"
+      },
+      "common_name": "Panamanian leafcutter ant",
+      "published": "2026-04-04T22:36:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aechinatior.NCBI.Aech39/BSgenome.Aechinatior.NCBI.Aech39_1.0.0.tar.gz"
     }
   ]
 }
