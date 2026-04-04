@@ -713,3 +713,7 @@ NeedsCompilation: no
 Package: BSgenome.Vkomodoensis.NCBI.ASM479886v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11
+Version: 1.0.0
+NeedsCompilation: no

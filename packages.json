@@ -6663,6 +6663,54 @@
       ]
     },
     {
+      "organism": "Sinocyclocheilus anshuiensis",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Sinocyclocheilus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11",
+          "version": "1.0.0",
+          "organism": "Sinocyclocheilus anshuiensis",
+          "assembly": "SAMN03320099.WGS_v1.1",
+          "provider": "NCBI",
+          "accession": "GCF_001515605.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001515605.1/",
+          "file_name": "BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11_1.0.0.tar.gz",
+          "size": 398910311,
+          "seq_ids": [
+            "NW_015536456.1",
+            "NW_015536457.1",
+            "NW_015536458.1",
+            "NW_015536459.1",
+            "NW_015536460.1"
+          ],
+          "seq_count": 85682,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Sinocyclocheilus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T11:03:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11/BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sorghum bicolor",
       "common_name": "sorghum",
       "group": "plant",
@@ -12396,6 +12444,38 @@
       "common_name": "Komodo dragon",
       "published": "2026-04-04T11:03:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vkomodoensis.NCBI.ASM479886v1/BSgenome.Vkomodoensis.NCBI.ASM479886v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11",
+      "version": "1.0.0",
+      "organism": "Sinocyclocheilus anshuiensis",
+      "assembly": "SAMN03320099.WGS_v1.1",
+      "provider": "NCBI",
+      "accession": "GCF_001515605.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001515605.1/",
+      "file_name": "BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11_1.0.0.tar.gz",
+      "size": 398910311,
+      "seq_ids": [
+        "NW_015536456.1",
+        "NW_015536457.1",
+        "NW_015536458.1",
+        "NW_015536459.1",
+        "NW_015536460.1"
+      ],
+      "seq_count": 85682,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Sinocyclocheilus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T11:03:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11/BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11_1.0.0.tar.gz"
     }
   ]
 }
