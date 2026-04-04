@@ -7382,6 +7382,54 @@
       ]
     },
     {
+      "organism": "Harpegnathos saltator",
+      "common_name": "Jerdon's jumping ant",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Harpegnathos"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hsaltator.NCBI.Hsalv86",
+          "version": "1.0.0",
+          "organism": "Harpegnathos saltator",
+          "assembly": "Hsal_v8.6",
+          "provider": "NCBI",
+          "accession": "GCF_003227715.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003227715.2/",
+          "file_name": "BSgenome.Hsaltator.NCBI.Hsalv86_1.0.0.tar.gz",
+          "size": 86860580,
+          "seq_ids": [
+            "NW_020229871.1",
+            "NW_020229872.1",
+            "NW_020229873.1",
+            "NW_020229874.1",
+            "NW_020229875.1"
+          ],
+          "seq_count": 850,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Harpegnathos"
+          },
+          "common_name": "Jerdon's jumping ant",
+          "published": "2026-04-04T23:35:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsaltator.NCBI.Hsalv86/BSgenome.Hsaltator.NCBI.Hsalv86_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Helianthus annuus",
       "common_name": "common sunflower",
       "group": "plant",
@@ -26775,6 +26823,38 @@
       "common_name": "little fire ant",
       "published": "2026-04-04T23:35:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wauropunctata.NCBI.wasmanniaA10/BSgenome.Wauropunctata.NCBI.wasmanniaA10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hsaltator.NCBI.Hsalv86",
+      "version": "1.0.0",
+      "organism": "Harpegnathos saltator",
+      "assembly": "Hsal_v8.6",
+      "provider": "NCBI",
+      "accession": "GCF_003227715.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003227715.2/",
+      "file_name": "BSgenome.Hsaltator.NCBI.Hsalv86_1.0.0.tar.gz",
+      "size": 86860580,
+      "seq_ids": [
+        "NW_020229871.1",
+        "NW_020229872.1",
+        "NW_020229873.1",
+        "NW_020229874.1",
+        "NW_020229875.1"
+      ],
+      "seq_count": 850,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Harpegnathos"
+      },
+      "common_name": "Jerdon's jumping ant",
+      "published": "2026-04-04T23:35:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsaltator.NCBI.Hsalv86/BSgenome.Hsaltator.NCBI.Hsalv86_1.0.0.tar.gz"
     }
   ]
 }

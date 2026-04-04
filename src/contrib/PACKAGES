@@ -1433,3 +1433,7 @@ NeedsCompilation: no
 Package: BSgenome.Wauropunctata.NCBI.wasmanniaA10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsaltator.NCBI.Hsalv86
+Version: 1.0.0
+NeedsCompilation: no
