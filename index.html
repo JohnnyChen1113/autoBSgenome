@@ -157,9 +157,11 @@
   <div class="stats" id="stats-detail" style="margin-top:-8px;">
     <div class="stat" style="font-size:14px;"><strong id="st-community">-</strong> community-built</div>
     <div class="stat" style="font-size:14px;">&middot;</div>
-    <div class="stat" style="font-size:14px;"><strong id="st-bioc">113</strong> Bioconductor</div>
+    <div class="stat" style="font-size:14px;"><strong id="st-bioc">113</strong> Bioconductor official</div>
     <div class="stat" style="font-size:14px;">&middot;</div>
-    <div class="stat" style="font-size:14px;"><strong id="st-buildable">-</strong> buildable on demand</div>
+    <div class="stat" style="font-size:14px;"><strong id="st-ncbi">-</strong> from NCBI</div>
+    <div class="stat" style="font-size:14px;">&middot;</div>
+    <div class="stat" style="font-size:14px;"><strong id="st-ensembl">-</strong> from Ensembl</div>
   </div>
 
   <!-- Build Progress Dashboard -->
@@ -315,7 +317,18 @@ async function loadPackages() {
     document.getElementById('org-count').textContent = organisms.length.toLocaleString();
     document.getElementById('st-community').textContent = builtCount;
     document.getElementById('st-bioc').textContent = biocCount;
-    document.getElementById('st-buildable').textContent = catalogCount.toLocaleString();
+    // Count by source in catalog
+    let ncbiCat = 0, ensemblCat = 0;
+    for (const orgs of Object.values(catalogByOrg)) {
+      for (const a of orgs.accessions) {
+        if (a.source === 'ncbi') { ncbiCat++; break; }
+      }
+      for (const a of orgs.accessions) {
+        if (a.source === 'ensembl') { ensemblCat++; break; }
+      }
+    }
+    document.getElementById('st-ncbi').textContent = ncbiCat.toLocaleString();
+    document.getElementById('st-ensembl').textContent = ensemblCat.toLocaleString();
 
     // Default: only show organisms with builds (fast render)
     const builtOrgs = organisms.filter(o => (o.builds || []).length > 0);
