@@ -72,6 +72,54 @@
       ]
     },
     {
+      "organism": "Archocentrus centrarchus",
+      "common_name": "flier cichlid",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Archocentrus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acentrarchus.NCBI.fArcCen1",
+          "version": "1.0.0",
+          "organism": "Archocentrus centrarchus",
+          "assembly": "fArcCen1",
+          "provider": "NCBI",
+          "accession": "GCF_007364275.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007364275.1/",
+          "file_name": "BSgenome.Acentrarchus.NCBI.fArcCen1_1.0.0.tar.gz",
+          "size": 236782403,
+          "seq_ids": [
+            "NC_044346.1",
+            "NC_044347.1",
+            "NC_044348.1",
+            "NC_044349.1",
+            "NC_044350.1"
+          ],
+          "seq_count": 188,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cichliformes",
+            "family": "Cichlidae",
+            "genus": "Archocentrus"
+          },
+          "common_name": "flier cichlid",
+          "published": "2026-04-04T05:46:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acentrarchus.NCBI.fArcCen1/BSgenome.Acentrarchus.NCBI.fArcCen1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus luchuensis",
       "common_name": "",
       "group": "fungi",
@@ -7756,6 +7804,38 @@
       "common_name": "Japanese quail",
       "published": "2026-04-04T05:46:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cjaponica.NCBI.Coturnixjaponica21/BSgenome.Cjaponica.NCBI.Coturnixjaponica21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acentrarchus.NCBI.fArcCen1",
+      "version": "1.0.0",
+      "organism": "Archocentrus centrarchus",
+      "assembly": "fArcCen1",
+      "provider": "NCBI",
+      "accession": "GCF_007364275.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007364275.1/",
+      "file_name": "BSgenome.Acentrarchus.NCBI.fArcCen1_1.0.0.tar.gz",
+      "size": 236782403,
+      "seq_ids": [
+        "NC_044346.1",
+        "NC_044347.1",
+        "NC_044348.1",
+        "NC_044349.1",
+        "NC_044350.1"
+      ],
+      "seq_count": 188,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Archocentrus"
+      },
+      "common_name": "flier cichlid",
+      "published": "2026-04-04T05:46:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acentrarchus.NCBI.fArcCen1/BSgenome.Acentrarchus.NCBI.fArcCen1_1.0.0.tar.gz"
     }
   ]
 }

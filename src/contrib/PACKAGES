@@ -481,3 +481,7 @@ NeedsCompilation: no
 Package: BSgenome.Cjaponica.NCBI.Coturnixjaponica21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acentrarchus.NCBI.fArcCen1
+Version: 1.0.0
+NeedsCompilation: no
