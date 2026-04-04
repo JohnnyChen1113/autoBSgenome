@@ -97,6 +97,52 @@
       ]
     },
     {
+      "organism": "Alligator sinensis",
+      "common_name": "Chinese alligator",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Crocodylia",
+        "family": "Alligatoridae",
+        "genus": "Alligator"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Asinensis.NCBI.ASM45574v1",
+          "version": "1.0.0",
+          "organism": "Alligator sinensis",
+          "assembly": "ASM45574v1",
+          "provider": "NCBI",
+          "accession": "GCF_000455745.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000455745.1/",
+          "file_name": "BSgenome.Asinensis.NCBI.ASM45574v1_1.0.0.tar.gz",
+          "size": 583388933,
+          "seq_ids": [
+            "NW_005841829.1",
+            "NW_005841830.1",
+            "NW_005841831.1",
+            "NW_005841832.1",
+            "NW_005841833.1"
+          ],
+          "seq_count": 9317,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Crocodylia",
+            "family": "Alligatoridae",
+            "genus": "Alligator"
+          },
+          "common_name": "Chinese alligator",
+          "published": "2026-04-04T11:41:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asinensis.NCBI.ASM45574v1/BSgenome.Asinensis.NCBI.ASM45574v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Anarrhichthys ocellatus",
       "common_name": "wolf-eel",
       "group": "vertebrate_other",
@@ -13587,6 +13633,37 @@
       "common_name": "Abingdon island giant tortoise",
       "published": "2026-04-04T11:41:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cabingdonii.NCBI.CheloAbing20/BSgenome.Cabingdonii.NCBI.CheloAbing20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Asinensis.NCBI.ASM45574v1",
+      "version": "1.0.0",
+      "organism": "Alligator sinensis",
+      "assembly": "ASM45574v1",
+      "provider": "NCBI",
+      "accession": "GCF_000455745.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000455745.1/",
+      "file_name": "BSgenome.Asinensis.NCBI.ASM45574v1_1.0.0.tar.gz",
+      "size": 583388933,
+      "seq_ids": [
+        "NW_005841829.1",
+        "NW_005841830.1",
+        "NW_005841831.1",
+        "NW_005841832.1",
+        "NW_005841833.1"
+      ],
+      "seq_count": 9317,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Crocodylia",
+        "family": "Alligatoridae",
+        "genus": "Alligator"
+      },
+      "common_name": "Chinese alligator",
+      "published": "2026-04-04T11:41:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asinensis.NCBI.ASM45574v1/BSgenome.Asinensis.NCBI.ASM45574v1_1.0.0.tar.gz"
     }
   ]
 }

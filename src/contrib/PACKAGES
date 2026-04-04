@@ -773,3 +773,7 @@ NeedsCompilation: no
 Package: BSgenome.Cabingdonii.NCBI.CheloAbing20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asinensis.NCBI.ASM45574v1
+Version: 1.0.0
+NeedsCompilation: no
