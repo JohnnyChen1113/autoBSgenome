@@ -1282,6 +1282,54 @@
       ]
     },
     {
+      "organism": "Corapipo altera",
+      "common_name": "White-ruffed manakin",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Pipridae",
+        "genus": "Corapipo"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Caltera.NCBI.ASM394572v1",
+          "version": "1.0.0",
+          "organism": "Corapipo altera",
+          "assembly": "ASM394572v1",
+          "provider": "NCBI",
+          "accession": "GCF_003945725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003945725.1/",
+          "file_name": "BSgenome.Caltera.NCBI.ASM394572v1_1.0.0.tar.gz",
+          "size": 284407867,
+          "seq_ids": [
+            "NW_020884872.1",
+            "NW_020884873.1",
+            "NW_020884874.1",
+            "NW_020884875.1",
+            "NW_020884876.1"
+          ],
+          "seq_count": 9068,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Pipridae",
+            "genus": "Corapipo"
+          },
+          "common_name": "White-ruffed manakin",
+          "published": "2026-04-04T09:10:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Caltera.NCBI.ASM394572v1/BSgenome.Caltera.NCBI.ASM394572v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Corvus brachyrhynchos",
       "common_name": "American crow",
       "group": "vertebrate_other",
@@ -10156,6 +10204,38 @@
       "common_name": "Tibetan ground-tit",
       "published": "2026-04-04T09:09:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phumilis.NCBI.PseHum10/BSgenome.Phumilis.NCBI.PseHum10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Caltera.NCBI.ASM394572v1",
+      "version": "1.0.0",
+      "organism": "Corapipo altera",
+      "assembly": "ASM394572v1",
+      "provider": "NCBI",
+      "accession": "GCF_003945725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003945725.1/",
+      "file_name": "BSgenome.Caltera.NCBI.ASM394572v1_1.0.0.tar.gz",
+      "size": 284407867,
+      "seq_ids": [
+        "NW_020884872.1",
+        "NW_020884873.1",
+        "NW_020884874.1",
+        "NW_020884875.1",
+        "NW_020884876.1"
+      ],
+      "seq_count": 9068,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Pipridae",
+        "genus": "Corapipo"
+      },
+      "common_name": "White-ruffed manakin",
+      "published": "2026-04-04T09:10:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Caltera.NCBI.ASM394572v1/BSgenome.Caltera.NCBI.ASM394572v1_1.0.0.tar.gz"
     }
   ]
 }

@@ -601,3 +601,7 @@ NeedsCompilation: no
 Package: BSgenome.Phumilis.NCBI.PseHum10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Caltera.NCBI.ASM394572v1
+Version: 1.0.0
+NeedsCompilation: no
