@@ -417,3 +417,7 @@ NeedsCompilation: no
 Package: BSgenome.Xhellerii.NCBI.Xiphophorushellerii41
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pformosa.NCBI.Poeciliaformosa512
+Version: 1.0.0
+NeedsCompilation: no
