@@ -1365,3 +1365,7 @@ NeedsCompilation: no
 Package: BSgenome.Mzeteki.NCBI.Tzet10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csolmsi.NCBI.CerSol10
+Version: 1.0.0
+NeedsCompilation: no
