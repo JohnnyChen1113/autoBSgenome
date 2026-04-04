@@ -3098,6 +3098,54 @@
       ]
     },
     {
+      "organism": "Daucus carota subsp. sativus",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Apiales",
+        "family": "Apiaceae",
+        "genus": "Daucus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dcarota.NCBI.DH1v30",
+          "version": "1.0.0",
+          "organism": "Daucus carota subsp. sativus",
+          "assembly": "DH1 v3.0",
+          "provider": "NCBI",
+          "accession": "GCF_001625215.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001625215.2/",
+          "file_name": "BSgenome.Dcarota.NCBI.DH1v30_1.0.0.tar.gz",
+          "size": 105799604,
+          "seq_ids": [
+            "NC_030381.2",
+            "NC_030382.2",
+            "NC_030383.2",
+            "NC_030384.2",
+            "NC_030385.2"
+          ],
+          "seq_count": 11,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Apiales",
+            "family": "Apiaceae",
+            "genus": "Daucus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T14:42:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcarota.NCBI.DH1v30/BSgenome.Dcarota.NCBI.DH1v30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Delphinapterus leucas",
       "common_name": "beluga whale",
       "group": "vertebrate_mammalian",
@@ -16695,6 +16743,38 @@
       "common_name": "spotted monkey flower",
       "published": "2026-04-04T14:41:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eguttata.NCBI.Mimgu10/BSgenome.Eguttata.NCBI.Mimgu10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dcarota.NCBI.DH1v30",
+      "version": "1.0.0",
+      "organism": "Daucus carota subsp. sativus",
+      "assembly": "DH1 v3.0",
+      "provider": "NCBI",
+      "accession": "GCF_001625215.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001625215.2/",
+      "file_name": "BSgenome.Dcarota.NCBI.DH1v30_1.0.0.tar.gz",
+      "size": 105799604,
+      "seq_ids": [
+        "NC_030381.2",
+        "NC_030382.2",
+        "NC_030383.2",
+        "NC_030384.2",
+        "NC_030385.2"
+      ],
+      "seq_count": 11,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Apiales",
+        "family": "Apiaceae",
+        "genus": "Daucus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T14:42:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcarota.NCBI.DH1v30/BSgenome.Dcarota.NCBI.DH1v30_1.0.0.tar.gz"
     }
   ]
 }
