@@ -11781,6 +11781,54 @@
       ]
     },
     {
+      "organism": "Tetranychus urticae",
+      "common_name": "two-spotted spider mite",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Arachnida",
+        "order": "Trombidiformes",
+        "family": "Tetranychidae",
+        "genus": "Tetranychus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Turticae.NCBI.ASM23943v1",
+          "version": "1.0.0",
+          "organism": "Tetranychus urticae",
+          "assembly": "ASM23943v1",
+          "provider": "NCBI",
+          "accession": "GCF_000239435.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000239435.1/",
+          "file_name": "BSgenome.Turticae.NCBI.ASM23943v1_1.0.0.tar.gz",
+          "size": 23606221,
+          "seq_ids": [
+            "NW_015449489.1",
+            "NW_015449490.1",
+            "NW_015449491.1",
+            "NW_015449492.1",
+            "NW_015449493.1"
+          ],
+          "seq_count": 641,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Arachnida",
+            "order": "Trombidiformes",
+            "family": "Tetranychidae",
+            "genus": "Tetranychus"
+          },
+          "common_name": "two-spotted spider mite",
+          "published": "2026-04-04T18:47:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Turticae.NCBI.ASM23943v1/BSgenome.Turticae.NCBI.ASM23943v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Thamnophis elegans",
       "common_name": "Western terrestrial garter snake",
       "group": "vertebrate_other",
@@ -20935,6 +20983,38 @@
       "common_name": "",
       "published": "2026-04-04T18:47:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bmalayi.NCBI.Bmalayi40/BSgenome.Bmalayi.NCBI.Bmalayi40_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Turticae.NCBI.ASM23943v1",
+      "version": "1.0.0",
+      "organism": "Tetranychus urticae",
+      "assembly": "ASM23943v1",
+      "provider": "NCBI",
+      "accession": "GCF_000239435.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000239435.1/",
+      "file_name": "BSgenome.Turticae.NCBI.ASM23943v1_1.0.0.tar.gz",
+      "size": 23606221,
+      "seq_ids": [
+        "NW_015449489.1",
+        "NW_015449490.1",
+        "NW_015449491.1",
+        "NW_015449492.1",
+        "NW_015449493.1"
+      ],
+      "seq_count": 641,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Arachnida",
+        "order": "Trombidiformes",
+        "family": "Tetranychidae",
+        "genus": "Tetranychus"
+      },
+      "common_name": "two-spotted spider mite",
+      "published": "2026-04-04T18:47:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Turticae.NCBI.ASM23943v1/BSgenome.Turticae.NCBI.ASM23943v1_1.0.0.tar.gz"
     }
   ]
 }
