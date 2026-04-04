@@ -893,3 +893,7 @@ NeedsCompilation: no
 Package: BSgenome.Cpapaya.NCBI.Papaya10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acomosus.NCBI.ASM154086v1
+Version: 1.0.0
+NeedsCompilation: no

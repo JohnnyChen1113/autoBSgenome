@@ -191,6 +191,54 @@
       ]
     },
     {
+      "organism": "Ananas comosus",
+      "common_name": "pineapple",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Bromeliaceae",
+        "genus": "Ananas"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acomosus.NCBI.ASM154086v1",
+          "version": "1.0.0",
+          "organism": "Ananas comosus",
+          "assembly": "ASM154086v1",
+          "provider": "NCBI",
+          "accession": "GCF_001540865.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001540865.1/",
+          "file_name": "BSgenome.Acomosus.NCBI.ASM154086v1_1.0.0.tar.gz",
+          "size": 99444719,
+          "seq_ids": [
+            "NC_033621.1",
+            "NC_033622.1",
+            "NC_033623.1",
+            "NC_033624.1",
+            "NC_033625.1"
+          ],
+          "seq_count": 3129,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Bromeliaceae",
+            "genus": "Ananas"
+          },
+          "common_name": "pineapple",
+          "published": "2026-04-04T14:00:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acomosus.NCBI.ASM154086v1/BSgenome.Acomosus.NCBI.ASM154086v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Anarrhichthys ocellatus",
       "common_name": "wolf-eel",
       "group": "vertebrate_other",
@@ -15975,6 +16023,38 @@
       "common_name": "papaya",
       "published": "2026-04-04T14:00:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpapaya.NCBI.Papaya10/BSgenome.Cpapaya.NCBI.Papaya10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acomosus.NCBI.ASM154086v1",
+      "version": "1.0.0",
+      "organism": "Ananas comosus",
+      "assembly": "ASM154086v1",
+      "provider": "NCBI",
+      "accession": "GCF_001540865.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001540865.1/",
+      "file_name": "BSgenome.Acomosus.NCBI.ASM154086v1_1.0.0.tar.gz",
+      "size": 99444719,
+      "seq_ids": [
+        "NC_033621.1",
+        "NC_033622.1",
+        "NC_033623.1",
+        "NC_033624.1",
+        "NC_033625.1"
+      ],
+      "seq_count": 3129,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Bromeliaceae",
+        "genus": "Ananas"
+      },
+      "common_name": "pineapple",
+      "published": "2026-04-04T14:00:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acomosus.NCBI.ASM154086v1/BSgenome.Acomosus.NCBI.ASM154086v1_1.0.0.tar.gz"
     }
   ]
 }
