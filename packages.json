@@ -2174,6 +2174,54 @@
       ]
     },
     {
+      "organism": "Camponotus floridanus",
+      "common_name": "Florida carpenter ant",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Camponotus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cfloridanus.NCBI.Cflov75",
+          "version": "1.0.0",
+          "organism": "Camponotus floridanus",
+          "assembly": "Cflo_v7.5",
+          "provider": "NCBI",
+          "accession": "GCF_003227725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003227725.1/",
+          "file_name": "BSgenome.Cfloridanus.NCBI.Cflov75_1.0.0.tar.gz",
+          "size": 73540871,
+          "seq_ids": [
+            "NW_020229214.1",
+            "NW_020229215.1",
+            "NW_020229216.1",
+            "NW_020229217.1",
+            "NW_020229218.1"
+          ],
+          "seq_count": 657,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Camponotus"
+          },
+          "common_name": "Florida carpenter ant",
+          "published": "2026-04-04T22:35:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfloridanus.NCBI.Cflov75/BSgenome.Cfloridanus.NCBI.Cflov75_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Canis lupus dingo",
       "common_name": "dingo",
       "group": "vertebrate_mammalian",
@@ -25655,6 +25703,38 @@
       "common_name": "",
       "published": "2026-04-04T22:34:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnovaeangliae.NCBI.ASM127255v1/BSgenome.Dnovaeangliae.NCBI.ASM127255v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cfloridanus.NCBI.Cflov75",
+      "version": "1.0.0",
+      "organism": "Camponotus floridanus",
+      "assembly": "Cflo_v7.5",
+      "provider": "NCBI",
+      "accession": "GCF_003227725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003227725.1/",
+      "file_name": "BSgenome.Cfloridanus.NCBI.Cflov75_1.0.0.tar.gz",
+      "size": 73540871,
+      "seq_ids": [
+        "NW_020229214.1",
+        "NW_020229215.1",
+        "NW_020229216.1",
+        "NW_020229217.1",
+        "NW_020229218.1"
+      ],
+      "seq_count": 657,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Camponotus"
+      },
+      "common_name": "Florida carpenter ant",
+      "published": "2026-04-04T22:35:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfloridanus.NCBI.Cflov75/BSgenome.Cfloridanus.NCBI.Cflov75_1.0.0.tar.gz"
     }
   ]
 }
