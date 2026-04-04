@@ -4366,6 +4366,54 @@
       ]
     },
     {
+      "organism": "Drosophila albomicans",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dalbomicans.NCBI.ASM965048v2",
+          "version": "1.0.0",
+          "organism": "Drosophila albomicans",
+          "assembly": "ASM965048v2",
+          "provider": "NCBI",
+          "accession": "GCF_009650485.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009650485.2/",
+          "file_name": "BSgenome.Dalbomicans.NCBI.ASM965048v2_1.0.0.tar.gz",
+          "size": 44435303,
+          "seq_ids": [
+            "NC_047627.2",
+            "NC_047628.2",
+            "NC_047629.2",
+            "NC_047630.2",
+            "NC_047631.2"
+          ],
+          "seq_count": 219,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T20:36:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dalbomicans.NCBI.ASM965048v2/BSgenome.Dalbomicans.NCBI.ASM965048v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila arizonae",
       "common_name": "",
       "group": "invertebrate",
@@ -23095,6 +23143,38 @@
       "common_name": "",
       "published": "2026-04-04T20:35:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aqueenslandica.NCBI.v11/BSgenome.Aqueenslandica.NCBI.v11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dalbomicans.NCBI.ASM965048v2",
+      "version": "1.0.0",
+      "organism": "Drosophila albomicans",
+      "assembly": "ASM965048v2",
+      "provider": "NCBI",
+      "accession": "GCF_009650485.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009650485.2/",
+      "file_name": "BSgenome.Dalbomicans.NCBI.ASM965048v2_1.0.0.tar.gz",
+      "size": 44435303,
+      "seq_ids": [
+        "NC_047627.2",
+        "NC_047628.2",
+        "NC_047629.2",
+        "NC_047630.2",
+        "NC_047631.2"
+      ],
+      "seq_count": 219,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T20:36:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dalbomicans.NCBI.ASM965048v2/BSgenome.Dalbomicans.NCBI.ASM965048v2_1.0.0.tar.gz"
     }
   ]
 }

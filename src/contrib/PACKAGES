@@ -1249,3 +1249,7 @@ NeedsCompilation: no
 Package: BSgenome.Aqueenslandica.NCBI.v11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dalbomicans.NCBI.ASM965048v2
+Version: 1.0.0
+NeedsCompilation: no
