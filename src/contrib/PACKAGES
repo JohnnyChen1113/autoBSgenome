@@ -1157,3 +1157,7 @@ NeedsCompilation: no
 Package: BSgenome.Nattenuata.NCBI.NIATTr2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hannuus.NCBI.HanXRQr20SUNRISE
+Version: 1.0.0
+NeedsCompilation: no
