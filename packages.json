@@ -5267,6 +5267,54 @@
       ]
     },
     {
+      "organism": "Tinamus guttatus",
+      "common_name": "white-throated tinamou",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Tinamiformes",
+        "family": "Tinamidae",
+        "genus": "Tinamus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tguttatus.NCBI.ASM70537v2",
+          "version": "1.0.0",
+          "organism": "Tinamus guttatus",
+          "assembly": "ASM70537v2",
+          "provider": "NCBI",
+          "accession": "GCF_000705375.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000705375.1/",
+          "file_name": "BSgenome.Tguttatus.NCBI.ASM70537v2_1.0.0.tar.gz",
+          "size": 275484757,
+          "seq_ids": [
+            "NW_010576372.1",
+            "NW_010576373.1",
+            "NW_010576374.1",
+            "NW_010576375.1",
+            "NW_010576376.1"
+          ],
+          "seq_count": 82514,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Tinamiformes",
+            "family": "Tinamidae",
+            "genus": "Tinamus"
+          },
+          "common_name": "white-throated tinamou",
+          "published": "2026-04-04T08:05:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tguttatus.NCBI.ASM70537v2/BSgenome.Tguttatus.NCBI.ASM70537v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichechus manatus latirostris",
       "common_name": "Florida manatee",
       "group": "vertebrate_mammalian",
@@ -9196,6 +9244,38 @@
       "common_name": "",
       "published": "2026-04-04T08:05:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccornix.NCBI.ASM73873v6/BSgenome.Ccornix.NCBI.ASM73873v6_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tguttatus.NCBI.ASM70537v2",
+      "version": "1.0.0",
+      "organism": "Tinamus guttatus",
+      "assembly": "ASM70537v2",
+      "provider": "NCBI",
+      "accession": "GCF_000705375.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000705375.1/",
+      "file_name": "BSgenome.Tguttatus.NCBI.ASM70537v2_1.0.0.tar.gz",
+      "size": 275484757,
+      "seq_ids": [
+        "NW_010576372.1",
+        "NW_010576373.1",
+        "NW_010576374.1",
+        "NW_010576375.1",
+        "NW_010576376.1"
+      ],
+      "seq_count": 82514,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Tinamiformes",
+        "family": "Tinamidae",
+        "genus": "Tinamus"
+      },
+      "common_name": "white-throated tinamou",
+      "published": "2026-04-04T08:05:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tguttatus.NCBI.ASM70537v2/BSgenome.Tguttatus.NCBI.ASM70537v2_1.0.0.tar.gz"
     }
   ]
 }
