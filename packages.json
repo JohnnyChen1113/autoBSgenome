@@ -4462,6 +4462,54 @@
       ]
     },
     {
+      "organism": "Drosophila sechellia",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dsechellia.NCBI.ASM438219v2",
+          "version": "1.0.0",
+          "organism": "Drosophila sechellia",
+          "assembly": "ASM438219v2",
+          "provider": "NCBI",
+          "accession": "GCF_004382195.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004382195.2/",
+          "file_name": "BSgenome.Dsechellia.NCBI.ASM438219v2_1.0.0.tar.gz",
+          "size": 37923776,
+          "seq_ids": [
+            "NC_045949.1",
+            "NC_045950.1",
+            "NC_045951.1",
+            "NC_045952.1",
+            "NC_045953.1"
+          ],
+          "seq_count": 378,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T19:34:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dsechellia.NCBI.ASM438219v2/BSgenome.Dsechellia.NCBI.ASM438219v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila subobscura",
       "common_name": "",
       "group": "invertebrate",
@@ -22615,6 +22663,38 @@
       "common_name": "",
       "published": "2026-04-04T19:34:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dmauritiana.NCBI.ASM438214v1/BSgenome.Dmauritiana.NCBI.ASM438214v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dsechellia.NCBI.ASM438219v2",
+      "version": "1.0.0",
+      "organism": "Drosophila sechellia",
+      "assembly": "ASM438219v2",
+      "provider": "NCBI",
+      "accession": "GCF_004382195.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004382195.2/",
+      "file_name": "BSgenome.Dsechellia.NCBI.ASM438219v2_1.0.0.tar.gz",
+      "size": 37923776,
+      "seq_ids": [
+        "NC_045949.1",
+        "NC_045950.1",
+        "NC_045951.1",
+        "NC_045952.1",
+        "NC_045953.1"
+      ],
+      "seq_count": 378,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T19:34:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dsechellia.NCBI.ASM438219v2/BSgenome.Dsechellia.NCBI.ASM438219v2_1.0.0.tar.gz"
     }
   ]
 }
