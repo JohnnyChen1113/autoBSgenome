@@ -677,3 +677,7 @@ NeedsCompilation: no
 Package: BSgenome.Nnippon.NCBI.ASM70822v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Padeliae.NCBI.ASM69910v1
+Version: 1.0.0
+NeedsCompilation: no
