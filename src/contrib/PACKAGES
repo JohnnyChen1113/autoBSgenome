@@ -1301,3 +1301,7 @@ NeedsCompilation: no
 Package: BSgenome.Dpersimilis.NCBI.DperRS2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcanadensis.NCBI.ASM131383v1
+Version: 1.0.0
+NeedsCompilation: no

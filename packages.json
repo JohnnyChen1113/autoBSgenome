@@ -11097,6 +11097,54 @@
       ]
     },
     {
+      "organism": "Polistes canadensis",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Vespidae",
+        "genus": "Polistes"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcanadensis.NCBI.ASM131383v1",
+          "version": "1.0.0",
+          "organism": "Polistes canadensis",
+          "assembly": "ASM131383v1",
+          "provider": "NCBI",
+          "accession": "GCF_001313835.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001313835.1/",
+          "file_name": "BSgenome.Pcanadensis.NCBI.ASM131383v1_1.0.0.tar.gz",
+          "size": 53009362,
+          "seq_ids": [
+            "NW_014569547.1",
+            "NW_014569548.1",
+            "NW_014569549.1",
+            "NW_014569550.1",
+            "NW_014569551.1"
+          ],
+          "seq_count": 3836,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Vespidae",
+            "genus": "Polistes"
+          },
+          "common_name": "",
+          "published": "2026-04-04T21:34:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcanadensis.NCBI.ASM131383v1/BSgenome.Pcanadensis.NCBI.ASM131383v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Polistes dominula",
       "common_name": "European paper wasp",
       "group": "invertebrate",
@@ -24135,6 +24183,38 @@
       "common_name": "",
       "published": "2026-04-04T21:34:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dpersimilis.NCBI.DperRS2/BSgenome.Dpersimilis.NCBI.DperRS2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcanadensis.NCBI.ASM131383v1",
+      "version": "1.0.0",
+      "organism": "Polistes canadensis",
+      "assembly": "ASM131383v1",
+      "provider": "NCBI",
+      "accession": "GCF_001313835.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001313835.1/",
+      "file_name": "BSgenome.Pcanadensis.NCBI.ASM131383v1_1.0.0.tar.gz",
+      "size": 53009362,
+      "seq_ids": [
+        "NW_014569547.1",
+        "NW_014569548.1",
+        "NW_014569549.1",
+        "NW_014569550.1",
+        "NW_014569551.1"
+      ],
+      "seq_count": 3836,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Vespidae",
+        "genus": "Polistes"
+      },
+      "common_name": "",
+      "published": "2026-04-04T21:34:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcanadensis.NCBI.ASM131383v1/BSgenome.Pcanadensis.NCBI.ASM131383v1_1.0.0.tar.gz"
     }
   ]
 }
