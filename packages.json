@@ -5231,6 +5231,54 @@
       ]
     },
     {
+      "organism": "Phaethon lepturus",
+      "common_name": "White-tailed tropicbird",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Phaethontiformes",
+        "family": "Phaethontidae",
+        "genus": "Phaethon"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Plepturus.NCBI.ASM68728v1",
+          "version": "1.0.0",
+          "organism": "Phaethon lepturus",
+          "assembly": "ASM68728v1",
+          "provider": "NCBI",
+          "accession": "GCF_000687285.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000687285.1/",
+          "file_name": "BSgenome.Plepturus.NCBI.ASM68728v1_1.0.0.tar.gz",
+          "size": 310310318,
+          "seq_ids": [
+            "NW_010509587.1",
+            "NW_010509588.1",
+            "NW_010509589.1",
+            "NW_010509590.1",
+            "NW_010509591.1"
+          ],
+          "seq_count": 66785,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Phaethontiformes",
+            "family": "Phaethontidae",
+            "genus": "Phaethon"
+          },
+          "common_name": "White-tailed tropicbird",
+          "published": "2026-04-04T10:12:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Plepturus.NCBI.ASM68728v1/BSgenome.Plepturus.NCBI.ASM68728v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phascolarctos cinereus",
       "common_name": "koala",
       "group": "vertebrate_mammalian",
@@ -11836,6 +11884,38 @@
       "common_name": "killdeer",
       "published": "2026-04-04T10:10:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvociferus.NCBI.ASM70802v2/BSgenome.Cvociferus.NCBI.ASM70802v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Plepturus.NCBI.ASM68728v1",
+      "version": "1.0.0",
+      "organism": "Phaethon lepturus",
+      "assembly": "ASM68728v1",
+      "provider": "NCBI",
+      "accession": "GCF_000687285.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000687285.1/",
+      "file_name": "BSgenome.Plepturus.NCBI.ASM68728v1_1.0.0.tar.gz",
+      "size": 310310318,
+      "seq_ids": [
+        "NW_010509587.1",
+        "NW_010509588.1",
+        "NW_010509589.1",
+        "NW_010509590.1",
+        "NW_010509591.1"
+      ],
+      "seq_count": 66785,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Phaethontiformes",
+        "family": "Phaethontidae",
+        "genus": "Phaethon"
+      },
+      "common_name": "White-tailed tropicbird",
+      "published": "2026-04-04T10:12:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Plepturus.NCBI.ASM68728v1/BSgenome.Plepturus.NCBI.ASM68728v1_1.0.0.tar.gz"
     }
   ]
 }
