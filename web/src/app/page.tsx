@@ -295,7 +295,7 @@ export default function Home() {
   const formRef = useRef(form);
   formRef.current = form;
 
-  // Restore build state from URL on page load
+  // Restore build state or pre-fill accession from URL on page load
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const resumeJob = params.get("job");
@@ -306,6 +306,11 @@ export default function Home() {
       buildStartTimeRef.current = now;
       setStep("building");
       pollBuildStatus(resumeJob);
+    }
+    // Pre-fill accession from URL (e.g., ?accession=GCF_000001215.4)
+    const prefillAccession = params.get("accession");
+    if (prefillAccession && !resumeJob) {
+      setAccessionInput(prefillAccession);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
