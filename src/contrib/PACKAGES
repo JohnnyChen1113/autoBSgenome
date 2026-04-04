@@ -1409,3 +1409,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgracilis.NCBI.ASM200609v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hlaboriosa.NCBI.ASM126327v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -7190,6 +7190,54 @@
       ]
     },
     {
+      "organism": "Habropoda laboriosa",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Apidae",
+        "genus": "Habropoda"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hlaboriosa.NCBI.ASM126327v1",
+          "version": "1.0.0",
+          "organism": "Habropoda laboriosa",
+          "assembly": "ASM126327v1",
+          "provider": "NCBI",
+          "accession": "GCF_001263275.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001263275.1/",
+          "file_name": "BSgenome.Hlaboriosa.NCBI.ASM126327v1_1.0.0.tar.gz",
+          "size": 76503276,
+          "seq_ids": [
+            "NW_017100116.1",
+            "NW_017100117.1",
+            "NW_017100118.1",
+            "NW_017100119.1",
+            "NW_017100120.1"
+          ],
+          "seq_count": 27566,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Apidae",
+            "genus": "Habropoda"
+          },
+          "common_name": "",
+          "published": "2026-04-04T23:34:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hlaboriosa.NCBI.ASM126327v1/BSgenome.Hlaboriosa.NCBI.ASM126327v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Haliaeetus leucocephalus",
       "common_name": "bald eagle",
       "group": "vertebrate_other",
@@ -26295,6 +26343,38 @@
       "common_name": "",
       "published": "2026-04-04T23:34:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgracilis.NCBI.ASM200609v1/BSgenome.Pgracilis.NCBI.ASM200609v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hlaboriosa.NCBI.ASM126327v1",
+      "version": "1.0.0",
+      "organism": "Habropoda laboriosa",
+      "assembly": "ASM126327v1",
+      "provider": "NCBI",
+      "accession": "GCF_001263275.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001263275.1/",
+      "file_name": "BSgenome.Hlaboriosa.NCBI.ASM126327v1_1.0.0.tar.gz",
+      "size": 76503276,
+      "seq_ids": [
+        "NW_017100116.1",
+        "NW_017100117.1",
+        "NW_017100118.1",
+        "NW_017100119.1",
+        "NW_017100120.1"
+      ],
+      "seq_count": 27566,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Apidae",
+        "genus": "Habropoda"
+      },
+      "common_name": "",
+      "published": "2026-04-04T23:34:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hlaboriosa.NCBI.ASM126327v1/BSgenome.Hlaboriosa.NCBI.ASM126327v1_1.0.0.tar.gz"
     }
   ]
 }
