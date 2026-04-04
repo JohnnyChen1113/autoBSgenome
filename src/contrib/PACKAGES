@@ -1173,3 +1173,7 @@ NeedsCompilation: no
 Package: BSgenome.Cannuum.NCBI.UCD10Xv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Atauschii.NCBI.Aetv60
+Version: 1.0.0
+NeedsCompilation: no

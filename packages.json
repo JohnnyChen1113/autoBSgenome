@@ -97,6 +97,54 @@
       ]
     },
     {
+      "organism": "Aegilops tauschii subsp. strangulata",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Aegilops"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Atauschii.NCBI.Aetv60",
+          "version": "1.0.0",
+          "organism": "Aegilops tauschii subsp. strangulata",
+          "assembly": "Aet v6.0",
+          "provider": "NCBI",
+          "accession": "GCF_002575655.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002575655.3/",
+          "file_name": "BSgenome.Atauschii.NCBI.Aetv60_1.0.0.tar.gz",
+          "size": 1017003540,
+          "seq_ids": [
+            "NC_053035.3",
+            "NC_053036.3",
+            "NC_053037.3",
+            "NC_053038.3",
+            "NC_053039.3"
+          ],
+          "seq_count": 1115,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Aegilops"
+          },
+          "common_name": "",
+          "published": "2026-04-04T18:51:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atauschii.NCBI.Aetv60/BSgenome.Atauschii.NCBI.Aetv60_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ailuropoda melanoleuca",
       "common_name": "giant panda",
       "group": "vertebrate_mammalian",
@@ -21575,6 +21623,38 @@
       "common_name": "",
       "published": "2026-04-04T18:51:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cannuum.NCBI.UCD10Xv11/BSgenome.Cannuum.NCBI.UCD10Xv11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Atauschii.NCBI.Aetv60",
+      "version": "1.0.0",
+      "organism": "Aegilops tauschii subsp. strangulata",
+      "assembly": "Aet v6.0",
+      "provider": "NCBI",
+      "accession": "GCF_002575655.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002575655.3/",
+      "file_name": "BSgenome.Atauschii.NCBI.Aetv60_1.0.0.tar.gz",
+      "size": 1017003540,
+      "seq_ids": [
+        "NC_053035.3",
+        "NC_053036.3",
+        "NC_053037.3",
+        "NC_053038.3",
+        "NC_053039.3"
+      ],
+      "seq_count": 1115,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Aegilops"
+      },
+      "common_name": "",
+      "published": "2026-04-04T18:51:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atauschii.NCBI.Aetv60/BSgenome.Atauschii.NCBI.Aetv60_1.0.0.tar.gz"
     }
   ]
 }
