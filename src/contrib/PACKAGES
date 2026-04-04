@@ -1441,3 +1441,7 @@ NeedsCompilation: no
 Package: BSgenome.Rmaidis.NCBI.ASM367621v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mpersicae.NCBI.MPERG00610
+Version: 1.0.0
+NeedsCompilation: no
