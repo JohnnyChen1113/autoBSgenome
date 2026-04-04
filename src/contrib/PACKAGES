@@ -549,3 +549,7 @@ NeedsCompilation: no
 Package: BSgenome.Satricapilla.NCBI.bSylAtr1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccornix.NCBI.ASM73873v6
+Version: 1.0.0
+NeedsCompilation: no

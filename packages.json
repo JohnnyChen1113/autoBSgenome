@@ -1138,6 +1138,54 @@
       ]
     },
     {
+      "organism": "Corvus cornix cornix",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Corvus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccornix.NCBI.ASM73873v6",
+          "version": "1.0.0",
+          "organism": "Corvus cornix cornix",
+          "assembly": "ASM73873v6",
+          "provider": "NCBI",
+          "accession": "GCF_000738735.6",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000738735.6/",
+          "file_name": "BSgenome.Ccornix.NCBI.ASM73873v6_1.0.0.tar.gz",
+          "size": 268001689,
+          "seq_ids": [
+            "NC_046332.1",
+            "NC_046333.1",
+            "NC_047056.1",
+            "NC_046334.1",
+            "NC_046335.1"
+          ],
+          "seq_count": 47,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Corvidae",
+            "genus": "Corvus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T08:05:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccornix.NCBI.ASM73873v6/BSgenome.Ccornix.NCBI.ASM73873v6_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Coturnix japonica",
       "common_name": "Japanese quail",
       "group": "vertebrate_other",
@@ -9116,6 +9164,38 @@
       "common_name": "blackcap",
       "published": "2026-04-04T07:08:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Satricapilla.NCBI.bSylAtr1pri/BSgenome.Satricapilla.NCBI.bSylAtr1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccornix.NCBI.ASM73873v6",
+      "version": "1.0.0",
+      "organism": "Corvus cornix cornix",
+      "assembly": "ASM73873v6",
+      "provider": "NCBI",
+      "accession": "GCF_000738735.6",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000738735.6/",
+      "file_name": "BSgenome.Ccornix.NCBI.ASM73873v6_1.0.0.tar.gz",
+      "size": 268001689,
+      "seq_ids": [
+        "NC_046332.1",
+        "NC_046333.1",
+        "NC_047056.1",
+        "NC_046334.1",
+        "NC_046335.1"
+      ],
+      "seq_count": 47,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Corvus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T08:05:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccornix.NCBI.ASM73873v6/BSgenome.Ccornix.NCBI.ASM73873v6_1.0.0.tar.gz"
     }
   ]
 }
