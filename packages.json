@@ -5218,6 +5218,54 @@
       ]
     },
     {
+      "organism": "Lupinus angustifolius",
+      "common_name": "narrow-leaved blue lupine",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Lupinus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Langustifolius.NCBI.LupAngTanjilv10",
+          "version": "1.0.0",
+          "organism": "Lupinus angustifolius",
+          "assembly": "LupAngTanjil_v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001865875.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001865875.1/",
+          "file_name": "BSgenome.Langustifolius.NCBI.LupAngTanjilv10_1.0.0.tar.gz",
+          "size": 155578574,
+          "seq_ids": [
+            "NC_032009.1",
+            "NC_032010.1",
+            "NC_032011.1",
+            "NC_032012.1",
+            "NC_032013.1"
+          ],
+          "seq_count": 13573,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Lupinus"
+          },
+          "common_name": "narrow-leaved blue lupine",
+          "published": "2026-04-04T15:36:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Langustifolius.NCBI.LupAngTanjilv10/BSgenome.Langustifolius.NCBI.LupAngTanjilv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lynx canadensis",
       "common_name": "Canada lynx",
       "group": "vertebrate_mammalian",
@@ -17895,6 +17943,38 @@
       "common_name": "pigeon pea",
       "published": "2026-04-04T15:36:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccajan.NCBI.CcajanV11/BSgenome.Ccajan.NCBI.CcajanV11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Langustifolius.NCBI.LupAngTanjilv10",
+      "version": "1.0.0",
+      "organism": "Lupinus angustifolius",
+      "assembly": "LupAngTanjil_v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001865875.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001865875.1/",
+      "file_name": "BSgenome.Langustifolius.NCBI.LupAngTanjilv10_1.0.0.tar.gz",
+      "size": 155578574,
+      "seq_ids": [
+        "NC_032009.1",
+        "NC_032010.1",
+        "NC_032011.1",
+        "NC_032012.1",
+        "NC_032013.1"
+      ],
+      "seq_count": 13573,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Lupinus"
+      },
+      "common_name": "narrow-leaved blue lupine",
+      "published": "2026-04-04T15:36:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Langustifolius.NCBI.LupAngTanjilv10/BSgenome.Langustifolius.NCBI.LupAngTanjilv10_1.0.0.tar.gz"
     }
   ]
 }
