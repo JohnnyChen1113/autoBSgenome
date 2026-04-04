@@ -1329,3 +1329,7 @@ NeedsCompilation: no
 Package: BSgenome.Pdamicornis.NCBI.ASM370409v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hrobusta.NCBI.Helobdellarobustav10
+Version: 1.0.0
+NeedsCompilation: no
