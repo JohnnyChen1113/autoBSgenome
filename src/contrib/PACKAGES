@@ -469,3 +469,7 @@ NeedsCompilation: no
 Package: BSgenome.Alimnaeus.NCBI.Austrofunduluslimnaeus10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pflavescens.NCBI.PFLA10
+Version: 1.0.0
+NeedsCompilation: no

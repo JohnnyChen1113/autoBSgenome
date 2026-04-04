@@ -3119,6 +3119,54 @@
       ]
     },
     {
+      "organism": "Perca flavescens",
+      "common_name": "yellow perch",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Percidae",
+        "genus": "Perca"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pflavescens.NCBI.PFLA10",
+          "version": "1.0.0",
+          "organism": "Perca flavescens",
+          "assembly": "PFLA_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_004354835.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004354835.1/",
+          "file_name": "BSgenome.Pflavescens.NCBI.PFLA10_1.0.0.tar.gz",
+          "size": 222581014,
+          "seq_ids": [
+            "NC_041331.1",
+            "NC_041332.1",
+            "NC_041333.1",
+            "NC_041334.1",
+            "NC_041335.1"
+          ],
+          "seq_count": 268,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Perciformes",
+            "family": "Percidae",
+            "genus": "Perca"
+          },
+          "common_name": "yellow perch",
+          "published": "2026-04-04T05:45:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pflavescens.NCBI.PFLA10/BSgenome.Pflavescens.NCBI.PFLA10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Periophthalmus magnuspinnatus",
       "common_name": "",
       "group": "vertebrate_other",
@@ -7516,6 +7564,38 @@
       "common_name": "",
       "published": "2026-04-04T05:45:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alimnaeus.NCBI.Austrofunduluslimnaeus10/BSgenome.Alimnaeus.NCBI.Austrofunduluslimnaeus10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pflavescens.NCBI.PFLA10",
+      "version": "1.0.0",
+      "organism": "Perca flavescens",
+      "assembly": "PFLA_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_004354835.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004354835.1/",
+      "file_name": "BSgenome.Pflavescens.NCBI.PFLA10_1.0.0.tar.gz",
+      "size": 222581014,
+      "seq_ids": [
+        "NC_041331.1",
+        "NC_041332.1",
+        "NC_041333.1",
+        "NC_041334.1",
+        "NC_041335.1"
+      ],
+      "seq_count": 268,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Percidae",
+        "genus": "Perca"
+      },
+      "common_name": "yellow perch",
+      "published": "2026-04-04T05:45:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pflavescens.NCBI.PFLA10/BSgenome.Pflavescens.NCBI.PFLA10_1.0.0.tar.gz"
     }
   ]
 }
