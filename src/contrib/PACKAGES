@@ -441,3 +441,7 @@ NeedsCompilation: no
 Package: BSgenome.Platipinna.NCBI.Platipinna10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oafer.NCBI.OryAfe10
+Version: 1.0.0
+NeedsCompilation: no

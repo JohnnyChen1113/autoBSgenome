@@ -2664,6 +2664,54 @@
       ]
     },
     {
+      "organism": "Orycteropus afer afer",
+      "common_name": "",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Tubulidentata",
+        "family": "Orycteropodidae",
+        "genus": "Orycteropus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Oafer.NCBI.OryAfe10",
+          "version": "1.0.0",
+          "organism": "Orycteropus afer afer",
+          "assembly": "OryAfe1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000298275.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000298275.1/",
+          "file_name": "BSgenome.Oafer.NCBI.OryAfe10_1.0.0.tar.gz",
+          "size": 893531842,
+          "seq_ids": [
+            "NW_006921588.1",
+            "NW_006921589.1",
+            "NW_006921590.1",
+            "NW_006921591.1",
+            "NW_006921592.1"
+          ],
+          "seq_count": 22509,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Tubulidentata",
+            "family": "Orycteropodidae",
+            "genus": "Orycteropus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T04:35:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oafer.NCBI.OryAfe10/BSgenome.Oafer.NCBI.OryAfe10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oryzias melastigma",
       "common_name": "Indian medaka",
       "group": "vertebrate_other",
@@ -6959,6 +7007,38 @@
       "common_name": "sailfin molly",
       "published": "2026-04-04T04:33:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Platipinna.NCBI.Platipinna10/BSgenome.Platipinna.NCBI.Platipinna10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Oafer.NCBI.OryAfe10",
+      "version": "1.0.0",
+      "organism": "Orycteropus afer afer",
+      "assembly": "OryAfe1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000298275.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000298275.1/",
+      "file_name": "BSgenome.Oafer.NCBI.OryAfe10_1.0.0.tar.gz",
+      "size": 893531842,
+      "seq_ids": [
+        "NW_006921588.1",
+        "NW_006921589.1",
+        "NW_006921590.1",
+        "NW_006921591.1",
+        "NW_006921592.1"
+      ],
+      "seq_count": 22509,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Tubulidentata",
+        "family": "Orycteropodidae",
+        "genus": "Orycteropus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T04:35:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oafer.NCBI.OryAfe10/BSgenome.Oafer.NCBI.OryAfe10_1.0.0.tar.gz"
     }
   ]
 }
