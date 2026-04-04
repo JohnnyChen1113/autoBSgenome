@@ -1095,6 +1095,54 @@
       ]
     },
     {
+      "organism": "Chaetura pelagica",
+      "common_name": "chimney swift",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Apodiformes",
+        "family": "Apodidae",
+        "genus": "Chaetura"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cpelagica.NCBI.ChaPel11",
+          "version": "1.0.0",
+          "organism": "Chaetura pelagica",
+          "assembly": "ChaPel_1.1",
+          "provider": "NCBI",
+          "accession": "GCF_000747805.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000747805.2/",
+          "file_name": "BSgenome.Cpelagica.NCBI.ChaPel11_1.0.0.tar.gz",
+          "size": 280790804,
+          "seq_ids": [
+            "NW_009951657.1",
+            "NW_009951658.1",
+            "NW_009951659.1",
+            "NW_009951660.1",
+            "NW_009951661.1"
+          ],
+          "seq_count": 18703,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Apodiformes",
+            "family": "Apodidae",
+            "genus": "Chaetura"
+          },
+          "common_name": "chimney swift",
+          "published": "2026-04-04T10:05:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpelagica.NCBI.ChaPel11/BSgenome.Cpelagica.NCBI.ChaPel11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chinchilla lanigera",
       "common_name": "long-tailed chinchilla",
       "group": "vertebrate_mammalian",
@@ -10956,6 +11004,38 @@
       "common_name": "willow flycatcher",
       "published": "2026-04-04T09:12:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Etraillii.NCBI.ASM303162v1/BSgenome.Etraillii.NCBI.ASM303162v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cpelagica.NCBI.ChaPel11",
+      "version": "1.0.0",
+      "organism": "Chaetura pelagica",
+      "assembly": "ChaPel_1.1",
+      "provider": "NCBI",
+      "accession": "GCF_000747805.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000747805.2/",
+      "file_name": "BSgenome.Cpelagica.NCBI.ChaPel11_1.0.0.tar.gz",
+      "size": 280790804,
+      "seq_ids": [
+        "NW_009951657.1",
+        "NW_009951658.1",
+        "NW_009951659.1",
+        "NW_009951660.1",
+        "NW_009951661.1"
+      ],
+      "seq_count": 18703,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Apodiformes",
+        "family": "Apodidae",
+        "genus": "Chaetura"
+      },
+      "common_name": "chimney swift",
+      "published": "2026-04-04T10:05:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpelagica.NCBI.ChaPel11/BSgenome.Cpelagica.NCBI.ChaPel11_1.0.0.tar.gz"
     }
   ]
 }

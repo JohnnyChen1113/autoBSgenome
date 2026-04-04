@@ -641,3 +641,7 @@ NeedsCompilation: no
 Package: BSgenome.Etraillii.NCBI.ASM303162v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cpelagica.NCBI.ChaPel11
+Version: 1.0.0
+NeedsCompilation: no
