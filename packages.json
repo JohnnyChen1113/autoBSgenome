@@ -9771,6 +9771,54 @@
       ]
     },
     {
+      "organism": "Solanum tuberosum",
+      "common_name": "potato",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Solanum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Stuberosum.NCBI.SolTub30",
+          "version": "1.0.0",
+          "organism": "Solanum tuberosum",
+          "assembly": "SolTub_3.0",
+          "provider": "NCBI",
+          "accession": "GCF_000226075.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000226075.1/",
+          "file_name": "BSgenome.Stuberosum.NCBI.SolTub30_1.0.0.tar.gz",
+          "size": 174994011,
+          "seq_ids": [
+            "NW_006238927.1",
+            "NW_006238928.1",
+            "NW_006238929.1",
+            "NW_006238930.1",
+            "NW_006238931.1"
+          ],
+          "seq_count": 14854,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Solanaceae",
+            "genus": "Solanum"
+          },
+          "common_name": "potato",
+          "published": "2026-04-04T15:37:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Stuberosum.NCBI.SolTub30/BSgenome.Stuberosum.NCBI.SolTub30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sorghum bicolor",
       "common_name": "sorghum",
       "group": "plant",
@@ -18215,6 +18263,38 @@
       "common_name": "",
       "published": "2026-04-04T15:37:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ceugenioides.NCBI.Ceug10/BSgenome.Ceugenioides.NCBI.Ceug10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Stuberosum.NCBI.SolTub30",
+      "version": "1.0.0",
+      "organism": "Solanum tuberosum",
+      "assembly": "SolTub_3.0",
+      "provider": "NCBI",
+      "accession": "GCF_000226075.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000226075.1/",
+      "file_name": "BSgenome.Stuberosum.NCBI.SolTub30_1.0.0.tar.gz",
+      "size": 174994011,
+      "seq_ids": [
+        "NW_006238927.1",
+        "NW_006238928.1",
+        "NW_006238929.1",
+        "NW_006238930.1",
+        "NW_006238931.1"
+      ],
+      "seq_count": 14854,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Solanum"
+      },
+      "common_name": "potato",
+      "published": "2026-04-04T15:37:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Stuberosum.NCBI.SolTub30/BSgenome.Stuberosum.NCBI.SolTub30_1.0.0.tar.gz"
     }
   ]
 }
