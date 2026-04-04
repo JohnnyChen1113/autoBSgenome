@@ -1321,3 +1321,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppolytes.NCBI.Ppol10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aflorea.NCBI.Aflo11
+Version: 1.0.0
+NeedsCompilation: no
