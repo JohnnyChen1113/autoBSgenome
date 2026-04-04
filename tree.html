@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoBSgenome — Taxonomy Tree</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --primary: #003DA5; --text: #1a1a2e; --text-muted: #7a7a9a; --bg: #fff; --border: #e2e5eb; --success: #0f7b3f; }
+  body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); }
+  h1 { font-family: 'Source Serif 4', serif; }
+
+  header { border-bottom: 1px solid var(--border); padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 18px; }
+  .logo-icon { width: 32px; height: 32px; background: var(--primary); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-family: 'JetBrains Mono'; font-size: 12px; font-weight: 700; }
+  nav a { color: var(--text-muted); text-decoration: none; margin-left: 16px; font-size: 14px; }
+  nav a:hover { color: var(--text); }
+
+  .controls { padding: 16px 24px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--border); }
+  .controls input { padding: 8px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 14px; width: 300px; outline: none; }
+  .controls input:focus { border-color: var(--primary); }
+  .legend { display: flex; gap: 16px; font-size: 13px; color: var(--text-muted); margin-left: auto; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle; }
+
+  #tree-container { width: 100%; overflow: auto; }
+  svg { font-family: 'Inter', sans-serif; }
+
+  .node circle { stroke-width: 2px; cursor: pointer; }
+  .node text { font-size: 12px; fill: var(--text); }
+  .node--has-package circle { fill: var(--primary); stroke: var(--primary); }
+  .node--no-package circle { fill: #e2e5eb; stroke: #b0b0c0; }
+  .node--internal circle { fill: white; stroke: var(--primary); }
+  .link { fill: none; stroke: var(--border); stroke-width: 1.5px; }
+
+  .tooltip { position: absolute; padding: 8px 12px; background: white; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); pointer-events: none; z-index: 100; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">BS</div>
+    <span>Taxonomy Tree</span>
+  </div>
+  <nav>
+    <a href="./">Browse Packages</a>
+    <a href="https://autobsgenome.pages.dev">Build a Package</a>
+    <a href="https://github.com/JohnnyChen1113/autoBSgenome">GitHub</a>
+  </nav>
+</header>
+
+<div class="controls">
+  <input type="text" id="search" placeholder="Search organism..." />
+  <div class="legend">
+    <span><span class="legend-dot" style="background:var(--primary);"></span> BSgenome available</span>
+    <span><span class="legend-dot" style="background:#e2e5eb;border:1px solid #b0b0c0;"></span> Not yet built</span>
+  </div>
+</div>
+
+<div id="tree-container"></div>
+<div class="tooltip" id="tooltip" style="display:none;"></div>
+
+<script>
+const BASE = '.';
+
+async function init() {
+  const res = await fetch(`${BASE}/packages.json?t=${Date.now()}`);
+  const data = await res.json();
+  const organisms = data.organisms || [];
+
+  // Build hierarchy from taxonomy
+  const root = { name: 'Life', children: [] };
+
+  organisms.forEach(org => {
+    const tax = org.taxonomy || {};
+    const path = [];
+    for (const rank of ['domain', 'kingdom', 'phylum', 'class', 'order', 'family', 'genus']) {
+      if (tax[rank]) path.push(tax[rank]);
+    }
+    // Add species
+    const speciesParts = org.organism.split(/\s+/);
+    const speciesName = speciesParts.length >= 2 ? speciesParts.slice(0, 2).join(' ') : org.organism;
+    path.push(speciesName);
+
+    let node = root;
+    for (const name of path) {
+      let child = node.children?.find(c => c.name === name);
+      if (!child) {
+        child = { name, children: [] };
+        node.children.push(child);
+      }
+      node = child;
+    }
+    node.organism = org;
+    node.hasPackage = true;
+    node.builds = org.builds;
+    node.commonName = org.common_name;
+  });
+
+  // Sort children alphabetically
+  function sortTree(node) {
+    if (node.children) {
+      node.children.sort((a, b) => a.name.localeCompare(b.name));
+      node.children.forEach(sortTree);
+    }
+  }
+  sortTree(root);
+
+  renderTree(root);
+}
+
+function renderTree(rootData) {
+  const container = document.getElementById('tree-container');
+  const margin = { top: 20, right: 200, bottom: 20, left: 40 };
+
+  const hierarchy = d3.hierarchy(rootData);
+  const nodeCount = hierarchy.descendants().length;
+  const height = Math.max(600, nodeCount * 22);
+  const width = Math.max(960, window.innerWidth - 48);
+
+  const treeLayout = d3.tree().size([height - margin.top - margin.bottom, width - margin.left - margin.right - 200]);
+  treeLayout(hierarchy);
+
+  // Collapse deep nodes initially (keep first 3 levels open)
+  hierarchy.each(d => {
+    if (d.depth > 3 && d.children) {
+      d._children = d.children;
+      d.children = null;
+    }
+  });
+
+  const svg = d3.select(container)
+    .html('')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Re-layout after collapsing
+  treeLayout(hierarchy);
+
+  function update(source) {
+    treeLayout(hierarchy);
+    const nodes = hierarchy.descendants();
+    const links = hierarchy.links();
+
+    // Adjust height dynamically
+    const visibleNodes = nodes.length;
+    const newHeight = Math.max(600, visibleNodes * 22);
+    d3.select(container).select('svg').attr('height', newHeight + margin.top + margin.bottom);
+    treeLayout.size([newHeight - margin.top - margin.bottom, width - margin.left - margin.right - 200]);
+    treeLayout(hierarchy);
+
+    // Links
+    svg.selectAll('.link').remove();
+    svg.selectAll('.link')
+      .data(hierarchy.links())
+      .enter()
+      .append('path')
+      .attr('class', 'link')
+      .attr('d', d3.linkHorizontal().x(d => d.y).y(d => d.x));
+
+    // Nodes
+    svg.selectAll('.node').remove();
+    const node = svg.selectAll('.node')
+      .data(hierarchy.descendants())
+      .enter()
+      .append('g')
+      .attr('class', d => {
+        if (d.data.hasPackage) return 'node node--has-package';
+        if (d.children || d._children) return 'node node--internal';
+        return 'node node--no-package';
+      })
+      .attr('transform', d => `translate(${d.y},${d.x})`)
+      .on('click', (event, d) => {
+        if (d.children) {
+          d._children = d.children;
+          d.children = null;
+        } else if (d._children) {
+          d.children = d._children;
+          d._children = null;
+        }
+        update(d);
+      })
+      .on('mouseover', (event, d) => {
+        const tip = document.getElementById('tooltip');
+        let html = `<strong>${d.data.name}</strong>`;
+        if (d.data.commonName) html += ` (${d.data.commonName})`;
+        if (d.data.hasPackage && d.data.builds) {
+          html += `<br>${d.data.builds.length} BSgenome package(s)`;
+          html += `<br><span style="color:var(--success);">Available for download</span>`;
+        } else if (!d.children && !d._children && !d.data.hasPackage) {
+          html += `<br><a href="https://autobsgenome.pages.dev" style="color:var(--primary);">Build this genome →</a>`;
+        } else {
+          const count = countLeaves(d);
+          html += `<br>${count} organism(s)`;
+        }
+        tip.innerHTML = html;
+        tip.style.display = 'block';
+        tip.style.left = (event.pageX + 12) + 'px';
+        tip.style.top = (event.pageY - 12) + 'px';
+      })
+      .on('mouseout', () => {
+        document.getElementById('tooltip').style.display = 'none';
+      });
+
+    node.append('circle')
+      .attr('r', d => d.data.hasPackage ? 5 : (d.children || d._children) ? 4 : 3);
+
+    node.append('text')
+      .attr('dy', '0.35em')
+      .attr('x', d => (d.children || d._children) ? -10 : 10)
+      .attr('text-anchor', d => (d.children || d._children) ? 'end' : 'start')
+      .text(d => d.data.name)
+      .style('font-style', d => d.data.hasPackage ? 'italic' : 'normal')
+      .style('font-weight', d => d.data.hasPackage ? '600' : '400')
+      .style('fill', d => d.data.hasPackage ? 'var(--primary)' : 'var(--text)');
+
+    // Collapse indicator
+    node.filter(d => d._children)
+      .append('text')
+      .attr('dy', '0.35em')
+      .attr('x', 12)
+      .text(d => `(${countLeaves(d)} hidden)`)
+      .style('font-size', '10px')
+      .style('fill', 'var(--text-muted)');
+  }
+
+  function countLeaves(node) {
+    if (!node.children && !node._children) return 1;
+    const children = node.children || node._children || [];
+    return children.reduce((sum, c) => sum + countLeaves(c), 0);
+  }
+
+  update(hierarchy);
+
+  // Search
+  document.getElementById('search').addEventListener('input', (e) => {
+    const q = e.target.value.toLowerCase();
+    if (!q) return;
+
+    // Expand all nodes that match
+    hierarchy.each(d => {
+      if (d.data.name.toLowerCase().includes(q)) {
+        // Expand ancestors
+        let p = d.parent;
+        while (p) {
+          if (p._children) {
+            p.children = p._children;
+            p._children = null;
+          }
+          p = p.parent;
+        }
+      }
+    });
+    update(hierarchy);
+
+    // Highlight matching
+    svg.selectAll('.node text')
+      .style('fill', d => d.data.name.toLowerCase().includes(q) ? 'var(--primary)' : '')
+      .style('font-weight', d => d.data.name.toLowerCase().includes(q) ? '700' : '');
+  });
+}
+
+init();
+</script>
+</body>
+</html>
