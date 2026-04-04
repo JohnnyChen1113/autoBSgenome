@@ -471,6 +471,54 @@
       ]
     },
     {
+      "organism": "Carlito syrichta",
+      "common_name": "Philippine tarsier",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Tarsiidae",
+        "genus": "Carlito"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Csyrichta.NCBI.Tarsiussyrichta201",
+          "version": "1.0.0",
+          "organism": "Carlito syrichta",
+          "assembly": "Tarsius_syrichta-2.0.1",
+          "provider": "NCBI",
+          "accession": "GCF_000164805.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000164805.1/",
+          "file_name": "BSgenome.Csyrichta.NCBI.Tarsiussyrichta201_1.0.0.tar.gz",
+          "size": 893891392,
+          "seq_ids": [
+            "NW_006944096.1",
+            "NW_006944097.1",
+            "NW_006944098.1",
+            "NW_006944099.1",
+            "NW_006944100.1"
+          ],
+          "seq_count": 337189,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Tarsiidae",
+            "genus": "Carlito"
+          },
+          "common_name": "Philippine tarsier",
+          "published": "2026-04-04T02:31:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csyrichta.NCBI.Tarsiussyrichta201/BSgenome.Csyrichta.NCBI.Tarsiussyrichta201_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cebus imitator",
       "common_name": "Panamanian white-faced capuchin",
       "group": "vertebrate_mammalian",
@@ -5599,6 +5647,38 @@
       "common_name": "Sunda flying lemur",
       "published": "2026-04-04T02:30:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gvariegatus.NCBI.Gvariegatus302/BSgenome.Gvariegatus.NCBI.Gvariegatus302_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Csyrichta.NCBI.Tarsiussyrichta201",
+      "version": "1.0.0",
+      "organism": "Carlito syrichta",
+      "assembly": "Tarsius_syrichta-2.0.1",
+      "provider": "NCBI",
+      "accession": "GCF_000164805.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000164805.1/",
+      "file_name": "BSgenome.Csyrichta.NCBI.Tarsiussyrichta201_1.0.0.tar.gz",
+      "size": 893891392,
+      "seq_ids": [
+        "NW_006944096.1",
+        "NW_006944097.1",
+        "NW_006944098.1",
+        "NW_006944099.1",
+        "NW_006944100.1"
+      ],
+      "seq_count": 337189,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Tarsiidae",
+        "genus": "Carlito"
+      },
+      "common_name": "Philippine tarsier",
+      "published": "2026-04-04T02:31:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csyrichta.NCBI.Tarsiussyrichta201/BSgenome.Csyrichta.NCBI.Tarsiussyrichta201_1.0.0.tar.gz"
     }
   ]
 }

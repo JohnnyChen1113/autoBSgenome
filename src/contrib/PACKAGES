@@ -373,3 +373,7 @@ NeedsCompilation: no
 Package: BSgenome.Gvariegatus.NCBI.Gvariegatus302
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csyrichta.NCBI.Tarsiussyrichta201
+Version: 1.0.0
+NeedsCompilation: no
