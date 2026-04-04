@@ -597,3 +597,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmoneduloides.NCBI.bCorMon1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Phumilis.NCBI.PseHum10
+Version: 1.0.0
+NeedsCompilation: no
