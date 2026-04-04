@@ -3892,6 +3892,54 @@
       ]
     },
     {
+      "organism": "Neopelma chrysocephalum",
+      "common_name": "saffron-crested tyrant-manakin",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Pipridae",
+        "genus": "Neopelma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nchrysocephalum.NCBI.ASM398488v2",
+          "version": "1.0.0",
+          "organism": "Neopelma chrysocephalum",
+          "assembly": "ASM398488v2",
+          "provider": "NCBI",
+          "accession": "GCF_003984885.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003984885.1/",
+          "file_name": "BSgenome.Nchrysocephalum.NCBI.ASM398488v2_1.0.0.tar.gz",
+          "size": 295417756,
+          "seq_ids": [
+            "NW_020897684.1",
+            "NW_020897685.1",
+            "NW_020897686.1",
+            "NW_020897687.1",
+            "NW_020897688.1"
+          ],
+          "seq_count": 42063,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Pipridae",
+            "genus": "Neopelma"
+          },
+          "common_name": "saffron-crested tyrant-manakin",
+          "published": "2026-04-04T09:12:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nchrysocephalum.NCBI.ASM398488v2/BSgenome.Nchrysocephalum.NCBI.ASM398488v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Neophocaena asiaeorientalis asiaeorientalis",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -10716,6 +10764,38 @@
       "common_name": "mute swan",
       "published": "2026-04-04T09:11:45Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Color.NCBI.bCygOlo1priv2/BSgenome.Color.NCBI.bCygOlo1priv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nchrysocephalum.NCBI.ASM398488v2",
+      "version": "1.0.0",
+      "organism": "Neopelma chrysocephalum",
+      "assembly": "ASM398488v2",
+      "provider": "NCBI",
+      "accession": "GCF_003984885.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003984885.1/",
+      "file_name": "BSgenome.Nchrysocephalum.NCBI.ASM398488v2_1.0.0.tar.gz",
+      "size": 295417756,
+      "seq_ids": [
+        "NW_020897684.1",
+        "NW_020897685.1",
+        "NW_020897686.1",
+        "NW_020897687.1",
+        "NW_020897688.1"
+      ],
+      "seq_count": 42063,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Pipridae",
+        "genus": "Neopelma"
+      },
+      "common_name": "saffron-crested tyrant-manakin",
+      "published": "2026-04-04T09:12:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nchrysocephalum.NCBI.ASM398488v2/BSgenome.Nchrysocephalum.NCBI.ASM398488v2_1.0.0.tar.gz"
     }
   ]
 }
