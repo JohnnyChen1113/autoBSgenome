@@ -4846,6 +4846,54 @@
       ]
     },
     {
+      "organism": "Drosophila serrata",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dserrata.NCBI.Dser11",
+          "version": "1.0.0",
+          "organism": "Drosophila serrata",
+          "assembly": "Dser1.1",
+          "provider": "NCBI",
+          "accession": "GCF_002093755.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002093755.2/",
+          "file_name": "BSgenome.Dserrata.NCBI.Dser11_1.0.0.tar.gz",
+          "size": 47653869,
+          "seq_ids": [
+            "NW_018366219.1",
+            "NW_018366220.1",
+            "NW_018366221.1",
+            "NW_018366222.1",
+            "NW_018366223.1"
+          ],
+          "seq_count": 1293,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T20:37:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dserrata.NCBI.Dser11/BSgenome.Dserrata.NCBI.Dser11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila subobscura",
       "common_name": "",
       "group": "invertebrate",
@@ -23655,6 +23703,38 @@
       "common_name": "",
       "published": "2026-04-04T20:37:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nvespilloides.NCBI.Nicvev10/BSgenome.Nvespilloides.NCBI.Nicvev10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dserrata.NCBI.Dser11",
+      "version": "1.0.0",
+      "organism": "Drosophila serrata",
+      "assembly": "Dser1.1",
+      "provider": "NCBI",
+      "accession": "GCF_002093755.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002093755.2/",
+      "file_name": "BSgenome.Dserrata.NCBI.Dser11_1.0.0.tar.gz",
+      "size": 47653869,
+      "seq_ids": [
+        "NW_018366219.1",
+        "NW_018366220.1",
+        "NW_018366221.1",
+        "NW_018366222.1",
+        "NW_018366223.1"
+      ],
+      "seq_count": 1293,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T20:37:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dserrata.NCBI.Dser11/BSgenome.Dserrata.NCBI.Dser11_1.0.0.tar.gz"
     }
   ]
 }

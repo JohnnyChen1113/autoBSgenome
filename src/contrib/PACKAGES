@@ -1277,3 +1277,7 @@ NeedsCompilation: no
 Package: BSgenome.Nvespilloides.NCBI.Nicvev10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dserrata.NCBI.Dser11
+Version: 1.0.0
+NeedsCompilation: no
