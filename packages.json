@@ -9343,6 +9343,54 @@
       ]
     },
     {
+      "organism": "Quercus lobata",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Qlobata.NCBI.ValleyOak32",
+          "version": "1.0.0",
+          "organism": "Quercus lobata",
+          "assembly": "ValleyOak3.2",
+          "provider": "NCBI",
+          "accession": "GCF_001633185.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001633185.2/",
+          "file_name": "BSgenome.Qlobata.NCBI.ValleyOak32_1.0.0.tar.gz",
+          "size": 214688172,
+          "seq_ids": [
+            "NC_044904.1",
+            "NC_044905.1",
+            "NW_022154702.1",
+            "NC_044906.1",
+            "NC_044907.1"
+          ],
+          "seq_count": 2002,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fagales",
+            "family": "Fagaceae",
+            "genus": "Quercus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T16:41:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Qlobata.NCBI.ValleyOak32/BSgenome.Qlobata.NCBI.ValleyOak32_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Quercus suber",
       "common_name": "",
       "group": "plant",
@@ -19095,6 +19143,38 @@
       "common_name": "bonfire salvia",
       "published": "2026-04-04T16:41:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssplendens.NCBI.SspV2/BSgenome.Ssplendens.NCBI.SspV2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Qlobata.NCBI.ValleyOak32",
+      "version": "1.0.0",
+      "organism": "Quercus lobata",
+      "assembly": "ValleyOak3.2",
+      "provider": "NCBI",
+      "accession": "GCF_001633185.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001633185.2/",
+      "file_name": "BSgenome.Qlobata.NCBI.ValleyOak32_1.0.0.tar.gz",
+      "size": 214688172,
+      "seq_ids": [
+        "NC_044904.1",
+        "NC_044905.1",
+        "NW_022154702.1",
+        "NC_044906.1",
+        "NC_044907.1"
+      ],
+      "seq_count": 2002,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T16:41:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Qlobata.NCBI.ValleyOak32/BSgenome.Qlobata.NCBI.ValleyOak32_1.0.0.tar.gz"
     }
   ]
 }

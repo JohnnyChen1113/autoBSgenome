@@ -1049,3 +1049,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssplendens.NCBI.SspV2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Qlobata.NCBI.ValleyOak32
+Version: 1.0.0
+NeedsCompilation: no
