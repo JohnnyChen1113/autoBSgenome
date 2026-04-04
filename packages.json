@@ -2858,6 +2858,54 @@
       ]
     },
     {
+      "organism": "Nothoprocta perdicaria",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Tinamiformes",
+        "family": "Tinamidae",
+        "genus": "Nothoprocta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nperdicaria.NCBI.notPer1",
+          "version": "1.0.0",
+          "organism": "Nothoprocta perdicaria",
+          "assembly": "notPer1",
+          "provider": "NCBI",
+          "accession": "GCF_003342845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003342845.1/",
+          "file_name": "BSgenome.Nperdicaria.NCBI.notPer1_1.0.0.tar.gz",
+          "size": 255634642,
+          "seq_ids": [
+            "NW_020454092.1",
+            "NW_020454093.1",
+            "NW_020454094.1",
+            "NW_020454095.1",
+            "NW_020454096.1"
+          ],
+          "seq_count": 2217,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Tinamiformes",
+            "family": "Tinamidae",
+            "genus": "Nothoprocta"
+          },
+          "common_name": "",
+          "published": "2026-04-04T05:46:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nperdicaria.NCBI.notPer1/BSgenome.Nperdicaria.NCBI.notPer1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Notolabrus celidotus",
       "common_name": "New Zealand spotty",
       "group": "vertebrate_other",
@@ -7916,6 +7964,38 @@
       "common_name": "Nile tilapia",
       "published": "2026-04-04T05:46:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU/BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nperdicaria.NCBI.notPer1",
+      "version": "1.0.0",
+      "organism": "Nothoprocta perdicaria",
+      "assembly": "notPer1",
+      "provider": "NCBI",
+      "accession": "GCF_003342845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003342845.1/",
+      "file_name": "BSgenome.Nperdicaria.NCBI.notPer1_1.0.0.tar.gz",
+      "size": 255634642,
+      "seq_ids": [
+        "NW_020454092.1",
+        "NW_020454093.1",
+        "NW_020454094.1",
+        "NW_020454095.1",
+        "NW_020454096.1"
+      ],
+      "seq_count": 2217,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Tinamiformes",
+        "family": "Tinamidae",
+        "genus": "Nothoprocta"
+      },
+      "common_name": "",
+      "published": "2026-04-04T05:46:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nperdicaria.NCBI.notPer1/BSgenome.Nperdicaria.NCBI.notPer1_1.0.0.tar.gz"
     }
   ]
 }

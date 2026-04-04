@@ -489,3 +489,7 @@ NeedsCompilation: no
 Package: BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nperdicaria.NCBI.notPer1
+Version: 1.0.0
+NeedsCompilation: no
