@@ -71,11 +71,92 @@ jobs:
           RELEASE=$(curl -s "https://rest.ensembl.org/info/data/?content-type=application/json" | python3 -c "import json,sys; print(json.load(sys.stdin)['releases'][0])")
           echo "Ensembl release: ${RELEASE}"
 
-          # Capitalize first letter of species for filename (POSIX-compatible)
           SPECIES_CAP=$(echo "$SPECIES" | python3 -c "import sys; s=sys.stdin.read().strip(); print(s[0].upper()+s[1:])")
+
+          # Strategy 1: Try standard URL pattern
           URL="https://ftp.ensembl.org/pub/release-${RELEASE}/fasta/${SPECIES}/dna/${SPECIES_CAP}.${GENOME}.dna.toplevel.fa.gz"
-          echo "Downloading: ${URL}"
-          curl -fL -o genome.fa.gz "${URL}"
+          echo "Trying standard URL: ${URL}"
+          if curl -fsSL --head "${URL}" >/dev/null 2>&1; then
+            echo "Found at standard URL"
+            curl -fL -o genome.fa.gz "${URL}"
+          else
+            echo "Standard URL failed, querying Ensembl REST API..."
+
+            # Strategy 2: Use REST API to get species info, then list FTP directory
+            REST_URL="https://rest.ensembl.org/info/genomes/${SPECIES}?content-type=application/json"
+            echo "Querying REST API: ${REST_URL}"
+            REST_JSON=$(curl -sL "${REST_URL}" || echo "{}")
+
+            # Extract division to determine FTP site (Ensembl vs EnsemblGenomes)
+            FTP_DIR=$(echo "$REST_JSON" | python3 -c "
+          import json, sys
+          try:
+              data = json.load(sys.stdin)
+              division = data.get('division', 'EnsemblVertebrates')
+              name = data.get('url_name', '') or data.get('name', '${SPECIES}')
+              # Main Ensembl vertebrates use ftp.ensembl.org/pub/
+              if division == 'EnsemblVertebrates':
+                  print('https://ftp.ensembl.org/pub/release-${RELEASE}/fasta/' + name + '/dna/')
+              else:
+                  # EnsemblGenomes divisions (plants, fungi, metazoa, protists, bacteria)
+                  div_map = {
+                      'EnsemblPlants': 'plants',
+                      'EnsemblFungi': 'fungi',
+                      'EnsemblMetazoa': 'metazoa',
+                      'EnsemblProtists': 'protists',
+                      'EnsemblBacteria': 'bacteria',
+                  }
+                  div_name = div_map.get(division, division.replace('Ensembl','').lower())
+                  collection = data.get('db_name', '').replace('_core_${RELEASE}', '').replace('_core','')
+                  # Collection species have an extra path component
+                  if '_collection' in data.get('db_name', ''):
+                      col_name = collection.rsplit('_', 1)[0] if '_' in collection else collection
+                      print('https://ftp.ensemblgenomes.org/pub/' + div_name + '/release-${RELEASE}/fasta/' + col_name + '/' + name + '/dna/')
+                  else:
+                      print('https://ftp.ensemblgenomes.org/pub/' + div_name + '/release-${RELEASE}/fasta/' + name + '/dna/')
+          except Exception as e:
+              print('')
+          " 2>/dev/null)
+
+            if [ -n "$FTP_DIR" ]; then
+              echo "Listing FTP directory: ${FTP_DIR}"
+              FILENAME=$(curl -sL "${FTP_DIR}" | python3 -c "
+          import sys, re
+          html = sys.stdin.read()
+          # Match toplevel FASTA filename from the directory listing
+          m = re.search(r'href=\"([^\"]*\.dna\.toplevel\.fa\.gz)\"', html)
+          print(m.group(1) if m else '')
+          " 2>/dev/null)
+
+              if [ -n "$FILENAME" ]; then
+                URL="${FTP_DIR}${FILENAME}"
+                echo "Found via REST API + FTP listing: ${URL}"
+                curl -fL -o genome.fa.gz "${URL}"
+              fi
+            fi
+
+            # Strategy 3: Fall back to listing the standard FTP dna/ directory
+            if [ ! -f genome.fa.gz ]; then
+              FTP_DIR="https://ftp.ensembl.org/pub/release-${RELEASE}/fasta/${SPECIES}/dna/"
+              echo "Falling back to FTP directory listing: ${FTP_DIR}"
+              FILENAME=$(curl -sL "${FTP_DIR}" | python3 -c "
+          import sys, re
+          html = sys.stdin.read()
+          m = re.search(r'href=\"([^\"]*\.dna\.toplevel\.fa\.gz)\"', html)
+          print(m.group(1) if m else '')
+          " 2>/dev/null)
+
+              if [ -n "$FILENAME" ]; then
+                URL="${FTP_DIR}${FILENAME}"
+                echo "Found via FTP listing: ${URL}"
+                curl -fL -o genome.fa.gz "${URL}"
+              else
+                echo "ERROR: Could not find toplevel FASTA for ${SPECIES} on Ensembl"
+                exit 1
+              fi
+            fi
+          fi
+
           gunzip genome.fa.gz
           ls -lh genome.fa
 
