@@ -1378,6 +1378,54 @@
       ]
     },
     {
+      "organism": "Corvus moneduloides",
+      "common_name": "New Caledonian crow",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Corvus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cmoneduloides.NCBI.bCorMon1pri",
+          "version": "1.0.0",
+          "organism": "Corvus moneduloides",
+          "assembly": "bCorMon1.pri",
+          "provider": "NCBI",
+          "accession": "GCF_009650955.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009650955.1/",
+          "file_name": "BSgenome.Cmoneduloides.NCBI.bCorMon1pri_1.0.0.tar.gz",
+          "size": 280990655,
+          "seq_ids": [
+            "NC_045476.1",
+            "NC_045477.1",
+            "NC_045478.1",
+            "NC_045479.1",
+            "NC_045480.1"
+          ],
+          "seq_count": 105,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Corvidae",
+            "genus": "Corvus"
+          },
+          "common_name": "New Caledonian crow",
+          "published": "2026-04-04T08:07:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmoneduloides.NCBI.bCorMon1pri/BSgenome.Cmoneduloides.NCBI.bCorMon1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Coturnix japonica",
       "common_name": "Japanese quail",
       "group": "vertebrate_other",
@@ -9996,6 +10044,38 @@
       "common_name": "American crow",
       "published": "2026-04-04T08:07:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbrachyrhynchos.NCBI.ASM69197v1/BSgenome.Cbrachyrhynchos.NCBI.ASM69197v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cmoneduloides.NCBI.bCorMon1pri",
+      "version": "1.0.0",
+      "organism": "Corvus moneduloides",
+      "assembly": "bCorMon1.pri",
+      "provider": "NCBI",
+      "accession": "GCF_009650955.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009650955.1/",
+      "file_name": "BSgenome.Cmoneduloides.NCBI.bCorMon1pri_1.0.0.tar.gz",
+      "size": 280990655,
+      "seq_ids": [
+        "NC_045476.1",
+        "NC_045477.1",
+        "NC_045478.1",
+        "NC_045479.1",
+        "NC_045480.1"
+      ],
+      "seq_count": 105,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Corvus"
+      },
+      "common_name": "New Caledonian crow",
+      "published": "2026-04-04T08:07:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmoneduloides.NCBI.bCorMon1pri/BSgenome.Cmoneduloides.NCBI.bCorMon1pri_1.0.0.tar.gz"
     }
   ]
 }
