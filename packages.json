@@ -1346,6 +1346,54 @@
       ]
     },
     {
+      "organism": "Etheostoma spectabile",
+      "common_name": "orangethroat darter",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Percidae",
+        "genus": "Etheostoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Espectabile.NCBI.UIUCEspe10",
+          "version": "1.0.0",
+          "organism": "Etheostoma spectabile",
+          "assembly": "UIUC_Espe_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_008692095.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008692095.1/",
+          "file_name": "BSgenome.Espectabile.NCBI.UIUCEspe10_1.0.0.tar.gz",
+          "size": 219707615,
+          "seq_ids": [
+            "NC_045733.1",
+            "NC_045734.1",
+            "NC_045735.1",
+            "NC_045736.1",
+            "NC_045737.1"
+          ],
+          "seq_count": 3119,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Perciformes",
+            "family": "Percidae",
+            "genus": "Etheostoma"
+          },
+          "common_name": "orangethroat darter",
+          "published": "2026-04-04T05:45:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Espectabile.NCBI.UIUCEspe10/BSgenome.Espectabile.NCBI.UIUCEspe10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Eumetopias jubatus",
       "common_name": "Steller sea lion",
       "group": "vertebrate_mammalian",
@@ -7356,6 +7404,38 @@
       "common_name": "",
       "published": "2026-04-04T05:44:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nbrichardi.NCBI.NeoBri10/BSgenome.Nbrichardi.NCBI.NeoBri10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Espectabile.NCBI.UIUCEspe10",
+      "version": "1.0.0",
+      "organism": "Etheostoma spectabile",
+      "assembly": "UIUC_Espe_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_008692095.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008692095.1/",
+      "file_name": "BSgenome.Espectabile.NCBI.UIUCEspe10_1.0.0.tar.gz",
+      "size": 219707615,
+      "seq_ids": [
+        "NC_045733.1",
+        "NC_045734.1",
+        "NC_045735.1",
+        "NC_045736.1",
+        "NC_045737.1"
+      ],
+      "seq_count": 3119,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Percidae",
+        "genus": "Etheostoma"
+      },
+      "common_name": "orangethroat darter",
+      "published": "2026-04-04T05:45:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Espectabile.NCBI.UIUCEspe10/BSgenome.Espectabile.NCBI.UIUCEspe10_1.0.0.tar.gz"
     }
   ]
 }
