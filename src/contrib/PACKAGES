@@ -1385,3 +1385,7 @@ NeedsCompilation: no
 Package: BSgenome.Dgigantea.NCBI.DenGig10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dmiranda.NCBI.DmirandaPacBio21
+Version: 1.0.0
+NeedsCompilation: no

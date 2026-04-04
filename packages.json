@@ -5134,6 +5134,54 @@
       ]
     },
     {
+      "organism": "Drosophila miranda",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dmiranda.NCBI.DmirandaPacBio21",
+          "version": "1.0.0",
+          "organism": "Drosophila miranda",
+          "assembly": "D.miranda_PacBio2.1",
+          "provider": "NCBI",
+          "accession": "GCF_003369915.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003369915.1/",
+          "file_name": "BSgenome.Dmiranda.NCBI.DmirandaPacBio21_1.0.0.tar.gz",
+          "size": 66486245,
+          "seq_ids": [
+            "NC_046673.1",
+            "NC_046674.1",
+            "NC_046675.1",
+            "NC_046676.1",
+            "NC_046677.1"
+          ],
+          "seq_count": 104,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T22:35:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dmiranda.NCBI.DmirandaPacBio21/BSgenome.Dmiranda.NCBI.DmirandaPacBio21_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila navojoa",
       "common_name": "",
       "group": "invertebrate",
@@ -25815,6 +25863,38 @@
       "common_name": "",
       "published": "2026-04-04T22:35:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dgigantea.NCBI.DenGig10/BSgenome.Dgigantea.NCBI.DenGig10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dmiranda.NCBI.DmirandaPacBio21",
+      "version": "1.0.0",
+      "organism": "Drosophila miranda",
+      "assembly": "D.miranda_PacBio2.1",
+      "provider": "NCBI",
+      "accession": "GCF_003369915.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003369915.1/",
+      "file_name": "BSgenome.Dmiranda.NCBI.DmirandaPacBio21_1.0.0.tar.gz",
+      "size": 66486245,
+      "seq_ids": [
+        "NC_046673.1",
+        "NC_046674.1",
+        "NC_046675.1",
+        "NC_046676.1",
+        "NC_046677.1"
+      ],
+      "seq_count": 104,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T22:35:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dmiranda.NCBI.DmirandaPacBio21/BSgenome.Dmiranda.NCBI.DmirandaPacBio21_1.0.0.tar.gz"
     }
   ]
 }
