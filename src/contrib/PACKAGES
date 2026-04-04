@@ -977,3 +977,7 @@ NeedsCompilation: no
 Package: BSgenome.Phallii.NCBI.PHalliiv31
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Jregia.NCBI.Walnut20
+Version: 1.0.0
+NeedsCompilation: no

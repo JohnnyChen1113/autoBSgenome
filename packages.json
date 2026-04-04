@@ -4740,6 +4740,54 @@
       ]
     },
     {
+      "organism": "Juglans regia",
+      "common_name": "Persian walnut",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Juglandaceae",
+        "genus": "Juglans"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Jregia.NCBI.Walnut20",
+          "version": "1.0.0",
+          "organism": "Juglans regia",
+          "assembly": "Walnut 2.0",
+          "provider": "NCBI",
+          "accession": "GCF_001411555.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001411555.2/",
+          "file_name": "BSgenome.Jregia.NCBI.Walnut20_1.0.0.tar.gz",
+          "size": 147678163,
+          "seq_ids": [
+            "NC_049901.1",
+            "NC_049902.1",
+            "NC_049903.1",
+            "NC_049904.1",
+            "NC_049905.1"
+          ],
+          "seq_count": 24757,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fagales",
+            "family": "Juglandaceae",
+            "genus": "Juglans"
+          },
+          "common_name": "Persian walnut",
+          "published": "2026-04-04T15:36:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jregia.NCBI.Walnut20/BSgenome.Jregia.NCBI.Walnut20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Kryptolebias marmoratus",
       "common_name": "mangrove rivulus",
       "group": "vertebrate_other",
@@ -17655,6 +17703,38 @@
       "common_name": "",
       "published": "2026-04-04T15:35:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phallii.NCBI.PHalliiv31/BSgenome.Phallii.NCBI.PHalliiv31_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Jregia.NCBI.Walnut20",
+      "version": "1.0.0",
+      "organism": "Juglans regia",
+      "assembly": "Walnut 2.0",
+      "provider": "NCBI",
+      "accession": "GCF_001411555.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001411555.2/",
+      "file_name": "BSgenome.Jregia.NCBI.Walnut20_1.0.0.tar.gz",
+      "size": 147678163,
+      "seq_ids": [
+        "NC_049901.1",
+        "NC_049902.1",
+        "NC_049903.1",
+        "NC_049904.1",
+        "NC_049905.1"
+      ],
+      "seq_count": 24757,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Juglandaceae",
+        "genus": "Juglans"
+      },
+      "common_name": "Persian walnut",
+      "published": "2026-04-04T15:36:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jregia.NCBI.Walnut20/BSgenome.Jregia.NCBI.Walnut20_1.0.0.tar.gz"
     }
   ]
 }
