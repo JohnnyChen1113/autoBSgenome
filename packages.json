@@ -1,6 +1,54 @@
 {
   "organisms": [
     {
+      "organism": "Acanthisitta chloris",
+      "common_name": "rifleman",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Acanthisittidae",
+        "genus": "Acanthisitta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Achloris.NCBI.ASM69581v1",
+          "version": "1.0.0",
+          "organism": "Acanthisitta chloris",
+          "assembly": "ASM69581v1",
+          "provider": "NCBI",
+          "accession": "GCF_000695815.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000695815.1/",
+          "file_name": "BSgenome.Achloris.NCBI.ASM69581v1_1.0.0.tar.gz",
+          "size": 274556868,
+          "seq_ids": [
+            "NW_008649695.1",
+            "NW_008649696.1",
+            "NW_008649697.1",
+            "NW_008649698.1",
+            "NW_008649699.1"
+          ],
+          "seq_count": 53875,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Acanthisittidae",
+            "genus": "Acanthisitta"
+          },
+          "common_name": "rifleman",
+          "published": "2026-04-04T07:06:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Achloris.NCBI.ASM69581v1/BSgenome.Achloris.NCBI.ASM69581v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ailuropoda melanoleuca",
       "common_name": "giant panda",
       "group": "vertebrate_mammalian",
@@ -8396,6 +8444,38 @@
       "common_name": "sheepshead minnow",
       "published": "2026-04-04T07:06:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvariegatus.NCBI.Cvariegatus10/BSgenome.Cvariegatus.NCBI.Cvariegatus10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Achloris.NCBI.ASM69581v1",
+      "version": "1.0.0",
+      "organism": "Acanthisitta chloris",
+      "assembly": "ASM69581v1",
+      "provider": "NCBI",
+      "accession": "GCF_000695815.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000695815.1/",
+      "file_name": "BSgenome.Achloris.NCBI.ASM69581v1_1.0.0.tar.gz",
+      "size": 274556868,
+      "seq_ids": [
+        "NW_008649695.1",
+        "NW_008649696.1",
+        "NW_008649697.1",
+        "NW_008649698.1",
+        "NW_008649699.1"
+      ],
+      "seq_count": 53875,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Acanthisittidae",
+        "genus": "Acanthisitta"
+      },
+      "common_name": "rifleman",
+      "published": "2026-04-04T07:06:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Achloris.NCBI.ASM69581v1/BSgenome.Achloris.NCBI.ASM69581v1_1.0.0.tar.gz"
     }
   ]
 }

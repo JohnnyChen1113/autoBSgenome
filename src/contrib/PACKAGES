@@ -513,3 +513,7 @@ NeedsCompilation: no
 Package: BSgenome.Cvariegatus.NCBI.Cvariegatus10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Achloris.NCBI.ASM69581v1
+Version: 1.0.0
+NeedsCompilation: no
