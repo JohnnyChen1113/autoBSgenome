@@ -1582,6 +1582,54 @@
       ]
     },
     {
+      "organism": "Mandrillus leucophaeus",
+      "common_name": "drill",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Mandrillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mleucophaeus.NCBI.Mleule10",
+          "version": "1.0.0",
+          "organism": "Mandrillus leucophaeus",
+          "assembly": "Mleu.le_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000951045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000951045.1/",
+          "file_name": "BSgenome.Mleucophaeus.NCBI.Mleule10_1.0.0.tar.gz",
+          "size": 711199152,
+          "seq_ids": [
+            "NW_012098097.1",
+            "NW_012098098.1",
+            "NW_012098099.1",
+            "NW_012098100.1",
+            "NW_012098101.1"
+          ],
+          "seq_count": 12821,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Mandrillus"
+          },
+          "common_name": "drill",
+          "published": "2026-04-04T02:29:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mleucophaeus.NCBI.Mleule10/BSgenome.Mleucophaeus.NCBI.Mleule10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Marmota marmota marmota",
       "common_name": "Alpine marmot",
       "group": "vertebrate_mammalian",
@@ -5359,6 +5407,38 @@
       "common_name": "Florida manatee",
       "published": "2026-04-04T02:29:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmanatus.NCBI.TriManLat10/BSgenome.Tmanatus.NCBI.TriManLat10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mleucophaeus.NCBI.Mleule10",
+      "version": "1.0.0",
+      "organism": "Mandrillus leucophaeus",
+      "assembly": "Mleu.le_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000951045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000951045.1/",
+      "file_name": "BSgenome.Mleucophaeus.NCBI.Mleule10_1.0.0.tar.gz",
+      "size": 711199152,
+      "seq_ids": [
+        "NW_012098097.1",
+        "NW_012098098.1",
+        "NW_012098099.1",
+        "NW_012098100.1",
+        "NW_012098101.1"
+      ],
+      "seq_count": 12821,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Mandrillus"
+      },
+      "common_name": "drill",
+      "published": "2026-04-04T02:29:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mleucophaeus.NCBI.Mleule10/BSgenome.Mleucophaeus.NCBI.Mleule10_1.0.0.tar.gz"
     }
   ]
 }
