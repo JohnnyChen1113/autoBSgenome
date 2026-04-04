@@ -7214,6 +7214,54 @@
       ]
     },
     {
+      "organism": "Nicotiana tomentosiformis",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Nicotiana"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ntomentosiformis.NCBI.ASM39032v3",
+          "version": "1.0.0",
+          "organism": "Nicotiana tomentosiformis",
+          "assembly": "ASM39032v3",
+          "provider": "NCBI",
+          "accession": "GCF_000390325.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000390325.3/",
+          "file_name": "BSgenome.Ntomentosiformis.NCBI.ASM39032v3_1.0.0.tar.gz",
+          "size": 442479363,
+          "seq_ids": [
+            "NC_090812.1",
+            "NC_090813.1",
+            "NC_090814.1",
+            "NC_090815.1",
+            "NC_090816.1"
+          ],
+          "seq_count": 570,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Solanaceae",
+            "genus": "Nicotiana"
+          },
+          "common_name": "",
+          "published": "2026-04-04T17:36:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ntomentosiformis.NCBI.ASM39032v3/BSgenome.Ntomentosiformis.NCBI.ASM39032v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nipponia nippon",
       "common_name": "crested ibis",
       "group": "vertebrate_other",
@@ -20135,6 +20183,38 @@
       "common_name": "",
       "published": "2026-04-04T17:36:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsyriacus.NCBI.ASM638163v2/BSgenome.Hsyriacus.NCBI.ASM638163v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ntomentosiformis.NCBI.ASM39032v3",
+      "version": "1.0.0",
+      "organism": "Nicotiana tomentosiformis",
+      "assembly": "ASM39032v3",
+      "provider": "NCBI",
+      "accession": "GCF_000390325.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000390325.3/",
+      "file_name": "BSgenome.Ntomentosiformis.NCBI.ASM39032v3_1.0.0.tar.gz",
+      "size": 442479363,
+      "seq_ids": [
+        "NC_090812.1",
+        "NC_090813.1",
+        "NC_090814.1",
+        "NC_090815.1",
+        "NC_090816.1"
+      ],
+      "seq_count": 570,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Nicotiana"
+      },
+      "common_name": "",
+      "published": "2026-04-04T17:36:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ntomentosiformis.NCBI.ASM39032v3/BSgenome.Ntomentosiformis.NCBI.ASM39032v3_1.0.0.tar.gz"
     }
   ]
 }

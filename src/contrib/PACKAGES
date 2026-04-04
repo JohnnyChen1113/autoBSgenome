@@ -1101,3 +1101,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsyriacus.NCBI.ASM638163v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ntomentosiformis.NCBI.ASM39032v3
+Version: 1.0.0
+NeedsCompilation: no
