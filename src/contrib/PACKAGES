@@ -1081,3 +1081,7 @@ NeedsCompilation: no
 Package: BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oeuropaea.NCBI.Oeuropaeav1
+Version: 1.0.0
+NeedsCompilation: no

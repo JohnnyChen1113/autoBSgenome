@@ -7381,6 +7381,54 @@
       ]
     },
     {
+      "organism": "Olea europaea var. sylvestris",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Oleaceae",
+        "genus": "Olea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Oeuropaea.NCBI.Oeuropaeav1",
+          "version": "1.0.0",
+          "organism": "Olea europaea var. sylvestris",
+          "assembly": "O_europaea_v1",
+          "provider": "NCBI",
+          "accession": "GCF_002742605.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002742605.1/",
+          "file_name": "BSgenome.Oeuropaea.NCBI.Oeuropaeav1_1.0.0.tar.gz",
+          "size": 250817842,
+          "seq_ids": [
+            "NC_036237.1",
+            "NC_036238.1",
+            "NC_036239.1",
+            "NC_036240.1",
+            "NC_036241.1"
+          ],
+          "seq_count": 41226,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Lamiales",
+            "family": "Oleaceae",
+            "genus": "Olea"
+          },
+          "common_name": "",
+          "published": "2026-04-04T17:35:02Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oeuropaea.NCBI.Oeuropaeav1/BSgenome.Oeuropaea.NCBI.Oeuropaeav1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oncorhynchus kisutch",
       "common_name": "coho salmon",
       "group": "vertebrate_other",
@@ -19735,6 +19783,38 @@
       "common_name": "date palm",
       "published": "2026-04-04T17:34:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp/BSgenome.Pdactylifera.NCBI.palm55xup171113PBpolish2ndfiltp_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Oeuropaea.NCBI.Oeuropaeav1",
+      "version": "1.0.0",
+      "organism": "Olea europaea var. sylvestris",
+      "assembly": "O_europaea_v1",
+      "provider": "NCBI",
+      "accession": "GCF_002742605.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002742605.1/",
+      "file_name": "BSgenome.Oeuropaea.NCBI.Oeuropaeav1_1.0.0.tar.gz",
+      "size": 250817842,
+      "seq_ids": [
+        "NC_036237.1",
+        "NC_036238.1",
+        "NC_036239.1",
+        "NC_036240.1",
+        "NC_036241.1"
+      ],
+      "seq_count": 41226,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Oleaceae",
+        "genus": "Olea"
+      },
+      "common_name": "",
+      "published": "2026-04-04T17:35:02Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oeuropaea.NCBI.Oeuropaeav1/BSgenome.Oeuropaea.NCBI.Oeuropaeav1_1.0.0.tar.gz"
     }
   ]
 }
