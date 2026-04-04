@@ -2258,6 +2258,54 @@
       ]
     },
     {
+      "organism": "Ficedula albicollis",
+      "common_name": "Collared flycatcher",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Ficedula"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Falbicollis.NCBI.FicAlb15",
+          "version": "1.0.0",
+          "organism": "Ficedula albicollis",
+          "assembly": "FicAlb1.5",
+          "provider": "NCBI",
+          "accession": "GCF_000247815.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000247815.1/",
+          "file_name": "BSgenome.Falbicollis.NCBI.FicAlb15_1.0.0.tar.gz",
+          "size": 271441195,
+          "seq_ids": [
+            "NC_021671.1",
+            "NW_004775877.1",
+            "NC_021672.1",
+            "NW_004775878.1",
+            "NW_004775879.1"
+          ],
+          "seq_count": 21428,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Muscicapidae",
+            "genus": "Ficedula"
+          },
+          "common_name": "Collared flycatcher",
+          "published": "2026-04-04T09:10:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Falbicollis.NCBI.FicAlb15/BSgenome.Falbicollis.NCBI.FicAlb15_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Galeopterus variegatus",
       "common_name": "Sunda flying lemur",
       "group": "vertebrate_mammalian",
@@ -10316,6 +10364,38 @@
       "common_name": "chuck-will's-widow",
       "published": "2026-04-04T09:10:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acarolinensis.NCBI.ASM70074v2/BSgenome.Acarolinensis.NCBI.ASM70074v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Falbicollis.NCBI.FicAlb15",
+      "version": "1.0.0",
+      "organism": "Ficedula albicollis",
+      "assembly": "FicAlb1.5",
+      "provider": "NCBI",
+      "accession": "GCF_000247815.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000247815.1/",
+      "file_name": "BSgenome.Falbicollis.NCBI.FicAlb15_1.0.0.tar.gz",
+      "size": 271441195,
+      "seq_ids": [
+        "NC_021671.1",
+        "NW_004775877.1",
+        "NC_021672.1",
+        "NW_004775878.1",
+        "NW_004775879.1"
+      ],
+      "seq_count": 21428,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Ficedula"
+      },
+      "common_name": "Collared flycatcher",
+      "published": "2026-04-04T09:10:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Falbicollis.NCBI.FicAlb15/BSgenome.Falbicollis.NCBI.FicAlb15_1.0.0.tar.gz"
     }
   ]
 }
