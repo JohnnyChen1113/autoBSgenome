@@ -1229,3 +1229,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsechellia.NCBI.ASM438219v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Farisanus.NCBI.ASM80636v1
+Version: 1.0.0
+NeedsCompilation: no
