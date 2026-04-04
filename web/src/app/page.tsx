@@ -295,8 +295,6 @@ export default function Home() {
   const formRef = useRef(form);
   formRef.current = form;
 
-  const autoFetchRef = useRef(false);
-
   // Restore build state or pre-fill accession from URL on page load
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -308,31 +306,26 @@ export default function Home() {
       buildStartTimeRef.current = now;
       setStep("building");
       pollBuildStatus(resumeJob);
+      return;
     }
     // Pre-fill accession from URL and auto-fetch metadata
     // e.g., ?accession=GCF_000001215.4 or ?accession=danio_rerio&source=ensembl
     const prefillAccession = params.get("accession");
     const prefillSource = params.get("source");
-    if (prefillAccession && !resumeJob) {
+    if (prefillAccession) {
       if (prefillSource === "ensembl") {
         setDataSource("ensembl");
       }
       setAccessionInput(prefillAccession);
-      autoFetchRef.current = true;
+      // Auto-trigger fetch after a short delay for React to commit state.
+      // We click the Fetch button directly to avoid stale closure issues.
+      setTimeout(() => {
+        const fetchBtn = document.querySelector<HTMLButtonElement>("[data-auto-fetch]");
+        if (fetchBtn) fetchBtn.click();
+      }, 300);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  // Auto-trigger lookup after accessionInput state is committed
-  useEffect(() => {
-    if (autoFetchRef.current && accessionInput) {
-      autoFetchRef.current = false;
-      // Small delay to ensure all state is settled
-      const timer = setTimeout(() => handleFetch(), 100);
-      return () => clearTimeout(timer);
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [accessionInput]);
 
   // Fetch queue status on input and review steps
   useEffect(() => {
@@ -692,7 +685,7 @@ export default function Home() {
                       onChange={(e) => setAccessionInput(e.target.value)}
                       onKeyDown={(e) => e.key === "Enter" && handleFetch()}
                     />
-                    <Button onClick={handleFetch} disabled={fetching} className="min-w-[90px]">
+                    <Button onClick={handleFetch} disabled={fetching} className="min-w-[90px]" data-auto-fetch>
                       {fetching ? (
                         <span className="flex items-center gap-1.5">
                           <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none">
