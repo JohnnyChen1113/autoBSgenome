@@ -2209,6 +2209,54 @@
       ]
     },
     {
+      "organism": "Octodon degus",
+      "common_name": "degu",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Octodontidae",
+        "genus": "Octodon"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Odegus.NCBI.OctDeg10",
+          "version": "1.0.0",
+          "organism": "Octodon degus",
+          "assembly": "OctDeg1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000260255.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000260255.1/",
+          "file_name": "BSgenome.Odegus.NCBI.OctDeg10_1.0.0.tar.gz",
+          "size": 662995210,
+          "seq_ids": [
+            "NW_004524577.1",
+            "NW_004524578.1",
+            "NW_004524579.1",
+            "NW_004524580.1",
+            "NW_004524581.1"
+          ],
+          "seq_count": 7135,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Octodontidae",
+            "genus": "Octodon"
+          },
+          "common_name": "degu",
+          "published": "2026-04-04T02:28:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Odegus.NCBI.OctDeg10/BSgenome.Odegus.NCBI.OctDeg10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ordospora colligata OC4",
       "common_name": "",
       "group": "fungi",
@@ -5039,6 +5087,38 @@
       "common_name": "small Madagascar hedgehog",
       "published": "2026-04-04T02:28:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Etelfairi.NCBI.ASM31398v2/BSgenome.Etelfairi.NCBI.ASM31398v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Odegus.NCBI.OctDeg10",
+      "version": "1.0.0",
+      "organism": "Octodon degus",
+      "assembly": "OctDeg1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000260255.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000260255.1/",
+      "file_name": "BSgenome.Odegus.NCBI.OctDeg10_1.0.0.tar.gz",
+      "size": 662995210,
+      "seq_ids": [
+        "NW_004524577.1",
+        "NW_004524578.1",
+        "NW_004524579.1",
+        "NW_004524580.1",
+        "NW_004524581.1"
+      ],
+      "seq_count": 7135,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Octodontidae",
+        "genus": "Octodon"
+      },
+      "common_name": "degu",
+      "published": "2026-04-04T02:28:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Odegus.NCBI.OctDeg10/BSgenome.Odegus.NCBI.OctDeg10_1.0.0.tar.gz"
     }
   ]
 }
