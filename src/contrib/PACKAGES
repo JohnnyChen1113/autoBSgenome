@@ -577,3 +577,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmacqueenii.NCBI.ASM69519v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lcoronata.NCBI.Lepidothrixcoronata10
+Version: 1.0.0
+NeedsCompilation: no
