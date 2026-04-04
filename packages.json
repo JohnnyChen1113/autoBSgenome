@@ -12021,6 +12021,54 @@
       ]
     },
     {
+      "organism": "Trichinella spiralis",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Nematoda",
+        "class": "Enoplea",
+        "order": "Trichinellida",
+        "family": "Trichinellidae",
+        "genus": "Trichinella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tspiralis.NCBI.Trichinellaspiralis371",
+          "version": "1.0.0",
+          "organism": "Trichinella spiralis",
+          "assembly": "Trichinella spiralis-3.7.1",
+          "provider": "NCBI",
+          "accession": "GCF_000181795.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000181795.1/",
+          "file_name": "BSgenome.Tspiralis.NCBI.Trichinellaspiralis371_1.0.0.tar.gz",
+          "size": 15766321,
+          "seq_ids": [
+            "NW_003526940.1",
+            "NW_003526941.1",
+            "NW_003526942.1",
+            "NW_003526943.1",
+            "NW_003526944.1"
+          ],
+          "seq_count": 6863,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Nematoda",
+            "class": "Enoplea",
+            "order": "Trichinellida",
+            "family": "Trichinellidae",
+            "genus": "Trichinella"
+          },
+          "common_name": "",
+          "published": "2026-04-04T18:47:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tspiralis.NCBI.Trichinellaspiralis371/BSgenome.Tspiralis.NCBI.Trichinellaspiralis371_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tupaia chinensis",
       "common_name": "Chinese tree shrew",
       "group": "vertebrate_mammalian",
@@ -20775,6 +20823,38 @@
       "common_name": "",
       "published": "2026-04-04T18:47:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcatenatum.NCBI.ASM160598v2/BSgenome.Dcatenatum.NCBI.ASM160598v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tspiralis.NCBI.Trichinellaspiralis371",
+      "version": "1.0.0",
+      "organism": "Trichinella spiralis",
+      "assembly": "Trichinella spiralis-3.7.1",
+      "provider": "NCBI",
+      "accession": "GCF_000181795.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000181795.1/",
+      "file_name": "BSgenome.Tspiralis.NCBI.Trichinellaspiralis371_1.0.0.tar.gz",
+      "size": 15766321,
+      "seq_ids": [
+        "NW_003526940.1",
+        "NW_003526941.1",
+        "NW_003526942.1",
+        "NW_003526943.1",
+        "NW_003526944.1"
+      ],
+      "seq_count": 6863,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Nematoda",
+        "class": "Enoplea",
+        "order": "Trichinellida",
+        "family": "Trichinellidae",
+        "genus": "Trichinella"
+      },
+      "common_name": "",
+      "published": "2026-04-04T18:47:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tspiralis.NCBI.Trichinellaspiralis371/BSgenome.Tspiralis.NCBI.Trichinellaspiralis371_1.0.0.tar.gz"
     }
   ]
 }
