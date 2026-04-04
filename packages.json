@@ -10067,6 +10067,54 @@
       ]
     },
     {
+      "organism": "Papilio polytes",
+      "common_name": "common Mormon",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Papilionidae",
+        "genus": "Papilio"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ppolytes.NCBI.Ppol10",
+          "version": "1.0.0",
+          "organism": "Papilio polytes",
+          "assembly": "Ppol_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000836215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836215.1/",
+          "file_name": "BSgenome.Ppolytes.NCBI.Ppol10_1.0.0.tar.gz",
+          "size": 58816867,
+          "seq_ids": [
+            "NW_013524711.1",
+            "NW_013524712.1",
+            "NW_013524713.1",
+            "NW_013524714.1",
+            "NW_013524715.1"
+          ],
+          "seq_count": 3874,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Lepidoptera",
+            "family": "Papilionidae",
+            "genus": "Papilio"
+          },
+          "common_name": "common Mormon",
+          "published": "2026-04-04T21:35:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppolytes.NCBI.Ppol10/BSgenome.Ppolytes.NCBI.Ppol10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Papilio xuthus",
       "common_name": "Asian swallowtail",
       "group": "invertebrate",
@@ -24455,6 +24503,38 @@
       "common_name": "clonal raider ant",
       "published": "2026-04-04T21:35:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Obiroi.NCBI.Obirv54/BSgenome.Obiroi.NCBI.Obirv54_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ppolytes.NCBI.Ppol10",
+      "version": "1.0.0",
+      "organism": "Papilio polytes",
+      "assembly": "Ppol_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000836215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836215.1/",
+      "file_name": "BSgenome.Ppolytes.NCBI.Ppol10_1.0.0.tar.gz",
+      "size": 58816867,
+      "seq_ids": [
+        "NW_013524711.1",
+        "NW_013524712.1",
+        "NW_013524713.1",
+        "NW_013524714.1",
+        "NW_013524715.1"
+      ],
+      "seq_count": 3874,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Papilionidae",
+        "genus": "Papilio"
+      },
+      "common_name": "common Mormon",
+      "published": "2026-04-04T21:35:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppolytes.NCBI.Ppol10/BSgenome.Ppolytes.NCBI.Ppol10_1.0.0.tar.gz"
     }
   ]
 }
