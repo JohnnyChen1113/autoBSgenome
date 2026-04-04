@@ -2620,6 +2620,54 @@
       ]
     },
     {
+      "organism": "Cucurbita pepo subsp. pepo",
+      "common_name": "vegetable marrow",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Cucurbita"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cpepo.NCBI.ASM280686v2",
+          "version": "1.0.0",
+          "organism": "Cucurbita pepo subsp. pepo",
+          "assembly": "ASM280686v2",
+          "provider": "NCBI",
+          "accession": "GCF_002806865.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002806865.2/",
+          "file_name": "BSgenome.Cpepo.NCBI.ASM280686v2_1.0.0.tar.gz",
+          "size": 64244578,
+          "seq_ids": [
+            "NC_036638.1",
+            "NC_036639.1",
+            "NC_036640.1",
+            "NC_036641.1",
+            "NC_036642.1"
+          ],
+          "seq_count": 24194,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Cucurbitales",
+            "family": "Cucurbitaceae",
+            "genus": "Cucurbita"
+          },
+          "common_name": "vegetable marrow",
+          "published": "2026-04-04T13:58:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpepo.NCBI.ASM280686v2/BSgenome.Cpepo.NCBI.ASM280686v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyanistes caeruleus",
       "common_name": "blue tit",
       "group": "vertebrate_other",
@@ -15255,6 +15303,38 @@
       "common_name": "",
       "published": "2026-04-04T13:02:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cx.NCBI.Citrusclementinav10/BSgenome.Cx.NCBI.Citrusclementinav10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cpepo.NCBI.ASM280686v2",
+      "version": "1.0.0",
+      "organism": "Cucurbita pepo subsp. pepo",
+      "assembly": "ASM280686v2",
+      "provider": "NCBI",
+      "accession": "GCF_002806865.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002806865.2/",
+      "file_name": "BSgenome.Cpepo.NCBI.ASM280686v2_1.0.0.tar.gz",
+      "size": 64244578,
+      "seq_ids": [
+        "NC_036638.1",
+        "NC_036639.1",
+        "NC_036640.1",
+        "NC_036641.1",
+        "NC_036642.1"
+      ],
+      "seq_count": 24194,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Cucurbita"
+      },
+      "common_name": "vegetable marrow",
+      "published": "2026-04-04T13:58:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpepo.NCBI.ASM280686v2/BSgenome.Cpepo.NCBI.ASM280686v2_1.0.0.tar.gz"
     }
   ]
 }
