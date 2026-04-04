@@ -901,3 +901,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sviridis.NCBI.Setariaviridisv40
+Version: 1.0.0
+NeedsCompilation: no
