@@ -1285,3 +1285,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccalcarata.NCBI.ASM165200v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pdominula.NCBI.Pdomr12
+Version: 1.0.0
+NeedsCompilation: no

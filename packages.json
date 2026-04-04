@@ -11001,6 +11001,54 @@
       ]
     },
     {
+      "organism": "Polistes dominula",
+      "common_name": "European paper wasp",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Vespidae",
+        "genus": "Polistes"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pdominula.NCBI.Pdomr12",
+          "version": "1.0.0",
+          "organism": "Polistes dominula",
+          "assembly": "Pdom r1.2",
+          "provider": "NCBI",
+          "accession": "GCF_001465965.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001465965.1/",
+          "file_name": "BSgenome.Pdominula.NCBI.Pdomr12_1.0.0.tar.gz",
+          "size": 53415117,
+          "seq_ids": [
+            "NW_015148970.1",
+            "NW_015148971.1",
+            "NW_015148972.1",
+            "NW_015148973.1",
+            "NW_015148974.1"
+          ],
+          "seq_count": 1483,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Vespidae",
+            "genus": "Polistes"
+          },
+          "common_name": "European paper wasp",
+          "published": "2026-04-04T20:38:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdominula.NCBI.Pdomr12/BSgenome.Pdominula.NCBI.Pdomr12_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Populus alba",
       "common_name": "white poplar",
       "group": "plant",
@@ -23815,6 +23863,38 @@
       "common_name": "",
       "published": "2026-04-04T20:37:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccalcarata.NCBI.ASM165200v1/BSgenome.Ccalcarata.NCBI.ASM165200v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pdominula.NCBI.Pdomr12",
+      "version": "1.0.0",
+      "organism": "Polistes dominula",
+      "assembly": "Pdom r1.2",
+      "provider": "NCBI",
+      "accession": "GCF_001465965.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001465965.1/",
+      "file_name": "BSgenome.Pdominula.NCBI.Pdomr12_1.0.0.tar.gz",
+      "size": 53415117,
+      "seq_ids": [
+        "NW_015148970.1",
+        "NW_015148971.1",
+        "NW_015148972.1",
+        "NW_015148973.1",
+        "NW_015148974.1"
+      ],
+      "seq_count": 1483,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Vespidae",
+        "genus": "Polistes"
+      },
+      "common_name": "European paper wasp",
+      "published": "2026-04-04T20:38:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdominula.NCBI.Pdomr12/BSgenome.Pdominula.NCBI.Pdomr12_1.0.0.tar.gz"
     }
   ]
 }
