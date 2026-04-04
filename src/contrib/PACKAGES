@@ -1373,3 +1373,7 @@ NeedsCompilation: no
 Package: BSgenome.Fexsecta.NCBI.ASM365146v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dnovaeangliae.NCBI.ASM127255v1
+Version: 1.0.0
+NeedsCompilation: no

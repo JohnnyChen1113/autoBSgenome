@@ -5374,6 +5374,54 @@
       ]
     },
     {
+      "organism": "Dufourea novaeangliae",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Halictidae",
+        "genus": "Dufourea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dnovaeangliae.NCBI.ASM127255v1",
+          "version": "1.0.0",
+          "organism": "Dufourea novaeangliae",
+          "assembly": "ASM127255v1",
+          "provider": "NCBI",
+          "accession": "GCF_001272555.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001272555.1/",
+          "file_name": "BSgenome.Dnovaeangliae.NCBI.ASM127255v1_1.0.0.tar.gz",
+          "size": 74646120,
+          "seq_ids": [
+            "NW_015373878.1",
+            "NW_015373879.1",
+            "NW_015373880.1",
+            "NW_015373881.1",
+            "NW_015373882.1"
+          ],
+          "seq_count": 4178,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Halictidae",
+            "genus": "Dufourea"
+          },
+          "common_name": "",
+          "published": "2026-04-04T22:34:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnovaeangliae.NCBI.ASM127255v1/BSgenome.Dnovaeangliae.NCBI.ASM127255v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Durio zibethinus",
       "common_name": "",
       "group": "plant",
@@ -25575,6 +25623,38 @@
       "common_name": "",
       "published": "2026-04-04T22:34:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fexsecta.NCBI.ASM365146v1/BSgenome.Fexsecta.NCBI.ASM365146v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dnovaeangliae.NCBI.ASM127255v1",
+      "version": "1.0.0",
+      "organism": "Dufourea novaeangliae",
+      "assembly": "ASM127255v1",
+      "provider": "NCBI",
+      "accession": "GCF_001272555.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001272555.1/",
+      "file_name": "BSgenome.Dnovaeangliae.NCBI.ASM127255v1_1.0.0.tar.gz",
+      "size": 74646120,
+      "seq_ids": [
+        "NW_015373878.1",
+        "NW_015373879.1",
+        "NW_015373880.1",
+        "NW_015373881.1",
+        "NW_015373882.1"
+      ],
+      "seq_count": 4178,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Halictidae",
+        "genus": "Dufourea"
+      },
+      "common_name": "",
+      "published": "2026-04-04T22:34:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnovaeangliae.NCBI.ASM127255v1/BSgenome.Dnovaeangliae.NCBI.ASM127255v1_1.0.0.tar.gz"
     }
   ]
 }
