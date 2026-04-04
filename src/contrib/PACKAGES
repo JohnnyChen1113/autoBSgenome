@@ -353,3 +353,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptephrosceles.NCBI.ASM277652v5
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rroxellana.NCBI.ASM756505v1
+Version: 1.0.0
+NeedsCompilation: no

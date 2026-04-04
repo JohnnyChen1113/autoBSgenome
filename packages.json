@@ -2801,6 +2801,54 @@
       ]
     },
     {
+      "organism": "Rhinopithecus roxellana",
+      "common_name": "golden snub-nosed monkey",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Rhinopithecus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rroxellana.NCBI.ASM756505v1",
+          "version": "1.0.0",
+          "organism": "Rhinopithecus roxellana",
+          "assembly": "ASM756505v1",
+          "provider": "NCBI",
+          "accession": "GCF_007565055.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007565055.1/",
+          "file_name": "BSgenome.Rroxellana.NCBI.ASM756505v1_1.0.0.tar.gz",
+          "size": 759676044,
+          "seq_ids": [
+            "NC_044549.1",
+            "NC_044550.1",
+            "NC_044551.1",
+            "NC_044552.1",
+            "NC_044553.1"
+          ],
+          "seq_count": 3257,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Rhinopithecus"
+          },
+          "common_name": "golden snub-nosed monkey",
+          "published": "2026-04-04T02:29:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rroxellana.NCBI.ASM756505v1/BSgenome.Rroxellana.NCBI.ASM756505v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Saccharomyces cerevisiae",
       "common_name": "",
       "group": "fungi",
@@ -5199,6 +5247,38 @@
       "common_name": "Ugandan red Colobus",
       "published": "2026-04-04T02:29:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptephrosceles.NCBI.ASM277652v5/BSgenome.Ptephrosceles.NCBI.ASM277652v5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rroxellana.NCBI.ASM756505v1",
+      "version": "1.0.0",
+      "organism": "Rhinopithecus roxellana",
+      "assembly": "ASM756505v1",
+      "provider": "NCBI",
+      "accession": "GCF_007565055.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007565055.1/",
+      "file_name": "BSgenome.Rroxellana.NCBI.ASM756505v1_1.0.0.tar.gz",
+      "size": 759676044,
+      "seq_ids": [
+        "NC_044549.1",
+        "NC_044550.1",
+        "NC_044551.1",
+        "NC_044552.1",
+        "NC_044553.1"
+      ],
+      "seq_count": 3257,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Rhinopithecus"
+      },
+      "common_name": "golden snub-nosed monkey",
+      "published": "2026-04-04T02:29:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rroxellana.NCBI.ASM756505v1/BSgenome.Rroxellana.NCBI.ASM756505v1_1.0.0.tar.gz"
     }
   ]
 }
