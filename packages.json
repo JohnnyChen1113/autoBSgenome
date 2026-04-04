@@ -6499,6 +6499,54 @@
       ]
     },
     {
+      "organism": "Nelumbo nucifera",
+      "common_name": "sacred lotus",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Proteales",
+        "family": "Nelumbonaceae",
+        "genus": "Nelumbo"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nnucifera.NCBI.ChineseLotus11",
+          "version": "1.0.0",
+          "organism": "Nelumbo nucifera",
+          "assembly": "Chinese Lotus 1.1",
+          "provider": "NCBI",
+          "accession": "GCF_000365185.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000365185.1/",
+          "file_name": "BSgenome.Nnucifera.NCBI.ChineseLotus11_1.0.0.tar.gz",
+          "size": 189676819,
+          "seq_ids": [
+            "NW_010729074.1",
+            "NW_010729075.1",
+            "NW_010729076.1",
+            "NW_010729077.1",
+            "NW_010729078.1"
+          ],
+          "seq_count": 3603,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Proteales",
+            "family": "Nelumbonaceae",
+            "genus": "Nelumbo"
+          },
+          "common_name": "sacred lotus",
+          "published": "2026-04-04T16:41:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnucifera.NCBI.ChineseLotus11/BSgenome.Nnucifera.NCBI.ChineseLotus11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nematocida ausubeli",
       "common_name": "",
       "group": "fungi",
@@ -18935,6 +18983,38 @@
       "common_name": "",
       "published": "2026-04-04T16:40:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Qsuber.NCBI.Corkoak20/BSgenome.Qsuber.NCBI.Corkoak20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nnucifera.NCBI.ChineseLotus11",
+      "version": "1.0.0",
+      "organism": "Nelumbo nucifera",
+      "assembly": "Chinese Lotus 1.1",
+      "provider": "NCBI",
+      "accession": "GCF_000365185.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000365185.1/",
+      "file_name": "BSgenome.Nnucifera.NCBI.ChineseLotus11_1.0.0.tar.gz",
+      "size": 189676819,
+      "seq_ids": [
+        "NW_010729074.1",
+        "NW_010729075.1",
+        "NW_010729076.1",
+        "NW_010729077.1",
+        "NW_010729078.1"
+      ],
+      "seq_count": 3603,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Proteales",
+        "family": "Nelumbonaceae",
+        "genus": "Nelumbo"
+      },
+      "common_name": "sacred lotus",
+      "published": "2026-04-04T16:41:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnucifera.NCBI.ChineseLotus11/BSgenome.Nnucifera.NCBI.ChineseLotus11_1.0.0.tar.gz"
     }
   ]
 }
