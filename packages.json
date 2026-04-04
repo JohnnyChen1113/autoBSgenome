@@ -4558,6 +4558,54 @@
       ]
     },
     {
+      "organism": "Drosophila pseudoobscura",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dpseudoobscura.NCBI.UCIDpseMV25",
+          "version": "1.0.0",
+          "organism": "Drosophila pseudoobscura",
+          "assembly": "UCI_Dpse_MV25",
+          "provider": "NCBI",
+          "accession": "GCF_009870125.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009870125.1/",
+          "file_name": "BSgenome.Dpseudoobscura.NCBI.UCIDpseMV25_1.0.0.tar.gz",
+          "size": 41191968,
+          "seq_ids": [
+            "NC_046679.1",
+            "NC_046680.1",
+            "NC_046681.1",
+            "NC_046682.1",
+            "NC_046683.1"
+          ],
+          "seq_count": 70,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T19:35:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dpseudoobscura.NCBI.UCIDpseMV25/BSgenome.Dpseudoobscura.NCBI.UCIDpseMV25_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila sechellia",
       "common_name": "",
       "group": "invertebrate",
@@ -22935,6 +22983,38 @@
       "common_name": "wheat stem sawfly",
       "published": "2026-04-04T19:35:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccinctus.NCBI.Ccin1v2/BSgenome.Ccinctus.NCBI.Ccin1v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dpseudoobscura.NCBI.UCIDpseMV25",
+      "version": "1.0.0",
+      "organism": "Drosophila pseudoobscura",
+      "assembly": "UCI_Dpse_MV25",
+      "provider": "NCBI",
+      "accession": "GCF_009870125.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009870125.1/",
+      "file_name": "BSgenome.Dpseudoobscura.NCBI.UCIDpseMV25_1.0.0.tar.gz",
+      "size": 41191968,
+      "seq_ids": [
+        "NC_046679.1",
+        "NC_046680.1",
+        "NC_046681.1",
+        "NC_046682.1",
+        "NC_046683.1"
+      ],
+      "seq_count": 70,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T19:35:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dpseudoobscura.NCBI.UCIDpseMV25/BSgenome.Dpseudoobscura.NCBI.UCIDpseMV25_1.0.0.tar.gz"
     }
   ]
 }
