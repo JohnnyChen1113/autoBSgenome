@@ -4366,6 +4366,54 @@
       ]
     },
     {
+      "organism": "Drosophila navojoa",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dnavojoa.NCBI.UFRJDnav42",
+          "version": "1.0.0",
+          "organism": "Drosophila navojoa",
+          "assembly": "UFRJ_Dnav_4.2",
+          "provider": "NCBI",
+          "accession": "GCF_001654015.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001654015.2/",
+          "file_name": "BSgenome.Dnavojoa.NCBI.UFRJDnav42_1.0.0.tar.gz",
+          "size": 40257112,
+          "seq_ids": [
+            "NW_022045860.1",
+            "NW_022045861.1",
+            "NW_022045862.1",
+            "NW_022045863.1",
+            "NW_022045864.1"
+          ],
+          "seq_count": 13813,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T19:34:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnavojoa.NCBI.UFRJDnav42/BSgenome.Dnavojoa.NCBI.UFRJDnav42_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila subobscura",
       "common_name": "",
       "group": "invertebrate",
@@ -22375,6 +22423,38 @@
       "common_name": "",
       "published": "2026-04-04T19:34:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Derecta.NCBI.DereRS2/BSgenome.Derecta.NCBI.DereRS2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dnavojoa.NCBI.UFRJDnav42",
+      "version": "1.0.0",
+      "organism": "Drosophila navojoa",
+      "assembly": "UFRJ_Dnav_4.2",
+      "provider": "NCBI",
+      "accession": "GCF_001654015.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001654015.2/",
+      "file_name": "BSgenome.Dnavojoa.NCBI.UFRJDnav42_1.0.0.tar.gz",
+      "size": 40257112,
+      "seq_ids": [
+        "NW_022045860.1",
+        "NW_022045861.1",
+        "NW_022045862.1",
+        "NW_022045863.1",
+        "NW_022045864.1"
+      ],
+      "seq_count": 13813,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T19:34:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnavojoa.NCBI.UFRJDnav42/BSgenome.Dnavojoa.NCBI.UFRJDnav42_1.0.0.tar.gz"
     }
   ]
 }

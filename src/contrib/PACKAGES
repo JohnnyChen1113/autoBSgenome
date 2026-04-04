@@ -1213,3 +1213,7 @@ NeedsCompilation: no
 Package: BSgenome.Derecta.NCBI.DereRS2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dnavojoa.NCBI.UFRJDnav42
+Version: 1.0.0
+NeedsCompilation: no
