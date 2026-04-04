@@ -457,3 +457,7 @@ NeedsCompilation: no
 Package: BSgenome.Ncelidotus.NCBI.fNotCel1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nbrichardi.NCBI.NeoBri10
+Version: 1.0.0
+NeedsCompilation: no
