@@ -333,3 +333,7 @@ NeedsCompilation: no
 Package: BSgenome.Chircus.NCBI.ARS12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cangolensis.NCBI.Cangpa10
+Version: 1.0.0
+NeedsCompilation: no
