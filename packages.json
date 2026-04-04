@@ -284,6 +284,54 @@
       ]
     },
     {
+      "organism": "Athene cunicularia",
+      "common_name": "burrowing owl",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Athene"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acunicularia.NCBI.athCun1",
+          "version": "1.0.0",
+          "organism": "Athene cunicularia",
+          "assembly": "athCun1",
+          "provider": "NCBI",
+          "accession": "GCF_003259725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003259725.1/",
+          "file_name": "BSgenome.Acunicularia.NCBI.athCun1_1.0.0.tar.gz",
+          "size": 299230145,
+          "seq_ids": [
+            "NW_020799091.1",
+            "NW_020799092.1",
+            "NW_020799093.1",
+            "NW_020799094.1",
+            "NW_020799095.1"
+          ],
+          "seq_count": 445,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Strigiformes",
+            "family": "Strigidae",
+            "genus": "Athene"
+          },
+          "common_name": "burrowing owl",
+          "published": "2026-04-04T10:05:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acunicularia.NCBI.athCun1/BSgenome.Acunicularia.NCBI.athCun1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Austrofundulus limnaeus",
       "common_name": "",
       "group": "vertebrate_other",
@@ -11276,6 +11324,38 @@
       "common_name": "Kakapo",
       "published": "2026-04-04T10:05:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shabroptila.NCBI.bStrHab12pri/BSgenome.Shabroptila.NCBI.bStrHab12pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acunicularia.NCBI.athCun1",
+      "version": "1.0.0",
+      "organism": "Athene cunicularia",
+      "assembly": "athCun1",
+      "provider": "NCBI",
+      "accession": "GCF_003259725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003259725.1/",
+      "file_name": "BSgenome.Acunicularia.NCBI.athCun1_1.0.0.tar.gz",
+      "size": 299230145,
+      "seq_ids": [
+        "NW_020799091.1",
+        "NW_020799092.1",
+        "NW_020799093.1",
+        "NW_020799094.1",
+        "NW_020799095.1"
+      ],
+      "seq_count": 445,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Athene"
+      },
+      "common_name": "burrowing owl",
+      "published": "2026-04-04T10:05:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acunicularia.NCBI.athCun1/BSgenome.Acunicularia.NCBI.athCun1_1.0.0.tar.gz"
     }
   ]
 }
