@@ -508,7 +508,8 @@ function toggleTax(header) {
 }
 
 function toggleOrg(header) {
-  const buildList = header.nextElementSibling;
+  const card = header.closest('.org-card');
+  const buildList = card.querySelector('.build-list');
   const chevron = header.querySelector('.chevron');
   buildList.classList.toggle('open');
   chevron.classList.toggle('open');
