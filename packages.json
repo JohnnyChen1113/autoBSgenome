@@ -11328,6 +11328,54 @@
       ]
     },
     {
+      "organism": "Strongyloides ratti",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Nematoda",
+        "class": "Chromadorea",
+        "order": "Rhabditida",
+        "family": "Strongyloididae",
+        "genus": "Strongyloides"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sratti.NCBI.SrattiED321",
+          "version": "1.0.0",
+          "organism": "Strongyloides ratti",
+          "assembly": "S_ratti_ED321",
+          "provider": "NCBI",
+          "accession": "GCF_001040885.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001040885.1/",
+          "file_name": "BSgenome.Sratti.NCBI.SrattiED321_1.0.0.tar.gz",
+          "size": 10796614,
+          "seq_ids": [
+            "NC_037307.1",
+            "NC_037308.1",
+            "NC_037309.1",
+            "NW_020171510.1",
+            "NW_020171511.1"
+          ],
+          "seq_count": 135,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Nematoda",
+            "class": "Chromadorea",
+            "order": "Rhabditida",
+            "family": "Strongyloididae",
+            "genus": "Strongyloides"
+          },
+          "common_name": "",
+          "published": "2026-04-04T18:47:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sratti.NCBI.SrattiED321/BSgenome.Sratti.NCBI.SrattiED321_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sturnus vulgaris",
       "common_name": "Common starling",
       "group": "vertebrate_other",
@@ -20615,6 +20663,38 @@
       "common_name": "opium poppy",
       "published": "2026-04-04T17:39:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psomniferum.NCBI.ASM357369v1/BSgenome.Psomniferum.NCBI.ASM357369v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sratti.NCBI.SrattiED321",
+      "version": "1.0.0",
+      "organism": "Strongyloides ratti",
+      "assembly": "S_ratti_ED321",
+      "provider": "NCBI",
+      "accession": "GCF_001040885.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001040885.1/",
+      "file_name": "BSgenome.Sratti.NCBI.SrattiED321_1.0.0.tar.gz",
+      "size": 10796614,
+      "seq_ids": [
+        "NC_037307.1",
+        "NC_037308.1",
+        "NC_037309.1",
+        "NW_020171510.1",
+        "NW_020171511.1"
+      ],
+      "seq_count": 135,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Nematoda",
+        "class": "Chromadorea",
+        "order": "Rhabditida",
+        "family": "Strongyloididae",
+        "genus": "Strongyloides"
+      },
+      "common_name": "",
+      "published": "2026-04-04T18:47:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sratti.NCBI.SrattiED321/BSgenome.Sratti.NCBI.SrattiED321_1.0.0.tar.gz"
     }
   ]
 }
