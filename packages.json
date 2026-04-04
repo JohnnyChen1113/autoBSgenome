@@ -6305,6 +6305,54 @@
       ]
     },
     {
+      "organism": "Prunus persica",
+      "common_name": "peach",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2",
+          "version": "1.0.0",
+          "organism": "Prunus persica",
+          "assembly": "Prunus_persica_NCBIv2",
+          "provider": "NCBI",
+          "accession": "GCF_000346465.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000346465.2/",
+          "file_name": "BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2_1.0.0.tar.gz",
+          "size": 57477024,
+          "seq_ids": [
+            "NC_034009.1",
+            "NC_034010.1",
+            "NC_034011.1",
+            "NC_034012.1",
+            "NC_034013.1"
+          ],
+          "seq_count": 192,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Rosales",
+            "family": "Rosaceae",
+            "genus": "Prunus"
+          },
+          "common_name": "peach",
+          "published": "2026-04-04T11:40:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2/BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudopodoces humilis",
       "common_name": "Tibetan ground-tit",
       "group": "vertebrate_other",
@@ -13430,6 +13478,38 @@
       "common_name": "cucumber",
       "published": "2026-04-04T11:40:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativus.NCBI.Cucumber9930V3/BSgenome.Csativus.NCBI.Cucumber9930V3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2",
+      "version": "1.0.0",
+      "organism": "Prunus persica",
+      "assembly": "Prunus_persica_NCBIv2",
+      "provider": "NCBI",
+      "accession": "GCF_000346465.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000346465.2/",
+      "file_name": "BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2_1.0.0.tar.gz",
+      "size": 57477024,
+      "seq_ids": [
+        "NC_034009.1",
+        "NC_034010.1",
+        "NC_034011.1",
+        "NC_034012.1",
+        "NC_034013.1"
+      ],
+      "seq_count": 192,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "common_name": "peach",
+      "published": "2026-04-04T11:40:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2/BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2_1.0.0.tar.gz"
     }
   ]
 }
