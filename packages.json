@@ -4485,6 +4485,54 @@
       ]
     },
     {
+      "organism": "Pterocles gutturalis",
+      "common_name": "yellow-throated sandgrouse",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Pterocliformes",
+        "family": "Pteroclidae",
+        "genus": "Pterocles"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pgutturalis.NCBI.ASM69924v1",
+          "version": "1.0.0",
+          "organism": "Pterocles gutturalis",
+          "assembly": "ASM69924v1",
+          "provider": "NCBI",
+          "accession": "GCF_000699245.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000699245.1/",
+          "file_name": "BSgenome.Pgutturalis.NCBI.ASM69924v1_1.0.0.tar.gz",
+          "size": 288026135,
+          "seq_ids": [
+            "NW_010097388.1",
+            "NW_010097389.1",
+            "NW_010097390.1",
+            "NW_010097391.1",
+            "NW_010097392.1"
+          ],
+          "seq_count": 58607,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Pterocliformes",
+            "family": "Pteroclidae",
+            "genus": "Pterocles"
+          },
+          "common_name": "yellow-throated sandgrouse",
+          "published": "2026-04-04T08:05:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgutturalis.NCBI.ASM69924v1/BSgenome.Pgutturalis.NCBI.ASM69924v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pteropus alecto",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -9276,6 +9324,38 @@
       "common_name": "white-throated tinamou",
       "published": "2026-04-04T08:05:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tguttatus.NCBI.ASM70537v2/BSgenome.Tguttatus.NCBI.ASM70537v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pgutturalis.NCBI.ASM69924v1",
+      "version": "1.0.0",
+      "organism": "Pterocles gutturalis",
+      "assembly": "ASM69924v1",
+      "provider": "NCBI",
+      "accession": "GCF_000699245.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000699245.1/",
+      "file_name": "BSgenome.Pgutturalis.NCBI.ASM69924v1_1.0.0.tar.gz",
+      "size": 288026135,
+      "seq_ids": [
+        "NW_010097388.1",
+        "NW_010097389.1",
+        "NW_010097390.1",
+        "NW_010097391.1",
+        "NW_010097392.1"
+      ],
+      "seq_count": 58607,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Pterocliformes",
+        "family": "Pteroclidae",
+        "genus": "Pterocles"
+      },
+      "common_name": "yellow-throated sandgrouse",
+      "published": "2026-04-04T08:05:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgutturalis.NCBI.ASM69924v1/BSgenome.Pgutturalis.NCBI.ASM69924v1_1.0.0.tar.gz"
     }
   ]
 }
