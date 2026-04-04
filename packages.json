@@ -12633,6 +12633,54 @@
       ]
     },
     {
+      "organism": "Pseudomyrmex gracilis",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Pseudomyrmex"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pgracilis.NCBI.ASM200609v1",
+          "version": "1.0.0",
+          "organism": "Pseudomyrmex gracilis",
+          "assembly": "ASM200609v1",
+          "provider": "NCBI",
+          "accession": "GCF_002006095.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002006095.1/",
+          "file_name": "BSgenome.Pgracilis.NCBI.ASM200609v1_1.0.0.tar.gz",
+          "size": 71466701,
+          "seq_ids": [
+            "NW_018020584.1",
+            "NW_018020585.1",
+            "NW_018020586.1",
+            "NW_018020587.1",
+            "NW_018020588.1"
+          ],
+          "seq_count": 6556,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Pseudomyrmex"
+          },
+          "common_name": "",
+          "published": "2026-04-04T23:34:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgracilis.NCBI.ASM200609v1/BSgenome.Pgracilis.NCBI.ASM200609v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudopodoces humilis",
       "common_name": "Tibetan ground-tit",
       "group": "vertebrate_other",
@@ -26215,6 +26263,38 @@
       "common_name": "Panamanian leafcutter ant",
       "published": "2026-04-04T22:36:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aechinatior.NCBI.Aech39/BSgenome.Aechinatior.NCBI.Aech39_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pgracilis.NCBI.ASM200609v1",
+      "version": "1.0.0",
+      "organism": "Pseudomyrmex gracilis",
+      "assembly": "ASM200609v1",
+      "provider": "NCBI",
+      "accession": "GCF_002006095.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002006095.1/",
+      "file_name": "BSgenome.Pgracilis.NCBI.ASM200609v1_1.0.0.tar.gz",
+      "size": 71466701,
+      "seq_ids": [
+        "NW_018020584.1",
+        "NW_018020585.1",
+        "NW_018020586.1",
+        "NW_018020587.1",
+        "NW_018020588.1"
+      ],
+      "seq_count": 6556,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Pseudomyrmex"
+      },
+      "common_name": "",
+      "published": "2026-04-04T23:34:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgracilis.NCBI.ASM200609v1/BSgenome.Pgracilis.NCBI.ASM200609v1_1.0.0.tar.gz"
     }
   ]
 }
