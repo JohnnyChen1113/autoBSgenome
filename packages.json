@@ -3598,6 +3598,54 @@
       ]
     },
     {
+      "organism": "Durio zibethinus",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Durio"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dzibethinus.NCBI.Duzib10",
+          "version": "1.0.0",
+          "organism": "Durio zibethinus",
+          "assembly": "Duzib1.0",
+          "provider": "NCBI",
+          "accession": "GCF_002303985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002303985.1/",
+          "file_name": "BSgenome.Dzibethinus.NCBI.Duzib10_1.0.0.tar.gz",
+          "size": 173948071,
+          "seq_ids": [
+            "NW_019167826.1",
+            "NW_019167827.1",
+            "NW_019167828.1",
+            "NW_019167829.1",
+            "NW_019167830.1"
+          ],
+          "seq_count": 677,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Malvales",
+            "family": "Malvaceae",
+            "genus": "Durio"
+          },
+          "common_name": "",
+          "published": "2026-04-04T15:38:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dzibethinus.NCBI.Duzib10/BSgenome.Dzibethinus.NCBI.Duzib10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Echinops telfairi",
       "common_name": "small Madagascar hedgehog",
       "group": "vertebrate_mammalian",
@@ -18455,6 +18503,38 @@
       "common_name": "",
       "published": "2026-04-04T15:37:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nalba.NCBI.ASM479914v2/BSgenome.Nalba.NCBI.ASM479914v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dzibethinus.NCBI.Duzib10",
+      "version": "1.0.0",
+      "organism": "Durio zibethinus",
+      "assembly": "Duzib1.0",
+      "provider": "NCBI",
+      "accession": "GCF_002303985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002303985.1/",
+      "file_name": "BSgenome.Dzibethinus.NCBI.Duzib10_1.0.0.tar.gz",
+      "size": 173948071,
+      "seq_ids": [
+        "NW_019167826.1",
+        "NW_019167827.1",
+        "NW_019167828.1",
+        "NW_019167829.1",
+        "NW_019167830.1"
+      ],
+      "seq_count": 677,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Durio"
+      },
+      "common_name": "",
+      "published": "2026-04-04T15:38:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dzibethinus.NCBI.Duzib10/BSgenome.Dzibethinus.NCBI.Duzib10_1.0.0.tar.gz"
     }
   ]
 }
