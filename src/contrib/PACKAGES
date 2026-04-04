@@ -589,3 +589,7 @@ NeedsCompilation: no
 Package: BSgenome.Clanceolata.NCBI.bChiLan1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cbrachyrhynchos.NCBI.ASM69197v1
+Version: 1.0.0
+NeedsCompilation: no
