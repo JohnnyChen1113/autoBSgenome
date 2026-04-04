@@ -1233,3 +1233,7 @@ NeedsCompilation: no
 Package: BSgenome.Farisanus.NCBI.ASM80636v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dhydei.NCBI.DhydRS2
+Version: 1.0.0
+NeedsCompilation: no
