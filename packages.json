@@ -598,6 +598,54 @@
       ]
     },
     {
+      "organism": "Arachis duranensis",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Arachis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH",
+          "version": "1.0.0",
+          "organism": "Arachis duranensis",
+          "assembly": "aradu.V14167.gnm2.J7QH",
+          "provider": "NCBI",
+          "accession": "GCF_000817695.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000817695.3/",
+          "file_name": "BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH_1.0.0.tar.gz",
+          "size": 245685810,
+          "seq_ids": [
+            "NC_029772.3",
+            "NC_029773.3",
+            "NC_029774.3",
+            "NC_029775.3",
+            "NC_029776.3"
+          ],
+          "seq_count": 1581,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Arachis"
+          },
+          "common_name": "",
+          "published": "2026-04-04T16:42:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH/BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Archocentrus centrarchus",
       "common_name": "flier cichlid",
       "group": "vertebrate_other",
@@ -19575,6 +19623,38 @@
       "common_name": "",
       "published": "2026-04-04T16:42:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pequestris.NCBI.ASM126359v1/BSgenome.Pequestris.NCBI.ASM126359v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH",
+      "version": "1.0.0",
+      "organism": "Arachis duranensis",
+      "assembly": "aradu.V14167.gnm2.J7QH",
+      "provider": "NCBI",
+      "accession": "GCF_000817695.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000817695.3/",
+      "file_name": "BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH_1.0.0.tar.gz",
+      "size": 245685810,
+      "seq_ids": [
+        "NC_029772.3",
+        "NC_029773.3",
+        "NC_029774.3",
+        "NC_029775.3",
+        "NC_029776.3"
+      ],
+      "seq_count": 1581,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Arachis"
+      },
+      "common_name": "",
+      "published": "2026-04-04T16:42:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH/BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH_1.0.0.tar.gz"
     }
   ]
 }

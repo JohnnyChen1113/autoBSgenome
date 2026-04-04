@@ -1073,3 +1073,7 @@ NeedsCompilation: no
 Package: BSgenome.Pequestris.NCBI.ASM126359v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aduranensis.NCBI.araduV14167gnm2J7QH
+Version: 1.0.0
+NeedsCompilation: no
