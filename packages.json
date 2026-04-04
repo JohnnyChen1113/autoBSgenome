@@ -1194,6 +1194,54 @@
       ]
     },
     {
+      "organism": "Atta colombica",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Atta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acolombica.NCBI.Acol10",
+          "version": "1.0.0",
+          "organism": "Atta colombica",
+          "assembly": "Acol1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001594045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001594045.1/",
+          "file_name": "BSgenome.Acolombica.NCBI.Acol10_1.0.0.tar.gz",
+          "size": 76652072,
+          "seq_ids": [
+            "NW_017258044.1",
+            "NW_017258045.1",
+            "NW_017258046.1",
+            "NW_017258047.1",
+            "NW_017258048.1"
+          ],
+          "seq_count": 1550,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Atta"
+          },
+          "common_name": "",
+          "published": "2026-04-04T22:35:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acolombica.NCBI.Acol10/BSgenome.Acolombica.NCBI.Acol10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Austrofundulus limnaeus",
       "common_name": "",
       "group": "vertebrate_other",
@@ -25975,6 +26023,38 @@
       "common_name": "",
       "published": "2026-04-04T22:35:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vemeryi.NCBI.VemeryV10/BSgenome.Vemeryi.NCBI.VemeryV10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acolombica.NCBI.Acol10",
+      "version": "1.0.0",
+      "organism": "Atta colombica",
+      "assembly": "Acol1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001594045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001594045.1/",
+      "file_name": "BSgenome.Acolombica.NCBI.Acol10_1.0.0.tar.gz",
+      "size": 76652072,
+      "seq_ids": [
+        "NW_017258044.1",
+        "NW_017258045.1",
+        "NW_017258046.1",
+        "NW_017258047.1",
+        "NW_017258048.1"
+      ],
+      "seq_count": 1550,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Atta"
+      },
+      "common_name": "",
+      "published": "2026-04-04T22:35:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acolombica.NCBI.Acol10/BSgenome.Acolombica.NCBI.Acol10_1.0.0.tar.gz"
     }
   ]
 }

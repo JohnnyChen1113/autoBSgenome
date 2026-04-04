@@ -1393,3 +1393,7 @@ NeedsCompilation: no
 Package: BSgenome.Vemeryi.NCBI.VemeryV10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acolombica.NCBI.Acol10
+Version: 1.0.0
+NeedsCompilation: no
