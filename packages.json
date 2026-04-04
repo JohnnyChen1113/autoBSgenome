@@ -3813,6 +3813,54 @@
       ]
     },
     {
+      "organism": "Plectropomus leopardus",
+      "common_name": "leopard coralgrouper",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Serranidae",
+        "genus": "Plectropomus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pleopardus.NCBI.YSFRIPleo20",
+          "version": "1.0.0",
+          "organism": "Plectropomus leopardus",
+          "assembly": "YSFRI_Pleo_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_008729295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008729295.1/",
+          "file_name": "BSgenome.Pleopardus.NCBI.YSFRIPleo20_1.0.0.tar.gz",
+          "size": 234024164,
+          "seq_ids": [
+            "NC_056463.1",
+            "NC_056464.1",
+            "NC_056465.1",
+            "NC_056466.1",
+            "NC_056467.1"
+          ],
+          "seq_count": 94260,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Perciformes",
+            "family": "Serranidae",
+            "genus": "Plectropomus"
+          },
+          "common_name": "leopard coralgrouper",
+          "published": "2026-04-04T07:05:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pleopardus.NCBI.YSFRIPleo20/BSgenome.Pleopardus.NCBI.YSFRIPleo20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Poecilia formosa",
       "common_name": "Amazon molly",
       "group": "vertebrate_other",
@@ -8156,6 +8204,38 @@
       "common_name": "Great Tit",
       "published": "2026-04-04T05:46:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmajor.NCBI.Parusmajor11/BSgenome.Pmajor.NCBI.Parusmajor11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pleopardus.NCBI.YSFRIPleo20",
+      "version": "1.0.0",
+      "organism": "Plectropomus leopardus",
+      "assembly": "YSFRI_Pleo_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_008729295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008729295.1/",
+      "file_name": "BSgenome.Pleopardus.NCBI.YSFRIPleo20_1.0.0.tar.gz",
+      "size": 234024164,
+      "seq_ids": [
+        "NC_056463.1",
+        "NC_056464.1",
+        "NC_056465.1",
+        "NC_056466.1",
+        "NC_056467.1"
+      ],
+      "seq_count": 94260,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Serranidae",
+        "genus": "Plectropomus"
+      },
+      "common_name": "leopard coralgrouper",
+      "published": "2026-04-04T07:05:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pleopardus.NCBI.YSFRIPleo20/BSgenome.Pleopardus.NCBI.YSFRIPleo20_1.0.0.tar.gz"
     }
   ]
 }
