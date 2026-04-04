@@ -1097,3 +1097,7 @@ NeedsCompilation: no
 Package: BSgenome.Aipaensis.NCBI.Araip11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsyriacus.NCBI.ASM638163v2
+Version: 1.0.0
+NeedsCompilation: no

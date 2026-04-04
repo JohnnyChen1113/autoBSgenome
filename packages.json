@@ -5174,6 +5174,54 @@
       ]
     },
     {
+      "organism": "Hibiscus syriacus",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Hibiscus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hsyriacus.NCBI.ASM638163v2",
+          "version": "1.0.0",
+          "organism": "Hibiscus syriacus",
+          "assembly": "ASM638163v2",
+          "provider": "NCBI",
+          "accession": "GCF_006381635.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_006381635.1/",
+          "file_name": "BSgenome.Hsyriacus.NCBI.ASM638163v2_1.0.0.tar.gz",
+          "size": 467494989,
+          "seq_ids": [
+            "NW_024061752.1",
+            "NW_024061753.1",
+            "NW_024061754.1",
+            "NW_024061755.1",
+            "NW_024061756.1"
+          ],
+          "seq_count": 1789,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Malvales",
+            "family": "Malvaceae",
+            "genus": "Hibiscus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T17:36:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsyriacus.NCBI.ASM638163v2/BSgenome.Hsyriacus.NCBI.ASM638163v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Hippocampus comes",
       "common_name": "tiger tail seahorse",
       "group": "vertebrate_other",
@@ -20055,6 +20103,38 @@
       "common_name": "",
       "published": "2026-04-04T17:35:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aipaensis.NCBI.Araip11/BSgenome.Aipaensis.NCBI.Araip11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hsyriacus.NCBI.ASM638163v2",
+      "version": "1.0.0",
+      "organism": "Hibiscus syriacus",
+      "assembly": "ASM638163v2",
+      "provider": "NCBI",
+      "accession": "GCF_006381635.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_006381635.1/",
+      "file_name": "BSgenome.Hsyriacus.NCBI.ASM638163v2_1.0.0.tar.gz",
+      "size": 467494989,
+      "seq_ids": [
+        "NW_024061752.1",
+        "NW_024061753.1",
+        "NW_024061754.1",
+        "NW_024061755.1",
+        "NW_024061756.1"
+      ],
+      "seq_count": 1789,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Hibiscus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T17:36:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsyriacus.NCBI.ASM638163v2/BSgenome.Hsyriacus.NCBI.ASM638163v2_1.0.0.tar.gz"
     }
   ]
 }
