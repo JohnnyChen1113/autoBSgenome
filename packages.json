@@ -8798,6 +8798,54 @@
       ]
     },
     {
+      "organism": "Nicrophorus vespilloides",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Coleoptera",
+        "family": "Silphidae",
+        "genus": "Nicrophorus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nvespilloides.NCBI.Nicvev10",
+          "version": "1.0.0",
+          "organism": "Nicrophorus vespilloides",
+          "assembly": "Nicve_v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001412225.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001412225.1/",
+          "file_name": "BSgenome.Nvespilloides.NCBI.Nicvev10_1.0.0.tar.gz",
+          "size": 52336233,
+          "seq_ids": [
+            "NW_017095466.1",
+            "NW_017095467.1",
+            "NW_017095468.1",
+            "NW_017095469.1",
+            "NW_017095470.1"
+          ],
+          "seq_count": 4650,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Coleoptera",
+            "family": "Silphidae",
+            "genus": "Nicrophorus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T20:37:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nvespilloides.NCBI.Nicvev10/BSgenome.Nvespilloides.NCBI.Nicvev10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nipponia nippon",
       "common_name": "crested ibis",
       "group": "vertebrate_other",
@@ -23575,6 +23623,38 @@
       "common_name": "",
       "published": "2026-04-04T20:37:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcalifornicus.NCBI.TcalSDv21/BSgenome.Tcalifornicus.NCBI.TcalSDv21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nvespilloides.NCBI.Nicvev10",
+      "version": "1.0.0",
+      "organism": "Nicrophorus vespilloides",
+      "assembly": "Nicve_v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001412225.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001412225.1/",
+      "file_name": "BSgenome.Nvespilloides.NCBI.Nicvev10_1.0.0.tar.gz",
+      "size": 52336233,
+      "seq_ids": [
+        "NW_017095466.1",
+        "NW_017095467.1",
+        "NW_017095468.1",
+        "NW_017095469.1",
+        "NW_017095470.1"
+      ],
+      "seq_count": 4650,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Coleoptera",
+        "family": "Silphidae",
+        "genus": "Nicrophorus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T20:37:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nvespilloides.NCBI.Nicvev10/BSgenome.Nvespilloides.NCBI.Nicvev10_1.0.0.tar.gz"
     }
   ]
 }
