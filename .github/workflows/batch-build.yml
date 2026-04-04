@@ -61,7 +61,8 @@ jobs:
                   parts = item['organism'].split()
                   abbrev = parts[0][0].upper() + parts[1].lower() if len(parts) >= 2 else parts[0]
                   assembly = item['assembly'].replace('.','').replace(' ','').replace('-','').replace('_','')
-                  pkg_tag = f'pkg-BSgenome.{abbrev}.NCBI.{assembly}'
+                  provider = 'Ensembl' if item.get('data_source') == 'ensembl' else 'NCBI'
+                  pkg_tag = f'pkg-BSgenome.{abbrev}.{provider}.{assembly}'
                   if pkg_tag in existing_tags:
                       item['status'] = 'done'
                       updated += 1
@@ -86,7 +87,7 @@ jobs:
               with open('batch.json', 'w') as f:
                   json.dump(batch, f)
               for item in batch:
-                  print(f'  - {item[\"accession\"]} {item[\"organism\"]} ({item[\"genome_size_mb\"]} MB)')
+                  print(f'  - {item[\"accession\"]} {item[\"organism\"]} [{item.get(\"data_source\",\"ncbi\")}]')
           " > /tmp/queue_check.txt
           cat /tmp/queue_check.txt
 
@@ -123,7 +124,16 @@ jobs:
               parts = organism.split()
               abbrev = parts[0][0].upper() + parts[1].lower() if len(parts) >= 2 else parts[0]
               assembly = item['assembly'].replace('.','').replace(' ','').replace('-','').replace('_','')
-              package_name = f'BSgenome.{abbrev}.NCBI.{assembly}'
+              is_ensembl = item.get('data_source') == 'ensembl'
+              provider = 'Ensembl' if is_ensembl else 'NCBI'
+              package_name = f'BSgenome.{abbrev}.{provider}.{assembly}'
+
+              if is_ensembl:
+                  data_source = 'ensembl'
+                  source_url = f'https://www.ensembl.org/{item.get(\"species_url\", organism.replace(\" \", \"_\"))}/Info/Index'
+              else:
+                  data_source = 'ncbi'
+                  source_url = f'https://www.ncbi.nlm.nih.gov/datasets/genome/{accession}/'
 
               payload = {
                   'event_type': 'build_bsgenome',
@@ -133,15 +143,15 @@ jobs:
                       'organism': organism,
                       'common_name': '',
                       'genome': item['assembly'],
-                      'provider': 'NCBI',
+                      'provider': provider,
                       'version': '1.0.0',
                       'circ_seqs': 'character(0)',
                       'accession': accession,
                       'extra': json.dumps({
-                          'data_source': 'ncbi',
+                          'data_source': data_source,
                           'release_date': '',
-                          'title': f'Full genome sequences for {organism} (NCBI version {item[\"assembly\"]})',
-                          'source_url': f'https://www.ncbi.nlm.nih.gov/datasets/genome/{accession}/',
+                          'title': f'Full genome sequences for {organism} ({provider} version {item[\"assembly\"]})',
+                          'source_url': source_url,
                       })
                   }
               }
