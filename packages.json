@@ -9295,6 +9295,54 @@
       ]
     },
     {
+      "organism": "Quercus suber",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Qsuber.NCBI.Corkoak20",
+          "version": "1.0.0",
+          "organism": "Quercus suber",
+          "assembly": "Cork oak 2.0",
+          "provider": "NCBI",
+          "accession": "GCF_002906115.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002906115.3/",
+          "file_name": "BSgenome.Qsuber.NCBI.Corkoak20_1.0.0.tar.gz",
+          "size": 190606354,
+          "seq_ids": [
+            "NW_027069468.1",
+            "NW_027069469.1",
+            "NW_027069470.1",
+            "NW_027069471.1",
+            "NW_027069472.1"
+          ],
+          "seq_count": 2341,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fagales",
+            "family": "Fagaceae",
+            "genus": "Quercus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T16:40:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Qsuber.NCBI.Corkoak20/BSgenome.Qsuber.NCBI.Corkoak20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Raphanus sativus",
       "common_name": "radish",
       "group": "plant",
@@ -18855,6 +18903,38 @@
       "common_name": "artichoke",
       "published": "2026-04-04T16:40:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccardunculus.NCBI.CcrdV11/BSgenome.Ccardunculus.NCBI.CcrdV11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Qsuber.NCBI.Corkoak20",
+      "version": "1.0.0",
+      "organism": "Quercus suber",
+      "assembly": "Cork oak 2.0",
+      "provider": "NCBI",
+      "accession": "GCF_002906115.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002906115.3/",
+      "file_name": "BSgenome.Qsuber.NCBI.Corkoak20_1.0.0.tar.gz",
+      "size": 190606354,
+      "seq_ids": [
+        "NW_027069468.1",
+        "NW_027069469.1",
+        "NW_027069470.1",
+        "NW_027069471.1",
+        "NW_027069472.1"
+      ],
+      "seq_count": 2341,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T16:40:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Qsuber.NCBI.Corkoak20/BSgenome.Qsuber.NCBI.Corkoak20_1.0.0.tar.gz"
     }
   ]
 }

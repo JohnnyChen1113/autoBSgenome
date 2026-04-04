@@ -1037,3 +1037,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccardunculus.NCBI.CcrdV11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Qsuber.NCBI.Corkoak20
+Version: 1.0.0
+NeedsCompilation: no
