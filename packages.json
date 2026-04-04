@@ -2930,6 +2930,54 @@
       ]
     },
     {
+      "organism": "Haliaeetus leucocephalus",
+      "common_name": "bald eagle",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Haliaeetus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40",
+          "version": "1.0.0",
+          "organism": "Haliaeetus leucocephalus",
+          "assembly": "Haliaeetus_leucocephalus-4.0",
+          "provider": "NCBI",
+          "accession": "GCF_000737465.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000737465.1/",
+          "file_name": "BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40_1.0.0.tar.gz",
+          "size": 305254961,
+          "seq_ids": [
+            "NW_010972436.1",
+            "NW_010972437.1",
+            "NW_010972438.1",
+            "NW_010972439.1",
+            "NW_010972440.1"
+          ],
+          "seq_count": 1023,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Accipitriformes",
+            "family": "Accipitridae",
+            "genus": "Haliaeetus"
+          },
+          "common_name": "bald eagle",
+          "published": "2026-04-04T10:06:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40/BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Heterocephalus glaber",
       "common_name": "naked mole-rat",
       "group": "vertebrate_mammalian",
@@ -11516,6 +11564,38 @@
       "common_name": "Okarito brown kiwi",
       "published": "2026-04-04T10:06:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Arowi.NCBI.aptRow1/BSgenome.Arowi.NCBI.aptRow1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40",
+      "version": "1.0.0",
+      "organism": "Haliaeetus leucocephalus",
+      "assembly": "Haliaeetus_leucocephalus-4.0",
+      "provider": "NCBI",
+      "accession": "GCF_000737465.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000737465.1/",
+      "file_name": "BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40_1.0.0.tar.gz",
+      "size": 305254961,
+      "seq_ids": [
+        "NW_010972436.1",
+        "NW_010972437.1",
+        "NW_010972438.1",
+        "NW_010972439.1",
+        "NW_010972440.1"
+      ],
+      "seq_count": 1023,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Haliaeetus"
+      },
+      "common_name": "bald eagle",
+      "published": "2026-04-04T10:06:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40/BSgenome.Hleucocephalus.NCBI.Haliaeetusleucocephalus40_1.0.0.tar.gz"
     }
   ]
 }
