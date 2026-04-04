@@ -951,6 +951,54 @@
       ]
     },
     {
+      "organism": "Catharus ustulatus",
+      "common_name": "Swainson's thrush",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Catharus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Custulatus.NCBI.bCatUst1priv2",
+          "version": "1.0.0",
+          "organism": "Catharus ustulatus",
+          "assembly": "bCatUst1.pri.v2",
+          "provider": "NCBI",
+          "accession": "GCF_009819885.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009819885.2/",
+          "file_name": "BSgenome.Custulatus.NCBI.bCatUst1priv2_1.0.0.tar.gz",
+          "size": 288405873,
+          "seq_ids": [
+            "NC_046221.1",
+            "NC_046222.1",
+            "NC_046223.1",
+            "NC_046224.1",
+            "NC_046225.1"
+          ],
+          "seq_count": 160,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Turdidae",
+            "genus": "Catharus"
+          },
+          "common_name": "Swainson's thrush",
+          "published": "2026-04-04T10:05:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Custulatus.NCBI.bCatUst1priv2/BSgenome.Custulatus.NCBI.bCatUst1priv2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cebus imitator",
       "common_name": "Panamanian white-faced capuchin",
       "group": "vertebrate_mammalian",
@@ -11036,6 +11084,38 @@
       "common_name": "chimney swift",
       "published": "2026-04-04T10:05:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpelagica.NCBI.ChaPel11/BSgenome.Cpelagica.NCBI.ChaPel11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Custulatus.NCBI.bCatUst1priv2",
+      "version": "1.0.0",
+      "organism": "Catharus ustulatus",
+      "assembly": "bCatUst1.pri.v2",
+      "provider": "NCBI",
+      "accession": "GCF_009819885.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009819885.2/",
+      "file_name": "BSgenome.Custulatus.NCBI.bCatUst1priv2_1.0.0.tar.gz",
+      "size": 288405873,
+      "seq_ids": [
+        "NC_046221.1",
+        "NC_046222.1",
+        "NC_046223.1",
+        "NC_046224.1",
+        "NC_046225.1"
+      ],
+      "seq_count": 160,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Catharus"
+      },
+      "common_name": "Swainson's thrush",
+      "published": "2026-04-04T10:05:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Custulatus.NCBI.bCatUst1priv2/BSgenome.Custulatus.NCBI.bCatUst1priv2_1.0.0.tar.gz"
     }
   ]
 }
