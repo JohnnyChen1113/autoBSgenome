@@ -433,3 +433,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmexicana.NCBI.Pmexicana10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pnyererei.NCBI.PunNye10
+Version: 1.0.0
+NeedsCompilation: no
