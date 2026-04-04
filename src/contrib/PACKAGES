@@ -1217,3 +1217,7 @@ NeedsCompilation: no
 Package: BSgenome.Dnavojoa.NCBI.UFRJDnav42
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Goccidentalis.NCBI.Mocc11
+Version: 1.0.0
+NeedsCompilation: no
