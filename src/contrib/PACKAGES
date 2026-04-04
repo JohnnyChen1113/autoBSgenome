@@ -1021,3 +1021,7 @@ NeedsCompilation: no
 Package: BSgenome.Dzibethinus.NCBI.Duzib10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pvulgaris.NCBI.Pvulgarisv20
+Version: 1.0.0
+NeedsCompilation: no

@@ -7811,6 +7811,54 @@
       ]
     },
     {
+      "organism": "Phaseolus vulgaris",
+      "common_name": "common bean",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Phaseolus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pvulgaris.NCBI.Pvulgarisv20",
+          "version": "1.0.0",
+          "organism": "Phaseolus vulgaris",
+          "assembly": "P. vulgaris v2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000499845.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000499845.2/",
+          "file_name": "BSgenome.Pvulgaris.NCBI.Pvulgarisv20_1.0.0.tar.gz",
+          "size": 135175491,
+          "seq_ids": [
+            "NC_023759.2",
+            "NC_023758.2",
+            "NC_023757.2",
+            "NC_023756.2",
+            "NC_023755.2"
+          ],
+          "seq_count": 468,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Phaseolus"
+          },
+          "common_name": "common bean",
+          "published": "2026-04-04T16:39:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvulgaris.NCBI.Pvulgarisv20/BSgenome.Pvulgaris.NCBI.Pvulgarisv20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phasianus colchicus",
       "common_name": "ring-necked pheasant",
       "group": "vertebrate_other",
@@ -18535,6 +18583,38 @@
       "common_name": "",
       "published": "2026-04-04T15:38:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dzibethinus.NCBI.Duzib10/BSgenome.Dzibethinus.NCBI.Duzib10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pvulgaris.NCBI.Pvulgarisv20",
+      "version": "1.0.0",
+      "organism": "Phaseolus vulgaris",
+      "assembly": "P. vulgaris v2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000499845.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000499845.2/",
+      "file_name": "BSgenome.Pvulgaris.NCBI.Pvulgarisv20_1.0.0.tar.gz",
+      "size": 135175491,
+      "seq_ids": [
+        "NC_023759.2",
+        "NC_023758.2",
+        "NC_023757.2",
+        "NC_023756.2",
+        "NC_023755.2"
+      ],
+      "seq_count": 468,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Phaseolus"
+      },
+      "common_name": "common bean",
+      "published": "2026-04-04T16:39:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvulgaris.NCBI.Pvulgarisv20/BSgenome.Pvulgaris.NCBI.Pvulgarisv20_1.0.0.tar.gz"
     }
   ]
 }
