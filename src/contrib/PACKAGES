@@ -1269,3 +1269,7 @@ NeedsCompilation: no
 Package: BSgenome.Tpretiosum.NCBI.Tpre20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcalifornicus.NCBI.TcalSDv21
+Version: 1.0.0
+NeedsCompilation: no

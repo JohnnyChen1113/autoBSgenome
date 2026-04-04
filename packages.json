@@ -13365,6 +13365,54 @@
       ]
     },
     {
+      "organism": "Tigriopus californicus",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Hexanauplia",
+        "order": "Harpacticoida",
+        "family": "Harpacticidae",
+        "genus": "Tigriopus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tcalifornicus.NCBI.TcalSDv21",
+          "version": "1.0.0",
+          "organism": "Tigriopus californicus",
+          "assembly": "Tcal_SD_v2.1",
+          "provider": "NCBI",
+          "accession": "GCF_007210705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007210705.1/",
+          "file_name": "BSgenome.Tcalifornicus.NCBI.TcalSDv21_1.0.0.tar.gz",
+          "size": 49102377,
+          "seq_ids": [
+            "NC_081440.1",
+            "NC_081441.1",
+            "NC_081442.1",
+            "NC_081443.1",
+            "NC_081444.1"
+          ],
+          "seq_count": 459,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Hexanauplia",
+            "order": "Harpacticoida",
+            "family": "Harpacticidae",
+            "genus": "Tigriopus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T20:37:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcalifornicus.NCBI.TcalSDv21/BSgenome.Tcalifornicus.NCBI.TcalSDv21_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tinamus guttatus",
       "common_name": "white-throated tinamou",
       "group": "vertebrate_other",
@@ -23495,6 +23543,38 @@
       "common_name": "",
       "published": "2026-04-04T20:36:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tpretiosum.NCBI.Tpre20/BSgenome.Tpretiosum.NCBI.Tpre20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tcalifornicus.NCBI.TcalSDv21",
+      "version": "1.0.0",
+      "organism": "Tigriopus californicus",
+      "assembly": "Tcal_SD_v2.1",
+      "provider": "NCBI",
+      "accession": "GCF_007210705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007210705.1/",
+      "file_name": "BSgenome.Tcalifornicus.NCBI.TcalSDv21_1.0.0.tar.gz",
+      "size": 49102377,
+      "seq_ids": [
+        "NC_081440.1",
+        "NC_081441.1",
+        "NC_081442.1",
+        "NC_081443.1",
+        "NC_081444.1"
+      ],
+      "seq_count": 459,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Hexanauplia",
+        "order": "Harpacticoida",
+        "family": "Harpacticidae",
+        "genus": "Tigriopus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T20:37:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcalifornicus.NCBI.TcalSDv21/BSgenome.Tcalifornicus.NCBI.TcalSDv21_1.0.0.tar.gz"
     }
   ]
 }
