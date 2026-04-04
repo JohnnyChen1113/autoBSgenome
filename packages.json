@@ -8217,6 +8217,54 @@
       ]
     },
     {
+      "organism": "Pistacia vera",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Pistacia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pvera.NCBI.PisVerv2",
+          "version": "1.0.0",
+          "organism": "Pistacia vera",
+          "assembly": "PisVer_v2",
+          "provider": "NCBI",
+          "accession": "GCF_008641045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008641045.1/",
+          "file_name": "BSgenome.Pvera.NCBI.PisVerv2_1.0.0.tar.gz",
+          "size": 174070000,
+          "seq_ids": [
+            "NW_022195025.1",
+            "NW_022195026.1",
+            "NW_022195027.1",
+            "NW_022195028.1",
+            "NW_022195029.1"
+          ],
+          "seq_count": 1865,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Sapindales",
+            "family": "Anacardiaceae",
+            "genus": "Pistacia"
+          },
+          "common_name": "",
+          "published": "2026-04-04T16:39:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvera.NCBI.PisVerv2/BSgenome.Pvera.NCBI.PisVerv2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Plectropomus leopardus",
       "common_name": "leopard coralgrouper",
       "group": "vertebrate_other",
@@ -18615,6 +18663,38 @@
       "common_name": "common bean",
       "published": "2026-04-04T16:39:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvulgaris.NCBI.Pvulgarisv20/BSgenome.Pvulgaris.NCBI.Pvulgarisv20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pvera.NCBI.PisVerv2",
+      "version": "1.0.0",
+      "organism": "Pistacia vera",
+      "assembly": "PisVer_v2",
+      "provider": "NCBI",
+      "accession": "GCF_008641045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008641045.1/",
+      "file_name": "BSgenome.Pvera.NCBI.PisVerv2_1.0.0.tar.gz",
+      "size": 174070000,
+      "seq_ids": [
+        "NW_022195025.1",
+        "NW_022195026.1",
+        "NW_022195027.1",
+        "NW_022195028.1",
+        "NW_022195029.1"
+      ],
+      "seq_count": 1865,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Pistacia"
+      },
+      "common_name": "",
+      "published": "2026-04-04T16:39:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvera.NCBI.PisVerv2/BSgenome.Pvera.NCBI.PisVerv2_1.0.0.tar.gz"
     }
   ]
 }
