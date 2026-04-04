@@ -714,6 +714,54 @@
       ]
     },
     {
+      "organism": "Calidris pugnax",
+      "common_name": "ruff",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cpugnax.NCBI.ASM143184v1",
+          "version": "1.0.0",
+          "organism": "Calidris pugnax",
+          "assembly": "ASM143184v1",
+          "provider": "NCBI",
+          "accession": "GCF_001431845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001431845.1/",
+          "file_name": "BSgenome.Cpugnax.NCBI.ASM143184v1_1.0.0.tar.gz",
+          "size": 307511582,
+          "seq_ids": [
+            "NW_015090758.1",
+            "NW_015090759.1",
+            "NW_015090760.1",
+            "NW_015090761.1",
+            "NW_015090762.1"
+          ],
+          "seq_count": 3753,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Charadriiformes",
+            "family": "Scolopacidae",
+            "genus": "Calidris"
+          },
+          "common_name": "ruff",
+          "published": "2026-04-04T11:01:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpugnax.NCBI.ASM143184v1/BSgenome.Cpugnax.NCBI.ASM143184v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Callorhinus ursinus",
       "common_name": "northern fur seal",
       "group": "vertebrate_mammalian",
@@ -11916,6 +11964,38 @@
       "common_name": "White-tailed tropicbird",
       "published": "2026-04-04T10:12:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Plepturus.NCBI.ASM68728v1/BSgenome.Plepturus.NCBI.ASM68728v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cpugnax.NCBI.ASM143184v1",
+      "version": "1.0.0",
+      "organism": "Calidris pugnax",
+      "assembly": "ASM143184v1",
+      "provider": "NCBI",
+      "accession": "GCF_001431845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001431845.1/",
+      "file_name": "BSgenome.Cpugnax.NCBI.ASM143184v1_1.0.0.tar.gz",
+      "size": 307511582,
+      "seq_ids": [
+        "NW_015090758.1",
+        "NW_015090759.1",
+        "NW_015090760.1",
+        "NW_015090761.1",
+        "NW_015090762.1"
+      ],
+      "seq_count": 3753,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris"
+      },
+      "common_name": "ruff",
+      "published": "2026-04-04T11:01:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpugnax.NCBI.ASM143184v1/BSgenome.Cpugnax.NCBI.ASM143184v1_1.0.0.tar.gz"
     }
   ]
 }

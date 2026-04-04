@@ -689,3 +689,7 @@ NeedsCompilation: no
 Package: BSgenome.Plepturus.NCBI.ASM68728v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cpugnax.NCBI.ASM143184v1
+Version: 1.0.0
+NeedsCompilation: no
