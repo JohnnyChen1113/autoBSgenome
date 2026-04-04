@@ -2001,6 +2001,54 @@
       ]
     },
     {
+      "organism": "Citrus x clementina",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Sapindales",
+        "family": "Rutaceae",
+        "genus": "Citrus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cx.NCBI.Citrusclementinav10",
+          "version": "1.0.0",
+          "organism": "Citrus x clementina",
+          "assembly": "Citrus_clementina_v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000493195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000493195.1/",
+          "file_name": "BSgenome.Cx.NCBI.Citrusclementinav10_1.0.0.tar.gz",
+          "size": 75183917,
+          "seq_ids": [
+            "NW_006263303.1",
+            "NW_006263302.1",
+            "NW_006263301.1",
+            "NW_006263300.1",
+            "NW_006263299.1"
+          ],
+          "seq_count": 1398,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Sapindales",
+            "family": "Rutaceae",
+            "genus": "Citrus"
+          },
+          "common_name": "",
+          "published": "2026-04-04T13:02:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cx.NCBI.Citrusclementinav10/BSgenome.Cx.NCBI.Citrusclementinav10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Coccomyxa subellipsoidea C-169",
       "common_name": "",
       "group": "plant",
@@ -15175,6 +15223,38 @@
       "common_name": "sesame",
       "published": "2026-04-04T13:02:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sindicum.NCBI.Sindicumv10/BSgenome.Sindicum.NCBI.Sindicumv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cx.NCBI.Citrusclementinav10",
+      "version": "1.0.0",
+      "organism": "Citrus x clementina",
+      "assembly": "Citrus_clementina_v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000493195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000493195.1/",
+      "file_name": "BSgenome.Cx.NCBI.Citrusclementinav10_1.0.0.tar.gz",
+      "size": 75183917,
+      "seq_ids": [
+        "NW_006263303.1",
+        "NW_006263302.1",
+        "NW_006263301.1",
+        "NW_006263300.1",
+        "NW_006263299.1"
+      ],
+      "seq_count": 1398,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Sapindales",
+        "family": "Rutaceae",
+        "genus": "Citrus"
+      },
+      "common_name": "",
+      "published": "2026-04-04T13:02:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cx.NCBI.Citrusclementinav10/BSgenome.Cx.NCBI.Citrusclementinav10_1.0.0.tar.gz"
     }
   ]
 }

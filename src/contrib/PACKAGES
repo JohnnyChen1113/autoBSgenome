@@ -853,3 +853,7 @@ NeedsCompilation: no
 Package: BSgenome.Sindicum.NCBI.Sindicumv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cx.NCBI.Citrusclementinav10
+Version: 1.0.0
+NeedsCompilation: no
