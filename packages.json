@@ -7401,6 +7401,54 @@
       ]
     },
     {
+      "organism": "Populus trichocarpa",
+      "common_name": "black cottonwood",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Populus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41",
+          "version": "1.0.0",
+          "organism": "Populus trichocarpa",
+          "assembly": "P.trichocarpa_v4.1",
+          "provider": "NCBI",
+          "accession": "GCF_000002775.5",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002775.5/",
+          "file_name": "BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41_1.0.0.tar.gz",
+          "size": 100032300,
+          "seq_ids": [
+            "NC_037285.2",
+            "NC_037286.2",
+            "NC_037287.2",
+            "NC_037288.2",
+            "NC_037289.2"
+          ],
+          "seq_count": 47,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Malpighiales",
+            "family": "Salicaceae",
+            "genus": "Populus"
+          },
+          "common_name": "black cottonwood",
+          "published": "2026-04-04T14:00:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41/BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pristis pectinata",
       "common_name": "smalltooth sawfish",
       "group": "vertebrate_other",
@@ -16055,6 +16103,38 @@
       "common_name": "pineapple",
       "published": "2026-04-04T14:00:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acomosus.NCBI.ASM154086v1/BSgenome.Acomosus.NCBI.ASM154086v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41",
+      "version": "1.0.0",
+      "organism": "Populus trichocarpa",
+      "assembly": "P.trichocarpa_v4.1",
+      "provider": "NCBI",
+      "accession": "GCF_000002775.5",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002775.5/",
+      "file_name": "BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41_1.0.0.tar.gz",
+      "size": 100032300,
+      "seq_ids": [
+        "NC_037285.2",
+        "NC_037286.2",
+        "NC_037287.2",
+        "NC_037288.2",
+        "NC_037289.2"
+      ],
+      "seq_count": 47,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Populus"
+      },
+      "common_name": "black cottonwood",
+      "published": "2026-04-04T14:00:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41/BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41_1.0.0.tar.gz"
     }
   ]
 }
