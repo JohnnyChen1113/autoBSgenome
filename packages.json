@@ -2494,6 +2494,54 @@
       ]
     },
     {
+      "organism": "Manacus vitellinus",
+      "common_name": "golden-collared manakin",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Pipridae",
+        "genus": "Manacus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mvitellinus.NCBI.ASM171598v3",
+          "version": "1.0.0",
+          "organism": "Manacus vitellinus",
+          "assembly": "ASM171598v3",
+          "provider": "NCBI",
+          "accession": "GCF_001715985.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001715985.3/",
+          "file_name": "BSgenome.Mvitellinus.NCBI.ASM171598v3_1.0.0.tar.gz",
+          "size": 272919548,
+          "seq_ids": [
+            "NW_021937299.1",
+            "NW_021937300.1",
+            "NW_021937301.1",
+            "NW_021937302.1",
+            "NW_021937303.1"
+          ],
+          "seq_count": 3619,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Pipridae",
+            "genus": "Manacus"
+          },
+          "common_name": "golden-collared manakin",
+          "published": "2026-04-04T08:05:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mvitellinus.NCBI.ASM171598v3/BSgenome.Mvitellinus.NCBI.ASM171598v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mandrillus leucophaeus",
       "common_name": "drill",
       "group": "vertebrate_mammalian",
@@ -9436,6 +9484,38 @@
       "common_name": "bar-tailed trogon",
       "published": "2026-04-04T08:05:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Avittatum.NCBI.ASM70340v1/BSgenome.Avittatum.NCBI.ASM70340v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mvitellinus.NCBI.ASM171598v3",
+      "version": "1.0.0",
+      "organism": "Manacus vitellinus",
+      "assembly": "ASM171598v3",
+      "provider": "NCBI",
+      "accession": "GCF_001715985.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001715985.3/",
+      "file_name": "BSgenome.Mvitellinus.NCBI.ASM171598v3_1.0.0.tar.gz",
+      "size": 272919548,
+      "seq_ids": [
+        "NW_021937299.1",
+        "NW_021937300.1",
+        "NW_021937301.1",
+        "NW_021937302.1",
+        "NW_021937303.1"
+      ],
+      "seq_count": 3619,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Pipridae",
+        "genus": "Manacus"
+      },
+      "common_name": "golden-collared manakin",
+      "published": "2026-04-04T08:05:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mvitellinus.NCBI.ASM171598v3/BSgenome.Mvitellinus.NCBI.ASM171598v3_1.0.0.tar.gz"
     }
   ]
 }

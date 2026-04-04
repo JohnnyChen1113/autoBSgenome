@@ -565,3 +565,7 @@ NeedsCompilation: no
 Package: BSgenome.Avittatum.NCBI.ASM70340v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mvitellinus.NCBI.ASM171598v3
+Version: 1.0.0
+NeedsCompilation: no
