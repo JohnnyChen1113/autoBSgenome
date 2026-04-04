@@ -3503,6 +3503,54 @@
       ]
     },
     {
+      "organism": "Phasianus colchicus",
+      "common_name": "ring-necked pheasant",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Phasianus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcolchicus.NCBI.ASM414374v1",
+          "version": "1.0.0",
+          "organism": "Phasianus colchicus",
+          "assembly": "ASM414374v1",
+          "provider": "NCBI",
+          "accession": "GCF_004143745.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004143745.1/",
+          "file_name": "BSgenome.Pcolchicus.NCBI.ASM414374v1_1.0.0.tar.gz",
+          "size": 265623281,
+          "seq_ids": [
+            "NW_022205318.1",
+            "NW_022205319.1",
+            "NW_022205320.1",
+            "NW_022205321.1",
+            "NW_022205322.1"
+          ],
+          "seq_count": 39678,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Galliformes",
+            "family": "Phasianidae",
+            "genus": "Phasianus"
+          },
+          "common_name": "ring-necked pheasant",
+          "published": "2026-04-04T05:46:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcolchicus.NCBI.ASM414374v1/BSgenome.Pcolchicus.NCBI.ASM414374v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phoca vitulina",
       "common_name": "harbor seal",
       "group": "vertebrate_mammalian",
@@ -7996,6 +8044,38 @@
       "common_name": "",
       "published": "2026-04-04T05:46:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nperdicaria.NCBI.notPer1/BSgenome.Nperdicaria.NCBI.notPer1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcolchicus.NCBI.ASM414374v1",
+      "version": "1.0.0",
+      "organism": "Phasianus colchicus",
+      "assembly": "ASM414374v1",
+      "provider": "NCBI",
+      "accession": "GCF_004143745.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004143745.1/",
+      "file_name": "BSgenome.Pcolchicus.NCBI.ASM414374v1_1.0.0.tar.gz",
+      "size": 265623281,
+      "seq_ids": [
+        "NW_022205318.1",
+        "NW_022205319.1",
+        "NW_022205320.1",
+        "NW_022205321.1",
+        "NW_022205322.1"
+      ],
+      "seq_count": 39678,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Phasianus"
+      },
+      "common_name": "ring-necked pheasant",
+      "published": "2026-04-04T05:46:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcolchicus.NCBI.ASM414374v1/BSgenome.Pcolchicus.NCBI.ASM414374v1_1.0.0.tar.gz"
     }
   ]
 }
