@@ -3336,6 +3336,54 @@
       ]
     },
     {
+      "organism": "Dioscorea cayenensis subsp. rotundata",
+      "common_name": "Guinea yam",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Dioscoreales",
+        "family": "Dioscoreaceae",
+        "genus": "Dioscorea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta",
+          "version": "1.0.0",
+          "organism": "Dioscorea cayenensis subsp. rotundata",
+          "assembly": "TDr96_F1_v2_PseudoChromosome.rev07_lg8_w22 25.fasta",
+          "provider": "NCBI",
+          "accession": "GCF_009730915.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009730915.1/",
+          "file_name": "BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta_1.0.0.tar.gz",
+          "size": 151138308,
+          "seq_ids": [
+            "NC_052471.1",
+            "NC_052472.1",
+            "NC_052473.1",
+            "NC_052474.1",
+            "NC_052475.1"
+          ],
+          "seq_count": 2254,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Dioscoreales",
+            "family": "Dioscoreaceae",
+            "genus": "Dioscorea"
+          },
+          "common_name": "Guinea yam",
+          "published": "2026-04-04T15:36:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta/BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dipodomys ordii",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -17735,6 +17783,38 @@
       "common_name": "Persian walnut",
       "published": "2026-04-04T15:36:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jregia.NCBI.Walnut20/BSgenome.Jregia.NCBI.Walnut20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta",
+      "version": "1.0.0",
+      "organism": "Dioscorea cayenensis subsp. rotundata",
+      "assembly": "TDr96_F1_v2_PseudoChromosome.rev07_lg8_w22 25.fasta",
+      "provider": "NCBI",
+      "accession": "GCF_009730915.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009730915.1/",
+      "file_name": "BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta_1.0.0.tar.gz",
+      "size": 151138308,
+      "seq_ids": [
+        "NC_052471.1",
+        "NC_052472.1",
+        "NC_052473.1",
+        "NC_052474.1",
+        "NC_052475.1"
+      ],
+      "seq_count": 2254,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Dioscoreales",
+        "family": "Dioscoreaceae",
+        "genus": "Dioscorea"
+      },
+      "common_name": "Guinea yam",
+      "published": "2026-04-04T15:36:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta/BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta_1.0.0.tar.gz"
     }
   ]
 }
