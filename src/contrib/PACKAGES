@@ -817,3 +817,7 @@ NeedsCompilation: no
 Package: BSgenome.Humbratica.NCBI.ASM216827v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Esalsugineum.NCBI.Eutsalg10
+Version: 1.0.0
+NeedsCompilation: no
