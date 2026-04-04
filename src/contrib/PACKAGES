@@ -473,3 +473,7 @@ NeedsCompilation: no
 Package: BSgenome.Pflavescens.NCBI.PFLA10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Slucioperca.NCBI.SLUCFBN12
+Version: 1.0.0
+NeedsCompilation: no
