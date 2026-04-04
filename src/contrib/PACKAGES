@@ -1177,3 +1177,7 @@ NeedsCompilation: no
 Package: BSgenome.Atauschii.NCBI.Aetv60
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ntabacum.NCBI.ASM71507v2
+Version: 1.0.0
+NeedsCompilation: no

@@ -7886,6 +7886,54 @@
       ]
     },
     {
+      "organism": "Nicotiana tabacum",
+      "common_name": "common tobacco",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Nicotiana"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ntabacum.NCBI.ASM71507v2",
+          "version": "1.0.0",
+          "organism": "Nicotiana tabacum",
+          "assembly": "ASM71507v2",
+          "provider": "NCBI",
+          "accession": "GCF_000715075.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000715075.1/",
+          "file_name": "BSgenome.Ntabacum.NCBI.ASM71507v2_1.0.0.tar.gz",
+          "size": 1026243306,
+          "seq_ids": [
+            "NC_134080.1",
+            "NC_134081.1",
+            "NC_134082.1",
+            "NC_134083.1",
+            "NC_134084.1"
+          ],
+          "seq_count": 701,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Solanaceae",
+            "genus": "Nicotiana"
+          },
+          "common_name": "common tobacco",
+          "published": "2026-04-04T18:52:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ntabacum.NCBI.ASM71507v2/BSgenome.Ntabacum.NCBI.ASM71507v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nicotiana tomentosiformis",
       "common_name": "",
       "group": "plant",
@@ -21655,6 +21703,38 @@
       "common_name": "",
       "published": "2026-04-04T18:51:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atauschii.NCBI.Aetv60/BSgenome.Atauschii.NCBI.Aetv60_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ntabacum.NCBI.ASM71507v2",
+      "version": "1.0.0",
+      "organism": "Nicotiana tabacum",
+      "assembly": "ASM71507v2",
+      "provider": "NCBI",
+      "accession": "GCF_000715075.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000715075.1/",
+      "file_name": "BSgenome.Ntabacum.NCBI.ASM71507v2_1.0.0.tar.gz",
+      "size": 1026243306,
+      "seq_ids": [
+        "NC_134080.1",
+        "NC_134081.1",
+        "NC_134082.1",
+        "NC_134083.1",
+        "NC_134084.1"
+      ],
+      "seq_count": 701,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Nicotiana"
+      },
+      "common_name": "common tobacco",
+      "published": "2026-04-04T18:52:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ntabacum.NCBI.ASM71507v2/BSgenome.Ntabacum.NCBI.ASM71507v2_1.0.0.tar.gz"
     }
   ]
 }
