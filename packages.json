@@ -8901,6 +8901,54 @@
       ]
     },
     {
+      "organism": "Theobroma cacao",
+      "common_name": "cacao",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Theobroma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tcacao.NCBI.CriollococoagenomeV2",
+          "version": "1.0.0",
+          "organism": "Theobroma cacao",
+          "assembly": "Criollo_cocoa_genome_V2",
+          "provider": "NCBI",
+          "accession": "GCF_000208745.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000208745.1/",
+          "file_name": "BSgenome.Tcacao.NCBI.CriollococoagenomeV2_1.0.0.tar.gz",
+          "size": 79502827,
+          "seq_ids": [
+            "NC_030850.1",
+            "NC_030851.1",
+            "NC_030852.1",
+            "NC_030853.1",
+            "NC_030854.1"
+          ],
+          "seq_count": 431,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Malvales",
+            "family": "Malvaceae",
+            "genus": "Theobroma"
+          },
+          "common_name": "cacao",
+          "published": "2026-04-04T13:59:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcacao.NCBI.CriollococoagenomeV2/BSgenome.Tcacao.NCBI.CriollococoagenomeV2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Theropithecus gelada",
       "common_name": "gelada",
       "group": "vertebrate_mammalian",
@@ -15575,6 +15623,38 @@
       "common_name": "",
       "published": "2026-04-04T13:59:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnotabilis.NCBI.ASM41409v2/BSgenome.Mnotabilis.NCBI.ASM41409v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tcacao.NCBI.CriollococoagenomeV2",
+      "version": "1.0.0",
+      "organism": "Theobroma cacao",
+      "assembly": "Criollo_cocoa_genome_V2",
+      "provider": "NCBI",
+      "accession": "GCF_000208745.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000208745.1/",
+      "file_name": "BSgenome.Tcacao.NCBI.CriollococoagenomeV2_1.0.0.tar.gz",
+      "size": 79502827,
+      "seq_ids": [
+        "NC_030850.1",
+        "NC_030851.1",
+        "NC_030852.1",
+        "NC_030853.1",
+        "NC_030854.1"
+      ],
+      "seq_count": 431,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Theobroma"
+      },
+      "common_name": "cacao",
+      "published": "2026-04-04T13:59:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcacao.NCBI.CriollococoagenomeV2/BSgenome.Tcacao.NCBI.CriollococoagenomeV2_1.0.0.tar.gz"
     }
   ]
 }
