@@ -401,3 +401,7 @@ NeedsCompilation: no
 Package: BSgenome.Malbus.NCBI.Malbus10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Xcouchianus.NCBI.Xcouchianus10
+Version: 1.0.0
+NeedsCompilation: no
