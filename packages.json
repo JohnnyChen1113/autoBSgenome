@@ -1486,6 +1486,54 @@
       ]
     },
     {
+      "organism": "Leptonychotes weddellii",
+      "common_name": "Weddell seal",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Phocidae",
+        "genus": "Leptonychotes"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lweddellii.NCBI.LepWed10",
+          "version": "1.0.0",
+          "organism": "Leptonychotes weddellii",
+          "assembly": "LepWed1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000349705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000349705.1/",
+          "file_name": "BSgenome.Lweddellii.NCBI.LepWed10_1.0.0.tar.gz",
+          "size": 591627586,
+          "seq_ids": [
+            "NW_006383041.1",
+            "NW_006383042.1",
+            "NW_006383043.1",
+            "NW_006383044.1",
+            "NW_006383045.1"
+          ],
+          "seq_count": 16711,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Phocidae",
+            "genus": "Leptonychotes"
+          },
+          "common_name": "Weddell seal",
+          "published": "2026-04-04T02:29:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lweddellii.NCBI.LepWed10/BSgenome.Lweddellii.NCBI.LepWed10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lipotes vexillifer",
       "common_name": "Yangtze River dolphin",
       "group": "vertebrate_mammalian",
@@ -5439,6 +5487,38 @@
       "common_name": "drill",
       "published": "2026-04-04T02:29:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mleucophaeus.NCBI.Mleule10/BSgenome.Mleucophaeus.NCBI.Mleule10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lweddellii.NCBI.LepWed10",
+      "version": "1.0.0",
+      "organism": "Leptonychotes weddellii",
+      "assembly": "LepWed1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000349705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000349705.1/",
+      "file_name": "BSgenome.Lweddellii.NCBI.LepWed10_1.0.0.tar.gz",
+      "size": 591627586,
+      "seq_ids": [
+        "NW_006383041.1",
+        "NW_006383042.1",
+        "NW_006383043.1",
+        "NW_006383044.1",
+        "NW_006383045.1"
+      ],
+      "seq_count": 16711,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Phocidae",
+        "genus": "Leptonychotes"
+      },
+      "common_name": "Weddell seal",
+      "published": "2026-04-04T02:29:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lweddellii.NCBI.LepWed10/BSgenome.Lweddellii.NCBI.LepWed10_1.0.0.tar.gz"
     }
   ]
 }
