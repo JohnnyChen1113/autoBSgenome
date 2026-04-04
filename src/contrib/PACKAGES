@@ -1165,3 +1165,7 @@ NeedsCompilation: no
 Package: BSgenome.Agraveolens.NCBI.ASM990537v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csinensis.NCBI.AHAUCSS1
+Version: 1.0.0
+NeedsCompilation: no
