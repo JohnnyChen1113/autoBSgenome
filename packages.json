@@ -1250,6 +1250,54 @@
       ]
     },
     {
+      "organism": "Galeopterus variegatus",
+      "common_name": "Sunda flying lemur",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Dermoptera",
+        "family": "Cynocephalidae",
+        "genus": "Galeopterus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gvariegatus.NCBI.Gvariegatus302",
+          "version": "1.0.0",
+          "organism": "Galeopterus variegatus",
+          "assembly": "G_variegatus-3.0.2",
+          "provider": "NCBI",
+          "accession": "GCF_000696425.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000696425.1/",
+          "file_name": "BSgenome.Gvariegatus.NCBI.Gvariegatus302_1.0.0.tar.gz",
+          "size": 751071808,
+          "seq_ids": [
+            "NW_007726111.1",
+            "NW_007726112.1",
+            "NW_007726113.1",
+            "NW_007726114.1",
+            "NW_007726115.1"
+          ],
+          "seq_count": 179514,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Dermoptera",
+            "family": "Cynocephalidae",
+            "genus": "Galeopterus"
+          },
+          "common_name": "Sunda flying lemur",
+          "published": "2026-04-04T02:30:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gvariegatus.NCBI.Gvariegatus302/BSgenome.Gvariegatus.NCBI.Gvariegatus302_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Grammomys surdaster",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -5519,6 +5567,38 @@
       "common_name": "Weddell seal",
       "published": "2026-04-04T02:29:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lweddellii.NCBI.LepWed10/BSgenome.Lweddellii.NCBI.LepWed10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gvariegatus.NCBI.Gvariegatus302",
+      "version": "1.0.0",
+      "organism": "Galeopterus variegatus",
+      "assembly": "G_variegatus-3.0.2",
+      "provider": "NCBI",
+      "accession": "GCF_000696425.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000696425.1/",
+      "file_name": "BSgenome.Gvariegatus.NCBI.Gvariegatus302_1.0.0.tar.gz",
+      "size": 751071808,
+      "seq_ids": [
+        "NW_007726111.1",
+        "NW_007726112.1",
+        "NW_007726113.1",
+        "NW_007726114.1",
+        "NW_007726115.1"
+      ],
+      "seq_count": 179514,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Dermoptera",
+        "family": "Cynocephalidae",
+        "genus": "Galeopterus"
+      },
+      "common_name": "Sunda flying lemur",
+      "published": "2026-04-04T02:30:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gvariegatus.NCBI.Gvariegatus302/BSgenome.Gvariegatus.NCBI.Gvariegatus302_1.0.0.tar.gz"
     }
   ]
 }
