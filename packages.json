@@ -3818,6 +3818,54 @@
       ]
     },
     {
+      "organism": "Dendrobium catenatum",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Asparagales",
+        "family": "Orchidaceae",
+        "genus": "Dendrobium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dcatenatum.NCBI.ASM160598v2",
+          "version": "1.0.0",
+          "organism": "Dendrobium catenatum",
+          "assembly": "ASM160598v2",
+          "provider": "NCBI",
+          "accession": "GCF_001605985.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001605985.2/",
+          "file_name": "BSgenome.Dcatenatum.NCBI.ASM160598v2_1.0.0.tar.gz",
+          "size": 287287319,
+          "seq_ids": [
+            "NW_021318462.1",
+            "NW_021318463.1",
+            "NW_021318464.1",
+            "NW_021318465.1",
+            "NW_021318466.1"
+          ],
+          "seq_count": 286090,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Asparagales",
+            "family": "Orchidaceae",
+            "genus": "Dendrobium"
+          },
+          "common_name": "",
+          "published": "2026-04-04T18:47:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcatenatum.NCBI.ASM160598v2/BSgenome.Dcatenatum.NCBI.ASM160598v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dermochelys coriacea",
       "common_name": "leatherback sea turtle",
       "group": "vertebrate_other",
@@ -20695,6 +20743,38 @@
       "common_name": "",
       "published": "2026-04-04T18:47:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sratti.NCBI.SrattiED321/BSgenome.Sratti.NCBI.SrattiED321_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dcatenatum.NCBI.ASM160598v2",
+      "version": "1.0.0",
+      "organism": "Dendrobium catenatum",
+      "assembly": "ASM160598v2",
+      "provider": "NCBI",
+      "accession": "GCF_001605985.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001605985.2/",
+      "file_name": "BSgenome.Dcatenatum.NCBI.ASM160598v2_1.0.0.tar.gz",
+      "size": 287287319,
+      "seq_ids": [
+        "NW_021318462.1",
+        "NW_021318463.1",
+        "NW_021318464.1",
+        "NW_021318465.1",
+        "NW_021318466.1"
+      ],
+      "seq_count": 286090,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Asparagales",
+        "family": "Orchidaceae",
+        "genus": "Dendrobium"
+      },
+      "common_name": "",
+      "published": "2026-04-04T18:47:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcatenatum.NCBI.ASM160598v2/BSgenome.Dcatenatum.NCBI.ASM160598v2_1.0.0.tar.gz"
     }
   ]
 }

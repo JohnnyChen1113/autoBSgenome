@@ -1129,3 +1129,7 @@ NeedsCompilation: no
 Package: BSgenome.Sratti.NCBI.SrattiED321
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dcatenatum.NCBI.ASM160598v2
+Version: 1.0.0
+NeedsCompilation: no
