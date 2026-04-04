@@ -4596,6 +4596,54 @@
       ]
     },
     {
+      "organism": "Juglans microcarpa x Juglans regia",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Juglandaceae",
+        "genus": "Juglans"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Jmicrocarpa.NCBI.Jm3101v10",
+          "version": "1.0.0",
+          "organism": "Juglans microcarpa x Juglans regia",
+          "assembly": "Jm3101_v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_004785595.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004785595.1/",
+          "file_name": "BSgenome.Jmicrocarpa.NCBI.Jm3101v10_1.0.0.tar.gz",
+          "size": 135670311,
+          "seq_ids": [
+            "NC_054594.1",
+            "NC_054595.1",
+            "NC_054596.1",
+            "NC_054597.1",
+            "NC_054598.1"
+          ],
+          "seq_count": 154,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fagales",
+            "family": "Juglandaceae",
+            "genus": "Juglans"
+          },
+          "common_name": "",
+          "published": "2026-04-04T14:43:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jmicrocarpa.NCBI.Jm3101v10/BSgenome.Jmicrocarpa.NCBI.Jm3101v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Kryptolebias marmoratus",
       "common_name": "mangrove rivulus",
       "group": "vertebrate_other",
@@ -17335,6 +17383,38 @@
       "common_name": "cowpea",
       "published": "2026-04-04T14:43:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vunguiculata.NCBI.ASM411807v2/BSgenome.Vunguiculata.NCBI.ASM411807v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Jmicrocarpa.NCBI.Jm3101v10",
+      "version": "1.0.0",
+      "organism": "Juglans microcarpa x Juglans regia",
+      "assembly": "Jm3101_v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_004785595.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004785595.1/",
+      "file_name": "BSgenome.Jmicrocarpa.NCBI.Jm3101v10_1.0.0.tar.gz",
+      "size": 135670311,
+      "seq_ids": [
+        "NC_054594.1",
+        "NC_054595.1",
+        "NC_054596.1",
+        "NC_054597.1",
+        "NC_054598.1"
+      ],
+      "seq_count": 154,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Juglandaceae",
+        "genus": "Juglans"
+      },
+      "common_name": "",
+      "published": "2026-04-04T14:43:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jmicrocarpa.NCBI.Jm3101v10/BSgenome.Jmicrocarpa.NCBI.Jm3101v10_1.0.0.tar.gz"
     }
   ]
 }

@@ -961,3 +961,7 @@ NeedsCompilation: no
 Package: BSgenome.Vunguiculata.NCBI.ASM411807v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Jmicrocarpa.NCBI.Jm3101v10
+Version: 1.0.0
+NeedsCompilation: no
