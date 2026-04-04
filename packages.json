@@ -8523,6 +8523,54 @@
       ]
     },
     {
+      "organism": "Setaria italica",
+      "common_name": "foxtail millet",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Setaria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sitalica.NCBI.Setariaitalicav20",
+          "version": "1.0.0",
+          "organism": "Setaria italica",
+          "assembly": "Setaria_italica_v2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000263155.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000263155.2/",
+          "file_name": "BSgenome.Sitalica.NCBI.Setariaitalicav20_1.0.0.tar.gz",
+          "size": 104419524,
+          "seq_ids": [
+            "NC_028450.1",
+            "NC_028451.1",
+            "NC_028452.1",
+            "NC_028453.1",
+            "NC_028454.1"
+          ],
+          "seq_count": 337,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Setaria"
+          },
+          "common_name": "foxtail millet",
+          "published": "2026-04-04T14:00:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sitalica.NCBI.Setariaitalicav20/BSgenome.Sitalica.NCBI.Setariaitalicav20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Setaria viridis",
       "common_name": "",
       "group": "plant",
@@ -16215,6 +16263,38 @@
       "common_name": "",
       "published": "2026-04-04T14:00:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sviridis.NCBI.Setariaviridisv40/BSgenome.Sviridis.NCBI.Setariaviridisv40_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sitalica.NCBI.Setariaitalicav20",
+      "version": "1.0.0",
+      "organism": "Setaria italica",
+      "assembly": "Setaria_italica_v2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000263155.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000263155.2/",
+      "file_name": "BSgenome.Sitalica.NCBI.Setariaitalicav20_1.0.0.tar.gz",
+      "size": 104419524,
+      "seq_ids": [
+        "NC_028450.1",
+        "NC_028451.1",
+        "NC_028452.1",
+        "NC_028453.1",
+        "NC_028454.1"
+      ],
+      "seq_count": 337,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Setaria"
+      },
+      "common_name": "foxtail millet",
+      "published": "2026-04-04T14:00:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sitalica.NCBI.Setariaitalicav20/BSgenome.Sitalica.NCBI.Setariaitalicav20_1.0.0.tar.gz"
     }
   ]
 }
