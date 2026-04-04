@@ -957,3 +957,7 @@ NeedsCompilation: no
 Package: BSgenome.Rchinensis.NCBI.RchiOBHmV2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vunguiculata.NCBI.ASM411807v2
+Version: 1.0.0
+NeedsCompilation: no
