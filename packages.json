@@ -9675,6 +9675,54 @@
       ]
     },
     {
+      "organism": "Salvia splendens",
+      "common_name": "bonfire salvia",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Salvia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ssplendens.NCBI.SspV2",
+          "version": "1.0.0",
+          "organism": "Salvia splendens",
+          "assembly": "SspV2",
+          "provider": "NCBI",
+          "accession": "GCF_004379255.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004379255.2/",
+          "file_name": "BSgenome.Ssplendens.NCBI.SspV2_1.0.0.tar.gz",
+          "size": 205083580,
+          "seq_ids": [
+            "NC_056032.1",
+            "NC_056033.1",
+            "NC_056034.1",
+            "NC_056035.1",
+            "NC_056036.1"
+          ],
+          "seq_count": 1162,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Lamiales",
+            "family": "Lamiaceae",
+            "genus": "Salvia"
+          },
+          "common_name": "bonfire salvia",
+          "published": "2026-04-04T16:41:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssplendens.NCBI.SspV2/BSgenome.Ssplendens.NCBI.SspV2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sander lucioperca",
       "common_name": "pikeperch",
       "group": "vertebrate_other",
@@ -19015,6 +19063,38 @@
       "common_name": "sacred lotus",
       "published": "2026-04-04T16:41:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnucifera.NCBI.ChineseLotus11/BSgenome.Nnucifera.NCBI.ChineseLotus11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ssplendens.NCBI.SspV2",
+      "version": "1.0.0",
+      "organism": "Salvia splendens",
+      "assembly": "SspV2",
+      "provider": "NCBI",
+      "accession": "GCF_004379255.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004379255.2/",
+      "file_name": "BSgenome.Ssplendens.NCBI.SspV2_1.0.0.tar.gz",
+      "size": 205083580,
+      "seq_ids": [
+        "NC_056032.1",
+        "NC_056033.1",
+        "NC_056034.1",
+        "NC_056035.1",
+        "NC_056036.1"
+      ],
+      "seq_count": 1162,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Lamiaceae",
+        "genus": "Salvia"
+      },
+      "common_name": "bonfire salvia",
+      "published": "2026-04-04T16:41:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssplendens.NCBI.SspV2/BSgenome.Ssplendens.NCBI.SspV2_1.0.0.tar.gz"
     }
   ]
 }
