@@ -1144,6 +1144,54 @@
       ]
     },
     {
+      "organism": "Cajanus cajan",
+      "common_name": "pigeon pea",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Cajanus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccajan.NCBI.CcajanV11",
+          "version": "1.0.0",
+          "organism": "Cajanus cajan",
+          "assembly": "C.cajan_V1.1",
+          "provider": "NCBI",
+          "accession": "GCF_000340665.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000340665.2/",
+          "file_name": "BSgenome.Ccajan.NCBI.CcajanV11_1.0.0.tar.gz",
+          "size": 144897799,
+          "seq_ids": [
+            "NC_033804.1",
+            "NC_033805.1",
+            "NC_033806.1",
+            "NC_033807.1",
+            "NC_033808.1"
+          ],
+          "seq_count": 31511,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Cajanus"
+          },
+          "common_name": "pigeon pea",
+          "published": "2026-04-04T15:36:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccajan.NCBI.CcajanV11/BSgenome.Ccajan.NCBI.CcajanV11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Calidris pugnax",
       "common_name": "ruff",
       "group": "vertebrate_other",
@@ -17815,6 +17863,38 @@
       "common_name": "Guinea yam",
       "published": "2026-04-04T15:36:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta/BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccajan.NCBI.CcajanV11",
+      "version": "1.0.0",
+      "organism": "Cajanus cajan",
+      "assembly": "C.cajan_V1.1",
+      "provider": "NCBI",
+      "accession": "GCF_000340665.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000340665.2/",
+      "file_name": "BSgenome.Ccajan.NCBI.CcajanV11_1.0.0.tar.gz",
+      "size": 144897799,
+      "seq_ids": [
+        "NC_033804.1",
+        "NC_033805.1",
+        "NC_033806.1",
+        "NC_033807.1",
+        "NC_033808.1"
+      ],
+      "seq_count": 31511,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Cajanus"
+      },
+      "common_name": "pigeon pea",
+      "published": "2026-04-04T15:36:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccajan.NCBI.CcajanV11/BSgenome.Ccajan.NCBI.CcajanV11_1.0.0.tar.gz"
     }
   ]
 }

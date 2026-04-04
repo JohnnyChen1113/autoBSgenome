@@ -985,3 +985,7 @@ NeedsCompilation: no
 Package: BSgenome.Dcayenensis.NCBI.TDr96F1v2PseudoChromosomerev07lg8w2225fasta
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccajan.NCBI.CcajanV11
+Version: 1.0.0
+NeedsCompilation: no
