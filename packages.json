@@ -1287,6 +1287,54 @@
       ]
     },
     {
+      "organism": "Charadrius vociferus",
+      "common_name": "killdeer",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Charadrius"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cvociferus.NCBI.ASM70802v2",
+          "version": "1.0.0",
+          "organism": "Charadrius vociferus",
+          "assembly": "ASM70802v2",
+          "provider": "NCBI",
+          "accession": "GCF_000708025.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000708025.1/",
+          "file_name": "BSgenome.Cvociferus.NCBI.ASM70802v2_1.0.0.tar.gz",
+          "size": 313726497,
+          "seq_ids": [
+            "NW_009646210.1",
+            "NW_009646211.1",
+            "NW_009646212.1",
+            "NW_009646213.1",
+            "NW_009646214.1"
+          ],
+          "seq_count": 15167,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Charadriiformes",
+            "family": "Charadriidae",
+            "genus": "Charadrius"
+          },
+          "common_name": "killdeer",
+          "published": "2026-04-04T10:10:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvociferus.NCBI.ASM70802v2/BSgenome.Cvociferus.NCBI.ASM70802v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chinchilla lanigera",
       "common_name": "long-tailed chinchilla",
       "group": "vertebrate_mammalian",
@@ -11756,6 +11804,38 @@
       "common_name": "Adelie penguin",
       "published": "2026-04-04T10:07:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Padeliae.NCBI.ASM69910v1/BSgenome.Padeliae.NCBI.ASM69910v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cvociferus.NCBI.ASM70802v2",
+      "version": "1.0.0",
+      "organism": "Charadrius vociferus",
+      "assembly": "ASM70802v2",
+      "provider": "NCBI",
+      "accession": "GCF_000708025.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000708025.1/",
+      "file_name": "BSgenome.Cvociferus.NCBI.ASM70802v2_1.0.0.tar.gz",
+      "size": 313726497,
+      "seq_ids": [
+        "NW_009646210.1",
+        "NW_009646211.1",
+        "NW_009646212.1",
+        "NW_009646213.1",
+        "NW_009646214.1"
+      ],
+      "seq_count": 15167,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Charadriiformes",
+        "family": "Charadriidae",
+        "genus": "Charadrius"
+      },
+      "common_name": "killdeer",
+      "published": "2026-04-04T10:10:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvociferus.NCBI.ASM70802v2/BSgenome.Cvociferus.NCBI.ASM70802v2_1.0.0.tar.gz"
     }
   ]
 }
