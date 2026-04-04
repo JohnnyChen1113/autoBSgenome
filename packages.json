@@ -7895,6 +7895,52 @@
       ]
     },
     {
+      "organism": "Terrapene triunguis",
+      "common_name": "Three-toed box turtle",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Emydidae",
+        "genus": "Terrapene"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ttriunguis.NCBI.Tmtriunguis20",
+          "version": "1.0.0",
+          "organism": "Terrapene triunguis",
+          "assembly": "T_m_triunguis-2.0",
+          "provider": "NCBI",
+          "accession": "GCF_002925995.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002925995.2/",
+          "file_name": "BSgenome.Ttriunguis.NCBI.Tmtriunguis20_1.0.0.tar.gz",
+          "size": 639931160,
+          "seq_ids": [
+            "NW_020664351.1",
+            "NW_020664352.1",
+            "NW_020664353.1",
+            "NW_020664354.1",
+            "NW_020664355.1"
+          ],
+          "seq_count": 52260,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Emydidae",
+            "genus": "Terrapene"
+          },
+          "common_name": "Three-toed box turtle",
+          "published": "2026-04-04T11:43:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ttriunguis.NCBI.Tmtriunguis20/BSgenome.Ttriunguis.NCBI.Tmtriunguis20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Thamnophis elegans",
       "common_name": "Western terrestrial garter snake",
       "group": "vertebrate_other",
@@ -14058,6 +14104,37 @@
       "common_name": "Gharial",
       "published": "2026-04-04T11:42:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ggangeticus.NCBI.GavGancomp1/BSgenome.Ggangeticus.NCBI.GavGancomp1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ttriunguis.NCBI.Tmtriunguis20",
+      "version": "1.0.0",
+      "organism": "Terrapene triunguis",
+      "assembly": "T_m_triunguis-2.0",
+      "provider": "NCBI",
+      "accession": "GCF_002925995.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002925995.2/",
+      "file_name": "BSgenome.Ttriunguis.NCBI.Tmtriunguis20_1.0.0.tar.gz",
+      "size": 639931160,
+      "seq_ids": [
+        "NW_020664351.1",
+        "NW_020664352.1",
+        "NW_020664353.1",
+        "NW_020664354.1",
+        "NW_020664355.1"
+      ],
+      "seq_count": 52260,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Emydidae",
+        "genus": "Terrapene"
+      },
+      "common_name": "Three-toed box turtle",
+      "published": "2026-04-04T11:43:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ttriunguis.NCBI.Tmtriunguis20/BSgenome.Ttriunguis.NCBI.Tmtriunguis20_1.0.0.tar.gz"
     }
   ]
 }
