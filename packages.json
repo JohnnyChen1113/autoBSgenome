@@ -3306,6 +3306,54 @@
       ]
     },
     {
+      "organism": "Gekko japonicus",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Gekkonidae",
+        "genus": "Gekko"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gjaponicus.NCBI.GekkojaponicusV11",
+          "version": "1.0.0",
+          "organism": "Gekko japonicus",
+          "assembly": "Gekko_japonicus_V1.1",
+          "provider": "NCBI",
+          "accession": "GCF_001447785.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001447785.1/",
+          "file_name": "BSgenome.Gjaponicus.NCBI.GekkojaponicusV11_1.0.0.tar.gz",
+          "size": 637385014,
+          "seq_ids": [
+            "NW_015159711.1",
+            "NW_015159712.1",
+            "NW_015159713.1",
+            "NW_015159714.1",
+            "NW_015159715.1"
+          ],
+          "seq_count": 191500,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Gekkonidae",
+            "genus": "Gekko"
+          },
+          "common_name": "",
+          "published": "2026-04-04T11:42:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gjaponicus.NCBI.GekkojaponicusV11/BSgenome.Gjaponicus.NCBI.GekkojaponicusV11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Geospiza fortis",
       "common_name": "medium ground-finch",
       "group": "vertebrate_other",
@@ -13821,6 +13869,38 @@
       "common_name": "Goodes thornscrub tortoise",
       "published": "2026-04-04T11:41:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gevgoodei.NCBI.rGopEvg1v1p/BSgenome.Gevgoodei.NCBI.rGopEvg1v1p_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gjaponicus.NCBI.GekkojaponicusV11",
+      "version": "1.0.0",
+      "organism": "Gekko japonicus",
+      "assembly": "Gekko_japonicus_V1.1",
+      "provider": "NCBI",
+      "accession": "GCF_001447785.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001447785.1/",
+      "file_name": "BSgenome.Gjaponicus.NCBI.GekkojaponicusV11_1.0.0.tar.gz",
+      "size": 637385014,
+      "seq_ids": [
+        "NW_015159711.1",
+        "NW_015159712.1",
+        "NW_015159713.1",
+        "NW_015159714.1",
+        "NW_015159715.1"
+      ],
+      "seq_count": 191500,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Gekkonidae",
+        "genus": "Gekko"
+      },
+      "common_name": "",
+      "published": "2026-04-04T11:42:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gjaponicus.NCBI.GekkojaponicusV11/BSgenome.Gjaponicus.NCBI.GekkojaponicusV11_1.0.0.tar.gz"
     }
   ]
 }
