@@ -1425,3 +1425,7 @@ NeedsCompilation: no
 Package: BSgenome.Msacchari.NCBI.SCAv20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acephalotes.NCBI.Attacep10
+Version: 1.0.0
+NeedsCompilation: no

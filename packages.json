@@ -1242,6 +1242,54 @@
       ]
     },
     {
+      "organism": "Atta cephalotes",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Atta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acephalotes.NCBI.Attacep10",
+          "version": "1.0.0",
+          "organism": "Atta cephalotes",
+          "assembly": "Attacep1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000143395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143395.1/",
+          "file_name": "BSgenome.Acephalotes.NCBI.Attacep10_1.0.0.tar.gz",
+          "size": 75018231,
+          "seq_ids": [
+            "NW_012130065.1",
+            "NW_012130066.1",
+            "NW_012130067.1",
+            "NW_012130068.1",
+            "NW_012130069.1"
+          ],
+          "seq_count": 2835,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Atta"
+          },
+          "common_name": "",
+          "published": "2026-04-04T23:35:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acephalotes.NCBI.Attacep10/BSgenome.Acephalotes.NCBI.Attacep10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Atta colombica",
       "common_name": "",
       "group": "invertebrate",
@@ -26615,6 +26663,38 @@
       "common_name": "",
       "published": "2026-04-04T23:35:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msacchari.NCBI.SCAv20/BSgenome.Msacchari.NCBI.SCAv20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acephalotes.NCBI.Attacep10",
+      "version": "1.0.0",
+      "organism": "Atta cephalotes",
+      "assembly": "Attacep1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000143395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143395.1/",
+      "file_name": "BSgenome.Acephalotes.NCBI.Attacep10_1.0.0.tar.gz",
+      "size": 75018231,
+      "seq_ids": [
+        "NW_012130065.1",
+        "NW_012130066.1",
+        "NW_012130067.1",
+        "NW_012130068.1",
+        "NW_012130069.1"
+      ],
+      "seq_count": 2835,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Atta"
+      },
+      "common_name": "",
+      "published": "2026-04-04T23:35:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acephalotes.NCBI.Attacep10/BSgenome.Acephalotes.NCBI.Attacep10_1.0.0.tar.gz"
     }
   ]
 }
