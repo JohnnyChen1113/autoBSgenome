@@ -235,17 +235,19 @@ async function init() {
   }
   computeGroup(root);
 
-  // Collect internal node names at certain ranks for initial collapsing
-  const collapsedIds = [];
-  function collectCollapsible(node, depth) {
+  // Collect nodes to collapse initially — collapse at class level
+  // So default view shows: Life → Eukaryota → kingdoms → phyla → classes (collapsed)
+  const initialCollapse = [];
+  const COLLAPSE_RANKS = new Set(['class', 'phylum']);
+  function collectCollapsible(node) {
     if (!node.children || !node.children.length) return;
-    // Collapse at family level (depth ~6) if it has 3+ leaves
-    if (node._rank === 'family' && node.children.length >= 3) {
-      collapsedIds.push(node.name);
+    if (COLLAPSE_RANKS.has(node._rank)) {
+      initialCollapse.push(node.name);
+    } else {
+      node.children.forEach(collectCollapsible);
     }
-    node.children.forEach(c => collectCollapsible(c, depth + 1));
   }
-  collectCollapsible(root, 0);
+  collectCollapsible(root);
 
   // Convert to Newick
   const newick = toNewick(root) + ';';
@@ -323,6 +325,16 @@ async function init() {
     haloWidth: 1,
     selectedColour: '#003DA5',
   });
+
+  // Collapse nodes after tree is ready
+  if (initialCollapse.length) {
+    try {
+      initialCollapse.forEach(id => tree.collapseNode(id));
+    } catch (e) {
+      // Fallback: try collapsedIds prop
+      try { tree.setProps({ collapsedIds: initialCollapse }); } catch (e2) {}
+    }
+  }
 
   // Click handler — show info panel
   container.addEventListener('click', () => {
