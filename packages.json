@@ -9909,6 +9909,54 @@
       ]
     },
     {
+      "organism": "Vigna radiata var. radiata",
+      "common_name": "mung bean",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Vigna"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vradiata.NCBI.Vradiataver6",
+          "version": "1.0.0",
+          "organism": "Vigna radiata var. radiata",
+          "assembly": "Vradiata_ver6",
+          "provider": "NCBI",
+          "accession": "GCF_000741045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000741045.1/",
+          "file_name": "BSgenome.Vradiata.NCBI.Vradiataver6_1.0.0.tar.gz",
+          "size": 112538744,
+          "seq_ids": [
+            "NC_028351.1",
+            "NC_028352.1",
+            "NC_028353.1",
+            "NC_028354.1",
+            "NC_028355.1"
+          ],
+          "seq_count": 2499,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Vigna"
+          },
+          "common_name": "mung bean",
+          "published": "2026-04-04T14:42:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vradiata.NCBI.Vradiataver6/BSgenome.Vradiata.NCBI.Vradiataver6_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Vittaforma corneae ATCC 50505",
       "common_name": "",
       "group": "fungi",
@@ -16855,6 +16903,38 @@
       "common_name": "trilobed morning glory",
       "published": "2026-04-04T14:42:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Itriloba.NCBI.ASM357664v1/BSgenome.Itriloba.NCBI.ASM357664v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vradiata.NCBI.Vradiataver6",
+      "version": "1.0.0",
+      "organism": "Vigna radiata var. radiata",
+      "assembly": "Vradiata_ver6",
+      "provider": "NCBI",
+      "accession": "GCF_000741045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000741045.1/",
+      "file_name": "BSgenome.Vradiata.NCBI.Vradiataver6_1.0.0.tar.gz",
+      "size": 112538744,
+      "seq_ids": [
+        "NC_028351.1",
+        "NC_028352.1",
+        "NC_028353.1",
+        "NC_028354.1",
+        "NC_028355.1"
+      ],
+      "seq_count": 2499,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Vigna"
+      },
+      "common_name": "mung bean",
+      "published": "2026-04-04T14:42:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vradiata.NCBI.Vradiataver6/BSgenome.Vradiata.NCBI.Vradiataver6_1.0.0.tar.gz"
     }
   ]
 }
