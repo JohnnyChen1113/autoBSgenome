@@ -110,6 +110,24 @@
   .alpha-btn.disabled { opacity: 0.3; cursor: default; }
   .alpha-btn.disabled:hover { border-color: var(--border); color: var(--text-muted); }
   .empty { text-align: center; padding: 48px 0; color: var(--text-muted); }
+
+  /* Bioconductor section */
+  .bioc-section { margin-top: 40px; padding-top: 32px; border-top: 2px solid var(--border); }
+  .bioc-section h2 { font-family: 'Source Serif 4', serif; font-size: 22px; color: var(--text); margin-bottom: 4px; }
+  .bioc-section .subtitle { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+  .bioc-org { margin-bottom: 12px; }
+  .bioc-org-header { font-size: 15px; font-weight: 600; font-style: italic; color: var(--text); padding: 8px 0; cursor: pointer; display: flex; align-items: center; gap: 8px; }
+  .bioc-org-header .pkg-count { font-style: normal; font-size: 12px; color: var(--text-muted); background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 10px; padding: 0 8px; }
+  .bioc-pkg { display: flex; align-items: center; justify-content: space-between; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; margin: 4px 0; font-size: 13px; }
+  .bioc-pkg:hover { border-color: var(--primary); background: #f8f9fe; }
+  .bioc-pkg-name { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; color: var(--text); }
+  .bioc-pkg-meta { display: flex; gap: 8px; align-items: center; }
+  .bioc-pkg-meta .badge-bioc { background: #e8f5e9; color: #2e7d32; }
+  .bioc-pkg-meta a { font-size: 12px; color: var(--primary); text-decoration: none; }
+  .bioc-pkg-meta a:hover { text-decoration: underline; }
+  .bioc-masked { opacity: 0.6; }
+  .bioc-search-info { font-size: 12px; color: var(--text-muted); margin-bottom: 12px; }
+
   footer { border-top: 1px solid var(--border); padding: 24px 0; margin-top: 48px; text-align: center; font-size: 13px; color: var(--text-muted); }
 
   @media (max-width: 640px) {
@@ -176,6 +194,13 @@
 
   <div class="org-list" id="org-list">
     <div class="empty" id="loading">Loading packages...</div>
+  </div>
+
+  <div class="bioc-section" id="bioc-section" style="display:none;">
+    <h2>Official Bioconductor BSgenome Packages</h2>
+    <p class="subtitle">113 packages from Bioconductor for 33 model organisms. Install with <code>BiocManager::install()</code>.</p>
+    <div class="bioc-search-info" id="bioc-search-info"></div>
+    <div id="bioc-list"></div>
   </div>
 </div>
 
@@ -491,9 +516,84 @@ async function loadProgress() {
   }
 }
 
+async function loadBiocPackages() {
+  try {
+    const res = await fetch(`${BASE}/bioc-packages.json?t=${Date.now()}`);
+    const pkgs = await res.json();
+
+    // Group by organism abbreviation
+    const orgs = {};
+    pkgs.forEach(p => {
+      const key = p.organism_abbrev;
+      if (!orgs[key]) orgs[key] = [];
+      orgs[key].push(p);
+    });
+
+    const section = document.getElementById('bioc-section');
+    const list = document.getElementById('bioc-list');
+    section.style.display = '';
+
+    let html = '';
+    for (const org of Object.keys(orgs).sort()) {
+      const orgPkgs = orgs[org];
+      html += `<div class="bioc-org">`;
+      html += `<div class="bioc-org-header">${org} <span class="pkg-count">${orgPkgs.length}</span></div>`;
+      for (const p of orgPkgs) {
+        const masked = p.masked ? ' bioc-masked' : '';
+        html += `<div class="bioc-pkg${masked}" data-bioc-search="${p.package.toLowerCase()}">`;
+        html += `<span class="bioc-pkg-name">${p.package}</span>`;
+        html += `<span class="bioc-pkg-meta">`;
+        html += `<span class="badge badge-bioc">${p.provider}</span>`;
+        html += `<span style="font-size:12px;color:var(--text-muted);">${p.version}</span>`;
+        html += `<a href="${p.bioc_url}" target="_blank">Bioconductor ↗</a>`;
+        html += `<button class="btn btn-outline" style="padding:3px 8px;font-size:11px;" onclick="copyBiocInstall('${p.package}')">Copy install</button>`;
+        html += `</span></div>`;
+      }
+      html += `</div>`;
+    }
+    list.innerHTML = html;
+
+    // Connect search to also filter bioc packages
+    const searchInput = document.getElementById('search');
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.trim().toLowerCase();
+      const biocInfo = document.getElementById('bioc-search-info');
+      if (!q) {
+        document.querySelectorAll('.bioc-pkg').forEach(el => el.style.display = '');
+        document.querySelectorAll('.bioc-org').forEach(el => el.style.display = '');
+        biocInfo.textContent = '';
+        return;
+      }
+      let visible = 0;
+      document.querySelectorAll('.bioc-pkg').forEach(el => {
+        const match = el.dataset.biocSearch.includes(q);
+        el.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      document.querySelectorAll('.bioc-org').forEach(el => {
+        const anyVisible = [...el.querySelectorAll('.bioc-pkg')].some(p => p.style.display !== 'none');
+        el.style.display = anyVisible ? '' : 'none';
+      });
+      biocInfo.textContent = visible > 0 ? `${visible} Bioconductor package(s) match` : '';
+    });
+  } catch (e) {
+    // bioc-packages.json not available
+  }
+}
+
+function copyBiocInstall(pkg) {
+  const cmd = `BiocManager::install("${pkg}")`;
+  navigator.clipboard.writeText(cmd).then(() => {
+    const btn = event.target;
+    btn.textContent = 'Copied!';
+    setTimeout(() => btn.textContent = 'Copy install', 1500);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   loadPackages();
   loadProgress();
+  loadBiocPackages();
 });
 </script>
 
