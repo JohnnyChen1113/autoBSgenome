@@ -349,3 +349,7 @@ NeedsCompilation: no
 Package: BSgenome.Odegus.NCBI.OctDeg10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptephrosceles.NCBI.ASM277652v5
+Version: 1.0.0
+NeedsCompilation: no

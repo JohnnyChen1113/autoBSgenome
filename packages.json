@@ -2613,6 +2613,54 @@
       ]
     },
     {
+      "organism": "Piliocolobus tephrosceles",
+      "common_name": "Ugandan red Colobus",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Piliocolobus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ptephrosceles.NCBI.ASM277652v5",
+          "version": "1.0.0",
+          "organism": "Piliocolobus tephrosceles",
+          "assembly": "ASM277652v5",
+          "provider": "NCBI",
+          "accession": "GCF_002776525.5",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002776525.5/",
+          "file_name": "BSgenome.Ptephrosceles.NCBI.ASM277652v5_1.0.0.tar.gz",
+          "size": 746673544,
+          "seq_ids": [
+            "NC_045434.1",
+            "NC_045435.1",
+            "NC_045436.1",
+            "NC_045437.1",
+            "NC_045438.1"
+          ],
+          "seq_count": 32287,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Piliocolobus"
+          },
+          "common_name": "Ugandan red Colobus",
+          "published": "2026-04-04T02:29:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptephrosceles.NCBI.ASM277652v5/BSgenome.Ptephrosceles.NCBI.ASM277652v5_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pteropus alecto",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -5119,6 +5167,38 @@
       "common_name": "degu",
       "published": "2026-04-04T02:28:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Odegus.NCBI.OctDeg10/BSgenome.Odegus.NCBI.OctDeg10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ptephrosceles.NCBI.ASM277652v5",
+      "version": "1.0.0",
+      "organism": "Piliocolobus tephrosceles",
+      "assembly": "ASM277652v5",
+      "provider": "NCBI",
+      "accession": "GCF_002776525.5",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002776525.5/",
+      "file_name": "BSgenome.Ptephrosceles.NCBI.ASM277652v5_1.0.0.tar.gz",
+      "size": 746673544,
+      "seq_ids": [
+        "NC_045434.1",
+        "NC_045435.1",
+        "NC_045436.1",
+        "NC_045437.1",
+        "NC_045438.1"
+      ],
+      "seq_count": 32287,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Piliocolobus"
+      },
+      "common_name": "Ugandan red Colobus",
+      "published": "2026-04-04T02:29:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptephrosceles.NCBI.ASM277652v5/BSgenome.Ptephrosceles.NCBI.ASM277652v5_1.0.0.tar.gz"
     }
   ]
 }
