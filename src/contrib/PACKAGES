@@ -1153,3 +1153,7 @@ NeedsCompilation: no
 Package: BSgenome.Nsylvestris.NCBI.ASM39365v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nattenuata.NCBI.NIATTr2
+Version: 1.0.0
+NeedsCompilation: no
