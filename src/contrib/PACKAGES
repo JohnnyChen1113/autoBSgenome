@@ -865,3 +865,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmoschata.NCBI.Cmos10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgranatum.NCBI.ASM765513v2
+Version: 1.0.0
+NeedsCompilation: no

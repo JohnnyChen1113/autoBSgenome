@@ -7567,6 +7567,54 @@
       ]
     },
     {
+      "organism": "Punica granatum",
+      "common_name": "pomegranate",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Myrtales",
+        "family": "Lythraceae",
+        "genus": "Punica"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pgranatum.NCBI.ASM765513v2",
+          "version": "1.0.0",
+          "organism": "Punica granatum",
+          "assembly": "ASM765513v2",
+          "provider": "NCBI",
+          "accession": "GCF_007655135.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007655135.1/",
+          "file_name": "BSgenome.Pgranatum.NCBI.ASM765513v2_1.0.0.tar.gz",
+          "size": 80117794,
+          "seq_ids": [
+            "NC_045127.1",
+            "NC_045128.1",
+            "NC_045129.1",
+            "NC_045130.1",
+            "NC_045131.1"
+          ],
+          "seq_count": 474,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Myrtales",
+            "family": "Lythraceae",
+            "genus": "Punica"
+          },
+          "common_name": "pomegranate",
+          "published": "2026-04-04T13:58:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgranatum.NCBI.ASM765513v2/BSgenome.Pgranatum.NCBI.ASM765513v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pygoscelis adeliae",
       "common_name": "Adelie penguin",
       "group": "vertebrate_other",
@@ -15415,6 +15463,38 @@
       "common_name": "crookneck pumpkin",
       "published": "2026-04-04T13:58:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmoschata.NCBI.Cmos10/BSgenome.Cmoschata.NCBI.Cmos10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pgranatum.NCBI.ASM765513v2",
+      "version": "1.0.0",
+      "organism": "Punica granatum",
+      "assembly": "ASM765513v2",
+      "provider": "NCBI",
+      "accession": "GCF_007655135.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007655135.1/",
+      "file_name": "BSgenome.Pgranatum.NCBI.ASM765513v2_1.0.0.tar.gz",
+      "size": 80117794,
+      "seq_ids": [
+        "NC_045127.1",
+        "NC_045128.1",
+        "NC_045129.1",
+        "NC_045130.1",
+        "NC_045131.1"
+      ],
+      "seq_count": 474,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Myrtales",
+        "family": "Lythraceae",
+        "genus": "Punica"
+      },
+      "common_name": "pomegranate",
+      "published": "2026-04-04T13:58:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgranatum.NCBI.ASM765513v2/BSgenome.Pgranatum.NCBI.ASM765513v2_1.0.0.tar.gz"
     }
   ]
 }
