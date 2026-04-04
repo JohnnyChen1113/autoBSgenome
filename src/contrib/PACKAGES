@@ -1397,3 +1397,7 @@ NeedsCompilation: no
 Package: BSgenome.Acolombica.NCBI.Acol10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tseptentrionalis.NCBI.Tsep10
+Version: 1.0.0
+NeedsCompilation: no

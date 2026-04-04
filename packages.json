@@ -14901,6 +14901,54 @@
       ]
     },
     {
+      "organism": "Trachymyrmex septentrionalis",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Trachymyrmex"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tseptentrionalis.NCBI.Tsep10",
+          "version": "1.0.0",
+          "organism": "Trachymyrmex septentrionalis",
+          "assembly": "Tsep1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001594115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001594115.1/",
+          "file_name": "BSgenome.Tseptentrionalis.NCBI.Tsep10_1.0.0.tar.gz",
+          "size": 76338366,
+          "seq_ids": [
+            "NW_017300354.1",
+            "NW_017300355.1",
+            "NW_017300356.1",
+            "NW_017300357.1",
+            "NW_017300358.1"
+          ],
+          "seq_count": 5836,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Trachymyrmex"
+          },
+          "common_name": "",
+          "published": "2026-04-04T22:36:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tseptentrionalis.NCBI.Tsep10/BSgenome.Tseptentrionalis.NCBI.Tsep10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichechus manatus latirostris",
       "common_name": "Florida manatee",
       "group": "vertebrate_mammalian",
@@ -26055,6 +26103,38 @@
       "common_name": "",
       "published": "2026-04-04T22:35:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acolombica.NCBI.Acol10/BSgenome.Acolombica.NCBI.Acol10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tseptentrionalis.NCBI.Tsep10",
+      "version": "1.0.0",
+      "organism": "Trachymyrmex septentrionalis",
+      "assembly": "Tsep1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001594115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001594115.1/",
+      "file_name": "BSgenome.Tseptentrionalis.NCBI.Tsep10_1.0.0.tar.gz",
+      "size": 76338366,
+      "seq_ids": [
+        "NW_017300354.1",
+        "NW_017300355.1",
+        "NW_017300356.1",
+        "NW_017300357.1",
+        "NW_017300358.1"
+      ],
+      "seq_count": 5836,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Trachymyrmex"
+      },
+      "common_name": "",
+      "published": "2026-04-04T22:36:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tseptentrionalis.NCBI.Tsep10/BSgenome.Tseptentrionalis.NCBI.Tsep10_1.0.0.tar.gz"
     }
   ]
 }
