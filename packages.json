@@ -1619,6 +1619,54 @@
       ]
     },
     {
+      "organism": "Chiloscyllium plagiosum",
+      "common_name": "whitespotted bambooshark",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Chondrichthyes",
+        "order": "Orectolobiformes",
+        "family": "Hemiscylliidae",
+        "genus": "Chiloscyllium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cplagiosum.NCBI.ASM401019v1",
+          "version": "1.0.0",
+          "organism": "Chiloscyllium plagiosum",
+          "assembly": "ASM401019v1",
+          "provider": "NCBI",
+          "accession": "GCF_004010195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004010195.1/",
+          "file_name": "BSgenome.Cplagiosum.NCBI.ASM401019v1_1.0.0.tar.gz",
+          "size": 878975766,
+          "seq_ids": [
+            "NC_057710.1",
+            "NC_057711.1",
+            "NC_057712.1",
+            "NC_057713.1",
+            "NC_057714.1"
+          ],
+          "seq_count": 101977,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Chondrichthyes",
+            "order": "Orectolobiformes",
+            "family": "Hemiscylliidae",
+            "genus": "Chiloscyllium"
+          },
+          "common_name": "whitespotted bambooshark",
+          "published": "2026-04-04T11:44:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cplagiosum.NCBI.ASM401019v1/BSgenome.Cplagiosum.NCBI.ASM401019v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chinchilla lanigera",
       "common_name": "long-tailed chinchilla",
       "group": "vertebrate_mammalian",
@@ -14135,6 +14183,38 @@
       "common_name": "Three-toed box turtle",
       "published": "2026-04-04T11:43:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ttriunguis.NCBI.Tmtriunguis20/BSgenome.Ttriunguis.NCBI.Tmtriunguis20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cplagiosum.NCBI.ASM401019v1",
+      "version": "1.0.0",
+      "organism": "Chiloscyllium plagiosum",
+      "assembly": "ASM401019v1",
+      "provider": "NCBI",
+      "accession": "GCF_004010195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004010195.1/",
+      "file_name": "BSgenome.Cplagiosum.NCBI.ASM401019v1_1.0.0.tar.gz",
+      "size": 878975766,
+      "seq_ids": [
+        "NC_057710.1",
+        "NC_057711.1",
+        "NC_057712.1",
+        "NC_057713.1",
+        "NC_057714.1"
+      ],
+      "seq_count": 101977,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Chondrichthyes",
+        "order": "Orectolobiformes",
+        "family": "Hemiscylliidae",
+        "genus": "Chiloscyllium"
+      },
+      "common_name": "whitespotted bambooshark",
+      "published": "2026-04-04T11:44:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cplagiosum.NCBI.ASM401019v1/BSgenome.Cplagiosum.NCBI.ASM401019v1_1.0.0.tar.gz"
     }
   ]
 }

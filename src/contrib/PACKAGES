@@ -801,3 +801,7 @@ NeedsCompilation: no
 Package: BSgenome.Ttriunguis.NCBI.Tmtriunguis20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cplagiosum.NCBI.ASM401019v1
+Version: 1.0.0
+NeedsCompilation: no
