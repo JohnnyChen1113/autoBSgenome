@@ -13589,6 +13589,54 @@
       ]
     },
     {
+      "organism": "Rhopalosiphum maidis",
+      "common_name": "corn leaf aphid",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hemiptera",
+        "family": "Aphididae",
+        "genus": "Rhopalosiphum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rmaidis.NCBI.ASM367621v3",
+          "version": "1.0.0",
+          "organism": "Rhopalosiphum maidis",
+          "assembly": "ASM367621v3",
+          "provider": "NCBI",
+          "accession": "GCF_003676215.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003676215.2/",
+          "file_name": "BSgenome.Rmaidis.NCBI.ASM367621v3_1.0.0.tar.gz",
+          "size": 83168709,
+          "seq_ids": [
+            "NC_040877.1",
+            "NC_040878.1",
+            "NC_040879.1",
+            "NC_040880.1",
+            "NW_021014584.1"
+          ],
+          "seq_count": 220,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hemiptera",
+            "family": "Aphididae",
+            "genus": "Rhopalosiphum"
+          },
+          "common_name": "corn leaf aphid",
+          "published": "2026-04-04T23:35:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rmaidis.NCBI.ASM367621v3/BSgenome.Rmaidis.NCBI.ASM367621v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rosa chinensis",
       "common_name": "",
       "group": "plant",
@@ -26855,6 +26903,38 @@
       "common_name": "Jerdon's jumping ant",
       "published": "2026-04-04T23:35:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsaltator.NCBI.Hsalv86/BSgenome.Hsaltator.NCBI.Hsalv86_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rmaidis.NCBI.ASM367621v3",
+      "version": "1.0.0",
+      "organism": "Rhopalosiphum maidis",
+      "assembly": "ASM367621v3",
+      "provider": "NCBI",
+      "accession": "GCF_003676215.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003676215.2/",
+      "file_name": "BSgenome.Rmaidis.NCBI.ASM367621v3_1.0.0.tar.gz",
+      "size": 83168709,
+      "seq_ids": [
+        "NC_040877.1",
+        "NC_040878.1",
+        "NC_040879.1",
+        "NC_040880.1",
+        "NW_021014584.1"
+      ],
+      "seq_count": 220,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hemiptera",
+        "family": "Aphididae",
+        "genus": "Rhopalosiphum"
+      },
+      "common_name": "corn leaf aphid",
+      "published": "2026-04-04T23:35:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rmaidis.NCBI.ASM367621v3/BSgenome.Rmaidis.NCBI.ASM367621v3_1.0.0.tar.gz"
     }
   ]
 }

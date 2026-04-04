@@ -1437,3 +1437,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsaltator.NCBI.Hsalv86
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rmaidis.NCBI.ASM367621v3
+Version: 1.0.0
+NeedsCompilation: no
