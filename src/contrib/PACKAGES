@@ -1121,3 +1121,7 @@ NeedsCompilation: no
 Package: BSgenome.Lsativa.NCBI.LsatSalinasv15
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psomniferum.NCBI.ASM357369v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -8291,6 +8291,54 @@
       ]
     },
     {
+      "organism": "Papaver somniferum",
+      "common_name": "opium poppy",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Ranunculales",
+        "family": "Papaveraceae",
+        "genus": "Papaver"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psomniferum.NCBI.ASM357369v1",
+          "version": "1.0.0",
+          "organism": "Papaver somniferum",
+          "assembly": "ASM357369v1",
+          "provider": "NCBI",
+          "accession": "GCF_003573695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003573695.1/",
+          "file_name": "BSgenome.Psomniferum.NCBI.ASM357369v1_1.0.0.tar.gz",
+          "size": 664090000,
+          "seq_ids": [
+            "NC_039358.1",
+            "NC_039359.1",
+            "NC_039360.1",
+            "NC_039361.1",
+            "NC_039362.1"
+          ],
+          "seq_count": 34381,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Ranunculales",
+            "family": "Papaveraceae",
+            "genus": "Papaver"
+          },
+          "common_name": "opium poppy",
+          "published": "2026-04-04T17:39:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psomniferum.NCBI.ASM357369v1/BSgenome.Psomniferum.NCBI.ASM357369v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Papio anubis",
       "common_name": "olive baboon",
       "group": "vertebrate_mammalian",
@@ -20535,6 +20583,38 @@
       "common_name": "garden lettuce",
       "published": "2026-04-04T17:38:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lsativa.NCBI.LsatSalinasv15/BSgenome.Lsativa.NCBI.LsatSalinasv15_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psomniferum.NCBI.ASM357369v1",
+      "version": "1.0.0",
+      "organism": "Papaver somniferum",
+      "assembly": "ASM357369v1",
+      "provider": "NCBI",
+      "accession": "GCF_003573695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003573695.1/",
+      "file_name": "BSgenome.Psomniferum.NCBI.ASM357369v1_1.0.0.tar.gz",
+      "size": 664090000,
+      "seq_ids": [
+        "NC_039358.1",
+        "NC_039359.1",
+        "NC_039360.1",
+        "NC_039361.1",
+        "NC_039362.1"
+      ],
+      "seq_count": 34381,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Ranunculales",
+        "family": "Papaveraceae",
+        "genus": "Papaver"
+      },
+      "common_name": "opium poppy",
+      "published": "2026-04-04T17:39:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psomniferum.NCBI.ASM357369v1/BSgenome.Psomniferum.NCBI.ASM357369v1_1.0.0.tar.gz"
     }
   ]
 }
