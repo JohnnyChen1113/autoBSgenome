@@ -569,3 +569,7 @@ NeedsCompilation: no
 Package: BSgenome.Mvitellinus.NCBI.ASM171598v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfilicauda.NCBI.ASM394559v2
+Version: 1.0.0
+NeedsCompilation: no

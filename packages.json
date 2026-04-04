@@ -4389,6 +4389,54 @@
       ]
     },
     {
+      "organism": "Pipra filicauda",
+      "common_name": "Wire-tailed manakin",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Pipridae",
+        "genus": "Pipra"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pfilicauda.NCBI.ASM394559v2",
+          "version": "1.0.0",
+          "organism": "Pipra filicauda",
+          "assembly": "ASM394559v2",
+          "provider": "NCBI",
+          "accession": "GCF_003945595.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003945595.2/",
+          "file_name": "BSgenome.Pfilicauda.NCBI.ASM394559v2_1.0.0.tar.gz",
+          "size": 282340607,
+          "seq_ids": [
+            "NW_024103431.1",
+            "NW_024103432.1",
+            "NW_024103433.1",
+            "NW_024103434.1",
+            "NW_024103435.1"
+          ],
+          "seq_count": 1768,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Pipridae",
+            "genus": "Pipra"
+          },
+          "common_name": "Wire-tailed manakin",
+          "published": "2026-04-04T08:06:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfilicauda.NCBI.ASM394559v2/BSgenome.Pfilicauda.NCBI.ASM394559v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Plectropomus leopardus",
       "common_name": "leopard coralgrouper",
       "group": "vertebrate_other",
@@ -9516,6 +9564,38 @@
       "common_name": "golden-collared manakin",
       "published": "2026-04-04T08:05:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mvitellinus.NCBI.ASM171598v3/BSgenome.Mvitellinus.NCBI.ASM171598v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pfilicauda.NCBI.ASM394559v2",
+      "version": "1.0.0",
+      "organism": "Pipra filicauda",
+      "assembly": "ASM394559v2",
+      "provider": "NCBI",
+      "accession": "GCF_003945595.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003945595.2/",
+      "file_name": "BSgenome.Pfilicauda.NCBI.ASM394559v2_1.0.0.tar.gz",
+      "size": 282340607,
+      "seq_ids": [
+        "NW_024103431.1",
+        "NW_024103432.1",
+        "NW_024103433.1",
+        "NW_024103434.1",
+        "NW_024103435.1"
+      ],
+      "seq_count": 1768,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Pipridae",
+        "genus": "Pipra"
+      },
+      "common_name": "Wire-tailed manakin",
+      "published": "2026-04-04T08:06:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfilicauda.NCBI.ASM394559v2/BSgenome.Pfilicauda.NCBI.ASM394559v2_1.0.0.tar.gz"
     }
   ]
 }
