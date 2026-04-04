@@ -4648,6 +4648,54 @@
       ]
     },
     {
+      "organism": "Glycine max",
+      "common_name": "soybean",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Glycine"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gmax.NCBI.Glycinemaxv40",
+          "version": "1.0.0",
+          "organism": "Glycine max",
+          "assembly": "Glycine_max_v4.0",
+          "provider": "NCBI",
+          "accession": "GCF_000004515.6",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004515.6/",
+          "file_name": "BSgenome.Gmax.NCBI.Glycinemaxv40_1.0.0.tar.gz",
+          "size": 241468184,
+          "seq_ids": [
+            "NC_016088.4",
+            "NW_024464656.1",
+            "NC_016089.4",
+            "NW_024464657.1",
+            "NC_016090.4"
+          ],
+          "seq_count": 284,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Glycine"
+          },
+          "common_name": "soybean",
+          "published": "2026-04-04T16:42:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmax.NCBI.Glycinemaxv40/BSgenome.Gmax.NCBI.Glycinemaxv40_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Gopherus evgoodei",
       "common_name": "Goodes thornscrub tortoise",
       "group": "vertebrate_other",
@@ -19255,6 +19303,38 @@
       "common_name": "wax gourd",
       "published": "2026-04-04T16:41:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bhispida.NCBI.ASM972705v1/BSgenome.Bhispida.NCBI.ASM972705v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gmax.NCBI.Glycinemaxv40",
+      "version": "1.0.0",
+      "organism": "Glycine max",
+      "assembly": "Glycine_max_v4.0",
+      "provider": "NCBI",
+      "accession": "GCF_000004515.6",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004515.6/",
+      "file_name": "BSgenome.Gmax.NCBI.Glycinemaxv40_1.0.0.tar.gz",
+      "size": 241468184,
+      "seq_ids": [
+        "NC_016088.4",
+        "NW_024464656.1",
+        "NC_016089.4",
+        "NW_024464657.1",
+        "NC_016090.4"
+      ],
+      "seq_count": 284,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Glycine"
+      },
+      "common_name": "soybean",
+      "published": "2026-04-04T16:42:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmax.NCBI.Glycinemaxv40/BSgenome.Gmax.NCBI.Glycinemaxv40_1.0.0.tar.gz"
     }
   ]
 }

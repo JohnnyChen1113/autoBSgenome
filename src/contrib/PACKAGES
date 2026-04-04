@@ -1057,3 +1057,7 @@ NeedsCompilation: no
 Package: BSgenome.Bhispida.NCBI.ASM972705v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gmax.NCBI.Glycinemaxv40
+Version: 1.0.0
+NeedsCompilation: no
