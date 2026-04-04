@@ -693,3 +693,7 @@ NeedsCompilation: no
 Package: BSgenome.Cpugnax.NCBI.ASM143184v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aforsteri.NCBI.ASM69914v1
+Version: 1.0.0
+NeedsCompilation: no
