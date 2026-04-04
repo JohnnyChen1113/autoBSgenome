@@ -6323,6 +6323,54 @@
       ]
     },
     {
+      "organism": "Tauraco erythrolophus",
+      "common_name": "red-crested turaco",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Musophagiformes",
+        "family": "Musophagidae",
+        "genus": "Tauraco"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Terythrolophus.NCBI.ASM70936v1",
+          "version": "1.0.0",
+          "organism": "Tauraco erythrolophus",
+          "assembly": "ASM70936v1",
+          "provider": "NCBI",
+          "accession": "GCF_000709365.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000709365.1/",
+          "file_name": "BSgenome.Terythrolophus.NCBI.ASM70936v1_1.0.0.tar.gz",
+          "size": 309760838,
+          "seq_ids": [
+            "NW_010032851.1",
+            "NW_010032852.1",
+            "NW_010032853.1",
+            "NW_010032854.1",
+            "NW_010032855.1"
+          ],
+          "seq_count": 59587,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Musophagiformes",
+            "family": "Musophagidae",
+            "genus": "Tauraco"
+          },
+          "common_name": "red-crested turaco",
+          "published": "2026-04-04T10:05:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Terythrolophus.NCBI.ASM70936v1/BSgenome.Terythrolophus.NCBI.ASM70936v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Theropithecus gelada",
       "common_name": "gelada",
       "group": "vertebrate_mammalian",
@@ -11116,6 +11164,38 @@
       "common_name": "Swainson's thrush",
       "published": "2026-04-04T10:05:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Custulatus.NCBI.bCatUst1priv2/BSgenome.Custulatus.NCBI.bCatUst1priv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Terythrolophus.NCBI.ASM70936v1",
+      "version": "1.0.0",
+      "organism": "Tauraco erythrolophus",
+      "assembly": "ASM70936v1",
+      "provider": "NCBI",
+      "accession": "GCF_000709365.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000709365.1/",
+      "file_name": "BSgenome.Terythrolophus.NCBI.ASM70936v1_1.0.0.tar.gz",
+      "size": 309760838,
+      "seq_ids": [
+        "NW_010032851.1",
+        "NW_010032852.1",
+        "NW_010032853.1",
+        "NW_010032854.1",
+        "NW_010032855.1"
+      ],
+      "seq_count": 59587,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Musophagiformes",
+        "family": "Musophagidae",
+        "genus": "Tauraco"
+      },
+      "common_name": "red-crested turaco",
+      "published": "2026-04-04T10:05:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Terythrolophus.NCBI.ASM70936v1/BSgenome.Terythrolophus.NCBI.ASM70936v1_1.0.0.tar.gz"
     }
   ]
 }
