@@ -521,3 +521,7 @@ NeedsCompilation: no
 Package: BSgenome.Svulgaris.NCBI.Sturnusvulgaris10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nmeleagris.NCBI.NumMel10
+Version: 1.0.0
+NeedsCompilation: no
