@@ -397,3 +397,7 @@ NeedsCompilation: no
 Package: BSgenome.Kmarmoratus.NCBI.ASM164957v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Malbus.NCBI.Malbus10
+Version: 1.0.0
+NeedsCompilation: no

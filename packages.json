@@ -2175,6 +2175,54 @@
       ]
     },
     {
+      "organism": "Monopterus albus",
+      "common_name": "swamp eel",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Synbranchiformes",
+        "family": "Synbranchidae",
+        "genus": "Monopterus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Malbus.NCBI.Malbus10",
+          "version": "1.0.0",
+          "organism": "Monopterus albus",
+          "assembly": "M_albus_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001952655.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001952655.1/",
+          "file_name": "BSgenome.Malbus.NCBI.Malbus10_1.0.0.tar.gz",
+          "size": 166887124,
+          "seq_ids": [
+            "NW_018127881.1",
+            "NW_018127882.1",
+            "NW_018127883.1",
+            "NW_018127884.1",
+            "NW_018127885.1"
+          ],
+          "seq_count": 20622,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Synbranchiformes",
+            "family": "Synbranchidae",
+            "genus": "Monopterus"
+          },
+          "common_name": "swamp eel",
+          "published": "2026-04-04T04:31:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Malbus.NCBI.Malbus10/BSgenome.Malbus.NCBI.Malbus10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Monoraphidium neglectum",
       "common_name": "",
       "group": "plant",
@@ -6079,6 +6127,38 @@
       "common_name": "mangrove rivulus",
       "published": "2026-04-04T04:31:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kmarmoratus.NCBI.ASM164957v2/BSgenome.Kmarmoratus.NCBI.ASM164957v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Malbus.NCBI.Malbus10",
+      "version": "1.0.0",
+      "organism": "Monopterus albus",
+      "assembly": "M_albus_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001952655.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001952655.1/",
+      "file_name": "BSgenome.Malbus.NCBI.Malbus10_1.0.0.tar.gz",
+      "size": 166887124,
+      "seq_ids": [
+        "NW_018127881.1",
+        "NW_018127882.1",
+        "NW_018127883.1",
+        "NW_018127884.1",
+        "NW_018127885.1"
+      ],
+      "seq_count": 20622,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Synbranchiformes",
+        "family": "Synbranchidae",
+        "genus": "Monopterus"
+      },
+      "common_name": "swamp eel",
+      "published": "2026-04-04T04:31:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Malbus.NCBI.Malbus10/BSgenome.Malbus.NCBI.Malbus10_1.0.0.tar.gz"
     }
   ]
 }
