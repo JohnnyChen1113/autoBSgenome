@@ -921,3 +921,7 @@ NeedsCompilation: no
 Package: BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsativus.NCBI.ASM80110v3
+Version: 1.0.0
+NeedsCompilation: no

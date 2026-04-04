@@ -8191,6 +8191,54 @@
       ]
     },
     {
+      "organism": "Raphanus sativus",
+      "common_name": "radish",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Raphanus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rsativus.NCBI.ASM80110v3",
+          "version": "1.0.0",
+          "organism": "Raphanus sativus",
+          "assembly": "ASM80110v3",
+          "provider": "NCBI",
+          "accession": "GCF_000801105.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000801105.2/",
+          "file_name": "BSgenome.Rsativus.NCBI.ASM80110v3_1.0.0.tar.gz",
+          "size": 110183136,
+          "seq_ids": [
+            "NC_079511.1",
+            "NC_079512.1",
+            "NC_079513.1",
+            "NC_079514.1",
+            "NC_079515.1"
+          ],
+          "seq_count": 6424,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Raphanus"
+          },
+          "common_name": "radish",
+          "published": "2026-04-04T14:41:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsativus.NCBI.ASM80110v3/BSgenome.Rsativus.NCBI.ASM80110v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhinolophus ferrumequinum",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -16535,6 +16583,38 @@
       "common_name": "barrel medic",
       "published": "2026-04-04T14:41:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR/BSgenome.Mtruncatula.NCBI.MtrunA17r50ANR_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rsativus.NCBI.ASM80110v3",
+      "version": "1.0.0",
+      "organism": "Raphanus sativus",
+      "assembly": "ASM80110v3",
+      "provider": "NCBI",
+      "accession": "GCF_000801105.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000801105.2/",
+      "file_name": "BSgenome.Rsativus.NCBI.ASM80110v3_1.0.0.tar.gz",
+      "size": 110183136,
+      "seq_ids": [
+        "NC_079511.1",
+        "NC_079512.1",
+        "NC_079513.1",
+        "NC_079514.1",
+        "NC_079515.1"
+      ],
+      "seq_count": 6424,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Raphanus"
+      },
+      "common_name": "radish",
+      "published": "2026-04-04T14:41:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsativus.NCBI.ASM80110v3/BSgenome.Rsativus.NCBI.ASM80110v3_1.0.0.tar.gz"
     }
   ]
 }
