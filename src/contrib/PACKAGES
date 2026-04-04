@@ -749,3 +749,7 @@ NeedsCompilation: no
 Package: BSgenome.Dcoriacea.NCBI.rDerCor1priv4
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vcarteri.NCBI.v10
+Version: 1.0.0
+NeedsCompilation: no

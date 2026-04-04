@@ -7734,6 +7734,54 @@
       ]
     },
     {
+      "organism": "Volvox carteri f. nagariensis",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Chlorophyceae",
+        "order": "Chlamydomonadales",
+        "family": "Volvocaceae",
+        "genus": "Volvox"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vcarteri.NCBI.v10",
+          "version": "1.0.0",
+          "organism": "Volvox carteri f. nagariensis",
+          "assembly": "v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000143455.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143455.1/",
+          "file_name": "BSgenome.Vcarteri.NCBI.v10_1.0.0.tar.gz",
+          "size": 32972369,
+          "seq_ids": [
+            "NW_003307545.1",
+            "NW_003307546.1",
+            "NW_003307547.1",
+            "NW_003307548.1",
+            "NW_003307549.1"
+          ],
+          "seq_count": 1251,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Chlorophyta",
+            "class": "Chlorophyceae",
+            "order": "Chlamydomonadales",
+            "family": "Volvocaceae",
+            "genus": "Volvox"
+          },
+          "common_name": "",
+          "published": "2026-04-04T11:39:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vcarteri.NCBI.v10/BSgenome.Vcarteri.NCBI.v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Xiphophorus couchianus",
       "common_name": "Monterrey platyfish",
       "group": "vertebrate_other",
@@ -13110,6 +13158,38 @@
       "common_name": "leatherback sea turtle",
       "published": "2026-04-04T11:05:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcoriacea.NCBI.rDerCor1priv4/BSgenome.Dcoriacea.NCBI.rDerCor1priv4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vcarteri.NCBI.v10",
+      "version": "1.0.0",
+      "organism": "Volvox carteri f. nagariensis",
+      "assembly": "v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000143455.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143455.1/",
+      "file_name": "BSgenome.Vcarteri.NCBI.v10_1.0.0.tar.gz",
+      "size": 32972369,
+      "seq_ids": [
+        "NW_003307545.1",
+        "NW_003307546.1",
+        "NW_003307547.1",
+        "NW_003307548.1",
+        "NW_003307549.1"
+      ],
+      "seq_count": 1251,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Chlorophyceae",
+        "order": "Chlamydomonadales",
+        "family": "Volvocaceae",
+        "genus": "Volvox"
+      },
+      "common_name": "",
+      "published": "2026-04-04T11:39:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vcarteri.NCBI.v10/BSgenome.Vcarteri.NCBI.v10_1.0.0.tar.gz"
     }
   ]
 }
