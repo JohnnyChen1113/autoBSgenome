@@ -3109,6 +3109,54 @@
       ]
     },
     {
+      "organism": "Trichechus manatus latirostris",
+      "common_name": "Florida manatee",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Sirenia",
+        "family": "Trichechidae",
+        "genus": "Trichechus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tmanatus.NCBI.TriManLat10",
+          "version": "1.0.0",
+          "organism": "Trichechus manatus latirostris",
+          "assembly": "TriManLat1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000243295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000243295.1/",
+          "file_name": "BSgenome.Tmanatus.NCBI.TriManLat10_1.0.0.tar.gz",
+          "size": 726263271,
+          "seq_ids": [
+            "NW_004443937.1",
+            "NW_004443938.1",
+            "NW_004443939.1",
+            "NW_004443940.1",
+            "NW_004443941.1"
+          ],
+          "seq_count": 6323,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Sirenia",
+            "family": "Trichechidae",
+            "genus": "Trichechus"
+          },
+          "common_name": "Florida manatee",
+          "published": "2026-04-04T02:29:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmanatus.NCBI.TriManLat10/BSgenome.Tmanatus.NCBI.TriManLat10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tupaia chinensis",
       "common_name": "Chinese tree shrew",
       "group": "vertebrate_mammalian",
@@ -5279,6 +5327,38 @@
       "common_name": "golden snub-nosed monkey",
       "published": "2026-04-04T02:29:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rroxellana.NCBI.ASM756505v1/BSgenome.Rroxellana.NCBI.ASM756505v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tmanatus.NCBI.TriManLat10",
+      "version": "1.0.0",
+      "organism": "Trichechus manatus latirostris",
+      "assembly": "TriManLat1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000243295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000243295.1/",
+      "file_name": "BSgenome.Tmanatus.NCBI.TriManLat10_1.0.0.tar.gz",
+      "size": 726263271,
+      "seq_ids": [
+        "NW_004443937.1",
+        "NW_004443938.1",
+        "NW_004443939.1",
+        "NW_004443940.1",
+        "NW_004443941.1"
+      ],
+      "seq_count": 6323,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Sirenia",
+        "family": "Trichechidae",
+        "genus": "Trichechus"
+      },
+      "common_name": "Florida manatee",
+      "published": "2026-04-04T02:29:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmanatus.NCBI.TriManLat10/BSgenome.Tmanatus.NCBI.TriManLat10_1.0.0.tar.gz"
     }
   ]
 }
