@@ -150,11 +150,16 @@
   </div>
 
   <div class="stats" id="stats">
-    <div class="stat"><strong id="pkg-count">-</strong> packages</div>
+    <div class="stat"><strong id="pkg-count">-</strong> packages ready to install</div>
     <div class="stat">&middot;</div>
-    <div class="stat"><strong id="org-count">-</strong> organisms</div>
-    <div class="stat">&middot;</div>
-    <div class="stat" id="provider-stats"></div>
+    <div class="stat"><strong id="org-count">-</strong> organisms in catalog</div>
+  </div>
+  <div class="stats" id="stats-detail" style="margin-top:-8px;">
+    <div class="stat" style="font-size:14px;"><strong id="st-community">-</strong> community-built</div>
+    <div class="stat" style="font-size:14px;">&middot;</div>
+    <div class="stat" style="font-size:14px;"><strong id="st-bioc">113</strong> Bioconductor</div>
+    <div class="stat" style="font-size:14px;">&middot;</div>
+    <div class="stat" style="font-size:14px;"><strong id="st-buildable">-</strong> buildable on demand</div>
   </div>
 
   <!-- Build Progress Dashboard -->
@@ -308,12 +313,15 @@ async function loadPackages() {
     const catalogCount = Object.keys(catalogByOrg).length;
     document.getElementById('pkg-count').textContent = builtCount + biocCount;
     document.getElementById('org-count').textContent = organisms.length.toLocaleString();
-    const providerEl = document.getElementById('provider-stats');
-    providerEl.innerHTML = `<strong>${builtCount}</strong> community · <strong>${biocCount}</strong> Bioconductor · <strong>${catalogCount.toLocaleString()}</strong> buildable`;
+    document.getElementById('st-community').textContent = builtCount;
+    document.getElementById('st-bioc').textContent = biocCount;
+    document.getElementById('st-buildable').textContent = catalogCount.toLocaleString();
 
-    renderOrganisms(organisms, flat);
+    // Default: only show organisms with builds (fast render)
+    const builtOrgs = organisms.filter(o => (o.builds || []).length > 0);
+    renderOrganisms(builtOrgs, flat);
     setupFilterBar(organisms);
-    setupAlphaBar(organisms);
+    setupAlphaBar(builtOrgs);
     setupSearch(organisms);
   } catch (e) {
     document.getElementById('loading').innerHTML = '<p>Error: ' + e.message + '</p>';
@@ -360,7 +368,7 @@ function applyFilter(key, btn) {
   const filtered = ALL_ORGANISMS.filter(o => {
     const g = o.group || 'other';
     switch (key) {
-      case 'all': return true;
+      case 'all': return (o.builds || []).length > 0;  // "All" shows only built to stay fast
       case 'built': return o._source === 'community' || o._source === 'both';
       case 'bioconductor': return o._source === 'bioconductor' || o._source === 'both';
       case 'animal': return ['vertebrate_mammalian','vertebrate_other','invertebrate','metazoa'].includes(g);
@@ -372,7 +380,18 @@ function applyFilter(key, btn) {
       default: return true;
     }
   });
-  renderOrganisms(filtered, null);
+  // Render with limit for large categories
+  const RENDER_LIMIT = 200;
+  const toRender = filtered.slice(0, RENDER_LIMIT);
+  renderOrganisms(toRender, null);
+  if (filtered.length > RENDER_LIMIT) {
+    const list = document.getElementById('org-list');
+    list.innerHTML += `<div class="empty" style="padding:20px;">
+      Showing ${RENDER_LIMIT} of ${filtered.length.toLocaleString()} organisms.
+      <button class="btn btn-outline" style="margin-left:8px;" onclick="loadMore(${RENDER_LIMIT})">Show more</button>
+      <span style="margin-left:8px;">Or use the search bar to find specific species.</span>
+    </div>`;
+  }
 }
 
 function renderOrganisms(organisms, flat) {
@@ -620,18 +639,59 @@ function filterAlpha(btn, letter) {
   });
 }
 
+let SEARCH_TIMEOUT;
 function setupSearch(organisms) {
   document.getElementById('search').addEventListener('input', (e) => {
-    const q = e.target.value.toLowerCase();
-    document.querySelectorAll('.org-card').forEach(card => {
-      const match = card.dataset.search.includes(q);
-      card.style.display = match ? '' : 'none';
-      if (match && q) {
-        card.querySelector('.build-list').classList.add('open');
-        card.querySelector('.chevron').classList.add('open');
+    clearTimeout(SEARCH_TIMEOUT);
+    SEARCH_TIMEOUT = setTimeout(() => {
+      const q = e.target.value.trim().toLowerCase();
+      if (!q || q.length < 2) {
+        // Reset to default view (built packages only)
+        const builtOrgs = ALL_ORGANISMS.filter(o => (o.builds || []).length > 0);
+        renderOrganisms(builtOrgs, null);
+        return;
       }
-    });
+      // Search the full catalog in memory
+      const matches = ALL_ORGANISMS.filter(o => {
+        const hay = [o.organism, o.common_name || '', ...(o._accessions || []).map(a => a.accession + ' ' + a.assembly), ...(o.builds || []).map(b => (b.package||'') + ' ' + (b.assembly||'') + ' ' + (b.accession||''))].join(' ').toLowerCase();
+        return hay.includes(q);
+      });
+      const toRender = matches.slice(0, 100);
+      renderOrganisms(toRender, null);
+      if (matches.length > 100) {
+        document.getElementById('org-list').innerHTML += `<div class="empty" style="padding:16px;">Showing 100 of ${matches.length.toLocaleString()} matches. Type more to narrow results.</div>`;
+      } else if (matches.length === 0) {
+        document.getElementById('org-list').innerHTML = '<div class="empty">No matching organisms found.</div>';
+      }
+    }, 300);
   });
+}
+
+function loadMore(currentCount) {
+  const key = ACTIVE_FILTER;
+  const filtered = ALL_ORGANISMS.filter(o => {
+    const g = o.group || 'other';
+    switch (key) {
+      case 'all': return (o.builds || []).length > 0;
+      case 'built': return o._source === 'community' || o._source === 'both';
+      case 'bioconductor': return o._source === 'bioconductor' || o._source === 'both';
+      case 'animal': return ['vertebrate_mammalian','vertebrate_other','invertebrate','metazoa'].includes(g);
+      case 'plant': return g === 'plant' || g === 'plants';
+      case 'fungi': return g === 'fungi';
+      case 'virus': return g === 'viral';
+      case 'bacteria': return g === 'bacteria' || g === 'archaea';
+      case 'protozoa': return g === 'protozoa' || g === 'protists';
+      default: return true;
+    }
+  });
+  const next = Math.min(currentCount + 200, filtered.length);
+  renderOrganisms(filtered.slice(0, next), null);
+  if (next < filtered.length) {
+    document.getElementById('org-list').innerHTML += `<div class="empty" style="padding:20px;">
+      Showing ${next} of ${filtered.length.toLocaleString()} organisms.
+      <button class="btn btn-outline" style="margin-left:8px;" onclick="loadMore(${next})">Show more</button>
+    </div>`;
+  }
 }
 
 function copyInstall(name) {
