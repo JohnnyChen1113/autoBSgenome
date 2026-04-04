@@ -1632,6 +1632,54 @@
       ]
     },
     {
+      "organism": "Kryptolebias marmoratus",
+      "common_name": "mangrove rivulus",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Rivulidae",
+        "genus": "Kryptolebias"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kmarmoratus.NCBI.ASM164957v2",
+          "version": "1.0.0",
+          "organism": "Kryptolebias marmoratus",
+          "assembly": "ASM164957v2",
+          "provider": "NCBI",
+          "accession": "GCF_001649575.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001649575.2/",
+          "file_name": "BSgenome.Kmarmoratus.NCBI.ASM164957v2_1.0.0.tar.gz",
+          "size": 171152194,
+          "seq_ids": [
+            "NC_051430.1",
+            "NC_051431.1",
+            "NC_051432.1",
+            "NC_051433.1",
+            "NC_051434.1"
+          ],
+          "seq_count": 300,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Rivulidae",
+            "genus": "Kryptolebias"
+          },
+          "common_name": "mangrove rivulus",
+          "published": "2026-04-04T04:31:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kmarmoratus.NCBI.ASM164957v2/BSgenome.Kmarmoratus.NCBI.ASM164957v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Larimichthys crocea",
       "common_name": "large yellow croaker",
       "group": "vertebrate_other",
@@ -5999,6 +6047,38 @@
       "common_name": "greater amberjack",
       "published": "2026-04-04T04:31:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sdumerili.NCBI.Sdu10/BSgenome.Sdumerili.NCBI.Sdu10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kmarmoratus.NCBI.ASM164957v2",
+      "version": "1.0.0",
+      "organism": "Kryptolebias marmoratus",
+      "assembly": "ASM164957v2",
+      "provider": "NCBI",
+      "accession": "GCF_001649575.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001649575.2/",
+      "file_name": "BSgenome.Kmarmoratus.NCBI.ASM164957v2_1.0.0.tar.gz",
+      "size": 171152194,
+      "seq_ids": [
+        "NC_051430.1",
+        "NC_051431.1",
+        "NC_051432.1",
+        "NC_051433.1",
+        "NC_051434.1"
+      ],
+      "seq_count": 300,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Rivulidae",
+        "genus": "Kryptolebias"
+      },
+      "common_name": "mangrove rivulus",
+      "published": "2026-04-04T04:31:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kmarmoratus.NCBI.ASM164957v2/BSgenome.Kmarmoratus.NCBI.ASM164957v2_1.0.0.tar.gz"
     }
   ]
 }
