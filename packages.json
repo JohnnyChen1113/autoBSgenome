@@ -646,6 +646,54 @@
       ]
     },
     {
+      "organism": "Arachis ipaensis",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Arachis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aipaensis.NCBI.Araip11",
+          "version": "1.0.0",
+          "organism": "Arachis ipaensis",
+          "assembly": "Araip1.1",
+          "provider": "NCBI",
+          "accession": "GCF_000816755.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000816755.2/",
+          "file_name": "BSgenome.Aipaensis.NCBI.Araip11_1.0.0.tar.gz",
+          "size": 319286729,
+          "seq_ids": [
+            "NC_029785.2",
+            "NC_029786.2",
+            "NC_029787.2",
+            "NC_029788.2",
+            "NC_029789.2"
+          ],
+          "seq_count": 548,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Arachis"
+          },
+          "common_name": "",
+          "published": "2026-04-04T17:35:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aipaensis.NCBI.Araip11/BSgenome.Aipaensis.NCBI.Araip11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Archocentrus centrarchus",
       "common_name": "flier cichlid",
       "group": "vertebrate_other",
@@ -19975,6 +20023,38 @@
       "common_name": "quinoa",
       "published": "2026-04-04T17:35:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cquinoa.NCBI.ASM168347v1/BSgenome.Cquinoa.NCBI.ASM168347v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aipaensis.NCBI.Araip11",
+      "version": "1.0.0",
+      "organism": "Arachis ipaensis",
+      "assembly": "Araip1.1",
+      "provider": "NCBI",
+      "accession": "GCF_000816755.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000816755.2/",
+      "file_name": "BSgenome.Aipaensis.NCBI.Araip11_1.0.0.tar.gz",
+      "size": 319286729,
+      "seq_ids": [
+        "NC_029785.2",
+        "NC_029786.2",
+        "NC_029787.2",
+        "NC_029788.2",
+        "NC_029789.2"
+      ],
+      "seq_count": 548,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Arachis"
+      },
+      "common_name": "",
+      "published": "2026-04-04T17:35:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aipaensis.NCBI.Araip11/BSgenome.Aipaensis.NCBI.Araip11_1.0.0.tar.gz"
     }
   ]
 }
