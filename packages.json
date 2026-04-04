@@ -5850,6 +5850,54 @@
       ]
     },
     {
+      "organism": "Folsomia candida",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Collembola",
+        "order": "Entomobryomorpha",
+        "family": "Isotomidae",
+        "genus": "Folsomia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fcandida.NCBI.ASM221717v1",
+          "version": "1.0.0",
+          "organism": "Folsomia candida",
+          "assembly": "ASM221717v1",
+          "provider": "NCBI",
+          "accession": "GCF_002217175.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002217175.1/",
+          "file_name": "BSgenome.Fcandida.NCBI.ASM221717v1_1.0.0.tar.gz",
+          "size": 58965096,
+          "seq_ids": [
+            "NW_019091193.1",
+            "NW_019091194.1",
+            "NW_019091195.1",
+            "NW_019091196.1",
+            "NW_019091197.1"
+          ],
+          "seq_count": 162,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Collembola",
+            "order": "Entomobryomorpha",
+            "family": "Isotomidae",
+            "genus": "Folsomia"
+          },
+          "common_name": "",
+          "published": "2026-04-04T21:34:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcandida.NCBI.ASM221717v1/BSgenome.Fcandida.NCBI.ASM221717v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fopius arisanus",
       "common_name": "",
       "group": "invertebrate",
@@ -24215,6 +24263,38 @@
       "common_name": "",
       "published": "2026-04-04T21:34:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcanadensis.NCBI.ASM131383v1/BSgenome.Pcanadensis.NCBI.ASM131383v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fcandida.NCBI.ASM221717v1",
+      "version": "1.0.0",
+      "organism": "Folsomia candida",
+      "assembly": "ASM221717v1",
+      "provider": "NCBI",
+      "accession": "GCF_002217175.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002217175.1/",
+      "file_name": "BSgenome.Fcandida.NCBI.ASM221717v1_1.0.0.tar.gz",
+      "size": 58965096,
+      "seq_ids": [
+        "NW_019091193.1",
+        "NW_019091194.1",
+        "NW_019091195.1",
+        "NW_019091196.1",
+        "NW_019091197.1"
+      ],
+      "seq_count": 162,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Collembola",
+        "order": "Entomobryomorpha",
+        "family": "Isotomidae",
+        "genus": "Folsomia"
+      },
+      "common_name": "",
+      "published": "2026-04-04T21:34:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcandida.NCBI.ASM221717v1/BSgenome.Fcandida.NCBI.ASM221717v1_1.0.0.tar.gz"
     }
   ]
 }
