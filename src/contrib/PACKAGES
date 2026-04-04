@@ -1261,3 +1261,7 @@ NeedsCompilation: no
 Package: BSgenome.Dnovamexicana.NCBI.DnovRS21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oabietinus.NCBI.Oabi20
+Version: 1.0.0
+NeedsCompilation: no
