@@ -2664,6 +2664,54 @@
       ]
     },
     {
+      "organism": "Oryzias melastigma",
+      "common_name": "Indian medaka",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Beloniformes",
+        "family": "Adrianichthyidae",
+        "genus": "Oryzias"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Omelastigma.NCBI.ASM292280v2",
+          "version": "1.0.0",
+          "organism": "Oryzias melastigma",
+          "assembly": "ASM292280v2",
+          "provider": "NCBI",
+          "accession": "GCF_002922805.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002922805.2/",
+          "file_name": "BSgenome.Omelastigma.NCBI.ASM292280v2_1.0.0.tar.gz",
+          "size": 197105400,
+          "seq_ids": [
+            "NC_050512.1",
+            "NC_050513.1",
+            "NC_050514.1",
+            "NC_050515.1",
+            "NC_050516.1"
+          ],
+          "seq_count": 8493,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Beloniformes",
+            "family": "Adrianichthyidae",
+            "genus": "Oryzias"
+          },
+          "common_name": "Indian medaka",
+          "published": "2026-04-04T04:33:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Omelastigma.NCBI.ASM292280v2/BSgenome.Omelastigma.NCBI.ASM292280v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ostreococcus tauri",
       "common_name": "",
       "group": "plant",
@@ -6639,6 +6687,38 @@
       "common_name": "",
       "published": "2026-04-04T04:32:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmagnuspinnatus.NCBI.fPerMag12pri/BSgenome.Pmagnuspinnatus.NCBI.fPerMag12pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Omelastigma.NCBI.ASM292280v2",
+      "version": "1.0.0",
+      "organism": "Oryzias melastigma",
+      "assembly": "ASM292280v2",
+      "provider": "NCBI",
+      "accession": "GCF_002922805.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002922805.2/",
+      "file_name": "BSgenome.Omelastigma.NCBI.ASM292280v2_1.0.0.tar.gz",
+      "size": 197105400,
+      "seq_ids": [
+        "NC_050512.1",
+        "NC_050513.1",
+        "NC_050514.1",
+        "NC_050515.1",
+        "NC_050516.1"
+      ],
+      "seq_count": 8493,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Beloniformes",
+        "family": "Adrianichthyidae",
+        "genus": "Oryzias"
+      },
+      "common_name": "Indian medaka",
+      "published": "2026-04-04T04:33:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Omelastigma.NCBI.ASM292280v2/BSgenome.Omelastigma.NCBI.ASM292280v2_1.0.0.tar.gz"
     }
   ]
 }
