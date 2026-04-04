@@ -8722,6 +8722,54 @@
       ]
     },
     {
+      "organism": "Melanaphis sacchari",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hemiptera",
+        "family": "Aphididae",
+        "genus": "Melanaphis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Msacchari.NCBI.SCAv20",
+          "version": "1.0.0",
+          "organism": "Melanaphis sacchari",
+          "assembly": "SCAv2.0",
+          "provider": "NCBI",
+          "accession": "GCF_002803265.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002803265.2/",
+          "file_name": "BSgenome.Msacchari.NCBI.SCAv20_1.0.0.tar.gz",
+          "size": 79023496,
+          "seq_ids": [
+            "NW_020270366.1",
+            "NW_020270367.1",
+            "NW_020270368.1",
+            "NW_020270369.1",
+            "NW_020270370.1"
+          ],
+          "seq_count": 1347,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hemiptera",
+            "family": "Aphididae",
+            "genus": "Melanaphis"
+          },
+          "common_name": "",
+          "published": "2026-04-04T23:35:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msacchari.NCBI.SCAv20/BSgenome.Msacchari.NCBI.SCAv20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Merops nubicus",
       "common_name": "carmine bee-eater",
       "group": "vertebrate_other",
@@ -26535,6 +26583,38 @@
       "common_name": "",
       "published": "2026-04-04T23:35:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccostatus.NCBI.Ccosl10/BSgenome.Ccostatus.NCBI.Ccosl10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Msacchari.NCBI.SCAv20",
+      "version": "1.0.0",
+      "organism": "Melanaphis sacchari",
+      "assembly": "SCAv2.0",
+      "provider": "NCBI",
+      "accession": "GCF_002803265.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002803265.2/",
+      "file_name": "BSgenome.Msacchari.NCBI.SCAv20_1.0.0.tar.gz",
+      "size": 79023496,
+      "seq_ids": [
+        "NW_020270366.1",
+        "NW_020270367.1",
+        "NW_020270368.1",
+        "NW_020270369.1",
+        "NW_020270370.1"
+      ],
+      "seq_count": 1347,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hemiptera",
+        "family": "Aphididae",
+        "genus": "Melanaphis"
+      },
+      "common_name": "",
+      "published": "2026-04-04T23:35:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msacchari.NCBI.SCAv20/BSgenome.Msacchari.NCBI.SCAv20_1.0.0.tar.gz"
     }
   ]
 }
