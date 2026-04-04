@@ -561,3 +561,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgutturalis.NCBI.ASM69924v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Avittatum.NCBI.ASM70340v1
+Version: 1.0.0
+NeedsCompilation: no

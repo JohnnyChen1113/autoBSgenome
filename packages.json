@@ -120,6 +120,54 @@
       ]
     },
     {
+      "organism": "Apaloderma vittatum",
+      "common_name": "bar-tailed trogon",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Trogoniformes",
+        "family": "Trogonidae",
+        "genus": "Apaloderma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Avittatum.NCBI.ASM70340v1",
+          "version": "1.0.0",
+          "organism": "Apaloderma vittatum",
+          "assembly": "ASM70340v1",
+          "provider": "NCBI",
+          "accession": "GCF_000703405.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000703405.1/",
+          "file_name": "BSgenome.Avittatum.NCBI.ASM70340v1_1.0.0.tar.gz",
+          "size": 288394509,
+          "seq_ids": [
+            "NW_009692631.1",
+            "NW_009692632.1",
+            "NW_009692633.1",
+            "NW_009692634.1",
+            "NW_009692635.1"
+          ],
+          "seq_count": 54728,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Trogoniformes",
+            "family": "Trogonidae",
+            "genus": "Apaloderma"
+          },
+          "common_name": "bar-tailed trogon",
+          "published": "2026-04-04T08:05:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Avittatum.NCBI.ASM70340v1/BSgenome.Avittatum.NCBI.ASM70340v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Archocentrus centrarchus",
       "common_name": "flier cichlid",
       "group": "vertebrate_other",
@@ -9356,6 +9404,38 @@
       "common_name": "yellow-throated sandgrouse",
       "published": "2026-04-04T08:05:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgutturalis.NCBI.ASM69924v1/BSgenome.Pgutturalis.NCBI.ASM69924v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Avittatum.NCBI.ASM70340v1",
+      "version": "1.0.0",
+      "organism": "Apaloderma vittatum",
+      "assembly": "ASM70340v1",
+      "provider": "NCBI",
+      "accession": "GCF_000703405.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000703405.1/",
+      "file_name": "BSgenome.Avittatum.NCBI.ASM70340v1_1.0.0.tar.gz",
+      "size": 288394509,
+      "seq_ids": [
+        "NW_009692631.1",
+        "NW_009692632.1",
+        "NW_009692633.1",
+        "NW_009692634.1",
+        "NW_009692635.1"
+      ],
+      "seq_count": 54728,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Trogoniformes",
+        "family": "Trogonidae",
+        "genus": "Apaloderma"
+      },
+      "common_name": "bar-tailed trogon",
+      "published": "2026-04-04T08:05:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Avittatum.NCBI.ASM70340v1/BSgenome.Avittatum.NCBI.ASM70340v1_1.0.0.tar.gz"
     }
   ]
 }
