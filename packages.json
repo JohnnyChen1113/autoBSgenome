@@ -10053,6 +10053,54 @@
       ]
     },
     {
+      "organism": "Vitis riparia",
+      "common_name": "riverbank grape",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Vitales",
+        "family": "Vitaceae",
+        "genus": "Vitis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vriparia.NCBI.EGFVVitrip10",
+          "version": "1.0.0",
+          "organism": "Vitis riparia",
+          "assembly": "EGFV_Vit.rip_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_004353265.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004353265.1/",
+          "file_name": "BSgenome.Vriparia.NCBI.EGFVVitrip10_1.0.0.tar.gz",
+          "size": 125727023,
+          "seq_ids": [
+            "NC_048431.1",
+            "NC_048432.1",
+            "NC_048433.1",
+            "NC_048434.1",
+            "NC_048435.1"
+          ],
+          "seq_count": 175,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Vitales",
+            "family": "Vitaceae",
+            "genus": "Vitis"
+          },
+          "common_name": "riverbank grape",
+          "published": "2026-04-04T14:43:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vriparia.NCBI.EGFVVitrip10/BSgenome.Vriparia.NCBI.EGFVVitrip10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Vittaforma corneae ATCC 50505",
       "common_name": "",
       "group": "fungi",
@@ -17095,6 +17143,38 @@
       "common_name": "Euphrates poplar",
       "published": "2026-04-04T14:43:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Peuphratica.NCBI.PopEup10/BSgenome.Peuphratica.NCBI.PopEup10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vriparia.NCBI.EGFVVitrip10",
+      "version": "1.0.0",
+      "organism": "Vitis riparia",
+      "assembly": "EGFV_Vit.rip_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_004353265.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004353265.1/",
+      "file_name": "BSgenome.Vriparia.NCBI.EGFVVitrip10_1.0.0.tar.gz",
+      "size": 125727023,
+      "seq_ids": [
+        "NC_048431.1",
+        "NC_048432.1",
+        "NC_048433.1",
+        "NC_048434.1",
+        "NC_048435.1"
+      ],
+      "seq_count": 175,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Vitales",
+        "family": "Vitaceae",
+        "genus": "Vitis"
+      },
+      "common_name": "riverbank grape",
+      "published": "2026-04-04T14:43:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vriparia.NCBI.EGFVVitrip10/BSgenome.Vriparia.NCBI.EGFVVitrip10_1.0.0.tar.gz"
     }
   ]
 }

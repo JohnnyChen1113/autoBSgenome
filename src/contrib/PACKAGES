@@ -949,3 +949,7 @@ NeedsCompilation: no
 Package: BSgenome.Peuphratica.NCBI.PopEup10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vriparia.NCBI.EGFVVitrip10
+Version: 1.0.0
+NeedsCompilation: no
