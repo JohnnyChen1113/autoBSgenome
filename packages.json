@@ -4558,6 +4558,54 @@
       ]
     },
     {
+      "organism": "Drosophila innubila",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dinnubila.NCBI.UKDinn10",
+          "version": "1.0.0",
+          "organism": "Drosophila innubila",
+          "assembly": "UK_Dinn_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_004354385.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004354385.1/",
+          "file_name": "BSgenome.Dinnubila.NCBI.UKDinn10_1.0.0.tar.gz",
+          "size": 44087687,
+          "seq_ids": [
+            "NC_047625.1",
+            "NW_022995372.1",
+            "NW_022995373.1",
+            "NW_022995374.1",
+            "NW_022995375.1"
+          ],
+          "seq_count": 363,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "",
+          "published": "2026-04-04T20:36:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dinnubila.NCBI.UKDinn10/BSgenome.Dinnubila.NCBI.UKDinn10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila mauritiana",
       "common_name": "",
       "group": "invertebrate",
@@ -23175,6 +23223,38 @@
       "common_name": "",
       "published": "2026-04-04T20:36:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dalbomicans.NCBI.ASM965048v2/BSgenome.Dalbomicans.NCBI.ASM965048v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dinnubila.NCBI.UKDinn10",
+      "version": "1.0.0",
+      "organism": "Drosophila innubila",
+      "assembly": "UK_Dinn_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_004354385.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004354385.1/",
+      "file_name": "BSgenome.Dinnubila.NCBI.UKDinn10_1.0.0.tar.gz",
+      "size": 44087687,
+      "seq_ids": [
+        "NC_047625.1",
+        "NW_022995372.1",
+        "NW_022995373.1",
+        "NW_022995374.1",
+        "NW_022995375.1"
+      ],
+      "seq_count": 363,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "",
+      "published": "2026-04-04T20:36:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dinnubila.NCBI.UKDinn10/BSgenome.Dinnubila.NCBI.UKDinn10_1.0.0.tar.gz"
     }
   ]
 }

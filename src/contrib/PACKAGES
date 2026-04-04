@@ -1253,3 +1253,7 @@ NeedsCompilation: no
 Package: BSgenome.Dalbomicans.NCBI.ASM965048v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dinnubila.NCBI.UKDinn10
+Version: 1.0.0
+NeedsCompilation: no
