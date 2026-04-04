@@ -694,6 +694,54 @@
       ]
     },
     {
+      "organism": "Asparagus officinalis",
+      "common_name": "garden asparagus",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Asparagales",
+        "family": "Asparagaceae",
+        "genus": "Asparagus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aofficinalis.NCBI.AspofV1",
+          "version": "1.0.0",
+          "organism": "Asparagus officinalis",
+          "assembly": "Aspof.V1",
+          "provider": "NCBI",
+          "accession": "GCF_001876935.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001876935.1/",
+          "file_name": "BSgenome.Aofficinalis.NCBI.AspofV1_1.0.0.tar.gz",
+          "size": 296307343,
+          "seq_ids": [
+            "NC_033794.1",
+            "NC_033795.1",
+            "NC_033796.1",
+            "NC_033797.1",
+            "NC_033798.1"
+          ],
+          "seq_count": 11792,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Asparagales",
+            "family": "Asparagaceae",
+            "genus": "Asparagus"
+          },
+          "common_name": "garden asparagus",
+          "published": "2026-04-04T17:35:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aofficinalis.NCBI.AspofV1/BSgenome.Aofficinalis.NCBI.AspofV1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus luchuensis",
       "common_name": "",
       "group": "fungi",
@@ -19815,6 +19863,38 @@
       "common_name": "",
       "published": "2026-04-04T17:35:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oeuropaea.NCBI.Oeuropaeav1/BSgenome.Oeuropaea.NCBI.Oeuropaeav1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aofficinalis.NCBI.AspofV1",
+      "version": "1.0.0",
+      "organism": "Asparagus officinalis",
+      "assembly": "Aspof.V1",
+      "provider": "NCBI",
+      "accession": "GCF_001876935.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001876935.1/",
+      "file_name": "BSgenome.Aofficinalis.NCBI.AspofV1_1.0.0.tar.gz",
+      "size": 296307343,
+      "seq_ids": [
+        "NC_033794.1",
+        "NC_033795.1",
+        "NC_033796.1",
+        "NC_033797.1",
+        "NC_033798.1"
+      ],
+      "seq_count": 11792,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Asparagales",
+        "family": "Asparagaceae",
+        "genus": "Asparagus"
+      },
+      "common_name": "garden asparagus",
+      "published": "2026-04-04T17:35:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aofficinalis.NCBI.AspofV1/BSgenome.Aofficinalis.NCBI.AspofV1_1.0.0.tar.gz"
     }
   ]
 }
