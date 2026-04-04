@@ -191,6 +191,54 @@
       ]
     },
     {
+      "organism": "Amborella trichopoda",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Amborellales",
+        "family": "Amborellaceae",
+        "genus": "Amborella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Atrichopoda.NCBI.AMTR10",
+          "version": "1.0.0",
+          "organism": "Amborella trichopoda",
+          "assembly": "AMTR1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000471905.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000471905.2/",
+          "file_name": "BSgenome.Atrichopoda.NCBI.AMTR10_1.0.0.tar.gz",
+          "size": 177880024,
+          "seq_ids": [
+            "NW_006500357.1",
+            "NW_006500356.1",
+            "NW_006500355.1",
+            "NW_006500354.1",
+            "NW_006500353.1"
+          ],
+          "seq_count": 5746,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Amborellales",
+            "family": "Amborellaceae",
+            "genus": "Amborella"
+          },
+          "common_name": "",
+          "published": "2026-04-04T15:37:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atrichopoda.NCBI.AMTR10/BSgenome.Atrichopoda.NCBI.AMTR10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ananas comosus",
       "common_name": "pineapple",
       "group": "plant",
@@ -18295,6 +18343,38 @@
       "common_name": "potato",
       "published": "2026-04-04T15:37:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Stuberosum.NCBI.SolTub30/BSgenome.Stuberosum.NCBI.SolTub30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Atrichopoda.NCBI.AMTR10",
+      "version": "1.0.0",
+      "organism": "Amborella trichopoda",
+      "assembly": "AMTR1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000471905.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000471905.2/",
+      "file_name": "BSgenome.Atrichopoda.NCBI.AMTR10_1.0.0.tar.gz",
+      "size": 177880024,
+      "seq_ids": [
+        "NW_006500357.1",
+        "NW_006500356.1",
+        "NW_006500355.1",
+        "NW_006500354.1",
+        "NW_006500353.1"
+      ],
+      "seq_count": 5746,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Amborellales",
+        "family": "Amborellaceae",
+        "genus": "Amborella"
+      },
+      "common_name": "",
+      "published": "2026-04-04T15:37:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atrichopoda.NCBI.AMTR10/BSgenome.Atrichopoda.NCBI.AMTR10_1.0.0.tar.gz"
     }
   ]
 }
