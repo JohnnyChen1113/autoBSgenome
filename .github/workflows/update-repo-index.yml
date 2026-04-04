@@ -135,6 +135,29 @@ jobs:
           echo "Updated packages.json:"
           cat packages.json
 
+      - name: Update build-queue.json status
+        run: |
+          ORGANISM='${{ github.event.client_payload.organism }}'
+          if [ -f build-queue.json ]; then
+            python3 -c "
+          import json
+          with open('build-queue.json', 'r') as f:
+              queue = json.load(f)
+          updated = False
+          for item in queue:
+              if item.get('organism') == '${ORGANISM}' and item.get('status') in ('building', 'pending'):
+                  item['status'] = 'done'
+                  updated = True
+                  break
+          if updated:
+              with open('build-queue.json', 'w') as f:
+                  json.dump(queue, f)
+              print(f'Marked {\"${ORGANISM}\"} as done in build-queue.json')
+          else:
+              print(f'No matching entry found for {\"${ORGANISM}\"}')
+          "
+          fi
+
       - name: Regenerate PACKAGES index
         run: |
           # Generate PACKAGES file from packages.json
@@ -159,6 +182,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add packages.json src/contrib/PACKAGES
+          git add packages.json src/contrib/PACKAGES build-queue.json
           git diff --cached --quiet || git commit -m "Update repository index: ${{ github.event.client_payload.package_name }}"
           git push
