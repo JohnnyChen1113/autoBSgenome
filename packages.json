@@ -6282,6 +6282,54 @@
       ]
     },
     {
+      "organism": "Formica exsecta",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Formica"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fexsecta.NCBI.ASM365146v1",
+          "version": "1.0.0",
+          "organism": "Formica exsecta",
+          "assembly": "ASM365146v1",
+          "provider": "NCBI",
+          "accession": "GCF_003651465.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003651465.1/",
+          "file_name": "BSgenome.Fexsecta.NCBI.ASM365146v1_1.0.0.tar.gz",
+          "size": 64880704,
+          "seq_ids": [
+            "NW_021839241.1",
+            "NW_021839242.1",
+            "NW_021839243.1",
+            "NW_021839244.1",
+            "NW_021839245.1"
+          ],
+          "seq_count": 14521,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Formica"
+          },
+          "common_name": "",
+          "published": "2026-04-04T22:34:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fexsecta.NCBI.ASM365146v1/BSgenome.Fexsecta.NCBI.ASM365146v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fragaria vesca subsp. vesca",
       "common_name": "",
       "group": "plant",
@@ -25495,6 +25543,38 @@
       "common_name": "",
       "published": "2026-04-04T22:34:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csolmsi.NCBI.CerSol10/BSgenome.Csolmsi.NCBI.CerSol10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fexsecta.NCBI.ASM365146v1",
+      "version": "1.0.0",
+      "organism": "Formica exsecta",
+      "assembly": "ASM365146v1",
+      "provider": "NCBI",
+      "accession": "GCF_003651465.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003651465.1/",
+      "file_name": "BSgenome.Fexsecta.NCBI.ASM365146v1_1.0.0.tar.gz",
+      "size": 64880704,
+      "seq_ids": [
+        "NW_021839241.1",
+        "NW_021839242.1",
+        "NW_021839243.1",
+        "NW_021839244.1",
+        "NW_021839245.1"
+      ],
+      "seq_count": 14521,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Formica"
+      },
+      "common_name": "",
+      "published": "2026-04-04T22:34:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fexsecta.NCBI.ASM365146v1/BSgenome.Fexsecta.NCBI.ASM365146v1_1.0.0.tar.gz"
     }
   ]
 }

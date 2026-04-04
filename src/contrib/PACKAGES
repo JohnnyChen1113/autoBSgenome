@@ -1369,3 +1369,7 @@ NeedsCompilation: no
 Package: BSgenome.Csolmsi.NCBI.CerSol10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fexsecta.NCBI.ASM365146v1
+Version: 1.0.0
+NeedsCompilation: no
