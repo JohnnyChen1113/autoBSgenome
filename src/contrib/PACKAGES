@@ -2285,3 +2285,7 @@ NeedsCompilation: no
 Package: BSgenome.Tatroroseus.NCBI.ASM190759v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pverrucosus.NCBI.ASM166265v1
+Version: 1.0.0
+NeedsCompilation: no
