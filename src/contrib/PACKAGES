@@ -2029,3 +2029,7 @@ NeedsCompilation: no
 Package: BSgenome.Kpini.NCBI.ASM51260v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sgraminicola.NCBI.PGRAMIIB10
+Version: 1.0.0
+NeedsCompilation: no

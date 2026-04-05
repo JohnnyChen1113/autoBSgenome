@@ -21256,6 +21256,54 @@
       ]
     },
     {
+      "organism": "Sporisorium graminicola",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Ustilaginomycetes",
+        "order": "Ustilaginales",
+        "family": "Ustilaginaceae",
+        "genus": "Sporisorium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sgraminicola.NCBI.PGRAMIIB10",
+          "version": "1.0.0",
+          "organism": "Sporisorium graminicola",
+          "assembly": "PGRAM_IIB_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_005498985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_005498985.1/",
+          "file_name": "BSgenome.Sgraminicola.NCBI.PGRAMIIB10_1.0.0.tar.gz",
+          "size": 5148739,
+          "seq_ids": [
+            "NC_043718.1",
+            "NC_043719.1",
+            "NC_043733.1",
+            "NC_043734.1",
+            "NC_043735.1"
+          ],
+          "seq_count": 22,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Ustilaginomycetes",
+            "order": "Ustilaginales",
+            "family": "Ustilaginaceae",
+            "genus": "Sporisorium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:56:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sgraminicola.NCBI.PGRAMIIB10/BSgenome.Sgraminicola.NCBI.PGRAMIIB10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Stegastes partitus",
       "common_name": "bicolor damselfish",
       "group": "vertebrate_other",
@@ -40248,6 +40296,38 @@
       "common_name": "",
       "published": "2026-04-05T15:05:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kpini.NCBI.ASM51260v3/BSgenome.Kpini.NCBI.ASM51260v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sgraminicola.NCBI.PGRAMIIB10",
+      "version": "1.0.0",
+      "organism": "Sporisorium graminicola",
+      "assembly": "PGRAM_IIB_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_005498985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_005498985.1/",
+      "file_name": "BSgenome.Sgraminicola.NCBI.PGRAMIIB10_1.0.0.tar.gz",
+      "size": 5148739,
+      "seq_ids": [
+        "NC_043718.1",
+        "NC_043719.1",
+        "NC_043733.1",
+        "NC_043734.1",
+        "NC_043735.1"
+      ],
+      "seq_count": 22,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Ustilaginomycetes",
+        "order": "Ustilaginales",
+        "family": "Ustilaginaceae",
+        "genus": "Sporisorium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:56:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sgraminicola.NCBI.PGRAMIIB10/BSgenome.Sgraminicola.NCBI.PGRAMIIB10_1.0.0.tar.gz"
     }
   ]
 }
