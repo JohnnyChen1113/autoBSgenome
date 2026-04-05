@@ -22021,6 +22021,54 @@
       ]
     },
     {
+      "organism": "Tilletiaria anomala UBC 951",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Exobasidiomycetes",
+        "order": "Georgefischeriales",
+        "family": "Tilletiariaceae",
+        "genus": "Tilletiaria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tanomala.NCBI.TilletiariaanomalaUBC951v10",
+          "version": "1.0.0",
+          "organism": "Tilletiaria anomala UBC 951",
+          "assembly": "Tilletiaria anomala UBC 951 v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000711695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000711695.1/",
+          "file_name": "BSgenome.Tanomala.NCBI.TilletiariaanomalaUBC951v10_1.0.0.tar.gz",
+          "size": 4969195,
+          "seq_ids": [
+            "NW_013547021.1",
+            "NW_013547020.1",
+            "NW_013547019.1",
+            "NW_013547018.1",
+            "NW_013547017.1"
+          ],
+          "seq_count": 289,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Exobasidiomycetes",
+            "order": "Georgefischeriales",
+            "family": "Tilletiariaceae",
+            "genus": "Tilletiaria"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:02:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tanomala.NCBI.TilletiariaanomalaUBC951v10/BSgenome.Tanomala.NCBI.TilletiariaanomalaUBC951v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tinamus guttatus",
       "common_name": "white-throated tinamou",
       "group": "vertebrate_other",
@@ -39377,6 +39425,38 @@
       "common_name": "",
       "published": "2026-04-05T15:02:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phubeiensis.NCBI.ASM40351v1/BSgenome.Phubeiensis.NCBI.ASM40351v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tanomala.NCBI.TilletiariaanomalaUBC951v10",
+      "version": "1.0.0",
+      "organism": "Tilletiaria anomala UBC 951",
+      "assembly": "Tilletiaria anomala UBC 951 v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000711695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000711695.1/",
+      "file_name": "BSgenome.Tanomala.NCBI.TilletiariaanomalaUBC951v10_1.0.0.tar.gz",
+      "size": 4969195,
+      "seq_ids": [
+        "NW_013547021.1",
+        "NW_013547020.1",
+        "NW_013547019.1",
+        "NW_013547018.1",
+        "NW_013547017.1"
+      ],
+      "seq_count": 289,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Exobasidiomycetes",
+        "order": "Georgefischeriales",
+        "family": "Tilletiariaceae",
+        "genus": "Tilletiaria"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:02:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tanomala.NCBI.TilletiariaanomalaUBC951v10/BSgenome.Tanomala.NCBI.TilletiariaanomalaUBC951v10_1.0.0.tar.gz"
     }
   ]
 }
