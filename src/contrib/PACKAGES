@@ -2049,3 +2049,7 @@ NeedsCompilation: no
 Package: BSgenome.Tbenhamiae.NCBI.ASM15112v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ureesii.NCBI.ASM351v2
+Version: 1.0.0
+NeedsCompilation: no
