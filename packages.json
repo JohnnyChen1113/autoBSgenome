@@ -11641,6 +11641,54 @@
       ]
     },
     {
+      "organism": "Kwoniella pini CBS 10737",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Kwoniella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kpini.NCBI.ASM51260v3",
+          "version": "1.0.0",
+          "organism": "Kwoniella pini CBS 10737",
+          "assembly": "ASM51260v3",
+          "provider": "NCBI",
+          "accession": "GCF_000512605.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000512605.2/",
+          "file_name": "BSgenome.Kpini.NCBI.ASM51260v3_1.0.0.tar.gz",
+          "size": 5477163,
+          "seq_ids": [
+            "NC_091716.1",
+            "NC_091717.1",
+            "NC_091718.1",
+            "NC_091719.1",
+            "NC_091720.1"
+          ],
+          "seq_count": 11,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Kwoniella"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:05:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kpini.NCBI.ASM51260v3/BSgenome.Kpini.NCBI.ASM51260v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lacerta agilis",
       "common_name": "Sand lizard",
       "group": "vertebrate_other",
@@ -40168,6 +40216,38 @@
       "common_name": "",
       "published": "2026-04-05T15:05:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ylipolytica.NCBI.ASM176148v1/BSgenome.Ylipolytica.NCBI.ASM176148v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kpini.NCBI.ASM51260v3",
+      "version": "1.0.0",
+      "organism": "Kwoniella pini CBS 10737",
+      "assembly": "ASM51260v3",
+      "provider": "NCBI",
+      "accession": "GCF_000512605.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000512605.2/",
+      "file_name": "BSgenome.Kpini.NCBI.ASM51260v3_1.0.0.tar.gz",
+      "size": 5477163,
+      "seq_ids": [
+        "NC_091716.1",
+        "NC_091717.1",
+        "NC_091718.1",
+        "NC_091719.1",
+        "NC_091720.1"
+      ],
+      "seq_count": 11,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Kwoniella"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:05:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kpini.NCBI.ASM51260v3/BSgenome.Kpini.NCBI.ASM51260v3_1.0.0.tar.gz"
     }
   ]
 }

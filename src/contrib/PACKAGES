@@ -2025,3 +2025,7 @@ NeedsCompilation: no
 Package: BSgenome.Ylipolytica.NCBI.ASM176148v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kpini.NCBI.ASM51260v3
+Version: 1.0.0
+NeedsCompilation: no
