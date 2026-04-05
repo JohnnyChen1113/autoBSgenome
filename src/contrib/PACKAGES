@@ -1577,3 +1577,7 @@ NeedsCompilation: no
 Package: BSgenome.Bfloridae.NCBI.BflVNyyK
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hazteca.NCBI.Hazt202
+Version: 1.0.0
+NeedsCompilation: no
