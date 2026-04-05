@@ -24398,6 +24398,54 @@
       ]
     },
     {
+      "organism": "Talaromyces atroroseus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Trichocomaceae",
+        "genus": "Talaromyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tatroroseus.NCBI.ASM190759v1",
+          "version": "1.0.0",
+          "organism": "Talaromyces atroroseus",
+          "assembly": "ASM190759v1",
+          "provider": "NCBI",
+          "accession": "GCF_001907595.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001907595.1/",
+          "file_name": "BSgenome.Tatroroseus.NCBI.ASM190759v1_1.0.0.tar.gz",
+          "size": 7952975,
+          "seq_ids": [
+            "NW_017971432.1",
+            "NW_017971433.1",
+            "NW_017971442.1",
+            "NW_017971443.1",
+            "NW_017971444.1"
+          ],
+          "seq_count": 48,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Trichocomaceae",
+            "genus": "Talaromyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T19:37:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tatroroseus.NCBI.ASM190759v1/BSgenome.Tatroroseus.NCBI.ASM190759v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Talaromyces marneffei",
       "common_name": "",
       "group": "fungi",
@@ -45253,6 +45301,38 @@
       "common_name": "",
       "published": "2026-04-05T19:37:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Poxalicum.NCBI.ASM172317v3/BSgenome.Poxalicum.NCBI.ASM172317v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tatroroseus.NCBI.ASM190759v1",
+      "version": "1.0.0",
+      "organism": "Talaromyces atroroseus",
+      "assembly": "ASM190759v1",
+      "provider": "NCBI",
+      "accession": "GCF_001907595.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001907595.1/",
+      "file_name": "BSgenome.Tatroroseus.NCBI.ASM190759v1_1.0.0.tar.gz",
+      "size": 7952975,
+      "seq_ids": [
+        "NW_017971432.1",
+        "NW_017971433.1",
+        "NW_017971442.1",
+        "NW_017971443.1",
+        "NW_017971444.1"
+      ],
+      "seq_count": 48,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Trichocomaceae",
+        "genus": "Talaromyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T19:37:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tatroroseus.NCBI.ASM190759v1/BSgenome.Tatroroseus.NCBI.ASM190759v1_1.0.0.tar.gz"
     }
   ]
 }
