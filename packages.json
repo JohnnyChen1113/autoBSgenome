@@ -3004,6 +3004,54 @@
       ]
     },
     {
+      "organism": "Candida orthopsilosis Co 90-125",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Corthopsilosis.NCBI.ASM31587v1",
+          "version": "1.0.0",
+          "organism": "Candida orthopsilosis Co 90-125",
+          "assembly": "ASM31587v1",
+          "provider": "NCBI",
+          "accession": "GCF_000315875.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000315875.1/",
+          "file_name": "BSgenome.Corthopsilosis.NCBI.ASM31587v1_1.0.0.tar.gz",
+          "size": 3304300,
+          "seq_ids": [
+            "NC_018292.1",
+            "NC_018295.1",
+            "NC_018296.1",
+            "NC_018297.1",
+            "NC_018298.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Candida"
+          },
+          "common_name": "",
+          "published": "2026-04-05T11:33:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Corthopsilosis.NCBI.ASM31587v1/BSgenome.Corthopsilosis.NCBI.ASM31587v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Candidozyma auris",
       "common_name": "",
       "group": "fungi",
@@ -36677,6 +36725,38 @@
       "common_name": "",
       "published": "2026-04-05T11:33:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108/BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Corthopsilosis.NCBI.ASM31587v1",
+      "version": "1.0.0",
+      "organism": "Candida orthopsilosis Co 90-125",
+      "assembly": "ASM31587v1",
+      "provider": "NCBI",
+      "accession": "GCF_000315875.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000315875.1/",
+      "file_name": "BSgenome.Corthopsilosis.NCBI.ASM31587v1_1.0.0.tar.gz",
+      "size": 3304300,
+      "seq_ids": [
+        "NC_018292.1",
+        "NC_018295.1",
+        "NC_018296.1",
+        "NC_018297.1",
+        "NC_018298.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "common_name": "",
+      "published": "2026-04-05T11:33:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Corthopsilosis.NCBI.ASM31587v1/BSgenome.Corthopsilosis.NCBI.ASM31587v1_1.0.0.tar.gz"
     }
   ]
 }

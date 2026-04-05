@@ -1849,3 +1849,7 @@ NeedsCompilation: no
 Package: BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Corthopsilosis.NCBI.ASM31587v1
+Version: 1.0.0
+NeedsCompilation: no
