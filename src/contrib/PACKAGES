@@ -1861,3 +1861,7 @@ NeedsCompilation: no
 Package: BSgenome.Cjadinii.NCBI.Cybja1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Stanzawaensis.NCBI.Canta1
+Version: 1.0.0
+NeedsCompilation: no
