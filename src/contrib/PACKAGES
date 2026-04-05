@@ -2169,3 +2169,7 @@ NeedsCompilation: no
 Package: BSgenome.Tmarneffei.NCBI.ASM955685v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Remersonii.NCBI.ASM96859v1
+Version: 1.0.0
+NeedsCompilation: no

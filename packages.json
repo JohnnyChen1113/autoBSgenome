@@ -20398,6 +20398,54 @@
       ]
     },
     {
+      "organism": "Rasamsonia emersonii CBS 393.64",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Trichocomaceae",
+        "genus": "Rasamsonia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Remersonii.NCBI.ASM96859v1",
+          "version": "1.0.0",
+          "organism": "Rasamsonia emersonii CBS 393.64",
+          "assembly": "ASM96859v1",
+          "provider": "NCBI",
+          "accession": "GCF_000968595.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000968595.1/",
+          "file_name": "BSgenome.Remersonii.NCBI.ASM96859v1_1.0.0.tar.gz",
+          "size": 7575083,
+          "seq_ids": [
+            "NW_013563356.1",
+            "NW_013563355.1",
+            "NW_013563354.1",
+            "NW_013563353.1",
+            "NW_013563352.1"
+          ],
+          "seq_count": 862,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Trichocomaceae",
+            "genus": "Rasamsonia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T17:36:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Remersonii.NCBI.ASM96859v1/BSgenome.Remersonii.NCBI.ASM96859v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhagoletis zephyria",
       "common_name": "snowberry fruit fly",
       "group": "invertebrate",
@@ -43019,6 +43067,38 @@
       "common_name": "",
       "published": "2026-04-05T17:36:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmarneffei.NCBI.ASM955685v1/BSgenome.Tmarneffei.NCBI.ASM955685v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Remersonii.NCBI.ASM96859v1",
+      "version": "1.0.0",
+      "organism": "Rasamsonia emersonii CBS 393.64",
+      "assembly": "ASM96859v1",
+      "provider": "NCBI",
+      "accession": "GCF_000968595.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000968595.1/",
+      "file_name": "BSgenome.Remersonii.NCBI.ASM96859v1_1.0.0.tar.gz",
+      "size": 7575083,
+      "seq_ids": [
+        "NW_013563356.1",
+        "NW_013563355.1",
+        "NW_013563354.1",
+        "NW_013563353.1",
+        "NW_013563352.1"
+      ],
+      "seq_count": 862,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Trichocomaceae",
+        "genus": "Rasamsonia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T17:36:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Remersonii.NCBI.ASM96859v1/BSgenome.Remersonii.NCBI.ASM96859v1_1.0.0.tar.gz"
     }
   ]
 }
