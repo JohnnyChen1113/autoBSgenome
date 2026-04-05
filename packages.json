@@ -19882,6 +19882,54 @@
       ]
     },
     {
+      "organism": "Penicillium arizonense",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Penicillium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Parizonense.NCBI.ASM177332v1",
+          "version": "1.0.0",
+          "organism": "Penicillium arizonense",
+          "assembly": "ASM177332v1",
+          "provider": "NCBI",
+          "accession": "GCF_001773325.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001773325.1/",
+          "file_name": "BSgenome.Parizonense.NCBI.ASM177332v1_1.0.0.tar.gz",
+          "size": 8698928,
+          "seq_ids": [
+            "NW_019173278.1",
+            "NW_019173279.1",
+            "NW_019173280.1",
+            "NW_019173281.1",
+            "NW_019173282.1"
+          ],
+          "seq_count": 396,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Penicillium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T22:36:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Parizonense.NCBI.ASM177332v1/BSgenome.Parizonense.NCBI.ASM177332v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Penicillium expansum",
       "common_name": "",
       "group": "fungi",
@@ -48133,6 +48181,38 @@
       "common_name": "",
       "published": "2026-04-05T22:36:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tamestolkiae.NCBI.ASM189636v1/BSgenome.Tamestolkiae.NCBI.ASM189636v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Parizonense.NCBI.ASM177332v1",
+      "version": "1.0.0",
+      "organism": "Penicillium arizonense",
+      "assembly": "ASM177332v1",
+      "provider": "NCBI",
+      "accession": "GCF_001773325.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001773325.1/",
+      "file_name": "BSgenome.Parizonense.NCBI.ASM177332v1_1.0.0.tar.gz",
+      "size": 8698928,
+      "seq_ids": [
+        "NW_019173278.1",
+        "NW_019173279.1",
+        "NW_019173280.1",
+        "NW_019173281.1",
+        "NW_019173282.1"
+      ],
+      "seq_count": 396,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Penicillium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T22:36:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Parizonense.NCBI.ASM177332v1/BSgenome.Parizonense.NCBI.ASM177332v1_1.0.0.tar.gz"
     }
   ]
 }

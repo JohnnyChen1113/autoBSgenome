@@ -2425,3 +2425,7 @@ NeedsCompilation: no
 Package: BSgenome.Tamestolkiae.NCBI.ASM189636v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Parizonense.NCBI.ASM177332v1
+Version: 1.0.0
+NeedsCompilation: no
