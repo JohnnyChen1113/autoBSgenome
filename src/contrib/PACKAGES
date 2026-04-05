@@ -1661,3 +1661,7 @@ NeedsCompilation: no
 Package: BSgenome.Ttridentatus.NCBI.ASM421037v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Obimaculoides.NCBI.ASM119413v2
+Version: 1.0.0
+NeedsCompilation: no
