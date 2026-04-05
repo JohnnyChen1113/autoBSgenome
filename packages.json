@@ -1768,6 +1768,54 @@
       ]
     },
     {
+      "organism": "Bombyx mandarina",
+      "common_name": "wild silkworm",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Bombycidae",
+        "genus": "Bombyx"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bmandarina.NCBI.ASM398793v1",
+          "version": "1.0.0",
+          "organism": "Bombyx mandarina",
+          "assembly": "ASM398793v1",
+          "provider": "NCBI",
+          "accession": "GCF_003987935.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003987935.1/",
+          "file_name": "BSgenome.Bmandarina.NCBI.ASM398793v1_1.0.0.tar.gz",
+          "size": 103565634,
+          "seq_ids": [
+            "NW_021011476.1",
+            "NW_021011477.1",
+            "NW_021011478.1",
+            "NW_021011479.1",
+            "NW_021011480.1"
+          ],
+          "seq_count": 3105,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Lepidoptera",
+            "family": "Bombycidae",
+            "genus": "Bombyx"
+          },
+          "common_name": "wild silkworm",
+          "published": "2026-04-05T02:42:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bmandarina.NCBI.ASM398793v1/BSgenome.Bmandarina.NCBI.ASM398793v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bos indicus x Bos taurus",
       "common_name": "hybrid cattle",
       "group": "vertebrate_mammalian",
@@ -28052,6 +28100,38 @@
       "common_name": "Russian wheat aphid",
       "published": "2026-04-05T02:42:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnoxia.NCBI.Dnoxia10/BSgenome.Dnoxia.NCBI.Dnoxia10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bmandarina.NCBI.ASM398793v1",
+      "version": "1.0.0",
+      "organism": "Bombyx mandarina",
+      "assembly": "ASM398793v1",
+      "provider": "NCBI",
+      "accession": "GCF_003987935.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003987935.1/",
+      "file_name": "BSgenome.Bmandarina.NCBI.ASM398793v1_1.0.0.tar.gz",
+      "size": 103565634,
+      "seq_ids": [
+        "NW_021011476.1",
+        "NW_021011477.1",
+        "NW_021011478.1",
+        "NW_021011479.1",
+        "NW_021011480.1"
+      ],
+      "seq_count": 3105,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Bombycidae",
+        "genus": "Bombyx"
+      },
+      "common_name": "wild silkworm",
+      "published": "2026-04-05T02:42:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bmandarina.NCBI.ASM398793v1/BSgenome.Bmandarina.NCBI.ASM398793v1_1.0.0.tar.gz"
     }
   ]
 }
