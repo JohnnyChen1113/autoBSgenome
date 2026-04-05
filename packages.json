@@ -3152,6 +3152,54 @@
       ]
     },
     {
+      "organism": "Bipolaris oryzae ATCC 44560",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Bipolaris"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10",
+          "version": "1.0.0",
+          "organism": "Bipolaris oryzae ATCC 44560",
+          "assembly": "Cochliobolus miyabeanus v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000523455.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000523455.1/",
+          "file_name": "BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10_1.0.0.tar.gz",
+          "size": 8297625,
+          "seq_ids": [
+            "NW_006911276.1",
+            "NW_006911277.1",
+            "NW_006911278.1",
+            "NW_006911279.1",
+            "NW_006911280.1"
+          ],
+          "seq_count": 619,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Pleosporaceae",
+            "genus": "Bipolaris"
+          },
+          "common_name": "",
+          "published": "2026-04-05T20:37:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10/BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bipolaris zeicola 26-R-13",
       "common_name": "",
       "group": "fungi",
@@ -45733,6 +45781,38 @@
       "common_name": "",
       "published": "2026-04-05T20:37:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Awentii.NCBI.Aspwe1/BSgenome.Awentii.NCBI.Aspwe1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10",
+      "version": "1.0.0",
+      "organism": "Bipolaris oryzae ATCC 44560",
+      "assembly": "Cochliobolus miyabeanus v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000523455.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000523455.1/",
+      "file_name": "BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10_1.0.0.tar.gz",
+      "size": 8297625,
+      "seq_ids": [
+        "NW_006911276.1",
+        "NW_006911277.1",
+        "NW_006911278.1",
+        "NW_006911279.1",
+        "NW_006911280.1"
+      ],
+      "seq_count": 619,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Bipolaris"
+      },
+      "common_name": "",
+      "published": "2026-04-05T20:37:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10/BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10_1.0.0.tar.gz"
     }
   ]
 }
