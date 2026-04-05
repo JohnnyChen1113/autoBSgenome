@@ -26602,6 +26602,54 @@
       ]
     },
     {
+      "organism": "Trichoderma citrinoviride",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tcitrinoviride.NCBI.Triciv40",
+          "version": "1.0.0",
+          "organism": "Trichoderma citrinoviride",
+          "assembly": "Trici v4.0",
+          "provider": "NCBI",
+          "accession": "GCF_003025115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003025115.1/",
+          "file_name": "BSgenome.Tcitrinoviride.NCBI.Triciv40_1.0.0.tar.gz",
+          "size": 8725761,
+          "seq_ids": [
+            "NW_020194709.1",
+            "NW_020194710.1",
+            "NW_020194711.1",
+            "NW_020194712.1",
+            "NW_020194713.1"
+          ],
+          "seq_count": 533,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Hypocreaceae",
+            "genus": "Trichoderma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T22:35:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcitrinoviride.NCBI.Triciv40/BSgenome.Tcitrinoviride.NCBI.Triciv40_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichoderma ghanense",
       "common_name": "",
       "group": "fungi",
@@ -47413,6 +47461,38 @@
       "common_name": "",
       "published": "2026-04-05T22:35:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sbrasiliensis.NCBI.Sbrasiliensis5110v1/BSgenome.Sbrasiliensis.NCBI.Sbrasiliensis5110v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tcitrinoviride.NCBI.Triciv40",
+      "version": "1.0.0",
+      "organism": "Trichoderma citrinoviride",
+      "assembly": "Trici v4.0",
+      "provider": "NCBI",
+      "accession": "GCF_003025115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003025115.1/",
+      "file_name": "BSgenome.Tcitrinoviride.NCBI.Triciv40_1.0.0.tar.gz",
+      "size": 8725761,
+      "seq_ids": [
+        "NW_020194709.1",
+        "NW_020194710.1",
+        "NW_020194711.1",
+        "NW_020194712.1",
+        "NW_020194713.1"
+      ],
+      "seq_count": 533,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T22:35:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcitrinoviride.NCBI.Triciv40/BSgenome.Tcitrinoviride.NCBI.Triciv40_1.0.0.tar.gz"
     }
   ]
 }
