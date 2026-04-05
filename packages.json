@@ -1553,6 +1553,54 @@
       ]
     },
     {
+      "organism": "Bactrocera latifrons",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Tephritidae",
+        "genus": "Bactrocera"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Blatifrons.NCBI.ASM185335v1",
+          "version": "1.0.0",
+          "organism": "Bactrocera latifrons",
+          "assembly": "ASM185335v1",
+          "provider": "NCBI",
+          "accession": "GCF_001853355.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001853355.1/",
+          "file_name": "BSgenome.Blatifrons.NCBI.ASM185335v1_1.0.0.tar.gz",
+          "size": 119248221,
+          "seq_ids": [
+            "NW_017534406.1",
+            "NW_017534407.1",
+            "NW_017534408.1",
+            "NW_017534409.1",
+            "NW_017534410.1"
+          ],
+          "seq_count": 3306,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Tephritidae",
+            "genus": "Bactrocera"
+          },
+          "common_name": "",
+          "published": "2026-04-05T05:16:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Blatifrons.NCBI.ASM185335v1/BSgenome.Blatifrons.NCBI.ASM185335v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Balaenoptera musculus",
       "common_name": "blue whale",
       "group": "vertebrate_mammalian",
@@ -28852,6 +28900,38 @@
       "common_name": "",
       "published": "2026-04-05T05:16:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcanaliculata.NCBI.ASM307304v1/BSgenome.Pcanaliculata.NCBI.ASM307304v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Blatifrons.NCBI.ASM185335v1",
+      "version": "1.0.0",
+      "organism": "Bactrocera latifrons",
+      "assembly": "ASM185335v1",
+      "provider": "NCBI",
+      "accession": "GCF_001853355.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001853355.1/",
+      "file_name": "BSgenome.Blatifrons.NCBI.ASM185335v1_1.0.0.tar.gz",
+      "size": 119248221,
+      "seq_ids": [
+        "NW_017534406.1",
+        "NW_017534407.1",
+        "NW_017534408.1",
+        "NW_017534409.1",
+        "NW_017534410.1"
+      ],
+      "seq_count": 3306,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Tephritidae",
+        "genus": "Bactrocera"
+      },
+      "common_name": "",
+      "published": "2026-04-05T05:16:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Blatifrons.NCBI.ASM185335v1/BSgenome.Blatifrons.NCBI.ASM185335v1_1.0.0.tar.gz"
     }
   ]
 }
