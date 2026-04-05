@@ -12200,6 +12200,54 @@
       ]
     },
     {
+      "organism": "Histoplasma capsulatum G186AR",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Ajellomycetaceae",
+        "genus": "Histoplasma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hcapsulatum.NCBI.ASM15011v1",
+          "version": "1.0.0",
+          "organism": "Histoplasma capsulatum G186AR",
+          "assembly": "ASM15011v1",
+          "provider": "NCBI",
+          "accession": "GCF_000150115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150115.1/",
+          "file_name": "BSgenome.Hcapsulatum.NCBI.ASM15011v1_1.0.0.tar.gz",
+          "size": 7912524,
+          "seq_ids": [
+            "NW_025544886.1",
+            "NW_025544885.1",
+            "NW_025544884.1",
+            "NW_025544883.1",
+            "NW_025544882.1"
+          ],
+          "seq_count": 88,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Onygenales",
+            "family": "Ajellomycetaceae",
+            "genus": "Histoplasma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T19:37:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcapsulatum.NCBI.ASM15011v1/BSgenome.Hcapsulatum.NCBI.ASM15011v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Huiozyma naganishii CBS 8797",
       "common_name": "",
       "group": "fungi",
@@ -44933,6 +44981,38 @@
       "common_name": "",
       "published": "2026-04-05T19:36:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Abisporus.NCBI.AgabivarbisH972/BSgenome.Abisporus.NCBI.AgabivarbisH972_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hcapsulatum.NCBI.ASM15011v1",
+      "version": "1.0.0",
+      "organism": "Histoplasma capsulatum G186AR",
+      "assembly": "ASM15011v1",
+      "provider": "NCBI",
+      "accession": "GCF_000150115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150115.1/",
+      "file_name": "BSgenome.Hcapsulatum.NCBI.ASM15011v1_1.0.0.tar.gz",
+      "size": 7912524,
+      "seq_ids": [
+        "NW_025544886.1",
+        "NW_025544885.1",
+        "NW_025544884.1",
+        "NW_025544883.1",
+        "NW_025544882.1"
+      ],
+      "seq_count": 88,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Ajellomycetaceae",
+        "genus": "Histoplasma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T19:37:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcapsulatum.NCBI.ASM15011v1/BSgenome.Hcapsulatum.NCBI.ASM15011v1_1.0.0.tar.gz"
     }
   ]
 }
