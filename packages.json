@@ -5676,6 +5676,54 @@
       ]
     },
     {
+      "organism": "Cryptococcus bacillisporus CA1280",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cbacillisporus.NCBI.ASM83633v2",
+          "version": "1.0.0",
+          "organism": "Cryptococcus bacillisporus CA1280",
+          "assembly": "ASM83633v2",
+          "provider": "NCBI",
+          "accession": "GCF_000836335.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836335.1/",
+          "file_name": "BSgenome.Cbacillisporus.NCBI.ASM83633v2_1.0.0.tar.gz",
+          "size": 4697390,
+          "seq_ids": [
+            "NC_089928.1",
+            "NC_089929.1",
+            "NC_089930.1",
+            "NC_089931.1",
+            "NC_089932.1"
+          ],
+          "seq_count": 14,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:08:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbacillisporus.NCBI.ASM83633v2/BSgenome.Cbacillisporus.NCBI.ASM83633v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus depauperatus CBS 7841",
       "common_name": "",
       "group": "fungi",
@@ -39057,6 +39105,38 @@
       "common_name": "",
       "published": "2026-04-05T14:08:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctetragattii.NCBI.ASM83575v2/BSgenome.Ctetragattii.NCBI.ASM83575v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cbacillisporus.NCBI.ASM83633v2",
+      "version": "1.0.0",
+      "organism": "Cryptococcus bacillisporus CA1280",
+      "assembly": "ASM83633v2",
+      "provider": "NCBI",
+      "accession": "GCF_000836335.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836335.1/",
+      "file_name": "BSgenome.Cbacillisporus.NCBI.ASM83633v2_1.0.0.tar.gz",
+      "size": 4697390,
+      "seq_ids": [
+        "NC_089928.1",
+        "NC_089929.1",
+        "NC_089930.1",
+        "NC_089931.1",
+        "NC_089932.1"
+      ],
+      "seq_count": 14,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:08:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbacillisporus.NCBI.ASM83633v2/BSgenome.Cbacillisporus.NCBI.ASM83633v2_1.0.0.tar.gz"
     }
   ]
 }

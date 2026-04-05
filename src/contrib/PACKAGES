@@ -1969,3 +1969,7 @@ NeedsCompilation: no
 Package: BSgenome.Ctetragattii.NCBI.ASM83575v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cbacillisporus.NCBI.ASM83633v2
+Version: 1.0.0
+NeedsCompilation: no
