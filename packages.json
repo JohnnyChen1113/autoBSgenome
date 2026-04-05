@@ -19590,6 +19590,54 @@
       ]
     },
     {
+      "organism": "Spathaspora passalidarum NRRL Y-27907",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Spathaspora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20",
+          "version": "1.0.0",
+          "organism": "Spathaspora passalidarum NRRL Y-27907",
+          "assembly": "Spathaspora passalidarum v2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000223485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000223485.1/",
+          "file_name": "BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20_1.0.0.tar.gz",
+          "size": 3447379,
+          "seq_ids": [
+            "NW_006767425.1",
+            "NW_006767426.1",
+            "NW_006767427.1",
+            "NW_006767428.1",
+            "NW_006767429.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Spathaspora"
+          },
+          "common_name": "",
+          "published": "2026-04-05T11:34:41Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20/BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Spodoptera litura",
       "common_name": "",
       "group": "invertebrate",
@@ -36997,6 +37045,38 @@
       "common_name": "",
       "published": "2026-04-05T11:34:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Stanzawaensis.NCBI.Canta1/BSgenome.Stanzawaensis.NCBI.Canta1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20",
+      "version": "1.0.0",
+      "organism": "Spathaspora passalidarum NRRL Y-27907",
+      "assembly": "Spathaspora passalidarum v2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000223485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000223485.1/",
+      "file_name": "BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20_1.0.0.tar.gz",
+      "size": 3447379,
+      "seq_ids": [
+        "NW_006767425.1",
+        "NW_006767426.1",
+        "NW_006767427.1",
+        "NW_006767428.1",
+        "NW_006767429.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Spathaspora"
+      },
+      "common_name": "",
+      "published": "2026-04-05T11:34:41Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20/BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20_1.0.0.tar.gz"
     }
   ]
 }

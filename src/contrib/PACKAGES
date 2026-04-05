@@ -1865,3 +1865,7 @@ NeedsCompilation: no
 Package: BSgenome.Stanzawaensis.NCBI.Canta1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20
+Version: 1.0.0
+NeedsCompilation: no
