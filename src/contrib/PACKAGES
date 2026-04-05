@@ -1869,3 +1869,7 @@ NeedsCompilation: no
 Package: BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Chaemuli.NCBI.CanHae10
+Version: 1.0.0
+NeedsCompilation: no

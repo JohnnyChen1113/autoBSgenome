@@ -3196,6 +3196,54 @@
       ]
     },
     {
+      "organism": "Candidozyma haemuli",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Chaemuli.NCBI.CanHae10",
+          "version": "1.0.0",
+          "organism": "Candidozyma haemuli",
+          "assembly": "CanHae_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_002926055.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002926055.2/",
+          "file_name": "BSgenome.Chaemuli.NCBI.CanHae10_1.0.0.tar.gz",
+          "size": 3516894,
+          "seq_ids": [
+            "NW_020289906.1",
+            "NW_020289902.1",
+            "NW_020289904.1",
+            "NW_020289911.1",
+            "NW_020289903.1"
+          ],
+          "seq_count": 12,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Metschnikowiaceae",
+            "genus": "Candidozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T11:34:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chaemuli.NCBI.CanHae10/BSgenome.Chaemuli.NCBI.CanHae10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Candidozyma pseudohaemuli",
       "common_name": "",
       "group": "fungi",
@@ -37077,6 +37125,38 @@
       "common_name": "",
       "published": "2026-04-05T11:34:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20/BSgenome.Spassalidarum.NCBI.Spathasporapassalidarumv20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Chaemuli.NCBI.CanHae10",
+      "version": "1.0.0",
+      "organism": "Candidozyma haemuli",
+      "assembly": "CanHae_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_002926055.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002926055.2/",
+      "file_name": "BSgenome.Chaemuli.NCBI.CanHae10_1.0.0.tar.gz",
+      "size": 3516894,
+      "seq_ids": [
+        "NW_020289906.1",
+        "NW_020289902.1",
+        "NW_020289904.1",
+        "NW_020289911.1",
+        "NW_020289903.1"
+      ],
+      "seq_count": 12,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T11:34:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chaemuli.NCBI.CanHae10/BSgenome.Chaemuli.NCBI.CanHae10_1.0.0.tar.gz"
     }
   ]
 }
