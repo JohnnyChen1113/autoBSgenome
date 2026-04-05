@@ -1817,3 +1817,7 @@ NeedsCompilation: no
 Package: BSgenome.Tphaffii.NCBI.ASM23690v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dhansenii.NCBI.ASM644v2
+Version: 1.0.0
+NeedsCompilation: no
