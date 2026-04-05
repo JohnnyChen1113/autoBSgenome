@@ -18247,6 +18247,54 @@
       ]
     },
     {
+      "organism": "Schizosaccharomyces japonicus yFS275",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Schizosaccharomycetes",
+        "order": "Schizosaccharomycetales",
+        "family": "Schizosaccharomycetaceae",
+        "genus": "Schizosaccharomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sjaponicus.NCBI.SJ5",
+          "version": "1.0.0",
+          "organism": "Schizosaccharomyces japonicus yFS275",
+          "assembly": "SJ5",
+          "provider": "NCBI",
+          "accession": "GCF_000149845.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149845.2/",
+          "file_name": "BSgenome.Sjaponicus.NCBI.SJ5_1.0.0.tar.gz",
+          "size": 2900101,
+          "seq_ids": [
+            "NW_011627860.1",
+            "NW_011627861.1",
+            "NW_011627862.1",
+            "NW_011627863.1",
+            "NW_011627864.1"
+          ],
+          "seq_count": 32,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Schizosaccharomycetes",
+            "order": "Schizosaccharomycetales",
+            "family": "Schizosaccharomycetaceae",
+            "genus": "Schizosaccharomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T10:39:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sjaponicus.NCBI.SJ5/BSgenome.Sjaponicus.NCBI.SJ5_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Selaginella moellendorffii",
       "common_name": "",
       "group": "plant",
@@ -35799,6 +35847,38 @@
       "common_name": "brown marmorated stink bug",
       "published": "2026-04-05T10:39:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhalys.NCBI.Hhal11/BSgenome.Hhalys.NCBI.Hhal11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sjaponicus.NCBI.SJ5",
+      "version": "1.0.0",
+      "organism": "Schizosaccharomyces japonicus yFS275",
+      "assembly": "SJ5",
+      "provider": "NCBI",
+      "accession": "GCF_000149845.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149845.2/",
+      "file_name": "BSgenome.Sjaponicus.NCBI.SJ5_1.0.0.tar.gz",
+      "size": 2900101,
+      "seq_ids": [
+        "NW_011627860.1",
+        "NW_011627861.1",
+        "NW_011627862.1",
+        "NW_011627863.1",
+        "NW_011627864.1"
+      ],
+      "seq_count": 32,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Schizosaccharomycetes",
+        "order": "Schizosaccharomycetales",
+        "family": "Schizosaccharomycetaceae",
+        "genus": "Schizosaccharomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T10:39:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sjaponicus.NCBI.SJ5/BSgenome.Sjaponicus.NCBI.SJ5_1.0.0.tar.gz"
     }
   ]
 }

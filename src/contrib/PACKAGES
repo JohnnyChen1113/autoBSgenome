@@ -1805,3 +1805,7 @@ NeedsCompilation: no
 Package: BSgenome.Hhalys.NCBI.Hhal11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sjaponicus.NCBI.SJ5
+Version: 1.0.0
+NeedsCompilation: no
