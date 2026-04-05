@@ -9776,6 +9776,54 @@
       ]
     },
     {
+      "organism": "Hyphopichia burtonii NRRL Y-1933",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Hyphopichia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hburtonii.NCBI.Hypbu1",
+          "version": "1.0.0",
+          "organism": "Hyphopichia burtonii NRRL Y-1933",
+          "assembly": "Hypbu1",
+          "provider": "NCBI",
+          "accession": "GCF_001661395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001661395.1/",
+          "file_name": "BSgenome.Hburtonii.NCBI.Hypbu1_1.0.0.tar.gz",
+          "size": 3291616,
+          "seq_ids": [
+            "NW_017963728.1",
+            "NW_017963729.1",
+            "NW_017963730.1",
+            "NW_017963731.1",
+            "NW_017963732.1"
+          ],
+          "seq_count": 27,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Hyphopichia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T11:33:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hburtonii.NCBI.Hypbu1/BSgenome.Hburtonii.NCBI.Hypbu1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Hyposmocoma kahamanoa",
       "common_name": "",
       "group": "invertebrate",
@@ -36359,6 +36407,38 @@
       "common_name": "",
       "published": "2026-04-05T11:32:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauris.NCBI.ASM301371v2/BSgenome.Cauris.NCBI.ASM301371v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hburtonii.NCBI.Hypbu1",
+      "version": "1.0.0",
+      "organism": "Hyphopichia burtonii NRRL Y-1933",
+      "assembly": "Hypbu1",
+      "provider": "NCBI",
+      "accession": "GCF_001661395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001661395.1/",
+      "file_name": "BSgenome.Hburtonii.NCBI.Hypbu1_1.0.0.tar.gz",
+      "size": 3291616,
+      "seq_ids": [
+        "NW_017963728.1",
+        "NW_017963729.1",
+        "NW_017963730.1",
+        "NW_017963731.1",
+        "NW_017963732.1"
+      ],
+      "seq_count": 27,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Hyphopichia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T11:33:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hburtonii.NCBI.Hypbu1/BSgenome.Hburtonii.NCBI.Hypbu1_1.0.0.tar.gz"
     }
   ]
 }
