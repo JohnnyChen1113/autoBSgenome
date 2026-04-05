@@ -16051,6 +16051,54 @@
       ]
     },
     {
+      "organism": "Varroa destructor",
+      "common_name": "honeybee mite",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Arachnida",
+        "order": "Mesostigmata",
+        "family": "Varroidae",
+        "genus": "Varroa"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vdestructor.NCBI.Vdes30",
+          "version": "1.0.0",
+          "organism": "Varroa destructor",
+          "assembly": "Vdes_3.0",
+          "provider": "NCBI",
+          "accession": "GCF_002443255.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002443255.2/",
+          "file_name": "BSgenome.Vdestructor.NCBI.Vdes30_1.0.0.tar.gz",
+          "size": 96878804,
+          "seq_ids": [
+            "NW_019211454.1",
+            "NW_019211455.1",
+            "NW_019211456.1",
+            "NW_019211457.1",
+            "NW_019211458.1"
+          ],
+          "seq_count": 1355,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Arachnida",
+            "order": "Mesostigmata",
+            "family": "Varroidae",
+            "genus": "Varroa"
+          },
+          "common_name": "honeybee mite",
+          "published": "2026-04-05T02:41:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vdestructor.NCBI.Vdes30/BSgenome.Vdestructor.NCBI.Vdes30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Varroa jacobsoni",
       "common_name": "",
       "group": "invertebrate",
@@ -27572,6 +27620,38 @@
       "common_name": "cabbage looper",
       "published": "2026-04-05T02:40:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tni.NCBI.tn1/BSgenome.Tni.NCBI.tn1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vdestructor.NCBI.Vdes30",
+      "version": "1.0.0",
+      "organism": "Varroa destructor",
+      "assembly": "Vdes_3.0",
+      "provider": "NCBI",
+      "accession": "GCF_002443255.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002443255.2/",
+      "file_name": "BSgenome.Vdestructor.NCBI.Vdes30_1.0.0.tar.gz",
+      "size": 96878804,
+      "seq_ids": [
+        "NW_019211454.1",
+        "NW_019211455.1",
+        "NW_019211456.1",
+        "NW_019211457.1",
+        "NW_019211458.1"
+      ],
+      "seq_count": 1355,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Arachnida",
+        "order": "Mesostigmata",
+        "family": "Varroidae",
+        "genus": "Varroa"
+      },
+      "common_name": "honeybee mite",
+      "published": "2026-04-05T02:41:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vdestructor.NCBI.Vdes30/BSgenome.Vdestructor.NCBI.Vdes30_1.0.0.tar.gz"
     }
   ]
 }

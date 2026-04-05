@@ -1473,3 +1473,7 @@ NeedsCompilation: no
 Package: BSgenome.Tni.NCBI.tn1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vdestructor.NCBI.Vdes30
+Version: 1.0.0
+NeedsCompilation: no
