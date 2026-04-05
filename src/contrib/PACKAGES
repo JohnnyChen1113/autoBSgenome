@@ -1637,3 +1637,7 @@ NeedsCompilation: no
 Package: BSgenome.Csecundus.NCBI.Csec10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vceranae.NCBI.ASM98816v1
+Version: 1.0.0
+NeedsCompilation: no
