@@ -1921,3 +1921,7 @@ NeedsCompilation: no
 Package: BSgenome.Slignohabitans.NCBI.ASM164002v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mbicuspidata.NCBI.Metbi1
+Version: 1.0.0
+NeedsCompilation: no
