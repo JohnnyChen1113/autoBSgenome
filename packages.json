@@ -9920,6 +9920,54 @@
       ]
     },
     {
+      "organism": "Kluyveromyces marxianus DMKU3-1042",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Kluyveromyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kmarxianus.NCBI.Kmar10",
+          "version": "1.0.0",
+          "organism": "Kluyveromyces marxianus DMKU3-1042",
+          "assembly": "Kmar_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001417885.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001417885.1/",
+          "file_name": "BSgenome.Kmarxianus.NCBI.Kmar10_1.0.0.tar.gz",
+          "size": 2879093,
+          "seq_ids": [
+            "NC_036025.1",
+            "NC_036026.1",
+            "NC_036027.1",
+            "NC_036028.1",
+            "NC_036029.1"
+          ],
+          "seq_count": 9,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Kluyveromyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T09:43:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kmarxianus.NCBI.Kmar10/BSgenome.Kmarxianus.NCBI.Kmar10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Komagataella phaffii GS115",
       "common_name": "",
       "group": "fungi",
@@ -34999,6 +35047,38 @@
       "common_name": "",
       "published": "2026-04-05T09:43:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hnaganishii.NCBI.ASM34898v1/BSgenome.Hnaganishii.NCBI.ASM34898v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kmarxianus.NCBI.Kmar10",
+      "version": "1.0.0",
+      "organism": "Kluyveromyces marxianus DMKU3-1042",
+      "assembly": "Kmar_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001417885.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001417885.1/",
+      "file_name": "BSgenome.Kmarxianus.NCBI.Kmar10_1.0.0.tar.gz",
+      "size": 2879093,
+      "seq_ids": [
+        "NC_036025.1",
+        "NC_036026.1",
+        "NC_036027.1",
+        "NC_036028.1",
+        "NC_036029.1"
+      ],
+      "seq_count": 9,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Kluyveromyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T09:43:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kmarxianus.NCBI.Kmar10/BSgenome.Kmarxianus.NCBI.Kmar10_1.0.0.tar.gz"
     }
   ]
 }
