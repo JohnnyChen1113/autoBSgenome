@@ -2056,6 +2056,54 @@
       ]
     },
     {
+      "organism": "Branchiostoma floridae",
+      "common_name": "Florida lancelet",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Leptocardii",
+        "order": "Amphioxiformes",
+        "family": "Branchiostomatidae",
+        "genus": "Branchiostoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bfloridae.NCBI.BflVNyyK",
+          "version": "1.0.0",
+          "organism": "Branchiostoma floridae",
+          "assembly": "Bfl_VNyyK",
+          "provider": "NCBI",
+          "accession": "GCF_000003815.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000003815.2/",
+          "file_name": "BSgenome.Bfloridae.NCBI.BflVNyyK_1.0.0.tar.gz",
+          "size": 125814150,
+          "seq_ids": [
+            "NC_049979.1",
+            "NC_049980.1",
+            "NC_049981.1",
+            "NC_049982.1",
+            "NC_049983.1"
+          ],
+          "seq_count": 432,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Leptocardii",
+            "order": "Amphioxiformes",
+            "family": "Branchiostomatidae",
+            "genus": "Branchiostoma"
+          },
+          "common_name": "Florida lancelet",
+          "published": "2026-04-05T06:44:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bfloridae.NCBI.BflVNyyK/BSgenome.Bfloridae.NCBI.BflVNyyK_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Brassica oleracea var. oleracea",
       "common_name": "",
       "group": "plant",
@@ -29572,6 +29620,38 @@
       "common_name": "",
       "published": "2026-04-05T06:44:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcaudatus.NCBI.Priapuluscaudatus501/BSgenome.Pcaudatus.NCBI.Priapuluscaudatus501_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bfloridae.NCBI.BflVNyyK",
+      "version": "1.0.0",
+      "organism": "Branchiostoma floridae",
+      "assembly": "Bfl_VNyyK",
+      "provider": "NCBI",
+      "accession": "GCF_000003815.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000003815.2/",
+      "file_name": "BSgenome.Bfloridae.NCBI.BflVNyyK_1.0.0.tar.gz",
+      "size": 125814150,
+      "seq_ids": [
+        "NC_049979.1",
+        "NC_049980.1",
+        "NC_049981.1",
+        "NC_049982.1",
+        "NC_049983.1"
+      ],
+      "seq_count": 432,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Leptocardii",
+        "order": "Amphioxiformes",
+        "family": "Branchiostomatidae",
+        "genus": "Branchiostoma"
+      },
+      "common_name": "Florida lancelet",
+      "published": "2026-04-05T06:44:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bfloridae.NCBI.BflVNyyK/BSgenome.Bfloridae.NCBI.BflVNyyK_1.0.0.tar.gz"
     }
   ]
 }
