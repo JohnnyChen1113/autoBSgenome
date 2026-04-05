@@ -6724,6 +6724,54 @@
       ]
     },
     {
+      "organism": "Diutina rugosa",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Diutina"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Drugosa.NCBI.ASM870459v1",
+          "version": "1.0.0",
+          "organism": "Diutina rugosa",
+          "assembly": "ASM870459v1",
+          "provider": "NCBI",
+          "accession": "GCF_008704595.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008704595.1/",
+          "file_name": "BSgenome.Drugosa.NCBI.ASM870459v1_1.0.0.tar.gz",
+          "size": 3574374,
+          "seq_ids": [
+            "NW_022995064.1",
+            "NW_022995145.1",
+            "NW_022995061.1",
+            "NW_022995178.1",
+            "NW_022995186.1"
+          ],
+          "seq_count": 169,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Diutina"
+          },
+          "common_name": "",
+          "published": "2026-04-05T11:35:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Drugosa.NCBI.ASM870459v1/BSgenome.Drugosa.NCBI.ASM870459v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila albomicans",
       "common_name": "",
       "group": "invertebrate",
@@ -37157,6 +37205,38 @@
       "common_name": "",
       "published": "2026-04-05T11:34:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chaemuli.NCBI.CanHae10/BSgenome.Chaemuli.NCBI.CanHae10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Drugosa.NCBI.ASM870459v1",
+      "version": "1.0.0",
+      "organism": "Diutina rugosa",
+      "assembly": "ASM870459v1",
+      "provider": "NCBI",
+      "accession": "GCF_008704595.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008704595.1/",
+      "file_name": "BSgenome.Drugosa.NCBI.ASM870459v1_1.0.0.tar.gz",
+      "size": 3574374,
+      "seq_ids": [
+        "NW_022995064.1",
+        "NW_022995145.1",
+        "NW_022995061.1",
+        "NW_022995178.1",
+        "NW_022995186.1"
+      ],
+      "seq_count": 169,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Diutina"
+      },
+      "common_name": "",
+      "published": "2026-04-05T11:35:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Drugosa.NCBI.ASM870459v1/BSgenome.Drugosa.NCBI.ASM870459v1_1.0.0.tar.gz"
     }
   ]
 }
