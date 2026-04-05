@@ -481,6 +481,54 @@
       ]
     },
     {
+      "organism": "Agaricus bisporus var. bisporus H97",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Agaricaceae",
+        "genus": "Agaricus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Abisporus.NCBI.AgabivarbisH972",
+          "version": "1.0.0",
+          "organism": "Agaricus bisporus var. bisporus H97",
+          "assembly": "Agabi_varbisH97_2",
+          "provider": "NCBI",
+          "accession": "GCF_000300575.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000300575.1/",
+          "file_name": "BSgenome.Abisporus.NCBI.AgabivarbisH972_1.0.0.tar.gz",
+          "size": 7681532,
+          "seq_ids": [
+            "NW_006267344.1",
+            "NW_006267355.1",
+            "NW_006267366.1",
+            "NW_006267367.1",
+            "NW_006267368.1"
+          ],
+          "seq_count": 29,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Agaricaceae",
+            "genus": "Agaricus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T19:36:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Abisporus.NCBI.AgabivarbisH972/BSgenome.Abisporus.NCBI.AgabivarbisH972_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Agrilus planipennis",
       "common_name": "emerald ash borer",
       "group": "invertebrate",
@@ -44853,6 +44901,38 @@
       "common_name": "",
       "published": "2026-04-05T19:36:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvariotii.NCBI.Paevar1/BSgenome.Pvariotii.NCBI.Paevar1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Abisporus.NCBI.AgabivarbisH972",
+      "version": "1.0.0",
+      "organism": "Agaricus bisporus var. bisporus H97",
+      "assembly": "Agabi_varbisH97_2",
+      "provider": "NCBI",
+      "accession": "GCF_000300575.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000300575.1/",
+      "file_name": "BSgenome.Abisporus.NCBI.AgabivarbisH972_1.0.0.tar.gz",
+      "size": 7681532,
+      "seq_ids": [
+        "NW_006267344.1",
+        "NW_006267355.1",
+        "NW_006267366.1",
+        "NW_006267367.1",
+        "NW_006267368.1"
+      ],
+      "seq_count": 29,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Agaricaceae",
+        "genus": "Agaricus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T19:36:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Abisporus.NCBI.AgabivarbisH972/BSgenome.Abisporus.NCBI.AgabivarbisH972_1.0.0.tar.gz"
     }
   ]
 }
