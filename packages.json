@@ -20444,6 +20444,53 @@
       ]
     },
     {
+      "organism": "Sugiyamaella lignohabitans",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dipodascomycetes",
+        "order": "Dipodascales",
+        "family": "Trichomonascaceae",
+        "genus": "Sugiyamaella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Slignohabitans.NCBI.ASM164002v2",
+          "version": "1.0.0",
+          "organism": "Sugiyamaella lignohabitans",
+          "assembly": "ASM164002v2",
+          "provider": "NCBI",
+          "accession": "GCF_001640025.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001640025.1/",
+          "file_name": "BSgenome.Slignohabitans.NCBI.ASM164002v2_1.0.0.tar.gz",
+          "size": 4126092,
+          "seq_ids": [
+            "NC_031672.1",
+            "NC_031674.1",
+            "NC_031671.1",
+            "NC_031673.1"
+          ],
+          "seq_count": 4,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dipodascomycetes",
+            "order": "Dipodascales",
+            "family": "Trichomonascaceae",
+            "genus": "Sugiyamaella"
+          },
+          "common_name": "",
+          "published": "2026-04-05T13:04:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slignohabitans.NCBI.ASM164002v2/BSgenome.Slignohabitans.NCBI.ASM164002v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Suhomyces tanzawaensis NRRL Y-17324",
       "common_name": "",
       "group": "fungi",
@@ -38025,6 +38072,37 @@
       "common_name": "",
       "published": "2026-04-05T13:04:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wciferrii.NCBI.ASM31348v1/BSgenome.Wciferrii.NCBI.ASM31348v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Slignohabitans.NCBI.ASM164002v2",
+      "version": "1.0.0",
+      "organism": "Sugiyamaella lignohabitans",
+      "assembly": "ASM164002v2",
+      "provider": "NCBI",
+      "accession": "GCF_001640025.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001640025.1/",
+      "file_name": "BSgenome.Slignohabitans.NCBI.ASM164002v2_1.0.0.tar.gz",
+      "size": 4126092,
+      "seq_ids": [
+        "NC_031672.1",
+        "NC_031674.1",
+        "NC_031671.1",
+        "NC_031673.1"
+      ],
+      "seq_count": 4,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dipodascomycetes",
+        "order": "Dipodascales",
+        "family": "Trichomonascaceae",
+        "genus": "Sugiyamaella"
+      },
+      "common_name": "",
+      "published": "2026-04-05T13:04:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slignohabitans.NCBI.ASM164002v2/BSgenome.Slignohabitans.NCBI.ASM164002v2_1.0.0.tar.gz"
     }
   ]
 }
