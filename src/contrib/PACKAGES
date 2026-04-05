@@ -1825,3 +1825,7 @@ NeedsCompilation: no
 Package: BSgenome.Ncastellii.NCBI.ASM23734v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Soctosporus.NCBI.SO6
+Version: 1.0.0
+NeedsCompilation: no

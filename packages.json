@@ -18439,6 +18439,54 @@
       ]
     },
     {
+      "organism": "Schizosaccharomyces octosporus yFS286",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Schizosaccharomycetes",
+        "order": "Schizosaccharomycetales",
+        "family": "Schizosaccharomycetaceae",
+        "genus": "Schizosaccharomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Soctosporus.NCBI.SO6",
+          "version": "1.0.0",
+          "organism": "Schizosaccharomyces octosporus yFS286",
+          "assembly": "SO6",
+          "provider": "NCBI",
+          "accession": "GCF_000150505.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150505.1/",
+          "file_name": "BSgenome.Soctosporus.NCBI.SO6_1.0.0.tar.gz",
+          "size": 2966048,
+          "seq_ids": [
+            "NW_013185619.1",
+            "NW_013185620.1",
+            "NW_013185621.1",
+            "NW_013185622.1",
+            "NW_013185623.1"
+          ],
+          "seq_count": 5,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Schizosaccharomycetes",
+            "order": "Schizosaccharomycetales",
+            "family": "Schizosaccharomycetaceae",
+            "genus": "Schizosaccharomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T11:32:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Soctosporus.NCBI.SO6/BSgenome.Soctosporus.NCBI.SO6_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Selaginella moellendorffii",
       "common_name": "",
       "group": "plant",
@@ -36199,6 +36247,38 @@
       "common_name": "",
       "published": "2026-04-05T11:32:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncastellii.NCBI.ASM23734v1/BSgenome.Ncastellii.NCBI.ASM23734v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Soctosporus.NCBI.SO6",
+      "version": "1.0.0",
+      "organism": "Schizosaccharomyces octosporus yFS286",
+      "assembly": "SO6",
+      "provider": "NCBI",
+      "accession": "GCF_000150505.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150505.1/",
+      "file_name": "BSgenome.Soctosporus.NCBI.SO6_1.0.0.tar.gz",
+      "size": 2966048,
+      "seq_ids": [
+        "NW_013185619.1",
+        "NW_013185620.1",
+        "NW_013185621.1",
+        "NW_013185622.1",
+        "NW_013185623.1"
+      ],
+      "seq_count": 5,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Schizosaccharomycetes",
+        "order": "Schizosaccharomycetales",
+        "family": "Schizosaccharomycetaceae",
+        "genus": "Schizosaccharomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T11:32:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Soctosporus.NCBI.SO6/BSgenome.Soctosporus.NCBI.SO6_1.0.0.tar.gz"
     }
   ]
 }
