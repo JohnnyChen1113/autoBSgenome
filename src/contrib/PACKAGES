@@ -1585,3 +1585,7 @@ NeedsCompilation: no
 Package: BSgenome.Apisum.NCBI.peaaphid22Mar20184r6urv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cfloridanum.NCBI.Cflo20
+Version: 1.0.0
+NeedsCompilation: no
