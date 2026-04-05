@@ -2257,3 +2257,7 @@ NeedsCompilation: no
 Package: BSgenome.Pbrasiliensis.NCBI.ParacoccibrPb18V2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pvariotii.NCBI.Paevar1
+Version: 1.0.0
+NeedsCompilation: no
