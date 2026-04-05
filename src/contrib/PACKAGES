@@ -2213,3 +2213,7 @@ NeedsCompilation: no
 Package: BSgenome.Cepimyces.NCBI.CaprepimCBS60696V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cimmitis.NCBI.ASM14933v2
+Version: 1.0.0
+NeedsCompilation: no

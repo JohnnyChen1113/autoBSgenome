@@ -5878,6 +5878,54 @@
       ]
     },
     {
+      "organism": "Coccidioides immitis RS",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Onygenaceae",
+        "genus": "Coccidioides"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cimmitis.NCBI.ASM14933v2",
+          "version": "1.0.0",
+          "organism": "Coccidioides immitis RS",
+          "assembly": "ASM14933v2",
+          "provider": "NCBI",
+          "accession": "GCF_000149335.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149335.2/",
+          "file_name": "BSgenome.Cimmitis.NCBI.ASM14933v2_1.0.0.tar.gz",
+          "size": 7469574,
+          "seq_ids": [
+            "NW_004504312.1",
+            "NW_004504307.1",
+            "NW_004504311.1",
+            "NW_004504308.1",
+            "NW_004504309.1"
+          ],
+          "seq_count": 7,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Onygenales",
+            "family": "Onygenaceae",
+            "genus": "Coccidioides"
+          },
+          "common_name": "",
+          "published": "2026-04-05T18:50:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cimmitis.NCBI.ASM14933v2/BSgenome.Cimmitis.NCBI.ASM14933v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Coccomyxa subellipsoidea C-169",
       "common_name": "",
       "group": "plant",
@@ -43893,6 +43941,38 @@
       "common_name": "",
       "published": "2026-04-05T18:49:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cepimyces.NCBI.CaprepimCBS60696V1/BSgenome.Cepimyces.NCBI.CaprepimCBS60696V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cimmitis.NCBI.ASM14933v2",
+      "version": "1.0.0",
+      "organism": "Coccidioides immitis RS",
+      "assembly": "ASM14933v2",
+      "provider": "NCBI",
+      "accession": "GCF_000149335.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149335.2/",
+      "file_name": "BSgenome.Cimmitis.NCBI.ASM14933v2_1.0.0.tar.gz",
+      "size": 7469574,
+      "seq_ids": [
+        "NW_004504312.1",
+        "NW_004504307.1",
+        "NW_004504311.1",
+        "NW_004504308.1",
+        "NW_004504309.1"
+      ],
+      "seq_count": 7,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Onygenaceae",
+        "genus": "Coccidioides"
+      },
+      "common_name": "",
+      "published": "2026-04-05T18:50:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cimmitis.NCBI.ASM14933v2/BSgenome.Cimmitis.NCBI.ASM14933v2_1.0.0.tar.gz"
     }
   ]
 }
