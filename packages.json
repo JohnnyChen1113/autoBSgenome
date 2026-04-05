@@ -12108,6 +12108,54 @@
       ]
     },
     {
+      "organism": "Fonsecaea pedrosoi CBS 271.37",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Fonsecaea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fpedrosoi.NCBI.FonspedrCBS27137V1",
+          "version": "1.0.0",
+          "organism": "Fonsecaea pedrosoi CBS 271.37",
+          "assembly": "Fons_pedr_CBS_271_37_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000835455.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835455.1/",
+          "file_name": "BSgenome.Fpedrosoi.NCBI.FonspedrCBS27137V1_1.0.0.tar.gz",
+          "size": 9032445,
+          "seq_ids": [
+            "NW_013550615.1",
+            "NW_013550614.1",
+            "NW_013550613.1",
+            "NW_013550612.1",
+            "NW_013550611.1"
+          ],
+          "seq_count": 11,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Fonsecaea"
+          },
+          "common_name": "",
+          "published": "2026-04-05T23:39:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpedrosoi.NCBI.FonspedrCBS27137V1/BSgenome.Fpedrosoi.NCBI.FonspedrCBS27137V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fopius arisanus",
       "common_name": "",
       "group": "invertebrate",
@@ -49013,6 +49061,38 @@
       "common_name": "",
       "published": "2026-04-05T23:38:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bsorokiniana.NCBI.Cocsa1/BSgenome.Bsorokiniana.NCBI.Cocsa1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fpedrosoi.NCBI.FonspedrCBS27137V1",
+      "version": "1.0.0",
+      "organism": "Fonsecaea pedrosoi CBS 271.37",
+      "assembly": "Fons_pedr_CBS_271_37_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000835455.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835455.1/",
+      "file_name": "BSgenome.Fpedrosoi.NCBI.FonspedrCBS27137V1_1.0.0.tar.gz",
+      "size": 9032445,
+      "seq_ids": [
+        "NW_013550615.1",
+        "NW_013550614.1",
+        "NW_013550613.1",
+        "NW_013550612.1",
+        "NW_013550611.1"
+      ],
+      "seq_count": 11,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Fonsecaea"
+      },
+      "common_name": "",
+      "published": "2026-04-05T23:39:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpedrosoi.NCBI.FonspedrCBS27137V1/BSgenome.Fpedrosoi.NCBI.FonspedrCBS27137V1_1.0.0.tar.gz"
     }
   ]
 }

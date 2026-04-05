@@ -2469,3 +2469,7 @@ NeedsCompilation: no
 Package: BSgenome.Bsorokiniana.NCBI.Cocsa1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fpedrosoi.NCBI.FonspedrCBS27137V1
+Version: 1.0.0
+NeedsCompilation: no
