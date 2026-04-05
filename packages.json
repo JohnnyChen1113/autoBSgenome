@@ -11267,6 +11267,54 @@
       ]
     },
     {
+      "organism": "Orbicella faveolata",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Cnidaria",
+        "class": "Anthozoa",
+        "order": "Scleractinia",
+        "family": "Merulinidae",
+        "genus": "Orbicella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ofaveolata.NCBI.ofavdovv1",
+          "version": "1.0.0",
+          "organism": "Orbicella faveolata",
+          "assembly": "ofav_dov_v1",
+          "provider": "NCBI",
+          "accession": "GCF_002042975.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002042975.1/",
+          "file_name": "BSgenome.Ofaveolata.NCBI.ofavdovv1_1.0.0.tar.gz",
+          "size": 93282199,
+          "seq_ids": [
+            "NW_018148502.1",
+            "NW_018148503.1",
+            "NW_018148504.1",
+            "NW_018148505.1",
+            "NW_018148506.1"
+          ],
+          "seq_count": 1933,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Cnidaria",
+            "class": "Anthozoa",
+            "order": "Scleractinia",
+            "family": "Merulinidae",
+            "genus": "Orbicella"
+          },
+          "common_name": "",
+          "published": "2026-04-05T05:17:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ofaveolata.NCBI.ofavdovv1/BSgenome.Ofaveolata.NCBI.ofavdovv1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ordospora colligata OC4",
       "common_name": "",
       "group": "fungi",
@@ -29092,6 +29140,38 @@
       "common_name": "",
       "published": "2026-04-05T05:16:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Znevadensis.NCBI.ZooNev10/BSgenome.Znevadensis.NCBI.ZooNev10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ofaveolata.NCBI.ofavdovv1",
+      "version": "1.0.0",
+      "organism": "Orbicella faveolata",
+      "assembly": "ofav_dov_v1",
+      "provider": "NCBI",
+      "accession": "GCF_002042975.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002042975.1/",
+      "file_name": "BSgenome.Ofaveolata.NCBI.ofavdovv1_1.0.0.tar.gz",
+      "size": 93282199,
+      "seq_ids": [
+        "NW_018148502.1",
+        "NW_018148503.1",
+        "NW_018148504.1",
+        "NW_018148505.1",
+        "NW_018148506.1"
+      ],
+      "seq_count": 1933,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Cnidaria",
+        "class": "Anthozoa",
+        "order": "Scleractinia",
+        "family": "Merulinidae",
+        "genus": "Orbicella"
+      },
+      "common_name": "",
+      "published": "2026-04-05T05:17:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ofaveolata.NCBI.ofavdovv1/BSgenome.Ofaveolata.NCBI.ofavdovv1_1.0.0.tar.gz"
     }
   ]
 }
