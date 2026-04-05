@@ -2397,3 +2397,7 @@ NeedsCompilation: no
 Package: BSgenome.Treesei.NCBI.v20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aibericus.NCBI.Aspibe1
+Version: 1.0.0
+NeedsCompilation: no

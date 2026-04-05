@@ -2111,6 +2111,54 @@
       ]
     },
     {
+      "organism": "Aspergillus ibericus CBS 121593",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aibericus.NCBI.Aspibe1",
+          "version": "1.0.0",
+          "organism": "Aspergillus ibericus CBS 121593",
+          "assembly": "Aspibe1",
+          "provider": "NCBI",
+          "accession": "GCF_003184845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184845.1/",
+          "file_name": "BSgenome.Aibericus.NCBI.Aspibe1_1.0.0.tar.gz",
+          "size": 8757018,
+          "seq_ids": [
+            "NW_020292099.1",
+            "NW_020292100.1",
+            "NW_020292101.1",
+            "NW_020292102.1",
+            "NW_020292103.1"
+          ],
+          "seq_count": 116,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T22:35:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aibericus.NCBI.Aspibe1/BSgenome.Aibericus.NCBI.Aspibe1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus luchuensis",
       "common_name": "",
       "group": "fungi",
@@ -47573,6 +47621,38 @@
       "common_name": "",
       "published": "2026-04-05T22:35:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Treesei.NCBI.v20/BSgenome.Treesei.NCBI.v20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aibericus.NCBI.Aspibe1",
+      "version": "1.0.0",
+      "organism": "Aspergillus ibericus CBS 121593",
+      "assembly": "Aspibe1",
+      "provider": "NCBI",
+      "accession": "GCF_003184845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184845.1/",
+      "file_name": "BSgenome.Aibericus.NCBI.Aspibe1_1.0.0.tar.gz",
+      "size": 8757018,
+      "seq_ids": [
+        "NW_020292099.1",
+        "NW_020292100.1",
+        "NW_020292101.1",
+        "NW_020292102.1",
+        "NW_020292103.1"
+      ],
+      "seq_count": 116,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T22:35:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aibericus.NCBI.Aspibe1/BSgenome.Aibericus.NCBI.Aspibe1_1.0.0.tar.gz"
     }
   ]
 }
