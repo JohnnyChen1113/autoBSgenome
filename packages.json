@@ -49,6 +49,54 @@
       ]
     },
     {
+      "organism": "Acanthaster planci",
+      "common_name": "crown-of-thorns starfish",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Echinodermata",
+        "class": "Asteroidea",
+        "order": "Valvatida",
+        "family": "Acanthasteridae",
+        "genus": "Acanthaster"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aplanci.NCBI.OKIApl10",
+          "version": "1.0.0",
+          "organism": "Acanthaster planci",
+          "assembly": "OKI-Apl_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001949145.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001949145.1/",
+          "file_name": "BSgenome.Aplanci.NCBI.OKIApl10_1.0.0.tar.gz",
+          "size": 100235165,
+          "seq_ids": [
+            "NW_019091355.1",
+            "NW_019091356.1",
+            "NW_019091357.1",
+            "NW_019091358.1",
+            "NW_019091359.1"
+          ],
+          "seq_count": 1766,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Echinodermata",
+            "class": "Asteroidea",
+            "order": "Valvatida",
+            "family": "Acanthasteridae",
+            "genus": "Acanthaster"
+          },
+          "common_name": "crown-of-thorns starfish",
+          "published": "2026-04-05T02:41:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aplanci.NCBI.OKIApl10/BSgenome.Aplanci.NCBI.OKIApl10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Acanthisitta chloris",
       "common_name": "rifleman",
       "group": "vertebrate_other",
@@ -27732,6 +27780,38 @@
       "common_name": "",
       "published": "2026-04-05T02:41:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nfulva.NCBI.TAMUNfulva11/BSgenome.Nfulva.NCBI.TAMUNfulva11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aplanci.NCBI.OKIApl10",
+      "version": "1.0.0",
+      "organism": "Acanthaster planci",
+      "assembly": "OKI-Apl_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001949145.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001949145.1/",
+      "file_name": "BSgenome.Aplanci.NCBI.OKIApl10_1.0.0.tar.gz",
+      "size": 100235165,
+      "seq_ids": [
+        "NW_019091355.1",
+        "NW_019091356.1",
+        "NW_019091357.1",
+        "NW_019091358.1",
+        "NW_019091359.1"
+      ],
+      "seq_count": 1766,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Echinodermata",
+        "class": "Asteroidea",
+        "order": "Valvatida",
+        "family": "Acanthasteridae",
+        "genus": "Acanthaster"
+      },
+      "common_name": "crown-of-thorns starfish",
+      "published": "2026-04-05T02:41:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aplanci.NCBI.OKIApl10/BSgenome.Aplanci.NCBI.OKIApl10_1.0.0.tar.gz"
     }
   ]
 }
