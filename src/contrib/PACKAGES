@@ -1645,3 +1645,7 @@ NeedsCompilation: no
 Package: BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vculicis.NCBI.VavrculifloridensisV1
+Version: 1.0.0
+NeedsCompilation: no

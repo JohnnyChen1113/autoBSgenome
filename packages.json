@@ -19056,6 +19056,50 @@
       ]
     },
     {
+      "organism": "Vavraia culicis subsp. floridensis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Pleistophoridae",
+        "genus": "Vavraia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vculicis.NCBI.VavrculifloridensisV1",
+          "version": "1.0.0",
+          "organism": "Vavraia culicis subsp. floridensis",
+          "assembly": "Vavr_culi_floridensis_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000192795.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000192795.1/",
+          "file_name": "BSgenome.Vculicis.NCBI.VavrculifloridensisV1_1.0.0.tar.gz",
+          "size": 1595725,
+          "seq_ids": [
+            "NW_007360604.1",
+            "NW_007360605.1",
+            "NW_007360606.1",
+            "NW_007360607.1",
+            "NW_007360608.1"
+          ],
+          "seq_count": 379,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Pleistophoridae",
+            "genus": "Vavraia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T07:58:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vculicis.NCBI.VavrculifloridensisV1/BSgenome.Vculicis.NCBI.VavrculifloridensisV1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Vigna radiata var. radiata",
       "common_name": "mung bean",
       "group": "plant",
@@ -32607,6 +32651,36 @@
       "common_name": "snowberry fruit fly",
       "published": "2026-04-05T07:58:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11/BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vculicis.NCBI.VavrculifloridensisV1",
+      "version": "1.0.0",
+      "organism": "Vavraia culicis subsp. floridensis",
+      "assembly": "Vavr_culi_floridensis_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000192795.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000192795.1/",
+      "file_name": "BSgenome.Vculicis.NCBI.VavrculifloridensisV1_1.0.0.tar.gz",
+      "size": 1595725,
+      "seq_ids": [
+        "NW_007360604.1",
+        "NW_007360605.1",
+        "NW_007360606.1",
+        "NW_007360607.1",
+        "NW_007360608.1"
+      ],
+      "seq_count": 379,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Pleistophoridae",
+        "genus": "Vavraia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T07:58:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vculicis.NCBI.VavrculifloridensisV1/BSgenome.Vculicis.NCBI.VavrculifloridensisV1_1.0.0.tar.gz"
     }
   ]
 }
