@@ -11831,6 +11831,54 @@
       ]
     },
     {
+      "organism": "Kwoniella bestiolae CBS 10118",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Kwoniella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kbestiolae.NCBI.ASM51258v3",
+          "version": "1.0.0",
+          "organism": "Kwoniella bestiolae CBS 10118",
+          "assembly": "ASM51258v3",
+          "provider": "NCBI",
+          "accession": "GCF_000512585.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000512585.2/",
+          "file_name": "BSgenome.Kbestiolae.NCBI.ASM51258v3_1.0.0.tar.gz",
+          "size": 6449090,
+          "seq_ids": [
+            "NC_089241.1",
+            "NC_089242.1",
+            "NC_089243.1",
+            "NC_089244.1",
+            "NC_089245.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Kwoniella"
+          },
+          "common_name": "",
+          "published": "2026-04-05T16:41:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kbestiolae.NCBI.ASM51258v3/BSgenome.Kbestiolae.NCBI.ASM51258v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Kwoniella dejecticola CBS 10117",
       "common_name": "",
       "group": "fungi",
@@ -41763,6 +41811,38 @@
       "common_name": "",
       "published": "2026-04-05T16:41:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tasahii.NCBI.Trichosporonasahii1/BSgenome.Tasahii.NCBI.Trichosporonasahii1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kbestiolae.NCBI.ASM51258v3",
+      "version": "1.0.0",
+      "organism": "Kwoniella bestiolae CBS 10118",
+      "assembly": "ASM51258v3",
+      "provider": "NCBI",
+      "accession": "GCF_000512585.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000512585.2/",
+      "file_name": "BSgenome.Kbestiolae.NCBI.ASM51258v3_1.0.0.tar.gz",
+      "size": 6449090,
+      "seq_ids": [
+        "NC_089241.1",
+        "NC_089242.1",
+        "NC_089243.1",
+        "NC_089244.1",
+        "NC_089245.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Kwoniella"
+      },
+      "common_name": "",
+      "published": "2026-04-05T16:41:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kbestiolae.NCBI.ASM51258v3/BSgenome.Kbestiolae.NCBI.ASM51258v3_1.0.0.tar.gz"
     }
   ]
 }

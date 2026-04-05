@@ -2105,3 +2105,7 @@ NeedsCompilation: no
 Package: BSgenome.Tasahii.NCBI.Trichosporonasahii1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kbestiolae.NCBI.ASM51258v3
+Version: 1.0.0
+NeedsCompilation: no
