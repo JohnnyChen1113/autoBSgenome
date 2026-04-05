@@ -12597,6 +12597,54 @@
       ]
     },
     {
+      "organism": "Microstroma glucosiphilum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Exobasidiomycetes",
+        "order": "Microstromatales",
+        "family": "Microstromataceae",
+        "genus": "Microstroma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mglucosiphilum.NCBI.Rhodsp1",
+          "version": "1.0.0",
+          "organism": "Microstroma glucosiphilum",
+          "assembly": "Rhodsp1",
+          "provider": "NCBI",
+          "accession": "GCF_003144135.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003144135.1/",
+          "file_name": "BSgenome.Mglucosiphilum.NCBI.Rhodsp1_1.0.0.tar.gz",
+          "size": 4572269,
+          "seq_ids": [
+            "NW_020289913.1",
+            "NW_020289914.1",
+            "NW_020289915.1",
+            "NW_020289916.1",
+            "NW_020289917.1"
+          ],
+          "seq_count": 30,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Exobasidiomycetes",
+            "order": "Microstromatales",
+            "family": "Microstromataceae",
+            "genus": "Microstroma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:07:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mglucosiphilum.NCBI.Rhodsp1/BSgenome.Mglucosiphilum.NCBI.Rhodsp1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Microtus ochrogaster",
       "common_name": "prairie vole",
       "group": "vertebrate_mammalian",
@@ -38500,6 +38548,38 @@
       "common_name": "",
       "published": "2026-04-05T14:07:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jrosea.NCBI.Jamsp1/BSgenome.Jrosea.NCBI.Jamsp1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mglucosiphilum.NCBI.Rhodsp1",
+      "version": "1.0.0",
+      "organism": "Microstroma glucosiphilum",
+      "assembly": "Rhodsp1",
+      "provider": "NCBI",
+      "accession": "GCF_003144135.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003144135.1/",
+      "file_name": "BSgenome.Mglucosiphilum.NCBI.Rhodsp1_1.0.0.tar.gz",
+      "size": 4572269,
+      "seq_ids": [
+        "NW_020289913.1",
+        "NW_020289914.1",
+        "NW_020289915.1",
+        "NW_020289916.1",
+        "NW_020289917.1"
+      ],
+      "seq_count": 30,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Exobasidiomycetes",
+        "order": "Microstromatales",
+        "family": "Microstromataceae",
+        "genus": "Microstroma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:07:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mglucosiphilum.NCBI.Rhodsp1/BSgenome.Mglucosiphilum.NCBI.Rhodsp1_1.0.0.tar.gz"
     }
   ]
 }

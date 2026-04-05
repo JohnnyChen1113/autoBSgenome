@@ -1941,3 +1941,7 @@ NeedsCompilation: no
 Package: BSgenome.Jrosea.NCBI.Jamsp1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mglucosiphilum.NCBI.Rhodsp1
+Version: 1.0.0
+NeedsCompilation: no
