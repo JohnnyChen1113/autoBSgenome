@@ -18394,6 +18394,54 @@
       ]
     },
     {
+      "organism": "Paracoccidioides brasiliensis Pb18",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Ajellomycetaceae",
+        "genus": "Paracoccidioides"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pbrasiliensis.NCBI.ParacoccibrPb18V2",
+          "version": "1.0.0",
+          "organism": "Paracoccidioides brasiliensis Pb18",
+          "assembly": "Paracocci_br_Pb18_V2",
+          "provider": "NCBI",
+          "accession": "GCF_000150735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150735.1/",
+          "file_name": "BSgenome.Pbrasiliensis.NCBI.ParacoccibrPb18V2_1.0.0.tar.gz",
+          "size": 7719841,
+          "seq_ids": [
+            "NW_011371358.1",
+            "NW_011371359.1",
+            "NW_011371360.1",
+            "NW_011371361.1",
+            "NW_011371362.1"
+          ],
+          "seq_count": 57,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Onygenales",
+            "family": "Ajellomycetaceae",
+            "genus": "Paracoccidioides"
+          },
+          "common_name": "",
+          "published": "2026-04-05T19:36:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pbrasiliensis.NCBI.ParacoccibrPb18V2/BSgenome.Pbrasiliensis.NCBI.ParacoccibrPb18V2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Parus major",
       "common_name": "Great Tit",
       "group": "vertebrate_other",
@@ -44693,6 +44741,38 @@
       "common_name": "",
       "published": "2026-04-05T19:36:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anidulans.NCBI.ASM1142v1/BSgenome.Anidulans.NCBI.ASM1142v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pbrasiliensis.NCBI.ParacoccibrPb18V2",
+      "version": "1.0.0",
+      "organism": "Paracoccidioides brasiliensis Pb18",
+      "assembly": "Paracocci_br_Pb18_V2",
+      "provider": "NCBI",
+      "accession": "GCF_000150735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150735.1/",
+      "file_name": "BSgenome.Pbrasiliensis.NCBI.ParacoccibrPb18V2_1.0.0.tar.gz",
+      "size": 7719841,
+      "seq_ids": [
+        "NW_011371358.1",
+        "NW_011371359.1",
+        "NW_011371360.1",
+        "NW_011371361.1",
+        "NW_011371362.1"
+      ],
+      "seq_count": 57,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Ajellomycetaceae",
+        "genus": "Paracoccidioides"
+      },
+      "common_name": "",
+      "published": "2026-04-05T19:36:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pbrasiliensis.NCBI.ParacoccibrPb18V2/BSgenome.Pbrasiliensis.NCBI.ParacoccibrPb18V2_1.0.0.tar.gz"
     }
   ]
 }

@@ -2253,3 +2253,7 @@ NeedsCompilation: no
 Package: BSgenome.Anidulans.NCBI.ASM1142v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pbrasiliensis.NCBI.ParacoccibrPb18V2
+Version: 1.0.0
+NeedsCompilation: no
