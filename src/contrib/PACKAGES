@@ -2109,3 +2109,7 @@ NeedsCompilation: no
 Package: BSgenome.Kbestiolae.NCBI.ASM51258v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Anamibiae.NCBI.AureobasidiumpullulansvarnamibiaeCBS14797v10
+Version: 1.0.0
+NeedsCompilation: no
