@@ -2237,3 +2237,7 @@ NeedsCompilation: no
 Package: BSgenome.Smusiva.NCBI.SeptoriamusivaSO2202v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Afumigatus.NCBI.ASM265v1
+Version: 1.0.0
+NeedsCompilation: no

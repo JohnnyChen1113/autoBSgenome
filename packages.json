@@ -1871,6 +1871,54 @@
       ]
     },
     {
+      "organism": "Aspergillus fumigatus Af293",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Afumigatus.NCBI.ASM265v1",
+          "version": "1.0.0",
+          "organism": "Aspergillus fumigatus Af293",
+          "assembly": "ASM265v1",
+          "provider": "NCBI",
+          "accession": "GCF_000002655.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002655.1/",
+          "file_name": "BSgenome.Afumigatus.NCBI.ASM265v1_1.0.0.tar.gz",
+          "size": 7423036,
+          "seq_ids": [
+            "NC_007194.1",
+            "NC_007195.1",
+            "NC_007196.1",
+            "NC_007197.1",
+            "NC_007198.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T19:35:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afumigatus.NCBI.ASM265v1/BSgenome.Afumigatus.NCBI.ASM265v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus glaucus CBS 516.65",
       "common_name": "",
       "group": "fungi",
@@ -44373,6 +44421,38 @@
       "common_name": "",
       "published": "2026-04-05T18:50:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smusiva.NCBI.SeptoriamusivaSO2202v10/BSgenome.Smusiva.NCBI.SeptoriamusivaSO2202v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Afumigatus.NCBI.ASM265v1",
+      "version": "1.0.0",
+      "organism": "Aspergillus fumigatus Af293",
+      "assembly": "ASM265v1",
+      "provider": "NCBI",
+      "accession": "GCF_000002655.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002655.1/",
+      "file_name": "BSgenome.Afumigatus.NCBI.ASM265v1_1.0.0.tar.gz",
+      "size": 7423036,
+      "seq_ids": [
+        "NC_007194.1",
+        "NC_007195.1",
+        "NC_007196.1",
+        "NC_007197.1",
+        "NC_007198.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T19:35:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afumigatus.NCBI.ASM265v1/BSgenome.Afumigatus.NCBI.ASM265v1_1.0.0.tar.gz"
     }
   ]
 }
