@@ -19299,6 +19299,54 @@
       ]
     },
     {
+      "organism": "Torulaspora delbrueckii",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Torulaspora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tdelbrueckii.NCBI.ASM24337v1",
+          "version": "1.0.0",
+          "organism": "Torulaspora delbrueckii",
+          "assembly": "ASM24337v1",
+          "provider": "NCBI",
+          "accession": "GCF_000243375.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000243375.1/",
+          "file_name": "BSgenome.Tdelbrueckii.NCBI.ASM24337v1_1.0.0.tar.gz",
+          "size": 2410506,
+          "seq_ids": [
+            "NC_016501.1",
+            "NC_016502.1",
+            "NC_016503.1",
+            "NC_016504.1",
+            "NC_016505.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Torulaspora"
+          },
+          "common_name": "",
+          "published": "2026-04-05T09:41:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tdelbrueckii.NCBI.ASM24337v1/BSgenome.Tdelbrueckii.NCBI.ASM24337v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trachymyrmex cornetzi",
       "common_name": "",
       "group": "invertebrate",
@@ -34199,6 +34247,38 @@
       "common_name": "",
       "published": "2026-04-05T09:41:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kphaffii.NCBI.ASM2700v1/BSgenome.Kphaffii.NCBI.ASM2700v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tdelbrueckii.NCBI.ASM24337v1",
+      "version": "1.0.0",
+      "organism": "Torulaspora delbrueckii",
+      "assembly": "ASM24337v1",
+      "provider": "NCBI",
+      "accession": "GCF_000243375.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000243375.1/",
+      "file_name": "BSgenome.Tdelbrueckii.NCBI.ASM24337v1_1.0.0.tar.gz",
+      "size": 2410506,
+      "seq_ids": [
+        "NC_016501.1",
+        "NC_016502.1",
+        "NC_016503.1",
+        "NC_016504.1",
+        "NC_016505.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Torulaspora"
+      },
+      "common_name": "",
+      "published": "2026-04-05T09:41:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tdelbrueckii.NCBI.ASM24337v1/BSgenome.Tdelbrueckii.NCBI.ASM24337v1_1.0.0.tar.gz"
     }
   ]
 }

@@ -1725,3 +1725,7 @@ NeedsCompilation: no
 Package: BSgenome.Kphaffii.NCBI.ASM2700v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tdelbrueckii.NCBI.ASM24337v1
+Version: 1.0.0
+NeedsCompilation: no
