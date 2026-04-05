@@ -19875,6 +19875,54 @@
       ]
     },
     {
+      "organism": "Tetrapisispora phaffii CBS 4417",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Tetrapisispora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tphaffii.NCBI.ASM23690v1",
+          "version": "1.0.0",
+          "organism": "Tetrapisispora phaffii CBS 4417",
+          "assembly": "ASM23690v1",
+          "provider": "NCBI",
+          "accession": "GCF_000236905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000236905.1/",
+          "file_name": "BSgenome.Tphaffii.NCBI.ASM23690v1_1.0.0.tar.gz",
+          "size": 3212990,
+          "seq_ids": [
+            "NC_016520.1",
+            "NC_016521.1",
+            "NC_016522.1",
+            "NC_016523.1",
+            "NC_016524.1"
+          ],
+          "seq_count": 17,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Tetrapisispora"
+          },
+          "common_name": "",
+          "published": "2026-04-05T10:39:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tphaffii.NCBI.ASM23690v1/BSgenome.Tphaffii.NCBI.ASM23690v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Thamnophis elegans",
       "common_name": "Western terrestrial garter snake",
       "group": "vertebrate_other",
@@ -35959,6 +36007,38 @@
       "common_name": "",
       "published": "2026-04-05T10:39:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sparadoxus.NCBI.ASM207905v1/BSgenome.Sparadoxus.NCBI.ASM207905v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tphaffii.NCBI.ASM23690v1",
+      "version": "1.0.0",
+      "organism": "Tetrapisispora phaffii CBS 4417",
+      "assembly": "ASM23690v1",
+      "provider": "NCBI",
+      "accession": "GCF_000236905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000236905.1/",
+      "file_name": "BSgenome.Tphaffii.NCBI.ASM23690v1_1.0.0.tar.gz",
+      "size": 3212990,
+      "seq_ids": [
+        "NC_016520.1",
+        "NC_016521.1",
+        "NC_016522.1",
+        "NC_016523.1",
+        "NC_016524.1"
+      ],
+      "seq_count": 17,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Tetrapisispora"
+      },
+      "common_name": "",
+      "published": "2026-04-05T10:39:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tphaffii.NCBI.ASM23690v1/BSgenome.Tphaffii.NCBI.ASM23690v1_1.0.0.tar.gz"
     }
   ]
 }

@@ -1813,3 +1813,7 @@ NeedsCompilation: no
 Package: BSgenome.Sparadoxus.NCBI.ASM207905v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tphaffii.NCBI.ASM23690v1
+Version: 1.0.0
+NeedsCompilation: no
