@@ -2449,3 +2449,7 @@ NeedsCompilation: no
 Package: BSgenome.Aniger.NCBI.ASM285v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ahomomorphus.NCBI.Asphom1
+Version: 1.0.0
+NeedsCompilation: no

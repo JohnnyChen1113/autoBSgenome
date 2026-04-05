@@ -2159,6 +2159,54 @@
       ]
     },
     {
+      "organism": "Aspergillus homomorphus CBS 101889",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ahomomorphus.NCBI.Asphom1",
+          "version": "1.0.0",
+          "organism": "Aspergillus homomorphus CBS 101889",
+          "assembly": "Asphom1",
+          "provider": "NCBI",
+          "accession": "GCF_003184865.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184865.1/",
+          "file_name": "BSgenome.Ahomomorphus.NCBI.Asphom1_1.0.0.tar.gz",
+          "size": 8871241,
+          "seq_ids": [
+            "NW_020291887.1",
+            "NW_020291888.1",
+            "NW_020291889.1",
+            "NW_020291890.1",
+            "NW_020291891.1"
+          ],
+          "seq_count": 152,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T23:38:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahomomorphus.NCBI.Asphom1/BSgenome.Ahomomorphus.NCBI.Asphom1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus ibericus CBS 121593",
       "common_name": "",
       "group": "fungi",
@@ -48613,6 +48661,38 @@
       "common_name": "",
       "published": "2026-04-05T23:38:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.NCBI.ASM285v2/BSgenome.Aniger.NCBI.ASM285v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ahomomorphus.NCBI.Asphom1",
+      "version": "1.0.0",
+      "organism": "Aspergillus homomorphus CBS 101889",
+      "assembly": "Asphom1",
+      "provider": "NCBI",
+      "accession": "GCF_003184865.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184865.1/",
+      "file_name": "BSgenome.Ahomomorphus.NCBI.Asphom1_1.0.0.tar.gz",
+      "size": 8871241,
+      "seq_ids": [
+        "NW_020291887.1",
+        "NW_020291888.1",
+        "NW_020291889.1",
+        "NW_020291890.1",
+        "NW_020291891.1"
+      ],
+      "seq_count": 152,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T23:38:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahomomorphus.NCBI.Asphom1/BSgenome.Ahomomorphus.NCBI.Asphom1_1.0.0.tar.gz"
     }
   ]
 }
