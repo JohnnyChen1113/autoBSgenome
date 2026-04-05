@@ -15129,6 +15129,38 @@
       ]
     },
     {
+      "organism": "Saccoglossus kowalevskii",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Skowalevskii.NCBI.Skow12",
+          "version": "1.0.0",
+          "organism": "Saccoglossus kowalevskii",
+          "assembly": "Skow_1.2",
+          "provider": "NCBI",
+          "accession": "GCF_000003605.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000003605.3/",
+          "file_name": "BSgenome.Skowalevskii.NCBI.Skow12_1.0.0.tar.gz",
+          "size": 158174694,
+          "seq_ids": [
+            "NW_003105101.1",
+            "NW_003105102.1",
+            "NW_003105103.1",
+            "NW_003105104.1",
+            "NW_003105105.1"
+          ],
+          "seq_count": 53955,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-05T06:46:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Skowalevskii.NCBI.Skow12/BSgenome.Skowalevskii.NCBI.Skow12_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sagmatias obliquidens",
       "common_name": "Pacific white-sided dolphin",
       "group": "vertebrate_mammalian",
@@ -30324,6 +30356,30 @@
       "common_name": "rice weevil",
       "published": "2026-04-05T06:46:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Soryzae.NCBI.Soryzae20/BSgenome.Soryzae.NCBI.Soryzae20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Skowalevskii.NCBI.Skow12",
+      "version": "1.0.0",
+      "organism": "Saccoglossus kowalevskii",
+      "assembly": "Skow_1.2",
+      "provider": "NCBI",
+      "accession": "GCF_000003605.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000003605.3/",
+      "file_name": "BSgenome.Skowalevskii.NCBI.Skow12_1.0.0.tar.gz",
+      "size": 158174694,
+      "seq_ids": [
+        "NW_003105101.1",
+        "NW_003105102.1",
+        "NW_003105103.1",
+        "NW_003105104.1",
+        "NW_003105105.1"
+      ],
+      "seq_count": 53955,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-05T06:46:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Skowalevskii.NCBI.Skow12/BSgenome.Skowalevskii.NCBI.Skow12_1.0.0.tar.gz"
     }
   ]
 }

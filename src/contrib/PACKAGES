@@ -1613,3 +1613,7 @@ NeedsCompilation: no
 Package: BSgenome.Soryzae.NCBI.Soryzae20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Skowalevskii.NCBI.Skow12
+Version: 1.0.0
+NeedsCompilation: no
