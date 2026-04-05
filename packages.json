@@ -5724,6 +5724,54 @@
       ]
     },
     {
+      "organism": "Cryptococcus deneoformans JEC21",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cdeneoformans.NCBI.ASM9104v1",
+          "version": "1.0.0",
+          "organism": "Cryptococcus deneoformans JEC21",
+          "assembly": "ASM9104v1",
+          "provider": "NCBI",
+          "accession": "GCF_000091045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000091045.1/",
+          "file_name": "BSgenome.Cdeneoformans.NCBI.ASM9104v1_1.0.0.tar.gz",
+          "size": 5000615,
+          "seq_ids": [
+            "NC_006670.1",
+            "NC_006684.1",
+            "NC_006685.1",
+            "NC_006686.1",
+            "NC_006687.1"
+          ],
+          "seq_count": 14,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:03:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdeneoformans.NCBI.ASM9104v1/BSgenome.Cdeneoformans.NCBI.ASM9104v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus depauperatus CBS 7841",
       "common_name": "",
       "group": "fungi",
@@ -39614,6 +39662,38 @@
       "common_name": "",
       "published": "2026-04-05T15:03:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cneoformans.NCBI.CNA3/BSgenome.Cneoformans.NCBI.CNA3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cdeneoformans.NCBI.ASM9104v1",
+      "version": "1.0.0",
+      "organism": "Cryptococcus deneoformans JEC21",
+      "assembly": "ASM9104v1",
+      "provider": "NCBI",
+      "accession": "GCF_000091045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000091045.1/",
+      "file_name": "BSgenome.Cdeneoformans.NCBI.ASM9104v1_1.0.0.tar.gz",
+      "size": 5000615,
+      "seq_ids": [
+        "NC_006670.1",
+        "NC_006684.1",
+        "NC_006685.1",
+        "NC_006686.1",
+        "NC_006687.1"
+      ],
+      "seq_count": 14,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:03:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdeneoformans.NCBI.ASM9104v1/BSgenome.Cdeneoformans.NCBI.ASM9104v1_1.0.0.tar.gz"
     }
   ]
 }
