@@ -1501,3 +1501,7 @@ NeedsCompilation: no
 Package: BSgenome.Bmandarina.NCBI.ASM398793v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Shaematobium.NCBI.UoMShaeV3
+Version: 1.0.0
+NeedsCompilation: no

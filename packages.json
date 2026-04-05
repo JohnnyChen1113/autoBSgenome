@@ -14377,6 +14377,54 @@
       ]
     },
     {
+      "organism": "Schistosoma haematobium",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Platyhelminthes",
+        "class": "Trematoda",
+        "order": "Strigeidida",
+        "family": "Schistosomatidae",
+        "genus": "Schistosoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Shaematobium.NCBI.UoMShaeV3",
+          "version": "1.0.0",
+          "organism": "Schistosoma haematobium",
+          "assembly": "UoM_Shae.V3",
+          "provider": "NCBI",
+          "accession": "GCF_000699445.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000699445.3/",
+          "file_name": "BSgenome.Shaematobium.NCBI.UoMShaeV3_1.0.0.tar.gz",
+          "size": 100683018,
+          "seq_ids": [
+            "NC_067195.1",
+            "NC_067196.1",
+            "NC_067197.1",
+            "NC_067198.1",
+            "NC_067199.1"
+          ],
+          "seq_count": 163,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Platyhelminthes",
+            "class": "Trematoda",
+            "order": "Strigeidida",
+            "family": "Schistosomatidae",
+            "genus": "Schistosoma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T02:42:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shaematobium.NCBI.UoMShaeV3/BSgenome.Shaematobium.NCBI.UoMShaeV3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Schistosoma mansoni",
       "common_name": "",
       "group": "invertebrate",
@@ -28132,6 +28180,38 @@
       "common_name": "wild silkworm",
       "published": "2026-04-05T02:42:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bmandarina.NCBI.ASM398793v1/BSgenome.Bmandarina.NCBI.ASM398793v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Shaematobium.NCBI.UoMShaeV3",
+      "version": "1.0.0",
+      "organism": "Schistosoma haematobium",
+      "assembly": "UoM_Shae.V3",
+      "provider": "NCBI",
+      "accession": "GCF_000699445.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000699445.3/",
+      "file_name": "BSgenome.Shaematobium.NCBI.UoMShaeV3_1.0.0.tar.gz",
+      "size": 100683018,
+      "seq_ids": [
+        "NC_067195.1",
+        "NC_067196.1",
+        "NC_067197.1",
+        "NC_067198.1",
+        "NC_067199.1"
+      ],
+      "seq_count": 163,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Platyhelminthes",
+        "class": "Trematoda",
+        "order": "Strigeidida",
+        "family": "Schistosomatidae",
+        "genus": "Schistosoma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T02:42:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shaematobium.NCBI.UoMShaeV3/BSgenome.Shaematobium.NCBI.UoMShaeV3_1.0.0.tar.gz"
     }
   ]
 }
