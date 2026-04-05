@@ -2015,6 +2015,54 @@
       ]
     },
     {
+      "organism": "Aspergillus eucalypticola CBS 122712",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aeucalypticola.NCBI.Aspeuc1",
+          "version": "1.0.0",
+          "organism": "Aspergillus eucalypticola CBS 122712",
+          "assembly": "Aspeuc1",
+          "provider": "NCBI",
+          "accession": "GCF_003184535.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184535.1/",
+          "file_name": "BSgenome.Aeucalypticola.NCBI.Aspeuc1_1.0.0.tar.gz",
+          "size": 9106322,
+          "seq_ids": [
+            "NW_020290275.1",
+            "NW_020290284.1",
+            "NW_020290374.1",
+            "NW_020290375.1",
+            "NW_020290376.1"
+          ],
+          "seq_count": 131,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T23:39:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aeucalypticola.NCBI.Aspeuc1/BSgenome.Aeucalypticola.NCBI.Aspeuc1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus fischeri NRRL 181",
       "common_name": "",
       "group": "fungi",
@@ -49173,6 +49221,38 @@
       "common_name": "",
       "published": "2026-04-05T23:39:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ferecta.NCBI.ASM165198v1/BSgenome.Ferecta.NCBI.ASM165198v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aeucalypticola.NCBI.Aspeuc1",
+      "version": "1.0.0",
+      "organism": "Aspergillus eucalypticola CBS 122712",
+      "assembly": "Aspeuc1",
+      "provider": "NCBI",
+      "accession": "GCF_003184535.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184535.1/",
+      "file_name": "BSgenome.Aeucalypticola.NCBI.Aspeuc1_1.0.0.tar.gz",
+      "size": 9106322,
+      "seq_ids": [
+        "NW_020290275.1",
+        "NW_020290284.1",
+        "NW_020290374.1",
+        "NW_020290375.1",
+        "NW_020290376.1"
+      ],
+      "seq_count": 131,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T23:39:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aeucalypticola.NCBI.Aspeuc1/BSgenome.Aeucalypticola.NCBI.Aspeuc1_1.0.0.tar.gz"
     }
   ]
 }

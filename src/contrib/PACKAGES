@@ -2477,3 +2477,7 @@ NeedsCompilation: no
 Package: BSgenome.Ferecta.NCBI.ASM165198v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aeucalypticola.NCBI.Aspeuc1
+Version: 1.0.0
+NeedsCompilation: no
