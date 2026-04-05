@@ -2001,3 +2001,7 @@ NeedsCompilation: no
 Package: BSgenome.Cdeneoformans.NCBI.ASM9104v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aingoldii.NCBI.Acain1
+Version: 1.0.0
+NeedsCompilation: no

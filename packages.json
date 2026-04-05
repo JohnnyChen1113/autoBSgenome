@@ -145,6 +145,54 @@
       ]
     },
     {
+      "organism": "Acaromyces ingoldii",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Exobasidiomycetes",
+        "order": "Exobasidiales",
+        "family": "Cryptobasidiaceae",
+        "genus": "Acaromyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aingoldii.NCBI.Acain1",
+          "version": "1.0.0",
+          "organism": "Acaromyces ingoldii",
+          "assembly": "Acain1",
+          "provider": "NCBI",
+          "accession": "GCF_003144295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003144295.1/",
+          "file_name": "BSgenome.Aingoldii.NCBI.Acain1_1.0.0.tar.gz",
+          "size": 5135261,
+          "seq_ids": [
+            "NW_020290247.1",
+            "NW_020290248.1",
+            "NW_020290249.1",
+            "NW_020290250.1",
+            "NW_020290251.1"
+          ],
+          "seq_count": 28,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Exobasidiomycetes",
+            "order": "Exobasidiales",
+            "family": "Cryptobasidiaceae",
+            "genus": "Acaromyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:03:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aingoldii.NCBI.Acain1/BSgenome.Aingoldii.NCBI.Acain1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Acromyrmex echinatior",
       "common_name": "Panamanian leafcutter ant",
       "group": "invertebrate",
@@ -39694,6 +39742,38 @@
       "common_name": "",
       "published": "2026-04-05T15:03:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdeneoformans.NCBI.ASM9104v1/BSgenome.Cdeneoformans.NCBI.ASM9104v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aingoldii.NCBI.Acain1",
+      "version": "1.0.0",
+      "organism": "Acaromyces ingoldii",
+      "assembly": "Acain1",
+      "provider": "NCBI",
+      "accession": "GCF_003144295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003144295.1/",
+      "file_name": "BSgenome.Aingoldii.NCBI.Acain1_1.0.0.tar.gz",
+      "size": 5135261,
+      "seq_ids": [
+        "NW_020290247.1",
+        "NW_020290248.1",
+        "NW_020290249.1",
+        "NW_020290250.1",
+        "NW_020290251.1"
+      ],
+      "seq_count": 28,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Exobasidiomycetes",
+        "order": "Exobasidiales",
+        "family": "Cryptobasidiaceae",
+        "genus": "Acaromyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:03:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aingoldii.NCBI.Acain1/BSgenome.Aingoldii.NCBI.Acain1_1.0.0.tar.gz"
     }
   ]
 }
