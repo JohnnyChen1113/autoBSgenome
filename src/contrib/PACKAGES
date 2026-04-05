@@ -1693,3 +1693,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpachydermatis.NCBI.MalaPachy
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pjirovecii.NCBI.PneujiroRU7V2
+Version: 1.0.0
+NeedsCompilation: no
