@@ -5726,6 +5726,54 @@
       ]
     },
     {
+      "organism": "Cyberlindnera jadinii NRRL Y-1542",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Phaffomycetales",
+        "family": "Phaffomycetaceae",
+        "genus": "Cyberlindnera"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cjadinii.NCBI.Cybja1",
+          "version": "1.0.0",
+          "organism": "Cyberlindnera jadinii NRRL Y-1542",
+          "assembly": "Cybja1",
+          "provider": "NCBI",
+          "accession": "GCF_001661405.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001661405.1/",
+          "file_name": "BSgenome.Cjadinii.NCBI.Cybja1_1.0.0.tar.gz",
+          "size": 3369789,
+          "seq_ids": [
+            "NW_017963652.1",
+            "NW_017963653.1",
+            "NW_017963654.1",
+            "NW_017963655.1",
+            "NW_017963656.1"
+          ],
+          "seq_count": 76,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Phaffomycetales",
+            "family": "Phaffomycetaceae",
+            "genus": "Cyberlindnera"
+          },
+          "common_name": "",
+          "published": "2026-04-05T11:34:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cjadinii.NCBI.Cybja1/BSgenome.Cjadinii.NCBI.Cybja1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyclopterus lumpus",
       "common_name": "lumpfish",
       "group": "vertebrate_other",
@@ -36837,6 +36885,38 @@
       "common_name": "",
       "published": "2026-04-05T11:34:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cparapsilosis.NCBI.ASM18276v2/BSgenome.Cparapsilosis.NCBI.ASM18276v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cjadinii.NCBI.Cybja1",
+      "version": "1.0.0",
+      "organism": "Cyberlindnera jadinii NRRL Y-1542",
+      "assembly": "Cybja1",
+      "provider": "NCBI",
+      "accession": "GCF_001661405.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001661405.1/",
+      "file_name": "BSgenome.Cjadinii.NCBI.Cybja1_1.0.0.tar.gz",
+      "size": 3369789,
+      "seq_ids": [
+        "NW_017963652.1",
+        "NW_017963653.1",
+        "NW_017963654.1",
+        "NW_017963655.1",
+        "NW_017963656.1"
+      ],
+      "seq_count": 76,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Phaffomycetales",
+        "family": "Phaffomycetaceae",
+        "genus": "Cyberlindnera"
+      },
+      "common_name": "",
+      "published": "2026-04-05T11:34:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cjadinii.NCBI.Cybja1/BSgenome.Cjadinii.NCBI.Cybja1_1.0.0.tar.gz"
     }
   ]
 }

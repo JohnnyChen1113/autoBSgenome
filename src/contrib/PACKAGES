@@ -1857,3 +1857,7 @@ NeedsCompilation: no
 Package: BSgenome.Cparapsilosis.NCBI.ASM18276v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cjadinii.NCBI.Cybja1
+Version: 1.0.0
+NeedsCompilation: no
