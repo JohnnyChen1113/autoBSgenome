@@ -3052,6 +3052,54 @@
       ]
     },
     {
+      "organism": "Candida dubliniensis CD36",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cdubliniensis.NCBI.ASM2694v1",
+          "version": "1.0.0",
+          "organism": "Candida dubliniensis CD36",
+          "assembly": "ASM2694v1",
+          "provider": "NCBI",
+          "accession": "GCF_000026945.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000026945.1/",
+          "file_name": "BSgenome.Cdubliniensis.NCBI.ASM2694v1_1.0.0.tar.gz",
+          "size": 3866019,
+          "seq_ids": [
+            "NC_012867.1",
+            "NC_012860.1",
+            "NC_012861.1",
+            "NC_012862.1",
+            "NC_012863.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Candida"
+          },
+          "common_name": "",
+          "published": "2026-04-05T13:03:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdubliniensis.NCBI.ASM2694v1/BSgenome.Cdubliniensis.NCBI.ASM2694v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Candida orthopsilosis Co 90-125",
       "common_name": "",
       "group": "fungi",
@@ -37708,6 +37756,38 @@
       "common_name": "",
       "published": "2026-04-05T13:03:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctropicalis.NCBI.ASM633v3/BSgenome.Ctropicalis.NCBI.ASM633v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cdubliniensis.NCBI.ASM2694v1",
+      "version": "1.0.0",
+      "organism": "Candida dubliniensis CD36",
+      "assembly": "ASM2694v1",
+      "provider": "NCBI",
+      "accession": "GCF_000026945.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000026945.1/",
+      "file_name": "BSgenome.Cdubliniensis.NCBI.ASM2694v1_1.0.0.tar.gz",
+      "size": 3866019,
+      "seq_ids": [
+        "NC_012867.1",
+        "NC_012860.1",
+        "NC_012861.1",
+        "NC_012862.1",
+        "NC_012863.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "common_name": "",
+      "published": "2026-04-05T13:03:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdubliniensis.NCBI.ASM2694v1/BSgenome.Cdubliniensis.NCBI.ASM2694v1_1.0.0.tar.gz"
     }
   ]
 }
