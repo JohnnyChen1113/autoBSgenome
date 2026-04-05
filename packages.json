@@ -12738,6 +12738,54 @@
       ]
     },
     {
+      "organism": "Linderina pennispora",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Zoopagomycota",
+        "class": "Kickxellomycetes",
+        "order": "Kickxellales",
+        "family": "Kickxellaceae",
+        "genus": "Linderina"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lpennispora.NCBI.Linpe1",
+          "version": "1.0.0",
+          "organism": "Linderina pennispora",
+          "assembly": "Linpe1",
+          "provider": "NCBI",
+          "accession": "GCF_002104995.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002104995.1/",
+          "file_name": "BSgenome.Lpennispora.NCBI.Linpe1_1.0.0.tar.gz",
+          "size": 6888298,
+          "seq_ids": [
+            "NW_024468249.1",
+            "NW_024468258.1",
+            "NW_024468348.1",
+            "NW_024468349.1",
+            "NW_024468350.1"
+          ],
+          "seq_count": 227,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Zoopagomycota",
+            "class": "Kickxellomycetes",
+            "order": "Kickxellales",
+            "family": "Kickxellaceae",
+            "genus": "Linderina"
+          },
+          "common_name": "",
+          "published": "2026-04-05T16:43:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lpennispora.NCBI.Linpe1/BSgenome.Lpennispora.NCBI.Linpe1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lingula anatina",
       "common_name": "",
       "group": "invertebrate",
@@ -42323,6 +42371,38 @@
       "common_name": "",
       "published": "2026-04-05T16:42:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pzonata.NCBI.Aspzo1/BSgenome.Pzonata.NCBI.Aspzo1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lpennispora.NCBI.Linpe1",
+      "version": "1.0.0",
+      "organism": "Linderina pennispora",
+      "assembly": "Linpe1",
+      "provider": "NCBI",
+      "accession": "GCF_002104995.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002104995.1/",
+      "file_name": "BSgenome.Lpennispora.NCBI.Linpe1_1.0.0.tar.gz",
+      "size": 6888298,
+      "seq_ids": [
+        "NW_024468249.1",
+        "NW_024468258.1",
+        "NW_024468348.1",
+        "NW_024468349.1",
+        "NW_024468350.1"
+      ],
+      "seq_count": 227,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Zoopagomycota",
+        "class": "Kickxellomycetes",
+        "order": "Kickxellales",
+        "family": "Kickxellaceae",
+        "genus": "Linderina"
+      },
+      "common_name": "",
+      "published": "2026-04-05T16:43:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lpennispora.NCBI.Linpe1/BSgenome.Lpennispora.NCBI.Linpe1_1.0.0.tar.gz"
     }
   ]
 }

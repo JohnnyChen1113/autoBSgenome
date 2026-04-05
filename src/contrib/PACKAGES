@@ -2133,3 +2133,7 @@ NeedsCompilation: no
 Package: BSgenome.Pzonata.NCBI.Aspzo1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lpennispora.NCBI.Linpe1
+Version: 1.0.0
+NeedsCompilation: no
