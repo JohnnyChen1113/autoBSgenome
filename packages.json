@@ -3104,6 +3104,54 @@
       ]
     },
     {
+      "organism": "Bipolaris zeicola 26-R-13",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Bipolaris"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10",
+          "version": "1.0.0",
+          "organism": "Bipolaris zeicola 26-R-13",
+          "assembly": "Cochliobolus carbonum v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000523435.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000523435.1/",
+          "file_name": "BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10_1.0.0.tar.gz",
+          "size": 8244670,
+          "seq_ids": [
+            "NW_006912049.1",
+            "NW_006912050.1",
+            "NW_006912051.1",
+            "NW_006912052.1",
+            "NW_006912053.1"
+          ],
+          "seq_count": 844,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Pleosporaceae",
+            "genus": "Bipolaris"
+          },
+          "common_name": "",
+          "published": "2026-04-05T20:37:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10/BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bison bison bison",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -45573,6 +45621,38 @@
       "common_name": "",
       "published": "2026-04-05T20:37:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asaccharolyticus.NCBI.Aspsac1/BSgenome.Asaccharolyticus.NCBI.Aspsac1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10",
+      "version": "1.0.0",
+      "organism": "Bipolaris zeicola 26-R-13",
+      "assembly": "Cochliobolus carbonum v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000523435.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000523435.1/",
+      "file_name": "BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10_1.0.0.tar.gz",
+      "size": 8244670,
+      "seq_ids": [
+        "NW_006912049.1",
+        "NW_006912050.1",
+        "NW_006912051.1",
+        "NW_006912052.1",
+        "NW_006912053.1"
+      ],
+      "seq_count": 844,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Bipolaris"
+      },
+      "common_name": "",
+      "published": "2026-04-05T20:37:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10/BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10_1.0.0.tar.gz"
     }
   ]
 }
