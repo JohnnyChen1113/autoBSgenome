@@ -2085,3 +2085,7 @@ NeedsCompilation: no
 Package: BSgenome.Rgraminis.NCBI.Rhoba11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kdejecticola.NCBI.ASM51256v3
+Version: 1.0.0
+NeedsCompilation: no

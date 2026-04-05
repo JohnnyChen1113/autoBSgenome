@@ -11783,6 +11783,54 @@
       ]
     },
     {
+      "organism": "Kwoniella dejecticola CBS 10117",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Kwoniella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kdejecticola.NCBI.ASM51256v3",
+          "version": "1.0.0",
+          "organism": "Kwoniella dejecticola CBS 10117",
+          "assembly": "ASM51256v3",
+          "provider": "NCBI",
+          "accession": "GCF_000512565.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000512565.2/",
+          "file_name": "BSgenome.Kdejecticola.NCBI.ASM51256v3_1.0.0.tar.gz",
+          "size": 6276295,
+          "seq_ids": [
+            "NC_089301.1",
+            "NC_089302.1",
+            "NC_089303.1",
+            "NC_089304.1",
+            "NC_089305.1"
+          ],
+          "seq_count": 11,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Kwoniella"
+          },
+          "common_name": "",
+          "published": "2026-04-05T16:40:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kdejecticola.NCBI.ASM51256v3/BSgenome.Kdejecticola.NCBI.ASM51256v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Kwoniella mangroviensis CBS 8507",
       "common_name": "",
       "group": "fungi",
@@ -41363,6 +41411,38 @@
       "common_name": "",
       "published": "2026-04-05T16:40:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rgraminis.NCBI.Rhoba11/BSgenome.Rgraminis.NCBI.Rhoba11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kdejecticola.NCBI.ASM51256v3",
+      "version": "1.0.0",
+      "organism": "Kwoniella dejecticola CBS 10117",
+      "assembly": "ASM51256v3",
+      "provider": "NCBI",
+      "accession": "GCF_000512565.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000512565.2/",
+      "file_name": "BSgenome.Kdejecticola.NCBI.ASM51256v3_1.0.0.tar.gz",
+      "size": 6276295,
+      "seq_ids": [
+        "NC_089301.1",
+        "NC_089302.1",
+        "NC_089303.1",
+        "NC_089304.1",
+        "NC_089305.1"
+      ],
+      "seq_count": 11,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Kwoniella"
+      },
+      "common_name": "",
+      "published": "2026-04-05T16:40:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kdejecticola.NCBI.ASM51256v3/BSgenome.Kdejecticola.NCBI.ASM51256v3_1.0.0.tar.gz"
     }
   ]
 }
