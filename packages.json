@@ -9440,6 +9440,54 @@
       ]
     },
     {
+      "organism": "Huiozyma naganishii CBS 8797",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Huiozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hnaganishii.NCBI.ASM34898v1",
+          "version": "1.0.0",
+          "organism": "Huiozyma naganishii CBS 8797",
+          "assembly": "ASM34898v1",
+          "provider": "NCBI",
+          "accession": "GCF_000348985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000348985.1/",
+          "file_name": "BSgenome.Hnaganishii.NCBI.ASM34898v1_1.0.0.tar.gz",
+          "size": 2839094,
+          "seq_ids": [
+            "NC_035922.1",
+            "NC_035923.1",
+            "NC_035924.1",
+            "NC_035925.1",
+            "NC_035926.1"
+          ],
+          "seq_count": 13,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Huiozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T09:43:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hnaganishii.NCBI.ASM34898v1/BSgenome.Hnaganishii.NCBI.ASM34898v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Hyaena hyaena",
       "common_name": "striped hyena",
       "group": "vertebrate_mammalian",
@@ -34919,6 +34967,38 @@
       "common_name": "",
       "published": "2026-04-05T09:43:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pkudriavzevii.NCBI.ASM305444v1/BSgenome.Pkudriavzevii.NCBI.ASM305444v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hnaganishii.NCBI.ASM34898v1",
+      "version": "1.0.0",
+      "organism": "Huiozyma naganishii CBS 8797",
+      "assembly": "ASM34898v1",
+      "provider": "NCBI",
+      "accession": "GCF_000348985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000348985.1/",
+      "file_name": "BSgenome.Hnaganishii.NCBI.ASM34898v1_1.0.0.tar.gz",
+      "size": 2839094,
+      "seq_ids": [
+        "NC_035922.1",
+        "NC_035923.1",
+        "NC_035924.1",
+        "NC_035925.1",
+        "NC_035926.1"
+      ],
+      "seq_count": 13,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Huiozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T09:43:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hnaganishii.NCBI.ASM34898v1/BSgenome.Hnaganishii.NCBI.ASM34898v1_1.0.0.tar.gz"
     }
   ]
 }
