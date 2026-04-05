@@ -18965,6 +18965,54 @@
       ]
     },
     {
+      "organism": "Strongylocentrotus purpuratus",
+      "common_name": "purple sea urchin",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Echinodermata",
+        "class": "Echinoidea",
+        "order": "Camarodonta",
+        "family": "Strongylocentrotidae",
+        "genus": "Strongylocentrotus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Spurpuratus.NCBI.Spur50",
+          "version": "1.0.0",
+          "organism": "Strongylocentrotus purpuratus",
+          "assembly": "Spur_5.0",
+          "provider": "NCBI",
+          "accession": "GCF_000002235.5",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002235.5/",
+          "file_name": "BSgenome.Spurpuratus.NCBI.Spur50_1.0.0.tar.gz",
+          "size": 230511043,
+          "seq_ids": [
+            "NW_022144746.1",
+            "NW_022144747.1",
+            "NW_022144748.1",
+            "NW_022144749.1",
+            "NW_022144750.1"
+          ],
+          "seq_count": 871,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Echinodermata",
+            "class": "Echinoidea",
+            "order": "Camarodonta",
+            "family": "Strongylocentrotidae",
+            "genus": "Strongylocentrotus"
+          },
+          "common_name": "purple sea urchin",
+          "published": "2026-04-05T10:38:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spurpuratus.NCBI.Spur50/BSgenome.Spurpuratus.NCBI.Spur50_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Strongyloides ratti",
       "common_name": "",
       "group": "invertebrate",
@@ -35479,6 +35527,38 @@
       "common_name": "",
       "published": "2026-04-05T10:38:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmembranifaciens.NCBI.Picme2/BSgenome.Pmembranifaciens.NCBI.Picme2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Spurpuratus.NCBI.Spur50",
+      "version": "1.0.0",
+      "organism": "Strongylocentrotus purpuratus",
+      "assembly": "Spur_5.0",
+      "provider": "NCBI",
+      "accession": "GCF_000002235.5",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002235.5/",
+      "file_name": "BSgenome.Spurpuratus.NCBI.Spur50_1.0.0.tar.gz",
+      "size": 230511043,
+      "seq_ids": [
+        "NW_022144746.1",
+        "NW_022144747.1",
+        "NW_022144748.1",
+        "NW_022144749.1",
+        "NW_022144750.1"
+      ],
+      "seq_count": 871,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Echinodermata",
+        "class": "Echinoidea",
+        "order": "Camarodonta",
+        "family": "Strongylocentrotidae",
+        "genus": "Strongylocentrotus"
+      },
+      "common_name": "purple sea urchin",
+      "published": "2026-04-05T10:38:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spurpuratus.NCBI.Spur50/BSgenome.Spurpuratus.NCBI.Spur50_1.0.0.tar.gz"
     }
   ]
 }
