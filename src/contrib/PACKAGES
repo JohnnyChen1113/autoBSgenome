@@ -2221,3 +2221,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccarrionii.NCBI.CladcarrCBS16054V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgriseofulvum.NCBI.ASM156193v1
+Version: 1.0.0
+NeedsCompilation: no

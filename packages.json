@@ -18250,6 +18250,54 @@
       ]
     },
     {
+      "organism": "Penicillium griseofulvum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Penicillium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pgriseofulvum.NCBI.ASM156193v1",
+          "version": "1.0.0",
+          "organism": "Penicillium griseofulvum",
+          "assembly": "ASM156193v1",
+          "provider": "NCBI",
+          "accession": "GCF_001561935.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001561935.1/",
+          "file_name": "BSgenome.Pgriseofulvum.NCBI.ASM156193v1_1.0.0.tar.gz",
+          "size": 7559639,
+          "seq_ids": [
+            "NW_024467433.1",
+            "NW_024467432.1",
+            "NW_024467435.1",
+            "NW_024467434.1",
+            "NW_024467437.1"
+          ],
+          "seq_count": 92,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Penicillium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T18:50:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgriseofulvum.NCBI.ASM156193v1/BSgenome.Pgriseofulvum.NCBI.ASM156193v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Perca flavescens",
       "common_name": "yellow perch",
       "group": "vertebrate_other",
@@ -44053,6 +44101,38 @@
       "common_name": "",
       "published": "2026-04-05T18:50:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccarrionii.NCBI.CladcarrCBS16054V1/BSgenome.Ccarrionii.NCBI.CladcarrCBS16054V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pgriseofulvum.NCBI.ASM156193v1",
+      "version": "1.0.0",
+      "organism": "Penicillium griseofulvum",
+      "assembly": "ASM156193v1",
+      "provider": "NCBI",
+      "accession": "GCF_001561935.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001561935.1/",
+      "file_name": "BSgenome.Pgriseofulvum.NCBI.ASM156193v1_1.0.0.tar.gz",
+      "size": 7559639,
+      "seq_ids": [
+        "NW_024467433.1",
+        "NW_024467432.1",
+        "NW_024467435.1",
+        "NW_024467434.1",
+        "NW_024467437.1"
+      ],
+      "seq_count": 92,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Penicillium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T18:50:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgriseofulvum.NCBI.ASM156193v1/BSgenome.Pgriseofulvum.NCBI.ASM156193v1_1.0.0.tar.gz"
     }
   ]
 }
