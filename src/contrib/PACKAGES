@@ -2437,3 +2437,7 @@ NeedsCompilation: no
 Package: BSgenome.Lhyalina.NCBI.CFIALhyaEG2017
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vdahliae.NCBI.ASM15067v2
+Version: 1.0.0
+NeedsCompilation: no
