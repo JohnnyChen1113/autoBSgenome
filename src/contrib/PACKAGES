@@ -1553,3 +1553,7 @@ NeedsCompilation: no
 Package: BSgenome.Ofaveolata.NCBI.ofavdovv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dcitri.NCBI.Diacipsyllidgenomeassemblyversion11
+Version: 1.0.0
+NeedsCompilation: no
