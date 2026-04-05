@@ -2141,3 +2141,7 @@ NeedsCompilation: no
 Package: BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Smicrobalum.NCBI.ASM653598v1
+Version: 1.0.0
+NeedsCompilation: no

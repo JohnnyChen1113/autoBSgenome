@@ -22786,6 +22786,54 @@
       ]
     },
     {
+      "organism": "Synchytrium microbalum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "order": "Synchytriales",
+        "family": "Synchytriaceae",
+        "genus": "Synchytrium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Smicrobalum.NCBI.ASM653598v1",
+          "version": "1.0.0",
+          "organism": "Synchytrium microbalum",
+          "assembly": "ASM653598v1",
+          "provider": "NCBI",
+          "accession": "GCF_006535985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_006535985.1/",
+          "file_name": "BSgenome.Smicrobalum.NCBI.ASM653598v1_1.0.0.tar.gz",
+          "size": 6883010,
+          "seq_ids": [
+            "NW_022158350.1",
+            "NW_022158351.1",
+            "NW_022158352.1",
+            "NW_022158353.1",
+            "NW_022158354.1"
+          ],
+          "seq_count": 169,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Chytridiomycota",
+            "class": "Chytridiomycetes",
+            "order": "Synchytriales",
+            "family": "Synchytriaceae",
+            "genus": "Synchytrium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T17:35:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smicrobalum.NCBI.ASM653598v1/BSgenome.Smicrobalum.NCBI.ASM653598v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tachypleus tridentatus",
       "common_name": "Chinese horseshoe crab",
       "group": "invertebrate",
@@ -42483,6 +42531,38 @@
       "common_name": "",
       "published": "2026-04-05T17:34:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10/BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Smicrobalum.NCBI.ASM653598v1",
+      "version": "1.0.0",
+      "organism": "Synchytrium microbalum",
+      "assembly": "ASM653598v1",
+      "provider": "NCBI",
+      "accession": "GCF_006535985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_006535985.1/",
+      "file_name": "BSgenome.Smicrobalum.NCBI.ASM653598v1_1.0.0.tar.gz",
+      "size": 6883010,
+      "seq_ids": [
+        "NW_022158350.1",
+        "NW_022158351.1",
+        "NW_022158352.1",
+        "NW_022158353.1",
+        "NW_022158354.1"
+      ],
+      "seq_count": 169,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "order": "Synchytriales",
+        "family": "Synchytriaceae",
+        "genus": "Synchytrium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T17:35:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smicrobalum.NCBI.ASM653598v1/BSgenome.Smicrobalum.NCBI.ASM653598v1_1.0.0.tar.gz"
     }
   ]
 }
