@@ -18007,6 +18007,54 @@
       ]
     },
     {
+      "organism": "Schizosaccharomyces cryophilus OY26",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Schizosaccharomycetes",
+        "order": "Schizosaccharomycetales",
+        "family": "Schizosaccharomycetaceae",
+        "genus": "Schizosaccharomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Scryophilus.NCBI.SCY4",
+          "version": "1.0.0",
+          "organism": "Schizosaccharomyces cryophilus OY26",
+          "assembly": "SCY4",
+          "provider": "NCBI",
+          "accession": "GCF_000004155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004155.1/",
+          "file_name": "BSgenome.Scryophilus.NCBI.SCY4_1.0.0.tar.gz",
+          "size": 3050279,
+          "seq_ids": [
+            "NW_013185624.1",
+            "NW_013185625.1",
+            "NW_013185626.1",
+            "NW_013185627.1",
+            "NW_013185628.1"
+          ],
+          "seq_count": 30,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Schizosaccharomycetes",
+            "order": "Schizosaccharomycetales",
+            "family": "Schizosaccharomycetaceae",
+            "genus": "Schizosaccharomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T10:38:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scryophilus.NCBI.SCY4/BSgenome.Scryophilus.NCBI.SCY4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Selaginella moellendorffii",
       "common_name": "",
       "group": "plant",
@@ -35319,6 +35367,38 @@
       "common_name": "",
       "published": "2026-04-05T10:38:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1/BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Scryophilus.NCBI.SCY4",
+      "version": "1.0.0",
+      "organism": "Schizosaccharomyces cryophilus OY26",
+      "assembly": "SCY4",
+      "provider": "NCBI",
+      "accession": "GCF_000004155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004155.1/",
+      "file_name": "BSgenome.Scryophilus.NCBI.SCY4_1.0.0.tar.gz",
+      "size": 3050279,
+      "seq_ids": [
+        "NW_013185624.1",
+        "NW_013185625.1",
+        "NW_013185626.1",
+        "NW_013185627.1",
+        "NW_013185628.1"
+      ],
+      "seq_count": 30,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Schizosaccharomycetes",
+        "order": "Schizosaccharomycetales",
+        "family": "Schizosaccharomycetaceae",
+        "genus": "Schizosaccharomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T10:38:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scryophilus.NCBI.SCY4/BSgenome.Scryophilus.NCBI.SCY4_1.0.0.tar.gz"
     }
   ]
 }

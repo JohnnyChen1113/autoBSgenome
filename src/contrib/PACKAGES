@@ -1781,3 +1781,7 @@ NeedsCompilation: no
 Package: BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scryophilus.NCBI.SCY4
+Version: 1.0.0
+NeedsCompilation: no
