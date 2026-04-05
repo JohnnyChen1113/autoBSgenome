@@ -1457,3 +1457,7 @@ NeedsCompilation: no
 Package: BSgenome.Lgigantea.NCBI.Helro1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcurvispinosus.NCBI.ASM307098v1
+Version: 1.0.0
+NeedsCompilation: no
