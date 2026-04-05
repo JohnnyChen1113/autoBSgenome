@@ -2277,3 +2277,7 @@ NeedsCompilation: no
 Package: BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Poxalicum.NCBI.ASM172317v3
+Version: 1.0.0
+NeedsCompilation: no

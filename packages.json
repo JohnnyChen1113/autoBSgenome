@@ -18874,6 +18874,54 @@
       ]
     },
     {
+      "organism": "Penicillium oxalicum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Penicillium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Poxalicum.NCBI.ASM172317v3",
+          "version": "1.0.0",
+          "organism": "Penicillium oxalicum",
+          "assembly": "ASM172317v3",
+          "provider": "NCBI",
+          "accession": "GCF_001723175.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001723175.1/",
+          "file_name": "BSgenome.Poxalicum.NCBI.ASM172317v3_1.0.0.tar.gz",
+          "size": 7944398,
+          "seq_ids": [
+            "NC_064650.1",
+            "NC_064651.1",
+            "NC_064652.1",
+            "NC_064653.1",
+            "NC_064654.1"
+          ],
+          "seq_count": 18,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Penicillium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T19:37:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Poxalicum.NCBI.ASM172317v3/BSgenome.Poxalicum.NCBI.ASM172317v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Perca flavescens",
       "common_name": "yellow perch",
       "group": "vertebrate_other",
@@ -45173,6 +45221,38 @@
       "common_name": "",
       "published": "2026-04-05T19:37:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome/BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Poxalicum.NCBI.ASM172317v3",
+      "version": "1.0.0",
+      "organism": "Penicillium oxalicum",
+      "assembly": "ASM172317v3",
+      "provider": "NCBI",
+      "accession": "GCF_001723175.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001723175.1/",
+      "file_name": "BSgenome.Poxalicum.NCBI.ASM172317v3_1.0.0.tar.gz",
+      "size": 7944398,
+      "seq_ids": [
+        "NC_064650.1",
+        "NC_064651.1",
+        "NC_064652.1",
+        "NC_064653.1",
+        "NC_064654.1"
+      ],
+      "seq_count": 18,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Penicillium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T19:37:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Poxalicum.NCBI.ASM172317v3/BSgenome.Poxalicum.NCBI.ASM172317v3_1.0.0.tar.gz"
     }
   ]
 }
