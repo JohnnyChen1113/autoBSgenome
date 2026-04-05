@@ -17673,6 +17673,54 @@
       ]
     },
     {
+      "organism": "Saccharomyces eubayanus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Seubayanus.NCBI.SEUB30",
+          "version": "1.0.0",
+          "organism": "Saccharomyces eubayanus",
+          "assembly": "SEUB3.0",
+          "provider": "NCBI",
+          "accession": "GCF_001298625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001298625.1/",
+          "file_name": "BSgenome.Seubayanus.NCBI.SEUB30_1.0.0.tar.gz",
+          "size": 3090278,
+          "seq_ids": [
+            "NC_030976.1",
+            "NC_030977.1",
+            "NC_030978.1",
+            "NC_030979.1",
+            "NC_030980.1"
+          ],
+          "seq_count": 24,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Saccharomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T10:38:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Seubayanus.NCBI.SEUB30/BSgenome.Seubayanus.NCBI.SEUB30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Saccoglossus kowalevskii",
       "common_name": "",
       "group": "invertebrate",
@@ -35559,6 +35607,38 @@
       "common_name": "purple sea urchin",
       "published": "2026-04-05T10:38:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spurpuratus.NCBI.Spur50/BSgenome.Spurpuratus.NCBI.Spur50_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Seubayanus.NCBI.SEUB30",
+      "version": "1.0.0",
+      "organism": "Saccharomyces eubayanus",
+      "assembly": "SEUB3.0",
+      "provider": "NCBI",
+      "accession": "GCF_001298625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001298625.1/",
+      "file_name": "BSgenome.Seubayanus.NCBI.SEUB30_1.0.0.tar.gz",
+      "size": 3090278,
+      "seq_ids": [
+        "NC_030976.1",
+        "NC_030977.1",
+        "NC_030978.1",
+        "NC_030979.1",
+        "NC_030980.1"
+      ],
+      "seq_count": 24,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T10:38:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Seubayanus.NCBI.SEUB30/BSgenome.Seubayanus.NCBI.SEUB30_1.0.0.tar.gz"
     }
   ]
 }

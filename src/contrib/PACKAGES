@@ -1793,3 +1793,7 @@ NeedsCompilation: no
 Package: BSgenome.Spurpuratus.NCBI.Spur50
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Seubayanus.NCBI.SEUB30
+Version: 1.0.0
+NeedsCompilation: no
