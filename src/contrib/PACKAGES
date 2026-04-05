@@ -2401,3 +2401,7 @@ NeedsCompilation: no
 Package: BSgenome.Aibericus.NCBI.Aspibe1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fmultimorphosa.NCBI.FonsmultCBS102226V1
+Version: 1.0.0
+NeedsCompilation: no
