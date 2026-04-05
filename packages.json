@@ -6060,6 +6060,54 @@
       ]
     },
     {
+      "organism": "Cryptococcus wingfieldii CBS 7118",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cwingfieldii.NCBI.TsucwingCBS7118V1",
+          "version": "1.0.0",
+          "organism": "Cryptococcus wingfieldii CBS 7118",
+          "assembly": "Tsuc_wing_CBS7118_V1",
+          "provider": "NCBI",
+          "accession": "GCF_001720155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001720155.1/",
+          "file_name": "BSgenome.Cwingfieldii.NCBI.TsucwingCBS7118V1_1.0.0.tar.gz",
+          "size": 5303989,
+          "seq_ids": [
+            "NW_017567027.1",
+            "NW_017567036.1",
+            "NW_017567037.1",
+            "NW_017567038.1",
+            "NW_017567039.1"
+          ],
+          "seq_count": 83,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:04:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cwingfieldii.NCBI.TsucwingCBS7118V1/BSgenome.Cwingfieldii.NCBI.TsucwingCBS7118V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptotermes secundus",
       "common_name": "",
       "group": "invertebrate",
@@ -39931,6 +39979,38 @@
       "common_name": "",
       "published": "2026-04-05T15:04:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Coleaginosum.NCBI.ASM806530v1/BSgenome.Coleaginosum.NCBI.ASM806530v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cwingfieldii.NCBI.TsucwingCBS7118V1",
+      "version": "1.0.0",
+      "organism": "Cryptococcus wingfieldii CBS 7118",
+      "assembly": "Tsuc_wing_CBS7118_V1",
+      "provider": "NCBI",
+      "accession": "GCF_001720155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001720155.1/",
+      "file_name": "BSgenome.Cwingfieldii.NCBI.TsucwingCBS7118V1_1.0.0.tar.gz",
+      "size": 5303989,
+      "seq_ids": [
+        "NW_017567027.1",
+        "NW_017567036.1",
+        "NW_017567037.1",
+        "NW_017567038.1",
+        "NW_017567039.1"
+      ],
+      "seq_count": 83,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:04:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cwingfieldii.NCBI.TsucwingCBS7118V1/BSgenome.Cwingfieldii.NCBI.TsucwingCBS7118V1_1.0.0.tar.gz"
     }
   ]
 }

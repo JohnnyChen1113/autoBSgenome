@@ -2013,3 +2013,7 @@ NeedsCompilation: no
 Package: BSgenome.Coleaginosum.NCBI.ASM806530v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cwingfieldii.NCBI.TsucwingCBS7118V1
+Version: 1.0.0
+NeedsCompilation: no
