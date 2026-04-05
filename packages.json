@@ -11244,6 +11244,54 @@
       ]
     },
     {
+      "organism": "Exophiala spinifera",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Exophiala"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Espinifera.NCBI.ExopspinCBS89968V1",
+          "version": "1.0.0",
+          "organism": "Exophiala spinifera",
+          "assembly": "Exop_spin_CBS89968_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000836115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836115.1/",
+          "file_name": "BSgenome.Espinifera.NCBI.ExopspinCBS89968V1_1.0.0.tar.gz",
+          "size": 8522706,
+          "seq_ids": [
+            "NW_015622513.1",
+            "NW_015622514.1",
+            "NW_015622515.1",
+            "NW_015622516.1",
+            "NW_015622517.1"
+          ],
+          "seq_count": 28,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Exophiala"
+          },
+          "common_name": "",
+          "published": "2026-04-05T21:37:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Espinifera.NCBI.ExopspinCBS89968V1/BSgenome.Espinifera.NCBI.ExopspinCBS89968V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Exophiala xenobiotica",
       "common_name": "",
       "group": "fungi",
@@ -46853,6 +46901,38 @@
       "common_name": "",
       "published": "2026-04-05T21:37:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Valfalfae.NCBI.ASM15082v1/BSgenome.Valfalfae.NCBI.ASM15082v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Espinifera.NCBI.ExopspinCBS89968V1",
+      "version": "1.0.0",
+      "organism": "Exophiala spinifera",
+      "assembly": "Exop_spin_CBS89968_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000836115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836115.1/",
+      "file_name": "BSgenome.Espinifera.NCBI.ExopspinCBS89968V1_1.0.0.tar.gz",
+      "size": 8522706,
+      "seq_ids": [
+        "NW_015622513.1",
+        "NW_015622514.1",
+        "NW_015622515.1",
+        "NW_015622516.1",
+        "NW_015622517.1"
+      ],
+      "seq_count": 28,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Exophiala"
+      },
+      "common_name": "",
+      "published": "2026-04-05T21:37:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Espinifera.NCBI.ExopspinCBS89968V1/BSgenome.Espinifera.NCBI.ExopspinCBS89968V1_1.0.0.tar.gz"
     }
   ]
 }
