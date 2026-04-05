@@ -10970,6 +10970,54 @@
       ]
     },
     {
+      "organism": "Kockovaella imperatae",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cuniculitremaceae",
+        "genus": "Kockovaella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kimperatae.NCBI.Kocim1",
+          "version": "1.0.0",
+          "organism": "Kockovaella imperatae",
+          "assembly": "Kocim1",
+          "provider": "NCBI",
+          "accession": "GCF_002102565.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002102565.1/",
+          "file_name": "BSgenome.Kimperatae.NCBI.Kocim1_1.0.0.tar.gz",
+          "size": 4562514,
+          "seq_ids": [
+            "NW_019028941.1",
+            "NW_019028950.1",
+            "NW_019028951.1",
+            "NW_019028952.1",
+            "NW_019028953.1"
+          ],
+          "seq_count": 38,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cuniculitremaceae",
+            "genus": "Kockovaella"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:08:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kimperatae.NCBI.Kocim1/BSgenome.Kimperatae.NCBI.Kocim1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Komagataella phaffii GS115",
       "common_name": "",
       "group": "fungi",
@@ -38737,6 +38785,38 @@
       "common_name": "",
       "published": "2026-04-05T14:07:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmiltonrushii.NCBI.Meimi1/BSgenome.Mmiltonrushii.NCBI.Meimi1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kimperatae.NCBI.Kocim1",
+      "version": "1.0.0",
+      "organism": "Kockovaella imperatae",
+      "assembly": "Kocim1",
+      "provider": "NCBI",
+      "accession": "GCF_002102565.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002102565.1/",
+      "file_name": "BSgenome.Kimperatae.NCBI.Kocim1_1.0.0.tar.gz",
+      "size": 4562514,
+      "seq_ids": [
+        "NW_019028941.1",
+        "NW_019028950.1",
+        "NW_019028951.1",
+        "NW_019028952.1",
+        "NW_019028953.1"
+      ],
+      "seq_count": 38,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cuniculitremaceae",
+        "genus": "Kockovaella"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:08:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kimperatae.NCBI.Kocim1/BSgenome.Kimperatae.NCBI.Kocim1_1.0.0.tar.gz"
     }
   ]
 }
