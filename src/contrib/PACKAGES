@@ -1929,3 +1929,7 @@ NeedsCompilation: no
 Package: BSgenome.Mosmundae.NCBI.Mixiaosmundaev10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vpolyspora.NCBI.ASM15003v1
+Version: 1.0.0
+NeedsCompilation: no

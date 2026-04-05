@@ -21973,6 +21973,54 @@
       ]
     },
     {
+      "organism": "Vanderwaltozyma polyspora DSM 70294",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Vanderwaltozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vpolyspora.NCBI.ASM15003v1",
+          "version": "1.0.0",
+          "organism": "Vanderwaltozyma polyspora DSM 70294",
+          "assembly": "ASM15003v1",
+          "provider": "NCBI",
+          "accession": "GCF_000150035.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150035.1/",
+          "file_name": "BSgenome.Vpolyspora.NCBI.ASM15003v1_1.0.0.tar.gz",
+          "size": 3849996,
+          "seq_ids": [
+            "NW_001834414.1",
+            "NW_001834415.1",
+            "NW_001834416.1",
+            "NW_001834417.1",
+            "NW_001834418.1"
+          ],
+          "seq_count": 281,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Vanderwaltozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:07:02Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vpolyspora.NCBI.ASM15003v1/BSgenome.Vpolyspora.NCBI.ASM15003v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Varanus komodoensis",
       "common_name": "Komodo dragon",
       "group": "vertebrate_other",
@@ -38263,6 +38311,38 @@
       "common_name": "",
       "published": "2026-04-05T14:06:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mosmundae.NCBI.Mixiaosmundaev10/BSgenome.Mosmundae.NCBI.Mixiaosmundaev10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vpolyspora.NCBI.ASM15003v1",
+      "version": "1.0.0",
+      "organism": "Vanderwaltozyma polyspora DSM 70294",
+      "assembly": "ASM15003v1",
+      "provider": "NCBI",
+      "accession": "GCF_000150035.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150035.1/",
+      "file_name": "BSgenome.Vpolyspora.NCBI.ASM15003v1_1.0.0.tar.gz",
+      "size": 3849996,
+      "seq_ids": [
+        "NW_001834414.1",
+        "NW_001834415.1",
+        "NW_001834416.1",
+        "NW_001834417.1",
+        "NW_001834418.1"
+      ],
+      "seq_count": 281,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Vanderwaltozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:07:02Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vpolyspora.NCBI.ASM15003v1/BSgenome.Vpolyspora.NCBI.ASM15003v1_1.0.0.tar.gz"
     }
   ]
 }
