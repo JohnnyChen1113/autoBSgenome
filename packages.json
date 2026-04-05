@@ -3344,6 +3344,54 @@
       ]
     },
     {
+      "organism": "Bipolaris victoriae FI3",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Bipolaris"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10",
+          "version": "1.0.0",
+          "organism": "Bipolaris victoriae FI3",
+          "assembly": "Cochliobolus victoriae v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000527765.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000527765.1/",
+          "file_name": "BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10_1.0.0.tar.gz",
+          "size": 8556309,
+          "seq_ids": [
+            "NW_014575392.1",
+            "NW_014575391.1",
+            "NW_014575390.1",
+            "NW_014575389.1",
+            "NW_014575388.1"
+          ],
+          "seq_count": 676,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Pleosporaceae",
+            "genus": "Bipolaris"
+          },
+          "common_name": "",
+          "published": "2026-04-05T21:36:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10/BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bipolaris zeicola 26-R-13",
       "common_name": "",
       "group": "fungi",
@@ -46613,6 +46661,38 @@
       "common_name": "",
       "published": "2026-04-05T21:36:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rmackenziei.NCBI.RhinmackCBS65093V1/BSgenome.Rmackenziei.NCBI.RhinmackCBS65093V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10",
+      "version": "1.0.0",
+      "organism": "Bipolaris victoriae FI3",
+      "assembly": "Cochliobolus victoriae v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000527765.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000527765.1/",
+      "file_name": "BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10_1.0.0.tar.gz",
+      "size": 8556309,
+      "seq_ids": [
+        "NW_014575392.1",
+        "NW_014575391.1",
+        "NW_014575390.1",
+        "NW_014575389.1",
+        "NW_014575388.1"
+      ],
+      "seq_count": 676,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Bipolaris"
+      },
+      "common_name": "",
+      "published": "2026-04-05T21:36:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10/BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10_1.0.0.tar.gz"
     }
   ]
 }
