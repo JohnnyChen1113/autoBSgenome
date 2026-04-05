@@ -17910,6 +17910,54 @@
       ]
     },
     {
+      "organism": "Tachypleus tridentatus",
+      "common_name": "Chinese horseshoe crab",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Merostomata",
+        "order": "Xiphosura",
+        "family": "Limulidae",
+        "genus": "Tachypleus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ttridentatus.NCBI.ASM421037v1",
+          "version": "1.0.0",
+          "organism": "Tachypleus tridentatus",
+          "assembly": "ASM421037v1",
+          "provider": "NCBI",
+          "accession": "GCF_004210375.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004210375.1/",
+          "file_name": "BSgenome.Ttridentatus.NCBI.ASM421037v1_1.0.0.tar.gz",
+          "size": 507154740,
+          "seq_ids": [
+            "NC_134825.1",
+            "NC_134826.1",
+            "NC_134827.1",
+            "NC_134828.1",
+            "NC_134829.1"
+          ],
+          "seq_count": 205,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Merostomata",
+            "order": "Xiphosura",
+            "family": "Limulidae",
+            "genus": "Tachypleus"
+          },
+          "common_name": "Chinese horseshoe crab",
+          "published": "2026-04-05T08:00:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ttridentatus.NCBI.ASM421037v1/BSgenome.Ttridentatus.NCBI.ASM421037v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Takifugu flavidus",
       "common_name": "sansaifugu",
       "group": "vertebrate_other",
@@ -32841,6 +32889,38 @@
       "common_name": "Atlantic horseshoe crab",
       "published": "2026-04-05T08:00:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lpolyphemus.NCBI.Limuluspolyphemus212/BSgenome.Lpolyphemus.NCBI.Limuluspolyphemus212_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ttridentatus.NCBI.ASM421037v1",
+      "version": "1.0.0",
+      "organism": "Tachypleus tridentatus",
+      "assembly": "ASM421037v1",
+      "provider": "NCBI",
+      "accession": "GCF_004210375.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004210375.1/",
+      "file_name": "BSgenome.Ttridentatus.NCBI.ASM421037v1_1.0.0.tar.gz",
+      "size": 507154740,
+      "seq_ids": [
+        "NC_134825.1",
+        "NC_134826.1",
+        "NC_134827.1",
+        "NC_134828.1",
+        "NC_134829.1"
+      ],
+      "seq_count": 205,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Merostomata",
+        "order": "Xiphosura",
+        "family": "Limulidae",
+        "genus": "Tachypleus"
+      },
+      "common_name": "Chinese horseshoe crab",
+      "published": "2026-04-05T08:00:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ttridentatus.NCBI.ASM421037v1/BSgenome.Ttridentatus.NCBI.ASM421037v1_1.0.0.tar.gz"
     }
   ]
 }
