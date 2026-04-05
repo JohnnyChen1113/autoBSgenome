@@ -7590,6 +7590,54 @@
       ]
     },
     {
+      "organism": "Cyphellophora europaea CBS 101466",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Cyphellophoraceae",
+        "genus": "Cyphellophora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ceuropaea.NCBI.PhiaeuroCBS101466V1",
+          "version": "1.0.0",
+          "organism": "Cyphellophora europaea CBS 101466",
+          "assembly": "Phia_euro_CBS_101466_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000365145.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000365145.1/",
+          "file_name": "BSgenome.Ceuropaea.NCBI.PhiaeuroCBS101466V1_1.0.0.tar.gz",
+          "size": 7472587,
+          "seq_ids": [
+            "NW_008481797.1",
+            "NW_008481798.1",
+            "NW_008481799.1",
+            "NW_008481800.1",
+            "NW_008481801.1"
+          ],
+          "seq_count": 19,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Cyphellophoraceae",
+            "genus": "Cyphellophora"
+          },
+          "common_name": "",
+          "published": "2026-04-05T18:49:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ceuropaea.NCBI.PhiaeuroCBS101466V1/BSgenome.Ceuropaea.NCBI.PhiaeuroCBS101466V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyphomyrmex costatus",
       "common_name": "",
       "group": "invertebrate",
@@ -43733,6 +43781,38 @@
       "common_name": "",
       "published": "2026-04-05T18:49:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Capollinis.NCBI.ConiapolCBS100218V1/BSgenome.Capollinis.NCBI.ConiapolCBS100218V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ceuropaea.NCBI.PhiaeuroCBS101466V1",
+      "version": "1.0.0",
+      "organism": "Cyphellophora europaea CBS 101466",
+      "assembly": "Phia_euro_CBS_101466_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000365145.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000365145.1/",
+      "file_name": "BSgenome.Ceuropaea.NCBI.PhiaeuroCBS101466V1_1.0.0.tar.gz",
+      "size": 7472587,
+      "seq_ids": [
+        "NW_008481797.1",
+        "NW_008481798.1",
+        "NW_008481799.1",
+        "NW_008481800.1",
+        "NW_008481801.1"
+      ],
+      "seq_count": 19,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Cyphellophoraceae",
+        "genus": "Cyphellophora"
+      },
+      "common_name": "",
+      "published": "2026-04-05T18:49:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ceuropaea.NCBI.PhiaeuroCBS101466V1/BSgenome.Ceuropaea.NCBI.PhiaeuroCBS101466V1_1.0.0.tar.gz"
     }
   ]
 }
