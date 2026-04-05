@@ -1509,3 +1509,7 @@ NeedsCompilation: no
 Package: BSgenome.Foccidentalis.NCBI.Focc31
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcornetzi.NCBI.Tcor11
+Version: 1.0.0
+NeedsCompilation: no

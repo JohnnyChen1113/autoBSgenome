@@ -16003,6 +16003,54 @@
       ]
     },
     {
+      "organism": "Trachymyrmex cornetzi",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Trachymyrmex"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tcornetzi.NCBI.Tcor11",
+          "version": "1.0.0",
+          "organism": "Trachymyrmex cornetzi",
+          "assembly": "Tcor1.1",
+          "provider": "NCBI",
+          "accession": "GCF_001594075.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001594075.2/",
+          "file_name": "BSgenome.Tcornetzi.NCBI.Tcor11_1.0.0.tar.gz",
+          "size": 91220677,
+          "seq_ids": [
+            "NW_017280593.1",
+            "NW_017280594.1",
+            "NW_017280595.1",
+            "NW_017280596.1",
+            "NW_017280597.1"
+          ],
+          "seq_count": 19612,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Trachymyrmex"
+          },
+          "common_name": "",
+          "published": "2026-04-05T05:15:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcornetzi.NCBI.Tcor11/BSgenome.Tcornetzi.NCBI.Tcor11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trachymyrmex septentrionalis",
       "common_name": "",
       "group": "invertebrate",
@@ -28292,6 +28340,38 @@
       "common_name": "western flower thrips",
       "published": "2026-04-05T02:42:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Foccidentalis.NCBI.Focc31/BSgenome.Foccidentalis.NCBI.Focc31_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tcornetzi.NCBI.Tcor11",
+      "version": "1.0.0",
+      "organism": "Trachymyrmex cornetzi",
+      "assembly": "Tcor1.1",
+      "provider": "NCBI",
+      "accession": "GCF_001594075.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001594075.2/",
+      "file_name": "BSgenome.Tcornetzi.NCBI.Tcor11_1.0.0.tar.gz",
+      "size": 91220677,
+      "seq_ids": [
+        "NW_017280593.1",
+        "NW_017280594.1",
+        "NW_017280595.1",
+        "NW_017280596.1",
+        "NW_017280597.1"
+      ],
+      "seq_count": 19612,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Trachymyrmex"
+      },
+      "common_name": "",
+      "published": "2026-04-05T05:15:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcornetzi.NCBI.Tcor11/BSgenome.Tcornetzi.NCBI.Tcor11_1.0.0.tar.gz"
     }
   ]
 }
