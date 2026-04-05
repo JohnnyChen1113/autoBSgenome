@@ -23154,6 +23154,54 @@
       ]
     },
     {
+      "organism": "Talaromyces marneffei",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Trichocomaceae",
+        "genus": "Talaromyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tmarneffei.NCBI.ASM955685v1",
+          "version": "1.0.0",
+          "organism": "Talaromyces marneffei",
+          "assembly": "ASM955685v1",
+          "provider": "NCBI",
+          "accession": "GCF_009556855.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009556855.1/",
+          "file_name": "BSgenome.Tmarneffei.NCBI.ASM955685v1_1.0.0.tar.gz",
+          "size": 7287242,
+          "seq_ids": [
+            "NC_072348.1",
+            "NC_072349.1",
+            "NC_072350.1",
+            "NC_072351.1",
+            "NC_072352.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Trichocomaceae",
+            "genus": "Talaromyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T17:36:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmarneffei.NCBI.ASM955685v1/BSgenome.Tmarneffei.NCBI.ASM955685v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tarenaya hassleriana",
       "common_name": "",
       "group": "plant",
@@ -42939,6 +42987,38 @@
       "common_name": "",
       "published": "2026-04-05T17:36:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aglaucus.NCBI.Aspgl1/BSgenome.Aglaucus.NCBI.Aspgl1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tmarneffei.NCBI.ASM955685v1",
+      "version": "1.0.0",
+      "organism": "Talaromyces marneffei",
+      "assembly": "ASM955685v1",
+      "provider": "NCBI",
+      "accession": "GCF_009556855.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009556855.1/",
+      "file_name": "BSgenome.Tmarneffei.NCBI.ASM955685v1_1.0.0.tar.gz",
+      "size": 7287242,
+      "seq_ids": [
+        "NC_072348.1",
+        "NC_072349.1",
+        "NC_072350.1",
+        "NC_072351.1",
+        "NC_072352.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Trichocomaceae",
+        "genus": "Talaromyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T17:36:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmarneffei.NCBI.ASM955685v1/BSgenome.Tmarneffei.NCBI.ASM955685v1_1.0.0.tar.gz"
     }
   ]
 }
