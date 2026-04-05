@@ -1993,3 +1993,7 @@ NeedsCompilation: no
 Package: BSgenome.Twashingtonensis.NCBI.Tilwa1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.NCBI.CNA3
+Version: 1.0.0
+NeedsCompilation: no

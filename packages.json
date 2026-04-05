@@ -5868,6 +5868,54 @@
       ]
     },
     {
+      "organism": "Cryptococcus neoformans H99",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cneoformans.NCBI.CNA3",
+          "version": "1.0.0",
+          "organism": "Cryptococcus neoformans H99",
+          "assembly": "CNA3",
+          "provider": "NCBI",
+          "accession": "GCF_000149245.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149245.1/",
+          "file_name": "BSgenome.Cneoformans.NCBI.CNA3_1.0.0.tar.gz",
+          "size": 4957363,
+          "seq_ids": [
+            "NC_026745.1",
+            "NC_026746.1",
+            "NC_026747.1",
+            "NC_026748.1",
+            "NC_026749.1"
+          ],
+          "seq_count": 15,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:03:26Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cneoformans.NCBI.CNA3/BSgenome.Cneoformans.NCBI.CNA3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus tetragattii IND107",
       "common_name": "",
       "group": "fungi",
@@ -39534,6 +39582,38 @@
       "common_name": "",
       "published": "2026-04-05T15:03:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Twashingtonensis.NCBI.Tilwa1/BSgenome.Twashingtonensis.NCBI.Tilwa1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cneoformans.NCBI.CNA3",
+      "version": "1.0.0",
+      "organism": "Cryptococcus neoformans H99",
+      "assembly": "CNA3",
+      "provider": "NCBI",
+      "accession": "GCF_000149245.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149245.1/",
+      "file_name": "BSgenome.Cneoformans.NCBI.CNA3_1.0.0.tar.gz",
+      "size": 4957363,
+      "seq_ids": [
+        "NC_026745.1",
+        "NC_026746.1",
+        "NC_026747.1",
+        "NC_026748.1",
+        "NC_026749.1"
+      ],
+      "seq_count": 15,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:03:26Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cneoformans.NCBI.CNA3/BSgenome.Cneoformans.NCBI.CNA3_1.0.0.tar.gz"
     }
   ]
 }
