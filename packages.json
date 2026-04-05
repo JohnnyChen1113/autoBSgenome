@@ -18631,6 +18631,53 @@
       ]
     },
     {
+      "organism": "Schizosaccharomyces pombe",
+      "common_name": "fission yeast",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Schizosaccharomycetes",
+        "order": "Schizosaccharomycetales",
+        "family": "Schizosaccharomycetaceae",
+        "genus": "Schizosaccharomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Spombe.NCBI.ASM294v3",
+          "version": "1.0.0",
+          "organism": "Schizosaccharomyces pombe",
+          "assembly": "ASM294v3",
+          "provider": "NCBI",
+          "accession": "GCF_000002945.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002945.2/",
+          "file_name": "BSgenome.Spombe.NCBI.ASM294v3_1.0.0.tar.gz",
+          "size": 3317025,
+          "seq_ids": [
+            "NC_003424.3",
+            "NC_003423.3",
+            "NC_003421.2",
+            "NC_088682.1"
+          ],
+          "seq_count": 4,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Schizosaccharomycetes",
+            "order": "Schizosaccharomycetales",
+            "family": "Schizosaccharomycetaceae",
+            "genus": "Schizosaccharomyces"
+          },
+          "common_name": "fission yeast",
+          "published": "2026-04-05T11:33:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spombe.NCBI.ASM294v3/BSgenome.Spombe.NCBI.ASM294v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Selaginella moellendorffii",
       "common_name": "",
       "group": "plant",
@@ -36519,6 +36566,37 @@
       "common_name": "",
       "published": "2026-04-05T11:33:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cduobushaemuli.NCBI.CanDuoHaev10/BSgenome.Cduobushaemuli.NCBI.CanDuoHaev10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Spombe.NCBI.ASM294v3",
+      "version": "1.0.0",
+      "organism": "Schizosaccharomyces pombe",
+      "assembly": "ASM294v3",
+      "provider": "NCBI",
+      "accession": "GCF_000002945.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002945.2/",
+      "file_name": "BSgenome.Spombe.NCBI.ASM294v3_1.0.0.tar.gz",
+      "size": 3317025,
+      "seq_ids": [
+        "NC_003424.3",
+        "NC_003423.3",
+        "NC_003421.2",
+        "NC_088682.1"
+      ],
+      "seq_count": 4,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Schizosaccharomycetes",
+        "order": "Schizosaccharomycetales",
+        "family": "Schizosaccharomycetaceae",
+        "genus": "Schizosaccharomyces"
+      },
+      "common_name": "fission yeast",
+      "published": "2026-04-05T11:33:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spombe.NCBI.ASM294v3/BSgenome.Spombe.NCBI.ASM294v3_1.0.0.tar.gz"
     }
   ]
 }
