@@ -22170,6 +22170,54 @@
       ]
     },
     {
+      "organism": "Rhinocladiella mackenziei CBS 650.93",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Rhinocladiella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rmackenziei.NCBI.RhinmackCBS65093V1",
+          "version": "1.0.0",
+          "organism": "Rhinocladiella mackenziei CBS 650.93",
+          "assembly": "Rhin_mack_CBS_650_93_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000835555.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835555.1/",
+          "file_name": "BSgenome.Rmackenziei.NCBI.RhinmackCBS65093V1_1.0.0.tar.gz",
+          "size": 8380005,
+          "seq_ids": [
+            "NW_013550604.1",
+            "NW_013550603.1",
+            "NW_013550602.1",
+            "NW_013550601.1",
+            "NW_013550600.1"
+          ],
+          "seq_count": 17,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Rhinocladiella"
+          },
+          "common_name": "",
+          "published": "2026-04-05T21:36:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rmackenziei.NCBI.RhinmackCBS65093V1/BSgenome.Rmackenziei.NCBI.RhinmackCBS65093V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhinolophus ferrumequinum",
       "common_name": "greater horseshoe bat",
       "group": "vertebrate_mammalian",
@@ -46533,6 +46581,38 @@
       "common_name": "",
       "published": "2026-04-05T21:36:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anovofumigatus.NCBI.Aspnov1/BSgenome.Anovofumigatus.NCBI.Aspnov1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rmackenziei.NCBI.RhinmackCBS65093V1",
+      "version": "1.0.0",
+      "organism": "Rhinocladiella mackenziei CBS 650.93",
+      "assembly": "Rhin_mack_CBS_650_93_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000835555.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835555.1/",
+      "file_name": "BSgenome.Rmackenziei.NCBI.RhinmackCBS65093V1_1.0.0.tar.gz",
+      "size": 8380005,
+      "seq_ids": [
+        "NW_013550604.1",
+        "NW_013550603.1",
+        "NW_013550602.1",
+        "NW_013550601.1",
+        "NW_013550600.1"
+      ],
+      "seq_count": 17,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Rhinocladiella"
+      },
+      "common_name": "",
+      "published": "2026-04-05T21:36:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rmackenziei.NCBI.RhinmackCBS65093V1/BSgenome.Rmackenziei.NCBI.RhinmackCBS65093V1_1.0.0.tar.gz"
     }
   ]
 }
