@@ -5772,6 +5772,54 @@
       ]
     },
     {
+      "organism": "Cryptococcus tetragattii IND107",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ctetragattii.NCBI.ASM83575v2",
+          "version": "1.0.0",
+          "organism": "Cryptococcus tetragattii IND107",
+          "assembly": "ASM83575v2",
+          "provider": "NCBI",
+          "accession": "GCF_000835755.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835755.1/",
+          "file_name": "BSgenome.Ctetragattii.NCBI.ASM83575v2_1.0.0.tar.gz",
+          "size": 4697080,
+          "seq_ids": [
+            "NC_089942.1",
+            "NC_089943.1",
+            "NC_089944.1",
+            "NW_027117276.1",
+            "NW_027117277.1"
+          ],
+          "seq_count": 15,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:08:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctetragattii.NCBI.ASM83575v2/BSgenome.Ctetragattii.NCBI.ASM83575v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptotermes secundus",
       "common_name": "",
       "group": "invertebrate",
@@ -38977,6 +39025,38 @@
       "common_name": "",
       "published": "2026-04-05T14:08:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr/BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ctetragattii.NCBI.ASM83575v2",
+      "version": "1.0.0",
+      "organism": "Cryptococcus tetragattii IND107",
+      "assembly": "ASM83575v2",
+      "provider": "NCBI",
+      "accession": "GCF_000835755.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835755.1/",
+      "file_name": "BSgenome.Ctetragattii.NCBI.ASM83575v2_1.0.0.tar.gz",
+      "size": 4697080,
+      "seq_ids": [
+        "NC_089942.1",
+        "NC_089943.1",
+        "NC_089944.1",
+        "NW_027117276.1",
+        "NW_027117277.1"
+      ],
+      "seq_count": 15,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:08:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctetragattii.NCBI.ASM83575v2/BSgenome.Ctetragattii.NCBI.ASM83575v2_1.0.0.tar.gz"
     }
   ]
 }

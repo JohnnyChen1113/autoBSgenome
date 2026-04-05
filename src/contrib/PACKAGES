@@ -1965,3 +1965,7 @@ NeedsCompilation: no
 Package: BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ctetragattii.NCBI.ASM83575v2
+Version: 1.0.0
+NeedsCompilation: no
