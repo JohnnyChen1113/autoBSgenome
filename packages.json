@@ -674,7 +674,15 @@
       "organism": "Anarrhichthys ocellatus",
       "common_name": "wolf-eel",
       "group": "vertebrate_other",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Anarhichadidae",
+        "genus": "Anarrhichthys"
+      },
       "builds": [
         {
           "package": "BSgenome.Aocellatus.NCBI.GSCWeel10",
@@ -689,7 +697,24 @@
           "size": 149959664,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aocellatus.NCBI.GSCWeel10/BSgenome.Aocellatus.NCBI.GSCWeel10_1.0.0.tar.gz",
-          "group": "vertebrate_other"
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Perciformes",
+            "family": "Anarhichadidae",
+            "genus": "Anarrhichthys"
+          },
+          "seq_ids": [
+            "NW_022280031.1",
+            "NW_022280032.1",
+            "NW_022280033.1",
+            "NW_022280034.1",
+            "NW_022280035.1"
+          ],
+          "seq_count": 10817
         }
       ]
     },
@@ -744,8 +769,16 @@
     {
       "organism": "Anoplophora glabripennis",
       "common_name": "",
-      "group": "other",
-      "taxonomy": {},
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Coleoptera",
+        "family": "Cerambycidae",
+        "genus": "Anoplophora"
+      },
       "builds": [
         {
           "package": "BSgenome.Aglabripennis.NCBI.Agla20",
@@ -765,8 +798,16 @@
             "NW_019416213.1"
           ],
           "seq_count": 9867,
-          "group": "other",
-          "taxonomy": {},
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Coleoptera",
+            "family": "Cerambycidae",
+            "genus": "Anoplophora"
+          },
           "common_name": "",
           "published": "2026-04-05T06:46:13Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aglabripennis.NCBI.Agla20/BSgenome.Aglabripennis.NCBI.Agla20_1.0.0.tar.gz"
@@ -1401,7 +1442,15 @@
       "organism": "Aspergillus luchuensis",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
       "builds": [
         {
           "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01",
@@ -1413,7 +1462,16 @@
           "size": 9758160,
           "published": "2026-04-03T19:09:45Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01/BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01_1.0.0.tar.gz",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          }
         }
       ]
     },
@@ -1613,7 +1671,15 @@
       "organism": "Auxenochlorella protothecoides",
       "common_name": "",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Trebouxiophyceae",
+        "order": "Chlorellales",
+        "family": "Chlorellaceae",
+        "genus": "Auxenochlorella"
+      },
       "builds": [
         {
           "package": "BSgenome.Aprotothecoides.NCBI.ASM73321v1",
@@ -1628,7 +1694,24 @@
           "size": 5879633,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aprotothecoides.NCBI.ASM73321v1/BSgenome.Aprotothecoides.NCBI.ASM73321v1_1.0.0.tar.gz",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Chlorophyta",
+            "class": "Trebouxiophyceae",
+            "order": "Chlorellales",
+            "family": "Chlorellaceae",
+            "genus": "Auxenochlorella"
+          },
+          "seq_ids": [
+            "NW_011934117.1",
+            "NW_011934119.1",
+            "NW_011934121.1",
+            "NW_011934123.1",
+            "NW_011934125.1"
+          ],
+          "seq_count": 374
         }
       ]
     },
@@ -1780,7 +1863,15 @@
       "organism": "Bathycoccus prasinos",
       "common_name": "",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Bathycoccaceae",
+        "genus": "Bathycoccus"
+      },
       "builds": [
         {
           "package": "BSgenome.Bprasinos.NCBI.ASM222023v1",
@@ -1795,7 +1886,24 @@
           "size": 4073333,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bprasinos.NCBI.ASM222023v1/BSgenome.Bprasinos.NCBI.ASM222023v1_1.0.0.tar.gz",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Chlorophyta",
+            "class": "Mamiellophyceae",
+            "order": "Mamiellales",
+            "family": "Bathycoccaceae",
+            "genus": "Bathycoccus"
+          },
+          "seq_ids": [
+            "NC_024008.1",
+            "NC_024007.1",
+            "NC_024006.1",
+            "NC_024005.1",
+            "NC_024004.1"
+          ],
+          "seq_count": 21
         }
       ]
     },
@@ -2713,9 +2821,17 @@
     },
     {
       "organism": "Camelus ferus",
-      "common_name": "",
+      "common_name": "Wild Bactrian camel",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Camelidae",
+        "genus": "Camelus"
+      },
       "builds": [
         {
           "package": "BSgenome.Cferus.NCBI.BCGSACCfer10",
@@ -2729,7 +2845,17 @@
           "size": 531968088,
           "published": "2026-04-03T20:54:55Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cferus.NCBI.BCGSACCfer10/BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Camelidae",
+            "genus": "Camelus"
+          },
+          "common_name": "Wild Bactrian camel"
         }
       ]
     },
@@ -2881,7 +3007,15 @@
       "organism": "Capsella rubella",
       "common_name": "",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Capsella"
+      },
       "builds": [
         {
           "package": "BSgenome.Crubella.NCBI.Caprub10",
@@ -2896,7 +3030,24 @@
           "size": 33735529,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Crubella.NCBI.Caprub10/BSgenome.Crubella.NCBI.Caprub10_1.0.0.tar.gz",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Capsella"
+          },
+          "seq_ids": [
+            "NW_006238923.1",
+            "NW_006238922.1",
+            "NW_006238921.1",
+            "NW_006238920.1",
+            "NW_006238919.1"
+          ],
+          "seq_count": 773
         }
       ]
     },
@@ -3862,7 +4013,15 @@
       "organism": "Chlamydomonas reinhardtii",
       "common_name": "",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Chlorophyceae",
+        "order": "Chlamydomonadales",
+        "family": "Chlamydomonadaceae",
+        "genus": "Chlamydomonas"
+      },
       "builds": [
         {
           "package": "BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55",
@@ -3877,7 +4036,24 @@
           "size": 27788403,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55/BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55_1.0.0.tar.gz",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Chlorophyta",
+            "class": "Chlorophyceae",
+            "order": "Chlamydomonadales",
+            "family": "Chlamydomonadaceae",
+            "genus": "Chlamydomonas"
+          },
+          "seq_ids": [
+            "NC_057004.1",
+            "NC_057005.1",
+            "NC_057006.1",
+            "NC_057007.1",
+            "NC_057008.1"
+          ],
+          "seq_count": 53
         }
       ]
     },
@@ -3933,7 +4109,15 @@
       "organism": "Chlorella variabilis",
       "common_name": "",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Trebouxiophyceae",
+        "order": "Chlorellales",
+        "family": "Chlorellaceae",
+        "genus": "Chlorella"
+      },
       "builds": [
         {
           "package": "BSgenome.Cvariabilis.NCBI.v10",
@@ -3948,7 +4132,24 @@
           "size": 11371075,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvariabilis.NCBI.v10/BSgenome.Cvariabilis.NCBI.v10_1.0.0.tar.gz",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Chlorophyta",
+            "class": "Trebouxiophyceae",
+            "order": "Chlorellales",
+            "family": "Chlorellaceae",
+            "genus": "Chlorella"
+          },
+          "seq_ids": [
+            "NW_005435087.1",
+            "NW_005435086.1",
+            "NW_005435085.1",
+            "NW_005435084.1",
+            "NW_005435083.1"
+          ],
+          "seq_count": 414
         }
       ]
     },
@@ -4148,7 +4349,14 @@
       "organism": "Coccomyxa subellipsoidea C-169",
       "common_name": "",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Trebouxiophyceae",
+        "family": "Coccomyxaceae",
+        "genus": "Coccomyxa"
+      },
       "builds": [
         {
           "package": "BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20",
@@ -4163,7 +4371,23 @@
           "size": 12942897,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20/BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20_1.0.0.tar.gz",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Chlorophyta",
+            "class": "Trebouxiophyceae",
+            "family": "Coccomyxaceae",
+            "genus": "Coccomyxa"
+          },
+          "seq_ids": [
+            "NW_005178042.1",
+            "NW_005178041.1",
+            "NW_005178040.1",
+            "NW_005178039.1",
+            "NW_005178038.1"
+          ],
+          "seq_count": 29
         }
       ]
     },
@@ -4265,9 +4489,17 @@
     },
     {
       "organism": "Condylura cristata",
-      "common_name": "",
+      "common_name": "star-nosed mole",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Eulipotyphla",
+        "family": "Talpidae",
+        "genus": "Condylura"
+      },
       "builds": [
         {
           "package": "BSgenome.Ccristata.NCBI.ConCri10",
@@ -4281,7 +4513,17 @@
           "size": 437760675,
           "published": "2026-04-03T20:53:06Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccristata.NCBI.ConCri10/BSgenome.Ccristata.NCBI.ConCri10_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Eulipotyphla",
+            "family": "Talpidae",
+            "genus": "Condylura"
+          },
+          "common_name": "star-nosed mole"
         }
       ]
     },
@@ -5055,7 +5297,15 @@
       "organism": "Cyclopterus lumpus",
       "common_name": "lumpfish",
       "group": "vertebrate_other",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Cyclopteridae",
+        "genus": "Cyclopterus"
+      },
       "builds": [
         {
           "package": "BSgenome.Clumpus.NCBI.fCycLum1pri",
@@ -5070,7 +5320,24 @@
           "size": 138953336,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clumpus.NCBI.fCycLum1pri/BSgenome.Clumpus.NCBI.fCycLum1pri_1.0.0.tar.gz",
-          "group": "vertebrate_other"
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Perciformes",
+            "family": "Cyclopteridae",
+            "genus": "Cyclopterus"
+          },
+          "seq_ids": [
+            "NC_046966.1",
+            "NC_046967.1",
+            "NC_046968.1",
+            "NC_046969.1",
+            "NC_046970.1"
+          ],
+          "seq_count": 48
         }
       ]
     },
@@ -5174,7 +5441,15 @@
       "organism": "Cynoglossus semilaevis",
       "common_name": "tongue sole",
       "group": "vertebrate_other",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Pleuronectiformes",
+        "family": "Cynoglossidae",
+        "genus": "Cynoglossus"
+      },
       "builds": [
         {
           "package": "BSgenome.Csemilaevis.NCBI.Csev10",
@@ -5189,7 +5464,24 @@
           "size": 118804629,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csemilaevis.NCBI.Csev10/BSgenome.Csemilaevis.NCBI.Csev10_1.0.0.tar.gz",
-          "group": "vertebrate_other"
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Pleuronectiformes",
+            "family": "Cynoglossidae",
+            "genus": "Cynoglossus"
+          },
+          "seq_ids": [
+            "NC_024307.1",
+            "NC_024308.1",
+            "NC_024309.1",
+            "NC_024310.1",
+            "NC_024311.1"
+          ],
+          "seq_count": 29643
         }
       ]
     },
@@ -5721,9 +6013,17 @@
     },
     {
       "organism": "Dipodomys ordii",
-      "common_name": "",
+      "common_name": "Ord's kangaroo rat",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Heteromyidae",
+        "genus": "Dipodomys"
+      },
       "builds": [
         {
           "package": "BSgenome.Dordii.NCBI.Dord20",
@@ -5737,7 +6037,17 @@
           "size": 516739502,
           "published": "2026-04-03T20:56:01Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.NCBI.Dord20/BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Heteromyidae",
+            "genus": "Dipodomys"
+          },
+          "common_name": "Ord's kangaroo rat"
         }
       ]
     },
@@ -6801,7 +7111,13 @@
       "organism": "Encephalitozoon cuniculi GB-M1",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
       "builds": [
         {
           "package": "BSgenome.Ecuniculi.NCBI.ASM9122v2",
@@ -6816,7 +7132,22 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000091225.2/",
           "accession": "GCF_000091225.2",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Unikaryonidae",
+            "genus": "Encephalitozoon"
+          },
+          "seq_ids": [
+            "NC_003242.2",
+            "NC_003229.1",
+            "NC_003230.1",
+            "NC_003231.1",
+            "NC_003232.1"
+          ],
+          "seq_count": 11
         }
       ]
     },
@@ -6824,7 +7155,13 @@
       "organism": "Encephalitozoon hellem ATCC 50504",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
       "builds": [
         {
           "package": "BSgenome.Ehellem.NCBI.ASM27781v3",
@@ -6839,7 +7176,22 @@
           "size": 593916,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehellem.NCBI.ASM27781v3/BSgenome.Ehellem.NCBI.ASM27781v3_1.0.0.tar.gz",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Unikaryonidae",
+            "genus": "Encephalitozoon"
+          },
+          "seq_ids": [
+            "NC_018468.1",
+            "NC_018469.1",
+            "NC_018470.1",
+            "NC_018471.1",
+            "NC_018472.1"
+          ],
+          "seq_count": 12
         }
       ]
     },
@@ -6847,7 +7199,13 @@
       "organism": "Encephalitozoon intestinalis ATCC 50506",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
       "builds": [
         {
           "package": "BSgenome.Eintestinalis.NCBI.ASM14646v1",
@@ -6862,7 +7220,22 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000146465.1/",
           "accession": "GCF_000146465.1",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Unikaryonidae",
+            "genus": "Encephalitozoon"
+          },
+          "seq_ids": [
+            "NC_014415.1",
+            "NC_014416.1",
+            "NC_014417.1",
+            "NC_014418.1",
+            "NC_014419.1"
+          ],
+          "seq_count": 11
         }
       ]
     },
@@ -6870,7 +7243,13 @@
       "organism": "Encephalitozoon romaleae SJ-2008",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
       "builds": [
         {
           "package": "BSgenome.Eromaleae.NCBI.ASM28003v2",
@@ -6885,7 +7264,22 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000280035.1/",
           "accession": "GCF_000280035.1",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Unikaryonidae",
+            "genus": "Encephalitozoon"
+          },
+          "seq_ids": [
+            "NC_024896.1",
+            "NC_024897.1",
+            "NC_024898.1",
+            "NC_024899.1",
+            "NC_024900.1"
+          ],
+          "seq_count": 13
         }
       ]
     },
@@ -8569,7 +8963,15 @@
       "organism": "Hippocampus comes",
       "common_name": "tiger tail seahorse",
       "group": "vertebrate_other",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Syngnathiformes",
+        "family": "Syngnathidae",
+        "genus": "Hippocampus"
+      },
       "builds": [
         {
           "package": "BSgenome.Hcomes.NCBI.HcomesQL1v11",
@@ -8584,7 +8986,24 @@
           "size": 121946522,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcomes.NCBI.HcomesQL1v11/BSgenome.Hcomes.NCBI.HcomesQL1v11_1.0.0.tar.gz",
-          "group": "vertebrate_other"
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Syngnathiformes",
+            "family": "Syngnathidae",
+            "genus": "Hippocampus"
+          },
+          "seq_ids": [
+            "NW_017804686.1",
+            "NW_017804687.1",
+            "NW_017804698.1",
+            "NW_017804700.1",
+            "NW_017804703.1"
+          ],
+          "seq_count": 32914
         }
       ]
     },
@@ -8592,7 +9011,15 @@
       "organism": "Hippoglossus hippoglossus",
       "common_name": "Atlantic halibut",
       "group": "vertebrate_other",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Pleuronectiformes",
+        "family": "Pleuronectidae",
+        "genus": "Hippoglossus"
+      },
       "builds": [
         {
           "package": "BSgenome.Hhippoglossus.NCBI.fHipHip1pri",
@@ -8607,7 +9034,24 @@
           "size": 153998318,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhippoglossus.NCBI.fHipHip1pri/BSgenome.Hhippoglossus.NCBI.fHipHip1pri_1.0.0.tar.gz",
-          "group": "vertebrate_other"
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Pleuronectiformes",
+            "family": "Pleuronectidae",
+            "genus": "Hippoglossus"
+          },
+          "seq_ids": [
+            "NC_047151.1",
+            "NC_047152.1",
+            "NC_047153.1",
+            "NC_047154.1",
+            "NC_047155.1"
+          ],
+          "seq_count": 57
         }
       ]
     },
@@ -9143,7 +9587,14 @@
       "organism": "Larimichthys crocea",
       "common_name": "large yellow croaker",
       "group": "vertebrate_other",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Sciaenidae",
+        "genus": "Larimichthys"
+      },
       "builds": [
         {
           "package": "BSgenome.Lcrocea.NCBI.Lcrocea20",
@@ -9158,7 +9609,23 @@
           "size": 172589936,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcrocea.NCBI.Lcrocea20/BSgenome.Lcrocea.NCBI.Lcrocea20_1.0.0.tar.gz",
-          "group": "vertebrate_other"
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "family": "Sciaenidae",
+            "genus": "Larimichthys"
+          },
+          "seq_ids": [
+            "NC_040011.1",
+            "NC_040012.1",
+            "NC_040013.1",
+            "NC_040014.1",
+            "NC_040015.1"
+          ],
+          "seq_count": 9998
         }
       ]
     },
@@ -9166,7 +9633,14 @@
       "organism": "Lates calcarifer",
       "common_name": "barramundi perch",
       "group": "vertebrate_other",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Centropomidae",
+        "genus": "Lates"
+      },
       "builds": [
         {
           "package": "BSgenome.Lcalcarifer.NCBI.TLLLatcalv3",
@@ -9181,7 +9655,23 @@
           "size": 169404448,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcalcarifer.NCBI.TLLLatcalv3/BSgenome.Lcalcarifer.NCBI.TLLLatcalv3_1.0.0.tar.gz",
-          "group": "vertebrate_other"
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "family": "Centropomidae",
+            "genus": "Lates"
+          },
+          "seq_ids": [
+            "NC_066833.1",
+            "NC_066834.1",
+            "NC_066835.1",
+            "NC_066836.1",
+            "NC_066837.1"
+          ],
+          "seq_count": 2997
         }
       ]
     },
@@ -10003,7 +10493,15 @@
       "organism": "Micromonas commoda",
       "common_name": "",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Mamiellaceae",
+        "genus": "Micromonas"
+      },
       "builds": [
         {
           "package": "BSgenome.Mcommoda.NCBI.ASM9098v2",
@@ -10018,7 +10516,24 @@
           "size": 5631643,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcommoda.NCBI.ASM9098v2/BSgenome.Mcommoda.NCBI.ASM9098v2_1.0.0.tar.gz",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Chlorophyta",
+            "class": "Mamiellophyceae",
+            "order": "Mamiellales",
+            "family": "Mamiellaceae",
+            "genus": "Micromonas"
+          },
+          "seq_ids": [
+            "NC_013038.1",
+            "NC_013039.1",
+            "NC_013040.1",
+            "NC_013041.1",
+            "NC_013042.1"
+          ],
+          "seq_count": 19
         }
       ]
     },
@@ -10026,7 +10541,15 @@
       "organism": "Micromonas pusilla CCMP1545",
       "common_name": "",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Mamiellaceae",
+        "genus": "Micromonas"
+      },
       "builds": [
         {
           "package": "BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20",
@@ -10041,15 +10564,40 @@
           "size": 5737945,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20/BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20_1.0.0.tar.gz",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Chlorophyta",
+            "class": "Mamiellophyceae",
+            "order": "Mamiellales",
+            "family": "Mamiellaceae",
+            "genus": "Micromonas"
+          },
+          "seq_ids": [
+            "NW_003315882.1",
+            "NW_003315883.1",
+            "NW_003315884.1",
+            "NW_003315885.1",
+            "NW_003315886.1"
+          ],
+          "seq_count": 21
         }
       ]
     },
     {
       "organism": "Microtus ochrogaster",
-      "common_name": "",
+      "common_name": "prairie vole",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Microtus"
+      },
       "builds": [
         {
           "package": "BSgenome.Mochrogaster.NCBI.MicOch10",
@@ -10063,7 +10611,17 @@
           "size": 553448484,
           "published": "2026-04-03T20:56:16Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.NCBI.MicOch10/BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Cricetidae",
+            "genus": "Microtus"
+          },
+          "common_name": "prairie vole"
         }
       ]
     },
@@ -10071,7 +10629,15 @@
       "organism": "Miniopterus natalensis",
       "common_name": "",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Miniopteridae",
+        "genus": "Miniopterus"
+      },
       "builds": [
         {
           "package": "BSgenome.Mnatalensis.NCBI.Mnatv1",
@@ -10085,7 +10651,16 @@
           "size": 458567760,
           "published": "2026-04-03T20:53:39Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnatalensis.NCBI.Mnatv1/BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Miniopteridae",
+            "genus": "Miniopterus"
+          }
         }
       ]
     },
@@ -10093,7 +10668,12 @@
       "organism": "Mitosporidium daphniae",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Mitosporidium"
+      },
       "builds": [
         {
           "package": "BSgenome.Mdaphniae.NCBI.UGP11",
@@ -10108,7 +10688,21 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000760515.2/",
           "accession": "GCF_000760515.2",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "genus": "Mitosporidium"
+          },
+          "seq_ids": [
+            "NW_013546732.1",
+            "NW_013546731.1",
+            "NW_013546730.1",
+            "NW_013546729.1",
+            "NW_013546728.1"
+          ],
+          "seq_count": 610
         }
       ]
     },
@@ -10260,7 +10854,15 @@
       "organism": "Monoraphidium neglectum",
       "common_name": "",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Chlorophyceae",
+        "order": "Sphaeropleales",
+        "family": "Selenastraceae",
+        "genus": "Monoraphidium"
+      },
       "builds": [
         {
           "package": "BSgenome.Mneglectum.NCBI.monov1",
@@ -10275,7 +10877,24 @@
           "size": 18652740,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mneglectum.NCBI.monov1/BSgenome.Mneglectum.NCBI.monov1_1.0.0.tar.gz",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Chlorophyta",
+            "class": "Chlorophyceae",
+            "order": "Sphaeropleales",
+            "family": "Selenastraceae",
+            "genus": "Monoraphidium"
+          },
+          "seq_ids": [
+            "NW_014013624.1",
+            "NW_014013623.1",
+            "NW_014013622.1",
+            "NW_014013621.1",
+            "NW_014013620.1"
+          ],
+          "seq_count": 6720
         }
       ]
     },
@@ -10283,7 +10902,14 @@
       "organism": "Morone saxatilis",
       "common_name": "striped sea-bass",
       "group": "vertebrate_other",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Moronidae",
+        "genus": "Morone"
+      },
       "builds": [
         {
           "package": "BSgenome.Msaxatilis.NCBI.NCSUSB20",
@@ -10298,7 +10924,23 @@
           "size": 158539679,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msaxatilis.NCBI.NCSUSB20/BSgenome.Msaxatilis.NCBI.NCSUSB20_1.0.0.tar.gz",
-          "group": "vertebrate_other"
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "family": "Moronidae",
+            "genus": "Morone"
+          },
+          "seq_ids": [
+            "NW_023339650.1",
+            "NW_023339651.1",
+            "NW_023339762.1",
+            "NW_023339873.1",
+            "NW_023339984.1"
+          ],
+          "seq_count": 630
         }
       ]
     },
@@ -10448,9 +11090,17 @@
     },
     {
       "organism": "Myotis brandtii",
-      "common_name": "",
+      "common_name": "Brandt's bat",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Vespertilionidae",
+        "genus": "Myotis"
+      },
       "builds": [
         {
           "package": "BSgenome.Mbrandtii.NCBI.ASM41265v1",
@@ -10464,7 +11114,17 @@
           "size": 521705601,
           "published": "2026-04-03T20:55:19Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrandtii.NCBI.ASM41265v1/BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Vespertilionidae",
+            "genus": "Myotis"
+          },
+          "common_name": "Brandt's bat"
         }
       ]
     },
@@ -10472,7 +11132,15 @@
       "organism": "Myotis davidii",
       "common_name": "",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Vespertilionidae",
+        "genus": "Myotis"
+      },
       "builds": [
         {
           "package": "BSgenome.Mdavidii.NCBI.ASM32734v1",
@@ -10486,15 +11154,32 @@
           "size": 498507770,
           "published": "2026-04-03T20:54:52Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdavidii.NCBI.ASM32734v1/BSgenome.Mdavidii.NCBI.ASM32734v1_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Vespertilionidae",
+            "genus": "Myotis"
+          }
         }
       ]
     },
     {
       "organism": "Myotis lucifugus",
-      "common_name": "",
+      "common_name": "little brown bat",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Vespertilionidae",
+        "genus": "Myotis"
+      },
       "builds": [
         {
           "package": "BSgenome.Mlucifugus.NCBI.Myoluc20",
@@ -10508,7 +11193,17 @@
           "size": 515894987,
           "published": "2026-04-03T20:54:07Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.NCBI.Myoluc20/BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Vespertilionidae",
+            "genus": "Myotis"
+          },
+          "common_name": "little brown bat"
         }
       ]
     },
@@ -10756,7 +11451,12 @@
       "organism": "Nematocida ausubeli",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
       "builds": [
         {
           "package": "BSgenome.Nausubeli.NCBI.Nemasp1ERTm6V2",
@@ -10771,7 +11471,21 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000738915.1/",
           "accession": "GCF_000738915.1",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "genus": "Nematocida"
+          },
+          "seq_ids": [
+            "NW_026515634.1",
+            "NW_026515635.1",
+            "NW_026515636.1",
+            "NW_026515637.1",
+            "NW_026515638.1"
+          ],
+          "seq_count": 24
         }
       ]
     },
@@ -10779,7 +11493,12 @@
       "organism": "Nematocida displodere",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
       "builds": [
         {
           "package": "BSgenome.Ndisplodere.NCBI.ASM164239v1",
@@ -10794,7 +11513,21 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001642395.1/",
           "accession": "GCF_001642395.1",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "genus": "Nematocida"
+          },
+          "seq_ids": [
+            "NW_027138117.1",
+            "NW_027138118.1",
+            "NW_027138119.1",
+            "NW_027138120.1",
+            "NW_027138121.1"
+          ],
+          "seq_count": 42
         }
       ]
     },
@@ -10802,7 +11535,12 @@
       "organism": "Nematocida parisii ERTm1",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
       "builds": [
         {
           "package": "BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3",
@@ -10817,7 +11555,21 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000250985.1/",
           "accession": "GCF_000250985.1",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "genus": "Nematocida"
+          },
+          "seq_ids": [
+            "NW_013524646.1",
+            "NW_013524647.1",
+            "NW_013524648.1",
+            "NW_013524649.1",
+            "NW_013524650.1"
+          ],
+          "seq_count": 65
         }
       ]
     },
@@ -10967,9 +11719,17 @@
     },
     {
       "organism": "Neophocaena asiaeorientalis asiaeorientalis",
-      "common_name": "",
+      "common_name": "Yangtze finless porpoise",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Phocoenidae",
+        "genus": "Neophocaena"
+      },
       "builds": [
         {
           "package": "BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11",
@@ -10983,7 +11743,17 @@
           "size": 592841468,
           "published": "2026-04-03T20:56:28Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11/BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Phocoenidae",
+            "genus": "Neophocaena"
+          },
+          "common_name": "Yangtze finless porpoise"
         }
       ]
     },
@@ -11471,7 +12241,15 @@
       "organism": "Notothenia coriiceps",
       "common_name": "black rockcod",
       "group": "vertebrate_other",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Nototheniidae",
+        "genus": "Notothenia"
+      },
       "builds": [
         {
           "package": "BSgenome.Ncoriiceps.NCBI.NC01",
@@ -11486,7 +12264,24 @@
           "size": 165803881,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncoriiceps.NCBI.NC01/BSgenome.Ncoriiceps.NCBI.NC01_1.0.0.tar.gz",
-          "group": "vertebrate_other"
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Perciformes",
+            "family": "Nototheniidae",
+            "genus": "Notothenia"
+          },
+          "seq_ids": [
+            "NW_011332702.1",
+            "NW_011332703.1",
+            "NW_011332704.1",
+            "NW_011332705.1",
+            "NW_011332706.1"
+          ],
+          "seq_count": 38657
         }
       ]
     },
@@ -11926,7 +12721,13 @@
       "organism": "Ordospora colligata OC4",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Ordosporidae",
+        "genus": "Ordospora"
+      },
       "builds": [
         {
           "package": "BSgenome.Ocolligata.NCBI.ASM80326v1",
@@ -11941,7 +12742,22 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000803265.1/",
           "accession": "GCF_000803265.1",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Ordosporidae",
+            "genus": "Ordospora"
+          },
+          "seq_ids": [
+            "NW_014575407.1",
+            "NW_014575406.1",
+            "NW_014575405.1",
+            "NW_014575404.1",
+            "NW_014575403.1"
+          ],
+          "seq_count": 15
         }
       ]
     },
@@ -12237,7 +13053,15 @@
       "organism": "Ostreococcus tauri",
       "common_name": "",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Bathycoccaceae",
+        "genus": "Ostreococcus"
+      },
       "builds": [
         {
           "package": "BSgenome.Otauri.NCBI.version140606",
@@ -12252,7 +13076,24 @@
           "size": 3528045,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Otauri.NCBI.version140606/BSgenome.Otauri.NCBI.version140606_1.0.0.tar.gz",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Chlorophyta",
+            "class": "Mamiellophyceae",
+            "order": "Mamiellales",
+            "family": "Bathycoccaceae",
+            "genus": "Ostreococcus"
+          },
+          "seq_ids": [
+            "NC_014426.2",
+            "NC_014427.2",
+            "NC_014428.2",
+            "NC_014429.2",
+            "NC_014430.2"
+          ],
+          "seq_count": 22
         }
       ]
     },
@@ -13266,9 +14107,17 @@
     },
     {
       "organism": "Phyllostomus discolor",
-      "common_name": "",
+      "common_name": "pale spear-nosed bat",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Phyllostomidae",
+        "genus": "Phyllostomus"
+      },
       "builds": [
         {
           "package": "BSgenome.Pdiscolor.NCBI.mPhyDis1priv3",
@@ -13282,7 +14131,17 @@
           "size": 546065844,
           "published": "2026-04-03T20:55:33Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdiscolor.NCBI.mPhyDis1priv3/BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Phyllostomidae",
+            "genus": "Phyllostomus"
+          },
+          "common_name": "pale spear-nosed bat"
         }
       ]
     },
@@ -14536,9 +15395,17 @@
     },
     {
       "organism": "Pteropus alecto",
-      "common_name": "",
+      "common_name": "black flying fox",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Pteropodidae",
+        "genus": "Pteropus"
+      },
       "builds": [
         {
           "package": "BSgenome.Palecto.NCBI.ASM32557v1",
@@ -14552,7 +15419,17 @@
           "size": 513546758,
           "published": "2026-04-03T20:54:09Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palecto.NCBI.ASM32557v1/BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Pteropodidae",
+            "genus": "Pteropus"
+          },
+          "common_name": "black flying fox"
         }
       ]
     },
@@ -14942,9 +15819,17 @@
     },
     {
       "organism": "Rhinolophus ferrumequinum",
-      "common_name": "",
+      "common_name": "greater horseshoe bat",
       "group": "vertebrate_mammalian",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Rhinolophidae",
+        "genus": "Rhinolophus"
+      },
       "builds": [
         {
           "package": "BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p",
@@ -14958,7 +15843,17 @@
           "size": 540596261,
           "published": "2026-04-03T20:54:48Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p/BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p_1.0.0.tar.gz",
-          "group": "vertebrate_mammalian"
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Rhinolophidae",
+            "genus": "Rhinolophus"
+          },
+          "common_name": "greater horseshoe bat"
         }
       ]
     },
@@ -15156,9 +16051,17 @@
     },
     {
       "organism": "Saccharomyces cerevisiae",
-      "common_name": "",
+      "common_name": "brewer's yeast",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
       "builds": [
         {
           "package": "BSgenome.Scerevisiae.NCBI.R64",
@@ -15172,15 +16075,32 @@
           "size": 3201712,
           "published": "2026-04-03T20:37:55Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.NCBI.R64/BSgenome.Scerevisiae.NCBI.R64_1.0.0.tar.gz",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Saccharomyces"
+          },
+          "common_name": "brewer's yeast"
         }
       ]
     },
     {
       "organism": "Saccoglossus kowalevskii",
       "common_name": "",
-      "group": "other",
-      "taxonomy": {},
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Hemichordata",
+        "class": "Enteropneusta",
+        "family": "Harrimaniidae",
+        "genus": "Saccoglossus"
+      },
       "builds": [
         {
           "package": "BSgenome.Skowalevskii.NCBI.Skow12",
@@ -15200,8 +16120,15 @@
             "NW_003105105.1"
           ],
           "seq_count": 53955,
-          "group": "other",
-          "taxonomy": {},
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Hemichordata",
+            "class": "Enteropneusta",
+            "family": "Harrimaniidae",
+            "genus": "Saccoglossus"
+          },
           "common_name": "",
           "published": "2026-04-05T06:46:45Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Skowalevskii.NCBI.Skow12/BSgenome.Skowalevskii.NCBI.Skow12_1.0.0.tar.gz"
@@ -16220,7 +17147,15 @@
       "organism": "Sorghum bicolor",
       "common_name": "sorghum",
       "group": "plant",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Sorghum"
+      },
       "builds": [
         {
           "package": "BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3",
@@ -16235,7 +17170,24 @@
           "common_name": "sorghum",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000003195.3/",
           "accession": "GCA_000003195.3",
-          "group": "plant"
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Sorghum"
+          },
+          "seq_ids": [
+            "NC_012870.2",
+            "NC_012871.2",
+            "NC_012872.2",
+            "NC_012873.2",
+            "NC_012874.2"
+          ],
+          "seq_count": 867
         }
       ]
     },
@@ -16625,7 +17577,15 @@
       "organism": "Takifugu flavidus",
       "common_name": "sansaifugu",
       "group": "vertebrate_other",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Tetraodontiformes",
+        "family": "Tetraodontidae",
+        "genus": "Takifugu"
+      },
       "builds": [
         {
           "package": "BSgenome.Tflavidus.NCBI.ASM371156v2",
@@ -16640,7 +17600,24 @@
           "size": 93376396,
           "published": "",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tflavidus.NCBI.ASM371156v2/BSgenome.Tflavidus.NCBI.ASM371156v2_1.0.0.tar.gz",
-          "group": "vertebrate_other"
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Tetraodontiformes",
+            "family": "Tetraodontidae",
+            "genus": "Takifugu"
+          },
+          "seq_ids": [
+            "NC_079520.1",
+            "NC_079521.1",
+            "NC_079522.1",
+            "NC_079523.1",
+            "NC_079524.1"
+          ],
+          "seq_count": 868
         }
       ]
     },
@@ -16743,8 +17720,16 @@
     {
       "organism": "Teleopsis dalmanni",
       "common_name": "",
-      "group": "other",
-      "taxonomy": {},
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Diopsidae",
+        "genus": "Teleopsis"
+      },
       "builds": [
         {
           "package": "BSgenome.Tdalmanni.NCBI.ASM223713v2",
@@ -16764,8 +17749,16 @@
             "NW_024031384.1"
           ],
           "seq_count": 5647,
-          "group": "other",
-          "taxonomy": {},
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Diopsidae",
+            "genus": "Teleopsis"
+          },
           "common_name": "",
           "published": "2026-04-05T06:46:04Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tdalmanni.NCBI.ASM223713v2/BSgenome.Tdalmanni.NCBI.ASM223713v2_1.0.0.tar.gz"
@@ -17926,7 +18919,13 @@
       "organism": "Vittaforma corneae ATCC 50505",
       "common_name": "",
       "group": "fungi",
-      "taxonomy": {},
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Nosematidae",
+        "genus": "Vittaforma"
+      },
       "builds": [
         {
           "package": "BSgenome.Vcorneae.NCBI.VittcornV1",
@@ -17941,7 +18940,22 @@
           "common_name": "",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000231115.1/",
           "accession": "GCF_000231115.1",
-          "group": "fungi"
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Nosematidae",
+            "genus": "Vittaforma"
+          },
+          "seq_ids": [
+            "NW_006889834.1",
+            "NW_006889835.1",
+            "NW_006889836.1",
+            "NW_006889837.1",
+            "NW_006889838.1"
+          ],
+          "seq_count": 220
         }
       ]
     },
@@ -18296,7 +19310,21 @@
       "common_name": "",
       "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000738915.1/",
       "accession": "GCF_000738915.1",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
+      "seq_ids": [
+        "NW_026515634.1",
+        "NW_026515635.1",
+        "NW_026515636.1",
+        "NW_026515637.1",
+        "NW_026515638.1"
+      ],
+      "seq_count": 24
     },
     {
       "package": "BSgenome.Nparisii.NCBI.NemaparisiiERTm1V3",
@@ -18311,7 +19339,21 @@
       "common_name": "",
       "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000250985.1/",
       "accession": "GCF_000250985.1",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
+      "seq_ids": [
+        "NW_013524646.1",
+        "NW_013524647.1",
+        "NW_013524648.1",
+        "NW_013524649.1",
+        "NW_013524650.1"
+      ],
+      "seq_count": 65
     },
     {
       "package": "BSgenome.Vcorneae.NCBI.VittcornV1",
@@ -18326,7 +19368,22 @@
       "common_name": "",
       "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000231115.1/",
       "accession": "GCF_000231115.1",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Nosematidae",
+        "genus": "Vittaforma"
+      },
+      "seq_ids": [
+        "NW_006889834.1",
+        "NW_006889835.1",
+        "NW_006889836.1",
+        "NW_006889837.1",
+        "NW_006889838.1"
+      ],
+      "seq_count": 220
     },
     {
       "package": "BSgenome.Ndisplodere.NCBI.ASM164239v1",
@@ -18341,7 +19398,21 @@
       "common_name": "",
       "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001642395.1/",
       "accession": "GCF_001642395.1",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
+      "seq_ids": [
+        "NW_027138117.1",
+        "NW_027138118.1",
+        "NW_027138119.1",
+        "NW_027138120.1",
+        "NW_027138121.1"
+      ],
+      "seq_count": 42
     },
     {
       "package": "BSgenome.Ocolligata.NCBI.ASM80326v1",
@@ -18356,7 +19427,22 @@
       "common_name": "",
       "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000803265.1/",
       "accession": "GCF_000803265.1",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Ordosporidae",
+        "genus": "Ordospora"
+      },
+      "seq_ids": [
+        "NW_014575407.1",
+        "NW_014575406.1",
+        "NW_014575405.1",
+        "NW_014575404.1",
+        "NW_014575403.1"
+      ],
+      "seq_count": 15
     },
     {
       "package": "BSgenome.Ecuniculi.NCBI.ASM9122v2",
@@ -18371,7 +19457,22 @@
       "common_name": "",
       "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000091225.2/",
       "accession": "GCF_000091225.2",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "seq_ids": [
+        "NC_003242.2",
+        "NC_003229.1",
+        "NC_003230.1",
+        "NC_003231.1",
+        "NC_003232.1"
+      ],
+      "seq_count": 11
     },
     {
       "package": "BSgenome.Eintestinalis.NCBI.ASM14646v1",
@@ -18386,7 +19487,22 @@
       "common_name": "",
       "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000146465.1/",
       "accession": "GCF_000146465.1",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "seq_ids": [
+        "NC_014415.1",
+        "NC_014416.1",
+        "NC_014417.1",
+        "NC_014418.1",
+        "NC_014419.1"
+      ],
+      "seq_count": 11
     },
     {
       "package": "BSgenome.Mdaphniae.NCBI.UGP11",
@@ -18401,7 +19517,21 @@
       "common_name": "",
       "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000760515.2/",
       "accession": "GCF_000760515.2",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Mitosporidium"
+      },
+      "seq_ids": [
+        "NW_013546732.1",
+        "NW_013546731.1",
+        "NW_013546730.1",
+        "NW_013546729.1",
+        "NW_013546728.1"
+      ],
+      "seq_count": 610
     },
     {
       "package": "BSgenome.Eromaleae.NCBI.ASM28003v2",
@@ -18416,7 +19546,22 @@
       "common_name": "",
       "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000280035.1/",
       "accession": "GCF_000280035.1",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "seq_ids": [
+        "NC_024896.1",
+        "NC_024897.1",
+        "NC_024898.1",
+        "NC_024899.1",
+        "NC_024900.1"
+      ],
+      "seq_count": 13
     },
     {
       "package": "BSgenome.Sbicolor.NCBI.SorghumbicolorNCBIv3",
@@ -18431,7 +19576,24 @@
       "common_name": "sorghum",
       "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000003195.3/",
       "accession": "GCA_000003195.3",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Sorghum"
+      },
+      "seq_ids": [
+        "NC_012870.2",
+        "NC_012871.2",
+        "NC_012872.2",
+        "NC_012873.2",
+        "NC_012874.2"
+      ],
+      "seq_count": 867
     },
     {
       "package": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01",
@@ -18443,7 +19605,16 @@
       "size": 9758160,
       "published": "2026-04-03T19:09:45Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01/BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308assembly01_1.0.0.tar.gz",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      }
     },
     {
       "package": "BSgenome.Scerevisiae.NCBI.R64",
@@ -18457,7 +19628,17 @@
       "size": 3201712,
       "published": "2026-04-03T20:37:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.NCBI.R64/BSgenome.Scerevisiae.NCBI.R64_1.0.0.tar.gz",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "common_name": "brewer's yeast"
     },
     {
       "package": "BSgenome.Lcalcarifer.NCBI.TLLLatcalv3",
@@ -18472,7 +19653,23 @@
       "size": 169404448,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcalcarifer.NCBI.TLLLatcalv3/BSgenome.Lcalcarifer.NCBI.TLLLatcalv3_1.0.0.tar.gz",
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Centropomidae",
+        "genus": "Lates"
+      },
+      "seq_ids": [
+        "NC_066833.1",
+        "NC_066834.1",
+        "NC_066835.1",
+        "NC_066836.1",
+        "NC_066837.1"
+      ],
+      "seq_count": 2997
     },
     {
       "package": "BSgenome.Crubella.NCBI.Caprub10",
@@ -18487,7 +19684,24 @@
       "size": 33735529,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Crubella.NCBI.Caprub10/BSgenome.Crubella.NCBI.Caprub10_1.0.0.tar.gz",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Capsella"
+      },
+      "seq_ids": [
+        "NW_006238923.1",
+        "NW_006238922.1",
+        "NW_006238921.1",
+        "NW_006238920.1",
+        "NW_006238919.1"
+      ],
+      "seq_count": 773
     },
     {
       "package": "BSgenome.Lcrocea.NCBI.Lcrocea20",
@@ -18502,7 +19716,23 @@
       "size": 172589936,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcrocea.NCBI.Lcrocea20/BSgenome.Lcrocea.NCBI.Lcrocea20_1.0.0.tar.gz",
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Sciaenidae",
+        "genus": "Larimichthys"
+      },
+      "seq_ids": [
+        "NC_040011.1",
+        "NC_040012.1",
+        "NC_040013.1",
+        "NC_040014.1",
+        "NC_040015.1"
+      ],
+      "seq_count": 9998
     },
     {
       "package": "BSgenome.Msaxatilis.NCBI.NCSUSB20",
@@ -18517,7 +19747,23 @@
       "size": 158539679,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msaxatilis.NCBI.NCSUSB20/BSgenome.Msaxatilis.NCBI.NCSUSB20_1.0.0.tar.gz",
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Moronidae",
+        "genus": "Morone"
+      },
+      "seq_ids": [
+        "NW_023339650.1",
+        "NW_023339651.1",
+        "NW_023339762.1",
+        "NW_023339873.1",
+        "NW_023339984.1"
+      ],
+      "seq_count": 630
     },
     {
       "package": "BSgenome.Aocellatus.NCBI.GSCWeel10",
@@ -18532,7 +19778,24 @@
       "size": 149959664,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aocellatus.NCBI.GSCWeel10/BSgenome.Aocellatus.NCBI.GSCWeel10_1.0.0.tar.gz",
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Anarhichadidae",
+        "genus": "Anarrhichthys"
+      },
+      "seq_ids": [
+        "NW_022280031.1",
+        "NW_022280032.1",
+        "NW_022280033.1",
+        "NW_022280034.1",
+        "NW_022280035.1"
+      ],
+      "seq_count": 10817
     },
     {
       "package": "BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55",
@@ -18547,7 +19810,24 @@
       "size": 27788403,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55/BSgenome.Creinhardtii.NCBI.Chlamydomonasreinhardtiiv55_1.0.0.tar.gz",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Chlorophyceae",
+        "order": "Chlamydomonadales",
+        "family": "Chlamydomonadaceae",
+        "genus": "Chlamydomonas"
+      },
+      "seq_ids": [
+        "NC_057004.1",
+        "NC_057005.1",
+        "NC_057006.1",
+        "NC_057007.1",
+        "NC_057008.1"
+      ],
+      "seq_count": 53
     },
     {
       "package": "BSgenome.Ncoriiceps.NCBI.NC01",
@@ -18562,7 +19842,24 @@
       "size": 165803881,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncoriiceps.NCBI.NC01/BSgenome.Ncoriiceps.NCBI.NC01_1.0.0.tar.gz",
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Nototheniidae",
+        "genus": "Notothenia"
+      },
+      "seq_ids": [
+        "NW_011332702.1",
+        "NW_011332703.1",
+        "NW_011332704.1",
+        "NW_011332705.1",
+        "NW_011332706.1"
+      ],
+      "seq_count": 38657
     },
     {
       "package": "BSgenome.Mneglectum.NCBI.monov1",
@@ -18577,7 +19874,24 @@
       "size": 18652740,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mneglectum.NCBI.monov1/BSgenome.Mneglectum.NCBI.monov1_1.0.0.tar.gz",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Chlorophyceae",
+        "order": "Sphaeropleales",
+        "family": "Selenastraceae",
+        "genus": "Monoraphidium"
+      },
+      "seq_ids": [
+        "NW_014013624.1",
+        "NW_014013623.1",
+        "NW_014013622.1",
+        "NW_014013621.1",
+        "NW_014013620.1"
+      ],
+      "seq_count": 6720
     },
     {
       "package": "BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20",
@@ -18592,7 +19906,23 @@
       "size": 12942897,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20/BSgenome.Csubellipsoidea.NCBI.Coccomyxasubellipsoidaev20_1.0.0.tar.gz",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Trebouxiophyceae",
+        "family": "Coccomyxaceae",
+        "genus": "Coccomyxa"
+      },
+      "seq_ids": [
+        "NW_005178042.1",
+        "NW_005178041.1",
+        "NW_005178040.1",
+        "NW_005178039.1",
+        "NW_005178038.1"
+      ],
+      "seq_count": 29
     },
     {
       "package": "BSgenome.Hhippoglossus.NCBI.fHipHip1pri",
@@ -18607,7 +19937,24 @@
       "size": 153998318,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhippoglossus.NCBI.fHipHip1pri/BSgenome.Hhippoglossus.NCBI.fHipHip1pri_1.0.0.tar.gz",
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Pleuronectiformes",
+        "family": "Pleuronectidae",
+        "genus": "Hippoglossus"
+      },
+      "seq_ids": [
+        "NC_047151.1",
+        "NC_047152.1",
+        "NC_047153.1",
+        "NC_047154.1",
+        "NC_047155.1"
+      ],
+      "seq_count": 57
     },
     {
       "package": "BSgenome.Cvariabilis.NCBI.v10",
@@ -18622,7 +19969,24 @@
       "size": 11371075,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvariabilis.NCBI.v10/BSgenome.Cvariabilis.NCBI.v10_1.0.0.tar.gz",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Trebouxiophyceae",
+        "order": "Chlorellales",
+        "family": "Chlorellaceae",
+        "genus": "Chlorella"
+      },
+      "seq_ids": [
+        "NW_005435087.1",
+        "NW_005435086.1",
+        "NW_005435085.1",
+        "NW_005435084.1",
+        "NW_005435083.1"
+      ],
+      "seq_count": 414
     },
     {
       "package": "BSgenome.Clumpus.NCBI.fCycLum1pri",
@@ -18637,7 +20001,24 @@
       "size": 138953336,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clumpus.NCBI.fCycLum1pri/BSgenome.Clumpus.NCBI.fCycLum1pri_1.0.0.tar.gz",
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Cyclopteridae",
+        "genus": "Cyclopterus"
+      },
+      "seq_ids": [
+        "NC_046966.1",
+        "NC_046967.1",
+        "NC_046968.1",
+        "NC_046969.1",
+        "NC_046970.1"
+      ],
+      "seq_count": 48
     },
     {
       "package": "BSgenome.Csemilaevis.NCBI.Csev10",
@@ -18652,7 +20033,24 @@
       "size": 118804629,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csemilaevis.NCBI.Csev10/BSgenome.Csemilaevis.NCBI.Csev10_1.0.0.tar.gz",
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Pleuronectiformes",
+        "family": "Cynoglossidae",
+        "genus": "Cynoglossus"
+      },
+      "seq_ids": [
+        "NC_024307.1",
+        "NC_024308.1",
+        "NC_024309.1",
+        "NC_024310.1",
+        "NC_024311.1"
+      ],
+      "seq_count": 29643
     },
     {
       "package": "BSgenome.Hcomes.NCBI.HcomesQL1v11",
@@ -18667,7 +20065,24 @@
       "size": 121946522,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcomes.NCBI.HcomesQL1v11/BSgenome.Hcomes.NCBI.HcomesQL1v11_1.0.0.tar.gz",
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Syngnathiformes",
+        "family": "Syngnathidae",
+        "genus": "Hippocampus"
+      },
+      "seq_ids": [
+        "NW_017804686.1",
+        "NW_017804687.1",
+        "NW_017804698.1",
+        "NW_017804700.1",
+        "NW_017804703.1"
+      ],
+      "seq_count": 32914
     },
     {
       "package": "BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20",
@@ -18682,7 +20097,24 @@
       "size": 5737945,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20/BSgenome.Mpusilla.NCBI.MicromonaspusillaCCMP1545v20_1.0.0.tar.gz",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Mamiellaceae",
+        "genus": "Micromonas"
+      },
+      "seq_ids": [
+        "NW_003315882.1",
+        "NW_003315883.1",
+        "NW_003315884.1",
+        "NW_003315885.1",
+        "NW_003315886.1"
+      ],
+      "seq_count": 21
     },
     {
       "package": "BSgenome.Aprotothecoides.NCBI.ASM73321v1",
@@ -18697,7 +20129,24 @@
       "size": 5879633,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aprotothecoides.NCBI.ASM73321v1/BSgenome.Aprotothecoides.NCBI.ASM73321v1_1.0.0.tar.gz",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Trebouxiophyceae",
+        "order": "Chlorellales",
+        "family": "Chlorellaceae",
+        "genus": "Auxenochlorella"
+      },
+      "seq_ids": [
+        "NW_011934117.1",
+        "NW_011934119.1",
+        "NW_011934121.1",
+        "NW_011934123.1",
+        "NW_011934125.1"
+      ],
+      "seq_count": 374
     },
     {
       "package": "BSgenome.Otauri.NCBI.version140606",
@@ -18712,7 +20161,24 @@
       "size": 3528045,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Otauri.NCBI.version140606/BSgenome.Otauri.NCBI.version140606_1.0.0.tar.gz",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Bathycoccaceae",
+        "genus": "Ostreococcus"
+      },
+      "seq_ids": [
+        "NC_014426.2",
+        "NC_014427.2",
+        "NC_014428.2",
+        "NC_014429.2",
+        "NC_014430.2"
+      ],
+      "seq_count": 22
     },
     {
       "package": "BSgenome.Mcommoda.NCBI.ASM9098v2",
@@ -18727,7 +20193,24 @@
       "size": 5631643,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcommoda.NCBI.ASM9098v2/BSgenome.Mcommoda.NCBI.ASM9098v2_1.0.0.tar.gz",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Mamiellaceae",
+        "genus": "Micromonas"
+      },
+      "seq_ids": [
+        "NC_013038.1",
+        "NC_013039.1",
+        "NC_013040.1",
+        "NC_013041.1",
+        "NC_013042.1"
+      ],
+      "seq_count": 19
     },
     {
       "package": "BSgenome.Bprasinos.NCBI.ASM222023v1",
@@ -18742,7 +20225,24 @@
       "size": 4073333,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bprasinos.NCBI.ASM222023v1/BSgenome.Bprasinos.NCBI.ASM222023v1_1.0.0.tar.gz",
-      "group": "plant"
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Chlorophyta",
+        "class": "Mamiellophyceae",
+        "order": "Mamiellales",
+        "family": "Bathycoccaceae",
+        "genus": "Bathycoccus"
+      },
+      "seq_ids": [
+        "NC_024008.1",
+        "NC_024007.1",
+        "NC_024006.1",
+        "NC_024005.1",
+        "NC_024004.1"
+      ],
+      "seq_count": 21
     },
     {
       "package": "BSgenome.Tflavidus.NCBI.ASM371156v2",
@@ -18757,7 +20257,24 @@
       "size": 93376396,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tflavidus.NCBI.ASM371156v2/BSgenome.Tflavidus.NCBI.ASM371156v2_1.0.0.tar.gz",
-      "group": "vertebrate_other"
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Tetraodontiformes",
+        "family": "Tetraodontidae",
+        "genus": "Takifugu"
+      },
+      "seq_ids": [
+        "NC_079520.1",
+        "NC_079521.1",
+        "NC_079522.1",
+        "NC_079523.1",
+        "NC_079524.1"
+      ],
+      "seq_count": 868
     },
     {
       "package": "BSgenome.Ehellem.NCBI.ASM27781v3",
@@ -18772,7 +20289,22 @@
       "size": 593916,
       "published": "",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehellem.NCBI.ASM27781v3/BSgenome.Ehellem.NCBI.ASM27781v3_1.0.0.tar.gz",
-      "group": "fungi"
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "seq_ids": [
+        "NC_018468.1",
+        "NC_018469.1",
+        "NC_018470.1",
+        "NC_018471.1",
+        "NC_018472.1"
+      ],
+      "seq_count": 12
     },
     {
       "package": "BSgenome.Ccristata.NCBI.ConCri10",
@@ -18786,7 +20318,17 @@
       "size": 437760675,
       "published": "2026-04-03T20:53:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccristata.NCBI.ConCri10/BSgenome.Ccristata.NCBI.ConCri10_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Eulipotyphla",
+        "family": "Talpidae",
+        "genus": "Condylura"
+      },
+      "common_name": "star-nosed mole"
     },
     {
       "package": "BSgenome.Mnatalensis.NCBI.Mnatv1",
@@ -18800,7 +20342,16 @@
       "size": 458567760,
       "published": "2026-04-03T20:53:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnatalensis.NCBI.Mnatv1/BSgenome.Mnatalensis.NCBI.Mnatv1_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Miniopteridae",
+        "genus": "Miniopterus"
+      }
     },
     {
       "package": "BSgenome.Mlucifugus.NCBI.Myoluc20",
@@ -18814,7 +20365,17 @@
       "size": 515894987,
       "published": "2026-04-03T20:54:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.NCBI.Myoluc20/BSgenome.Mlucifugus.NCBI.Myoluc20_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Vespertilionidae",
+        "genus": "Myotis"
+      },
+      "common_name": "little brown bat"
     },
     {
       "package": "BSgenome.Palecto.NCBI.ASM32557v1",
@@ -18828,7 +20389,17 @@
       "size": 513546758,
       "published": "2026-04-03T20:54:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Palecto.NCBI.ASM32557v1/BSgenome.Palecto.NCBI.ASM32557v1_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Pteropodidae",
+        "genus": "Pteropus"
+      },
+      "common_name": "black flying fox"
     },
     {
       "package": "BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p",
@@ -18842,7 +20413,17 @@
       "size": 540596261,
       "published": "2026-04-03T20:54:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p/BSgenome.Rferrumequinum.NCBI.mRhiFer1v1p_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Rhinolophidae",
+        "genus": "Rhinolophus"
+      },
+      "common_name": "greater horseshoe bat"
     },
     {
       "package": "BSgenome.Mdavidii.NCBI.ASM32734v1",
@@ -18856,7 +20437,16 @@
       "size": 498507770,
       "published": "2026-04-03T20:54:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdavidii.NCBI.ASM32734v1/BSgenome.Mdavidii.NCBI.ASM32734v1_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Vespertilionidae",
+        "genus": "Myotis"
+      }
     },
     {
       "package": "BSgenome.Cferus.NCBI.BCGSACCfer10",
@@ -18870,7 +20460,17 @@
       "size": 531968088,
       "published": "2026-04-03T20:54:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cferus.NCBI.BCGSACCfer10/BSgenome.Cferus.NCBI.BCGSACCfer10_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Camelidae",
+        "genus": "Camelus"
+      },
+      "common_name": "Wild Bactrian camel"
     },
     {
       "package": "BSgenome.Mbrandtii.NCBI.ASM41265v1",
@@ -18884,7 +20484,17 @@
       "size": 521705601,
       "published": "2026-04-03T20:55:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrandtii.NCBI.ASM41265v1/BSgenome.Mbrandtii.NCBI.ASM41265v1_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Vespertilionidae",
+        "genus": "Myotis"
+      },
+      "common_name": "Brandt's bat"
     },
     {
       "package": "BSgenome.Pdiscolor.NCBI.mPhyDis1priv3",
@@ -18898,7 +20508,17 @@
       "size": 546065844,
       "published": "2026-04-03T20:55:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdiscolor.NCBI.mPhyDis1priv3/BSgenome.Pdiscolor.NCBI.mPhyDis1priv3_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Phyllostomidae",
+        "genus": "Phyllostomus"
+      },
+      "common_name": "pale spear-nosed bat"
     },
     {
       "package": "BSgenome.Dordii.NCBI.Dord20",
@@ -18912,7 +20532,17 @@
       "size": 516739502,
       "published": "2026-04-03T20:56:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.NCBI.Dord20/BSgenome.Dordii.NCBI.Dord20_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Heteromyidae",
+        "genus": "Dipodomys"
+      },
+      "common_name": "Ord's kangaroo rat"
     },
     {
       "package": "BSgenome.Mochrogaster.NCBI.MicOch10",
@@ -18926,7 +20556,17 @@
       "size": 553448484,
       "published": "2026-04-03T20:56:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.NCBI.MicOch10/BSgenome.Mochrogaster.NCBI.MicOch10_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Microtus"
+      },
+      "common_name": "prairie vole"
     },
     {
       "package": "BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11",
@@ -18940,7 +20580,17 @@
       "size": 592841468,
       "published": "2026-04-03T20:56:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11/BSgenome.Nasiaeorientalis.NCBI.NeophocaenaasiaeorientalisV11_1.0.0.tar.gz",
-      "group": "vertebrate_mammalian"
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Phocoenidae",
+        "genus": "Neophocaena"
+      },
+      "common_name": "Yangtze finless porpoise"
     },
     {
       "package": "BSgenome.Sobliquidens.NCBI.ASM367639v1",
@@ -30311,8 +31961,16 @@
         "NW_024031384.1"
       ],
       "seq_count": 5647,
-      "group": "other",
-      "taxonomy": {},
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Diopsidae",
+        "genus": "Teleopsis"
+      },
       "common_name": "",
       "published": "2026-04-05T06:46:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tdalmanni.NCBI.ASM223713v2/BSgenome.Tdalmanni.NCBI.ASM223713v2_1.0.0.tar.gz"
@@ -30335,8 +31993,16 @@
         "NW_019416213.1"
       ],
       "seq_count": 9867,
-      "group": "other",
-      "taxonomy": {},
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Coleoptera",
+        "family": "Cerambycidae",
+        "genus": "Anoplophora"
+      },
       "common_name": "",
       "published": "2026-04-05T06:46:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aglabripennis.NCBI.Agla20/BSgenome.Aglabripennis.NCBI.Agla20_1.0.0.tar.gz"
@@ -30423,8 +32089,15 @@
         "NW_003105105.1"
       ],
       "seq_count": 53955,
-      "group": "other",
-      "taxonomy": {},
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Hemichordata",
+        "class": "Enteropneusta",
+        "family": "Harrimaniidae",
+        "genus": "Saccoglossus"
+      },
       "common_name": "",
       "published": "2026-04-05T06:46:45Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Skowalevskii.NCBI.Skow12/BSgenome.Skowalevskii.NCBI.Skow12_1.0.0.tar.gz"
