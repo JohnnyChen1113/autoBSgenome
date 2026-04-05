@@ -1764,6 +1764,54 @@
       ]
     },
     {
+      "organism": "Aspergillus ochraceoroseus IBT 24754",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11",
+          "version": "1.0.0",
+          "organism": "Aspergillus ochraceoroseus IBT 24754",
+          "assembly": "Aspergillus ochraceoroseus IBT 24754 v1.1",
+          "provider": "NCBI",
+          "accession": "GCF_002846915.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002846915.1/",
+          "file_name": "BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11_1.0.0.tar.gz",
+          "size": 7046317,
+          "seq_ids": [
+            "NW_024468476.1",
+            "NW_024468485.1",
+            "NW_024468486.1",
+            "NW_024468487.1",
+            "NW_024468488.1"
+          ],
+          "seq_count": 34,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T17:35:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11/BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Athene cunicularia",
       "common_name": "burrowing owl",
       "group": "vertebrate_other",
@@ -42699,6 +42747,38 @@
       "common_name": "",
       "published": "2026-04-05T17:35:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acandidus.NCBI.Aspcand1/BSgenome.Acandidus.NCBI.Aspcand1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11",
+      "version": "1.0.0",
+      "organism": "Aspergillus ochraceoroseus IBT 24754",
+      "assembly": "Aspergillus ochraceoroseus IBT 24754 v1.1",
+      "provider": "NCBI",
+      "accession": "GCF_002846915.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002846915.1/",
+      "file_name": "BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11_1.0.0.tar.gz",
+      "size": 7046317,
+      "seq_ids": [
+        "NW_024468476.1",
+        "NW_024468485.1",
+        "NW_024468486.1",
+        "NW_024468487.1",
+        "NW_024468488.1"
+      ],
+      "seq_count": 34,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T17:35:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11/BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11_1.0.0.tar.gz"
     }
   ]
 }

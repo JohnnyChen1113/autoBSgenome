@@ -2153,3 +2153,7 @@ NeedsCompilation: no
 Package: BSgenome.Acandidus.NCBI.Aspcand1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11
+Version: 1.0.0
+NeedsCompilation: no
