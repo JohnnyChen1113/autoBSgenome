@@ -24257,6 +24257,54 @@
       ]
     },
     {
+      "organism": "Sporothrix schenckii 1099-18",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Ophiostomatales",
+        "family": "Ophiostomataceae",
+        "genus": "Sporothrix"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sschenckii.NCBI.Sschenckiiv1",
+          "version": "1.0.0",
+          "organism": "Sporothrix schenckii 1099-18",
+          "assembly": "S_schenckii_v1",
+          "provider": "NCBI",
+          "accession": "GCF_000961545.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000961545.1/",
+          "file_name": "BSgenome.Sschenckii.NCBI.Sschenckiiv1_1.0.0.tar.gz",
+          "size": 8603823,
+          "seq_ids": [
+            "NW_015971139.1",
+            "NW_015971140.1",
+            "NW_015971141.1",
+            "NW_015971142.1",
+            "NW_015971143.1"
+          ],
+          "seq_count": 16,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Ophiostomatales",
+            "family": "Ophiostomataceae",
+            "genus": "Sporothrix"
+          },
+          "common_name": "",
+          "published": "2026-04-05T21:36:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sschenckii.NCBI.Sschenckiiv1/BSgenome.Sschenckii.NCBI.Sschenckiiv1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Stegastes partitus",
       "common_name": "bicolor damselfish",
       "group": "vertebrate_other",
@@ -46373,6 +46421,38 @@
       "common_name": "",
       "published": "2026-04-05T21:35:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tghanense.NCBI.ASM438278v1/BSgenome.Tghanense.NCBI.ASM438278v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sschenckii.NCBI.Sschenckiiv1",
+      "version": "1.0.0",
+      "organism": "Sporothrix schenckii 1099-18",
+      "assembly": "S_schenckii_v1",
+      "provider": "NCBI",
+      "accession": "GCF_000961545.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000961545.1/",
+      "file_name": "BSgenome.Sschenckii.NCBI.Sschenckiiv1_1.0.0.tar.gz",
+      "size": 8603823,
+      "seq_ids": [
+        "NW_015971139.1",
+        "NW_015971140.1",
+        "NW_015971141.1",
+        "NW_015971142.1",
+        "NW_015971143.1"
+      ],
+      "seq_count": 16,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Ophiostomatales",
+        "family": "Ophiostomataceae",
+        "genus": "Sporothrix"
+      },
+      "common_name": "",
+      "published": "2026-04-05T21:36:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sschenckii.NCBI.Sschenckiiv1/BSgenome.Sschenckii.NCBI.Sschenckiiv1_1.0.0.tar.gz"
     }
   ]
 }

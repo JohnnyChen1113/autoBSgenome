@@ -2337,3 +2337,7 @@ NeedsCompilation: no
 Package: BSgenome.Tghanense.NCBI.ASM438278v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sschenckii.NCBI.Sschenckiiv1
+Version: 1.0.0
+NeedsCompilation: no
