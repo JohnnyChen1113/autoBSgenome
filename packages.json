@@ -13196,6 +13196,54 @@
       ]
     },
     {
+      "organism": "Moesziomyces antarcticus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Ustilaginomycetes",
+        "order": "Ustilaginales",
+        "family": "Ustilaginaceae",
+        "genus": "Moesziomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mantarcticus.NCBI.ASM74776v1",
+          "version": "1.0.0",
+          "organism": "Moesziomyces antarcticus",
+          "assembly": "ASM74776v1",
+          "provider": "NCBI",
+          "accession": "GCF_000747765.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000747765.1/",
+          "file_name": "BSgenome.Mantarcticus.NCBI.ASM74776v1_1.0.0.tar.gz",
+          "size": 4808147,
+          "seq_ids": [
+            "NW_014638813.1",
+            "NW_014638814.1",
+            "NW_014638815.1",
+            "NW_014638816.1",
+            "NW_014638817.1"
+          ],
+          "seq_count": 197,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Ustilaginomycetes",
+            "order": "Ustilaginales",
+            "family": "Ustilaginaceae",
+            "genus": "Moesziomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:09:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mantarcticus.NCBI.ASM74776v1/BSgenome.Mantarcticus.NCBI.ASM74776v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Momordica charantia",
       "common_name": "bitter melon",
       "group": "plant",
@@ -39137,6 +39185,38 @@
       "common_name": "",
       "published": "2026-04-05T14:08:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbacillisporus.NCBI.ASM83633v2/BSgenome.Cbacillisporus.NCBI.ASM83633v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mantarcticus.NCBI.ASM74776v1",
+      "version": "1.0.0",
+      "organism": "Moesziomyces antarcticus",
+      "assembly": "ASM74776v1",
+      "provider": "NCBI",
+      "accession": "GCF_000747765.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000747765.1/",
+      "file_name": "BSgenome.Mantarcticus.NCBI.ASM74776v1_1.0.0.tar.gz",
+      "size": 4808147,
+      "seq_ids": [
+        "NW_014638813.1",
+        "NW_014638814.1",
+        "NW_014638815.1",
+        "NW_014638816.1",
+        "NW_014638817.1"
+      ],
+      "seq_count": 197,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Ustilaginomycetes",
+        "order": "Ustilaginales",
+        "family": "Ustilaginaceae",
+        "genus": "Moesziomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:09:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mantarcticus.NCBI.ASM74776v1/BSgenome.Mantarcticus.NCBI.ASM74776v1_1.0.0.tar.gz"
     }
   ]
 }

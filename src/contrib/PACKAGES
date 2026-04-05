@@ -1973,3 +1973,7 @@ NeedsCompilation: no
 Package: BSgenome.Cbacillisporus.NCBI.ASM83633v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mantarcticus.NCBI.ASM74776v1
+Version: 1.0.0
+NeedsCompilation: no
