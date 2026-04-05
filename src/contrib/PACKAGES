@@ -1905,3 +1905,7 @@ NeedsCompilation: no
 Package: BSgenome.Cdubliniensis.NCBI.ASM2694v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Binositovora.NCBI.Babin1
+Version: 1.0.0
+NeedsCompilation: no
