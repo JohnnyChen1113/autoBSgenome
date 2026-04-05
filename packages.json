@@ -26698,6 +26698,54 @@
       ]
     },
     {
+      "organism": "Trichoderma reesei QM6a",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Treesei.NCBI.v20",
+          "version": "1.0.0",
+          "organism": "Trichoderma reesei QM6a",
+          "assembly": "v2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000167675.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000167675.1/",
+          "file_name": "BSgenome.Treesei.NCBI.v20_1.0.0.tar.gz",
+          "size": 8861899,
+          "seq_ids": [
+            "NW_006711148.1",
+            "NW_006711149.1",
+            "NW_006711150.1",
+            "NW_006711151.1",
+            "NW_006711152.1"
+          ],
+          "seq_count": 77,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Hypocreaceae",
+            "genus": "Trichoderma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T22:35:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Treesei.NCBI.v20/BSgenome.Treesei.NCBI.v20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichogramma pretiosum",
       "common_name": "",
       "group": "invertebrate",
@@ -47493,6 +47541,38 @@
       "common_name": "",
       "published": "2026-04-05T22:35:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcitrinoviride.NCBI.Triciv40/BSgenome.Tcitrinoviride.NCBI.Triciv40_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Treesei.NCBI.v20",
+      "version": "1.0.0",
+      "organism": "Trichoderma reesei QM6a",
+      "assembly": "v2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000167675.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000167675.1/",
+      "file_name": "BSgenome.Treesei.NCBI.v20_1.0.0.tar.gz",
+      "size": 8861899,
+      "seq_ids": [
+        "NW_006711148.1",
+        "NW_006711149.1",
+        "NW_006711150.1",
+        "NW_006711151.1",
+        "NW_006711152.1"
+      ],
+      "seq_count": 77,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T22:35:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Treesei.NCBI.v20/BSgenome.Treesei.NCBI.v20_1.0.0.tar.gz"
     }
   ]
 }
