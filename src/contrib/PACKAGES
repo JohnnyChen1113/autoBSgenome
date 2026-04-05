@@ -1545,3 +1545,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppyralis.NCBI.Ppyr13
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Znevadensis.NCBI.ZooNev10
+Version: 1.0.0
+NeedsCompilation: no

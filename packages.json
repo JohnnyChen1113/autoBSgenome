@@ -17416,6 +17416,54 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xmaculatus.NCBI.Xmaculatus50male/BSgenome.Xmaculatus.NCBI.Xmaculatus50male_1.0.0.tar.gz"
         }
       ]
+    },
+    {
+      "organism": "Zootermopsis nevadensis",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Blattodea",
+        "family": "Termopsidae",
+        "genus": "Zootermopsis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Znevadensis.NCBI.ZooNev10",
+          "version": "1.0.0",
+          "organism": "Zootermopsis nevadensis",
+          "assembly": "ZooNev1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000696155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000696155.1/",
+          "file_name": "BSgenome.Znevadensis.NCBI.ZooNev10_1.0.0.tar.gz",
+          "size": 124207339,
+          "seq_ids": [
+            "NW_019059531.1",
+            "NW_019059532.1",
+            "NW_019059533.1",
+            "NW_019059534.1",
+            "NW_019059535.1"
+          ],
+          "seq_count": 31663,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Blattodea",
+            "family": "Termopsidae",
+            "genus": "Zootermopsis"
+          },
+          "common_name": "",
+          "published": "2026-04-05T05:16:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Znevadensis.NCBI.ZooNev10/BSgenome.Znevadensis.NCBI.ZooNev10_1.0.0.tar.gz"
+        }
+      ]
     }
   ],
   "flat": [
@@ -29012,6 +29060,38 @@
       "common_name": "common eastern firefly",
       "published": "2026-04-05T05:16:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppyralis.NCBI.Ppyr13/BSgenome.Ppyralis.NCBI.Ppyr13_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Znevadensis.NCBI.ZooNev10",
+      "version": "1.0.0",
+      "organism": "Zootermopsis nevadensis",
+      "assembly": "ZooNev1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000696155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000696155.1/",
+      "file_name": "BSgenome.Znevadensis.NCBI.ZooNev10_1.0.0.tar.gz",
+      "size": 124207339,
+      "seq_ids": [
+        "NW_019059531.1",
+        "NW_019059532.1",
+        "NW_019059533.1",
+        "NW_019059534.1",
+        "NW_019059535.1"
+      ],
+      "seq_count": 31663,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Blattodea",
+        "family": "Termopsidae",
+        "genus": "Zootermopsis"
+      },
+      "common_name": "",
+      "published": "2026-04-05T05:16:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Znevadensis.NCBI.ZooNev10/BSgenome.Znevadensis.NCBI.ZooNev10_1.0.0.tar.gz"
     }
   ]
 }
