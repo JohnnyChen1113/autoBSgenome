@@ -14866,6 +14866,54 @@
       ]
     },
     {
+      "organism": "Pneumocystis carinii B80",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pneumocystomycetes",
+        "order": "Pneumocystales",
+        "family": "Pneumocystaceae",
+        "genus": "Pneumocystis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcarinii.NCBI.PneucariB80V3",
+          "version": "1.0.0",
+          "organism": "Pneumocystis carinii B80",
+          "assembly": "Pneu_cari_B80_V3",
+          "provider": "NCBI",
+          "accession": "GCF_001477545.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001477545.1/",
+          "file_name": "BSgenome.Pcarinii.NCBI.PneucariB80V3_1.0.0.tar.gz",
+          "size": 2033178,
+          "seq_ids": [
+            "NW_017264713.1",
+            "NW_017264722.1",
+            "NW_017264723.1",
+            "NW_017264724.1",
+            "NW_017264725.1"
+          ],
+          "seq_count": 62,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pneumocystomycetes",
+            "order": "Pneumocystales",
+            "family": "Pneumocystaceae",
+            "genus": "Pneumocystis"
+          },
+          "common_name": "",
+          "published": "2026-04-05T08:48:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcarinii.NCBI.PneucariB80V3/BSgenome.Pcarinii.NCBI.PneucariB80V3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pneumocystis murina B123",
       "common_name": "",
       "group": "fungi",
@@ -33241,6 +33289,38 @@
       "common_name": "",
       "published": "2026-04-05T08:48:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmurina.NCBI.PneumomurinaB123V4/BSgenome.Pmurina.NCBI.PneumomurinaB123V4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcarinii.NCBI.PneucariB80V3",
+      "version": "1.0.0",
+      "organism": "Pneumocystis carinii B80",
+      "assembly": "Pneu_cari_B80_V3",
+      "provider": "NCBI",
+      "accession": "GCF_001477545.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001477545.1/",
+      "file_name": "BSgenome.Pcarinii.NCBI.PneucariB80V3_1.0.0.tar.gz",
+      "size": 2033178,
+      "seq_ids": [
+        "NW_017264713.1",
+        "NW_017264722.1",
+        "NW_017264723.1",
+        "NW_017264724.1",
+        "NW_017264725.1"
+      ],
+      "seq_count": 62,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pneumocystomycetes",
+        "order": "Pneumocystales",
+        "family": "Pneumocystaceae",
+        "genus": "Pneumocystis"
+      },
+      "common_name": "",
+      "published": "2026-04-05T08:48:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcarinii.NCBI.PneucariB80V3/BSgenome.Pcarinii.NCBI.PneucariB80V3_1.0.0.tar.gz"
     }
   ]
 }
