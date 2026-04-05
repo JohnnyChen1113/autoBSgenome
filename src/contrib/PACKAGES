@@ -1829,3 +1829,7 @@ NeedsCompilation: no
 Package: BSgenome.Soctosporus.NCBI.SO6
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cauris.NCBI.ASM301371v2
+Version: 1.0.0
+NeedsCompilation: no

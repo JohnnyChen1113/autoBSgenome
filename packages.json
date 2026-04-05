@@ -3004,6 +3004,54 @@
       ]
     },
     {
+      "organism": "Candidozyma auris",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cauris.NCBI.ASM301371v2",
+          "version": "1.0.0",
+          "organism": "Candidozyma auris",
+          "assembly": "ASM301371v2",
+          "provider": "NCBI",
+          "accession": "GCF_003013715.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003013715.1/",
+          "file_name": "BSgenome.Cauris.NCBI.ASM301371v2_1.0.0.tar.gz",
+          "size": 3207369,
+          "seq_ids": [
+            "NC_072812.1",
+            "NC_072813.1",
+            "NC_072814.1",
+            "NC_072815.1",
+            "NC_072816.1"
+          ],
+          "seq_count": 7,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Metschnikowiaceae",
+            "genus": "Candidozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T11:32:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauris.NCBI.ASM301371v2/BSgenome.Cauris.NCBI.ASM301371v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Canis lupus dingo",
       "common_name": "dingo",
       "group": "vertebrate_mammalian",
@@ -36279,6 +36327,38 @@
       "common_name": "",
       "published": "2026-04-05T11:32:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Soctosporus.NCBI.SO6/BSgenome.Soctosporus.NCBI.SO6_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cauris.NCBI.ASM301371v2",
+      "version": "1.0.0",
+      "organism": "Candidozyma auris",
+      "assembly": "ASM301371v2",
+      "provider": "NCBI",
+      "accession": "GCF_003013715.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003013715.1/",
+      "file_name": "BSgenome.Cauris.NCBI.ASM301371v2_1.0.0.tar.gz",
+      "size": 3207369,
+      "seq_ids": [
+        "NC_072812.1",
+        "NC_072813.1",
+        "NC_072814.1",
+        "NC_072815.1",
+        "NC_072816.1"
+      ],
+      "seq_count": 7,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T11:32:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauris.NCBI.ASM301371v2/BSgenome.Cauris.NCBI.ASM301371v2_1.0.0.tar.gz"
     }
   ]
 }
