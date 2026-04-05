@@ -10111,6 +10111,54 @@
       ]
     },
     {
+      "organism": "Kuraishia capsulata CBS 1993",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Pichiales",
+        "family": "Pichiaceae",
+        "genus": "Kuraishia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1",
+          "version": "1.0.0",
+          "organism": "Kuraishia capsulata CBS 1993",
+          "assembly": "AUH_PRJEB4427_v1",
+          "provider": "NCBI",
+          "accession": "GCF_000576695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000576695.1/",
+          "file_name": "BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1_1.0.0.tar.gz",
+          "size": 2961840,
+          "seq_ids": [
+            "NW_019172950.1",
+            "NW_019172951.1",
+            "NW_019172952.1",
+            "NW_019172953.1",
+            "NW_019172954.1"
+          ],
+          "seq_count": 7,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Pichiales",
+            "family": "Pichiaceae",
+            "genus": "Kuraishia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T10:38:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1/BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lacerta agilis",
       "common_name": "Sand lizard",
       "group": "vertebrate_other",
@@ -35239,6 +35287,38 @@
       "common_name": "",
       "published": "2026-04-05T10:37:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kafricana.NCBI.KaCBS2517/BSgenome.Kafricana.NCBI.KaCBS2517_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1",
+      "version": "1.0.0",
+      "organism": "Kuraishia capsulata CBS 1993",
+      "assembly": "AUH_PRJEB4427_v1",
+      "provider": "NCBI",
+      "accession": "GCF_000576695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000576695.1/",
+      "file_name": "BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1_1.0.0.tar.gz",
+      "size": 2961840,
+      "seq_ids": [
+        "NW_019172950.1",
+        "NW_019172951.1",
+        "NW_019172952.1",
+        "NW_019172953.1",
+        "NW_019172954.1"
+      ],
+      "seq_count": 7,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Pichiales",
+        "family": "Pichiaceae",
+        "genus": "Kuraishia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T10:38:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1/BSgenome.Kcapsulata.NCBI.AUHPRJEB4427v1_1.0.0.tar.gz"
     }
   ]
 }
