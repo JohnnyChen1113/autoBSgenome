@@ -2385,3 +2385,7 @@ NeedsCompilation: no
 Package: BSgenome.Pexpansum.NCBI.ASM76974v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sbrasiliensis.NCBI.Sbrasiliensis5110v1
+Version: 1.0.0
+NeedsCompilation: no
