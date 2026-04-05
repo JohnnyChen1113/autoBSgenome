@@ -1960,6 +1960,54 @@
       ]
     },
     {
+      "organism": "Branchiostoma belcheri",
+      "common_name": "Belcher's lancelet",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Leptocardii",
+        "order": "Amphioxiformes",
+        "family": "Branchiostomatidae",
+        "genus": "Branchiostoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bbelcheri.NCBI.Haploidv18h27",
+          "version": "1.0.0",
+          "organism": "Branchiostoma belcheri",
+          "assembly": "Haploidv18h27",
+          "provider": "NCBI",
+          "accession": "GCF_001625305.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001625305.1/",
+          "file_name": "BSgenome.Bbelcheri.NCBI.Haploidv18h27_1.0.0.tar.gz",
+          "size": 110047118,
+          "seq_ids": [
+            "NW_017802379.1",
+            "NW_017802380.1",
+            "NW_017802381.1",
+            "NW_017802382.1",
+            "NW_017802383.1"
+          ],
+          "seq_count": 2308,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Leptocardii",
+            "order": "Amphioxiformes",
+            "family": "Branchiostomatidae",
+            "genus": "Branchiostoma"
+          },
+          "common_name": "Belcher's lancelet",
+          "published": "2026-04-05T06:43:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbelcheri.NCBI.Haploidv18h27/BSgenome.Bbelcheri.NCBI.Haploidv18h27_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Brassica oleracea var. oleracea",
       "common_name": "",
       "group": "plant",
@@ -29332,6 +29380,38 @@
       "common_name": "bed bug",
       "published": "2026-04-05T05:17:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clectularius.NCBI.Clec21/BSgenome.Clectularius.NCBI.Clec21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bbelcheri.NCBI.Haploidv18h27",
+      "version": "1.0.0",
+      "organism": "Branchiostoma belcheri",
+      "assembly": "Haploidv18h27",
+      "provider": "NCBI",
+      "accession": "GCF_001625305.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001625305.1/",
+      "file_name": "BSgenome.Bbelcheri.NCBI.Haploidv18h27_1.0.0.tar.gz",
+      "size": 110047118,
+      "seq_ids": [
+        "NW_017802379.1",
+        "NW_017802380.1",
+        "NW_017802381.1",
+        "NW_017802382.1",
+        "NW_017802383.1"
+      ],
+      "seq_count": 2308,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Leptocardii",
+        "order": "Amphioxiformes",
+        "family": "Branchiostomatidae",
+        "genus": "Branchiostoma"
+      },
+      "common_name": "Belcher's lancelet",
+      "published": "2026-04-05T06:43:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbelcheri.NCBI.Haploidv18h27/BSgenome.Bbelcheri.NCBI.Haploidv18h27_1.0.0.tar.gz"
     }
   ]
 }
