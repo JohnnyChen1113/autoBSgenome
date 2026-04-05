@@ -1493,3 +1493,7 @@ NeedsCompilation: no
 Package: BSgenome.Ecarolleeae.NCBI.Eaff20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dnoxia.NCBI.Dnoxia10
+Version: 1.0.0
+NeedsCompilation: no

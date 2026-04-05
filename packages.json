@@ -5182,6 +5182,54 @@
       ]
     },
     {
+      "organism": "Diuraphis noxia",
+      "common_name": "Russian wheat aphid",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hemiptera",
+        "family": "Aphididae",
+        "genus": "Diuraphis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dnoxia.NCBI.Dnoxia10",
+          "version": "1.0.0",
+          "organism": "Diuraphis noxia",
+          "assembly": "Dnoxia_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001186385.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001186385.1/",
+          "file_name": "BSgenome.Dnoxia.NCBI.Dnoxia10_1.0.0.tar.gz",
+          "size": 83220135,
+          "seq_ids": [
+            "NW_015368242.1",
+            "NW_015368243.1",
+            "NW_015368244.1",
+            "NW_015368245.1",
+            "NW_015368246.1"
+          ],
+          "seq_count": 5637,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hemiptera",
+            "family": "Aphididae",
+            "genus": "Diuraphis"
+          },
+          "common_name": "Russian wheat aphid",
+          "published": "2026-04-05T02:42:02Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnoxia.NCBI.Dnoxia10/BSgenome.Dnoxia.NCBI.Dnoxia10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila albomicans",
       "common_name": "",
       "group": "invertebrate",
@@ -27972,6 +28020,38 @@
       "common_name": "",
       "published": "2026-04-05T02:41:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecarolleeae.NCBI.Eaff20/BSgenome.Ecarolleeae.NCBI.Eaff20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dnoxia.NCBI.Dnoxia10",
+      "version": "1.0.0",
+      "organism": "Diuraphis noxia",
+      "assembly": "Dnoxia_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001186385.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001186385.1/",
+      "file_name": "BSgenome.Dnoxia.NCBI.Dnoxia10_1.0.0.tar.gz",
+      "size": 83220135,
+      "seq_ids": [
+        "NW_015368242.1",
+        "NW_015368243.1",
+        "NW_015368244.1",
+        "NW_015368245.1",
+        "NW_015368246.1"
+      ],
+      "seq_count": 5637,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hemiptera",
+        "family": "Aphididae",
+        "genus": "Diuraphis"
+      },
+      "common_name": "Russian wheat aphid",
+      "published": "2026-04-05T02:42:02Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnoxia.NCBI.Dnoxia10/BSgenome.Dnoxia.NCBI.Dnoxia10_1.0.0.tar.gz"
     }
   ]
 }
