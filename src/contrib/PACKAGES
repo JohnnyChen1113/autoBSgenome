@@ -1913,3 +1913,7 @@ NeedsCompilation: no
 Package: BSgenome.Sstipitis.NCBI.ASM20916v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wciferrii.NCBI.ASM31348v1
+Version: 1.0.0
+NeedsCompilation: no
