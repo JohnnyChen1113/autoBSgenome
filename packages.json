@@ -12355,6 +12355,54 @@
       ]
     },
     {
+      "organism": "Meira miltonrushii",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Exobasidiomycetes",
+        "order": "Exobasidiales",
+        "family": "Brachybasidiaceae",
+        "genus": "Meira"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mmiltonrushii.NCBI.Meimi1",
+          "version": "1.0.0",
+          "organism": "Meira miltonrushii",
+          "assembly": "Meimi1",
+          "provider": "NCBI",
+          "accession": "GCF_003144205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003144205.1/",
+          "file_name": "BSgenome.Mmiltonrushii.NCBI.Meimi1_1.0.0.tar.gz",
+          "size": 4578828,
+          "seq_ids": [
+            "NW_020289943.1",
+            "NW_020289944.1",
+            "NW_020289945.1",
+            "NW_020289946.1",
+            "NW_020289947.1"
+          ],
+          "seq_count": 32,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Exobasidiomycetes",
+            "order": "Exobasidiales",
+            "family": "Brachybasidiaceae",
+            "genus": "Meira"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:07:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmiltonrushii.NCBI.Meimi1/BSgenome.Mmiltonrushii.NCBI.Meimi1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Melanaphis sacchari",
       "common_name": "",
       "group": "invertebrate",
@@ -38657,6 +38705,38 @@
       "common_name": "",
       "published": "2026-04-05T14:07:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kbrasiliensis.NCBI.PSEUBRA1/BSgenome.Kbrasiliensis.NCBI.PSEUBRA1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmiltonrushii.NCBI.Meimi1",
+      "version": "1.0.0",
+      "organism": "Meira miltonrushii",
+      "assembly": "Meimi1",
+      "provider": "NCBI",
+      "accession": "GCF_003144205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003144205.1/",
+      "file_name": "BSgenome.Mmiltonrushii.NCBI.Meimi1_1.0.0.tar.gz",
+      "size": 4578828,
+      "seq_ids": [
+        "NW_020289943.1",
+        "NW_020289944.1",
+        "NW_020289945.1",
+        "NW_020289946.1",
+        "NW_020289947.1"
+      ],
+      "seq_count": 32,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Exobasidiomycetes",
+        "order": "Exobasidiales",
+        "family": "Brachybasidiaceae",
+        "genus": "Meira"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:07:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmiltonrushii.NCBI.Meimi1/BSgenome.Mmiltonrushii.NCBI.Meimi1_1.0.0.tar.gz"
     }
   ]
 }
