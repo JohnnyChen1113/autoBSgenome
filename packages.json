@@ -18583,6 +18583,48 @@
       ]
     },
     {
+      "organism": "Saitoella complicata NRRL Y-17804",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "genus": "Saitoella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Scomplicata.NCBI.Saico1",
+          "version": "1.0.0",
+          "organism": "Saitoella complicata NRRL Y-17804",
+          "assembly": "Saico1",
+          "provider": "NCBI",
+          "accession": "GCF_001661265.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001661265.1/",
+          "file_name": "BSgenome.Scomplicata.NCBI.Saico1_1.0.0.tar.gz",
+          "size": 3772275,
+          "seq_ids": [
+            "NW_017566992.1",
+            "NW_017566993.1",
+            "NW_017566994.1",
+            "NW_017566995.1",
+            "NW_017566996.1"
+          ],
+          "seq_count": 35,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "genus": "Saitoella"
+          },
+          "common_name": "",
+          "published": "2026-04-05T13:02:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scomplicata.NCBI.Saico1/BSgenome.Scomplicata.NCBI.Saico1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Salvia splendens",
       "common_name": "bonfire salvia",
       "group": "plant",
@@ -37397,6 +37439,35 @@
       "common_name": "",
       "published": "2026-04-05T13:02:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hblattae.NCBI.ASM31591v1/BSgenome.Hblattae.NCBI.ASM31591v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Scomplicata.NCBI.Saico1",
+      "version": "1.0.0",
+      "organism": "Saitoella complicata NRRL Y-17804",
+      "assembly": "Saico1",
+      "provider": "NCBI",
+      "accession": "GCF_001661265.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001661265.1/",
+      "file_name": "BSgenome.Scomplicata.NCBI.Saico1_1.0.0.tar.gz",
+      "size": 3772275,
+      "seq_ids": [
+        "NW_017566992.1",
+        "NW_017566993.1",
+        "NW_017566994.1",
+        "NW_017566995.1",
+        "NW_017566996.1"
+      ],
+      "seq_count": 35,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "genus": "Saitoella"
+      },
+      "common_name": "",
+      "published": "2026-04-05T13:02:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scomplicata.NCBI.Saico1/BSgenome.Scomplicata.NCBI.Saico1_1.0.0.tar.gz"
     }
   ]
 }
