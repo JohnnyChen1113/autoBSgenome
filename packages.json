@@ -5822,6 +5822,54 @@
       ]
     },
     {
+      "organism": "Debaryomyces fabryi",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Debaryomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dfabryi.NCBI.debFab11",
+          "version": "1.0.0",
+          "organism": "Debaryomyces fabryi",
+          "assembly": "debFab1.1",
+          "provider": "NCBI",
+          "accession": "GCF_001447935.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001447935.2/",
+          "file_name": "BSgenome.Dfabryi.NCBI.debFab11_1.0.0.tar.gz",
+          "size": 3128291,
+          "seq_ids": [
+            "NW_015385427.1",
+            "NW_015385428.1",
+            "NW_015385429.1",
+            "NW_015385430.1",
+            "NW_015385431.1"
+          ],
+          "seq_count": 536,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Debaryomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T10:38:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dfabryi.NCBI.debFab11/BSgenome.Dfabryi.NCBI.debFab11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Delphinapterus leucas",
       "common_name": "beluga whale",
       "group": "vertebrate_mammalian",
@@ -35639,6 +35687,38 @@
       "common_name": "",
       "published": "2026-04-05T10:38:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Seubayanus.NCBI.SEUB30/BSgenome.Seubayanus.NCBI.SEUB30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dfabryi.NCBI.debFab11",
+      "version": "1.0.0",
+      "organism": "Debaryomyces fabryi",
+      "assembly": "debFab1.1",
+      "provider": "NCBI",
+      "accession": "GCF_001447935.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001447935.2/",
+      "file_name": "BSgenome.Dfabryi.NCBI.debFab11_1.0.0.tar.gz",
+      "size": 3128291,
+      "seq_ids": [
+        "NW_015385427.1",
+        "NW_015385428.1",
+        "NW_015385429.1",
+        "NW_015385430.1",
+        "NW_015385431.1"
+      ],
+      "seq_count": 536,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Debaryomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T10:38:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dfabryi.NCBI.debFab11/BSgenome.Dfabryi.NCBI.debFab11_1.0.0.tar.gz"
     }
   ]
 }
