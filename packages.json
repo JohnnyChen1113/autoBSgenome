@@ -742,6 +742,38 @@
       ]
     },
     {
+      "organism": "Anoplophora glabripennis",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Aglabripennis.NCBI.Agla20",
+          "version": "1.0.0",
+          "organism": "Anoplophora glabripennis",
+          "assembly": "Agla_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000390285.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000390285.2/",
+          "file_name": "BSgenome.Aglabripennis.NCBI.Agla20_1.0.0.tar.gz",
+          "size": 181339829,
+          "seq_ids": [
+            "NW_019416209.1",
+            "NW_019416210.1",
+            "NW_019416211.1",
+            "NW_019416212.1",
+            "NW_019416213.1"
+          ],
+          "seq_count": 9867,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-05T06:46:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aglabripennis.NCBI.Agla20/BSgenome.Aglabripennis.NCBI.Agla20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Antrostomus carolinensis",
       "common_name": "chuck-will's-widow",
       "group": "vertebrate_other",
@@ -30108,6 +30140,30 @@
       "common_name": "",
       "published": "2026-04-05T06:46:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tdalmanni.NCBI.ASM223713v2/BSgenome.Tdalmanni.NCBI.ASM223713v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aglabripennis.NCBI.Agla20",
+      "version": "1.0.0",
+      "organism": "Anoplophora glabripennis",
+      "assembly": "Agla_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000390285.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000390285.2/",
+      "file_name": "BSgenome.Aglabripennis.NCBI.Agla20_1.0.0.tar.gz",
+      "size": 181339829,
+      "seq_ids": [
+        "NW_019416209.1",
+        "NW_019416210.1",
+        "NW_019416211.1",
+        "NW_019416212.1",
+        "NW_019416213.1"
+      ],
+      "seq_count": 9867,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-05T06:46:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aglabripennis.NCBI.Agla20/BSgenome.Aglabripennis.NCBI.Agla20_1.0.0.tar.gz"
     }
   ]
 }

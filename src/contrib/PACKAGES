@@ -1601,3 +1601,7 @@ NeedsCompilation: no
 Package: BSgenome.Tdalmanni.NCBI.ASM223713v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aglabripennis.NCBI.Agla20
+Version: 1.0.0
+NeedsCompilation: no
