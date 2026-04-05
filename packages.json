@@ -2146,6 +2146,52 @@
       ]
     },
     {
+      "organism": "Batrachochytrium dendrobatidis JAM81",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "order": "Rhizophydiales",
+        "genus": "Batrachochytrium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bdendrobatidis.NCBI.v11",
+          "version": "1.0.0",
+          "organism": "Batrachochytrium dendrobatidis JAM81",
+          "assembly": "v1.1",
+          "provider": "NCBI",
+          "accession": "GCF_000203795.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000203795.2/",
+          "file_name": "BSgenome.Bdendrobatidis.NCBI.v11_1.0.0.tar.gz",
+          "size": 6031978,
+          "seq_ids": [
+            "NW_006281099.1",
+            "NW_006281108.1",
+            "NW_006281163.1",
+            "NW_006281109.1",
+            "NW_006281167.1"
+          ],
+          "seq_count": 62,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Chytridiomycota",
+            "class": "Chytridiomycetes",
+            "order": "Rhizophydiales",
+            "genus": "Batrachochytrium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:58:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdendrobatidis.NCBI.v11/BSgenome.Bdendrobatidis.NCBI.v11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Baudoinia panamericana UAMH 10762",
       "common_name": "",
       "group": "fungi",
@@ -41206,6 +41252,37 @@
       "common_name": "",
       "published": "2026-04-05T15:58:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pflocculosa.NCBI.Pflocc10/BSgenome.Pflocculosa.NCBI.Pflocc10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bdendrobatidis.NCBI.v11",
+      "version": "1.0.0",
+      "organism": "Batrachochytrium dendrobatidis JAM81",
+      "assembly": "v1.1",
+      "provider": "NCBI",
+      "accession": "GCF_000203795.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000203795.2/",
+      "file_name": "BSgenome.Bdendrobatidis.NCBI.v11_1.0.0.tar.gz",
+      "size": 6031978,
+      "seq_ids": [
+        "NW_006281099.1",
+        "NW_006281108.1",
+        "NW_006281163.1",
+        "NW_006281109.1",
+        "NW_006281167.1"
+      ],
+      "seq_count": 62,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "order": "Rhizophydiales",
+        "genus": "Batrachochytrium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:58:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdendrobatidis.NCBI.v11/BSgenome.Bdendrobatidis.NCBI.v11_1.0.0.tar.gz"
     }
   ]
 }

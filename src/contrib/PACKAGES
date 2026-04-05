@@ -2077,3 +2077,7 @@ NeedsCompilation: no
 Package: BSgenome.Pflocculosa.NCBI.Pflocc10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bdendrobatidis.NCBI.v11
+Version: 1.0.0
+NeedsCompilation: no
