@@ -10803,6 +10803,54 @@
       ]
     },
     {
+      "organism": "Mizuhopecten yessoensis",
+      "common_name": "Yesso scallop",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Bivalvia",
+        "order": "Pectinida",
+        "family": "Pectinidae",
+        "genus": "Mizuhopecten"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Myessoensis.NCBI.ASM211388v2",
+          "version": "1.0.0",
+          "organism": "Mizuhopecten yessoensis",
+          "assembly": "ASM211388v2",
+          "provider": "NCBI",
+          "accession": "GCF_002113885.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002113885.1/",
+          "file_name": "BSgenome.Myessoensis.NCBI.ASM211388v2_1.0.0.tar.gz",
+          "size": 226430281,
+          "seq_ids": [
+            "NW_018403328.1",
+            "NW_018403329.1",
+            "NW_018403330.1",
+            "NW_018403331.1",
+            "NW_018403332.1"
+          ],
+          "seq_count": 82659,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Mollusca",
+            "class": "Bivalvia",
+            "order": "Pectinida",
+            "family": "Pectinidae",
+            "genus": "Mizuhopecten"
+          },
+          "common_name": "Yesso scallop",
+          "published": "2026-04-05T07:57:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Myessoensis.NCBI.ASM211388v2/BSgenome.Myessoensis.NCBI.ASM211388v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Momordica charantia",
       "common_name": "bitter melon",
       "group": "plant",
@@ -32293,6 +32341,38 @@
       "common_name": "California sea hare",
       "published": "2026-04-05T07:57:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acalifornica.NCBI.AplCal30/BSgenome.Acalifornica.NCBI.AplCal30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Myessoensis.NCBI.ASM211388v2",
+      "version": "1.0.0",
+      "organism": "Mizuhopecten yessoensis",
+      "assembly": "ASM211388v2",
+      "provider": "NCBI",
+      "accession": "GCF_002113885.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002113885.1/",
+      "file_name": "BSgenome.Myessoensis.NCBI.ASM211388v2_1.0.0.tar.gz",
+      "size": 226430281,
+      "seq_ids": [
+        "NW_018403328.1",
+        "NW_018403329.1",
+        "NW_018403330.1",
+        "NW_018403331.1",
+        "NW_018403332.1"
+      ],
+      "seq_count": 82659,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Bivalvia",
+        "order": "Pectinida",
+        "family": "Pectinidae",
+        "genus": "Mizuhopecten"
+      },
+      "common_name": "Yesso scallop",
+      "published": "2026-04-05T07:57:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Myessoensis.NCBI.ASM211388v2/BSgenome.Myessoensis.NCBI.ASM211388v2_1.0.0.tar.gz"
     }
   ]
 }

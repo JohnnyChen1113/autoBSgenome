@@ -1629,3 +1629,7 @@ NeedsCompilation: no
 Package: BSgenome.Acalifornica.NCBI.AplCal30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Myessoensis.NCBI.ASM211388v2
+Version: 1.0.0
+NeedsCompilation: no
