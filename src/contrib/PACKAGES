@@ -2161,3 +2161,7 @@ NeedsCompilation: no
 Package: BSgenome.Cyegresii.NCBI.CladyegrCBS114405V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aglaucus.NCBI.Aspgl1
+Version: 1.0.0
+NeedsCompilation: no
