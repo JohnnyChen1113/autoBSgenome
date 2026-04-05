@@ -19007,6 +19007,54 @@
       ]
     },
     {
+      "organism": "Scheffersomyces stipitis CBS 6054",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Scheffersomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sstipitis.NCBI.ASM20916v1",
+          "version": "1.0.0",
+          "organism": "Scheffersomyces stipitis CBS 6054",
+          "assembly": "ASM20916v1",
+          "provider": "NCBI",
+          "accession": "GCF_000209165.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000209165.1/",
+          "file_name": "BSgenome.Sstipitis.NCBI.ASM20916v1_1.0.0.tar.gz",
+          "size": 4017782,
+          "seq_ids": [
+            "NC_009068.1",
+            "NC_009042.1",
+            "NC_009043.1",
+            "NC_009044.1",
+            "NC_009045.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Scheffersomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T13:04:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sstipitis.NCBI.ASM20916v1/BSgenome.Sstipitis.NCBI.ASM20916v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Schistosoma haematobium",
       "common_name": "",
       "group": "invertebrate",
@@ -37865,6 +37913,38 @@
       "common_name": "",
       "published": "2026-04-05T13:03:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Binositovora.NCBI.Babin1/BSgenome.Binositovora.NCBI.Babin1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sstipitis.NCBI.ASM20916v1",
+      "version": "1.0.0",
+      "organism": "Scheffersomyces stipitis CBS 6054",
+      "assembly": "ASM20916v1",
+      "provider": "NCBI",
+      "accession": "GCF_000209165.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000209165.1/",
+      "file_name": "BSgenome.Sstipitis.NCBI.ASM20916v1_1.0.0.tar.gz",
+      "size": 4017782,
+      "seq_ids": [
+        "NC_009068.1",
+        "NC_009042.1",
+        "NC_009043.1",
+        "NC_009044.1",
+        "NC_009045.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Scheffersomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T13:04:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sstipitis.NCBI.ASM20916v1/BSgenome.Sstipitis.NCBI.ASM20916v1_1.0.0.tar.gz"
     }
   ]
 }

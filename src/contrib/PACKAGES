@@ -1909,3 +1909,7 @@ NeedsCompilation: no
 Package: BSgenome.Binositovora.NCBI.Babin1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sstipitis.NCBI.ASM20916v1
+Version: 1.0.0
+NeedsCompilation: no
