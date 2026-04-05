@@ -13198,6 +13198,54 @@
       ]
     },
     {
+      "organism": "Ogataea polymorpha",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Pichiales",
+        "family": "Pichiaceae",
+        "genus": "Ogataea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Opolymorpha.NCBI.Hanpo2",
+          "version": "1.0.0",
+          "organism": "Ogataea polymorpha",
+          "assembly": "Hanpo2",
+          "provider": "NCBI",
+          "accession": "GCF_001664045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001664045.1/",
+          "file_name": "BSgenome.Opolymorpha.NCBI.Hanpo2_1.0.0.tar.gz",
+          "size": 2338063,
+          "seq_ids": [
+            "NW_017264698.1",
+            "NW_017264699.1",
+            "NW_017264700.1",
+            "NW_017264701.1",
+            "NW_017264702.1"
+          ],
+          "seq_count": 7,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Pichiales",
+            "family": "Pichiaceae",
+            "genus": "Ogataea"
+          },
+          "common_name": "",
+          "published": "2026-04-05T08:49:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Opolymorpha.NCBI.Hanpo2/BSgenome.Opolymorpha.NCBI.Hanpo2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Olea europaea var. sylvestris",
       "common_name": "",
       "group": "plant",
@@ -33961,6 +34009,38 @@
       "common_name": "yellow fever mosquito",
       "published": "2026-04-05T08:49:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aaegypti.NCBI.AaegL50/BSgenome.Aaegypti.NCBI.AaegL50_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Opolymorpha.NCBI.Hanpo2",
+      "version": "1.0.0",
+      "organism": "Ogataea polymorpha",
+      "assembly": "Hanpo2",
+      "provider": "NCBI",
+      "accession": "GCF_001664045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001664045.1/",
+      "file_name": "BSgenome.Opolymorpha.NCBI.Hanpo2_1.0.0.tar.gz",
+      "size": 2338063,
+      "seq_ids": [
+        "NW_017264698.1",
+        "NW_017264699.1",
+        "NW_017264700.1",
+        "NW_017264701.1",
+        "NW_017264702.1"
+      ],
+      "seq_count": 7,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Pichiales",
+        "family": "Pichiaceae",
+        "genus": "Ogataea"
+      },
+      "common_name": "",
+      "published": "2026-04-05T08:49:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Opolymorpha.NCBI.Hanpo2/BSgenome.Opolymorpha.NCBI.Hanpo2_1.0.0.tar.gz"
     }
   ]
 }

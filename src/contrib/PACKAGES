@@ -1713,3 +1713,7 @@ NeedsCompilation: no
 Package: BSgenome.Aaegypti.NCBI.AaegL50
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Opolymorpha.NCBI.Hanpo2
+Version: 1.0.0
+NeedsCompilation: no
