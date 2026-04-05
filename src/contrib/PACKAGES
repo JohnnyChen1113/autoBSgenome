@@ -2089,3 +2089,7 @@ NeedsCompilation: no
 Package: BSgenome.Kdejecticola.NCBI.ASM51256v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Spunctatus.NCBI.SpunctatusV1
+Version: 1.0.0
+NeedsCompilation: no

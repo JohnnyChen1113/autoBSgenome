@@ -21685,6 +21685,54 @@
       ]
     },
     {
+      "organism": "Spizellomyces punctatus DAOM BR117",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "order": "Spizellomycetales",
+        "family": "Spizellomycetaceae",
+        "genus": "Spizellomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Spunctatus.NCBI.SpunctatusV1",
+          "version": "1.0.0",
+          "organism": "Spizellomyces punctatus DAOM BR117",
+          "assembly": "S_punctatus_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000182565.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000182565.1/",
+          "file_name": "BSgenome.Spunctatus.NCBI.SpunctatusV1_1.0.0.tar.gz",
+          "size": 6146785,
+          "seq_ids": [
+            "NW_015971537.1",
+            "NW_015971538.1",
+            "NW_015971539.1",
+            "NW_015971540.1",
+            "NW_015971541.1"
+          ],
+          "seq_count": 38,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Chytridiomycota",
+            "class": "Chytridiomycetes",
+            "order": "Spizellomycetales",
+            "family": "Spizellomycetaceae",
+            "genus": "Spizellomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T16:40:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spunctatus.NCBI.SpunctatusV1/BSgenome.Spunctatus.NCBI.SpunctatusV1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Spodoptera litura",
       "common_name": "",
       "group": "invertebrate",
@@ -41443,6 +41491,38 @@
       "common_name": "",
       "published": "2026-04-05T16:40:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kdejecticola.NCBI.ASM51256v3/BSgenome.Kdejecticola.NCBI.ASM51256v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Spunctatus.NCBI.SpunctatusV1",
+      "version": "1.0.0",
+      "organism": "Spizellomyces punctatus DAOM BR117",
+      "assembly": "S_punctatus_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000182565.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000182565.1/",
+      "file_name": "BSgenome.Spunctatus.NCBI.SpunctatusV1_1.0.0.tar.gz",
+      "size": 6146785,
+      "seq_ids": [
+        "NW_015971537.1",
+        "NW_015971538.1",
+        "NW_015971539.1",
+        "NW_015971540.1",
+        "NW_015971541.1"
+      ],
+      "seq_count": 38,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "order": "Spizellomycetales",
+        "family": "Spizellomycetaceae",
+        "genus": "Spizellomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T16:40:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spunctatus.NCBI.SpunctatusV1/BSgenome.Spunctatus.NCBI.SpunctatusV1_1.0.0.tar.gz"
     }
   ]
 }
