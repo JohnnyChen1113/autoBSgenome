@@ -6120,6 +6120,54 @@
       ]
     },
     {
+      "organism": "Chaetomium globosum CBS 148.51",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Chaetomiaceae",
+        "genus": "Chaetomium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cglobosum.NCBI.ASM14336v1",
+          "version": "1.0.0",
+          "organism": "Chaetomium globosum CBS 148.51",
+          "assembly": "ASM14336v1",
+          "provider": "NCBI",
+          "accession": "GCF_000143365.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143365.1/",
+          "file_name": "BSgenome.Cglobosum.NCBI.ASM14336v1_1.0.0.tar.gz",
+          "size": 8955405,
+          "seq_ids": [
+            "NT_166024.1",
+            "NT_166009.1",
+            "NT_166007.1",
+            "NT_166001.1",
+            "NT_165986.1"
+          ],
+          "seq_count": 37,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Sordariales",
+            "family": "Chaetomiaceae",
+            "genus": "Chaetomium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T23:38:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cglobosum.NCBI.ASM14336v1/BSgenome.Cglobosum.NCBI.ASM14336v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chaetura pelagica",
       "common_name": "chimney swift",
       "group": "vertebrate_other",
@@ -48773,6 +48821,38 @@
       "common_name": "",
       "published": "2026-04-05T23:38:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pstrigosozonata.NCBI.Punctulariastrigosozonatav10/BSgenome.Pstrigosozonata.NCBI.Punctulariastrigosozonatav10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cglobosum.NCBI.ASM14336v1",
+      "version": "1.0.0",
+      "organism": "Chaetomium globosum CBS 148.51",
+      "assembly": "ASM14336v1",
+      "provider": "NCBI",
+      "accession": "GCF_000143365.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143365.1/",
+      "file_name": "BSgenome.Cglobosum.NCBI.ASM14336v1_1.0.0.tar.gz",
+      "size": 8955405,
+      "seq_ids": [
+        "NT_166024.1",
+        "NT_166009.1",
+        "NT_166007.1",
+        "NT_166001.1",
+        "NT_165986.1"
+      ],
+      "seq_count": 37,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Chaetomiaceae",
+        "genus": "Chaetomium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T23:38:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cglobosum.NCBI.ASM14336v1/BSgenome.Cglobosum.NCBI.ASM14336v1_1.0.0.tar.gz"
     }
   ]
 }
