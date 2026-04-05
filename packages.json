@@ -1919,6 +1919,54 @@
       ]
     },
     {
+      "organism": "Aspergillus fischeri NRRL 181",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Afischeri.NCBI.ASM14964v4",
+          "version": "1.0.0",
+          "organism": "Aspergillus fischeri NRRL 181",
+          "assembly": "ASM14964v4",
+          "provider": "NCBI",
+          "accession": "GCF_000149645.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149645.3/",
+          "file_name": "BSgenome.Afischeri.NCBI.ASM14964v4_1.0.0.tar.gz",
+          "size": 8074327,
+          "seq_ids": [
+            "NW_001509367.1",
+            "NW_001509369.1",
+            "NW_001509402.1",
+            "NW_001509423.1",
+            "NW_001509424.1"
+          ],
+          "seq_count": 163,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T20:38:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afischeri.NCBI.ASM14964v4/BSgenome.Afischeri.NCBI.ASM14964v4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus fumigatus Af293",
       "common_name": "",
       "group": "fungi",
@@ -45813,6 +45861,38 @@
       "common_name": "",
       "published": "2026-04-05T20:37:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10/BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Afischeri.NCBI.ASM14964v4",
+      "version": "1.0.0",
+      "organism": "Aspergillus fischeri NRRL 181",
+      "assembly": "ASM14964v4",
+      "provider": "NCBI",
+      "accession": "GCF_000149645.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149645.3/",
+      "file_name": "BSgenome.Afischeri.NCBI.ASM14964v4_1.0.0.tar.gz",
+      "size": 8074327,
+      "seq_ids": [
+        "NW_001509367.1",
+        "NW_001509369.1",
+        "NW_001509402.1",
+        "NW_001509423.1",
+        "NW_001509424.1"
+      ],
+      "seq_count": 163,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T20:38:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afischeri.NCBI.ASM14964v4/BSgenome.Afischeri.NCBI.ASM14964v4_1.0.0.tar.gz"
     }
   ]
 }

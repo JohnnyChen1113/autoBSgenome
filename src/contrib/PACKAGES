@@ -2309,3 +2309,7 @@ NeedsCompilation: no
 Package: BSgenome.Boryzae.NCBI.Cochliobolusmiyabeanusv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Afischeri.NCBI.ASM14964v4
+Version: 1.0.0
+NeedsCompilation: no
