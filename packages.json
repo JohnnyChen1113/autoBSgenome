@@ -3148,6 +3148,54 @@
       ]
     },
     {
+      "organism": "Candida tropicalis MYA-3404",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ctropicalis.NCBI.ASM633v3",
+          "version": "1.0.0",
+          "organism": "Candida tropicalis MYA-3404",
+          "assembly": "ASM633v3",
+          "provider": "NCBI",
+          "accession": "GCF_000006335.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000006335.3/",
+          "file_name": "BSgenome.Ctropicalis.NCBI.ASM633v3_1.0.0.tar.gz",
+          "size": 3868690,
+          "seq_ids": [
+            "NW_003020038.1",
+            "NW_003020049.1",
+            "NW_003020055.1",
+            "NW_003020056.1",
+            "NW_003020057.1"
+          ],
+          "seq_count": 24,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Candida"
+          },
+          "common_name": "",
+          "published": "2026-04-05T13:03:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctropicalis.NCBI.ASM633v3/BSgenome.Ctropicalis.NCBI.ASM633v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Candidozyma auris",
       "common_name": "",
       "group": "fungi",
@@ -37628,6 +37676,38 @@
       "common_name": "",
       "published": "2026-04-05T13:03:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.NCBI.ASM18296v3/BSgenome.Calbicans.NCBI.ASM18296v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ctropicalis.NCBI.ASM633v3",
+      "version": "1.0.0",
+      "organism": "Candida tropicalis MYA-3404",
+      "assembly": "ASM633v3",
+      "provider": "NCBI",
+      "accession": "GCF_000006335.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000006335.3/",
+      "file_name": "BSgenome.Ctropicalis.NCBI.ASM633v3_1.0.0.tar.gz",
+      "size": 3868690,
+      "seq_ids": [
+        "NW_003020038.1",
+        "NW_003020049.1",
+        "NW_003020055.1",
+        "NW_003020056.1",
+        "NW_003020057.1"
+      ],
+      "seq_count": 24,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "common_name": "",
+      "published": "2026-04-05T13:03:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctropicalis.NCBI.ASM633v3/BSgenome.Ctropicalis.NCBI.ASM633v3_1.0.0.tar.gz"
     }
   ]
 }
