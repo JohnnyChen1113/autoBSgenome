@@ -9728,6 +9728,38 @@
       ]
     },
     {
+      "organism": "Exophiala dermatitidis NIH/UT8656",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Edermatitidis.NCBI.ExopdermV1",
+          "version": "1.0.0",
+          "organism": "Exophiala dermatitidis NIH/UT8656",
+          "assembly": "Exop_derm_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000230625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000230625.1/",
+          "file_name": "BSgenome.Edermatitidis.NCBI.ExopdermV1_1.0.0.tar.gz",
+          "size": 6880839,
+          "seq_ids": [
+            "NW_008751646.1",
+            "NW_008751647.1",
+            "NW_008751648.1",
+            "NW_008751649.1",
+            "NW_008751650.1"
+          ],
+          "seq_count": 11,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-05T17:35:21Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Edermatitidis.NCBI.ExopdermV1/BSgenome.Edermatitidis.NCBI.ExopdermV1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ficedula albicollis",
       "common_name": "Collared flycatcher",
       "group": "vertebrate_other",
@@ -42563,6 +42595,30 @@
       "common_name": "",
       "published": "2026-04-05T17:35:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smicrobalum.NCBI.ASM653598v1/BSgenome.Smicrobalum.NCBI.ASM653598v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Edermatitidis.NCBI.ExopdermV1",
+      "version": "1.0.0",
+      "organism": "Exophiala dermatitidis NIH/UT8656",
+      "assembly": "Exop_derm_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000230625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000230625.1/",
+      "file_name": "BSgenome.Edermatitidis.NCBI.ExopdermV1_1.0.0.tar.gz",
+      "size": 6880839,
+      "seq_ids": [
+        "NW_008751646.1",
+        "NW_008751647.1",
+        "NW_008751648.1",
+        "NW_008751649.1",
+        "NW_008751650.1"
+      ],
+      "seq_count": 11,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-05T17:35:21Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Edermatitidis.NCBI.ExopdermV1/BSgenome.Edermatitidis.NCBI.ExopdermV1_1.0.0.tar.gz"
     }
   ]
 }
