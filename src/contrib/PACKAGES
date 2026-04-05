@@ -2417,3 +2417,7 @@ NeedsCompilation: no
 Package: BSgenome.Hirregulare.NCBI.Heterobasidionirregularev20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bbassiana.NCBI.ASM28067v1
+Version: 1.0.0
+NeedsCompilation: no

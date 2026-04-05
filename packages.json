@@ -3392,6 +3392,54 @@
       ]
     },
     {
+      "organism": "Beauveria bassiana ARSEF 2860",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Cordycipitaceae",
+        "genus": "Beauveria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bbassiana.NCBI.ASM28067v1",
+          "version": "1.0.0",
+          "organism": "Beauveria bassiana ARSEF 2860",
+          "assembly": "ASM28067v1",
+          "provider": "NCBI",
+          "accession": "GCF_000280675.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000280675.1/",
+          "file_name": "BSgenome.Bbassiana.NCBI.ASM28067v1_1.0.0.tar.gz",
+          "size": 8898309,
+          "seq_ids": [
+            "NW_007930836.1",
+            "NW_007930837.1",
+            "NW_007930838.1",
+            "NW_007930839.1",
+            "NW_007930840.1"
+          ],
+          "seq_count": 237,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Cordycipitaceae",
+            "genus": "Beauveria"
+          },
+          "common_name": "",
+          "published": "2026-04-05T22:36:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbassiana.NCBI.ASM28067v1/BSgenome.Bbassiana.NCBI.ASM28067v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Benincasa hispida",
       "common_name": "wax gourd",
       "group": "plant",
@@ -47973,6 +48021,38 @@
       "common_name": "",
       "published": "2026-04-05T22:36:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hirregulare.NCBI.Heterobasidionirregularev20/BSgenome.Hirregulare.NCBI.Heterobasidionirregularev20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bbassiana.NCBI.ASM28067v1",
+      "version": "1.0.0",
+      "organism": "Beauveria bassiana ARSEF 2860",
+      "assembly": "ASM28067v1",
+      "provider": "NCBI",
+      "accession": "GCF_000280675.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000280675.1/",
+      "file_name": "BSgenome.Bbassiana.NCBI.ASM28067v1_1.0.0.tar.gz",
+      "size": 8898309,
+      "seq_ids": [
+        "NW_007930836.1",
+        "NW_007930837.1",
+        "NW_007930838.1",
+        "NW_007930839.1",
+        "NW_007930840.1"
+      ],
+      "seq_count": 237,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Cordycipitaceae",
+        "genus": "Beauveria"
+      },
+      "common_name": "",
+      "published": "2026-04-05T22:36:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbassiana.NCBI.ASM28067v1/BSgenome.Bbassiana.NCBI.ASM28067v1_1.0.0.tar.gz"
     }
   ]
 }
