@@ -1845,3 +1845,7 @@ NeedsCompilation: no
 Package: BSgenome.Spombe.NCBI.ASM294v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108
+Version: 1.0.0
+NeedsCompilation: no

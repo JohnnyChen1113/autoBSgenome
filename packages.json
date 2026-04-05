@@ -3100,6 +3100,54 @@
       ]
     },
     {
+      "organism": "Candidozyma pseudohaemuli",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108",
+          "version": "1.0.0",
+          "organism": "Candidozyma pseudohaemuli",
+          "assembly": "Cand_pseudohaemulonii_B12108",
+          "provider": "NCBI",
+          "accession": "GCF_003013735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003013735.1/",
+          "file_name": "BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108_1.0.0.tar.gz",
+          "size": 3320048,
+          "seq_ids": [
+            "NW_020194435.1",
+            "NW_020194436.1",
+            "NW_020194437.1",
+            "NW_020194438.1",
+            "NW_020194439.1"
+          ],
+          "seq_count": 36,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Metschnikowiaceae",
+            "genus": "Candidozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T11:33:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108/BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Canis lupus dingo",
       "common_name": "dingo",
       "group": "vertebrate_mammalian",
@@ -36597,6 +36645,38 @@
       "common_name": "fission yeast",
       "published": "2026-04-05T11:33:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spombe.NCBI.ASM294v3/BSgenome.Spombe.NCBI.ASM294v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108",
+      "version": "1.0.0",
+      "organism": "Candidozyma pseudohaemuli",
+      "assembly": "Cand_pseudohaemulonii_B12108",
+      "provider": "NCBI",
+      "accession": "GCF_003013735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003013735.1/",
+      "file_name": "BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108_1.0.0.tar.gz",
+      "size": 3320048,
+      "seq_ids": [
+        "NW_020194435.1",
+        "NW_020194436.1",
+        "NW_020194437.1",
+        "NW_020194438.1",
+        "NW_020194439.1"
+      ],
+      "seq_count": 36,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T11:33:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108/BSgenome.Cpseudohaemuli.NCBI.CandpseudohaemuloniiB12108_1.0.0.tar.gz"
     }
   ]
 }
