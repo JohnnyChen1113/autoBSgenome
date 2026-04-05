@@ -1981,3 +1981,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgattii.NCBI.ASM18594v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Phubeiensis.NCBI.ASM40351v1
+Version: 1.0.0
+NeedsCompilation: no
