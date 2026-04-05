@@ -2148,6 +2148,54 @@
       ]
     },
     {
+      "organism": "Aspergillus novofumigatus IBT 16806",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Anovofumigatus.NCBI.Aspnov1",
+          "version": "1.0.0",
+          "organism": "Aspergillus novofumigatus IBT 16806",
+          "assembly": "Aspnov1",
+          "provider": "NCBI",
+          "accession": "GCF_002847465.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002847465.1/",
+          "file_name": "BSgenome.Anovofumigatus.NCBI.Aspnov1_1.0.0.tar.gz",
+          "size": 8327846,
+          "seq_ids": [
+            "NW_020194274.1",
+            "NW_020194283.1",
+            "NW_020194284.1",
+            "NW_020194285.1",
+            "NW_020194286.1"
+          ],
+          "seq_count": 62,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T21:36:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anovofumigatus.NCBI.Aspnov1/BSgenome.Anovofumigatus.NCBI.Aspnov1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus ochraceoroseus IBT 24754",
       "common_name": "",
       "group": "fungi",
@@ -46453,6 +46501,38 @@
       "common_name": "",
       "published": "2026-04-05T21:36:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sschenckii.NCBI.Sschenckiiv1/BSgenome.Sschenckii.NCBI.Sschenckiiv1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Anovofumigatus.NCBI.Aspnov1",
+      "version": "1.0.0",
+      "organism": "Aspergillus novofumigatus IBT 16806",
+      "assembly": "Aspnov1",
+      "provider": "NCBI",
+      "accession": "GCF_002847465.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002847465.1/",
+      "file_name": "BSgenome.Anovofumigatus.NCBI.Aspnov1_1.0.0.tar.gz",
+      "size": 8327846,
+      "seq_ids": [
+        "NW_020194274.1",
+        "NW_020194283.1",
+        "NW_020194284.1",
+        "NW_020194285.1",
+        "NW_020194286.1"
+      ],
+      "seq_count": 62,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T21:36:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anovofumigatus.NCBI.Aspnov1/BSgenome.Anovofumigatus.NCBI.Aspnov1_1.0.0.tar.gz"
     }
   ]
 }

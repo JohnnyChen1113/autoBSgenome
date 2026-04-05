@@ -2341,3 +2341,7 @@ NeedsCompilation: no
 Package: BSgenome.Sschenckii.NCBI.Sschenckiiv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Anovofumigatus.NCBI.Aspnov1
+Version: 1.0.0
+NeedsCompilation: no
