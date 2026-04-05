@@ -5724,6 +5724,54 @@
       ]
     },
     {
+      "organism": "Cryptococcus deuterogattii R265",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr",
+          "version": "1.0.0",
+          "organism": "Cryptococcus deuterogattii R265",
+          "assembly": "C. deuterogattii_R265_chr",
+          "provider": "NCBI",
+          "accession": "GCF_002954075.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002954075.1/",
+          "file_name": "BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr_1.0.0.tar.gz",
+          "size": 4634489,
+          "seq_ids": [
+            "NC_086139.1",
+            "NC_086140.1",
+            "NC_086141.1",
+            "NC_086142.1",
+            "NC_086143.1"
+          ],
+          "seq_count": 14,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:08:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr/BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptotermes secundus",
       "common_name": "",
       "group": "invertebrate",
@@ -38897,6 +38945,38 @@
       "common_name": "",
       "published": "2026-04-05T14:08:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Arubescens.NCBI.Ascru1/BSgenome.Arubescens.NCBI.Ascru1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr",
+      "version": "1.0.0",
+      "organism": "Cryptococcus deuterogattii R265",
+      "assembly": "C. deuterogattii_R265_chr",
+      "provider": "NCBI",
+      "accession": "GCF_002954075.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002954075.1/",
+      "file_name": "BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr_1.0.0.tar.gz",
+      "size": 4634489,
+      "seq_ids": [
+        "NC_086139.1",
+        "NC_086140.1",
+        "NC_086141.1",
+        "NC_086142.1",
+        "NC_086143.1"
+      ],
+      "seq_count": 14,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:08:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr/BSgenome.Cdeuterogattii.NCBI.CdeuterogattiiR265chr_1.0.0.tar.gz"
     }
   ]
 }
