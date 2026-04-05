@@ -10346,6 +10346,54 @@
       ]
     },
     {
+      "organism": "Malassezia pachydermatis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Malasseziomycetes",
+        "order": "Malasseziales",
+        "family": "Malasseziaceae",
+        "genus": "Malassezia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mpachydermatis.NCBI.MalaPachy",
+          "version": "1.0.0",
+          "organism": "Malassezia pachydermatis",
+          "assembly": "MalaPachy",
+          "provider": "NCBI",
+          "accession": "GCF_001278385.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001278385.1/",
+          "file_name": "BSgenome.Mpachydermatis.NCBI.MalaPachy_1.0.0.tar.gz",
+          "size": 2130012,
+          "seq_ids": [
+            "NW_017253138.1",
+            "NW_017253147.1",
+            "NW_017253211.1",
+            "NW_017253212.1",
+            "NW_017253213.1"
+          ],
+          "seq_count": 91,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Malasseziomycetes",
+            "order": "Malasseziales",
+            "family": "Malasseziaceae",
+            "genus": "Malassezia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T08:49:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpachydermatis.NCBI.MalaPachy/BSgenome.Mpachydermatis.NCBI.MalaPachy_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Malassezia restricta",
       "common_name": "",
       "group": "fungi",
@@ -33481,6 +33529,38 @@
       "common_name": "",
       "published": "2026-04-05T08:48:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wsorbophila.NCBI.ASM225199v2/BSgenome.Wsorbophila.NCBI.ASM225199v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mpachydermatis.NCBI.MalaPachy",
+      "version": "1.0.0",
+      "organism": "Malassezia pachydermatis",
+      "assembly": "MalaPachy",
+      "provider": "NCBI",
+      "accession": "GCF_001278385.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001278385.1/",
+      "file_name": "BSgenome.Mpachydermatis.NCBI.MalaPachy_1.0.0.tar.gz",
+      "size": 2130012,
+      "seq_ids": [
+        "NW_017253138.1",
+        "NW_017253147.1",
+        "NW_017253211.1",
+        "NW_017253212.1",
+        "NW_017253213.1"
+      ],
+      "seq_count": 91,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Malasseziomycetes",
+        "order": "Malasseziales",
+        "family": "Malasseziaceae",
+        "genus": "Malassezia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T08:49:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpachydermatis.NCBI.MalaPachy/BSgenome.Mpachydermatis.NCBI.MalaPachy_1.0.0.tar.gz"
     }
   ]
 }
