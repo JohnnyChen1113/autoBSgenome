@@ -23973,6 +23973,52 @@
       ]
     },
     {
+      "organism": "Yarrowia lipolytica",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dipodascomycetes",
+        "order": "Dipodascales",
+        "genus": "Yarrowia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ylipolytica.NCBI.ASM176148v1",
+          "version": "1.0.0",
+          "organism": "Yarrowia lipolytica",
+          "assembly": "ASM176148v1",
+          "provider": "NCBI",
+          "accession": "GCF_001761485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001761485.1/",
+          "file_name": "BSgenome.Ylipolytica.NCBI.ASM176148v1_1.0.0.tar.gz",
+          "size": 5387907,
+          "seq_ids": [
+            "NC_090770.1",
+            "NC_090771.1",
+            "NC_090772.1",
+            "NC_090773.1",
+            "NC_090774.1"
+          ],
+          "seq_count": 6,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dipodascomycetes",
+            "order": "Dipodascales",
+            "genus": "Yarrowia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:05:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ylipolytica.NCBI.ASM176148v1/BSgenome.Ylipolytica.NCBI.ASM176148v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Zootermopsis nevadensis",
       "common_name": "",
       "group": "invertebrate",
@@ -40091,6 +40137,37 @@
       "common_name": "",
       "published": "2026-04-05T15:04:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rtoruloides.NCBI.RHOziaDV10/BSgenome.Rtoruloides.NCBI.RHOziaDV10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ylipolytica.NCBI.ASM176148v1",
+      "version": "1.0.0",
+      "organism": "Yarrowia lipolytica",
+      "assembly": "ASM176148v1",
+      "provider": "NCBI",
+      "accession": "GCF_001761485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001761485.1/",
+      "file_name": "BSgenome.Ylipolytica.NCBI.ASM176148v1_1.0.0.tar.gz",
+      "size": 5387907,
+      "seq_ids": [
+        "NC_090770.1",
+        "NC_090771.1",
+        "NC_090772.1",
+        "NC_090773.1",
+        "NC_090774.1"
+      ],
+      "seq_count": 6,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dipodascomycetes",
+        "order": "Dipodascales",
+        "genus": "Yarrowia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:05:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ylipolytica.NCBI.ASM176148v1/BSgenome.Ylipolytica.NCBI.ASM176148v1_1.0.0.tar.gz"
     }
   ]
 }

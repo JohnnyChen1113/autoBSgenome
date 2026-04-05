@@ -2021,3 +2021,7 @@ NeedsCompilation: no
 Package: BSgenome.Rtoruloides.NCBI.RHOziaDV10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ylipolytica.NCBI.ASM176148v1
+Version: 1.0.0
+NeedsCompilation: no
