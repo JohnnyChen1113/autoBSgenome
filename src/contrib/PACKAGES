@@ -2233,3 +2233,7 @@ NeedsCompilation: no
 Package: BSgenome.Aterreus.NCBI.ASM14961v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Smusiva.NCBI.SeptoriamusivaSO2202v10
+Version: 1.0.0
+NeedsCompilation: no
