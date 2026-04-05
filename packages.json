@@ -9104,6 +9104,54 @@
       ]
     },
     {
+      "organism": "Halyomorpha halys",
+      "common_name": "brown marmorated stink bug",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hemiptera",
+        "family": "Pentatomidae",
+        "genus": "Halyomorpha"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hhalys.NCBI.Hhal11",
+          "version": "1.0.0",
+          "organism": "Halyomorpha halys",
+          "assembly": "Hhal_1.1",
+          "provider": "NCBI",
+          "accession": "GCF_000696795.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000696795.3/",
+          "file_name": "BSgenome.Hhalys.NCBI.Hhal11_1.0.0.tar.gz",
+          "size": 270770841,
+          "seq_ids": [
+            "NW_027104633.1",
+            "NW_027104634.1",
+            "NW_027104635.1",
+            "NW_027104636.1",
+            "NW_027104637.1"
+          ],
+          "seq_count": 12166,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hemiptera",
+            "family": "Pentatomidae",
+            "genus": "Halyomorpha"
+          },
+          "common_name": "brown marmorated stink bug",
+          "published": "2026-04-05T10:39:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhalys.NCBI.Hhal11/BSgenome.Hhalys.NCBI.Hhal11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Harpegnathos saltator",
       "common_name": "Jerdon's jumping ant",
       "group": "invertebrate",
@@ -35719,6 +35767,38 @@
       "common_name": "",
       "published": "2026-04-05T10:38:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dfabryi.NCBI.debFab11/BSgenome.Dfabryi.NCBI.debFab11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hhalys.NCBI.Hhal11",
+      "version": "1.0.0",
+      "organism": "Halyomorpha halys",
+      "assembly": "Hhal_1.1",
+      "provider": "NCBI",
+      "accession": "GCF_000696795.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000696795.3/",
+      "file_name": "BSgenome.Hhalys.NCBI.Hhal11_1.0.0.tar.gz",
+      "size": 270770841,
+      "seq_ids": [
+        "NW_027104633.1",
+        "NW_027104634.1",
+        "NW_027104635.1",
+        "NW_027104636.1",
+        "NW_027104637.1"
+      ],
+      "seq_count": 12166,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hemiptera",
+        "family": "Pentatomidae",
+        "genus": "Halyomorpha"
+      },
+      "common_name": "brown marmorated stink bug",
+      "published": "2026-04-05T10:39:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhalys.NCBI.Hhal11/BSgenome.Hhalys.NCBI.Hhal11_1.0.0.tar.gz"
     }
   ]
 }
