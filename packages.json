@@ -3052,6 +3052,54 @@
       ]
     },
     {
+      "organism": "Candidozyma duobushaemuli",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cduobushaemuli.NCBI.CanDuoHaev10",
+          "version": "1.0.0",
+          "organism": "Candidozyma duobushaemuli",
+          "assembly": "CanDuoHae_v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_002926085.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002926085.2/",
+          "file_name": "BSgenome.Cduobushaemuli.NCBI.CanDuoHaev10_1.0.0.tar.gz",
+          "size": 3300504,
+          "seq_ids": [
+            "NW_020289901.1",
+            "NW_020289895.1",
+            "NW_020289897.1",
+            "NW_020289898.1",
+            "NW_020289900.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Metschnikowiaceae",
+            "genus": "Candidozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T11:33:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cduobushaemuli.NCBI.CanDuoHaev10/BSgenome.Cduobushaemuli.NCBI.CanDuoHaev10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Canis lupus dingo",
       "common_name": "dingo",
       "group": "vertebrate_mammalian",
@@ -36439,6 +36487,38 @@
       "common_name": "",
       "published": "2026-04-05T11:33:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hburtonii.NCBI.Hypbu1/BSgenome.Hburtonii.NCBI.Hypbu1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cduobushaemuli.NCBI.CanDuoHaev10",
+      "version": "1.0.0",
+      "organism": "Candidozyma duobushaemuli",
+      "assembly": "CanDuoHae_v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_002926085.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002926085.2/",
+      "file_name": "BSgenome.Cduobushaemuli.NCBI.CanDuoHaev10_1.0.0.tar.gz",
+      "size": 3300504,
+      "seq_ids": [
+        "NW_020289901.1",
+        "NW_020289895.1",
+        "NW_020289897.1",
+        "NW_020289898.1",
+        "NW_020289900.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T11:33:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cduobushaemuli.NCBI.CanDuoHaev10/BSgenome.Cduobushaemuli.NCBI.CanDuoHaev10_1.0.0.tar.gz"
     }
   ]
 }
