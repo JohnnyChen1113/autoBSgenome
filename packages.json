@@ -8660,6 +8660,54 @@
       ]
     },
     {
+      "organism": "Hyposmocoma kahamanoa",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Cosmopterigidae",
+        "genus": "Hyposmocoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hkahamanoa.NCBI.ASM358959v1",
+          "version": "1.0.0",
+          "organism": "Hyposmocoma kahamanoa",
+          "assembly": "ASM358959v1",
+          "provider": "NCBI",
+          "accession": "GCF_003589595.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003589595.1/",
+          "file_name": "BSgenome.Hkahamanoa.NCBI.ASM358959v1_1.0.0.tar.gz",
+          "size": 173278768,
+          "seq_ids": [
+            "NW_020653192.1",
+            "NW_020653193.1",
+            "NW_020653194.1",
+            "NW_020653195.1",
+            "NW_020653196.1"
+          ],
+          "seq_count": 2929,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Lepidoptera",
+            "family": "Cosmopterigidae",
+            "genus": "Hyposmocoma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T06:46:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hkahamanoa.NCBI.ASM358959v1/BSgenome.Hkahamanoa.NCBI.ASM358959v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ictalurus punctatus",
       "common_name": "channel catfish",
       "group": "vertebrate_other",
@@ -30164,6 +30212,38 @@
       "common_name": "",
       "published": "2026-04-05T06:46:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aglabripennis.NCBI.Agla20/BSgenome.Aglabripennis.NCBI.Agla20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hkahamanoa.NCBI.ASM358959v1",
+      "version": "1.0.0",
+      "organism": "Hyposmocoma kahamanoa",
+      "assembly": "ASM358959v1",
+      "provider": "NCBI",
+      "accession": "GCF_003589595.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003589595.1/",
+      "file_name": "BSgenome.Hkahamanoa.NCBI.ASM358959v1_1.0.0.tar.gz",
+      "size": 173278768,
+      "seq_ids": [
+        "NW_020653192.1",
+        "NW_020653193.1",
+        "NW_020653194.1",
+        "NW_020653195.1",
+        "NW_020653196.1"
+      ],
+      "seq_count": 2929,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Cosmopterigidae",
+        "genus": "Hyposmocoma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T06:46:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hkahamanoa.NCBI.ASM358959v1/BSgenome.Hkahamanoa.NCBI.ASM358959v1_1.0.0.tar.gz"
     }
   ]
 }
