@@ -2325,3 +2325,7 @@ NeedsCompilation: no
 Package: BSgenome.Vgallopava.NCBI.OgallCBS43764
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Audagawae.NCBI.Audassembly02
+Version: 1.0.0
+NeedsCompilation: no

@@ -2388,6 +2388,54 @@
       ]
     },
     {
+      "organism": "Aspergillus udagawae",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Audagawae.NCBI.Audassembly02",
+          "version": "1.0.0",
+          "organism": "Aspergillus udagawae",
+          "assembly": "Aud_assembly02",
+          "provider": "NCBI",
+          "accession": "GCF_001078395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001078395.1/",
+          "file_name": "BSgenome.Audagawae.NCBI.Audassembly02_1.0.0.tar.gz",
+          "size": 8274814,
+          "seq_ids": [
+            "NW_025091264.1",
+            "NW_025091265.1",
+            "NW_025091266.1",
+            "NW_025091267.1",
+            "NW_025091268.1"
+          ],
+          "seq_count": 17,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T20:38:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Audagawae.NCBI.Audassembly02/BSgenome.Audagawae.NCBI.Audassembly02_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus wentii DTO 134E9",
       "common_name": "",
       "group": "fungi",
@@ -46133,6 +46181,38 @@
       "common_name": "",
       "published": "2026-04-05T20:38:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vgallopava.NCBI.OgallCBS43764/BSgenome.Vgallopava.NCBI.OgallCBS43764_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Audagawae.NCBI.Audassembly02",
+      "version": "1.0.0",
+      "organism": "Aspergillus udagawae",
+      "assembly": "Aud_assembly02",
+      "provider": "NCBI",
+      "accession": "GCF_001078395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001078395.1/",
+      "file_name": "BSgenome.Audagawae.NCBI.Audassembly02_1.0.0.tar.gz",
+      "size": 8274814,
+      "seq_ids": [
+        "NW_025091264.1",
+        "NW_025091265.1",
+        "NW_025091266.1",
+        "NW_025091267.1",
+        "NW_025091268.1"
+      ],
+      "seq_count": 17,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T20:38:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Audagawae.NCBI.Audassembly02/BSgenome.Audagawae.NCBI.Audassembly02_1.0.0.tar.gz"
     }
   ]
 }
