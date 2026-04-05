@@ -2185,3 +2185,7 @@ NeedsCompilation: no
 Package: BSgenome.Aruber.NCBI.Eurhe1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aclavatus.NCBI.ASM271v1
+Version: 1.0.0
+NeedsCompilation: no
