@@ -1745,3 +1745,7 @@ NeedsCompilation: no
 Package: BSgenome.Wmellicola.NCBI.Wallemiasebiv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lthermotolerans.NCBI.ASM14280v1
+Version: 1.0.0
+NeedsCompilation: no
