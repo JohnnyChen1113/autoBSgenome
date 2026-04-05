@@ -2149,3 +2149,7 @@ NeedsCompilation: no
 Package: BSgenome.Edermatitidis.NCBI.ExopdermV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acandidus.NCBI.Aspcand1
+Version: 1.0.0
+NeedsCompilation: no

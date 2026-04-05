@@ -1679,6 +1679,54 @@
       ]
     },
     {
+      "organism": "Aspergillus candidus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acandidus.NCBI.Aspcand1",
+          "version": "1.0.0",
+          "organism": "Aspergillus candidus",
+          "assembly": "Aspcand1",
+          "provider": "NCBI",
+          "accession": "GCF_002847045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002847045.1/",
+          "file_name": "BSgenome.Acandidus.NCBI.Aspcand1_1.0.0.tar.gz",
+          "size": 7236956,
+          "seq_ids": [
+            "NW_020194006.1",
+            "NW_020194007.1",
+            "NW_020194008.1",
+            "NW_020194009.1",
+            "NW_020194010.1"
+          ],
+          "seq_count": 268,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T17:35:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acandidus.NCBI.Aspcand1/BSgenome.Acandidus.NCBI.Aspcand1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus luchuensis",
       "common_name": "",
       "group": "fungi",
@@ -42619,6 +42667,38 @@
       "common_name": "",
       "published": "2026-04-05T17:35:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Edermatitidis.NCBI.ExopdermV1/BSgenome.Edermatitidis.NCBI.ExopdermV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acandidus.NCBI.Aspcand1",
+      "version": "1.0.0",
+      "organism": "Aspergillus candidus",
+      "assembly": "Aspcand1",
+      "provider": "NCBI",
+      "accession": "GCF_002847045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002847045.1/",
+      "file_name": "BSgenome.Acandidus.NCBI.Aspcand1_1.0.0.tar.gz",
+      "size": 7236956,
+      "seq_ids": [
+        "NW_020194006.1",
+        "NW_020194007.1",
+        "NW_020194008.1",
+        "NW_020194009.1",
+        "NW_020194010.1"
+      ],
+      "seq_count": 268,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T17:35:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acandidus.NCBI.Aspcand1/BSgenome.Acandidus.NCBI.Aspcand1_1.0.0.tar.gz"
     }
   ]
 }
