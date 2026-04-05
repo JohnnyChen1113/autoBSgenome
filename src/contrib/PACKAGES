@@ -1617,3 +1617,7 @@ NeedsCompilation: no
 Package: BSgenome.Skowalevskii.NCBI.Skow12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cfelis.NCBI.ASM342690v1
+Version: 1.0.0
+NeedsCompilation: no

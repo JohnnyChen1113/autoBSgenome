@@ -4764,6 +4764,54 @@
       ]
     },
     {
+      "organism": "Ctenocephalides felis",
+      "common_name": "cat flea",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Siphonaptera",
+        "family": "Pulicidae",
+        "genus": "Ctenocephalides"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cfelis.NCBI.ASM342690v1",
+          "version": "1.0.0",
+          "organism": "Ctenocephalides felis",
+          "assembly": "ASM342690v1",
+          "provider": "NCBI",
+          "accession": "GCF_003426905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003426905.1/",
+          "file_name": "BSgenome.Cfelis.NCBI.ASM342690v1_1.0.0.tar.gz",
+          "size": 190784488,
+          "seq_ids": [
+            "NW_020536155.1",
+            "NW_020536156.1",
+            "NW_020536157.1",
+            "NW_020536158.1",
+            "NW_020536159.1"
+          ],
+          "seq_count": 3733,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Siphonaptera",
+            "family": "Pulicidae",
+            "genus": "Ctenocephalides"
+          },
+          "common_name": "cat flea",
+          "published": "2026-04-05T06:47:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfelis.NCBI.ASM342690v1/BSgenome.Cfelis.NCBI.ASM342690v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cucumis sativus",
       "common_name": "cucumber",
       "group": "plant",
@@ -30380,6 +30428,38 @@
       "common_name": "",
       "published": "2026-04-05T06:46:45Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Skowalevskii.NCBI.Skow12/BSgenome.Skowalevskii.NCBI.Skow12_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cfelis.NCBI.ASM342690v1",
+      "version": "1.0.0",
+      "organism": "Ctenocephalides felis",
+      "assembly": "ASM342690v1",
+      "provider": "NCBI",
+      "accession": "GCF_003426905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003426905.1/",
+      "file_name": "BSgenome.Cfelis.NCBI.ASM342690v1_1.0.0.tar.gz",
+      "size": 190784488,
+      "seq_ids": [
+        "NW_020536155.1",
+        "NW_020536156.1",
+        "NW_020536157.1",
+        "NW_020536158.1",
+        "NW_020536159.1"
+      ],
+      "seq_count": 3733,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Siphonaptera",
+        "family": "Pulicidae",
+        "genus": "Ctenocephalides"
+      },
+      "common_name": "cat flea",
+      "published": "2026-04-05T06:47:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfelis.NCBI.ASM342690v1/BSgenome.Cfelis.NCBI.ASM342690v1_1.0.0.tar.gz"
     }
   ]
 }
