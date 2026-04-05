@@ -1977,3 +1977,7 @@ NeedsCompilation: no
 Package: BSgenome.Mantarcticus.NCBI.ASM74776v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgattii.NCBI.ASM18594v1
+Version: 1.0.0
+NeedsCompilation: no

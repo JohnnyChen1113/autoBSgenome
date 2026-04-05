@@ -5820,6 +5820,54 @@
       ]
     },
     {
+      "organism": "Cryptococcus gattii WM276",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cgattii.NCBI.ASM18594v1",
+          "version": "1.0.0",
+          "organism": "Cryptococcus gattii WM276",
+          "assembly": "ASM18594v1",
+          "provider": "NCBI",
+          "accession": "GCF_000185945.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000185945.1/",
+          "file_name": "BSgenome.Cgattii.NCBI.ASM18594v1_1.0.0.tar.gz",
+          "size": 4620592,
+          "seq_ids": [
+            "NC_014938.1",
+            "NC_014939.1",
+            "NC_014940.1",
+            "NC_014941.1",
+            "NC_014942.1"
+          ],
+          "seq_count": 14,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:09:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.NCBI.ASM18594v1/BSgenome.Cgattii.NCBI.ASM18594v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus tetragattii IND107",
       "common_name": "",
       "group": "fungi",
@@ -39217,6 +39265,38 @@
       "common_name": "",
       "published": "2026-04-05T14:09:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mantarcticus.NCBI.ASM74776v1/BSgenome.Mantarcticus.NCBI.ASM74776v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cgattii.NCBI.ASM18594v1",
+      "version": "1.0.0",
+      "organism": "Cryptococcus gattii WM276",
+      "assembly": "ASM18594v1",
+      "provider": "NCBI",
+      "accession": "GCF_000185945.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000185945.1/",
+      "file_name": "BSgenome.Cgattii.NCBI.ASM18594v1_1.0.0.tar.gz",
+      "size": 4620592,
+      "seq_ids": [
+        "NC_014938.1",
+        "NC_014939.1",
+        "NC_014940.1",
+        "NC_014941.1",
+        "NC_014942.1"
+      ],
+      "seq_count": 14,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:09:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.NCBI.ASM18594v1/BSgenome.Cgattii.NCBI.ASM18594v1_1.0.0.tar.gz"
     }
   ]
 }
