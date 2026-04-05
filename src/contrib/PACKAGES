@@ -2441,3 +2441,7 @@ NeedsCompilation: no
 Package: BSgenome.Vdahliae.NCBI.ASM15067v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aarborescens.NCBI.ASM415483v1
+Version: 1.0.0
+NeedsCompilation: no

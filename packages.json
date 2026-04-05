@@ -719,6 +719,54 @@
       ]
     },
     {
+      "organism": "Alternaria arborescens",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Alternaria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aarborescens.NCBI.ASM415483v1",
+          "version": "1.0.0",
+          "organism": "Alternaria arborescens",
+          "assembly": "ASM415483v1",
+          "provider": "NCBI",
+          "accession": "GCF_004154835.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004154835.1/",
+          "file_name": "BSgenome.Aarborescens.NCBI.ASM415483v1_1.0.0.tar.gz",
+          "size": 8849165,
+          "seq_ids": [
+            "NW_021167856.1",
+            "NW_021167865.1",
+            "NW_021167955.1",
+            "NW_021167956.1",
+            "NW_021167957.1"
+          ],
+          "seq_count": 325,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Pleosporaceae",
+            "genus": "Alternaria"
+          },
+          "common_name": "",
+          "published": "2026-04-05T23:37:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aarborescens.NCBI.ASM415483v1/BSgenome.Aarborescens.NCBI.ASM415483v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Amborella trichopoda",
       "common_name": "",
       "group": "plant",
@@ -48453,6 +48501,38 @@
       "common_name": "",
       "published": "2026-04-05T23:37:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vdahliae.NCBI.ASM15067v2/BSgenome.Vdahliae.NCBI.ASM15067v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aarborescens.NCBI.ASM415483v1",
+      "version": "1.0.0",
+      "organism": "Alternaria arborescens",
+      "assembly": "ASM415483v1",
+      "provider": "NCBI",
+      "accession": "GCF_004154835.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004154835.1/",
+      "file_name": "BSgenome.Aarborescens.NCBI.ASM415483v1_1.0.0.tar.gz",
+      "size": 8849165,
+      "seq_ids": [
+        "NW_021167856.1",
+        "NW_021167865.1",
+        "NW_021167955.1",
+        "NW_021167956.1",
+        "NW_021167957.1"
+      ],
+      "seq_count": 325,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Alternaria"
+      },
+      "common_name": "",
+      "published": "2026-04-05T23:37:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aarborescens.NCBI.ASM415483v1/BSgenome.Aarborescens.NCBI.ASM415483v1_1.0.0.tar.gz"
     }
   ]
 }
