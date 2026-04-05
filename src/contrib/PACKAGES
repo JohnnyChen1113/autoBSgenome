@@ -1733,3 +1733,7 @@ NeedsCompilation: no
 Package: BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ecymbalariae.NCBI.ASM23536v1
+Version: 1.0.0
+NeedsCompilation: no
