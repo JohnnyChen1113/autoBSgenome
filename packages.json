@@ -20391,6 +20391,54 @@
       ]
     },
     {
+      "organism": "Wallemia mellicola CBS 633.66",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Wallemiomycetes",
+        "order": "Wallemiales",
+        "family": "Wallemiaceae",
+        "genus": "Wallemia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Wmellicola.NCBI.Wallemiasebiv10",
+          "version": "1.0.0",
+          "organism": "Wallemia mellicola CBS 633.66",
+          "assembly": "Wallemia sebi v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000263375.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000263375.1/",
+          "file_name": "BSgenome.Wmellicola.NCBI.Wallemiasebiv10_1.0.0.tar.gz",
+          "size": 2553603,
+          "seq_ids": [
+            "NW_006531958.1",
+            "NW_006531959.1",
+            "NW_006531960.1",
+            "NW_006531961.1",
+            "NW_006531962.1"
+          ],
+          "seq_count": 56,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Wallemiomycetes",
+            "order": "Wallemiales",
+            "family": "Wallemiaceae",
+            "genus": "Wallemia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T09:42:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.NCBI.Wallemiasebiv10/BSgenome.Wmellicola.NCBI.Wallemiasebiv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Wasmannia auropunctata",
       "common_name": "little fire ant",
       "group": "invertebrate",
@@ -34519,6 +34567,38 @@
       "common_name": "",
       "published": "2026-04-05T09:42:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zrouxii.NCBI.ASM2636v1/BSgenome.Zrouxii.NCBI.ASM2636v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Wmellicola.NCBI.Wallemiasebiv10",
+      "version": "1.0.0",
+      "organism": "Wallemia mellicola CBS 633.66",
+      "assembly": "Wallemia sebi v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000263375.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000263375.1/",
+      "file_name": "BSgenome.Wmellicola.NCBI.Wallemiasebiv10_1.0.0.tar.gz",
+      "size": 2553603,
+      "seq_ids": [
+        "NW_006531958.1",
+        "NW_006531959.1",
+        "NW_006531960.1",
+        "NW_006531961.1",
+        "NW_006531962.1"
+      ],
+      "seq_count": 56,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Wallemiomycetes",
+        "order": "Wallemiales",
+        "family": "Wallemiaceae",
+        "genus": "Wallemia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T09:42:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.NCBI.Wallemiasebiv10/BSgenome.Wmellicola.NCBI.Wallemiasebiv10_1.0.0.tar.gz"
     }
   ]
 }
