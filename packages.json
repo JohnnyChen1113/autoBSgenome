@@ -13159,6 +13159,54 @@
       ]
     },
     {
+      "organism": "Pomacea canaliculata",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Gastropoda",
+        "order": "Architaenioglossa",
+        "family": "Ampullariidae",
+        "genus": "Pomacea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcanaliculata.NCBI.ASM307304v1",
+          "version": "1.0.0",
+          "organism": "Pomacea canaliculata",
+          "assembly": "ASM307304v1",
+          "provider": "NCBI",
+          "accession": "GCF_003073045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003073045.1/",
+          "file_name": "BSgenome.Pcanaliculata.NCBI.ASM307304v1_1.0.0.tar.gz",
+          "size": 115096913,
+          "seq_ids": [
+            "NC_037590.1",
+            "NC_037591.1",
+            "NC_037592.1",
+            "NC_037593.1",
+            "NC_037594.1"
+          ],
+          "seq_count": 24,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Mollusca",
+            "class": "Gastropoda",
+            "order": "Architaenioglossa",
+            "family": "Ampullariidae",
+            "genus": "Pomacea"
+          },
+          "common_name": "",
+          "published": "2026-04-05T05:16:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcanaliculata.NCBI.ASM307304v1/BSgenome.Pcanaliculata.NCBI.ASM307304v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Populus alba",
       "common_name": "white poplar",
       "group": "plant",
@@ -28772,6 +28820,38 @@
       "common_name": "Mediterranean fruit fly",
       "published": "2026-04-05T05:16:14Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccapitata.NCBI.Ccap21/BSgenome.Ccapitata.NCBI.Ccap21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcanaliculata.NCBI.ASM307304v1",
+      "version": "1.0.0",
+      "organism": "Pomacea canaliculata",
+      "assembly": "ASM307304v1",
+      "provider": "NCBI",
+      "accession": "GCF_003073045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003073045.1/",
+      "file_name": "BSgenome.Pcanaliculata.NCBI.ASM307304v1_1.0.0.tar.gz",
+      "size": 115096913,
+      "seq_ids": [
+        "NC_037590.1",
+        "NC_037591.1",
+        "NC_037592.1",
+        "NC_037593.1",
+        "NC_037594.1"
+      ],
+      "seq_count": 24,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Gastropoda",
+        "order": "Architaenioglossa",
+        "family": "Ampullariidae",
+        "genus": "Pomacea"
+      },
+      "common_name": "",
+      "published": "2026-04-05T05:16:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcanaliculata.NCBI.ASM307304v1/BSgenome.Pcanaliculata.NCBI.ASM307304v1_1.0.0.tar.gz"
     }
   ]
 }
