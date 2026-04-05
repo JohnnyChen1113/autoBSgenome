@@ -1055,6 +1055,54 @@
       ]
     },
     {
+      "organism": "Aplysia californica",
+      "common_name": "California sea hare",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Gastropoda",
+        "order": "Aplysiida",
+        "family": "Aplysiidae",
+        "genus": "Aplysia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acalifornica.NCBI.AplCal30",
+          "version": "1.0.0",
+          "organism": "Aplysia californica",
+          "assembly": "AplCal3.0",
+          "provider": "NCBI",
+          "accession": "GCF_000002075.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002075.1/",
+          "file_name": "BSgenome.Acalifornica.NCBI.AplCal30_1.0.0.tar.gz",
+          "size": 197156005,
+          "seq_ids": [
+            "NW_004797271.1",
+            "NW_004797272.1",
+            "NW_004797273.1",
+            "NW_004797274.1",
+            "NW_004797275.1"
+          ],
+          "seq_count": 4332,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Mollusca",
+            "class": "Gastropoda",
+            "order": "Aplysiida",
+            "family": "Aplysiidae",
+            "genus": "Aplysia"
+          },
+          "common_name": "California sea hare",
+          "published": "2026-04-05T07:57:12Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acalifornica.NCBI.AplCal30/BSgenome.Acalifornica.NCBI.AplCal30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aptenodytes forsteri",
       "common_name": "emperor penguin",
       "group": "vertebrate_other",
@@ -32213,6 +32261,38 @@
       "common_name": "bark scorpion",
       "published": "2026-04-05T07:57:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csculpturatus.NCBI.Cexi20/BSgenome.Csculpturatus.NCBI.Cexi20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acalifornica.NCBI.AplCal30",
+      "version": "1.0.0",
+      "organism": "Aplysia californica",
+      "assembly": "AplCal3.0",
+      "provider": "NCBI",
+      "accession": "GCF_000002075.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002075.1/",
+      "file_name": "BSgenome.Acalifornica.NCBI.AplCal30_1.0.0.tar.gz",
+      "size": 197156005,
+      "seq_ids": [
+        "NW_004797271.1",
+        "NW_004797272.1",
+        "NW_004797273.1",
+        "NW_004797274.1",
+        "NW_004797275.1"
+      ],
+      "seq_count": 4332,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Gastropoda",
+        "order": "Aplysiida",
+        "family": "Aplysiidae",
+        "genus": "Aplysia"
+      },
+      "common_name": "California sea hare",
+      "published": "2026-04-05T07:57:12Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acalifornica.NCBI.AplCal30/BSgenome.Acalifornica.NCBI.AplCal30_1.0.0.tar.gz"
     }
   ]
 }

@@ -1625,3 +1625,7 @@ NeedsCompilation: no
 Package: BSgenome.Csculpturatus.NCBI.Cexi20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acalifornica.NCBI.AplCal30
+Version: 1.0.0
+NeedsCompilation: no
