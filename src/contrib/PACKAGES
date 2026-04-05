@@ -2269,3 +2269,7 @@ NeedsCompilation: no
 Package: BSgenome.Hcapsulatum.NCBI.ASM15011v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cattinorum.NCBI.ASM129925v1
+Version: 1.0.0
+NeedsCompilation: no

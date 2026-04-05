@@ -7926,6 +7926,54 @@
       ]
     },
     {
+      "organism": "Cyphellophora attinorum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Cyphellophoraceae",
+        "genus": "Cyphellophora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cattinorum.NCBI.ASM129925v1",
+          "version": "1.0.0",
+          "organism": "Cyphellophora attinorum",
+          "assembly": "ASM129925v1",
+          "provider": "NCBI",
+          "accession": "GCF_001299255.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001299255.1/",
+          "file_name": "BSgenome.Cattinorum.NCBI.ASM129925v1_1.0.0.tar.gz",
+          "size": 7887288,
+          "seq_ids": [
+            "NW_017253229.1",
+            "NW_017253238.1",
+            "NW_017253326.1",
+            "NW_017253327.1",
+            "NW_017253328.1"
+          ],
+          "seq_count": 131,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Cyphellophoraceae",
+            "genus": "Cyphellophora"
+          },
+          "common_name": "",
+          "published": "2026-04-05T19:37:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cattinorum.NCBI.ASM129925v1/BSgenome.Cattinorum.NCBI.ASM129925v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyphellophora europaea CBS 101466",
       "common_name": "",
       "group": "fungi",
@@ -45013,6 +45061,38 @@
       "common_name": "",
       "published": "2026-04-05T19:37:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcapsulatum.NCBI.ASM15011v1/BSgenome.Hcapsulatum.NCBI.ASM15011v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cattinorum.NCBI.ASM129925v1",
+      "version": "1.0.0",
+      "organism": "Cyphellophora attinorum",
+      "assembly": "ASM129925v1",
+      "provider": "NCBI",
+      "accession": "GCF_001299255.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001299255.1/",
+      "file_name": "BSgenome.Cattinorum.NCBI.ASM129925v1_1.0.0.tar.gz",
+      "size": 7887288,
+      "seq_ids": [
+        "NW_017253229.1",
+        "NW_017253238.1",
+        "NW_017253326.1",
+        "NW_017253327.1",
+        "NW_017253328.1"
+      ],
+      "seq_count": 131,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Cyphellophoraceae",
+        "genus": "Cyphellophora"
+      },
+      "common_name": "",
+      "published": "2026-04-05T19:37:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cattinorum.NCBI.ASM129925v1/BSgenome.Cattinorum.NCBI.ASM129925v1_1.0.0.tar.gz"
     }
   ]
 }
