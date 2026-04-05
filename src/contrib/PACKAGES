@@ -2097,3 +2097,7 @@ NeedsCompilation: no
 Package: BSgenome.Cguamensis.NCBI.Cersp1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Xheveae.NCBI.XylonaheveaeTC161v10
+Version: 1.0.0
+NeedsCompilation: no
