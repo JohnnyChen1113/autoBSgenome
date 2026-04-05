@@ -2409,3 +2409,7 @@ NeedsCompilation: no
 Package: BSgenome.Cfumosorosea.NCBI.ISF10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vechinocandica.NCBI.ASM335714v1
+Version: 1.0.0
+NeedsCompilation: no
