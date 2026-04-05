@@ -10394,6 +10394,54 @@
       ]
     },
     {
+      "organism": "Malassezia globosa CBS 7966",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Malasseziomycetes",
+        "order": "Malasseziales",
+        "family": "Malasseziaceae",
+        "genus": "Malassezia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mglobosa.NCBI.ASM18169v2",
+          "version": "1.0.0",
+          "organism": "Malassezia globosa CBS 7966",
+          "assembly": "ASM18169v2",
+          "provider": "NCBI",
+          "accession": "GCF_000181695.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000181695.2/",
+          "file_name": "BSgenome.Mglobosa.NCBI.ASM18169v2_1.0.0.tar.gz",
+          "size": 2315065,
+          "seq_ids": [
+            "NW_001849833.1",
+            "NW_001849835.1",
+            "NW_001849836.1",
+            "NW_001849837.1",
+            "NW_001849838.1"
+          ],
+          "seq_count": 62,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Malasseziomycetes",
+            "order": "Malasseziales",
+            "family": "Malasseziaceae",
+            "genus": "Malassezia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T08:49:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mglobosa.NCBI.ASM18169v2/BSgenome.Mglobosa.NCBI.ASM18169v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Malassezia pachydermatis",
       "common_name": "",
       "group": "fungi",
@@ -33801,6 +33849,38 @@
       "common_name": "",
       "published": "2026-04-05T08:49:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Esinecaudum.NCBI.ASM154855v1/BSgenome.Esinecaudum.NCBI.ASM154855v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mglobosa.NCBI.ASM18169v2",
+      "version": "1.0.0",
+      "organism": "Malassezia globosa CBS 7966",
+      "assembly": "ASM18169v2",
+      "provider": "NCBI",
+      "accession": "GCF_000181695.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000181695.2/",
+      "file_name": "BSgenome.Mglobosa.NCBI.ASM18169v2_1.0.0.tar.gz",
+      "size": 2315065,
+      "seq_ids": [
+        "NW_001849833.1",
+        "NW_001849835.1",
+        "NW_001849836.1",
+        "NW_001849837.1",
+        "NW_001849838.1"
+      ],
+      "seq_count": 62,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Malasseziomycetes",
+        "order": "Malasseziales",
+        "family": "Malasseziaceae",
+        "genus": "Malassezia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T08:49:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mglobosa.NCBI.ASM18169v2/BSgenome.Mglobosa.NCBI.ASM18169v2_1.0.0.tar.gz"
     }
   ]
 }
