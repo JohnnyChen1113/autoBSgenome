@@ -10380,6 +10380,54 @@
       ]
     },
     {
+      "organism": "Exophiala mesophila",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Exophiala"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1",
+          "version": "1.0.0",
+          "organism": "Exophiala mesophila",
+          "assembly": "Exop_meso_CBS40295_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000836275.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836275.1/",
+          "file_name": "BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1_1.0.0.tar.gz",
+          "size": 7600087,
+          "seq_ids": [
+            "NW_015622504.1",
+            "NW_015622505.1",
+            "NW_015622506.1",
+            "NW_015622507.1",
+            "NW_015622508.1"
+          ],
+          "seq_count": 9,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Exophiala"
+          },
+          "common_name": "",
+          "published": "2026-04-05T18:50:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1/BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fibroporia radiculosa",
       "common_name": "",
       "group": "fungi",
@@ -44133,6 +44181,38 @@
       "common_name": "",
       "published": "2026-04-05T18:50:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgriseofulvum.NCBI.ASM156193v1/BSgenome.Pgriseofulvum.NCBI.ASM156193v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1",
+      "version": "1.0.0",
+      "organism": "Exophiala mesophila",
+      "assembly": "Exop_meso_CBS40295_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000836275.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836275.1/",
+      "file_name": "BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1_1.0.0.tar.gz",
+      "size": 7600087,
+      "seq_ids": [
+        "NW_015622504.1",
+        "NW_015622505.1",
+        "NW_015622506.1",
+        "NW_015622507.1",
+        "NW_015622508.1"
+      ],
+      "seq_count": 9,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Exophiala"
+      },
+      "common_name": "",
+      "published": "2026-04-05T18:50:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1/BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1_1.0.0.tar.gz"
     }
   ]
 }

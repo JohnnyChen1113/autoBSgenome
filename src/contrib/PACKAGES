@@ -2225,3 +2225,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgriseofulvum.NCBI.ASM156193v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1
+Version: 1.0.0
+NeedsCompilation: no
