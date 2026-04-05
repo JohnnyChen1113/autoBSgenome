@@ -1477,3 +1477,7 @@ NeedsCompilation: no
 Package: BSgenome.Vdestructor.NCBI.Vdes30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nfulva.NCBI.TAMUNfulva11
+Version: 1.0.0
+NeedsCompilation: no

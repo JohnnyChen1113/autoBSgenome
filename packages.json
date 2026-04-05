@@ -10547,6 +10547,54 @@
       ]
     },
     {
+      "organism": "Nylanderia fulva",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Nylanderia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nfulva.NCBI.TAMUNfulva11",
+          "version": "1.0.0",
+          "organism": "Nylanderia fulva",
+          "assembly": "TAMU_Nfulva_1.1",
+          "provider": "NCBI",
+          "accession": "GCF_005281655.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_005281655.2/",
+          "file_name": "BSgenome.Nfulva.NCBI.TAMUNfulva11_1.0.0.tar.gz",
+          "size": 93778771,
+          "seq_ids": [
+            "NW_021693877.1",
+            "NW_021693878.1",
+            "NW_021693879.1",
+            "NW_021693880.1",
+            "NW_021693881.1"
+          ],
+          "seq_count": 2842,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Hymenoptera",
+            "family": "Formicidae",
+            "genus": "Nylanderia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T02:41:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nfulva.NCBI.TAMUNfulva11/BSgenome.Nfulva.NCBI.TAMUNfulva11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nymphaea colorata",
       "common_name": "pocket water lily",
       "group": "plant",
@@ -27652,6 +27700,38 @@
       "common_name": "honeybee mite",
       "published": "2026-04-05T02:41:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vdestructor.NCBI.Vdes30/BSgenome.Vdestructor.NCBI.Vdes30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nfulva.NCBI.TAMUNfulva11",
+      "version": "1.0.0",
+      "organism": "Nylanderia fulva",
+      "assembly": "TAMU_Nfulva_1.1",
+      "provider": "NCBI",
+      "accession": "GCF_005281655.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_005281655.2/",
+      "file_name": "BSgenome.Nfulva.NCBI.TAMUNfulva11_1.0.0.tar.gz",
+      "size": 93778771,
+      "seq_ids": [
+        "NW_021693877.1",
+        "NW_021693878.1",
+        "NW_021693879.1",
+        "NW_021693880.1",
+        "NW_021693881.1"
+      ],
+      "seq_count": 2842,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Hymenoptera",
+        "family": "Formicidae",
+        "genus": "Nylanderia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T02:41:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nfulva.NCBI.TAMUNfulva11/BSgenome.Nfulva.NCBI.TAMUNfulva11_1.0.0.tar.gz"
     }
   ]
 }
