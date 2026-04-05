@@ -2201,3 +2201,7 @@ NeedsCompilation: no
 Package: BSgenome.Tmesenterica.NCBI.Treme1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Capollinis.NCBI.ConiapolCBS100218V1
+Version: 1.0.0
+NeedsCompilation: no

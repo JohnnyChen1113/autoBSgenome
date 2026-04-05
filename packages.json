@@ -6012,6 +6012,50 @@
       ]
     },
     {
+      "organism": "Coniosporium apollinis CBS 100218",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "genus": "Coniosporium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Capollinis.NCBI.ConiapolCBS100218V1",
+          "version": "1.0.0",
+          "organism": "Coniosporium apollinis CBS 100218",
+          "assembly": "Coni_apol_CBS100218 _V1",
+          "provider": "NCBI",
+          "accession": "GCF_000281105.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000281105.1/",
+          "file_name": "BSgenome.Capollinis.NCBI.ConiapolCBS100218V1_1.0.0.tar.gz",
+          "size": 7447859,
+          "seq_ids": [
+            "NW_006913263.1",
+            "NW_006913264.1",
+            "NW_006913265.1",
+            "NW_006913266.1",
+            "NW_006913267.1"
+          ],
+          "seq_count": 169,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "genus": "Coniosporium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T18:49:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Capollinis.NCBI.ConiapolCBS100218V1/BSgenome.Capollinis.NCBI.ConiapolCBS100218V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Contarinia nasturtii",
       "common_name": "swede midge",
       "group": "invertebrate",
@@ -43659,6 +43703,36 @@
       "common_name": "",
       "published": "2026-04-05T18:49:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmesenterica.NCBI.Treme1/BSgenome.Tmesenterica.NCBI.Treme1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Capollinis.NCBI.ConiapolCBS100218V1",
+      "version": "1.0.0",
+      "organism": "Coniosporium apollinis CBS 100218",
+      "assembly": "Coni_apol_CBS100218 _V1",
+      "provider": "NCBI",
+      "accession": "GCF_000281105.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000281105.1/",
+      "file_name": "BSgenome.Capollinis.NCBI.ConiapolCBS100218V1_1.0.0.tar.gz",
+      "size": 7447859,
+      "seq_ids": [
+        "NW_006913263.1",
+        "NW_006913264.1",
+        "NW_006913265.1",
+        "NW_006913266.1",
+        "NW_006913267.1"
+      ],
+      "seq_count": 169,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "genus": "Coniosporium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T18:49:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Capollinis.NCBI.ConiapolCBS100218V1/BSgenome.Capollinis.NCBI.ConiapolCBS100218V1_1.0.0.tar.gz"
     }
   ]
 }
