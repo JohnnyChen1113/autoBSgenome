@@ -26690,6 +26690,54 @@
       ]
     },
     {
+      "organism": "Verruconis gallopava",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Venturiales",
+        "family": "Sympoventuriaceae",
+        "genus": "Verruconis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vgallopava.NCBI.OgallCBS43764",
+          "version": "1.0.0",
+          "organism": "Verruconis gallopava",
+          "assembly": "O_gall_CBS43764",
+          "provider": "NCBI",
+          "accession": "GCF_000836295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836295.1/",
+          "file_name": "BSgenome.Vgallopava.NCBI.OgallCBS43764_1.0.0.tar.gz",
+          "size": 8073168,
+          "seq_ids": [
+            "NW_015622137.1",
+            "NW_015622138.1",
+            "NW_015622139.1",
+            "NW_015622140.1",
+            "NW_015622141.1"
+          ],
+          "seq_count": 367,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Venturiales",
+            "family": "Sympoventuriaceae",
+            "genus": "Verruconis"
+          },
+          "common_name": "",
+          "published": "2026-04-05T20:38:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vgallopava.NCBI.OgallCBS43764/BSgenome.Vgallopava.NCBI.OgallCBS43764_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Verticillium nonalfalfae",
       "common_name": "",
       "group": "fungi",
@@ -46053,6 +46101,38 @@
       "common_name": "",
       "published": "2026-04-05T20:38:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vnonalfalfae.NCBI.ASM372413v2/BSgenome.Vnonalfalfae.NCBI.ASM372413v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vgallopava.NCBI.OgallCBS43764",
+      "version": "1.0.0",
+      "organism": "Verruconis gallopava",
+      "assembly": "O_gall_CBS43764",
+      "provider": "NCBI",
+      "accession": "GCF_000836295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000836295.1/",
+      "file_name": "BSgenome.Vgallopava.NCBI.OgallCBS43764_1.0.0.tar.gz",
+      "size": 8073168,
+      "seq_ids": [
+        "NW_015622137.1",
+        "NW_015622138.1",
+        "NW_015622139.1",
+        "NW_015622140.1",
+        "NW_015622141.1"
+      ],
+      "seq_count": 367,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Venturiales",
+        "family": "Sympoventuriaceae",
+        "genus": "Verruconis"
+      },
+      "common_name": "",
+      "published": "2026-04-05T20:38:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vgallopava.NCBI.OgallCBS43764/BSgenome.Vgallopava.NCBI.OgallCBS43764_1.0.0.tar.gz"
     }
   ]
 }
