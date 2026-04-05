@@ -1633,3 +1633,7 @@ NeedsCompilation: no
 Package: BSgenome.Myessoensis.NCBI.ASM211388v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csecundus.NCBI.Csec10
+Version: 1.0.0
+NeedsCompilation: no
