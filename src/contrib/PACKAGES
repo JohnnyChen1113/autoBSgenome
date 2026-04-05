@@ -2081,3 +2081,7 @@ NeedsCompilation: no
 Package: BSgenome.Bdendrobatidis.NCBI.v11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rgraminis.NCBI.Rhoba11
+Version: 1.0.0
+NeedsCompilation: no

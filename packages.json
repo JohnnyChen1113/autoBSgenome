@@ -19878,6 +19878,54 @@
       ]
     },
     {
+      "organism": "Rhodotorula graminis WP1",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Microbotryomycetes",
+        "order": "Sporidiobolales",
+        "family": "Sporidiobolaceae",
+        "genus": "Rhodotorula"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rgraminis.NCBI.Rhoba11",
+          "version": "1.0.0",
+          "organism": "Rhodotorula graminis WP1",
+          "assembly": "Rhoba1_1",
+          "provider": "NCBI",
+          "accession": "GCF_001329695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001329695.1/",
+          "file_name": "BSgenome.Rgraminis.NCBI.Rhoba11_1.0.0.tar.gz",
+          "size": 5536397,
+          "seq_ids": [
+            "NW_017264928.1",
+            "NW_017264929.1",
+            "NW_017264930.1",
+            "NW_017264931.1",
+            "NW_017264932.1"
+          ],
+          "seq_count": 26,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Microbotryomycetes",
+            "order": "Sporidiobolales",
+            "family": "Sporidiobolaceae",
+            "genus": "Rhodotorula"
+          },
+          "common_name": "",
+          "published": "2026-04-05T16:40:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rgraminis.NCBI.Rhoba11/BSgenome.Rgraminis.NCBI.Rhoba11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhodotorula toruloides NP11",
       "common_name": "",
       "group": "fungi",
@@ -41283,6 +41331,38 @@
       "common_name": "",
       "published": "2026-04-05T15:58:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdendrobatidis.NCBI.v11/BSgenome.Bdendrobatidis.NCBI.v11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rgraminis.NCBI.Rhoba11",
+      "version": "1.0.0",
+      "organism": "Rhodotorula graminis WP1",
+      "assembly": "Rhoba1_1",
+      "provider": "NCBI",
+      "accession": "GCF_001329695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001329695.1/",
+      "file_name": "BSgenome.Rgraminis.NCBI.Rhoba11_1.0.0.tar.gz",
+      "size": 5536397,
+      "seq_ids": [
+        "NW_017264928.1",
+        "NW_017264929.1",
+        "NW_017264930.1",
+        "NW_017264931.1",
+        "NW_017264932.1"
+      ],
+      "seq_count": 26,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Microbotryomycetes",
+        "order": "Sporidiobolales",
+        "family": "Sporidiobolaceae",
+        "genus": "Rhodotorula"
+      },
+      "common_name": "",
+      "published": "2026-04-05T16:40:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rgraminis.NCBI.Rhoba11/BSgenome.Rgraminis.NCBI.Rhoba11_1.0.0.tar.gz"
     }
   ]
 }
