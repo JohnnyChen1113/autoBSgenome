@@ -2057,3 +2057,7 @@ NeedsCompilation: no
 Package: BSgenome.Trubrum.NCBI.ASM15142v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tverrucosum.NCBI.ASM15150v1
+Version: 1.0.0
+NeedsCompilation: no

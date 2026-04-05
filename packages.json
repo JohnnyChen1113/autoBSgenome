@@ -23121,6 +23121,54 @@
       ]
     },
     {
+      "organism": "Trichophyton verrucosum HKI 0517",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Arthrodermataceae",
+        "genus": "Trichophyton"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tverrucosum.NCBI.ASM15150v1",
+          "version": "1.0.0",
+          "organism": "Trichophyton verrucosum HKI 0517",
+          "assembly": "ASM15150v1",
+          "provider": "NCBI",
+          "accession": "GCF_000151505.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000151505.1/",
+          "file_name": "BSgenome.Tverrucosum.NCBI.ASM15150v1_1.0.0.tar.gz",
+          "size": 6021229,
+          "seq_ids": [
+            "NW_003315114.1",
+            "NW_003315115.1",
+            "NW_003315116.1",
+            "NW_003315117.1",
+            "NW_003315118.1"
+          ],
+          "seq_count": 523,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Onygenales",
+            "family": "Arthrodermataceae",
+            "genus": "Trichophyton"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:57:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tverrucosum.NCBI.ASM15150v1/BSgenome.Tverrucosum.NCBI.ASM15150v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichoplax adhaerens",
       "common_name": "",
       "group": "invertebrate",
@@ -40808,6 +40856,38 @@
       "common_name": "",
       "published": "2026-04-05T15:57:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Trubrum.NCBI.ASM15142v1/BSgenome.Trubrum.NCBI.ASM15142v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tverrucosum.NCBI.ASM15150v1",
+      "version": "1.0.0",
+      "organism": "Trichophyton verrucosum HKI 0517",
+      "assembly": "ASM15150v1",
+      "provider": "NCBI",
+      "accession": "GCF_000151505.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000151505.1/",
+      "file_name": "BSgenome.Tverrucosum.NCBI.ASM15150v1_1.0.0.tar.gz",
+      "size": 6021229,
+      "seq_ids": [
+        "NW_003315114.1",
+        "NW_003315115.1",
+        "NW_003315116.1",
+        "NW_003315117.1",
+        "NW_003315118.1"
+      ],
+      "seq_count": 523,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Arthrodermataceae",
+        "genus": "Trichophyton"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:57:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tverrucosum.NCBI.ASM15150v1/BSgenome.Tverrucosum.NCBI.ASM15150v1_1.0.0.tar.gz"
     }
   ]
 }
