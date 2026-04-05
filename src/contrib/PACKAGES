@@ -2005,3 +2005,7 @@ NeedsCompilation: no
 Package: BSgenome.Aingoldii.NCBI.Acain1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmaydis.NCBI.Umaydis52120
+Version: 1.0.0
+NeedsCompilation: no

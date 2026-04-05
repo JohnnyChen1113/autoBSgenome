@@ -13818,6 +13818,52 @@
       ]
     },
     {
+      "organism": "Mycosarcoma maydis",
+      "common_name": "corn smut",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Ustilaginomycetes",
+        "order": "Ustilaginales",
+        "genus": "Mycosarcoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mmaydis.NCBI.Umaydis52120",
+          "version": "1.0.0",
+          "organism": "Mycosarcoma maydis",
+          "assembly": "Umaydis521_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000328475.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000328475.2/",
+          "file_name": "BSgenome.Mmaydis.NCBI.Umaydis52120_1.0.0.tar.gz",
+          "size": 5178689,
+          "seq_ids": [
+            "NC_026478.1",
+            "NC_026479.1",
+            "NC_026480.1",
+            "NC_026481.1",
+            "NC_026482.1"
+          ],
+          "seq_count": 27,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Ustilaginomycetes",
+            "order": "Ustilaginales",
+            "genus": "Mycosarcoma"
+          },
+          "common_name": "corn smut",
+          "published": "2026-04-05T15:04:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmaydis.NCBI.Umaydis52120/BSgenome.Mmaydis.NCBI.Umaydis52120_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Myotis brandtii",
       "common_name": "Brandt's bat",
       "group": "vertebrate_mammalian",
@@ -39774,6 +39820,37 @@
       "common_name": "",
       "published": "2026-04-05T15:03:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aingoldii.NCBI.Acain1/BSgenome.Aingoldii.NCBI.Acain1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmaydis.NCBI.Umaydis52120",
+      "version": "1.0.0",
+      "organism": "Mycosarcoma maydis",
+      "assembly": "Umaydis521_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000328475.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000328475.2/",
+      "file_name": "BSgenome.Mmaydis.NCBI.Umaydis52120_1.0.0.tar.gz",
+      "size": 5178689,
+      "seq_ids": [
+        "NC_026478.1",
+        "NC_026479.1",
+        "NC_026480.1",
+        "NC_026481.1",
+        "NC_026482.1"
+      ],
+      "seq_count": 27,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Ustilaginomycetes",
+        "order": "Ustilaginales",
+        "genus": "Mycosarcoma"
+      },
+      "common_name": "corn smut",
+      "published": "2026-04-05T15:04:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmaydis.NCBI.Umaydis52120/BSgenome.Mmaydis.NCBI.Umaydis52120_1.0.0.tar.gz"
     }
   ]
 }
