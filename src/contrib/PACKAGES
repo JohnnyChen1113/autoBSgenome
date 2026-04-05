@@ -1853,3 +1853,7 @@ NeedsCompilation: no
 Package: BSgenome.Corthopsilosis.NCBI.ASM31587v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cparapsilosis.NCBI.ASM18276v2
+Version: 1.0.0
+NeedsCompilation: no
