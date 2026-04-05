@@ -2340,6 +2340,54 @@
       ]
     },
     {
+      "organism": "Aspergillus wentii DTO 134E9",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Awentii.NCBI.Aspwe1",
+          "version": "1.0.0",
+          "organism": "Aspergillus wentii DTO 134E9",
+          "assembly": "Aspwe1",
+          "provider": "NCBI",
+          "accession": "GCF_001890725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001890725.1/",
+          "file_name": "BSgenome.Awentii.NCBI.Aspwe1_1.0.0.tar.gz",
+          "size": 8183612,
+          "seq_ids": [
+            "NW_024467832.1",
+            "NW_024467833.1",
+            "NW_024467834.1",
+            "NW_024467835.1",
+            "NW_024467836.1"
+          ],
+          "seq_count": 27,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T20:37:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Awentii.NCBI.Aspwe1/BSgenome.Awentii.NCBI.Aspwe1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Athene cunicularia",
       "common_name": "burrowing owl",
       "group": "vertebrate_other",
@@ -45653,6 +45701,38 @@
       "common_name": "",
       "published": "2026-04-05T20:37:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10/BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Awentii.NCBI.Aspwe1",
+      "version": "1.0.0",
+      "organism": "Aspergillus wentii DTO 134E9",
+      "assembly": "Aspwe1",
+      "provider": "NCBI",
+      "accession": "GCF_001890725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001890725.1/",
+      "file_name": "BSgenome.Awentii.NCBI.Aspwe1_1.0.0.tar.gz",
+      "size": 8183612,
+      "seq_ids": [
+        "NW_024467832.1",
+        "NW_024467833.1",
+        "NW_024467834.1",
+        "NW_024467835.1",
+        "NW_024467836.1"
+      ],
+      "seq_count": 27,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T20:37:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Awentii.NCBI.Aspwe1/BSgenome.Awentii.NCBI.Aspwe1_1.0.0.tar.gz"
     }
   ]
 }

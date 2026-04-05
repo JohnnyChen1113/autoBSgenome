@@ -2301,3 +2301,7 @@ NeedsCompilation: no
 Package: BSgenome.Bzeicola.NCBI.Cochlioboluscarbonumv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Awentii.NCBI.Aspwe1
+Version: 1.0.0
+NeedsCompilation: no
