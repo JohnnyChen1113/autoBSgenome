@@ -15216,6 +15216,54 @@
       ]
     },
     {
+      "organism": "Spodoptera litura",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Noctuidae",
+        "genus": "Spodoptera"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Slitura.NCBI.ASM270686v3",
+          "version": "1.0.0",
+          "organism": "Spodoptera litura",
+          "assembly": "ASM270686v3",
+          "provider": "NCBI",
+          "accession": "GCF_002706865.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002706865.2/",
+          "file_name": "BSgenome.Slitura.NCBI.ASM270686v3_1.0.0.tar.gz",
+          "size": 110670624,
+          "seq_ids": [
+            "NC_036187.1",
+            "NC_036188.1",
+            "NC_036189.1",
+            "NC_036190.1",
+            "NC_036191.1"
+          ],
+          "seq_count": 1774,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Lepidoptera",
+            "family": "Noctuidae",
+            "genus": "Spodoptera"
+          },
+          "common_name": "",
+          "published": "2026-04-05T05:15:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slitura.NCBI.ASM270686v3/BSgenome.Slitura.NCBI.ASM270686v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Stegastes partitus",
       "common_name": "bicolor damselfish",
       "group": "vertebrate_other",
@@ -28532,6 +28580,38 @@
       "common_name": "",
       "published": "2026-04-05T05:15:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lanatina.NCBI.LinAna20/BSgenome.Lanatina.NCBI.LinAna20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Slitura.NCBI.ASM270686v3",
+      "version": "1.0.0",
+      "organism": "Spodoptera litura",
+      "assembly": "ASM270686v3",
+      "provider": "NCBI",
+      "accession": "GCF_002706865.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002706865.2/",
+      "file_name": "BSgenome.Slitura.NCBI.ASM270686v3_1.0.0.tar.gz",
+      "size": 110670624,
+      "seq_ids": [
+        "NC_036187.1",
+        "NC_036188.1",
+        "NC_036189.1",
+        "NC_036190.1",
+        "NC_036191.1"
+      ],
+      "seq_count": 1774,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Noctuidae",
+        "genus": "Spodoptera"
+      },
+      "common_name": "",
+      "published": "2026-04-05T05:15:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slitura.NCBI.ASM270686v3/BSgenome.Slitura.NCBI.ASM270686v3_1.0.0.tar.gz"
     }
   ]
 }

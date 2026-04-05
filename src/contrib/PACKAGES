@@ -1521,3 +1521,7 @@ NeedsCompilation: no
 Package: BSgenome.Lanatina.NCBI.LinAna20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Slitura.NCBI.ASM270686v3
+Version: 1.0.0
+NeedsCompilation: no
