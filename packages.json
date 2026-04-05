@@ -16010,6 +16010,54 @@
       ]
     },
     {
+      "organism": "Rhagoletis zephyria",
+      "common_name": "snowberry fruit fly",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Tephritidae",
+        "genus": "Rhagoletis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11",
+          "version": "1.0.0",
+          "organism": "Rhagoletis zephyria",
+          "assembly": "Rhagoletis_zephyria_1.1",
+          "provider": "NCBI",
+          "accession": "GCF_001687245.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001687245.2/",
+          "file_name": "BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11_1.0.0.tar.gz",
+          "size": 283132595,
+          "seq_ids": [
+            "NW_016157085.1",
+            "NW_016157086.1",
+            "NW_016157087.1",
+            "NW_016157088.1",
+            "NW_016157089.1"
+          ],
+          "seq_count": 84794,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Tephritidae",
+            "genus": "Rhagoletis"
+          },
+          "common_name": "snowberry fruit fly",
+          "published": "2026-04-05T07:58:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11/BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhinolophus ferrumequinum",
       "common_name": "greater horseshoe bat",
       "group": "vertebrate_mammalian",
@@ -32527,6 +32575,38 @@
       "common_name": "",
       "published": "2026-04-05T07:57:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vceranae.NCBI.ASM98816v1/BSgenome.Vceranae.NCBI.ASM98816v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11",
+      "version": "1.0.0",
+      "organism": "Rhagoletis zephyria",
+      "assembly": "Rhagoletis_zephyria_1.1",
+      "provider": "NCBI",
+      "accession": "GCF_001687245.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001687245.2/",
+      "file_name": "BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11_1.0.0.tar.gz",
+      "size": 283132595,
+      "seq_ids": [
+        "NW_016157085.1",
+        "NW_016157086.1",
+        "NW_016157087.1",
+        "NW_016157088.1",
+        "NW_016157089.1"
+      ],
+      "seq_count": 84794,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Tephritidae",
+        "genus": "Rhagoletis"
+      },
+      "common_name": "snowberry fruit fly",
+      "published": "2026-04-05T07:58:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11/BSgenome.Rzephyria.NCBI.Rhagoletiszephyria11_1.0.0.tar.gz"
     }
   ]
 }
