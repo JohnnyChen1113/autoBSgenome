@@ -1685,3 +1685,7 @@ NeedsCompilation: no
 Package: BSgenome.Msympodialis.NCBI.ASM34930v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wsorbophila.NCBI.ASM225199v2
+Version: 1.0.0
+NeedsCompilation: no
