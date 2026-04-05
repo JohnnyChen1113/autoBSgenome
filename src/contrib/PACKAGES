@@ -2009,3 +2009,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmaydis.NCBI.Umaydis52120
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Coleaginosum.NCBI.ASM806530v1
+Version: 1.0.0
+NeedsCompilation: no

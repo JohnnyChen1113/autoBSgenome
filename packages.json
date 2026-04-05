@@ -6348,6 +6348,54 @@
       ]
     },
     {
+      "organism": "Cutaneotrichosporon oleaginosum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Trichosporonales",
+        "family": "Trichosporonaceae",
+        "genus": "Cutaneotrichosporon"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Coleaginosum.NCBI.ASM806530v1",
+          "version": "1.0.0",
+          "organism": "Cutaneotrichosporon oleaginosum",
+          "assembly": "ASM806530v1",
+          "provider": "NCBI",
+          "accession": "GCF_008065305.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008065305.1/",
+          "file_name": "BSgenome.Coleaginosum.NCBI.ASM806530v1_1.0.0.tar.gz",
+          "size": 5267207,
+          "seq_ids": [
+            "NW_027072170.1",
+            "NW_027072171.1",
+            "NW_027072172.1",
+            "NW_027072173.1",
+            "NW_027072174.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Trichosporonales",
+            "family": "Trichosporonaceae",
+            "genus": "Cutaneotrichosporon"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:04:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Coleaginosum.NCBI.ASM806530v1/BSgenome.Coleaginosum.NCBI.ASM806530v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyanistes caeruleus",
       "common_name": "blue tit",
       "group": "vertebrate_other",
@@ -39851,6 +39899,38 @@
       "common_name": "corn smut",
       "published": "2026-04-05T15:04:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmaydis.NCBI.Umaydis52120/BSgenome.Mmaydis.NCBI.Umaydis52120_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Coleaginosum.NCBI.ASM806530v1",
+      "version": "1.0.0",
+      "organism": "Cutaneotrichosporon oleaginosum",
+      "assembly": "ASM806530v1",
+      "provider": "NCBI",
+      "accession": "GCF_008065305.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008065305.1/",
+      "file_name": "BSgenome.Coleaginosum.NCBI.ASM806530v1_1.0.0.tar.gz",
+      "size": 5267207,
+      "seq_ids": [
+        "NW_027072170.1",
+        "NW_027072171.1",
+        "NW_027072172.1",
+        "NW_027072173.1",
+        "NW_027072174.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Trichosporonales",
+        "family": "Trichosporonaceae",
+        "genus": "Cutaneotrichosporon"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:04:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Coleaginosum.NCBI.ASM806530v1/BSgenome.Coleaginosum.NCBI.ASM806530v1_1.0.0.tar.gz"
     }
   ]
 }
