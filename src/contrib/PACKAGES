@@ -1621,3 +1621,7 @@ NeedsCompilation: no
 Package: BSgenome.Cfelis.NCBI.ASM342690v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csculpturatus.NCBI.Cexi20
+Version: 1.0.0
+NeedsCompilation: no
