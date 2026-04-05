@@ -14876,6 +14876,54 @@
       ]
     },
     {
+      "organism": "Metarhizium album ARSEF 1941",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Metarhizium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome",
+          "version": "1.0.0",
+          "organism": "Metarhizium album ARSEF 1941",
+          "assembly": "MAM 1.0 for version 1 of the Metarhizium album genome",
+          "provider": "NCBI",
+          "accession": "GCF_000804445.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000804445.1/",
+          "file_name": "BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome_1.0.0.tar.gz",
+          "size": 7855696,
+          "seq_ids": [
+            "NW_024467575.1",
+            "NW_024467584.1",
+            "NW_024467674.1",
+            "NW_024467675.1",
+            "NW_024467676.1"
+          ],
+          "seq_count": 257,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Clavicipitaceae",
+            "genus": "Metarhizium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T19:37:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome/BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Metschnikowia bicuspidata var. bicuspidata NRRL YB-4993",
       "common_name": "",
       "group": "fungi",
@@ -45093,6 +45141,38 @@
       "common_name": "",
       "published": "2026-04-05T19:37:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cattinorum.NCBI.ASM129925v1/BSgenome.Cattinorum.NCBI.ASM129925v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome",
+      "version": "1.0.0",
+      "organism": "Metarhizium album ARSEF 1941",
+      "assembly": "MAM 1.0 for version 1 of the Metarhizium album genome",
+      "provider": "NCBI",
+      "accession": "GCF_000804445.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000804445.1/",
+      "file_name": "BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome_1.0.0.tar.gz",
+      "size": 7855696,
+      "seq_ids": [
+        "NW_024467575.1",
+        "NW_024467584.1",
+        "NW_024467674.1",
+        "NW_024467675.1",
+        "NW_024467676.1"
+      ],
+      "seq_count": 257,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Metarhizium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T19:37:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome/BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome_1.0.0.tar.gz"
     }
   ]
 }

@@ -2273,3 +2273,7 @@ NeedsCompilation: no
 Package: BSgenome.Cattinorum.NCBI.ASM129925v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Malbum.NCBI.MAM10forversion1oftheMetarhiziumalbumgenome
+Version: 1.0.0
+NeedsCompilation: no
