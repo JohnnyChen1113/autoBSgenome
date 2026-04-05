@@ -1565,3 +1565,7 @@ NeedsCompilation: no
 Package: BSgenome.Bbelcheri.NCBI.Haploidv18h27
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Adigitifera.NCBI.Adig11
+Version: 1.0.0
+NeedsCompilation: no
