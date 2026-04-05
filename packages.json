@@ -8816,6 +8816,54 @@
       ]
     },
     {
+      "organism": "Haliotis rubra",
+      "common_name": "blacklip abalone",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Gastropoda",
+        "order": "Lepetellida",
+        "family": "Haliotidae",
+        "genus": "Haliotis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hrubra.NCBI.ASM391887v1",
+          "version": "1.0.0",
+          "organism": "Haliotis rubra",
+          "assembly": "ASM391887v1",
+          "provider": "NCBI",
+          "accession": "GCF_003918875.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003918875.1/",
+          "file_name": "BSgenome.Hrubra.NCBI.ASM391887v1_1.0.0.tar.gz",
+          "size": 333924027,
+          "seq_ids": [
+            "NW_025764891.1",
+            "NW_025764892.1",
+            "NW_025764893.1",
+            "NW_025764894.1",
+            "NW_025764895.1"
+          ],
+          "seq_count": 2855,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Mollusca",
+            "class": "Gastropoda",
+            "order": "Lepetellida",
+            "family": "Haliotidae",
+            "genus": "Haliotis"
+          },
+          "common_name": "blacklip abalone",
+          "published": "2026-04-05T07:58:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hrubra.NCBI.ASM391887v1/BSgenome.Hrubra.NCBI.ASM391887v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Harpegnathos saltator",
       "common_name": "Jerdon's jumping ant",
       "group": "invertebrate",
@@ -32681,6 +32729,38 @@
       "common_name": "",
       "published": "2026-04-05T07:58:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vculicis.NCBI.VavrculifloridensisV1/BSgenome.Vculicis.NCBI.VavrculifloridensisV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hrubra.NCBI.ASM391887v1",
+      "version": "1.0.0",
+      "organism": "Haliotis rubra",
+      "assembly": "ASM391887v1",
+      "provider": "NCBI",
+      "accession": "GCF_003918875.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003918875.1/",
+      "file_name": "BSgenome.Hrubra.NCBI.ASM391887v1_1.0.0.tar.gz",
+      "size": 333924027,
+      "seq_ids": [
+        "NW_025764891.1",
+        "NW_025764892.1",
+        "NW_025764893.1",
+        "NW_025764894.1",
+        "NW_025764895.1"
+      ],
+      "seq_count": 2855,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Gastropoda",
+        "order": "Lepetellida",
+        "family": "Haliotidae",
+        "genus": "Haliotis"
+      },
+      "common_name": "blacklip abalone",
+      "published": "2026-04-05T07:58:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hrubra.NCBI.ASM391887v1/BSgenome.Hrubra.NCBI.ASM391887v1_1.0.0.tar.gz"
     }
   ]
 }

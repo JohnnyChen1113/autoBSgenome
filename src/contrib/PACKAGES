@@ -1649,3 +1649,7 @@ NeedsCompilation: no
 Package: BSgenome.Vculicis.NCBI.VavrculifloridensisV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hrubra.NCBI.ASM391887v1
+Version: 1.0.0
+NeedsCompilation: no
