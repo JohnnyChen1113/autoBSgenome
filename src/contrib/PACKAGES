@@ -2209,3 +2209,7 @@ NeedsCompilation: no
 Package: BSgenome.Ceuropaea.NCBI.PhiaeuroCBS101466V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cepimyces.NCBI.CaprepimCBS60696V1
+Version: 1.0.0
+NeedsCompilation: no
