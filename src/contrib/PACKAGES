@@ -2125,3 +2125,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rmicrosporus.NCBI.Rhimi11
+Version: 1.0.0
+NeedsCompilation: no

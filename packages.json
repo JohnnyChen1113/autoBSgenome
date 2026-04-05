@@ -20214,6 +20214,54 @@
       ]
     },
     {
+      "organism": "Rhizopus microsporus ATCC 52813",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Mucoromycota",
+        "class": "Mucoromycetes",
+        "order": "Mucorales",
+        "family": "Rhizopodaceae",
+        "genus": "Rhizopus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rmicrosporus.NCBI.Rhimi11",
+          "version": "1.0.0",
+          "organism": "Rhizopus microsporus ATCC 52813",
+          "assembly": "Rhimi1_1",
+          "provider": "NCBI",
+          "accession": "GCF_002708625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002708625.1/",
+          "file_name": "BSgenome.Rmicrosporus.NCBI.Rhimi11_1.0.0.tar.gz",
+          "size": 6748644,
+          "seq_ids": [
+            "NW_019671916.1",
+            "NW_019671917.1",
+            "NW_019671918.1",
+            "NW_019671919.1",
+            "NW_019671920.1"
+          ],
+          "seq_count": 131,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Mucoromycota",
+            "class": "Mucoromycetes",
+            "order": "Mucorales",
+            "family": "Rhizopodaceae",
+            "genus": "Rhizopus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T16:42:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rmicrosporus.NCBI.Rhimi11/BSgenome.Rmicrosporus.NCBI.Rhimi11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhodotorula graminis WP1",
       "common_name": "",
       "group": "fungi",
@@ -42163,6 +42211,38 @@
       "common_name": "",
       "published": "2026-04-05T16:42:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1/BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rmicrosporus.NCBI.Rhimi11",
+      "version": "1.0.0",
+      "organism": "Rhizopus microsporus ATCC 52813",
+      "assembly": "Rhimi1_1",
+      "provider": "NCBI",
+      "accession": "GCF_002708625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002708625.1/",
+      "file_name": "BSgenome.Rmicrosporus.NCBI.Rhimi11_1.0.0.tar.gz",
+      "size": 6748644,
+      "seq_ids": [
+        "NW_019671916.1",
+        "NW_019671917.1",
+        "NW_019671918.1",
+        "NW_019671919.1",
+        "NW_019671920.1"
+      ],
+      "seq_count": 131,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Mucoromycota",
+        "class": "Mucoromycetes",
+        "order": "Mucorales",
+        "family": "Rhizopodaceae",
+        "genus": "Rhizopus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T16:42:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rmicrosporus.NCBI.Rhimi11/BSgenome.Rmicrosporus.NCBI.Rhimi11_1.0.0.tar.gz"
     }
   ]
 }
