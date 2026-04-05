@@ -6872,6 +6872,54 @@
       ]
     },
     {
+      "organism": "Cordyceps militaris CM01",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Cordycipitaceae",
+        "genus": "Cordyceps"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01",
+          "version": "1.0.0",
+          "organism": "Cordyceps militaris CM01",
+          "assembly": "CmilitarisCM01_v01",
+          "provider": "NCBI",
+          "accession": "GCF_000225605.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000225605.1/",
+          "file_name": "BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01_1.0.0.tar.gz",
+          "size": 8374454,
+          "seq_ids": [
+            "NW_006271969.1",
+            "NW_006271970.1",
+            "NW_006271971.1",
+            "NW_006271972.1",
+            "NW_006271973.1"
+          ],
+          "seq_count": 32,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Cordycipitaceae",
+            "genus": "Cordyceps"
+          },
+          "common_name": "",
+          "published": "2026-04-05T20:39:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01/BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Corvus brachyrhynchos",
       "common_name": "American crow",
       "group": "vertebrate_other",
@@ -46213,6 +46261,38 @@
       "common_name": "",
       "published": "2026-04-05T20:38:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Audagawae.NCBI.Audassembly02/BSgenome.Audagawae.NCBI.Audassembly02_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01",
+      "version": "1.0.0",
+      "organism": "Cordyceps militaris CM01",
+      "assembly": "CmilitarisCM01_v01",
+      "provider": "NCBI",
+      "accession": "GCF_000225605.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000225605.1/",
+      "file_name": "BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01_1.0.0.tar.gz",
+      "size": 8374454,
+      "seq_ids": [
+        "NW_006271969.1",
+        "NW_006271970.1",
+        "NW_006271971.1",
+        "NW_006271972.1",
+        "NW_006271973.1"
+      ],
+      "seq_count": 32,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Cordycipitaceae",
+        "genus": "Cordyceps"
+      },
+      "common_name": "",
+      "published": "2026-04-05T20:39:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01/BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01_1.0.0.tar.gz"
     }
   ]
 }
