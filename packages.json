@@ -25694,6 +25694,54 @@
       ]
     },
     {
+      "organism": "Talaromyces amestolkiae",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Trichocomaceae",
+        "genus": "Talaromyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tamestolkiae.NCBI.ASM189636v1",
+          "version": "1.0.0",
+          "organism": "Talaromyces amestolkiae",
+          "assembly": "ASM189636v1",
+          "provider": "NCBI",
+          "accession": "GCF_001896365.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001896365.1/",
+          "file_name": "BSgenome.Tamestolkiae.NCBI.ASM189636v1_1.0.0.tar.gz",
+          "size": 8730301,
+          "seq_ids": [
+            "NW_024468037.1",
+            "NW_024468046.1",
+            "NW_024468135.1",
+            "NW_024468136.1",
+            "NW_024468137.1"
+          ],
+          "seq_count": 212,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Trichocomaceae",
+            "genus": "Talaromyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T22:36:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tamestolkiae.NCBI.ASM189636v1/BSgenome.Tamestolkiae.NCBI.ASM189636v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Talaromyces atroroseus",
       "common_name": "",
       "group": "fungi",
@@ -48053,6 +48101,38 @@
       "common_name": "",
       "published": "2026-04-05T22:36:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbassiana.NCBI.ASM28067v1/BSgenome.Bbassiana.NCBI.ASM28067v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tamestolkiae.NCBI.ASM189636v1",
+      "version": "1.0.0",
+      "organism": "Talaromyces amestolkiae",
+      "assembly": "ASM189636v1",
+      "provider": "NCBI",
+      "accession": "GCF_001896365.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001896365.1/",
+      "file_name": "BSgenome.Tamestolkiae.NCBI.ASM189636v1_1.0.0.tar.gz",
+      "size": 8730301,
+      "seq_ids": [
+        "NW_024468037.1",
+        "NW_024468046.1",
+        "NW_024468135.1",
+        "NW_024468136.1",
+        "NW_024468137.1"
+      ],
+      "seq_count": 212,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Trichocomaceae",
+        "genus": "Talaromyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T22:36:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tamestolkiae.NCBI.ASM189636v1/BSgenome.Tamestolkiae.NCBI.ASM189636v1_1.0.0.tar.gz"
     }
   ]
 }
