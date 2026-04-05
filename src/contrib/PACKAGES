@@ -2377,3 +2377,7 @@ NeedsCompilation: no
 Package: BSgenome.Aalternata.NCBI.Altal1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aversicolor.NCBI.Aspve1
+Version: 1.0.0
+NeedsCompilation: no

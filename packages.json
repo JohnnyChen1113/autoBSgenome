@@ -2532,6 +2532,54 @@
       ]
     },
     {
+      "organism": "Aspergillus versicolor CBS 583.65",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aversicolor.NCBI.Aspve1",
+          "version": "1.0.0",
+          "organism": "Aspergillus versicolor CBS 583.65",
+          "assembly": "Aspve1",
+          "provider": "NCBI",
+          "accession": "GCF_001890125.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001890125.1/",
+          "file_name": "BSgenome.Aversicolor.NCBI.Aspve1_1.0.0.tar.gz",
+          "size": 8571597,
+          "seq_ids": [
+            "NW_024467524.1",
+            "NW_024467525.1",
+            "NW_024467526.1",
+            "NW_024467527.1",
+            "NW_024467528.1"
+          ],
+          "seq_count": 51,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T21:37:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aversicolor.NCBI.Aspve1/BSgenome.Aversicolor.NCBI.Aspve1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus wentii DTO 134E9",
       "common_name": "",
       "group": "fungi",
@@ -47173,6 +47221,38 @@
       "common_name": "",
       "published": "2026-04-05T21:37:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalternata.NCBI.Altal1/BSgenome.Aalternata.NCBI.Altal1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aversicolor.NCBI.Aspve1",
+      "version": "1.0.0",
+      "organism": "Aspergillus versicolor CBS 583.65",
+      "assembly": "Aspve1",
+      "provider": "NCBI",
+      "accession": "GCF_001890125.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001890125.1/",
+      "file_name": "BSgenome.Aversicolor.NCBI.Aspve1_1.0.0.tar.gz",
+      "size": 8571597,
+      "seq_ids": [
+        "NW_024467524.1",
+        "NW_024467525.1",
+        "NW_024467526.1",
+        "NW_024467527.1",
+        "NW_024467528.1"
+      ],
+      "seq_count": 51,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T21:37:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aversicolor.NCBI.Aspve1/BSgenome.Aversicolor.NCBI.Aspve1_1.0.0.tar.gz"
     }
   ]
 }
