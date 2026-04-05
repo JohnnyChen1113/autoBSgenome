@@ -2073,3 +2073,7 @@ NeedsCompilation: no
 Package: BSgenome.Ngypsea.NCBI.MSCBS118893
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pflocculosa.NCBI.Pflocc10
+Version: 1.0.0
+NeedsCompilation: no
