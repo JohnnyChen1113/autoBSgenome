@@ -12561,6 +12561,54 @@
       ]
     },
     {
+      "organism": "Photinus pyralis",
+      "common_name": "common eastern firefly",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Coleoptera",
+        "family": "Lampyridae",
+        "genus": "Photinus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ppyralis.NCBI.Ppyr13",
+          "version": "1.0.0",
+          "organism": "Photinus pyralis",
+          "assembly": "Ppyr1.3",
+          "provider": "NCBI",
+          "accession": "GCF_008802855.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008802855.1/",
+          "file_name": "BSgenome.Ppyralis.NCBI.Ppyr13_1.0.0.tar.gz",
+          "size": 122070768,
+          "seq_ids": [
+            "NW_022170249.1",
+            "NW_022170250.1",
+            "NW_022170251.1",
+            "NW_022170252.1",
+            "NW_022170253.1"
+          ],
+          "seq_count": 2160,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Coleoptera",
+            "family": "Lampyridae",
+            "genus": "Photinus"
+          },
+          "common_name": "common eastern firefly",
+          "published": "2026-04-05T05:16:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppyralis.NCBI.Ppyr13/BSgenome.Ppyralis.NCBI.Ppyr13_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phyllostomus discolor",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -28932,6 +28980,38 @@
       "common_name": "",
       "published": "2026-04-05T05:16:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Blatifrons.NCBI.ASM185335v1/BSgenome.Blatifrons.NCBI.ASM185335v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ppyralis.NCBI.Ppyr13",
+      "version": "1.0.0",
+      "organism": "Photinus pyralis",
+      "assembly": "Ppyr1.3",
+      "provider": "NCBI",
+      "accession": "GCF_008802855.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_008802855.1/",
+      "file_name": "BSgenome.Ppyralis.NCBI.Ppyr13_1.0.0.tar.gz",
+      "size": 122070768,
+      "seq_ids": [
+        "NW_022170249.1",
+        "NW_022170250.1",
+        "NW_022170251.1",
+        "NW_022170252.1",
+        "NW_022170253.1"
+      ],
+      "seq_count": 2160,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Coleoptera",
+        "family": "Lampyridae",
+        "genus": "Photinus"
+      },
+      "common_name": "common eastern firefly",
+      "published": "2026-04-05T05:16:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppyralis.NCBI.Ppyr13/BSgenome.Ppyralis.NCBI.Ppyr13_1.0.0.tar.gz"
     }
   ]
 }

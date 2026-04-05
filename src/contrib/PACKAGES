@@ -1541,3 +1541,7 @@ NeedsCompilation: no
 Package: BSgenome.Blatifrons.NCBI.ASM185335v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppyralis.NCBI.Ppyr13
+Version: 1.0.0
+NeedsCompilation: no
