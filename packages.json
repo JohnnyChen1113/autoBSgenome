@@ -15358,6 +15358,54 @@
       ]
     },
     {
+      "organism": "Stylophora pistillata",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Cnidaria",
+        "class": "Anthozoa",
+        "order": "Scleractinia",
+        "family": "Pocilloporidae",
+        "genus": "Stylophora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Spistillata.NCBI.Stylophorapistillatav11",
+          "version": "1.0.0",
+          "organism": "Stylophora pistillata",
+          "assembly": "Stylophora pistillata v1.1",
+          "provider": "NCBI",
+          "accession": "GCF_002571385.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002571385.2/",
+          "file_name": "BSgenome.Spistillata.NCBI.Stylophorapistillatav11_1.0.0.tar.gz",
+          "size": 94426820,
+          "seq_ids": [
+            "NW_019217784.1",
+            "NW_019217785.1",
+            "NW_019217786.1",
+            "NW_019217787.1",
+            "NW_019217788.1"
+          ],
+          "seq_count": 5513,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Cnidaria",
+            "class": "Anthozoa",
+            "order": "Scleractinia",
+            "family": "Pocilloporidae",
+            "genus": "Stylophora"
+          },
+          "common_name": "",
+          "published": "2026-04-05T05:15:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spistillata.NCBI.Stylophorapistillatav11/BSgenome.Spistillata.NCBI.Stylophorapistillatav11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Suricata suricatta",
       "common_name": "meerkat",
       "group": "vertebrate_mammalian",
@@ -28372,6 +28420,38 @@
       "common_name": "",
       "published": "2026-04-05T05:15:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcornetzi.NCBI.Tcor11/BSgenome.Tcornetzi.NCBI.Tcor11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Spistillata.NCBI.Stylophorapistillatav11",
+      "version": "1.0.0",
+      "organism": "Stylophora pistillata",
+      "assembly": "Stylophora pistillata v1.1",
+      "provider": "NCBI",
+      "accession": "GCF_002571385.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002571385.2/",
+      "file_name": "BSgenome.Spistillata.NCBI.Stylophorapistillatav11_1.0.0.tar.gz",
+      "size": 94426820,
+      "seq_ids": [
+        "NW_019217784.1",
+        "NW_019217785.1",
+        "NW_019217786.1",
+        "NW_019217787.1",
+        "NW_019217788.1"
+      ],
+      "seq_count": 5513,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Cnidaria",
+        "class": "Anthozoa",
+        "order": "Scleractinia",
+        "family": "Pocilloporidae",
+        "genus": "Stylophora"
+      },
+      "common_name": "",
+      "published": "2026-04-05T05:15:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spistillata.NCBI.Stylophorapistillatav11/BSgenome.Spistillata.NCBI.Stylophorapistillatav11_1.0.0.tar.gz"
     }
   ]
 }

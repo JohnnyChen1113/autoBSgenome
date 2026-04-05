@@ -1513,3 +1513,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcornetzi.NCBI.Tcor11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Spistillata.NCBI.Stylophorapistillatav11
+Version: 1.0.0
+NeedsCompilation: no
