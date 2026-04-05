@@ -2245,3 +2245,7 @@ NeedsCompilation: no
 Package: BSgenome.Dprimogenitus.NCBI.DacryopinaxspDJM731SSP1v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gclavigera.NCBI.Sanger454IlluminaPA20
+Version: 1.0.0
+NeedsCompilation: no
