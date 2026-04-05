@@ -1753,3 +1753,7 @@ NeedsCompilation: no
 Package: BSgenome.Mguilliermondii.NCBI.ASM14942v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Klactis.NCBI.ASM251v1
+Version: 1.0.0
+NeedsCompilation: no
