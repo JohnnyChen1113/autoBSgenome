@@ -1487,6 +1487,54 @@
       ]
     },
     {
+      "organism": "Ascoidea rubescens DSM 1968",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Ascoideales",
+        "family": "Ascoideaceae",
+        "genus": "Ascoidea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Arubescens.NCBI.Ascru1",
+          "version": "1.0.0",
+          "organism": "Ascoidea rubescens DSM 1968",
+          "assembly": "Ascru1",
+          "provider": "NCBI",
+          "accession": "GCF_001661345.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001661345.1/",
+          "file_name": "BSgenome.Arubescens.NCBI.Ascru1_1.0.0.tar.gz",
+          "size": 4675332,
+          "seq_ids": [
+            "NW_017962913.1",
+            "NW_017962914.1",
+            "NW_017962915.1",
+            "NW_017962916.1",
+            "NW_017962917.1"
+          ],
+          "seq_count": 63,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Ascoideales",
+            "family": "Ascoideaceae",
+            "genus": "Ascoidea"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:08:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Arubescens.NCBI.Ascru1/BSgenome.Arubescens.NCBI.Ascru1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Asparagus officinalis",
       "common_name": "garden asparagus",
       "group": "plant",
@@ -38817,6 +38865,38 @@
       "common_name": "",
       "published": "2026-04-05T14:08:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kimperatae.NCBI.Kocim1/BSgenome.Kimperatae.NCBI.Kocim1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Arubescens.NCBI.Ascru1",
+      "version": "1.0.0",
+      "organism": "Ascoidea rubescens DSM 1968",
+      "assembly": "Ascru1",
+      "provider": "NCBI",
+      "accession": "GCF_001661345.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001661345.1/",
+      "file_name": "BSgenome.Arubescens.NCBI.Ascru1_1.0.0.tar.gz",
+      "size": 4675332,
+      "seq_ids": [
+        "NW_017962913.1",
+        "NW_017962914.1",
+        "NW_017962915.1",
+        "NW_017962916.1",
+        "NW_017962917.1"
+      ],
+      "seq_count": 63,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Ascoideales",
+        "family": "Ascoideaceae",
+        "genus": "Ascoidea"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:08:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Arubescens.NCBI.Ascru1/BSgenome.Arubescens.NCBI.Ascru1_1.0.0.tar.gz"
     }
   ]
 }
