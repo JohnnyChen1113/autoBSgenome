@@ -7572,6 +7572,54 @@
       ]
     },
     {
+      "organism": "Eremothecium gossypii ATCC 10895",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Eremothecium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Egossypii.NCBI.ASM9102v4",
+          "version": "1.0.0",
+          "organism": "Eremothecium gossypii ATCC 10895",
+          "assembly": "ASM9102v4",
+          "provider": "NCBI",
+          "accession": "GCF_000091025.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000091025.4/",
+          "file_name": "BSgenome.Egossypii.NCBI.ASM9102v4_1.0.0.tar.gz",
+          "size": 2244366,
+          "seq_ids": [
+            "NC_005782.2",
+            "NC_005783.5",
+            "NC_005784.3",
+            "NC_005785.6",
+            "NC_005786.2"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Eremothecium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T08:50:02Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Egossypii.NCBI.ASM9102v4/BSgenome.Egossypii.NCBI.ASM9102v4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Eremothecium sinecaudum",
       "common_name": "",
       "group": "fungi",
@@ -34041,6 +34089,38 @@
       "common_name": "",
       "published": "2026-04-05T08:49:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Opolymorpha.NCBI.Hanpo2/BSgenome.Opolymorpha.NCBI.Hanpo2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Egossypii.NCBI.ASM9102v4",
+      "version": "1.0.0",
+      "organism": "Eremothecium gossypii ATCC 10895",
+      "assembly": "ASM9102v4",
+      "provider": "NCBI",
+      "accession": "GCF_000091025.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000091025.4/",
+      "file_name": "BSgenome.Egossypii.NCBI.ASM9102v4_1.0.0.tar.gz",
+      "size": 2244366,
+      "seq_ids": [
+        "NC_005782.2",
+        "NC_005783.5",
+        "NC_005784.3",
+        "NC_005785.6",
+        "NC_005786.2"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Eremothecium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T08:50:02Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Egossypii.NCBI.ASM9102v4/BSgenome.Egossypii.NCBI.ASM9102v4_1.0.0.tar.gz"
     }
   ]
 }
