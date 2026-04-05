@@ -20295,6 +20295,54 @@
       ]
     },
     {
+      "organism": "Wallemia ichthyophaga EXF-994",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Wallemiomycetes",
+        "order": "Wallemiales",
+        "family": "Wallemiaceae",
+        "genus": "Wallemia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10",
+          "version": "1.0.0",
+          "organism": "Wallemia ichthyophaga EXF-994",
+          "assembly": "Wallemia ichthyophaga version 1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000400465.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000400465.1/",
+          "file_name": "BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10_1.0.0.tar.gz",
+          "size": 2507861,
+          "seq_ids": [
+            "NW_008806274.1",
+            "NW_008806275.1",
+            "NW_008806276.1",
+            "NW_008806277.1",
+            "NW_008806278.1"
+          ],
+          "seq_count": 82,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Wallemiomycetes",
+            "order": "Wallemiales",
+            "family": "Wallemiaceae",
+            "genus": "Wallemia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T09:42:02Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10/BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Wasmannia auropunctata",
       "common_name": "little fire ant",
       "group": "invertebrate",
@@ -34279,6 +34327,38 @@
       "common_name": "",
       "published": "2026-04-05T09:41:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tdelbrueckii.NCBI.ASM24337v1/BSgenome.Tdelbrueckii.NCBI.ASM24337v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10",
+      "version": "1.0.0",
+      "organism": "Wallemia ichthyophaga EXF-994",
+      "assembly": "Wallemia ichthyophaga version 1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000400465.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000400465.1/",
+      "file_name": "BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10_1.0.0.tar.gz",
+      "size": 2507861,
+      "seq_ids": [
+        "NW_008806274.1",
+        "NW_008806275.1",
+        "NW_008806276.1",
+        "NW_008806277.1",
+        "NW_008806278.1"
+      ],
+      "seq_count": 82,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Wallemiomycetes",
+        "order": "Wallemiales",
+        "family": "Wallemiaceae",
+        "genus": "Wallemia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T09:42:02Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10/BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10_1.0.0.tar.gz"
     }
   ]
 }
