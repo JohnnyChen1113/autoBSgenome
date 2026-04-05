@@ -2052,6 +2052,54 @@
       ]
     },
     {
+      "organism": "Aspergillus terreus NIH2624",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aterreus.NCBI.ASM14961v1",
+          "version": "1.0.0",
+          "organism": "Aspergillus terreus NIH2624",
+          "assembly": "ASM14961v1",
+          "provider": "NCBI",
+          "accession": "GCF_000149615.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149615.1/",
+          "file_name": "BSgenome.Aterreus.NCBI.ASM14961v1_1.0.0.tar.gz",
+          "size": 7624032,
+          "seq_ids": [
+            "NT_165947.1",
+            "NT_165944.1",
+            "NT_165942.1",
+            "NT_165941.1",
+            "NT_165940.1"
+          ],
+          "seq_count": 27,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T18:50:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aterreus.NCBI.ASM14961v1/BSgenome.Aterreus.NCBI.ASM14961v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Athene cunicularia",
       "common_name": "burrowing owl",
       "group": "vertebrate_other",
@@ -44213,6 +44261,38 @@
       "common_name": "",
       "published": "2026-04-05T18:50:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1/BSgenome.Emesophila.NCBI.ExopmesoCBS40295V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aterreus.NCBI.ASM14961v1",
+      "version": "1.0.0",
+      "organism": "Aspergillus terreus NIH2624",
+      "assembly": "ASM14961v1",
+      "provider": "NCBI",
+      "accession": "GCF_000149615.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149615.1/",
+      "file_name": "BSgenome.Aterreus.NCBI.ASM14961v1_1.0.0.tar.gz",
+      "size": 7624032,
+      "seq_ids": [
+        "NT_165947.1",
+        "NT_165944.1",
+        "NT_165942.1",
+        "NT_165941.1",
+        "NT_165940.1"
+      ],
+      "seq_count": 27,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T18:50:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aterreus.NCBI.ASM14961v1/BSgenome.Aterreus.NCBI.ASM14961v1_1.0.0.tar.gz"
     }
   ]
 }
