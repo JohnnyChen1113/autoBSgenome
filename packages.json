@@ -27122,6 +27122,54 @@
       ]
     },
     {
+      "organism": "Verticillium alfalfae VaMs.102",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Plectosphaerellaceae",
+        "genus": "Verticillium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Valfalfae.NCBI.ASM15082v1",
+          "version": "1.0.0",
+          "organism": "Verticillium alfalfae VaMs.102",
+          "assembly": "ASM15082v1",
+          "provider": "NCBI",
+          "accession": "GCF_000150825.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150825.1/",
+          "file_name": "BSgenome.Valfalfae.NCBI.ASM15082v1_1.0.0.tar.gz",
+          "size": 7979839,
+          "seq_ids": [
+            "NW_003315040.1",
+            "NW_003315041.1",
+            "NW_003315042.1",
+            "NW_003315043.1",
+            "NW_003315044.1"
+          ],
+          "seq_count": 27,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Glomerellales",
+            "family": "Plectosphaerellaceae",
+            "genus": "Verticillium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T21:37:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Valfalfae.NCBI.ASM15082v1/BSgenome.Valfalfae.NCBI.ASM15082v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Verticillium nonalfalfae",
       "common_name": "",
       "group": "fungi",
@@ -46773,6 +46821,38 @@
       "common_name": "",
       "published": "2026-04-05T21:36:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dconiospora.NCBI.ASM162519v1/BSgenome.Dconiospora.NCBI.ASM162519v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Valfalfae.NCBI.ASM15082v1",
+      "version": "1.0.0",
+      "organism": "Verticillium alfalfae VaMs.102",
+      "assembly": "ASM15082v1",
+      "provider": "NCBI",
+      "accession": "GCF_000150825.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150825.1/",
+      "file_name": "BSgenome.Valfalfae.NCBI.ASM15082v1_1.0.0.tar.gz",
+      "size": 7979839,
+      "seq_ids": [
+        "NW_003315040.1",
+        "NW_003315041.1",
+        "NW_003315042.1",
+        "NW_003315043.1",
+        "NW_003315044.1"
+      ],
+      "seq_count": 27,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Plectosphaerellaceae",
+        "genus": "Verticillium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T21:37:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Valfalfae.NCBI.ASM15082v1/BSgenome.Valfalfae.NCBI.ASM15082v1_1.0.0.tar.gz"
     }
   ]
 }
