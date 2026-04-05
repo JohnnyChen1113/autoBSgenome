@@ -1489,3 +1489,7 @@ NeedsCompilation: no
 Package: BSgenome.Dalloeum.NCBI.Dall20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ecarolleeae.NCBI.Eaff20
+Version: 1.0.0
+NeedsCompilation: no

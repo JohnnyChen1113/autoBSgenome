@@ -6570,6 +6570,54 @@
       ]
     },
     {
+      "organism": "Eurytemora carolleeae",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Hexanauplia",
+        "order": "Calanoida",
+        "family": "Temoridae",
+        "genus": "Eurytemora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ecarolleeae.NCBI.Eaff20",
+          "version": "1.0.0",
+          "organism": "Eurytemora carolleeae",
+          "assembly": "Eaff_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000591075.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000591075.1/",
+          "file_name": "BSgenome.Ecarolleeae.NCBI.Eaff20_1.0.0.tar.gz",
+          "size": 101517090,
+          "seq_ids": [
+            "NW_019396020.1",
+            "NW_019396021.1",
+            "NW_019396022.1",
+            "NW_019396023.1",
+            "NW_019396024.1"
+          ],
+          "seq_count": 6171,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Hexanauplia",
+            "order": "Calanoida",
+            "family": "Temoridae",
+            "genus": "Eurytemora"
+          },
+          "common_name": "",
+          "published": "2026-04-05T02:41:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecarolleeae.NCBI.Eaff20/BSgenome.Ecarolleeae.NCBI.Eaff20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Eutrema salsugineum",
       "common_name": "",
       "group": "plant",
@@ -27892,6 +27940,38 @@
       "common_name": "",
       "published": "2026-04-05T02:41:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dalloeum.NCBI.Dall20/BSgenome.Dalloeum.NCBI.Dall20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ecarolleeae.NCBI.Eaff20",
+      "version": "1.0.0",
+      "organism": "Eurytemora carolleeae",
+      "assembly": "Eaff_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000591075.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000591075.1/",
+      "file_name": "BSgenome.Ecarolleeae.NCBI.Eaff20_1.0.0.tar.gz",
+      "size": 101517090,
+      "seq_ids": [
+        "NW_019396020.1",
+        "NW_019396021.1",
+        "NW_019396022.1",
+        "NW_019396023.1",
+        "NW_019396024.1"
+      ],
+      "seq_count": 6171,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Hexanauplia",
+        "order": "Calanoida",
+        "family": "Temoridae",
+        "genus": "Eurytemora"
+      },
+      "common_name": "",
+      "published": "2026-04-05T02:41:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecarolleeae.NCBI.Eaff20/BSgenome.Ecarolleeae.NCBI.Eaff20_1.0.0.tar.gz"
     }
   ]
 }
