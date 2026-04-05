@@ -2173,3 +2173,7 @@ NeedsCompilation: no
 Package: BSgenome.Remersonii.NCBI.ASM96859v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acampestris.NCBI.Aspcam1
+Version: 1.0.0
+NeedsCompilation: no
