@@ -5542,6 +5542,54 @@
       ]
     },
     {
+      "organism": "Cladophialophora yegresii CBS 114405",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Cladophialophora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cyegresii.NCBI.CladyegrCBS114405V1",
+          "version": "1.0.0",
+          "organism": "Cladophialophora yegresii CBS 114405",
+          "assembly": "Clad_yegr_CBS_114405_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000585515.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000585515.1/",
+          "file_name": "BSgenome.Cyegresii.NCBI.CladyegrCBS114405V1_1.0.0.tar.gz",
+          "size": 7240440,
+          "seq_ids": [
+            "NW_006913045.1",
+            "NW_006913046.1",
+            "NW_006913047.1",
+            "NW_006913048.1",
+            "NW_006913049.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Cladophialophora"
+          },
+          "common_name": "",
+          "published": "2026-04-05T17:35:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cyegresii.NCBI.CladyegrCBS114405V1/BSgenome.Cyegresii.NCBI.CladyegrCBS114405V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Coccomyxa subellipsoidea C-169",
       "common_name": "",
       "group": "plant",
@@ -42779,6 +42827,38 @@
       "common_name": "",
       "published": "2026-04-05T17:35:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11/BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cyegresii.NCBI.CladyegrCBS114405V1",
+      "version": "1.0.0",
+      "organism": "Cladophialophora yegresii CBS 114405",
+      "assembly": "Clad_yegr_CBS_114405_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000585515.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000585515.1/",
+      "file_name": "BSgenome.Cyegresii.NCBI.CladyegrCBS114405V1_1.0.0.tar.gz",
+      "size": 7240440,
+      "seq_ids": [
+        "NW_006913045.1",
+        "NW_006913046.1",
+        "NW_006913047.1",
+        "NW_006913048.1",
+        "NW_006913049.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Cladophialophora"
+      },
+      "common_name": "",
+      "published": "2026-04-05T17:35:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cyegresii.NCBI.CladyegrCBS114405V1/BSgenome.Cyegresii.NCBI.CladyegrCBS114405V1_1.0.0.tar.gz"
     }
   ]
 }

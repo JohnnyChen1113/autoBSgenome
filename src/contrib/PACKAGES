@@ -2157,3 +2157,7 @@ NeedsCompilation: no
 Package: BSgenome.Aochraceoroseus.NCBI.AspergillusochraceoroseusIBT24754v11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cyegresii.NCBI.CladyegrCBS114405V1
+Version: 1.0.0
+NeedsCompilation: no
