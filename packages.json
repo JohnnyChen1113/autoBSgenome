@@ -12920,6 +12920,54 @@
       ]
     },
     {
+      "organism": "Histoplasma mississippiense",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Ajellomycetaceae",
+        "genus": "Histoplasma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hmississippiense.NCBI.ASM14958v1",
+          "version": "1.0.0",
+          "organism": "Histoplasma mississippiense",
+          "assembly": "ASM14958v1",
+          "provider": "NCBI",
+          "accession": "GCF_000149585.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149585.1/",
+          "file_name": "BSgenome.Hmississippiense.NCBI.ASM14958v1_1.0.0.tar.gz",
+          "size": 7971928,
+          "seq_ids": [
+            "NW_001813913.1",
+            "NW_001813914.1",
+            "NW_001813915.1",
+            "NW_001813916.1",
+            "NW_001813917.1"
+          ],
+          "seq_count": 280,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Onygenales",
+            "family": "Ajellomycetaceae",
+            "genus": "Histoplasma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T21:37:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hmississippiense.NCBI.ASM14958v1/BSgenome.Hmississippiense.NCBI.ASM14958v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Huiozyma naganishii CBS 8797",
       "common_name": "",
       "group": "fungi",
@@ -47013,6 +47061,38 @@
       "common_name": "",
       "published": "2026-04-05T21:37:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Plutzii.NCBI.ParacoccibrPb01V2/BSgenome.Plutzii.NCBI.ParacoccibrPb01V2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hmississippiense.NCBI.ASM14958v1",
+      "version": "1.0.0",
+      "organism": "Histoplasma mississippiense",
+      "assembly": "ASM14958v1",
+      "provider": "NCBI",
+      "accession": "GCF_000149585.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149585.1/",
+      "file_name": "BSgenome.Hmississippiense.NCBI.ASM14958v1_1.0.0.tar.gz",
+      "size": 7971928,
+      "seq_ids": [
+        "NW_001813913.1",
+        "NW_001813914.1",
+        "NW_001813915.1",
+        "NW_001813916.1",
+        "NW_001813917.1"
+      ],
+      "seq_count": 280,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Ajellomycetaceae",
+        "genus": "Histoplasma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T21:37:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hmississippiense.NCBI.ASM14958v1/BSgenome.Hmississippiense.NCBI.ASM14958v1_1.0.0.tar.gz"
     }
   ]
 }

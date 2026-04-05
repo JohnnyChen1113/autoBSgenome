@@ -2369,3 +2369,7 @@ NeedsCompilation: no
 Package: BSgenome.Plutzii.NCBI.ParacoccibrPb01V2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hmississippiense.NCBI.ASM14958v1
+Version: 1.0.0
+NeedsCompilation: no
