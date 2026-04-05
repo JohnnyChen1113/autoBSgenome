@@ -17817,6 +17817,54 @@
       ]
     },
     {
+      "organism": "Saccharomyces paradoxus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sparadoxus.NCBI.ASM207905v1",
+          "version": "1.0.0",
+          "organism": "Saccharomyces paradoxus",
+          "assembly": "ASM207905v1",
+          "provider": "NCBI",
+          "accession": "GCF_002079055.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002079055.1/",
+          "file_name": "BSgenome.Sparadoxus.NCBI.ASM207905v1_1.0.0.tar.gz",
+          "size": 3184424,
+          "seq_ids": [
+            "NC_047487.1",
+            "NC_047488.1",
+            "NC_047489.1",
+            "NC_047490.1",
+            "NC_047491.1"
+          ],
+          "seq_count": 17,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Saccharomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T10:39:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sparadoxus.NCBI.ASM207905v1/BSgenome.Sparadoxus.NCBI.ASM207905v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Saccoglossus kowalevskii",
       "common_name": "",
       "group": "invertebrate",
@@ -35879,6 +35927,38 @@
       "common_name": "",
       "published": "2026-04-05T10:39:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sjaponicus.NCBI.SJ5/BSgenome.Sjaponicus.NCBI.SJ5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sparadoxus.NCBI.ASM207905v1",
+      "version": "1.0.0",
+      "organism": "Saccharomyces paradoxus",
+      "assembly": "ASM207905v1",
+      "provider": "NCBI",
+      "accession": "GCF_002079055.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002079055.1/",
+      "file_name": "BSgenome.Sparadoxus.NCBI.ASM207905v1_1.0.0.tar.gz",
+      "size": 3184424,
+      "seq_ids": [
+        "NC_047487.1",
+        "NC_047488.1",
+        "NC_047489.1",
+        "NC_047490.1",
+        "NC_047491.1"
+      ],
+      "seq_count": 17,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T10:39:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sparadoxus.NCBI.ASM207905v1/BSgenome.Sparadoxus.NCBI.ASM207905v1_1.0.0.tar.gz"
     }
   ]
 }
