@@ -3912,6 +3912,54 @@
       ]
     },
     {
+      "organism": "Capronia coronata CBS 617.96",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Capronia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1",
+          "version": "1.0.0",
+          "organism": "Capronia coronata CBS 617.96",
+          "assembly": "Capr_coro_CBS_617_96_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000585585.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000585585.1/",
+          "file_name": "BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1_1.0.0.tar.gz",
+          "size": 6705786,
+          "seq_ids": [
+            "NW_006912893.1",
+            "NW_006912894.1",
+            "NW_006912895.1",
+            "NW_006912896.1",
+            "NW_006912897.1"
+          ],
+          "seq_count": 11,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Capronia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T16:42:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1/BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Capsella rubella",
       "common_name": "",
       "group": "plant",
@@ -42083,6 +42131,38 @@
       "common_name": "",
       "published": "2026-04-05T16:42:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asubglaciale.NCBI.AureobasidiumpullulansvarsubglacialeEXF2481v10/BSgenome.Asubglaciale.NCBI.AureobasidiumpullulansvarsubglacialeEXF2481v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1",
+      "version": "1.0.0",
+      "organism": "Capronia coronata CBS 617.96",
+      "assembly": "Capr_coro_CBS_617_96_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000585585.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000585585.1/",
+      "file_name": "BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1_1.0.0.tar.gz",
+      "size": 6705786,
+      "seq_ids": [
+        "NW_006912893.1",
+        "NW_006912894.1",
+        "NW_006912895.1",
+        "NW_006912896.1",
+        "NW_006912897.1"
+      ],
+      "seq_count": 11,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Capronia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T16:42:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1/BSgenome.Ccoronata.NCBI.CaprcoroCBS61796V1_1.0.0.tar.gz"
     }
   ]
 }
