@@ -2033,3 +2033,7 @@ NeedsCompilation: no
 Package: BSgenome.Sgraminicola.NCBI.PGRAMIIB10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Camylolentus.NCBI.CrypamylCBS6039V3
+Version: 1.0.0
+NeedsCompilation: no

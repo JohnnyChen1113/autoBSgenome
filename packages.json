@@ -5724,6 +5724,54 @@
       ]
     },
     {
+      "organism": "Cryptococcus amylolentus CBS 6039",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Camylolentus.NCBI.CrypamylCBS6039V3",
+          "version": "1.0.0",
+          "organism": "Cryptococcus amylolentus CBS 6039",
+          "assembly": "Cryp_amyl_CBS6039_V3",
+          "provider": "NCBI",
+          "accession": "GCF_001720205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001720205.1/",
+          "file_name": "BSgenome.Camylolentus.NCBI.CrypamylCBS6039V3_1.0.0.tar.gz",
+          "size": 5364773,
+          "seq_ids": [
+            "NW_017566887.1",
+            "NW_017566896.1",
+            "NW_017566897.1",
+            "NW_017566898.1",
+            "NW_017566899.1"
+          ],
+          "seq_count": 15,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:56:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Camylolentus.NCBI.CrypamylCBS6039V3/BSgenome.Camylolentus.NCBI.CrypamylCBS6039V3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus bacillisporus CA1280",
       "common_name": "",
       "group": "fungi",
@@ -40328,6 +40376,38 @@
       "common_name": "",
       "published": "2026-04-05T15:56:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sgraminicola.NCBI.PGRAMIIB10/BSgenome.Sgraminicola.NCBI.PGRAMIIB10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Camylolentus.NCBI.CrypamylCBS6039V3",
+      "version": "1.0.0",
+      "organism": "Cryptococcus amylolentus CBS 6039",
+      "assembly": "Cryp_amyl_CBS6039_V3",
+      "provider": "NCBI",
+      "accession": "GCF_001720205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001720205.1/",
+      "file_name": "BSgenome.Camylolentus.NCBI.CrypamylCBS6039V3_1.0.0.tar.gz",
+      "size": 5364773,
+      "seq_ids": [
+        "NW_017566887.1",
+        "NW_017566896.1",
+        "NW_017566897.1",
+        "NW_017566898.1",
+        "NW_017566899.1"
+      ],
+      "seq_count": 15,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:56:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Camylolentus.NCBI.CrypamylCBS6039V3/BSgenome.Camylolentus.NCBI.CrypamylCBS6039V3_1.0.0.tar.gz"
     }
   ]
 }
