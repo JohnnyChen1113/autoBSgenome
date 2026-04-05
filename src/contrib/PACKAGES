@@ -2373,3 +2373,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmississippiense.NCBI.ASM14958v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aalternata.NCBI.Altal1
+Version: 1.0.0
+NeedsCompilation: no
