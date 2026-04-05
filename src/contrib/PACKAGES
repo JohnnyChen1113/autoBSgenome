@@ -2445,3 +2445,7 @@ NeedsCompilation: no
 Package: BSgenome.Aarborescens.NCBI.ASM415483v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aniger.NCBI.ASM285v2
+Version: 1.0.0
+NeedsCompilation: no

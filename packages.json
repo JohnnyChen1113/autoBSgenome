@@ -2292,6 +2292,54 @@
       ]
     },
     {
+      "organism": "Aspergillus niger",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aniger.NCBI.ASM285v2",
+          "version": "1.0.0",
+          "organism": "Aspergillus niger",
+          "assembly": "ASM285v2",
+          "provider": "NCBI",
+          "accession": "GCF_000002855.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002855.4/",
+          "file_name": "BSgenome.Aniger.NCBI.ASM285v2_1.0.0.tar.gz",
+          "size": 8884040,
+          "seq_ids": [
+            "NT_166525.1",
+            "NT_166529.1",
+            "NT_166518.1",
+            "NT_166528.1",
+            "NT_166527.1"
+          ],
+          "seq_count": 19,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T23:38:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.NCBI.ASM285v2/BSgenome.Aniger.NCBI.ASM285v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus novofumigatus IBT 16806",
       "common_name": "",
       "group": "fungi",
@@ -48533,6 +48581,38 @@
       "common_name": "",
       "published": "2026-04-05T23:37:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aarborescens.NCBI.ASM415483v1/BSgenome.Aarborescens.NCBI.ASM415483v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aniger.NCBI.ASM285v2",
+      "version": "1.0.0",
+      "organism": "Aspergillus niger",
+      "assembly": "ASM285v2",
+      "provider": "NCBI",
+      "accession": "GCF_000002855.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002855.4/",
+      "file_name": "BSgenome.Aniger.NCBI.ASM285v2_1.0.0.tar.gz",
+      "size": 8884040,
+      "seq_ids": [
+        "NT_166525.1",
+        "NT_166529.1",
+        "NT_166518.1",
+        "NT_166528.1",
+        "NT_166527.1"
+      ],
+      "seq_count": 19,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T23:38:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.NCBI.ASM285v2/BSgenome.Aniger.NCBI.ASM285v2_1.0.0.tar.gz"
     }
   ]
 }
