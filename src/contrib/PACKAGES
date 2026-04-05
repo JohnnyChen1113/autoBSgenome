@@ -2113,3 +2113,7 @@ NeedsCompilation: no
 Package: BSgenome.Anamibiae.NCBI.AureobasidiumpullulansvarnamibiaeCBS14797v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aporosum.NCBI.ASM394220v1
+Version: 1.0.0
+NeedsCompilation: no
