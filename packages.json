@@ -10638,6 +10638,52 @@
       ]
     },
     {
+      "organism": "Jaminaea rosea",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Exobasidiomycetes",
+        "order": "Microstromatales",
+        "genus": "Jaminaea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Jrosea.NCBI.Jamsp1",
+          "version": "1.0.0",
+          "organism": "Jaminaea rosea",
+          "assembly": "Jamsp1",
+          "provider": "NCBI",
+          "accession": "GCF_003144245.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003144245.1/",
+          "file_name": "BSgenome.Jrosea.NCBI.Jamsp1_1.0.0.tar.gz",
+          "size": 4454922,
+          "seq_ids": [
+            "NW_020289975.1",
+            "NW_020289976.1",
+            "NW_020289977.1",
+            "NW_020289978.1",
+            "NW_020289979.1"
+          ],
+          "seq_count": 21,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Exobasidiomycetes",
+            "order": "Microstromatales",
+            "genus": "Jaminaea"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:07:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jrosea.NCBI.Jamsp1/BSgenome.Jrosea.NCBI.Jamsp1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Juglans microcarpa x Juglans regia",
       "common_name": "",
       "group": "plant",
@@ -38423,6 +38469,37 @@
       "common_name": "",
       "published": "2026-04-05T14:07:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdepauperatus.NCBI.ASM172019v2/BSgenome.Cdepauperatus.NCBI.ASM172019v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Jrosea.NCBI.Jamsp1",
+      "version": "1.0.0",
+      "organism": "Jaminaea rosea",
+      "assembly": "Jamsp1",
+      "provider": "NCBI",
+      "accession": "GCF_003144245.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003144245.1/",
+      "file_name": "BSgenome.Jrosea.NCBI.Jamsp1_1.0.0.tar.gz",
+      "size": 4454922,
+      "seq_ids": [
+        "NW_020289975.1",
+        "NW_020289976.1",
+        "NW_020289977.1",
+        "NW_020289978.1",
+        "NW_020289979.1"
+      ],
+      "seq_count": 21,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Exobasidiomycetes",
+        "order": "Microstromatales",
+        "genus": "Jaminaea"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:07:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jrosea.NCBI.Jamsp1/BSgenome.Jrosea.NCBI.Jamsp1_1.0.0.tar.gz"
     }
   ]
 }

@@ -1937,3 +1937,7 @@ NeedsCompilation: no
 Package: BSgenome.Cdepauperatus.NCBI.ASM172019v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Jrosea.NCBI.Jamsp1
+Version: 1.0.0
+NeedsCompilation: no
