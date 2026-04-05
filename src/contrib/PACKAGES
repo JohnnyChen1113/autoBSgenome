@@ -1737,3 +1737,7 @@ NeedsCompilation: no
 Package: BSgenome.Ecymbalariae.NCBI.ASM23536v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zrouxii.NCBI.ASM2636v1
+Version: 1.0.0
+NeedsCompilation: no

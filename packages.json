@@ -20677,6 +20677,54 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Znevadensis.NCBI.ZooNev10/BSgenome.Znevadensis.NCBI.ZooNev10_1.0.0.tar.gz"
         }
       ]
+    },
+    {
+      "organism": "Zygosaccharomyces rouxii",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Zygosaccharomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Zrouxii.NCBI.ASM2636v1",
+          "version": "1.0.0",
+          "organism": "Zygosaccharomyces rouxii",
+          "assembly": "ASM2636v1",
+          "provider": "NCBI",
+          "accession": "GCF_000026365.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000026365.1/",
+          "file_name": "BSgenome.Zrouxii.NCBI.ASM2636v1_1.0.0.tar.gz",
+          "size": 2563149,
+          "seq_ids": [
+            "NC_012990.1",
+            "NC_012991.1",
+            "NC_012992.1",
+            "NC_012993.1",
+            "NC_012994.1"
+          ],
+          "seq_count": 7,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Zygosaccharomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T09:42:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zrouxii.NCBI.ASM2636v1/BSgenome.Zrouxii.NCBI.ASM2636v1_1.0.0.tar.gz"
+        }
+      ]
     }
   ],
   "flat": [
@@ -34439,6 +34487,38 @@
       "common_name": "",
       "published": "2026-04-05T09:42:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecymbalariae.NCBI.ASM23536v1/BSgenome.Ecymbalariae.NCBI.ASM23536v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Zrouxii.NCBI.ASM2636v1",
+      "version": "1.0.0",
+      "organism": "Zygosaccharomyces rouxii",
+      "assembly": "ASM2636v1",
+      "provider": "NCBI",
+      "accession": "GCF_000026365.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000026365.1/",
+      "file_name": "BSgenome.Zrouxii.NCBI.ASM2636v1_1.0.0.tar.gz",
+      "size": 2563149,
+      "seq_ids": [
+        "NC_012990.1",
+        "NC_012991.1",
+        "NC_012992.1",
+        "NC_012993.1",
+        "NC_012994.1"
+      ],
+      "seq_count": 7,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Zygosaccharomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T09:42:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zrouxii.NCBI.ASM2636v1/BSgenome.Zrouxii.NCBI.ASM2636v1_1.0.0.tar.gz"
     }
   ]
 }
