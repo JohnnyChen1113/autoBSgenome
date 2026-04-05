@@ -15297,6 +15297,54 @@
       ]
     },
     {
+      "organism": "Pichia kudriavzevii",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Pichiales",
+        "family": "Pichiaceae",
+        "genus": "Pichia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pkudriavzevii.NCBI.ASM305444v1",
+          "version": "1.0.0",
+          "organism": "Pichia kudriavzevii",
+          "assembly": "ASM305444v1",
+          "provider": "NCBI",
+          "accession": "GCF_003054445.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003054445.1/",
+          "file_name": "BSgenome.Pkudriavzevii.NCBI.ASM305444v1_1.0.0.tar.gz",
+          "size": 2832393,
+          "seq_ids": [
+            "NC_042506.1",
+            "NC_042507.1",
+            "NC_042508.1",
+            "NC_042509.1",
+            "NC_042510.1"
+          ],
+          "seq_count": 5,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Pichiales",
+            "family": "Pichiaceae",
+            "genus": "Pichia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T09:43:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pkudriavzevii.NCBI.ASM305444v1/BSgenome.Pkudriavzevii.NCBI.ASM305444v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Piliocolobus tephrosceles",
       "common_name": "Ugandan red Colobus",
       "group": "vertebrate_mammalian",
@@ -34839,6 +34887,38 @@
       "common_name": "",
       "published": "2026-04-05T09:43:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Klactis.NCBI.ASM251v1/BSgenome.Klactis.NCBI.ASM251v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pkudriavzevii.NCBI.ASM305444v1",
+      "version": "1.0.0",
+      "organism": "Pichia kudriavzevii",
+      "assembly": "ASM305444v1",
+      "provider": "NCBI",
+      "accession": "GCF_003054445.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003054445.1/",
+      "file_name": "BSgenome.Pkudriavzevii.NCBI.ASM305444v1_1.0.0.tar.gz",
+      "size": 2832393,
+      "seq_ids": [
+        "NC_042506.1",
+        "NC_042507.1",
+        "NC_042508.1",
+        "NC_042509.1",
+        "NC_042510.1"
+      ],
+      "seq_count": 5,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Pichiales",
+        "family": "Pichiaceae",
+        "genus": "Pichia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T09:43:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pkudriavzevii.NCBI.ASM305444v1/BSgenome.Pkudriavzevii.NCBI.ASM305444v1_1.0.0.tar.gz"
     }
   ]
 }

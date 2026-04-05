@@ -1757,3 +1757,7 @@ NeedsCompilation: no
 Package: BSgenome.Klactis.NCBI.ASM251v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pkudriavzevii.NCBI.ASM305444v1
+Version: 1.0.0
+NeedsCompilation: no
