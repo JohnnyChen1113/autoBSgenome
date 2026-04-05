@@ -9728,6 +9728,54 @@
       ]
     },
     {
+      "organism": "Henningerozyma blattae CBS 6284",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Henningerozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hblattae.NCBI.ASM31591v1",
+          "version": "1.0.0",
+          "organism": "Henningerozyma blattae CBS 6284",
+          "assembly": "ASM31591v1",
+          "provider": "NCBI",
+          "accession": "GCF_000315915.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000315915.1/",
+          "file_name": "BSgenome.Hblattae.NCBI.ASM31591v1_1.0.0.tar.gz",
+          "size": 3743695,
+          "seq_ids": [
+            "NC_020185.1",
+            "NC_020186.1",
+            "NC_020187.1",
+            "NC_020188.1",
+            "NC_020189.1"
+          ],
+          "seq_count": 10,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Henningerozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T13:02:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hblattae.NCBI.ASM31591v1/BSgenome.Hblattae.NCBI.ASM31591v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Herrania umbratica",
       "common_name": "",
       "group": "plant",
@@ -37317,6 +37365,38 @@
       "common_name": "",
       "published": "2026-04-05T13:02:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ndairenensis.NCBI.ASM22711v2/BSgenome.Ndairenensis.NCBI.ASM22711v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hblattae.NCBI.ASM31591v1",
+      "version": "1.0.0",
+      "organism": "Henningerozyma blattae CBS 6284",
+      "assembly": "ASM31591v1",
+      "provider": "NCBI",
+      "accession": "GCF_000315915.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000315915.1/",
+      "file_name": "BSgenome.Hblattae.NCBI.ASM31591v1_1.0.0.tar.gz",
+      "size": 3743695,
+      "seq_ids": [
+        "NC_020185.1",
+        "NC_020186.1",
+        "NC_020187.1",
+        "NC_020188.1",
+        "NC_020189.1"
+      ],
+      "seq_count": 10,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Henningerozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T13:02:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hblattae.NCBI.ASM31591v1/BSgenome.Hblattae.NCBI.ASM31591v1_1.0.0.tar.gz"
     }
   ]
 }
