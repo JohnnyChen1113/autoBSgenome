@@ -1525,3 +1525,7 @@ NeedsCompilation: no
 Package: BSgenome.Slitura.NCBI.ASM270686v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ofurnacalis.NCBI.ASM419383v2
+Version: 1.0.0
+NeedsCompilation: no
