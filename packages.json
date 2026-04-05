@@ -11737,6 +11737,53 @@
       ]
     },
     {
+      "organism": "Kwoniella mangroviensis CBS 8507",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Kwoniella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kmangroviensis.NCBI.ASM50746v4",
+          "version": "1.0.0",
+          "organism": "Kwoniella mangroviensis CBS 8507",
+          "assembly": "ASM50746v4",
+          "provider": "NCBI",
+          "accession": "GCF_000507465.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000507465.2/",
+          "file_name": "BSgenome.Kmangroviensis.NCBI.ASM50746v4_1.0.0.tar.gz",
+          "size": 5993539,
+          "seq_ids": [
+            "NW_027062533.1",
+            "NW_027062534.1",
+            "NC_088828.1",
+            "NC_088829.1"
+          ],
+          "seq_count": 4,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Kwoniella"
+          },
+          "common_name": "",
+          "published": "2026-04-05T15:58:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kmangroviensis.NCBI.ASM50746v4/BSgenome.Kmangroviensis.NCBI.ASM50746v4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Kwoniella pini CBS 10737",
       "common_name": "",
       "group": "fungi",
@@ -40888,6 +40935,37 @@
       "common_name": "",
       "published": "2026-04-05T15:57:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tverrucosum.NCBI.ASM15150v1/BSgenome.Tverrucosum.NCBI.ASM15150v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kmangroviensis.NCBI.ASM50746v4",
+      "version": "1.0.0",
+      "organism": "Kwoniella mangroviensis CBS 8507",
+      "assembly": "ASM50746v4",
+      "provider": "NCBI",
+      "accession": "GCF_000507465.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000507465.2/",
+      "file_name": "BSgenome.Kmangroviensis.NCBI.ASM50746v4_1.0.0.tar.gz",
+      "size": 5993539,
+      "seq_ids": [
+        "NW_027062533.1",
+        "NW_027062534.1",
+        "NC_088828.1",
+        "NC_088829.1"
+      ],
+      "seq_count": 4,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Kwoniella"
+      },
+      "common_name": "",
+      "published": "2026-04-05T15:58:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kmangroviensis.NCBI.ASM50746v4/BSgenome.Kmangroviensis.NCBI.ASM50746v4_1.0.0.tar.gz"
     }
   ]
 }

@@ -2061,3 +2061,7 @@ NeedsCompilation: no
 Package: BSgenome.Tverrucosum.NCBI.ASM15150v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kmangroviensis.NCBI.ASM50746v4
+Version: 1.0.0
+NeedsCompilation: no
