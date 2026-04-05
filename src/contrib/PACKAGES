@@ -2289,3 +2289,7 @@ NeedsCompilation: no
 Package: BSgenome.Pverrucosus.NCBI.ASM166265v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Athermomutatus.NCBI.ASM223726v2
+Version: 1.0.0
+NeedsCompilation: no
