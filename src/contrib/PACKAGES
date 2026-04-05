@@ -2365,3 +2365,7 @@ NeedsCompilation: no
 Package: BSgenome.Espinifera.NCBI.ExopspinCBS89968V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Plutzii.NCBI.ParacoccibrPb01V2
+Version: 1.0.0
+NeedsCompilation: no
