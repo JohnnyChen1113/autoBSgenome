@@ -2137,3 +2137,7 @@ NeedsCompilation: no
 Package: BSgenome.Lpennispora.NCBI.Linpe1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10
+Version: 1.0.0
+NeedsCompilation: no

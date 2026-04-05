@@ -1860,6 +1860,54 @@
       ]
     },
     {
+      "organism": "Aureobasidium melanogenum CBS 110374",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Dothideales",
+        "family": "Saccotheciaceae",
+        "genus": "Aureobasidium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10",
+          "version": "1.0.0",
+          "organism": "Aureobasidium melanogenum CBS 110374",
+          "assembly": "Aureobasidium pullulans var. melanogenum CBS 110374 v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000721775.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000721775.1/",
+          "file_name": "BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10_1.0.0.tar.gz",
+          "size": 6833300,
+          "seq_ids": [
+            "NW_024470053.1",
+            "NW_024470054.1",
+            "NW_024470055.1",
+            "NW_024470056.1",
+            "NW_024470057.1"
+          ],
+          "seq_count": 150,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Dothideales",
+            "family": "Saccotheciaceae",
+            "genus": "Aureobasidium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T17:34:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10/BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aureobasidium namibiae CBS 147.97",
       "common_name": "",
       "group": "fungi",
@@ -42403,6 +42451,38 @@
       "common_name": "",
       "published": "2026-04-05T16:43:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lpennispora.NCBI.Linpe1/BSgenome.Lpennispora.NCBI.Linpe1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10",
+      "version": "1.0.0",
+      "organism": "Aureobasidium melanogenum CBS 110374",
+      "assembly": "Aureobasidium pullulans var. melanogenum CBS 110374 v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000721775.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000721775.1/",
+      "file_name": "BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10_1.0.0.tar.gz",
+      "size": 6833300,
+      "seq_ids": [
+        "NW_024470053.1",
+        "NW_024470054.1",
+        "NW_024470055.1",
+        "NW_024470056.1",
+        "NW_024470057.1"
+      ],
+      "seq_count": 150,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Dothideales",
+        "family": "Saccotheciaceae",
+        "genus": "Aureobasidium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T17:34:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10/BSgenome.Amelanogenum.NCBI.AureobasidiumpullulansvarmelanogenumCBS110374v10_1.0.0.tar.gz"
     }
   ]
 }
