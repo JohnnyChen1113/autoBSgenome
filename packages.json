@@ -14089,6 +14089,54 @@
       ]
     },
     {
+      "organism": "Schistosoma mansoni",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Platyhelminthes",
+        "class": "Trematoda",
+        "order": "Strigeidida",
+        "family": "Schistosomatidae",
+        "genus": "Schistosoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Smansoni.NCBI.ASM23792v2",
+          "version": "1.0.0",
+          "organism": "Schistosoma mansoni",
+          "assembly": "ASM23792v2",
+          "provider": "NCBI",
+          "accession": "GCF_000237925.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000237925.1/",
+          "file_name": "BSgenome.Smansoni.NCBI.ASM23792v2_1.0.0.tar.gz",
+          "size": 93254085,
+          "seq_ids": [
+            "NC_031495.1",
+            "NW_017385987.1",
+            "NW_017385988.1",
+            "NW_017385989.1",
+            "NW_017385990.1"
+          ],
+          "seq_count": 885,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Platyhelminthes",
+            "class": "Trematoda",
+            "order": "Strigeidida",
+            "family": "Schistosomatidae",
+            "genus": "Schistosoma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T02:40:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smansoni.NCBI.ASM23792v2/BSgenome.Smansoni.NCBI.ASM23792v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Selaginella moellendorffii",
       "common_name": "",
       "group": "plant",
@@ -27412,6 +27460,38 @@
       "common_name": "",
       "published": "2026-04-05T02:40:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vjacobsoni.NCBI.vjacob10/BSgenome.Vjacobsoni.NCBI.vjacob10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Smansoni.NCBI.ASM23792v2",
+      "version": "1.0.0",
+      "organism": "Schistosoma mansoni",
+      "assembly": "ASM23792v2",
+      "provider": "NCBI",
+      "accession": "GCF_000237925.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000237925.1/",
+      "file_name": "BSgenome.Smansoni.NCBI.ASM23792v2_1.0.0.tar.gz",
+      "size": 93254085,
+      "seq_ids": [
+        "NC_031495.1",
+        "NW_017385987.1",
+        "NW_017385988.1",
+        "NW_017385989.1",
+        "NW_017385990.1"
+      ],
+      "seq_count": 885,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Platyhelminthes",
+        "class": "Trematoda",
+        "order": "Strigeidida",
+        "family": "Schistosomatidae",
+        "genus": "Schistosoma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T02:40:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smansoni.NCBI.ASM23792v2/BSgenome.Smansoni.NCBI.ASM23792v2_1.0.0.tar.gz"
     }
   ]
 }
