@@ -11004,6 +11004,54 @@
       ]
     },
     {
+      "organism": "Exophiala xenobiotica",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Exophiala"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Exenobiotica.NCBI.ExopxenoCBS118157V1",
+          "version": "1.0.0",
+          "organism": "Exophiala xenobiotica",
+          "assembly": "Exop_xeno_CBS118157_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000835505.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835505.1/",
+          "file_name": "BSgenome.Exenobiotica.NCBI.ExopxenoCBS118157V1_1.0.0.tar.gz",
+          "size": 8150823,
+          "seq_ids": [
+            "NW_013562494.1",
+            "NW_013562493.1",
+            "NW_013562492.1",
+            "NW_013562491.1",
+            "NW_013562490.1"
+          ],
+          "seq_count": 15,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Exophiala"
+          },
+          "common_name": "",
+          "published": "2026-04-05T20:38:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Exenobiotica.NCBI.ExopxenoCBS118157V1/BSgenome.Exenobiotica.NCBI.ExopxenoCBS118157V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fibroporia radiculosa",
       "common_name": "",
       "group": "fungi",
@@ -45893,6 +45941,38 @@
       "common_name": "",
       "published": "2026-04-05T20:38:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afischeri.NCBI.ASM14964v4/BSgenome.Afischeri.NCBI.ASM14964v4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Exenobiotica.NCBI.ExopxenoCBS118157V1",
+      "version": "1.0.0",
+      "organism": "Exophiala xenobiotica",
+      "assembly": "Exop_xeno_CBS118157_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000835505.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835505.1/",
+      "file_name": "BSgenome.Exenobiotica.NCBI.ExopxenoCBS118157V1_1.0.0.tar.gz",
+      "size": 8150823,
+      "seq_ids": [
+        "NW_013562494.1",
+        "NW_013562493.1",
+        "NW_013562492.1",
+        "NW_013562491.1",
+        "NW_013562490.1"
+      ],
+      "seq_count": 15,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Exophiala"
+      },
+      "common_name": "",
+      "published": "2026-04-05T20:38:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Exenobiotica.NCBI.ExopxenoCBS118157V1/BSgenome.Exenobiotica.NCBI.ExopxenoCBS118157V1_1.0.0.tar.gz"
     }
   ]
 }
