@@ -5628,6 +5628,54 @@
       ]
     },
     {
+      "organism": "Cryptococcus depauperatus CBS 7841",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cdepauperatus.NCBI.ASM172019v2",
+          "version": "1.0.0",
+          "organism": "Cryptococcus depauperatus CBS 7841",
+          "assembly": "ASM172019v2",
+          "provider": "NCBI",
+          "accession": "GCF_001720195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001720195.1/",
+          "file_name": "BSgenome.Cdepauperatus.NCBI.ASM172019v2_1.0.0.tar.gz",
+          "size": 4212509,
+          "seq_ids": [
+            "NC_089468.1",
+            "NC_089469.1",
+            "NC_089470.1",
+            "NC_089471.1",
+            "NC_089472.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T14:07:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdepauperatus.NCBI.ASM172019v2/BSgenome.Cdepauperatus.NCBI.ASM172019v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptotermes secundus",
       "common_name": "",
       "group": "invertebrate",
@@ -38343,6 +38391,38 @@
       "common_name": "",
       "published": "2026-04-05T14:07:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vpolyspora.NCBI.ASM15003v1/BSgenome.Vpolyspora.NCBI.ASM15003v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cdepauperatus.NCBI.ASM172019v2",
+      "version": "1.0.0",
+      "organism": "Cryptococcus depauperatus CBS 7841",
+      "assembly": "ASM172019v2",
+      "provider": "NCBI",
+      "accession": "GCF_001720195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001720195.1/",
+      "file_name": "BSgenome.Cdepauperatus.NCBI.ASM172019v2_1.0.0.tar.gz",
+      "size": 4212509,
+      "seq_ids": [
+        "NC_089468.1",
+        "NC_089469.1",
+        "NC_089470.1",
+        "NC_089471.1",
+        "NC_089472.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T14:07:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdepauperatus.NCBI.ASM172019v2/BSgenome.Cdepauperatus.NCBI.ASM172019v2_1.0.0.tar.gz"
     }
   ]
 }
