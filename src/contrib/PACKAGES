@@ -1529,3 +1529,7 @@ NeedsCompilation: no
 Package: BSgenome.Ofurnacalis.NCBI.ASM419383v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccapitata.NCBI.Ccap21
+Version: 1.0.0
+NeedsCompilation: no

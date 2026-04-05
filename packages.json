@@ -3061,6 +3061,54 @@
       ]
     },
     {
+      "organism": "Ceratitis capitata",
+      "common_name": "Mediterranean fruit fly",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Tephritidae",
+        "genus": "Ceratitis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccapitata.NCBI.Ccap21",
+          "version": "1.0.0",
+          "organism": "Ceratitis capitata",
+          "assembly": "Ccap_2.1",
+          "provider": "NCBI",
+          "accession": "GCF_000347755.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000347755.3/",
+          "file_name": "BSgenome.Ccapitata.NCBI.Ccap21_1.0.0.tar.gz",
+          "size": 117318875,
+          "seq_ids": [
+            "NW_019376232.1",
+            "NW_019376233.1",
+            "NW_019376234.1",
+            "NW_019376235.1",
+            "NW_019376236.1"
+          ],
+          "seq_count": 2355,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Tephritidae",
+            "genus": "Ceratitis"
+          },
+          "common_name": "Mediterranean fruit fly",
+          "published": "2026-04-05T05:16:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccapitata.NCBI.Ccap21/BSgenome.Ccapitata.NCBI.Ccap21_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ceratosolen solmsi marchali",
       "common_name": "",
       "group": "invertebrate",
@@ -28692,6 +28740,38 @@
       "common_name": "Asian corn borer",
       "published": "2026-04-05T05:15:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ofurnacalis.NCBI.ASM419383v2/BSgenome.Ofurnacalis.NCBI.ASM419383v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccapitata.NCBI.Ccap21",
+      "version": "1.0.0",
+      "organism": "Ceratitis capitata",
+      "assembly": "Ccap_2.1",
+      "provider": "NCBI",
+      "accession": "GCF_000347755.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000347755.3/",
+      "file_name": "BSgenome.Ccapitata.NCBI.Ccap21_1.0.0.tar.gz",
+      "size": 117318875,
+      "seq_ids": [
+        "NW_019376232.1",
+        "NW_019376233.1",
+        "NW_019376234.1",
+        "NW_019376235.1",
+        "NW_019376236.1"
+      ],
+      "seq_count": 2355,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Tephritidae",
+        "genus": "Ceratitis"
+      },
+      "common_name": "Mediterranean fruit fly",
+      "published": "2026-04-05T05:16:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccapitata.NCBI.Ccap21/BSgenome.Ccapitata.NCBI.Ccap21_1.0.0.tar.gz"
     }
   ]
 }
