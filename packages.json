@@ -1908,6 +1908,54 @@
       ]
     },
     {
+      "organism": "Aspergillus ruber CBS 135680",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aruber.NCBI.Eurhe1",
+          "version": "1.0.0",
+          "organism": "Aspergillus ruber CBS 135680",
+          "assembly": "Eurhe1",
+          "provider": "NCBI",
+          "accession": "GCF_000600275.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000600275.1/",
+          "file_name": "BSgenome.Aruber.NCBI.Eurhe1_1.0.0.tar.gz",
+          "size": 6820170,
+          "seq_ids": [
+            "NW_024467297.1",
+            "NW_024467298.1",
+            "NW_024467299.1",
+            "NW_024467300.1",
+            "NW_024467301.1"
+          ],
+          "seq_count": 110,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T18:48:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aruber.NCBI.Eurhe1/BSgenome.Aruber.NCBI.Eurhe1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Athene cunicularia",
       "common_name": "burrowing owl",
       "group": "vertebrate_other",
@@ -43259,6 +43307,38 @@
       "common_name": "",
       "published": "2026-04-05T17:37:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fradiculosa.NCBI.ASM31352v1/BSgenome.Fradiculosa.NCBI.ASM31352v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aruber.NCBI.Eurhe1",
+      "version": "1.0.0",
+      "organism": "Aspergillus ruber CBS 135680",
+      "assembly": "Eurhe1",
+      "provider": "NCBI",
+      "accession": "GCF_000600275.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000600275.1/",
+      "file_name": "BSgenome.Aruber.NCBI.Eurhe1_1.0.0.tar.gz",
+      "size": 6820170,
+      "seq_ids": [
+        "NW_024467297.1",
+        "NW_024467298.1",
+        "NW_024467299.1",
+        "NW_024467300.1",
+        "NW_024467301.1"
+      ],
+      "seq_count": 110,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T18:48:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aruber.NCBI.Eurhe1/BSgenome.Aruber.NCBI.Eurhe1_1.0.0.tar.gz"
     }
   ]
 }
