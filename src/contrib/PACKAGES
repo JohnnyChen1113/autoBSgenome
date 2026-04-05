@@ -1697,3 +1697,7 @@ NeedsCompilation: no
 Package: BSgenome.Pjirovecii.NCBI.PneujiroRU7V2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oparapolymorpha.NCBI.Hansenula2
+Version: 1.0.0
+NeedsCompilation: no
