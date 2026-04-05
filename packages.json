@@ -9872,6 +9872,54 @@
       ]
     },
     {
+      "organism": "Kazachstania africana CBS 2517",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Kazachstania"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kafricana.NCBI.KaCBS2517",
+          "version": "1.0.0",
+          "organism": "Kazachstania africana CBS 2517",
+          "assembly": "Ka_CBS2517",
+          "provider": "NCBI",
+          "accession": "GCF_000304475.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000304475.1/",
+          "file_name": "BSgenome.Kafricana.NCBI.KaCBS2517_1.0.0.tar.gz",
+          "size": 2950412,
+          "seq_ids": [
+            "NC_018940.1",
+            "NC_018941.1",
+            "NC_018942.1",
+            "NC_018943.1",
+            "NC_018944.1"
+          ],
+          "seq_count": 12,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Kazachstania"
+          },
+          "common_name": "",
+          "published": "2026-04-05T10:37:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kafricana.NCBI.KaCBS2517/BSgenome.Kafricana.NCBI.KaCBS2517_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Kluyveromyces lactis",
       "common_name": "",
       "group": "fungi",
@@ -35159,6 +35207,38 @@
       "common_name": "",
       "published": "2026-04-05T10:37:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Llanzarotensis.NCBI.LALA0/BSgenome.Llanzarotensis.NCBI.LALA0_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kafricana.NCBI.KaCBS2517",
+      "version": "1.0.0",
+      "organism": "Kazachstania africana CBS 2517",
+      "assembly": "Ka_CBS2517",
+      "provider": "NCBI",
+      "accession": "GCF_000304475.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000304475.1/",
+      "file_name": "BSgenome.Kafricana.NCBI.KaCBS2517_1.0.0.tar.gz",
+      "size": 2950412,
+      "seq_ids": [
+        "NC_018940.1",
+        "NC_018941.1",
+        "NC_018942.1",
+        "NC_018943.1",
+        "NC_018944.1"
+      ],
+      "seq_count": 12,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Kazachstania"
+      },
+      "common_name": "",
+      "published": "2026-04-05T10:37:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kafricana.NCBI.KaCBS2517/BSgenome.Kafricana.NCBI.KaCBS2517_1.0.0.tar.gz"
     }
   ]
 }
