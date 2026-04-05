@@ -1701,3 +1701,7 @@ NeedsCompilation: no
 Package: BSgenome.Oparapolymorpha.NCBI.Hansenula2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Esinecaudum.NCBI.ASM154855v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -7524,6 +7524,54 @@
       ]
     },
     {
+      "organism": "Eremothecium sinecaudum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Eremothecium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Esinecaudum.NCBI.ASM154855v1",
+          "version": "1.0.0",
+          "organism": "Eremothecium sinecaudum",
+          "assembly": "ASM154855v1",
+          "provider": "NCBI",
+          "accession": "GCF_001548555.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001548555.1/",
+          "file_name": "BSgenome.Esinecaudum.NCBI.ASM154855v1_1.0.0.tar.gz",
+          "size": 2185969,
+          "seq_ids": [
+            "NC_030893.1",
+            "NC_030894.1",
+            "NC_030895.1",
+            "NC_030896.1",
+            "NC_030897.1"
+          ],
+          "seq_count": 7,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Eremothecium"
+          },
+          "common_name": "",
+          "published": "2026-04-05T08:49:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Esinecaudum.NCBI.ASM154855v1/BSgenome.Esinecaudum.NCBI.ASM154855v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Erythranthe guttata",
       "common_name": "spotted monkey flower",
       "group": "plant",
@@ -33721,6 +33769,38 @@
       "common_name": "",
       "published": "2026-04-05T08:49:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oparapolymorpha.NCBI.Hansenula2/BSgenome.Oparapolymorpha.NCBI.Hansenula2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Esinecaudum.NCBI.ASM154855v1",
+      "version": "1.0.0",
+      "organism": "Eremothecium sinecaudum",
+      "assembly": "ASM154855v1",
+      "provider": "NCBI",
+      "accession": "GCF_001548555.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001548555.1/",
+      "file_name": "BSgenome.Esinecaudum.NCBI.ASM154855v1_1.0.0.tar.gz",
+      "size": 2185969,
+      "seq_ids": [
+        "NC_030893.1",
+        "NC_030894.1",
+        "NC_030895.1",
+        "NC_030896.1",
+        "NC_030897.1"
+      ],
+      "seq_count": 7,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Eremothecium"
+      },
+      "common_name": "",
+      "published": "2026-04-05T08:49:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Esinecaudum.NCBI.ASM154855v1/BSgenome.Esinecaudum.NCBI.ASM154855v1_1.0.0.tar.gz"
     }
   ]
 }
