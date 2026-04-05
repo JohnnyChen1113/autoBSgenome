@@ -12814,6 +12814,54 @@
       ]
     },
     {
+      "organism": "Octopus sinensis",
+      "common_name": "East Asian common octopus",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Cephalopoda",
+        "order": "Octopoda",
+        "family": "Octopodidae",
+        "genus": "Octopus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Osinensis.NCBI.ASM634580v1",
+          "version": "1.0.0",
+          "organism": "Octopus sinensis",
+          "assembly": "ASM634580v1",
+          "provider": "NCBI",
+          "accession": "GCF_006345805.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_006345805.1/",
+          "file_name": "BSgenome.Osinensis.NCBI.ASM634580v1_1.0.0.tar.gz",
+          "size": 679925043,
+          "seq_ids": [
+            "NC_042997.1",
+            "NC_042998.1",
+            "NC_042999.1",
+            "NC_043000.1",
+            "NC_043001.1"
+          ],
+          "seq_count": 13516,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Mollusca",
+            "class": "Cephalopoda",
+            "order": "Octopoda",
+            "family": "Octopodidae",
+            "genus": "Octopus"
+          },
+          "common_name": "East Asian common octopus",
+          "published": "2026-04-05T08:01:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osinensis.NCBI.ASM634580v1/BSgenome.Osinensis.NCBI.ASM634580v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Olea europaea var. sylvestris",
       "common_name": "",
       "group": "plant",
@@ -33001,6 +33049,38 @@
       "common_name": "California two-spot octopus",
       "published": "2026-04-05T08:01:14Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Obimaculoides.NCBI.ASM119413v2/BSgenome.Obimaculoides.NCBI.ASM119413v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Osinensis.NCBI.ASM634580v1",
+      "version": "1.0.0",
+      "organism": "Octopus sinensis",
+      "assembly": "ASM634580v1",
+      "provider": "NCBI",
+      "accession": "GCF_006345805.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_006345805.1/",
+      "file_name": "BSgenome.Osinensis.NCBI.ASM634580v1_1.0.0.tar.gz",
+      "size": 679925043,
+      "seq_ids": [
+        "NC_042997.1",
+        "NC_042998.1",
+        "NC_042999.1",
+        "NC_043000.1",
+        "NC_043001.1"
+      ],
+      "seq_count": 13516,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Mollusca",
+        "class": "Cephalopoda",
+        "order": "Octopoda",
+        "family": "Octopodidae",
+        "genus": "Octopus"
+      },
+      "common_name": "East Asian common octopus",
+      "published": "2026-04-05T08:01:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osinensis.NCBI.ASM634580v1/BSgenome.Osinensis.NCBI.ASM634580v1_1.0.0.tar.gz"
     }
   ]
 }
