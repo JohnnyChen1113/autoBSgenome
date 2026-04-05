@@ -10111,6 +10111,54 @@
       ]
     },
     {
+      "organism": "Lachancea lanzarotensis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Lachancea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Llanzarotensis.NCBI.LALA0",
+          "version": "1.0.0",
+          "organism": "Lachancea lanzarotensis",
+          "assembly": "LALA0",
+          "provider": "NCBI",
+          "accession": "GCF_000938715.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000938715.1/",
+          "file_name": "BSgenome.Llanzarotensis.NCBI.LALA0_1.0.0.tar.gz",
+          "size": 2901789,
+          "seq_ids": [
+            "NW_019212879.1",
+            "NW_019212880.1",
+            "NW_019212881.1",
+            "NW_019212882.1",
+            "NW_019212883.1"
+          ],
+          "seq_count": 24,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Lachancea"
+          },
+          "common_name": "",
+          "published": "2026-04-05T10:37:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Llanzarotensis.NCBI.LALA0/BSgenome.Llanzarotensis.NCBI.LALA0_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lachancea thermotolerans CBS 6340",
       "common_name": "",
       "group": "fungi",
@@ -35079,6 +35127,38 @@
       "common_name": "",
       "published": "2026-04-05T09:43:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kmarxianus.NCBI.Kmar10/BSgenome.Kmarxianus.NCBI.Kmar10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Llanzarotensis.NCBI.LALA0",
+      "version": "1.0.0",
+      "organism": "Lachancea lanzarotensis",
+      "assembly": "LALA0",
+      "provider": "NCBI",
+      "accession": "GCF_000938715.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000938715.1/",
+      "file_name": "BSgenome.Llanzarotensis.NCBI.LALA0_1.0.0.tar.gz",
+      "size": 2901789,
+      "seq_ids": [
+        "NW_019212879.1",
+        "NW_019212880.1",
+        "NW_019212881.1",
+        "NW_019212882.1",
+        "NW_019212883.1"
+      ],
+      "seq_count": 24,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Lachancea"
+      },
+      "common_name": "",
+      "published": "2026-04-05T10:37:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Llanzarotensis.NCBI.LALA0/BSgenome.Llanzarotensis.NCBI.LALA0_1.0.0.tar.gz"
     }
   ]
 }
