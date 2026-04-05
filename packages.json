@@ -14642,6 +14642,54 @@
       ]
     },
     {
+      "organism": "Lachnellula hyalina",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Lachnaceae",
+        "genus": "Lachnellula"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lhyalina.NCBI.CFIALhyaEG2017",
+          "version": "1.0.0",
+          "organism": "Lachnellula hyalina",
+          "assembly": "CFIA_Lhya_EG2017",
+          "provider": "NCBI",
+          "accession": "GCF_007821495.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007821495.1/",
+          "file_name": "BSgenome.Lhyalina.NCBI.CFIALhyaEG2017_1.0.0.tar.gz",
+          "size": 8900979,
+          "seq_ids": [
+            "NW_022157115.1",
+            "NW_022157116.1",
+            "NW_022157117.1",
+            "NW_022157118.1",
+            "NW_022157119.1"
+          ],
+          "seq_count": 685,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Helotiales",
+            "family": "Lachnaceae",
+            "genus": "Lachnellula"
+          },
+          "common_name": "",
+          "published": "2026-04-05T23:37:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lhyalina.NCBI.CFIALhyaEG2017/BSgenome.Lhyalina.NCBI.CFIALhyaEG2017_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lactuca sativa",
       "common_name": "garden lettuce",
       "group": "plant",
@@ -48293,6 +48341,38 @@
       "common_name": "",
       "published": "2026-04-05T22:37:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fnubica.NCBI.ASM164696v1/BSgenome.Fnubica.NCBI.ASM164696v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lhyalina.NCBI.CFIALhyaEG2017",
+      "version": "1.0.0",
+      "organism": "Lachnellula hyalina",
+      "assembly": "CFIA_Lhya_EG2017",
+      "provider": "NCBI",
+      "accession": "GCF_007821495.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_007821495.1/",
+      "file_name": "BSgenome.Lhyalina.NCBI.CFIALhyaEG2017_1.0.0.tar.gz",
+      "size": 8900979,
+      "seq_ids": [
+        "NW_022157115.1",
+        "NW_022157116.1",
+        "NW_022157117.1",
+        "NW_022157118.1",
+        "NW_022157119.1"
+      ],
+      "seq_count": 685,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Lachnaceae",
+        "genus": "Lachnellula"
+      },
+      "common_name": "",
+      "published": "2026-04-05T23:37:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lhyalina.NCBI.CFIALhyaEG2017/BSgenome.Lhyalina.NCBI.CFIALhyaEG2017_1.0.0.tar.gz"
     }
   ]
 }
