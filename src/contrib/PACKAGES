@@ -1517,3 +1517,7 @@ NeedsCompilation: no
 Package: BSgenome.Spistillata.NCBI.Stylophorapistillatav11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lanatina.NCBI.LinAna20
+Version: 1.0.0
+NeedsCompilation: no
