@@ -2353,3 +2353,7 @@ NeedsCompilation: no
 Package: BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dconiospora.NCBI.ASM162519v1
+Version: 1.0.0
+NeedsCompilation: no

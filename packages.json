@@ -9308,6 +9308,54 @@
       ]
     },
     {
+      "organism": "Drechmeria coniospora",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Ophiocordycipitaceae",
+        "genus": "Drechmeria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dconiospora.NCBI.ASM162519v1",
+          "version": "1.0.0",
+          "organism": "Drechmeria coniospora",
+          "assembly": "ASM162519v1",
+          "provider": "NCBI",
+          "accession": "GCF_001625195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001625195.1/",
+          "file_name": "BSgenome.Dconiospora.NCBI.ASM162519v1_1.0.0.tar.gz",
+          "size": 8430552,
+          "seq_ids": [
+            "NC_054389.1",
+            "NC_054390.1",
+            "NC_054391.1",
+            "NW_024467499.1",
+            "NW_024467500.1"
+          ],
+          "seq_count": 28,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Ophiocordycipitaceae",
+            "genus": "Drechmeria"
+          },
+          "common_name": "",
+          "published": "2026-04-05T21:36:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dconiospora.NCBI.ASM162519v1/BSgenome.Dconiospora.NCBI.ASM162519v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila albomicans",
       "common_name": "",
       "group": "invertebrate",
@@ -46693,6 +46741,38 @@
       "common_name": "",
       "published": "2026-04-05T21:36:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10/BSgenome.Bvictoriae.NCBI.Cochliobolusvictoriaev10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dconiospora.NCBI.ASM162519v1",
+      "version": "1.0.0",
+      "organism": "Drechmeria coniospora",
+      "assembly": "ASM162519v1",
+      "provider": "NCBI",
+      "accession": "GCF_001625195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001625195.1/",
+      "file_name": "BSgenome.Dconiospora.NCBI.ASM162519v1_1.0.0.tar.gz",
+      "size": 8430552,
+      "seq_ids": [
+        "NC_054389.1",
+        "NC_054390.1",
+        "NC_054391.1",
+        "NW_024467499.1",
+        "NW_024467500.1"
+      ],
+      "seq_count": 28,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Ophiocordycipitaceae",
+        "genus": "Drechmeria"
+      },
+      "common_name": "",
+      "published": "2026-04-05T21:36:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dconiospora.NCBI.ASM162519v1/BSgenome.Dconiospora.NCBI.ASM162519v1_1.0.0.tar.gz"
     }
   ]
 }
