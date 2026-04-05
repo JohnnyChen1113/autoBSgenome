@@ -7112,6 +7112,54 @@
       ]
     },
     {
+      "organism": "Cordyceps fumosorosea ARSEF 2679",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Cordycipitaceae",
+        "genus": "Cordyceps"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cfumosorosea.NCBI.ISF10",
+          "version": "1.0.0",
+          "organism": "Cordyceps fumosorosea ARSEF 2679",
+          "assembly": "ISF 1.0",
+          "provider": "NCBI",
+          "accession": "GCF_001636725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001636725.1/",
+          "file_name": "BSgenome.Cfumosorosea.NCBI.ISF10_1.0.0.tar.gz",
+          "size": 8894693,
+          "seq_ids": [
+            "NW_017387301.1",
+            "NW_017387310.1",
+            "NW_017387400.1",
+            "NW_017387401.1",
+            "NW_017387402.1"
+          ],
+          "seq_count": 430,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Cordycipitaceae",
+            "genus": "Cordyceps"
+          },
+          "common_name": "",
+          "published": "2026-04-05T22:36:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfumosorosea.NCBI.ISF10/BSgenome.Cfumosorosea.NCBI.ISF10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cordyceps militaris CM01",
       "common_name": "",
       "group": "fungi",
@@ -47733,6 +47781,38 @@
       "common_name": "",
       "published": "2026-04-05T22:35:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fmultimorphosa.NCBI.FonsmultCBS102226V1/BSgenome.Fmultimorphosa.NCBI.FonsmultCBS102226V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cfumosorosea.NCBI.ISF10",
+      "version": "1.0.0",
+      "organism": "Cordyceps fumosorosea ARSEF 2679",
+      "assembly": "ISF 1.0",
+      "provider": "NCBI",
+      "accession": "GCF_001636725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001636725.1/",
+      "file_name": "BSgenome.Cfumosorosea.NCBI.ISF10_1.0.0.tar.gz",
+      "size": 8894693,
+      "seq_ids": [
+        "NW_017387301.1",
+        "NW_017387310.1",
+        "NW_017387400.1",
+        "NW_017387401.1",
+        "NW_017387402.1"
+      ],
+      "seq_count": 430,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Cordycipitaceae",
+        "genus": "Cordyceps"
+      },
+      "common_name": "",
+      "published": "2026-04-05T22:36:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfumosorosea.NCBI.ISF10/BSgenome.Cfumosorosea.NCBI.ISF10_1.0.0.tar.gz"
     }
   ]
 }
