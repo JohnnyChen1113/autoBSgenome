@@ -1673,3 +1673,7 @@ NeedsCompilation: no
 Package: BSgenome.Mrestricta.NCBI.ASM329048v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmurina.NCBI.PneumomurinaB123V4
+Version: 1.0.0
+NeedsCompilation: no
