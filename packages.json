@@ -26026,6 +26026,54 @@
       ]
     },
     {
+      "organism": "Trichoderma ghanense",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tghanense.NCBI.ASM438278v1",
+          "version": "1.0.0",
+          "organism": "Trichoderma ghanense",
+          "assembly": "ASM438278v1",
+          "provider": "NCBI",
+          "accession": "GCF_004382785.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004382785.1/",
+          "file_name": "BSgenome.Tghanense.NCBI.ASM438278v1_1.0.0.tar.gz",
+          "size": 8341959,
+          "seq_ids": [
+            "NW_027395663.1",
+            "NW_027395664.1",
+            "NW_027395673.1",
+            "NW_027395674.1",
+            "NW_027395675.1"
+          ],
+          "seq_count": 50,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Hypocreaceae",
+            "genus": "Trichoderma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T21:35:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tghanense.NCBI.ASM438278v1/BSgenome.Tghanense.NCBI.ASM438278v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichogramma pretiosum",
       "common_name": "",
       "group": "invertebrate",
@@ -46293,6 +46341,38 @@
       "common_name": "",
       "published": "2026-04-05T20:39:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01/BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tghanense.NCBI.ASM438278v1",
+      "version": "1.0.0",
+      "organism": "Trichoderma ghanense",
+      "assembly": "ASM438278v1",
+      "provider": "NCBI",
+      "accession": "GCF_004382785.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004382785.1/",
+      "file_name": "BSgenome.Tghanense.NCBI.ASM438278v1_1.0.0.tar.gz",
+      "size": 8341959,
+      "seq_ids": [
+        "NW_027395663.1",
+        "NW_027395664.1",
+        "NW_027395673.1",
+        "NW_027395674.1",
+        "NW_027395675.1"
+      ],
+      "seq_count": 50,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T21:35:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tghanense.NCBI.ASM438278v1/BSgenome.Tghanense.NCBI.ASM438278v1_1.0.0.tar.gz"
     }
   ]
 }

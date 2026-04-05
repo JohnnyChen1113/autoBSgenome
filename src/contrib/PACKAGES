@@ -2333,3 +2333,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmilitaris.NCBI.CmilitarisCM01v01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tghanense.NCBI.ASM438278v1
+Version: 1.0.0
+NeedsCompilation: no
