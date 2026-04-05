@@ -1877,3 +1877,7 @@ NeedsCompilation: no
 Package: BSgenome.Drugosa.NCBI.ASM870459v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ndairenensis.NCBI.ASM22711v2
+Version: 1.0.0
+NeedsCompilation: no

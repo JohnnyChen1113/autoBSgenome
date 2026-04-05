@@ -13079,6 +13079,54 @@
       ]
     },
     {
+      "organism": "Naumovozyma dairenensis CBS 421",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Naumovozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ndairenensis.NCBI.ASM22711v2",
+          "version": "1.0.0",
+          "organism": "Naumovozyma dairenensis CBS 421",
+          "assembly": "ASM22711v2",
+          "provider": "NCBI",
+          "accession": "GCF_000227115.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000227115.2/",
+          "file_name": "BSgenome.Ndairenensis.NCBI.ASM22711v2_1.0.0.tar.gz",
+          "size": 3593551,
+          "seq_ids": [
+            "NC_016479.1",
+            "NC_016480.1",
+            "NC_016481.1",
+            "NC_016482.1",
+            "NC_016483.1"
+          ],
+          "seq_count": 11,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Naumovozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-05T13:02:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ndairenensis.NCBI.ASM22711v2/BSgenome.Ndairenensis.NCBI.ASM22711v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Neltuma alba",
       "common_name": "",
       "group": "plant",
@@ -37237,6 +37285,38 @@
       "common_name": "",
       "published": "2026-04-05T11:35:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Drugosa.NCBI.ASM870459v1/BSgenome.Drugosa.NCBI.ASM870459v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ndairenensis.NCBI.ASM22711v2",
+      "version": "1.0.0",
+      "organism": "Naumovozyma dairenensis CBS 421",
+      "assembly": "ASM22711v2",
+      "provider": "NCBI",
+      "accession": "GCF_000227115.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000227115.2/",
+      "file_name": "BSgenome.Ndairenensis.NCBI.ASM22711v2_1.0.0.tar.gz",
+      "size": 3593551,
+      "seq_ids": [
+        "NC_016479.1",
+        "NC_016480.1",
+        "NC_016481.1",
+        "NC_016482.1",
+        "NC_016483.1"
+      ],
+      "seq_count": 11,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Naumovozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-05T13:02:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ndairenensis.NCBI.ASM22711v2/BSgenome.Ndairenensis.NCBI.ASM22711v2_1.0.0.tar.gz"
     }
   ]
 }
