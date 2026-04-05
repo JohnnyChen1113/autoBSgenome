@@ -1669,3 +1669,7 @@ NeedsCompilation: no
 Package: BSgenome.Osinensis.NCBI.ASM634580v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mrestricta.NCBI.ASM329048v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -10346,6 +10346,54 @@
       ]
     },
     {
+      "organism": "Malassezia restricta",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Malasseziomycetes",
+        "order": "Malasseziales",
+        "family": "Malasseziaceae",
+        "genus": "Malassezia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mrestricta.NCBI.ASM329048v1",
+          "version": "1.0.0",
+          "organism": "Malassezia restricta",
+          "assembly": "ASM329048v1",
+          "provider": "NCBI",
+          "accession": "GCF_003290485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003290485.1/",
+          "file_name": "BSgenome.Mrestricta.NCBI.ASM329048v1_1.0.0.tar.gz",
+          "size": 1910877,
+          "seq_ids": [
+            "NC_040193.1",
+            "NC_040194.1",
+            "NC_040195.1",
+            "NC_040196.1",
+            "NC_040197.1"
+          ],
+          "seq_count": 10,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Malasseziomycetes",
+            "order": "Malasseziales",
+            "family": "Malasseziaceae",
+            "genus": "Malassezia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T08:48:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mrestricta.NCBI.ASM329048v1/BSgenome.Mrestricta.NCBI.ASM329048v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Manacus vitellinus",
       "common_name": "golden-collared manakin",
       "group": "vertebrate_other",
@@ -33081,6 +33129,38 @@
       "common_name": "East Asian common octopus",
       "published": "2026-04-05T08:01:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osinensis.NCBI.ASM634580v1/BSgenome.Osinensis.NCBI.ASM634580v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mrestricta.NCBI.ASM329048v1",
+      "version": "1.0.0",
+      "organism": "Malassezia restricta",
+      "assembly": "ASM329048v1",
+      "provider": "NCBI",
+      "accession": "GCF_003290485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003290485.1/",
+      "file_name": "BSgenome.Mrestricta.NCBI.ASM329048v1_1.0.0.tar.gz",
+      "size": 1910877,
+      "seq_ids": [
+        "NC_040193.1",
+        "NC_040194.1",
+        "NC_040195.1",
+        "NC_040196.1",
+        "NC_040197.1"
+      ],
+      "seq_count": 10,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Malasseziomycetes",
+        "order": "Malasseziales",
+        "family": "Malasseziaceae",
+        "genus": "Malassezia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T08:48:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mrestricta.NCBI.ASM329048v1/BSgenome.Mrestricta.NCBI.ASM329048v1_1.0.0.tar.gz"
     }
   ]
 }
