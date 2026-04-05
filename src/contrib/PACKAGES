@@ -2461,3 +2461,7 @@ NeedsCompilation: no
 Package: BSgenome.Cglobosum.NCBI.ASM14336v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asydowii.NCBI.Aspsy1
+Version: 1.0.0
+NeedsCompilation: no
