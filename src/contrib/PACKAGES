@@ -1889,3 +1889,7 @@ NeedsCompilation: no
 Package: BSgenome.Scomplicata.NCBI.Saico1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wanomalus.NCBI.Wican1
+Version: 1.0.0
+NeedsCompilation: no

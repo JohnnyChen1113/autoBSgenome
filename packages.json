@@ -22256,6 +22256,54 @@
       ]
     },
     {
+      "organism": "Wickerhamomyces anomalus NRRL Y-366-8",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Phaffomycetales",
+        "family": "Wickerhamomycetaceae",
+        "genus": "Wickerhamomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Wanomalus.NCBI.Wican1",
+          "version": "1.0.0",
+          "organism": "Wickerhamomyces anomalus NRRL Y-366-8",
+          "assembly": "Wican1",
+          "provider": "NCBI",
+          "accession": "GCF_001661255.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001661255.1/",
+          "file_name": "BSgenome.Wanomalus.NCBI.Wican1_1.0.0.tar.gz",
+          "size": 3639065,
+          "seq_ids": [
+            "NW_017567110.1",
+            "NW_017567111.1",
+            "NW_017567112.1",
+            "NW_017567113.1",
+            "NW_017567114.1"
+          ],
+          "seq_count": 46,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Phaffomycetales",
+            "family": "Wickerhamomycetaceae",
+            "genus": "Wickerhamomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-05T13:03:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wanomalus.NCBI.Wican1/BSgenome.Wanomalus.NCBI.Wican1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Xiphophorus couchianus",
       "common_name": "Monterrey platyfish",
       "group": "vertebrate_other",
@@ -37468,6 +37516,38 @@
       "common_name": "",
       "published": "2026-04-05T13:02:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scomplicata.NCBI.Saico1/BSgenome.Scomplicata.NCBI.Saico1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Wanomalus.NCBI.Wican1",
+      "version": "1.0.0",
+      "organism": "Wickerhamomyces anomalus NRRL Y-366-8",
+      "assembly": "Wican1",
+      "provider": "NCBI",
+      "accession": "GCF_001661255.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001661255.1/",
+      "file_name": "BSgenome.Wanomalus.NCBI.Wican1_1.0.0.tar.gz",
+      "size": 3639065,
+      "seq_ids": [
+        "NW_017567110.1",
+        "NW_017567111.1",
+        "NW_017567112.1",
+        "NW_017567113.1",
+        "NW_017567114.1"
+      ],
+      "seq_count": 46,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Phaffomycetales",
+        "family": "Wickerhamomycetaceae",
+        "genus": "Wickerhamomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-05T13:03:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wanomalus.NCBI.Wican1/BSgenome.Wanomalus.NCBI.Wican1_1.0.0.tar.gz"
     }
   ]
 }
