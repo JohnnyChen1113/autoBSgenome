@@ -2177,3 +2177,7 @@ NeedsCompilation: no
 Package: BSgenome.Acampestris.NCBI.Aspcam1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fradiculosa.NCBI.ASM31352v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -10000,6 +10000,54 @@
       ]
     },
     {
+      "organism": "Fibroporia radiculosa",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Fibroporiaceae",
+        "genus": "Fibroporia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fradiculosa.NCBI.ASM31352v1",
+          "version": "1.0.0",
+          "organism": "Fibroporia radiculosa",
+          "assembly": "ASM31352v1",
+          "provider": "NCBI",
+          "accession": "GCF_000313525.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000313525.1/",
+          "file_name": "BSgenome.Fradiculosa.NCBI.ASM31352v1_1.0.0.tar.gz",
+          "size": 7354773,
+          "seq_ids": [
+            "NW_012132922.1",
+            "NW_012132923.1",
+            "NW_012132924.1",
+            "NW_012132925.1",
+            "NW_012132926.1"
+          ],
+          "seq_count": 861,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Polyporales",
+            "family": "Fibroporiaceae",
+            "genus": "Fibroporia"
+          },
+          "common_name": "",
+          "published": "2026-04-05T17:37:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fradiculosa.NCBI.ASM31352v1/BSgenome.Fradiculosa.NCBI.ASM31352v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ficedula albicollis",
       "common_name": "Collared flycatcher",
       "group": "vertebrate_other",
@@ -43179,6 +43227,38 @@
       "common_name": "",
       "published": "2026-04-05T17:36:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acampestris.NCBI.Aspcam1/BSgenome.Acampestris.NCBI.Aspcam1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fradiculosa.NCBI.ASM31352v1",
+      "version": "1.0.0",
+      "organism": "Fibroporia radiculosa",
+      "assembly": "ASM31352v1",
+      "provider": "NCBI",
+      "accession": "GCF_000313525.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000313525.1/",
+      "file_name": "BSgenome.Fradiculosa.NCBI.ASM31352v1_1.0.0.tar.gz",
+      "size": 7354773,
+      "seq_ids": [
+        "NW_012132922.1",
+        "NW_012132923.1",
+        "NW_012132924.1",
+        "NW_012132925.1",
+        "NW_012132926.1"
+      ],
+      "seq_count": 861,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Fibroporiaceae",
+        "genus": "Fibroporia"
+      },
+      "common_name": "",
+      "published": "2026-04-05T17:37:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fradiculosa.NCBI.ASM31352v1/BSgenome.Fradiculosa.NCBI.ASM31352v1_1.0.0.tar.gz"
     }
   ]
 }
