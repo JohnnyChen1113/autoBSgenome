@@ -2004,6 +2004,54 @@
       ]
     },
     {
+      "organism": "Aspergillus nidulans FGSC A4",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Anidulans.NCBI.ASM1142v1",
+          "version": "1.0.0",
+          "organism": "Aspergillus nidulans FGSC A4",
+          "assembly": "ASM1142v1",
+          "provider": "NCBI",
+          "accession": "GCF_000011425.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000011425.1/",
+          "file_name": "BSgenome.Anidulans.NCBI.ASM1142v1_1.0.0.tar.gz",
+          "size": 7698948,
+          "seq_ids": [
+            "NC_066257.1",
+            "NC_066258.1",
+            "NC_066259.1",
+            "NC_066260.1",
+            "NC_066261.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-05T19:36:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anidulans.NCBI.ASM1142v1/BSgenome.Anidulans.NCBI.ASM1142v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus ochraceoroseus IBT 24754",
       "common_name": "",
       "group": "fungi",
@@ -44613,6 +44661,38 @@
       "common_name": "",
       "published": "2026-04-05T19:36:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gclavigera.NCBI.Sanger454IlluminaPA20/BSgenome.Gclavigera.NCBI.Sanger454IlluminaPA20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Anidulans.NCBI.ASM1142v1",
+      "version": "1.0.0",
+      "organism": "Aspergillus nidulans FGSC A4",
+      "assembly": "ASM1142v1",
+      "provider": "NCBI",
+      "accession": "GCF_000011425.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000011425.1/",
+      "file_name": "BSgenome.Anidulans.NCBI.ASM1142v1_1.0.0.tar.gz",
+      "size": 7698948,
+      "seq_ids": [
+        "NC_066257.1",
+        "NC_066258.1",
+        "NC_066259.1",
+        "NC_066260.1",
+        "NC_066261.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-05T19:36:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anidulans.NCBI.ASM1142v1/BSgenome.Anidulans.NCBI.ASM1142v1_1.0.0.tar.gz"
     }
   ]
 }

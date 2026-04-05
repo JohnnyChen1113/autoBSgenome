@@ -2249,3 +2249,7 @@ NeedsCompilation: no
 Package: BSgenome.Gclavigera.NCBI.Sanger454IlluminaPA20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Anidulans.NCBI.ASM1142v1
+Version: 1.0.0
+NeedsCompilation: no
