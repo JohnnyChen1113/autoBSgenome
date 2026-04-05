@@ -1469,3 +1469,7 @@ NeedsCompilation: no
 Package: BSgenome.Smansoni.NCBI.ASM23792v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tni.NCBI.tn1
+Version: 1.0.0
+NeedsCompilation: no
