@@ -2697,3 +2697,7 @@ NeedsCompilation: no
 Package: BSgenome.Ooligospora.NCBI.AOL2492710
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aalliaceus.NCBI.Aspalli1
+Version: 1.0.0
+NeedsCompilation: no
