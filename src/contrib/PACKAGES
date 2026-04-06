@@ -3053,3 +3053,7 @@ NeedsCompilation: no
 Package: BSgenome.Cowczarzaki.NCBI.CowczarzakiV2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ttrahens.NCBI.TheTraMay2010
+Version: 1.0.0
+NeedsCompilation: no

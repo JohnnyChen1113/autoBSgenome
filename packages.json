@@ -32722,6 +32722,48 @@
       ]
     },
     {
+      "organism": "Thecamonas trahens ATCC 50062",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "order": "Apusomonadida",
+        "family": "Apusomonadidae",
+        "genus": "Thecamonas"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ttrahens.NCBI.TheTraMay2010",
+          "version": "1.0.0",
+          "organism": "Thecamonas trahens ATCC 50062",
+          "assembly": "TheTra_May2010",
+          "provider": "NCBI",
+          "accession": "GCF_000142905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000142905.1/",
+          "file_name": "BSgenome.Ttrahens.NCBI.TheTraMay2010_1.0.0.tar.gz",
+          "size": 7537986,
+          "seq_ids": [
+            "NW_013657679.1",
+            "NW_013657678.1",
+            "NW_013657677.1",
+            "NW_013657676.1",
+            "NW_013657675.1"
+          ],
+          "seq_count": 131,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "order": "Apusomonadida",
+            "family": "Apusomonadidae",
+            "genus": "Thecamonas"
+          },
+          "common_name": "",
+          "published": "2026-04-06T20:07:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ttrahens.NCBI.TheTraMay2010/BSgenome.Ttrahens.NCBI.TheTraMay2010_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Theileria annulata",
       "common_name": "",
       "group": "other",
@@ -60483,6 +60525,35 @@
       "common_name": "",
       "published": "2026-04-06T20:07:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cowczarzaki.NCBI.CowczarzakiV2/BSgenome.Cowczarzaki.NCBI.CowczarzakiV2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ttrahens.NCBI.TheTraMay2010",
+      "version": "1.0.0",
+      "organism": "Thecamonas trahens ATCC 50062",
+      "assembly": "TheTra_May2010",
+      "provider": "NCBI",
+      "accession": "GCF_000142905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000142905.1/",
+      "file_name": "BSgenome.Ttrahens.NCBI.TheTraMay2010_1.0.0.tar.gz",
+      "size": 7537986,
+      "seq_ids": [
+        "NW_013657679.1",
+        "NW_013657678.1",
+        "NW_013657677.1",
+        "NW_013657676.1",
+        "NW_013657675.1"
+      ],
+      "seq_count": 131,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "order": "Apusomonadida",
+        "family": "Apusomonadidae",
+        "genus": "Thecamonas"
+      },
+      "common_name": "",
+      "published": "2026-04-06T20:07:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ttrahens.NCBI.TheTraMay2010/BSgenome.Ttrahens.NCBI.TheTraMay2010_1.0.0.tar.gz"
     }
   ]
 }
