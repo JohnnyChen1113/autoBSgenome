@@ -26034,6 +26034,52 @@
       ]
     },
     {
+      "organism": "Plasmodium fragile",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pfragile.NCBI.PlasfragnilgiriV1",
+          "version": "1.0.0",
+          "organism": "Plasmodium fragile",
+          "assembly": "Plas_frag_nilgiri_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000956335.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000956335.1/",
+          "file_name": "BSgenome.Pfragile.NCBI.PlasfragnilgiriV1_1.0.0.tar.gz",
+          "size": 6272100,
+          "seq_ids": [
+            "NW_012192581.1",
+            "NW_012192582.1",
+            "NW_012192583.1",
+            "NW_012192584.1",
+            "NW_012192585.1"
+          ],
+          "seq_count": 248,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Aconoidasida",
+            "order": "Haemosporida",
+            "family": "Plasmodiidae",
+            "genus": "Plasmodium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T20:06:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfragile.NCBI.PlasfragnilgiriV1/BSgenome.Pfragile.NCBI.PlasfragnilgiriV1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Plasmodium gaboni",
       "common_name": "",
       "group": "other",
@@ -60128,6 +60174,37 @@
       "common_name": "",
       "published": "2026-04-06T19:06:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1/BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pfragile.NCBI.PlasfragnilgiriV1",
+      "version": "1.0.0",
+      "organism": "Plasmodium fragile",
+      "assembly": "Plas_frag_nilgiri_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000956335.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000956335.1/",
+      "file_name": "BSgenome.Pfragile.NCBI.PlasfragnilgiriV1_1.0.0.tar.gz",
+      "size": 6272100,
+      "seq_ids": [
+        "NW_012192581.1",
+        "NW_012192582.1",
+        "NW_012192583.1",
+        "NW_012192584.1",
+        "NW_012192585.1"
+      ],
+      "seq_count": 248,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T20:06:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfragile.NCBI.PlasfragnilgiriV1/BSgenome.Pfragile.NCBI.PlasfragnilgiriV1_1.0.0.tar.gz"
     }
   ]
 }

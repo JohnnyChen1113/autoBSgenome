@@ -3033,3 +3033,7 @@ NeedsCompilation: no
 Package: BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfragile.NCBI.PlasfragnilgiriV1
+Version: 1.0.0
+NeedsCompilation: no
