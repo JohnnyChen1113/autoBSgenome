@@ -2745,3 +2745,7 @@ NeedsCompilation: no
 Package: BSgenome.Bcinerea.NCBI.ASM14353v4
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dsqualens.NCBI.Dichomitussqualensv10
+Version: 1.0.0
+NeedsCompilation: no
