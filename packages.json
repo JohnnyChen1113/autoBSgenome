@@ -23658,6 +23658,54 @@
       ]
     },
     {
+      "organism": "Phaeoacremonium minimum UCRPA7",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Togniniales",
+        "family": "Togniniaceae",
+        "genus": "Phaeoacremonium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pminimum.NCBI.UCRPA7V03",
+          "version": "1.0.0",
+          "organism": "Phaeoacremonium minimum UCRPA7",
+          "assembly": "UCRPA7V03",
+          "provider": "NCBI",
+          "accession": "GCF_000392275.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000392275.1/",
+          "file_name": "BSgenome.Pminimum.NCBI.UCRPA7V03_1.0.0.tar.gz",
+          "size": 12335429,
+          "seq_ids": [
+            "NW_006920908.1",
+            "NW_006920909.1",
+            "NW_006920910.1",
+            "NW_006920911.1",
+            "NW_006920912.1"
+          ],
+          "seq_count": 624,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Togniniales",
+            "family": "Togniniaceae",
+            "genus": "Phaeoacremonium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T14:52:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pminimum.NCBI.UCRPA7V03/BSgenome.Pminimum.NCBI.UCRPA7V03_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phaethon lepturus",
       "common_name": "White-tailed tropicbird",
       "group": "vertebrate_other",
@@ -56269,6 +56317,38 @@
       "common_name": "",
       "published": "2026-04-06T13:55:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mimportuna.NCBI.ASM344463v2/BSgenome.Mimportuna.NCBI.ASM344463v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pminimum.NCBI.UCRPA7V03",
+      "version": "1.0.0",
+      "organism": "Phaeoacremonium minimum UCRPA7",
+      "assembly": "UCRPA7V03",
+      "provider": "NCBI",
+      "accession": "GCF_000392275.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000392275.1/",
+      "file_name": "BSgenome.Pminimum.NCBI.UCRPA7V03_1.0.0.tar.gz",
+      "size": 12335429,
+      "seq_ids": [
+        "NW_006920908.1",
+        "NW_006920909.1",
+        "NW_006920910.1",
+        "NW_006920911.1",
+        "NW_006920912.1"
+      ],
+      "seq_count": 624,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Togniniales",
+        "family": "Togniniaceae",
+        "genus": "Phaeoacremonium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T14:52:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pminimum.NCBI.UCRPA7V03/BSgenome.Pminimum.NCBI.UCRPA7V03_1.0.0.tar.gz"
     }
   ]
 }

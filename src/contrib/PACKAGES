@@ -2833,3 +2833,7 @@ NeedsCompilation: no
 Package: BSgenome.Mimportuna.NCBI.ASM344463v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pminimum.NCBI.UCRPA7V03
+Version: 1.0.0
+NeedsCompilation: no
