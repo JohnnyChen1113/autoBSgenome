@@ -2933,3 +2933,7 @@ NeedsCompilation: no
 Package: BSgenome.Cbovis.NCBI.ASM976892v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmuris.NCBI.JCVIcmgv10
+Version: 1.0.0
+NeedsCompilation: no
