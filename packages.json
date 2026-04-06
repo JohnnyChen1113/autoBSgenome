@@ -30282,6 +30282,54 @@
       ]
     },
     {
+      "organism": "Trichoderma harzianum CBS 226.95",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tharzianum.NCBI.Trihav10",
+          "version": "1.0.0",
+          "organism": "Trichoderma harzianum CBS 226.95",
+          "assembly": "Triha v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_003025095.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003025095.1/",
+          "file_name": "BSgenome.Tharzianum.NCBI.Trihav10_1.0.0.tar.gz",
+          "size": 10609420,
+          "seq_ids": [
+            "NW_020209249.1",
+            "NW_020209250.1",
+            "NW_020209251.1",
+            "NW_020209252.1",
+            "NW_020209253.1"
+          ],
+          "seq_count": 532,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Hypocreaceae",
+            "genus": "Trichoderma"
+          },
+          "common_name": "",
+          "published": "2026-04-06T11:29:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tharzianum.NCBI.Trihav10/BSgenome.Tharzianum.NCBI.Trihav10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichoderma reesei QM6a",
       "common_name": "",
       "group": "fungi",
@@ -53949,6 +53997,38 @@
       "common_name": "",
       "published": "2026-04-06T11:29:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Poryzae.NCBI.MG8/BSgenome.Poryzae.NCBI.MG8_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tharzianum.NCBI.Trihav10",
+      "version": "1.0.0",
+      "organism": "Trichoderma harzianum CBS 226.95",
+      "assembly": "Triha v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_003025095.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003025095.1/",
+      "file_name": "BSgenome.Tharzianum.NCBI.Trihav10_1.0.0.tar.gz",
+      "size": 10609420,
+      "seq_ids": [
+        "NW_020209249.1",
+        "NW_020209250.1",
+        "NW_020209251.1",
+        "NW_020209252.1",
+        "NW_020209253.1"
+      ],
+      "seq_count": 532,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "common_name": "",
+      "published": "2026-04-06T11:29:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tharzianum.NCBI.Trihav10/BSgenome.Tharzianum.NCBI.Trihav10_1.0.0.tar.gz"
     }
   ]
 }
