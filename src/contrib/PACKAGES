@@ -3085,3 +3085,7 @@ NeedsCompilation: no
 Package: BSgenome.Asubglobosum.NCBI.Asub20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cfasciculata.NCBI.DFas20
+Version: 1.0.0
+NeedsCompilation: no

@@ -7570,6 +7570,52 @@
       ]
     },
     {
+      "organism": "Cavenderia fasciculata",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "class": "Eumycetozoa",
+        "order": "Acytosteliales",
+        "family": "Cavenderiaceae",
+        "genus": "Cavenderia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cfasciculata.NCBI.DFas20",
+          "version": "1.0.0",
+          "organism": "Cavenderia fasciculata",
+          "assembly": "DFas_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000203815.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000203815.1/",
+          "file_name": "BSgenome.Cfasciculata.NCBI.DFas20_1.0.0.tar.gz",
+          "size": 8209111,
+          "seq_ids": [
+            "NW_004457737.1",
+            "NW_004457736.1",
+            "NW_004457735.1",
+            "NW_004457734.1",
+            "NW_004457729.1"
+          ],
+          "seq_count": 25,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Evosea",
+            "class": "Eumycetozoa",
+            "order": "Acytosteliales",
+            "family": "Cavenderiaceae",
+            "genus": "Cavenderia"
+          },
+          "common_name": "",
+          "published": "2026-04-06T21:06:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfasciculata.NCBI.DFas20/BSgenome.Cfasciculata.NCBI.DFas20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cebus imitator",
       "common_name": "Panamanian white-faced capuchin",
       "group": "vertebrate_mammalian",
@@ -61090,6 +61136,37 @@
       "common_name": "",
       "published": "2026-04-06T21:05:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asubglobosum.NCBI.Asub20/BSgenome.Asubglobosum.NCBI.Asub20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cfasciculata.NCBI.DFas20",
+      "version": "1.0.0",
+      "organism": "Cavenderia fasciculata",
+      "assembly": "DFas_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000203815.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000203815.1/",
+      "file_name": "BSgenome.Cfasciculata.NCBI.DFas20_1.0.0.tar.gz",
+      "size": 8209111,
+      "seq_ids": [
+        "NW_004457737.1",
+        "NW_004457736.1",
+        "NW_004457735.1",
+        "NW_004457734.1",
+        "NW_004457729.1"
+      ],
+      "seq_count": 25,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "class": "Eumycetozoa",
+        "order": "Acytosteliales",
+        "family": "Cavenderiaceae",
+        "genus": "Cavenderia"
+      },
+      "common_name": "",
+      "published": "2026-04-06T21:06:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfasciculata.NCBI.DFas20/BSgenome.Cfasciculata.NCBI.DFas20_1.0.0.tar.gz"
     }
   ]
 }
