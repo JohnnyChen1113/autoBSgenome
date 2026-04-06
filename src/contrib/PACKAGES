@@ -2657,3 +2657,7 @@ NeedsCompilation: no
 Package: BSgenome.Apseudotamarii.NCBI.Asppset1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scrispa.NCBI.SCP11
+Version: 1.0.0
+NeedsCompilation: no

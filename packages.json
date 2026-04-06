@@ -27265,6 +27265,54 @@
       ]
     },
     {
+      "organism": "Sparassis crispa",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Sparassidaceae",
+        "genus": "Sparassis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Scrispa.NCBI.SCP11",
+          "version": "1.0.0",
+          "organism": "Sparassis crispa",
+          "assembly": "SCP_1.1",
+          "provider": "NCBI",
+          "accession": "GCF_003851025.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003851025.1/",
+          "file_name": "BSgenome.Scrispa.NCBI.SCP11_1.0.0.tar.gz",
+          "size": 9861360,
+          "seq_ids": [
+            "NW_020939747.1",
+            "NW_020939748.1",
+            "NW_020939749.1",
+            "NW_020939750.1",
+            "NW_020939751.1"
+          ],
+          "seq_count": 32,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Polyporales",
+            "family": "Sparassidaceae",
+            "genus": "Sparassis"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:12:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scrispa.NCBI.SCP11/BSgenome.Scrispa.NCBI.SCP11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Spathaspora passalidarum NRRL Y-27907",
       "common_name": "",
       "group": "fungi",
@@ -52749,6 +52797,38 @@
       "common_name": "",
       "published": "2026-04-06T10:12:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apseudotamarii.NCBI.Asppset1/BSgenome.Apseudotamarii.NCBI.Asppset1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Scrispa.NCBI.SCP11",
+      "version": "1.0.0",
+      "organism": "Sparassis crispa",
+      "assembly": "SCP_1.1",
+      "provider": "NCBI",
+      "accession": "GCF_003851025.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003851025.1/",
+      "file_name": "BSgenome.Scrispa.NCBI.SCP11_1.0.0.tar.gz",
+      "size": 9861360,
+      "seq_ids": [
+        "NW_020939747.1",
+        "NW_020939748.1",
+        "NW_020939749.1",
+        "NW_020939750.1",
+        "NW_020939751.1"
+      ],
+      "seq_count": 32,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Sparassidaceae",
+        "genus": "Sparassis"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:12:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scrispa.NCBI.SCP11/BSgenome.Scrispa.NCBI.SCP11_1.0.0.tar.gz"
     }
   ]
 }
