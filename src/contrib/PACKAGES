@@ -3189,3 +3189,7 @@ NeedsCompilation: no
 Package: BSgenome.Aanophagefferens.NCBI.v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ncaninum.NCBI.ASM20886v2
+Version: 1.0.0
+NeedsCompilation: no

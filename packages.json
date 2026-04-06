@@ -23492,6 +23492,52 @@
       ]
     },
     {
+      "organism": "Neospora caninum Liverpool",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Sarcocystidae",
+        "genus": "Neospora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ncaninum.NCBI.ASM20886v2",
+          "version": "1.0.0",
+          "organism": "Neospora caninum Liverpool",
+          "assembly": "ASM20886v2",
+          "provider": "NCBI",
+          "accession": "GCF_000208865.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000208865.1/",
+          "file_name": "BSgenome.Ncaninum.NCBI.ASM20886v2_1.0.0.tar.gz",
+          "size": 15248504,
+          "seq_ids": [
+            "NC_018385.1",
+            "NC_018386.1",
+            "NC_018387.1",
+            "NC_018388.1",
+            "NC_018389.1"
+          ],
+          "seq_count": 14,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Conoidasida",
+            "order": "Eucoccidiorida",
+            "family": "Sarcocystidae",
+            "genus": "Neospora"
+          },
+          "common_name": "",
+          "published": "2026-04-06T22:53:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncaninum.NCBI.ASM20886v2/BSgenome.Ncaninum.NCBI.ASM20886v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nestor notabilis",
       "common_name": "Kea",
       "group": "vertebrate_other",
@@ -63023,6 +63069,37 @@
       "common_name": "",
       "published": "2026-04-06T22:53:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aanophagefferens.NCBI.v10/BSgenome.Aanophagefferens.NCBI.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ncaninum.NCBI.ASM20886v2",
+      "version": "1.0.0",
+      "organism": "Neospora caninum Liverpool",
+      "assembly": "ASM20886v2",
+      "provider": "NCBI",
+      "accession": "GCF_000208865.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000208865.1/",
+      "file_name": "BSgenome.Ncaninum.NCBI.ASM20886v2_1.0.0.tar.gz",
+      "size": 15248504,
+      "seq_ids": [
+        "NC_018385.1",
+        "NC_018386.1",
+        "NC_018387.1",
+        "NC_018388.1",
+        "NC_018389.1"
+      ],
+      "seq_count": 14,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Sarcocystidae",
+        "genus": "Neospora"
+      },
+      "common_name": "",
+      "published": "2026-04-06T22:53:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncaninum.NCBI.ASM20886v2/BSgenome.Ncaninum.NCBI.ASM20886v2_1.0.0.tar.gz"
     }
   ]
 }
