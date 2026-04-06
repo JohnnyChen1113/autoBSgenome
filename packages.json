@@ -19278,6 +19278,52 @@
       ]
     },
     {
+      "organism": "Leishmania major strain Friedlin",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Leishmania"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lmajor.NCBI.ASM272v2",
+          "version": "1.0.0",
+          "organism": "Leishmania major strain Friedlin",
+          "assembly": "ASM272v2",
+          "provider": "NCBI",
+          "accession": "GCF_000002725.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002725.2/",
+          "file_name": "BSgenome.Lmajor.NCBI.ASM272v2_1.0.0.tar.gz",
+          "size": 8566509,
+          "seq_ids": [
+            "NC_001905.3",
+            "NC_007244.2",
+            "NC_004916.2",
+            "NC_007245.2",
+            "NC_007246.2"
+          ],
+          "seq_count": 36,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Euglenozoa",
+            "class": "Kinetoplastea",
+            "order": "Trypanosomatida",
+            "family": "Trypanosomatidae",
+            "genus": "Leishmania"
+          },
+          "common_name": "",
+          "published": "2026-04-06T21:07:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lmajor.NCBI.ASM272v2/BSgenome.Lmajor.NCBI.ASM272v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Leishmania mexicana MHOM/GT/2001/U1103",
       "common_name": "",
       "group": "other",
@@ -61510,6 +61556,37 @@
       "common_name": "",
       "published": "2026-04-06T21:07:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ldonovani.NCBI.ASM22713v2/BSgenome.Ldonovani.NCBI.ASM22713v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lmajor.NCBI.ASM272v2",
+      "version": "1.0.0",
+      "organism": "Leishmania major strain Friedlin",
+      "assembly": "ASM272v2",
+      "provider": "NCBI",
+      "accession": "GCF_000002725.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002725.2/",
+      "file_name": "BSgenome.Lmajor.NCBI.ASM272v2_1.0.0.tar.gz",
+      "size": 8566509,
+      "seq_ids": [
+        "NC_001905.3",
+        "NC_007244.2",
+        "NC_004916.2",
+        "NC_007245.2",
+        "NC_007246.2"
+      ],
+      "seq_count": 36,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Leishmania"
+      },
+      "common_name": "",
+      "published": "2026-04-06T21:07:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lmajor.NCBI.ASM272v2/BSgenome.Lmajor.NCBI.ASM272v2_1.0.0.tar.gz"
     }
   ]
 }
