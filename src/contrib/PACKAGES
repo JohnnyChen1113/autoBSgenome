@@ -2701,3 +2701,7 @@ NeedsCompilation: no
 Package: BSgenome.Aalliaceus.NCBI.Aspalli1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tthermophilus.NCBI.ASM22609v1
+Version: 1.0.0
+NeedsCompilation: no

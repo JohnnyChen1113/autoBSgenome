@@ -29372,6 +29372,54 @@
       ]
     },
     {
+      "organism": "Thermothelomyces thermophilus ATCC 42464",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Chaetomiaceae",
+        "genus": "Thermothelomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tthermophilus.NCBI.ASM22609v1",
+          "version": "1.0.0",
+          "organism": "Thermothelomyces thermophilus ATCC 42464",
+          "assembly": "ASM22609v1",
+          "provider": "NCBI",
+          "accession": "GCF_000226095.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000226095.1/",
+          "file_name": "BSgenome.Tthermophilus.NCBI.ASM22609v1_1.0.0.tar.gz",
+          "size": 9982219,
+          "seq_ids": [
+            "NC_016472.1",
+            "NC_016473.1",
+            "NC_016474.1",
+            "NC_016475.1",
+            "NC_016476.1"
+          ],
+          "seq_count": 7,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Sordariales",
+            "family": "Chaetomiaceae",
+            "genus": "Thermothelomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-06T11:28:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tthermophilus.NCBI.ASM22609v1/BSgenome.Tthermophilus.NCBI.ASM22609v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Thermothielavioides terrestris NRRL 8126",
       "common_name": "",
       "group": "fungi",
@@ -53629,6 +53677,38 @@
       "common_name": "",
       "published": "2026-04-06T10:14:14Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalliaceus.NCBI.Aspalli1/BSgenome.Aalliaceus.NCBI.Aspalli1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tthermophilus.NCBI.ASM22609v1",
+      "version": "1.0.0",
+      "organism": "Thermothelomyces thermophilus ATCC 42464",
+      "assembly": "ASM22609v1",
+      "provider": "NCBI",
+      "accession": "GCF_000226095.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000226095.1/",
+      "file_name": "BSgenome.Tthermophilus.NCBI.ASM22609v1_1.0.0.tar.gz",
+      "size": 9982219,
+      "seq_ids": [
+        "NC_016472.1",
+        "NC_016473.1",
+        "NC_016474.1",
+        "NC_016475.1",
+        "NC_016476.1"
+      ],
+      "seq_count": 7,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Chaetomiaceae",
+        "genus": "Thermothelomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-06T11:28:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tthermophilus.NCBI.ASM22609v1/BSgenome.Tthermophilus.NCBI.ASM22609v1_1.0.0.tar.gz"
     }
   ]
 }
