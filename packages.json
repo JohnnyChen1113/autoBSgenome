@@ -11514,6 +11514,52 @@
       ]
     },
     {
+      "organism": "Cyclospora cayetanensis",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Eimeriidae",
+        "genus": "Cyclospora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccayetanensis.NCBI.CcayRef3",
+          "version": "1.0.0",
+          "organism": "Cyclospora cayetanensis",
+          "assembly": "CcayRef3",
+          "provider": "NCBI",
+          "accession": "GCF_002999335.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002999335.1/",
+          "file_name": "BSgenome.Ccayetanensis.NCBI.CcayRef3_1.0.0.tar.gz",
+          "size": 11920342,
+          "seq_ids": [
+            "NW_020312036.1",
+            "NW_020312037.1",
+            "NW_020312038.1",
+            "NW_020312039.1",
+            "NW_020312040.1"
+          ],
+          "seq_count": 738,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Conoidasida",
+            "order": "Eucoccidiorida",
+            "family": "Eimeriidae",
+            "genus": "Cyclospora"
+          },
+          "common_name": "",
+          "published": "2026-04-06T22:03:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccayetanensis.NCBI.CcayRef3/BSgenome.Ccayetanensis.NCBI.CcayRef3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cygnus olor",
       "common_name": "mute swan",
       "group": "vertebrate_other",
@@ -62117,6 +62163,37 @@
       "common_name": "",
       "published": "2026-04-06T22:02:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1/BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccayetanensis.NCBI.CcayRef3",
+      "version": "1.0.0",
+      "organism": "Cyclospora cayetanensis",
+      "assembly": "CcayRef3",
+      "provider": "NCBI",
+      "accession": "GCF_002999335.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002999335.1/",
+      "file_name": "BSgenome.Ccayetanensis.NCBI.CcayRef3_1.0.0.tar.gz",
+      "size": 11920342,
+      "seq_ids": [
+        "NW_020312036.1",
+        "NW_020312037.1",
+        "NW_020312038.1",
+        "NW_020312039.1",
+        "NW_020312040.1"
+      ],
+      "seq_count": 738,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Eimeriidae",
+        "genus": "Cyclospora"
+      },
+      "common_name": "",
+      "published": "2026-04-06T22:03:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccayetanensis.NCBI.CcayRef3/BSgenome.Ccayetanensis.NCBI.CcayRef3_1.0.0.tar.gz"
     }
   ]
 }
