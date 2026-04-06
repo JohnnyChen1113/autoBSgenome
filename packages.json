@@ -17538,6 +17538,54 @@
       ]
     },
     {
+      "organism": "Laccaria bicolor S238N-H82",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Hydnangiaceae",
+        "genus": "Laccaria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lbicolor.NCBI.V10",
+          "version": "1.0.0",
+          "organism": "Laccaria bicolor S238N-H82",
+          "assembly": "V1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000143565.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143565.1/",
+          "file_name": "BSgenome.Lbicolor.NCBI.V10_1.0.0.tar.gz",
+          "size": 15017949,
+          "seq_ids": [
+            "NW_001890536.1",
+            "NW_001890535.1",
+            "NW_001890534.1",
+            "NW_001890533.1",
+            "NW_001890532.1"
+          ],
+          "seq_count": 665,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Hydnangiaceae",
+            "genus": "Laccaria"
+          },
+          "common_name": "",
+          "published": "2026-04-06T14:53:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbicolor.NCBI.V10/BSgenome.Lbicolor.NCBI.V10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lacerta agilis",
       "common_name": "Sand lizard",
       "group": "vertebrate_other",
@@ -56885,6 +56933,38 @@
       "common_name": "",
       "published": "2026-04-06T14:53:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fmediterranea.NCBI.Fomme1/BSgenome.Fmediterranea.NCBI.Fomme1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lbicolor.NCBI.V10",
+      "version": "1.0.0",
+      "organism": "Laccaria bicolor S238N-H82",
+      "assembly": "V1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000143565.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143565.1/",
+      "file_name": "BSgenome.Lbicolor.NCBI.V10_1.0.0.tar.gz",
+      "size": 15017949,
+      "seq_ids": [
+        "NW_001890536.1",
+        "NW_001890535.1",
+        "NW_001890534.1",
+        "NW_001890533.1",
+        "NW_001890532.1"
+      ],
+      "seq_count": 665,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Hydnangiaceae",
+        "genus": "Laccaria"
+      },
+      "common_name": "",
+      "published": "2026-04-06T14:53:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbicolor.NCBI.V10/BSgenome.Lbicolor.NCBI.V10_1.0.0.tar.gz"
     }
   ]
 }
