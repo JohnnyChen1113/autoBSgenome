@@ -7606,6 +7606,54 @@
       ]
     },
     {
+      "organism": "Cladophialophora bantiana CBS 173.52",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Cladophialophora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cbantiana.NCBI.CladbantCBS17352V1",
+          "version": "1.0.0",
+          "organism": "Cladophialophora bantiana CBS 173.52",
+          "assembly": "Clad_bant_CBS_173_52_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000835475.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835475.1/",
+          "file_name": "BSgenome.Cbantiana.NCBI.CladbantCBS17352V1_1.0.0.tar.gz",
+          "size": 9475394,
+          "seq_ids": [
+            "NW_015971575.1",
+            "NW_015971576.1",
+            "NW_015971577.1",
+            "NW_015971578.1",
+            "NW_015971579.1"
+          ],
+          "seq_count": 60,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Cladophialophora"
+          },
+          "common_name": "",
+          "published": "2026-04-06T05:29:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbantiana.NCBI.CladbantCBS17352V1/BSgenome.Cbantiana.NCBI.CladbantCBS17352V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cladophialophora carrionii CBS 160.54",
       "common_name": "",
       "group": "fungi",
@@ -50773,6 +50821,38 @@
       "common_name": "",
       "published": "2026-04-06T05:29:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asclerotioniger.NCBI.Aspscl1/BSgenome.Asclerotioniger.NCBI.Aspscl1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cbantiana.NCBI.CladbantCBS17352V1",
+      "version": "1.0.0",
+      "organism": "Cladophialophora bantiana CBS 173.52",
+      "assembly": "Clad_bant_CBS_173_52_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000835475.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835475.1/",
+      "file_name": "BSgenome.Cbantiana.NCBI.CladbantCBS17352V1_1.0.0.tar.gz",
+      "size": 9475394,
+      "seq_ids": [
+        "NW_015971575.1",
+        "NW_015971576.1",
+        "NW_015971577.1",
+        "NW_015971578.1",
+        "NW_015971579.1"
+      ],
+      "seq_count": 60,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Cladophialophora"
+      },
+      "common_name": "",
+      "published": "2026-04-06T05:29:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbantiana.NCBI.CladbantCBS17352V1/BSgenome.Cbantiana.NCBI.CladbantCBS17352V1_1.0.0.tar.gz"
     }
   ]
 }

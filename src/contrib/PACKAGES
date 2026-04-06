@@ -2557,3 +2557,7 @@ NeedsCompilation: no
 Package: BSgenome.Asclerotioniger.NCBI.Aspscl1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cbantiana.NCBI.CladbantCBS17352V1
+Version: 1.0.0
+NeedsCompilation: no
