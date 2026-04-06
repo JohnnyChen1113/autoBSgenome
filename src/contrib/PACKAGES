@@ -2829,3 +2829,7 @@ NeedsCompilation: no
 Package: BSgenome.Chigginsianum.NCBI.ASM167251v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mimportuna.NCBI.ASM344463v2
+Version: 1.0.0
+NeedsCompilation: no

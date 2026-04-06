@@ -19829,6 +19829,54 @@
       ]
     },
     {
+      "organism": "Morchella importuna",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pezizomycetes",
+        "order": "Pezizales",
+        "family": "Morchellaceae",
+        "genus": "Morchella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mimportuna.NCBI.ASM344463v2",
+          "version": "1.0.0",
+          "organism": "Morchella importuna",
+          "assembly": "ASM344463v2",
+          "provider": "NCBI",
+          "accession": "GCF_003444635.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003444635.1/",
+          "file_name": "BSgenome.Mimportuna.NCBI.ASM344463v2_1.0.0.tar.gz",
+          "size": 13379390,
+          "seq_ids": [
+            "NW_025763398.1",
+            "NW_025763399.1",
+            "NW_025763400.1",
+            "NW_025763401.1",
+            "NW_025763402.1"
+          ],
+          "seq_count": 105,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pezizomycetes",
+            "order": "Pezizales",
+            "family": "Morchellaceae",
+            "genus": "Morchella"
+          },
+          "common_name": "",
+          "published": "2026-04-06T13:55:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mimportuna.NCBI.ASM344463v2/BSgenome.Mimportuna.NCBI.ASM344463v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Morone saxatilis",
       "common_name": "striped sea-bass",
       "group": "vertebrate_other",
@@ -56189,6 +56237,38 @@
       "common_name": "",
       "published": "2026-04-06T13:55:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chigginsianum.NCBI.ASM167251v1/BSgenome.Chigginsianum.NCBI.ASM167251v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mimportuna.NCBI.ASM344463v2",
+      "version": "1.0.0",
+      "organism": "Morchella importuna",
+      "assembly": "ASM344463v2",
+      "provider": "NCBI",
+      "accession": "GCF_003444635.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003444635.1/",
+      "file_name": "BSgenome.Mimportuna.NCBI.ASM344463v2_1.0.0.tar.gz",
+      "size": 13379390,
+      "seq_ids": [
+        "NW_025763398.1",
+        "NW_025763399.1",
+        "NW_025763400.1",
+        "NW_025763401.1",
+        "NW_025763402.1"
+      ],
+      "seq_count": 105,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pezizomycetes",
+        "order": "Pezizales",
+        "family": "Morchellaceae",
+        "genus": "Morchella"
+      },
+      "common_name": "",
+      "published": "2026-04-06T13:55:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mimportuna.NCBI.ASM344463v2/BSgenome.Mimportuna.NCBI.ASM344463v2_1.0.0.tar.gz"
     }
   ]
 }
