@@ -3169,3 +3169,7 @@ NeedsCompilation: no
 Package: BSgenome.Imultifiliis.NCBI.JCVIIMG1V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Etenella.NCBI.ETH001
+Version: 1.0.0
+NeedsCompilation: no
