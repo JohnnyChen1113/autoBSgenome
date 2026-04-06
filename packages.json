@@ -36042,6 +36042,50 @@
       ]
     },
     {
+      "organism": "Tritrichomonas foetus",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Parabasalia",
+        "order": "Tritrichomonadida",
+        "family": "Tritrichomonadidae",
+        "genus": "Tritrichomonas"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tfoetus.NCBI.ASM183968v2",
+          "version": "1.0.0",
+          "organism": "Tritrichomonas foetus",
+          "assembly": "ASM183968v2",
+          "provider": "NCBI",
+          "accession": "GCF_001839685.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001839685.1/",
+          "file_name": "BSgenome.Tfoetus.NCBI.ASM183968v2_1.0.0.tar.gz",
+          "size": 17822104,
+          "seq_ids": [
+            "NW_027176986.1",
+            "NW_027176987.1",
+            "NW_027176988.1",
+            "NW_027176989.1",
+            "NW_027176990.1"
+          ],
+          "seq_count": 1479,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Parabasalia",
+            "order": "Tritrichomonadida",
+            "family": "Tritrichomonadidae",
+            "genus": "Tritrichomonas"
+          },
+          "common_name": "",
+          "published": "2026-04-06T23:40:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tfoetus.NCBI.ASM183968v2/BSgenome.Tfoetus.NCBI.ASM183968v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trypanosoma brucei brucei TREU927",
       "common_name": "",
       "group": "other",
@@ -63331,6 +63375,36 @@
       "common_name": "",
       "published": "2026-04-06T23:40:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgondii.NCBI.TGA4/BSgenome.Tgondii.NCBI.TGA4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tfoetus.NCBI.ASM183968v2",
+      "version": "1.0.0",
+      "organism": "Tritrichomonas foetus",
+      "assembly": "ASM183968v2",
+      "provider": "NCBI",
+      "accession": "GCF_001839685.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001839685.1/",
+      "file_name": "BSgenome.Tfoetus.NCBI.ASM183968v2_1.0.0.tar.gz",
+      "size": 17822104,
+      "seq_ids": [
+        "NW_027176986.1",
+        "NW_027176987.1",
+        "NW_027176988.1",
+        "NW_027176989.1",
+        "NW_027176990.1"
+      ],
+      "seq_count": 1479,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Parabasalia",
+        "order": "Tritrichomonadida",
+        "family": "Tritrichomonadidae",
+        "genus": "Tritrichomonas"
+      },
+      "common_name": "",
+      "published": "2026-04-06T23:40:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tfoetus.NCBI.ASM183968v2/BSgenome.Tfoetus.NCBI.ASM183968v2_1.0.0.tar.gz"
     }
   ]
 }

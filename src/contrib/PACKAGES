@@ -3205,3 +3205,7 @@ NeedsCompilation: no
 Package: BSgenome.Tgondii.NCBI.TGA4
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tfoetus.NCBI.ASM183968v2
+Version: 1.0.0
+NeedsCompilation: no
