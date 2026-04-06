@@ -13356,6 +13356,54 @@
       ]
     },
     {
+      "organism": "Fusarium pseudograminearum CS3096",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fpseudograminearum.NCBI.FP7",
+          "version": "1.0.0",
+          "organism": "Fusarium pseudograminearum CS3096",
+          "assembly": "FP7",
+          "provider": "NCBI",
+          "accession": "GCF_000303195.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000303195.2/",
+          "file_name": "BSgenome.Fpseudograminearum.NCBI.FP7_1.0.0.tar.gz",
+          "size": 9617965,
+          "seq_ids": [
+            "NC_031951.1",
+            "NC_031952.1",
+            "NC_031953.1",
+            "NC_031954.1",
+            "NW_017607575.1"
+          ],
+          "seq_count": 281,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Nectriaceae",
+            "genus": "Fusarium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T05:29:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpseudograminearum.NCBI.FP7/BSgenome.Fpseudograminearum.NCBI.FP7_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Galendromus occidentalis",
       "common_name": "western predatory mite",
       "group": "invertebrate",
@@ -50853,6 +50901,38 @@
       "common_name": "",
       "published": "2026-04-06T05:29:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbantiana.NCBI.CladbantCBS17352V1/BSgenome.Cbantiana.NCBI.CladbantCBS17352V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fpseudograminearum.NCBI.FP7",
+      "version": "1.0.0",
+      "organism": "Fusarium pseudograminearum CS3096",
+      "assembly": "FP7",
+      "provider": "NCBI",
+      "accession": "GCF_000303195.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000303195.2/",
+      "file_name": "BSgenome.Fpseudograminearum.NCBI.FP7_1.0.0.tar.gz",
+      "size": 9617965,
+      "seq_ids": [
+        "NC_031951.1",
+        "NC_031952.1",
+        "NC_031953.1",
+        "NC_031954.1",
+        "NW_017607575.1"
+      ],
+      "seq_count": 281,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T05:29:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpseudograminearum.NCBI.FP7/BSgenome.Fpseudograminearum.NCBI.FP7_1.0.0.tar.gz"
     }
   ]
 }
