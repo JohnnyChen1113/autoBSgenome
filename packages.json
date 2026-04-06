@@ -3636,6 +3636,54 @@
       ]
     },
     {
+      "organism": "Aspergillus welwitschiae",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Awelwitschiae.NCBI.Aspwel1",
+          "version": "1.0.0",
+          "organism": "Aspergillus welwitschiae",
+          "assembly": "Aspwel1",
+          "provider": "NCBI",
+          "accession": "GCF_003344945.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003344945.1/",
+          "file_name": "BSgenome.Awelwitschiae.NCBI.Aspwel1_1.0.0.tar.gz",
+          "size": 9840005,
+          "seq_ids": [
+            "NW_020798695.1",
+            "NW_020798696.1",
+            "NW_020798697.1",
+            "NW_020798698.1",
+            "NW_020798699.1"
+          ],
+          "seq_count": 396,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T07:11:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Awelwitschiae.NCBI.Aspwel1/BSgenome.Awelwitschiae.NCBI.Aspwel1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus wentii DTO 134E9",
       "common_name": "",
       "group": "fungi",
@@ -51413,6 +51461,38 @@
       "common_name": "",
       "published": "2026-04-06T07:11:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Abrunneoviolaceus.NCBI.Aspbru1/BSgenome.Abrunneoviolaceus.NCBI.Aspbru1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Awelwitschiae.NCBI.Aspwel1",
+      "version": "1.0.0",
+      "organism": "Aspergillus welwitschiae",
+      "assembly": "Aspwel1",
+      "provider": "NCBI",
+      "accession": "GCF_003344945.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003344945.1/",
+      "file_name": "BSgenome.Awelwitschiae.NCBI.Aspwel1_1.0.0.tar.gz",
+      "size": 9840005,
+      "seq_ids": [
+        "NW_020798695.1",
+        "NW_020798696.1",
+        "NW_020798697.1",
+        "NW_020798698.1",
+        "NW_020798699.1"
+      ],
+      "seq_count": 396,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T07:11:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Awelwitschiae.NCBI.Aspwel1/BSgenome.Awelwitschiae.NCBI.Aspwel1_1.0.0.tar.gz"
     }
   ]
 }
