@@ -26130,6 +26130,54 @@
       ]
     },
     {
+      "organism": "Pseudocercospora fijiensis CIRAD86",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Pseudocercospora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pfijiensis.NCBI.Mycfi2",
+          "version": "1.0.0",
+          "organism": "Pseudocercospora fijiensis CIRAD86",
+          "assembly": "Mycfi2",
+          "provider": "NCBI",
+          "accession": "GCF_000340215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000340215.1/",
+          "file_name": "BSgenome.Pfijiensis.NCBI.Mycfi2_1.0.0.tar.gz",
+          "size": 18852973,
+          "seq_ids": [
+            "NW_006921532.1",
+            "NW_006921533.1",
+            "NW_006921534.1",
+            "NW_006921535.1",
+            "NW_006921536.1"
+          ],
+          "seq_count": 56,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Mycosphaerellales",
+            "family": "Mycosphaerellaceae",
+            "genus": "Pseudocercospora"
+          },
+          "common_name": "",
+          "published": "2026-04-06T14:53:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfijiensis.NCBI.Mycfi2/BSgenome.Pfijiensis.NCBI.Mycfi2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudogymnoascus destructans",
       "common_name": "",
       "group": "fungi",
@@ -57045,6 +57093,38 @@
       "common_name": "",
       "published": "2026-04-06T14:53:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdermatitidis.NCBI.BDER3V1/BSgenome.Bdermatitidis.NCBI.BDER3V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pfijiensis.NCBI.Mycfi2",
+      "version": "1.0.0",
+      "organism": "Pseudocercospora fijiensis CIRAD86",
+      "assembly": "Mycfi2",
+      "provider": "NCBI",
+      "accession": "GCF_000340215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000340215.1/",
+      "file_name": "BSgenome.Pfijiensis.NCBI.Mycfi2_1.0.0.tar.gz",
+      "size": 18852973,
+      "seq_ids": [
+        "NW_006921532.1",
+        "NW_006921533.1",
+        "NW_006921534.1",
+        "NW_006921535.1",
+        "NW_006921536.1"
+      ],
+      "seq_count": 56,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Pseudocercospora"
+      },
+      "common_name": "",
+      "published": "2026-04-06T14:53:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfijiensis.NCBI.Mycfi2/BSgenome.Pfijiensis.NCBI.Mycfi2_1.0.0.tar.gz"
     }
   ]
 }
