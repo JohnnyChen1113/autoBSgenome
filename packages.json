@@ -34090,6 +34090,52 @@
       ]
     },
     {
+      "organism": "Trypanosoma brucei brucei TREU927",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Trypanosoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tbrucei.NCBI.ASM244v1",
+          "version": "1.0.0",
+          "organism": "Trypanosoma brucei brucei TREU927",
+          "assembly": "ASM244v1",
+          "provider": "NCBI",
+          "accession": "GCF_000002445.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002445.2/",
+          "file_name": "BSgenome.Tbrucei.NCBI.ASM244v1_1.0.0.tar.gz",
+          "size": 6687016,
+          "seq_ids": [
+            "NC_008409.1",
+            "NC_005063.2",
+            "NC_007276.1",
+            "NC_007277.1",
+            "NC_007278.1"
+          ],
+          "seq_count": 12,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Euglenozoa",
+            "class": "Kinetoplastea",
+            "order": "Trypanosomatida",
+            "family": "Trypanosomatidae",
+            "genus": "Trypanosoma"
+          },
+          "common_name": "",
+          "published": "2026-04-06T19:06:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tbrucei.NCBI.ASM244v1/BSgenome.Tbrucei.NCBI.ASM244v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trypanosoma conorhini",
       "common_name": "",
       "group": "other",
@@ -59820,6 +59866,37 @@
       "common_name": "",
       "published": "2026-04-06T19:05:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pknowlesi.NCBI.GCA0000063552/BSgenome.Pknowlesi.NCBI.GCA0000063552_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tbrucei.NCBI.ASM244v1",
+      "version": "1.0.0",
+      "organism": "Trypanosoma brucei brucei TREU927",
+      "assembly": "ASM244v1",
+      "provider": "NCBI",
+      "accession": "GCF_000002445.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002445.2/",
+      "file_name": "BSgenome.Tbrucei.NCBI.ASM244v1_1.0.0.tar.gz",
+      "size": 6687016,
+      "seq_ids": [
+        "NC_008409.1",
+        "NC_005063.2",
+        "NC_007276.1",
+        "NC_007277.1",
+        "NC_007278.1"
+      ],
+      "seq_count": 12,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Trypanosoma"
+      },
+      "common_name": "",
+      "published": "2026-04-06T19:06:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tbrucei.NCBI.ASM244v1/BSgenome.Tbrucei.NCBI.ASM244v1_1.0.0.tar.gz"
     }
   ]
 }
