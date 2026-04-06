@@ -1919,6 +1919,54 @@
       ]
     },
     {
+      "organism": "Aspergillus brasiliensis CBS 101740",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Abrasiliensis.NCBI.Aspbr1",
+          "version": "1.0.0",
+          "organism": "Aspergillus brasiliensis CBS 101740",
+          "assembly": "Aspbr1",
+          "provider": "NCBI",
+          "accession": "GCF_001889945.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001889945.1/",
+          "file_name": "BSgenome.Abrasiliensis.NCBI.Aspbr1_1.0.0.tar.gz",
+          "size": 9354141,
+          "seq_ids": [
+            "NW_027137442.1",
+            "NW_027137443.1",
+            "NW_027137444.1",
+            "NW_027137445.1",
+            "NW_027137446.1"
+          ],
+          "seq_count": 103,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T02:42:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Abrasiliensis.NCBI.Aspbr1/BSgenome.Abrasiliensis.NCBI.Aspbr1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus campestris IBT 28561",
       "common_name": "",
       "group": "fungi",
@@ -49893,6 +49941,38 @@
       "common_name": "",
       "published": "2026-04-06T02:42:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tstipitatus.NCBI.JCVITSTA130/BSgenome.Tstipitatus.NCBI.JCVITSTA130_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Abrasiliensis.NCBI.Aspbr1",
+      "version": "1.0.0",
+      "organism": "Aspergillus brasiliensis CBS 101740",
+      "assembly": "Aspbr1",
+      "provider": "NCBI",
+      "accession": "GCF_001889945.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001889945.1/",
+      "file_name": "BSgenome.Abrasiliensis.NCBI.Aspbr1_1.0.0.tar.gz",
+      "size": 9354141,
+      "seq_ids": [
+        "NW_027137442.1",
+        "NW_027137443.1",
+        "NW_027137444.1",
+        "NW_027137445.1",
+        "NW_027137446.1"
+      ],
+      "seq_count": 103,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T02:42:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Abrasiliensis.NCBI.Aspbr1/BSgenome.Abrasiliensis.NCBI.Aspbr1_1.0.0.tar.gz"
     }
   ]
 }
