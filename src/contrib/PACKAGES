@@ -2725,3 +2725,7 @@ NeedsCompilation: no
 Package: BSgenome.Ncrassa.NCBI.NC12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eaquamarina.NCBI.ExopaquaCBS119918V1
+Version: 1.0.0
+NeedsCompilation: no
