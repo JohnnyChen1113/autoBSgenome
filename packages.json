@@ -26080,6 +26080,52 @@
       ]
     },
     {
+      "organism": "Plasmodium inui San Antonio 1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1",
+          "version": "1.0.0",
+          "organism": "Plasmodium inui San Antonio 1",
+          "assembly": "Plas_inui_San_Antonio_1_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000524495.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000524495.1/",
+          "file_name": "BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1_1.0.0.tar.gz",
+          "size": 7110955,
+          "seq_ids": [
+            "NW_008481835.1",
+            "NW_008481836.1",
+            "NW_008481837.1",
+            "NW_008481838.1",
+            "NW_008481839.1"
+          ],
+          "seq_count": 323,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Aconoidasida",
+            "order": "Haemosporida",
+            "family": "Plasmodiidae",
+            "genus": "Plasmodium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T19:06:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1/BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Plasmodium knowlesi strain H",
       "common_name": "",
       "group": "other",
@@ -60051,6 +60097,37 @@
       "common_name": "malaria parasite P. vivax",
       "published": "2026-04-06T19:06:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvivax.NCBI.ASM241v2/BSgenome.Pvivax.NCBI.ASM241v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1",
+      "version": "1.0.0",
+      "organism": "Plasmodium inui San Antonio 1",
+      "assembly": "Plas_inui_San_Antonio_1_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000524495.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000524495.1/",
+      "file_name": "BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1_1.0.0.tar.gz",
+      "size": 7110955,
+      "seq_ids": [
+        "NW_008481835.1",
+        "NW_008481836.1",
+        "NW_008481837.1",
+        "NW_008481838.1",
+        "NW_008481839.1"
+      ],
+      "seq_count": 323,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T19:06:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1/BSgenome.Pinui.NCBI.PlasinuiSanAntonio1V1_1.0.0.tar.gz"
     }
   ]
 }
