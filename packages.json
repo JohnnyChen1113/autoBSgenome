@@ -14540,6 +14540,54 @@
       ]
     },
     {
+      "organism": "Fusarium odoratissimum NRRL 54006",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fodoratissimum.NCBI.FOII5V1",
+          "version": "1.0.0",
+          "organism": "Fusarium odoratissimum NRRL 54006",
+          "assembly": "FO_II5_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000260195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000260195.1/",
+          "file_name": "BSgenome.Fodoratissimum.NCBI.FOII5V1_1.0.0.tar.gz",
+          "size": 12063322,
+          "seq_ids": [
+            "NW_022158687.1",
+            "NW_022158688.1",
+            "NW_022158689.1",
+            "NW_022158690.1",
+            "NW_022158691.1"
+          ],
+          "seq_count": 418,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Nectriaceae",
+            "genus": "Fusarium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T13:54:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fodoratissimum.NCBI.FOII5V1/BSgenome.Fodoratissimum.NCBI.FOII5V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fusarium pseudograminearum CS3096",
       "common_name": "",
       "group": "fungi",
@@ -55869,6 +55917,38 @@
       "common_name": "",
       "published": "2026-04-06T13:53:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shirsutum.NCBI.Stehi1/BSgenome.Shirsutum.NCBI.Stehi1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fodoratissimum.NCBI.FOII5V1",
+      "version": "1.0.0",
+      "organism": "Fusarium odoratissimum NRRL 54006",
+      "assembly": "FO_II5_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000260195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000260195.1/",
+      "file_name": "BSgenome.Fodoratissimum.NCBI.FOII5V1_1.0.0.tar.gz",
+      "size": 12063322,
+      "seq_ids": [
+        "NW_022158687.1",
+        "NW_022158688.1",
+        "NW_022158689.1",
+        "NW_022158690.1",
+        "NW_022158691.1"
+      ],
+      "seq_count": 418,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T13:54:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fodoratissimum.NCBI.FOII5V1/BSgenome.Fodoratissimum.NCBI.FOII5V1_1.0.0.tar.gz"
     }
   ]
 }

@@ -2813,3 +2813,7 @@ NeedsCompilation: no
 Package: BSgenome.Shirsutum.NCBI.Stehi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fodoratissimum.NCBI.FOII5V1
+Version: 1.0.0
+NeedsCompilation: no
