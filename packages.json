@@ -13896,6 +13896,50 @@
       ]
     },
     {
+      "organism": "Entamoeba dispar SAW760",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "order": "Mastigamoebida",
+        "family": "Entamoebidae",
+        "genus": "Entamoeba"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Edispar.NCBI.JCVIEDISG10",
+          "version": "1.0.0",
+          "organism": "Entamoeba dispar SAW760",
+          "assembly": "JCVI_EDISG_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000209125.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000209125.1/",
+          "file_name": "BSgenome.Edispar.NCBI.JCVIEDISG10_1.0.0.tar.gz",
+          "size": 7014132,
+          "seq_ids": [
+            "NW_001865038.1",
+            "NW_001865037.1",
+            "NW_001865036.1",
+            "NW_001865035.1",
+            "NW_001865034.1"
+          ],
+          "seq_count": 12258,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Evosea",
+            "order": "Mastigamoebida",
+            "family": "Entamoebidae",
+            "genus": "Entamoeba"
+          },
+          "common_name": "",
+          "published": "2026-04-06T20:08:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Edispar.NCBI.JCVIEDISG10/BSgenome.Edispar.NCBI.JCVIEDISG10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Entamoeba histolytica HM-1:IMSS",
       "common_name": "",
       "group": "other",
@@ -60785,6 +60829,36 @@
       "common_name": "",
       "published": "2026-04-06T20:07:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lpyrrhocoris.NCBI.ASM129339v1/BSgenome.Lpyrrhocoris.NCBI.ASM129339v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Edispar.NCBI.JCVIEDISG10",
+      "version": "1.0.0",
+      "organism": "Entamoeba dispar SAW760",
+      "assembly": "JCVI_EDISG_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000209125.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000209125.1/",
+      "file_name": "BSgenome.Edispar.NCBI.JCVIEDISG10_1.0.0.tar.gz",
+      "size": 7014132,
+      "seq_ids": [
+        "NW_001865038.1",
+        "NW_001865037.1",
+        "NW_001865036.1",
+        "NW_001865035.1",
+        "NW_001865034.1"
+      ],
+      "seq_count": 12258,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "order": "Mastigamoebida",
+        "family": "Entamoebidae",
+        "genus": "Entamoeba"
+      },
+      "common_name": "",
+      "published": "2026-04-06T20:08:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Edispar.NCBI.JCVIEDISG10/BSgenome.Edispar.NCBI.JCVIEDISG10_1.0.0.tar.gz"
     }
   ]
 }
