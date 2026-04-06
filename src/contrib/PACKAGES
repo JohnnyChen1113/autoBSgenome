@@ -3061,3 +3061,7 @@ NeedsCompilation: no
 Package: BSgenome.Nfowleri.NCBI.ASM840351v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ttheileri.NCBI.Tthv3
+Version: 1.0.0
+NeedsCompilation: no

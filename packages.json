@@ -34710,6 +34710,52 @@
       ]
     },
     {
+      "organism": "Trypanosoma theileri",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Trypanosoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ttheileri.NCBI.Tthv3",
+          "version": "1.0.0",
+          "organism": "Trypanosoma theileri",
+          "assembly": "Tth v3",
+          "provider": "NCBI",
+          "accession": "GCF_002087225.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002087225.1/",
+          "file_name": "BSgenome.Ttheileri.NCBI.Tthv3_1.0.0.tar.gz",
+          "size": 6873809,
+          "seq_ids": [
+            "NW_021639942.1",
+            "NW_021639943.1",
+            "NW_021639944.1",
+            "NW_021639945.1",
+            "NW_021639946.1"
+          ],
+          "seq_count": 319,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Euglenozoa",
+            "class": "Kinetoplastea",
+            "order": "Trypanosomatida",
+            "family": "Trypanosomatidae",
+            "genus": "Trypanosoma"
+          },
+          "common_name": "",
+          "published": "2026-04-06T20:07:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ttheileri.NCBI.Tthv3/BSgenome.Ttheileri.NCBI.Tthv3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tuber melanosporum",
       "common_name": "Perigord truffle",
       "group": "fungi",
@@ -60631,6 +60677,37 @@
       "common_name": "",
       "published": "2026-04-06T20:07:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nfowleri.NCBI.ASM840351v1/BSgenome.Nfowleri.NCBI.ASM840351v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ttheileri.NCBI.Tthv3",
+      "version": "1.0.0",
+      "organism": "Trypanosoma theileri",
+      "assembly": "Tth v3",
+      "provider": "NCBI",
+      "accession": "GCF_002087225.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002087225.1/",
+      "file_name": "BSgenome.Ttheileri.NCBI.Tthv3_1.0.0.tar.gz",
+      "size": 6873809,
+      "seq_ids": [
+        "NW_021639942.1",
+        "NW_021639943.1",
+        "NW_021639944.1",
+        "NW_021639945.1",
+        "NW_021639946.1"
+      ],
+      "seq_count": 319,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Trypanosoma"
+      },
+      "common_name": "",
+      "published": "2026-04-06T20:07:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ttheileri.NCBI.Tthv3/BSgenome.Ttheileri.NCBI.Tthv3_1.0.0.tar.gz"
     }
   ]
 }
