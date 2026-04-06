@@ -2537,3 +2537,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccinerea.NCBI.CC3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fgraminearum.NCBI.ASM24013v3
+Version: 1.0.0
+NeedsCompilation: no

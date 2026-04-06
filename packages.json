@@ -13068,6 +13068,54 @@
       ]
     },
     {
+      "organism": "Fusarium graminearum PH-1",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fgraminearum.NCBI.ASM24013v3",
+          "version": "1.0.0",
+          "organism": "Fusarium graminearum PH-1",
+          "assembly": "ASM24013v3",
+          "provider": "NCBI",
+          "accession": "GCF_000240135.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000240135.3/",
+          "file_name": "BSgenome.Fgraminearum.NCBI.ASM24013v3_1.0.0.tar.gz",
+          "size": 9425983,
+          "seq_ids": [
+            "NC_026474.1",
+            "NC_026475.1",
+            "NC_026476.1",
+            "NC_026477.1",
+            "NW_001837897.1"
+          ],
+          "seq_count": 19,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Nectriaceae",
+            "genus": "Fusarium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T05:28:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fgraminearum.NCBI.ASM24013v3/BSgenome.Fgraminearum.NCBI.ASM24013v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Galendromus occidentalis",
       "common_name": "western predatory mite",
       "group": "invertebrate",
@@ -50373,6 +50421,38 @@
       "common_name": "",
       "published": "2026-04-06T05:28:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccinerea.NCBI.CC3/BSgenome.Ccinerea.NCBI.CC3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fgraminearum.NCBI.ASM24013v3",
+      "version": "1.0.0",
+      "organism": "Fusarium graminearum PH-1",
+      "assembly": "ASM24013v3",
+      "provider": "NCBI",
+      "accession": "GCF_000240135.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000240135.3/",
+      "file_name": "BSgenome.Fgraminearum.NCBI.ASM24013v3_1.0.0.tar.gz",
+      "size": 9425983,
+      "seq_ids": [
+        "NC_026474.1",
+        "NC_026475.1",
+        "NC_026476.1",
+        "NC_026477.1",
+        "NW_001837897.1"
+      ],
+      "seq_count": 19,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T05:28:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fgraminearum.NCBI.ASM24013v3/BSgenome.Fgraminearum.NCBI.ASM24013v3_1.0.0.tar.gz"
     }
   ]
 }
