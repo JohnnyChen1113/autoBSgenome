@@ -19186,6 +19186,52 @@
       ]
     },
     {
+      "organism": "Leishmania infantum JPCM5",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Leishmania"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Linfantum.NCBI.ASM287v2",
+          "version": "1.0.0",
+          "organism": "Leishmania infantum JPCM5",
+          "assembly": "ASM287v2",
+          "provider": "NCBI",
+          "accession": "GCF_000002875.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002875.2/",
+          "file_name": "BSgenome.Linfantum.NCBI.ASM287v2_1.0.0.tar.gz",
+          "size": 8529092,
+          "seq_ids": [
+            "NC_009386.2",
+            "NC_009387.2",
+            "NC_009388.2",
+            "NC_009389.2",
+            "NC_009390.2"
+          ],
+          "seq_count": 76,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Euglenozoa",
+            "class": "Kinetoplastea",
+            "order": "Trypanosomatida",
+            "family": "Trypanosomatidae",
+            "genus": "Leishmania"
+          },
+          "common_name": "",
+          "published": "2026-04-06T21:06:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Linfantum.NCBI.ASM287v2/BSgenome.Linfantum.NCBI.ASM287v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Leishmania mexicana MHOM/GT/2001/U1103",
       "common_name": "",
       "group": "other",
@@ -61279,6 +61325,37 @@
       "common_name": "",
       "published": "2026-04-06T21:06:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lmexicana.NCBI.ASM23466v4/BSgenome.Lmexicana.NCBI.ASM23466v4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Linfantum.NCBI.ASM287v2",
+      "version": "1.0.0",
+      "organism": "Leishmania infantum JPCM5",
+      "assembly": "ASM287v2",
+      "provider": "NCBI",
+      "accession": "GCF_000002875.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002875.2/",
+      "file_name": "BSgenome.Linfantum.NCBI.ASM287v2_1.0.0.tar.gz",
+      "size": 8529092,
+      "seq_ids": [
+        "NC_009386.2",
+        "NC_009387.2",
+        "NC_009388.2",
+        "NC_009389.2",
+        "NC_009390.2"
+      ],
+      "seq_count": 76,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Leishmania"
+      },
+      "common_name": "",
+      "published": "2026-04-06T21:06:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Linfantum.NCBI.ASM287v2/BSgenome.Linfantum.NCBI.ASM287v2_1.0.0.tar.gz"
     }
   ]
 }
