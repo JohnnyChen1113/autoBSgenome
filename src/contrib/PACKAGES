@@ -2645,3 +2645,7 @@ NeedsCompilation: no
 Package: BSgenome.Dchildiae.NCBI.DalchJS1345
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scommune.NCBI.Schco3
+Version: 1.0.0
+NeedsCompilation: no

@@ -26162,6 +26162,54 @@
       ]
     },
     {
+      "organism": "Schizophyllum commune H4-8",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Schizophyllaceae",
+        "genus": "Schizophyllum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Scommune.NCBI.Schco3",
+          "version": "1.0.0",
+          "organism": "Schizophyllum commune H4-8",
+          "assembly": "Schco3",
+          "provider": "NCBI",
+          "accession": "GCF_000143185.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143185.2/",
+          "file_name": "BSgenome.Scommune.NCBI.Schco3_1.0.0.tar.gz",
+          "size": 10156447,
+          "seq_ids": [
+            "NW_026089538.1",
+            "NW_026089539.1",
+            "NW_026089540.1",
+            "NW_026089541.1",
+            "NW_026089542.1"
+          ],
+          "seq_count": 25,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Schizophyllaceae",
+            "genus": "Schizophyllum"
+          },
+          "common_name": "",
+          "published": "2026-04-06T08:56:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scommune.NCBI.Schco3/BSgenome.Scommune.NCBI.Schco3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Schizosaccharomyces cryophilus OY26",
       "common_name": "",
       "group": "fungi",
@@ -52509,6 +52557,38 @@
       "common_name": "",
       "published": "2026-04-06T08:56:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dchildiae.NCBI.DalchJS1345/BSgenome.Dchildiae.NCBI.DalchJS1345_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Scommune.NCBI.Schco3",
+      "version": "1.0.0",
+      "organism": "Schizophyllum commune H4-8",
+      "assembly": "Schco3",
+      "provider": "NCBI",
+      "accession": "GCF_000143185.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143185.2/",
+      "file_name": "BSgenome.Scommune.NCBI.Schco3_1.0.0.tar.gz",
+      "size": 10156447,
+      "seq_ids": [
+        "NW_026089538.1",
+        "NW_026089539.1",
+        "NW_026089540.1",
+        "NW_026089541.1",
+        "NW_026089542.1"
+      ],
+      "seq_count": 25,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Schizophyllaceae",
+        "genus": "Schizophyllum"
+      },
+      "common_name": "",
+      "published": "2026-04-06T08:56:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scommune.NCBI.Schco3/BSgenome.Scommune.NCBI.Schco3_1.0.0.tar.gz"
     }
   ]
 }
