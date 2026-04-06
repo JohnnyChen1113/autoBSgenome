@@ -2885,3 +2885,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgraminis.NCBI.ASM14992v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmelanosporum.NCBI.ASM15164v1
+Version: 1.0.0
+NeedsCompilation: no
