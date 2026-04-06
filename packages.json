@@ -25426,6 +25426,54 @@
       ]
     },
     {
+      "organism": "Pseudomassariella vexata",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Amphisphaeriales",
+        "family": "Pseudomassariaceae",
+        "genus": "Pseudomassariella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pvexata.NCBI.Pseve2",
+          "version": "1.0.0",
+          "organism": "Pseudomassariella vexata",
+          "assembly": "Pseve2",
+          "provider": "NCBI",
+          "accession": "GCF_002105095.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002105095.1/",
+          "file_name": "BSgenome.Pvexata.NCBI.Pseve2_1.0.0.tar.gz",
+          "size": 11355238,
+          "seq_ids": [
+            "NW_024467956.1",
+            "NW_024467965.1",
+            "NW_024467966.1",
+            "NW_024467967.1",
+            "NW_024467968.1"
+          ],
+          "seq_count": 37,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Amphisphaeriales",
+            "family": "Pseudomassariaceae",
+            "genus": "Pseudomassariella"
+          },
+          "common_name": "",
+          "published": "2026-04-06T12:09:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvexata.NCBI.Pseve2/BSgenome.Pvexata.NCBI.Pseve2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudomyrmex gracilis",
       "common_name": "",
       "group": "invertebrate",
@@ -55309,6 +55357,38 @@
       "common_name": "",
       "published": "2026-04-06T12:09:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgrisea.NCBI.PgNI/BSgenome.Pgrisea.NCBI.PgNI_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pvexata.NCBI.Pseve2",
+      "version": "1.0.0",
+      "organism": "Pseudomassariella vexata",
+      "assembly": "Pseve2",
+      "provider": "NCBI",
+      "accession": "GCF_002105095.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002105095.1/",
+      "file_name": "BSgenome.Pvexata.NCBI.Pseve2_1.0.0.tar.gz",
+      "size": 11355238,
+      "seq_ids": [
+        "NW_024467956.1",
+        "NW_024467965.1",
+        "NW_024467966.1",
+        "NW_024467967.1",
+        "NW_024467968.1"
+      ],
+      "seq_count": 37,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Amphisphaeriales",
+        "family": "Pseudomassariaceae",
+        "genus": "Pseudomassariella"
+      },
+      "common_name": "",
+      "published": "2026-04-06T12:09:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvexata.NCBI.Pseve2/BSgenome.Pvexata.NCBI.Pseve2_1.0.0.tar.gz"
     }
   ]
 }

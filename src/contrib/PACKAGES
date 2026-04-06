@@ -2785,3 +2785,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgrisea.NCBI.PgNI
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pvexata.NCBI.Pseve2
+Version: 1.0.0
+NeedsCompilation: no
