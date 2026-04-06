@@ -28524,6 +28524,54 @@
       ]
     },
     {
+      "organism": "Thermothielavioides terrestris NRRL 8126",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Chaetomiaceae",
+        "genus": "Thermothielavioides"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tterrestris.NCBI.ASM22611v1",
+          "version": "1.0.0",
+          "organism": "Thermothielavioides terrestris NRRL 8126",
+          "assembly": "ASM22611v1",
+          "provider": "NCBI",
+          "accession": "GCF_000226115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000226115.1/",
+          "file_name": "BSgenome.Tterrestris.NCBI.ASM22611v1_1.0.0.tar.gz",
+          "size": 9706158,
+          "seq_ids": [
+            "NC_016457.1",
+            "NC_016458.1",
+            "NC_016459.1",
+            "NC_016460.1",
+            "NC_016461.1"
+          ],
+          "seq_count": 6,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Sordariales",
+            "family": "Chaetomiaceae",
+            "genus": "Thermothielavioides"
+          },
+          "common_name": "",
+          "published": "2026-04-06T08:54:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tterrestris.NCBI.ASM22611v1/BSgenome.Tterrestris.NCBI.ASM22611v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Theropithecus gelada",
       "common_name": "gelada",
       "group": "vertebrate_mammalian",
@@ -51893,6 +51941,38 @@
       "common_name": "",
       "published": "2026-04-06T08:54:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdestructans.NCBI.ASM164126v1/BSgenome.Pdestructans.NCBI.ASM164126v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tterrestris.NCBI.ASM22611v1",
+      "version": "1.0.0",
+      "organism": "Thermothielavioides terrestris NRRL 8126",
+      "assembly": "ASM22611v1",
+      "provider": "NCBI",
+      "accession": "GCF_000226115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000226115.1/",
+      "file_name": "BSgenome.Tterrestris.NCBI.ASM22611v1_1.0.0.tar.gz",
+      "size": 9706158,
+      "seq_ids": [
+        "NC_016457.1",
+        "NC_016458.1",
+        "NC_016459.1",
+        "NC_016460.1",
+        "NC_016461.1"
+      ],
+      "seq_count": 6,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Chaetomiaceae",
+        "genus": "Thermothielavioides"
+      },
+      "common_name": "",
+      "published": "2026-04-06T08:54:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tterrestris.NCBI.ASM22611v1/BSgenome.Tterrestris.NCBI.ASM22611v1_1.0.0.tar.gz"
     }
   ]
 }

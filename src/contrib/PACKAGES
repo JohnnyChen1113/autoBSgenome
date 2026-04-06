@@ -2613,3 +2613,7 @@ NeedsCompilation: no
 Package: BSgenome.Pdestructans.NCBI.ASM164126v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tterrestris.NCBI.ASM22611v1
+Version: 1.0.0
+NeedsCompilation: no
