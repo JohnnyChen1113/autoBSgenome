@@ -8166,6 +8166,54 @@
       ]
     },
     {
+      "organism": "Cladophialophora psammophila CBS 110553",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Cladophialophora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1",
+          "version": "1.0.0",
+          "organism": "Cladophialophora psammophila CBS 110553",
+          "assembly": "Clad_psam_CBS_110553_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000585535.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000585535.1/",
+          "file_name": "BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1_1.0.0.tar.gz",
+          "size": 10170893,
+          "seq_ids": [
+            "NW_006912922.1",
+            "NW_006912923.1",
+            "NW_006912924.1",
+            "NW_006912925.1",
+            "NW_006912926.1"
+          ],
+          "seq_count": 123,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Cladophialophora"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:13:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1/BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cladophialophora yegresii CBS 114405",
       "common_name": "",
       "group": "fungi",
@@ -52989,6 +53037,38 @@
       "common_name": "",
       "published": "2026-04-06T10:12:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ntetrasperma.NCBI.v20/BSgenome.Ntetrasperma.NCBI.v20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1",
+      "version": "1.0.0",
+      "organism": "Cladophialophora psammophila CBS 110553",
+      "assembly": "Clad_psam_CBS_110553_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000585535.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000585535.1/",
+      "file_name": "BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1_1.0.0.tar.gz",
+      "size": 10170893,
+      "seq_ids": [
+        "NW_006912922.1",
+        "NW_006912923.1",
+        "NW_006912924.1",
+        "NW_006912925.1",
+        "NW_006912926.1"
+      ],
+      "seq_count": 123,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Cladophialophora"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:13:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1/BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1_1.0.0.tar.gz"
     }
   ]
 }

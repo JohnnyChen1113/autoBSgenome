@@ -2669,3 +2669,7 @@ NeedsCompilation: no
 Package: BSgenome.Ntetrasperma.NCBI.v20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1
+Version: 1.0.0
+NeedsCompilation: no
