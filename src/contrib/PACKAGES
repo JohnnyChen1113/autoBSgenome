@@ -2569,3 +2569,7 @@ NeedsCompilation: no
 Package: BSgenome.Acostaricaensis.NCBI.Aspcos1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Uvirens.NCBI.ASM68747v2
+Version: 1.0.0
+NeedsCompilation: no

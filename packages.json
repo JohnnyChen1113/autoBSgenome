@@ -29194,6 +29194,54 @@
       ]
     },
     {
+      "organism": "Ustilaginoidea virens",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Ustilaginoidea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Uvirens.NCBI.ASM68747v2",
+          "version": "1.0.0",
+          "organism": "Ustilaginoidea virens",
+          "assembly": "ASM68747v2",
+          "provider": "NCBI",
+          "accession": "GCF_000687475.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000687475.1/",
+          "file_name": "BSgenome.Uvirens.NCBI.ASM68747v2_1.0.0.tar.gz",
+          "size": 9536632,
+          "seq_ids": [
+            "NC_057316.1",
+            "NC_057317.1",
+            "NC_057318.1",
+            "NC_057319.1",
+            "NC_057320.1"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Clavicipitaceae",
+            "genus": "Ustilaginoidea"
+          },
+          "common_name": "",
+          "published": "2026-04-06T07:11:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Uvirens.NCBI.ASM68747v2/BSgenome.Uvirens.NCBI.ASM68747v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Vairimorpha ceranae",
       "common_name": "",
       "group": "fungi",
@@ -51013,6 +51061,38 @@
       "common_name": "",
       "published": "2026-04-06T05:29:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acostaricaensis.NCBI.Aspcos1/BSgenome.Acostaricaensis.NCBI.Aspcos1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Uvirens.NCBI.ASM68747v2",
+      "version": "1.0.0",
+      "organism": "Ustilaginoidea virens",
+      "assembly": "ASM68747v2",
+      "provider": "NCBI",
+      "accession": "GCF_000687475.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000687475.1/",
+      "file_name": "BSgenome.Uvirens.NCBI.ASM68747v2_1.0.0.tar.gz",
+      "size": 9536632,
+      "seq_ids": [
+        "NC_057316.1",
+        "NC_057317.1",
+        "NC_057318.1",
+        "NC_057319.1",
+        "NC_057320.1"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Ustilaginoidea"
+      },
+      "common_name": "",
+      "published": "2026-04-06T07:11:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Uvirens.NCBI.ASM68747v2/BSgenome.Uvirens.NCBI.ASM68747v2_1.0.0.tar.gz"
     }
   ]
 }
