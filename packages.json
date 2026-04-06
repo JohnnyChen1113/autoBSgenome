@@ -2532,6 +2532,54 @@
       ]
     },
     {
+      "organism": "Aspergillus piperis CBS 112811",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Apiperis.NCBI.Asppip1",
+          "version": "1.0.0",
+          "organism": "Aspergillus piperis CBS 112811",
+          "assembly": "Asppip1",
+          "provider": "NCBI",
+          "accession": "GCF_003184755.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184755.1/",
+          "file_name": "BSgenome.Apiperis.NCBI.Asppip1_1.0.0.tar.gz",
+          "size": 9236966,
+          "seq_ids": [
+            "NW_020291591.1",
+            "NW_020291592.1",
+            "NW_020291593.1",
+            "NW_020291594.1",
+            "NW_020291595.1"
+          ],
+          "seq_count": 47,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T02:41:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apiperis.NCBI.Asppip1/BSgenome.Apiperis.NCBI.Asppip1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus ruber CBS 135680",
       "common_name": "",
       "group": "fungi",
@@ -49413,6 +49461,38 @@
       "common_name": "",
       "published": "2026-04-06T02:41:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fmonophora.NCBI.ASM164247v1/BSgenome.Fmonophora.NCBI.ASM164247v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Apiperis.NCBI.Asppip1",
+      "version": "1.0.0",
+      "organism": "Aspergillus piperis CBS 112811",
+      "assembly": "Asppip1",
+      "provider": "NCBI",
+      "accession": "GCF_003184755.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184755.1/",
+      "file_name": "BSgenome.Apiperis.NCBI.Asppip1_1.0.0.tar.gz",
+      "size": 9236966,
+      "seq_ids": [
+        "NW_020291591.1",
+        "NW_020291592.1",
+        "NW_020291593.1",
+        "NW_020291594.1",
+        "NW_020291595.1"
+      ],
+      "seq_count": 47,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T02:41:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apiperis.NCBI.Asppip1/BSgenome.Apiperis.NCBI.Asppip1_1.0.0.tar.gz"
     }
   ]
 }

@@ -2489,3 +2489,7 @@ NeedsCompilation: no
 Package: BSgenome.Fmonophora.NCBI.ASM164247v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apiperis.NCBI.Asppip1
+Version: 1.0.0
+NeedsCompilation: no
