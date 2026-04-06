@@ -2649,3 +2649,7 @@ NeedsCompilation: no
 Package: BSgenome.Scommune.NCBI.Schco3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Atanneri.NCBI.ASM342696v1
+Version: 1.0.0
+NeedsCompilation: no

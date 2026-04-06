@@ -3524,6 +3524,54 @@
       ]
     },
     {
+      "organism": "Aspergillus tanneri",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Atanneri.NCBI.ASM342696v1",
+          "version": "1.0.0",
+          "organism": "Aspergillus tanneri",
+          "assembly": "ASM342696v1",
+          "provider": "NCBI",
+          "accession": "GCF_003426965.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003426965.1/",
+          "file_name": "BSgenome.Atanneri.NCBI.ASM342696v1_1.0.0.tar.gz",
+          "size": 10028015,
+          "seq_ids": [
+            "NW_022984637.1",
+            "NW_022984638.1",
+            "NW_022984639.1",
+            "NW_022984640.1",
+            "NW_022984641.1"
+          ],
+          "seq_count": 14,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T08:56:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atanneri.NCBI.ASM342696v1/BSgenome.Atanneri.NCBI.ASM342696v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus terreus NIH2624",
       "common_name": "",
       "group": "fungi",
@@ -52589,6 +52637,38 @@
       "common_name": "",
       "published": "2026-04-06T08:56:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scommune.NCBI.Schco3/BSgenome.Scommune.NCBI.Schco3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Atanneri.NCBI.ASM342696v1",
+      "version": "1.0.0",
+      "organism": "Aspergillus tanneri",
+      "assembly": "ASM342696v1",
+      "provider": "NCBI",
+      "accession": "GCF_003426965.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003426965.1/",
+      "file_name": "BSgenome.Atanneri.NCBI.ASM342696v1_1.0.0.tar.gz",
+      "size": 10028015,
+      "seq_ids": [
+        "NW_022984637.1",
+        "NW_022984638.1",
+        "NW_022984639.1",
+        "NW_022984640.1",
+        "NW_022984641.1"
+      ],
+      "seq_count": 14,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T08:56:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atanneri.NCBI.ASM342696v1/BSgenome.Atanneri.NCBI.ASM342696v1_1.0.0.tar.gz"
     }
   ]
 }
