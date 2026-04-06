@@ -13720,6 +13720,50 @@
       ]
     },
     {
+      "organism": "Entamoeba nuttalli P19",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "order": "Mastigamoebida",
+        "family": "Entamoebidae",
+        "genus": "Entamoeba"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Enuttalli.NCBI.ENU1v1",
+          "version": "1.0.0",
+          "organism": "Entamoeba nuttalli P19",
+          "assembly": "ENU1 v1",
+          "provider": "NCBI",
+          "accession": "GCF_000257125.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000257125.1/",
+          "file_name": "BSgenome.Enuttalli.NCBI.ENU1v1_1.0.0.tar.gz",
+          "size": 3942947,
+          "seq_ids": [
+            "NW_008574913.1",
+            "NW_008574914.1",
+            "NW_008574915.1",
+            "NW_008574916.1",
+            "NW_008574917.1"
+          ],
+          "seq_count": 5233,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Evosea",
+            "order": "Mastigamoebida",
+            "family": "Entamoebidae",
+            "genus": "Entamoeba"
+          },
+          "common_name": "",
+          "published": "2026-04-06T17:49:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Enuttalli.NCBI.ENU1v1/BSgenome.Enuttalli.NCBI.ENU1v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Epinephelus moara",
       "common_name": "kelp grouper",
       "group": "vertebrate_other",
@@ -58831,6 +58875,36 @@
       "common_name": "",
       "published": "2026-04-06T17:49:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gniphandrodes.NCBI.GNI3/BSgenome.Gniphandrodes.NCBI.GNI3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Enuttalli.NCBI.ENU1v1",
+      "version": "1.0.0",
+      "organism": "Entamoeba nuttalli P19",
+      "assembly": "ENU1 v1",
+      "provider": "NCBI",
+      "accession": "GCF_000257125.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000257125.1/",
+      "file_name": "BSgenome.Enuttalli.NCBI.ENU1v1_1.0.0.tar.gz",
+      "size": 3942947,
+      "seq_ids": [
+        "NW_008574913.1",
+        "NW_008574914.1",
+        "NW_008574915.1",
+        "NW_008574916.1",
+        "NW_008574917.1"
+      ],
+      "seq_count": 5233,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "order": "Mastigamoebida",
+        "family": "Entamoebidae",
+        "genus": "Entamoeba"
+      },
+      "common_name": "",
+      "published": "2026-04-06T17:49:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Enuttalli.NCBI.ENU1v1/BSgenome.Enuttalli.NCBI.ENU1v1_1.0.0.tar.gz"
     }
   ]
 }
