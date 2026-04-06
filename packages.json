@@ -16882,6 +16882,54 @@
       ]
     },
     {
+      "organism": "Laetiporus sulphureus 93-53",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Laetiporaceae",
+        "genus": "Laetiporus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lsulphureus.NCBI.Laesu1",
+          "version": "1.0.0",
+          "organism": "Laetiporus sulphureus 93-53",
+          "assembly": "Laesu1",
+          "provider": "NCBI",
+          "accession": "GCF_001632365.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001632365.1/",
+          "file_name": "BSgenome.Lsulphureus.NCBI.Laesu1_1.0.0.tar.gz",
+          "size": 10022972,
+          "seq_ids": [
+            "NW_024468510.1",
+            "NW_024468511.1",
+            "NW_024468512.1",
+            "NW_024468513.1",
+            "NW_024468514.1"
+          ],
+          "seq_count": 399,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Polyporales",
+            "family": "Laetiporaceae",
+            "genus": "Laetiporus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:13:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lsulphureus.NCBI.Laesu1/BSgenome.Lsulphureus.NCBI.Laesu1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Larimichthys crocea",
       "common_name": "large yellow croaker",
       "group": "vertebrate_other",
@@ -53309,6 +53357,38 @@
       "common_name": "",
       "published": "2026-04-06T10:13:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ztritici.NCBI.MYCGRv20/BSgenome.Ztritici.NCBI.MYCGRv20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lsulphureus.NCBI.Laesu1",
+      "version": "1.0.0",
+      "organism": "Laetiporus sulphureus 93-53",
+      "assembly": "Laesu1",
+      "provider": "NCBI",
+      "accession": "GCF_001632365.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001632365.1/",
+      "file_name": "BSgenome.Lsulphureus.NCBI.Laesu1_1.0.0.tar.gz",
+      "size": 10022972,
+      "seq_ids": [
+        "NW_024468510.1",
+        "NW_024468511.1",
+        "NW_024468512.1",
+        "NW_024468513.1",
+        "NW_024468514.1"
+      ],
+      "seq_count": 399,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Laetiporaceae",
+        "genus": "Laetiporus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:13:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lsulphureus.NCBI.Laesu1/BSgenome.Lsulphureus.NCBI.Laesu1_1.0.0.tar.gz"
     }
   ]
 }
