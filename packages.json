@@ -30760,6 +30760,50 @@
       ]
     },
     {
+      "organism": "Salpingoeca rosetta",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Choanoflagellata",
+        "order": "Craspedida",
+        "family": "Salpingoecidae",
+        "genus": "Salpingoeca"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Srosetta.NCBI.ProterospongiaspATCC50818",
+          "version": "1.0.0",
+          "organism": "Salpingoeca rosetta",
+          "assembly": "Proterospongia_sp_ATCC50818",
+          "provider": "NCBI",
+          "accession": "GCF_000188695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000188695.1/",
+          "file_name": "BSgenome.Srosetta.NCBI.ProterospongiaspATCC50818_1.0.0.tar.gz",
+          "size": 13395916,
+          "seq_ids": [
+            "NW_004457740.1",
+            "NW_004754932.1",
+            "NW_004754931.1",
+            "NW_004754930.1",
+            "NW_004754929.1"
+          ],
+          "seq_count": 154,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "class": "Choanoflagellata",
+            "order": "Craspedida",
+            "family": "Salpingoecidae",
+            "genus": "Salpingoeca"
+          },
+          "common_name": "",
+          "published": "2026-04-06T22:53:24Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Srosetta.NCBI.ProterospongiaspATCC50818/BSgenome.Srosetta.NCBI.ProterospongiaspATCC50818_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Salvia splendens",
       "common_name": "bonfire salvia",
       "group": "plant",
@@ -62875,6 +62919,36 @@
       "common_name": "",
       "published": "2026-04-06T22:53:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Enecatrix.NCBI.ENH001/BSgenome.Enecatrix.NCBI.ENH001_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Srosetta.NCBI.ProterospongiaspATCC50818",
+      "version": "1.0.0",
+      "organism": "Salpingoeca rosetta",
+      "assembly": "Proterospongia_sp_ATCC50818",
+      "provider": "NCBI",
+      "accession": "GCF_000188695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000188695.1/",
+      "file_name": "BSgenome.Srosetta.NCBI.ProterospongiaspATCC50818_1.0.0.tar.gz",
+      "size": 13395916,
+      "seq_ids": [
+        "NW_004457740.1",
+        "NW_004754932.1",
+        "NW_004754931.1",
+        "NW_004754930.1",
+        "NW_004754929.1"
+      ],
+      "seq_count": 154,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Choanoflagellata",
+        "order": "Craspedida",
+        "family": "Salpingoecidae",
+        "genus": "Salpingoeca"
+      },
+      "common_name": "",
+      "published": "2026-04-06T22:53:24Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Srosetta.NCBI.ProterospongiaspATCC50818/BSgenome.Srosetta.NCBI.ProterospongiaspATCC50818_1.0.0.tar.gz"
     }
   ]
 }
