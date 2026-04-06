@@ -31506,6 +31506,52 @@
       ]
     },
     {
+      "organism": "Theileria orientalis strain Shintoku",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Piroplasmida",
+        "family": "Theileriidae",
+        "genus": "Theileria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Torientalis.NCBI.ASM74089v1",
+          "version": "1.0.0",
+          "organism": "Theileria orientalis strain Shintoku",
+          "assembly": "ASM74089v1",
+          "provider": "NCBI",
+          "accession": "GCF_000740895.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000740895.1/",
+          "file_name": "BSgenome.Torientalis.NCBI.ASM74089v1_1.0.0.tar.gz",
+          "size": 2374833,
+          "seq_ids": [
+            "NC_025260.1",
+            "NC_025261.1",
+            "NC_025262.1",
+            "NC_025263.1",
+            "NW_009646192.1"
+          ],
+          "seq_count": 6,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Aconoidasida",
+            "order": "Piroplasmida",
+            "family": "Theileriidae",
+            "genus": "Theileria"
+          },
+          "common_name": "",
+          "published": "2026-04-06T15:53:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Torientalis.NCBI.ASM74089v1/BSgenome.Torientalis.NCBI.ASM74089v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Theileria parva strain Muguga",
       "common_name": "",
       "group": "other",
@@ -57827,6 +57873,37 @@
       "common_name": "",
       "published": "2026-04-06T15:53:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cubiquitum.NCBI.ASM186534v1/BSgenome.Cubiquitum.NCBI.ASM186534v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Torientalis.NCBI.ASM74089v1",
+      "version": "1.0.0",
+      "organism": "Theileria orientalis strain Shintoku",
+      "assembly": "ASM74089v1",
+      "provider": "NCBI",
+      "accession": "GCF_000740895.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000740895.1/",
+      "file_name": "BSgenome.Torientalis.NCBI.ASM74089v1_1.0.0.tar.gz",
+      "size": 2374833,
+      "seq_ids": [
+        "NC_025260.1",
+        "NC_025261.1",
+        "NC_025262.1",
+        "NC_025263.1",
+        "NW_009646192.1"
+      ],
+      "seq_count": 6,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Piroplasmida",
+        "family": "Theileriidae",
+        "genus": "Theileria"
+      },
+      "common_name": "",
+      "published": "2026-04-06T15:53:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Torientalis.NCBI.ASM74089v1/BSgenome.Torientalis.NCBI.ASM74089v1_1.0.0.tar.gz"
     }
   ]
 }

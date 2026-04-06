@@ -2913,3 +2913,7 @@ NeedsCompilation: no
 Package: BSgenome.Cubiquitum.NCBI.ASM186534v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Torientalis.NCBI.ASM74089v1
+Version: 1.0.0
+NeedsCompilation: no
