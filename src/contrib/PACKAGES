@@ -3229,3 +3229,7 @@ NeedsCompilation: no
 Package: BSgenome.Mexilis.NCBI.ASM164367v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psojae.NCBI.PsojaeV30
+Version: 1.0.0
+NeedsCompilation: no
