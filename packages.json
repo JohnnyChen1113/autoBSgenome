@@ -385,6 +385,52 @@
       ]
     },
     {
+      "organism": "Acytostelium subglobosum LB1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "class": "Eumycetozoa",
+        "order": "Acytosteliales",
+        "family": "Acytosteliaceae",
+        "genus": "Acytostelium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Asubglobosum.NCBI.Asub20",
+          "version": "1.0.0",
+          "organism": "Acytostelium subglobosum LB1",
+          "assembly": "Asub_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000787575.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000787575.1/",
+          "file_name": "BSgenome.Asubglobosum.NCBI.Asub20_1.0.0.tar.gz",
+          "size": 8420585,
+          "seq_ids": [
+            "NW_012236427.1",
+            "NW_012236428.1",
+            "NW_012236429.1",
+            "NW_012236430.1",
+            "NW_012236431.1"
+          ],
+          "seq_count": 106,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Evosea",
+            "class": "Eumycetozoa",
+            "order": "Acytosteliales",
+            "family": "Acytosteliaceae",
+            "genus": "Acytostelium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T21:05:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asubglobosum.NCBI.Asub20/BSgenome.Asubglobosum.NCBI.Asub20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aedes aegypti",
       "common_name": "yellow fever mosquito",
       "group": "invertebrate",
@@ -61013,6 +61059,37 @@
       "common_name": "",
       "published": "2026-04-06T21:05:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nlovaniensis.NCBI.Nlova21/BSgenome.Nlovaniensis.NCBI.Nlova21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Asubglobosum.NCBI.Asub20",
+      "version": "1.0.0",
+      "organism": "Acytostelium subglobosum LB1",
+      "assembly": "Asub_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000787575.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000787575.1/",
+      "file_name": "BSgenome.Asubglobosum.NCBI.Asub20_1.0.0.tar.gz",
+      "size": 8420585,
+      "seq_ids": [
+        "NW_012236427.1",
+        "NW_012236428.1",
+        "NW_012236429.1",
+        "NW_012236430.1",
+        "NW_012236431.1"
+      ],
+      "seq_count": 106,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "class": "Eumycetozoa",
+        "order": "Acytosteliales",
+        "family": "Acytosteliaceae",
+        "genus": "Acytostelium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T21:05:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asubglobosum.NCBI.Asub20/BSgenome.Asubglobosum.NCBI.Asub20_1.0.0.tar.gz"
     }
   ]
 }
