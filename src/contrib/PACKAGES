@@ -3161,3 +3161,7 @@ NeedsCompilation: no
 Package: BSgenome.Einvadens.NCBI.EIA2v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Emaxima.NCBI.EMW001
+Version: 1.0.0
+NeedsCompilation: no
