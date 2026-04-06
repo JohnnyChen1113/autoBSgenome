@@ -2929,3 +2929,7 @@ NeedsCompilation: no
 Package: BSgenome.Cparvum.NCBI.ASM16534v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cbovis.NCBI.ASM976892v2
+Version: 1.0.0
+NeedsCompilation: no
