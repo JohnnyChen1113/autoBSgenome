@@ -2545,3 +2545,7 @@ NeedsCompilation: no
 Package: BSgenome.Aaculeatinus.NCBI.Aspacu1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Afijiensis.NCBI.Aspfij1
+Version: 1.0.0
+NeedsCompilation: no
