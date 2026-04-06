@@ -2849,3 +2849,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgraminicola.NCBI.CgraminicolaM1001V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfici.NCBI.PFICI
+Version: 1.0.0
+NeedsCompilation: no
