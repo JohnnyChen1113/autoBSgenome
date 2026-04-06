@@ -2733,3 +2733,7 @@ NeedsCompilation: no
 Package: BSgenome.Mrobertsii.NCBI.MAA20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fverticillioides.NCBI.ASM14955v1
+Version: 1.0.0
+NeedsCompilation: no
