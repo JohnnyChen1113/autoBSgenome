@@ -21738,6 +21738,54 @@
       ]
     },
     {
+      "organism": "Paraphaeosphaeria sporulosa",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Didymosphaeriaceae",
+        "genus": "Paraphaeosphaeria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psporulosa.NCBI.Parsp1",
+          "version": "1.0.0",
+          "organism": "Paraphaeosphaeria sporulosa",
+          "assembly": "Parsp1",
+          "provider": "NCBI",
+          "accession": "GCF_001642045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001642045.1/",
+          "file_name": "BSgenome.Psporulosa.NCBI.Parsp1_1.0.0.tar.gz",
+          "size": 9859936,
+          "seq_ids": [
+            "NW_017253360.1",
+            "NW_017253361.1",
+            "NW_017253362.1",
+            "NW_017253363.1",
+            "NW_017253364.1"
+          ],
+          "seq_count": 61,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Didymosphaeriaceae",
+            "genus": "Paraphaeosphaeria"
+          },
+          "common_name": "",
+          "published": "2026-04-06T08:55:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psporulosa.NCBI.Parsp1/BSgenome.Psporulosa.NCBI.Parsp1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Parastagonospora nodorum SN15",
       "common_name": "",
       "group": "fungi",
@@ -52349,6 +52397,38 @@
       "common_name": "",
       "published": "2026-04-06T08:55:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssclerotiorum.NCBI.ASM14694v2/BSgenome.Ssclerotiorum.NCBI.ASM14694v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psporulosa.NCBI.Parsp1",
+      "version": "1.0.0",
+      "organism": "Paraphaeosphaeria sporulosa",
+      "assembly": "Parsp1",
+      "provider": "NCBI",
+      "accession": "GCF_001642045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001642045.1/",
+      "file_name": "BSgenome.Psporulosa.NCBI.Parsp1_1.0.0.tar.gz",
+      "size": 9859936,
+      "seq_ids": [
+        "NW_017253360.1",
+        "NW_017253361.1",
+        "NW_017253362.1",
+        "NW_017253363.1",
+        "NW_017253364.1"
+      ],
+      "seq_count": 61,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Didymosphaeriaceae",
+        "genus": "Paraphaeosphaeria"
+      },
+      "common_name": "",
+      "published": "2026-04-06T08:55:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psporulosa.NCBI.Parsp1/BSgenome.Psporulosa.NCBI.Parsp1_1.0.0.tar.gz"
     }
   ]
 }

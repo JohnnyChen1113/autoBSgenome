@@ -2637,3 +2637,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssclerotiorum.NCBI.ASM14694v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psporulosa.NCBI.Parsp1
+Version: 1.0.0
+NeedsCompilation: no
