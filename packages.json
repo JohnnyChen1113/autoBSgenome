@@ -8692,6 +8692,54 @@
       ]
     },
     {
+      "organism": "Colletotrichum orchidophilum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Glomerellaceae",
+        "genus": "Colletotrichum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Corchidophilum.NCBI.CORC01",
+          "version": "1.0.0",
+          "organism": "Colletotrichum orchidophilum",
+          "assembly": "CORC01",
+          "provider": "NCBI",
+          "accession": "GCF_001831195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001831195.1/",
+          "file_name": "BSgenome.Corchidophilum.NCBI.CORC01_1.0.0.tar.gz",
+          "size": 12724306,
+          "seq_ids": [
+            "NW_019172957.1",
+            "NW_019172966.1",
+            "NW_019173056.1",
+            "NW_019173057.1",
+            "NW_019173058.1"
+          ],
+          "seq_count": 321,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Glomerellales",
+            "family": "Glomerellaceae",
+            "genus": "Colletotrichum"
+          },
+          "common_name": "",
+          "published": "2026-04-06T13:54:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Corchidophilum.NCBI.CORC01/BSgenome.Corchidophilum.NCBI.CORC01_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Colobus angolensis palliatus",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -55949,6 +55997,38 @@
       "common_name": "",
       "published": "2026-04-06T13:54:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fodoratissimum.NCBI.FOII5V1/BSgenome.Fodoratissimum.NCBI.FOII5V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Corchidophilum.NCBI.CORC01",
+      "version": "1.0.0",
+      "organism": "Colletotrichum orchidophilum",
+      "assembly": "CORC01",
+      "provider": "NCBI",
+      "accession": "GCF_001831195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001831195.1/",
+      "file_name": "BSgenome.Corchidophilum.NCBI.CORC01_1.0.0.tar.gz",
+      "size": 12724306,
+      "seq_ids": [
+        "NW_019172957.1",
+        "NW_019172966.1",
+        "NW_019173056.1",
+        "NW_019173057.1",
+        "NW_019173058.1"
+      ],
+      "seq_count": 321,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Glomerellaceae",
+        "genus": "Colletotrichum"
+      },
+      "common_name": "",
+      "published": "2026-04-06T13:54:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Corchidophilum.NCBI.CORC01/BSgenome.Corchidophilum.NCBI.CORC01_1.0.0.tar.gz"
     }
   ]
 }
