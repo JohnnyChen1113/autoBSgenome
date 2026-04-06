@@ -30527,6 +30527,50 @@
       ]
     },
     {
+      "organism": "Spironucleus salmonicida",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Fornicata",
+        "order": "Diplomonadida",
+        "family": "Hexamitidae",
+        "genus": "Spironucleus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ssalmonicida.NCBI.ASM49712v2",
+          "version": "1.0.0",
+          "organism": "Spironucleus salmonicida",
+          "assembly": "ASM49712v2",
+          "provider": "NCBI",
+          "accession": "GCF_000497125.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000497125.1/",
+          "file_name": "BSgenome.Ssalmonicida.NCBI.ASM49712v2_1.0.0.tar.gz",
+          "size": 3618429,
+          "seq_ids": [
+            "NC_090596.1",
+            "NC_090597.1",
+            "NC_090598.1",
+            "NC_090599.1",
+            "NC_090600.1"
+          ],
+          "seq_count": 42,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Fornicata",
+            "order": "Diplomonadida",
+            "family": "Hexamitidae",
+            "genus": "Spironucleus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T17:50:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalmonicida.NCBI.ASM49712v2/BSgenome.Ssalmonicida.NCBI.ASM49712v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Spizellomyces punctatus DAOM BR117",
       "common_name": "",
       "group": "fungi",
@@ -58982,6 +59026,36 @@
       "common_name": "",
       "published": "2026-04-06T17:49:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bovata.NCBI.Bovata71/BSgenome.Bovata.NCBI.Bovata71_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ssalmonicida.NCBI.ASM49712v2",
+      "version": "1.0.0",
+      "organism": "Spironucleus salmonicida",
+      "assembly": "ASM49712v2",
+      "provider": "NCBI",
+      "accession": "GCF_000497125.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000497125.1/",
+      "file_name": "BSgenome.Ssalmonicida.NCBI.ASM49712v2_1.0.0.tar.gz",
+      "size": 3618429,
+      "seq_ids": [
+        "NC_090596.1",
+        "NC_090597.1",
+        "NC_090598.1",
+        "NC_090599.1",
+        "NC_090600.1"
+      ],
+      "seq_count": 42,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Fornicata",
+        "order": "Diplomonadida",
+        "family": "Hexamitidae",
+        "genus": "Spironucleus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T17:50:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalmonicida.NCBI.ASM49712v2/BSgenome.Ssalmonicida.NCBI.ASM49712v2_1.0.0.tar.gz"
     }
   ]
 }

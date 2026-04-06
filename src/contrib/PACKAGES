@@ -2973,3 +2973,7 @@ NeedsCompilation: no
 Package: BSgenome.Bovata.NCBI.Bovata71
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssalmonicida.NCBI.ASM49712v2
+Version: 1.0.0
+NeedsCompilation: no
