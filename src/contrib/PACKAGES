@@ -2605,3 +2605,7 @@ NeedsCompilation: no
 Package: BSgenome.Apseudonomiae.NCBI.Asppsen1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asteynii.NCBI.Aspste1
+Version: 1.0.0
+NeedsCompilation: no

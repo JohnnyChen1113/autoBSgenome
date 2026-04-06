@@ -3396,6 +3396,54 @@
       ]
     },
     {
+      "organism": "Aspergillus steynii IBT 23096",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Asteynii.NCBI.Aspste1",
+          "version": "1.0.0",
+          "organism": "Aspergillus steynii IBT 23096",
+          "assembly": "Aspste1",
+          "provider": "NCBI",
+          "accession": "GCF_002849105.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002849105.1/",
+          "file_name": "BSgenome.Asteynii.NCBI.Aspste1_1.0.0.tar.gz",
+          "size": 9709909,
+          "seq_ids": [
+            "NW_020194398.1",
+            "NW_020194407.1",
+            "NW_020194408.1",
+            "NW_020194409.1",
+            "NW_020194410.1"
+          ],
+          "seq_count": 37,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T07:12:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asteynii.NCBI.Aspste1/BSgenome.Asteynii.NCBI.Aspste1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus sydowii CBS 593.65",
       "common_name": "",
       "group": "fungi",
@@ -51733,6 +51781,38 @@
       "common_name": "",
       "published": "2026-04-06T07:12:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apseudonomiae.NCBI.Asppsen1/BSgenome.Apseudonomiae.NCBI.Asppsen1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Asteynii.NCBI.Aspste1",
+      "version": "1.0.0",
+      "organism": "Aspergillus steynii IBT 23096",
+      "assembly": "Aspste1",
+      "provider": "NCBI",
+      "accession": "GCF_002849105.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002849105.1/",
+      "file_name": "BSgenome.Asteynii.NCBI.Aspste1_1.0.0.tar.gz",
+      "size": 9709909,
+      "seq_ids": [
+        "NW_020194398.1",
+        "NW_020194407.1",
+        "NW_020194408.1",
+        "NW_020194409.1",
+        "NW_020194410.1"
+      ],
+      "seq_count": 37,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T07:12:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asteynii.NCBI.Aspste1/BSgenome.Asteynii.NCBI.Aspste1_1.0.0.tar.gz"
     }
   ]
 }
