@@ -27553,6 +27553,54 @@
       ]
     },
     {
+      "organism": "Serpula lacrymans var. lacrymans S7.9",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Boletales",
+        "family": "Serpulaceae",
+        "genus": "Serpula"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Slacrymans.NCBI.v10",
+          "version": "1.0.0",
+          "organism": "Serpula lacrymans var. lacrymans S7.9",
+          "assembly": "v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000218685.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000218685.1/",
+          "file_name": "BSgenome.Slacrymans.NCBI.v10_1.0.0.tar.gz",
+          "size": 10751764,
+          "seq_ids": [
+            "NW_006763290.1",
+            "NW_006763291.1",
+            "NW_006763292.1",
+            "NW_006763293.1",
+            "NW_006763294.1"
+          ],
+          "seq_count": 46,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Boletales",
+            "family": "Serpulaceae",
+            "genus": "Serpula"
+          },
+          "common_name": "",
+          "published": "2026-04-06T12:08:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slacrymans.NCBI.v10/BSgenome.Slacrymans.NCBI.v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sesamum indicum",
       "common_name": "sesame",
       "group": "plant",
@@ -54669,6 +54717,38 @@
       "common_name": "",
       "published": "2026-04-06T12:08:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ltransversale.NCBI.Lobtra1/BSgenome.Ltransversale.NCBI.Lobtra1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Slacrymans.NCBI.v10",
+      "version": "1.0.0",
+      "organism": "Serpula lacrymans var. lacrymans S7.9",
+      "assembly": "v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000218685.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000218685.1/",
+      "file_name": "BSgenome.Slacrymans.NCBI.v10_1.0.0.tar.gz",
+      "size": 10751764,
+      "seq_ids": [
+        "NW_006763290.1",
+        "NW_006763291.1",
+        "NW_006763292.1",
+        "NW_006763293.1",
+        "NW_006763294.1"
+      ],
+      "seq_count": 46,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Boletales",
+        "family": "Serpulaceae",
+        "genus": "Serpula"
+      },
+      "common_name": "",
+      "published": "2026-04-06T12:08:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slacrymans.NCBI.v10/BSgenome.Slacrymans.NCBI.v10_1.0.0.tar.gz"
     }
   ]
 }
