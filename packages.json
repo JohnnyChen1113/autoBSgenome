@@ -4574,6 +4574,50 @@
       ]
     },
     {
+      "organism": "Aureococcus anophagefferens",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Pelagophyceae",
+        "order": "Pelagomonadales",
+        "family": "Pelagomonadaceae",
+        "genus": "Aureococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aanophagefferens.NCBI.v10",
+          "version": "1.0.0",
+          "organism": "Aureococcus anophagefferens",
+          "assembly": "v 1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000186865.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000186865.1/",
+          "file_name": "BSgenome.Aanophagefferens.NCBI.v10_1.0.0.tar.gz",
+          "size": 13426249,
+          "seq_ids": [
+            "NW_008705561.1",
+            "NW_008705562.1",
+            "NW_008705563.1",
+            "NW_008705564.1",
+            "NW_008705565.1"
+          ],
+          "seq_count": 1185,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "class": "Pelagophyceae",
+            "order": "Pelagomonadales",
+            "family": "Pelagomonadaceae",
+            "genus": "Aureococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T22:53:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aanophagefferens.NCBI.v10/BSgenome.Aanophagefferens.NCBI.v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Austrofundulus limnaeus",
       "common_name": "",
       "group": "vertebrate_other",
@@ -62949,6 +62993,36 @@
       "common_name": "",
       "published": "2026-04-06T22:53:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Srosetta.NCBI.ProterospongiaspATCC50818/BSgenome.Srosetta.NCBI.ProterospongiaspATCC50818_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aanophagefferens.NCBI.v10",
+      "version": "1.0.0",
+      "organism": "Aureococcus anophagefferens",
+      "assembly": "v 1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000186865.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000186865.1/",
+      "file_name": "BSgenome.Aanophagefferens.NCBI.v10_1.0.0.tar.gz",
+      "size": 13426249,
+      "seq_ids": [
+        "NW_008705561.1",
+        "NW_008705562.1",
+        "NW_008705563.1",
+        "NW_008705564.1",
+        "NW_008705565.1"
+      ],
+      "seq_count": 1185,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Pelagophyceae",
+        "order": "Pelagomonadales",
+        "family": "Pelagomonadaceae",
+        "genus": "Aureococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T22:53:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aanophagefferens.NCBI.v10/BSgenome.Aanophagefferens.NCBI.v10_1.0.0.tar.gz"
     }
   ]
 }
