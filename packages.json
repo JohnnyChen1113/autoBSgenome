@@ -1289,6 +1289,52 @@
       ]
     },
     {
+      "organism": "Aphanomyces invadans",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Oomycota",
+        "class": "Saprolegniomycetes",
+        "order": "Saprolegniales",
+        "family": "Verrucalvaceae",
+        "genus": "Aphanomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1",
+          "version": "1.0.0",
+          "organism": "Aphanomyces invadans",
+          "assembly": "Apha_inva_NJM9701_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000520115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000520115.1/",
+          "file_name": "BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1_1.0.0.tar.gz",
+          "size": 11004164,
+          "seq_ids": [
+            "NW_008580146.1",
+            "NW_008580147.1",
+            "NW_008580148.1",
+            "NW_008580149.1",
+            "NW_008580150.1"
+          ],
+          "seq_count": 481,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Oomycota",
+            "class": "Saprolegniomycetes",
+            "order": "Saprolegniales",
+            "family": "Verrucalvaceae",
+            "genus": "Aphanomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-06T23:40:21Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1/BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Apiotrichum porosum",
       "common_name": "",
       "group": "fungi",
@@ -63405,6 +63451,37 @@
       "common_name": "",
       "published": "2026-04-06T23:40:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tfoetus.NCBI.ASM183968v2/BSgenome.Tfoetus.NCBI.ASM183968v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1",
+      "version": "1.0.0",
+      "organism": "Aphanomyces invadans",
+      "assembly": "Apha_inva_NJM9701_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000520115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000520115.1/",
+      "file_name": "BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1_1.0.0.tar.gz",
+      "size": 11004164,
+      "seq_ids": [
+        "NW_008580146.1",
+        "NW_008580147.1",
+        "NW_008580148.1",
+        "NW_008580149.1",
+        "NW_008580150.1"
+      ],
+      "seq_count": 481,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Oomycota",
+        "class": "Saprolegniomycetes",
+        "order": "Saprolegniales",
+        "family": "Verrucalvaceae",
+        "genus": "Aphanomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-06T23:40:21Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1/BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1_1.0.0.tar.gz"
     }
   ]
 }
