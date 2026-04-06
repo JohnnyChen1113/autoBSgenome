@@ -3073,3 +3073,7 @@ NeedsCompilation: no
 Package: BSgenome.Edispar.NCBI.JCVIEDISG10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lpanamensis.NCBI.ASM75516v1
+Version: 1.0.0
+NeedsCompilation: no
