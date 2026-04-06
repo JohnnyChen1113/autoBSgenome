@@ -33056,6 +33056,52 @@
       ]
     },
     {
+      "organism": "Thalassiosira pseudonana CCMP1335",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Bacillariophyta",
+        "class": "Coscinodiscophyceae",
+        "order": "Thalassiosirales",
+        "family": "Thalassiosiraceae",
+        "genus": "Thalassiosira"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tpseudonana.NCBI.ASM14940v2",
+          "version": "1.0.0",
+          "organism": "Thalassiosira pseudonana CCMP1335",
+          "assembly": "ASM14940v2",
+          "provider": "NCBI",
+          "accession": "GCF_000149405.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149405.2/",
+          "file_name": "BSgenome.Tpseudonana.NCBI.ASM14940v2_1.0.0.tar.gz",
+          "size": 8540028,
+          "seq_ids": [
+            "NC_012064.1",
+            "NC_012065.1",
+            "NC_012066.1",
+            "NC_012067.1",
+            "NC_012068.1"
+          ],
+          "seq_count": 64,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Bacillariophyta",
+            "class": "Coscinodiscophyceae",
+            "order": "Thalassiosirales",
+            "family": "Thalassiosiraceae",
+            "genus": "Thalassiosira"
+          },
+          "common_name": "",
+          "published": "2026-04-06T21:07:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tpseudonana.NCBI.ASM14940v2/BSgenome.Tpseudonana.NCBI.ASM14940v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Thamnophis elegans",
       "common_name": "Western terrestrial garter snake",
       "group": "vertebrate_other",
@@ -61356,6 +61402,37 @@
       "common_name": "",
       "published": "2026-04-06T21:06:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Linfantum.NCBI.ASM287v2/BSgenome.Linfantum.NCBI.ASM287v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tpseudonana.NCBI.ASM14940v2",
+      "version": "1.0.0",
+      "organism": "Thalassiosira pseudonana CCMP1335",
+      "assembly": "ASM14940v2",
+      "provider": "NCBI",
+      "accession": "GCF_000149405.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149405.2/",
+      "file_name": "BSgenome.Tpseudonana.NCBI.ASM14940v2_1.0.0.tar.gz",
+      "size": 8540028,
+      "seq_ids": [
+        "NC_012064.1",
+        "NC_012065.1",
+        "NC_012066.1",
+        "NC_012067.1",
+        "NC_012068.1"
+      ],
+      "seq_count": 64,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Bacillariophyta",
+        "class": "Coscinodiscophyceae",
+        "order": "Thalassiosirales",
+        "family": "Thalassiosiraceae",
+        "genus": "Thalassiosira"
+      },
+      "common_name": "",
+      "published": "2026-04-06T21:07:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tpseudonana.NCBI.ASM14940v2/BSgenome.Tpseudonana.NCBI.ASM14940v2_1.0.0.tar.gz"
     }
   ]
 }
