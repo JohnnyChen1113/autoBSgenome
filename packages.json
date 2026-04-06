@@ -3284,6 +3284,54 @@
       ]
     },
     {
+      "organism": "Aspergillus pseudotamarii",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Apseudotamarii.NCBI.Asppset1",
+          "version": "1.0.0",
+          "organism": "Aspergillus pseudotamarii",
+          "assembly": "Asppset1",
+          "provider": "NCBI",
+          "accession": "GCF_009193445.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009193445.1/",
+          "file_name": "BSgenome.Apseudotamarii.NCBI.Asppset1_1.0.0.tar.gz",
+          "size": 9941487,
+          "seq_ids": [
+            "NW_022475015.1",
+            "NW_022475016.1",
+            "NW_022475017.1",
+            "NW_022475018.1",
+            "NW_022475019.1"
+          ],
+          "seq_count": 249,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:12:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apseudotamarii.NCBI.Asppset1/BSgenome.Apseudotamarii.NCBI.Asppset1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus ruber CBS 135680",
       "common_name": "",
       "group": "fungi",
@@ -52669,6 +52717,38 @@
       "common_name": "",
       "published": "2026-04-06T08:56:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atanneri.NCBI.ASM342696v1/BSgenome.Atanneri.NCBI.ASM342696v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Apseudotamarii.NCBI.Asppset1",
+      "version": "1.0.0",
+      "organism": "Aspergillus pseudotamarii",
+      "assembly": "Asppset1",
+      "provider": "NCBI",
+      "accession": "GCF_009193445.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009193445.1/",
+      "file_name": "BSgenome.Apseudotamarii.NCBI.Asppset1_1.0.0.tar.gz",
+      "size": 9941487,
+      "seq_ids": [
+        "NW_022475015.1",
+        "NW_022475016.1",
+        "NW_022475017.1",
+        "NW_022475018.1",
+        "NW_022475019.1"
+      ],
+      "seq_count": 249,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:12:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apseudotamarii.NCBI.Asppset1/BSgenome.Apseudotamarii.NCBI.Asppset1_1.0.0.tar.gz"
     }
   ]
 }
