@@ -1823,6 +1823,54 @@
       ]
     },
     {
+      "organism": "Ascochyta rabiei",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Didymellaceae",
+        "genus": "Ascochyta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Arabiei.NCBI.ASM401169v2",
+          "version": "1.0.0",
+          "organism": "Ascochyta rabiei",
+          "assembly": "ASM401169v2",
+          "provider": "NCBI",
+          "accession": "GCF_004011695.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004011695.2/",
+          "file_name": "BSgenome.Arabiei.NCBI.ASM401169v2_1.0.0.tar.gz",
+          "size": 10456655,
+          "seq_ids": [
+            "NC_082405.1",
+            "NC_082406.1",
+            "NC_082407.1",
+            "NC_082408.1",
+            "NC_082409.1"
+          ],
+          "seq_count": 23,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Didymellaceae",
+            "genus": "Ascochyta"
+          },
+          "common_name": "",
+          "published": "2026-04-06T11:28:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Arabiei.NCBI.ASM401169v2/BSgenome.Arabiei.NCBI.ASM401169v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ascoidea rubescens DSM 1968",
       "common_name": "",
       "group": "fungi",
@@ -53789,6 +53837,38 @@
       "common_name": "",
       "published": "2026-04-06T11:28:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcurvatum.NCBI.ASM435304v1/BSgenome.Tcurvatum.NCBI.ASM435304v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Arabiei.NCBI.ASM401169v2",
+      "version": "1.0.0",
+      "organism": "Ascochyta rabiei",
+      "assembly": "ASM401169v2",
+      "provider": "NCBI",
+      "accession": "GCF_004011695.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004011695.2/",
+      "file_name": "BSgenome.Arabiei.NCBI.ASM401169v2_1.0.0.tar.gz",
+      "size": 10456655,
+      "seq_ids": [
+        "NC_082405.1",
+        "NC_082406.1",
+        "NC_082407.1",
+        "NC_082408.1",
+        "NC_082409.1"
+      ],
+      "seq_count": 23,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Didymellaceae",
+        "genus": "Ascochyta"
+      },
+      "common_name": "",
+      "published": "2026-04-06T11:28:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Arabiei.NCBI.ASM401169v2/BSgenome.Arabiei.NCBI.ASM401169v2_1.0.0.tar.gz"
     }
   ]
 }
