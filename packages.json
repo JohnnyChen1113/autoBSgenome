@@ -21658,6 +21658,54 @@
       ]
     },
     {
+      "organism": "Parastagonospora nodorum SN15",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Phaeosphaeriaceae",
+        "genus": "Parastagonospora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pnodorum.NCBI.ASM14691v2",
+          "version": "1.0.0",
+          "organism": "Parastagonospora nodorum SN15",
+          "assembly": "ASM14691v2",
+          "provider": "NCBI",
+          "accession": "GCF_000146915.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000146915.1/",
+          "file_name": "BSgenome.Pnodorum.NCBI.ASM14691v2_1.0.0.tar.gz",
+          "size": 9466459,
+          "seq_ids": [
+            "NW_001884618.1",
+            "NW_001884617.1",
+            "NW_001884616.1",
+            "NW_001884615.1",
+            "NW_001884614.1"
+          ],
+          "seq_count": 108,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Phaeosphaeriaceae",
+            "genus": "Parastagonospora"
+          },
+          "common_name": "",
+          "published": "2026-04-06T08:54:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnodorum.NCBI.ASM14691v2/BSgenome.Pnodorum.NCBI.ASM14691v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Parus major",
       "common_name": "Great Tit",
       "group": "vertebrate_other",
@@ -51973,6 +52021,38 @@
       "common_name": "",
       "published": "2026-04-06T08:54:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tterrestris.NCBI.ASM22611v1/BSgenome.Tterrestris.NCBI.ASM22611v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pnodorum.NCBI.ASM14691v2",
+      "version": "1.0.0",
+      "organism": "Parastagonospora nodorum SN15",
+      "assembly": "ASM14691v2",
+      "provider": "NCBI",
+      "accession": "GCF_000146915.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000146915.1/",
+      "file_name": "BSgenome.Pnodorum.NCBI.ASM14691v2_1.0.0.tar.gz",
+      "size": 9466459,
+      "seq_ids": [
+        "NW_001884618.1",
+        "NW_001884617.1",
+        "NW_001884616.1",
+        "NW_001884615.1",
+        "NW_001884614.1"
+      ],
+      "seq_count": 108,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Phaeosphaeriaceae",
+        "genus": "Parastagonospora"
+      },
+      "common_name": "",
+      "published": "2026-04-06T08:54:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnodorum.NCBI.ASM14691v2/BSgenome.Pnodorum.NCBI.ASM14691v2_1.0.0.tar.gz"
     }
   ]
 }
