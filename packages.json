@@ -1775,6 +1775,54 @@
       ]
     },
     {
+      "organism": "Arthrobotrys flagrans",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Orbiliomycetes",
+        "order": "Orbiliales",
+        "family": "Orbiliaceae",
+        "genus": "Arthrobotrys"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aflagrans.NCBI.DF10",
+          "version": "1.0.0",
+          "organism": "Arthrobotrys flagrans",
+          "assembly": "DF_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_004000055.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004000055.1/",
+          "file_name": "BSgenome.Aflagrans.NCBI.DF10_1.0.0.tar.gz",
+          "size": 9481195,
+          "seq_ids": [
+            "NW_027137550.1",
+            "NW_027137556.1",
+            "NW_027137557.1",
+            "NW_027137548.1",
+            "NW_027137554.1"
+          ],
+          "seq_count": 14,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Orbiliomycetes",
+            "order": "Orbiliales",
+            "family": "Orbiliaceae",
+            "genus": "Arthrobotrys"
+          },
+          "common_name": "",
+          "published": "2026-04-06T05:29:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aflagrans.NCBI.DF10/BSgenome.Aflagrans.NCBI.DF10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ascoidea rubescens DSM 1968",
       "common_name": "",
       "group": "fungi",
@@ -50613,6 +50661,38 @@
       "common_name": "",
       "published": "2026-04-06T05:28:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afijiensis.NCBI.Aspfij1/BSgenome.Afijiensis.NCBI.Aspfij1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aflagrans.NCBI.DF10",
+      "version": "1.0.0",
+      "organism": "Arthrobotrys flagrans",
+      "assembly": "DF_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_004000055.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004000055.1/",
+      "file_name": "BSgenome.Aflagrans.NCBI.DF10_1.0.0.tar.gz",
+      "size": 9481195,
+      "seq_ids": [
+        "NW_027137550.1",
+        "NW_027137556.1",
+        "NW_027137557.1",
+        "NW_027137548.1",
+        "NW_027137554.1"
+      ],
+      "seq_count": 14,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Orbiliomycetes",
+        "order": "Orbiliales",
+        "family": "Orbiliaceae",
+        "genus": "Arthrobotrys"
+      },
+      "common_name": "",
+      "published": "2026-04-06T05:29:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aflagrans.NCBI.DF10/BSgenome.Aflagrans.NCBI.DF10_1.0.0.tar.gz"
     }
   ]
 }
