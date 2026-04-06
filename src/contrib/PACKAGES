@@ -2585,3 +2585,7 @@ NeedsCompilation: no
 Package: BSgenome.Abombycis.NCBI.ASM179269v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Abrunneoviolaceus.NCBI.Aspbru1
+Version: 1.0.0
+NeedsCompilation: no
