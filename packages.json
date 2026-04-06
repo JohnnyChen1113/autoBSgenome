@@ -24002,6 +24002,54 @@
       ]
     },
     {
+      "organism": "Pseudogymnoascus destructans",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pdestructans.NCBI.ASM164126v1",
+          "version": "1.0.0",
+          "organism": "Pseudogymnoascus destructans",
+          "assembly": "ASM164126v1",
+          "provider": "NCBI",
+          "accession": "GCF_001641265.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001641265.1/",
+          "file_name": "BSgenome.Pdestructans.NCBI.ASM164126v1_1.0.0.tar.gz",
+          "size": 8930426,
+          "seq_ids": [
+            "NW_020167520.1",
+            "NW_020167521.1",
+            "NW_020167522.1",
+            "NW_020167523.1",
+            "NW_020167524.1"
+          ],
+          "seq_count": 83,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Thelebolales",
+            "family": "Thelebolaceae",
+            "genus": "Pseudogymnoascus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T08:54:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdestructans.NCBI.ASM164126v1/BSgenome.Pdestructans.NCBI.ASM164126v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudogymnoascus verrucosus",
       "common_name": "",
       "group": "fungi",
@@ -51813,6 +51861,38 @@
       "common_name": "",
       "published": "2026-04-06T07:12:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asteynii.NCBI.Aspste1/BSgenome.Asteynii.NCBI.Aspste1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pdestructans.NCBI.ASM164126v1",
+      "version": "1.0.0",
+      "organism": "Pseudogymnoascus destructans",
+      "assembly": "ASM164126v1",
+      "provider": "NCBI",
+      "accession": "GCF_001641265.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001641265.1/",
+      "file_name": "BSgenome.Pdestructans.NCBI.ASM164126v1_1.0.0.tar.gz",
+      "size": 8930426,
+      "seq_ids": [
+        "NW_020167520.1",
+        "NW_020167521.1",
+        "NW_020167522.1",
+        "NW_020167523.1",
+        "NW_020167524.1"
+      ],
+      "seq_count": 83,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T08:54:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdestructans.NCBI.ASM164126v1/BSgenome.Pdestructans.NCBI.ASM164126v1_1.0.0.tar.gz"
     }
   ]
 }
