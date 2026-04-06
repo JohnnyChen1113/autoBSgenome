@@ -26798,6 +26798,54 @@
       ]
     },
     {
+      "organism": "Talaromyces stipitatus ATCC 10500",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Trichocomaceae",
+        "genus": "Talaromyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tstipitatus.NCBI.JCVITSTA130",
+          "version": "1.0.0",
+          "organism": "Talaromyces stipitatus ATCC 10500",
+          "assembly": "JCVI-TSTA1-3.0",
+          "provider": "NCBI",
+          "accession": "GCF_000003125.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000003125.1/",
+          "file_name": "BSgenome.Tstipitatus.NCBI.JCVITSTA130_1.0.0.tar.gz",
+          "size": 9127441,
+          "seq_ids": [
+            "NW_002990142.1",
+            "NW_002990129.1",
+            "NW_002990146.1",
+            "NW_002990121.1",
+            "NW_002990128.1"
+          ],
+          "seq_count": 820,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Trichocomaceae",
+            "genus": "Talaromyces"
+          },
+          "common_name": "",
+          "published": "2026-04-06T02:42:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tstipitatus.NCBI.JCVITSTA130/BSgenome.Tstipitatus.NCBI.JCVITSTA130_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tarenaya hassleriana",
       "common_name": "",
       "group": "plant",
@@ -49813,6 +49861,38 @@
       "common_name": "",
       "published": "2026-04-06T02:42:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Avadensis.NCBI.Aspvad1/BSgenome.Avadensis.NCBI.Aspvad1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tstipitatus.NCBI.JCVITSTA130",
+      "version": "1.0.0",
+      "organism": "Talaromyces stipitatus ATCC 10500",
+      "assembly": "JCVI-TSTA1-3.0",
+      "provider": "NCBI",
+      "accession": "GCF_000003125.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000003125.1/",
+      "file_name": "BSgenome.Tstipitatus.NCBI.JCVITSTA130_1.0.0.tar.gz",
+      "size": 9127441,
+      "seq_ids": [
+        "NW_002990142.1",
+        "NW_002990129.1",
+        "NW_002990146.1",
+        "NW_002990121.1",
+        "NW_002990128.1"
+      ],
+      "seq_count": 820,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Trichocomaceae",
+        "genus": "Talaromyces"
+      },
+      "common_name": "",
+      "published": "2026-04-06T02:42:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tstipitatus.NCBI.JCVITSTA130/BSgenome.Tstipitatus.NCBI.JCVITSTA130_1.0.0.tar.gz"
     }
   ]
 }

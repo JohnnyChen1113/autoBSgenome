@@ -2509,3 +2509,7 @@ NeedsCompilation: no
 Package: BSgenome.Avadensis.NCBI.Aspvad1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tstipitatus.NCBI.JCVITSTA130
+Version: 1.0.0
+NeedsCompilation: no
