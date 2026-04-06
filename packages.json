@@ -10352,6 +10352,52 @@
       ]
     },
     {
+      "organism": "Cryptosporidium ubiquitum",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Cryptosporidiidae",
+        "genus": "Cryptosporidium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cubiquitum.NCBI.ASM186534v1",
+          "version": "1.0.0",
+          "organism": "Cryptosporidium ubiquitum",
+          "assembly": "ASM186534v1",
+          "provider": "NCBI",
+          "accession": "GCF_001865345.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001865345.1/",
+          "file_name": "BSgenome.Cubiquitum.NCBI.ASM186534v1_1.0.0.tar.gz",
+          "size": 2382320,
+          "seq_ids": [
+            "NW_021639816.1",
+            "NW_021639835.1",
+            "NW_021639812.1",
+            "NW_021639804.1",
+            "NW_021639819.1"
+          ],
+          "seq_count": 39,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Conoidasida",
+            "order": "Eucoccidiorida",
+            "family": "Cryptosporidiidae",
+            "genus": "Cryptosporidium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T15:53:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cubiquitum.NCBI.ASM186534v1/BSgenome.Cubiquitum.NCBI.ASM186534v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptotermes secundus",
       "common_name": "",
       "group": "invertebrate",
@@ -57750,6 +57796,37 @@
       "common_name": "",
       "published": "2026-04-06T15:53:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chominis.NCBI.ASM642v1/BSgenome.Chominis.NCBI.ASM642v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cubiquitum.NCBI.ASM186534v1",
+      "version": "1.0.0",
+      "organism": "Cryptosporidium ubiquitum",
+      "assembly": "ASM186534v1",
+      "provider": "NCBI",
+      "accession": "GCF_001865345.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001865345.1/",
+      "file_name": "BSgenome.Cubiquitum.NCBI.ASM186534v1_1.0.0.tar.gz",
+      "size": 2382320,
+      "seq_ids": [
+        "NW_021639816.1",
+        "NW_021639835.1",
+        "NW_021639812.1",
+        "NW_021639804.1",
+        "NW_021639819.1"
+      ],
+      "seq_count": 39,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Cryptosporidiidae",
+        "genus": "Cryptosporidium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T15:53:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cubiquitum.NCBI.ASM186534v1/BSgenome.Cubiquitum.NCBI.ASM186534v1_1.0.0.tar.gz"
     }
   ]
 }
