@@ -12108,6 +12108,54 @@
       ]
     },
     {
+      "organism": "Fonsecaea monophora",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Fonsecaea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fmonophora.NCBI.ASM164247v1",
+          "version": "1.0.0",
+          "organism": "Fonsecaea monophora",
+          "assembly": "ASM164247v1",
+          "provider": "NCBI",
+          "accession": "GCF_001642475.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001642475.1/",
+          "file_name": "BSgenome.Fmonophora.NCBI.ASM164247v1_1.0.0.tar.gz",
+          "size": 9212790,
+          "seq_ids": [
+            "NW_019173932.1",
+            "NW_019173941.1",
+            "NW_019174031.1",
+            "NW_019174032.1",
+            "NW_019174033.1"
+          ],
+          "seq_count": 324,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Fonsecaea"
+          },
+          "common_name": "",
+          "published": "2026-04-06T02:41:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fmonophora.NCBI.ASM164247v1/BSgenome.Fmonophora.NCBI.ASM164247v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fonsecaea multimorphosa CBS 102226",
       "common_name": "",
       "group": "fungi",
@@ -49333,6 +49381,38 @@
       "common_name": "",
       "published": "2026-04-06T02:41:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panserina.NCBI.ASM22654v1/BSgenome.Panserina.NCBI.ASM22654v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fmonophora.NCBI.ASM164247v1",
+      "version": "1.0.0",
+      "organism": "Fonsecaea monophora",
+      "assembly": "ASM164247v1",
+      "provider": "NCBI",
+      "accession": "GCF_001642475.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001642475.1/",
+      "file_name": "BSgenome.Fmonophora.NCBI.ASM164247v1_1.0.0.tar.gz",
+      "size": 9212790,
+      "seq_ids": [
+        "NW_019173932.1",
+        "NW_019173941.1",
+        "NW_019174031.1",
+        "NW_019174032.1",
+        "NW_019174033.1"
+      ],
+      "seq_count": 324,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Fonsecaea"
+      },
+      "common_name": "",
+      "published": "2026-04-06T02:41:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fmonophora.NCBI.ASM164247v1/BSgenome.Fmonophora.NCBI.ASM164247v1_1.0.0.tar.gz"
     }
   ]
 }

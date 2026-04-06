@@ -2485,3 +2485,7 @@ NeedsCompilation: no
 Package: BSgenome.Panserina.NCBI.ASM22654v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fmonophora.NCBI.ASM164247v1
+Version: 1.0.0
+NeedsCompilation: no
