@@ -2977,3 +2977,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssalmonicida.NCBI.ASM49712v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmerolae.NCBI.ASM9120v1
+Version: 1.0.0
+NeedsCompilation: no
