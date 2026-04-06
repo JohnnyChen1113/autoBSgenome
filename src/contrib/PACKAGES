@@ -2921,3 +2921,7 @@ NeedsCompilation: no
 Package: BSgenome.Hbicolor.NCBI.Melbi2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgeophilum.NCBI.Cenococcumgeophilum158v20
+Version: 1.0.0
+NeedsCompilation: no
