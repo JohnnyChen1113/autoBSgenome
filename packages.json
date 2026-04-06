@@ -2159,6 +2159,54 @@
       ]
     },
     {
+      "organism": "Aspergillus caelatus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acaelatus.NCBI.Aspcae1",
+          "version": "1.0.0",
+          "organism": "Aspergillus caelatus",
+          "assembly": "Aspcae1",
+          "provider": "NCBI",
+          "accession": "GCF_009193585.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009193585.1/",
+          "file_name": "BSgenome.Acaelatus.NCBI.Aspcae1_1.0.0.tar.gz",
+          "size": 10474445,
+          "seq_ids": [
+            "NW_022475264.1",
+            "NW_022475265.1",
+            "NW_022475266.1",
+            "NW_022475267.1",
+            "NW_022475268.1"
+          ],
+          "seq_count": 729,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:13:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acaelatus.NCBI.Aspcae1/BSgenome.Acaelatus.NCBI.Aspcae1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus campestris IBT 28561",
       "common_name": "",
       "group": "fungi",
@@ -53389,6 +53437,38 @@
       "common_name": "",
       "published": "2026-04-06T10:13:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lsulphureus.NCBI.Laesu1/BSgenome.Lsulphureus.NCBI.Laesu1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acaelatus.NCBI.Aspcae1",
+      "version": "1.0.0",
+      "organism": "Aspergillus caelatus",
+      "assembly": "Aspcae1",
+      "provider": "NCBI",
+      "accession": "GCF_009193585.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009193585.1/",
+      "file_name": "BSgenome.Acaelatus.NCBI.Aspcae1_1.0.0.tar.gz",
+      "size": 10474445,
+      "seq_ids": [
+        "NW_022475264.1",
+        "NW_022475265.1",
+        "NW_022475266.1",
+        "NW_022475267.1",
+        "NW_022475268.1"
+      ],
+      "seq_count": 729,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:13:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acaelatus.NCBI.Aspcae1/BSgenome.Acaelatus.NCBI.Aspcae1_1.0.0.tar.gz"
     }
   ]
 }
