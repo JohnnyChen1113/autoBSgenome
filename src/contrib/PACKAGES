@@ -2565,3 +2565,7 @@ NeedsCompilation: no
 Package: BSgenome.Fpseudograminearum.NCBI.FP7
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acostaricaensis.NCBI.Aspcos1
+Version: 1.0.0
+NeedsCompilation: no
