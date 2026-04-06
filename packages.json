@@ -25942,6 +25942,52 @@
       ]
     },
     {
+      "organism": "Plasmodium falciparum 3D7",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pfalciparum.NCBI.GCA000002765",
+          "version": "1.0.0",
+          "organism": "Plasmodium falciparum 3D7",
+          "assembly": "GCA_000002765",
+          "provider": "NCBI",
+          "accession": "GCF_000002765.6",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002765.6/",
+          "file_name": "BSgenome.Pfalciparum.NCBI.GCA000002765_1.0.0.tar.gz",
+          "size": 5647225,
+          "seq_ids": [
+            "NC_004325.2",
+            "NC_037280.1",
+            "NC_000521.4",
+            "NC_004318.2",
+            "NC_004326.2"
+          ],
+          "seq_count": 14,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Aconoidasida",
+            "order": "Haemosporida",
+            "family": "Plasmodiidae",
+            "genus": "Plasmodium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T19:05:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfalciparum.NCBI.GCA000002765/BSgenome.Pfalciparum.NCBI.GCA000002765_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Plasmodium gaboni",
       "common_name": "",
       "group": "other",
@@ -59666,6 +59712,37 @@
       "common_name": "",
       "published": "2026-04-06T19:05:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tconorhini.NCBI.ASM371948v1/BSgenome.Tconorhini.NCBI.ASM371948v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pfalciparum.NCBI.GCA000002765",
+      "version": "1.0.0",
+      "organism": "Plasmodium falciparum 3D7",
+      "assembly": "GCA_000002765",
+      "provider": "NCBI",
+      "accession": "GCF_000002765.6",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002765.6/",
+      "file_name": "BSgenome.Pfalciparum.NCBI.GCA000002765_1.0.0.tar.gz",
+      "size": 5647225,
+      "seq_ids": [
+        "NC_004325.2",
+        "NC_037280.1",
+        "NC_000521.4",
+        "NC_004318.2",
+        "NC_004326.2"
+      ],
+      "seq_count": 14,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T19:05:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfalciparum.NCBI.GCA000002765/BSgenome.Pfalciparum.NCBI.GCA000002765_1.0.0.tar.gz"
     }
   ]
 }
