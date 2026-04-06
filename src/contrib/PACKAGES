@@ -2881,3 +2881,7 @@ NeedsCompilation: no
 Package: BSgenome.Bgilchristii.NCBI.BDSLH14081V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgraminis.NCBI.ASM14992v1
+Version: 1.0.0
+NeedsCompilation: no

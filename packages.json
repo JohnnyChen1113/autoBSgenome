@@ -26650,6 +26650,54 @@
       ]
     },
     {
+      "organism": "Puccinia graminis f. sp. tritici CRL 75-36-700-3",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Pucciniomycetes",
+        "order": "Pucciniales",
+        "family": "Pucciniaceae",
+        "genus": "Puccinia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pgraminis.NCBI.ASM14992v1",
+          "version": "1.0.0",
+          "organism": "Puccinia graminis f. sp. tritici CRL 75-36-700-3",
+          "assembly": "ASM14992v1",
+          "provider": "NCBI",
+          "accession": "GCF_000149925.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149925.1/",
+          "file_name": "BSgenome.Pgraminis.NCBI.ASM14992v1_1.0.0.tar.gz",
+          "size": 21359204,
+          "seq_ids": [
+            "NW_003526742.1",
+            "NW_003526741.1",
+            "NW_003526740.1",
+            "NW_003526739.1",
+            "NW_003526738.1"
+          ],
+          "seq_count": 393,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Pucciniomycetes",
+            "order": "Pucciniales",
+            "family": "Pucciniaceae",
+            "genus": "Puccinia"
+          },
+          "common_name": "",
+          "published": "2026-04-06T15:52:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgraminis.NCBI.ASM14992v1/BSgenome.Pgraminis.NCBI.ASM14992v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Puma concolor",
       "common_name": "puma",
       "group": "vertebrate_mammalian",
@@ -57205,6 +57253,38 @@
       "common_name": "",
       "published": "2026-04-06T14:53:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bgilchristii.NCBI.BDSLH14081V1/BSgenome.Bgilchristii.NCBI.BDSLH14081V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pgraminis.NCBI.ASM14992v1",
+      "version": "1.0.0",
+      "organism": "Puccinia graminis f. sp. tritici CRL 75-36-700-3",
+      "assembly": "ASM14992v1",
+      "provider": "NCBI",
+      "accession": "GCF_000149925.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149925.1/",
+      "file_name": "BSgenome.Pgraminis.NCBI.ASM14992v1_1.0.0.tar.gz",
+      "size": 21359204,
+      "seq_ids": [
+        "NW_003526742.1",
+        "NW_003526741.1",
+        "NW_003526740.1",
+        "NW_003526739.1",
+        "NW_003526738.1"
+      ],
+      "seq_count": 393,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Pucciniomycetes",
+        "order": "Pucciniales",
+        "family": "Pucciniaceae",
+        "genus": "Puccinia"
+      },
+      "common_name": "",
+      "published": "2026-04-06T15:52:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgraminis.NCBI.ASM14992v1/BSgenome.Pgraminis.NCBI.ASM14992v1_1.0.0.tar.gz"
     }
   ]
 }
