@@ -3021,3 +3021,7 @@ NeedsCompilation: no
 Package: BSgenome.Tbrucei.NCBI.ASM244v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcynomolgi.NCBI.PcynB10
+Version: 1.0.0
+NeedsCompilation: no
