@@ -2629,3 +2629,7 @@ NeedsCompilation: no
 Package: BSgenome.Tgamsii.NCBI.TGAM01v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1
+Version: 1.0.0
+NeedsCompilation: no

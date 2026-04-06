@@ -13004,6 +13004,54 @@
       ]
     },
     {
+      "organism": "Exophiala oligosperma",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Exophiala"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1",
+          "version": "1.0.0",
+          "organism": "Exophiala oligosperma",
+          "assembly": "Exop_olig_CBS72588_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000835515.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835515.1/",
+          "file_name": "BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1_1.0.0.tar.gz",
+          "size": 9904575,
+          "seq_ids": [
+            "NW_015622818.1",
+            "NW_015622819.1",
+            "NW_015622820.1",
+            "NW_015622821.1",
+            "NW_015622822.1"
+          ],
+          "seq_count": 143,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Chaetothyriales",
+            "family": "Herpotrichiellaceae",
+            "genus": "Exophiala"
+          },
+          "common_name": "",
+          "published": "2026-04-06T08:55:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1/BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Exophiala spinifera",
       "common_name": "",
       "group": "fungi",
@@ -52189,6 +52237,38 @@
       "common_name": "",
       "published": "2026-04-06T08:55:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgamsii.NCBI.TGAM01v2/BSgenome.Tgamsii.NCBI.TGAM01v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1",
+      "version": "1.0.0",
+      "organism": "Exophiala oligosperma",
+      "assembly": "Exop_olig_CBS72588_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000835515.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000835515.1/",
+      "file_name": "BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1_1.0.0.tar.gz",
+      "size": 9904575,
+      "seq_ids": [
+        "NW_015622818.1",
+        "NW_015622819.1",
+        "NW_015622820.1",
+        "NW_015622821.1",
+        "NW_015622822.1"
+      ],
+      "seq_count": 143,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Chaetothyriales",
+        "family": "Herpotrichiellaceae",
+        "genus": "Exophiala"
+      },
+      "common_name": "",
+      "published": "2026-04-06T08:55:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1/BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1_1.0.0.tar.gz"
     }
   ]
 }
