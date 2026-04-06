@@ -21310,6 +21310,54 @@
       ]
     },
     {
+      "organism": "Orbilia oligospora ATCC 24927",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Orbiliomycetes",
+        "order": "Orbiliales",
+        "family": "Orbiliaceae",
+        "genus": "Orbilia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ooligospora.NCBI.AOL2492710",
+          "version": "1.0.0",
+          "organism": "Orbilia oligospora ATCC 24927",
+          "assembly": "AOL24927 1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000225545.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000225545.1/",
+          "file_name": "BSgenome.Ooligospora.NCBI.AOL2492710_1.0.0.tar.gz",
+          "size": 10622044,
+          "seq_ids": [
+            "NW_011645558.1",
+            "NW_011645559.1",
+            "NW_011645560.1",
+            "NW_011645561.1",
+            "NW_011645562.1"
+          ],
+          "seq_count": 215,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Orbiliomycetes",
+            "order": "Orbiliales",
+            "family": "Orbiliaceae",
+            "genus": "Orbilia"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:14:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ooligospora.NCBI.AOL2492710/BSgenome.Ooligospora.NCBI.AOL2492710_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ordospora colligata OC4",
       "common_name": "",
       "group": "fungi",
@@ -53469,6 +53517,38 @@
       "common_name": "",
       "published": "2026-04-06T10:13:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acaelatus.NCBI.Aspcae1/BSgenome.Acaelatus.NCBI.Aspcae1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ooligospora.NCBI.AOL2492710",
+      "version": "1.0.0",
+      "organism": "Orbilia oligospora ATCC 24927",
+      "assembly": "AOL24927 1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000225545.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000225545.1/",
+      "file_name": "BSgenome.Ooligospora.NCBI.AOL2492710_1.0.0.tar.gz",
+      "size": 10622044,
+      "seq_ids": [
+        "NW_011645558.1",
+        "NW_011645559.1",
+        "NW_011645560.1",
+        "NW_011645561.1",
+        "NW_011645562.1"
+      ],
+      "seq_count": 215,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Orbiliomycetes",
+        "order": "Orbiliales",
+        "family": "Orbiliaceae",
+        "genus": "Orbilia"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:14:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ooligospora.NCBI.AOL2492710/BSgenome.Ooligospora.NCBI.AOL2492710_1.0.0.tar.gz"
     }
   ]
 }
