@@ -2340,6 +2340,54 @@
       ]
     },
     {
+      "organism": "Aspergillus neoniger CBS 115656",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aneoniger.NCBI.Aspneo1",
+          "version": "1.0.0",
+          "organism": "Aspergillus neoniger CBS 115656",
+          "assembly": "Aspneo1",
+          "provider": "NCBI",
+          "accession": "GCF_003184625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184625.1/",
+          "file_name": "BSgenome.Aneoniger.NCBI.Aspneo1_1.0.0.tar.gz",
+          "size": 9293224,
+          "seq_ids": [
+            "NW_020291129.1",
+            "NW_020291130.1",
+            "NW_020291131.1",
+            "NW_020291132.1",
+            "NW_020291133.1"
+          ],
+          "seq_count": 169,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T02:42:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aneoniger.NCBI.Aspneo1/BSgenome.Aneoniger.NCBI.Aspneo1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus nidulans FGSC A4",
       "common_name": "",
       "group": "fungi",
@@ -49493,6 +49541,38 @@
       "common_name": "",
       "published": "2026-04-06T02:41:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apiperis.NCBI.Asppip1/BSgenome.Apiperis.NCBI.Asppip1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aneoniger.NCBI.Aspneo1",
+      "version": "1.0.0",
+      "organism": "Aspergillus neoniger CBS 115656",
+      "assembly": "Aspneo1",
+      "provider": "NCBI",
+      "accession": "GCF_003184625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184625.1/",
+      "file_name": "BSgenome.Aneoniger.NCBI.Aspneo1_1.0.0.tar.gz",
+      "size": 9293224,
+      "seq_ids": [
+        "NW_020291129.1",
+        "NW_020291130.1",
+        "NW_020291131.1",
+        "NW_020291132.1",
+        "NW_020291133.1"
+      ],
+      "seq_count": 169,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T02:42:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aneoniger.NCBI.Aspneo1/BSgenome.Aneoniger.NCBI.Aspneo1_1.0.0.tar.gz"
     }
   ]
 }

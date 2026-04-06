@@ -2493,3 +2493,7 @@ NeedsCompilation: no
 Package: BSgenome.Apiperis.NCBI.Asppip1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aneoniger.NCBI.Aspneo1
+Version: 1.0.0
+NeedsCompilation: no
