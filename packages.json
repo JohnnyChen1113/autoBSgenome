@@ -2255,6 +2255,54 @@
       ]
     },
     {
+      "organism": "Aspergillus heteromorphus CBS 117.55",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aheteromorphus.NCBI.Asphet1",
+          "version": "1.0.0",
+          "organism": "Aspergillus heteromorphus CBS 117.55",
+          "assembly": "Asphet1",
+          "provider": "NCBI",
+          "accession": "GCF_003184545.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184545.1/",
+          "file_name": "BSgenome.Aheteromorphus.NCBI.Asphet1_1.0.0.tar.gz",
+          "size": 9080367,
+          "seq_ids": [
+            "NW_020290406.1",
+            "NW_020290415.1",
+            "NW_020290505.1",
+            "NW_020290506.1",
+            "NW_020290507.1"
+          ],
+          "seq_count": 205,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T02:42:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aheteromorphus.NCBI.Asphet1/BSgenome.Aheteromorphus.NCBI.Asphet1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus homomorphus CBS 101889",
       "common_name": "",
       "group": "fungi",
@@ -49653,6 +49701,38 @@
       "common_name": "",
       "published": "2026-04-06T02:42:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aaculeatus.NCBI.Aspac1/BSgenome.Aaculeatus.NCBI.Aspac1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aheteromorphus.NCBI.Asphet1",
+      "version": "1.0.0",
+      "organism": "Aspergillus heteromorphus CBS 117.55",
+      "assembly": "Asphet1",
+      "provider": "NCBI",
+      "accession": "GCF_003184545.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003184545.1/",
+      "file_name": "BSgenome.Aheteromorphus.NCBI.Asphet1_1.0.0.tar.gz",
+      "size": 9080367,
+      "seq_ids": [
+        "NW_020290406.1",
+        "NW_020290415.1",
+        "NW_020290505.1",
+        "NW_020290506.1",
+        "NW_020290507.1"
+      ],
+      "seq_count": 205,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T02:42:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aheteromorphus.NCBI.Asphet1/BSgenome.Aheteromorphus.NCBI.Asphet1_1.0.0.tar.gz"
     }
   ]
 }
