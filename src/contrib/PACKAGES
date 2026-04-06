@@ -2941,3 +2941,7 @@ NeedsCompilation: no
 Package: BSgenome.Tequi.NCBI.JCVIbewagv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gduodenalis.NCBI.UUWB21
+Version: 1.0.0
+NeedsCompilation: no
