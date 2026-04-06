@@ -21794,6 +21794,54 @@
       ]
     },
     {
+      "organism": "Podospora anserina S mat+",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Podosporaceae",
+        "genus": "Podospora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Panserina.NCBI.ASM22654v1",
+          "version": "1.0.0",
+          "organism": "Podospora anserina S mat+",
+          "assembly": "ASM22654v1",
+          "provider": "NCBI",
+          "accession": "GCF_000226545.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000226545.1/",
+          "file_name": "BSgenome.Panserina.NCBI.ASM22654v1_1.0.0.tar.gz",
+          "size": 9101098,
+          "seq_ids": [
+            "NW_001914859.1",
+            "NW_001914829.1",
+            "NW_001914845.1",
+            "NW_001914851.1",
+            "NW_001914853.1"
+          ],
+          "seq_count": 33,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Sordariales",
+            "family": "Podosporaceae",
+            "genus": "Podospora"
+          },
+          "common_name": "",
+          "published": "2026-04-06T02:41:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panserina.NCBI.ASM22654v1/BSgenome.Panserina.NCBI.ASM22654v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Poecilia formosa",
       "common_name": "Amazon molly",
       "group": "vertebrate_other",
@@ -49253,6 +49301,38 @@
       "common_name": "",
       "published": "2026-04-05T23:39:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aeucalypticola.NCBI.Aspeuc1/BSgenome.Aeucalypticola.NCBI.Aspeuc1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Panserina.NCBI.ASM22654v1",
+      "version": "1.0.0",
+      "organism": "Podospora anserina S mat+",
+      "assembly": "ASM22654v1",
+      "provider": "NCBI",
+      "accession": "GCF_000226545.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000226545.1/",
+      "file_name": "BSgenome.Panserina.NCBI.ASM22654v1_1.0.0.tar.gz",
+      "size": 9101098,
+      "seq_ids": [
+        "NW_001914859.1",
+        "NW_001914829.1",
+        "NW_001914845.1",
+        "NW_001914851.1",
+        "NW_001914853.1"
+      ],
+      "seq_count": 33,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Podosporaceae",
+        "genus": "Podospora"
+      },
+      "common_name": "",
+      "published": "2026-04-06T02:41:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panserina.NCBI.ASM22654v1/BSgenome.Panserina.NCBI.ASM22654v1_1.0.0.tar.gz"
     }
   ]
 }
