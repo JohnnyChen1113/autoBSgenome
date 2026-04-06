@@ -34366,6 +34366,52 @@
       ]
     },
     {
+      "organism": "Trypanosoma equiperdum",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Trypanosoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tequiperdum.NCBI.TrypanosomaequiperdumOVIV2",
+          "version": "1.0.0",
+          "organism": "Trypanosoma equiperdum",
+          "assembly": "Trypanosoma equiperdum OVI V2",
+          "provider": "NCBI",
+          "accession": "GCF_001457755.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001457755.1/",
+          "file_name": "BSgenome.Tequiperdum.NCBI.TrypanosomaequiperdumOVIV2_1.0.0.tar.gz",
+          "size": 7166104,
+          "seq_ids": [
+            "NW_027124975.1",
+            "NW_027124974.1",
+            "NW_027124973.1",
+            "NW_027124971.1",
+            "NW_027124970.1"
+          ],
+          "seq_count": 2026,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Euglenozoa",
+            "class": "Kinetoplastea",
+            "order": "Trypanosomatida",
+            "family": "Trypanosomatidae",
+            "genus": "Trypanosoma"
+          },
+          "common_name": "",
+          "published": "2026-04-06T20:06:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tequiperdum.NCBI.TrypanosomaequiperdumOVIV2/BSgenome.Tequiperdum.NCBI.TrypanosomaequiperdumOVIV2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trypanosoma grayi",
       "common_name": "",
       "group": "other",
@@ -60205,6 +60251,37 @@
       "common_name": "",
       "published": "2026-04-06T20:06:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfragile.NCBI.PlasfragnilgiriV1/BSgenome.Pfragile.NCBI.PlasfragnilgiriV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tequiperdum.NCBI.TrypanosomaequiperdumOVIV2",
+      "version": "1.0.0",
+      "organism": "Trypanosoma equiperdum",
+      "assembly": "Trypanosoma equiperdum OVI V2",
+      "provider": "NCBI",
+      "accession": "GCF_001457755.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001457755.1/",
+      "file_name": "BSgenome.Tequiperdum.NCBI.TrypanosomaequiperdumOVIV2_1.0.0.tar.gz",
+      "size": 7166104,
+      "seq_ids": [
+        "NW_027124975.1",
+        "NW_027124974.1",
+        "NW_027124973.1",
+        "NW_027124971.1",
+        "NW_027124970.1"
+      ],
+      "seq_count": 2026,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Trypanosoma"
+      },
+      "common_name": "",
+      "published": "2026-04-06T20:06:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tequiperdum.NCBI.TrypanosomaequiperdumOVIV2/BSgenome.Tequiperdum.NCBI.TrypanosomaequiperdumOVIV2_1.0.0.tar.gz"
     }
   ]
 }
