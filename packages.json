@@ -31368,6 +31368,52 @@
       ]
     },
     {
+      "organism": "Theileria annulata",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Piroplasmida",
+        "family": "Theileriidae",
+        "genus": "Theileria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tannulata.NCBI.ASM322v1",
+          "version": "1.0.0",
+          "organism": "Theileria annulata",
+          "assembly": "ASM322v1",
+          "provider": "NCBI",
+          "accession": "GCF_000003225.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000003225.4/",
+          "file_name": "BSgenome.Tannulata.NCBI.ASM322v1_1.0.0.tar.gz",
+          "size": 2167928,
+          "seq_ids": [
+            "NC_011129.2",
+            "NW_001091930.1",
+            "NW_001091931.1",
+            "NW_001091932.1",
+            "NC_011099.1"
+          ],
+          "seq_count": 8,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Aconoidasida",
+            "order": "Piroplasmida",
+            "family": "Theileriidae",
+            "genus": "Theileria"
+          },
+          "common_name": "",
+          "published": "2026-04-06T15:53:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tannulata.NCBI.ASM322v1/BSgenome.Tannulata.NCBI.ASM322v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Theileria parva strain Muguga",
       "common_name": "",
       "group": "other",
@@ -57596,6 +57642,37 @@
       "common_name": "",
       "published": "2026-04-06T15:53:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tparva.NCBI.ASM16536v1/BSgenome.Tparva.NCBI.ASM16536v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tannulata.NCBI.ASM322v1",
+      "version": "1.0.0",
+      "organism": "Theileria annulata",
+      "assembly": "ASM322v1",
+      "provider": "NCBI",
+      "accession": "GCF_000003225.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000003225.4/",
+      "file_name": "BSgenome.Tannulata.NCBI.ASM322v1_1.0.0.tar.gz",
+      "size": 2167928,
+      "seq_ids": [
+        "NC_011129.2",
+        "NW_001091930.1",
+        "NW_001091931.1",
+        "NW_001091932.1",
+        "NC_011099.1"
+      ],
+      "seq_count": 8,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Piroplasmida",
+        "family": "Theileriidae",
+        "genus": "Theileria"
+      },
+      "common_name": "",
+      "published": "2026-04-06T15:53:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tannulata.NCBI.ASM322v1/BSgenome.Tannulata.NCBI.ASM322v1_1.0.0.tar.gz"
     }
   ]
 }
