@@ -2553,3 +2553,7 @@ NeedsCompilation: no
 Package: BSgenome.Aflagrans.NCBI.DF10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asclerotioniger.NCBI.Aspscl1
+Version: 1.0.0
+NeedsCompilation: no
