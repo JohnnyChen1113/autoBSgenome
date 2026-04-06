@@ -25038,6 +25038,38 @@
       ]
     },
     {
+      "organism": "Phaeodactylum tricornutum CCAP 1055/1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Ptricornutum.NCBI.ASM15095v2",
+          "version": "1.0.0",
+          "organism": "Phaeodactylum tricornutum CCAP 1055/1",
+          "assembly": "ASM15095v2",
+          "provider": "NCBI",
+          "accession": "GCF_000150955.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150955.2/",
+          "file_name": "BSgenome.Ptricornutum.NCBI.ASM15095v2_1.0.0.tar.gz",
+          "size": 6929711,
+          "seq_ids": [
+            "NC_011669.1",
+            "NC_011670.1",
+            "NC_011671.1",
+            "NC_011672.1",
+            "NC_011673.1"
+          ],
+          "seq_count": 88,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-06T20:06:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptricornutum.NCBI.ASM15095v2/BSgenome.Ptricornutum.NCBI.ASM15095v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phaethon lepturus",
       "common_name": "White-tailed tropicbird",
       "group": "vertebrate_other",
@@ -60282,6 +60314,30 @@
       "common_name": "",
       "published": "2026-04-06T20:06:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tequiperdum.NCBI.TrypanosomaequiperdumOVIV2/BSgenome.Tequiperdum.NCBI.TrypanosomaequiperdumOVIV2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ptricornutum.NCBI.ASM15095v2",
+      "version": "1.0.0",
+      "organism": "Phaeodactylum tricornutum CCAP 1055/1",
+      "assembly": "ASM15095v2",
+      "provider": "NCBI",
+      "accession": "GCF_000150955.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000150955.2/",
+      "file_name": "BSgenome.Ptricornutum.NCBI.ASM15095v2_1.0.0.tar.gz",
+      "size": 6929711,
+      "seq_ids": [
+        "NC_011669.1",
+        "NC_011670.1",
+        "NC_011671.1",
+        "NC_011672.1",
+        "NC_011673.1"
+      ],
+      "seq_count": 88,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-06T20:06:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptricornutum.NCBI.ASM15095v2/BSgenome.Ptricornutum.NCBI.ASM15095v2_1.0.0.tar.gz"
     }
   ]
 }
