@@ -3137,3 +3137,7 @@ NeedsCompilation: no
 Package: BSgenome.Mbrevicollis.NCBI.V10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1
+Version: 1.0.0
+NeedsCompilation: no

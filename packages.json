@@ -49,6 +49,50 @@
       ]
     },
     {
+      "organism": "Acanthamoeba castellanii str. Neff",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Discosea",
+        "order": "Longamoebia",
+        "family": "Acanthamoebidae",
+        "genus": "Acanthamoeba"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1",
+          "version": "1.0.0",
+          "organism": "Acanthamoeba castellanii str. Neff",
+          "assembly": "Acastellanii.strNEFF v1",
+          "provider": "NCBI",
+          "accession": "GCF_000313135.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000313135.1/",
+          "file_name": "BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1_1.0.0.tar.gz",
+          "size": 10779007,
+          "seq_ids": [
+            "NW_004457733.1",
+            "NW_004457732.1",
+            "NW_004457731.1",
+            "NW_004457730.1",
+            "NW_004457727.1"
+          ],
+          "seq_count": 384,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Discosea",
+            "order": "Longamoebia",
+            "family": "Acanthamoebidae",
+            "genus": "Acanthamoeba"
+          },
+          "common_name": "",
+          "published": "2026-04-06T22:02:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1/BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Acanthaster planci",
       "common_name": "crown-of-thorns starfish",
       "group": "invertebrate",
@@ -62043,6 +62087,36 @@
       "common_name": "",
       "published": "2026-04-06T22:02:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrevicollis.NCBI.V10/BSgenome.Mbrevicollis.NCBI.V10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1",
+      "version": "1.0.0",
+      "organism": "Acanthamoeba castellanii str. Neff",
+      "assembly": "Acastellanii.strNEFF v1",
+      "provider": "NCBI",
+      "accession": "GCF_000313135.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000313135.1/",
+      "file_name": "BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1_1.0.0.tar.gz",
+      "size": 10779007,
+      "seq_ids": [
+        "NW_004457733.1",
+        "NW_004457732.1",
+        "NW_004457731.1",
+        "NW_004457730.1",
+        "NW_004457727.1"
+      ],
+      "seq_count": 384,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Discosea",
+        "order": "Longamoebia",
+        "family": "Acanthamoebidae",
+        "genus": "Acanthamoeba"
+      },
+      "common_name": "",
+      "published": "2026-04-06T22:02:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1/BSgenome.Acastellanii.NCBI.AcastellaniistrNEFFv1_1.0.0.tar.gz"
     }
   ]
 }
