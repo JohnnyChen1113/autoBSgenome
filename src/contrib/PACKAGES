@@ -2925,3 +2925,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgeophilum.NCBI.Cenococcumgeophilum158v20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cparvum.NCBI.ASM16534v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -10400,6 +10400,52 @@
       ]
     },
     {
+      "organism": "Cryptosporidium parvum Iowa II",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Cryptosporidiidae",
+        "genus": "Cryptosporidium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cparvum.NCBI.ASM16534v1",
+          "version": "1.0.0",
+          "organism": "Cryptosporidium parvum Iowa II",
+          "assembly": "ASM16534v1",
+          "provider": "NCBI",
+          "accession": "GCF_000165345.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000165345.1/",
+          "file_name": "BSgenome.Cparvum.NCBI.ASM16534v1_1.0.0.tar.gz",
+          "size": 2397530,
+          "seq_ids": [
+            "NC_006980.1",
+            "NC_006981.1",
+            "NC_006982.1",
+            "NC_006983.1",
+            "NC_006984.1"
+          ],
+          "seq_count": 8,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Conoidasida",
+            "order": "Eucoccidiorida",
+            "family": "Cryptosporidiidae",
+            "genus": "Cryptosporidium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T16:53:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cparvum.NCBI.ASM16534v1/BSgenome.Cparvum.NCBI.ASM16534v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptosporidium ubiquitum",
       "common_name": "",
       "group": "other",
@@ -58064,6 +58110,37 @@
       "common_name": "",
       "published": "2026-04-06T16:53:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgeophilum.NCBI.Cenococcumgeophilum158v20/BSgenome.Cgeophilum.NCBI.Cenococcumgeophilum158v20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cparvum.NCBI.ASM16534v1",
+      "version": "1.0.0",
+      "organism": "Cryptosporidium parvum Iowa II",
+      "assembly": "ASM16534v1",
+      "provider": "NCBI",
+      "accession": "GCF_000165345.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000165345.1/",
+      "file_name": "BSgenome.Cparvum.NCBI.ASM16534v1_1.0.0.tar.gz",
+      "size": 2397530,
+      "seq_ids": [
+        "NC_006980.1",
+        "NC_006981.1",
+        "NC_006982.1",
+        "NC_006983.1",
+        "NC_006984.1"
+      ],
+      "seq_count": 8,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Cryptosporidiidae",
+        "genus": "Cryptosporidium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T16:53:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cparvum.NCBI.ASM16534v1/BSgenome.Cparvum.NCBI.ASM16534v1_1.0.0.tar.gz"
     }
   ]
 }
