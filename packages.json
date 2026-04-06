@@ -29754,6 +29754,54 @@
       ]
     },
     {
+      "organism": "Trichoderma virens Gv29-8",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tvirens.NCBI.TRIVIv20",
+          "version": "1.0.0",
+          "organism": "Trichoderma virens Gv29-8",
+          "assembly": "TRIVI v2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000170995.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000170995.1/",
+          "file_name": "BSgenome.Tvirens.NCBI.TRIVIv20_1.0.0.tar.gz",
+          "size": 10268920,
+          "seq_ids": [
+            "NW_014013656.1",
+            "NW_014013657.1",
+            "NW_014013658.1",
+            "NW_014013659.1",
+            "NW_014013660.1"
+          ],
+          "seq_count": 93,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Hypocreaceae",
+            "genus": "Trichoderma"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:12:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tvirens.NCBI.TRIVIv20/BSgenome.Tvirens.NCBI.TRIVIv20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichogramma pretiosum",
       "common_name": "",
       "group": "invertebrate",
@@ -52829,6 +52877,38 @@
       "common_name": "",
       "published": "2026-04-06T10:12:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scrispa.NCBI.SCP11/BSgenome.Scrispa.NCBI.SCP11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tvirens.NCBI.TRIVIv20",
+      "version": "1.0.0",
+      "organism": "Trichoderma virens Gv29-8",
+      "assembly": "TRIVI v2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000170995.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000170995.1/",
+      "file_name": "BSgenome.Tvirens.NCBI.TRIVIv20_1.0.0.tar.gz",
+      "size": 10268920,
+      "seq_ids": [
+        "NW_014013656.1",
+        "NW_014013657.1",
+        "NW_014013658.1",
+        "NW_014013659.1",
+        "NW_014013660.1"
+      ],
+      "seq_count": 93,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:12:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tvirens.NCBI.TRIVIv20/BSgenome.Tvirens.NCBI.TRIVIv20_1.0.0.tar.gz"
     }
   ]
 }
