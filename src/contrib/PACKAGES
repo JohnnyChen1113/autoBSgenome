@@ -3005,3 +3005,7 @@ NeedsCompilation: no
 Package: BSgenome.Trangeli.NCBI.ASM371947v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tconorhini.NCBI.ASM371948v1
+Version: 1.0.0
+NeedsCompilation: no
