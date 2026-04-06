@@ -2729,3 +2729,7 @@ NeedsCompilation: no
 Package: BSgenome.Eaquamarina.NCBI.ExopaquaCBS119918V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mrobertsii.NCBI.MAA20
+Version: 1.0.0
+NeedsCompilation: no

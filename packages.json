@@ -18460,6 +18460,54 @@
       ]
     },
     {
+      "organism": "Metarhizium robertsii ARSEF 23",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Metarhizium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mrobertsii.NCBI.MAA20",
+          "version": "1.0.0",
+          "organism": "Metarhizium robertsii ARSEF 23",
+          "assembly": "MAA 2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000187425.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000187425.2/",
+          "file_name": "BSgenome.Mrobertsii.NCBI.MAA20_1.0.0.tar.gz",
+          "size": 10166913,
+          "seq_ids": [
+            "NW_011942149.1",
+            "NW_011942150.1",
+            "NW_011942151.1",
+            "NW_011942152.1",
+            "NW_011942153.1"
+          ],
+          "seq_count": 90,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Clavicipitaceae",
+            "genus": "Metarhizium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T11:29:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mrobertsii.NCBI.MAA20/BSgenome.Mrobertsii.NCBI.MAA20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Metschnikowia bicuspidata var. bicuspidata NRRL YB-4993",
       "common_name": "",
       "group": "fungi",
@@ -54189,6 +54237,38 @@
       "common_name": "",
       "published": "2026-04-06T11:29:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eaquamarina.NCBI.ExopaquaCBS119918V1/BSgenome.Eaquamarina.NCBI.ExopaquaCBS119918V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mrobertsii.NCBI.MAA20",
+      "version": "1.0.0",
+      "organism": "Metarhizium robertsii ARSEF 23",
+      "assembly": "MAA 2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000187425.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000187425.2/",
+      "file_name": "BSgenome.Mrobertsii.NCBI.MAA20_1.0.0.tar.gz",
+      "size": 10166913,
+      "seq_ids": [
+        "NW_011942149.1",
+        "NW_011942150.1",
+        "NW_011942151.1",
+        "NW_011942152.1",
+        "NW_011942153.1"
+      ],
+      "seq_count": 90,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Metarhizium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T11:29:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mrobertsii.NCBI.MAA20/BSgenome.Mrobertsii.NCBI.MAA20_1.0.0.tar.gz"
     }
   ]
 }
