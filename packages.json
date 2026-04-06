@@ -19918,6 +19918,54 @@
       ]
     },
     {
+      "organism": "Neurospora tetrasperma FGSC 2508",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Sordariaceae",
+        "genus": "Neurospora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ntetrasperma.NCBI.v20",
+          "version": "1.0.0",
+          "organism": "Neurospora tetrasperma FGSC 2508",
+          "assembly": "v2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000213175.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000213175.1/",
+          "file_name": "BSgenome.Ntetrasperma.NCBI.v20_1.0.0.tar.gz",
+          "size": 10179014,
+          "seq_ids": [
+            "NW_009799099.1",
+            "NW_009799100.1",
+            "NW_009799101.1",
+            "NW_009799102.1",
+            "NW_009799103.1"
+          ],
+          "seq_count": 81,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Sordariales",
+            "family": "Sordariaceae",
+            "genus": "Neurospora"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:12:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ntetrasperma.NCBI.v20/BSgenome.Ntetrasperma.NCBI.v20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nicotiana attenuata",
       "common_name": "",
       "group": "plant",
@@ -52909,6 +52957,38 @@
       "common_name": "",
       "published": "2026-04-06T10:12:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tvirens.NCBI.TRIVIv20/BSgenome.Tvirens.NCBI.TRIVIv20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ntetrasperma.NCBI.v20",
+      "version": "1.0.0",
+      "organism": "Neurospora tetrasperma FGSC 2508",
+      "assembly": "v2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000213175.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000213175.1/",
+      "file_name": "BSgenome.Ntetrasperma.NCBI.v20_1.0.0.tar.gz",
+      "size": 10179014,
+      "seq_ids": [
+        "NW_009799099.1",
+        "NW_009799100.1",
+        "NW_009799101.1",
+        "NW_009799102.1",
+        "NW_009799103.1"
+      ],
+      "seq_count": 81,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Sordariaceae",
+        "genus": "Neurospora"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:12:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ntetrasperma.NCBI.v20/BSgenome.Ntetrasperma.NCBI.v20_1.0.0.tar.gz"
     }
   ]
 }
