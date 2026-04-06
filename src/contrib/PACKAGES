@@ -2985,3 +2985,7 @@ NeedsCompilation: no
 Package: BSgenome.Bhominis.NCBI.ASM15166v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgaboni.NCBI.ASM160202v1
+Version: 1.0.0
+NeedsCompilation: no
