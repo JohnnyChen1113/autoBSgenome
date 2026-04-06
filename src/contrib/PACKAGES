@@ -3089,3 +3089,7 @@ NeedsCompilation: no
 Package: BSgenome.Cfasciculata.NCBI.DFas20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lbraziliensis.NCBI.ASM284v2
+Version: 1.0.0
+NeedsCompilation: no

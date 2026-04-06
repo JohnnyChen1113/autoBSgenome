@@ -19154,6 +19154,38 @@
       ]
     },
     {
+      "organism": "Leishmania braziliensis MHOM/BR/75/M2904",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Lbraziliensis.NCBI.ASM284v2",
+          "version": "1.0.0",
+          "organism": "Leishmania braziliensis MHOM/BR/75/M2904",
+          "assembly": "ASM284v2",
+          "provider": "NCBI",
+          "accession": "GCF_000002845.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002845.2/",
+          "file_name": "BSgenome.Lbraziliensis.NCBI.ASM284v2_1.0.0.tar.gz",
+          "size": 8479192,
+          "seq_ids": [
+            "NC_009294.2",
+            "NC_009295.2",
+            "NC_009296.2",
+            "NC_009297.2",
+            "NC_009298.2"
+          ],
+          "seq_count": 138,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-06T21:06:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbraziliensis.NCBI.ASM284v2/BSgenome.Lbraziliensis.NCBI.ASM284v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Leishmania panamensis",
       "common_name": "",
       "group": "other",
@@ -61167,6 +61199,30 @@
       "common_name": "",
       "published": "2026-04-06T21:06:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfasciculata.NCBI.DFas20/BSgenome.Cfasciculata.NCBI.DFas20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lbraziliensis.NCBI.ASM284v2",
+      "version": "1.0.0",
+      "organism": "Leishmania braziliensis MHOM/BR/75/M2904",
+      "assembly": "ASM284v2",
+      "provider": "NCBI",
+      "accession": "GCF_000002845.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002845.2/",
+      "file_name": "BSgenome.Lbraziliensis.NCBI.ASM284v2_1.0.0.tar.gz",
+      "size": 8479192,
+      "seq_ids": [
+        "NC_009294.2",
+        "NC_009295.2",
+        "NC_009296.2",
+        "NC_009297.2",
+        "NC_009298.2"
+      ],
+      "seq_count": 138,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-06T21:06:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbraziliensis.NCBI.ASM284v2/BSgenome.Lbraziliensis.NCBI.ASM284v2_1.0.0.tar.gz"
     }
   ]
 }
