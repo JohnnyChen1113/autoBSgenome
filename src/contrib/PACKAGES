@@ -2957,3 +2957,7 @@ NeedsCompilation: no
 Package: BSgenome.Cryanae.NCBI.ASM979241v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Candersoni.NCBI.ASM186535v1
+Version: 1.0.0
+NeedsCompilation: no

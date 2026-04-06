@@ -10400,6 +10400,52 @@
       ]
     },
     {
+      "organism": "Cryptosporidium andersoni",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Cryptosporidiidae",
+        "genus": "Cryptosporidium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Candersoni.NCBI.ASM186535v1",
+          "version": "1.0.0",
+          "organism": "Cryptosporidium andersoni",
+          "assembly": "ASM186535v1",
+          "provider": "NCBI",
+          "accession": "GCF_001865355.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001865355.1/",
+          "file_name": "BSgenome.Candersoni.NCBI.ASM186535v1_1.0.0.tar.gz",
+          "size": 2422063,
+          "seq_ids": [
+            "NW_027122907.1",
+            "NW_027122813.1",
+            "NW_027122881.1",
+            "NW_027122917.1",
+            "NW_027122878.1"
+          ],
+          "seq_count": 135,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Conoidasida",
+            "order": "Eucoccidiorida",
+            "family": "Cryptosporidiidae",
+            "genus": "Cryptosporidium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T17:49:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Candersoni.NCBI.ASM186535v1/BSgenome.Candersoni.NCBI.ASM186535v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptosporidium bovis",
       "common_name": "",
       "group": "other",
@@ -58677,6 +58723,37 @@
       "common_name": "",
       "published": "2026-04-06T17:49:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cryanae.NCBI.ASM979241v2/BSgenome.Cryanae.NCBI.ASM979241v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Candersoni.NCBI.ASM186535v1",
+      "version": "1.0.0",
+      "organism": "Cryptosporidium andersoni",
+      "assembly": "ASM186535v1",
+      "provider": "NCBI",
+      "accession": "GCF_001865355.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001865355.1/",
+      "file_name": "BSgenome.Candersoni.NCBI.ASM186535v1_1.0.0.tar.gz",
+      "size": 2422063,
+      "seq_ids": [
+        "NW_027122907.1",
+        "NW_027122813.1",
+        "NW_027122881.1",
+        "NW_027122917.1",
+        "NW_027122878.1"
+      ],
+      "seq_count": 135,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Cryptosporidiidae",
+        "genus": "Cryptosporidium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T17:49:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Candersoni.NCBI.ASM186535v1/BSgenome.Candersoni.NCBI.ASM186535v1_1.0.0.tar.gz"
     }
   ]
 }
