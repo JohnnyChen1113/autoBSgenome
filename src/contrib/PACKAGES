@@ -2713,3 +2713,7 @@ NeedsCompilation: no
 Package: BSgenome.Arabiei.NCBI.ASM401169v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Poryzae.NCBI.MG8
+Version: 1.0.0
+NeedsCompilation: no
