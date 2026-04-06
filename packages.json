@@ -5344,6 +5344,54 @@
       ]
     },
     {
+      "organism": "Botrytis cinerea B05.10",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Sclerotiniaceae",
+        "genus": "Botrytis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bcinerea.NCBI.ASM14353v4",
+          "version": "1.0.0",
+          "organism": "Botrytis cinerea B05.10",
+          "assembly": "ASM14353v4",
+          "provider": "NCBI",
+          "accession": "GCF_000143535.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143535.2/",
+          "file_name": "BSgenome.Bcinerea.NCBI.ASM14353v4_1.0.0.tar.gz",
+          "size": 11166976,
+          "seq_ids": [
+            "NC_037310.1",
+            "NC_037311.1",
+            "NC_037312.1",
+            "NC_037313.1",
+            "NC_037314.1"
+          ],
+          "seq_count": 18,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Helotiales",
+            "family": "Sclerotiniaceae",
+            "genus": "Botrytis"
+          },
+          "common_name": "",
+          "published": "2026-04-06T11:30:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bcinerea.NCBI.ASM14353v4/BSgenome.Bcinerea.NCBI.ASM14353v4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Brachypodium distachyon",
       "common_name": "stiff brome",
       "group": "plant",
@@ -54429,6 +54477,38 @@
       "common_name": "",
       "published": "2026-04-06T11:30:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pplacenta.NCBI.PosplRSB121/BSgenome.Pplacenta.NCBI.PosplRSB121_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bcinerea.NCBI.ASM14353v4",
+      "version": "1.0.0",
+      "organism": "Botrytis cinerea B05.10",
+      "assembly": "ASM14353v4",
+      "provider": "NCBI",
+      "accession": "GCF_000143535.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000143535.2/",
+      "file_name": "BSgenome.Bcinerea.NCBI.ASM14353v4_1.0.0.tar.gz",
+      "size": 11166976,
+      "seq_ids": [
+        "NC_037310.1",
+        "NC_037311.1",
+        "NC_037312.1",
+        "NC_037313.1",
+        "NC_037314.1"
+      ],
+      "seq_count": 18,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Sclerotiniaceae",
+        "genus": "Botrytis"
+      },
+      "common_name": "",
+      "published": "2026-04-06T11:30:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bcinerea.NCBI.ASM14353v4/BSgenome.Bcinerea.NCBI.ASM14353v4_1.0.0.tar.gz"
     }
   ]
 }
