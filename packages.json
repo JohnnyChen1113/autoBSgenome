@@ -8692,6 +8692,54 @@
       ]
     },
     {
+      "organism": "Colletotrichum fructicola Nara gc5",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Glomerellaceae",
+        "genus": "Colletotrichum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cfructicola.NCBI.ASM31963v2",
+          "version": "1.0.0",
+          "organism": "Colletotrichum fructicola Nara gc5",
+          "assembly": "ASM31963v2",
+          "provider": "NCBI",
+          "accession": "GCF_000319635.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000319635.2/",
+          "file_name": "BSgenome.Cfructicola.NCBI.ASM31963v2_1.0.0.tar.gz",
+          "size": 15420814,
+          "seq_ids": [
+            "NW_027094051.1",
+            "NW_027094052.1",
+            "NW_027094053.1",
+            "NW_027094054.1",
+            "NW_027094055.1"
+          ],
+          "seq_count": 13,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Glomerellales",
+            "family": "Glomerellaceae",
+            "genus": "Colletotrichum"
+          },
+          "common_name": "",
+          "published": "2026-04-06T14:52:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfructicola.NCBI.ASM31963v2/BSgenome.Cfructicola.NCBI.ASM31963v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Colletotrichum graminicola M1.001",
       "common_name": "",
       "group": "fungi",
@@ -56749,6 +56797,38 @@
       "common_name": "",
       "published": "2026-04-06T14:52:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pblakesleeanus.NCBI.Phybl2/BSgenome.Pblakesleeanus.NCBI.Phybl2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cfructicola.NCBI.ASM31963v2",
+      "version": "1.0.0",
+      "organism": "Colletotrichum fructicola Nara gc5",
+      "assembly": "ASM31963v2",
+      "provider": "NCBI",
+      "accession": "GCF_000319635.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000319635.2/",
+      "file_name": "BSgenome.Cfructicola.NCBI.ASM31963v2_1.0.0.tar.gz",
+      "size": 15420814,
+      "seq_ids": [
+        "NW_027094051.1",
+        "NW_027094052.1",
+        "NW_027094053.1",
+        "NW_027094054.1",
+        "NW_027094055.1"
+      ],
+      "seq_count": 13,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Glomerellaceae",
+        "genus": "Colletotrichum"
+      },
+      "common_name": "",
+      "published": "2026-04-06T14:52:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfructicola.NCBI.ASM31963v2/BSgenome.Cfructicola.NCBI.ASM31963v2_1.0.0.tar.gz"
     }
   ]
 }
