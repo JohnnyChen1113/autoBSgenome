@@ -24378,6 +24378,54 @@
       ]
     },
     {
+      "organism": "Phycomyces blakesleeanus NRRL 1555(-)",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Mucoromycota",
+        "class": "Mucoromycetes",
+        "order": "Mucorales",
+        "family": "Phycomycetaceae",
+        "genus": "Phycomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pblakesleeanus.NCBI.Phybl2",
+          "version": "1.0.0",
+          "organism": "Phycomyces blakesleeanus NRRL 1555(-)",
+          "assembly": "Phybl2",
+          "provider": "NCBI",
+          "accession": "GCF_001638985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001638985.1/",
+          "file_name": "BSgenome.Pblakesleeanus.NCBI.Phybl2_1.0.0.tar.gz",
+          "size": 14158209,
+          "seq_ids": [
+            "NW_017265134.1",
+            "NW_017265135.1",
+            "NW_017265136.1",
+            "NW_017265137.1",
+            "NW_017265138.1"
+          ],
+          "seq_count": 80,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Mucoromycota",
+            "class": "Mucoromycetes",
+            "order": "Mucorales",
+            "family": "Phycomycetaceae",
+            "genus": "Phycomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-06T14:52:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pblakesleeanus.NCBI.Phybl2/BSgenome.Pblakesleeanus.NCBI.Phybl2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phyllostomus discolor",
       "common_name": "pale spear-nosed bat",
       "group": "vertebrate_mammalian",
@@ -56669,6 +56717,38 @@
       "common_name": "",
       "published": "2026-04-06T14:52:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfici.NCBI.PFICI/BSgenome.Pfici.NCBI.PFICI_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pblakesleeanus.NCBI.Phybl2",
+      "version": "1.0.0",
+      "organism": "Phycomyces blakesleeanus NRRL 1555(-)",
+      "assembly": "Phybl2",
+      "provider": "NCBI",
+      "accession": "GCF_001638985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001638985.1/",
+      "file_name": "BSgenome.Pblakesleeanus.NCBI.Phybl2_1.0.0.tar.gz",
+      "size": 14158209,
+      "seq_ids": [
+        "NW_017265134.1",
+        "NW_017265135.1",
+        "NW_017265136.1",
+        "NW_017265137.1",
+        "NW_017265138.1"
+      ],
+      "seq_count": 80,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Mucoromycota",
+        "class": "Mucoromycetes",
+        "order": "Mucorales",
+        "family": "Phycomycetaceae",
+        "genus": "Phycomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-06T14:52:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pblakesleeanus.NCBI.Phybl2/BSgenome.Pblakesleeanus.NCBI.Phybl2_1.0.0.tar.gz"
     }
   ]
 }
