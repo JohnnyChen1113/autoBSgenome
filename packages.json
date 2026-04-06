@@ -25944,6 +25944,52 @@
       ]
     },
     {
+      "organism": "Plasmodium reichenowi",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Preichenowi.NCBI.ASM160185v1",
+          "version": "1.0.0",
+          "organism": "Plasmodium reichenowi",
+          "assembly": "ASM160185v1",
+          "provider": "NCBI",
+          "accession": "GCF_001601855.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001601855.1/",
+          "file_name": "BSgenome.Preichenowi.NCBI.ASM160185v1_1.0.0.tar.gz",
+          "size": 4844075,
+          "seq_ids": [
+            "NC_033646.1",
+            "NC_033647.1",
+            "NC_033648.1",
+            "NC_033649.1",
+            "NC_033650.1"
+          ],
+          "seq_count": 777,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Aconoidasida",
+            "order": "Haemosporida",
+            "family": "Plasmodiidae",
+            "genus": "Plasmodium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T17:50:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Preichenowi.NCBI.ASM160185v1/BSgenome.Preichenowi.NCBI.ASM160185v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Plectropomus leopardus",
       "common_name": "leopard coralgrouper",
       "group": "vertebrate_other",
@@ -59284,6 +59330,37 @@
       "common_name": "",
       "published": "2026-04-06T17:50:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgaboni.NCBI.ASM160202v1/BSgenome.Pgaboni.NCBI.ASM160202v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Preichenowi.NCBI.ASM160185v1",
+      "version": "1.0.0",
+      "organism": "Plasmodium reichenowi",
+      "assembly": "ASM160185v1",
+      "provider": "NCBI",
+      "accession": "GCF_001601855.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001601855.1/",
+      "file_name": "BSgenome.Preichenowi.NCBI.ASM160185v1_1.0.0.tar.gz",
+      "size": 4844075,
+      "seq_ids": [
+        "NC_033646.1",
+        "NC_033647.1",
+        "NC_033648.1",
+        "NC_033649.1",
+        "NC_033650.1"
+      ],
+      "seq_count": 777,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T17:50:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Preichenowi.NCBI.ASM160185v1/BSgenome.Preichenowi.NCBI.ASM160185v1_1.0.0.tar.gz"
     }
   ]
 }
