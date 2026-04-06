@@ -14304,6 +14304,50 @@
       ]
     },
     {
+      "organism": "Entamoeba invadens IP1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "order": "Mastigamoebida",
+        "family": "Entamoebidae",
+        "genus": "Entamoeba"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Einvadens.NCBI.EIA2v2",
+          "version": "1.0.0",
+          "organism": "Entamoeba invadens IP1",
+          "assembly": "EIA2 v2",
+          "provider": "NCBI",
+          "accession": "GCF_000330505.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000330505.1/",
+          "file_name": "BSgenome.Einvadens.NCBI.EIA2v2_1.0.0.tar.gz",
+          "size": 10773333,
+          "seq_ids": [
+            "NW_004443936.1",
+            "NW_004443935.1",
+            "NW_004443805.1",
+            "NW_004443803.1",
+            "NW_004443801.1"
+          ],
+          "seq_count": 1144,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Evosea",
+            "order": "Mastigamoebida",
+            "family": "Entamoebidae",
+            "genus": "Entamoeba"
+          },
+          "common_name": "",
+          "published": "2026-04-06T22:52:26Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Einvadens.NCBI.EIA2v2/BSgenome.Einvadens.NCBI.EIA2v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Entamoeba nuttalli P19",
       "common_name": "",
       "group": "other",
@@ -62419,6 +62463,36 @@
       "common_name": "",
       "published": "2026-04-06T22:52:14Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dpurpureum.NCBI.v10/BSgenome.Dpurpureum.NCBI.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Einvadens.NCBI.EIA2v2",
+      "version": "1.0.0",
+      "organism": "Entamoeba invadens IP1",
+      "assembly": "EIA2 v2",
+      "provider": "NCBI",
+      "accession": "GCF_000330505.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000330505.1/",
+      "file_name": "BSgenome.Einvadens.NCBI.EIA2v2_1.0.0.tar.gz",
+      "size": 10773333,
+      "seq_ids": [
+        "NW_004443936.1",
+        "NW_004443935.1",
+        "NW_004443805.1",
+        "NW_004443803.1",
+        "NW_004443801.1"
+      ],
+      "seq_count": 1144,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "order": "Mastigamoebida",
+        "family": "Entamoebidae",
+        "genus": "Entamoeba"
+      },
+      "common_name": "",
+      "published": "2026-04-06T22:52:26Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Einvadens.NCBI.EIA2v2/BSgenome.Einvadens.NCBI.EIA2v2_1.0.0.tar.gz"
     }
   ]
 }
