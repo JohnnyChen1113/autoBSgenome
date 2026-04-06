@@ -1289,6 +1289,52 @@
       ]
     },
     {
+      "organism": "Aphanomyces astaci",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Oomycota",
+        "class": "Saprolegniomycetes",
+        "order": "Saprolegniales",
+        "family": "Verrucalvaceae",
+        "genus": "Aphanomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aastaci.NCBI.AphaastaAPO3V1",
+          "version": "1.0.0",
+          "organism": "Aphanomyces astaci",
+          "assembly": "Apha_asta_APO3_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000520075.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000520075.1/",
+          "file_name": "BSgenome.Aastaci.NCBI.AphaastaAPO3V1_1.0.0.tar.gz",
+          "size": 15631539,
+          "seq_ids": [
+            "NW_009798264.1",
+            "NW_009798265.1",
+            "NW_009798266.1",
+            "NW_009798267.1",
+            "NW_009798268.1"
+          ],
+          "seq_count": 835,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Oomycota",
+            "class": "Saprolegniomycetes",
+            "order": "Saprolegniales",
+            "family": "Verrucalvaceae",
+            "genus": "Aphanomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-06T23:40:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aastaci.NCBI.AphaastaAPO3V1/BSgenome.Aastaci.NCBI.AphaastaAPO3V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aphanomyces invadans",
       "common_name": "",
       "group": "other",
@@ -63636,6 +63682,37 @@
       "common_name": "",
       "published": "2026-04-06T23:40:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Emitis.NCBI.EMH001/BSgenome.Emitis.NCBI.EMH001_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aastaci.NCBI.AphaastaAPO3V1",
+      "version": "1.0.0",
+      "organism": "Aphanomyces astaci",
+      "assembly": "Apha_asta_APO3_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000520075.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000520075.1/",
+      "file_name": "BSgenome.Aastaci.NCBI.AphaastaAPO3V1_1.0.0.tar.gz",
+      "size": 15631539,
+      "seq_ids": [
+        "NW_009798264.1",
+        "NW_009798265.1",
+        "NW_009798266.1",
+        "NW_009798267.1",
+        "NW_009798268.1"
+      ],
+      "seq_count": 835,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Oomycota",
+        "class": "Saprolegniomycetes",
+        "order": "Saprolegniales",
+        "family": "Verrucalvaceae",
+        "genus": "Aphanomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-06T23:40:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aastaci.NCBI.AphaastaAPO3V1/BSgenome.Aastaci.NCBI.AphaastaAPO3V1_1.0.0.tar.gz"
     }
   ]
 }
