@@ -3225,3 +3225,7 @@ NeedsCompilation: no
 Package: BSgenome.Aastaci.NCBI.AphaastaAPO3V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mexilis.NCBI.ASM164367v2
+Version: 1.0.0
+NeedsCompilation: no

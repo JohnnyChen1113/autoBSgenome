@@ -22209,6 +22209,50 @@
       ]
     },
     {
+      "organism": "Monocercomonoides exilis",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Preaxostyla",
+        "order": "Oxymonadida",
+        "family": "Polymastigidae",
+        "genus": "Monocercomonoides"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mexilis.NCBI.ASM164367v2",
+          "version": "1.0.0",
+          "organism": "Monocercomonoides exilis",
+          "assembly": "ASM164367v2",
+          "provider": "NCBI",
+          "accession": "GCF_001643675.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001643675.1/",
+          "file_name": "BSgenome.Mexilis.NCBI.ASM164367v2_1.0.0.tar.gz",
+          "size": 21774884,
+          "seq_ids": [
+            "NW_027150546.1",
+            "NW_027150555.1",
+            "NW_027150645.1",
+            "NW_027150646.1",
+            "NW_027150556.1"
+          ],
+          "seq_count": 101,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Preaxostyla",
+            "order": "Oxymonadida",
+            "family": "Polymastigidae",
+            "genus": "Monocercomonoides"
+          },
+          "common_name": "",
+          "published": "2026-04-06T23:41:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mexilis.NCBI.ASM164367v2/BSgenome.Mexilis.NCBI.ASM164367v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Monodon monoceros",
       "common_name": "narwhal",
       "group": "vertebrate_mammalian",
@@ -63713,6 +63757,36 @@
       "common_name": "",
       "published": "2026-04-06T23:40:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aastaci.NCBI.AphaastaAPO3V1/BSgenome.Aastaci.NCBI.AphaastaAPO3V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mexilis.NCBI.ASM164367v2",
+      "version": "1.0.0",
+      "organism": "Monocercomonoides exilis",
+      "assembly": "ASM164367v2",
+      "provider": "NCBI",
+      "accession": "GCF_001643675.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001643675.1/",
+      "file_name": "BSgenome.Mexilis.NCBI.ASM164367v2_1.0.0.tar.gz",
+      "size": 21774884,
+      "seq_ids": [
+        "NW_027150546.1",
+        "NW_027150555.1",
+        "NW_027150645.1",
+        "NW_027150646.1",
+        "NW_027150556.1"
+      ],
+      "seq_count": 101,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Preaxostyla",
+        "order": "Oxymonadida",
+        "family": "Polymastigidae",
+        "genus": "Monocercomonoides"
+      },
+      "common_name": "",
+      "published": "2026-04-06T23:41:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mexilis.NCBI.ASM164367v2/BSgenome.Mexilis.NCBI.ASM164367v2_1.0.0.tar.gz"
     }
   ]
 }
