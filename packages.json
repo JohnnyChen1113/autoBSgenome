@@ -12380,6 +12380,52 @@
       ]
     },
     {
+      "organism": "Dictyostelium discoideum AX4",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "class": "Eumycetozoa",
+        "order": "Dictyosteliales",
+        "family": "Dictyosteliaceae",
+        "genus": "Dictyostelium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ddiscoideum.NCBI.dicty27",
+          "version": "1.0.0",
+          "organism": "Dictyostelium discoideum AX4",
+          "assembly": "dicty_2.7",
+          "provider": "NCBI",
+          "accession": "GCF_000004695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004695.1/",
+          "file_name": "BSgenome.Ddiscoideum.NCBI.dicty27_1.0.0.tar.gz",
+          "size": 8261878,
+          "seq_ids": [
+            "NC_007087.3",
+            "NC_007088.5",
+            "NC_007089.4",
+            "NC_007090.3",
+            "NC_007091.3"
+          ],
+          "seq_count": 41,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Evosea",
+            "class": "Eumycetozoa",
+            "order": "Dictyosteliales",
+            "family": "Dictyosteliaceae",
+            "genus": "Dictyostelium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T22:02:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ddiscoideum.NCBI.dicty27/BSgenome.Ddiscoideum.NCBI.dicty27_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dinoponera quadriceps",
       "common_name": "",
       "group": "invertebrate",
@@ -61741,6 +61787,37 @@
       "common_name": "",
       "published": "2026-04-06T22:01:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Halbum.NCBI.PolPalDec2009/BSgenome.Halbum.NCBI.PolPalDec2009_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ddiscoideum.NCBI.dicty27",
+      "version": "1.0.0",
+      "organism": "Dictyostelium discoideum AX4",
+      "assembly": "dicty_2.7",
+      "provider": "NCBI",
+      "accession": "GCF_000004695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000004695.1/",
+      "file_name": "BSgenome.Ddiscoideum.NCBI.dicty27_1.0.0.tar.gz",
+      "size": 8261878,
+      "seq_ids": [
+        "NC_007087.3",
+        "NC_007088.5",
+        "NC_007089.4",
+        "NC_007090.3",
+        "NC_007091.3"
+      ],
+      "seq_count": 41,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "class": "Eumycetozoa",
+        "order": "Dictyosteliales",
+        "family": "Dictyosteliaceae",
+        "genus": "Dictyostelium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T22:02:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ddiscoideum.NCBI.dicty27/BSgenome.Ddiscoideum.NCBI.dicty27_1.0.0.tar.gz"
     }
   ]
 }

@@ -3121,3 +3121,7 @@ NeedsCompilation: no
 Package: BSgenome.Halbum.NCBI.PolPalDec2009
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ddiscoideum.NCBI.dicty27
+Version: 1.0.0
+NeedsCompilation: no
