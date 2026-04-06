@@ -18226,6 +18226,50 @@
       ]
     },
     {
+      "organism": "Ichthyophthirius multifiliis",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Ciliophora",
+        "class": "Oligohymenophorea",
+        "order": "Hymenostomatida",
+        "genus": "Ichthyophthirius"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Imultifiliis.NCBI.JCVIIMG1V1",
+          "version": "1.0.0",
+          "organism": "Ichthyophthirius multifiliis",
+          "assembly": "JCVI-IMG1-V.1",
+          "provider": "NCBI",
+          "accession": "GCF_000220395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000220395.1/",
+          "file_name": "BSgenome.Imultifiliis.NCBI.JCVIIMG1V1_1.0.0.tar.gz",
+          "size": 11790827,
+          "seq_ids": [
+            "NW_004087753.1",
+            "NW_004087751.1",
+            "NW_004087749.1",
+            "NW_004087746.1",
+            "NW_004087744.1"
+          ],
+          "seq_count": 2017,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Ciliophora",
+            "class": "Oligohymenophorea",
+            "order": "Hymenostomatida",
+            "genus": "Ichthyophthirius"
+          },
+          "common_name": "",
+          "published": "2026-04-06T22:52:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Imultifiliis.NCBI.JCVIIMG1V1/BSgenome.Imultifiliis.NCBI.JCVIIMG1V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ictalurus punctatus",
       "common_name": "channel catfish",
       "group": "vertebrate_other",
@@ -62570,6 +62614,36 @@
       "common_name": "",
       "published": "2026-04-06T22:52:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Emaxima.NCBI.EMW001/BSgenome.Emaxima.NCBI.EMW001_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Imultifiliis.NCBI.JCVIIMG1V1",
+      "version": "1.0.0",
+      "organism": "Ichthyophthirius multifiliis",
+      "assembly": "JCVI-IMG1-V.1",
+      "provider": "NCBI",
+      "accession": "GCF_000220395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000220395.1/",
+      "file_name": "BSgenome.Imultifiliis.NCBI.JCVIIMG1V1_1.0.0.tar.gz",
+      "size": 11790827,
+      "seq_ids": [
+        "NW_004087753.1",
+        "NW_004087751.1",
+        "NW_004087749.1",
+        "NW_004087746.1",
+        "NW_004087744.1"
+      ],
+      "seq_count": 2017,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Ciliophora",
+        "class": "Oligohymenophorea",
+        "order": "Hymenostomatida",
+        "genus": "Ichthyophthirius"
+      },
+      "common_name": "",
+      "published": "2026-04-06T22:52:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Imultifiliis.NCBI.JCVIIMG1V1/BSgenome.Imultifiliis.NCBI.JCVIIMG1V1_1.0.0.tar.gz"
     }
   ]
 }
