@@ -29183,6 +29183,54 @@
       ]
     },
     {
+      "organism": "Stereum hirsutum FP-91666 SS1",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Russulales",
+        "family": "Stereaceae",
+        "genus": "Stereum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Shirsutum.NCBI.Stehi1",
+          "version": "1.0.0",
+          "organism": "Stereum hirsutum FP-91666 SS1",
+          "assembly": "Stehi1",
+          "provider": "NCBI",
+          "accession": "GCF_000264905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000264905.1/",
+          "file_name": "BSgenome.Shirsutum.NCBI.Stehi1_1.0.0.tar.gz",
+          "size": 12050817,
+          "seq_ids": [
+            "NW_006763131.1",
+            "NW_006763132.1",
+            "NW_006763133.1",
+            "NW_006763134.1",
+            "NW_006763135.1"
+          ],
+          "seq_count": 159,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Russulales",
+            "family": "Stereaceae",
+            "genus": "Stereum"
+          },
+          "common_name": "",
+          "published": "2026-04-06T13:53:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shirsutum.NCBI.Stehi1/BSgenome.Shirsutum.NCBI.Stehi1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Strigops habroptila",
       "common_name": "Kakapo",
       "group": "vertebrate_other",
@@ -55789,6 +55837,38 @@
       "common_name": "",
       "published": "2026-04-06T13:53:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcarnosa.NCBI.PhanerochaetecarnosaHHB10118Spv10/BSgenome.Pcarnosa.NCBI.PhanerochaetecarnosaHHB10118Spv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Shirsutum.NCBI.Stehi1",
+      "version": "1.0.0",
+      "organism": "Stereum hirsutum FP-91666 SS1",
+      "assembly": "Stehi1",
+      "provider": "NCBI",
+      "accession": "GCF_000264905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000264905.1/",
+      "file_name": "BSgenome.Shirsutum.NCBI.Stehi1_1.0.0.tar.gz",
+      "size": 12050817,
+      "seq_ids": [
+        "NW_006763131.1",
+        "NW_006763132.1",
+        "NW_006763133.1",
+        "NW_006763134.1",
+        "NW_006763135.1"
+      ],
+      "seq_count": 159,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Russulales",
+        "family": "Stereaceae",
+        "genus": "Stereum"
+      },
+      "common_name": "",
+      "published": "2026-04-06T13:53:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shirsutum.NCBI.Stehi1/BSgenome.Shirsutum.NCBI.Stehi1_1.0.0.tar.gz"
     }
   ]
 }
