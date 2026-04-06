@@ -3125,3 +3125,7 @@ NeedsCompilation: no
 Package: BSgenome.Ddiscoideum.NCBI.dicty27
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ngaditana.NCBI.ASM24072v1
+Version: 1.0.0
+NeedsCompilation: no
