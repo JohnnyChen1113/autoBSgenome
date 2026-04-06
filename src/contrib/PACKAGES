@@ -3013,3 +3013,7 @@ NeedsCompilation: no
 Package: BSgenome.Pfalciparum.NCBI.GCA000002765
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pknowlesi.NCBI.GCA0000063552
+Version: 1.0.0
+NeedsCompilation: no

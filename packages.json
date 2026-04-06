@@ -26034,6 +26034,52 @@
       ]
     },
     {
+      "organism": "Plasmodium knowlesi strain H",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pknowlesi.NCBI.GCA0000063552",
+          "version": "1.0.0",
+          "organism": "Plasmodium knowlesi strain H",
+          "assembly": "GCA_000006355.2",
+          "provider": "NCBI",
+          "accession": "GCF_000006355.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000006355.2/",
+          "file_name": "BSgenome.Pknowlesi.NCBI.GCA0000063552_1.0.0.tar.gz",
+          "size": 6348013,
+          "seq_ids": [
+            "NC_011902.2",
+            "NC_011903.2",
+            "NC_011904.2",
+            "NC_011905.2",
+            "NC_011906.2"
+          ],
+          "seq_count": 164,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Aconoidasida",
+            "order": "Haemosporida",
+            "family": "Plasmodiidae",
+            "genus": "Plasmodium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T19:05:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pknowlesi.NCBI.GCA0000063552/BSgenome.Pknowlesi.NCBI.GCA0000063552_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Plasmodium reichenowi",
       "common_name": "",
       "group": "other",
@@ -59743,6 +59789,37 @@
       "common_name": "",
       "published": "2026-04-06T19:05:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfalciparum.NCBI.GCA000002765/BSgenome.Pfalciparum.NCBI.GCA000002765_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pknowlesi.NCBI.GCA0000063552",
+      "version": "1.0.0",
+      "organism": "Plasmodium knowlesi strain H",
+      "assembly": "GCA_000006355.2",
+      "provider": "NCBI",
+      "accession": "GCF_000006355.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000006355.2/",
+      "file_name": "BSgenome.Pknowlesi.NCBI.GCA0000063552_1.0.0.tar.gz",
+      "size": 6348013,
+      "seq_ids": [
+        "NC_011902.2",
+        "NC_011903.2",
+        "NC_011904.2",
+        "NC_011905.2",
+        "NC_011906.2"
+      ],
+      "seq_count": 164,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T19:05:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pknowlesi.NCBI.GCA0000063552/BSgenome.Pknowlesi.NCBI.GCA0000063552_1.0.0.tar.gz"
     }
   ]
 }
