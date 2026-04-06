@@ -2765,3 +2765,7 @@ NeedsCompilation: no
 Package: BSgenome.Eturcica.NCBI.SetospaeriatrucicaEt28Av10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cimmunda.NCBI.CladimmuCBS83496V1
+Version: 1.0.0
+NeedsCompilation: no
