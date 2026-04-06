@@ -2793,3 +2793,7 @@ NeedsCompilation: no
 Package: BSgenome.Tversicolor.NCBI.Trametesversicolorv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pchlamydosporia.NCBI.ASM165323v2
+Version: 1.0.0
+NeedsCompilation: no

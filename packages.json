@@ -24418,6 +24418,54 @@
       ]
     },
     {
+      "organism": "Pochonia chlamydosporia 170",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Pochonia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pchlamydosporia.NCBI.ASM165323v2",
+          "version": "1.0.0",
+          "organism": "Pochonia chlamydosporia 170",
+          "assembly": "ASM165323v2",
+          "provider": "NCBI",
+          "accession": "GCF_001653235.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001653235.2/",
+          "file_name": "BSgenome.Pchlamydosporia.NCBI.ASM165323v2_1.0.0.tar.gz",
+          "size": 11466592,
+          "seq_ids": [
+            "NC_035790.1",
+            "NC_035791.1",
+            "NC_035792.1",
+            "NC_035793.1",
+            "NC_035794.1"
+          ],
+          "seq_count": 49,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Clavicipitaceae",
+            "genus": "Pochonia"
+          },
+          "common_name": "",
+          "published": "2026-04-06T13:53:21Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pchlamydosporia.NCBI.ASM165323v2/BSgenome.Pchlamydosporia.NCBI.ASM165323v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pocillopora damicornis",
       "common_name": "cauliflower coral",
       "group": "invertebrate",
@@ -55469,6 +55517,38 @@
       "common_name": "",
       "published": "2026-04-06T12:09:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tversicolor.NCBI.Trametesversicolorv10/BSgenome.Tversicolor.NCBI.Trametesversicolorv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pchlamydosporia.NCBI.ASM165323v2",
+      "version": "1.0.0",
+      "organism": "Pochonia chlamydosporia 170",
+      "assembly": "ASM165323v2",
+      "provider": "NCBI",
+      "accession": "GCF_001653235.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001653235.2/",
+      "file_name": "BSgenome.Pchlamydosporia.NCBI.ASM165323v2_1.0.0.tar.gz",
+      "size": 11466592,
+      "seq_ids": [
+        "NC_035790.1",
+        "NC_035791.1",
+        "NC_035792.1",
+        "NC_035793.1",
+        "NC_035794.1"
+      ],
+      "seq_count": 49,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Pochonia"
+      },
+      "common_name": "",
+      "published": "2026-04-06T13:53:21Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pchlamydosporia.NCBI.ASM165323v2/BSgenome.Pchlamydosporia.NCBI.ASM165323v2_1.0.0.tar.gz"
     }
   ]
 }
