@@ -31368,6 +31368,52 @@
       ]
     },
     {
+      "organism": "Theileria parva strain Muguga",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Piroplasmida",
+        "family": "Theileriidae",
+        "genus": "Theileria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tparva.NCBI.ASM16536v1",
+          "version": "1.0.0",
+          "organism": "Theileria parva strain Muguga",
+          "assembly": "ASM16536v1",
+          "provider": "NCBI",
+          "accession": "GCF_000165365.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000165365.1/",
+          "file_name": "BSgenome.Tparva.NCBI.ASM16536v1_1.0.0.tar.gz",
+          "size": 2173283,
+          "seq_ids": [
+            "NC_007344.1",
+            "NC_007345.1",
+            "NW_876245.1",
+            "NW_876244.1",
+            "NW_876243.1"
+          ],
+          "seq_count": 9,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Aconoidasida",
+            "order": "Piroplasmida",
+            "family": "Theileriidae",
+            "genus": "Theileria"
+          },
+          "common_name": "",
+          "published": "2026-04-06T15:53:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tparva.NCBI.ASM16536v1/BSgenome.Tparva.NCBI.ASM16536v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Theobroma cacao",
       "common_name": "cacao",
       "group": "plant",
@@ -57519,6 +57565,37 @@
       "common_name": "",
       "published": "2026-04-06T15:52:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbovis.NCBI.ASM16539v2/BSgenome.Bbovis.NCBI.ASM16539v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tparva.NCBI.ASM16536v1",
+      "version": "1.0.0",
+      "organism": "Theileria parva strain Muguga",
+      "assembly": "ASM16536v1",
+      "provider": "NCBI",
+      "accession": "GCF_000165365.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000165365.1/",
+      "file_name": "BSgenome.Tparva.NCBI.ASM16536v1_1.0.0.tar.gz",
+      "size": 2173283,
+      "seq_ids": [
+        "NC_007344.1",
+        "NC_007345.1",
+        "NW_876245.1",
+        "NW_876244.1",
+        "NW_876243.1"
+      ],
+      "seq_count": 9,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Piroplasmida",
+        "family": "Theileriidae",
+        "genus": "Theileria"
+      },
+      "common_name": "",
+      "published": "2026-04-06T15:53:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tparva.NCBI.ASM16536v1/BSgenome.Tparva.NCBI.ASM16536v1_1.0.0.tar.gz"
     }
   ]
 }
