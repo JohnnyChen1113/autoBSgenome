@@ -7148,6 +7148,46 @@
       ]
     },
     {
+      "organism": "Capsaspora owczarzaki ATCC 30864",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Filasterea",
+        "genus": "Capsaspora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cowczarzaki.NCBI.CowczarzakiV2",
+          "version": "1.0.0",
+          "organism": "Capsaspora owczarzaki ATCC 30864",
+          "assembly": "C_owczarzaki_V2",
+          "provider": "NCBI",
+          "accession": "GCF_000151315.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000151315.2/",
+          "file_name": "BSgenome.Cowczarzaki.NCBI.CowczarzakiV2_1.0.0.tar.gz",
+          "size": 7240868,
+          "seq_ids": [
+            "NW_011887292.1",
+            "NW_011887293.1",
+            "NW_011887294.1",
+            "NW_011887295.1",
+            "NW_011887296.1"
+          ],
+          "seq_count": 84,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "class": "Filasterea",
+            "genus": "Capsaspora"
+          },
+          "common_name": "",
+          "published": "2026-04-06T20:07:26Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cowczarzaki.NCBI.CowczarzakiV2/BSgenome.Cowczarzaki.NCBI.CowczarzakiV2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Capsella rubella",
       "common_name": "",
       "group": "plant",
@@ -60415,6 +60455,34 @@
       "common_name": "",
       "published": "2026-04-06T20:07:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcoatneyi.NCBI.ASM168000v1/BSgenome.Pcoatneyi.NCBI.ASM168000v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cowczarzaki.NCBI.CowczarzakiV2",
+      "version": "1.0.0",
+      "organism": "Capsaspora owczarzaki ATCC 30864",
+      "assembly": "C_owczarzaki_V2",
+      "provider": "NCBI",
+      "accession": "GCF_000151315.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000151315.2/",
+      "file_name": "BSgenome.Cowczarzaki.NCBI.CowczarzakiV2_1.0.0.tar.gz",
+      "size": 7240868,
+      "seq_ids": [
+        "NW_011887292.1",
+        "NW_011887293.1",
+        "NW_011887294.1",
+        "NW_011887295.1",
+        "NW_011887296.1"
+      ],
+      "seq_count": 84,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Filasterea",
+        "genus": "Capsaspora"
+      },
+      "common_name": "",
+      "published": "2026-04-06T20:07:26Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cowczarzaki.NCBI.CowczarzakiV2/BSgenome.Cowczarzaki.NCBI.CowczarzakiV2_1.0.0.tar.gz"
     }
   ]
 }
