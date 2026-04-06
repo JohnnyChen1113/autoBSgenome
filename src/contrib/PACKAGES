@@ -3113,3 +3113,7 @@ NeedsCompilation: no
 Package: BSgenome.Lmajor.NCBI.ASM272v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgonderi.NCBI.Pgonderiassembly01
+Version: 1.0.0
+NeedsCompilation: no
