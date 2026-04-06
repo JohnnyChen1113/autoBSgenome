@@ -1871,6 +1871,54 @@
       ]
     },
     {
+      "organism": "Aspergillus aculeatus ATCC 16872",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aaculeatus.NCBI.Aspac1",
+          "version": "1.0.0",
+          "organism": "Aspergillus aculeatus ATCC 16872",
+          "assembly": "Aspac1",
+          "provider": "NCBI",
+          "accession": "GCF_001890905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001890905.1/",
+          "file_name": "BSgenome.Aaculeatus.NCBI.Aspac1_1.0.0.tar.gz",
+          "size": 9225305,
+          "seq_ids": [
+            "NW_017962976.1",
+            "NW_017962977.1",
+            "NW_017962978.1",
+            "NW_017962979.1",
+            "NW_017962980.1"
+          ],
+          "seq_count": 660,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T02:42:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aaculeatus.NCBI.Aspac1/BSgenome.Aaculeatus.NCBI.Aspac1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus campestris IBT 28561",
       "common_name": "",
       "group": "fungi",
@@ -49573,6 +49621,38 @@
       "common_name": "",
       "published": "2026-04-06T02:42:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aneoniger.NCBI.Aspneo1/BSgenome.Aneoniger.NCBI.Aspneo1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aaculeatus.NCBI.Aspac1",
+      "version": "1.0.0",
+      "organism": "Aspergillus aculeatus ATCC 16872",
+      "assembly": "Aspac1",
+      "provider": "NCBI",
+      "accession": "GCF_001890905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001890905.1/",
+      "file_name": "BSgenome.Aaculeatus.NCBI.Aspac1_1.0.0.tar.gz",
+      "size": 9225305,
+      "seq_ids": [
+        "NW_017962976.1",
+        "NW_017962977.1",
+        "NW_017962978.1",
+        "NW_017962979.1",
+        "NW_017962980.1"
+      ],
+      "seq_count": 660,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T02:42:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aaculeatus.NCBI.Aspac1/BSgenome.Aaculeatus.NCBI.Aspac1_1.0.0.tar.gz"
     }
   ]
 }
