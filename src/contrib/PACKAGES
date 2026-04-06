@@ -3153,3 +3153,7 @@ NeedsCompilation: no
 Package: BSgenome.Falba.NCBI.FontalbaATCC38817V2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dpurpureum.NCBI.v10
+Version: 1.0.0
+NeedsCompilation: no

@@ -12516,6 +12516,52 @@
       ]
     },
     {
+      "organism": "Dictyostelium purpureum",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "class": "Eumycetozoa",
+        "order": "Dictyosteliales",
+        "family": "Dictyosteliaceae",
+        "genus": "Dictyostelium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dpurpureum.NCBI.v10",
+          "version": "1.0.0",
+          "organism": "Dictyostelium purpureum",
+          "assembly": "v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000190715.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000190715.1/",
+          "file_name": "BSgenome.Dpurpureum.NCBI.v10_1.0.0.tar.gz",
+          "size": 8521064,
+          "seq_ids": [
+            "NW_003519338.1",
+            "NW_003519339.1",
+            "NW_003519340.1",
+            "NW_003519341.1",
+            "NW_003519342.1"
+          ],
+          "seq_count": 799,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Evosea",
+            "class": "Eumycetozoa",
+            "order": "Dictyosteliales",
+            "family": "Dictyosteliaceae",
+            "genus": "Dictyostelium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T22:52:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dpurpureum.NCBI.v10/BSgenome.Dpurpureum.NCBI.v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dinoponera quadriceps",
       "common_name": "",
       "group": "invertebrate",
@@ -62342,6 +62388,37 @@
       "common_name": "",
       "published": "2026-04-06T22:52:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Falba.NCBI.FontalbaATCC38817V2/BSgenome.Falba.NCBI.FontalbaATCC38817V2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dpurpureum.NCBI.v10",
+      "version": "1.0.0",
+      "organism": "Dictyostelium purpureum",
+      "assembly": "v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000190715.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000190715.1/",
+      "file_name": "BSgenome.Dpurpureum.NCBI.v10_1.0.0.tar.gz",
+      "size": 8521064,
+      "seq_ids": [
+        "NW_003519338.1",
+        "NW_003519339.1",
+        "NW_003519340.1",
+        "NW_003519341.1",
+        "NW_003519342.1"
+      ],
+      "seq_count": 799,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Evosea",
+        "class": "Eumycetozoa",
+        "order": "Dictyosteliales",
+        "family": "Dictyosteliaceae",
+        "genus": "Dictyostelium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T22:52:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dpurpureum.NCBI.v10/BSgenome.Dpurpureum.NCBI.v10_1.0.0.tar.gz"
     }
   ]
 }
