@@ -13596,6 +13596,54 @@
       ]
     },
     {
+      "organism": "Fusarium coffeatum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fcoffeatum.NCBI.ASM331698v1",
+          "version": "1.0.0",
+          "organism": "Fusarium coffeatum",
+          "assembly": "ASM331698v1",
+          "provider": "NCBI",
+          "accession": "GCF_003316985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003316985.1/",
+          "file_name": "BSgenome.Fcoffeatum.NCBI.ASM331698v1_1.0.0.tar.gz",
+          "size": 9968083,
+          "seq_ids": [
+            "NW_022157800.1",
+            "NW_022157809.1",
+            "NW_022157895.1",
+            "NW_022157896.1",
+            "NW_022157897.1"
+          ],
+          "seq_count": 550,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Nectriaceae",
+            "genus": "Fusarium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T07:12:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcoffeatum.NCBI.ASM331698v1/BSgenome.Fcoffeatum.NCBI.ASM331698v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fusarium graminearum PH-1",
       "common_name": "",
       "group": "fungi",
@@ -51573,6 +51621,38 @@
       "common_name": "",
       "published": "2026-04-06T07:12:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aflavus.NCBI.ASM901741v1/BSgenome.Aflavus.NCBI.ASM901741v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fcoffeatum.NCBI.ASM331698v1",
+      "version": "1.0.0",
+      "organism": "Fusarium coffeatum",
+      "assembly": "ASM331698v1",
+      "provider": "NCBI",
+      "accession": "GCF_003316985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003316985.1/",
+      "file_name": "BSgenome.Fcoffeatum.NCBI.ASM331698v1_1.0.0.tar.gz",
+      "size": 9968083,
+      "seq_ids": [
+        "NW_022157800.1",
+        "NW_022157809.1",
+        "NW_022157895.1",
+        "NW_022157896.1",
+        "NW_022157897.1"
+      ],
+      "seq_count": 550,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T07:12:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcoffeatum.NCBI.ASM331698v1/BSgenome.Fcoffeatum.NCBI.ASM331698v1_1.0.0.tar.gz"
     }
   ]
 }

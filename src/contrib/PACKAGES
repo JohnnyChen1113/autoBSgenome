@@ -2597,3 +2597,7 @@ NeedsCompilation: no
 Package: BSgenome.Aflavus.NCBI.ASM901741v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fcoffeatum.NCBI.ASM331698v1
+Version: 1.0.0
+NeedsCompilation: no
