@@ -19637,6 +19637,54 @@
       ]
     },
     {
+      "organism": "Mollisia scopiformis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Mollisiaceae",
+        "genus": "Mollisia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mscopiformis.NCBI.Phisc1",
+          "version": "1.0.0",
+          "organism": "Mollisia scopiformis",
+          "assembly": "Phisc1",
+          "provider": "NCBI",
+          "accession": "GCF_001500285.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001500285.1/",
+          "file_name": "BSgenome.Mscopiformis.NCBI.Phisc1_1.0.0.tar.gz",
+          "size": 12748183,
+          "seq_ids": [
+            "NW_017263581.1",
+            "NW_017263582.1",
+            "NW_017263583.1",
+            "NW_017263584.1",
+            "NW_017263585.1"
+          ],
+          "seq_count": 71,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Helotiales",
+            "family": "Mollisiaceae",
+            "genus": "Mollisia"
+          },
+          "common_name": "",
+          "published": "2026-04-06T14:52:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mscopiformis.NCBI.Phisc1/BSgenome.Mscopiformis.NCBI.Phisc1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Momordica charantia",
       "common_name": "bitter melon",
       "group": "plant",
@@ -56349,6 +56397,38 @@
       "common_name": "",
       "published": "2026-04-06T14:52:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pminimum.NCBI.UCRPA7V03/BSgenome.Pminimum.NCBI.UCRPA7V03_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mscopiformis.NCBI.Phisc1",
+      "version": "1.0.0",
+      "organism": "Mollisia scopiformis",
+      "assembly": "Phisc1",
+      "provider": "NCBI",
+      "accession": "GCF_001500285.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001500285.1/",
+      "file_name": "BSgenome.Mscopiformis.NCBI.Phisc1_1.0.0.tar.gz",
+      "size": 12748183,
+      "seq_ids": [
+        "NW_017263581.1",
+        "NW_017263582.1",
+        "NW_017263583.1",
+        "NW_017263584.1",
+        "NW_017263585.1"
+      ],
+      "seq_count": 71,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Mollisiaceae",
+        "genus": "Mollisia"
+      },
+      "common_name": "",
+      "published": "2026-04-06T14:52:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mscopiformis.NCBI.Phisc1/BSgenome.Mscopiformis.NCBI.Phisc1_1.0.0.tar.gz"
     }
   ]
 }
