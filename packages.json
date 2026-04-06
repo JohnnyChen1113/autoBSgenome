@@ -14588,6 +14588,54 @@
       ]
     },
     {
+      "organism": "Gaeumannomyces tritici R3-111a-1",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Magnaporthales",
+        "family": "Magnaporthaceae",
+        "genus": "Gaeumannomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gtritici.NCBI.GaegraminisV2",
+          "version": "1.0.0",
+          "organism": "Gaeumannomyces tritici R3-111a-1",
+          "assembly": "Gae_graminis_V2",
+          "provider": "NCBI",
+          "accession": "GCF_000145635.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000145635.1/",
+          "file_name": "BSgenome.Gtritici.NCBI.GaegraminisV2_1.0.0.tar.gz",
+          "size": 10872367,
+          "seq_ids": [
+            "NW_008804545.1",
+            "NW_008804546.1",
+            "NW_008804547.1",
+            "NW_008804548.1",
+            "NW_008804549.1"
+          ],
+          "seq_count": 517,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Magnaporthales",
+            "family": "Magnaporthaceae",
+            "genus": "Gaeumannomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-06T12:09:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gtritici.NCBI.GaegraminisV2/BSgenome.Gtritici.NCBI.GaegraminisV2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Galendromus occidentalis",
       "common_name": "western predatory mite",
       "group": "invertebrate",
@@ -55149,6 +55197,38 @@
       "common_name": "",
       "published": "2026-04-06T12:09:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Salkalinus.NCBI.Sodal1/BSgenome.Salkalinus.NCBI.Sodal1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gtritici.NCBI.GaegraminisV2",
+      "version": "1.0.0",
+      "organism": "Gaeumannomyces tritici R3-111a-1",
+      "assembly": "Gae_graminis_V2",
+      "provider": "NCBI",
+      "accession": "GCF_000145635.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000145635.1/",
+      "file_name": "BSgenome.Gtritici.NCBI.GaegraminisV2_1.0.0.tar.gz",
+      "size": 10872367,
+      "seq_ids": [
+        "NW_008804545.1",
+        "NW_008804546.1",
+        "NW_008804547.1",
+        "NW_008804548.1",
+        "NW_008804549.1"
+      ],
+      "seq_count": 517,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Magnaporthales",
+        "family": "Magnaporthaceae",
+        "genus": "Gaeumannomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-06T12:09:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gtritici.NCBI.GaegraminisV2/BSgenome.Gtritici.NCBI.GaegraminisV2_1.0.0.tar.gz"
     }
   ]
 }
