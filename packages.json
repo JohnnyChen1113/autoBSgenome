@@ -4766,6 +4766,52 @@
       ]
     },
     {
+      "organism": "Babesia ovata",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Piroplasmida",
+        "family": "Babesiidae",
+        "genus": "Babesia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bovata.NCBI.Bovata71",
+          "version": "1.0.0",
+          "organism": "Babesia ovata",
+          "assembly": "Bovata_7.1",
+          "provider": "NCBI",
+          "accession": "GCF_002897235.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002897235.1/",
+          "file_name": "BSgenome.Bovata.NCBI.Bovata71_1.0.0.tar.gz",
+          "size": 3579743,
+          "seq_ids": [
+            "NW_021638328.1",
+            "NW_021638329.1",
+            "NW_021638330.1",
+            "NW_021638331.1",
+            "NW_021638332.1"
+          ],
+          "seq_count": 91,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Aconoidasida",
+            "order": "Piroplasmida",
+            "family": "Babesiidae",
+            "genus": "Babesia"
+          },
+          "common_name": "",
+          "published": "2026-04-06T17:49:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bovata.NCBI.Bovata71/BSgenome.Bovata.NCBI.Bovata71_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Babjeviella inositovora NRRL Y-12698",
       "common_name": "",
       "group": "fungi",
@@ -58905,6 +58951,37 @@
       "common_name": "",
       "published": "2026-04-06T17:49:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Enuttalli.NCBI.ENU1v1/BSgenome.Enuttalli.NCBI.ENU1v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bovata.NCBI.Bovata71",
+      "version": "1.0.0",
+      "organism": "Babesia ovata",
+      "assembly": "Bovata_7.1",
+      "provider": "NCBI",
+      "accession": "GCF_002897235.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002897235.1/",
+      "file_name": "BSgenome.Bovata.NCBI.Bovata71_1.0.0.tar.gz",
+      "size": 3579743,
+      "seq_ids": [
+        "NW_021638328.1",
+        "NW_021638329.1",
+        "NW_021638330.1",
+        "NW_021638331.1",
+        "NW_021638332.1"
+      ],
+      "seq_count": 91,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Piroplasmida",
+        "family": "Babesiidae",
+        "genus": "Babesia"
+      },
+      "common_name": "",
+      "published": "2026-04-06T17:49:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bovata.NCBI.Bovata71/BSgenome.Bovata.NCBI.Bovata71_1.0.0.tar.gz"
     }
   ]
 }
