@@ -26658,6 +26658,54 @@
       ]
     },
     {
+      "organism": "Rhizopus delemar RA 99-880",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Mucoromycota",
+        "class": "Mucoromycetes",
+        "order": "Mucorales",
+        "family": "Rhizopodaceae",
+        "genus": "Rhizopus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rdelemar.NCBI.RO3",
+          "version": "1.0.0",
+          "organism": "Rhizopus delemar RA 99-880",
+          "assembly": "RO3",
+          "provider": "NCBI",
+          "accession": "GCF_000149305.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149305.1/",
+          "file_name": "BSgenome.Rdelemar.NCBI.RO3_1.0.0.tar.gz",
+          "size": 11869118,
+          "seq_ids": [
+            "NW_027137854.1",
+            "NW_027137853.1",
+            "NW_027137852.1",
+            "NW_027137851.1",
+            "NW_027137850.1"
+          ],
+          "seq_count": 83,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Mucoromycota",
+            "class": "Mucoromycetes",
+            "order": "Mucorales",
+            "family": "Rhizopodaceae",
+            "genus": "Rhizopus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T13:53:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rdelemar.NCBI.RO3/BSgenome.Rdelemar.NCBI.RO3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhizopus microsporus ATCC 52813",
       "common_name": "",
       "group": "fungi",
@@ -55629,6 +55677,38 @@
       "common_name": "",
       "published": "2026-04-06T13:53:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amulundensis.NCBI.ASM336962v1/BSgenome.Amulundensis.NCBI.ASM336962v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rdelemar.NCBI.RO3",
+      "version": "1.0.0",
+      "organism": "Rhizopus delemar RA 99-880",
+      "assembly": "RO3",
+      "provider": "NCBI",
+      "accession": "GCF_000149305.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000149305.1/",
+      "file_name": "BSgenome.Rdelemar.NCBI.RO3_1.0.0.tar.gz",
+      "size": 11869118,
+      "seq_ids": [
+        "NW_027137854.1",
+        "NW_027137853.1",
+        "NW_027137852.1",
+        "NW_027137851.1",
+        "NW_027137850.1"
+      ],
+      "seq_count": 83,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Mucoromycota",
+        "class": "Mucoromycetes",
+        "order": "Mucorales",
+        "family": "Rhizopodaceae",
+        "genus": "Rhizopus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T13:53:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rdelemar.NCBI.RO3/BSgenome.Rdelemar.NCBI.RO3_1.0.0.tar.gz"
     }
   ]
 }
