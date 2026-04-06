@@ -8684,6 +8684,54 @@
       ]
     },
     {
+      "organism": "Coniophora puteana RWD-64-598 SS2",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Boletales",
+        "family": "Coniophoraceae",
+        "genus": "Coniophora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cputeana.NCBI.Conpu1",
+          "version": "1.0.0",
+          "organism": "Coniophora puteana RWD-64-598 SS2",
+          "assembly": "Conpu1",
+          "provider": "NCBI",
+          "accession": "GCF_000271625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000271625.1/",
+          "file_name": "BSgenome.Cputeana.NCBI.Conpu1_1.0.0.tar.gz",
+          "size": 10878619,
+          "seq_ids": [
+            "NW_006913053.1",
+            "NW_006913054.1",
+            "NW_006913055.1",
+            "NW_006913056.1",
+            "NW_006913057.1"
+          ],
+          "seq_count": 210,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Boletales",
+            "family": "Coniophoraceae",
+            "genus": "Coniophora"
+          },
+          "common_name": "",
+          "published": "2026-04-06T12:08:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cputeana.NCBI.Conpu1/BSgenome.Cputeana.NCBI.Conpu1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Coniosporium apollinis CBS 100218",
       "common_name": "",
       "group": "fungi",
@@ -54749,6 +54797,38 @@
       "common_name": "",
       "published": "2026-04-06T12:08:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slacrymans.NCBI.v10/BSgenome.Slacrymans.NCBI.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cputeana.NCBI.Conpu1",
+      "version": "1.0.0",
+      "organism": "Coniophora puteana RWD-64-598 SS2",
+      "assembly": "Conpu1",
+      "provider": "NCBI",
+      "accession": "GCF_000271625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000271625.1/",
+      "file_name": "BSgenome.Cputeana.NCBI.Conpu1_1.0.0.tar.gz",
+      "size": 10878619,
+      "seq_ids": [
+        "NW_006913053.1",
+        "NW_006913054.1",
+        "NW_006913055.1",
+        "NW_006913056.1",
+        "NW_006913057.1"
+      ],
+      "seq_count": 210,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Boletales",
+        "family": "Coniophoraceae",
+        "genus": "Coniophora"
+      },
+      "common_name": "",
+      "published": "2026-04-06T12:08:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cputeana.NCBI.Conpu1/BSgenome.Cputeana.NCBI.Conpu1_1.0.0.tar.gz"
     }
   ]
 }
