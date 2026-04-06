@@ -3149,3 +3149,7 @@ NeedsCompilation: no
 Package: BSgenome.Eacervulina.NCBI.EAH001
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Falba.NCBI.FontalbaATCC38817V2
+Version: 1.0.0
+NeedsCompilation: no

@@ -15614,6 +15614,48 @@
       ]
     },
     {
+      "organism": "Fonticula alba",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "order": "Rotosphaerida",
+        "family": "Fonticulaceae",
+        "genus": "Fonticula"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Falba.NCBI.FontalbaATCC38817V2",
+          "version": "1.0.0",
+          "organism": "Fonticula alba",
+          "assembly": "Font_alba_ATCC_38817_V2",
+          "provider": "NCBI",
+          "accession": "GCF_000388065.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000388065.1/",
+          "file_name": "BSgenome.Falba.NCBI.FontalbaATCC38817V2_1.0.0.tar.gz",
+          "size": 6855849,
+          "seq_ids": [
+            "NW_009242971.1",
+            "NW_009242972.1",
+            "NW_009242973.1",
+            "NW_009242974.1",
+            "NW_009242975.1"
+          ],
+          "seq_count": 214,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "order": "Rotosphaerida",
+            "family": "Fonticulaceae",
+            "genus": "Fonticula"
+          },
+          "common_name": "",
+          "published": "2026-04-06T22:52:02Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Falba.NCBI.FontalbaATCC38817V2/BSgenome.Falba.NCBI.FontalbaATCC38817V2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fopius arisanus",
       "common_name": "",
       "group": "invertebrate",
@@ -62271,6 +62313,35 @@
       "common_name": "",
       "published": "2026-04-06T22:03:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eacervulina.NCBI.EAH001/BSgenome.Eacervulina.NCBI.EAH001_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Falba.NCBI.FontalbaATCC38817V2",
+      "version": "1.0.0",
+      "organism": "Fonticula alba",
+      "assembly": "Font_alba_ATCC_38817_V2",
+      "provider": "NCBI",
+      "accession": "GCF_000388065.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000388065.1/",
+      "file_name": "BSgenome.Falba.NCBI.FontalbaATCC38817V2_1.0.0.tar.gz",
+      "size": 6855849,
+      "seq_ids": [
+        "NW_009242971.1",
+        "NW_009242972.1",
+        "NW_009242973.1",
+        "NW_009242974.1",
+        "NW_009242975.1"
+      ],
+      "seq_count": 214,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "order": "Rotosphaerida",
+        "family": "Fonticulaceae",
+        "genus": "Fonticula"
+      },
+      "common_name": "",
+      "published": "2026-04-06T22:52:02Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Falba.NCBI.FontalbaATCC38817V2/BSgenome.Falba.NCBI.FontalbaATCC38817V2_1.0.0.tar.gz"
     }
   ]
 }
