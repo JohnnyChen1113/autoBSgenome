@@ -28225,6 +28225,54 @@
       ]
     },
     {
+      "organism": "Sodiomyces alkalinus F11",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Plectosphaerellaceae",
+        "genus": "Sodiomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Salkalinus.NCBI.Sodal1",
+          "version": "1.0.0",
+          "organism": "Sodiomyces alkalinus F11",
+          "assembly": "Sodal1",
+          "provider": "NCBI",
+          "accession": "GCF_003711515.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003711515.1/",
+          "file_name": "BSgenome.Salkalinus.NCBI.Sodal1_1.0.0.tar.gz",
+          "size": 11353352,
+          "seq_ids": [
+            "NW_021167079.1",
+            "NW_021167080.1",
+            "NW_021167081.1",
+            "NW_021167082.1",
+            "NW_021167083.1"
+          ],
+          "seq_count": 29,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Glomerellales",
+            "family": "Plectosphaerellaceae",
+            "genus": "Sodiomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-06T12:09:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Salkalinus.NCBI.Sodal1/BSgenome.Salkalinus.NCBI.Sodal1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Solanum pennellii",
       "common_name": "",
       "group": "plant",
@@ -55069,6 +55117,38 @@
       "common_name": "",
       "published": "2026-04-06T12:08:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sapiospermum.NCBI.ScApio10/BSgenome.Sapiospermum.NCBI.ScApio10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Salkalinus.NCBI.Sodal1",
+      "version": "1.0.0",
+      "organism": "Sodiomyces alkalinus F11",
+      "assembly": "Sodal1",
+      "provider": "NCBI",
+      "accession": "GCF_003711515.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003711515.1/",
+      "file_name": "BSgenome.Salkalinus.NCBI.Sodal1_1.0.0.tar.gz",
+      "size": 11353352,
+      "seq_ids": [
+        "NW_021167079.1",
+        "NW_021167080.1",
+        "NW_021167081.1",
+        "NW_021167082.1",
+        "NW_021167083.1"
+      ],
+      "seq_count": 29,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Plectosphaerellaceae",
+        "genus": "Sodiomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-06T12:09:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Salkalinus.NCBI.Sodal1/BSgenome.Salkalinus.NCBI.Sodal1_1.0.0.tar.gz"
     }
   ]
 }

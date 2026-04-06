@@ -2773,3 +2773,7 @@ NeedsCompilation: no
 Package: BSgenome.Sapiospermum.NCBI.ScApio10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Salkalinus.NCBI.Sodal1
+Version: 1.0.0
+NeedsCompilation: no
