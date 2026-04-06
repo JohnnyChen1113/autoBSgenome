@@ -13676,6 +13676,54 @@
       ]
     },
     {
+      "organism": "Exserohilum turcica Et28A",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Exserohilum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Eturcica.NCBI.SetospaeriatrucicaEt28Av10",
+          "version": "1.0.0",
+          "organism": "Exserohilum turcica Et28A",
+          "assembly": "Setospaeria trucica Et28A v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000359705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000359705.1/",
+          "file_name": "BSgenome.Eturcica.NCBI.SetospaeriatrucicaEt28Av10_1.0.0.tar.gz",
+          "size": 9968263,
+          "seq_ids": [
+            "NW_007359914.1",
+            "NW_007359915.1",
+            "NW_007359916.1",
+            "NW_007359917.1",
+            "NW_007359918.1"
+          ],
+          "seq_count": 407,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Pleosporaceae",
+            "genus": "Exserohilum"
+          },
+          "common_name": "",
+          "published": "2026-04-06T12:08:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eturcica.NCBI.SetospaeriatrucicaEt28Av10/BSgenome.Eturcica.NCBI.SetospaeriatrucicaEt28Av10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fibroporia radiculosa",
       "common_name": "",
       "group": "fungi",
@@ -54829,6 +54877,38 @@
       "common_name": "",
       "published": "2026-04-06T12:08:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cputeana.NCBI.Conpu1/BSgenome.Cputeana.NCBI.Conpu1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Eturcica.NCBI.SetospaeriatrucicaEt28Av10",
+      "version": "1.0.0",
+      "organism": "Exserohilum turcica Et28A",
+      "assembly": "Setospaeria trucica Et28A v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000359705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000359705.1/",
+      "file_name": "BSgenome.Eturcica.NCBI.SetospaeriatrucicaEt28Av10_1.0.0.tar.gz",
+      "size": 9968263,
+      "seq_ids": [
+        "NW_007359914.1",
+        "NW_007359915.1",
+        "NW_007359916.1",
+        "NW_007359917.1",
+        "NW_007359918.1"
+      ],
+      "seq_count": 407,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Exserohilum"
+      },
+      "common_name": "",
+      "published": "2026-04-06T12:08:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eturcica.NCBI.SetospaeriatrucicaEt28Av10/BSgenome.Eturcica.NCBI.SetospaeriatrucicaEt28Av10_1.0.0.tar.gz"
     }
   ]
 }

@@ -2761,3 +2761,7 @@ NeedsCompilation: no
 Package: BSgenome.Cputeana.NCBI.Conpu1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eturcica.NCBI.SetospaeriatrucicaEt28Av10
+Version: 1.0.0
+NeedsCompilation: no
