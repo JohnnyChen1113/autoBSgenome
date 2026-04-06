@@ -30810,6 +30810,54 @@
       ]
     },
     {
+      "organism": "Trametes versicolor FP-101664 SS1",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Polyporaceae",
+        "genus": "Trametes"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tversicolor.NCBI.Trametesversicolorv10",
+          "version": "1.0.0",
+          "organism": "Trametes versicolor FP-101664 SS1",
+          "assembly": "Trametes versicolor v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000271585.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000271585.1/",
+          "file_name": "BSgenome.Tversicolor.NCBI.Trametesversicolorv10_1.0.0.tar.gz",
+          "size": 11245510,
+          "seq_ids": [
+            "NW_007360321.1",
+            "NW_007360322.1",
+            "NW_007360323.1",
+            "NW_007360324.1",
+            "NW_007360325.1"
+          ],
+          "seq_count": 283,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Polyporales",
+            "family": "Polyporaceae",
+            "genus": "Trametes"
+          },
+          "common_name": "",
+          "published": "2026-04-06T12:09:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tversicolor.NCBI.Trametesversicolorv10/BSgenome.Tversicolor.NCBI.Trametesversicolorv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tremella mesenterica DSM 1558",
       "common_name": "",
       "group": "fungi",
@@ -55389,6 +55437,38 @@
       "common_name": "",
       "published": "2026-04-06T12:09:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvexata.NCBI.Pseve2/BSgenome.Pvexata.NCBI.Pseve2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tversicolor.NCBI.Trametesversicolorv10",
+      "version": "1.0.0",
+      "organism": "Trametes versicolor FP-101664 SS1",
+      "assembly": "Trametes versicolor v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000271585.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000271585.1/",
+      "file_name": "BSgenome.Tversicolor.NCBI.Trametesversicolorv10_1.0.0.tar.gz",
+      "size": 11245510,
+      "seq_ids": [
+        "NW_007360321.1",
+        "NW_007360322.1",
+        "NW_007360323.1",
+        "NW_007360324.1",
+        "NW_007360325.1"
+      ],
+      "seq_count": 283,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Polyporaceae",
+        "genus": "Trametes"
+      },
+      "common_name": "",
+      "published": "2026-04-06T12:09:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tversicolor.NCBI.Trametesversicolorv10/BSgenome.Tversicolor.NCBI.Trametesversicolorv10_1.0.0.tar.gz"
     }
   ]
 }

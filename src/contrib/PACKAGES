@@ -2789,3 +2789,7 @@ NeedsCompilation: no
 Package: BSgenome.Pvexata.NCBI.Pseve2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tversicolor.NCBI.Trametesversicolorv10
+Version: 1.0.0
+NeedsCompilation: no
