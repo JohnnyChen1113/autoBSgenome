@@ -16974,6 +16974,54 @@
       ]
     },
     {
+      "organism": "Lentinus tigrinus ALCF2SS1-7",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Polyporaceae",
+        "genus": "Lentinus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ltigrinus.NCBI.Lenti71",
+          "version": "1.0.0",
+          "organism": "Lentinus tigrinus ALCF2SS1-7",
+          "assembly": "Lenti7_1",
+          "provider": "NCBI",
+          "accession": "GCF_003813185.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003813185.1/",
+          "file_name": "BSgenome.Ltigrinus.NCBI.Lenti71_1.0.0.tar.gz",
+          "size": 10254387,
+          "seq_ids": [
+            "NW_027137910.1",
+            "NW_027137911.1",
+            "NW_027137912.1",
+            "NW_027137913.1",
+            "NW_027137914.1"
+          ],
+          "seq_count": 207,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Polyporales",
+            "family": "Polyporaceae",
+            "genus": "Lentinus"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:13:21Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ltigrinus.NCBI.Lenti71/BSgenome.Ltigrinus.NCBI.Lenti71_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lepidothrix coronata",
       "common_name": "blue-crowned manakin",
       "group": "vertebrate_other",
@@ -53149,6 +53197,38 @@
       "common_name": "",
       "published": "2026-04-06T10:13:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Glozoyensis.NCBI.GLAREA/BSgenome.Glozoyensis.NCBI.GLAREA_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ltigrinus.NCBI.Lenti71",
+      "version": "1.0.0",
+      "organism": "Lentinus tigrinus ALCF2SS1-7",
+      "assembly": "Lenti7_1",
+      "provider": "NCBI",
+      "accession": "GCF_003813185.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003813185.1/",
+      "file_name": "BSgenome.Ltigrinus.NCBI.Lenti71_1.0.0.tar.gz",
+      "size": 10254387,
+      "seq_ids": [
+        "NW_027137910.1",
+        "NW_027137911.1",
+        "NW_027137912.1",
+        "NW_027137913.1",
+        "NW_027137914.1"
+      ],
+      "seq_count": 207,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Polyporaceae",
+        "genus": "Lentinus"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:13:21Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ltigrinus.NCBI.Lenti71/BSgenome.Ltigrinus.NCBI.Lenti71_1.0.0.tar.gz"
     }
   ]
 }
