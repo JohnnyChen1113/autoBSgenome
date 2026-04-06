@@ -2889,3 +2889,7 @@ NeedsCompilation: no
 Package: BSgenome.Tmelanosporum.NCBI.ASM15164v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmicroti.NCBI.ASM69194v2
+Version: 1.0.0
+NeedsCompilation: no
