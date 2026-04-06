@@ -2805,3 +2805,7 @@ NeedsCompilation: no
 Package: BSgenome.Rdelemar.NCBI.RO3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcarnosa.NCBI.PhanerochaetecarnosaHHB10118Spv10
+Version: 1.0.0
+NeedsCompilation: no
