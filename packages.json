@@ -5432,6 +5432,50 @@
       ]
     },
     {
+      "organism": "Blastocystis hominis",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Bigyra",
+        "order": "Opalinata",
+        "family": "Blastocystidae",
+        "genus": "Blastocystis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bhominis.NCBI.ASM15166v1",
+          "version": "1.0.0",
+          "organism": "Blastocystis hominis",
+          "assembly": "ASM15166v1",
+          "provider": "NCBI",
+          "accession": "GCF_000151665.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000151665.1/",
+          "file_name": "BSgenome.Bhominis.NCBI.ASM15166v1_1.0.0.tar.gz",
+          "size": 4880558,
+          "seq_ids": [
+            "NW_013171815.1",
+            "NW_013171816.1",
+            "NW_013171817.1",
+            "NW_013171818.1",
+            "NW_013171819.1"
+          ],
+          "seq_count": 54,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "class": "Bigyra",
+            "order": "Opalinata",
+            "family": "Blastocystidae",
+            "genus": "Blastocystis"
+          },
+          "common_name": "",
+          "published": "2026-04-06T17:50:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bhominis.NCBI.ASM15166v1/BSgenome.Bhominis.NCBI.ASM15166v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Blastomyces dermatitidis ER-3",
       "common_name": "",
       "group": "fungi",
@@ -59133,6 +59177,36 @@
       "common_name": "",
       "published": "2026-04-06T17:50:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmerolae.NCBI.ASM9120v1/BSgenome.Cmerolae.NCBI.ASM9120v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bhominis.NCBI.ASM15166v1",
+      "version": "1.0.0",
+      "organism": "Blastocystis hominis",
+      "assembly": "ASM15166v1",
+      "provider": "NCBI",
+      "accession": "GCF_000151665.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000151665.1/",
+      "file_name": "BSgenome.Bhominis.NCBI.ASM15166v1_1.0.0.tar.gz",
+      "size": 4880558,
+      "seq_ids": [
+        "NW_013171815.1",
+        "NW_013171816.1",
+        "NW_013171817.1",
+        "NW_013171818.1",
+        "NW_013171819.1"
+      ],
+      "seq_count": 54,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Bigyra",
+        "order": "Opalinata",
+        "family": "Blastocystidae",
+        "genus": "Blastocystis"
+      },
+      "common_name": "",
+      "published": "2026-04-06T17:50:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bhominis.NCBI.ASM15166v1/BSgenome.Bhominis.NCBI.ASM15166v1_1.0.0.tar.gz"
     }
   ]
 }
