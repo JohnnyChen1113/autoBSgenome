@@ -2525,3 +2525,7 @@ NeedsCompilation: no
 Package: BSgenome.Ajaponicus.NCBI.Aspjap1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dcorticola.NCBI.ASM188384v1
+Version: 1.0.0
+NeedsCompilation: no

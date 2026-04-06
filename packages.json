@@ -10132,6 +10132,54 @@
       ]
     },
     {
+      "organism": "Diplodia corticola",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Botryosphaeriales",
+        "family": "Botryosphaeriaceae",
+        "genus": "Diplodia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dcorticola.NCBI.ASM188384v1",
+          "version": "1.0.0",
+          "organism": "Diplodia corticola",
+          "assembly": "ASM188384v1",
+          "provider": "NCBI",
+          "accession": "GCF_001883845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001883845.1/",
+          "file_name": "BSgenome.Dcorticola.NCBI.ASM188384v1_1.0.0.tar.gz",
+          "size": 9355295,
+          "seq_ids": [
+            "NW_017971480.1",
+            "NW_017971489.1",
+            "NW_017971579.1",
+            "NW_017971580.1",
+            "NW_017971581.1"
+          ],
+          "seq_count": 181,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Botryosphaeriales",
+            "family": "Botryosphaeriaceae",
+            "genus": "Diplodia"
+          },
+          "common_name": "",
+          "published": "2026-04-06T05:27:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcorticola.NCBI.ASM188384v1/BSgenome.Dcorticola.NCBI.ASM188384v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dipodomys ordii",
       "common_name": "Ord's kangaroo rat",
       "group": "vertebrate_mammalian",
@@ -50133,6 +50181,38 @@
       "common_name": "",
       "published": "2026-04-06T02:43:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ajaponicus.NCBI.Aspjap1/BSgenome.Ajaponicus.NCBI.Aspjap1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dcorticola.NCBI.ASM188384v1",
+      "version": "1.0.0",
+      "organism": "Diplodia corticola",
+      "assembly": "ASM188384v1",
+      "provider": "NCBI",
+      "accession": "GCF_001883845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001883845.1/",
+      "file_name": "BSgenome.Dcorticola.NCBI.ASM188384v1_1.0.0.tar.gz",
+      "size": 9355295,
+      "seq_ids": [
+        "NW_017971480.1",
+        "NW_017971489.1",
+        "NW_017971579.1",
+        "NW_017971580.1",
+        "NW_017971581.1"
+      ],
+      "seq_count": 181,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Botryosphaeriales",
+        "family": "Botryosphaeriaceae",
+        "genus": "Diplodia"
+      },
+      "common_name": "",
+      "published": "2026-04-06T05:27:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcorticola.NCBI.ASM188384v1/BSgenome.Dcorticola.NCBI.ASM188384v1_1.0.0.tar.gz"
     }
   ]
 }
