@@ -35036,6 +35036,52 @@
       ]
     },
     {
+      "organism": "Toxoplasma gondii ME49",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Sarcocystidae",
+        "genus": "Toxoplasma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tgondii.NCBI.TGA4",
+          "version": "1.0.0",
+          "organism": "Toxoplasma gondii ME49",
+          "assembly": "TGA4",
+          "provider": "NCBI",
+          "accession": "GCF_000006565.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000006565.2/",
+          "file_name": "BSgenome.Tgondii.NCBI.TGA4_1.0.0.tar.gz",
+          "size": 17090703,
+          "seq_ids": [
+            "NC_031467.1",
+            "NC_031468.1",
+            "NC_031469.1",
+            "NC_031470.1",
+            "NC_031471.1"
+          ],
+          "seq_count": 2264,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Conoidasida",
+            "order": "Eucoccidiorida",
+            "family": "Sarcocystidae",
+            "genus": "Toxoplasma"
+          },
+          "common_name": "",
+          "published": "2026-04-06T23:40:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgondii.NCBI.TGA4/BSgenome.Tgondii.NCBI.TGA4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trachymyrmex cornetzi",
       "common_name": "",
       "group": "invertebrate",
@@ -63254,6 +63300,37 @@
       "common_name": "",
       "published": "2026-04-06T23:39:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sdiclina.NCBI.SapdiclinaVS20V1/BSgenome.Sdiclina.NCBI.SapdiclinaVS20V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tgondii.NCBI.TGA4",
+      "version": "1.0.0",
+      "organism": "Toxoplasma gondii ME49",
+      "assembly": "TGA4",
+      "provider": "NCBI",
+      "accession": "GCF_000006565.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000006565.2/",
+      "file_name": "BSgenome.Tgondii.NCBI.TGA4_1.0.0.tar.gz",
+      "size": 17090703,
+      "seq_ids": [
+        "NC_031467.1",
+        "NC_031468.1",
+        "NC_031469.1",
+        "NC_031470.1",
+        "NC_031471.1"
+      ],
+      "seq_count": 2264,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Sarcocystidae",
+        "genus": "Toxoplasma"
+      },
+      "common_name": "",
+      "published": "2026-04-06T23:40:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgondii.NCBI.TGA4/BSgenome.Tgondii.NCBI.TGA4_1.0.0.tar.gz"
     }
   ]
 }
