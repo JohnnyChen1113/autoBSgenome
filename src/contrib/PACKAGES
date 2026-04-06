@@ -2893,3 +2893,7 @@ NeedsCompilation: no
 Package: BSgenome.Bmicroti.NCBI.ASM69194v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bbovis.NCBI.ASM16539v2
+Version: 1.0.0
+NeedsCompilation: no
