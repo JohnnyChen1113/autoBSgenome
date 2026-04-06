@@ -19186,6 +19186,38 @@
       ]
     },
     {
+      "organism": "Leishmania mexicana MHOM/GT/2001/U1103",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Lmexicana.NCBI.ASM23466v4",
+          "version": "1.0.0",
+          "organism": "Leishmania mexicana MHOM/GT/2001/U1103",
+          "assembly": "ASM23466v4",
+          "provider": "NCBI",
+          "accession": "GCF_000234665.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000234665.1/",
+          "file_name": "BSgenome.Lmexicana.NCBI.ASM23466v4_1.0.0.tar.gz",
+          "size": 8527150,
+          "seq_ids": [
+            "NC_018305.1",
+            "NC_018306.1",
+            "NC_018307.1",
+            "NC_018308.1",
+            "NC_018309.1"
+          ],
+          "seq_count": 588,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-06T21:06:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lmexicana.NCBI.ASM23466v4/BSgenome.Lmexicana.NCBI.ASM23466v4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Leishmania panamensis",
       "common_name": "",
       "group": "other",
@@ -61223,6 +61255,30 @@
       "common_name": "",
       "published": "2026-04-06T21:06:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbraziliensis.NCBI.ASM284v2/BSgenome.Lbraziliensis.NCBI.ASM284v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lmexicana.NCBI.ASM23466v4",
+      "version": "1.0.0",
+      "organism": "Leishmania mexicana MHOM/GT/2001/U1103",
+      "assembly": "ASM23466v4",
+      "provider": "NCBI",
+      "accession": "GCF_000234665.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000234665.1/",
+      "file_name": "BSgenome.Lmexicana.NCBI.ASM23466v4_1.0.0.tar.gz",
+      "size": 8527150,
+      "seq_ids": [
+        "NC_018305.1",
+        "NC_018306.1",
+        "NC_018307.1",
+        "NC_018308.1",
+        "NC_018309.1"
+      ],
+      "seq_count": 588,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-06T21:06:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lmexicana.NCBI.ASM23466v4/BSgenome.Lmexicana.NCBI.ASM23466v4_1.0.0.tar.gz"
     }
   ]
 }

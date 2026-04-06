@@ -3093,3 +3093,7 @@ NeedsCompilation: no
 Package: BSgenome.Lbraziliensis.NCBI.ASM284v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lmexicana.NCBI.ASM23466v4
+Version: 1.0.0
+NeedsCompilation: no
