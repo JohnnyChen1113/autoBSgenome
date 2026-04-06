@@ -31946,6 +31946,54 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zrouxii.NCBI.ASM2636v1/BSgenome.Zrouxii.NCBI.ASM2636v1_1.0.0.tar.gz"
         }
       ]
+    },
+    {
+      "organism": "Zymoseptoria tritici IPO323",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Zymoseptoria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ztritici.NCBI.MYCGRv20",
+          "version": "1.0.0",
+          "organism": "Zymoseptoria tritici IPO323",
+          "assembly": "MYCGR v2.0",
+          "provider": "NCBI",
+          "accession": "GCF_000219625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000219625.1/",
+          "file_name": "BSgenome.Ztritici.NCBI.MYCGRv20_1.0.0.tar.gz",
+          "size": 10227267,
+          "seq_ids": [
+            "NC_018218.1",
+            "NC_018217.1",
+            "NC_018216.1",
+            "NC_018215.1",
+            "NC_018214.1"
+          ],
+          "seq_count": 21,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Mycosphaerellales",
+            "family": "Mycosphaerellaceae",
+            "genus": "Zymoseptoria"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:13:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ztritici.NCBI.MYCGRv20/BSgenome.Ztritici.NCBI.MYCGRv20_1.0.0.tar.gz"
+        }
+      ]
     }
   ],
   "flat": [
@@ -53229,6 +53277,38 @@
       "common_name": "",
       "published": "2026-04-06T10:13:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ltigrinus.NCBI.Lenti71/BSgenome.Ltigrinus.NCBI.Lenti71_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ztritici.NCBI.MYCGRv20",
+      "version": "1.0.0",
+      "organism": "Zymoseptoria tritici IPO323",
+      "assembly": "MYCGR v2.0",
+      "provider": "NCBI",
+      "accession": "GCF_000219625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000219625.1/",
+      "file_name": "BSgenome.Ztritici.NCBI.MYCGRv20_1.0.0.tar.gz",
+      "size": 10227267,
+      "seq_ids": [
+        "NC_018218.1",
+        "NC_018217.1",
+        "NC_018216.1",
+        "NC_018215.1",
+        "NC_018214.1"
+      ],
+      "seq_count": 21,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Zymoseptoria"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:13:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ztritici.NCBI.MYCGRv20/BSgenome.Ztritici.NCBI.MYCGRv20_1.0.0.tar.gz"
     }
   ]
 }
