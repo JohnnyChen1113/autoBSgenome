@@ -2641,3 +2641,7 @@ NeedsCompilation: no
 Package: BSgenome.Psporulosa.NCBI.Parsp1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dchildiae.NCBI.DalchJS1345
+Version: 1.0.0
+NeedsCompilation: no
