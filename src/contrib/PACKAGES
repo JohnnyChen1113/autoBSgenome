@@ -2821,3 +2821,7 @@ NeedsCompilation: no
 Package: BSgenome.Corchidophilum.NCBI.CORC01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppennisetigena.NCBI.PpBr36
+Version: 1.0.0
+NeedsCompilation: no

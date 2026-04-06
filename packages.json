@@ -26330,6 +26330,54 @@
       ]
     },
     {
+      "organism": "Pyricularia pennisetigena",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Magnaporthales",
+        "family": "Pyriculariaceae",
+        "genus": "Pyricularia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ppennisetigena.NCBI.PpBr36",
+          "version": "1.0.0",
+          "organism": "Pyricularia pennisetigena",
+          "assembly": "PpBr36",
+          "provider": "NCBI",
+          "accession": "GCF_004337985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004337985.1/",
+          "file_name": "BSgenome.Ppennisetigena.NCBI.PpBr36_1.0.0.tar.gz",
+          "size": 12618688,
+          "seq_ids": [
+            "NC_043740.1",
+            "NC_043741.1",
+            "NC_043742.1",
+            "NW_021940923.1",
+            "NW_021940918.1"
+          ],
+          "seq_count": 108,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Magnaporthales",
+            "family": "Pyriculariaceae",
+            "genus": "Pyricularia"
+          },
+          "common_name": "",
+          "published": "2026-04-06T13:54:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppennisetigena.NCBI.PpBr36/BSgenome.Ppennisetigena.NCBI.PpBr36_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Python bivittatus",
       "common_name": "Burmese python",
       "group": "vertebrate_other",
@@ -56029,6 +56077,38 @@
       "common_name": "",
       "published": "2026-04-06T13:54:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Corchidophilum.NCBI.CORC01/BSgenome.Corchidophilum.NCBI.CORC01_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ppennisetigena.NCBI.PpBr36",
+      "version": "1.0.0",
+      "organism": "Pyricularia pennisetigena",
+      "assembly": "PpBr36",
+      "provider": "NCBI",
+      "accession": "GCF_004337985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004337985.1/",
+      "file_name": "BSgenome.Ppennisetigena.NCBI.PpBr36_1.0.0.tar.gz",
+      "size": 12618688,
+      "seq_ids": [
+        "NC_043740.1",
+        "NC_043741.1",
+        "NC_043742.1",
+        "NW_021940923.1",
+        "NW_021940918.1"
+      ],
+      "seq_count": 108,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Magnaporthales",
+        "family": "Pyriculariaceae",
+        "genus": "Pyricularia"
+      },
+      "common_name": "",
+      "published": "2026-04-06T13:54:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppennisetigena.NCBI.PpBr36/BSgenome.Ppennisetigena.NCBI.PpBr36_1.0.0.tar.gz"
     }
   ]
 }
