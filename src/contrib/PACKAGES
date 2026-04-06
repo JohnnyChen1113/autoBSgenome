@@ -2917,3 +2917,7 @@ NeedsCompilation: no
 Package: BSgenome.Torientalis.NCBI.ASM74089v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hbicolor.NCBI.Melbi2
+Version: 1.0.0
+NeedsCompilation: no
