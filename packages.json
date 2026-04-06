@@ -25786,6 +25786,52 @@
       ]
     },
     {
+      "organism": "Paramecium tetraurelia",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Ciliophora",
+        "class": "Oligohymenophorea",
+        "order": "Peniculida",
+        "family": "Parameciidae",
+        "genus": "Paramecium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ptetraurelia.NCBI.ASM16542v1",
+          "version": "1.0.0",
+          "organism": "Paramecium tetraurelia",
+          "assembly": "ASM16542v1",
+          "provider": "NCBI",
+          "accession": "GCF_000165425.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000165425.1/",
+          "file_name": "BSgenome.Ptetraurelia.NCBI.ASM16542v1_1.0.0.tar.gz",
+          "size": 19168187,
+          "seq_ids": [
+            "NW_001798954.1",
+            "NW_001798955.1",
+            "NW_001798956.1",
+            "NW_001798957.1",
+            "NW_001798958.1"
+          ],
+          "seq_count": 697,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Ciliophora",
+            "class": "Oligohymenophorea",
+            "order": "Peniculida",
+            "family": "Parameciidae",
+            "genus": "Paramecium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T23:40:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptetraurelia.NCBI.ASM16542v1/BSgenome.Ptetraurelia.NCBI.ASM16542v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Paraphaeosphaeria sporulosa",
       "common_name": "",
       "group": "fungi",
@@ -63482,6 +63528,37 @@
       "common_name": "",
       "published": "2026-04-06T23:40:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1/BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ptetraurelia.NCBI.ASM16542v1",
+      "version": "1.0.0",
+      "organism": "Paramecium tetraurelia",
+      "assembly": "ASM16542v1",
+      "provider": "NCBI",
+      "accession": "GCF_000165425.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000165425.1/",
+      "file_name": "BSgenome.Ptetraurelia.NCBI.ASM16542v1_1.0.0.tar.gz",
+      "size": 19168187,
+      "seq_ids": [
+        "NW_001798954.1",
+        "NW_001798955.1",
+        "NW_001798956.1",
+        "NW_001798957.1",
+        "NW_001798958.1"
+      ],
+      "seq_count": 697,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Ciliophora",
+        "class": "Oligohymenophorea",
+        "order": "Peniculida",
+        "family": "Parameciidae",
+        "genus": "Paramecium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T23:40:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptetraurelia.NCBI.ASM16542v1/BSgenome.Ptetraurelia.NCBI.ASM16542v1_1.0.0.tar.gz"
     }
   ]
 }

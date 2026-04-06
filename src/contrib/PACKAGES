@@ -3213,3 +3213,7 @@ NeedsCompilation: no
 Package: BSgenome.Ainvadans.NCBI.AphainvaNJM9701V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptetraurelia.NCBI.ASM16542v1
+Version: 1.0.0
+NeedsCompilation: no
