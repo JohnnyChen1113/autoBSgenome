@@ -26257,6 +26257,54 @@
       ]
     },
     {
+      "organism": "Sclerotinia sclerotiorum 1980 UF-70",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Sclerotiniaceae",
+        "genus": "Sclerotinia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ssclerotiorum.NCBI.ASM14694v2",
+          "version": "1.0.0",
+          "organism": "Sclerotinia sclerotiorum 1980 UF-70",
+          "assembly": "ASM14694v2",
+          "provider": "NCBI",
+          "accession": "GCF_000146945.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000146945.2/",
+          "file_name": "BSgenome.Ssclerotiorum.NCBI.ASM14694v2_1.0.0.tar.gz",
+          "size": 9985270,
+          "seq_ids": [
+            "NW_001820802.1",
+            "NW_001820803.1",
+            "NW_001820804.1",
+            "NW_001820805.1",
+            "NW_001820806.1"
+          ],
+          "seq_count": 37,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Helotiales",
+            "family": "Sclerotiniaceae",
+            "genus": "Sclerotinia"
+          },
+          "common_name": "",
+          "published": "2026-04-06T08:55:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssclerotiorum.NCBI.ASM14694v2/BSgenome.Ssclerotiorum.NCBI.ASM14694v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Selaginella moellendorffii",
       "common_name": "",
       "group": "plant",
@@ -52269,6 +52317,38 @@
       "common_name": "",
       "published": "2026-04-06T08:55:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1/BSgenome.Eoligosperma.NCBI.ExopoligCBS72588V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ssclerotiorum.NCBI.ASM14694v2",
+      "version": "1.0.0",
+      "organism": "Sclerotinia sclerotiorum 1980 UF-70",
+      "assembly": "ASM14694v2",
+      "provider": "NCBI",
+      "accession": "GCF_000146945.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000146945.2/",
+      "file_name": "BSgenome.Ssclerotiorum.NCBI.ASM14694v2_1.0.0.tar.gz",
+      "size": 9985270,
+      "seq_ids": [
+        "NW_001820802.1",
+        "NW_001820803.1",
+        "NW_001820804.1",
+        "NW_001820805.1",
+        "NW_001820806.1"
+      ],
+      "seq_count": 37,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Sclerotiniaceae",
+        "genus": "Sclerotinia"
+      },
+      "common_name": "",
+      "published": "2026-04-06T08:55:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssclerotiorum.NCBI.ASM14694v2/BSgenome.Ssclerotiorum.NCBI.ASM14694v2_1.0.0.tar.gz"
     }
   ]
 }
