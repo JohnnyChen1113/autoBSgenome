@@ -2797,3 +2797,7 @@ NeedsCompilation: no
 Package: BSgenome.Pchlamydosporia.NCBI.ASM165323v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amulundensis.NCBI.ASM336962v1
+Version: 1.0.0
+NeedsCompilation: no
