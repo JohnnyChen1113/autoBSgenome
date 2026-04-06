@@ -15470,6 +15470,52 @@
       ]
     },
     {
+      "organism": "Galdieria sulphuraria",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Rhodophyta",
+        "class": "Bangiophyceae",
+        "order": "Galdieriales",
+        "family": "Galdieriaceae",
+        "genus": "Galdieria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gsulphuraria.NCBI.ASM34128v1",
+          "version": "1.0.0",
+          "organism": "Galdieria sulphuraria",
+          "assembly": "ASM34128v1",
+          "provider": "NCBI",
+          "accession": "GCF_000341285.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000341285.1/",
+          "file_name": "BSgenome.Gsulphuraria.NCBI.ASM34128v1_1.0.0.tar.gz",
+          "size": 3458796,
+          "seq_ids": [
+            "NW_005178475.1",
+            "NW_005178474.1",
+            "NW_005178473.1",
+            "NW_005178472.1",
+            "NW_005178471.1"
+          ],
+          "seq_count": 433,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Rhodophyta",
+            "class": "Bangiophyceae",
+            "order": "Galdieriales",
+            "family": "Galdieriaceae",
+            "genus": "Galdieria"
+          },
+          "common_name": "",
+          "published": "2026-04-06T16:54:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsulphuraria.NCBI.ASM34128v1/BSgenome.Gsulphuraria.NCBI.ASM34128v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Galendromus occidentalis",
       "common_name": "western predatory mite",
       "group": "invertebrate",
@@ -58446,6 +58492,37 @@
       "common_name": "",
       "published": "2026-04-06T16:54:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gduodenalis.NCBI.UUWB21/BSgenome.Gduodenalis.NCBI.UUWB21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gsulphuraria.NCBI.ASM34128v1",
+      "version": "1.0.0",
+      "organism": "Galdieria sulphuraria",
+      "assembly": "ASM34128v1",
+      "provider": "NCBI",
+      "accession": "GCF_000341285.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000341285.1/",
+      "file_name": "BSgenome.Gsulphuraria.NCBI.ASM34128v1_1.0.0.tar.gz",
+      "size": 3458796,
+      "seq_ids": [
+        "NW_005178475.1",
+        "NW_005178474.1",
+        "NW_005178473.1",
+        "NW_005178472.1",
+        "NW_005178471.1"
+      ],
+      "seq_count": 433,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Rhodophyta",
+        "class": "Bangiophyceae",
+        "order": "Galdieriales",
+        "family": "Galdieriaceae",
+        "genus": "Galdieria"
+      },
+      "common_name": "",
+      "published": "2026-04-06T16:54:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsulphuraria.NCBI.ASM34128v1/BSgenome.Gsulphuraria.NCBI.ASM34128v1_1.0.0.tar.gz"
     }
   ]
 }
