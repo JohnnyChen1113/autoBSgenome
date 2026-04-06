@@ -26172,6 +26172,52 @@
       ]
     },
     {
+      "organism": "Plasmodium vivax",
+      "common_name": "malaria parasite P. vivax",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pvivax.NCBI.ASM241v2",
+          "version": "1.0.0",
+          "organism": "Plasmodium vivax",
+          "assembly": "ASM241v2",
+          "provider": "NCBI",
+          "accession": "GCF_000002415.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002415.2/",
+          "file_name": "BSgenome.Pvivax.NCBI.ASM241v2_1.0.0.tar.gz",
+          "size": 7259072,
+          "seq_ids": [
+            "NC_009906.1",
+            "NC_009907.1",
+            "NC_009908.2",
+            "NC_009909.1",
+            "NC_009910.1"
+          ],
+          "seq_count": 2748,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Aconoidasida",
+            "order": "Haemosporida",
+            "family": "Plasmodiidae",
+            "genus": "Plasmodium"
+          },
+          "common_name": "malaria parasite P. vivax",
+          "published": "2026-04-06T19:06:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvivax.NCBI.ASM241v2/BSgenome.Pvivax.NCBI.ASM241v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Plectropomus leopardus",
       "common_name": "leopard coralgrouper",
       "group": "vertebrate_other",
@@ -59974,6 +60020,37 @@
       "common_name": "",
       "published": "2026-04-06T19:06:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcynomolgi.NCBI.PcynB10/BSgenome.Pcynomolgi.NCBI.PcynB10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pvivax.NCBI.ASM241v2",
+      "version": "1.0.0",
+      "organism": "Plasmodium vivax",
+      "assembly": "ASM241v2",
+      "provider": "NCBI",
+      "accession": "GCF_000002415.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000002415.2/",
+      "file_name": "BSgenome.Pvivax.NCBI.ASM241v2_1.0.0.tar.gz",
+      "size": 7259072,
+      "seq_ids": [
+        "NC_009906.1",
+        "NC_009907.1",
+        "NC_009908.2",
+        "NC_009909.1",
+        "NC_009910.1"
+      ],
+      "seq_count": 2748,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Aconoidasida",
+        "order": "Haemosporida",
+        "family": "Plasmodiidae",
+        "genus": "Plasmodium"
+      },
+      "common_name": "malaria parasite P. vivax",
+      "published": "2026-04-06T19:06:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvivax.NCBI.ASM241v2/BSgenome.Pvivax.NCBI.ASM241v2_1.0.0.tar.gz"
     }
   ]
 }
