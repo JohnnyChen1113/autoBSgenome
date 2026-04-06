@@ -3177,3 +3177,7 @@ NeedsCompilation: no
 Package: BSgenome.Sparasitica.NCBI.ASM15154v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Enecatrix.NCBI.ENH001
+Version: 1.0.0
+NeedsCompilation: no
