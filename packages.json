@@ -16270,6 +16270,52 @@
       ]
     },
     {
+      "organism": "Gregarina niphandrodes",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eugregarinorida",
+        "family": "Gregarinidae",
+        "genus": "Gregarina"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gniphandrodes.NCBI.GNI3",
+          "version": "1.0.0",
+          "organism": "Gregarina niphandrodes",
+          "assembly": "GNI3",
+          "provider": "NCBI",
+          "accession": "GCF_000223845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000223845.1/",
+          "file_name": "BSgenome.Gniphandrodes.NCBI.GNI3_1.0.0.tar.gz",
+          "size": 3506303,
+          "seq_ids": [
+            "NW_011645773.1",
+            "NW_011645774.1",
+            "NW_011645775.1",
+            "NW_011645776.1",
+            "NW_011645777.1"
+          ],
+          "seq_count": 469,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Conoidasida",
+            "order": "Eugregarinorida",
+            "family": "Gregarinidae",
+            "genus": "Gregarina"
+          },
+          "common_name": "",
+          "published": "2026-04-06T17:49:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gniphandrodes.NCBI.GNI3/BSgenome.Gniphandrodes.NCBI.GNI3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Grosmannia clavigera kw1407",
       "common_name": "",
       "group": "fungi",
@@ -58754,6 +58800,37 @@
       "common_name": "",
       "published": "2026-04-06T17:49:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Candersoni.NCBI.ASM186535v1/BSgenome.Candersoni.NCBI.ASM186535v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gniphandrodes.NCBI.GNI3",
+      "version": "1.0.0",
+      "organism": "Gregarina niphandrodes",
+      "assembly": "GNI3",
+      "provider": "NCBI",
+      "accession": "GCF_000223845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000223845.1/",
+      "file_name": "BSgenome.Gniphandrodes.NCBI.GNI3_1.0.0.tar.gz",
+      "size": 3506303,
+      "seq_ids": [
+        "NW_011645773.1",
+        "NW_011645774.1",
+        "NW_011645775.1",
+        "NW_011645776.1",
+        "NW_011645777.1"
+      ],
+      "seq_count": 469,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eugregarinorida",
+        "family": "Gregarinidae",
+        "genus": "Gregarina"
+      },
+      "common_name": "",
+      "published": "2026-04-06T17:49:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gniphandrodes.NCBI.GNI3/BSgenome.Gniphandrodes.NCBI.GNI3_1.0.0.tar.gz"
     }
   ]
 }

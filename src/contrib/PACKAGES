@@ -2961,3 +2961,7 @@ NeedsCompilation: no
 Package: BSgenome.Candersoni.NCBI.ASM186535v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gniphandrodes.NCBI.GNI3
+Version: 1.0.0
+NeedsCompilation: no
