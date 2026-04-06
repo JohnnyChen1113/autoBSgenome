@@ -3145,3 +3145,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccayetanensis.NCBI.CcayRef3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eacervulina.NCBI.EAH001
+Version: 1.0.0
+NeedsCompilation: no
