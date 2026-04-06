@@ -19114,6 +19114,52 @@
       ]
     },
     {
+      "organism": "Leptomonas pyrrhocoris",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Leptomonas"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lpyrrhocoris.NCBI.ASM129339v1",
+          "version": "1.0.0",
+          "organism": "Leptomonas pyrrhocoris",
+          "assembly": "ASM129339v1",
+          "provider": "NCBI",
+          "accession": "GCF_001293395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001293395.1/",
+          "file_name": "BSgenome.Lpyrrhocoris.NCBI.ASM129339v1_1.0.0.tar.gz",
+          "size": 8070907,
+          "seq_ids": [
+            "NW_015438357.1",
+            "NW_015438358.1",
+            "NW_015438359.1",
+            "NW_015438360.1",
+            "NW_015438361.1"
+          ],
+          "seq_count": 60,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Euglenozoa",
+            "class": "Kinetoplastea",
+            "order": "Trypanosomatida",
+            "family": "Trypanosomatidae",
+            "genus": "Leptomonas"
+          },
+          "common_name": "",
+          "published": "2026-04-06T20:07:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lpyrrhocoris.NCBI.ASM129339v1/BSgenome.Lpyrrhocoris.NCBI.ASM129339v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Leptonychotes weddellii",
       "common_name": "Weddell seal",
       "group": "vertebrate_mammalian",
@@ -60708,6 +60754,37 @@
       "common_name": "",
       "published": "2026-04-06T20:07:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ttheileri.NCBI.Tthv3/BSgenome.Ttheileri.NCBI.Tthv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lpyrrhocoris.NCBI.ASM129339v1",
+      "version": "1.0.0",
+      "organism": "Leptomonas pyrrhocoris",
+      "assembly": "ASM129339v1",
+      "provider": "NCBI",
+      "accession": "GCF_001293395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001293395.1/",
+      "file_name": "BSgenome.Lpyrrhocoris.NCBI.ASM129339v1_1.0.0.tar.gz",
+      "size": 8070907,
+      "seq_ids": [
+        "NW_015438357.1",
+        "NW_015438358.1",
+        "NW_015438359.1",
+        "NW_015438360.1",
+        "NW_015438361.1"
+      ],
+      "seq_count": 60,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Leptomonas"
+      },
+      "common_name": "",
+      "published": "2026-04-06T20:07:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lpyrrhocoris.NCBI.ASM129339v1/BSgenome.Lpyrrhocoris.NCBI.ASM129339v1_1.0.0.tar.gz"
     }
   ]
 }

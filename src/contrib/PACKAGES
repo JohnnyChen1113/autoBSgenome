@@ -3065,3 +3065,7 @@ NeedsCompilation: no
 Package: BSgenome.Ttheileri.NCBI.Tthv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lpyrrhocoris.NCBI.ASM129339v1
+Version: 1.0.0
+NeedsCompilation: no
