@@ -3045,3 +3045,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptricornutum.NCBI.ASM15095v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcoatneyi.NCBI.ASM168000v1
+Version: 1.0.0
+NeedsCompilation: no
