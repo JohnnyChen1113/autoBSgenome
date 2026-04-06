@@ -3105,3 +3105,7 @@ NeedsCompilation: no
 Package: BSgenome.Tpseudonana.NCBI.ASM14940v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ldonovani.NCBI.ASM22713v2
+Version: 1.0.0
+NeedsCompilation: no
