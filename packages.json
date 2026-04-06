@@ -21786,6 +21786,52 @@
       ]
     },
     {
+      "organism": "Naegleria lovaniensis",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Heterolobosea",
+        "class": "Eutetramitea",
+        "order": "Acrasida",
+        "family": "Naegleriidae",
+        "genus": "Naegleria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nlovaniensis.NCBI.Nlova21",
+          "version": "1.0.0",
+          "organism": "Naegleria lovaniensis",
+          "assembly": "Nlova_2.1",
+          "provider": "NCBI",
+          "accession": "GCF_003324165.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003324165.1/",
+          "file_name": "BSgenome.Nlovaniensis.NCBI.Nlova21_1.0.0.tar.gz",
+          "size": 8255590,
+          "seq_ids": [
+            "NW_025407822.1",
+            "NW_025407823.1",
+            "NW_025407824.1",
+            "NW_025407825.1",
+            "NW_025407826.1"
+          ],
+          "seq_count": 110,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Heterolobosea",
+            "class": "Eutetramitea",
+            "order": "Acrasida",
+            "family": "Naegleriidae",
+            "genus": "Naegleria"
+          },
+          "common_name": "",
+          "published": "2026-04-06T21:05:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nlovaniensis.NCBI.Nlova21/BSgenome.Nlovaniensis.NCBI.Nlova21_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nannizzia gypsea CBS 118893",
       "common_name": "",
       "group": "fungi",
@@ -60936,6 +60982,37 @@
       "common_name": "",
       "published": "2026-04-06T20:08:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lpanamensis.NCBI.ASM75516v1/BSgenome.Lpanamensis.NCBI.ASM75516v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nlovaniensis.NCBI.Nlova21",
+      "version": "1.0.0",
+      "organism": "Naegleria lovaniensis",
+      "assembly": "Nlova_2.1",
+      "provider": "NCBI",
+      "accession": "GCF_003324165.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003324165.1/",
+      "file_name": "BSgenome.Nlovaniensis.NCBI.Nlova21_1.0.0.tar.gz",
+      "size": 8255590,
+      "seq_ids": [
+        "NW_025407822.1",
+        "NW_025407823.1",
+        "NW_025407824.1",
+        "NW_025407825.1",
+        "NW_025407826.1"
+      ],
+      "seq_count": 110,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Heterolobosea",
+        "class": "Eutetramitea",
+        "order": "Acrasida",
+        "family": "Naegleriidae",
+        "genus": "Naegleria"
+      },
+      "common_name": "",
+      "published": "2026-04-06T21:05:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nlovaniensis.NCBI.Nlova21/BSgenome.Nlovaniensis.NCBI.Nlova21_1.0.0.tar.gz"
     }
   ]
 }

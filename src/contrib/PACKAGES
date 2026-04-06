@@ -3077,3 +3077,7 @@ NeedsCompilation: no
 Package: BSgenome.Lpanamensis.NCBI.ASM75516v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nlovaniensis.NCBI.Nlova21
+Version: 1.0.0
+NeedsCompilation: no
