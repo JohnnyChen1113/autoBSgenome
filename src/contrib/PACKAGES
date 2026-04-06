@@ -2937,3 +2937,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmuris.NCBI.JCVIcmgv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tequi.NCBI.JCVIbewagv11
+Version: 1.0.0
+NeedsCompilation: no
