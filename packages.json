@@ -3156,6 +3156,38 @@
       ]
     },
     {
+      "organism": "Aspergillus oryzae RIB40",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Aoryzae.NCBI.ASM18445v3",
+          "version": "1.0.0",
+          "organism": "Aspergillus oryzae RIB40",
+          "assembly": "ASM18445v3",
+          "provider": "NCBI",
+          "accession": "GCF_000184455.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000184455.2/",
+          "file_name": "BSgenome.Aoryzae.NCBI.ASM18445v3_1.0.0.tar.gz",
+          "size": 9642218,
+          "seq_ids": [
+            "NC_036435.1",
+            "NC_036436.1",
+            "NC_036437.1",
+            "NC_036438.1",
+            "NC_036439.1"
+          ],
+          "seq_count": 12,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-06T08:55:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aoryzae.NCBI.ASM18445v3/BSgenome.Aoryzae.NCBI.ASM18445v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus piperis CBS 112811",
       "common_name": "",
       "group": "fungi",
@@ -52053,6 +52085,30 @@
       "common_name": "",
       "published": "2026-04-06T08:54:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnodorum.NCBI.ASM14691v2/BSgenome.Pnodorum.NCBI.ASM14691v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aoryzae.NCBI.ASM18445v3",
+      "version": "1.0.0",
+      "organism": "Aspergillus oryzae RIB40",
+      "assembly": "ASM18445v3",
+      "provider": "NCBI",
+      "accession": "GCF_000184455.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000184455.2/",
+      "file_name": "BSgenome.Aoryzae.NCBI.ASM18445v3_1.0.0.tar.gz",
+      "size": 9642218,
+      "seq_ids": [
+        "NC_036435.1",
+        "NC_036436.1",
+        "NC_036437.1",
+        "NC_036438.1",
+        "NC_036439.1"
+      ],
+      "seq_count": 12,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-06T08:55:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aoryzae.NCBI.ASM18445v3/BSgenome.Aoryzae.NCBI.ASM18445v3_1.0.0.tar.gz"
     }
   ]
 }
