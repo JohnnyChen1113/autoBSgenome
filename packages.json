@@ -14346,6 +14346,54 @@
       ]
     },
     {
+      "organism": "Glarea lozoyensis ATCC 20868",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Helotiaceae",
+        "genus": "Glarea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Glozoyensis.NCBI.GLAREA",
+          "version": "1.0.0",
+          "organism": "Glarea lozoyensis ATCC 20868",
+          "assembly": "GLAREA",
+          "provider": "NCBI",
+          "accession": "GCF_000409485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000409485.1/",
+          "file_name": "BSgenome.Glozoyensis.NCBI.GLAREA_1.0.0.tar.gz",
+          "size": 10191610,
+          "seq_ids": [
+            "NW_007360983.1",
+            "NW_007360984.1",
+            "NW_007360985.1",
+            "NW_007360986.1",
+            "NW_007360987.1"
+          ],
+          "seq_count": 22,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Helotiales",
+            "family": "Helotiaceae",
+            "genus": "Glarea"
+          },
+          "common_name": "",
+          "published": "2026-04-06T10:13:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Glozoyensis.NCBI.GLAREA/BSgenome.Glozoyensis.NCBI.GLAREA_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Gloeophyllum trabeum ATCC 11539",
       "common_name": "",
       "group": "fungi",
@@ -53069,6 +53117,38 @@
       "common_name": "",
       "published": "2026-04-06T10:13:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1/BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Glozoyensis.NCBI.GLAREA",
+      "version": "1.0.0",
+      "organism": "Glarea lozoyensis ATCC 20868",
+      "assembly": "GLAREA",
+      "provider": "NCBI",
+      "accession": "GCF_000409485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000409485.1/",
+      "file_name": "BSgenome.Glozoyensis.NCBI.GLAREA_1.0.0.tar.gz",
+      "size": 10191610,
+      "seq_ids": [
+        "NW_007360983.1",
+        "NW_007360984.1",
+        "NW_007360985.1",
+        "NW_007360986.1",
+        "NW_007360987.1"
+      ],
+      "seq_count": 22,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Helotiaceae",
+        "genus": "Glarea"
+      },
+      "common_name": "",
+      "published": "2026-04-06T10:13:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Glozoyensis.NCBI.GLAREA/BSgenome.Glozoyensis.NCBI.GLAREA_1.0.0.tar.gz"
     }
   ]
 }

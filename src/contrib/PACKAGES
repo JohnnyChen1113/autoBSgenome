@@ -2673,3 +2673,7 @@ NeedsCompilation: no
 Package: BSgenome.Cpsammophila.NCBI.CladpsamCBS110553V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Glozoyensis.NCBI.GLAREA
+Version: 1.0.0
+NeedsCompilation: no
