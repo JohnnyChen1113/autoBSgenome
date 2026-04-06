@@ -2841,3 +2841,7 @@ NeedsCompilation: no
 Package: BSgenome.Mscopiformis.NCBI.Phisc1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fvanettenii.NCBI.v20
+Version: 1.0.0
+NeedsCompilation: no
