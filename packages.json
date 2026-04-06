@@ -13982,6 +13982,52 @@
       ]
     },
     {
+      "organism": "Eimeria mitis",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Eimeriidae",
+        "genus": "Eimeria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Emitis.NCBI.EMH001",
+          "version": "1.0.0",
+          "organism": "Eimeria mitis",
+          "assembly": "EMH001",
+          "provider": "NCBI",
+          "accession": "GCF_000499745.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000499745.2/",
+          "file_name": "BSgenome.Emitis.NCBI.EMH001_1.0.0.tar.gz",
+          "size": 17368400,
+          "seq_ids": [
+            "NW_013569444.1",
+            "NW_013569445.1",
+            "NW_013569446.1",
+            "NW_013569447.1",
+            "NW_013569448.1"
+          ],
+          "seq_count": 15978,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Conoidasida",
+            "order": "Eucoccidiorida",
+            "family": "Eimeriidae",
+            "genus": "Eimeria"
+          },
+          "common_name": "",
+          "published": "2026-04-06T23:40:41Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Emitis.NCBI.EMH001/BSgenome.Emitis.NCBI.EMH001_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Eimeria necatrix",
       "common_name": "",
       "group": "other",
@@ -63559,6 +63605,37 @@
       "common_name": "",
       "published": "2026-04-06T23:40:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptetraurelia.NCBI.ASM16542v1/BSgenome.Ptetraurelia.NCBI.ASM16542v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Emitis.NCBI.EMH001",
+      "version": "1.0.0",
+      "organism": "Eimeria mitis",
+      "assembly": "EMH001",
+      "provider": "NCBI",
+      "accession": "GCF_000499745.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000499745.2/",
+      "file_name": "BSgenome.Emitis.NCBI.EMH001_1.0.0.tar.gz",
+      "size": 17368400,
+      "seq_ids": [
+        "NW_013569444.1",
+        "NW_013569445.1",
+        "NW_013569446.1",
+        "NW_013569447.1",
+        "NW_013569448.1"
+      ],
+      "seq_count": 15978,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Eimeriidae",
+        "genus": "Eimeria"
+      },
+      "common_name": "",
+      "published": "2026-04-06T23:40:41Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Emitis.NCBI.EMH001/BSgenome.Emitis.NCBI.EMH001_1.0.0.tar.gz"
     }
   ]
 }
