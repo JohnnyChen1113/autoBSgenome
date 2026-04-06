@@ -2705,3 +2705,7 @@ NeedsCompilation: no
 Package: BSgenome.Tthermophilus.NCBI.ASM22609v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcurvatum.NCBI.ASM435304v1
+Version: 1.0.0
+NeedsCompilation: no

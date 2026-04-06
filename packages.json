@@ -29516,6 +29516,54 @@
       ]
     },
     {
+      "organism": "Thyridium curvatum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Thyridiales",
+        "family": "Thyridiaceae",
+        "genus": "Thyridium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tcurvatum.NCBI.ASM435304v1",
+          "version": "1.0.0",
+          "organism": "Thyridium curvatum",
+          "assembly": "ASM435304v1",
+          "provider": "NCBI",
+          "accession": "GCF_004353045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004353045.1/",
+          "file_name": "BSgenome.Tcurvatum.NCBI.ASM435304v1_1.0.0.tar.gz",
+          "size": 10702810,
+          "seq_ids": [
+            "NW_022156855.1",
+            "NW_022156856.1",
+            "NW_022156857.1",
+            "NW_022156858.1",
+            "NW_022156859.1"
+          ],
+          "seq_count": 359,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Thyridiales",
+            "family": "Thyridiaceae",
+            "genus": "Thyridium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T11:28:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcurvatum.NCBI.ASM435304v1/BSgenome.Tcurvatum.NCBI.ASM435304v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tigriopus californicus",
       "common_name": "",
       "group": "invertebrate",
@@ -53709,6 +53757,38 @@
       "common_name": "",
       "published": "2026-04-06T11:28:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tthermophilus.NCBI.ASM22609v1/BSgenome.Tthermophilus.NCBI.ASM22609v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tcurvatum.NCBI.ASM435304v1",
+      "version": "1.0.0",
+      "organism": "Thyridium curvatum",
+      "assembly": "ASM435304v1",
+      "provider": "NCBI",
+      "accession": "GCF_004353045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004353045.1/",
+      "file_name": "BSgenome.Tcurvatum.NCBI.ASM435304v1_1.0.0.tar.gz",
+      "size": 10702810,
+      "seq_ids": [
+        "NW_022156855.1",
+        "NW_022156856.1",
+        "NW_022156857.1",
+        "NW_022156858.1",
+        "NW_022156859.1"
+      ],
+      "seq_count": 359,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Thyridiales",
+        "family": "Thyridiaceae",
+        "genus": "Thyridium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T11:28:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcurvatum.NCBI.ASM435304v1/BSgenome.Tcurvatum.NCBI.ASM435304v1_1.0.0.tar.gz"
     }
   ]
 }
