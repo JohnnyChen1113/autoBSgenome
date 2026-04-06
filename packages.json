@@ -17790,6 +17790,54 @@
       ]
     },
     {
+      "organism": "Lobosporangium transversale",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Mucoromycota",
+        "class": "Mortierellomycetes",
+        "order": "Mortierellales",
+        "family": "Mortierellaceae",
+        "genus": "Lobosporangium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ltransversale.NCBI.Lobtra1",
+          "version": "1.0.0",
+          "organism": "Lobosporangium transversale",
+          "assembly": "Lobtra1",
+          "provider": "NCBI",
+          "accession": "GCF_002105155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002105155.1/",
+          "file_name": "BSgenome.Ltransversale.NCBI.Lobtra1_1.0.0.tar.gz",
+          "size": 11286610,
+          "seq_ids": [
+            "NW_019028979.1",
+            "NW_019028988.1",
+            "NW_019029078.1",
+            "NW_019029079.1",
+            "NW_019029080.1"
+          ],
+          "seq_count": 138,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Mucoromycota",
+            "class": "Mortierellomycetes",
+            "order": "Mortierellales",
+            "family": "Mortierellaceae",
+            "genus": "Lobosporangium"
+          },
+          "common_name": "",
+          "published": "2026-04-06T12:08:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ltransversale.NCBI.Lobtra1/BSgenome.Ltransversale.NCBI.Lobtra1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lottia gigantea",
       "common_name": "owl limpet",
       "group": "invertebrate",
@@ -54589,6 +54637,38 @@
       "common_name": "",
       "published": "2026-04-06T11:30:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dsqualens.NCBI.Dichomitussqualensv10/BSgenome.Dsqualens.NCBI.Dichomitussqualensv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ltransversale.NCBI.Lobtra1",
+      "version": "1.0.0",
+      "organism": "Lobosporangium transversale",
+      "assembly": "Lobtra1",
+      "provider": "NCBI",
+      "accession": "GCF_002105155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002105155.1/",
+      "file_name": "BSgenome.Ltransversale.NCBI.Lobtra1_1.0.0.tar.gz",
+      "size": 11286610,
+      "seq_ids": [
+        "NW_019028979.1",
+        "NW_019028988.1",
+        "NW_019029078.1",
+        "NW_019029079.1",
+        "NW_019029080.1"
+      ],
+      "seq_count": 138,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Mucoromycota",
+        "class": "Mortierellomycetes",
+        "order": "Mortierellales",
+        "family": "Mortierellaceae",
+        "genus": "Lobosporangium"
+      },
+      "common_name": "",
+      "published": "2026-04-06T12:08:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ltransversale.NCBI.Lobtra1/BSgenome.Ltransversale.NCBI.Lobtra1_1.0.0.tar.gz"
     }
   ]
 }
