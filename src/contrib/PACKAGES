@@ -2573,3 +2573,7 @@ NeedsCompilation: no
 Package: BSgenome.Uvirens.NCBI.ASM68747v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Epusillum.NCBI.EPUS
+Version: 1.0.0
+NeedsCompilation: no
