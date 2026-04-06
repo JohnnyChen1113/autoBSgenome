@@ -2869,3 +2869,7 @@ NeedsCompilation: no
 Package: BSgenome.Lbicolor.NCBI.V10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bdermatitidis.NCBI.BDER3V1
+Version: 1.0.0
+NeedsCompilation: no

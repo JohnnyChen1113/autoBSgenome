@@ -5248,6 +5248,54 @@
       ]
     },
     {
+      "organism": "Blastomyces dermatitidis ER-3",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Ajellomycetaceae",
+        "genus": "Blastomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bdermatitidis.NCBI.BDER3V1",
+          "version": "1.0.0",
+          "organism": "Blastomyces dermatitidis ER-3",
+          "assembly": "BD_ER3_V1",
+          "provider": "NCBI",
+          "accession": "GCF_000003525.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000003525.1/",
+          "file_name": "BSgenome.Bdermatitidis.NCBI.BDER3V1_1.0.0.tar.gz",
+          "size": 16599235,
+          "seq_ids": [
+            "NW_025544774.1",
+            "NW_025544775.1",
+            "NW_025544776.1",
+            "NW_025544777.1",
+            "NW_025544778.1"
+          ],
+          "seq_count": 27,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Onygenales",
+            "family": "Ajellomycetaceae",
+            "genus": "Blastomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-06T14:53:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdermatitidis.NCBI.BDER3V1/BSgenome.Bdermatitidis.NCBI.BDER3V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bombus impatiens",
       "common_name": "common eastern bumble bee",
       "group": "invertebrate",
@@ -56965,6 +57013,38 @@
       "common_name": "",
       "published": "2026-04-06T14:53:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbicolor.NCBI.V10/BSgenome.Lbicolor.NCBI.V10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bdermatitidis.NCBI.BDER3V1",
+      "version": "1.0.0",
+      "organism": "Blastomyces dermatitidis ER-3",
+      "assembly": "BD_ER3_V1",
+      "provider": "NCBI",
+      "accession": "GCF_000003525.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000003525.1/",
+      "file_name": "BSgenome.Bdermatitidis.NCBI.BDER3V1_1.0.0.tar.gz",
+      "size": 16599235,
+      "seq_ids": [
+        "NW_025544774.1",
+        "NW_025544775.1",
+        "NW_025544776.1",
+        "NW_025544777.1",
+        "NW_025544778.1"
+      ],
+      "seq_count": 27,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Ajellomycetaceae",
+        "genus": "Blastomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-06T14:53:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdermatitidis.NCBI.BDER3V1/BSgenome.Bdermatitidis.NCBI.BDER3V1_1.0.0.tar.gz"
     }
   ]
 }
