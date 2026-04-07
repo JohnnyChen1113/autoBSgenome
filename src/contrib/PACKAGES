@@ -3437,3 +3437,7 @@ NeedsCompilation: no
 Package: BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmilii.Ensembl.Callorhinchusmilii613
+Version: 1.0.0
+NeedsCompilation: no
