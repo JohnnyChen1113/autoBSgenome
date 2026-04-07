@@ -3361,3 +3361,7 @@ NeedsCompilation: no
 Package: BSgenome.Acunicularia.Ensembl.athCun1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cparvulus.Ensembl.CamarhynchusparvulusV11
+Version: 1.0.0
+NeedsCompilation: no
