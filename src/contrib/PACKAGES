@@ -3417,3 +3417,7 @@ NeedsCompilation: no
 Package: BSgenome.Clupus.Ensembl.Basenjibreed11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bbison.Ensembl.BisonUMD10
+Version: 1.0.0
+NeedsCompilation: no

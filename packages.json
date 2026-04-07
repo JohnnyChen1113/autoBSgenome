@@ -6638,6 +6638,38 @@
           "common_name": "",
           "published": "2026-04-03T23:41:36Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbison.NCBI.BisonUMD10/BSgenome.Bbison.NCBI.BisonUMD10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Bbison.Ensembl.BisonUMD10",
+          "version": "1.0.0",
+          "organism": "Bison bison bison",
+          "assembly": "Bison_UMD1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000754665.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000754665.1/",
+          "file_name": "BSgenome.Bbison.Ensembl.BisonUMD10_1.0.0.tar.gz",
+          "size": 660053684,
+          "seq_ids": [
+            "KN265167.1",
+            "KN265153.1",
+            "KN265185.1",
+            "KN265204.1",
+            "KN265004.1"
+          ],
+          "seq_count": 450182,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Bison"
+          },
+          "common_name": "",
+          "published": "2026-04-07T09:48:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbison.Ensembl.BisonUMD10/BSgenome.Bbison.Ensembl.BisonUMD10_1.0.0.tar.gz"
         }
       ]
     },
@@ -67303,6 +67335,38 @@
       "common_name": "dog",
       "published": "2026-04-07T09:47:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.Basenjibreed11/BSgenome.Clupus.Ensembl.Basenjibreed11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bbison.Ensembl.BisonUMD10",
+      "version": "1.0.0",
+      "organism": "Bison bison bison",
+      "assembly": "Bison_UMD1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000754665.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000754665.1/",
+      "file_name": "BSgenome.Bbison.Ensembl.BisonUMD10_1.0.0.tar.gz",
+      "size": 660053684,
+      "seq_ids": [
+        "KN265167.1",
+        "KN265153.1",
+        "KN265185.1",
+        "KN265204.1",
+        "KN265004.1"
+      ],
+      "seq_count": 450182,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bison"
+      },
+      "common_name": "",
+      "published": "2026-04-07T09:48:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbison.Ensembl.BisonUMD10/BSgenome.Bbison.Ensembl.BisonUMD10_1.0.0.tar.gz"
     }
   ]
 }
