@@ -3245,3 +3245,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmarinus.NCBI.JCVIPMG10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gtheta.NCBI.Guith1
+Version: 1.0.0
+NeedsCompilation: no

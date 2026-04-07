@@ -17490,6 +17490,50 @@
       ]
     },
     {
+      "organism": "Guillardia theta CCMP2712",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Cryptophyceae",
+        "order": "Pyrenomonadales",
+        "family": "Geminigeraceae",
+        "genus": "Guillardia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gtheta.NCBI.Guith1",
+          "version": "1.0.0",
+          "organism": "Guillardia theta CCMP2712",
+          "assembly": "Guith1",
+          "provider": "NCBI",
+          "accession": "GCF_000315625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000315625.1/",
+          "file_name": "BSgenome.Gtheta.NCBI.Guith1_1.0.0.tar.gz",
+          "size": 22076693,
+          "seq_ids": [
+            "NW_005434673.1",
+            "NW_005434672.1",
+            "NW_005434671.1",
+            "NW_005434670.1",
+            "NW_005434669.1"
+          ],
+          "seq_count": 669,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "class": "Cryptophyceae",
+            "order": "Pyrenomonadales",
+            "family": "Geminigeraceae",
+            "genus": "Guillardia"
+          },
+          "common_name": "",
+          "published": "2026-04-07T02:36:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gtheta.NCBI.Guith1/BSgenome.Gtheta.NCBI.Guith1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Habropoda laboriosa",
       "common_name": "",
       "group": "invertebrate",
@@ -64092,6 +64136,36 @@
       "common_name": "",
       "published": "2026-04-07T02:36:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmarinus.NCBI.JCVIPMG10/BSgenome.Pmarinus.NCBI.JCVIPMG10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gtheta.NCBI.Guith1",
+      "version": "1.0.0",
+      "organism": "Guillardia theta CCMP2712",
+      "assembly": "Guith1",
+      "provider": "NCBI",
+      "accession": "GCF_000315625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000315625.1/",
+      "file_name": "BSgenome.Gtheta.NCBI.Guith1_1.0.0.tar.gz",
+      "size": 22076693,
+      "seq_ids": [
+        "NW_005434673.1",
+        "NW_005434672.1",
+        "NW_005434671.1",
+        "NW_005434670.1",
+        "NW_005434669.1"
+      ],
+      "seq_count": 669,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Cryptophyceae",
+        "order": "Pyrenomonadales",
+        "family": "Geminigeraceae",
+        "genus": "Guillardia"
+      },
+      "common_name": "",
+      "published": "2026-04-07T02:36:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gtheta.NCBI.Guith1/BSgenome.Gtheta.NCBI.Guith1_1.0.0.tar.gz"
     }
   ]
 }
