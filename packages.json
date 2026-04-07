@@ -8512,6 +8512,38 @@
           "common_name": "dog",
           "published": "2026-04-07T08:17:56Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.Dog10KBoxerTasha/BSgenome.Clupus.Ensembl.Dog10KBoxerTasha_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Clupus.Ensembl.UUCfamGSD10",
+          "version": "1.0.0",
+          "organism": "Canis lupus familiaris",
+          "assembly": "UU_Cfam_GSD_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_011100685.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011100685.1/",
+          "file_name": "BSgenome.Clupus.Ensembl.UUCfamGSD10_1.0.0.tar.gz",
+          "size": 568715384,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 376,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis"
+          },
+          "common_name": "dog",
+          "published": "2026-04-07T08:18:12Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.UUCfamGSD10/BSgenome.Clupus.Ensembl.UUCfamGSD10_1.0.0.tar.gz"
         }
       ]
     },
@@ -66743,6 +66775,38 @@
       "common_name": "dog",
       "published": "2026-04-07T08:17:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.Dog10KBoxerTasha/BSgenome.Clupus.Ensembl.Dog10KBoxerTasha_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Clupus.Ensembl.UUCfamGSD10",
+      "version": "1.0.0",
+      "organism": "Canis lupus familiaris",
+      "assembly": "UU_Cfam_GSD_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_011100685.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011100685.1/",
+      "file_name": "BSgenome.Clupus.Ensembl.UUCfamGSD10_1.0.0.tar.gz",
+      "size": 568715384,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 376,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae",
+        "genus": "Canis"
+      },
+      "common_name": "dog",
+      "published": "2026-04-07T08:18:12Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.UUCfamGSD10/BSgenome.Clupus.Ensembl.UUCfamGSD10_1.0.0.tar.gz"
     }
   ]
 }
