@@ -3297,3 +3297,7 @@ NeedsCompilation: no
 Package: BSgenome.Acygnoides.Ensembl.GooseV10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmoschata.Ensembl.CaiMos10
+Version: 1.0.0
+NeedsCompilation: no
