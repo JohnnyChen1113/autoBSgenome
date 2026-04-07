@@ -1669,6 +1669,54 @@
       ]
     },
     {
+      "organism": "Apteryx haastii",
+      "common_name": "Great spotted kiwi",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Apterygiformes",
+        "family": "Apterygidae",
+        "genus": "Apteryx"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ahaastii.Ensembl.aptHaa1",
+          "version": "1.0.0",
+          "organism": "Apteryx haastii",
+          "assembly": "aptHaa1",
+          "provider": "Ensembl",
+          "accession": "GCA_003342985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003342985.1/",
+          "file_name": "BSgenome.Ahaastii.Ensembl.aptHaa1_1.0.0.tar.gz",
+          "size": 294887776,
+          "seq_ids": [
+            "PTFD01000001.1",
+            "PTFD01000002.1",
+            "PTFD01000003.1",
+            "PTFD01000004.1",
+            "PTFD01000005.1"
+          ],
+          "seq_count": 4183,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Apterygiformes",
+            "family": "Apterygidae",
+            "genus": "Apteryx"
+          },
+          "common_name": "Great spotted kiwi",
+          "published": "2026-04-07T05:13:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahaastii.Ensembl.aptHaa1/BSgenome.Ahaastii.Ensembl.aptHaa1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Apteryx rowi",
       "common_name": "Okarito brown kiwi",
       "group": "vertebrate_other",
@@ -64696,6 +64744,38 @@
       "common_name": "",
       "published": "2026-04-07T02:38:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pinfestans.NCBI.ASM14294v1/BSgenome.Pinfestans.NCBI.ASM14294v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ahaastii.Ensembl.aptHaa1",
+      "version": "1.0.0",
+      "organism": "Apteryx haastii",
+      "assembly": "aptHaa1",
+      "provider": "Ensembl",
+      "accession": "GCA_003342985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003342985.1/",
+      "file_name": "BSgenome.Ahaastii.Ensembl.aptHaa1_1.0.0.tar.gz",
+      "size": 294887776,
+      "seq_ids": [
+        "PTFD01000001.1",
+        "PTFD01000002.1",
+        "PTFD01000003.1",
+        "PTFD01000004.1",
+        "PTFD01000005.1"
+      ],
+      "seq_count": 4183,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Apterygiformes",
+        "family": "Apterygidae",
+        "genus": "Apteryx"
+      },
+      "common_name": "Great spotted kiwi",
+      "published": "2026-04-07T05:13:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahaastii.Ensembl.aptHaa1/BSgenome.Ahaastii.Ensembl.aptHaa1_1.0.0.tar.gz"
     }
   ]
 }
