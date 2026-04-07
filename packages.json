@@ -1193,6 +1193,54 @@
       ]
     },
     {
+      "organism": "Anas platyrhynchos platyrhynchos",
+      "common_name": "common mallard",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anas"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aplatyrhynchos.Ensembl.CAUduck10",
+          "version": "1.0.0",
+          "organism": "Anas platyrhynchos platyrhynchos",
+          "assembly": "CAU_duck1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002743455.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002743455.1/",
+          "file_name": "BSgenome.Aplatyrhynchos.Ensembl.CAUduck10_1.0.0.tar.gz",
+          "size": 261745975,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 21240,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Anseriformes",
+            "family": "Anatidae",
+            "genus": "Anas"
+          },
+          "common_name": "common mallard",
+          "published": "2026-04-07T05:15:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aplatyrhynchos.Ensembl.CAUduck10/BSgenome.Aplatyrhynchos.Ensembl.CAUduck10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Andrographis paniculata",
       "common_name": "",
       "group": "plant",
@@ -65200,6 +65248,38 @@
       "common_name": "ruff",
       "published": "2026-04-07T05:14:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpugnax.Ensembl.ASM143184v1/BSgenome.Cpugnax.Ensembl.ASM143184v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aplatyrhynchos.Ensembl.CAUduck10",
+      "version": "1.0.0",
+      "organism": "Anas platyrhynchos platyrhynchos",
+      "assembly": "CAU_duck1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002743455.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002743455.1/",
+      "file_name": "BSgenome.Aplatyrhynchos.Ensembl.CAUduck10_1.0.0.tar.gz",
+      "size": 261745975,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 21240,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anas"
+      },
+      "common_name": "common mallard",
+      "published": "2026-04-07T05:15:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aplatyrhynchos.Ensembl.CAUduck10/BSgenome.Aplatyrhynchos.Ensembl.CAUduck10_1.0.0.tar.gz"
     }
   ]
 }
