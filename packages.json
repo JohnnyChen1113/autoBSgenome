@@ -2495,6 +2495,54 @@
       ]
     },
     {
+      "organism": "Aquila chrysaetos chrysaetos",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Aquila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Achrysaetos.Ensembl.bAquChr12",
+          "version": "1.0.0",
+          "organism": "Aquila chrysaetos chrysaetos",
+          "assembly": "bAquChr1.2",
+          "provider": "Ensembl",
+          "accession": "GCA_900496995.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900496995.2/",
+          "file_name": "BSgenome.Achrysaetos.Ensembl.bAquChr12_1.0.0.tar.gz",
+          "size": 290819437,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 142,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Accipitriformes",
+            "family": "Accipitridae",
+            "genus": "Aquila"
+          },
+          "common_name": "",
+          "published": "2026-04-07T09:46:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Achrysaetos.Ensembl.bAquChr12/BSgenome.Achrysaetos.Ensembl.bAquChr12_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Arabidopsis lyrata subsp. lyrata",
       "common_name": "",
       "group": "plant",
@@ -66871,6 +66919,38 @@
       "common_name": "goat",
       "published": "2026-04-07T08:19:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chircus.Ensembl.Saanenv1/BSgenome.Chircus.Ensembl.Saanenv1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Achrysaetos.Ensembl.bAquChr12",
+      "version": "1.0.0",
+      "organism": "Aquila chrysaetos chrysaetos",
+      "assembly": "bAquChr1.2",
+      "provider": "Ensembl",
+      "accession": "GCA_900496995.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900496995.2/",
+      "file_name": "BSgenome.Achrysaetos.Ensembl.bAquChr12_1.0.0.tar.gz",
+      "size": 290819437,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 142,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Aquila"
+      },
+      "common_name": "",
+      "published": "2026-04-07T09:46:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Achrysaetos.Ensembl.bAquChr12/BSgenome.Achrysaetos.Ensembl.bAquChr12_1.0.0.tar.gz"
     }
   ]
 }
