@@ -3381,3 +3381,7 @@ NeedsCompilation: no
 Package: BSgenome.Cjacchus.Ensembl.mCalJac1patX
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clupus.Ensembl.Dog10KBoxerTasha
+Version: 1.0.0
+NeedsCompilation: no

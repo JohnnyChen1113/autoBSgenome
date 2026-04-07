@@ -8468,6 +8468,54 @@
       ]
     },
     {
+      "organism": "Canis lupus familiaris",
+      "common_name": "dog",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae",
+        "genus": "Canis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Clupus.Ensembl.Dog10KBoxerTasha",
+          "version": "1.0.0",
+          "organism": "Canis lupus familiaris",
+          "assembly": "Dog10K_Boxer_Tasha",
+          "provider": "Ensembl",
+          "accession": "GCA_000002285.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002285.4/",
+          "file_name": "BSgenome.Clupus.Ensembl.Dog10KBoxerTasha_1.0.0.tar.gz",
+          "size": 568715380,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 376,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis"
+          },
+          "common_name": "dog",
+          "published": "2026-04-07T08:17:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.Dog10KBoxerTasha/BSgenome.Clupus.Ensembl.Dog10KBoxerTasha_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Capra hircus",
       "common_name": "goat",
       "group": "vertebrate_mammalian",
@@ -66663,6 +66711,38 @@
       "common_name": "white-tufted-ear marmoset",
       "published": "2026-04-07T08:17:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cjacchus.Ensembl.mCalJac1patX/BSgenome.Cjacchus.Ensembl.mCalJac1patX_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Clupus.Ensembl.Dog10KBoxerTasha",
+      "version": "1.0.0",
+      "organism": "Canis lupus familiaris",
+      "assembly": "Dog10K_Boxer_Tasha",
+      "provider": "Ensembl",
+      "accession": "GCA_000002285.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002285.4/",
+      "file_name": "BSgenome.Clupus.Ensembl.Dog10KBoxerTasha_1.0.0.tar.gz",
+      "size": 568715380,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 376,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae",
+        "genus": "Canis"
+      },
+      "common_name": "dog",
+      "published": "2026-04-07T08:17:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.Dog10KBoxerTasha/BSgenome.Clupus.Ensembl.Dog10KBoxerTasha_1.0.0.tar.gz"
     }
   ]
 }
