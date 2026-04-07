@@ -3433,3 +3433,7 @@ NeedsCompilation: no
 Package: BSgenome.Csemilaevis.Ensembl.Csev10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102
+Version: 1.0.0
+NeedsCompilation: no
