@@ -3373,3 +3373,7 @@ NeedsCompilation: no
 Package: BSgenome.Aocellaris.Ensembl.ASM2253959v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clupus.Ensembl.ASM325472v1
+Version: 1.0.0
+NeedsCompilation: no
