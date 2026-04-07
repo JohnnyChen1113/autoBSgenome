@@ -3333,3 +3333,7 @@ NeedsCompilation: no
 Package: BSgenome.Celegans.Ensembl.WBcel235
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apolyacanthus.Ensembl.ASM210954v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -189,6 +189,52 @@
       ]
     },
     {
+      "organism": "Acanthochromis polyacanthus",
+      "common_name": "spiny chromis",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Pomacentridae",
+        "genus": "Acanthochromis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Apolyacanthus.Ensembl.ASM210954v1",
+          "version": "1.0.0",
+          "organism": "Acanthochromis polyacanthus",
+          "assembly": "ASM210954v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002109545.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002109545.1/",
+          "file_name": "BSgenome.Apolyacanthus.Ensembl.ASM210954v1_1.0.0.tar.gz",
+          "size": 206256265,
+          "seq_ids": [
+            "MVNR01000001.1",
+            "MVNR01000014.1",
+            "MVNR01000009.1",
+            "MVNR01000008.1",
+            "MVNR01000002.1"
+          ],
+          "seq_count": 30414,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "family": "Pomacentridae",
+            "genus": "Acanthochromis"
+          },
+          "common_name": "spiny chromis",
+          "published": "2026-04-07T06:55:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apolyacanthus.Ensembl.ASM210954v1/BSgenome.Apolyacanthus.Ensembl.ASM210954v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Acaromyces ingoldii",
       "common_name": "",
       "group": "fungi",
@@ -65760,6 +65806,37 @@
       "common_name": "",
       "published": "2026-04-07T06:55:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Celegans.Ensembl.WBcel235/BSgenome.Celegans.Ensembl.WBcel235_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Apolyacanthus.Ensembl.ASM210954v1",
+      "version": "1.0.0",
+      "organism": "Acanthochromis polyacanthus",
+      "assembly": "ASM210954v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002109545.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002109545.1/",
+      "file_name": "BSgenome.Apolyacanthus.Ensembl.ASM210954v1_1.0.0.tar.gz",
+      "size": 206256265,
+      "seq_ids": [
+        "MVNR01000001.1",
+        "MVNR01000014.1",
+        "MVNR01000009.1",
+        "MVNR01000008.1",
+        "MVNR01000002.1"
+      ],
+      "seq_count": 30414,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Pomacentridae",
+        "genus": "Acanthochromis"
+      },
+      "common_name": "spiny chromis",
+      "published": "2026-04-07T06:55:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apolyacanthus.Ensembl.ASM210954v1/BSgenome.Apolyacanthus.Ensembl.ASM210954v1_1.0.0.tar.gz"
     }
   ]
 }
