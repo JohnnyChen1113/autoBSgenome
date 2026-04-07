@@ -3369,3 +3369,7 @@ NeedsCompilation: no
 Package: BSgenome.Atestudineus.Ensembl.fAnaTes13
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aocellaris.Ensembl.ASM2253959v1
+Version: 1.0.0
+NeedsCompilation: no

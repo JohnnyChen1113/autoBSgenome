@@ -1223,6 +1223,52 @@
       ]
     },
     {
+      "organism": "Amphiprion ocellaris",
+      "common_name": "clown anemonefish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Pomacentridae",
+        "genus": "Amphiprion"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aocellaris.Ensembl.ASM2253959v1",
+          "version": "1.0.0",
+          "organism": "Amphiprion ocellaris",
+          "assembly": "ASM2253959v1",
+          "provider": "Ensembl",
+          "accession": "GCA_022539595.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_022539595.1/",
+          "file_name": "BSgenome.Aocellaris.Ensembl.ASM2253959v1_1.0.0.tar.gz",
+          "size": 203887066,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 354,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "family": "Pomacentridae",
+            "genus": "Amphiprion"
+          },
+          "common_name": "clown anemonefish",
+          "published": "2026-04-07T08:17:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aocellaris.Ensembl.ASM2253959v1/BSgenome.Aocellaris.Ensembl.ASM2253959v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Amphiprion percula",
       "common_name": "orange clownfish",
       "group": "vertebrate_other",
@@ -66442,6 +66488,37 @@
       "common_name": "climbing perch",
       "published": "2026-04-07T08:16:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atestudineus.Ensembl.fAnaTes13/BSgenome.Atestudineus.Ensembl.fAnaTes13_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aocellaris.Ensembl.ASM2253959v1",
+      "version": "1.0.0",
+      "organism": "Amphiprion ocellaris",
+      "assembly": "ASM2253959v1",
+      "provider": "Ensembl",
+      "accession": "GCA_022539595.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_022539595.1/",
+      "file_name": "BSgenome.Aocellaris.Ensembl.ASM2253959v1_1.0.0.tar.gz",
+      "size": 203887066,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 354,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Pomacentridae",
+        "genus": "Amphiprion"
+      },
+      "common_name": "clown anemonefish",
+      "published": "2026-04-07T08:17:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aocellaris.Ensembl.ASM2253959v1/BSgenome.Aocellaris.Ensembl.ASM2253959v1_1.0.0.tar.gz"
     }
   ]
 }
