@@ -5322,7 +5322,7 @@
           "accession": "GCA_004802775.1",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004802775.1/",
           "file_name": "BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102_1.0.0.tar.gz",
-          "size": 294802793,
+          "size": 294802787,
           "seq_ids": [
             "1",
             "2",
@@ -5342,7 +5342,7 @@
             "genus": "Astyanax"
           },
           "common_name": "Mexican tetra",
-          "published": "2026-04-07T11:00:01Z",
+          "published": "2026-04-07T13:53:23Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102/BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102_1.0.0.tar.gz"
         }
       ]
@@ -68169,38 +68169,6 @@
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csemilaevis.Ensembl.Csev10/BSgenome.Csemilaevis.Ensembl.Csev10_1.0.0.tar.gz"
     },
     {
-      "package": "BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102",
-      "version": "1.0.0",
-      "organism": "Astyanax mexicanus",
-      "assembly": "Astyanax_mexicanus-1.0.2",
-      "provider": "Ensembl",
-      "accession": "GCA_004802775.1",
-      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004802775.1/",
-      "file_name": "BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102_1.0.0.tar.gz",
-      "size": 294802793,
-      "seq_ids": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-      ],
-      "seq_count": 2415,
-      "group": "vertebrate_other",
-      "taxonomy": {
-        "domain": "Eukaryota",
-        "kingdom": "Metazoa",
-        "phylum": "Chordata",
-        "class": "Actinopteri",
-        "order": "Characiformes",
-        "family": "Acestrorhamphidae",
-        "genus": "Astyanax"
-      },
-      "common_name": "Mexican tetra",
-      "published": "2026-04-07T11:00:01Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102/BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102_1.0.0.tar.gz"
-    },
-    {
       "package": "BSgenome.Cmilii.Ensembl.Callorhinchusmilii613",
       "version": "1.0.0",
       "organism": "Callorhinchus milii",
@@ -68583,6 +68551,38 @@
       "common_name": "common kestrel",
       "published": "2026-04-07T12:00:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ftinnunculus.Ensembl.FalTin10/BSgenome.Ftinnunculus.Ensembl.FalTin10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102",
+      "version": "1.0.0",
+      "organism": "Astyanax mexicanus",
+      "assembly": "Astyanax_mexicanus-1.0.2",
+      "provider": "Ensembl",
+      "accession": "GCA_004802775.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004802775.1/",
+      "file_name": "BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102_1.0.0.tar.gz",
+      "size": 294802787,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 2415,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Characiformes",
+        "family": "Acestrorhamphidae",
+        "genus": "Astyanax"
+      },
+      "common_name": "Mexican tetra",
+      "published": "2026-04-07T13:53:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102/BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102_1.0.0.tar.gz"
     }
   ]
 }
