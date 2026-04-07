@@ -857,6 +857,54 @@
       ]
     },
     {
+      "organism": "Amazona collaria",
+      "common_name": "yellow-billed parrot",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Psittaciformes",
+        "family": "Psittacidae",
+        "genus": "Amazona"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acollaria.Ensembl.ASM394721v1",
+          "version": "1.0.0",
+          "organism": "Amazona collaria",
+          "assembly": "ASM394721v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003947215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003947215.1/",
+          "file_name": "BSgenome.Acollaria.Ensembl.ASM394721v1_1.0.0.tar.gz",
+          "size": 295706304,
+          "seq_ids": [
+            "RQIO01000001.1",
+            "RQIO01000002.1",
+            "RQIO01000003.1",
+            "RQIO01000004.1",
+            "RQIO01000005.1"
+          ],
+          "seq_count": 10638,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Psittaciformes",
+            "family": "Psittacidae",
+            "genus": "Amazona"
+          },
+          "common_name": "yellow-billed parrot",
+          "published": "2026-04-07T05:13:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acollaria.Ensembl.ASM394721v1/BSgenome.Acollaria.Ensembl.ASM394721v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Amborella trichopoda",
       "common_name": "",
       "group": "plant",
@@ -64840,6 +64888,38 @@
       "common_name": "Okarito brown kiwi",
       "published": "2026-04-07T05:13:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Arowi.Ensembl.aptRow1/BSgenome.Arowi.Ensembl.aptRow1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acollaria.Ensembl.ASM394721v1",
+      "version": "1.0.0",
+      "organism": "Amazona collaria",
+      "assembly": "ASM394721v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003947215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003947215.1/",
+      "file_name": "BSgenome.Acollaria.Ensembl.ASM394721v1_1.0.0.tar.gz",
+      "size": 295706304,
+      "seq_ids": [
+        "RQIO01000001.1",
+        "RQIO01000002.1",
+        "RQIO01000003.1",
+        "RQIO01000004.1",
+        "RQIO01000005.1"
+      ],
+      "seq_count": 10638,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Psittaciformes",
+        "family": "Psittacidae",
+        "genus": "Amazona"
+      },
+      "common_name": "yellow-billed parrot",
+      "published": "2026-04-07T05:13:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acollaria.Ensembl.ASM394721v1/BSgenome.Acollaria.Ensembl.ASM394721v1_1.0.0.tar.gz"
     }
   ]
 }

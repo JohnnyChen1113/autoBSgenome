@@ -3285,3 +3285,7 @@ NeedsCompilation: no
 Package: BSgenome.Arowi.Ensembl.aptRow1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acollaria.Ensembl.ASM394721v1
+Version: 1.0.0
+NeedsCompilation: no
