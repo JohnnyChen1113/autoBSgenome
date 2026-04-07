@@ -14400,6 +14400,50 @@
       ]
     },
     {
+      "organism": "Emiliania huxleyi CCMP1516",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Haptophyta",
+        "order": "Isochrysidales",
+        "family": "Noelaerhabdaceae",
+        "genus": "Emiliania"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ehuxleyi.NCBI.EmilianahuxleyiCCMP1516maingenomeassemblyv10",
+          "version": "1.0.0",
+          "organism": "Emiliania huxleyi CCMP1516",
+          "assembly": "Emiliana huxleyi CCMP1516 main genome assembly v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000372725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000372725.1/",
+          "file_name": "BSgenome.Ehuxleyi.NCBI.EmilianahuxleyiCCMP1516maingenomeassemblyv10_1.0.0.tar.gz",
+          "size": 41245119,
+          "seq_ids": [
+            "NW_005202428.1",
+            "NW_005202427.1",
+            "NW_005202426.1",
+            "NW_005202425.1",
+            "NW_005202424.1"
+          ],
+          "seq_count": 7795,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Haptophyta",
+            "order": "Isochrysidales",
+            "family": "Noelaerhabdaceae",
+            "genus": "Emiliania"
+          },
+          "common_name": "",
+          "published": "2026-04-07T02:37:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehuxleyi.NCBI.EmilianahuxleyiCCMP1516maingenomeassemblyv10/BSgenome.Ehuxleyi.NCBI.EmilianahuxleyiCCMP1516maingenomeassemblyv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Empidonax traillii",
       "common_name": "willow flycatcher",
       "group": "vertebrate_other",
@@ -64545,6 +64589,36 @@
       "common_name": "",
       "published": "2026-04-07T02:37:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sarctica.NCBI.SphaarcticaJP610V1/BSgenome.Sarctica.NCBI.SphaarcticaJP610V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ehuxleyi.NCBI.EmilianahuxleyiCCMP1516maingenomeassemblyv10",
+      "version": "1.0.0",
+      "organism": "Emiliania huxleyi CCMP1516",
+      "assembly": "Emiliana huxleyi CCMP1516 main genome assembly v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000372725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000372725.1/",
+      "file_name": "BSgenome.Ehuxleyi.NCBI.EmilianahuxleyiCCMP1516maingenomeassemblyv10_1.0.0.tar.gz",
+      "size": 41245119,
+      "seq_ids": [
+        "NW_005202428.1",
+        "NW_005202427.1",
+        "NW_005202426.1",
+        "NW_005202425.1",
+        "NW_005202424.1"
+      ],
+      "seq_count": 7795,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Haptophyta",
+        "order": "Isochrysidales",
+        "family": "Noelaerhabdaceae",
+        "genus": "Emiliania"
+      },
+      "common_name": "",
+      "published": "2026-04-07T02:37:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehuxleyi.NCBI.EmilianahuxleyiCCMP1516maingenomeassemblyv10/BSgenome.Ehuxleyi.NCBI.EmilianahuxleyiCCMP1516maingenomeassemblyv10_1.0.0.tar.gz"
     }
   ]
 }
