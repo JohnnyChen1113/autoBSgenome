@@ -3465,3 +3465,7 @@ NeedsCompilation: no
 Package: BSgenome.Chircus.Ensembl.CVASUBBG10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csyrichta.Ensembl.Tarsiussyrichta201
+Version: 1.0.0
+NeedsCompilation: no
