@@ -3357,3 +3357,7 @@ NeedsCompilation: no
 Package: BSgenome.Apercula.Ensembl.Nemov1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acunicularia.Ensembl.athCun1
+Version: 1.0.0
+NeedsCompilation: no
