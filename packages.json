@@ -1049,6 +1049,54 @@
       ]
     },
     {
+      "organism": "Amphilophus citrinellus",
+      "common_name": "Midas cichlid",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Amphilophus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acitrinellus.Ensembl.Midasv5",
+          "version": "1.0.0",
+          "organism": "Amphilophus citrinellus",
+          "assembly": "Midas_v5",
+          "provider": "Ensembl",
+          "accession": "GCA_000751415.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000751415.1/",
+          "file_name": "BSgenome.Acitrinellus.Ensembl.Midasv5_1.0.0.tar.gz",
+          "size": 193130279,
+          "seq_ids": [
+            "CCOE01000287.1",
+            "CCOE01000244.1",
+            "CCOE01000449.1",
+            "CCOE01000334.1",
+            "CCOE01000384.1"
+          ],
+          "seq_count": 6637,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cichliformes",
+            "family": "Cichlidae",
+            "genus": "Amphilophus"
+          },
+          "common_name": "Midas cichlid",
+          "published": "2026-04-07T06:55:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acitrinellus.Ensembl.Midasv5/BSgenome.Acitrinellus.Ensembl.Midasv5_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Amphimedon queenslandica",
       "common_name": "",
       "group": "invertebrate",
@@ -65600,6 +65648,38 @@
       "common_name": "Eastern spot-billed duck",
       "published": "2026-04-07T06:54:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Azonorhyncha.Ensembl.ASM222487v1/BSgenome.Azonorhyncha.Ensembl.ASM222487v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acitrinellus.Ensembl.Midasv5",
+      "version": "1.0.0",
+      "organism": "Amphilophus citrinellus",
+      "assembly": "Midas_v5",
+      "provider": "Ensembl",
+      "accession": "GCA_000751415.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000751415.1/",
+      "file_name": "BSgenome.Acitrinellus.Ensembl.Midasv5_1.0.0.tar.gz",
+      "size": 193130279,
+      "seq_ids": [
+        "CCOE01000287.1",
+        "CCOE01000244.1",
+        "CCOE01000449.1",
+        "CCOE01000334.1",
+        "CCOE01000384.1"
+      ],
+      "seq_count": 6637,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Amphilophus"
+      },
+      "common_name": "Midas cichlid",
+      "published": "2026-04-07T06:55:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acitrinellus.Ensembl.Midasv5/BSgenome.Acitrinellus.Ensembl.Midasv5_1.0.0.tar.gz"
     }
   ]
 }

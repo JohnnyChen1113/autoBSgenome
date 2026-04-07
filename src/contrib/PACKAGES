@@ -3325,3 +3325,7 @@ NeedsCompilation: no
 Package: BSgenome.Azonorhyncha.Ensembl.ASM222487v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acitrinellus.Ensembl.Midasv5
+Version: 1.0.0
+NeedsCompilation: no
