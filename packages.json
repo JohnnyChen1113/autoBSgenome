@@ -33161,6 +33161,48 @@
       ]
     },
     {
+      "organism": "Sphaeroforma arctica JP610",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Ichthyosporea",
+        "order": "Ichthyophonida",
+        "genus": "Sphaeroforma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sarctica.NCBI.SphaarcticaJP610V1",
+          "version": "1.0.0",
+          "organism": "Sphaeroforma arctica JP610",
+          "assembly": "Spha_arctica_JP610_V1",
+          "provider": "NCBI",
+          "accession": "GCF_001186125.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001186125.1/",
+          "file_name": "BSgenome.Sarctica.NCBI.SphaarcticaJP610V1_1.0.0.tar.gz",
+          "size": 25983861,
+          "seq_ids": [
+            "NW_014040557.1",
+            "NW_014040556.1",
+            "NW_014040555.1",
+            "NW_014040554.1",
+            "NW_014040553.1"
+          ],
+          "seq_count": 15619,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "class": "Ichthyosporea",
+            "order": "Ichthyophonida",
+            "genus": "Sphaeroforma"
+          },
+          "common_name": "",
+          "published": "2026-04-07T02:37:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sarctica.NCBI.SphaarcticaJP610V1/BSgenome.Sarctica.NCBI.SphaarcticaJP610V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sphaerulina musiva SO2202",
       "common_name": "",
       "group": "fungi",
@@ -64474,6 +64516,35 @@
       "common_name": "lettuce downy mildew",
       "published": "2026-04-07T02:37:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Blactucae.NCBI.BlacSF5v2/BSgenome.Blactucae.NCBI.BlacSF5v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sarctica.NCBI.SphaarcticaJP610V1",
+      "version": "1.0.0",
+      "organism": "Sphaeroforma arctica JP610",
+      "assembly": "Spha_arctica_JP610_V1",
+      "provider": "NCBI",
+      "accession": "GCF_001186125.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001186125.1/",
+      "file_name": "BSgenome.Sarctica.NCBI.SphaarcticaJP610V1_1.0.0.tar.gz",
+      "size": 25983861,
+      "seq_ids": [
+        "NW_014040557.1",
+        "NW_014040556.1",
+        "NW_014040555.1",
+        "NW_014040554.1",
+        "NW_014040553.1"
+      ],
+      "seq_count": 15619,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "class": "Ichthyosporea",
+        "order": "Ichthyophonida",
+        "genus": "Sphaeroforma"
+      },
+      "common_name": "",
+      "published": "2026-04-07T02:37:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sarctica.NCBI.SphaarcticaJP610V1/BSgenome.Sarctica.NCBI.SphaarcticaJP610V1_1.0.0.tar.gz"
     }
   ]
 }

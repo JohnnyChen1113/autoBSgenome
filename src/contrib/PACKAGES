@@ -3265,3 +3265,7 @@ NeedsCompilation: no
 Package: BSgenome.Blactucae.NCBI.BlacSF5v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sarctica.NCBI.SphaarcticaJP610V1
+Version: 1.0.0
+NeedsCompilation: no
