@@ -7054,6 +7054,54 @@
       ]
     },
     {
+      "organism": "Bos mutus",
+      "common_name": "wild yak",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bos"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bmutus.Ensembl.BosGruv20",
+          "version": "1.0.0",
+          "organism": "Bos mutus",
+          "assembly": "BosGru_v2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000298355.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000298355.1/",
+          "file_name": "BSgenome.Bmutus.Ensembl.BosGruv20_1.0.0.tar.gz",
+          "size": 605469391,
+          "seq_ids": [
+            "JH881270.1",
+            "JH881124.1",
+            "JH880651.1",
+            "JH881196.1",
+            "JH880493.1"
+          ],
+          "seq_count": 41192,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Bos"
+          },
+          "common_name": "wild yak",
+          "published": "2026-04-07T11:02:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bmutus.Ensembl.BosGruv20/BSgenome.Bmutus.Ensembl.BosGruv20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bos taurus",
       "common_name": "domestic cattle",
       "group": "vertebrate_mammalian",
@@ -68055,6 +68103,38 @@
       "common_name": "American beaver",
       "published": "2026-04-07T11:01:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccanadensis.Ensembl.Ccangenomev10/BSgenome.Ccanadensis.Ensembl.Ccangenomev10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bmutus.Ensembl.BosGruv20",
+      "version": "1.0.0",
+      "organism": "Bos mutus",
+      "assembly": "BosGru_v2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000298355.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000298355.1/",
+      "file_name": "BSgenome.Bmutus.Ensembl.BosGruv20_1.0.0.tar.gz",
+      "size": 605469391,
+      "seq_ids": [
+        "JH881270.1",
+        "JH881124.1",
+        "JH880651.1",
+        "JH881196.1",
+        "JH880493.1"
+      ],
+      "seq_count": 41192,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bos"
+      },
+      "common_name": "wild yak",
+      "published": "2026-04-07T11:02:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bmutus.Ensembl.BosGruv20/BSgenome.Bmutus.Ensembl.BosGruv20_1.0.0.tar.gz"
     }
   ]
 }

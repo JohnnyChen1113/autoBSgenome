@@ -3457,3 +3457,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccanadensis.Ensembl.Ccangenomev10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmutus.Ensembl.BosGruv20
+Version: 1.0.0
+NeedsCompilation: no
