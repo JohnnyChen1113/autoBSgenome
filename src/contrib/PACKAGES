@@ -3353,3 +3353,7 @@ NeedsCompilation: no
 Package: BSgenome.Amelanoleuca.Ensembl.ASM200744v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apercula.Ensembl.Nemov1
+Version: 1.0.0
+NeedsCompilation: no

@@ -1223,6 +1223,52 @@
       ]
     },
     {
+      "organism": "Amphiprion percula",
+      "common_name": "orange clownfish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Pomacentridae",
+        "genus": "Amphiprion"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Apercula.Ensembl.Nemov1",
+          "version": "1.0.0",
+          "organism": "Amphiprion percula",
+          "assembly": "Nemo_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003047355.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003047355.1/",
+          "file_name": "BSgenome.Apercula.Ensembl.Nemov1_1.0.0.tar.gz",
+          "size": 210489944,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 365,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "family": "Pomacentridae",
+            "genus": "Amphiprion"
+          },
+          "common_name": "orange clownfish",
+          "published": "2026-04-07T08:15:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apercula.Ensembl.Nemov1/BSgenome.Apercula.Ensembl.Nemov1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ananas comosus",
       "common_name": "pineapple",
       "group": "plant",
@@ -66141,6 +66187,37 @@
       "common_name": "giant panda",
       "published": "2026-04-07T06:56:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amelanoleuca.Ensembl.ASM200744v2/BSgenome.Amelanoleuca.Ensembl.ASM200744v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Apercula.Ensembl.Nemov1",
+      "version": "1.0.0",
+      "organism": "Amphiprion percula",
+      "assembly": "Nemo_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003047355.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003047355.1/",
+      "file_name": "BSgenome.Apercula.Ensembl.Nemov1_1.0.0.tar.gz",
+      "size": 210489944,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 365,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Pomacentridae",
+        "genus": "Amphiprion"
+      },
+      "common_name": "orange clownfish",
+      "published": "2026-04-07T08:15:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apercula.Ensembl.Nemov1/BSgenome.Apercula.Ensembl.Nemov1_1.0.0.tar.gz"
     }
   ]
 }
