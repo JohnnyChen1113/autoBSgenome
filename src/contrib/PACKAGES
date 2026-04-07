@@ -3425,3 +3425,7 @@ NeedsCompilation: no
 Package: BSgenome.Bgrunniens.Ensembl.LUBosgruv30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Chircus.Ensembl.ARS1
+Version: 1.0.0
+NeedsCompilation: no
