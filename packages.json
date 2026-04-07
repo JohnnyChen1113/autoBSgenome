@@ -7532,6 +7532,54 @@
       ]
     },
     {
+      "organism": "Callithrix jacchus",
+      "common_name": "white-tufted-ear marmoset",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cebidae",
+        "genus": "Callithrix"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cjacchus.Ensembl.mCalJac1patX",
+          "version": "1.0.0",
+          "organism": "Callithrix jacchus",
+          "assembly": "mCalJac1.pat.X",
+          "provider": "Ensembl",
+          "accession": "GCA_011100555.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011100555.1/",
+          "file_name": "BSgenome.Cjacchus.Ensembl.mCalJac1patX_1.0.0.tar.gz",
+          "size": 667061281,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 352,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cebidae",
+            "genus": "Callithrix"
+          },
+          "common_name": "white-tufted-ear marmoset",
+          "published": "2026-04-07T08:17:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cjacchus.Ensembl.mCalJac1patX/BSgenome.Cjacchus.Ensembl.mCalJac1patX_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Callorhinus ursinus",
       "common_name": "northern fur seal",
       "group": "vertebrate_mammalian",
@@ -66583,6 +66631,38 @@
       "common_name": "dingo",
       "published": "2026-04-07T08:17:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.ASM325472v1/BSgenome.Clupus.Ensembl.ASM325472v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cjacchus.Ensembl.mCalJac1patX",
+      "version": "1.0.0",
+      "organism": "Callithrix jacchus",
+      "assembly": "mCalJac1.pat.X",
+      "provider": "Ensembl",
+      "accession": "GCA_011100555.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011100555.1/",
+      "file_name": "BSgenome.Cjacchus.Ensembl.mCalJac1patX_1.0.0.tar.gz",
+      "size": 667061281,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 352,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cebidae",
+        "genus": "Callithrix"
+      },
+      "common_name": "white-tufted-ear marmoset",
+      "published": "2026-04-07T08:17:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cjacchus.Ensembl.mCalJac1patX/BSgenome.Cjacchus.Ensembl.mCalJac1patX_1.0.0.tar.gz"
     }
   ]
 }

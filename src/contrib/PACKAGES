@@ -3377,3 +3377,7 @@ NeedsCompilation: no
 Package: BSgenome.Clupus.Ensembl.ASM325472v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cjacchus.Ensembl.mCalJac1patX
+Version: 1.0.0
+NeedsCompilation: no
