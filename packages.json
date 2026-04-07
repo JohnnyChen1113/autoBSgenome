@@ -36632,6 +36632,52 @@
       ]
     },
     {
+      "organism": "Trypanosoma cruzi",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Trypanosoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tcruzi.NCBI.ASM20906v1",
+          "version": "1.0.0",
+          "organism": "Trypanosoma cruzi",
+          "assembly": "ASM20906v1",
+          "provider": "NCBI",
+          "accession": "GCF_000209065.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000209065.1/",
+          "file_name": "BSgenome.Tcruzi.NCBI.ASM20906v1_1.0.0.tar.gz",
+          "size": 21968695,
+          "seq_ids": [
+            "NW_001848937.1",
+            "NW_001848938.1",
+            "NW_001848939.1",
+            "NW_001848940.1",
+            "NW_001848941.1"
+          ],
+          "seq_count": 29495,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Euglenozoa",
+            "class": "Kinetoplastea",
+            "order": "Trypanosomatida",
+            "family": "Trypanosomatidae",
+            "genus": "Trypanosoma"
+          },
+          "common_name": "",
+          "published": "2026-04-07T02:36:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcruzi.NCBI.ASM20906v1/BSgenome.Tcruzi.NCBI.ASM20906v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trypanosoma equiperdum",
       "common_name": "",
       "group": "other",
@@ -64166,6 +64212,37 @@
       "common_name": "",
       "published": "2026-04-07T02:36:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gtheta.NCBI.Guith1/BSgenome.Gtheta.NCBI.Guith1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tcruzi.NCBI.ASM20906v1",
+      "version": "1.0.0",
+      "organism": "Trypanosoma cruzi",
+      "assembly": "ASM20906v1",
+      "provider": "NCBI",
+      "accession": "GCF_000209065.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000209065.1/",
+      "file_name": "BSgenome.Tcruzi.NCBI.ASM20906v1_1.0.0.tar.gz",
+      "size": 21968695,
+      "seq_ids": [
+        "NW_001848937.1",
+        "NW_001848938.1",
+        "NW_001848939.1",
+        "NW_001848940.1",
+        "NW_001848941.1"
+      ],
+      "seq_count": 29495,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Euglenozoa",
+        "class": "Kinetoplastea",
+        "order": "Trypanosomatida",
+        "family": "Trypanosomatidae",
+        "genus": "Trypanosoma"
+      },
+      "common_name": "",
+      "published": "2026-04-07T02:36:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcruzi.NCBI.ASM20906v1/BSgenome.Tcruzi.NCBI.ASM20906v1_1.0.0.tar.gz"
     }
   ]
 }
