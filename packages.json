@@ -805,6 +805,38 @@
           "common_name": "giant panda",
           "published": "2026-04-03T22:40:38Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amelanoleuca.NCBI.ASM200744v3/BSgenome.Amelanoleuca.NCBI.ASM200744v3_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Amelanoleuca.Ensembl.ASM200744v2",
+          "version": "1.0.0",
+          "organism": "Ailuropoda melanoleuca",
+          "assembly": "ASM200744v2",
+          "provider": "Ensembl",
+          "accession": "GCA_002007445.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002007445.2/",
+          "file_name": "BSgenome.Amelanoleuca.Ensembl.ASM200744v2_1.0.0.tar.gz",
+          "size": 576312584,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 77287,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Ursidae",
+            "genus": "Ailuropoda"
+          },
+          "common_name": "giant panda",
+          "published": "2026-04-07T06:56:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amelanoleuca.Ensembl.ASM200744v2/BSgenome.Amelanoleuca.Ensembl.ASM200744v2_1.0.0.tar.gz"
         }
       ]
     },
@@ -66077,6 +66109,38 @@
       "common_name": "Arabian camel",
       "published": "2026-04-07T06:56:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdromedarius.Ensembl.CamDro2/BSgenome.Cdromedarius.Ensembl.CamDro2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Amelanoleuca.Ensembl.ASM200744v2",
+      "version": "1.0.0",
+      "organism": "Ailuropoda melanoleuca",
+      "assembly": "ASM200744v2",
+      "provider": "Ensembl",
+      "accession": "GCA_002007445.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002007445.2/",
+      "file_name": "BSgenome.Amelanoleuca.Ensembl.ASM200744v2_1.0.0.tar.gz",
+      "size": 576312584,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 77287,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ursidae",
+        "genus": "Ailuropoda"
+      },
+      "common_name": "giant panda",
+      "published": "2026-04-07T06:56:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amelanoleuca.Ensembl.ASM200744v2/BSgenome.Amelanoleuca.Ensembl.ASM200744v2_1.0.0.tar.gz"
     }
   ]
 }
