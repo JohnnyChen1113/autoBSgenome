@@ -6322,6 +6322,54 @@
       ]
     },
     {
+      "organism": "Betta splendens",
+      "common_name": "Siamese fighting fish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Anabantiformes",
+        "family": "Osphronemidae",
+        "genus": "Betta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bsplendens.Ensembl.fBetSpl52",
+          "version": "1.0.0",
+          "organism": "Betta splendens",
+          "assembly": "fBetSpl5.2",
+          "provider": "Ensembl",
+          "accession": "GCA_900634795.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900634795.2/",
+          "file_name": "BSgenome.Bsplendens.Ensembl.fBetSpl52_1.0.0.tar.gz",
+          "size": 105202852,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 69,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Anabantiformes",
+            "family": "Osphronemidae",
+            "genus": "Betta"
+          },
+          "common_name": "Siamese fighting fish",
+          "published": "2026-04-07T09:47:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bsplendens.Ensembl.fBetSpl52/BSgenome.Bsplendens.Ensembl.fBetSpl52_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bipolaris oryzae ATCC 44560",
       "common_name": "",
       "group": "fungi",
@@ -67031,6 +67079,38 @@
       "common_name": "Spoon-billed sandpiper",
       "published": "2026-04-07T09:46:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpygmaea.Ensembl.ASM369795v1/BSgenome.Cpygmaea.Ensembl.ASM369795v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bsplendens.Ensembl.fBetSpl52",
+      "version": "1.0.0",
+      "organism": "Betta splendens",
+      "assembly": "fBetSpl5.2",
+      "provider": "Ensembl",
+      "accession": "GCA_900634795.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900634795.2/",
+      "file_name": "BSgenome.Bsplendens.Ensembl.fBetSpl52_1.0.0.tar.gz",
+      "size": 105202852,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 69,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Anabantiformes",
+        "family": "Osphronemidae",
+        "genus": "Betta"
+      },
+      "common_name": "Siamese fighting fish",
+      "published": "2026-04-07T09:47:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bsplendens.Ensembl.fBetSpl52/BSgenome.Bsplendens.Ensembl.fBetSpl52_1.0.0.tar.gz"
     }
   ]
 }
