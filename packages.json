@@ -15044,6 +15044,54 @@
       ]
     },
     {
+      "organism": "Dromaius novaehollandiae",
+      "common_name": "emu",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Casuariiformes",
+        "family": "Dromaiidae",
+        "genus": "Dromaius"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dnovaehollandiae.Ensembl.droNov1",
+          "version": "1.0.0",
+          "organism": "Dromaius novaehollandiae",
+          "assembly": "droNov1",
+          "provider": "Ensembl",
+          "accession": "GCA_003342905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003342905.1/",
+          "file_name": "BSgenome.Dnovaehollandiae.Ensembl.droNov1_1.0.0.tar.gz",
+          "size": 291444032,
+          "seq_ids": [
+            "PTEY01000001.1",
+            "PTEY01000002.1",
+            "PTEY01000003.1",
+            "PTEY01000004.1",
+            "PTEY01000005.1"
+          ],
+          "seq_count": 2777,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Casuariiformes",
+            "family": "Dromaiidae",
+            "genus": "Dromaius"
+          },
+          "common_name": "emu",
+          "published": "2026-04-07T11:01:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnovaehollandiae.Ensembl.droNov1/BSgenome.Dnovaehollandiae.Ensembl.droNov1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila albomicans",
       "common_name": "",
       "group": "invertebrate",
@@ -67895,6 +67943,38 @@
       "common_name": "Chacoan peccary",
       "published": "2026-04-07T11:00:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cwagneri.Ensembl.CatWagv2BIUUUCD/BSgenome.Cwagneri.Ensembl.CatWagv2BIUUUCD_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dnovaehollandiae.Ensembl.droNov1",
+      "version": "1.0.0",
+      "organism": "Dromaius novaehollandiae",
+      "assembly": "droNov1",
+      "provider": "Ensembl",
+      "accession": "GCA_003342905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003342905.1/",
+      "file_name": "BSgenome.Dnovaehollandiae.Ensembl.droNov1_1.0.0.tar.gz",
+      "size": 291444032,
+      "seq_ids": [
+        "PTEY01000001.1",
+        "PTEY01000002.1",
+        "PTEY01000003.1",
+        "PTEY01000004.1",
+        "PTEY01000005.1"
+      ],
+      "seq_count": 2777,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Casuariiformes",
+        "family": "Dromaiidae",
+        "genus": "Dromaius"
+      },
+      "common_name": "emu",
+      "published": "2026-04-07T11:01:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnovaehollandiae.Ensembl.droNov1/BSgenome.Dnovaehollandiae.Ensembl.droNov1_1.0.0.tar.gz"
     }
   ]
 }
