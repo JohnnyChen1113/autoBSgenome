@@ -6978,6 +6978,54 @@
       ]
     },
     {
+      "organism": "Caenorhabditis elegans",
+      "common_name": "",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Nematoda",
+        "class": "Chromadorea",
+        "order": "Rhabditida",
+        "family": "Rhabditidae",
+        "genus": "Caenorhabditis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Celegans.Ensembl.WBcel235",
+          "version": "1.0.0",
+          "organism": "Caenorhabditis elegans",
+          "assembly": "WBcel235",
+          "provider": "Ensembl",
+          "accession": "GCA_000002985.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002985.3/",
+          "file_name": "BSgenome.Celegans.Ensembl.WBcel235_1.0.0.tar.gz",
+          "size": 23652315,
+          "seq_ids": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V"
+          ],
+          "seq_count": 7,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Nematoda",
+            "class": "Chromadorea",
+            "order": "Rhabditida",
+            "family": "Rhabditidae",
+            "genus": "Caenorhabditis"
+          },
+          "common_name": "",
+          "published": "2026-04-07T06:55:12Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Celegans.Ensembl.WBcel235/BSgenome.Celegans.Ensembl.WBcel235_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cairina moschata domestica",
       "common_name": "",
       "group": "other",
@@ -65680,6 +65728,38 @@
       "common_name": "Midas cichlid",
       "published": "2026-04-07T06:55:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acitrinellus.Ensembl.Midasv5/BSgenome.Acitrinellus.Ensembl.Midasv5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Celegans.Ensembl.WBcel235",
+      "version": "1.0.0",
+      "organism": "Caenorhabditis elegans",
+      "assembly": "WBcel235",
+      "provider": "Ensembl",
+      "accession": "GCA_000002985.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002985.3/",
+      "file_name": "BSgenome.Celegans.Ensembl.WBcel235_1.0.0.tar.gz",
+      "size": 23652315,
+      "seq_ids": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "seq_count": 7,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Nematoda",
+        "class": "Chromadorea",
+        "order": "Rhabditida",
+        "family": "Rhabditidae",
+        "genus": "Caenorhabditis"
+      },
+      "common_name": "",
+      "published": "2026-04-07T06:55:12Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Celegans.Ensembl.WBcel235/BSgenome.Celegans.Ensembl.WBcel235_1.0.0.tar.gz"
     }
   ]
 }
