@@ -1289,6 +1289,54 @@
       ]
     },
     {
+      "organism": "Anser cygnoides",
+      "common_name": "Swan goose",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anser"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acygnoides.Ensembl.GooseV10",
+          "version": "1.0.0",
+          "organism": "Anser cygnoides",
+          "assembly": "GooseV1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002166845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002166845.1/",
+          "file_name": "BSgenome.Acygnoides.Ensembl.GooseV10_1.0.0.tar.gz",
+          "size": 267286769,
+          "seq_ids": [
+            "KZ155842.1",
+            "KZ155843.1",
+            "KZ155844.1",
+            "KZ155845.1",
+            "KZ155846.1"
+          ],
+          "seq_count": 1801,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Anseriformes",
+            "family": "Anatidae",
+            "genus": "Anser"
+          },
+          "common_name": "Swan goose",
+          "published": "2026-04-07T05:14:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acygnoides.Ensembl.GooseV10/BSgenome.Acygnoides.Ensembl.GooseV10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Antrostomus carolinensis",
       "common_name": "chuck-will's-widow",
       "group": "vertebrate_other",
@@ -65000,6 +65048,38 @@
       "common_name": "Eurasian sparrowhawk",
       "published": "2026-04-07T05:14:14Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anisus.Ensembl.Accipiternisusver10/BSgenome.Anisus.Ensembl.Accipiternisusver10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acygnoides.Ensembl.GooseV10",
+      "version": "1.0.0",
+      "organism": "Anser cygnoides",
+      "assembly": "GooseV1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002166845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002166845.1/",
+      "file_name": "BSgenome.Acygnoides.Ensembl.GooseV10_1.0.0.tar.gz",
+      "size": 267286769,
+      "seq_ids": [
+        "KZ155842.1",
+        "KZ155843.1",
+        "KZ155844.1",
+        "KZ155845.1",
+        "KZ155846.1"
+      ],
+      "seq_count": 1801,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anser"
+      },
+      "common_name": "Swan goose",
+      "published": "2026-04-07T05:14:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acygnoides.Ensembl.GooseV10/BSgenome.Acygnoides.Ensembl.GooseV10_1.0.0.tar.gz"
     }
   ]
 }

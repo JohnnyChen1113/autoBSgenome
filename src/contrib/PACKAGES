@@ -3293,3 +3293,7 @@ NeedsCompilation: no
 Package: BSgenome.Anisus.Ensembl.Accipiternisusver10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acygnoides.Ensembl.GooseV10
+Version: 1.0.0
+NeedsCompilation: no
