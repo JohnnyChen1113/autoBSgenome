@@ -8848,6 +8848,52 @@
       ]
     },
     {
+      "organism": "Chondrus crispus",
+      "common_name": "carragheen",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Rhodophyta",
+        "class": "Florideophyceae",
+        "order": "Gigartinales",
+        "family": "Gigartinaceae",
+        "genus": "Chondrus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccrispus.NCBI.ASM35022v2",
+          "version": "1.0.0",
+          "organism": "Chondrus crispus",
+          "assembly": "ASM35022v2",
+          "provider": "NCBI",
+          "accession": "GCF_000350225.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000350225.1/",
+          "file_name": "BSgenome.Ccrispus.NCBI.ASM35022v2_1.0.0.tar.gz",
+          "size": 26493619,
+          "seq_ids": [
+            "NW_005178476.1",
+            "NW_005178477.1",
+            "NW_005178478.1",
+            "NW_005178479.1",
+            "NW_005178480.1"
+          ],
+          "seq_count": 926,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Rhodophyta",
+            "class": "Florideophyceae",
+            "order": "Gigartinales",
+            "family": "Gigartinaceae",
+            "genus": "Chondrus"
+          },
+          "common_name": "carragheen",
+          "published": "2026-04-07T02:37:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccrispus.NCBI.ASM35022v2/BSgenome.Ccrispus.NCBI.ASM35022v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chrysochloris asiatica",
       "common_name": "Cape golden mole",
       "group": "vertebrate_mammalian",
@@ -64320,6 +64366,37 @@
       "common_name": "",
       "published": "2026-04-07T02:37:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tthermophila.NCBI.JCVITTA122/BSgenome.Tthermophila.NCBI.JCVITTA122_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccrispus.NCBI.ASM35022v2",
+      "version": "1.0.0",
+      "organism": "Chondrus crispus",
+      "assembly": "ASM35022v2",
+      "provider": "NCBI",
+      "accession": "GCF_000350225.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000350225.1/",
+      "file_name": "BSgenome.Ccrispus.NCBI.ASM35022v2_1.0.0.tar.gz",
+      "size": 26493619,
+      "seq_ids": [
+        "NW_005178476.1",
+        "NW_005178477.1",
+        "NW_005178478.1",
+        "NW_005178479.1",
+        "NW_005178480.1"
+      ],
+      "seq_count": 926,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Rhodophyta",
+        "class": "Florideophyceae",
+        "order": "Gigartinales",
+        "family": "Gigartinaceae",
+        "genus": "Chondrus"
+      },
+      "common_name": "carragheen",
+      "published": "2026-04-07T02:37:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccrispus.NCBI.ASM35022v2/BSgenome.Ccrispus.NCBI.ASM35022v2_1.0.0.tar.gz"
     }
   ]
 }
