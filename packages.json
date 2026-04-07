@@ -27606,6 +27606,52 @@
       ]
     },
     {
+      "organism": "Phytophthora infestans T30-4",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Oomycota",
+        "class": "Peronosporomycetes",
+        "order": "Peronosporales",
+        "family": "Peronosporaceae",
+        "genus": "Phytophthora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pinfestans.NCBI.ASM14294v1",
+          "version": "1.0.0",
+          "organism": "Phytophthora infestans T30-4",
+          "assembly": "ASM14294v1",
+          "provider": "NCBI",
+          "accession": "GCF_000142945.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000142945.1/",
+          "file_name": "BSgenome.Pinfestans.NCBI.ASM14294v1_1.0.0.tar.gz",
+          "size": 46626165,
+          "seq_ids": [
+            "NW_003302556.1",
+            "NW_003302557.1",
+            "NW_003302558.1",
+            "NW_003302559.1",
+            "NW_003302560.1"
+          ],
+          "seq_count": 4921,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Oomycota",
+            "class": "Peronosporomycetes",
+            "order": "Peronosporales",
+            "family": "Peronosporaceae",
+            "genus": "Phytophthora"
+          },
+          "common_name": "",
+          "published": "2026-04-07T02:38:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pinfestans.NCBI.ASM14294v1/BSgenome.Pinfestans.NCBI.ASM14294v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phytophthora nicotianae INRA-310",
       "common_name": "",
       "group": "other",
@@ -64619,6 +64665,37 @@
       "common_name": "",
       "published": "2026-04-07T02:37:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehuxleyi.NCBI.EmilianahuxleyiCCMP1516maingenomeassemblyv10/BSgenome.Ehuxleyi.NCBI.EmilianahuxleyiCCMP1516maingenomeassemblyv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pinfestans.NCBI.ASM14294v1",
+      "version": "1.0.0",
+      "organism": "Phytophthora infestans T30-4",
+      "assembly": "ASM14294v1",
+      "provider": "NCBI",
+      "accession": "GCF_000142945.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000142945.1/",
+      "file_name": "BSgenome.Pinfestans.NCBI.ASM14294v1_1.0.0.tar.gz",
+      "size": 46626165,
+      "seq_ids": [
+        "NW_003302556.1",
+        "NW_003302557.1",
+        "NW_003302558.1",
+        "NW_003302559.1",
+        "NW_003302560.1"
+      ],
+      "seq_count": 4921,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Oomycota",
+        "class": "Peronosporomycetes",
+        "order": "Peronosporales",
+        "family": "Peronosporaceae",
+        "genus": "Phytophthora"
+      },
+      "common_name": "",
+      "published": "2026-04-07T02:38:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pinfestans.NCBI.ASM14294v1/BSgenome.Pinfestans.NCBI.ASM14294v1_1.0.0.tar.gz"
     }
   ]
 }
