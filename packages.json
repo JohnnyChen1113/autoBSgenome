@@ -15540,6 +15540,54 @@
       ]
     },
     {
+      "organism": "Drosophila melanogaster",
+      "common_name": "fruit fly",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dmelanogaster.Ensembl.BDGP654",
+          "version": "1.0.0",
+          "organism": "Drosophila melanogaster",
+          "assembly": "BDGP6.54",
+          "provider": "Ensembl",
+          "accession": "GCA_000001215.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000001215.4/",
+          "file_name": "BSgenome.Dmelanogaster.Ensembl.BDGP654_1.0.0.tar.gz",
+          "size": 34181516,
+          "seq_ids": [
+            "2L",
+            "2R",
+            "3L",
+            "3R",
+            "4"
+          ],
+          "seq_count": 1870,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Insecta",
+            "order": "Diptera",
+            "family": "Drosophilidae",
+            "genus": "Drosophila"
+          },
+          "common_name": "fruit fly",
+          "published": "2026-04-07T11:59:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dmelanogaster.Ensembl.BDGP654/BSgenome.Dmelanogaster.Ensembl.BDGP654_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drosophila miranda",
       "common_name": "",
       "group": "invertebrate",
@@ -68263,6 +68311,38 @@
       "common_name": "Philippine tarsier",
       "published": "2026-04-07T11:05:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csyrichta.Ensembl.Tarsiussyrichta201/BSgenome.Csyrichta.Ensembl.Tarsiussyrichta201_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dmelanogaster.Ensembl.BDGP654",
+      "version": "1.0.0",
+      "organism": "Drosophila melanogaster",
+      "assembly": "BDGP6.54",
+      "provider": "Ensembl",
+      "accession": "GCA_000001215.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000001215.4/",
+      "file_name": "BSgenome.Dmelanogaster.Ensembl.BDGP654_1.0.0.tar.gz",
+      "size": 34181516,
+      "seq_ids": [
+        "2L",
+        "2R",
+        "3L",
+        "3R",
+        "4"
+      ],
+      "seq_count": 1870,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Drosophilidae",
+        "genus": "Drosophila"
+      },
+      "common_name": "fruit fly",
+      "published": "2026-04-07T11:59:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dmelanogaster.Ensembl.BDGP654/BSgenome.Dmelanogaster.Ensembl.BDGP654_1.0.0.tar.gz"
     }
   ]
 }
