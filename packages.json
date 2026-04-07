@@ -18022,6 +18022,54 @@
       ]
     },
     {
+      "organism": "Falco tinnunculus",
+      "common_name": "common kestrel",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ftinnunculus.Ensembl.FalTin10",
+          "version": "1.0.0",
+          "organism": "Falco tinnunculus",
+          "assembly": "FalTin1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_010332995.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_010332995.1/",
+          "file_name": "BSgenome.Ftinnunculus.Ensembl.FalTin10_1.0.0.tar.gz",
+          "size": 285669065,
+          "seq_ids": [
+            "ML997580.1",
+            "ML997577.1",
+            "ML997235.1",
+            "ML996799.1",
+            "ML997576.1"
+          ],
+          "seq_count": 69109,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Falconiformes",
+            "family": "Falconidae",
+            "genus": "Falco"
+          },
+          "common_name": "common kestrel",
+          "published": "2026-04-07T12:00:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ftinnunculus.Ensembl.FalTin10/BSgenome.Ftinnunculus.Ensembl.FalTin10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fibroporia radiculosa",
       "common_name": "",
       "group": "fungi",
@@ -68503,6 +68551,38 @@
       "common_name": "eastern happy",
       "published": "2026-04-07T12:00:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acalliptera.Ensembl.fAstCal13/BSgenome.Acalliptera.Ensembl.fAstCal13_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ftinnunculus.Ensembl.FalTin10",
+      "version": "1.0.0",
+      "organism": "Falco tinnunculus",
+      "assembly": "FalTin1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_010332995.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_010332995.1/",
+      "file_name": "BSgenome.Ftinnunculus.Ensembl.FalTin10_1.0.0.tar.gz",
+      "size": 285669065,
+      "seq_ids": [
+        "ML997580.1",
+        "ML997577.1",
+        "ML997235.1",
+        "ML996799.1",
+        "ML997576.1"
+      ],
+      "seq_count": 69109,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Falconiformes",
+        "family": "Falconidae",
+        "genus": "Falco"
+      },
+      "common_name": "common kestrel",
+      "published": "2026-04-07T12:00:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ftinnunculus.Ensembl.FalTin10/BSgenome.Ftinnunculus.Ensembl.FalTin10_1.0.0.tar.gz"
     }
   ]
 }

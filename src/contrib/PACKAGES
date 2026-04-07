@@ -3481,3 +3481,7 @@ NeedsCompilation: no
 Package: BSgenome.Acalliptera.Ensembl.fAstCal13
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ftinnunculus.Ensembl.FalTin10
+Version: 1.0.0
+NeedsCompilation: no
