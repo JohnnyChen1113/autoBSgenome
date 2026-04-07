@@ -3317,3 +3317,7 @@ NeedsCompilation: no
 Package: BSgenome.Aowenii.Ensembl.aptOwe1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aplatyrhynchos.Ensembl.ASM874695v1
+Version: 1.0.0
+NeedsCompilation: no
