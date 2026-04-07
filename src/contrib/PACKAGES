@@ -3345,3 +3345,7 @@ NeedsCompilation: no
 Package: BSgenome.Acarolinensis.Ensembl.AnoCar20v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cdromedarius.Ensembl.CamDro2
+Version: 1.0.0
+NeedsCompilation: no

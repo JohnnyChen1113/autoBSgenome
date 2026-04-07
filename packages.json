@@ -7520,6 +7520,54 @@
       ]
     },
     {
+      "organism": "Camelus dromedarius",
+      "common_name": "Arabian camel",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Camelidae",
+        "genus": "Camelus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cdromedarius.Ensembl.CamDro2",
+          "version": "1.0.0",
+          "organism": "Camelus dromedarius",
+          "assembly": "CamDro2",
+          "provider": "Ensembl",
+          "accession": "GCA_000803125.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000803125.2/",
+          "file_name": "BSgenome.Cdromedarius.Ensembl.CamDro2_1.0.0.tar.gz",
+          "size": 515174019,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 23439,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Camelidae",
+            "genus": "Camelus"
+          },
+          "common_name": "Arabian camel",
+          "published": "2026-04-07T06:56:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdromedarius.Ensembl.CamDro2/BSgenome.Cdromedarius.Ensembl.CamDro2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Camelus ferus",
       "common_name": "Wild Bactrian camel",
       "group": "vertebrate_mammalian",
@@ -65997,6 +66045,38 @@
       "common_name": "green anole",
       "published": "2026-04-07T06:56:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acarolinensis.Ensembl.AnoCar20v2/BSgenome.Acarolinensis.Ensembl.AnoCar20v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cdromedarius.Ensembl.CamDro2",
+      "version": "1.0.0",
+      "organism": "Camelus dromedarius",
+      "assembly": "CamDro2",
+      "provider": "Ensembl",
+      "accession": "GCA_000803125.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000803125.2/",
+      "file_name": "BSgenome.Cdromedarius.Ensembl.CamDro2_1.0.0.tar.gz",
+      "size": 515174019,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 23439,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Camelidae",
+        "genus": "Camelus"
+      },
+      "common_name": "Arabian camel",
+      "published": "2026-04-07T06:56:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdromedarius.Ensembl.CamDro2/BSgenome.Cdromedarius.Ensembl.CamDro2_1.0.0.tar.gz"
     }
   ]
 }
