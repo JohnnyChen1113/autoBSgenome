@@ -3261,3 +3261,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccrispus.NCBI.ASM35022v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Blactucae.NCBI.BlacSF5v2
+Version: 1.0.0
+NeedsCompilation: no

@@ -6276,6 +6276,52 @@
       ]
     },
     {
+      "organism": "Bremia lactucae",
+      "common_name": "lettuce downy mildew",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Oomycota",
+        "class": "Peronosporomycetes",
+        "order": "Peronosporales",
+        "family": "Peronosporaceae",
+        "genus": "Bremia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Blactucae.NCBI.BlacSF5v2",
+          "version": "1.0.0",
+          "organism": "Bremia lactucae",
+          "assembly": "BlacSF5v2",
+          "provider": "NCBI",
+          "accession": "GCF_004359215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004359215.1/",
+          "file_name": "BSgenome.Blactucae.NCBI.BlacSF5v2_1.0.0.tar.gz",
+          "size": 23990334,
+          "seq_ids": [
+            "NC_090610.1",
+            "NC_090611.1",
+            "NC_090612.1",
+            "NC_090613.1",
+            "NC_090614.1"
+          ],
+          "seq_count": 220,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Oomycota",
+            "class": "Peronosporomycetes",
+            "order": "Peronosporales",
+            "family": "Peronosporaceae",
+            "genus": "Bremia"
+          },
+          "common_name": "lettuce downy mildew",
+          "published": "2026-04-07T02:37:24Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Blactucae.NCBI.BlacSF5v2/BSgenome.Blactucae.NCBI.BlacSF5v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Brugia malayi",
       "common_name": "",
       "group": "invertebrate",
@@ -64397,6 +64443,37 @@
       "common_name": "carragheen",
       "published": "2026-04-07T02:37:14Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccrispus.NCBI.ASM35022v2/BSgenome.Ccrispus.NCBI.ASM35022v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Blactucae.NCBI.BlacSF5v2",
+      "version": "1.0.0",
+      "organism": "Bremia lactucae",
+      "assembly": "BlacSF5v2",
+      "provider": "NCBI",
+      "accession": "GCF_004359215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004359215.1/",
+      "file_name": "BSgenome.Blactucae.NCBI.BlacSF5v2_1.0.0.tar.gz",
+      "size": 23990334,
+      "seq_ids": [
+        "NC_090610.1",
+        "NC_090611.1",
+        "NC_090612.1",
+        "NC_090613.1",
+        "NC_090614.1"
+      ],
+      "seq_count": 220,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Oomycota",
+        "class": "Peronosporomycetes",
+        "order": "Peronosporales",
+        "family": "Peronosporaceae",
+        "genus": "Bremia"
+      },
+      "common_name": "lettuce downy mildew",
+      "published": "2026-04-07T02:37:24Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Blactucae.NCBI.BlacSF5v2/BSgenome.Blactucae.NCBI.BlacSF5v2_1.0.0.tar.gz"
     }
   ]
 }
