@@ -3477,3 +3477,7 @@ NeedsCompilation: no
 Package: BSgenome.Anancymaae.Ensembl.Anan20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acalliptera.Ensembl.fAstCal13
+Version: 1.0.0
+NeedsCompilation: no

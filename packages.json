@@ -5252,6 +5252,54 @@
       ]
     },
     {
+      "organism": "Astatotilapia calliptera",
+      "common_name": "eastern happy",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Astatotilapia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acalliptera.Ensembl.fAstCal13",
+          "version": "1.0.0",
+          "organism": "Astatotilapia calliptera",
+          "assembly": "fAstCal1.3",
+          "provider": "Ensembl",
+          "accession": "GCA_900246225.5",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900246225.5/",
+          "file_name": "BSgenome.Acalliptera.Ensembl.fAstCal13_1.0.0.tar.gz",
+          "size": 211750269,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 248,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cichliformes",
+            "family": "Cichlidae",
+            "genus": "Astatotilapia"
+          },
+          "common_name": "eastern happy",
+          "published": "2026-04-07T12:00:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acalliptera.Ensembl.fAstCal13/BSgenome.Acalliptera.Ensembl.fAstCal13_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Astyanax mexicanus",
       "common_name": "Mexican tetra",
       "group": "vertebrate_other",
@@ -68423,6 +68471,38 @@
       "common_name": "Ma's night monkey",
       "published": "2026-04-07T12:00:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anancymaae.Ensembl.Anan20/BSgenome.Anancymaae.Ensembl.Anan20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acalliptera.Ensembl.fAstCal13",
+      "version": "1.0.0",
+      "organism": "Astatotilapia calliptera",
+      "assembly": "fAstCal1.3",
+      "provider": "Ensembl",
+      "accession": "GCA_900246225.5",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900246225.5/",
+      "file_name": "BSgenome.Acalliptera.Ensembl.fAstCal13_1.0.0.tar.gz",
+      "size": 211750269,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 248,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Astatotilapia"
+      },
+      "common_name": "eastern happy",
+      "published": "2026-04-07T12:00:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acalliptera.Ensembl.fAstCal13/BSgenome.Acalliptera.Ensembl.fAstCal13_1.0.0.tar.gz"
     }
   ]
 }
