@@ -237,6 +237,54 @@
       ]
     },
     {
+      "organism": "Accipiter nisus",
+      "common_name": "Eurasian sparrowhawk",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Accipiter"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Anisus.Ensembl.Accipiternisusver10",
+          "version": "1.0.0",
+          "organism": "Accipiter nisus",
+          "assembly": "Accipiter_nisus_ver1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_004320145.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004320145.1/",
+          "file_name": "BSgenome.Anisus.Ensembl.Accipiternisusver10_1.0.0.tar.gz",
+          "size": 289492807,
+          "seq_ids": [
+            "BJBX01000455.1",
+            "BJBX01003607.1",
+            "BJBX01000099.1",
+            "BJBX01000876.1",
+            "BJBX01000452.1"
+          ],
+          "seq_count": 44975,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Accipitriformes",
+            "family": "Accipitridae",
+            "genus": "Accipiter"
+          },
+          "common_name": "Eurasian sparrowhawk",
+          "published": "2026-04-07T05:14:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anisus.Ensembl.Accipiternisusver10/BSgenome.Anisus.Ensembl.Accipiternisusver10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Acromyrmex echinatior",
       "common_name": "Panamanian leafcutter ant",
       "group": "invertebrate",
@@ -64920,6 +64968,38 @@
       "common_name": "yellow-billed parrot",
       "published": "2026-04-07T05:13:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acollaria.Ensembl.ASM394721v1/BSgenome.Acollaria.Ensembl.ASM394721v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Anisus.Ensembl.Accipiternisusver10",
+      "version": "1.0.0",
+      "organism": "Accipiter nisus",
+      "assembly": "Accipiter_nisus_ver1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_004320145.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004320145.1/",
+      "file_name": "BSgenome.Anisus.Ensembl.Accipiternisusver10_1.0.0.tar.gz",
+      "size": 289492807,
+      "seq_ids": [
+        "BJBX01000455.1",
+        "BJBX01003607.1",
+        "BJBX01000099.1",
+        "BJBX01000876.1",
+        "BJBX01000452.1"
+      ],
+      "seq_count": 44975,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Accipiter"
+      },
+      "common_name": "Eurasian sparrowhawk",
+      "published": "2026-04-07T05:14:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anisus.Ensembl.Accipiternisusver10/BSgenome.Anisus.Ensembl.Accipiternisusver10_1.0.0.tar.gz"
     }
   ]
 }
