@@ -8688,6 +8688,38 @@
           "common_name": "dog",
           "published": "2026-04-07T08:18:12Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.UUCfamGSD10/BSgenome.Clupus.Ensembl.UUCfamGSD10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Clupus.Ensembl.UMICHZoey31",
+          "version": "1.0.0",
+          "organism": "Canis lupus familiaris",
+          "assembly": "UMICH_Zoey_3.1",
+          "provider": "Ensembl",
+          "accession": "GCA_005444595.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_005444595.1/",
+          "file_name": "BSgenome.Clupus.Ensembl.UMICHZoey31_1.0.0.tar.gz",
+          "size": 568715385,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 376,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Canis"
+          },
+          "common_name": "dog",
+          "published": "2026-04-07T09:47:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.UMICHZoey31/BSgenome.Clupus.Ensembl.UMICHZoey31_1.0.0.tar.gz"
         }
       ]
     },
@@ -67111,6 +67143,38 @@
       "common_name": "Siamese fighting fish",
       "published": "2026-04-07T09:47:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bsplendens.Ensembl.fBetSpl52/BSgenome.Bsplendens.Ensembl.fBetSpl52_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Clupus.Ensembl.UMICHZoey31",
+      "version": "1.0.0",
+      "organism": "Canis lupus familiaris",
+      "assembly": "UMICH_Zoey_3.1",
+      "provider": "Ensembl",
+      "accession": "GCA_005444595.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_005444595.1/",
+      "file_name": "BSgenome.Clupus.Ensembl.UMICHZoey31_1.0.0.tar.gz",
+      "size": 568715385,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 376,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae",
+        "genus": "Canis"
+      },
+      "common_name": "dog",
+      "published": "2026-04-07T09:47:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.UMICHZoey31/BSgenome.Clupus.Ensembl.UMICHZoey31_1.0.0.tar.gz"
     }
   ]
 }

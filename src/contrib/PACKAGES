@@ -3405,3 +3405,7 @@ NeedsCompilation: no
 Package: BSgenome.Bsplendens.Ensembl.fBetSpl52
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clupus.Ensembl.UMICHZoey31
+Version: 1.0.0
+NeedsCompilation: no
