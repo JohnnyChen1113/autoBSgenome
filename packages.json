@@ -27336,6 +27336,52 @@
       ]
     },
     {
+      "organism": "Phytophthora nicotianae INRA-310",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Oomycota",
+        "class": "Peronosporomycetes",
+        "order": "Peronosporales",
+        "family": "Peronosporaceae",
+        "genus": "Phytophthora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pnicotianae.NCBI.PPINRA310V2",
+          "version": "1.0.0",
+          "organism": "Phytophthora nicotianae INRA-310",
+          "assembly": "PP_INRA-310_V2",
+          "provider": "NCBI",
+          "accession": "GCF_000247585.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000247585.1/",
+          "file_name": "BSgenome.Pnicotianae.NCBI.PPINRA310V2_1.0.0.tar.gz",
+          "size": 14266447,
+          "seq_ids": [
+            "NW_008634126.1",
+            "NW_008648988.1",
+            "NW_008648989.1",
+            "NW_008648990.1",
+            "NW_008648991.1"
+          ],
+          "seq_count": 708,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Oomycota",
+            "class": "Peronosporomycetes",
+            "order": "Peronosporales",
+            "family": "Peronosporaceae",
+            "genus": "Phytophthora"
+          },
+          "common_name": "",
+          "published": "2026-04-07T02:36:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnicotianae.NCBI.PPINRA310V2/BSgenome.Pnicotianae.NCBI.PPINRA310V2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phytophthora sojae",
       "common_name": "",
       "group": "other",
@@ -63864,6 +63910,37 @@
       "common_name": "",
       "published": "2026-04-06T23:41:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psojae.NCBI.PsojaeV30/BSgenome.Psojae.NCBI.PsojaeV30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pnicotianae.NCBI.PPINRA310V2",
+      "version": "1.0.0",
+      "organism": "Phytophthora nicotianae INRA-310",
+      "assembly": "PP_INRA-310_V2",
+      "provider": "NCBI",
+      "accession": "GCF_000247585.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000247585.1/",
+      "file_name": "BSgenome.Pnicotianae.NCBI.PPINRA310V2_1.0.0.tar.gz",
+      "size": 14266447,
+      "seq_ids": [
+        "NW_008634126.1",
+        "NW_008648988.1",
+        "NW_008648989.1",
+        "NW_008648990.1",
+        "NW_008648991.1"
+      ],
+      "seq_count": 708,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Oomycota",
+        "class": "Peronosporomycetes",
+        "order": "Peronosporales",
+        "family": "Peronosporaceae",
+        "genus": "Phytophthora"
+      },
+      "common_name": "",
+      "published": "2026-04-07T02:36:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnicotianae.NCBI.PPINRA310V2/BSgenome.Pnicotianae.NCBI.PPINRA310V2_1.0.0.tar.gz"
     }
   ]
 }
