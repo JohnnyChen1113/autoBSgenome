@@ -3237,3 +3237,7 @@ NeedsCompilation: no
 Package: BSgenome.Pnicotianae.NCBI.PPINRA310V2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csuis.NCBI.ASM260058v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -12078,6 +12078,52 @@
       ]
     },
     {
+      "organism": "Cystoisospora suis",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Sarcocystidae",
+        "genus": "Cystoisospora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Csuis.NCBI.ASM260058v1",
+          "version": "1.0.0",
+          "organism": "Cystoisospora suis",
+          "assembly": "ASM260058v1",
+          "provider": "NCBI",
+          "accession": "GCF_002600585.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002600585.1/",
+          "file_name": "BSgenome.Csuis.NCBI.ASM260058v1_1.0.0.tar.gz",
+          "size": 22603340,
+          "seq_ids": [
+            "NW_027152803.1",
+            "NW_027152804.1",
+            "NW_027152805.1",
+            "NW_027152806.1",
+            "NW_027152807.1"
+          ],
+          "seq_count": 14627,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Apicomplexa",
+            "class": "Conoidasida",
+            "order": "Eucoccidiorida",
+            "family": "Sarcocystidae",
+            "genus": "Cystoisospora"
+          },
+          "common_name": "",
+          "published": "2026-04-07T02:36:21Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csuis.NCBI.ASM260058v1/BSgenome.Csuis.NCBI.ASM260058v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dacryopinax primogenitus",
       "common_name": "",
       "group": "fungi",
@@ -63941,6 +63987,37 @@
       "common_name": "",
       "published": "2026-04-07T02:36:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnicotianae.NCBI.PPINRA310V2/BSgenome.Pnicotianae.NCBI.PPINRA310V2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Csuis.NCBI.ASM260058v1",
+      "version": "1.0.0",
+      "organism": "Cystoisospora suis",
+      "assembly": "ASM260058v1",
+      "provider": "NCBI",
+      "accession": "GCF_002600585.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002600585.1/",
+      "file_name": "BSgenome.Csuis.NCBI.ASM260058v1_1.0.0.tar.gz",
+      "size": 22603340,
+      "seq_ids": [
+        "NW_027152803.1",
+        "NW_027152804.1",
+        "NW_027152805.1",
+        "NW_027152806.1",
+        "NW_027152807.1"
+      ],
+      "seq_count": 14627,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Apicomplexa",
+        "class": "Conoidasida",
+        "order": "Eucoccidiorida",
+        "family": "Sarcocystidae",
+        "genus": "Cystoisospora"
+      },
+      "common_name": "",
+      "published": "2026-04-07T02:36:21Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csuis.NCBI.ASM260058v1/BSgenome.Csuis.NCBI.ASM260058v1_1.0.0.tar.gz"
     }
   ]
 }
