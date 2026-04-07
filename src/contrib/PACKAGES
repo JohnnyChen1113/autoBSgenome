@@ -3453,3 +3453,7 @@ NeedsCompilation: no
 Package: BSgenome.Dnovaehollandiae.Ensembl.droNov1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccanadensis.Ensembl.Ccangenomev10
+Version: 1.0.0
+NeedsCompilation: no

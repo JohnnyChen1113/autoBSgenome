@@ -9548,6 +9548,54 @@
       ]
     },
     {
+      "organism": "Castor canadensis",
+      "common_name": "American beaver",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Castoridae",
+        "genus": "Castor"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccanadensis.Ensembl.Ccangenomev10",
+          "version": "1.0.0",
+          "organism": "Castor canadensis",
+          "assembly": "C.can_genome_v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_001984765.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001984765.1/",
+          "file_name": "BSgenome.Ccanadensis.Ensembl.Ccangenomev10_1.0.0.tar.gz",
+          "size": 602772016,
+          "seq_ids": [
+            "MTKA01000630.1",
+            "MTKA01001235.1",
+            "MTKA01001451.1",
+            "MTKA01000207.1",
+            "MTKA01001066.1"
+          ],
+          "seq_count": 21157,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Castoridae",
+            "genus": "Castor"
+          },
+          "common_name": "American beaver",
+          "published": "2026-04-07T11:01:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccanadensis.Ensembl.Ccangenomev10/BSgenome.Ccanadensis.Ensembl.Ccangenomev10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Catagonus wagneri",
       "common_name": "Chacoan peccary",
       "group": "vertebrate_mammalian",
@@ -67975,6 +68023,38 @@
       "common_name": "emu",
       "published": "2026-04-07T11:01:14Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnovaehollandiae.Ensembl.droNov1/BSgenome.Dnovaehollandiae.Ensembl.droNov1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccanadensis.Ensembl.Ccangenomev10",
+      "version": "1.0.0",
+      "organism": "Castor canadensis",
+      "assembly": "C.can_genome_v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_001984765.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001984765.1/",
+      "file_name": "BSgenome.Ccanadensis.Ensembl.Ccangenomev10_1.0.0.tar.gz",
+      "size": 602772016,
+      "seq_ids": [
+        "MTKA01000630.1",
+        "MTKA01001235.1",
+        "MTKA01001451.1",
+        "MTKA01000207.1",
+        "MTKA01001066.1"
+      ],
+      "seq_count": 21157,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Castoridae",
+        "genus": "Castor"
+      },
+      "common_name": "American beaver",
+      "published": "2026-04-07T11:01:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccanadensis.Ensembl.Ccangenomev10/BSgenome.Ccanadensis.Ensembl.Ccangenomev10_1.0.0.tar.gz"
     }
   ]
 }
