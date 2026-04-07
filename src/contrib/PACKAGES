@@ -3309,3 +3309,7 @@ NeedsCompilation: no
 Package: BSgenome.Aplatyrhynchos.Ensembl.CAUduck10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Abrachyrhynchus.Ensembl.ASM259213v1
+Version: 1.0.0
+NeedsCompilation: no

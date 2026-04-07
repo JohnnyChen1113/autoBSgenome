@@ -1337,6 +1337,54 @@
       ]
     },
     {
+      "organism": "Anser brachyrhynchus",
+      "common_name": "Pink-footed goose",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anser"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Abrachyrhynchus.Ensembl.ASM259213v1",
+          "version": "1.0.0",
+          "organism": "Anser brachyrhynchus",
+          "assembly": "ASM259213v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002592135.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002592135.1/",
+          "file_name": "BSgenome.Abrachyrhynchus.Ensembl.ASM259213v1_1.0.0.tar.gz",
+          "size": 266720639,
+          "seq_ids": [
+            "NXHY01000001.1",
+            "NXHY01000002.1",
+            "NXHY01000003.1",
+            "NXHY01000004.1",
+            "NXHY01000005.1"
+          ],
+          "seq_count": 2723,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Anseriformes",
+            "family": "Anatidae",
+            "genus": "Anser"
+          },
+          "common_name": "Pink-footed goose",
+          "published": "2026-04-07T05:15:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Abrachyrhynchus.Ensembl.ASM259213v1/BSgenome.Abrachyrhynchus.Ensembl.ASM259213v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Anser cygnoides",
       "common_name": "Swan goose",
       "group": "vertebrate_other",
@@ -65280,6 +65328,38 @@
       "common_name": "common mallard",
       "published": "2026-04-07T05:15:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aplatyrhynchos.Ensembl.CAUduck10/BSgenome.Aplatyrhynchos.Ensembl.CAUduck10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Abrachyrhynchus.Ensembl.ASM259213v1",
+      "version": "1.0.0",
+      "organism": "Anser brachyrhynchus",
+      "assembly": "ASM259213v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002592135.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002592135.1/",
+      "file_name": "BSgenome.Abrachyrhynchus.Ensembl.ASM259213v1_1.0.0.tar.gz",
+      "size": 266720639,
+      "seq_ids": [
+        "NXHY01000001.1",
+        "NXHY01000002.1",
+        "NXHY01000003.1",
+        "NXHY01000004.1",
+        "NXHY01000005.1"
+      ],
+      "seq_count": 2723,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Anseriformes",
+        "family": "Anatidae",
+        "genus": "Anser"
+      },
+      "common_name": "Pink-footed goose",
+      "published": "2026-04-07T05:15:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Abrachyrhynchus.Ensembl.ASM259213v1/BSgenome.Abrachyrhynchus.Ensembl.ASM259213v1_1.0.0.tar.gz"
     }
   ]
 }
