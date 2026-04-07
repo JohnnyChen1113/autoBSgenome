@@ -3409,3 +3409,7 @@ NeedsCompilation: no
 Package: BSgenome.Clupus.Ensembl.UMICHZoey31
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmusculus.Ensembl.mBalMus1v2
+Version: 1.0.0
+NeedsCompilation: no
