@@ -3301,3 +3301,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmoschata.Ensembl.CaiMos10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cpugnax.Ensembl.ASM143184v1
+Version: 1.0.0
+NeedsCompilation: no

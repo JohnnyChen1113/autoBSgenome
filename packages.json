@@ -6814,6 +6814,38 @@
           "common_name": "ruff",
           "published": "2026-04-04T11:01:57Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpugnax.NCBI.ASM143184v1/BSgenome.Cpugnax.NCBI.ASM143184v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cpugnax.Ensembl.ASM143184v1",
+          "version": "1.0.0",
+          "organism": "Calidris pugnax",
+          "assembly": "ASM143184v1",
+          "provider": "Ensembl",
+          "accession": "GCA_001431845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001431845.1/",
+          "file_name": "BSgenome.Cpugnax.Ensembl.ASM143184v1_1.0.0.tar.gz",
+          "size": 282888073,
+          "seq_ids": [
+            "KQ483353.1",
+            "KQ482239.1",
+            "KQ483357.1",
+            "KQ483356.1",
+            "KQ482152.1"
+          ],
+          "seq_count": 3753,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Charadriiformes",
+            "family": "Scolopacidae",
+            "genus": "Calidris"
+          },
+          "common_name": "ruff",
+          "published": "2026-04-07T05:14:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpugnax.Ensembl.ASM143184v1/BSgenome.Cpugnax.Ensembl.ASM143184v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -65136,6 +65168,38 @@
       "common_name": "",
       "published": "2026-04-07T05:14:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmoschata.Ensembl.CaiMos10/BSgenome.Cmoschata.Ensembl.CaiMos10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cpugnax.Ensembl.ASM143184v1",
+      "version": "1.0.0",
+      "organism": "Calidris pugnax",
+      "assembly": "ASM143184v1",
+      "provider": "Ensembl",
+      "accession": "GCA_001431845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001431845.1/",
+      "file_name": "BSgenome.Cpugnax.Ensembl.ASM143184v1_1.0.0.tar.gz",
+      "size": 282888073,
+      "seq_ids": [
+        "KQ483353.1",
+        "KQ482239.1",
+        "KQ483357.1",
+        "KQ483356.1",
+        "KQ482152.1"
+      ],
+      "seq_count": 3753,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Charadriiformes",
+        "family": "Scolopacidae",
+        "genus": "Calidris"
+      },
+      "common_name": "ruff",
+      "published": "2026-04-07T05:14:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpugnax.Ensembl.ASM143184v1/BSgenome.Cpugnax.Ensembl.ASM143184v1_1.0.0.tar.gz"
     }
   ]
 }
