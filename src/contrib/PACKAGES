@@ -3241,3 +3241,7 @@ NeedsCompilation: no
 Package: BSgenome.Csuis.NCBI.ASM260058v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmarinus.NCBI.JCVIPMG10
+Version: 1.0.0
+NeedsCompilation: no

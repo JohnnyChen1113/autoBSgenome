@@ -26542,6 +26542,50 @@
       ]
     },
     {
+      "organism": "Perkinsus marinus ATCC 50983",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Perkinsozoa",
+        "order": "Perkinsida",
+        "family": "Perkinsidae",
+        "genus": "Perkinsus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pmarinus.NCBI.JCVIPMG10",
+          "version": "1.0.0",
+          "organism": "Perkinsus marinus ATCC 50983",
+          "assembly": "JCVI_PMG_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000006405.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000006405.1/",
+          "file_name": "BSgenome.Pmarinus.NCBI.JCVIPMG10_1.0.0.tar.gz",
+          "size": 22341201,
+          "seq_ids": [
+            "NW_003214671.1",
+            "NW_003200621.1",
+            "NW_003216684.1",
+            "NW_003204362.1",
+            "NW_003202397.1"
+          ],
+          "seq_count": 17897,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Perkinsozoa",
+            "order": "Perkinsida",
+            "family": "Perkinsidae",
+            "genus": "Perkinsus"
+          },
+          "common_name": "",
+          "published": "2026-04-07T02:36:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmarinus.NCBI.JCVIPMG10/BSgenome.Pmarinus.NCBI.JCVIPMG10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Peromyscus californicus insignis",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -64018,6 +64062,36 @@
       "common_name": "",
       "published": "2026-04-07T02:36:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csuis.NCBI.ASM260058v1/BSgenome.Csuis.NCBI.ASM260058v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pmarinus.NCBI.JCVIPMG10",
+      "version": "1.0.0",
+      "organism": "Perkinsus marinus ATCC 50983",
+      "assembly": "JCVI_PMG_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000006405.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000006405.1/",
+      "file_name": "BSgenome.Pmarinus.NCBI.JCVIPMG10_1.0.0.tar.gz",
+      "size": 22341201,
+      "seq_ids": [
+        "NW_003214671.1",
+        "NW_003200621.1",
+        "NW_003216684.1",
+        "NW_003204362.1",
+        "NW_003202397.1"
+      ],
+      "seq_count": 17897,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Perkinsozoa",
+        "order": "Perkinsida",
+        "family": "Perkinsidae",
+        "genus": "Perkinsus"
+      },
+      "common_name": "",
+      "published": "2026-04-07T02:36:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmarinus.NCBI.JCVIPMG10/BSgenome.Pmarinus.NCBI.JCVIPMG10_1.0.0.tar.gz"
     }
   ]
 }
