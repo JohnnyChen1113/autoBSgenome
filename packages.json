@@ -7054,6 +7054,54 @@
       ]
     },
     {
+      "organism": "Bos taurus",
+      "common_name": "domestic cattle",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bos"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Btaurus.Ensembl.ARSUCD20",
+          "version": "1.0.0",
+          "organism": "Bos taurus",
+          "assembly": "ARS-UCD2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002263795.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002263795.4/",
+          "file_name": "BSgenome.Btaurus.Ensembl.ARSUCD20_1.0.0.tar.gz",
+          "size": 645793775,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1958,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Bos"
+          },
+          "common_name": "domestic cattle",
+          "published": "2026-04-07T11:00:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Btaurus.Ensembl.ARSUCD20/BSgenome.Btaurus.Ensembl.ARSUCD20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Botrytis cinerea B05.10",
       "common_name": "",
       "group": "fungi",
@@ -67735,6 +67783,38 @@
       "common_name": "elephant shark",
       "published": "2026-04-07T11:00:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmilii.Ensembl.Callorhinchusmilii613/BSgenome.Cmilii.Ensembl.Callorhinchusmilii613_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Btaurus.Ensembl.ARSUCD20",
+      "version": "1.0.0",
+      "organism": "Bos taurus",
+      "assembly": "ARS-UCD2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002263795.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002263795.4/",
+      "file_name": "BSgenome.Btaurus.Ensembl.ARSUCD20_1.0.0.tar.gz",
+      "size": 645793775,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1958,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bos"
+      },
+      "common_name": "domestic cattle",
+      "published": "2026-04-07T11:00:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Btaurus.Ensembl.ARSUCD20/BSgenome.Btaurus.Ensembl.ARSUCD20_1.0.0.tar.gz"
     }
   ]
 }
