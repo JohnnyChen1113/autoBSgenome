@@ -1479,6 +1479,54 @@
       ]
     },
     {
+      "organism": "Anolis carolinensis",
+      "common_name": "green anole",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Dactyloidae",
+        "genus": "Anolis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Acarolinensis.Ensembl.AnoCar20v2",
+          "version": "1.0.0",
+          "organism": "Anolis carolinensis",
+          "assembly": "AnoCar2.0v2",
+          "provider": "Ensembl",
+          "accession": "GCA_000090745.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000090745.2/",
+          "file_name": "BSgenome.Acarolinensis.Ensembl.AnoCar20v2_1.0.0.tar.gz",
+          "size": 407564912,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 6457,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Dactyloidae",
+            "genus": "Anolis"
+          },
+          "common_name": "green anole",
+          "published": "2026-04-07T06:56:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acarolinensis.Ensembl.AnoCar20v2/BSgenome.Acarolinensis.Ensembl.AnoCar20v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Anoplophora glabripennis",
       "common_name": "",
       "group": "invertebrate",
@@ -65917,6 +65965,38 @@
       "common_name": "",
       "published": "2026-04-07T06:56:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bjaponicus.Ensembl.ButJap10/BSgenome.Bjaponicus.Ensembl.ButJap10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acarolinensis.Ensembl.AnoCar20v2",
+      "version": "1.0.0",
+      "organism": "Anolis carolinensis",
+      "assembly": "AnoCar2.0v2",
+      "provider": "Ensembl",
+      "accession": "GCA_000090745.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000090745.2/",
+      "file_name": "BSgenome.Acarolinensis.Ensembl.AnoCar20v2_1.0.0.tar.gz",
+      "size": 407564912,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 6457,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Dactyloidae",
+        "genus": "Anolis"
+      },
+      "common_name": "green anole",
+      "published": "2026-04-07T06:56:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acarolinensis.Ensembl.AnoCar20v2/BSgenome.Acarolinensis.Ensembl.AnoCar20v2_1.0.0.tar.gz"
     }
   ]
 }
