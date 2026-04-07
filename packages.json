@@ -9548,6 +9548,54 @@
       ]
     },
     {
+      "organism": "Catagonus wagneri",
+      "common_name": "Chacoan peccary",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Tayassuidae",
+        "genus": "Catagonus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cwagneri.Ensembl.CatWagv2BIUUUCD",
+          "version": "1.0.0",
+          "organism": "Catagonus wagneri",
+          "assembly": "CatWag_v2_BIUU_UCD",
+          "provider": "Ensembl",
+          "accession": "GCA_004024745.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004024745.2/",
+          "file_name": "BSgenome.Cwagneri.Ensembl.CatWagv2BIUUUCD_1.0.0.tar.gz",
+          "size": 602961372,
+          "seq_ids": [
+            "PVHT021183699.1",
+            "PVHT021183693.1",
+            "PVHT020004020.1",
+            "PVHT020004944.1",
+            "PVHT021183543.1"
+          ],
+          "seq_count": 1183730,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Tayassuidae",
+            "genus": "Catagonus"
+          },
+          "common_name": "Chacoan peccary",
+          "published": "2026-04-07T11:00:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cwagneri.Ensembl.CatWagv2BIUUUCD/BSgenome.Cwagneri.Ensembl.CatWagv2BIUUUCD_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Catharus ustulatus",
       "common_name": "Swainson's thrush",
       "group": "vertebrate_other",
@@ -67815,6 +67863,38 @@
       "common_name": "domestic cattle",
       "published": "2026-04-07T11:00:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Btaurus.Ensembl.ARSUCD20/BSgenome.Btaurus.Ensembl.ARSUCD20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cwagneri.Ensembl.CatWagv2BIUUUCD",
+      "version": "1.0.0",
+      "organism": "Catagonus wagneri",
+      "assembly": "CatWag_v2_BIUU_UCD",
+      "provider": "Ensembl",
+      "accession": "GCA_004024745.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004024745.2/",
+      "file_name": "BSgenome.Cwagneri.Ensembl.CatWagv2BIUUUCD_1.0.0.tar.gz",
+      "size": 602961372,
+      "seq_ids": [
+        "PVHT021183699.1",
+        "PVHT021183693.1",
+        "PVHT020004020.1",
+        "PVHT020004944.1",
+        "PVHT021183543.1"
+      ],
+      "seq_count": 1183730,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Tayassuidae",
+        "genus": "Catagonus"
+      },
+      "common_name": "Chacoan peccary",
+      "published": "2026-04-07T11:00:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cwagneri.Ensembl.CatWagv2BIUUUCD/BSgenome.Cwagneri.Ensembl.CatWagv2BIUUUCD_1.0.0.tar.gz"
     }
   ]
 }
