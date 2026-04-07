@@ -3281,3 +3281,7 @@ NeedsCompilation: no
 Package: BSgenome.Ahaastii.Ensembl.aptHaa1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Arowi.Ensembl.aptRow1
+Version: 1.0.0
+NeedsCompilation: no

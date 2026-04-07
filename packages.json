@@ -1761,6 +1761,38 @@
           "common_name": "Okarito brown kiwi",
           "published": "2026-04-04T10:06:40Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Arowi.NCBI.aptRow1/BSgenome.Arowi.NCBI.aptRow1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Arowi.Ensembl.aptRow1",
+          "version": "1.0.0",
+          "organism": "Apteryx rowi",
+          "assembly": "aptRow1",
+          "provider": "Ensembl",
+          "accession": "GCA_003343035.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003343035.1/",
+          "file_name": "BSgenome.Arowi.Ensembl.aptRow1_1.0.0.tar.gz",
+          "size": 296435651,
+          "seq_ids": [
+            "PTFB01000001.1",
+            "PTFB01000002.1",
+            "PTFB01000003.1",
+            "PTFB01000004.1",
+            "PTFB01000005.1"
+          ],
+          "seq_count": 4120,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Apterygiformes",
+            "family": "Apterygidae",
+            "genus": "Apteryx"
+          },
+          "common_name": "Okarito brown kiwi",
+          "published": "2026-04-07T05:13:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Arowi.Ensembl.aptRow1/BSgenome.Arowi.Ensembl.aptRow1_1.0.0.tar.gz"
         }
       ]
     },
@@ -64776,6 +64808,38 @@
       "common_name": "Great spotted kiwi",
       "published": "2026-04-07T05:13:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahaastii.Ensembl.aptHaa1/BSgenome.Ahaastii.Ensembl.aptHaa1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Arowi.Ensembl.aptRow1",
+      "version": "1.0.0",
+      "organism": "Apteryx rowi",
+      "assembly": "aptRow1",
+      "provider": "Ensembl",
+      "accession": "GCA_003343035.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003343035.1/",
+      "file_name": "BSgenome.Arowi.Ensembl.aptRow1_1.0.0.tar.gz",
+      "size": 296435651,
+      "seq_ids": [
+        "PTFB01000001.1",
+        "PTFB01000002.1",
+        "PTFB01000003.1",
+        "PTFB01000004.1",
+        "PTFB01000005.1"
+      ],
+      "seq_count": 4120,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Apterygiformes",
+        "family": "Apterygidae",
+        "genus": "Apteryx"
+      },
+      "common_name": "Okarito brown kiwi",
+      "published": "2026-04-07T05:13:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Arowi.Ensembl.aptRow1/BSgenome.Arowi.Ensembl.aptRow1_1.0.0.tar.gz"
     }
   ]
 }
