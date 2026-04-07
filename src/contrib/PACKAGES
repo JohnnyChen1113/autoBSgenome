@@ -3253,3 +3253,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcruzi.NCBI.ASM20906v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tthermophila.NCBI.JCVITTA122
+Version: 1.0.0
+NeedsCompilation: no

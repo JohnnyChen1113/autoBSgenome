@@ -34500,6 +34500,52 @@
       ]
     },
     {
+      "organism": "Tetrahymena thermophila SB210",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Ciliophora",
+        "class": "Oligohymenophorea",
+        "order": "Hymenostomatida",
+        "family": "Tetrahymenidae",
+        "genus": "Tetrahymena"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tthermophila.NCBI.JCVITTA122",
+          "version": "1.0.0",
+          "organism": "Tetrahymena thermophila SB210",
+          "assembly": "JCVI-TTA1-2.2",
+          "provider": "NCBI",
+          "accession": "GCF_000189635.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000189635.1/",
+          "file_name": "BSgenome.Tthermophila.NCBI.JCVITTA122_1.0.0.tar.gz",
+          "size": 26402784,
+          "seq_ids": [
+            "NW_002477076.1",
+            "NW_002477075.1",
+            "NW_002477074.1",
+            "NW_002477073.1",
+            "NW_002477072.1"
+          ],
+          "seq_count": 1158,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Ciliophora",
+            "class": "Oligohymenophorea",
+            "order": "Hymenostomatida",
+            "family": "Tetrahymenidae",
+            "genus": "Tetrahymena"
+          },
+          "common_name": "",
+          "published": "2026-04-07T02:37:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tthermophila.NCBI.JCVITTA122/BSgenome.Tthermophila.NCBI.JCVITTA122_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tetranychus urticae",
       "common_name": "two-spotted spider mite",
       "group": "invertebrate",
@@ -64243,6 +64289,37 @@
       "common_name": "",
       "published": "2026-04-07T02:36:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcruzi.NCBI.ASM20906v1/BSgenome.Tcruzi.NCBI.ASM20906v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tthermophila.NCBI.JCVITTA122",
+      "version": "1.0.0",
+      "organism": "Tetrahymena thermophila SB210",
+      "assembly": "JCVI-TTA1-2.2",
+      "provider": "NCBI",
+      "accession": "GCF_000189635.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000189635.1/",
+      "file_name": "BSgenome.Tthermophila.NCBI.JCVITTA122_1.0.0.tar.gz",
+      "size": 26402784,
+      "seq_ids": [
+        "NW_002477076.1",
+        "NW_002477075.1",
+        "NW_002477074.1",
+        "NW_002477073.1",
+        "NW_002477072.1"
+      ],
+      "seq_count": 1158,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Ciliophora",
+        "class": "Oligohymenophorea",
+        "order": "Hymenostomatida",
+        "family": "Tetrahymenidae",
+        "genus": "Tetrahymena"
+      },
+      "common_name": "",
+      "published": "2026-04-07T02:37:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tthermophila.NCBI.JCVITTA122/BSgenome.Tthermophila.NCBI.JCVITTA122_1.0.0.tar.gz"
     }
   ]
 }
