@@ -17766,6 +17766,54 @@
       ]
     },
     {
+      "organism": "Equus asinus",
+      "common_name": "donkey",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Equidae",
+        "genus": "Equus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Easinus.Ensembl.ASM1607732v2",
+          "version": "1.0.0",
+          "organism": "Equus asinus",
+          "assembly": "ASM1607732v2",
+          "provider": "Ensembl",
+          "accession": "GCA_016077325.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_016077325.2/",
+          "file_name": "BSgenome.Easinus.Ensembl.ASM1607732v2_1.0.0.tar.gz",
+          "size": 587168192,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 50,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Equidae",
+            "genus": "Equus"
+          },
+          "common_name": "donkey",
+          "published": "2026-04-12T20:02:12Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Easinus.Ensembl.ASM1607732v2/BSgenome.Easinus.Ensembl.ASM1607732v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Eremothecium cymbalariae DBVPG#7215",
       "common_name": "",
       "group": "fungi",
@@ -71196,6 +71244,38 @@
       "common_name": "Atlantic cod",
       "published": "2026-04-12T20:01:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmorhua.Ensembl.gadMorCeltic/BSgenome.Gmorhua.Ensembl.gadMorCeltic_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Easinus.Ensembl.ASM1607732v2",
+      "version": "1.0.0",
+      "organism": "Equus asinus",
+      "assembly": "ASM1607732v2",
+      "provider": "Ensembl",
+      "accession": "GCA_016077325.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_016077325.2/",
+      "file_name": "BSgenome.Easinus.Ensembl.ASM1607732v2_1.0.0.tar.gz",
+      "size": 587168192,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 50,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Equidae",
+        "genus": "Equus"
+      },
+      "common_name": "donkey",
+      "published": "2026-04-12T20:02:12Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Easinus.Ensembl.ASM1607732v2/BSgenome.Easinus.Ensembl.ASM1607732v2_1.0.0.tar.gz"
     }
   ]
 }
