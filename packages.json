@@ -24418,6 +24418,54 @@
       ]
     },
     {
+      "organism": "Lepisosteus oculatus",
+      "common_name": "spotted gar",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Semionotiformes",
+        "family": "Lepisosteidae",
+        "genus": "Lepisosteus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Loculatus.Ensembl.LepOcu1",
+          "version": "1.0.0",
+          "organism": "Lepisosteus oculatus",
+          "assembly": "LepOcu1",
+          "provider": "Ensembl",
+          "accession": "GCA_000242695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000242695.1/",
+          "file_name": "BSgenome.Loculatus.Ensembl.LepOcu1_1.0.0.tar.gz",
+          "size": 211384593,
+          "seq_ids": [
+            "LG1",
+            "LG2",
+            "LG3",
+            "LG4",
+            "LG5"
+          ],
+          "seq_count": 1926,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Semionotiformes",
+            "family": "Lepisosteidae",
+            "genus": "Lepisosteus"
+          },
+          "common_name": "spotted gar",
+          "published": "2026-04-12T21:39:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Loculatus.Ensembl.LepOcu1/BSgenome.Loculatus.Ensembl.LepOcu1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Leptomonas pyrrhocoris",
       "common_name": "",
       "group": "other",
@@ -72261,6 +72309,38 @@
       "common_name": "three-spined stickleback",
       "published": "2026-04-12T21:39:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gaculeatus.Ensembl.BAM/BSgenome.Gaculeatus.Ensembl.BAM_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Loculatus.Ensembl.LepOcu1",
+      "version": "1.0.0",
+      "organism": "Lepisosteus oculatus",
+      "assembly": "LepOcu1",
+      "provider": "Ensembl",
+      "accession": "GCA_000242695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000242695.1/",
+      "file_name": "BSgenome.Loculatus.Ensembl.LepOcu1_1.0.0.tar.gz",
+      "size": 211384593,
+      "seq_ids": [
+        "LG1",
+        "LG2",
+        "LG3",
+        "LG4",
+        "LG5"
+      ],
+      "seq_count": 1926,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Semionotiformes",
+        "family": "Lepisosteidae",
+        "genus": "Lepisosteus"
+      },
+      "common_name": "spotted gar",
+      "published": "2026-04-12T21:39:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Loculatus.Ensembl.LepOcu1/BSgenome.Loculatus.Ensembl.LepOcu1_1.0.0.tar.gz"
     }
   ]
 }
