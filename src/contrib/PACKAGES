@@ -3629,3 +3629,7 @@ NeedsCompilation: no
 Package: BSgenome.Gaculeatus.Ensembl.BOT
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303
+Version: 1.0.0
+NeedsCompilation: no

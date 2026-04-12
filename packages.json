@@ -11206,6 +11206,52 @@
       ]
     },
     {
+      "organism": "Chrysemys picta bellii",
+      "common_name": "western painted turtle",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Emydidae",
+        "genus": "Chrysemys"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303",
+          "version": "1.0.0",
+          "organism": "Chrysemys picta bellii",
+          "assembly": "Chrysemys_picta_bellii-3.0.3",
+          "provider": "Ensembl",
+          "accession": "GCA_000241765.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000241765.2/",
+          "file_name": "BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303_1.0.0.tar.gz",
+          "size": 532472803,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 78595,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Emydidae",
+            "genus": "Chrysemys"
+          },
+          "common_name": "western painted turtle",
+          "published": "2026-04-12T20:03:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303/BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chrysochloris asiatica",
       "common_name": "Cape golden mole",
       "group": "vertebrate_mammalian",
@@ -71356,6 +71402,37 @@
       "common_name": "three-spined stickleback",
       "published": "2026-04-12T20:02:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gaculeatus.Ensembl.BOT/BSgenome.Gaculeatus.Ensembl.BOT_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303",
+      "version": "1.0.0",
+      "organism": "Chrysemys picta bellii",
+      "assembly": "Chrysemys_picta_bellii-3.0.3",
+      "provider": "Ensembl",
+      "accession": "GCA_000241765.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000241765.2/",
+      "file_name": "BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303_1.0.0.tar.gz",
+      "size": 532472803,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 78595,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Emydidae",
+        "genus": "Chrysemys"
+      },
+      "common_name": "western painted turtle",
+      "published": "2026-04-12T20:03:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303/BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303_1.0.0.tar.gz"
     }
   ]
 }
