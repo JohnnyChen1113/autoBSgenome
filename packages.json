@@ -19360,6 +19360,54 @@
       ]
     },
     {
+      "organism": "Fukomys damarensis",
+      "common_name": "Damara mole-rat",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Bathyergidae",
+        "genus": "Fukomys"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fdamarensis.Ensembl.DMRv10",
+          "version": "1.0.0",
+          "organism": "Fukomys damarensis",
+          "assembly": "DMR_v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000743615.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000743615.1/",
+          "file_name": "BSgenome.Fdamarensis.Ensembl.DMRv10_1.0.0.tar.gz",
+          "size": 550372240,
+          "seq_ids": [
+            "KN122054.1",
+            "KN122106.1",
+            "KN123630.1",
+            "KN122569.1",
+            "KN122016.1"
+          ],
+          "seq_count": 74731,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Bathyergidae",
+            "genus": "Fukomys"
+          },
+          "common_name": "Damara mole-rat",
+          "published": "2026-04-12T19:26:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fdamarensis.Ensembl.DMRv10/BSgenome.Fdamarensis.Ensembl.DMRv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fulmarus glacialis",
       "common_name": "Northern fulmar",
       "group": "vertebrate_other",
@@ -70748,6 +70796,38 @@
       "common_name": "Panamanian white-faced capuchin",
       "published": "2026-04-12T19:26:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cimitator.Ensembl.Cebusimitator10/BSgenome.Cimitator.Ensembl.Cebusimitator10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fdamarensis.Ensembl.DMRv10",
+      "version": "1.0.0",
+      "organism": "Fukomys damarensis",
+      "assembly": "DMR_v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000743615.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000743615.1/",
+      "file_name": "BSgenome.Fdamarensis.Ensembl.DMRv10_1.0.0.tar.gz",
+      "size": 550372240,
+      "seq_ids": [
+        "KN122054.1",
+        "KN122106.1",
+        "KN123630.1",
+        "KN122569.1",
+        "KN122016.1"
+      ],
+      "seq_count": 74731,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Bathyergidae",
+        "genus": "Fukomys"
+      },
+      "common_name": "Damara mole-rat",
+      "published": "2026-04-12T19:26:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fdamarensis.Ensembl.DMRv10/BSgenome.Fdamarensis.Ensembl.DMRv10_1.0.0.tar.gz"
     }
   ]
 }
