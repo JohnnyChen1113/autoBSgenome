@@ -3489,3 +3489,7 @@ NeedsCompilation: no
 Package: BSgenome.Oanatinus.NCBI.mOrnAna1priv4
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Municolor.NCBI.ASM69576v1
+Version: 1.0.0
+NeedsCompilation: no

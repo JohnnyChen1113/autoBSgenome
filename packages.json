@@ -23940,6 +23940,54 @@
       ]
     },
     {
+      "organism": "Mesitornis unicolor",
+      "common_name": "brown roatelo",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Mesitornithiformes",
+        "family": "Mesitornithidae",
+        "genus": "Mesitornis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Municolor.NCBI.ASM69576v1",
+          "version": "1.0.0",
+          "organism": "Mesitornis unicolor",
+          "assembly": "ASM69576v1",
+          "provider": "NCBI",
+          "accession": "GCF_000695765.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000695765.1/",
+          "file_name": "BSgenome.Municolor.NCBI.ASM69576v1_1.0.0.tar.gz",
+          "size": 292040486,
+          "seq_ids": [
+            "NW_010155995.1",
+            "NW_010155996.1",
+            "NW_010155997.1",
+            "NW_010155998.1",
+            "NW_010155999.1"
+          ],
+          "seq_count": 67520,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Mesitornithiformes",
+            "family": "Mesitornithidae",
+            "genus": "Mesitornis"
+          },
+          "common_name": "brown roatelo",
+          "published": "2026-04-12T18:05:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Municolor.NCBI.ASM69576v1/BSgenome.Municolor.NCBI.ASM69576v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Metarhizium album ARSEF 1941",
       "common_name": "",
       "group": "fungi",
@@ -68687,6 +68735,38 @@
       "common_name": "platypus",
       "published": "2026-04-12T18:04:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oanatinus.NCBI.mOrnAna1priv4/BSgenome.Oanatinus.NCBI.mOrnAna1priv4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Municolor.NCBI.ASM69576v1",
+      "version": "1.0.0",
+      "organism": "Mesitornis unicolor",
+      "assembly": "ASM69576v1",
+      "provider": "NCBI",
+      "accession": "GCF_000695765.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000695765.1/",
+      "file_name": "BSgenome.Municolor.NCBI.ASM69576v1_1.0.0.tar.gz",
+      "size": 292040486,
+      "seq_ids": [
+        "NW_010155995.1",
+        "NW_010155996.1",
+        "NW_010155997.1",
+        "NW_010155998.1",
+        "NW_010155999.1"
+      ],
+      "seq_count": 67520,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Mesitornithiformes",
+        "family": "Mesitornithidae",
+        "genus": "Mesitornis"
+      },
+      "common_name": "brown roatelo",
+      "published": "2026-04-12T18:05:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Municolor.NCBI.ASM69576v1/BSgenome.Municolor.NCBI.ASM69576v1_1.0.0.tar.gz"
     }
   ]
 }
