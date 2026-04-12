@@ -3641,3 +3641,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccaeruleus.Ensembl.cyaCae2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgobio.Ensembl.fCotGob31
+Version: 1.0.0
+NeedsCompilation: no
