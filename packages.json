@@ -14530,6 +14530,54 @@
       ]
     },
     {
+      "organism": "Danio rerio",
+      "common_name": "zebrafish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Danionidae",
+        "genus": "Danio"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Drerio.Ensembl.GRCz11",
+          "version": "1.0.0",
+          "organism": "Danio rerio",
+          "assembly": "GRCz11",
+          "provider": "Ensembl",
+          "accession": "GCA_000002035.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002035.4/",
+          "file_name": "BSgenome.Drerio.Ensembl.GRCz11_1.0.0.tar.gz",
+          "size": 392169141,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1923,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cypriniformes",
+            "family": "Danionidae",
+            "genus": "Danio"
+          },
+          "common_name": "zebrafish",
+          "published": "2026-04-12T18:08:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Drerio.Ensembl.GRCz11/BSgenome.Drerio.Ensembl.GRCz11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Daucus carota subsp. sativus",
       "common_name": "",
       "group": "plant",
@@ -70079,6 +70127,38 @@
       "common_name": "goat",
       "published": "2026-04-12T18:08:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chircus.Ensembl.ASM2665220v1/BSgenome.Chircus.Ensembl.ASM2665220v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Drerio.Ensembl.GRCz11",
+      "version": "1.0.0",
+      "organism": "Danio rerio",
+      "assembly": "GRCz11",
+      "provider": "Ensembl",
+      "accession": "GCA_000002035.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002035.4/",
+      "file_name": "BSgenome.Drerio.Ensembl.GRCz11_1.0.0.tar.gz",
+      "size": 392169141,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1923,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Danionidae",
+        "genus": "Danio"
+      },
+      "common_name": "zebrafish",
+      "published": "2026-04-12T18:08:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Drerio.Ensembl.GRCz11/BSgenome.Drerio.Ensembl.GRCz11_1.0.0.tar.gz"
     }
   ]
 }
