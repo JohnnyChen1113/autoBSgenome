@@ -3737,3 +3737,7 @@ NeedsCompilation: no
 Package: BSgenome.Munguiculatus.Ensembl.MunDraftv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Elucius.Ensembl.fEsoLuc1pri
+Version: 1.0.0
+NeedsCompilation: no

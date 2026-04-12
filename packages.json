@@ -18436,6 +18436,54 @@
       ]
     },
     {
+      "organism": "Esox lucius",
+      "common_name": "northern pike",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Esociformes",
+        "family": "Esocidae",
+        "genus": "Esox"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Elucius.Ensembl.fEsoLuc1pri",
+          "version": "1.0.0",
+          "organism": "Esox lucius",
+          "assembly": "fEsoLuc1.pri",
+          "provider": "Ensembl",
+          "accession": "GCA_011004845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011004845.1/",
+          "file_name": "BSgenome.Elucius.Ensembl.fEsoLuc1pri_1.0.0.tar.gz",
+          "size": 217091275,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 53,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Esociformes",
+            "family": "Esocidae",
+            "genus": "Esox"
+          },
+          "common_name": "northern pike",
+          "published": "2026-04-12T22:39:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Elucius.Ensembl.fEsoLuc1pri/BSgenome.Elucius.Ensembl.fEsoLuc1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Etheostoma spectabile",
       "common_name": "orangethroat darter",
       "group": "vertebrate_other",
@@ -73285,6 +73333,38 @@
       "common_name": "Mongolian gerbil",
       "published": "2026-04-12T22:39:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Munguiculatus.Ensembl.MunDraftv10/BSgenome.Munguiculatus.Ensembl.MunDraftv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Elucius.Ensembl.fEsoLuc1pri",
+      "version": "1.0.0",
+      "organism": "Esox lucius",
+      "assembly": "fEsoLuc1.pri",
+      "provider": "Ensembl",
+      "accession": "GCA_011004845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011004845.1/",
+      "file_name": "BSgenome.Elucius.Ensembl.fEsoLuc1pri_1.0.0.tar.gz",
+      "size": 217091275,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 53,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Esociformes",
+        "family": "Esocidae",
+        "genus": "Esox"
+      },
+      "common_name": "northern pike",
+      "published": "2026-04-12T22:39:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Elucius.Ensembl.fEsoLuc1pri/BSgenome.Elucius.Ensembl.fEsoLuc1pri_1.0.0.tar.gz"
     }
   ]
 }
