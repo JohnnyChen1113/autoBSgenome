@@ -20168,6 +20168,52 @@
       ]
     },
     {
+      "organism": "Gopherus agassizii",
+      "common_name": "Agassiz's desert tortoise",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Testudinidae",
+        "genus": "Gopherus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gagassizii.Ensembl.ASM289641v1",
+          "version": "1.0.0",
+          "organism": "Gopherus agassizii",
+          "assembly": "ASM289641v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002896415.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002896415.1/",
+          "file_name": "BSgenome.Gagassizii.Ensembl.ASM289641v1_1.0.0.tar.gz",
+          "size": 523889518,
+          "seq_ids": [
+            "PPEB01000001.1",
+            "PPEB01000002.1",
+            "PPEB01000003.1",
+            "PPEB01000004.1",
+            "PPEB01000005.1"
+          ],
+          "seq_count": 172559,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Testudinidae",
+            "genus": "Gopherus"
+          },
+          "common_name": "Agassiz's desert tortoise",
+          "published": "2026-04-12T19:25:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gagassizii.Ensembl.ASM289641v1/BSgenome.Gagassizii.Ensembl.ASM289641v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Gopherus evgoodei",
       "common_name": "Goodes thornscrub tortoise",
       "group": "vertebrate_other",
@@ -70399,6 +70445,37 @@
       "common_name": "Burton's mouthbrooder",
       "published": "2026-04-12T19:24:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hburtoni.Ensembl.AstBur10/BSgenome.Hburtoni.Ensembl.AstBur10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gagassizii.Ensembl.ASM289641v1",
+      "version": "1.0.0",
+      "organism": "Gopherus agassizii",
+      "assembly": "ASM289641v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002896415.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002896415.1/",
+      "file_name": "BSgenome.Gagassizii.Ensembl.ASM289641v1_1.0.0.tar.gz",
+      "size": 523889518,
+      "seq_ids": [
+        "PPEB01000001.1",
+        "PPEB01000002.1",
+        "PPEB01000003.1",
+        "PPEB01000004.1",
+        "PPEB01000005.1"
+      ],
+      "seq_count": 172559,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Testudinidae",
+        "genus": "Gopherus"
+      },
+      "common_name": "Agassiz's desert tortoise",
+      "published": "2026-04-12T19:25:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gagassizii.Ensembl.ASM289641v1/BSgenome.Gagassizii.Ensembl.ASM289641v1_1.0.0.tar.gz"
     }
   ]
 }
