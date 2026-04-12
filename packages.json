@@ -20640,6 +20640,54 @@
       ]
     },
     {
+      "organism": "Haplochromis burtoni",
+      "common_name": "Burton's mouthbrooder",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Haplochromis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hburtoni.Ensembl.AstBur10",
+          "version": "1.0.0",
+          "organism": "Haplochromis burtoni",
+          "assembly": "AstBur1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000239415.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000239415.1/",
+          "file_name": "BSgenome.Hburtoni.Ensembl.AstBur10_1.0.0.tar.gz",
+          "size": 171135739,
+          "seq_ids": [
+            "JH425323.1",
+            "JH425322.1",
+            "JH425324.1",
+            "JH425325.1",
+            "JH425326.1"
+          ],
+          "seq_count": 8001,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cichliformes",
+            "family": "Cichlidae",
+            "genus": "Haplochromis"
+          },
+          "common_name": "Burton's mouthbrooder",
+          "published": "2026-04-12T19:24:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hburtoni.Ensembl.AstBur10/BSgenome.Hburtoni.Ensembl.AstBur10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Harpegnathos saltator",
       "common_name": "Jerdon's jumping ant",
       "group": "invertebrate",
@@ -70319,6 +70367,38 @@
       "common_name": "mummichog",
       "published": "2026-04-12T19:24:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fheteroclitus.Ensembl.Fundulusheteroclitus302/BSgenome.Fheteroclitus.Ensembl.Fundulusheteroclitus302_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hburtoni.Ensembl.AstBur10",
+      "version": "1.0.0",
+      "organism": "Haplochromis burtoni",
+      "assembly": "AstBur1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000239415.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000239415.1/",
+      "file_name": "BSgenome.Hburtoni.Ensembl.AstBur10_1.0.0.tar.gz",
+      "size": 171135739,
+      "seq_ids": [
+        "JH425323.1",
+        "JH425322.1",
+        "JH425324.1",
+        "JH425325.1",
+        "JH425326.1"
+      ],
+      "seq_count": 8001,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Haplochromis"
+      },
+      "common_name": "Burton's mouthbrooder",
+      "published": "2026-04-12T19:24:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hburtoni.Ensembl.AstBur10/BSgenome.Hburtoni.Ensembl.AstBur10_1.0.0.tar.gz"
     }
   ]
 }
