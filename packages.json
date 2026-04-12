@@ -21909,6 +21909,38 @@
             "NW_017804703.1"
           ],
           "seq_count": 32914
+        },
+        {
+          "package": "BSgenome.Hcomes.Ensembl.HcomesQL1v1",
+          "version": "1.0.0",
+          "organism": "Hippocampus comes",
+          "assembly": "H_comes_QL1_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_001891065.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001891065.1/",
+          "file_name": "BSgenome.Hcomes.Ensembl.HcomesQL1v1_1.0.0.tar.gz",
+          "size": 111873394,
+          "seq_ids": [
+            "KV880534.1",
+            "KV880338.1",
+            "KV880451.1",
+            "KV880218.1",
+            "KV880248.1"
+          ],
+          "seq_count": 37377,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Syngnathiformes",
+            "family": "Syngnathidae",
+            "genus": "Hippocampus"
+          },
+          "common_name": "tiger tail seahorse",
+          "published": "2026-04-12T20:51:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcomes.Ensembl.HcomesQL1v1/BSgenome.Hcomes.Ensembl.HcomesQL1v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -71783,6 +71815,38 @@
       "common_name": "horse",
       "published": "2026-04-12T20:51:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecaballus.Ensembl.EquCab30/BSgenome.Ecaballus.Ensembl.EquCab30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hcomes.Ensembl.HcomesQL1v1",
+      "version": "1.0.0",
+      "organism": "Hippocampus comes",
+      "assembly": "H_comes_QL1_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_001891065.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001891065.1/",
+      "file_name": "BSgenome.Hcomes.Ensembl.HcomesQL1v1_1.0.0.tar.gz",
+      "size": 111873394,
+      "seq_ids": [
+        "KV880534.1",
+        "KV880338.1",
+        "KV880451.1",
+        "KV880218.1",
+        "KV880248.1"
+      ],
+      "seq_count": 37377,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Syngnathiformes",
+        "family": "Syngnathidae",
+        "genus": "Hippocampus"
+      },
+      "common_name": "tiger tail seahorse",
+      "published": "2026-04-12T20:51:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcomes.Ensembl.HcomesQL1v1/BSgenome.Hcomes.Ensembl.HcomesQL1v1_1.0.0.tar.gz"
     }
   ]
 }
