@@ -16276,6 +16276,54 @@
       ]
     },
     {
+      "organism": "Echeneis naucrates",
+      "common_name": "live sharksucker",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Carangiformes",
+        "family": "Echeneidae",
+        "genus": "Echeneis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Enaucrates.Ensembl.fEcheNa11",
+          "version": "1.0.0",
+          "organism": "Echeneis naucrates",
+          "assembly": "fEcheNa1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_900963305.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900963305.1/",
+          "file_name": "BSgenome.Enaucrates.Ensembl.fEcheNa11_1.0.0.tar.gz",
+          "size": 130942348,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 37,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Carangiformes",
+            "family": "Echeneidae",
+            "genus": "Echeneis"
+          },
+          "common_name": "live sharksucker",
+          "published": "2026-04-12T18:07:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Enaucrates.Ensembl.fEcheNa11/BSgenome.Enaucrates.Ensembl.fEcheNa11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Echinococcus granulosus",
       "common_name": "",
       "group": "invertebrate",
@@ -69791,6 +69839,38 @@
       "common_name": "Francois's langur",
       "published": "2026-04-12T18:07:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tfrancoisi.NCBI.Tfra20/BSgenome.Tfrancoisi.NCBI.Tfra20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Enaucrates.Ensembl.fEcheNa11",
+      "version": "1.0.0",
+      "organism": "Echeneis naucrates",
+      "assembly": "fEcheNa1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_900963305.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900963305.1/",
+      "file_name": "BSgenome.Enaucrates.Ensembl.fEcheNa11_1.0.0.tar.gz",
+      "size": 130942348,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 37,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Carangiformes",
+        "family": "Echeneidae",
+        "genus": "Echeneis"
+      },
+      "common_name": "live sharksucker",
+      "published": "2026-04-12T18:07:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Enaucrates.Ensembl.fEcheNa11/BSgenome.Enaucrates.Ensembl.fEcheNa11_1.0.0.tar.gz"
     }
   ]
 }
