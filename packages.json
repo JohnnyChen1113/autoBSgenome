@@ -19264,6 +19264,54 @@
       ]
     },
     {
+      "organism": "Fundulus heteroclitus",
+      "common_name": "mummichog",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Fundulidae",
+        "genus": "Fundulus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fheteroclitus.Ensembl.Fundulusheteroclitus302",
+          "version": "1.0.0",
+          "organism": "Fundulus heteroclitus",
+          "assembly": "Fundulus_heteroclitus-3.0.2",
+          "provider": "Ensembl",
+          "accession": "GCA_000826765.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000826765.1/",
+          "file_name": "BSgenome.Fheteroclitus.Ensembl.Fundulusheteroclitus302_1.0.0.tar.gz",
+          "size": 227971798,
+          "seq_ids": [
+            "KN805525.1",
+            "KN805526.1",
+            "KN811289.1",
+            "KN811310.1",
+            "KN811405.1"
+          ],
+          "seq_count": 10180,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Fundulidae",
+            "genus": "Fundulus"
+          },
+          "common_name": "mummichog",
+          "published": "2026-04-12T19:24:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fheteroclitus.Ensembl.Fundulusheteroclitus302/BSgenome.Fheteroclitus.Ensembl.Fundulusheteroclitus302_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fusarium coffeatum",
       "common_name": "",
       "group": "fungi",
@@ -70239,6 +70287,38 @@
       "common_name": "domestic cat",
       "published": "2026-04-12T18:09:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcatus.Ensembl.Feliscatus90/BSgenome.Fcatus.Ensembl.Feliscatus90_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fheteroclitus.Ensembl.Fundulusheteroclitus302",
+      "version": "1.0.0",
+      "organism": "Fundulus heteroclitus",
+      "assembly": "Fundulus_heteroclitus-3.0.2",
+      "provider": "Ensembl",
+      "accession": "GCA_000826765.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000826765.1/",
+      "file_name": "BSgenome.Fheteroclitus.Ensembl.Fundulusheteroclitus302_1.0.0.tar.gz",
+      "size": 227971798,
+      "seq_ids": [
+        "KN805525.1",
+        "KN805526.1",
+        "KN811289.1",
+        "KN811310.1",
+        "KN811405.1"
+      ],
+      "seq_count": 10180,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Fundulidae",
+        "genus": "Fundulus"
+      },
+      "common_name": "mummichog",
+      "published": "2026-04-12T19:24:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fheteroclitus.Ensembl.Fundulusheteroclitus302/BSgenome.Fheteroclitus.Ensembl.Fundulusheteroclitus302_1.0.0.tar.gz"
     }
   ]
 }
