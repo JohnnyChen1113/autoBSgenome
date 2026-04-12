@@ -3657,3 +3657,7 @@ NeedsCompilation: no
 Package: BSgenome.Hcomes.Ensembl.HcomesQL1v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lcalcarifer.Ensembl.ASBHGAPassemblyv1
+Version: 1.0.0
+NeedsCompilation: no

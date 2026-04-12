@@ -23847,6 +23847,37 @@
             "NC_066837.1"
           ],
           "seq_count": 2997
+        },
+        {
+          "package": "BSgenome.Lcalcarifer.Ensembl.ASBHGAPassemblyv1",
+          "version": "1.0.0",
+          "organism": "Lates calcarifer",
+          "assembly": "ASB_HGAPassembly_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_900066035.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900066035.1/",
+          "file_name": "BSgenome.Lcalcarifer.Ensembl.ASBHGAPassemblyv1_1.0.0.tar.gz",
+          "size": 157484225,
+          "seq_ids": [
+            "CYIF01000095.1",
+            "CYIF01000096.1",
+            "CYIF01000018.1",
+            "CYIF01000070.1",
+            "CYIF01000097.1"
+          ],
+          "seq_count": 3807,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "family": "Centropomidae",
+            "genus": "Lates"
+          },
+          "common_name": "barramundi perch",
+          "published": "2026-04-12T20:52:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcalcarifer.Ensembl.ASBHGAPassemblyv1/BSgenome.Lcalcarifer.Ensembl.ASBHGAPassemblyv1_1.0.0.tar.gz"
         }
       ]
     },
@@ -71847,6 +71878,37 @@
       "common_name": "tiger tail seahorse",
       "published": "2026-04-12T20:51:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcomes.Ensembl.HcomesQL1v1/BSgenome.Hcomes.Ensembl.HcomesQL1v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lcalcarifer.Ensembl.ASBHGAPassemblyv1",
+      "version": "1.0.0",
+      "organism": "Lates calcarifer",
+      "assembly": "ASB_HGAPassembly_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_900066035.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900066035.1/",
+      "file_name": "BSgenome.Lcalcarifer.Ensembl.ASBHGAPassemblyv1_1.0.0.tar.gz",
+      "size": 157484225,
+      "seq_ids": [
+        "CYIF01000095.1",
+        "CYIF01000096.1",
+        "CYIF01000018.1",
+        "CYIF01000070.1",
+        "CYIF01000097.1"
+      ],
+      "seq_count": 3807,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Centropomidae",
+        "genus": "Lates"
+      },
+      "common_name": "barramundi perch",
+      "published": "2026-04-12T20:52:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcalcarifer.Ensembl.ASBHGAPassemblyv1/BSgenome.Lcalcarifer.Ensembl.ASBHGAPassemblyv1_1.0.0.tar.gz"
     }
   ]
 }
