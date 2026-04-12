@@ -7644,6 +7644,54 @@
       ]
     },
     {
+      "organism": "Bubo bubo",
+      "common_name": "Eurasian eagle-owl",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Bubo"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bbubo.Ensembl.BubBub10",
+          "version": "1.0.0",
+          "organism": "Bubo bubo",
+          "assembly": "BubBub1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_010303855.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_010303855.1/",
+          "file_name": "BSgenome.Bbubo.Ensembl.BubBub10_1.0.0.tar.gz",
+          "size": 290792872,
+          "seq_ids": [
+            "ML986482.1",
+            "ML986481.1",
+            "ML986475.1",
+            "ML986483.1",
+            "ML986478.1"
+          ],
+          "seq_count": 35666,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Strigiformes",
+            "family": "Strigidae",
+            "genus": "Bubo"
+          },
+          "common_name": "Eurasian eagle-owl",
+          "published": "2026-04-12T18:06:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbubo.Ensembl.BubBub10/BSgenome.Bbubo.Ensembl.BubBub10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Buceros rhinoceros silvestris",
       "common_name": "",
       "group": "vertebrate_other",
@@ -69167,6 +69215,38 @@
       "common_name": "little egret",
       "published": "2026-04-12T18:05:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Egarzetta.NCBI.ASM68718v1/BSgenome.Egarzetta.NCBI.ASM68718v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bbubo.Ensembl.BubBub10",
+      "version": "1.0.0",
+      "organism": "Bubo bubo",
+      "assembly": "BubBub1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_010303855.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_010303855.1/",
+      "file_name": "BSgenome.Bbubo.Ensembl.BubBub10_1.0.0.tar.gz",
+      "size": 290792872,
+      "seq_ids": [
+        "ML986482.1",
+        "ML986481.1",
+        "ML986475.1",
+        "ML986483.1",
+        "ML986478.1"
+      ],
+      "seq_count": 35666,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Bubo"
+      },
+      "common_name": "Eurasian eagle-owl",
+      "published": "2026-04-12T18:06:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbubo.Ensembl.BubBub10/BSgenome.Bbubo.Ensembl.BubBub10_1.0.0.tar.gz"
     }
   ]
 }
