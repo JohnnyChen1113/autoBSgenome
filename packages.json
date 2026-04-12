@@ -27630,6 +27630,54 @@
       ]
     },
     {
+      "organism": "Ornithorhynchus anatinus",
+      "common_name": "platypus",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Monotremata",
+        "family": "Ornithorhynchidae",
+        "genus": "Ornithorhynchus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Oanatinus.NCBI.mOrnAna1priv4",
+          "version": "1.0.0",
+          "organism": "Ornithorhynchus anatinus",
+          "assembly": "mOrnAna1.pri.v4",
+          "provider": "NCBI",
+          "accession": "GCF_004115215.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004115215.2/",
+          "file_name": "BSgenome.Oanatinus.NCBI.mOrnAna1priv4_1.0.0.tar.gz",
+          "size": 469932342,
+          "seq_ids": [
+            "NC_041728.1",
+            "NC_041729.1",
+            "NC_041730.1",
+            "NC_041731.1",
+            "NC_041732.1"
+          ],
+          "seq_count": 322,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Monotremata",
+            "family": "Ornithorhynchidae",
+            "genus": "Ornithorhynchus"
+          },
+          "common_name": "platypus",
+          "published": "2026-04-12T18:04:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oanatinus.NCBI.mOrnAna1priv4/BSgenome.Oanatinus.NCBI.mOrnAna1priv4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Orussus abietinus",
       "common_name": "",
       "group": "invertebrate",
@@ -68607,6 +68655,38 @@
       "common_name": "Mexican tetra",
       "published": "2026-04-07T13:53:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102/BSgenome.Amexicanus.Ensembl.Astyanaxmexicanus102_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Oanatinus.NCBI.mOrnAna1priv4",
+      "version": "1.0.0",
+      "organism": "Ornithorhynchus anatinus",
+      "assembly": "mOrnAna1.pri.v4",
+      "provider": "NCBI",
+      "accession": "GCF_004115215.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004115215.2/",
+      "file_name": "BSgenome.Oanatinus.NCBI.mOrnAna1priv4_1.0.0.tar.gz",
+      "size": 469932342,
+      "seq_ids": [
+        "NC_041728.1",
+        "NC_041729.1",
+        "NC_041730.1",
+        "NC_041731.1",
+        "NC_041732.1"
+      ],
+      "seq_count": 322,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Monotremata",
+        "family": "Ornithorhynchidae",
+        "genus": "Ornithorhynchus"
+      },
+      "common_name": "platypus",
+      "published": "2026-04-12T18:04:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oanatinus.NCBI.mOrnAna1priv4/BSgenome.Oanatinus.NCBI.mOrnAna1priv4_1.0.0.tar.gz"
     }
   ]
 }
