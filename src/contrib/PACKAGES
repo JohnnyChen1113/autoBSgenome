@@ -3769,3 +3769,7 @@ NeedsCompilation: no
 Package: BSgenome.Lchalumnae.Ensembl.LatCha1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mundulatus.Ensembl.bMelUnd1matZ
+Version: 1.0.0
+NeedsCompilation: no

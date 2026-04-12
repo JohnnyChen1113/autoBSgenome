@@ -26492,6 +26492,54 @@
       ]
     },
     {
+      "organism": "Melopsittacus undulatus",
+      "common_name": "budgerigar",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Psittaciformes",
+        "family": "Psittaculidae",
+        "genus": "Melopsittacus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mundulatus.Ensembl.bMelUnd1matZ",
+          "version": "1.0.0",
+          "organism": "Melopsittacus undulatus",
+          "assembly": "bMelUnd1.mat.Z",
+          "provider": "Ensembl",
+          "accession": "GCA_012275295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_012275295.1/",
+          "file_name": "BSgenome.Mundulatus.Ensembl.bMelUnd1matZ_1.0.0.tar.gz",
+          "size": 275396737,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 864,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Psittaciformes",
+            "family": "Psittaculidae",
+            "genus": "Melopsittacus"
+          },
+          "common_name": "budgerigar",
+          "published": "2026-04-12T23:41:02Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mundulatus.Ensembl.bMelUnd1matZ/BSgenome.Mundulatus.Ensembl.bMelUnd1matZ_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Meriones unguiculatus",
       "common_name": "Mongolian gerbil",
       "group": "vertebrate_mammalian",
@@ -73906,6 +73954,38 @@
       "common_name": "coelacanth",
       "published": "2026-04-12T23:40:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lchalumnae.Ensembl.LatCha1/BSgenome.Lchalumnae.Ensembl.LatCha1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mundulatus.Ensembl.bMelUnd1matZ",
+      "version": "1.0.0",
+      "organism": "Melopsittacus undulatus",
+      "assembly": "bMelUnd1.mat.Z",
+      "provider": "Ensembl",
+      "accession": "GCA_012275295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_012275295.1/",
+      "file_name": "BSgenome.Mundulatus.Ensembl.bMelUnd1matZ_1.0.0.tar.gz",
+      "size": 275396737,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 864,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Psittaciformes",
+        "family": "Psittaculidae",
+        "genus": "Melopsittacus"
+      },
+      "common_name": "budgerigar",
+      "published": "2026-04-12T23:41:02Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mundulatus.Ensembl.bMelUnd1matZ/BSgenome.Mundulatus.Ensembl.bMelUnd1matZ_1.0.0.tar.gz"
     }
   ]
 }
