@@ -3749,3 +3749,7 @@ NeedsCompilation: no
 Package: BSgenome.Lleishanense.Ensembl.ASM966780v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gaffinis.Ensembl.ASM309773v1
+Version: 1.0.0
+NeedsCompilation: no
