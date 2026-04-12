@@ -38760,6 +38760,54 @@
       ]
     },
     {
+      "organism": "Trachypithecus francoisi",
+      "common_name": "Francois's langur",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Trachypithecus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tfrancoisi.NCBI.Tfra20",
+          "version": "1.0.0",
+          "organism": "Trachypithecus francoisi",
+          "assembly": "Tfra_2.0",
+          "provider": "NCBI",
+          "accession": "GCF_009764315.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009764315.1/",
+          "file_name": "BSgenome.Tfrancoisi.NCBI.Tfra20_1.0.0.tar.gz",
+          "size": 734878124,
+          "seq_ids": [
+            "NW_022680460.1",
+            "NW_022680461.1",
+            "NW_022680462.1",
+            "NW_022680463.1",
+            "NW_022680464.1"
+          ],
+          "seq_count": 1016,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Trachypithecus"
+          },
+          "common_name": "Francois's langur",
+          "published": "2026-04-12T18:07:21Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tfrancoisi.NCBI.Tfra20/BSgenome.Tfrancoisi.NCBI.Tfra20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trametes versicolor FP-101664 SS1",
       "common_name": "",
       "group": "fungi",
@@ -69711,6 +69759,38 @@
       "common_name": "Collared flycatcher",
       "published": "2026-04-12T18:07:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Falbicollis.Ensembl.FicAlb15/BSgenome.Falbicollis.Ensembl.FicAlb15_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tfrancoisi.NCBI.Tfra20",
+      "version": "1.0.0",
+      "organism": "Trachypithecus francoisi",
+      "assembly": "Tfra_2.0",
+      "provider": "NCBI",
+      "accession": "GCF_009764315.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009764315.1/",
+      "file_name": "BSgenome.Tfrancoisi.NCBI.Tfra20_1.0.0.tar.gz",
+      "size": 734878124,
+      "seq_ids": [
+        "NW_022680460.1",
+        "NW_022680461.1",
+        "NW_022680462.1",
+        "NW_022680463.1",
+        "NW_022680464.1"
+      ],
+      "seq_count": 1016,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Trachypithecus"
+      },
+      "common_name": "Francois's langur",
+      "published": "2026-04-12T18:07:21Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tfrancoisi.NCBI.Tfra20/BSgenome.Tfrancoisi.NCBI.Tfra20_1.0.0.tar.gz"
     }
   ]
 }
