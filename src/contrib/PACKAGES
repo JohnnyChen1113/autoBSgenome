@@ -3613,3 +3613,7 @@ NeedsCompilation: no
 Package: BSgenome.Lcoronata.Ensembl.Lepidothrixcoronata10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cjaponica.Ensembl.Coturnixjaponica20
+Version: 1.0.0
+NeedsCompilation: no
