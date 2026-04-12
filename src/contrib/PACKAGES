@@ -3605,3 +3605,7 @@ NeedsCompilation: no
 Package: BSgenome.Csabaeus.Ensembl.ChlSab11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ggallus.Ensembl.bGalGal1patwhiteleghornlayerGRCg7w
+Version: 1.0.0
+NeedsCompilation: no
