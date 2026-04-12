@@ -17972,6 +17972,54 @@
       ]
     },
     {
+      "organism": "Equus caballus",
+      "common_name": "horse",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Equidae",
+        "genus": "Equus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ecaballus.Ensembl.EquCab30",
+          "version": "1.0.0",
+          "organism": "Equus caballus",
+          "assembly": "EquCab3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002863925.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002863925.1/",
+          "file_name": "BSgenome.Ecaballus.Ensembl.EquCab30_1.0.0.tar.gz",
+          "size": 601884426,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 4701,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Perissodactyla",
+            "family": "Equidae",
+            "genus": "Equus"
+          },
+          "common_name": "horse",
+          "published": "2026-04-12T20:51:21Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecaballus.Ensembl.EquCab30/BSgenome.Ecaballus.Ensembl.EquCab30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Eremothecium cymbalariae DBVPG#7215",
       "common_name": "",
       "group": "fungi",
@@ -71703,6 +71751,38 @@
       "common_name": "Goodes thornscrub tortoise",
       "published": "2026-04-12T20:51:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gevgoodei.Ensembl.rGopEvg1v1p/BSgenome.Gevgoodei.Ensembl.rGopEvg1v1p_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ecaballus.Ensembl.EquCab30",
+      "version": "1.0.0",
+      "organism": "Equus caballus",
+      "assembly": "EquCab3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002863925.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002863925.1/",
+      "file_name": "BSgenome.Ecaballus.Ensembl.EquCab30_1.0.0.tar.gz",
+      "size": 601884426,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 4701,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Perissodactyla",
+        "family": "Equidae",
+        "genus": "Equus"
+      },
+      "common_name": "horse",
+      "published": "2026-04-12T20:51:21Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecaballus.Ensembl.EquCab30/BSgenome.Ecaballus.Ensembl.EquCab30_1.0.0.tar.gz"
     }
   ]
 }

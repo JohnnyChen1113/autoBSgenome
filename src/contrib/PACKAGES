@@ -3649,3 +3649,7 @@ NeedsCompilation: no
 Package: BSgenome.Gevgoodei.Ensembl.rGopEvg1v1p
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ecaballus.Ensembl.EquCab30
+Version: 1.0.0
+NeedsCompilation: no
