@@ -3733,3 +3733,7 @@ NeedsCompilation: no
 Package: BSgenome.Ipunctatus.Ensembl.ASM400665v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Munguiculatus.Ensembl.MunDraftv10
+Version: 1.0.0
+NeedsCompilation: no

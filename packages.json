@@ -26174,6 +26174,54 @@
       ]
     },
     {
+      "organism": "Meriones unguiculatus",
+      "common_name": "Mongolian gerbil",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Meriones"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Munguiculatus.Ensembl.MunDraftv10",
+          "version": "1.0.0",
+          "organism": "Meriones unguiculatus",
+          "assembly": "MunDraft-v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002204375.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002204375.1/",
+          "file_name": "BSgenome.Munguiculatus.Ensembl.MunDraftv10_1.0.0.tar.gz",
+          "size": 581913074,
+          "seq_ids": [
+            "NHTI01000005.1",
+            "NHTI01000006.1",
+            "NHTI01000007.1",
+            "NHTI01000008.1",
+            "NHTI01000009.1"
+          ],
+          "seq_count": 68793,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Meriones"
+          },
+          "common_name": "Mongolian gerbil",
+          "published": "2026-04-12T22:39:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Munguiculatus.Ensembl.MunDraftv10/BSgenome.Munguiculatus.Ensembl.MunDraftv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Merops nubicus",
       "common_name": "carmine bee-eater",
       "group": "vertebrate_other",
@@ -73205,6 +73253,38 @@
       "common_name": "channel catfish",
       "published": "2026-04-12T22:39:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ipunctatus.Ensembl.ASM400665v3/BSgenome.Ipunctatus.Ensembl.ASM400665v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Munguiculatus.Ensembl.MunDraftv10",
+      "version": "1.0.0",
+      "organism": "Meriones unguiculatus",
+      "assembly": "MunDraft-v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002204375.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002204375.1/",
+      "file_name": "BSgenome.Munguiculatus.Ensembl.MunDraftv10_1.0.0.tar.gz",
+      "size": 581913074,
+      "seq_ids": [
+        "NHTI01000005.1",
+        "NHTI01000006.1",
+        "NHTI01000007.1",
+        "NHTI01000008.1",
+        "NHTI01000009.1"
+      ],
+      "seq_count": 68793,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Meriones"
+      },
+      "common_name": "Mongolian gerbil",
+      "published": "2026-04-12T22:39:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Munguiculatus.Ensembl.MunDraftv10/BSgenome.Munguiculatus.Ensembl.MunDraftv10_1.0.0.tar.gz"
     }
   ]
 }
