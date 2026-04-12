@@ -3645,3 +3645,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgobio.Ensembl.fCotGob31
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gevgoodei.Ensembl.rGopEvg1v1p
+Version: 1.0.0
+NeedsCompilation: no
