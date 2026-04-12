@@ -14734,6 +14734,38 @@
           "common_name": "sheepshead minnow",
           "published": "2026-04-04T07:06:11Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvariegatus.NCBI.Cvariegatus10/BSgenome.Cvariegatus.NCBI.Cvariegatus10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cvariegatus.Ensembl.Cvariegatus10",
+          "version": "1.0.0",
+          "organism": "Cyprinodon variegatus",
+          "assembly": "C_variegatus-1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000732505.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000732505.1/",
+          "file_name": "BSgenome.Cvariegatus.Ensembl.Cvariegatus10_1.0.0.tar.gz",
+          "size": 218532856,
+          "seq_ids": [
+            "KL652500.1",
+            "KL652501.1",
+            "KL652502.1",
+            "KL652503.1",
+            "KL652504.1"
+          ],
+          "seq_count": 9259,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Cyprinodontidae",
+            "genus": "Cyprinodon"
+          },
+          "common_name": "sheepshead minnow",
+          "published": "2026-04-12T21:39:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvariegatus.Ensembl.Cvariegatus10/BSgenome.Cvariegatus.Ensembl.Cvariegatus10_1.0.0.tar.gz"
         }
       ]
     },
@@ -72133,6 +72165,38 @@
       "common_name": "nine-banded armadillo",
       "published": "2026-04-12T20:54:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnovemcinctus.Ensembl.Dasnov30/BSgenome.Dnovemcinctus.Ensembl.Dasnov30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cvariegatus.Ensembl.Cvariegatus10",
+      "version": "1.0.0",
+      "organism": "Cyprinodon variegatus",
+      "assembly": "C_variegatus-1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000732505.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000732505.1/",
+      "file_name": "BSgenome.Cvariegatus.Ensembl.Cvariegatus10_1.0.0.tar.gz",
+      "size": 218532856,
+      "seq_ids": [
+        "KL652500.1",
+        "KL652501.1",
+        "KL652502.1",
+        "KL652503.1",
+        "KL652504.1"
+      ],
+      "seq_count": 9259,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Cyprinodontidae",
+        "genus": "Cyprinodon"
+      },
+      "common_name": "sheepshead minnow",
+      "published": "2026-04-12T21:39:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cvariegatus.Ensembl.Cvariegatus10/BSgenome.Cvariegatus.Ensembl.Cvariegatus10_1.0.0.tar.gz"
     }
   ]
 }

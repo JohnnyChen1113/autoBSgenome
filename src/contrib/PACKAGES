@@ -3673,3 +3673,7 @@ NeedsCompilation: no
 Package: BSgenome.Dnovemcinctus.Ensembl.Dasnov30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cvariegatus.Ensembl.Cvariegatus10
+Version: 1.0.0
+NeedsCompilation: no
