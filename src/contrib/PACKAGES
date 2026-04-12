@@ -3557,3 +3557,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmoneduloides.Ensembl.bCorMon1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Chircus.Ensembl.ASM2665220v1
+Version: 1.0.0
+NeedsCompilation: no

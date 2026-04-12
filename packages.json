@@ -9360,6 +9360,38 @@
           "common_name": "goat",
           "published": "2026-04-07T11:02:55Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chircus.Ensembl.CVASUBBG10/BSgenome.Chircus.Ensembl.CVASUBBG10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Chircus.Ensembl.ASM2665220v1",
+          "version": "1.0.0",
+          "organism": "Capra hircus",
+          "assembly": "ASM2665220v1",
+          "provider": "Ensembl",
+          "accession": "GCA_026652205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_026652205.1/",
+          "file_name": "BSgenome.Chircus.Ensembl.ASM2665220v1_1.0.0.tar.gz",
+          "size": 675311605,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 29907,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Capra"
+          },
+          "common_name": "goat",
+          "published": "2026-04-12T18:08:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chircus.Ensembl.ASM2665220v1/BSgenome.Chircus.Ensembl.ASM2665220v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -70015,6 +70047,38 @@
       "common_name": "New Caledonian crow",
       "published": "2026-04-12T18:07:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmoneduloides.Ensembl.bCorMon1pri/BSgenome.Cmoneduloides.Ensembl.bCorMon1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Chircus.Ensembl.ASM2665220v1",
+      "version": "1.0.0",
+      "organism": "Capra hircus",
+      "assembly": "ASM2665220v1",
+      "provider": "Ensembl",
+      "accession": "GCA_026652205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_026652205.1/",
+      "file_name": "BSgenome.Chircus.Ensembl.ASM2665220v1_1.0.0.tar.gz",
+      "size": 675311605,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 29907,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Capra"
+      },
+      "common_name": "goat",
+      "published": "2026-04-12T18:08:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chircus.Ensembl.ASM2665220v1/BSgenome.Chircus.Ensembl.ASM2665220v1_1.0.0.tar.gz"
     }
   ]
 }
