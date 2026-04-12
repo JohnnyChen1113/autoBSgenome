@@ -19136,6 +19136,38 @@
           "common_name": "domestic cat",
           "published": "2026-04-12T18:09:09Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcatus.Ensembl.Feliscatus90/BSgenome.Fcatus.Ensembl.Feliscatus90_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Fcatus.Ensembl.FcatusFca126mat10",
+          "version": "1.0.0",
+          "organism": "Felis catus",
+          "assembly": "F.catus_Fca126_mat1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_018350175.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_018350175.1/",
+          "file_name": "BSgenome.Fcatus.Ensembl.FcatusFca126mat10_1.0.0.tar.gz",
+          "size": 579214240,
+          "seq_ids": [
+            "X",
+            "A1",
+            "A2",
+            "A3",
+            "B1"
+          ],
+          "seq_count": 70,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Felis"
+          },
+          "common_name": "domestic cat",
+          "published": "2026-04-12T21:40:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcatus.Ensembl.FcatusFca126mat10/BSgenome.Fcatus.Ensembl.FcatusFca126mat10_1.0.0.tar.gz"
         }
       ]
     },
@@ -72341,6 +72373,38 @@
       "common_name": "spotted gar",
       "published": "2026-04-12T21:39:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Loculatus.Ensembl.LepOcu1/BSgenome.Loculatus.Ensembl.LepOcu1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fcatus.Ensembl.FcatusFca126mat10",
+      "version": "1.0.0",
+      "organism": "Felis catus",
+      "assembly": "F.catus_Fca126_mat1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_018350175.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_018350175.1/",
+      "file_name": "BSgenome.Fcatus.Ensembl.FcatusFca126mat10_1.0.0.tar.gz",
+      "size": 579214240,
+      "seq_ids": [
+        "X",
+        "A1",
+        "A2",
+        "A3",
+        "B1"
+      ],
+      "seq_count": 70,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Felis"
+      },
+      "common_name": "domestic cat",
+      "published": "2026-04-12T21:40:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcatus.Ensembl.FcatusFca126mat10/BSgenome.Fcatus.Ensembl.FcatusFca126mat10_1.0.0.tar.gz"
     }
   ]
 }
