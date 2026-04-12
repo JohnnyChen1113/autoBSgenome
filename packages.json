@@ -13970,6 +13970,38 @@
             "NC_046970.1"
           ],
           "seq_count": 48
+        },
+        {
+          "package": "BSgenome.Clumpus.Ensembl.fCycLum1pri",
+          "version": "1.0.0",
+          "organism": "Cyclopterus lumpus",
+          "assembly": "fCycLum1.pri",
+          "provider": "Ensembl",
+          "accession": "GCA_009769545.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009769545.1/",
+          "file_name": "BSgenome.Clumpus.Ensembl.fCycLum1pri_1.0.0.tar.gz",
+          "size": 128793954,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 48,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Perciformes",
+            "family": "Cyclopteridae",
+            "genus": "Cyclopterus"
+          },
+          "common_name": "lumpfish",
+          "published": "2026-04-12T19:25:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clumpus.Ensembl.fCycLum1pri/BSgenome.Clumpus.Ensembl.fCycLum1pri_1.0.0.tar.gz"
         }
       ]
     },
@@ -70476,6 +70508,38 @@
       "common_name": "Agassiz's desert tortoise",
       "published": "2026-04-12T19:25:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gagassizii.Ensembl.ASM289641v1/BSgenome.Gagassizii.Ensembl.ASM289641v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Clumpus.Ensembl.fCycLum1pri",
+      "version": "1.0.0",
+      "organism": "Cyclopterus lumpus",
+      "assembly": "fCycLum1.pri",
+      "provider": "Ensembl",
+      "accession": "GCA_009769545.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009769545.1/",
+      "file_name": "BSgenome.Clumpus.Ensembl.fCycLum1pri_1.0.0.tar.gz",
+      "size": 128793954,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 48,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Cyclopteridae",
+        "genus": "Cyclopterus"
+      },
+      "common_name": "lumpfish",
+      "published": "2026-04-12T19:25:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clumpus.Ensembl.fCycLum1pri/BSgenome.Clumpus.Ensembl.fCycLum1pri_1.0.0.tar.gz"
     }
   ]
 }
