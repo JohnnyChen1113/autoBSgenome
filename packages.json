@@ -18418,6 +18418,38 @@
           "common_name": "Collared flycatcher",
           "published": "2026-04-04T09:10:40Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Falbicollis.NCBI.FicAlb15/BSgenome.Falbicollis.NCBI.FicAlb15_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Falbicollis.Ensembl.FicAlb15",
+          "version": "1.0.0",
+          "organism": "Ficedula albicollis",
+          "assembly": "FicAlb1.5",
+          "provider": "Ensembl",
+          "accession": "GCA_000247815.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000247815.2/",
+          "file_name": "BSgenome.Falbicollis.Ensembl.FicAlb15_1.0.0.tar.gz",
+          "size": 249421737,
+          "seq_ids": [
+            "1",
+            "1A",
+            "2",
+            "3",
+            "4"
+          ],
+          "seq_count": 21428,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Muscicapidae",
+            "genus": "Ficedula"
+          },
+          "common_name": "Collared flycatcher",
+          "published": "2026-04-12T18:07:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Falbicollis.Ensembl.FicAlb15/BSgenome.Falbicollis.Ensembl.FicAlb15_1.0.0.tar.gz"
         }
       ]
     },
@@ -69647,6 +69679,38 @@
       "common_name": "denticle herring",
       "published": "2026-04-12T18:07:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dclupeoides.Ensembl.fDenClu12/BSgenome.Dclupeoides.Ensembl.fDenClu12_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Falbicollis.Ensembl.FicAlb15",
+      "version": "1.0.0",
+      "organism": "Ficedula albicollis",
+      "assembly": "FicAlb1.5",
+      "provider": "Ensembl",
+      "accession": "GCA_000247815.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000247815.2/",
+      "file_name": "BSgenome.Falbicollis.Ensembl.FicAlb15_1.0.0.tar.gz",
+      "size": 249421737,
+      "seq_ids": [
+        "1",
+        "1A",
+        "2",
+        "3",
+        "4"
+      ],
+      "seq_count": 21428,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Muscicapidae",
+        "genus": "Ficedula"
+      },
+      "common_name": "Collared flycatcher",
+      "published": "2026-04-12T18:07:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Falbicollis.Ensembl.FicAlb15/BSgenome.Falbicollis.Ensembl.FicAlb15_1.0.0.tar.gz"
     }
   ]
 }
