@@ -25902,6 +25902,54 @@
       ]
     },
     {
+      "organism": "Malurus cyaneus samueli",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Maluridae",
+        "genus": "Malurus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mcyaneus.Ensembl.mCya10",
+          "version": "1.0.0",
+          "organism": "Malurus cyaneus samueli",
+          "assembly": "mCya_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_009741485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009741485.1/",
+          "file_name": "BSgenome.Mcyaneus.Ensembl.mCya10_1.0.0.tar.gz",
+          "size": 255000910,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 4329,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Maluridae",
+            "genus": "Malurus"
+          },
+          "common_name": "",
+          "published": "2026-04-12T23:40:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcyaneus.Ensembl.mCya10/BSgenome.Mcyaneus.Ensembl.mCya10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Manacus vitellinus",
       "common_name": "golden-collared manakin",
       "group": "vertebrate_other",
@@ -73669,6 +73717,38 @@
       "common_name": "chicken",
       "published": "2026-04-12T23:39:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b/BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mcyaneus.Ensembl.mCya10",
+      "version": "1.0.0",
+      "organism": "Malurus cyaneus samueli",
+      "assembly": "mCya_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_009741485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009741485.1/",
+      "file_name": "BSgenome.Mcyaneus.Ensembl.mCya10_1.0.0.tar.gz",
+      "size": 255000910,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 4329,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Maluridae",
+        "genus": "Malurus"
+      },
+      "common_name": "",
+      "published": "2026-04-12T23:40:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcyaneus.Ensembl.mCya10/BSgenome.Mcyaneus.Ensembl.mCya10_1.0.0.tar.gz"
     }
   ]
 }
