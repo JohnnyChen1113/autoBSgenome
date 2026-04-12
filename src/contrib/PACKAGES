@@ -3717,3 +3717,7 @@ NeedsCompilation: no
 Package: BSgenome.Gmorhua.Ensembl.gadMor30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lbergylta.Ensembl.BallGenV1
+Version: 1.0.0
+NeedsCompilation: no

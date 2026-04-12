@@ -23727,6 +23727,54 @@
       ]
     },
     {
+      "organism": "Labrus bergylta",
+      "common_name": "ballan wrasse",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Labriformes",
+        "family": "Labridae",
+        "genus": "Labrus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lbergylta.Ensembl.BallGenV1",
+          "version": "1.0.0",
+          "organism": "Labrus bergylta",
+          "assembly": "BallGen_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_900080235.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900080235.1/",
+          "file_name": "BSgenome.Lbergylta.Ensembl.BallGenV1_1.0.0.tar.gz",
+          "size": 190077008,
+          "seq_ids": [
+            "FKLU01000001.1",
+            "FKLU01000002.1",
+            "FKLU01000003.1",
+            "FKLU01000004.1",
+            "FKLU01000005.1"
+          ],
+          "seq_count": 13466,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Labriformes",
+            "family": "Labridae",
+            "genus": "Labrus"
+          },
+          "common_name": "ballan wrasse",
+          "published": "2026-04-12T22:38:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbergylta.Ensembl.BallGenV1/BSgenome.Lbergylta.Ensembl.BallGenV1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Laccaria bicolor S238N-H82",
       "common_name": "",
       "group": "fungi",
@@ -72917,6 +72965,38 @@
       "common_name": "Atlantic cod",
       "published": "2026-04-12T22:38:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmorhua.Ensembl.gadMor30/BSgenome.Gmorhua.Ensembl.gadMor30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lbergylta.Ensembl.BallGenV1",
+      "version": "1.0.0",
+      "organism": "Labrus bergylta",
+      "assembly": "BallGen_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_900080235.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900080235.1/",
+      "file_name": "BSgenome.Lbergylta.Ensembl.BallGenV1_1.0.0.tar.gz",
+      "size": 190077008,
+      "seq_ids": [
+        "FKLU01000001.1",
+        "FKLU01000002.1",
+        "FKLU01000003.1",
+        "FKLU01000004.1",
+        "FKLU01000005.1"
+      ],
+      "seq_count": 13466,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Labriformes",
+        "family": "Labridae",
+        "genus": "Labrus"
+      },
+      "common_name": "ballan wrasse",
+      "published": "2026-04-12T22:38:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbergylta.Ensembl.BallGenV1/BSgenome.Lbergylta.Ensembl.BallGenV1_1.0.0.tar.gz"
     }
   ]
 }
