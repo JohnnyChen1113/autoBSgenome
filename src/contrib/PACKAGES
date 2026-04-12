@@ -3725,3 +3725,7 @@ NeedsCompilation: no
 Package: BSgenome.Charengus.Ensembl.Chv202v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kmarmoratus.Ensembl.ASM164957v1
+Version: 1.0.0
+NeedsCompilation: no
