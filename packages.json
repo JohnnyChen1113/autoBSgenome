@@ -27239,6 +27239,54 @@
       ]
     },
     {
+      "organism": "Mola mola",
+      "common_name": "ocean sunfish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Tetraodontiformes",
+        "family": "Molidae",
+        "genus": "Mola"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mmola.Ensembl.ASM169857v1",
+          "version": "1.0.0",
+          "organism": "Mola mola",
+          "assembly": "ASM169857v1",
+          "provider": "Ensembl",
+          "accession": "GCA_001698575.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001698575.1/",
+          "file_name": "BSgenome.Mmola.Ensembl.ASM169857v1_1.0.0.tar.gz",
+          "size": 152991434,
+          "seq_ids": [
+            "KV751334.1",
+            "KV751317.1",
+            "KV751324.1",
+            "KV751319.1",
+            "KV751321.1"
+          ],
+          "seq_count": 5552,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Tetraodontiformes",
+            "family": "Molidae",
+            "genus": "Mola"
+          },
+          "common_name": "ocean sunfish",
+          "published": "2026-04-12T23:40:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmola.Ensembl.ASM169857v1/BSgenome.Mmola.Ensembl.ASM169857v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mollisia scopiformis",
       "common_name": "",
       "group": "fungi",
@@ -73749,6 +73797,38 @@
       "common_name": "",
       "published": "2026-04-12T23:40:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcyaneus.Ensembl.mCya10/BSgenome.Mcyaneus.Ensembl.mCya10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmola.Ensembl.ASM169857v1",
+      "version": "1.0.0",
+      "organism": "Mola mola",
+      "assembly": "ASM169857v1",
+      "provider": "Ensembl",
+      "accession": "GCA_001698575.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001698575.1/",
+      "file_name": "BSgenome.Mmola.Ensembl.ASM169857v1_1.0.0.tar.gz",
+      "size": 152991434,
+      "seq_ids": [
+        "KV751334.1",
+        "KV751317.1",
+        "KV751324.1",
+        "KV751319.1",
+        "KV751321.1"
+      ],
+      "seq_count": 5552,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Tetraodontiformes",
+        "family": "Molidae",
+        "genus": "Mola"
+      },
+      "common_name": "ocean sunfish",
+      "published": "2026-04-12T23:40:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmola.Ensembl.ASM169857v1/BSgenome.Mmola.Ensembl.ASM169857v1_1.0.0.tar.gz"
     }
   ]
 }
