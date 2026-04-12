@@ -14928,6 +14928,54 @@
       ]
     },
     {
+      "organism": "Dasypus novemcinctus",
+      "common_name": "nine-banded armadillo",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Cingulata",
+        "family": "Dasypodidae",
+        "genus": "Dasypus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dnovemcinctus.Ensembl.Dasnov30",
+          "version": "1.0.0",
+          "organism": "Dasypus novemcinctus",
+          "assembly": "Dasnov3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000208655.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000208655.2/",
+          "file_name": "BSgenome.Dnovemcinctus.Ensembl.Dasnov30_1.0.0.tar.gz",
+          "size": 798172048,
+          "seq_ids": [
+            "JH573670.1",
+            "JH570378.1",
+            "JH575655.1",
+            "JH572107.1",
+            "JH568879.1"
+          ],
+          "seq_count": 46559,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Cingulata",
+            "family": "Dasypodidae",
+            "genus": "Dasypus"
+          },
+          "common_name": "nine-banded armadillo",
+          "published": "2026-04-12T20:54:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnovemcinctus.Ensembl.Dasnov30/BSgenome.Dnovemcinctus.Ensembl.Dasnov30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Daucus carota subsp. sativus",
       "common_name": "",
       "group": "plant",
@@ -72053,6 +72101,38 @@
       "common_name": "inshore hagfish",
       "published": "2026-04-12T20:52:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eburgeri.Ensembl.Eburgeri32/BSgenome.Eburgeri.Ensembl.Eburgeri32_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dnovemcinctus.Ensembl.Dasnov30",
+      "version": "1.0.0",
+      "organism": "Dasypus novemcinctus",
+      "assembly": "Dasnov3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000208655.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000208655.2/",
+      "file_name": "BSgenome.Dnovemcinctus.Ensembl.Dasnov30_1.0.0.tar.gz",
+      "size": 798172048,
+      "seq_ids": [
+        "JH573670.1",
+        "JH570378.1",
+        "JH575655.1",
+        "JH572107.1",
+        "JH568879.1"
+      ],
+      "seq_count": 46559,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Cingulata",
+        "family": "Dasypodidae",
+        "genus": "Dasypus"
+      },
+      "common_name": "nine-banded armadillo",
+      "published": "2026-04-12T20:54:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dnovemcinctus.Ensembl.Dasnov30/BSgenome.Dnovemcinctus.Ensembl.Dasnov30_1.0.0.tar.gz"
     }
   ]
 }

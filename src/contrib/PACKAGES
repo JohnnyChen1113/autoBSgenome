@@ -3669,3 +3669,7 @@ NeedsCompilation: no
 Package: BSgenome.Eburgeri.Ensembl.Eburgeri32
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dnovemcinctus.Ensembl.Dasnov30
+Version: 1.0.0
+NeedsCompilation: no
