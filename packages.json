@@ -11112,6 +11112,54 @@
       ]
     },
     {
+      "organism": "Chlorocebus sabaeus",
+      "common_name": "green monkey",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Chlorocebus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Csabaeus.Ensembl.ChlSab11",
+          "version": "1.0.0",
+          "organism": "Chlorocebus sabaeus",
+          "assembly": "ChlSab1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_000409795.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000409795.2/",
+          "file_name": "BSgenome.Csabaeus.Ensembl.ChlSab11_1.0.0.tar.gz",
+          "size": 656147547,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 2004,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Chlorocebus"
+          },
+          "common_name": "green monkey",
+          "published": "2026-04-12T19:26:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csabaeus.Ensembl.ChlSab11/BSgenome.Csabaeus.Ensembl.ChlSab11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chondrus crispus",
       "common_name": "carragheen",
       "group": "other",
@@ -70828,6 +70876,38 @@
       "common_name": "Damara mole-rat",
       "published": "2026-04-12T19:26:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fdamarensis.Ensembl.DMRv10/BSgenome.Fdamarensis.Ensembl.DMRv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Csabaeus.Ensembl.ChlSab11",
+      "version": "1.0.0",
+      "organism": "Chlorocebus sabaeus",
+      "assembly": "ChlSab1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_000409795.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000409795.2/",
+      "file_name": "BSgenome.Csabaeus.Ensembl.ChlSab11_1.0.0.tar.gz",
+      "size": 656147547,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 2004,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Chlorocebus"
+      },
+      "common_name": "green monkey",
+      "published": "2026-04-12T19:26:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csabaeus.Ensembl.ChlSab11/BSgenome.Csabaeus.Ensembl.ChlSab11_1.0.0.tar.gz"
     }
   ]
 }

@@ -3601,3 +3601,7 @@ NeedsCompilation: no
 Package: BSgenome.Fdamarensis.Ensembl.DMRv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csabaeus.Ensembl.ChlSab11
+Version: 1.0.0
+NeedsCompilation: no
