@@ -24928,6 +24928,54 @@
       ]
     },
     {
+      "organism": "Lonchura striata domestica",
+      "common_name": "white-rumped munia",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Estrildidae",
+        "genus": "Lonchura"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lstriata.Ensembl.LonStrDom1",
+          "version": "1.0.0",
+          "organism": "Lonchura striata domestica",
+          "assembly": "LonStrDom1",
+          "provider": "Ensembl",
+          "accession": "GCA_002197715.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002197715.1/",
+          "file_name": "BSgenome.Lstriata.Ensembl.LonStrDom1_1.0.0.tar.gz",
+          "size": 246885855,
+          "seq_ids": [
+            "MUZQ01000001.1",
+            "MUZQ01000002.1",
+            "MUZQ01000003.1",
+            "MUZQ01000004.1",
+            "MUZQ01000005.1"
+          ],
+          "seq_count": 3014,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Estrildidae",
+            "genus": "Lonchura"
+          },
+          "common_name": "white-rumped munia",
+          "published": "2026-04-12T21:40:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lstriata.Ensembl.LonStrDom1/BSgenome.Lstriata.Ensembl.LonStrDom1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lottia gigantea",
       "common_name": "owl limpet",
       "group": "invertebrate",
@@ -72469,6 +72517,38 @@
       "common_name": "turkey",
       "published": "2026-04-12T21:40:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mgallopavo.Ensembl.Turkey51/BSgenome.Mgallopavo.Ensembl.Turkey51_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lstriata.Ensembl.LonStrDom1",
+      "version": "1.0.0",
+      "organism": "Lonchura striata domestica",
+      "assembly": "LonStrDom1",
+      "provider": "Ensembl",
+      "accession": "GCA_002197715.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002197715.1/",
+      "file_name": "BSgenome.Lstriata.Ensembl.LonStrDom1_1.0.0.tar.gz",
+      "size": 246885855,
+      "seq_ids": [
+        "MUZQ01000001.1",
+        "MUZQ01000002.1",
+        "MUZQ01000003.1",
+        "MUZQ01000004.1",
+        "MUZQ01000005.1"
+      ],
+      "seq_count": 3014,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Estrildidae",
+        "genus": "Lonchura"
+      },
+      "common_name": "white-rumped munia",
+      "published": "2026-04-12T21:40:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lstriata.Ensembl.LonStrDom1/BSgenome.Lstriata.Ensembl.LonStrDom1_1.0.0.tar.gz"
     }
   ]
 }

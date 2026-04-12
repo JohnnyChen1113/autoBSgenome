@@ -3693,3 +3693,7 @@ NeedsCompilation: no
 Package: BSgenome.Mgallopavo.Ensembl.Turkey51
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lstriata.Ensembl.LonStrDom1
+Version: 1.0.0
+NeedsCompilation: no
