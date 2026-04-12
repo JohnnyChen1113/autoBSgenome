@@ -24570,6 +24570,52 @@
       ]
     },
     {
+      "organism": "Latimeria chalumnae",
+      "common_name": "coelacanth",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Coelacanthiformes",
+        "family": "Coelacanthidae",
+        "genus": "Latimeria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lchalumnae.Ensembl.LatCha1",
+          "version": "1.0.0",
+          "organism": "Latimeria chalumnae",
+          "assembly": "LatCha1",
+          "provider": "Ensembl",
+          "accession": "GCA_000225785.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000225785.1/",
+          "file_name": "BSgenome.Lchalumnae.Ensembl.LatCha1_1.0.0.tar.gz",
+          "size": 532308757,
+          "seq_ids": [
+            "JH126562.1",
+            "JH126563.1",
+            "JH126564.1",
+            "JH126565.1",
+            "JH126566.1"
+          ],
+          "seq_count": 22819,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Coelacanthiformes",
+            "family": "Coelacanthidae",
+            "genus": "Latimeria"
+          },
+          "common_name": "coelacanth",
+          "published": "2026-04-12T23:40:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lchalumnae.Ensembl.LatCha1/BSgenome.Lchalumnae.Ensembl.LatCha1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Leishmania braziliensis MHOM/BR/75/M2904",
       "common_name": "",
       "group": "other",
@@ -73829,6 +73875,37 @@
       "common_name": "ocean sunfish",
       "published": "2026-04-12T23:40:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmola.Ensembl.ASM169857v1/BSgenome.Mmola.Ensembl.ASM169857v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lchalumnae.Ensembl.LatCha1",
+      "version": "1.0.0",
+      "organism": "Latimeria chalumnae",
+      "assembly": "LatCha1",
+      "provider": "Ensembl",
+      "accession": "GCA_000225785.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000225785.1/",
+      "file_name": "BSgenome.Lchalumnae.Ensembl.LatCha1_1.0.0.tar.gz",
+      "size": 532308757,
+      "seq_ids": [
+        "JH126562.1",
+        "JH126563.1",
+        "JH126564.1",
+        "JH126565.1",
+        "JH126566.1"
+      ],
+      "seq_count": 22819,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Coelacanthiformes",
+        "family": "Coelacanthidae",
+        "genus": "Latimeria"
+      },
+      "common_name": "coelacanth",
+      "published": "2026-04-12T23:40:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lchalumnae.Ensembl.LatCha1/BSgenome.Lchalumnae.Ensembl.LatCha1_1.0.0.tar.gz"
     }
   ]
 }
