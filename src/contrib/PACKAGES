@@ -3501,3 +3501,7 @@ NeedsCompilation: no
 Package: BSgenome.Harmiger.NCBI.ASM189008v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mgallopavo.NCBI.Turkey51
+Version: 1.0.0
+NeedsCompilation: no

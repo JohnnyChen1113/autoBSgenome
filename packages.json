@@ -23940,6 +23940,54 @@
       ]
     },
     {
+      "organism": "Meleagris gallopavo",
+      "common_name": "turkey",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Meleagris"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mgallopavo.NCBI.Turkey51",
+          "version": "1.0.0",
+          "organism": "Meleagris gallopavo",
+          "assembly": "Turkey_5.1",
+          "provider": "NCBI",
+          "accession": "GCF_000146605.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000146605.3/",
+          "file_name": "BSgenome.Mgallopavo.NCBI.Turkey51_1.0.0.tar.gz",
+          "size": 282566432,
+          "seq_ids": [
+            "NC_015011.2",
+            "NW_011091169.1",
+            "NW_011091170.1",
+            "NW_011091171.1",
+            "NW_011091172.1"
+          ],
+          "seq_count": 185175,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Galliformes",
+            "family": "Phasianidae",
+            "genus": "Meleagris"
+          },
+          "common_name": "turkey",
+          "published": "2026-04-12T18:05:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mgallopavo.NCBI.Turkey51/BSgenome.Mgallopavo.NCBI.Turkey51_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Merops nubicus",
       "common_name": "carmine bee-eater",
       "group": "vertebrate_other",
@@ -68927,6 +68975,38 @@
       "common_name": "great roundleaf bat",
       "published": "2026-04-12T18:05:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Harmiger.NCBI.ASM189008v1/BSgenome.Harmiger.NCBI.ASM189008v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mgallopavo.NCBI.Turkey51",
+      "version": "1.0.0",
+      "organism": "Meleagris gallopavo",
+      "assembly": "Turkey_5.1",
+      "provider": "NCBI",
+      "accession": "GCF_000146605.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000146605.3/",
+      "file_name": "BSgenome.Mgallopavo.NCBI.Turkey51_1.0.0.tar.gz",
+      "size": 282566432,
+      "seq_ids": [
+        "NC_015011.2",
+        "NW_011091169.1",
+        "NW_011091170.1",
+        "NW_011091171.1",
+        "NW_011091172.1"
+      ],
+      "seq_count": 185175,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Meleagris"
+      },
+      "common_name": "turkey",
+      "published": "2026-04-12T18:05:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mgallopavo.NCBI.Turkey51/BSgenome.Mgallopavo.NCBI.Turkey51_1.0.0.tar.gz"
     }
   ]
 }
