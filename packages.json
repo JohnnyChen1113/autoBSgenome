@@ -14754,6 +14754,54 @@
       ]
     },
     {
+      "organism": "Denticeps clupeoides",
+      "common_name": "denticle herring",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Clupeiformes",
+        "family": "Denticipitidae",
+        "genus": "Denticeps"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dclupeoides.Ensembl.fDenClu12",
+          "version": "1.0.0",
+          "organism": "Denticeps clupeoides",
+          "assembly": "fDenClu1.2",
+          "provider": "Ensembl",
+          "accession": "GCA_900700375.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900700375.2/",
+          "file_name": "BSgenome.Dclupeoides.Ensembl.fDenClu12_1.0.0.tar.gz",
+          "size": 132947008,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 460,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Clupeiformes",
+            "family": "Denticipitidae",
+            "genus": "Denticeps"
+          },
+          "common_name": "denticle herring",
+          "published": "2026-04-12T18:07:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dclupeoides.Ensembl.fDenClu12/BSgenome.Dclupeoides.Ensembl.fDenClu12_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dermochelys coriacea",
       "common_name": "leatherback sea turtle",
       "group": "vertebrate_other",
@@ -69567,6 +69615,38 @@
       "common_name": "Gouldian finch",
       "published": "2026-04-12T18:06:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Egouldiae.Ensembl.GouldianFinch/BSgenome.Egouldiae.Ensembl.GouldianFinch_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dclupeoides.Ensembl.fDenClu12",
+      "version": "1.0.0",
+      "organism": "Denticeps clupeoides",
+      "assembly": "fDenClu1.2",
+      "provider": "Ensembl",
+      "accession": "GCA_900700375.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900700375.2/",
+      "file_name": "BSgenome.Dclupeoides.Ensembl.fDenClu12_1.0.0.tar.gz",
+      "size": 132947008,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 460,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Clupeiformes",
+        "family": "Denticipitidae",
+        "genus": "Denticeps"
+      },
+      "common_name": "denticle herring",
+      "published": "2026-04-12T18:07:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dclupeoides.Ensembl.fDenClu12/BSgenome.Dclupeoides.Ensembl.fDenClu12_1.0.0.tar.gz"
     }
   ]
 }

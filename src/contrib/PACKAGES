@@ -3533,3 +3533,7 @@ NeedsCompilation: no
 Package: BSgenome.Egouldiae.Ensembl.GouldianFinch
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dclupeoides.Ensembl.fDenClu12
+Version: 1.0.0
+NeedsCompilation: no
