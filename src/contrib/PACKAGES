@@ -3609,3 +3609,7 @@ NeedsCompilation: no
 Package: BSgenome.Ggallus.Ensembl.bGalGal1patwhiteleghornlayerGRCg7w
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lcoronata.Ensembl.Lepidothrixcoronata10
+Version: 1.0.0
+NeedsCompilation: no
