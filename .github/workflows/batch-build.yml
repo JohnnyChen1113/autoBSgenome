@@ -58,9 +58,11 @@ jobs:
           updated = 0
           for item in queue:
               if item['status'] in ('building', 'pending'):
+                  if not item.get('organism') or not item.get('assembly'):
+                      continue
                   parts = item['organism'].split()
                   abbrev = parts[0][0].upper() + parts[1].lower() if len(parts) >= 2 else parts[0]
-                  assembly = item['assembly'].replace('.','').replace(' ','').replace('-','').replace('_','')
+                  assembly = (item['assembly'] or '').replace('.','').replace(' ','').replace('-','').replace('_','')
                   provider = 'Ensembl' if item.get('data_source') == 'ensembl' else 'NCBI'
                   pkg_tag = f'pkg-BSgenome.{abbrev}.{provider}.{assembly}'
                   if pkg_tag in existing_tags:
@@ -78,7 +80,7 @@ jobs:
           import json
           with open('build-queue.json') as f:
               queue = json.load(f)
-          pending = [item for item in queue if item['status'] == 'pending']
+          pending = [item for item in queue if item['status'] == 'pending' and item.get('accession') and item.get('assembly') and item.get('organism')]
           batch = pending[:${BATCH_SIZE}]
           print(f'Pending: {len(pending)}, Batch size: {len(batch)}')
           if not batch:
@@ -119,11 +121,15 @@ jobs:
           repo = '${{ github.repository }}'
 
           for item in batch:
-              accession = item['accession']
-              organism = item['organism']
+              accession = item.get('accession')
+              organism = item.get('organism')
+              assembly_raw = item.get('assembly')
+              if not accession or not organism or not assembly_raw:
+                  print(f'Skipped: missing fields - accession={accession!r}, organism={organism!r}, assembly={assembly_raw!r}')
+                  continue
               parts = organism.split()
               abbrev = parts[0][0].upper() + parts[1].lower() if len(parts) >= 2 else parts[0]
-              assembly = item['assembly'].replace('.','').replace(' ','').replace('-','').replace('_','')
+              assembly = assembly_raw.replace('.','').replace(' ','').replace('-','').replace('_','')
               is_ensembl = item.get('data_source') == 'ensembl'
               provider = 'Ensembl' if is_ensembl else 'NCBI'
               package_name = f'BSgenome.{abbrev}.{provider}.{assembly}'
