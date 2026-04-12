@@ -3709,3 +3709,7 @@ NeedsCompilation: no
 Package: BSgenome.Mfascicularis.Ensembl.Macacafascicularis60
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hhucho.Ensembl.ASM331708v1
+Version: 1.0.0
+NeedsCompilation: no

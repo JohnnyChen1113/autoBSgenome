@@ -22361,6 +22361,54 @@
       ]
     },
     {
+      "organism": "Hucho hucho",
+      "common_name": "huchen",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Hucho"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hhucho.Ensembl.ASM331708v1",
+          "version": "1.0.0",
+          "organism": "Hucho hucho",
+          "assembly": "ASM331708v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003317085.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003317085.1/",
+          "file_name": "BSgenome.Hhucho.Ensembl.ASM331708v1_1.0.0.tar.gz",
+          "size": 457302576,
+          "seq_ids": [
+            "QNTS01000004.1",
+            "QNTS01000001.1",
+            "QNTS01000002.1",
+            "QNTS01000016.1",
+            "QNTS01000071.1"
+          ],
+          "seq_count": 71639,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Salmoniformes",
+            "family": "Salmonidae",
+            "genus": "Hucho"
+          },
+          "common_name": "huchen",
+          "published": "2026-04-12T21:41:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhucho.Ensembl.ASM331708v1/BSgenome.Hhucho.Ensembl.ASM331708v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Huiozyma naganishii CBS 8797",
       "common_name": "",
       "group": "fungi",
@@ -72773,6 +72821,38 @@
       "common_name": "crab-eating macaque",
       "published": "2026-04-12T21:41:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mfascicularis.Ensembl.Macacafascicularis60/BSgenome.Mfascicularis.Ensembl.Macacafascicularis60_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hhucho.Ensembl.ASM331708v1",
+      "version": "1.0.0",
+      "organism": "Hucho hucho",
+      "assembly": "ASM331708v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003317085.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003317085.1/",
+      "file_name": "BSgenome.Hhucho.Ensembl.ASM331708v1_1.0.0.tar.gz",
+      "size": 457302576,
+      "seq_ids": [
+        "QNTS01000004.1",
+        "QNTS01000001.1",
+        "QNTS01000002.1",
+        "QNTS01000016.1",
+        "QNTS01000071.1"
+      ],
+      "seq_count": 71639,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Hucho"
+      },
+      "common_name": "huchen",
+      "published": "2026-04-12T21:41:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhucho.Ensembl.ASM331708v1/BSgenome.Hhucho.Ensembl.ASM331708v1_1.0.0.tar.gz"
     }
   ]
 }
