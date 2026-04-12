@@ -11732,6 +11732,54 @@
       ]
     },
     {
+      "organism": "Clupea harengus",
+      "common_name": "Atlantic herring",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Clupeiformes",
+        "family": "Clupeidae",
+        "genus": "Clupea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Charengus.Ensembl.Chv202v2",
+          "version": "1.0.0",
+          "organism": "Clupea harengus",
+          "assembly": "Ch_v2.0.2v2",
+          "provider": "Ensembl",
+          "accession": "GCA_900700415.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900700415.2/",
+          "file_name": "BSgenome.Charengus.Ensembl.Chv202v2_1.0.0.tar.gz",
+          "size": 181200693,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1724,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Clupeiformes",
+            "family": "Clupeidae",
+            "genus": "Clupea"
+          },
+          "common_name": "Atlantic herring",
+          "published": "2026-04-12T22:38:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Charengus.Ensembl.Chv202v2/BSgenome.Charengus.Ensembl.Chv202v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Coccidioides immitis RS",
       "common_name": "",
       "group": "fungi",
@@ -72997,6 +73045,38 @@
       "common_name": "ballan wrasse",
       "published": "2026-04-12T22:38:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbergylta.Ensembl.BallGenV1/BSgenome.Lbergylta.Ensembl.BallGenV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Charengus.Ensembl.Chv202v2",
+      "version": "1.0.0",
+      "organism": "Clupea harengus",
+      "assembly": "Ch_v2.0.2v2",
+      "provider": "Ensembl",
+      "accession": "GCA_900700415.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900700415.2/",
+      "file_name": "BSgenome.Charengus.Ensembl.Chv202v2_1.0.0.tar.gz",
+      "size": 181200693,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1724,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Clupeiformes",
+        "family": "Clupeidae",
+        "genus": "Clupea"
+      },
+      "common_name": "Atlantic herring",
+      "published": "2026-04-12T22:38:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Charengus.Ensembl.Chv202v2/BSgenome.Charengus.Ensembl.Chv202v2_1.0.0.tar.gz"
     }
   ]
 }
