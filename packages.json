@@ -20206,6 +20206,54 @@
       ]
     },
     {
+      "organism": "Gasterosteus aculeatus",
+      "common_name": "three-spined stickleback",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Gasterosteidae",
+        "genus": "Gasterosteus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gaculeatus.Ensembl.BOT",
+          "version": "1.0.0",
+          "organism": "Gasterosteus aculeatus",
+          "assembly": "BOT",
+          "provider": "Ensembl",
+          "accession": "GCA_006229185.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006229185.1/",
+          "file_name": "BSgenome.Gaculeatus.Ensembl.BOT_1.0.0.tar.gz",
+          "size": 113765605,
+          "seq_ids": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V"
+          ],
+          "seq_count": 2936,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Perciformes",
+            "family": "Gasterosteidae",
+            "genus": "Gasterosteus"
+          },
+          "common_name": "three-spined stickleback",
+          "published": "2026-04-12T20:02:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gaculeatus.Ensembl.BOT/BSgenome.Gaculeatus.Ensembl.BOT_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Gavialis gangeticus",
       "common_name": "Gharial",
       "group": "vertebrate_other",
@@ -71276,6 +71324,38 @@
       "common_name": "donkey",
       "published": "2026-04-12T20:02:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Easinus.Ensembl.ASM1607732v2/BSgenome.Easinus.Ensembl.ASM1607732v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gaculeatus.Ensembl.BOT",
+      "version": "1.0.0",
+      "organism": "Gasterosteus aculeatus",
+      "assembly": "BOT",
+      "provider": "Ensembl",
+      "accession": "GCA_006229185.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006229185.1/",
+      "file_name": "BSgenome.Gaculeatus.Ensembl.BOT_1.0.0.tar.gz",
+      "size": 113765605,
+      "seq_ids": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "seq_count": 2936,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Gasterosteidae",
+        "genus": "Gasterosteus"
+      },
+      "common_name": "three-spined stickleback",
+      "published": "2026-04-12T20:02:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gaculeatus.Ensembl.BOT/BSgenome.Gaculeatus.Ensembl.BOT_1.0.0.tar.gz"
     }
   ]
 }
