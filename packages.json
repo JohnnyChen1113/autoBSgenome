@@ -25756,6 +25756,54 @@
       ]
     },
     {
+      "organism": "Macaca mulatta",
+      "common_name": "Rhesus monkey",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Macaca"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mmulatta.Ensembl.Mmul10",
+          "version": "1.0.0",
+          "organism": "Macaca mulatta",
+          "assembly": "Mmul_10",
+          "provider": "Ensembl",
+          "accession": "GCA_003339765.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003339765.3/",
+          "file_name": "BSgenome.Mmulatta.Ensembl.Mmul10_1.0.0.tar.gz",
+          "size": 680815704,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 2939,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Macaca"
+          },
+          "common_name": "Rhesus monkey",
+          "published": "2026-04-12T23:41:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmulatta.Ensembl.Mmul10/BSgenome.Mmulatta.Ensembl.Mmul10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Malassezia globosa CBS 7966",
       "common_name": "",
       "group": "fungi",
@@ -73986,6 +74034,38 @@
       "common_name": "budgerigar",
       "published": "2026-04-12T23:41:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mundulatus.Ensembl.bMelUnd1matZ/BSgenome.Mundulatus.Ensembl.bMelUnd1matZ_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmulatta.Ensembl.Mmul10",
+      "version": "1.0.0",
+      "organism": "Macaca mulatta",
+      "assembly": "Mmul_10",
+      "provider": "Ensembl",
+      "accession": "GCA_003339765.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003339765.3/",
+      "file_name": "BSgenome.Mmulatta.Ensembl.Mmul10_1.0.0.tar.gz",
+      "size": 680815704,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 2939,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Macaca"
+      },
+      "common_name": "Rhesus monkey",
+      "published": "2026-04-12T23:41:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmulatta.Ensembl.Mmul10/BSgenome.Mmulatta.Ensembl.Mmul10_1.0.0.tar.gz"
     }
   ]
 }
