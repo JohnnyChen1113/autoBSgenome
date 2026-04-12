@@ -16650,6 +16650,54 @@
       ]
     },
     {
+      "organism": "Electrophorus electricus",
+      "common_name": "electric eel",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Gymnotiformes",
+        "family": "Gymnotidae",
+        "genus": "Electrophorus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Eelectricus.Ensembl.fEleEle1pri",
+          "version": "1.0.0",
+          "organism": "Electrophorus electricus",
+          "assembly": "fEleEle1.pri",
+          "provider": "Ensembl",
+          "accession": "GCA_013358815.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_013358815.1/",
+          "file_name": "BSgenome.Eelectricus.Ensembl.fEleEle1pri_1.0.0.tar.gz",
+          "size": 132925265,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 89,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Gymnotiformes",
+            "family": "Gymnotidae",
+            "genus": "Electrophorus"
+          },
+          "common_name": "electric eel",
+          "published": "2026-04-12T18:06:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eelectricus.Ensembl.fEleEle1pri/BSgenome.Eelectricus.Ensembl.fEleEle1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Elephantulus edwardii",
       "common_name": "Cape elephant shrew",
       "group": "vertebrate_mammalian",
@@ -69407,6 +69455,38 @@
       "common_name": "white-footed mouse",
       "published": "2026-04-12T18:06:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pleucopus.NCBI.UCIPerLeu21/BSgenome.Pleucopus.NCBI.UCIPerLeu21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Eelectricus.Ensembl.fEleEle1pri",
+      "version": "1.0.0",
+      "organism": "Electrophorus electricus",
+      "assembly": "fEleEle1.pri",
+      "provider": "Ensembl",
+      "accession": "GCA_013358815.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_013358815.1/",
+      "file_name": "BSgenome.Eelectricus.Ensembl.fEleEle1pri_1.0.0.tar.gz",
+      "size": 132925265,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 89,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Gymnotiformes",
+        "family": "Gymnotidae",
+        "genus": "Electrophorus"
+      },
+      "common_name": "electric eel",
+      "published": "2026-04-12T18:06:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eelectricus.Ensembl.fEleEle1pri/BSgenome.Eelectricus.Ensembl.fEleEle1pri_1.0.0.tar.gz"
     }
   ]
 }

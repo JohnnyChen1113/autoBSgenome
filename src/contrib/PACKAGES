@@ -3525,3 +3525,7 @@ NeedsCompilation: no
 Package: BSgenome.Pleucopus.NCBI.UCIPerLeu21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eelectricus.Ensembl.fEleEle1pri
+Version: 1.0.0
+NeedsCompilation: no
