@@ -16276,6 +16276,54 @@
       ]
     },
     {
+      "organism": "Egretta garzetta",
+      "common_name": "little egret",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Egretta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Egarzetta.NCBI.ASM68718v1",
+          "version": "1.0.0",
+          "organism": "Egretta garzetta",
+          "assembly": "ASM68718v1",
+          "provider": "NCBI",
+          "accession": "GCF_000687185.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000687185.1/",
+          "file_name": "BSgenome.Egarzetta.NCBI.ASM68718v1_1.0.0.tar.gz",
+          "size": 306270360,
+          "seq_ids": [
+            "NW_009258212.1",
+            "NW_009258213.1",
+            "NW_009258214.1",
+            "NW_009258215.1",
+            "NW_009258216.1"
+          ],
+          "seq_count": 11791,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Pelecaniformes",
+            "family": "Ardeidae",
+            "genus": "Egretta"
+          },
+          "common_name": "little egret",
+          "published": "2026-04-12T18:05:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Egarzetta.NCBI.ASM68718v1/BSgenome.Egarzetta.NCBI.ASM68718v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Eimeria acervulina",
       "common_name": "",
       "group": "other",
@@ -69087,6 +69135,38 @@
       "common_name": "Pacific walrus",
       "published": "2026-04-12T18:05:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Orosmarus.NCBI.Oros10/BSgenome.Orosmarus.NCBI.Oros10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Egarzetta.NCBI.ASM68718v1",
+      "version": "1.0.0",
+      "organism": "Egretta garzetta",
+      "assembly": "ASM68718v1",
+      "provider": "NCBI",
+      "accession": "GCF_000687185.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000687185.1/",
+      "file_name": "BSgenome.Egarzetta.NCBI.ASM68718v1_1.0.0.tar.gz",
+      "size": 306270360,
+      "seq_ids": [
+        "NW_009258212.1",
+        "NW_009258213.1",
+        "NW_009258214.1",
+        "NW_009258215.1",
+        "NW_009258216.1"
+      ],
+      "seq_count": 11791,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Pelecaniformes",
+        "family": "Ardeidae",
+        "genus": "Egretta"
+      },
+      "common_name": "little egret",
+      "published": "2026-04-12T18:05:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Egarzetta.NCBI.ASM68718v1/BSgenome.Egarzetta.NCBI.ASM68718v1_1.0.0.tar.gz"
     }
   ]
 }
