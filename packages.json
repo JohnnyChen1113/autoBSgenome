@@ -15646,6 +15646,38 @@
             "genus": "Dipodomys"
           },
           "common_name": "Ord's kangaroo rat"
+        },
+        {
+          "package": "BSgenome.Dordii.Ensembl.Dord20",
+          "version": "1.0.0",
+          "organism": "Dipodomys ordii",
+          "assembly": "Dord_2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000151885.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000151885.2/",
+          "file_name": "BSgenome.Dordii.Ensembl.Dord20_1.0.0.tar.gz",
+          "size": 480099314,
+          "seq_ids": [
+            "KN672347.1",
+            "KN672351.1",
+            "KN672350.1",
+            "KN672349.1",
+            "KN672348.1"
+          ],
+          "seq_count": 65193,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Heteromyidae",
+            "genus": "Dipodomys"
+          },
+          "common_name": "Ord's kangaroo rat",
+          "published": "2026-04-12T20:03:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.Ensembl.Dord20/BSgenome.Dordii.Ensembl.Dord20_1.0.0.tar.gz"
         }
       ]
     },
@@ -71433,6 +71465,38 @@
       "common_name": "western painted turtle",
       "published": "2026-04-12T20:03:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303/BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dordii.Ensembl.Dord20",
+      "version": "1.0.0",
+      "organism": "Dipodomys ordii",
+      "assembly": "Dord_2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000151885.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000151885.2/",
+      "file_name": "BSgenome.Dordii.Ensembl.Dord20_1.0.0.tar.gz",
+      "size": 480099314,
+      "seq_ids": [
+        "KN672347.1",
+        "KN672351.1",
+        "KN672350.1",
+        "KN672349.1",
+        "KN672348.1"
+      ],
+      "seq_count": 65193,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Heteromyidae",
+        "genus": "Dipodomys"
+      },
+      "common_name": "Ord's kangaroo rat",
+      "published": "2026-04-12T20:03:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.Ensembl.Dord20/BSgenome.Dordii.Ensembl.Dord20_1.0.0.tar.gz"
     }
   ]
 }

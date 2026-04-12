@@ -3633,3 +3633,7 @@ NeedsCompilation: no
 Package: BSgenome.Cpicta.Ensembl.Chrysemyspictabellii303
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dordii.Ensembl.Dord20
+Version: 1.0.0
+NeedsCompilation: no
