@@ -18486,6 +18486,54 @@
       ]
     },
     {
+      "organism": "Felis catus",
+      "common_name": "domestic cat",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Felis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fcatus.Ensembl.Feliscatus90",
+          "version": "1.0.0",
+          "organism": "Felis catus",
+          "assembly": "Felis_catus_9.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000181335.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000181335.4/",
+          "file_name": "BSgenome.Fcatus.Ensembl.Feliscatus90_1.0.0.tar.gz",
+          "size": 579214225,
+          "seq_ids": [
+            "X",
+            "A1",
+            "A2",
+            "A3",
+            "B1"
+          ],
+          "seq_count": 70,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Felis"
+          },
+          "common_name": "domestic cat",
+          "published": "2026-04-12T18:09:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcatus.Ensembl.Feliscatus90/BSgenome.Fcatus.Ensembl.Feliscatus90_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fibroporia radiculosa",
       "common_name": "",
       "group": "fungi",
@@ -70159,6 +70207,38 @@
       "common_name": "zebrafish",
       "published": "2026-04-12T18:08:14Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Drerio.Ensembl.GRCz11/BSgenome.Drerio.Ensembl.GRCz11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fcatus.Ensembl.Feliscatus90",
+      "version": "1.0.0",
+      "organism": "Felis catus",
+      "assembly": "Felis_catus_9.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000181335.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000181335.4/",
+      "file_name": "BSgenome.Fcatus.Ensembl.Feliscatus90_1.0.0.tar.gz",
+      "size": 579214225,
+      "seq_ids": [
+        "X",
+        "A1",
+        "A2",
+        "A3",
+        "B1"
+      ],
+      "seq_count": 70,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Felis"
+      },
+      "common_name": "domestic cat",
+      "published": "2026-04-12T18:09:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcatus.Ensembl.Feliscatus90/BSgenome.Fcatus.Ensembl.Feliscatus90_1.0.0.tar.gz"
     }
   ]
 }

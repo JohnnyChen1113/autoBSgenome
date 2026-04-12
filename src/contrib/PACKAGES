@@ -3565,3 +3565,7 @@ NeedsCompilation: no
 Package: BSgenome.Drerio.Ensembl.GRCz11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fcatus.Ensembl.Feliscatus90
+Version: 1.0.0
+NeedsCompilation: no
