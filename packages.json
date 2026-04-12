@@ -24106,6 +24106,54 @@
       ]
     },
     {
+      "organism": "Laticauda laticaudata",
+      "common_name": "blue-ringed sea krait",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Elapidae",
+        "genus": "Laticauda"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Llaticaudata.Ensembl.latLat10",
+          "version": "1.0.0",
+          "organism": "Laticauda laticaudata",
+          "assembly": "latLat_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_004320025.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004320025.1/",
+          "file_name": "BSgenome.Llaticaudata.Ensembl.latLat10_1.0.0.tar.gz",
+          "size": 378731897,
+          "seq_ids": [
+            "BHFT01000789.1",
+            "BHFT01024624.1",
+            "BHFT01017613.1",
+            "BHFT01015696.1",
+            "BHFT01015650.1"
+          ],
+          "seq_count": 83587,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Elapidae",
+            "genus": "Laticauda"
+          },
+          "common_name": "blue-ringed sea krait",
+          "published": "2026-04-12T21:41:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Llaticaudata.Ensembl.latLat10/BSgenome.Llaticaudata.Ensembl.latLat10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Leishmania braziliensis MHOM/BR/75/M2904",
       "common_name": "",
       "group": "other",
@@ -72613,6 +72661,38 @@
       "common_name": "medium ground-finch",
       "published": "2026-04-12T21:40:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gfortis.Ensembl.GeoFor10/BSgenome.Gfortis.Ensembl.GeoFor10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Llaticaudata.Ensembl.latLat10",
+      "version": "1.0.0",
+      "organism": "Laticauda laticaudata",
+      "assembly": "latLat_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_004320025.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004320025.1/",
+      "file_name": "BSgenome.Llaticaudata.Ensembl.latLat10_1.0.0.tar.gz",
+      "size": 378731897,
+      "seq_ids": [
+        "BHFT01000789.1",
+        "BHFT01024624.1",
+        "BHFT01017613.1",
+        "BHFT01015696.1",
+        "BHFT01015650.1"
+      ],
+      "seq_count": 83587,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Elapidae",
+        "genus": "Laticauda"
+      },
+      "common_name": "blue-ringed sea krait",
+      "published": "2026-04-12T21:41:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Llaticaudata.Ensembl.latLat10/BSgenome.Llaticaudata.Ensembl.latLat10_1.0.0.tar.gz"
     }
   ]
 }
