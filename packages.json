@@ -41288,6 +41288,54 @@
       ]
     },
     {
+      "organism": "Zalophus californianus",
+      "common_name": "California sea lion",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Otariidae",
+        "genus": "Zalophus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Zcalifornianus.NCBI.mZalCal1priv2",
+          "version": "1.0.0",
+          "organism": "Zalophus californianus",
+          "assembly": "mZalCal1.pri.v2",
+          "provider": "NCBI",
+          "accession": "GCF_009762305.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009762305.2/",
+          "file_name": "BSgenome.Zcalifornianus.NCBI.mZalCal1priv2_1.0.0.tar.gz",
+          "size": 618410972,
+          "seq_ids": [
+            "NC_045595.1",
+            "NC_045596.1",
+            "NC_045597.1",
+            "NC_045598.1",
+            "NC_045599.1"
+          ],
+          "seq_count": 47,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Otariidae",
+            "genus": "Zalophus"
+          },
+          "common_name": "California sea lion",
+          "published": "2026-04-12T18:06:24Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zcalifornianus.NCBI.mZalCal1priv2/BSgenome.Zcalifornianus.NCBI.mZalCal1priv2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Zootermopsis nevadensis",
       "common_name": "",
       "group": "invertebrate",
@@ -69247,6 +69295,38 @@
       "common_name": "Eurasian eagle-owl",
       "published": "2026-04-12T18:06:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbubo.Ensembl.BubBub10/BSgenome.Bbubo.Ensembl.BubBub10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Zcalifornianus.NCBI.mZalCal1priv2",
+      "version": "1.0.0",
+      "organism": "Zalophus californianus",
+      "assembly": "mZalCal1.pri.v2",
+      "provider": "NCBI",
+      "accession": "GCF_009762305.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009762305.2/",
+      "file_name": "BSgenome.Zcalifornianus.NCBI.mZalCal1priv2_1.0.0.tar.gz",
+      "size": 618410972,
+      "seq_ids": [
+        "NC_045595.1",
+        "NC_045596.1",
+        "NC_045597.1",
+        "NC_045598.1",
+        "NC_045599.1"
+      ],
+      "seq_count": 47,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Otariidae",
+        "genus": "Zalophus"
+      },
+      "common_name": "California sea lion",
+      "published": "2026-04-12T18:06:24Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zcalifornianus.NCBI.mZalCal1priv2/BSgenome.Zcalifornianus.NCBI.mZalCal1priv2_1.0.0.tar.gz"
     }
   ]
 }

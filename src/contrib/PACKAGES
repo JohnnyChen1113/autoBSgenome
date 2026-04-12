@@ -3517,3 +3517,7 @@ NeedsCompilation: no
 Package: BSgenome.Bbubo.Ensembl.BubBub10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zcalifornianus.NCBI.mZalCal1priv2
+Version: 1.0.0
+NeedsCompilation: no
