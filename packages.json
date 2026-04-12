@@ -25198,6 +25198,54 @@
       ]
     },
     {
+      "organism": "Macaca fascicularis",
+      "common_name": "crab-eating macaque",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Macaca"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mfascicularis.Ensembl.Macacafascicularis60",
+          "version": "1.0.0",
+          "organism": "Macaca fascicularis",
+          "assembly": "Macaca_fascicularis_6.0",
+          "provider": "Ensembl",
+          "accession": "GCA_011100615.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011100615.1/",
+          "file_name": "BSgenome.Mfascicularis.Ensembl.Macacafascicularis60_1.0.0.tar.gz",
+          "size": 677279332,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 937,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Macaca"
+          },
+          "common_name": "crab-eating macaque",
+          "published": "2026-04-12T21:41:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mfascicularis.Ensembl.Macacafascicularis60/BSgenome.Mfascicularis.Ensembl.Macacafascicularis60_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Malassezia globosa CBS 7966",
       "common_name": "",
       "group": "fungi",
@@ -72693,6 +72741,38 @@
       "common_name": "blue-ringed sea krait",
       "published": "2026-04-12T21:41:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Llaticaudata.Ensembl.latLat10/BSgenome.Llaticaudata.Ensembl.latLat10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mfascicularis.Ensembl.Macacafascicularis60",
+      "version": "1.0.0",
+      "organism": "Macaca fascicularis",
+      "assembly": "Macaca_fascicularis_6.0",
+      "provider": "Ensembl",
+      "accession": "GCA_011100615.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011100615.1/",
+      "file_name": "BSgenome.Mfascicularis.Ensembl.Macacafascicularis60_1.0.0.tar.gz",
+      "size": 677279332,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 937,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Macaca"
+      },
+      "common_name": "crab-eating macaque",
+      "published": "2026-04-12T21:41:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mfascicularis.Ensembl.Macacafascicularis60/BSgenome.Mfascicularis.Ensembl.Macacafascicularis60_1.0.0.tar.gz"
     }
   ]
 }
