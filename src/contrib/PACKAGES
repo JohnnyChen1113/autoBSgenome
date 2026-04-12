@@ -3661,3 +3661,7 @@ NeedsCompilation: no
 Package: BSgenome.Lcalcarifer.Ensembl.ASBHGAPassemblyv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mvitellinus.Ensembl.ASM171598v2
+Version: 1.0.0
+NeedsCompilation: no
