@@ -3677,3 +3677,7 @@ NeedsCompilation: no
 Package: BSgenome.Cvariegatus.Ensembl.Cvariegatus10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gaculeatus.Ensembl.BAM
+Version: 1.0.0
+NeedsCompilation: no
