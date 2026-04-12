@@ -22913,6 +22913,38 @@
           "common_name": "channel catfish",
           "published": "2026-04-04T05:44:39Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ipunctatus.NCBI.Coco20/BSgenome.Ipunctatus.NCBI.Coco20_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ipunctatus.Ensembl.ASM400665v3",
+          "version": "1.0.0",
+          "organism": "Ictalurus punctatus",
+          "assembly": "ASM400665v3",
+          "provider": "Ensembl",
+          "accession": "GCA_004006655.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004006655.3/",
+          "file_name": "BSgenome.Ipunctatus.Ensembl.ASM400665v3_1.0.0.tar.gz",
+          "size": 238074320,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "seq_count": 3164,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Siluriformes",
+            "family": "Ictaluridae",
+            "genus": "Ictalurus"
+          },
+          "common_name": "channel catfish",
+          "published": "2026-04-12T22:39:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ipunctatus.Ensembl.ASM400665v3/BSgenome.Ipunctatus.Ensembl.ASM400665v3_1.0.0.tar.gz"
         }
       ]
     },
@@ -73141,6 +73173,38 @@
       "common_name": "mangrove rivulus",
       "published": "2026-04-12T22:39:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kmarmoratus.Ensembl.ASM164957v1/BSgenome.Kmarmoratus.Ensembl.ASM164957v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ipunctatus.Ensembl.ASM400665v3",
+      "version": "1.0.0",
+      "organism": "Ictalurus punctatus",
+      "assembly": "ASM400665v3",
+      "provider": "Ensembl",
+      "accession": "GCA_004006655.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004006655.3/",
+      "file_name": "BSgenome.Ipunctatus.Ensembl.ASM400665v3_1.0.0.tar.gz",
+      "size": 238074320,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "6"
+      ],
+      "seq_count": 3164,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Siluriformes",
+        "family": "Ictaluridae",
+        "genus": "Ictalurus"
+      },
+      "common_name": "channel catfish",
+      "published": "2026-04-12T22:39:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ipunctatus.Ensembl.ASM400665v3/BSgenome.Ipunctatus.Ensembl.ASM400665v3_1.0.0.tar.gz"
     }
   ]
 }
