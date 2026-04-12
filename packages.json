@@ -27298,6 +27298,54 @@
       ]
     },
     {
+      "organism": "Odobenus rosmarus divergens",
+      "common_name": "Pacific walrus",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Odobenidae",
+        "genus": "Odobenus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Orosmarus.NCBI.Oros10",
+          "version": "1.0.0",
+          "organism": "Odobenus rosmarus divergens",
+          "assembly": "Oros_1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000321225.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000321225.1/",
+          "file_name": "BSgenome.Orosmarus.NCBI.Oros10_1.0.0.tar.gz",
+          "size": 604733998,
+          "seq_ids": [
+            "NW_004450264.1",
+            "NW_004450265.1",
+            "NW_004450266.1",
+            "NW_004450267.1",
+            "NW_004450268.1"
+          ],
+          "seq_count": 3893,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Odobenidae",
+            "genus": "Odobenus"
+          },
+          "common_name": "Pacific walrus",
+          "published": "2026-04-12T18:05:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Orosmarus.NCBI.Oros10/BSgenome.Orosmarus.NCBI.Oros10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ogataea parapolymorpha DL-1",
       "common_name": "",
       "group": "fungi",
@@ -69007,6 +69055,38 @@
       "common_name": "turkey",
       "published": "2026-04-12T18:05:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mgallopavo.NCBI.Turkey51/BSgenome.Mgallopavo.NCBI.Turkey51_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Orosmarus.NCBI.Oros10",
+      "version": "1.0.0",
+      "organism": "Odobenus rosmarus divergens",
+      "assembly": "Oros_1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000321225.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000321225.1/",
+      "file_name": "BSgenome.Orosmarus.NCBI.Oros10_1.0.0.tar.gz",
+      "size": 604733998,
+      "seq_ids": [
+        "NW_004450264.1",
+        "NW_004450265.1",
+        "NW_004450266.1",
+        "NW_004450267.1",
+        "NW_004450268.1"
+      ],
+      "seq_count": 3893,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Odobenidae",
+        "genus": "Odobenus"
+      },
+      "common_name": "Pacific walrus",
+      "published": "2026-04-12T18:05:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Orosmarus.NCBI.Oros10/BSgenome.Orosmarus.NCBI.Oros10_1.0.0.tar.gz"
     }
   ]
 }
