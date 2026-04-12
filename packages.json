@@ -14112,6 +14112,38 @@
           "common_name": "blue tit",
           "published": "2026-04-04T10:05:56Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccaeruleus.NCBI.cyaCae2/BSgenome.Ccaeruleus.NCBI.cyaCae2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ccaeruleus.Ensembl.cyaCae2",
+          "version": "1.0.0",
+          "organism": "Cyanistes caeruleus",
+          "assembly": "cyaCae2",
+          "provider": "Ensembl",
+          "accession": "GCA_002901205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002901205.1/",
+          "file_name": "BSgenome.Ccaeruleus.Ensembl.cyaCae2_1.0.0.tar.gz",
+          "size": 262467253,
+          "seq_ids": [
+            "PDCF01000003.1",
+            "PDCF01000001.1",
+            "PDCF01000002.1",
+            "PDCF01000007.1",
+            "PDCF01000005.1"
+          ],
+          "seq_count": 29297,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Paridae",
+            "genus": "Cyanistes"
+          },
+          "common_name": "blue tit",
+          "published": "2026-04-12T20:50:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccaeruleus.Ensembl.cyaCae2/BSgenome.Ccaeruleus.Ensembl.cyaCae2_1.0.0.tar.gz"
         }
       ]
     },
@@ -71497,6 +71529,38 @@
       "common_name": "Ord's kangaroo rat",
       "published": "2026-04-12T20:03:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dordii.Ensembl.Dord20/BSgenome.Dordii.Ensembl.Dord20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccaeruleus.Ensembl.cyaCae2",
+      "version": "1.0.0",
+      "organism": "Cyanistes caeruleus",
+      "assembly": "cyaCae2",
+      "provider": "Ensembl",
+      "accession": "GCA_002901205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002901205.1/",
+      "file_name": "BSgenome.Ccaeruleus.Ensembl.cyaCae2_1.0.0.tar.gz",
+      "size": 262467253,
+      "seq_ids": [
+        "PDCF01000003.1",
+        "PDCF01000001.1",
+        "PDCF01000002.1",
+        "PDCF01000007.1",
+        "PDCF01000005.1"
+      ],
+      "seq_count": 29297,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Paridae",
+        "genus": "Cyanistes"
+      },
+      "common_name": "blue tit",
+      "published": "2026-04-12T20:50:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccaeruleus.Ensembl.cyaCae2/BSgenome.Ccaeruleus.Ensembl.cyaCae2_1.0.0.tar.gz"
     }
   ]
 }
