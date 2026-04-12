@@ -29400,6 +29400,54 @@
       ]
     },
     {
+      "organism": "Peromyscus leucopus",
+      "common_name": "white-footed mouse",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Peromyscus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pleucopus.NCBI.UCIPerLeu21",
+          "version": "1.0.0",
+          "organism": "Peromyscus leucopus",
+          "assembly": "UCI_PerLeu_2.1",
+          "provider": "NCBI",
+          "accession": "GCF_004664715.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004664715.2/",
+          "file_name": "BSgenome.Pleucopus.NCBI.UCIPerLeu21_1.0.0.tar.gz",
+          "size": 642135094,
+          "seq_ids": [
+            "NC_051063.1",
+            "NC_051064.1",
+            "NC_051065.1",
+            "NC_051066.1",
+            "NC_051067.1"
+          ],
+          "seq_count": 1857,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Cricetidae",
+            "genus": "Peromyscus"
+          },
+          "common_name": "white-footed mouse",
+          "published": "2026-04-12T18:06:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pleucopus.NCBI.UCIPerLeu21/BSgenome.Pleucopus.NCBI.UCIPerLeu21_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pestalotiopsis fici W106-1",
       "common_name": "",
       "group": "fungi",
@@ -69327,6 +69375,38 @@
       "common_name": "California sea lion",
       "published": "2026-04-12T18:06:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zcalifornianus.NCBI.mZalCal1priv2/BSgenome.Zcalifornianus.NCBI.mZalCal1priv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pleucopus.NCBI.UCIPerLeu21",
+      "version": "1.0.0",
+      "organism": "Peromyscus leucopus",
+      "assembly": "UCI_PerLeu_2.1",
+      "provider": "NCBI",
+      "accession": "GCF_004664715.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_004664715.2/",
+      "file_name": "BSgenome.Pleucopus.NCBI.UCIPerLeu21_1.0.0.tar.gz",
+      "size": 642135094,
+      "seq_ids": [
+        "NC_051063.1",
+        "NC_051064.1",
+        "NC_051065.1",
+        "NC_051066.1",
+        "NC_051067.1"
+      ],
+      "seq_count": 1857,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Peromyscus"
+      },
+      "common_name": "white-footed mouse",
+      "published": "2026-04-12T18:06:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pleucopus.NCBI.UCIPerLeu21/BSgenome.Pleucopus.NCBI.UCIPerLeu21_1.0.0.tar.gz"
     }
   ]
 }
