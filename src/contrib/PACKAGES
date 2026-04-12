@@ -3745,3 +3745,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccarpio.Ensembl.CypcarWagV40
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lleishanense.Ensembl.ASM966780v1
+Version: 1.0.0
+NeedsCompilation: no
