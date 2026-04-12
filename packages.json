@@ -25612,6 +25612,54 @@
       ]
     },
     {
+      "organism": "Loxodonta africana",
+      "common_name": "African savanna elephant",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Proboscidea",
+        "family": "Elephantidae",
+        "genus": "Loxodonta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lafricana.Ensembl.Loxafr30",
+          "version": "1.0.0",
+          "organism": "Loxodonta africana",
+          "assembly": "Loxafr3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000001905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000001905.1/",
+          "file_name": "BSgenome.Lafricana.Ensembl.Loxafr30_1.0.0.tar.gz",
+          "size": 751531177,
+          "seq_ids": [
+            "scaffold_0",
+            "scaffold_1",
+            "scaffold_2",
+            "scaffold_3",
+            "scaffold_4"
+          ],
+          "seq_count": 2353,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Loxodonta"
+          },
+          "common_name": "African savanna elephant",
+          "published": "2026-04-12T23:42:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lafricana.Ensembl.Loxafr30/BSgenome.Lafricana.Ensembl.Loxafr30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lupinus angustifolius",
       "common_name": "narrow-leaved blue lupine",
       "group": "plant",
@@ -74066,6 +74114,38 @@
       "common_name": "Rhesus monkey",
       "published": "2026-04-12T23:41:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmulatta.Ensembl.Mmul10/BSgenome.Mmulatta.Ensembl.Mmul10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lafricana.Ensembl.Loxafr30",
+      "version": "1.0.0",
+      "organism": "Loxodonta africana",
+      "assembly": "Loxafr3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000001905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000001905.1/",
+      "file_name": "BSgenome.Lafricana.Ensembl.Loxafr30_1.0.0.tar.gz",
+      "size": 751531177,
+      "seq_ids": [
+        "scaffold_0",
+        "scaffold_1",
+        "scaffold_2",
+        "scaffold_3",
+        "scaffold_4"
+      ],
+      "seq_count": 2353,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Proboscidea",
+        "family": "Elephantidae",
+        "genus": "Loxodonta"
+      },
+      "common_name": "African savanna elephant",
+      "published": "2026-04-12T23:42:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lafricana.Ensembl.Loxafr30/BSgenome.Lafricana.Ensembl.Loxafr30_1.0.0.tar.gz"
     }
   ]
 }
