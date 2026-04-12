@@ -11174,6 +11174,54 @@
       ]
     },
     {
+      "organism": "Chrysolophus pictus",
+      "common_name": "golden pheasant",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Chrysolophus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cpictus.Ensembl.ChrysolophuspictusGenomeV10",
+          "version": "1.0.0",
+          "organism": "Chrysolophus pictus",
+          "assembly": "Chrysolophus_pictus_GenomeV1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_003413605.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003413605.1/",
+          "file_name": "BSgenome.Cpictus.Ensembl.ChrysolophuspictusGenomeV10_1.0.0.tar.gz",
+          "size": 241228266,
+          "seq_ids": [
+            "KZ861793.1",
+            "KZ861027.1",
+            "KZ860518.1",
+            "KZ861074.1",
+            "KZ861780.1"
+          ],
+          "seq_count": 14294,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Galliformes",
+            "family": "Phasianidae",
+            "genus": "Chrysolophus"
+          },
+          "common_name": "golden pheasant",
+          "published": "2026-04-12T19:25:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpictus.Ensembl.ChrysolophuspictusGenomeV10/BSgenome.Cpictus.Ensembl.ChrysolophuspictusGenomeV10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cicer arietinum",
       "common_name": "chickpea",
       "group": "plant",
@@ -70604,6 +70652,38 @@
       "common_name": "dog",
       "published": "2026-04-12T19:25:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clupus.Ensembl.ROSCfam10/BSgenome.Clupus.Ensembl.ROSCfam10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cpictus.Ensembl.ChrysolophuspictusGenomeV10",
+      "version": "1.0.0",
+      "organism": "Chrysolophus pictus",
+      "assembly": "Chrysolophus_pictus_GenomeV1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_003413605.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003413605.1/",
+      "file_name": "BSgenome.Cpictus.Ensembl.ChrysolophuspictusGenomeV10_1.0.0.tar.gz",
+      "size": 241228266,
+      "seq_ids": [
+        "KZ861793.1",
+        "KZ861027.1",
+        "KZ860518.1",
+        "KZ861074.1",
+        "KZ861780.1"
+      ],
+      "seq_count": 14294,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Chrysolophus"
+      },
+      "common_name": "golden pheasant",
+      "published": "2026-04-12T19:25:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpictus.Ensembl.ChrysolophuspictusGenomeV10/BSgenome.Cpictus.Ensembl.ChrysolophuspictusGenomeV10_1.0.0.tar.gz"
     }
   ]
 }
