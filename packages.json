@@ -20330,6 +20330,38 @@
           "common_name": "Atlantic cod",
           "published": "2026-04-12T20:01:51Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmorhua.Ensembl.gadMorCeltic/BSgenome.Gmorhua.Ensembl.gadMorCeltic_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Gmorhua.Ensembl.gadMor30",
+          "version": "1.0.0",
+          "organism": "Gadus morhua",
+          "assembly": "gadMor3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_902167405.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902167405.1/",
+          "file_name": "BSgenome.Gmorhua.Ensembl.gadMor30_1.0.0.tar.gz",
+          "size": 148682020,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 226,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Gadiformes",
+            "family": "Gadidae",
+            "genus": "Gadus"
+          },
+          "common_name": "Atlantic cod",
+          "published": "2026-04-12T22:38:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmorhua.Ensembl.gadMor30/BSgenome.Gmorhua.Ensembl.gadMor30_1.0.0.tar.gz"
         }
       ]
     },
@@ -72853,6 +72885,38 @@
       "common_name": "huchen",
       "published": "2026-04-12T21:41:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hhucho.Ensembl.ASM331708v1/BSgenome.Hhucho.Ensembl.ASM331708v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gmorhua.Ensembl.gadMor30",
+      "version": "1.0.0",
+      "organism": "Gadus morhua",
+      "assembly": "gadMor3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_902167405.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902167405.1/",
+      "file_name": "BSgenome.Gmorhua.Ensembl.gadMor30_1.0.0.tar.gz",
+      "size": 148682020,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 226,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Gadiformes",
+        "family": "Gadidae",
+        "genus": "Gadus"
+      },
+      "common_name": "Atlantic cod",
+      "published": "2026-04-12T22:38:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmorhua.Ensembl.gadMor30/BSgenome.Gmorhua.Ensembl.gadMor30_1.0.0.tar.gz"
     }
   ]
 }
