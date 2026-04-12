@@ -20638,6 +20638,54 @@
       ]
     },
     {
+      "organism": "Hipposideros armiger",
+      "common_name": "great roundleaf bat",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Hipposideridae",
+        "genus": "Hipposideros"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Harmiger.NCBI.ASM189008v1",
+          "version": "1.0.0",
+          "organism": "Hipposideros armiger",
+          "assembly": "ASM189008v1",
+          "provider": "NCBI",
+          "accession": "GCF_001890085.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001890085.2/",
+          "file_name": "BSgenome.Harmiger.NCBI.ASM189008v1_1.0.0.tar.gz",
+          "size": 517901607,
+          "seq_ids": [
+            "NW_017731350.1",
+            "NW_017731351.1",
+            "NW_017731360.1",
+            "NW_017731450.1",
+            "NW_017732350.1"
+          ],
+          "seq_count": 7387,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Hipposideridae",
+            "genus": "Hipposideros"
+          },
+          "common_name": "great roundleaf bat",
+          "published": "2026-04-12T18:05:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Harmiger.NCBI.ASM189008v1/BSgenome.Harmiger.NCBI.ASM189008v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Histoplasma capsulatum G186AR",
       "common_name": "",
       "group": "fungi",
@@ -68847,6 +68895,38 @@
       "common_name": "large flying fox",
       "published": "2026-04-12T18:05:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvampyrus.NCBI.Pvam20/BSgenome.Pvampyrus.NCBI.Pvam20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Harmiger.NCBI.ASM189008v1",
+      "version": "1.0.0",
+      "organism": "Hipposideros armiger",
+      "assembly": "ASM189008v1",
+      "provider": "NCBI",
+      "accession": "GCF_001890085.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_001890085.2/",
+      "file_name": "BSgenome.Harmiger.NCBI.ASM189008v1_1.0.0.tar.gz",
+      "size": 517901607,
+      "seq_ids": [
+        "NW_017731350.1",
+        "NW_017731351.1",
+        "NW_017731360.1",
+        "NW_017731450.1",
+        "NW_017732350.1"
+      ],
+      "seq_count": 7387,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Hipposideridae",
+        "genus": "Hipposideros"
+      },
+      "common_name": "great roundleaf bat",
+      "published": "2026-04-12T18:05:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Harmiger.NCBI.ASM189008v1/BSgenome.Harmiger.NCBI.ASM189008v1_1.0.0.tar.gz"
     }
   ]
 }
