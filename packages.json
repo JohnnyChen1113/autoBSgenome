@@ -20744,6 +20744,38 @@
           "common_name": "chicken",
           "published": "2026-04-12T20:01:15Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ggallus.Ensembl.bGalGal1patwhiteleghornlayerGRCg7w/BSgenome.Ggallus.Ensembl.bGalGal1patwhiteleghornlayerGRCg7w_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b",
+          "version": "1.0.0",
+          "organism": "Gallus gallus",
+          "assembly": "bGalGal1.mat.broiler.GRCg7b",
+          "provider": "Ensembl",
+          "accession": "GCA_016699485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_016699485.1/",
+          "file_name": "BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b_1.0.0.tar.gz",
+          "size": 249171331,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 214,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Galliformes",
+            "family": "Phasianidae",
+            "genus": "Gallus"
+          },
+          "common_name": "chicken",
+          "published": "2026-04-12T23:39:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b/BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b_1.0.0.tar.gz"
         }
       ]
     },
@@ -73605,6 +73637,38 @@
       "common_name": "western mosquitofish",
       "published": "2026-04-12T23:39:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gaffinis.Ensembl.ASM309773v1/BSgenome.Gaffinis.Ensembl.ASM309773v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b",
+      "version": "1.0.0",
+      "organism": "Gallus gallus",
+      "assembly": "bGalGal1.mat.broiler.GRCg7b",
+      "provider": "Ensembl",
+      "accession": "GCA_016699485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_016699485.1/",
+      "file_name": "BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b_1.0.0.tar.gz",
+      "size": 249171331,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 214,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Gallus"
+      },
+      "common_name": "chicken",
+      "published": "2026-04-12T23:39:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b/BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b_1.0.0.tar.gz"
     }
   ]
 }

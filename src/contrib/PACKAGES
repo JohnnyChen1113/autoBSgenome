@@ -3753,3 +3753,7 @@ NeedsCompilation: no
 Package: BSgenome.Gaffinis.Ensembl.ASM309773v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ggallus.Ensembl.bGalGal1matbroilerGRCg7b
+Version: 1.0.0
+NeedsCompilation: no
