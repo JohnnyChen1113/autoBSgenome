@@ -3741,3 +3741,7 @@ NeedsCompilation: no
 Package: BSgenome.Elucius.Ensembl.fEsoLuc1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccarpio.Ensembl.CypcarWagV40
+Version: 1.0.0
+NeedsCompilation: no

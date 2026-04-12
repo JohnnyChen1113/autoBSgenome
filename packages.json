@@ -14818,6 +14818,54 @@
       ]
     },
     {
+      "organism": "Cyprinus carpio carpio",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Cyprinus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccarpio.Ensembl.CypcarWagV40",
+          "version": "1.0.0",
+          "organism": "Cyprinus carpio carpio",
+          "assembly": "Cypcar_WagV4.0",
+          "provider": "Ensembl",
+          "accession": "GCA_905221575.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_905221575.1/",
+          "file_name": "BSgenome.Ccarpio.Ensembl.CypcarWagV40_1.0.0.tar.gz",
+          "size": 342887618,
+          "seq_ids": [
+            "CAJNDQ010000002.1",
+            "CAJNDQ010000007.1",
+            "CAJNDQ010000001.1",
+            "CAJNDQ010000008.1",
+            "CAJNDQ010000016.1"
+          ],
+          "seq_count": 675,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Cyprinus"
+          },
+          "common_name": "",
+          "published": "2026-04-12T22:39:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccarpio.Ensembl.CypcarWagV40/BSgenome.Ccarpio.Ensembl.CypcarWagV40_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cystoisospora suis",
       "common_name": "",
       "group": "other",
@@ -73365,6 +73413,38 @@
       "common_name": "northern pike",
       "published": "2026-04-12T22:39:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Elucius.Ensembl.fEsoLuc1pri/BSgenome.Elucius.Ensembl.fEsoLuc1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccarpio.Ensembl.CypcarWagV40",
+      "version": "1.0.0",
+      "organism": "Cyprinus carpio carpio",
+      "assembly": "Cypcar_WagV4.0",
+      "provider": "Ensembl",
+      "accession": "GCA_905221575.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_905221575.1/",
+      "file_name": "BSgenome.Ccarpio.Ensembl.CypcarWagV40_1.0.0.tar.gz",
+      "size": 342887618,
+      "seq_ids": [
+        "CAJNDQ010000002.1",
+        "CAJNDQ010000007.1",
+        "CAJNDQ010000001.1",
+        "CAJNDQ010000008.1",
+        "CAJNDQ010000016.1"
+      ],
+      "seq_count": 675,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Cyprinus"
+      },
+      "common_name": "",
+      "published": "2026-04-12T22:39:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccarpio.Ensembl.CypcarWagV40/BSgenome.Ccarpio.Ensembl.CypcarWagV40_1.0.0.tar.gz"
     }
   ]
 }
