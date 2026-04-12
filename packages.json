@@ -20790,6 +20790,38 @@
           "common_name": "medium ground-finch",
           "published": "2026-04-04T07:07:47Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gfortis.NCBI.GeoFor10/BSgenome.Gfortis.NCBI.GeoFor10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Gfortis.Ensembl.GeoFor10",
+          "version": "1.0.0",
+          "organism": "Geospiza fortis",
+          "assembly": "GeoFor_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000277835.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000277835.1/",
+          "file_name": "BSgenome.Gfortis.Ensembl.GeoFor10_1.0.0.tar.gz",
+          "size": 250555919,
+          "seq_ids": [
+            "JH739887.1",
+            "JH739888.1",
+            "JH739889.1",
+            "JH739890.1",
+            "JH739891.1"
+          ],
+          "seq_count": 27239,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Thraupidae",
+            "genus": "Geospiza"
+          },
+          "common_name": "medium ground-finch",
+          "published": "2026-04-12T21:40:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gfortis.Ensembl.GeoFor10/BSgenome.Gfortis.Ensembl.GeoFor10_1.0.0.tar.gz"
         }
       ]
     },
@@ -72549,6 +72581,38 @@
       "common_name": "white-rumped munia",
       "published": "2026-04-12T21:40:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lstriata.Ensembl.LonStrDom1/BSgenome.Lstriata.Ensembl.LonStrDom1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gfortis.Ensembl.GeoFor10",
+      "version": "1.0.0",
+      "organism": "Geospiza fortis",
+      "assembly": "GeoFor_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000277835.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000277835.1/",
+      "file_name": "BSgenome.Gfortis.Ensembl.GeoFor10_1.0.0.tar.gz",
+      "size": 250555919,
+      "seq_ids": [
+        "JH739887.1",
+        "JH739888.1",
+        "JH739889.1",
+        "JH739890.1",
+        "JH739891.1"
+      ],
+      "seq_count": 27239,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Thraupidae",
+        "genus": "Geospiza"
+      },
+      "common_name": "medium ground-finch",
+      "published": "2026-04-12T21:40:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gfortis.Ensembl.GeoFor10/BSgenome.Gfortis.Ensembl.GeoFor10_1.0.0.tar.gz"
     }
   ]
 }
