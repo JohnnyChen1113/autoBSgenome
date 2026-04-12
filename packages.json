@@ -12436,6 +12436,38 @@
           "common_name": "New Caledonian crow",
           "published": "2026-04-04T08:07:33Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmoneduloides.NCBI.bCorMon1pri/BSgenome.Cmoneduloides.NCBI.bCorMon1pri_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cmoneduloides.Ensembl.bCorMon1pri",
+          "version": "1.0.0",
+          "organism": "Corvus moneduloides",
+          "assembly": "bCorMon1.pri",
+          "provider": "Ensembl",
+          "accession": "GCA_009650955.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009650955.1/",
+          "file_name": "BSgenome.Cmoneduloides.Ensembl.bCorMon1pri_1.0.0.tar.gz",
+          "size": 260244979,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 105,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Corvidae",
+            "genus": "Corvus"
+          },
+          "common_name": "New Caledonian crow",
+          "published": "2026-04-12T18:07:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmoneduloides.Ensembl.bCorMon1pri/BSgenome.Cmoneduloides.Ensembl.bCorMon1pri_1.0.0.tar.gz"
         }
       ]
     },
@@ -69951,6 +69983,38 @@
       "common_name": "silvery gibbon",
       "published": "2026-04-12T18:07:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hmoloch.NCBI.HMolV3/BSgenome.Hmoloch.NCBI.HMolV3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cmoneduloides.Ensembl.bCorMon1pri",
+      "version": "1.0.0",
+      "organism": "Corvus moneduloides",
+      "assembly": "bCorMon1.pri",
+      "provider": "Ensembl",
+      "accession": "GCA_009650955.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009650955.1/",
+      "file_name": "BSgenome.Cmoneduloides.Ensembl.bCorMon1pri_1.0.0.tar.gz",
+      "size": 260244979,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 105,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Corvidae",
+        "genus": "Corvus"
+      },
+      "common_name": "New Caledonian crow",
+      "published": "2026-04-12T18:07:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmoneduloides.Ensembl.bCorMon1pri/BSgenome.Cmoneduloides.Ensembl.bCorMon1pri_1.0.0.tar.gz"
     }
   ]
 }
