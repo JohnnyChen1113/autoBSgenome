@@ -27947,6 +27947,54 @@
       ]
     },
     {
+      "organism": "Moschus moschiferus",
+      "common_name": "Siberian musk deer",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Moschidae",
+        "genus": "Moschus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD",
+          "version": "1.0.0",
+          "organism": "Moschus moschiferus",
+          "assembly": "MosMos_v2_BIUU_UCD",
+          "provider": "Ensembl",
+          "accession": "GCA_004024705.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004024705.2/",
+          "file_name": "BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD_1.0.0.tar.gz",
+          "size": 682231219,
+          "seq_ids": [
+            "PVHU021072365.1",
+            "PVHU020014496.1",
+            "PVHU020000320.1",
+            "PVHU021072433.1",
+            "PVHU020014278.1"
+          ],
+          "seq_count": 1072499,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Moschidae",
+            "genus": "Moschus"
+          },
+          "common_name": "Siberian musk deer",
+          "published": "2026-04-12T23:42:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD/BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mustela erminea",
       "common_name": "ermine",
       "group": "vertebrate_mammalian",
@@ -74146,6 +74194,38 @@
       "common_name": "African savanna elephant",
       "published": "2026-04-12T23:42:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lafricana.Ensembl.Loxafr30/BSgenome.Lafricana.Ensembl.Loxafr30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD",
+      "version": "1.0.0",
+      "organism": "Moschus moschiferus",
+      "assembly": "MosMos_v2_BIUU_UCD",
+      "provider": "Ensembl",
+      "accession": "GCA_004024705.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004024705.2/",
+      "file_name": "BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD_1.0.0.tar.gz",
+      "size": 682231219,
+      "seq_ids": [
+        "PVHU021072365.1",
+        "PVHU020014496.1",
+        "PVHU020000320.1",
+        "PVHU021072433.1",
+        "PVHU020014278.1"
+      ],
+      "seq_count": 1072499,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Moschidae",
+        "genus": "Moschus"
+      },
+      "common_name": "Siberian musk deer",
+      "published": "2026-04-12T23:42:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD/BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD_1.0.0.tar.gz"
     }
   ]
 }

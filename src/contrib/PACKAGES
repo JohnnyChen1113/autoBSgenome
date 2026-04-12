@@ -3781,3 +3781,7 @@ NeedsCompilation: no
 Package: BSgenome.Lafricana.Ensembl.Loxafr30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD
+Version: 1.0.0
+NeedsCompilation: no
