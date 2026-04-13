@@ -26662,6 +26662,38 @@
           "common_name": "Alpine marmot",
           "published": "2026-04-03T22:41:48Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmarmota.NCBI.marMar/BSgenome.Mmarmota.NCBI.marMar_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Mmarmota.Ensembl.marMar21",
+          "version": "1.0.0",
+          "organism": "Marmota marmota marmota",
+          "assembly": "marMar2.1",
+          "provider": "Ensembl",
+          "accession": "GCA_001458135.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001458135.1/",
+          "file_name": "BSgenome.Mmarmota.Ensembl.marMar21_1.0.0.tar.gz",
+          "size": 578198138,
+          "seq_ids": [
+            "CZRN01000001.1",
+            "CZRN01000002.1",
+            "CZRN01000003.1",
+            "CZRN01000004.1",
+            "CZRN01000005.1"
+          ],
+          "seq_count": 14543,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Sciuridae",
+            "genus": "Marmota"
+          },
+          "common_name": "Alpine marmot",
+          "published": "2026-04-13T08:11:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmarmota.Ensembl.marMar21/BSgenome.Mmarmota.Ensembl.marMar21_1.0.0.tar.gz"
         }
       ]
     },
@@ -75934,6 +75966,38 @@
       "common_name": "gray mouse lemur",
       "published": "2026-04-13T08:11:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmurinus.Ensembl.Mmur30/BSgenome.Mmurinus.Ensembl.Mmur30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmarmota.Ensembl.marMar21",
+      "version": "1.0.0",
+      "organism": "Marmota marmota marmota",
+      "assembly": "marMar2.1",
+      "provider": "Ensembl",
+      "accession": "GCA_001458135.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001458135.1/",
+      "file_name": "BSgenome.Mmarmota.Ensembl.marMar21_1.0.0.tar.gz",
+      "size": 578198138,
+      "seq_ids": [
+        "CZRN01000001.1",
+        "CZRN01000002.1",
+        "CZRN01000003.1",
+        "CZRN01000004.1",
+        "CZRN01000005.1"
+      ],
+      "seq_count": 14543,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Sciuridae",
+        "genus": "Marmota"
+      },
+      "common_name": "Alpine marmot",
+      "published": "2026-04-13T08:11:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmarmota.Ensembl.marMar21/BSgenome.Mmarmota.Ensembl.marMar21_1.0.0.tar.gz"
     }
   ]
 }
