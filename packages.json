@@ -33474,6 +33474,54 @@
       ]
     },
     {
+      "organism": "Panthera tigris altaica",
+      "common_name": "Amur tiger",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Panthera"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ptigris.Ensembl.PanTig10",
+          "version": "1.0.0",
+          "organism": "Panthera tigris altaica",
+          "assembly": "PanTig1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000464555.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000464555.1/",
+          "file_name": "BSgenome.Ptigris.Ensembl.PanTig10_1.0.0.tar.gz",
+          "size": 561820276,
+          "seq_ids": [
+            "KE722155.1",
+            "KE721728.1",
+            "KE721714.1",
+            "KE721838.1",
+            "KE722266.1"
+          ],
+          "seq_count": 1478,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera"
+          },
+          "common_name": "Amur tiger",
+          "published": "2026-04-13T15:19:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptigris.Ensembl.PanTig10/BSgenome.Ptigris.Ensembl.PanTig10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Papaver somniferum",
       "common_name": "opium poppy",
       "group": "plant",
@@ -78715,6 +78763,38 @@
       "common_name": "guppy",
       "published": "2026-04-13T15:18:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Preticulata.Ensembl.Guppyfemale10MT/BSgenome.Preticulata.Ensembl.Guppyfemale10MT_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ptigris.Ensembl.PanTig10",
+      "version": "1.0.0",
+      "organism": "Panthera tigris altaica",
+      "assembly": "PanTig1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000464555.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000464555.1/",
+      "file_name": "BSgenome.Ptigris.Ensembl.PanTig10_1.0.0.tar.gz",
+      "size": 561820276,
+      "seq_ids": [
+        "KE722155.1",
+        "KE721728.1",
+        "KE721714.1",
+        "KE721838.1",
+        "KE722266.1"
+      ],
+      "seq_count": 1478,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Panthera"
+      },
+      "common_name": "Amur tiger",
+      "published": "2026-04-13T15:19:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptigris.Ensembl.PanTig10/BSgenome.Ptigris.Ensembl.PanTig10_1.0.0.tar.gz"
     }
   ]
 }
