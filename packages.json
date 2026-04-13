@@ -23332,6 +23332,54 @@
       ]
     },
     {
+      "organism": "Ictidomys tridecemlineatus",
+      "common_name": "thirteen-lined ground squirrel",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Sciuridae",
+        "genus": "Ictidomys"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Itridecemlineatus.Ensembl.SpeTri20",
+          "version": "1.0.0",
+          "organism": "Ictidomys tridecemlineatus",
+          "assembly": "SpeTri2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000236235.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000236235.1/",
+          "file_name": "BSgenome.Itridecemlineatus.Ensembl.SpeTri20_1.0.0.tar.gz",
+          "size": 555752905,
+          "seq_ids": [
+            "JH393279.1",
+            "JH393280.1",
+            "JH393281.1",
+            "JH393282.1",
+            "JH393283.1"
+          ],
+          "seq_count": 12484,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Sciuridae",
+            "genus": "Ictidomys"
+          },
+          "common_name": "thirteen-lined ground squirrel",
+          "published": "2026-04-13T11:55:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Itridecemlineatus.Ensembl.SpeTri20/BSgenome.Itridecemlineatus.Ensembl.SpeTri20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ipomoea nil",
       "common_name": "Japanese morning glory",
       "group": "plant",
@@ -77550,6 +77598,38 @@
       "common_name": "sheep",
       "published": "2026-04-13T11:54:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ASM1117029v1/BSgenome.Oaries.Ensembl.ASM1117029v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Itridecemlineatus.Ensembl.SpeTri20",
+      "version": "1.0.0",
+      "organism": "Ictidomys tridecemlineatus",
+      "assembly": "SpeTri2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000236235.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000236235.1/",
+      "file_name": "BSgenome.Itridecemlineatus.Ensembl.SpeTri20_1.0.0.tar.gz",
+      "size": 555752905,
+      "seq_ids": [
+        "JH393279.1",
+        "JH393280.1",
+        "JH393281.1",
+        "JH393282.1",
+        "JH393283.1"
+      ],
+      "seq_count": 12484,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Sciuridae",
+        "genus": "Ictidomys"
+      },
+      "common_name": "thirteen-lined ground squirrel",
+      "published": "2026-04-13T11:55:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Itridecemlineatus.Ensembl.SpeTri20/BSgenome.Itridecemlineatus.Ensembl.SpeTri20_1.0.0.tar.gz"
     }
   ]
 }
