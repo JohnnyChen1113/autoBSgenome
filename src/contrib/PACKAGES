@@ -4121,3 +4121,7 @@ NeedsCompilation: no
 Package: BSgenome.Rnorvegicus.Ensembl.UTHRnorSHRSPBbbUtx10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmusculus.Ensembl.CBAJv3
+Version: 1.0.0
+NeedsCompilation: no
