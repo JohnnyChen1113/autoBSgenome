@@ -3937,3 +3937,7 @@ NeedsCompilation: no
 Package: BSgenome.Neugenii.Ensembl.Meug10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mdomestica.Ensembl.ASM229v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -28175,6 +28175,54 @@
       ]
     },
     {
+      "organism": "Monodelphis domestica",
+      "common_name": "gray short-tailed opossum",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Didelphimorphia",
+        "family": "Didelphidae",
+        "genus": "Monodelphis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mdomestica.Ensembl.ASM229v1",
+          "version": "1.0.0",
+          "organism": "Monodelphis domestica",
+          "assembly": "ASM229v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000002295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002295.1/",
+          "file_name": "BSgenome.Mdomestica.Ensembl.ASM229v1_1.0.0.tar.gz",
+          "size": 828525556,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 5138,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Didelphimorphia",
+            "family": "Didelphidae",
+            "genus": "Monodelphis"
+          },
+          "common_name": "gray short-tailed opossum",
+          "published": "2026-04-13T10:28:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdomestica.Ensembl.ASM229v1/BSgenome.Mdomestica.Ensembl.ASM229v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Monodon monoceros",
       "common_name": "narwhal",
       "group": "vertebrate_mammalian",
@@ -76942,6 +76990,38 @@
       "common_name": "tammar wallaby",
       "published": "2026-04-13T10:25:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Neugenii.Ensembl.Meug10/BSgenome.Neugenii.Ensembl.Meug10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mdomestica.Ensembl.ASM229v1",
+      "version": "1.0.0",
+      "organism": "Monodelphis domestica",
+      "assembly": "ASM229v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000002295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002295.1/",
+      "file_name": "BSgenome.Mdomestica.Ensembl.ASM229v1_1.0.0.tar.gz",
+      "size": 828525556,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 5138,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Didelphimorphia",
+        "family": "Didelphidae",
+        "genus": "Monodelphis"
+      },
+      "common_name": "gray short-tailed opossum",
+      "published": "2026-04-13T10:28:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdomestica.Ensembl.ASM229v1/BSgenome.Mdomestica.Ensembl.ASM229v1_1.0.0.tar.gz"
     }
   ]
 }
