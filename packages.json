@@ -39276,6 +39276,54 @@
       ]
     },
     {
+      "organism": "Pygocentrus nattereri",
+      "common_name": "red-bellied piranha",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Characiformes",
+        "family": "Serrasalmidae",
+        "genus": "Pygocentrus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pnattereri.Ensembl.fPygNat1pri",
+          "version": "1.0.0",
+          "organism": "Pygocentrus nattereri",
+          "assembly": "fPygNat1.pri",
+          "provider": "Ensembl",
+          "accession": "GCA_015220715.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_015220715.1/",
+          "file_name": "BSgenome.Pnattereri.Ensembl.fPygNat1pri_1.0.0.tar.gz",
+          "size": 280291500,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 55,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Characiformes",
+            "family": "Serrasalmidae",
+            "genus": "Pygocentrus"
+          },
+          "common_name": "red-bellied piranha",
+          "published": "2026-04-13T21:00:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnattereri.Ensembl.fPygNat1pri/BSgenome.Pnattereri.Ensembl.fPygNat1pri_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pygoscelis adeliae",
       "common_name": "Adelie penguin",
       "group": "vertebrate_other",
@@ -81218,6 +81266,38 @@
       "common_name": "vaquita",
       "published": "2026-04-13T19:53:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psinus.Ensembl.mPhoSin1pri/BSgenome.Psinus.Ensembl.mPhoSin1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pnattereri.Ensembl.fPygNat1pri",
+      "version": "1.0.0",
+      "organism": "Pygocentrus nattereri",
+      "assembly": "fPygNat1.pri",
+      "provider": "Ensembl",
+      "accession": "GCA_015220715.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_015220715.1/",
+      "file_name": "BSgenome.Pnattereri.Ensembl.fPygNat1pri_1.0.0.tar.gz",
+      "size": 280291500,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 55,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Characiformes",
+        "family": "Serrasalmidae",
+        "genus": "Pygocentrus"
+      },
+      "common_name": "red-bellied piranha",
+      "published": "2026-04-13T21:00:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnattereri.Ensembl.fPygNat1pri/BSgenome.Pnattereri.Ensembl.fPygNat1pri_1.0.0.tar.gz"
     }
   ]
 }
