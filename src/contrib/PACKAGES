@@ -4001,3 +4001,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmexicana.Ensembl.Pmexicana10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmonoceros.Ensembl.NGINarwhal1
+Version: 1.0.0
+NeedsCompilation: no
