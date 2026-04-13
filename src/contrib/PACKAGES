@@ -4033,3 +4033,7 @@ NeedsCompilation: no
 Package: BSgenome.Dlabrax.Ensembl.dlabrax2021
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Preticulata.Ensembl.Guppyfemale10MT
+Version: 1.0.0
+NeedsCompilation: no

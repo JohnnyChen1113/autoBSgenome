@@ -36682,6 +36682,54 @@
       ]
     },
     {
+      "organism": "Poecilia reticulata",
+      "common_name": "guppy",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Poeciliidae",
+        "genus": "Poecilia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Preticulata.Ensembl.Guppyfemale10MT",
+          "version": "1.0.0",
+          "organism": "Poecilia reticulata",
+          "assembly": "Guppy_female_1.0_MT",
+          "provider": "Ensembl",
+          "accession": "GCA_000633615.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000633615.2/",
+          "file_name": "BSgenome.Preticulata.Ensembl.Guppyfemale10MT_1.0.0.tar.gz",
+          "size": 162662360,
+          "seq_ids": [
+            "LG1",
+            "LG2",
+            "LG3",
+            "LG4",
+            "LG5"
+          ],
+          "seq_count": 2768,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Poeciliidae",
+            "genus": "Poecilia"
+          },
+          "common_name": "guppy",
+          "published": "2026-04-13T15:18:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Preticulata.Ensembl.Guppyfemale10MT/BSgenome.Preticulata.Ensembl.Guppyfemale10MT_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pogonomyrmex barbatus",
       "common_name": "red harvester ant",
       "group": "invertebrate",
@@ -78635,6 +78683,38 @@
       "common_name": "European seabass",
       "published": "2026-04-13T15:18:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dlabrax.Ensembl.dlabrax2021/BSgenome.Dlabrax.Ensembl.dlabrax2021_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Preticulata.Ensembl.Guppyfemale10MT",
+      "version": "1.0.0",
+      "organism": "Poecilia reticulata",
+      "assembly": "Guppy_female_1.0_MT",
+      "provider": "Ensembl",
+      "accession": "GCA_000633615.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000633615.2/",
+      "file_name": "BSgenome.Preticulata.Ensembl.Guppyfemale10MT_1.0.0.tar.gz",
+      "size": 162662360,
+      "seq_ids": [
+        "LG1",
+        "LG2",
+        "LG3",
+        "LG4",
+        "LG5"
+      ],
+      "seq_count": 2768,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Poeciliidae",
+        "genus": "Poecilia"
+      },
+      "common_name": "guppy",
+      "published": "2026-04-13T15:18:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Preticulata.Ensembl.Guppyfemale10MT/BSgenome.Preticulata.Ensembl.Guppyfemale10MT_1.0.0.tar.gz"
     }
   ]
 }
