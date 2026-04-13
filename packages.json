@@ -44649,6 +44649,38 @@
           "common_name": "pig",
           "published": "2026-04-13T22:54:56Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.USMARCv10/BSgenome.Sscrofa.Ensembl.USMARCv10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Sscrofa.Ensembl.Rongchangpigv1",
+          "version": "1.0.0",
+          "organism": "Sus scrofa",
+          "assembly": "Rongchang_pig_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_001700155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001700155.1/",
+          "file_name": "BSgenome.Sscrofa.Ensembl.Rongchangpigv1_1.0.0.tar.gz",
+          "size": 589884438,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 613,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Suidae",
+            "genus": "Sus"
+          },
+          "common_name": "pig",
+          "published": "2026-04-13T23:47:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Rongchangpigv1/BSgenome.Sscrofa.Ensembl.Rongchangpigv1_1.0.0.tar.gz"
         }
       ]
     },
@@ -83869,6 +83901,38 @@
       "common_name": "river trout",
       "published": "2026-04-13T23:47:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Strutta.Ensembl.fSalTru11/BSgenome.Strutta.Ensembl.fSalTru11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sscrofa.Ensembl.Rongchangpigv1",
+      "version": "1.0.0",
+      "organism": "Sus scrofa",
+      "assembly": "Rongchang_pig_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_001700155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001700155.1/",
+      "file_name": "BSgenome.Sscrofa.Ensembl.Rongchangpigv1_1.0.0.tar.gz",
+      "size": 589884438,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 613,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Suidae",
+        "genus": "Sus"
+      },
+      "common_name": "pig",
+      "published": "2026-04-13T23:47:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Rongchangpigv1/BSgenome.Sscrofa.Ensembl.Rongchangpigv1_1.0.0.tar.gz"
     }
   ]
 }
