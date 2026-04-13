@@ -41287,6 +41287,38 @@
           "common_name": "greater amberjack",
           "published": "2026-04-04T04:31:23Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sdumerili.NCBI.Sdu10/BSgenome.Sdumerili.NCBI.Sdu10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Sdumerili.Ensembl.Sdu10",
+          "version": "1.0.0",
+          "organism": "Seriola dumerili",
+          "assembly": "Sdu_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002260705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002260705.1/",
+          "file_name": "BSgenome.Sdumerili.Ensembl.Sdu10_1.0.0.tar.gz",
+          "size": 161563370,
+          "seq_ids": [
+            "BDQW01000149.1",
+            "BDQW01000025.1",
+            "BDQW01000052.1",
+            "BDQW01000138.1",
+            "BDQW01000068.1"
+          ],
+          "seq_count": 34656,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Carangiformes",
+            "family": "Carangidae",
+            "genus": "Seriola"
+          },
+          "common_name": "greater amberjack",
+          "published": "2026-04-13T19:50:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sdumerili.Ensembl.Sdu10/BSgenome.Sdumerili.Ensembl.Sdu10_1.0.0.tar.gz"
         }
       ]
     },
@@ -80514,6 +80546,38 @@
       "common_name": "Common wall lizard",
       "published": "2026-04-13T19:50:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmuralis.Ensembl.PodMur10/BSgenome.Pmuralis.Ensembl.PodMur10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sdumerili.Ensembl.Sdu10",
+      "version": "1.0.0",
+      "organism": "Seriola dumerili",
+      "assembly": "Sdu_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002260705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002260705.1/",
+      "file_name": "BSgenome.Sdumerili.Ensembl.Sdu10_1.0.0.tar.gz",
+      "size": 161563370,
+      "seq_ids": [
+        "BDQW01000149.1",
+        "BDQW01000025.1",
+        "BDQW01000052.1",
+        "BDQW01000138.1",
+        "BDQW01000068.1"
+      ],
+      "seq_count": 34656,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Carangiformes",
+        "family": "Carangidae",
+        "genus": "Seriola"
+      },
+      "common_name": "greater amberjack",
+      "published": "2026-04-13T19:50:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sdumerili.Ensembl.Sdu10/BSgenome.Sdumerili.Ensembl.Sdu10_1.0.0.tar.gz"
     }
   ]
 }
