@@ -28553,6 +28553,54 @@
       ]
     },
     {
+      "organism": "Naja naja",
+      "common_name": "Indian cobra",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Elapidae",
+        "genus": "Naja"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nnaja.Ensembl.Nanav5",
+          "version": "1.0.0",
+          "organism": "Naja naja",
+          "assembly": "Nana_v5",
+          "provider": "Ensembl",
+          "accession": "GCA_009733165.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009733165.1/",
+          "file_name": "BSgenome.Nnaja.Ensembl.Nanav5_1.0.0.tar.gz",
+          "size": 395581513,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1897,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Elapidae",
+            "genus": "Naja"
+          },
+          "common_name": "Indian cobra",
+          "published": "2026-04-13T02:54:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnaja.Ensembl.Nanav5/BSgenome.Nnaja.Ensembl.Nanav5_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nannizzia gypsea CBS 118893",
       "common_name": "",
       "group": "fungi",
@@ -74432,6 +74480,38 @@
       "common_name": "drill",
       "published": "2026-04-13T02:54:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mleucophaeus.Ensembl.Mleule10/BSgenome.Mleucophaeus.Ensembl.Mleule10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nnaja.Ensembl.Nanav5",
+      "version": "1.0.0",
+      "organism": "Naja naja",
+      "assembly": "Nana_v5",
+      "provider": "Ensembl",
+      "accession": "GCA_009733165.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009733165.1/",
+      "file_name": "BSgenome.Nnaja.Ensembl.Nanav5_1.0.0.tar.gz",
+      "size": 395581513,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1897,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Elapidae",
+        "genus": "Naja"
+      },
+      "common_name": "Indian cobra",
+      "published": "2026-04-13T02:54:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnaja.Ensembl.Nanav5/BSgenome.Nnaja.Ensembl.Nanav5_1.0.0.tar.gz"
     }
   ]
 }
