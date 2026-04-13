@@ -3889,3 +3889,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmusculus.Ensembl.AJv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmusculus.Ensembl.NZOHlLtJv3
+Version: 1.0.0
+NeedsCompilation: no

@@ -28725,6 +28725,38 @@
           "common_name": "house mouse",
           "published": "2026-04-13T08:11:37Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.AJv3/BSgenome.Mmusculus.Ensembl.AJv3_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Mmusculus.Ensembl.NZOHlLtJv3",
+          "version": "1.0.0",
+          "organism": "Mus musculus",
+          "assembly": "NZO_HlLtJ_v3",
+          "provider": "Ensembl",
+          "accession": "GCA_947593165.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_947593165.1/",
+          "file_name": "BSgenome.Mmusculus.Ensembl.NZOHlLtJv3_1.0.0.tar.gz",
+          "size": 629660980,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 61,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Mus"
+          },
+          "common_name": "house mouse",
+          "published": "2026-04-13T08:11:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.NZOHlLtJv3/BSgenome.Mmusculus.Ensembl.NZOHlLtJv3_1.0.0.tar.gz"
         }
       ]
     },
@@ -76062,6 +76094,38 @@
       "common_name": "house mouse",
       "published": "2026-04-13T08:11:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.AJv3/BSgenome.Mmusculus.Ensembl.AJv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmusculus.Ensembl.NZOHlLtJv3",
+      "version": "1.0.0",
+      "organism": "Mus musculus",
+      "assembly": "NZO_HlLtJ_v3",
+      "provider": "Ensembl",
+      "accession": "GCA_947593165.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_947593165.1/",
+      "file_name": "BSgenome.Mmusculus.Ensembl.NZOHlLtJv3_1.0.0.tar.gz",
+      "size": 629660980,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 61,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Mus"
+      },
+      "common_name": "house mouse",
+      "published": "2026-04-13T08:11:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.NZOHlLtJv3/BSgenome.Mmusculus.Ensembl.NZOHlLtJv3_1.0.0.tar.gz"
     }
   ]
 }
