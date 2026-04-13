@@ -38499,6 +38499,54 @@
       ]
     },
     {
+      "organism": "Prolemur simus",
+      "common_name": "greater bamboo lemur",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Lemuridae",
+        "genus": "Prolemur"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psimus.Ensembl.Prosim10",
+          "version": "1.0.0",
+          "organism": "Prolemur simus",
+          "assembly": "Prosim_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_003258685.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003258685.1/",
+          "file_name": "BSgenome.Psimus.Ensembl.Prosim10_1.0.0.tar.gz",
+          "size": 537834918,
+          "seq_ids": [
+            "MPIZ01000195.1",
+            "MPIZ01000410.1",
+            "MPIZ01000298.1",
+            "MPIZ01000076.1",
+            "MPIZ01000048.1"
+          ],
+          "seq_count": 128596,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Lemuridae",
+            "genus": "Prolemur"
+          },
+          "common_name": "greater bamboo lemur",
+          "published": "2026-04-13T21:02:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psimus.Ensembl.Prosim10/BSgenome.Psimus.Ensembl.Prosim10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Protobothrops mucrosquamatus",
       "common_name": "brown spotted pit viper",
       "group": "vertebrate_other",
@@ -81888,6 +81936,38 @@
       "common_name": "gilthead seabream",
       "published": "2026-04-13T21:01:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Saurata.Ensembl.fSpaAur11/BSgenome.Saurata.Ensembl.fSpaAur11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psimus.Ensembl.Prosim10",
+      "version": "1.0.0",
+      "organism": "Prolemur simus",
+      "assembly": "Prosim_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_003258685.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003258685.1/",
+      "file_name": "BSgenome.Psimus.Ensembl.Prosim10_1.0.0.tar.gz",
+      "size": 537834918,
+      "seq_ids": [
+        "MPIZ01000195.1",
+        "MPIZ01000410.1",
+        "MPIZ01000298.1",
+        "MPIZ01000076.1",
+        "MPIZ01000048.1"
+      ],
+      "seq_count": 128596,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Lemuridae",
+        "genus": "Prolemur"
+      },
+      "common_name": "greater bamboo lemur",
+      "published": "2026-04-13T21:02:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psimus.Ensembl.Prosim10/BSgenome.Psimus.Ensembl.Prosim10_1.0.0.tar.gz"
     }
   ]
 }
