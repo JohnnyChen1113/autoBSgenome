@@ -41219,6 +41219,54 @@
       ]
     },
     {
+      "organism": "Salmo salar",
+      "common_name": "Atlantic salmon",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Salmo"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ssalar.Ensembl.SsalALTA",
+          "version": "1.0.0",
+          "organism": "Salmo salar",
+          "assembly": "Ssal_ALTA",
+          "provider": "Ensembl",
+          "accession": "GCA_931346935.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_931346935.2/",
+          "file_name": "BSgenome.Ssalar.Ensembl.SsalALTA_1.0.0.tar.gz",
+          "size": 558262511,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 4011,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Salmoniformes",
+            "family": "Salmonidae",
+            "genus": "Salmo"
+          },
+          "common_name": "Atlantic salmon",
+          "published": "2026-04-13T22:00:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalar.Ensembl.SsalALTA/BSgenome.Ssalar.Ensembl.SsalALTA_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Salpingoeca rosetta",
       "common_name": "",
       "group": "other",
@@ -82496,6 +82544,38 @@
       "common_name": "rainbow trout",
       "published": "2026-04-13T21:59:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Omykiss.Ensembl.USDAOmykA11/BSgenome.Omykiss.Ensembl.USDAOmykA11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ssalar.Ensembl.SsalALTA",
+      "version": "1.0.0",
+      "organism": "Salmo salar",
+      "assembly": "Ssal_ALTA",
+      "provider": "Ensembl",
+      "accession": "GCA_931346935.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_931346935.2/",
+      "file_name": "BSgenome.Ssalar.Ensembl.SsalALTA_1.0.0.tar.gz",
+      "size": 558262511,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 4011,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Salmo"
+      },
+      "common_name": "Atlantic salmon",
+      "published": "2026-04-13T22:00:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalar.Ensembl.SsalALTA/BSgenome.Ssalar.Ensembl.SsalALTA_1.0.0.tar.gz"
     }
   ]
 }
