@@ -4309,3 +4309,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscrofa.Ensembl.USMARCv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Srhinocerous.Ensembl.SAMN03320098v11
+Version: 1.0.0
+NeedsCompilation: no

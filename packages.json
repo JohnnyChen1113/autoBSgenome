@@ -42918,6 +42918,38 @@
           "common_name": "",
           "published": "2026-04-04T11:03:40Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Srhinocerous.NCBI.SAMN03320098v11/BSgenome.Srhinocerous.NCBI.SAMN03320098v11_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Srhinocerous.Ensembl.SAMN03320098v11",
+          "version": "1.0.0",
+          "organism": "Sinocyclocheilus rhinocerous",
+          "assembly": "SAMN03320098_v1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_001515625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001515625.1/",
+          "file_name": "BSgenome.Srhinocerous.Ensembl.SAMN03320098v11_1.0.0.tar.gz",
+          "size": 365679990,
+          "seq_ids": [
+            "LAVF01S005297.1",
+            "LAVF01S037824.1",
+            "LAVF01S030418.1",
+            "LAVF01S015921.1",
+            "LAVF01S018999.1"
+          ],
+          "seq_count": 164173,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Sinocyclocheilus"
+          },
+          "common_name": "",
+          "published": "2026-04-13T23:46:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Srhinocerous.Ensembl.SAMN03320098v11/BSgenome.Srhinocerous.Ensembl.SAMN03320098v11_1.0.0.tar.gz"
         }
       ]
     },
@@ -83645,6 +83677,38 @@
       "common_name": "pig",
       "published": "2026-04-13T22:54:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.USMARCv10/BSgenome.Sscrofa.Ensembl.USMARCv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Srhinocerous.Ensembl.SAMN03320098v11",
+      "version": "1.0.0",
+      "organism": "Sinocyclocheilus rhinocerous",
+      "assembly": "SAMN03320098_v1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_001515625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001515625.1/",
+      "file_name": "BSgenome.Srhinocerous.Ensembl.SAMN03320098v11_1.0.0.tar.gz",
+      "size": 365679990,
+      "seq_ids": [
+        "LAVF01S005297.1",
+        "LAVF01S037824.1",
+        "LAVF01S030418.1",
+        "LAVF01S015921.1",
+        "LAVF01S018999.1"
+      ],
+      "seq_count": 164173,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Sinocyclocheilus"
+      },
+      "common_name": "",
+      "published": "2026-04-13T23:46:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Srhinocerous.Ensembl.SAMN03320098v11/BSgenome.Srhinocerous.Ensembl.SAMN03320098v11_1.0.0.tar.gz"
     }
   ]
 }
