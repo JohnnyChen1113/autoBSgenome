@@ -3997,3 +3997,7 @@ NeedsCompilation: no
 Package: BSgenome.Malbus.Ensembl.Malbus10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmexicana.Ensembl.Pmexicana10
+Version: 1.0.0
+NeedsCompilation: no
