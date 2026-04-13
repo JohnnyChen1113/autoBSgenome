@@ -4061,3 +4061,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcastaneus.Ensembl.Pelusioscastaneus10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cintestinalis.Ensembl.KH
+Version: 1.0.0
+NeedsCompilation: no
