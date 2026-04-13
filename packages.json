@@ -38243,6 +38243,54 @@
       ]
     },
     {
+      "organism": "Pongo abelii",
+      "common_name": "Sumatran orangutan",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Hominidae",
+        "genus": "Pongo"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pabelii.Ensembl.SusiePABv2",
+          "version": "1.0.0",
+          "organism": "Pongo abelii",
+          "assembly": "Susie_PABv2",
+          "provider": "Ensembl",
+          "accession": "GCA_002880775.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002880775.3/",
+          "file_name": "BSgenome.Pabelii.Ensembl.SusiePABv2_1.0.0.tar.gz",
+          "size": 706838895,
+          "seq_ids": [
+            "1",
+            "2A",
+            "2B",
+            "3",
+            "4"
+          ],
+          "seq_count": 5261,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Hominidae",
+            "genus": "Pongo"
+          },
+          "common_name": "Sumatran orangutan",
+          "published": "2026-04-13T21:03:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pabelii.Ensembl.SusiePABv2/BSgenome.Pabelii.Ensembl.SusiePABv2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Populus alba",
       "common_name": "white poplar",
       "group": "plant",
@@ -82032,6 +82080,38 @@
       "common_name": "sheep",
       "published": "2026-04-13T21:02:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ASM2241675v1/BSgenome.Oaries.Ensembl.ASM2241675v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pabelii.Ensembl.SusiePABv2",
+      "version": "1.0.0",
+      "organism": "Pongo abelii",
+      "assembly": "Susie_PABv2",
+      "provider": "Ensembl",
+      "accession": "GCA_002880775.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002880775.3/",
+      "file_name": "BSgenome.Pabelii.Ensembl.SusiePABv2_1.0.0.tar.gz",
+      "size": 706838895,
+      "seq_ids": [
+        "1",
+        "2A",
+        "2B",
+        "3",
+        "4"
+      ],
+      "seq_count": 5261,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Hominidae",
+        "genus": "Pongo"
+      },
+      "common_name": "Sumatran orangutan",
+      "published": "2026-04-13T21:03:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pabelii.Ensembl.SusiePABv2/BSgenome.Pabelii.Ensembl.SusiePABv2_1.0.0.tar.gz"
     }
   ]
 }

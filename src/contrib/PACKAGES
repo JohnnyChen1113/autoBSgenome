@@ -4221,3 +4221,7 @@ NeedsCompilation: no
 Package: BSgenome.Oaries.Ensembl.ASM2241675v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pabelii.Ensembl.SusiePABv2
+Version: 1.0.0
+NeedsCompilation: no
