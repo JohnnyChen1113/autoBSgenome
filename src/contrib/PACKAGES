@@ -4269,3 +4269,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcolchicus.Ensembl.ASM414374v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Smerianae.Ensembl.HLtupMer3
+Version: 1.0.0
+NeedsCompilation: no

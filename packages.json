@@ -41343,6 +41343,54 @@
       ]
     },
     {
+      "organism": "Salvator merianae",
+      "common_name": "Argentine black and white tegu",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Teiidae",
+        "genus": "Salvator"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Smerianae.Ensembl.HLtupMer3",
+          "version": "1.0.0",
+          "organism": "Salvator merianae",
+          "assembly": "HLtupMer3",
+          "provider": "Ensembl",
+          "accession": "GCA_003586115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003586115.1/",
+          "file_name": "BSgenome.Smerianae.Ensembl.HLtupMer3_1.0.0.tar.gz",
+          "size": 481490932,
+          "seq_ids": [
+            "QVOM01000001.1",
+            "QVOM01000002.1",
+            "QVOM01000003.1",
+            "QVOM01000004.1",
+            "QVOM01000005.1"
+          ],
+          "seq_count": 5988,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Teiidae",
+            "genus": "Salvator"
+          },
+          "common_name": "Argentine black and white tegu",
+          "published": "2026-04-13T22:52:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smerianae.Ensembl.HLtupMer3/BSgenome.Smerianae.Ensembl.HLtupMer3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Salvia splendens",
       "common_name": "bonfire salvia",
       "group": "plant",
@@ -82925,6 +82973,38 @@
       "common_name": "ring-necked pheasant",
       "published": "2026-04-13T22:52:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcolchicus.Ensembl.ASM414374v1/BSgenome.Pcolchicus.Ensembl.ASM414374v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Smerianae.Ensembl.HLtupMer3",
+      "version": "1.0.0",
+      "organism": "Salvator merianae",
+      "assembly": "HLtupMer3",
+      "provider": "Ensembl",
+      "accession": "GCA_003586115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003586115.1/",
+      "file_name": "BSgenome.Smerianae.Ensembl.HLtupMer3_1.0.0.tar.gz",
+      "size": 481490932,
+      "seq_ids": [
+        "QVOM01000001.1",
+        "QVOM01000002.1",
+        "QVOM01000003.1",
+        "QVOM01000004.1",
+        "QVOM01000005.1"
+      ],
+      "seq_count": 5988,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Teiidae",
+        "genus": "Salvator"
+      },
+      "common_name": "Argentine black and white tegu",
+      "published": "2026-04-13T22:52:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smerianae.Ensembl.HLtupMer3/BSgenome.Smerianae.Ensembl.HLtupMer3_1.0.0.tar.gz"
     }
   ]
 }
