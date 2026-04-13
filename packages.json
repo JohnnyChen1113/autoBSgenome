@@ -24441,6 +24441,37 @@
             "NC_040015.1"
           ],
           "seq_count": 9998
+        },
+        {
+          "package": "BSgenome.Lcrocea.Ensembl.Lcrocea20",
+          "version": "1.0.0",
+          "organism": "Larimichthys crocea",
+          "assembly": "L_crocea_2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000972845.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000972845.2/",
+          "file_name": "BSgenome.Lcrocea.Ensembl.Lcrocea20_1.0.0.tar.gz",
+          "size": 158316778,
+          "seq_ids": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V"
+          ],
+          "seq_count": 9998,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "family": "Sciaenidae",
+            "genus": "Larimichthys"
+          },
+          "common_name": "large yellow croaker",
+          "published": "2026-04-13T02:53:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcrocea.Ensembl.Lcrocea20/BSgenome.Lcrocea.Ensembl.Lcrocea20_1.0.0.tar.gz"
         }
       ]
     },
@@ -74226,6 +74257,37 @@
       "common_name": "Siberian musk deer",
       "published": "2026-04-12T23:42:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD/BSgenome.Mmoschiferus.Ensembl.MosMosv2BIUUUCD_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lcrocea.Ensembl.Lcrocea20",
+      "version": "1.0.0",
+      "organism": "Larimichthys crocea",
+      "assembly": "L_crocea_2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000972845.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000972845.2/",
+      "file_name": "BSgenome.Lcrocea.Ensembl.Lcrocea20_1.0.0.tar.gz",
+      "size": 158316778,
+      "seq_ids": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "seq_count": 9998,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Sciaenidae",
+        "genus": "Larimichthys"
+      },
+      "common_name": "large yellow croaker",
+      "published": "2026-04-13T02:53:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcrocea.Ensembl.Lcrocea20/BSgenome.Lcrocea.Ensembl.Lcrocea20_1.0.0.tar.gz"
     }
   ]
 }
