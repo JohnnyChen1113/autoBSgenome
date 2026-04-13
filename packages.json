@@ -34702,6 +34702,54 @@
       ]
     },
     {
+      "organism": "Pavo cristatus",
+      "common_name": "Indian peafowl",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Pavo"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcristatus.Ensembl.AIIMPcri10",
+          "version": "1.0.0",
+          "organism": "Pavo cristatus",
+          "assembly": "AIIM_Pcri_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_005519975.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_005519975.1/",
+          "file_name": "BSgenome.Pcristatus.Ensembl.AIIMPcri10_1.0.0.tar.gz",
+          "size": 250448534,
+          "seq_ids": [
+            "QZWQ01000092.1",
+            "QZWQ01000255.1",
+            "QZWQ01179071.1",
+            "QZWQ01000097.1",
+            "QZWQ01000153.1"
+          ],
+          "seq_count": 179332,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Galliformes",
+            "family": "Phasianidae",
+            "genus": "Pavo"
+          },
+          "common_name": "Indian peafowl",
+          "published": "2026-04-13T21:00:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcristatus.Ensembl.AIIMPcri10/BSgenome.Pcristatus.Ensembl.AIIMPcri10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pediculus humanus corporis",
       "common_name": "human body louse",
       "group": "invertebrate",
@@ -81522,6 +81570,38 @@
       "common_name": "Eurasian red squirrel",
       "published": "2026-04-13T21:00:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Svulgaris.Ensembl.mSciVul11/BSgenome.Svulgaris.Ensembl.mSciVul11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcristatus.Ensembl.AIIMPcri10",
+      "version": "1.0.0",
+      "organism": "Pavo cristatus",
+      "assembly": "AIIM_Pcri_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_005519975.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_005519975.1/",
+      "file_name": "BSgenome.Pcristatus.Ensembl.AIIMPcri10_1.0.0.tar.gz",
+      "size": 250448534,
+      "seq_ids": [
+        "QZWQ01000092.1",
+        "QZWQ01000255.1",
+        "QZWQ01179071.1",
+        "QZWQ01000097.1",
+        "QZWQ01000153.1"
+      ],
+      "seq_count": 179332,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Galliformes",
+        "family": "Phasianidae",
+        "genus": "Pavo"
+      },
+      "common_name": "Indian peafowl",
+      "published": "2026-04-13T21:00:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcristatus.Ensembl.AIIMPcri10/BSgenome.Pcristatus.Ensembl.AIIMPcri10_1.0.0.tar.gz"
     }
   ]
 }
