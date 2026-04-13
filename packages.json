@@ -35890,6 +35890,38 @@
           "common_name": "vaquita",
           "published": "2026-04-03T21:41:31Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psinus.NCBI.mPhoSin1pri/BSgenome.Psinus.NCBI.mPhoSin1pri_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Psinus.Ensembl.mPhoSin1pri",
+          "version": "1.0.0",
+          "organism": "Phocoena sinus",
+          "assembly": "mPhoSin1.pri",
+          "provider": "Ensembl",
+          "accession": "GCA_008692025.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008692025.1/",
+          "file_name": "BSgenome.Psinus.Ensembl.mPhoSin1pri_1.0.0.tar.gz",
+          "size": 566271039,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 64,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Phocoenidae",
+            "genus": "Phocoena"
+          },
+          "common_name": "vaquita",
+          "published": "2026-04-13T19:53:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psinus.Ensembl.mPhoSin1pri/BSgenome.Psinus.Ensembl.mPhoSin1pri_1.0.0.tar.gz"
         }
       ]
     },
@@ -81154,6 +81186,38 @@
       "common_name": "sheep",
       "published": "2026-04-13T19:53:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ASM2241668v1/BSgenome.Oaries.Ensembl.ASM2241668v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psinus.Ensembl.mPhoSin1pri",
+      "version": "1.0.0",
+      "organism": "Phocoena sinus",
+      "assembly": "mPhoSin1.pri",
+      "provider": "Ensembl",
+      "accession": "GCA_008692025.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008692025.1/",
+      "file_name": "BSgenome.Psinus.Ensembl.mPhoSin1pri_1.0.0.tar.gz",
+      "size": 566271039,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 64,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Phocoenidae",
+        "genus": "Phocoena"
+      },
+      "common_name": "vaquita",
+      "published": "2026-04-13T19:53:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psinus.Ensembl.mPhoSin1pri/BSgenome.Psinus.Ensembl.mPhoSin1pri_1.0.0.tar.gz"
     }
   ]
 }
