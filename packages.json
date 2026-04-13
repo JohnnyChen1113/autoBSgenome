@@ -34192,6 +34192,52 @@
       ]
     },
     {
+      "organism": "Pelusios castaneus",
+      "common_name": "West African mud turtle",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Pelomedusidae",
+        "genus": "Pelusios"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcastaneus.Ensembl.Pelusioscastaneus10",
+          "version": "1.0.0",
+          "organism": "Pelusios castaneus",
+          "assembly": "Pelusios_castaneus-1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_007922175.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_007922175.1/",
+          "file_name": "BSgenome.Pcastaneus.Ensembl.Pelusioscastaneus10_1.0.0.tar.gz",
+          "size": 483500548,
+          "seq_ids": [
+            "ML685755.1",
+            "ML685764.1",
+            "ML685769.1",
+            "ML685766.1",
+            "ML685756.1"
+          ],
+          "seq_count": 69036,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Pelomedusidae",
+            "genus": "Pelusios"
+          },
+          "common_name": "West African mud turtle",
+          "published": "2026-04-13T15:20:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcastaneus.Ensembl.Pelusioscastaneus10/BSgenome.Pcastaneus.Ensembl.Pelusioscastaneus10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Penicilliopsis zonata CBS 506.65",
       "common_name": "",
       "group": "fungi",
@@ -79083,6 +79129,37 @@
       "common_name": "prairie deer mouse",
       "published": "2026-04-13T15:20:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmaniculatus.Ensembl.HUPman21/BSgenome.Pmaniculatus.Ensembl.HUPman21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcastaneus.Ensembl.Pelusioscastaneus10",
+      "version": "1.0.0",
+      "organism": "Pelusios castaneus",
+      "assembly": "Pelusios_castaneus-1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_007922175.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_007922175.1/",
+      "file_name": "BSgenome.Pcastaneus.Ensembl.Pelusioscastaneus10_1.0.0.tar.gz",
+      "size": 483500548,
+      "seq_ids": [
+        "ML685755.1",
+        "ML685764.1",
+        "ML685769.1",
+        "ML685766.1",
+        "ML685756.1"
+      ],
+      "seq_count": 69036,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Pelomedusidae",
+        "genus": "Pelusios"
+      },
+      "common_name": "West African mud turtle",
+      "published": "2026-04-13T15:20:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcastaneus.Ensembl.Pelusioscastaneus10/BSgenome.Pcastaneus.Ensembl.Pelusioscastaneus10_1.0.0.tar.gz"
     }
   ]
 }
