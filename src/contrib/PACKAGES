@@ -4141,3 +4141,7 @@ NeedsCompilation: no
 Package: BSgenome.Sdumerili.Ensembl.Sdu10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppaniscus.Ensembl.panpan11
+Version: 1.0.0
+NeedsCompilation: no
