@@ -44701,6 +44701,52 @@
       ]
     },
     {
+      "organism": "Terrapene carolina triunguis",
+      "common_name": "Three-toed box turtle",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Emydidae",
+        "genus": "Terrapene"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tcarolina.Ensembl.Tmtriunguis20",
+          "version": "1.0.0",
+          "organism": "Terrapene carolina triunguis",
+          "assembly": "T_m_triunguis-2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002925995.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002925995.2/",
+          "file_name": "BSgenome.Tcarolina.Ensembl.Tmtriunguis20_1.0.0.tar.gz",
+          "size": 592971275,
+          "seq_ids": [
+            "PRFB02000059.1",
+            "PRFB02000067.1",
+            "PRFB02000069.1",
+            "PRFB02000097.1",
+            "PRFB02000043.1"
+          ],
+          "seq_count": 52260,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Emydidae",
+            "genus": "Terrapene"
+          },
+          "common_name": "Three-toed box turtle",
+          "published": "2026-04-13T22:00:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcarolina.Ensembl.Tmtriunguis20/BSgenome.Tcarolina.Ensembl.Tmtriunguis20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Terrapene triunguis",
       "common_name": "Three-toed box turtle",
       "group": "vertebrate_other",
@@ -82576,6 +82622,37 @@
       "common_name": "Atlantic salmon",
       "published": "2026-04-13T22:00:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalar.Ensembl.SsalALTA/BSgenome.Ssalar.Ensembl.SsalALTA_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tcarolina.Ensembl.Tmtriunguis20",
+      "version": "1.0.0",
+      "organism": "Terrapene carolina triunguis",
+      "assembly": "T_m_triunguis-2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002925995.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002925995.2/",
+      "file_name": "BSgenome.Tcarolina.Ensembl.Tmtriunguis20_1.0.0.tar.gz",
+      "size": 592971275,
+      "seq_ids": [
+        "PRFB02000059.1",
+        "PRFB02000067.1",
+        "PRFB02000069.1",
+        "PRFB02000097.1",
+        "PRFB02000043.1"
+      ],
+      "seq_count": 52260,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Emydidae",
+        "genus": "Terrapene"
+      },
+      "common_name": "Three-toed box turtle",
+      "published": "2026-04-13T22:00:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcarolina.Ensembl.Tmtriunguis20/BSgenome.Tcarolina.Ensembl.Tmtriunguis20_1.0.0.tar.gz"
     }
   ]
 }

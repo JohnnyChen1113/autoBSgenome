@@ -4249,3 +4249,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssalar.Ensembl.SsalALTA
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcarolina.Ensembl.Tmtriunguis20
+Version: 1.0.0
+NeedsCompilation: no
