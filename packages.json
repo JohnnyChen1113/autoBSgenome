@@ -32212,6 +32212,54 @@
       ]
     },
     {
+      "organism": "Otus sunia",
+      "common_name": "Oriental scops-owl",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Otus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Osunia.Ensembl.OtuSun10",
+          "version": "1.0.0",
+          "organism": "Otus sunia",
+          "assembly": "OtuSun1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_010365825.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_010365825.1/",
+          "file_name": "BSgenome.Osunia.Ensembl.OtuSun10_1.0.0.tar.gz",
+          "size": 294828464,
+          "seq_ids": [
+            "MU001491.1",
+            "MU001484.1",
+            "MU001490.1",
+            "ML998694.1",
+            "ML998048.1"
+          ],
+          "seq_count": 108826,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Strigiformes",
+            "family": "Strigidae",
+            "genus": "Otus"
+          },
+          "common_name": "Oriental scops-owl",
+          "published": "2026-04-13T10:19:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osunia.Ensembl.OtuSun10/BSgenome.Osunia.Ensembl.OtuSun10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Paecilomyces variotii",
       "common_name": "",
       "group": "fungi",
@@ -76350,6 +76398,38 @@
       "common_name": "javanese ricefish",
       "published": "2026-04-13T10:17:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ojavanicus.Ensembl.OJAV11/BSgenome.Ojavanicus.Ensembl.OJAV11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Osunia.Ensembl.OtuSun10",
+      "version": "1.0.0",
+      "organism": "Otus sunia",
+      "assembly": "OtuSun1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_010365825.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_010365825.1/",
+      "file_name": "BSgenome.Osunia.Ensembl.OtuSun10_1.0.0.tar.gz",
+      "size": 294828464,
+      "seq_ids": [
+        "MU001491.1",
+        "MU001484.1",
+        "MU001490.1",
+        "ML998694.1",
+        "ML998048.1"
+      ],
+      "seq_count": 108826,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Otus"
+      },
+      "common_name": "Oriental scops-owl",
+      "published": "2026-04-13T10:19:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osunia.Ensembl.OtuSun10/BSgenome.Osunia.Ensembl.OtuSun10_1.0.0.tar.gz"
     }
   ]
 }
