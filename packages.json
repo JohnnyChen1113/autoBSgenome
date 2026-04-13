@@ -44125,6 +44125,54 @@
       ]
     },
     {
+      "organism": "Sus scrofa",
+      "common_name": "pig",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Suidae",
+        "genus": "Sus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sscrofa.Ensembl.Sscrofa111",
+          "version": "1.0.0",
+          "organism": "Sus scrofa",
+          "assembly": "Sscrofa11.1",
+          "provider": "Ensembl",
+          "accession": "GCA_000003025.6",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000003025.6/",
+          "file_name": "BSgenome.Sscrofa.Ensembl.Sscrofa111_1.0.0.tar.gz",
+          "size": 589884463,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 613,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Suidae",
+            "genus": "Sus"
+          },
+          "common_name": "pig",
+          "published": "2026-04-13T22:00:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Sscrofa111/BSgenome.Sscrofa.Ensembl.Sscrofa111_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sylvia atricapilla",
       "common_name": "blackcap",
       "group": "vertebrate_other",
@@ -82653,6 +82701,38 @@
       "common_name": "Three-toed box turtle",
       "published": "2026-04-13T22:00:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcarolina.Ensembl.Tmtriunguis20/BSgenome.Tcarolina.Ensembl.Tmtriunguis20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sscrofa.Ensembl.Sscrofa111",
+      "version": "1.0.0",
+      "organism": "Sus scrofa",
+      "assembly": "Sscrofa11.1",
+      "provider": "Ensembl",
+      "accession": "GCA_000003025.6",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000003025.6/",
+      "file_name": "BSgenome.Sscrofa.Ensembl.Sscrofa111_1.0.0.tar.gz",
+      "size": 589884463,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 613,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Suidae",
+        "genus": "Sus"
+      },
+      "common_name": "pig",
+      "published": "2026-04-13T22:00:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Sscrofa111/BSgenome.Sscrofa.Ensembl.Sscrofa111_1.0.0.tar.gz"
     }
   ]
 }
