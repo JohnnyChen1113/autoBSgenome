@@ -4285,3 +4285,7 @@ NeedsCompilation: no
 Package: BSgenome.Soccidentalis.Ensembl.Soccidv01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Trubripes.Ensembl.fTakRub12
+Version: 1.0.0
+NeedsCompilation: no

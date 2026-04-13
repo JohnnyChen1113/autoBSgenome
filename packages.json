@@ -44637,6 +44637,54 @@
       ]
     },
     {
+      "organism": "Takifugu rubripes",
+      "common_name": "torafugu",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Tetraodontiformes",
+        "family": "Tetraodontidae",
+        "genus": "Takifugu"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Trubripes.Ensembl.fTakRub12",
+          "version": "1.0.0",
+          "organism": "Takifugu rubripes",
+          "assembly": "fTakRub1.2",
+          "provider": "Ensembl",
+          "accession": "GCA_901000725.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_901000725.2/",
+          "file_name": "BSgenome.Trubripes.Ensembl.fTakRub12_1.0.0.tar.gz",
+          "size": 89649807,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 127,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Tetraodontiformes",
+            "family": "Tetraodontidae",
+            "genus": "Takifugu"
+          },
+          "common_name": "torafugu",
+          "published": "2026-04-13T22:53:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Trubripes.Ensembl.fTakRub12/BSgenome.Trubripes.Ensembl.fTakRub12_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Talaromyces amestolkiae",
       "common_name": "",
       "group": "fungi",
@@ -83229,6 +83277,38 @@
       "common_name": "northern spotted owl",
       "published": "2026-04-13T22:53:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Soccidentalis.Ensembl.Soccidv01/BSgenome.Soccidentalis.Ensembl.Soccidv01_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Trubripes.Ensembl.fTakRub12",
+      "version": "1.0.0",
+      "organism": "Takifugu rubripes",
+      "assembly": "fTakRub1.2",
+      "provider": "Ensembl",
+      "accession": "GCA_901000725.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_901000725.2/",
+      "file_name": "BSgenome.Trubripes.Ensembl.fTakRub12_1.0.0.tar.gz",
+      "size": 89649807,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 127,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Tetraodontiformes",
+        "family": "Tetraodontidae",
+        "genus": "Takifugu"
+      },
+      "common_name": "torafugu",
+      "published": "2026-04-13T22:53:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Trubripes.Ensembl.fTakRub12/BSgenome.Trubripes.Ensembl.fTakRub12_1.0.0.tar.gz"
     }
   ]
 }
