@@ -37600,6 +37600,38 @@
           "common_name": "Amazon molly",
           "published": "2026-04-04T04:32:49Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pformosa.NCBI.Poeciliaformosa512/BSgenome.Pformosa.NCBI.Poeciliaformosa512_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Pformosa.Ensembl.Poeciliaformosa512",
+          "version": "1.0.0",
+          "organism": "Poecilia formosa",
+          "assembly": "Poecilia_formosa-5.1.2",
+          "provider": "Ensembl",
+          "accession": "GCA_000485575.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000485575.1/",
+          "file_name": "BSgenome.Pformosa.Ensembl.Poeciliaformosa512_1.0.0.tar.gz",
+          "size": 171115692,
+          "seq_ids": [
+            "KI519610.1",
+            "KI519611.1",
+            "KI519612.1",
+            "KI519613.1",
+            "KI519614.1"
+          ],
+          "seq_count": 3985,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Poeciliidae",
+            "genus": "Poecilia"
+          },
+          "common_name": "Amazon molly",
+          "published": "2026-04-13T21:00:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pformosa.Ensembl.Poeciliaformosa512/BSgenome.Pformosa.Ensembl.Poeciliaformosa512_1.0.0.tar.gz"
         }
       ]
     },
@@ -81378,6 +81410,38 @@
       "common_name": "",
       "published": "2026-04-13T21:00:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pkingsleyae.Ensembl.PKINGS01/BSgenome.Pkingsleyae.Ensembl.PKINGS01_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pformosa.Ensembl.Poeciliaformosa512",
+      "version": "1.0.0",
+      "organism": "Poecilia formosa",
+      "assembly": "Poecilia_formosa-5.1.2",
+      "provider": "Ensembl",
+      "accession": "GCA_000485575.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000485575.1/",
+      "file_name": "BSgenome.Pformosa.Ensembl.Poeciliaformosa512_1.0.0.tar.gz",
+      "size": 171115692,
+      "seq_ids": [
+        "KI519610.1",
+        "KI519611.1",
+        "KI519612.1",
+        "KI519613.1",
+        "KI519614.1"
+      ],
+      "seq_count": 3985,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Poeciliidae",
+        "genus": "Poecilia"
+      },
+      "common_name": "Amazon molly",
+      "published": "2026-04-13T21:00:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pformosa.Ensembl.Poeciliaformosa512/BSgenome.Pformosa.Ensembl.Poeciliaformosa512_1.0.0.tar.gz"
     }
   ]
 }
