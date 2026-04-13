@@ -27370,6 +27370,54 @@
       ]
     },
     {
+      "organism": "Microcebus murinus",
+      "common_name": "gray mouse lemur",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cheirogaleidae",
+        "genus": "Microcebus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mmurinus.Ensembl.Mmur30",
+          "version": "1.0.0",
+          "organism": "Microcebus murinus",
+          "assembly": "Mmur_3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000165445.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000165445.3/",
+          "file_name": "BSgenome.Mmurinus.Ensembl.Mmur30_1.0.0.tar.gz",
+          "size": 570358998,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 7678,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cheirogaleidae",
+            "genus": "Microcebus"
+          },
+          "common_name": "gray mouse lemur",
+          "published": "2026-04-13T08:11:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmurinus.Ensembl.Mmur30/BSgenome.Mmurinus.Ensembl.Mmur30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Micromonas commoda",
       "common_name": "",
       "group": "plant",
@@ -75854,6 +75902,38 @@
       "common_name": "chicken",
       "published": "2026-04-13T08:11:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ggallus.Ensembl.GRCg6a/BSgenome.Ggallus.Ensembl.GRCg6a_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmurinus.Ensembl.Mmur30",
+      "version": "1.0.0",
+      "organism": "Microcebus murinus",
+      "assembly": "Mmur_3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000165445.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000165445.3/",
+      "file_name": "BSgenome.Mmurinus.Ensembl.Mmur30_1.0.0.tar.gz",
+      "size": 570358998,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 7678,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cheirogaleidae",
+        "genus": "Microcebus"
+      },
+      "common_name": "gray mouse lemur",
+      "published": "2026-04-13T08:11:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmurinus.Ensembl.Mmur30/BSgenome.Mmurinus.Ensembl.Mmur30_1.0.0.tar.gz"
     }
   ]
 }

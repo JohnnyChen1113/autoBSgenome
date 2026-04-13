@@ -3877,3 +3877,7 @@ NeedsCompilation: no
 Package: BSgenome.Ggallus.Ensembl.GRCg6a
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmurinus.Ensembl.Mmur30
+Version: 1.0.0
+NeedsCompilation: no
