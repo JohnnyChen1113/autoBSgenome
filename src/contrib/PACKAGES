@@ -4257,3 +4257,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscrofa.Ensembl.Sscrofa111
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sscrofa.Ensembl.NingheSus1
+Version: 1.0.0
+NeedsCompilation: no
