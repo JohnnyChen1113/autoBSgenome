@@ -27390,6 +27390,38 @@
             "genus": "Microtus"
           },
           "common_name": "prairie vole"
+        },
+        {
+          "package": "BSgenome.Mochrogaster.Ensembl.MicOch10",
+          "version": "1.0.0",
+          "organism": "Microtus ochrogaster",
+          "assembly": "MicOch1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000317375.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000317375.1/",
+          "file_name": "BSgenome.Mochrogaster.Ensembl.MicOch10_1.0.0.tar.gz",
+          "size": 509932178,
+          "seq_ids": [
+            "1",
+            "2",
+            "4",
+            "5",
+            "6"
+          ],
+          "seq_count": 6336,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Cricetidae",
+            "genus": "Microtus"
+          },
+          "common_name": "prairie vole",
+          "published": "2026-04-13T05:46:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.Ensembl.MicOch10/BSgenome.Mochrogaster.Ensembl.MicOch10_1.0.0.tar.gz"
         }
       ]
     },
@@ -74798,6 +74830,38 @@
       "common_name": "zig-zag eel",
       "published": "2026-04-13T05:45:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Marmatus.Ensembl.fMasArm12/BSgenome.Marmatus.Ensembl.fMasArm12_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mochrogaster.Ensembl.MicOch10",
+      "version": "1.0.0",
+      "organism": "Microtus ochrogaster",
+      "assembly": "MicOch1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000317375.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000317375.1/",
+      "file_name": "BSgenome.Mochrogaster.Ensembl.MicOch10_1.0.0.tar.gz",
+      "size": 509932178,
+      "seq_ids": [
+        "1",
+        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "seq_count": 6336,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Microtus"
+      },
+      "common_name": "prairie vole",
+      "published": "2026-04-13T05:46:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mochrogaster.Ensembl.MicOch10/BSgenome.Mochrogaster.Ensembl.MicOch10_1.0.0.tar.gz"
     }
   ]
 }
