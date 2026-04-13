@@ -3941,3 +3941,7 @@ NeedsCompilation: no
 Package: BSgenome.Mdomestica.Ensembl.ASM229v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Olatipes.Ensembl.ASM223471v1
+Version: 1.0.0
+NeedsCompilation: no
