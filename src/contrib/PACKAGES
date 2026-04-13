@@ -4053,3 +4053,7 @@ NeedsCompilation: no
 Package: BSgenome.Okisutch.Ensembl.OkisV2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmaniculatus.Ensembl.HUPman21
+Version: 1.0.0
+NeedsCompilation: no

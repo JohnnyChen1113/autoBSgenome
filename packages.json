@@ -34700,6 +34700,54 @@
       ]
     },
     {
+      "organism": "Peromyscus maniculatus bairdii",
+      "common_name": "prairie deer mouse",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Peromyscus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pmaniculatus.Ensembl.HUPman21",
+          "version": "1.0.0",
+          "organism": "Peromyscus maniculatus bairdii",
+          "assembly": "HU_Pman_2.1",
+          "provider": "Ensembl",
+          "accession": "GCA_003704035.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003704035.1/",
+          "file_name": "BSgenome.Pmaniculatus.Ensembl.HUPman21_1.0.0.tar.gz",
+          "size": 574964974,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 8523,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Cricetidae",
+            "genus": "Peromyscus"
+          },
+          "common_name": "prairie deer mouse",
+          "published": "2026-04-13T15:20:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmaniculatus.Ensembl.HUPman21/BSgenome.Pmaniculatus.Ensembl.HUPman21_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pestalotiopsis fici W106-1",
       "common_name": "",
       "group": "fungi",
@@ -79003,6 +79051,38 @@
       "common_name": "coho salmon",
       "published": "2026-04-13T15:20:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Okisutch.Ensembl.OkisV2/BSgenome.Okisutch.Ensembl.OkisV2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pmaniculatus.Ensembl.HUPman21",
+      "version": "1.0.0",
+      "organism": "Peromyscus maniculatus bairdii",
+      "assembly": "HU_Pman_2.1",
+      "provider": "Ensembl",
+      "accession": "GCA_003704035.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003704035.1/",
+      "file_name": "BSgenome.Pmaniculatus.Ensembl.HUPman21_1.0.0.tar.gz",
+      "size": 574964974,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 8523,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Peromyscus"
+      },
+      "common_name": "prairie deer mouse",
+      "published": "2026-04-13T15:20:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pmaniculatus.Ensembl.HUPman21/BSgenome.Pmaniculatus.Ensembl.HUPman21_1.0.0.tar.gz"
     }
   ]
 }
