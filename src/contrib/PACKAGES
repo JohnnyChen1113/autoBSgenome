@@ -3961,3 +3961,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmusculus.Ensembl.LPJv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Olatipes.Ensembl.ASM223469v1
+Version: 1.0.0
+NeedsCompilation: no

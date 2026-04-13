@@ -32480,6 +32480,38 @@
           "common_name": "Japanese medaka",
           "published": "2026-04-13T11:52:40Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Olatipes.Ensembl.ASM223471v1/BSgenome.Olatipes.Ensembl.ASM223471v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Olatipes.Ensembl.ASM223469v1",
+          "version": "1.0.0",
+          "organism": "Oryzias latipes",
+          "assembly": "ASM223469v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002234695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002234695.1/",
+          "file_name": "BSgenome.Olatipes.Ensembl.ASM223469v1_1.0.0.tar.gz",
+          "size": 175302046,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 25,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Beloniformes",
+            "family": "Adrianichthyidae",
+            "genus": "Oryzias"
+          },
+          "common_name": "Japanese medaka",
+          "published": "2026-04-13T11:54:26Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Olatipes.Ensembl.ASM223469v1/BSgenome.Olatipes.Ensembl.ASM223469v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -77342,6 +77374,38 @@
       "common_name": "house mouse",
       "published": "2026-04-13T11:54:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.LPJv3/BSgenome.Mmusculus.Ensembl.LPJv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Olatipes.Ensembl.ASM223469v1",
+      "version": "1.0.0",
+      "organism": "Oryzias latipes",
+      "assembly": "ASM223469v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002234695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002234695.1/",
+      "file_name": "BSgenome.Olatipes.Ensembl.ASM223469v1_1.0.0.tar.gz",
+      "size": 175302046,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 25,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Beloniformes",
+        "family": "Adrianichthyidae",
+        "genus": "Oryzias"
+      },
+      "common_name": "Japanese medaka",
+      "published": "2026-04-13T11:54:26Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Olatipes.Ensembl.ASM223469v1/BSgenome.Olatipes.Ensembl.ASM223469v1_1.0.0.tar.gz"
     }
   ]
 }
