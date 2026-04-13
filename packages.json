@@ -32274,6 +32274,38 @@
           "common_name": "coho salmon",
           "published": "2026-04-04T11:42:16Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Okisutch.NCBI.OkisV2/BSgenome.Okisutch.NCBI.OkisV2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Okisutch.Ensembl.OkisV2",
+          "version": "1.0.0",
+          "organism": "Oncorhynchus kisutch",
+          "assembly": "Okis_V2",
+          "provider": "Ensembl",
+          "accession": "GCA_002021735.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002021735.2/",
+          "file_name": "BSgenome.Okisutch.Ensembl.OkisV2_1.0.0.tar.gz",
+          "size": 484800895,
+          "seq_ids": [
+            "LG1",
+            "LG2",
+            "LG3",
+            "LG4",
+            "LG5"
+          ],
+          "seq_count": 4086,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Salmoniformes",
+            "family": "Salmonidae",
+            "genus": "Oncorhynchus"
+          },
+          "common_name": "coho salmon",
+          "published": "2026-04-13T15:20:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Okisutch.Ensembl.OkisV2/BSgenome.Okisutch.Ensembl.OkisV2_1.0.0.tar.gz"
         }
       ]
     },
@@ -78939,6 +78971,38 @@
       "common_name": "Chinese medaka",
       "published": "2026-04-13T15:20:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osinensis.Ensembl.ASM858656v1/BSgenome.Osinensis.Ensembl.ASM858656v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Okisutch.Ensembl.OkisV2",
+      "version": "1.0.0",
+      "organism": "Oncorhynchus kisutch",
+      "assembly": "Okis_V2",
+      "provider": "Ensembl",
+      "accession": "GCA_002021735.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002021735.2/",
+      "file_name": "BSgenome.Okisutch.Ensembl.OkisV2_1.0.0.tar.gz",
+      "size": 484800895,
+      "seq_ids": [
+        "LG1",
+        "LG2",
+        "LG3",
+        "LG4",
+        "LG5"
+      ],
+      "seq_count": 4086,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Oncorhynchus"
+      },
+      "common_name": "coho salmon",
+      "published": "2026-04-13T15:20:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Okisutch.Ensembl.OkisV2/BSgenome.Okisutch.Ensembl.OkisV2_1.0.0.tar.gz"
     }
   ]
 }
