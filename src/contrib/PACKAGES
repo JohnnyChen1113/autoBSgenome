@@ -3993,3 +3993,7 @@ NeedsCompilation: no
 Package: BSgenome.Nvison.Ensembl.NNQGGv01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Malbus.Ensembl.Malbus10
+Version: 1.0.0
+NeedsCompilation: no
