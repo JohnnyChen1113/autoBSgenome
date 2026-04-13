@@ -4209,3 +4209,7 @@ NeedsCompilation: no
 Package: BSgenome.Cabingdonii.Ensembl.ASM359739v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Saurata.Ensembl.fSpaAur11
+Version: 1.0.0
+NeedsCompilation: no

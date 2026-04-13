@@ -42746,6 +42746,54 @@
       ]
     },
     {
+      "organism": "Sparus aurata",
+      "common_name": "gilthead seabream",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Spariformes",
+        "family": "Sparidae",
+        "genus": "Sparus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Saurata.Ensembl.fSpaAur11",
+          "version": "1.0.0",
+          "organism": "Sparus aurata",
+          "assembly": "fSpaAur1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_900880675.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900880675.1/",
+          "file_name": "BSgenome.Saurata.Ensembl.fSpaAur11_1.0.0.tar.gz",
+          "size": 199989797,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 175,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Spariformes",
+            "family": "Sparidae",
+            "genus": "Sparus"
+          },
+          "common_name": "gilthead seabream",
+          "published": "2026-04-13T21:01:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Saurata.Ensembl.fSpaAur11/BSgenome.Saurata.Ensembl.fSpaAur11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Spathaspora passalidarum NRRL Y-27907",
       "common_name": "",
       "group": "fungi",
@@ -81808,6 +81856,38 @@
       "common_name": "Abingdon island giant tortoise",
       "published": "2026-04-13T21:01:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cabingdonii.Ensembl.ASM359739v1/BSgenome.Cabingdonii.Ensembl.ASM359739v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Saurata.Ensembl.fSpaAur11",
+      "version": "1.0.0",
+      "organism": "Sparus aurata",
+      "assembly": "fSpaAur1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_900880675.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900880675.1/",
+      "file_name": "BSgenome.Saurata.Ensembl.fSpaAur11_1.0.0.tar.gz",
+      "size": 199989797,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 175,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Spariformes",
+        "family": "Sparidae",
+        "genus": "Sparus"
+      },
+      "common_name": "gilthead seabream",
+      "published": "2026-04-13T21:01:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Saurata.Ensembl.fSpaAur11/BSgenome.Saurata.Ensembl.fSpaAur11_1.0.0.tar.gz"
     }
   ]
 }
