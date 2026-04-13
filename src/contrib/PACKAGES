@@ -3841,3 +3841,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmurdjan.Ensembl.fMyrMur11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mspretus.Ensembl.SPRETEiJv3
+Version: 1.0.0
+NeedsCompilation: no

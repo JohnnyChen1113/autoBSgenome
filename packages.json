@@ -28409,6 +28409,54 @@
       ]
     },
     {
+      "organism": "Mus spretus",
+      "common_name": "western wild mouse",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Mus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mspretus.Ensembl.SPRETEiJv3",
+          "version": "1.0.0",
+          "organism": "Mus spretus",
+          "assembly": "SPRET_EiJ_v3",
+          "provider": "Ensembl",
+          "accession": "GCA_921997135.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_921997135.2/",
+          "file_name": "BSgenome.Mspretus.Ensembl.SPRETEiJv3_1.0.0.tar.gz",
+          "size": 599611670,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 139,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Mus"
+          },
+          "common_name": "western wild mouse",
+          "published": "2026-04-13T05:48:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mspretus.Ensembl.SPRETEiJv3/BSgenome.Mspretus.Ensembl.SPRETEiJv3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mustela erminea",
       "common_name": "ermine",
       "group": "vertebrate_mammalian",
@@ -75230,6 +75278,38 @@
       "common_name": "pinecone soldierfish",
       "published": "2026-04-13T05:47:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmurdjan.Ensembl.fMyrMur11/BSgenome.Mmurdjan.Ensembl.fMyrMur11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mspretus.Ensembl.SPRETEiJv3",
+      "version": "1.0.0",
+      "organism": "Mus spretus",
+      "assembly": "SPRET_EiJ_v3",
+      "provider": "Ensembl",
+      "accession": "GCA_921997135.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_921997135.2/",
+      "file_name": "BSgenome.Mspretus.Ensembl.SPRETEiJv3_1.0.0.tar.gz",
+      "size": 599611670,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 139,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Mus"
+      },
+      "common_name": "western wild mouse",
+      "published": "2026-04-13T05:48:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mspretus.Ensembl.SPRETEiJv3/BSgenome.Mspretus.Ensembl.SPRETEiJv3_1.0.0.tar.gz"
     }
   ]
 }
