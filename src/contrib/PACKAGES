@@ -4165,3 +4165,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcinereus.Ensembl.phaCinunswv41
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcatodon.Ensembl.ASM283717v2
+Version: 1.0.0
+NeedsCompilation: no

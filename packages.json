@@ -36094,6 +36094,54 @@
       ]
     },
     {
+      "organism": "Physeter catodon",
+      "common_name": "sperm whale",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Physeteridae",
+        "genus": "Physeter"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcatodon.Ensembl.ASM283717v2",
+          "version": "1.0.0",
+          "organism": "Physeter catodon",
+          "assembly": "ASM283717v2",
+          "provider": "Ensembl",
+          "accession": "GCA_002837175.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002837175.2/",
+          "file_name": "BSgenome.Pcatodon.Ensembl.ASM283717v2_1.0.0.tar.gz",
+          "size": 578322268,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 14676,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Physeteridae",
+            "genus": "Physeter"
+          },
+          "common_name": "sperm whale",
+          "published": "2026-04-13T19:52:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcatodon.Ensembl.ASM283717v2/BSgenome.Pcatodon.Ensembl.ASM283717v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Physeter macrocephalus",
       "common_name": "sperm whale",
       "group": "vertebrate_mammalian",
@@ -81010,6 +81058,38 @@
       "common_name": "koala",
       "published": "2026-04-13T19:52:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcinereus.Ensembl.phaCinunswv41/BSgenome.Pcinereus.Ensembl.phaCinunswv41_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcatodon.Ensembl.ASM283717v2",
+      "version": "1.0.0",
+      "organism": "Physeter catodon",
+      "assembly": "ASM283717v2",
+      "provider": "Ensembl",
+      "accession": "GCA_002837175.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002837175.2/",
+      "file_name": "BSgenome.Pcatodon.Ensembl.ASM283717v2_1.0.0.tar.gz",
+      "size": 578322268,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 14676,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Physeteridae",
+        "genus": "Physeter"
+      },
+      "common_name": "sperm whale",
+      "published": "2026-04-13T19:52:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcatodon.Ensembl.ASM283717v2/BSgenome.Pcatodon.Ensembl.ASM283717v2_1.0.0.tar.gz"
     }
   ]
 }
