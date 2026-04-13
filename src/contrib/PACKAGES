@@ -4337,3 +4337,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmusculus.Ensembl.GRCm39
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rbieti.Ensembl.ASM169854v1
+Version: 1.0.0
+NeedsCompilation: no
