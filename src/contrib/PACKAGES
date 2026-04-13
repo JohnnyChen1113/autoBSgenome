@@ -3981,3 +3981,7 @@ NeedsCompilation: no
 Package: BSgenome.Nscutatus.Ensembl.TS10Xv2PRI
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mauratus.Ensembl.MesAur10
+Version: 1.0.0
+NeedsCompilation: no

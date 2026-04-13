@@ -27306,6 +27306,54 @@
       ]
     },
     {
+      "organism": "Mesocricetus auratus",
+      "common_name": "golden hamster",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Mesocricetus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mauratus.Ensembl.MesAur10",
+          "version": "1.0.0",
+          "organism": "Mesocricetus auratus",
+          "assembly": "MesAur1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000349665.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000349665.1/",
+          "file_name": "BSgenome.Mauratus.Ensembl.MesAur10_1.0.0.tar.gz",
+          "size": 504238565,
+          "seq_ids": [
+            "KB708127.1",
+            "KB708128.1",
+            "KB708129.1",
+            "KB708130.1",
+            "KB708131.1"
+          ],
+          "seq_count": 21484,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Cricetidae",
+            "genus": "Mesocricetus"
+          },
+          "common_name": "golden hamster",
+          "published": "2026-04-13T11:55:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mauratus.Ensembl.MesAur10/BSgenome.Mauratus.Ensembl.MesAur10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Metarhizium album ARSEF 1941",
       "common_name": "",
       "group": "fungi",
@@ -77710,6 +77758,38 @@
       "common_name": "mainland tiger snake",
       "published": "2026-04-13T11:55:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nscutatus.Ensembl.TS10Xv2PRI/BSgenome.Nscutatus.Ensembl.TS10Xv2PRI_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mauratus.Ensembl.MesAur10",
+      "version": "1.0.0",
+      "organism": "Mesocricetus auratus",
+      "assembly": "MesAur1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000349665.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000349665.1/",
+      "file_name": "BSgenome.Mauratus.Ensembl.MesAur10_1.0.0.tar.gz",
+      "size": 504238565,
+      "seq_ids": [
+        "KB708127.1",
+        "KB708128.1",
+        "KB708129.1",
+        "KB708130.1",
+        "KB708131.1"
+      ],
+      "seq_count": 21484,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Mesocricetus"
+      },
+      "common_name": "golden hamster",
+      "published": "2026-04-13T11:55:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mauratus.Ensembl.MesAur10/BSgenome.Mauratus.Ensembl.MesAur10_1.0.0.tar.gz"
     }
   ]
 }
