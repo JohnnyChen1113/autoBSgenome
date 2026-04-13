@@ -23396,6 +23396,54 @@
       ]
     },
     {
+      "organism": "Jaculus jaculus",
+      "common_name": "lesser Egyptian jerboa",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Dipodidae",
+        "genus": "Jaculus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Jjaculus.Ensembl.JacJac10",
+          "version": "1.0.0",
+          "organism": "Jaculus jaculus",
+          "assembly": "JacJac1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000280705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000280705.1/",
+          "file_name": "BSgenome.Jjaculus.Ensembl.JacJac10_1.0.0.tar.gz",
+          "size": 595597130,
+          "seq_ids": [
+            "JH725437.1",
+            "JH725438.1",
+            "JH725439.1",
+            "JH725440.1",
+            "JH725441.1"
+          ],
+          "seq_count": 10898,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Dipodidae",
+            "genus": "Jaculus"
+          },
+          "common_name": "lesser Egyptian jerboa",
+          "published": "2026-04-13T08:10:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jjaculus.Ensembl.JacJac10/BSgenome.Jjaculus.Ensembl.JacJac10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Jaminaea rosea",
       "common_name": "",
       "group": "fungi",
@@ -75630,6 +75678,38 @@
       "common_name": "three-spined stickleback",
       "published": "2026-04-13T08:09:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gaculeatus.Ensembl.SYL/BSgenome.Gaculeatus.Ensembl.SYL_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Jjaculus.Ensembl.JacJac10",
+      "version": "1.0.0",
+      "organism": "Jaculus jaculus",
+      "assembly": "JacJac1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000280705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000280705.1/",
+      "file_name": "BSgenome.Jjaculus.Ensembl.JacJac10_1.0.0.tar.gz",
+      "size": 595597130,
+      "seq_ids": [
+        "JH725437.1",
+        "JH725438.1",
+        "JH725439.1",
+        "JH725440.1",
+        "JH725441.1"
+      ],
+      "seq_count": 10898,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Dipodidae",
+        "genus": "Jaculus"
+      },
+      "common_name": "lesser Egyptian jerboa",
+      "published": "2026-04-13T08:10:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jjaculus.Ensembl.JacJac10/BSgenome.Jjaculus.Ensembl.JacJac10_1.0.0.tar.gz"
     }
   ]
 }
