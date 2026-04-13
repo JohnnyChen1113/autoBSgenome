@@ -41978,6 +41978,54 @@
       ]
     },
     {
+      "organism": "Scleropages formosus",
+      "common_name": "Asian bonytongue",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Osteoglossiformes",
+        "family": "Osteoglossidae",
+        "genus": "Scleropages"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sformosus.Ensembl.fSclFor11",
+          "version": "1.0.0",
+          "organism": "Scleropages formosus",
+          "assembly": "fSclFor1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_900964775.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900964775.1/",
+          "file_name": "BSgenome.Sformosus.Ensembl.fSclFor11_1.0.0.tar.gz",
+          "size": 190139861,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 71,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Osteoglossiformes",
+            "family": "Osteoglossidae",
+            "genus": "Scleropages"
+          },
+          "common_name": "Asian bonytongue",
+          "published": "2026-04-13T21:59:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sformosus.Ensembl.fSclFor11/BSgenome.Sformosus.Ensembl.fSclFor11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sclerotinia sclerotiorum 1980 UF-70",
       "common_name": "",
       "group": "fungi",
@@ -82336,6 +82384,38 @@
       "common_name": "Bolivian squirrel monkey",
       "published": "2026-04-13T21:59:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sboliviensis.Ensembl.SaiBol10/BSgenome.Sboliviensis.Ensembl.SaiBol10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sformosus.Ensembl.fSclFor11",
+      "version": "1.0.0",
+      "organism": "Scleropages formosus",
+      "assembly": "fSclFor1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_900964775.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900964775.1/",
+      "file_name": "BSgenome.Sformosus.Ensembl.fSclFor11_1.0.0.tar.gz",
+      "size": 190139861,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 71,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Osteoglossiformes",
+        "family": "Osteoglossidae",
+        "genus": "Scleropages"
+      },
+      "common_name": "Asian bonytongue",
+      "published": "2026-04-13T21:59:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sformosus.Ensembl.fSclFor11/BSgenome.Sformosus.Ensembl.fSclFor11_1.0.0.tar.gz"
     }
   ]
 }

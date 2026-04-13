@@ -4237,3 +4237,7 @@ NeedsCompilation: no
 Package: BSgenome.Sboliviensis.Ensembl.SaiBol10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sformosus.Ensembl.fSclFor11
+Version: 1.0.0
+NeedsCompilation: no
