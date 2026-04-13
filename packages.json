@@ -10776,6 +10776,52 @@
       ]
     },
     {
+      "organism": "Chelydra serpentina",
+      "common_name": "Common snapping turtle",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Chelydridae",
+        "genus": "Chelydra"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cserpentina.Ensembl.Chelydraserpentina10",
+          "version": "1.0.0",
+          "organism": "Chelydra serpentina",
+          "assembly": "Chelydra_serpentina-1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_007922165.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_007922165.1/",
+          "file_name": "BSgenome.Cserpentina.Ensembl.Chelydraserpentina10_1.0.0.tar.gz",
+          "size": 560484039,
+          "seq_ids": [
+            "ML689093.1",
+            "ML689097.1",
+            "ML689129.1",
+            "ML689107.1",
+            "ML689098.1"
+          ],
+          "seq_count": 113431,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Chelydridae",
+            "genus": "Chelydra"
+          },
+          "common_name": "Common snapping turtle",
+          "published": "2026-04-13T18:08:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cserpentina.Ensembl.Chelydraserpentina10/BSgenome.Cserpentina.Ensembl.Chelydraserpentina10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chenopodium quinoa",
       "common_name": "quinoa",
       "group": "plant",
@@ -80277,6 +80323,37 @@
       "common_name": "house mouse",
       "published": "2026-04-13T18:08:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.CBAJv3/BSgenome.Mmusculus.Ensembl.CBAJv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cserpentina.Ensembl.Chelydraserpentina10",
+      "version": "1.0.0",
+      "organism": "Chelydra serpentina",
+      "assembly": "Chelydra_serpentina-1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_007922165.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_007922165.1/",
+      "file_name": "BSgenome.Cserpentina.Ensembl.Chelydraserpentina10_1.0.0.tar.gz",
+      "size": 560484039,
+      "seq_ids": [
+        "ML689093.1",
+        "ML689097.1",
+        "ML689129.1",
+        "ML689107.1",
+        "ML689098.1"
+      ],
+      "seq_count": 113431,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Chelydridae",
+        "genus": "Chelydra"
+      },
+      "common_name": "Common snapping turtle",
+      "published": "2026-04-13T18:08:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cserpentina.Ensembl.Chelydraserpentina10/BSgenome.Cserpentina.Ensembl.Chelydraserpentina10_1.0.0.tar.gz"
     }
   ]
 }
