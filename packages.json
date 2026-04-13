@@ -34416,6 +34416,52 @@
       ]
     },
     {
+      "organism": "Pelodiscus sinensis",
+      "common_name": "Chinese soft-shelled turtle",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Trionychidae",
+        "genus": "Pelodiscus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psinensis.Ensembl.PelSin10",
+          "version": "1.0.0",
+          "organism": "Pelodiscus sinensis",
+          "assembly": "PelSin_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000230535.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000230535.1/",
+          "file_name": "BSgenome.Psinensis.Ensembl.PelSin10_1.0.0.tar.gz",
+          "size": 510069523,
+          "seq_ids": [
+            "JH208680.1",
+            "JH209112.1",
+            "JH208257.1",
+            "JH209032.1",
+            "JH207676.1"
+          ],
+          "seq_count": 19904,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Trionychidae",
+            "genus": "Pelodiscus"
+          },
+          "common_name": "Chinese soft-shelled turtle",
+          "published": "2026-04-13T18:07:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psinensis.Ensembl.PelSin10/BSgenome.Psinensis.Ensembl.PelSin10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pelusios castaneus",
       "common_name": "West African mud turtle",
       "group": "vertebrate_other",
@@ -79928,6 +79974,37 @@
       "common_name": "central bearded dragon",
       "published": "2026-04-13T18:07:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvitticeps.Ensembl.pvi11/BSgenome.Pvitticeps.Ensembl.pvi11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psinensis.Ensembl.PelSin10",
+      "version": "1.0.0",
+      "organism": "Pelodiscus sinensis",
+      "assembly": "PelSin_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000230535.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000230535.1/",
+      "file_name": "BSgenome.Psinensis.Ensembl.PelSin10_1.0.0.tar.gz",
+      "size": 510069523,
+      "seq_ids": [
+        "JH208680.1",
+        "JH209112.1",
+        "JH208257.1",
+        "JH209032.1",
+        "JH207676.1"
+      ],
+      "seq_count": 19904,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Trionychidae",
+        "genus": "Pelodiscus"
+      },
+      "common_name": "Chinese soft-shelled turtle",
+      "published": "2026-04-13T18:07:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psinensis.Ensembl.PelSin10/BSgenome.Psinensis.Ensembl.PelSin10_1.0.0.tar.gz"
     }
   ]
 }
