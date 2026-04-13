@@ -30728,6 +30728,54 @@
       ]
     },
     {
+      "organism": "Nothobranchius furzeri",
+      "common_name": "turquoise killifish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Nothobranchiidae",
+        "genus": "Nothobranchius"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nfurzeri.Ensembl.Nfu20140520",
+          "version": "1.0.0",
+          "organism": "Nothobranchius furzeri",
+          "assembly": "Nfu_20140520",
+          "provider": "Ensembl",
+          "accession": "GCA_001465895.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001465895.2/",
+          "file_name": "BSgenome.Nfurzeri.Ensembl.Nfu20140520_1.0.0.tar.gz",
+          "size": 209062319,
+          "seq_ids": [
+            "sgr01",
+            "sgr02",
+            "sgr03",
+            "sgr04",
+            "sgr05"
+          ],
+          "seq_count": 5897,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Nothobranchiidae",
+            "genus": "Nothobranchius"
+          },
+          "common_name": "turquoise killifish",
+          "published": "2026-04-13T10:20:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nfurzeri.Ensembl.Nfu20140520/BSgenome.Nfurzeri.Ensembl.Nfu20140520_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nothoprocta perdicaria",
       "common_name": "",
       "group": "vertebrate_other",
@@ -76430,6 +76478,38 @@
       "common_name": "Oriental scops-owl",
       "published": "2026-04-13T10:19:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osunia.Ensembl.OtuSun10/BSgenome.Osunia.Ensembl.OtuSun10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nfurzeri.Ensembl.Nfu20140520",
+      "version": "1.0.0",
+      "organism": "Nothobranchius furzeri",
+      "assembly": "Nfu_20140520",
+      "provider": "Ensembl",
+      "accession": "GCA_001465895.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001465895.2/",
+      "file_name": "BSgenome.Nfurzeri.Ensembl.Nfu20140520_1.0.0.tar.gz",
+      "size": 209062319,
+      "seq_ids": [
+        "sgr01",
+        "sgr02",
+        "sgr03",
+        "sgr04",
+        "sgr05"
+      ],
+      "seq_count": 5897,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Nothobranchiidae",
+        "genus": "Nothobranchius"
+      },
+      "common_name": "turquoise killifish",
+      "published": "2026-04-13T10:20:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nfurzeri.Ensembl.Nfu20140520/BSgenome.Nfurzeri.Ensembl.Nfu20140520_1.0.0.tar.gz"
     }
   ]
 }

@@ -3909,3 +3909,7 @@ NeedsCompilation: no
 Package: BSgenome.Osunia.Ensembl.OtuSun10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nfurzeri.Ensembl.Nfu20140520
+Version: 1.0.0
+NeedsCompilation: no
