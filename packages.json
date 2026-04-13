@@ -28670,6 +28670,54 @@
       ]
     },
     {
+      "organism": "Myripristis murdjan",
+      "common_name": "pinecone soldierfish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Holocentriformes",
+        "family": "Holocentridae",
+        "genus": "Myripristis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mmurdjan.Ensembl.fMyrMur11",
+          "version": "1.0.0",
+          "organism": "Myripristis murdjan",
+          "assembly": "fMyrMur1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_902150065.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902150065.1/",
+          "file_name": "BSgenome.Mmurdjan.Ensembl.fMyrMur11_1.0.0.tar.gz",
+          "size": 198904642,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 87,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Holocentriformes",
+            "family": "Holocentridae",
+            "genus": "Myripristis"
+          },
+          "common_name": "pinecone soldierfish",
+          "published": "2026-04-13T05:47:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmurdjan.Ensembl.fMyrMur11/BSgenome.Mmurdjan.Ensembl.fMyrMur11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Myzus persicae",
       "common_name": "green peach aphid",
       "group": "invertebrate",
@@ -75150,6 +75198,38 @@
       "common_name": "",
       "published": "2026-04-13T05:47:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cangolensis.Ensembl.Cangpa10/BSgenome.Cangolensis.Ensembl.Cangpa10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmurdjan.Ensembl.fMyrMur11",
+      "version": "1.0.0",
+      "organism": "Myripristis murdjan",
+      "assembly": "fMyrMur1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_902150065.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902150065.1/",
+      "file_name": "BSgenome.Mmurdjan.Ensembl.fMyrMur11_1.0.0.tar.gz",
+      "size": 198904642,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 87,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Holocentriformes",
+        "family": "Holocentridae",
+        "genus": "Myripristis"
+      },
+      "common_name": "pinecone soldierfish",
+      "published": "2026-04-13T05:47:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmurdjan.Ensembl.fMyrMur11/BSgenome.Mmurdjan.Ensembl.fMyrMur11_1.0.0.tar.gz"
     }
   ]
 }
