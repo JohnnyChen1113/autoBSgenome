@@ -28393,6 +28393,54 @@
       ]
     },
     {
+      "organism": "Mus caroli",
+      "common_name": "Ryukyu mouse",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Mus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mcaroli.Ensembl.CAROLIEIJv11",
+          "version": "1.0.0",
+          "organism": "Mus caroli",
+          "assembly": "CAROLI_EIJ_v1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_900094665.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900094665.2/",
+          "file_name": "BSgenome.Mcaroli.Ensembl.CAROLIEIJv11_1.0.0.tar.gz",
+          "size": 547800598,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 3162,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Mus"
+          },
+          "common_name": "Ryukyu mouse",
+          "published": "2026-04-13T08:10:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcaroli.Ensembl.CAROLIEIJv11/BSgenome.Mcaroli.Ensembl.CAROLIEIJv11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mus musculus",
       "common_name": "house mouse",
       "group": "vertebrate_mammalian",
@@ -75710,6 +75758,38 @@
       "common_name": "lesser Egyptian jerboa",
       "published": "2026-04-13T08:10:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jjaculus.Ensembl.JacJac10/BSgenome.Jjaculus.Ensembl.JacJac10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mcaroli.Ensembl.CAROLIEIJv11",
+      "version": "1.0.0",
+      "organism": "Mus caroli",
+      "assembly": "CAROLI_EIJ_v1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_900094665.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900094665.2/",
+      "file_name": "BSgenome.Mcaroli.Ensembl.CAROLIEIJv11_1.0.0.tar.gz",
+      "size": 547800598,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 3162,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Mus"
+      },
+      "common_name": "Ryukyu mouse",
+      "published": "2026-04-13T08:10:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcaroli.Ensembl.CAROLIEIJv11/BSgenome.Mcaroli.Ensembl.CAROLIEIJv11_1.0.0.tar.gz"
     }
   ]
 }
