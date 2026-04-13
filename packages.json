@@ -38809,7 +38809,7 @@
           "accession": "GCA_000956105.1",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000956105.1/",
           "file_name": "BSgenome.Pcoquereli.Ensembl.Pcoq10_1.0.0.tar.gz",
-          "size": 507390088,
+          "size": 507390126,
           "seq_ids": [
             "KQ012994.1",
             "KQ027066.1",
@@ -38829,7 +38829,7 @@
             "genus": "Propithecus"
           },
           "common_name": "Coquerel's sifaka",
-          "published": "2026-04-13T22:52:57Z",
+          "published": "2026-04-13T23:46:37Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcoquereli.Ensembl.Pcoq10/BSgenome.Pcoquereli.Ensembl.Pcoq10_1.0.0.tar.gz"
         }
       ]
@@ -83423,38 +83423,6 @@
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11/BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11_1.0.0.tar.gz"
     },
     {
-      "package": "BSgenome.Pcoquereli.Ensembl.Pcoq10",
-      "version": "1.0.0",
-      "organism": "Propithecus coquereli",
-      "assembly": "Pcoq_1.0",
-      "provider": "Ensembl",
-      "accession": "GCA_000956105.1",
-      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000956105.1/",
-      "file_name": "BSgenome.Pcoquereli.Ensembl.Pcoq10_1.0.0.tar.gz",
-      "size": 507390088,
-      "seq_ids": [
-        "KQ012994.1",
-        "KQ027066.1",
-        "KQ012995.1",
-        "KQ024846.1",
-        "KQ022624.1"
-      ],
-      "seq_count": 22539,
-      "group": "vertebrate_mammalian",
-      "taxonomy": {
-        "domain": "Eukaryota",
-        "kingdom": "Metazoa",
-        "phylum": "Chordata",
-        "class": "Mammalia",
-        "order": "Primates",
-        "family": "Indriidae",
-        "genus": "Propithecus"
-      },
-      "common_name": "Coquerel's sifaka",
-      "published": "2026-04-13T22:52:57Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcoquereli.Ensembl.Pcoq10/BSgenome.Pcoquereli.Ensembl.Pcoq10_1.0.0.tar.gz"
-    },
-    {
       "package": "BSgenome.Soccidentalis.Ensembl.Soccidv01",
       "version": "1.0.0",
       "organism": "Strix occidentalis caurina",
@@ -83709,6 +83677,38 @@
       "common_name": "",
       "published": "2026-04-13T23:46:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Srhinocerous.Ensembl.SAMN03320098v11/BSgenome.Srhinocerous.Ensembl.SAMN03320098v11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcoquereli.Ensembl.Pcoq10",
+      "version": "1.0.0",
+      "organism": "Propithecus coquereli",
+      "assembly": "Pcoq_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000956105.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000956105.1/",
+      "file_name": "BSgenome.Pcoquereli.Ensembl.Pcoq10_1.0.0.tar.gz",
+      "size": 507390126,
+      "seq_ids": [
+        "KQ012994.1",
+        "KQ027066.1",
+        "KQ012995.1",
+        "KQ024846.1",
+        "KQ022624.1"
+      ],
+      "seq_count": 22539,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Indriidae",
+        "genus": "Propithecus"
+      },
+      "common_name": "Coquerel's sifaka",
+      "published": "2026-04-13T23:46:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcoquereli.Ensembl.Pcoq10/BSgenome.Pcoquereli.Ensembl.Pcoq10_1.0.0.tar.gz"
     }
   ]
 }

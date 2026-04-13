@@ -4278,10 +4278,6 @@ Package: BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Pcoquereli.Ensembl.Pcoq10
-Version: 1.0.0
-NeedsCompilation: no
-
 Package: BSgenome.Soccidentalis.Ensembl.Soccidv01
 Version: 1.0.0
 NeedsCompilation: no
@@ -4311,5 +4307,9 @@ Version: 1.0.0
 NeedsCompilation: no
 
 Package: BSgenome.Srhinocerous.Ensembl.SAMN03320098v11
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Pcoquereli.Ensembl.Pcoq10
 Version: 1.0.0
 NeedsCompilation: no
