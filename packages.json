@@ -32048,6 +32048,38 @@
           "common_name": "Nile tilapia",
           "published": "2026-04-04T05:46:23Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU/BSgenome.Oniloticus.NCBI.OniloticusUMDNMBU_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Oniloticus.Ensembl.OniloticusUMDNMBU",
+          "version": "1.0.0",
+          "organism": "Oreochromis niloticus",
+          "assembly": "O_niloticus_UMD_NMBU",
+          "provider": "Ensembl",
+          "accession": "GCA_001858045.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001858045.3/",
+          "file_name": "BSgenome.Oniloticus.Ensembl.OniloticusUMDNMBU_1.0.0.tar.gz",
+          "size": 238786493,
+          "seq_ids": [
+            "LG1",
+            "LG2",
+            "LG4",
+            "LG5",
+            "LG6"
+          ],
+          "seq_count": 2460,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cichliformes",
+            "family": "Cichlidae",
+            "genus": "Oreochromis"
+          },
+          "common_name": "Nile tilapia",
+          "published": "2026-04-13T11:53:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oniloticus.Ensembl.OniloticusUMDNMBU/BSgenome.Oniloticus.Ensembl.OniloticusUMDNMBU_1.0.0.tar.gz"
         }
       ]
     },
@@ -77150,6 +77182,38 @@
       "common_name": "helmeted guineafowl",
       "published": "2026-04-13T11:53:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nmeleagris.Ensembl.NumMel10/BSgenome.Nmeleagris.Ensembl.NumMel10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Oniloticus.Ensembl.OniloticusUMDNMBU",
+      "version": "1.0.0",
+      "organism": "Oreochromis niloticus",
+      "assembly": "O_niloticus_UMD_NMBU",
+      "provider": "Ensembl",
+      "accession": "GCA_001858045.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001858045.3/",
+      "file_name": "BSgenome.Oniloticus.Ensembl.OniloticusUMDNMBU_1.0.0.tar.gz",
+      "size": 238786493,
+      "seq_ids": [
+        "LG1",
+        "LG2",
+        "LG4",
+        "LG5",
+        "LG6"
+      ],
+      "seq_count": 2460,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Oreochromis"
+      },
+      "common_name": "Nile tilapia",
+      "published": "2026-04-13T11:53:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oniloticus.Ensembl.OniloticusUMDNMBU/BSgenome.Oniloticus.Ensembl.OniloticusUMDNMBU_1.0.0.tar.gz"
     }
   ]
 }
