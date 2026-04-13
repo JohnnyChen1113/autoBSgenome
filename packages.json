@@ -10772,6 +10772,37 @@
           "common_name": "Abingdon island giant tortoise",
           "published": "2026-04-04T11:41:18Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cabingdonii.NCBI.CheloAbing20/BSgenome.Cabingdonii.NCBI.CheloAbing20_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cabingdonii.Ensembl.ASM359739v1",
+          "version": "1.0.0",
+          "organism": "Chelonoidis abingdonii",
+          "assembly": "ASM359739v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003597395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003597395.1/",
+          "file_name": "BSgenome.Cabingdonii.Ensembl.ASM359739v1_1.0.0.tar.gz",
+          "size": 530325434,
+          "seq_ids": [
+            "PKMU01000001.1",
+            "PKMU01001735.1",
+            "PKMU01003956.1",
+            "PKMU01008401.1",
+            "PKMU01002845.1"
+          ],
+          "seq_count": 10618,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Testudines",
+            "family": "Testudinidae",
+            "genus": "Chelonoidis"
+          },
+          "common_name": "Abingdon island giant tortoise",
+          "published": "2026-04-13T21:01:41Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cabingdonii.Ensembl.ASM359739v1/BSgenome.Cabingdonii.Ensembl.ASM359739v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -81746,6 +81777,37 @@
       "common_name": "Chinook salmon",
       "published": "2026-04-13T21:01:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Otshawytscha.Ensembl.Otshv20/BSgenome.Otshawytscha.Ensembl.Otshv20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cabingdonii.Ensembl.ASM359739v1",
+      "version": "1.0.0",
+      "organism": "Chelonoidis abingdonii",
+      "assembly": "ASM359739v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003597395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003597395.1/",
+      "file_name": "BSgenome.Cabingdonii.Ensembl.ASM359739v1_1.0.0.tar.gz",
+      "size": 530325434,
+      "seq_ids": [
+        "PKMU01000001.1",
+        "PKMU01001735.1",
+        "PKMU01003956.1",
+        "PKMU01008401.1",
+        "PKMU01002845.1"
+      ],
+      "seq_count": 10618,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Testudines",
+        "family": "Testudinidae",
+        "genus": "Chelonoidis"
+      },
+      "common_name": "Abingdon island giant tortoise",
+      "published": "2026-04-13T21:01:41Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cabingdonii.Ensembl.ASM359739v1/BSgenome.Cabingdonii.Ensembl.ASM359739v1_1.0.0.tar.gz"
     }
   ]
 }
