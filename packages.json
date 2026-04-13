@@ -29305,6 +29305,54 @@
       ]
     },
     {
+      "organism": "Mustela putorius furo",
+      "common_name": "domestic ferret",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Mustelidae",
+        "genus": "Mustela"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mputorius.Ensembl.MusPutFur10",
+          "version": "1.0.0",
+          "organism": "Mustela putorius furo",
+          "assembly": "MusPutFur1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000215625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000215625.1/",
+          "file_name": "BSgenome.Mputorius.Ensembl.MusPutFur10_1.0.0.tar.gz",
+          "size": 549187676,
+          "seq_ids": [
+            "GL896898.1",
+            "GL896899.1",
+            "GL896900.1",
+            "GL896901.1",
+            "GL896902.1"
+          ],
+          "seq_count": 7741,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Mustelidae",
+            "genus": "Mustela"
+          },
+          "common_name": "domestic ferret",
+          "published": "2026-04-13T13:46:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mputorius.Ensembl.MusPutFur10/BSgenome.Mputorius.Ensembl.MusPutFur10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mycetomoellerius zeteki",
       "common_name": "",
       "group": "invertebrate",
@@ -78270,6 +78318,38 @@
       "common_name": "Indian medaka",
       "published": "2026-04-13T13:46:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Omelastigma.Ensembl.Omv07RACA/BSgenome.Omelastigma.Ensembl.Omv07RACA_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mputorius.Ensembl.MusPutFur10",
+      "version": "1.0.0",
+      "organism": "Mustela putorius furo",
+      "assembly": "MusPutFur1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000215625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000215625.1/",
+      "file_name": "BSgenome.Mputorius.Ensembl.MusPutFur10_1.0.0.tar.gz",
+      "size": 549187676,
+      "seq_ids": [
+        "GL896898.1",
+        "GL896899.1",
+        "GL896900.1",
+        "GL896901.1",
+        "GL896902.1"
+      ],
+      "seq_count": 7741,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Mustelidae",
+        "genus": "Mustela"
+      },
+      "common_name": "domestic ferret",
+      "published": "2026-04-13T13:46:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mputorius.Ensembl.MusPutFur10/BSgenome.Mputorius.Ensembl.MusPutFur10_1.0.0.tar.gz"
     }
   ]
 }

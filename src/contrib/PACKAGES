@@ -4013,3 +4013,7 @@ NeedsCompilation: no
 Package: BSgenome.Omelastigma.Ensembl.Omv07RACA
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mputorius.Ensembl.MusPutFur10
+Version: 1.0.0
+NeedsCompilation: no
