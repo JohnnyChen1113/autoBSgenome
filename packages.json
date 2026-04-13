@@ -42742,6 +42742,38 @@
           "common_name": "",
           "published": "2026-04-04T11:03:14Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11/BSgenome.Sanshuiensis.NCBI.SAMN03320099WGSv11_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11",
+          "version": "1.0.0",
+          "organism": "Sinocyclocheilus anshuiensis",
+          "assembly": "SAMN03320099.WGS_v1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_001515605.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001515605.1/",
+          "file_name": "BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11_1.0.0.tar.gz",
+          "size": 363286202,
+          "seq_ids": [
+            "LAVE01S013150.1",
+            "LAVE01S011841.1",
+            "LAVE01S016170.1",
+            "LAVE01S014590.1",
+            "LAVE01S011854.1"
+          ],
+          "seq_count": 85682,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Sinocyclocheilus"
+          },
+          "common_name": "",
+          "published": "2026-04-13T22:52:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11/BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11_1.0.0.tar.gz"
         }
       ]
     },
@@ -83005,6 +83037,38 @@
       "common_name": "Argentine black and white tegu",
       "published": "2026-04-13T22:52:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smerianae.Ensembl.HLtupMer3/BSgenome.Smerianae.Ensembl.HLtupMer3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11",
+      "version": "1.0.0",
+      "organism": "Sinocyclocheilus anshuiensis",
+      "assembly": "SAMN03320099.WGS_v1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_001515605.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001515605.1/",
+      "file_name": "BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11_1.0.0.tar.gz",
+      "size": 363286202,
+      "seq_ids": [
+        "LAVE01S013150.1",
+        "LAVE01S011841.1",
+        "LAVE01S016170.1",
+        "LAVE01S014590.1",
+        "LAVE01S011854.1"
+      ],
+      "seq_count": 85682,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Sinocyclocheilus"
+      },
+      "common_name": "",
+      "published": "2026-04-13T22:52:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11/BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11_1.0.0.tar.gz"
     }
   ]
 }

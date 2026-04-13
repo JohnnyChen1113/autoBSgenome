@@ -4273,3 +4273,7 @@ NeedsCompilation: no
 Package: BSgenome.Smerianae.Ensembl.HLtupMer3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sanshuiensis.Ensembl.SAMN03320099WGSv11
+Version: 1.0.0
+NeedsCompilation: no
