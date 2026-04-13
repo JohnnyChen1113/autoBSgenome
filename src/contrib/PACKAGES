@@ -3873,3 +3873,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcaroli.Ensembl.CAROLIEIJv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ggallus.Ensembl.GRCg6a
+Version: 1.0.0
+NeedsCompilation: no
