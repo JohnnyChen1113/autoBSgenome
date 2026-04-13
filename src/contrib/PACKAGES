@@ -3969,3 +3969,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmagnuspinnatus.Ensembl.PMfa
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oaries.Ensembl.ASM1117029v1
+Version: 1.0.0
+NeedsCompilation: no
