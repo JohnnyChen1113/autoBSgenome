@@ -3917,3 +3917,7 @@ NeedsCompilation: no
 Package: BSgenome.Nperdicaria.Ensembl.notPer1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mnemestrina.Ensembl.Mnem10
+Version: 1.0.0
+NeedsCompilation: no
