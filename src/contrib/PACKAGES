@@ -4041,3 +4041,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptigris.Ensembl.PanTig10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Odegus.Ensembl.OctDeg10
+Version: 1.0.0
+NeedsCompilation: no

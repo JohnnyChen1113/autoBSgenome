@@ -31906,6 +31906,38 @@
           "common_name": "degu",
           "published": "2026-04-04T02:28:59Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Odegus.NCBI.OctDeg10/BSgenome.Odegus.NCBI.OctDeg10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Odegus.Ensembl.OctDeg10",
+          "version": "1.0.0",
+          "organism": "Octodon degus",
+          "assembly": "OctDeg1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000260255.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000260255.1/",
+          "file_name": "BSgenome.Odegus.Ensembl.OctDeg10_1.0.0.tar.gz",
+          "size": 610664701,
+          "seq_ids": [
+            "JH651516.1",
+            "JH651518.1",
+            "JH651517.1",
+            "JH651519.1",
+            "JH651522.1"
+          ],
+          "seq_count": 7134,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Octodontidae",
+            "genus": "Octodon"
+          },
+          "common_name": "degu",
+          "published": "2026-04-13T15:19:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Odegus.Ensembl.OctDeg10/BSgenome.Odegus.Ensembl.OctDeg10_1.0.0.tar.gz"
         }
       ]
     },
@@ -78795,6 +78827,38 @@
       "common_name": "Amur tiger",
       "published": "2026-04-13T15:19:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptigris.Ensembl.PanTig10/BSgenome.Ptigris.Ensembl.PanTig10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Odegus.Ensembl.OctDeg10",
+      "version": "1.0.0",
+      "organism": "Octodon degus",
+      "assembly": "OctDeg1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000260255.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000260255.1/",
+      "file_name": "BSgenome.Odegus.Ensembl.OctDeg10_1.0.0.tar.gz",
+      "size": 610664701,
+      "seq_ids": [
+        "JH651516.1",
+        "JH651518.1",
+        "JH651517.1",
+        "JH651519.1",
+        "JH651522.1"
+      ],
+      "seq_count": 7134,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Octodontidae",
+        "genus": "Octodon"
+      },
+      "common_name": "degu",
+      "published": "2026-04-13T15:19:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Odegus.Ensembl.OctDeg10/BSgenome.Odegus.Ensembl.OctDeg10_1.0.0.tar.gz"
     }
   ]
 }
