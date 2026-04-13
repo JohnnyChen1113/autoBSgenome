@@ -4201,3 +4201,7 @@ NeedsCompilation: no
 Package: BSgenome.Oaries.Ensembl.ASM2241668v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Otshawytscha.Ensembl.Otshv20
+Version: 1.0.0
+NeedsCompilation: no

@@ -32516,6 +32516,54 @@
       ]
     },
     {
+      "organism": "Oncorhynchus tshawytscha",
+      "common_name": "Chinook salmon",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Oncorhynchus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Otshawytscha.Ensembl.Otshv20",
+          "version": "1.0.0",
+          "organism": "Oncorhynchus tshawytscha",
+          "assembly": "Otsh_v2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_018296145.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_018296145.1/",
+          "file_name": "BSgenome.Otshawytscha.Ensembl.Otshv20_1.0.0.tar.gz",
+          "size": 482028161,
+          "seq_ids": [
+            "LG01",
+            "LG02",
+            "LG03",
+            "LG04",
+            "LG05"
+          ],
+          "seq_count": 7665,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Salmoniformes",
+            "family": "Salmonidae",
+            "genus": "Oncorhynchus"
+          },
+          "common_name": "Chinook salmon",
+          "published": "2026-04-13T21:01:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Otshawytscha.Ensembl.Otshv20/BSgenome.Otshawytscha.Ensembl.Otshv20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ooceraea biroi",
       "common_name": "clonal raider ant",
       "group": "invertebrate",
@@ -81666,6 +81714,38 @@
       "common_name": "sheep",
       "published": "2026-04-13T21:00:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ASM2241668v1/BSgenome.Oaries.Ensembl.ASM2241668v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Otshawytscha.Ensembl.Otshv20",
+      "version": "1.0.0",
+      "organism": "Oncorhynchus tshawytscha",
+      "assembly": "Otsh_v2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_018296145.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_018296145.1/",
+      "file_name": "BSgenome.Otshawytscha.Ensembl.Otshv20_1.0.0.tar.gz",
+      "size": 482028161,
+      "seq_ids": [
+        "LG01",
+        "LG02",
+        "LG03",
+        "LG04",
+        "LG05"
+      ],
+      "seq_count": 7665,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Oncorhynchus"
+      },
+      "common_name": "Chinook salmon",
+      "published": "2026-04-13T21:01:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Otshawytscha.Ensembl.Otshv20/BSgenome.Otshawytscha.Ensembl.Otshv20_1.0.0.tar.gz"
     }
   ]
 }
