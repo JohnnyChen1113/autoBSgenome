@@ -4113,3 +4113,7 @@ NeedsCompilation: no
 Package: BSgenome.Oaries.Ensembl.ASM2241691v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scanaria.Ensembl.SCA1
+Version: 1.0.0
+NeedsCompilation: no

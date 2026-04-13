@@ -40989,6 +40989,54 @@
       ]
     },
     {
+      "organism": "Serinus canaria",
+      "common_name": "Common canary",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Serinus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Scanaria.Ensembl.SCA1",
+          "version": "1.0.0",
+          "organism": "Serinus canaria",
+          "assembly": "SCA1",
+          "provider": "Ensembl",
+          "accession": "GCA_000534875.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000534875.1/",
+          "file_name": "BSgenome.Scanaria.Ensembl.SCA1_1.0.0.tar.gz",
+          "size": 271007052,
+          "seq_ids": [
+            "HG009209.1",
+            "HG009213.1",
+            "HG009210.1",
+            "HG009211.1",
+            "HG009212.1"
+          ],
+          "seq_count": 304399,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Fringillidae",
+            "genus": "Serinus"
+          },
+          "common_name": "Common canary",
+          "published": "2026-04-13T18:07:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scanaria.Ensembl.SCA1/BSgenome.Scanaria.Ensembl.SCA1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Seriola dumerili",
       "common_name": "greater amberjack",
       "group": "vertebrate_other",
@@ -80069,6 +80117,38 @@
       "common_name": "sheep",
       "published": "2026-04-13T18:07:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ASM2241691v1/BSgenome.Oaries.Ensembl.ASM2241691v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Scanaria.Ensembl.SCA1",
+      "version": "1.0.0",
+      "organism": "Serinus canaria",
+      "assembly": "SCA1",
+      "provider": "Ensembl",
+      "accession": "GCA_000534875.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000534875.1/",
+      "file_name": "BSgenome.Scanaria.Ensembl.SCA1_1.0.0.tar.gz",
+      "size": 271007052,
+      "seq_ids": [
+        "HG009209.1",
+        "HG009213.1",
+        "HG009210.1",
+        "HG009211.1",
+        "HG009212.1"
+      ],
+      "seq_count": 304399,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Fringillidae",
+        "genus": "Serinus"
+      },
+      "common_name": "Common canary",
+      "published": "2026-04-13T18:07:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scanaria.Ensembl.SCA1/BSgenome.Scanaria.Ensembl.SCA1_1.0.0.tar.gz"
     }
   ]
 }
