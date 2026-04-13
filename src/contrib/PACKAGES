@@ -4329,3 +4329,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscrofa.Ensembl.TibetanPigv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rroxellana.Ensembl.Rroxv1
+Version: 1.0.0
+NeedsCompilation: no

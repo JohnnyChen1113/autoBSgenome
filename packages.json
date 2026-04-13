@@ -40639,6 +40639,38 @@
           "common_name": "golden snub-nosed monkey",
           "published": "2026-04-04T02:29:28Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rroxellana.NCBI.ASM756505v1/BSgenome.Rroxellana.NCBI.ASM756505v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Rroxellana.Ensembl.Rroxv1",
+          "version": "1.0.0",
+          "organism": "Rhinopithecus roxellana",
+          "assembly": "Rrox_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000769185.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000769185.1/",
+          "file_name": "BSgenome.Rroxellana.Ensembl.Rroxv1_1.0.0.tar.gz",
+          "size": 679706519,
+          "seq_ids": [
+            "KN296311.1",
+            "KN299482.1",
+            "KN300162.1",
+            "KN299057.1",
+            "KN298804.1"
+          ],
+          "seq_count": 135512,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Rhinopithecus"
+          },
+          "common_name": "golden snub-nosed monkey",
+          "published": "2026-04-13T23:48:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rroxellana.Ensembl.Rroxv1/BSgenome.Rroxellana.Ensembl.Rroxv1_1.0.0.tar.gz"
         }
       ]
     },
@@ -83997,6 +84029,38 @@
       "common_name": "pig",
       "published": "2026-04-13T23:48:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.TibetanPigv2/BSgenome.Sscrofa.Ensembl.TibetanPigv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rroxellana.Ensembl.Rroxv1",
+      "version": "1.0.0",
+      "organism": "Rhinopithecus roxellana",
+      "assembly": "Rrox_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000769185.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000769185.1/",
+      "file_name": "BSgenome.Rroxellana.Ensembl.Rroxv1_1.0.0.tar.gz",
+      "size": 679706519,
+      "seq_ids": [
+        "KN296311.1",
+        "KN299482.1",
+        "KN300162.1",
+        "KN299057.1",
+        "KN298804.1"
+      ],
+      "seq_count": 135512,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Rhinopithecus"
+      },
+      "common_name": "golden snub-nosed monkey",
+      "published": "2026-04-13T23:48:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rroxellana.Ensembl.Rroxv1/BSgenome.Rroxellana.Ensembl.Rroxv1_1.0.0.tar.gz"
     }
   ]
 }
