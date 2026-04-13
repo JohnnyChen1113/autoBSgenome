@@ -3789,3 +3789,7 @@ NeedsCompilation: no
 Package: BSgenome.Lcrocea.Ensembl.Lcrocea20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gwilldenowi.Ensembl.fGouWil21
+Version: 1.0.0
+NeedsCompilation: no

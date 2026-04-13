@@ -21489,6 +21489,54 @@
       ]
     },
     {
+      "organism": "Gouania willdenowi",
+      "common_name": "blunt-snouted clingfish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Blenniiformes",
+        "family": "Gobiesocidae",
+        "genus": "Gouania"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gwilldenowi.Ensembl.fGouWil21",
+          "version": "1.0.0",
+          "organism": "Gouania willdenowi",
+          "assembly": "fGouWil2.1",
+          "provider": "Ensembl",
+          "accession": "GCA_900634775.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900634775.1/",
+          "file_name": "BSgenome.Gwilldenowi.Ensembl.fGouWil21_1.0.0.tar.gz",
+          "size": 217139441,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 441,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Blenniiformes",
+            "family": "Gobiesocidae",
+            "genus": "Gouania"
+          },
+          "common_name": "blunt-snouted clingfish",
+          "published": "2026-04-13T02:53:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gwilldenowi.Ensembl.fGouWil21/BSgenome.Gwilldenowi.Ensembl.fGouWil21_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Grammomys surdaster",
       "common_name": "",
       "group": "vertebrate_mammalian",
@@ -74288,6 +74336,38 @@
       "common_name": "large yellow croaker",
       "published": "2026-04-13T02:53:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lcrocea.Ensembl.Lcrocea20/BSgenome.Lcrocea.Ensembl.Lcrocea20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gwilldenowi.Ensembl.fGouWil21",
+      "version": "1.0.0",
+      "organism": "Gouania willdenowi",
+      "assembly": "fGouWil2.1",
+      "provider": "Ensembl",
+      "accession": "GCA_900634775.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900634775.1/",
+      "file_name": "BSgenome.Gwilldenowi.Ensembl.fGouWil21_1.0.0.tar.gz",
+      "size": 217139441,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 441,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Blenniiformes",
+        "family": "Gobiesocidae",
+        "genus": "Gouania"
+      },
+      "common_name": "blunt-snouted clingfish",
+      "published": "2026-04-13T02:53:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gwilldenowi.Ensembl.fGouWil21/BSgenome.Gwilldenowi.Ensembl.fGouWil21_1.0.0.tar.gz"
     }
   ]
 }
