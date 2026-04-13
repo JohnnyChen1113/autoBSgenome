@@ -3801,3 +3801,7 @@ NeedsCompilation: no
 Package: BSgenome.Nnaja.Ensembl.Nanav5
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cporosus.Ensembl.CroPorcomp1
+Version: 1.0.0
+NeedsCompilation: no

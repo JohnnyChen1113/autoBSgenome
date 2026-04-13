@@ -12976,6 +12976,37 @@
           "common_name": "Australian saltwater crocodile",
           "published": "2026-04-04T11:05:09Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cporosus.NCBI.CroPorcomp1/BSgenome.Cporosus.NCBI.CroPorcomp1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cporosus.Ensembl.CroPorcomp1",
+          "version": "1.0.0",
+          "organism": "Crocodylus porosus",
+          "assembly": "CroPor_comp1",
+          "provider": "Ensembl",
+          "accession": "GCA_001723895.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001723895.1/",
+          "file_name": "BSgenome.Cporosus.Ensembl.CroPorcomp1_1.0.0.tar.gz",
+          "size": 473977554,
+          "seq_ids": [
+            "MDVP01000001.1",
+            "MDVP01000028.1",
+            "MDVP01000050.1",
+            "MDVP01000061.1",
+            "MDVP01000065.1"
+          ],
+          "seq_count": 70,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Crocodylia",
+            "family": "Crocodylidae",
+            "genus": "Crocodylus"
+          },
+          "common_name": "Australian saltwater crocodile",
+          "published": "2026-04-13T02:54:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cporosus.Ensembl.CroPorcomp1/BSgenome.Cporosus.Ensembl.CroPorcomp1_1.0.0.tar.gz"
         }
       ]
     },
@@ -74512,6 +74543,37 @@
       "common_name": "Indian cobra",
       "published": "2026-04-13T02:54:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nnaja.Ensembl.Nanav5/BSgenome.Nnaja.Ensembl.Nanav5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cporosus.Ensembl.CroPorcomp1",
+      "version": "1.0.0",
+      "organism": "Crocodylus porosus",
+      "assembly": "CroPor_comp1",
+      "provider": "Ensembl",
+      "accession": "GCA_001723895.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001723895.1/",
+      "file_name": "BSgenome.Cporosus.Ensembl.CroPorcomp1_1.0.0.tar.gz",
+      "size": 473977554,
+      "seq_ids": [
+        "MDVP01000001.1",
+        "MDVP01000028.1",
+        "MDVP01000050.1",
+        "MDVP01000061.1",
+        "MDVP01000065.1"
+      ],
+      "seq_count": 70,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Crocodylia",
+        "family": "Crocodylidae",
+        "genus": "Crocodylus"
+      },
+      "common_name": "Australian saltwater crocodile",
+      "published": "2026-04-13T02:54:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cporosus.Ensembl.CroPorcomp1/BSgenome.Cporosus.Ensembl.CroPorcomp1_1.0.0.tar.gz"
     }
   ]
 }
