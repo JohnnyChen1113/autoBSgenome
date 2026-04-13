@@ -42827,6 +42827,38 @@
           "common_name": "Kakapo",
           "published": "2026-04-04T10:05:27Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shabroptila.NCBI.bStrHab12pri/BSgenome.Shabroptila.NCBI.bStrHab12pri_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Shabroptila.Ensembl.bStrHab1v1p",
+          "version": "1.0.0",
+          "organism": "Strigops habroptila",
+          "assembly": "bStrHab1_v1.p",
+          "provider": "Ensembl",
+          "accession": "GCA_004027225.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004027225.1/",
+          "file_name": "BSgenome.Shabroptila.Ensembl.bStrHab1v1p_1.0.0.tar.gz",
+          "size": 274098650,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 99,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Psittaciformes",
+            "family": "Psittacidae",
+            "genus": "Strigops"
+          },
+          "common_name": "Kakapo",
+          "published": "2026-04-13T19:52:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shabroptila.Ensembl.bStrHab1v1p/BSgenome.Shabroptila.Ensembl.bStrHab1v1p_1.0.0.tar.gz"
         }
       ]
     },
@@ -80882,6 +80914,38 @@
       "common_name": "rabbit",
       "published": "2026-04-13T19:51:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocuniculus.Ensembl.OryCun20/BSgenome.Ocuniculus.Ensembl.OryCun20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Shabroptila.Ensembl.bStrHab1v1p",
+      "version": "1.0.0",
+      "organism": "Strigops habroptila",
+      "assembly": "bStrHab1_v1.p",
+      "provider": "Ensembl",
+      "accession": "GCA_004027225.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004027225.1/",
+      "file_name": "BSgenome.Shabroptila.Ensembl.bStrHab1v1p_1.0.0.tar.gz",
+      "size": 274098650,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 99,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Psittaciformes",
+        "family": "Psittacidae",
+        "genus": "Strigops"
+      },
+      "common_name": "Kakapo",
+      "published": "2026-04-13T19:52:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shabroptila.Ensembl.bStrHab1v1p/BSgenome.Shabroptila.Ensembl.bStrHab1v1p_1.0.0.tar.gz"
     }
   ]
 }
