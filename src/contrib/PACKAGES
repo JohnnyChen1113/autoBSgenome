@@ -4153,3 +4153,7 @@ NeedsCompilation: no
 Package: BSgenome.Platipinna.Ensembl.Platipinna10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ocuniculus.Ensembl.OryCun20
+Version: 1.0.0
+NeedsCompilation: no
