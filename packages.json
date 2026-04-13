@@ -30888,6 +30888,54 @@
       ]
     },
     {
+      "organism": "Notamacropus eugenii",
+      "common_name": "tammar wallaby",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Diprotodontia",
+        "family": "Macropodidae",
+        "genus": "Notamacropus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Neugenii.Ensembl.Meug10",
+          "version": "1.0.0",
+          "organism": "Notamacropus eugenii",
+          "assembly": "Meug_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000004035.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000004035.1/",
+          "file_name": "BSgenome.Neugenii.Ensembl.Meug10_1.0.0.tar.gz",
+          "size": 622993996,
+          "seq_ids": [
+            "GeneScaffold_4975",
+            "GeneScaffold_7147",
+            "GeneScaffold_421",
+            "GeneScaffold_7681",
+            "GeneScaffold_9689"
+          ],
+          "seq_count": 582687,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Diprotodontia",
+            "family": "Macropodidae",
+            "genus": "Notamacropus"
+          },
+          "common_name": "tammar wallaby",
+          "published": "2026-04-13T10:25:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Neugenii.Ensembl.Meug10/BSgenome.Neugenii.Ensembl.Meug10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nothobranchius furzeri",
       "common_name": "turquoise killifish",
       "group": "vertebrate_other",
@@ -76862,6 +76910,38 @@
       "common_name": "house mouse",
       "published": "2026-04-13T10:24:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.C57BL6NJv3/BSgenome.Mmusculus.Ensembl.C57BL6NJv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Neugenii.Ensembl.Meug10",
+      "version": "1.0.0",
+      "organism": "Notamacropus eugenii",
+      "assembly": "Meug_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000004035.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000004035.1/",
+      "file_name": "BSgenome.Neugenii.Ensembl.Meug10_1.0.0.tar.gz",
+      "size": 622993996,
+      "seq_ids": [
+        "GeneScaffold_4975",
+        "GeneScaffold_7147",
+        "GeneScaffold_421",
+        "GeneScaffold_7681",
+        "GeneScaffold_9689"
+      ],
+      "seq_count": 582687,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Diprotodontia",
+        "family": "Macropodidae",
+        "genus": "Notamacropus"
+      },
+      "common_name": "tammar wallaby",
+      "published": "2026-04-13T10:25:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Neugenii.Ensembl.Meug10/BSgenome.Neugenii.Ensembl.Meug10_1.0.0.tar.gz"
     }
   ]
 }
