@@ -12158,6 +12158,38 @@
           "common_name": "",
           "published": "2026-04-04T02:28:38Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cangolensis.NCBI.Cangpa10/BSgenome.Cangolensis.NCBI.Cangpa10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cangolensis.Ensembl.Cangpa10",
+          "version": "1.0.0",
+          "organism": "Colobus angolensis palliatus",
+          "assembly": "Cang.pa_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000951035.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000951035.1/",
+          "file_name": "BSgenome.Cangolensis.Ensembl.Cangpa10_1.0.0.tar.gz",
+          "size": 641887649,
+          "seq_ids": [
+            "KN983729.1",
+            "KN985655.1",
+            "KN981601.1",
+            "KN984781.1",
+            "KN980495.1"
+          ],
+          "seq_count": 13124,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Colobus"
+          },
+          "common_name": "",
+          "published": "2026-04-13T05:47:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cangolensis.Ensembl.Cangpa10/BSgenome.Cangolensis.Ensembl.Cangpa10_1.0.0.tar.gz"
         }
       ]
     },
@@ -75086,6 +75118,38 @@
       "common_name": "steppe mouse",
       "published": "2026-04-13T05:47:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mspicilegus.Ensembl.MUSP714/BSgenome.Mspicilegus.Ensembl.MUSP714_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cangolensis.Ensembl.Cangpa10",
+      "version": "1.0.0",
+      "organism": "Colobus angolensis palliatus",
+      "assembly": "Cang.pa_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000951035.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000951035.1/",
+      "file_name": "BSgenome.Cangolensis.Ensembl.Cangpa10_1.0.0.tar.gz",
+      "size": 641887649,
+      "seq_ids": [
+        "KN983729.1",
+        "KN985655.1",
+        "KN981601.1",
+        "KN984781.1",
+        "KN980495.1"
+      ],
+      "seq_count": 13124,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Colobus"
+      },
+      "common_name": "",
+      "published": "2026-04-13T05:47:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cangolensis.Ensembl.Cangpa10/BSgenome.Cangolensis.Ensembl.Cangpa10_1.0.0.tar.gz"
     }
   ]
 }
