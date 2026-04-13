@@ -4045,3 +4045,7 @@ NeedsCompilation: no
 Package: BSgenome.Odegus.Ensembl.OctDeg10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Osinensis.Ensembl.ASM858656v1
+Version: 1.0.0
+NeedsCompilation: no

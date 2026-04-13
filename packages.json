@@ -33074,6 +33074,54 @@
       ]
     },
     {
+      "organism": "Oryzias sinensis",
+      "common_name": "Chinese medaka",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Beloniformes",
+        "family": "Adrianichthyidae",
+        "genus": "Oryzias"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Osinensis.Ensembl.ASM858656v1",
+          "version": "1.0.0",
+          "organism": "Oryzias sinensis",
+          "assembly": "ASM858656v1",
+          "provider": "Ensembl",
+          "accession": "GCA_008586565.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008586565.1/",
+          "file_name": "BSgenome.Osinensis.Ensembl.ASM858656v1_1.0.0.tar.gz",
+          "size": 179586395,
+          "seq_ids": [
+            "VHIC01001664.1",
+            "VHIC01001989.1",
+            "VHIC01000376.1",
+            "VHIC01001579.1",
+            "VHIC01001672.1"
+          ],
+          "seq_count": 68189,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Beloniformes",
+            "family": "Adrianichthyidae",
+            "genus": "Oryzias"
+          },
+          "common_name": "Chinese medaka",
+          "published": "2026-04-13T15:20:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osinensis.Ensembl.ASM858656v1/BSgenome.Osinensis.Ensembl.ASM858656v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ostreococcus tauri",
       "common_name": "",
       "group": "plant",
@@ -78859,6 +78907,38 @@
       "common_name": "degu",
       "published": "2026-04-13T15:19:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Odegus.Ensembl.OctDeg10/BSgenome.Odegus.Ensembl.OctDeg10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Osinensis.Ensembl.ASM858656v1",
+      "version": "1.0.0",
+      "organism": "Oryzias sinensis",
+      "assembly": "ASM858656v1",
+      "provider": "Ensembl",
+      "accession": "GCA_008586565.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008586565.1/",
+      "file_name": "BSgenome.Osinensis.Ensembl.ASM858656v1_1.0.0.tar.gz",
+      "size": 179586395,
+      "seq_ids": [
+        "VHIC01001664.1",
+        "VHIC01001989.1",
+        "VHIC01000376.1",
+        "VHIC01001579.1",
+        "VHIC01001672.1"
+      ],
+      "seq_count": 68189,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Beloniformes",
+        "family": "Adrianichthyidae",
+        "genus": "Oryzias"
+      },
+      "common_name": "Chinese medaka",
+      "published": "2026-04-13T15:20:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osinensis.Ensembl.ASM858656v1/BSgenome.Osinensis.Ensembl.ASM858656v1_1.0.0.tar.gz"
     }
   ]
 }
