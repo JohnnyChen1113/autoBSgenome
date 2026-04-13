@@ -32864,6 +32864,38 @@
           "common_name": "Indian medaka",
           "published": "2026-04-04T04:33:09Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Omelastigma.NCBI.ASM292280v2/BSgenome.Omelastigma.NCBI.ASM292280v2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Omelastigma.Ensembl.Omv07RACA",
+          "version": "1.0.0",
+          "organism": "Oryzias melastigma",
+          "assembly": "Om_v0.7.RACA",
+          "provider": "Ensembl",
+          "accession": "GCA_002922805.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002922805.1/",
+          "file_name": "BSgenome.Omelastigma.Ensembl.Omv07RACA_1.0.0.tar.gz",
+          "size": 178795919,
+          "seq_ids": [
+            "NVQA01000009.1",
+            "NVQA01000027.1",
+            "NVQA01000016.1",
+            "NVQA01000024.1",
+            "NVQA01000013.1"
+          ],
+          "seq_count": 8602,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Beloniformes",
+            "family": "Adrianichthyidae",
+            "genus": "Oryzias"
+          },
+          "common_name": "Indian medaka",
+          "published": "2026-04-13T13:46:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Omelastigma.Ensembl.Omv07RACA/BSgenome.Omelastigma.Ensembl.Omv07RACA_1.0.0.tar.gz"
         }
       ]
     },
@@ -78206,6 +78238,38 @@
       "common_name": "sheep",
       "published": "2026-04-13T13:46:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ASM2241677v1/BSgenome.Oaries.Ensembl.ASM2241677v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Omelastigma.Ensembl.Omv07RACA",
+      "version": "1.0.0",
+      "organism": "Oryzias melastigma",
+      "assembly": "Om_v0.7.RACA",
+      "provider": "Ensembl",
+      "accession": "GCA_002922805.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002922805.1/",
+      "file_name": "BSgenome.Omelastigma.Ensembl.Omv07RACA_1.0.0.tar.gz",
+      "size": 178795919,
+      "seq_ids": [
+        "NVQA01000009.1",
+        "NVQA01000027.1",
+        "NVQA01000016.1",
+        "NVQA01000024.1",
+        "NVQA01000013.1"
+      ],
+      "seq_count": 8602,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Beloniformes",
+        "family": "Adrianichthyidae",
+        "genus": "Oryzias"
+      },
+      "common_name": "Indian medaka",
+      "published": "2026-04-13T13:46:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Omelastigma.Ensembl.Omv07RACA/BSgenome.Omelastigma.Ensembl.Omv07RACA_1.0.0.tar.gz"
     }
   ]
 }
