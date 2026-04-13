@@ -31064,6 +31064,54 @@
       ]
     },
     {
+      "organism": "Notechis scutatus",
+      "common_name": "mainland tiger snake",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Elapidae",
+        "genus": "Notechis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nscutatus.Ensembl.TS10Xv2PRI",
+          "version": "1.0.0",
+          "organism": "Notechis scutatus",
+          "assembly": "TS10Xv2-PRI",
+          "provider": "Ensembl",
+          "accession": "GCA_900518725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900518725.1/",
+          "file_name": "BSgenome.Nscutatus.Ensembl.TS10Xv2PRI_1.0.0.tar.gz",
+          "size": 379545490,
+          "seq_ids": [
+            "ULFQ01000001.1",
+            "ULFQ01000002.1",
+            "ULFQ01000003.1",
+            "ULFQ01000004.1",
+            "ULFQ01000005.1"
+          ],
+          "seq_count": 52414,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Elapidae",
+            "genus": "Notechis"
+          },
+          "common_name": "mainland tiger snake",
+          "published": "2026-04-13T11:55:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nscutatus.Ensembl.TS10Xv2PRI/BSgenome.Nscutatus.Ensembl.TS10Xv2PRI_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nothobranchius furzeri",
       "common_name": "turquoise killifish",
       "group": "vertebrate_other",
@@ -77630,6 +77678,38 @@
       "common_name": "thirteen-lined ground squirrel",
       "published": "2026-04-13T11:55:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Itridecemlineatus.Ensembl.SpeTri20/BSgenome.Itridecemlineatus.Ensembl.SpeTri20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nscutatus.Ensembl.TS10Xv2PRI",
+      "version": "1.0.0",
+      "organism": "Notechis scutatus",
+      "assembly": "TS10Xv2-PRI",
+      "provider": "Ensembl",
+      "accession": "GCA_900518725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900518725.1/",
+      "file_name": "BSgenome.Nscutatus.Ensembl.TS10Xv2PRI_1.0.0.tar.gz",
+      "size": 379545490,
+      "seq_ids": [
+        "ULFQ01000001.1",
+        "ULFQ01000002.1",
+        "ULFQ01000003.1",
+        "ULFQ01000004.1",
+        "ULFQ01000005.1"
+      ],
+      "seq_count": 52414,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Elapidae",
+        "genus": "Notechis"
+      },
+      "common_name": "mainland tiger snake",
+      "published": "2026-04-13T11:55:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nscutatus.Ensembl.TS10Xv2PRI/BSgenome.Nscutatus.Ensembl.TS10Xv2PRI_1.0.0.tar.gz"
     }
   ]
 }
