@@ -3845,3 +3845,7 @@ NeedsCompilation: no
 Package: BSgenome.Mspretus.Ensembl.SPRETEiJv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lcanadensis.Ensembl.mLynCan4v1p
+Version: 1.0.0
+NeedsCompilation: no
