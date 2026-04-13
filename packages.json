@@ -26458,6 +26458,54 @@
       ]
     },
     {
+      "organism": "Mastacembelus armatus",
+      "common_name": "zig-zag eel",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Synbranchiformes",
+        "family": "Mastacembelidae",
+        "genus": "Mastacembelus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Marmatus.Ensembl.fMasArm12",
+          "version": "1.0.0",
+          "organism": "Mastacembelus armatus",
+          "assembly": "fMasArm1.2",
+          "provider": "Ensembl",
+          "accession": "GCA_900324485.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900324485.2/",
+          "file_name": "BSgenome.Marmatus.Ensembl.fMasArm12_1.0.0.tar.gz",
+          "size": 138228478,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 123,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Synbranchiformes",
+            "family": "Mastacembelidae",
+            "genus": "Mastacembelus"
+          },
+          "common_name": "zig-zag eel",
+          "published": "2026-04-13T05:45:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Marmatus.Ensembl.fMasArm12/BSgenome.Marmatus.Ensembl.fMasArm12_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mastomys coucha",
       "common_name": "southern multimammate mouse",
       "group": "vertebrate_mammalian",
@@ -74718,6 +74766,38 @@
       "common_name": "house mouse",
       "published": "2026-04-13T02:56:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.C3HHeJv3/BSgenome.Mmusculus.Ensembl.C3HHeJv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Marmatus.Ensembl.fMasArm12",
+      "version": "1.0.0",
+      "organism": "Mastacembelus armatus",
+      "assembly": "fMasArm1.2",
+      "provider": "Ensembl",
+      "accession": "GCA_900324485.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900324485.2/",
+      "file_name": "BSgenome.Marmatus.Ensembl.fMasArm12_1.0.0.tar.gz",
+      "size": 138228478,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 123,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Synbranchiformes",
+        "family": "Mastacembelidae",
+        "genus": "Mastacembelus"
+      },
+      "common_name": "zig-zag eel",
+      "published": "2026-04-13T05:45:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Marmatus.Ensembl.fMasArm12/BSgenome.Marmatus.Ensembl.fMasArm12_1.0.0.tar.gz"
     }
   ]
 }
