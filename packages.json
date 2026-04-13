@@ -43950,6 +43950,54 @@
       ]
     },
     {
+      "organism": "Strix occidentalis caurina",
+      "common_name": "northern spotted owl",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Strix"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Soccidentalis.Ensembl.Soccidv01",
+          "version": "1.0.0",
+          "organism": "Strix occidentalis caurina",
+          "assembly": "Soccid_v01",
+          "provider": "Ensembl",
+          "accession": "GCA_002372975.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002372975.1/",
+          "file_name": "BSgenome.Soccidentalis.Ensembl.Soccidv01_1.0.0.tar.gz",
+          "size": 300829174,
+          "seq_ids": [
+            "NIFN01000035.1",
+            "NIFN01000342.1",
+            "NIFN01000087.1",
+            "NIFN01000142.1",
+            "NIFN01000052.1"
+          ],
+          "seq_count": 8108,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Strigiformes",
+            "family": "Strigidae",
+            "genus": "Strix"
+          },
+          "common_name": "northern spotted owl",
+          "published": "2026-04-13T22:53:02Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Soccidentalis.Ensembl.Soccidv01/BSgenome.Soccidentalis.Ensembl.Soccidv01_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Strongylocentrotus purpuratus",
       "common_name": "purple sea urchin",
       "group": "invertebrate",
@@ -83149,6 +83197,38 @@
       "common_name": "Coquerel's sifaka",
       "published": "2026-04-13T22:52:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcoquereli.Ensembl.Pcoq10/BSgenome.Pcoquereli.Ensembl.Pcoq10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Soccidentalis.Ensembl.Soccidv01",
+      "version": "1.0.0",
+      "organism": "Strix occidentalis caurina",
+      "assembly": "Soccid_v01",
+      "provider": "Ensembl",
+      "accession": "GCA_002372975.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002372975.1/",
+      "file_name": "BSgenome.Soccidentalis.Ensembl.Soccidv01_1.0.0.tar.gz",
+      "size": 300829174,
+      "seq_ids": [
+        "NIFN01000035.1",
+        "NIFN01000342.1",
+        "NIFN01000087.1",
+        "NIFN01000142.1",
+        "NIFN01000052.1"
+      ],
+      "seq_count": 8108,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Strigiformes",
+        "family": "Strigidae",
+        "genus": "Strix"
+      },
+      "common_name": "northern spotted owl",
+      "published": "2026-04-13T22:53:02Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Soccidentalis.Ensembl.Soccidv01/BSgenome.Soccidentalis.Ensembl.Soccidv01_1.0.0.tar.gz"
     }
   ]
 }
