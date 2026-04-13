@@ -4097,3 +4097,7 @@ NeedsCompilation: no
 Package: BSgenome.Rnorvegicus.Ensembl.UTHRnorWKYBbb10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mzebra.Ensembl.MzebraUMD2a
+Version: 1.0.0
+NeedsCompilation: no
