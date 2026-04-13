@@ -22824,6 +22824,54 @@
       ]
     },
     {
+      "organism": "Homo sapiens",
+      "common_name": "human",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Hominidae",
+        "genus": "Homo"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hsapiens.Ensembl.GRCh38p14",
+          "version": "1.0.0",
+          "organism": "Homo sapiens",
+          "assembly": "GRCh38.p14",
+          "provider": "Ensembl",
+          "accession": "GCA_000001405.29",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000001405.29/",
+          "file_name": "BSgenome.Hsapiens.Ensembl.GRCh38p14_1.0.0.tar.gz",
+          "size": 729612887,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 706,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Hominidae",
+            "genus": "Homo"
+          },
+          "common_name": "human",
+          "published": "2026-04-13T11:58:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsapiens.Ensembl.GRCh38p14/BSgenome.Hsapiens.Ensembl.GRCh38p14_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Hucho hucho",
       "common_name": "huchen",
       "group": "vertebrate_other",
@@ -77790,6 +77838,38 @@
       "common_name": "golden hamster",
       "published": "2026-04-13T11:55:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mauratus.Ensembl.MesAur10/BSgenome.Mauratus.Ensembl.MesAur10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hsapiens.Ensembl.GRCh38p14",
+      "version": "1.0.0",
+      "organism": "Homo sapiens",
+      "assembly": "GRCh38.p14",
+      "provider": "Ensembl",
+      "accession": "GCA_000001405.29",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000001405.29/",
+      "file_name": "BSgenome.Hsapiens.Ensembl.GRCh38p14_1.0.0.tar.gz",
+      "size": 729612887,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 706,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Hominidae",
+        "genus": "Homo"
+      },
+      "common_name": "human",
+      "published": "2026-04-13T11:58:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsapiens.Ensembl.GRCh38p14/BSgenome.Hsapiens.Ensembl.GRCh38p14_1.0.0.tar.gz"
     }
   ]
 }
