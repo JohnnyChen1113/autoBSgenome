@@ -44537,6 +44537,38 @@
           "common_name": "pig",
           "published": "2026-04-13T22:54:24Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.LargeWhitev1/BSgenome.Sscrofa.Ensembl.LargeWhitev1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Sscrofa.Ensembl.USMARCv10",
+          "version": "1.0.0",
+          "organism": "Sus scrofa",
+          "assembly": "USMARCv1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002844635.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002844635.1/",
+          "file_name": "BSgenome.Sscrofa.Ensembl.USMARCv10_1.0.0.tar.gz",
+          "size": 589884427,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 613,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Suidae",
+            "genus": "Sus"
+          },
+          "common_name": "pig",
+          "published": "2026-04-13T22:54:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.USMARCv10/BSgenome.Sscrofa.Ensembl.USMARCv10_1.0.0.tar.gz"
         }
       ]
     },
@@ -83581,6 +83613,38 @@
       "common_name": "pig",
       "published": "2026-04-13T22:54:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.LargeWhitev1/BSgenome.Sscrofa.Ensembl.LargeWhitev1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sscrofa.Ensembl.USMARCv10",
+      "version": "1.0.0",
+      "organism": "Sus scrofa",
+      "assembly": "USMARCv1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002844635.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002844635.1/",
+      "file_name": "BSgenome.Sscrofa.Ensembl.USMARCv10_1.0.0.tar.gz",
+      "size": 589884427,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 613,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Suidae",
+        "genus": "Sus"
+      },
+      "common_name": "pig",
+      "published": "2026-04-13T22:54:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.USMARCv10/BSgenome.Sscrofa.Ensembl.USMARCv10_1.0.0.tar.gz"
     }
   ]
 }
