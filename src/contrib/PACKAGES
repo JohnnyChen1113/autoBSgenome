@@ -4225,3 +4225,7 @@ NeedsCompilation: no
 Package: BSgenome.Pabelii.Ensembl.SusiePABv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oaureus.Ensembl.ZZaureus
+Version: 1.0.0
+NeedsCompilation: no
