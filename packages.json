@@ -32718,6 +32718,38 @@
           "common_name": "platypus",
           "published": "2026-04-12T18:04:44Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oanatinus.NCBI.mOrnAna1priv4/BSgenome.Oanatinus.NCBI.mOrnAna1priv4_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Oanatinus.Ensembl.mOrnAna1pv1",
+          "version": "1.0.0",
+          "organism": "Ornithorhynchus anatinus",
+          "assembly": "mOrnAna1.p.v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004115215.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004115215.2/",
+          "file_name": "BSgenome.Oanatinus.Ensembl.mOrnAna1pv1_1.0.0.tar.gz",
+          "size": 435649021,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 305,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Monotremata",
+            "family": "Ornithorhynchidae",
+            "genus": "Ornithorhynchus"
+          },
+          "common_name": "platypus",
+          "published": "2026-04-13T16:46:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oanatinus.Ensembl.mOrnAna1pv1/BSgenome.Oanatinus.Ensembl.mOrnAna1pv1_1.0.0.tar.gz"
         }
       ]
     },
@@ -79432,6 +79464,38 @@
       "common_name": "small-eared galago",
       "published": "2026-04-13T16:45:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ogarnettii.Ensembl.OtoGar3/BSgenome.Ogarnettii.Ensembl.OtoGar3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Oanatinus.Ensembl.mOrnAna1pv1",
+      "version": "1.0.0",
+      "organism": "Ornithorhynchus anatinus",
+      "assembly": "mOrnAna1.p.v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004115215.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004115215.2/",
+      "file_name": "BSgenome.Oanatinus.Ensembl.mOrnAna1pv1_1.0.0.tar.gz",
+      "size": 435649021,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 305,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Monotremata",
+        "family": "Ornithorhynchidae",
+        "genus": "Ornithorhynchus"
+      },
+      "common_name": "platypus",
+      "published": "2026-04-13T16:46:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oanatinus.Ensembl.mOrnAna1pv1/BSgenome.Oanatinus.Ensembl.mOrnAna1pv1_1.0.0.tar.gz"
     }
   ]
 }

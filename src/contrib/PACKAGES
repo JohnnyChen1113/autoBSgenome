@@ -4077,3 +4077,7 @@ NeedsCompilation: no
 Package: BSgenome.Ogarnettii.Ensembl.OtoGar3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oanatinus.Ensembl.mOrnAna1pv1
+Version: 1.0.0
+NeedsCompilation: no
