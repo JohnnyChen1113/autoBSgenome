@@ -31924,6 +31924,54 @@
       ]
     },
     {
+      "organism": "Oryzias javanicus",
+      "common_name": "javanese ricefish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Beloniformes",
+        "family": "Adrianichthyidae",
+        "genus": "Oryzias"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ojavanicus.Ensembl.OJAV11",
+          "version": "1.0.0",
+          "organism": "Oryzias javanicus",
+          "assembly": "OJAV_1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_003999625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003999625.1/",
+          "file_name": "BSgenome.Ojavanicus.Ensembl.OJAV11_1.0.0.tar.gz",
+          "size": 192640097,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 254,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Beloniformes",
+            "family": "Adrianichthyidae",
+            "genus": "Oryzias"
+          },
+          "common_name": "javanese ricefish",
+          "published": "2026-04-13T10:17:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ojavanicus.Ensembl.OJAV11/BSgenome.Ojavanicus.Ensembl.OJAV11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oryzias latipes",
       "common_name": "Japanese medaka",
       "group": "vertebrate_other",
@@ -76270,6 +76318,38 @@
       "common_name": "Japanese medaka",
       "published": "2026-04-13T10:17:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Olatipes.Ensembl.ASM223467v1/BSgenome.Olatipes.Ensembl.ASM223467v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ojavanicus.Ensembl.OJAV11",
+      "version": "1.0.0",
+      "organism": "Oryzias javanicus",
+      "assembly": "OJAV_1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_003999625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003999625.1/",
+      "file_name": "BSgenome.Ojavanicus.Ensembl.OJAV11_1.0.0.tar.gz",
+      "size": 192640097,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 254,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Beloniformes",
+        "family": "Adrianichthyidae",
+        "genus": "Oryzias"
+      },
+      "common_name": "javanese ricefish",
+      "published": "2026-04-13T10:17:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ojavanicus.Ensembl.OJAV11/BSgenome.Ojavanicus.Ensembl.OJAV11_1.0.0.tar.gz"
     }
   ]
 }
