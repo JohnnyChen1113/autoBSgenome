@@ -29161,6 +29161,54 @@
       ]
     },
     {
+      "organism": "Mus pahari",
+      "common_name": "shrew mouse",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Mus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mpahari.Ensembl.PAHARIEIJv11",
+          "version": "1.0.0",
+          "organism": "Mus pahari",
+          "assembly": "PAHARI_EIJ_v1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_900095145.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900095145.2/",
+          "file_name": "BSgenome.Mpahari.Ensembl.PAHARIEIJv11_1.0.0.tar.gz",
+          "size": 539250284,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 2581,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Mus"
+          },
+          "common_name": "shrew mouse",
+          "published": "2026-04-13T13:46:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpahari.Ensembl.PAHARIEIJv11/BSgenome.Mpahari.Ensembl.PAHARIEIJv11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mus spicilegus",
       "common_name": "steppe mouse",
       "group": "vertebrate_mammalian",
@@ -78350,6 +78398,38 @@
       "common_name": "domestic ferret",
       "published": "2026-04-13T13:46:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mputorius.Ensembl.MusPutFur10/BSgenome.Mputorius.Ensembl.MusPutFur10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mpahari.Ensembl.PAHARIEIJv11",
+      "version": "1.0.0",
+      "organism": "Mus pahari",
+      "assembly": "PAHARI_EIJ_v1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_900095145.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900095145.2/",
+      "file_name": "BSgenome.Mpahari.Ensembl.PAHARIEIJv11_1.0.0.tar.gz",
+      "size": 539250284,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 2581,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Mus"
+      },
+      "common_name": "shrew mouse",
+      "published": "2026-04-13T13:46:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpahari.Ensembl.PAHARIEIJv11/BSgenome.Mpahari.Ensembl.PAHARIEIJv11_1.0.0.tar.gz"
     }
   ]
 }
