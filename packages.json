@@ -26295,6 +26295,38 @@
           "common_name": "drill",
           "published": "2026-04-04T02:29:54Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mleucophaeus.NCBI.Mleule10/BSgenome.Mleucophaeus.NCBI.Mleule10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Mleucophaeus.Ensembl.Mleule10",
+          "version": "1.0.0",
+          "organism": "Mandrillus leucophaeus",
+          "assembly": "Mleu.le_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000951045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000951045.1/",
+          "file_name": "BSgenome.Mleucophaeus.Ensembl.Mleule10_1.0.0.tar.gz",
+          "size": 650881252,
+          "seq_ids": [
+            "KN972984.1",
+            "KN975200.1",
+            "KN977250.1",
+            "KN976258.1",
+            "KN974095.1"
+          ],
+          "seq_count": 12822,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Mandrillus"
+          },
+          "common_name": "drill",
+          "published": "2026-04-13T02:54:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mleucophaeus.Ensembl.Mleule10/BSgenome.Mleucophaeus.Ensembl.Mleule10_1.0.0.tar.gz"
         }
       ]
     },
@@ -74368,6 +74400,38 @@
       "common_name": "blunt-snouted clingfish",
       "published": "2026-04-13T02:53:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gwilldenowi.Ensembl.fGouWil21/BSgenome.Gwilldenowi.Ensembl.fGouWil21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mleucophaeus.Ensembl.Mleule10",
+      "version": "1.0.0",
+      "organism": "Mandrillus leucophaeus",
+      "assembly": "Mleu.le_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000951045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000951045.1/",
+      "file_name": "BSgenome.Mleucophaeus.Ensembl.Mleule10_1.0.0.tar.gz",
+      "size": 650881252,
+      "seq_ids": [
+        "KN972984.1",
+        "KN975200.1",
+        "KN977250.1",
+        "KN976258.1",
+        "KN974095.1"
+      ],
+      "seq_count": 12822,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Mandrillus"
+      },
+      "common_name": "drill",
+      "published": "2026-04-13T02:54:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mleucophaeus.Ensembl.Mleule10/BSgenome.Mleucophaeus.Ensembl.Mleule10_1.0.0.tar.gz"
     }
   ]
 }
