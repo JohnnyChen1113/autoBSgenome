@@ -4029,3 +4029,7 @@ NeedsCompilation: no
 Package: BSgenome.Oaries.Ensembl.ASM2243283v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dlabrax.Ensembl.dlabrax2021
+Version: 1.0.0
+NeedsCompilation: no

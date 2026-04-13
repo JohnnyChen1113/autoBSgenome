@@ -15677,6 +15677,52 @@
       ]
     },
     {
+      "organism": "Dicentrarchus labrax",
+      "common_name": "European seabass",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Moronidae",
+        "genus": "Dicentrarchus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dlabrax.Ensembl.dlabrax2021",
+          "version": "1.0.0",
+          "organism": "Dicentrarchus labrax",
+          "assembly": "dlabrax2021",
+          "provider": "Ensembl",
+          "accession": "GCA_905237075.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_905237075.1/",
+          "file_name": "BSgenome.Dlabrax.Ensembl.dlabrax2021_1.0.0.tar.gz",
+          "size": 164505916,
+          "seq_ids": [
+            "CAJNNU010000019.1",
+            "CAJNNU010000021.1",
+            "CAJNNU010000020.1",
+            "CAJNNU010000004.1",
+            "CAJNNU010000011.1"
+          ],
+          "seq_count": 302,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "family": "Moronidae",
+            "genus": "Dicentrarchus"
+          },
+          "common_name": "European seabass",
+          "published": "2026-04-13T15:18:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dlabrax.Ensembl.dlabrax2021/BSgenome.Dlabrax.Ensembl.dlabrax2021_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dichomitus squalens LYAD-421 SS1",
       "common_name": "",
       "group": "fungi",
@@ -78558,6 +78604,37 @@
       "common_name": "sheep",
       "published": "2026-04-13T13:47:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ASM2243283v1/BSgenome.Oaries.Ensembl.ASM2243283v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dlabrax.Ensembl.dlabrax2021",
+      "version": "1.0.0",
+      "organism": "Dicentrarchus labrax",
+      "assembly": "dlabrax2021",
+      "provider": "Ensembl",
+      "accession": "GCA_905237075.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_905237075.1/",
+      "file_name": "BSgenome.Dlabrax.Ensembl.dlabrax2021_1.0.0.tar.gz",
+      "size": 164505916,
+      "seq_ids": [
+        "CAJNNU010000019.1",
+        "CAJNNU010000021.1",
+        "CAJNNU010000020.1",
+        "CAJNNU010000004.1",
+        "CAJNNU010000011.1"
+      ],
+      "seq_count": 302,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "family": "Moronidae",
+        "genus": "Dicentrarchus"
+      },
+      "common_name": "European seabass",
+      "published": "2026-04-13T15:18:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dlabrax.Ensembl.dlabrax2021/BSgenome.Dlabrax.Ensembl.dlabrax2021_1.0.0.tar.gz"
     }
   ]
 }
