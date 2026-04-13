@@ -37408,6 +37408,38 @@
           "common_name": "sailfin molly",
           "published": "2026-04-04T04:33:46Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Platipinna.NCBI.Platipinna10/BSgenome.Platipinna.NCBI.Platipinna10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Platipinna.Ensembl.Platipinna10",
+          "version": "1.0.0",
+          "organism": "Poecilia latipinna",
+          "assembly": "P_latipinna-1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_001443285.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001443285.1/",
+          "file_name": "BSgenome.Platipinna.Ensembl.Platipinna10_1.0.0.tar.gz",
+          "size": 165163815,
+          "seq_ids": [
+            "KQ545315.1",
+            "KQ545369.1",
+            "KQ545352.1",
+            "KQ545552.1",
+            "KQ545316.1"
+          ],
+          "seq_count": 17988,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Poeciliidae",
+            "genus": "Poecilia"
+          },
+          "common_name": "sailfin molly",
+          "published": "2026-04-13T19:51:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Platipinna.Ensembl.Platipinna10/BSgenome.Platipinna.Ensembl.Platipinna10_1.0.0.tar.gz"
         }
       ]
     },
@@ -80738,6 +80770,38 @@
       "common_name": "leopard",
       "published": "2026-04-13T19:51:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppardus.Ensembl.PanPar10/BSgenome.Ppardus.Ensembl.PanPar10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Platipinna.Ensembl.Platipinna10",
+      "version": "1.0.0",
+      "organism": "Poecilia latipinna",
+      "assembly": "P_latipinna-1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_001443285.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001443285.1/",
+      "file_name": "BSgenome.Platipinna.Ensembl.Platipinna10_1.0.0.tar.gz",
+      "size": 165163815,
+      "seq_ids": [
+        "KQ545315.1",
+        "KQ545369.1",
+        "KQ545352.1",
+        "KQ545552.1",
+        "KQ545316.1"
+      ],
+      "seq_count": 17988,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Poeciliidae",
+        "genus": "Poecilia"
+      },
+      "common_name": "sailfin molly",
+      "published": "2026-04-13T19:51:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Platipinna.Ensembl.Platipinna10/BSgenome.Platipinna.Ensembl.Platipinna10_1.0.0.tar.gz"
     }
   ]
 }
