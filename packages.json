@@ -37240,6 +37240,54 @@
       ]
     },
     {
+      "organism": "Pogona vitticeps",
+      "common_name": "central bearded dragon",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Agamidae",
+        "genus": "Pogona"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pvitticeps.Ensembl.pvi11",
+          "version": "1.0.0",
+          "organism": "Pogona vitticeps",
+          "assembly": "pvi1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_900067755.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900067755.1/",
+          "file_name": "BSgenome.Pvitticeps.Ensembl.pvi11_1.0.0.tar.gz",
+          "size": 425877843,
+          "seq_ids": [
+            "CEMB01017322.1",
+            "CEMB01545309.1",
+            "CEMB01010255.1",
+            "CEMB01023031.1",
+            "CEMB01545306.1"
+          ],
+          "seq_count": 545310,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Agamidae",
+            "genus": "Pogona"
+          },
+          "common_name": "central bearded dragon",
+          "published": "2026-04-13T18:07:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvitticeps.Ensembl.pvi11/BSgenome.Pvitticeps.Ensembl.pvi11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pogonomyrmex barbatus",
       "common_name": "red harvester ant",
       "group": "invertebrate",
@@ -79848,6 +79896,38 @@
       "common_name": "zebra mbuna",
       "published": "2026-04-13T18:06:45Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mzebra.Ensembl.MzebraUMD2a/BSgenome.Mzebra.Ensembl.MzebraUMD2a_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pvitticeps.Ensembl.pvi11",
+      "version": "1.0.0",
+      "organism": "Pogona vitticeps",
+      "assembly": "pvi1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_900067755.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900067755.1/",
+      "file_name": "BSgenome.Pvitticeps.Ensembl.pvi11_1.0.0.tar.gz",
+      "size": 425877843,
+      "seq_ids": [
+        "CEMB01017322.1",
+        "CEMB01545309.1",
+        "CEMB01010255.1",
+        "CEMB01023031.1",
+        "CEMB01545306.1"
+      ],
+      "seq_count": 545310,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Agamidae",
+        "genus": "Pogona"
+      },
+      "common_name": "central bearded dragon",
+      "published": "2026-04-13T18:07:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvitticeps.Ensembl.pvi11/BSgenome.Pvitticeps.Ensembl.pvi11_1.0.0.tar.gz"
     }
   ]
 }

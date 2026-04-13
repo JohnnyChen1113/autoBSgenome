@@ -4101,3 +4101,7 @@ NeedsCompilation: no
 Package: BSgenome.Mzebra.Ensembl.MzebraUMD2a
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pvitticeps.Ensembl.pvi11
+Version: 1.0.0
+NeedsCompilation: no
