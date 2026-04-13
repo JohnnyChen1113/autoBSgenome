@@ -48393,6 +48393,38 @@
           "common_name": "Komodo dragon",
           "published": "2026-04-04T11:03:06Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vkomodoensis.NCBI.ASM479886v1/BSgenome.Vkomodoensis.NCBI.ASM479886v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Vkomodoensis.Ensembl.ASM479886v1",
+          "version": "1.0.0",
+          "organism": "Varanus komodoensis",
+          "assembly": "ASM479886v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004798865.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004798865.1/",
+          "file_name": "BSgenome.Vkomodoensis.Ensembl.ASM479886v1_1.0.0.tar.gz",
+          "size": 363213996,
+          "seq_ids": [
+            "SJPD01000001.1",
+            "SJPD01000002.1",
+            "SJPD01000003.1",
+            "SJPD01000004.1",
+            "SJPD01000005.1"
+          ],
+          "seq_count": 1411,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Varanidae",
+            "genus": "Varanus"
+          },
+          "common_name": "Komodo dragon",
+          "published": "2026-04-13T23:51:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vkomodoensis.Ensembl.ASM479886v1/BSgenome.Vkomodoensis.Ensembl.ASM479886v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -84253,6 +84285,38 @@
       "common_name": "pig",
       "published": "2026-04-13T23:49:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Bameipigv1/BSgenome.Sscrofa.Ensembl.Bameipigv1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vkomodoensis.Ensembl.ASM479886v1",
+      "version": "1.0.0",
+      "organism": "Varanus komodoensis",
+      "assembly": "ASM479886v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004798865.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004798865.1/",
+      "file_name": "BSgenome.Vkomodoensis.Ensembl.ASM479886v1_1.0.0.tar.gz",
+      "size": 363213996,
+      "seq_ids": [
+        "SJPD01000001.1",
+        "SJPD01000002.1",
+        "SJPD01000003.1",
+        "SJPD01000004.1",
+        "SJPD01000005.1"
+      ],
+      "seq_count": 1411,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Varanidae",
+        "genus": "Varanus"
+      },
+      "common_name": "Komodo dragon",
+      "published": "2026-04-13T23:51:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vkomodoensis.Ensembl.ASM479886v1/BSgenome.Vkomodoensis.Ensembl.ASM479886v1_1.0.0.tar.gz"
     }
   ]
 }

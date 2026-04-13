@@ -4345,3 +4345,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscrofa.Ensembl.Bameipigv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vkomodoensis.Ensembl.ASM479886v1
+Version: 1.0.0
+NeedsCompilation: no
