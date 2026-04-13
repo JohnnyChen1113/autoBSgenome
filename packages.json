@@ -44121,6 +44121,38 @@
           "common_name": "meerkat",
           "published": "2026-04-03T21:41:11Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC/BSgenome.Ssuricatta.NCBI.meerkat22Aug20176uvM2HiC_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ssuricatta.Ensembl.meerkat22Aug20176uvM2HiC",
+          "version": "1.0.0",
+          "organism": "Suricata suricatta",
+          "assembly": "meerkat_22Aug2017_6uvM2_HiC",
+          "provider": "Ensembl",
+          "accession": "GCA_006229205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006229205.1/",
+          "file_name": "BSgenome.Ssuricatta.Ensembl.meerkat22Aug20176uvM2HiC_1.0.0.tar.gz",
+          "size": 564454472,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 63791,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Herpestidae",
+            "genus": "Suricata"
+          },
+          "common_name": "meerkat",
+          "published": "2026-04-13T22:52:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssuricatta.Ensembl.meerkat22Aug20176uvM2HiC/BSgenome.Ssuricatta.Ensembl.meerkat22Aug20176uvM2HiC_1.0.0.tar.gz"
         }
       ]
     },
@@ -82797,6 +82829,38 @@
       "common_name": "pig",
       "published": "2026-04-13T22:01:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.NingheSus1/BSgenome.Sscrofa.Ensembl.NingheSus1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ssuricatta.Ensembl.meerkat22Aug20176uvM2HiC",
+      "version": "1.0.0",
+      "organism": "Suricata suricatta",
+      "assembly": "meerkat_22Aug2017_6uvM2_HiC",
+      "provider": "Ensembl",
+      "accession": "GCA_006229205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006229205.1/",
+      "file_name": "BSgenome.Ssuricatta.Ensembl.meerkat22Aug20176uvM2HiC_1.0.0.tar.gz",
+      "size": 564454472,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 63791,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Herpestidae",
+        "genus": "Suricata"
+      },
+      "common_name": "meerkat",
+      "published": "2026-04-13T22:52:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssuricatta.Ensembl.meerkat22Aug20176uvM2HiC/BSgenome.Ssuricatta.Ensembl.meerkat22Aug20176uvM2HiC_1.0.0.tar.gz"
     }
   ]
 }
