@@ -3957,3 +3957,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmajor.Ensembl.Parusmajor11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmusculus.Ensembl.LPJv3
+Version: 1.0.0
+NeedsCompilation: no
