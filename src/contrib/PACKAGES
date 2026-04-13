@@ -4089,3 +4089,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptephrosceles.Ensembl.ASM277652v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rnorvegicus.Ensembl.UTHRnorSHRUtx
+Version: 1.0.0
+NeedsCompilation: no
