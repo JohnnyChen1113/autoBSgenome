@@ -49395,6 +49395,54 @@
       ]
     },
     {
+      "organism": "Zonotrichia albicollis",
+      "common_name": "white-throated sparrow",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Passerellidae",
+        "genus": "Zonotrichia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101",
+          "version": "1.0.0",
+          "organism": "Zonotrichia albicollis",
+          "assembly": "Zonotrichia_albicollis-1.0.1",
+          "provider": "Ensembl",
+          "accession": "GCA_000385455.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000385455.1/",
+          "file_name": "BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101_1.0.0.tar.gz",
+          "size": 241796284,
+          "seq_ids": [
+            "KB913038.1",
+            "KB913039.1",
+            "KB913040.1",
+            "KB913041.1",
+            "KB913042.1"
+          ],
+          "seq_count": 6018,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Passerellidae",
+            "genus": "Zonotrichia"
+          },
+          "common_name": "white-throated sparrow",
+          "published": "2026-04-13T23:46:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101/BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Zootermopsis nevadensis",
       "common_name": "",
       "group": "invertebrate",
@@ -83709,6 +83757,38 @@
       "common_name": "Coquerel's sifaka",
       "published": "2026-04-13T23:46:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcoquereli.Ensembl.Pcoq10/BSgenome.Pcoquereli.Ensembl.Pcoq10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101",
+      "version": "1.0.0",
+      "organism": "Zonotrichia albicollis",
+      "assembly": "Zonotrichia_albicollis-1.0.1",
+      "provider": "Ensembl",
+      "accession": "GCA_000385455.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000385455.1/",
+      "file_name": "BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101_1.0.0.tar.gz",
+      "size": 241796284,
+      "seq_ids": [
+        "KB913038.1",
+        "KB913039.1",
+        "KB913040.1",
+        "KB913041.1",
+        "KB913042.1"
+      ],
+      "seq_count": 6018,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Passerellidae",
+        "genus": "Zonotrichia"
+      },
+      "common_name": "white-throated sparrow",
+      "published": "2026-04-13T23:46:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101/BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101_1.0.0.tar.gz"
     }
   ]
 }
