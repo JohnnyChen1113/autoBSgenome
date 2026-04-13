@@ -4289,3 +4289,7 @@ NeedsCompilation: no
 Package: BSgenome.Trubripes.Ensembl.fTakRub12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tguttata.Ensembl.bTaeGut1v1p
+Version: 1.0.0
+NeedsCompilation: no

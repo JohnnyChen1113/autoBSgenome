@@ -44589,6 +44589,54 @@
       ]
     },
     {
+      "organism": "Taeniopygia guttata",
+      "common_name": "zebra finch",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Estrildidae",
+        "genus": "Taeniopygia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tguttata.Ensembl.bTaeGut1v1p",
+          "version": "1.0.0",
+          "organism": "Taeniopygia guttata",
+          "assembly": "bTaeGut1_v1.p",
+          "provider": "Ensembl",
+          "accession": "GCA_003957565.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003957565.2/",
+          "file_name": "BSgenome.Tguttata.Ensembl.bTaeGut1v1p_1.0.0.tar.gz",
+          "size": 251340935,
+          "seq_ids": [
+            "1",
+            "1A",
+            "2",
+            "3",
+            "4"
+          ],
+          "seq_count": 134,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Estrildidae",
+            "genus": "Taeniopygia"
+          },
+          "common_name": "zebra finch",
+          "published": "2026-04-13T22:53:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tguttata.Ensembl.bTaeGut1v1p/BSgenome.Tguttata.Ensembl.bTaeGut1v1p_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Takifugu flavidus",
       "common_name": "sansaifugu",
       "group": "vertebrate_other",
@@ -83309,6 +83357,38 @@
       "common_name": "torafugu",
       "published": "2026-04-13T22:53:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Trubripes.Ensembl.fTakRub12/BSgenome.Trubripes.Ensembl.fTakRub12_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tguttata.Ensembl.bTaeGut1v1p",
+      "version": "1.0.0",
+      "organism": "Taeniopygia guttata",
+      "assembly": "bTaeGut1_v1.p",
+      "provider": "Ensembl",
+      "accession": "GCA_003957565.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003957565.2/",
+      "file_name": "BSgenome.Tguttata.Ensembl.bTaeGut1v1p_1.0.0.tar.gz",
+      "size": 251340935,
+      "seq_ids": [
+        "1",
+        "1A",
+        "2",
+        "3",
+        "4"
+      ],
+      "seq_count": 134,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Estrildidae",
+        "genus": "Taeniopygia"
+      },
+      "common_name": "zebra finch",
+      "published": "2026-04-13T22:53:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tguttata.Ensembl.bTaeGut1v1p/BSgenome.Tguttata.Ensembl.bTaeGut1v1p_1.0.0.tar.gz"
     }
   ]
 }
