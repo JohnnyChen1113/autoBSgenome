@@ -29194,6 +29194,38 @@
             "genus": "Myotis"
           },
           "common_name": "little brown bat"
+        },
+        {
+          "package": "BSgenome.Mlucifugus.Ensembl.Myoluc20",
+          "version": "1.0.0",
+          "organism": "Myotis lucifugus",
+          "assembly": "Myoluc2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000147115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000147115.1/",
+          "file_name": "BSgenome.Mlucifugus.Ensembl.Myoluc20_1.0.0.tar.gz",
+          "size": 474747449,
+          "seq_ids": [
+            "GL429767",
+            "GL429768",
+            "GL429769",
+            "GL429770",
+            "GL429771"
+          ],
+          "seq_count": 11654,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Vespertilionidae",
+            "genus": "Myotis"
+          },
+          "common_name": "little brown bat",
+          "published": "2026-04-13T10:23:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.Ensembl.Myoluc20/BSgenome.Mlucifugus.Ensembl.Myoluc20_1.0.0.tar.gz"
         }
       ]
     },
@@ -76654,6 +76686,38 @@
       "common_name": "pig-tailed macaque",
       "published": "2026-04-13T10:21:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mnemestrina.Ensembl.Mnem10/BSgenome.Mnemestrina.Ensembl.Mnem10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mlucifugus.Ensembl.Myoluc20",
+      "version": "1.0.0",
+      "organism": "Myotis lucifugus",
+      "assembly": "Myoluc2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000147115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000147115.1/",
+      "file_name": "BSgenome.Mlucifugus.Ensembl.Myoluc20_1.0.0.tar.gz",
+      "size": 474747449,
+      "seq_ids": [
+        "GL429767",
+        "GL429768",
+        "GL429769",
+        "GL429770",
+        "GL429771"
+      ],
+      "seq_count": 11654,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Vespertilionidae",
+        "genus": "Myotis"
+      },
+      "common_name": "little brown bat",
+      "published": "2026-04-13T10:23:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.Ensembl.Myoluc20/BSgenome.Mlucifugus.Ensembl.Myoluc20_1.0.0.tar.gz"
     }
   ]
 }
