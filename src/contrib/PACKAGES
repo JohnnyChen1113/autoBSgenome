@@ -4085,3 +4085,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmusculus.Ensembl.DBA2Jv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptephrosceles.Ensembl.ASM277652v2
+Version: 1.0.0
+NeedsCompilation: no

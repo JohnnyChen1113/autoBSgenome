@@ -36040,6 +36040,38 @@
           "common_name": "Ugandan red Colobus",
           "published": "2026-04-04T02:29:22Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptephrosceles.NCBI.ASM277652v5/BSgenome.Ptephrosceles.NCBI.ASM277652v5_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ptephrosceles.Ensembl.ASM277652v2",
+          "version": "1.0.0",
+          "organism": "Piliocolobus tephrosceles",
+          "assembly": "ASM277652v2",
+          "provider": "Ensembl",
+          "accession": "GCA_002776525.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002776525.2/",
+          "file_name": "BSgenome.Ptephrosceles.Ensembl.ASM277652v2_1.0.0.tar.gz",
+          "size": 699042213,
+          "seq_ids": [
+            "PDMG02000013.1",
+            "PDMG02000047.1",
+            "PDMG02000065.1",
+            "PDMG02000068.1",
+            "PDMG02000017.1"
+          ],
+          "seq_count": 47449,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Piliocolobus"
+          },
+          "common_name": "Ugandan red Colobus",
+          "published": "2026-04-13T16:47:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptephrosceles.Ensembl.ASM277652v2/BSgenome.Ptephrosceles.Ensembl.ASM277652v2_1.0.0.tar.gz"
         }
       ]
     },
@@ -79560,6 +79592,38 @@
       "common_name": "house mouse",
       "published": "2026-04-13T16:47:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.DBA2Jv3/BSgenome.Mmusculus.Ensembl.DBA2Jv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ptephrosceles.Ensembl.ASM277652v2",
+      "version": "1.0.0",
+      "organism": "Piliocolobus tephrosceles",
+      "assembly": "ASM277652v2",
+      "provider": "Ensembl",
+      "accession": "GCA_002776525.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002776525.2/",
+      "file_name": "BSgenome.Ptephrosceles.Ensembl.ASM277652v2_1.0.0.tar.gz",
+      "size": 699042213,
+      "seq_ids": [
+        "PDMG02000013.1",
+        "PDMG02000047.1",
+        "PDMG02000065.1",
+        "PDMG02000068.1",
+        "PDMG02000017.1"
+      ],
+      "seq_count": 47449,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Piliocolobus"
+      },
+      "common_name": "Ugandan red Colobus",
+      "published": "2026-04-13T16:47:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptephrosceles.Ensembl.ASM277652v2/BSgenome.Ptephrosceles.Ensembl.ASM277652v2_1.0.0.tar.gz"
     }
   ]
 }
