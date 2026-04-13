@@ -4021,3 +4021,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpahari.Ensembl.PAHARIEIJv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oaries.Ensembl.ASM2243282v1
+Version: 1.0.0
+NeedsCompilation: no
