@@ -35634,6 +35634,38 @@
           "common_name": "koala",
           "published": "2026-04-04T02:31:29Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcinereus.NCBI.phaCinHiC/BSgenome.Pcinereus.NCBI.phaCinHiC_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Pcinereus.Ensembl.phaCinunswv41",
+          "version": "1.0.0",
+          "organism": "Phascolarctos cinereus",
+          "assembly": "phaCin_unsw_v4.1",
+          "provider": "Ensembl",
+          "accession": "GCA_002099425.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002099425.1/",
+          "file_name": "BSgenome.Pcinereus.Ensembl.phaCinunswv41_1.0.0.tar.gz",
+          "size": 762469931,
+          "seq_ids": [
+            "MSTS01000001.1",
+            "MSTS01000002.1",
+            "MSTS01000003.1",
+            "MSTS01000004.1",
+            "MSTS01000005.1"
+          ],
+          "seq_count": 1907,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Diprotodontia",
+            "family": "Phascolarctidae",
+            "genus": "Phascolarctos"
+          },
+          "common_name": "koala",
+          "published": "2026-04-13T19:52:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcinereus.Ensembl.phaCinunswv41/BSgenome.Pcinereus.Ensembl.phaCinunswv41_1.0.0.tar.gz"
         }
       ]
     },
@@ -80946,6 +80978,38 @@
       "common_name": "Kakapo",
       "published": "2026-04-13T19:52:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shabroptila.Ensembl.bStrHab1v1p/BSgenome.Shabroptila.Ensembl.bStrHab1v1p_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcinereus.Ensembl.phaCinunswv41",
+      "version": "1.0.0",
+      "organism": "Phascolarctos cinereus",
+      "assembly": "phaCin_unsw_v4.1",
+      "provider": "Ensembl",
+      "accession": "GCA_002099425.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002099425.1/",
+      "file_name": "BSgenome.Pcinereus.Ensembl.phaCinunswv41_1.0.0.tar.gz",
+      "size": 762469931,
+      "seq_ids": [
+        "MSTS01000001.1",
+        "MSTS01000002.1",
+        "MSTS01000003.1",
+        "MSTS01000004.1",
+        "MSTS01000005.1"
+      ],
+      "seq_count": 1907,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Diprotodontia",
+        "family": "Phascolarctidae",
+        "genus": "Phascolarctos"
+      },
+      "common_name": "koala",
+      "published": "2026-04-13T19:52:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcinereus.Ensembl.phaCinunswv41/BSgenome.Pcinereus.Ensembl.phaCinunswv41_1.0.0.tar.gz"
     }
   ]
 }

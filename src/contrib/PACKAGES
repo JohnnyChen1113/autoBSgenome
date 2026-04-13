@@ -4161,3 +4161,7 @@ NeedsCompilation: no
 Package: BSgenome.Shabroptila.Ensembl.bStrHab1v1p
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcinereus.Ensembl.phaCinunswv41
+Version: 1.0.0
+NeedsCompilation: no
