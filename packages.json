@@ -32579,6 +32579,54 @@
       ]
     },
     {
+      "organism": "Oncorhynchus mykiss",
+      "common_name": "rainbow trout",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Oncorhynchus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Omykiss.Ensembl.USDAOmykA11",
+          "version": "1.0.0",
+          "organism": "Oncorhynchus mykiss",
+          "assembly": "USDA_OmykA_1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_013265735.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_013265735.3/",
+          "file_name": "BSgenome.Omykiss.Ensembl.USDAOmykA11_1.0.0.tar.gz",
+          "size": 483272448,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 742,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Salmoniformes",
+            "family": "Salmonidae",
+            "genus": "Oncorhynchus"
+          },
+          "common_name": "rainbow trout",
+          "published": "2026-04-13T21:59:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Omykiss.Ensembl.USDAOmykA11/BSgenome.Omykiss.Ensembl.USDAOmykA11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oncorhynchus tshawytscha",
       "common_name": "Chinook salmon",
       "group": "vertebrate_other",
@@ -82416,6 +82464,38 @@
       "common_name": "Asian bonytongue",
       "published": "2026-04-13T21:59:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sformosus.Ensembl.fSclFor11/BSgenome.Sformosus.Ensembl.fSclFor11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Omykiss.Ensembl.USDAOmykA11",
+      "version": "1.0.0",
+      "organism": "Oncorhynchus mykiss",
+      "assembly": "USDA_OmykA_1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_013265735.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_013265735.3/",
+      "file_name": "BSgenome.Omykiss.Ensembl.USDAOmykA11_1.0.0.tar.gz",
+      "size": 483272448,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 742,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Oncorhynchus"
+      },
+      "common_name": "rainbow trout",
+      "published": "2026-04-13T21:59:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Omykiss.Ensembl.USDAOmykA11/BSgenome.Omykiss.Ensembl.USDAOmykA11_1.0.0.tar.gz"
     }
   ]
 }
