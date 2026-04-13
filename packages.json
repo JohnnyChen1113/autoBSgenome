@@ -15323,6 +15323,38 @@
           "common_name": "beluga whale",
           "published": "2026-04-03T21:41:10Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dleucas.NCBI.ASM228892v3/BSgenome.Dleucas.NCBI.ASM228892v3_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Dleucas.Ensembl.ASM228892v3",
+          "version": "1.0.0",
+          "organism": "Delphinapterus leucas",
+          "assembly": "ASM228892v3",
+          "provider": "Ensembl",
+          "accession": "GCA_002288925.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002288925.3/",
+          "file_name": "BSgenome.Dleucas.Ensembl.ASM228892v3_1.0.0.tar.gz",
+          "size": 559403326,
+          "seq_ids": [
+            "ML702122.1",
+            "ML702094.1",
+            "ML702087.1",
+            "ML702084.1",
+            "ML702082.1"
+          ],
+          "seq_count": 5905,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Monodontidae",
+            "genus": "Delphinapterus"
+          },
+          "common_name": "beluga whale",
+          "published": "2026-04-13T05:47:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dleucas.Ensembl.ASM228892v3/BSgenome.Dleucas.Ensembl.ASM228892v3_1.0.0.tar.gz"
         }
       ]
     },
@@ -74942,6 +74974,38 @@
       "common_name": "round goby",
       "published": "2026-04-13T05:47:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nmelanostomus.Ensembl.RGobyBaselV2/BSgenome.Nmelanostomus.Ensembl.RGobyBaselV2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dleucas.Ensembl.ASM228892v3",
+      "version": "1.0.0",
+      "organism": "Delphinapterus leucas",
+      "assembly": "ASM228892v3",
+      "provider": "Ensembl",
+      "accession": "GCA_002288925.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002288925.3/",
+      "file_name": "BSgenome.Dleucas.Ensembl.ASM228892v3_1.0.0.tar.gz",
+      "size": 559403326,
+      "seq_ids": [
+        "ML702122.1",
+        "ML702094.1",
+        "ML702087.1",
+        "ML702084.1",
+        "ML702082.1"
+      ],
+      "seq_count": 5905,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Monodontidae",
+        "genus": "Delphinapterus"
+      },
+      "common_name": "beluga whale",
+      "published": "2026-04-13T05:47:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dleucas.Ensembl.ASM228892v3/BSgenome.Dleucas.Ensembl.ASM228892v3_1.0.0.tar.gz"
     }
   ]
 }

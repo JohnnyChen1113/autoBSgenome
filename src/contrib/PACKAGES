@@ -3825,3 +3825,7 @@ NeedsCompilation: no
 Package: BSgenome.Nmelanostomus.Ensembl.RGobyBaselV2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dleucas.Ensembl.ASM228892v3
+Version: 1.0.0
+NeedsCompilation: no
