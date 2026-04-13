@@ -41347,6 +41347,54 @@
       ]
     },
     {
+      "organism": "Salmo trutta",
+      "common_name": "river trout",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Salmo"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Strutta.Ensembl.fSalTru11",
+          "version": "1.0.0",
+          "organism": "Salmo trutta",
+          "assembly": "fSalTru1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_901001165.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_901001165.1/",
+          "file_name": "BSgenome.Strutta.Ensembl.fSalTru11_1.0.0.tar.gz",
+          "size": 507210605,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1441,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Salmoniformes",
+            "family": "Salmonidae",
+            "genus": "Salmo"
+          },
+          "common_name": "river trout",
+          "published": "2026-04-13T23:47:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Strutta.Ensembl.fSalTru11/BSgenome.Strutta.Ensembl.fSalTru11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Salpingoeca rosetta",
       "common_name": "",
       "group": "other",
@@ -83789,6 +83837,38 @@
       "common_name": "white-throated sparrow",
       "published": "2026-04-13T23:46:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101/BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Strutta.Ensembl.fSalTru11",
+      "version": "1.0.0",
+      "organism": "Salmo trutta",
+      "assembly": "fSalTru1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_901001165.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_901001165.1/",
+      "file_name": "BSgenome.Strutta.Ensembl.fSalTru11_1.0.0.tar.gz",
+      "size": 507210605,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1441,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Salmo"
+      },
+      "common_name": "river trout",
+      "published": "2026-04-13T23:47:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Strutta.Ensembl.fSalTru11/BSgenome.Strutta.Ensembl.fSalTru11_1.0.0.tar.gz"
     }
   ]
 }

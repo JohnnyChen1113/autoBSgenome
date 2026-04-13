@@ -4317,3 +4317,7 @@ NeedsCompilation: no
 Package: BSgenome.Zalbicollis.Ensembl.Zonotrichiaalbicollis101
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Strutta.Ensembl.fSalTru11
+Version: 1.0.0
+NeedsCompilation: no
