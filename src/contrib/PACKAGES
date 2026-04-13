@@ -3853,3 +3853,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmusculus.Ensembl.AKRJv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmusculus.Ensembl.BALBcJv3
+Version: 1.0.0
+NeedsCompilation: no
