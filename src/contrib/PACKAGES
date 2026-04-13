@@ -3857,3 +3857,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmusculus.Ensembl.BALBcJv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nbrichardi.Ensembl.NeoBri10
+Version: 1.0.0
+NeedsCompilation: no

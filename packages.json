@@ -29694,6 +29694,38 @@
           "common_name": "",
           "published": "2026-04-04T05:44:51Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nbrichardi.NCBI.NeoBri10/BSgenome.Nbrichardi.NCBI.NeoBri10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Nbrichardi.Ensembl.NeoBri10",
+          "version": "1.0.0",
+          "organism": "Neolamprologus brichardi",
+          "assembly": "NeoBri1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000239395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000239395.1/",
+          "file_name": "BSgenome.Nbrichardi.Ensembl.NeoBri10_1.0.0.tar.gz",
+          "size": 168322822,
+          "seq_ids": [
+            "JH422273.1",
+            "JH422274.1",
+            "JH422275.1",
+            "JH422276.1",
+            "JH422277.1"
+          ],
+          "seq_count": 9099,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cichliformes",
+            "family": "Cichlidae",
+            "genus": "Neolamprologus"
+          },
+          "common_name": "",
+          "published": "2026-04-13T08:08:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nbrichardi.Ensembl.NeoBri10/BSgenome.Nbrichardi.Ensembl.NeoBri10_1.0.0.tar.gz"
         }
       ]
     },
@@ -75502,6 +75534,38 @@
       "common_name": "house mouse",
       "published": "2026-04-13T05:49:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.BALBcJv3/BSgenome.Mmusculus.Ensembl.BALBcJv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nbrichardi.Ensembl.NeoBri10",
+      "version": "1.0.0",
+      "organism": "Neolamprologus brichardi",
+      "assembly": "NeoBri1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000239395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000239395.1/",
+      "file_name": "BSgenome.Nbrichardi.Ensembl.NeoBri10_1.0.0.tar.gz",
+      "size": 168322822,
+      "seq_ids": [
+        "JH422273.1",
+        "JH422274.1",
+        "JH422275.1",
+        "JH422276.1",
+        "JH422277.1"
+      ],
+      "seq_count": 9099,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cichliformes",
+        "family": "Cichlidae",
+        "genus": "Neolamprologus"
+      },
+      "common_name": "",
+      "published": "2026-04-13T08:08:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nbrichardi.Ensembl.NeoBri10/BSgenome.Nbrichardi.Ensembl.NeoBri10_1.0.0.tar.gz"
     }
   ]
 }
