@@ -44441,6 +44441,38 @@
           "common_name": "pig",
           "published": "2026-04-13T22:01:19Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.NingheSus1/BSgenome.Sscrofa.Ensembl.NingheSus1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Sscrofa.Ensembl.Jinhuapigv1",
+          "version": "1.0.0",
+          "organism": "Sus scrofa",
+          "assembly": "Jinhua_pig_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_001700295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001700295.1/",
+          "file_name": "BSgenome.Sscrofa.Ensembl.Jinhuapigv1_1.0.0.tar.gz",
+          "size": 589884417,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 613,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Suidae",
+            "genus": "Sus"
+          },
+          "common_name": "pig",
+          "published": "2026-04-13T22:53:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Jinhuapigv1/BSgenome.Sscrofa.Ensembl.Jinhuapigv1_1.0.0.tar.gz"
         }
       ]
     },
@@ -83389,6 +83421,38 @@
       "common_name": "zebra finch",
       "published": "2026-04-13T22:53:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tguttata.Ensembl.bTaeGut1v1p/BSgenome.Tguttata.Ensembl.bTaeGut1v1p_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sscrofa.Ensembl.Jinhuapigv1",
+      "version": "1.0.0",
+      "organism": "Sus scrofa",
+      "assembly": "Jinhua_pig_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_001700295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001700295.1/",
+      "file_name": "BSgenome.Sscrofa.Ensembl.Jinhuapigv1_1.0.0.tar.gz",
+      "size": 589884417,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 613,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Suidae",
+        "genus": "Sus"
+      },
+      "common_name": "pig",
+      "published": "2026-04-13T22:53:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Jinhuapigv1/BSgenome.Sscrofa.Ensembl.Jinhuapigv1_1.0.0.tar.gz"
     }
   ]
 }
