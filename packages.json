@@ -29604,6 +29604,54 @@
       ]
     },
     {
+      "organism": "Nannospalax galili",
+      "common_name": "Upper Galilee mountains blind mole rat",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Spalacidae",
+        "genus": "Nannospalax"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ngalili.Ensembl.Sgaliliv10",
+          "version": "1.0.0",
+          "organism": "Nannospalax galili",
+          "assembly": "S.galili_v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000622305.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000622305.1/",
+          "file_name": "BSgenome.Ngalili.Ensembl.Sgaliliv10_1.0.0.tar.gz",
+          "size": 701366845,
+          "seq_ids": [
+            "KL203742.1",
+            "KL201351.1",
+            "KL202741.1",
+            "KL203914.1",
+            "KL205487.1"
+          ],
+          "seq_count": 154975,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Spalacidae",
+            "genus": "Nannospalax"
+          },
+          "common_name": "Upper Galilee mountains blind mole rat",
+          "published": "2026-04-13T10:24:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ngalili.Ensembl.Sgaliliv10/BSgenome.Ngalili.Ensembl.Sgaliliv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nanorana parkeri",
       "common_name": "",
       "group": "vertebrate_other",
@@ -76718,6 +76766,38 @@
       "common_name": "little brown bat",
       "published": "2026-04-13T10:23:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlucifugus.Ensembl.Myoluc20/BSgenome.Mlucifugus.Ensembl.Myoluc20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ngalili.Ensembl.Sgaliliv10",
+      "version": "1.0.0",
+      "organism": "Nannospalax galili",
+      "assembly": "S.galili_v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000622305.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000622305.1/",
+      "file_name": "BSgenome.Ngalili.Ensembl.Sgaliliv10_1.0.0.tar.gz",
+      "size": 701366845,
+      "seq_ids": [
+        "KL203742.1",
+        "KL201351.1",
+        "KL202741.1",
+        "KL203914.1",
+        "KL205487.1"
+      ],
+      "seq_count": 154975,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Spalacidae",
+        "genus": "Nannospalax"
+      },
+      "common_name": "Upper Galilee mountains blind mole rat",
+      "published": "2026-04-13T10:24:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ngalili.Ensembl.Sgaliliv10/BSgenome.Ngalili.Ensembl.Sgaliliv10_1.0.0.tar.gz"
     }
   ]
 }
