@@ -41911,6 +41911,38 @@
           "common_name": "",
           "published": "2026-04-04T04:32:19Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slalandi.NCBI.Sedor1/BSgenome.Slalandi.NCBI.Sedor1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Slalandi.Ensembl.Sedor1",
+          "version": "1.0.0",
+          "organism": "Seriola lalandi dorsalis",
+          "assembly": "Sedor1",
+          "provider": "Ensembl",
+          "accession": "GCA_002814215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002814215.1/",
+          "file_name": "BSgenome.Slalandi.Ensembl.Sedor1_1.0.0.tar.gz",
+          "size": 172781275,
+          "seq_ids": [
+            "PEQF01099379.1",
+            "PEQF01099363.1",
+            "PEQF01099586.1",
+            "PEQF01099376.1",
+            "PEQF01099584.1"
+          ],
+          "seq_count": 99598,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Carangiformes",
+            "family": "Carangidae",
+            "genus": "Seriola"
+          },
+          "common_name": "",
+          "published": "2026-04-13T21:00:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slalandi.Ensembl.Sedor1/BSgenome.Slalandi.Ensembl.Sedor1_1.0.0.tar.gz"
         }
       ]
     },
@@ -81602,6 +81634,38 @@
       "common_name": "Indian peafowl",
       "published": "2026-04-13T21:00:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcristatus.Ensembl.AIIMPcri10/BSgenome.Pcristatus.Ensembl.AIIMPcri10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Slalandi.Ensembl.Sedor1",
+      "version": "1.0.0",
+      "organism": "Seriola lalandi dorsalis",
+      "assembly": "Sedor1",
+      "provider": "Ensembl",
+      "accession": "GCA_002814215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002814215.1/",
+      "file_name": "BSgenome.Slalandi.Ensembl.Sedor1_1.0.0.tar.gz",
+      "size": 172781275,
+      "seq_ids": [
+        "PEQF01099379.1",
+        "PEQF01099363.1",
+        "PEQF01099586.1",
+        "PEQF01099376.1",
+        "PEQF01099584.1"
+      ],
+      "seq_count": 99598,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Carangiformes",
+        "family": "Carangidae",
+        "genus": "Seriola"
+      },
+      "common_name": "",
+      "published": "2026-04-13T21:00:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slalandi.Ensembl.Sedor1/BSgenome.Slalandi.Ensembl.Sedor1_1.0.0.tar.gz"
     }
   ]
 }
