@@ -4189,3 +4189,7 @@ NeedsCompilation: no
 Package: BSgenome.Pformosa.Ensembl.Poeciliaformosa512
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Svulgaris.Ensembl.mSciVul11
+Version: 1.0.0
+NeedsCompilation: no

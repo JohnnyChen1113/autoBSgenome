@@ -41547,6 +41547,54 @@
       ]
     },
     {
+      "organism": "Sciurus vulgaris",
+      "common_name": "Eurasian red squirrel",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Sciuridae",
+        "genus": "Sciurus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Svulgaris.Ensembl.mSciVul11",
+          "version": "1.0.0",
+          "organism": "Sciurus vulgaris",
+          "assembly": "mSciVul1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_902686455.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902686455.1/",
+          "file_name": "BSgenome.Svulgaris.Ensembl.mSciVul11_1.0.0.tar.gz",
+          "size": 646253447,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 638,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Sciuridae",
+            "genus": "Sciurus"
+          },
+          "common_name": "Eurasian red squirrel",
+          "published": "2026-04-13T21:00:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Svulgaris.Ensembl.mSciVul11/BSgenome.Svulgaris.Ensembl.mSciVul11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sclerotinia sclerotiorum 1980 UF-70",
       "common_name": "",
       "group": "fungi",
@@ -81442,6 +81490,38 @@
       "common_name": "Amazon molly",
       "published": "2026-04-13T21:00:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pformosa.Ensembl.Poeciliaformosa512/BSgenome.Pformosa.Ensembl.Poeciliaformosa512_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Svulgaris.Ensembl.mSciVul11",
+      "version": "1.0.0",
+      "organism": "Sciurus vulgaris",
+      "assembly": "mSciVul1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_902686455.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902686455.1/",
+      "file_name": "BSgenome.Svulgaris.Ensembl.mSciVul11_1.0.0.tar.gz",
+      "size": 646253447,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 638,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Sciuridae",
+        "genus": "Sciurus"
+      },
+      "common_name": "Eurasian red squirrel",
+      "published": "2026-04-13T21:00:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Svulgaris.Ensembl.mSciVul11/BSgenome.Svulgaris.Ensembl.mSciVul11_1.0.0.tar.gz"
     }
   ]
 }
