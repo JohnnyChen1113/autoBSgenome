@@ -34478,6 +34478,54 @@
       ]
     },
     {
+      "organism": "Paramormyrops kingsleyae",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Osteoglossiformes",
+        "family": "Mormyridae",
+        "genus": "Paramormyrops"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pkingsleyae.Ensembl.PKINGS01",
+          "version": "1.0.0",
+          "organism": "Paramormyrops kingsleyae",
+          "assembly": "PKINGS_0.1",
+          "provider": "Ensembl",
+          "accession": "GCA_002872115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002872115.1/",
+          "file_name": "BSgenome.Pkingsleyae.Ensembl.PKINGS01_1.0.0.tar.gz",
+          "size": 180631934,
+          "seq_ids": [
+            "PGUA01000001.1",
+            "PGUA01000002.1",
+            "PGUA01000003.1",
+            "PGUA01000004.1",
+            "PGUA01000005.1"
+          ],
+          "seq_count": 4667,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Osteoglossiformes",
+            "family": "Mormyridae",
+            "genus": "Paramormyrops"
+          },
+          "common_name": "",
+          "published": "2026-04-13T21:00:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pkingsleyae.Ensembl.PKINGS01/BSgenome.Pkingsleyae.Ensembl.PKINGS01_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Paraphaeosphaeria sporulosa",
       "common_name": "",
       "group": "fungi",
@@ -81298,6 +81346,38 @@
       "common_name": "red-bellied piranha",
       "published": "2026-04-13T21:00:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnattereri.Ensembl.fPygNat1pri/BSgenome.Pnattereri.Ensembl.fPygNat1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pkingsleyae.Ensembl.PKINGS01",
+      "version": "1.0.0",
+      "organism": "Paramormyrops kingsleyae",
+      "assembly": "PKINGS_0.1",
+      "provider": "Ensembl",
+      "accession": "GCA_002872115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002872115.1/",
+      "file_name": "BSgenome.Pkingsleyae.Ensembl.PKINGS01_1.0.0.tar.gz",
+      "size": 180631934,
+      "seq_ids": [
+        "PGUA01000001.1",
+        "PGUA01000002.1",
+        "PGUA01000003.1",
+        "PGUA01000004.1",
+        "PGUA01000005.1"
+      ],
+      "seq_count": 4667,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Osteoglossiformes",
+        "family": "Mormyridae",
+        "genus": "Paramormyrops"
+      },
+      "common_name": "",
+      "published": "2026-04-13T21:00:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pkingsleyae.Ensembl.PKINGS01/BSgenome.Pkingsleyae.Ensembl.PKINGS01_1.0.0.tar.gz"
     }
   ]
 }
