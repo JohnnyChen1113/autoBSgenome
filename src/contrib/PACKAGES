@@ -4133,3 +4133,7 @@ NeedsCompilation: no
 Package: BSgenome.Sfasciatus.Ensembl.fSalaFa11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmuralis.Ensembl.PodMur10
+Version: 1.0.0
+NeedsCompilation: no
