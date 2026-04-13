@@ -3885,3 +3885,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmarmota.Ensembl.marMar21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmusculus.Ensembl.AJv3
+Version: 1.0.0
+NeedsCompilation: no
