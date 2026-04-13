@@ -4265,3 +4265,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssuricatta.Ensembl.meerkat22Aug20176uvM2HiC
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcolchicus.Ensembl.ASM414374v1
+Version: 1.0.0
+NeedsCompilation: no
