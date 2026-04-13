@@ -41033,6 +41033,54 @@
       ]
     },
     {
+      "organism": "Saimiri boliviensis boliviensis",
+      "common_name": "Bolivian squirrel monkey",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cebidae",
+        "genus": "Saimiri"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sboliviensis.Ensembl.SaiBol10",
+          "version": "1.0.0",
+          "organism": "Saimiri boliviensis boliviensis",
+          "assembly": "SaiBol1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000235385.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000235385.1/",
+          "file_name": "BSgenome.Sboliviensis.Ensembl.SaiBol10_1.0.0.tar.gz",
+          "size": 593974388,
+          "seq_ids": [
+            "JH378105.1",
+            "JH378106.1",
+            "JH378107.1",
+            "JH378108.1",
+            "JH378109.1"
+          ],
+          "seq_count": 2686,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cebidae",
+            "genus": "Saimiri"
+          },
+          "common_name": "Bolivian squirrel monkey",
+          "published": "2026-04-13T21:59:21Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sboliviensis.Ensembl.SaiBol10/BSgenome.Sboliviensis.Ensembl.SaiBol10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Saitoella complicata NRRL Y-17804",
       "common_name": "",
       "group": "fungi",
@@ -82256,6 +82304,38 @@
       "common_name": "house mouse",
       "published": "2026-04-13T21:59:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmusculus.Ensembl.129S1SvImJv3/BSgenome.Mmusculus.Ensembl.129S1SvImJv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sboliviensis.Ensembl.SaiBol10",
+      "version": "1.0.0",
+      "organism": "Saimiri boliviensis boliviensis",
+      "assembly": "SaiBol1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000235385.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000235385.1/",
+      "file_name": "BSgenome.Sboliviensis.Ensembl.SaiBol10_1.0.0.tar.gz",
+      "size": 593974388,
+      "seq_ids": [
+        "JH378105.1",
+        "JH378106.1",
+        "JH378107.1",
+        "JH378108.1",
+        "JH378109.1"
+      ],
+      "seq_count": 2686,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cebidae",
+        "genus": "Saimiri"
+      },
+      "common_name": "Bolivian squirrel monkey",
+      "published": "2026-04-13T21:59:21Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sboliviensis.Ensembl.SaiBol10/BSgenome.Sboliviensis.Ensembl.SaiBol10_1.0.0.tar.gz"
     }
   ]
 }

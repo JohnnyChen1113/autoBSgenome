@@ -4233,3 +4233,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmusculus.Ensembl.129S1SvImJv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sboliviensis.Ensembl.SaiBol10
+Version: 1.0.0
+NeedsCompilation: no
