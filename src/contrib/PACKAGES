@@ -4145,3 +4145,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppaniscus.Ensembl.panpan11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppardus.Ensembl.PanPar10
+Version: 1.0.0
+NeedsCompilation: no

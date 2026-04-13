@@ -33968,6 +33968,54 @@
       ]
     },
     {
+      "organism": "Panthera pardus",
+      "common_name": "leopard",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Panthera"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ppardus.Ensembl.PanPar10",
+          "version": "1.0.0",
+          "organism": "Panthera pardus",
+          "assembly": "PanPar1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_001857705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001857705.1/",
+          "file_name": "BSgenome.Ppardus.Ensembl.PanPar10_1.0.0.tar.gz",
+          "size": 592223934,
+          "seq_ids": [
+            "KV860272.1",
+            "KV860273.1",
+            "KV860274.1",
+            "KV860275.1",
+            "KV860276.1"
+          ],
+          "seq_count": 50377,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera"
+          },
+          "common_name": "leopard",
+          "published": "2026-04-13T19:51:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppardus.Ensembl.PanPar10/BSgenome.Ppardus.Ensembl.PanPar10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Panthera tigris altaica",
       "common_name": "Amur tiger",
       "group": "vertebrate_mammalian",
@@ -80658,6 +80706,38 @@
       "common_name": "pygmy chimpanzee",
       "published": "2026-04-13T19:51:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppaniscus.Ensembl.panpan11/BSgenome.Ppaniscus.Ensembl.panpan11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ppardus.Ensembl.PanPar10",
+      "version": "1.0.0",
+      "organism": "Panthera pardus",
+      "assembly": "PanPar1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_001857705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001857705.1/",
+      "file_name": "BSgenome.Ppardus.Ensembl.PanPar10_1.0.0.tar.gz",
+      "size": 592223934,
+      "seq_ids": [
+        "KV860272.1",
+        "KV860273.1",
+        "KV860274.1",
+        "KV860275.1",
+        "KV860276.1"
+      ],
+      "seq_count": 50377,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Panthera"
+      },
+      "common_name": "leopard",
+      "published": "2026-04-13T19:51:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppardus.Ensembl.PanPar10/BSgenome.Ppardus.Ensembl.PanPar10_1.0.0.tar.gz"
     }
   ]
 }
