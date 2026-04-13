@@ -3945,3 +3945,7 @@ NeedsCompilation: no
 Package: BSgenome.Olatipes.Ensembl.ASM223471v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nmeleagris.Ensembl.NumMel10
+Version: 1.0.0
+NeedsCompilation: no
