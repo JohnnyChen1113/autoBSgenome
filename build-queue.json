@@ -115874,7 +115874,7 @@
     "group": "plants",
     "species_url": "Citrus_clementina",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000309985.1",
@@ -115884,7 +115884,7 @@
     "group": "plants",
     "species_url": "Brassica_rapa",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_007726485.1",
@@ -115894,7 +115894,7 @@
     "group": "plants",
     "species_url": "Eragrostis_curvula",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000612305.1",
@@ -115904,7 +115904,7 @@
     "group": "plants",
     "species_url": "Eucalyptus_grandis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949782845.1",
@@ -115914,7 +115914,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_bonus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000327365.1",
@@ -115924,7 +115924,7 @@
     "group": "plants",
     "species_url": "Gossypium_raimondii",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949782835.1",
@@ -115934,7 +115934,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_barke",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783145.1",
@@ -115944,7 +115944,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_chikurinibaraki1",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783005.1",
@@ -115954,7 +115954,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_10tj18",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002127325.2",
@@ -115964,7 +115964,7 @@
     "group": "plants",
     "species_url": "Helianthus_annuus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951341855.1",
@@ -115974,7 +115974,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hid055",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009761775.1",
@@ -115984,7 +115984,7 @@
     "group": "plants",
     "species_url": "Ficus_carica",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783515.1",
@@ -115994,7 +115994,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor10350",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783255.1",
@@ -116004,7 +116004,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_ft333",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000478725.1",
@@ -116014,7 +116014,7 @@
     "group": "plants",
     "species_url": "Eutrema_salsugineum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783165.1",
