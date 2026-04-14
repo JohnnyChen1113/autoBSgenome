@@ -48529,6 +48529,54 @@
       ]
     },
     {
+      "organism": "Ursus thibetanus thibetanus",
+      "common_name": "",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ursidae",
+        "genus": "Ursus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Uthibetanus.Ensembl.ASM966005v1",
+          "version": "1.0.0",
+          "organism": "Ursus thibetanus thibetanus",
+          "assembly": "ASM966005v1",
+          "provider": "Ensembl",
+          "accession": "GCA_009660055.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009660055.1/",
+          "file_name": "BSgenome.Uthibetanus.Ensembl.ASM966005v1_1.0.0.tar.gz",
+          "size": 567341786,
+          "seq_ids": [
+            "WEIE01000001.1",
+            "WEIE01000002.1",
+            "WEIE01000003.1",
+            "WEIE01000004.1",
+            "WEIE01000005.1"
+          ],
+          "seq_count": 24967,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Ursidae",
+            "genus": "Ursus"
+          },
+          "common_name": "",
+          "published": "2026-04-14T02:47:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Uthibetanus.Ensembl.ASM966005v1/BSgenome.Uthibetanus.Ensembl.ASM966005v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ustilaginoidea virens",
       "common_name": "",
       "group": "fungi",
@@ -84941,6 +84989,38 @@
       "common_name": "Brazilian guinea pig",
       "published": "2026-04-14T02:47:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Caperea.Ensembl.CavAp10/BSgenome.Caperea.Ensembl.CavAp10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Uthibetanus.Ensembl.ASM966005v1",
+      "version": "1.0.0",
+      "organism": "Ursus thibetanus thibetanus",
+      "assembly": "ASM966005v1",
+      "provider": "Ensembl",
+      "accession": "GCA_009660055.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009660055.1/",
+      "file_name": "BSgenome.Uthibetanus.Ensembl.ASM966005v1_1.0.0.tar.gz",
+      "size": 567341786,
+      "seq_ids": [
+        "WEIE01000001.1",
+        "WEIE01000002.1",
+        "WEIE01000003.1",
+        "WEIE01000004.1",
+        "WEIE01000005.1"
+      ],
+      "seq_count": 24967,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ursidae",
+        "genus": "Ursus"
+      },
+      "common_name": "",
+      "published": "2026-04-14T02:47:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Uthibetanus.Ensembl.ASM966005v1/BSgenome.Uthibetanus.Ensembl.ASM966005v1_1.0.0.tar.gz"
     }
   ]
 }

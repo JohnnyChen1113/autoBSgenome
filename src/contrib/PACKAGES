@@ -4381,3 +4381,7 @@ NeedsCompilation: no
 Package: BSgenome.Caperea.Ensembl.CavAp10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Uthibetanus.Ensembl.ASM966005v1
+Version: 1.0.0
+NeedsCompilation: no
