@@ -39331,6 +39331,54 @@
       ]
     },
     {
+      "organism": "Pseudonaja textilis",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Elapidae",
+        "genus": "Pseudonaja"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI",
+          "version": "1.0.0",
+          "organism": "Pseudonaja textilis",
+          "assembly": "EBS10Xv2-PRI",
+          "provider": "Ensembl",
+          "accession": "GCA_900518735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900518735.1/",
+          "file_name": "BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI_1.0.0.tar.gz",
+          "size": 371159615,
+          "seq_ids": [
+            "ULFR01000001.1",
+            "ULFR01000002.1",
+            "ULFR01000003.1",
+            "ULFR01000004.1",
+            "ULFR01000005.1"
+          ],
+          "seq_count": 28550,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Squamata",
+            "family": "Elapidae",
+            "genus": "Pseudonaja"
+          },
+          "common_name": "",
+          "published": "2026-04-14T02:46:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI/BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudopodoces humilis",
       "common_name": "Tibetan ground-tit",
       "group": "vertebrate_other",
@@ -84541,6 +84589,38 @@
       "common_name": "Swainson's thrush",
       "published": "2026-04-14T02:46:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Custulatus.Ensembl.bCatUst1pri/BSgenome.Custulatus.Ensembl.bCatUst1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI",
+      "version": "1.0.0",
+      "organism": "Pseudonaja textilis",
+      "assembly": "EBS10Xv2-PRI",
+      "provider": "Ensembl",
+      "accession": "GCA_900518735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900518735.1/",
+      "file_name": "BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI_1.0.0.tar.gz",
+      "size": 371159615,
+      "seq_ids": [
+        "ULFR01000001.1",
+        "ULFR01000002.1",
+        "ULFR01000003.1",
+        "ULFR01000004.1",
+        "ULFR01000005.1"
+      ],
+      "seq_count": 28550,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Squamata",
+        "family": "Elapidae",
+        "genus": "Pseudonaja"
+      },
+      "common_name": "",
+      "published": "2026-04-14T02:46:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI/BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI_1.0.0.tar.gz"
     }
   ]
 }
