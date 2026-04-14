@@ -4481,3 +4481,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscrofa.Ensembl.ASM764409v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Uparryii.Ensembl.ASM342692v1
+Version: 1.0.0
+NeedsCompilation: no
