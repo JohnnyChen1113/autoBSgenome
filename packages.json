@@ -40703,6 +40703,38 @@
             "genus": "Rhinolophus"
           },
           "common_name": "greater horseshoe bat"
+        },
+        {
+          "package": "BSgenome.Rferrumequinum.Ensembl.mRhiFer1v1p",
+          "version": "1.0.0",
+          "organism": "Rhinolophus ferrumequinum",
+          "assembly": "mRhiFer1_v1.p",
+          "provider": "Ensembl",
+          "accession": "GCA_004115265.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004115265.2/",
+          "file_name": "BSgenome.Rferrumequinum.Ensembl.mRhiFer1v1p_1.0.0.tar.gz",
+          "size": 499085498,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 134,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Chiroptera",
+            "family": "Rhinolophidae",
+            "genus": "Rhinolophus"
+          },
+          "common_name": "greater horseshoe bat",
+          "published": "2026-04-14T05:29:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rferrumequinum.Ensembl.mRhiFer1v1p/BSgenome.Rferrumequinum.Ensembl.mRhiFer1v1p_1.0.0.tar.gz"
         }
       ]
     },
@@ -85437,6 +85469,38 @@
       "common_name": "pig",
       "published": "2026-04-14T05:29:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Meishanpigv1/BSgenome.Sscrofa.Ensembl.Meishanpigv1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rferrumequinum.Ensembl.mRhiFer1v1p",
+      "version": "1.0.0",
+      "organism": "Rhinolophus ferrumequinum",
+      "assembly": "mRhiFer1_v1.p",
+      "provider": "Ensembl",
+      "accession": "GCA_004115265.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004115265.2/",
+      "file_name": "BSgenome.Rferrumequinum.Ensembl.mRhiFer1v1p_1.0.0.tar.gz",
+      "size": 499085498,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 134,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Chiroptera",
+        "family": "Rhinolophidae",
+        "genus": "Rhinolophus"
+      },
+      "common_name": "greater horseshoe bat",
+      "published": "2026-04-14T05:29:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rferrumequinum.Ensembl.mRhiFer1v1p/BSgenome.Rferrumequinum.Ensembl.mRhiFer1v1p_1.0.0.tar.gz"
     }
   ]
 }

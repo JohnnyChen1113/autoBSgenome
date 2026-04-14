@@ -4409,3 +4409,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscrofa.Ensembl.Meishanpigv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rferrumequinum.Ensembl.mRhiFer1v1p
+Version: 1.0.0
+NeedsCompilation: no
