@@ -40917,6 +40917,38 @@
           "common_name": "Norway rat",
           "published": "2026-04-13T18:08:01Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rnorvegicus.Ensembl.UTHRnorSHRSPBbbUtx10/BSgenome.Rnorvegicus.Ensembl.UTHRnorSHRSPBbbUtx10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Rnorvegicus.Ensembl.GRCr8",
+          "version": "1.0.0",
+          "organism": "Rattus norvegicus",
+          "assembly": "GRCr8",
+          "provider": "Ensembl",
+          "accession": "GCA_036323735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_036323735.1/",
+          "file_name": "BSgenome.Rnorvegicus.Ensembl.GRCr8_1.0.0.tar.gz",
+          "size": 658501163,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 77,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Muridae",
+            "genus": "Rattus"
+          },
+          "common_name": "Norway rat",
+          "published": "2026-04-14T09:10:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rnorvegicus.Ensembl.GRCr8/BSgenome.Rnorvegicus.Ensembl.GRCr8_1.0.0.tar.gz"
         }
       ]
     },
@@ -87306,6 +87338,38 @@
       "common_name": "American black bear",
       "published": "2026-04-14T09:09:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Uamericanus.Ensembl.ASM334442v1/BSgenome.Uamericanus.Ensembl.ASM334442v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rnorvegicus.Ensembl.GRCr8",
+      "version": "1.0.0",
+      "organism": "Rattus norvegicus",
+      "assembly": "GRCr8",
+      "provider": "Ensembl",
+      "accession": "GCA_036323735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_036323735.1/",
+      "file_name": "BSgenome.Rnorvegicus.Ensembl.GRCr8_1.0.0.tar.gz",
+      "size": 658501163,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 77,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Muridae",
+        "genus": "Rattus"
+      },
+      "common_name": "Norway rat",
+      "published": "2026-04-14T09:10:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rnorvegicus.Ensembl.GRCr8/BSgenome.Rnorvegicus.Ensembl.GRCr8_1.0.0.tar.gz"
     }
   ]
 }
