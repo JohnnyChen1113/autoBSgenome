@@ -4493,3 +4493,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptroglodytes.Ensembl.Pantro30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Btaurus.Ensembl.UOAWagyu1
+Version: 1.0.0
+NeedsCompilation: no

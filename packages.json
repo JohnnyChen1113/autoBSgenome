@@ -7258,6 +7258,38 @@
           "common_name": "domestic cattle",
           "published": "2026-04-07T11:00:28Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Btaurus.Ensembl.ARSUCD20/BSgenome.Btaurus.Ensembl.ARSUCD20_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Btaurus.Ensembl.UOAWagyu1",
+          "version": "1.0.0",
+          "organism": "Bos taurus",
+          "assembly": "UOA_Wagyu_1",
+          "provider": "Ensembl",
+          "accession": "GCA_040286185.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_040286185.1/",
+          "file_name": "BSgenome.Btaurus.Ensembl.UOAWagyu1_1.0.0.tar.gz",
+          "size": 645793762,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1958,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Bos"
+          },
+          "common_name": "domestic cattle",
+          "published": "2026-04-14T09:07:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Btaurus.Ensembl.UOAWagyu1/BSgenome.Btaurus.Ensembl.UOAWagyu1_1.0.0.tar.gz"
         }
       ]
     },
@@ -86874,6 +86906,38 @@
       "common_name": "chimpanzee",
       "published": "2026-04-14T09:07:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptroglodytes.Ensembl.Pantro30/BSgenome.Ptroglodytes.Ensembl.Pantro30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Btaurus.Ensembl.UOAWagyu1",
+      "version": "1.0.0",
+      "organism": "Bos taurus",
+      "assembly": "UOA_Wagyu_1",
+      "provider": "Ensembl",
+      "accession": "GCA_040286185.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_040286185.1/",
+      "file_name": "BSgenome.Btaurus.Ensembl.UOAWagyu1_1.0.0.tar.gz",
+      "size": 645793762,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1958,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bos"
+      },
+      "common_name": "domestic cattle",
+      "published": "2026-04-14T09:07:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Btaurus.Ensembl.UOAWagyu1/BSgenome.Btaurus.Ensembl.UOAWagyu1_1.0.0.tar.gz"
     }
   ]
 }
