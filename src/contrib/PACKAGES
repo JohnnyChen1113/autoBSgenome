@@ -4497,3 +4497,7 @@ NeedsCompilation: no
 Package: BSgenome.Btaurus.Ensembl.UOAWagyu1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vursinus.Ensembl.barenosedwombatgenomeassembly
+Version: 1.0.0
+NeedsCompilation: no

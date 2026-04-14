@@ -50291,6 +50291,54 @@
       ]
     },
     {
+      "organism": "Vombatus ursinus",
+      "common_name": "common wombat",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Diprotodontia",
+        "family": "Vombatidae",
+        "genus": "Vombatus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vursinus.Ensembl.barenosedwombatgenomeassembly",
+          "version": "1.0.0",
+          "organism": "Vombatus ursinus",
+          "assembly": "bare-nosed_wombat_genome_assembly",
+          "provider": "Ensembl",
+          "accession": "GCA_900497805.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900497805.2/",
+          "file_name": "BSgenome.Vursinus.Ensembl.barenosedwombatgenomeassembly_1.0.0.tar.gz",
+          "size": 829905413,
+          "seq_ids": [
+            "UNPS02014812.1",
+            "UNPS02014798.1",
+            "UNPS02014791.1",
+            "UNPS02014832.1",
+            "UNPS02014818.1"
+          ],
+          "seq_count": 15416,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Diprotodontia",
+            "family": "Vombatidae",
+            "genus": "Vombatus"
+          },
+          "common_name": "common wombat",
+          "published": "2026-04-14T09:08:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vursinus.Ensembl.barenosedwombatgenomeassembly/BSgenome.Vursinus.Ensembl.barenosedwombatgenomeassembly_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Vulpes vulpes",
       "common_name": "red fox",
       "group": "vertebrate_mammalian",
@@ -86938,6 +86986,38 @@
       "common_name": "domestic cattle",
       "published": "2026-04-14T09:07:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Btaurus.Ensembl.UOAWagyu1/BSgenome.Btaurus.Ensembl.UOAWagyu1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vursinus.Ensembl.barenosedwombatgenomeassembly",
+      "version": "1.0.0",
+      "organism": "Vombatus ursinus",
+      "assembly": "bare-nosed_wombat_genome_assembly",
+      "provider": "Ensembl",
+      "accession": "GCA_900497805.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900497805.2/",
+      "file_name": "BSgenome.Vursinus.Ensembl.barenosedwombatgenomeassembly_1.0.0.tar.gz",
+      "size": 829905413,
+      "seq_ids": [
+        "UNPS02014812.1",
+        "UNPS02014798.1",
+        "UNPS02014791.1",
+        "UNPS02014832.1",
+        "UNPS02014818.1"
+      ],
+      "seq_count": 15416,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Diprotodontia",
+        "family": "Vombatidae",
+        "genus": "Vombatus"
+      },
+      "common_name": "common wombat",
+      "published": "2026-04-14T09:08:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vursinus.Ensembl.barenosedwombatgenomeassembly/BSgenome.Vursinus.Ensembl.barenosedwombatgenomeassembly_1.0.0.tar.gz"
     }
   ]
 }
