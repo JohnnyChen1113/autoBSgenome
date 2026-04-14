@@ -49541,6 +49541,54 @@
       ]
     },
     {
+      "organism": "Vulpes vulpes",
+      "common_name": "red fox",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae",
+        "genus": "Vulpes"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vvulpes.Ensembl.VulVul22",
+          "version": "1.0.0",
+          "organism": "Vulpes vulpes",
+          "assembly": "VulVul2.2",
+          "provider": "Ensembl",
+          "accession": "GCA_003160815.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003160815.1/",
+          "file_name": "BSgenome.Vvulpes.Ensembl.VulVul22_1.0.0.tar.gz",
+          "size": 563802076,
+          "seq_ids": [
+            "NBDQ01000001.1",
+            "NBDQ01000002.1",
+            "NBDQ01000003.1",
+            "NBDQ01000004.1",
+            "NBDQ01000005.1"
+          ],
+          "seq_count": 82423,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Canidae",
+            "genus": "Vulpes"
+          },
+          "common_name": "red fox",
+          "published": "2026-04-14T05:28:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vvulpes.Ensembl.VulVul22/BSgenome.Vvulpes.Ensembl.VulVul22_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Wallemia ichthyophaga EXF-994",
       "common_name": "",
       "group": "fungi",
@@ -85229,6 +85277,38 @@
       "common_name": "turbot",
       "published": "2026-04-14T05:28:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smaximus.Ensembl.ASM1334776v1/BSgenome.Smaximus.Ensembl.ASM1334776v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vvulpes.Ensembl.VulVul22",
+      "version": "1.0.0",
+      "organism": "Vulpes vulpes",
+      "assembly": "VulVul2.2",
+      "provider": "Ensembl",
+      "accession": "GCA_003160815.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003160815.1/",
+      "file_name": "BSgenome.Vvulpes.Ensembl.VulVul22_1.0.0.tar.gz",
+      "size": 563802076,
+      "seq_ids": [
+        "NBDQ01000001.1",
+        "NBDQ01000002.1",
+        "NBDQ01000003.1",
+        "NBDQ01000004.1",
+        "NBDQ01000005.1"
+      ],
+      "seq_count": 82423,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae",
+        "genus": "Vulpes"
+      },
+      "common_name": "red fox",
+      "published": "2026-04-14T05:28:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vvulpes.Ensembl.VulVul22/BSgenome.Vvulpes.Ensembl.VulVul22_1.0.0.tar.gz"
     }
   ]
 }
