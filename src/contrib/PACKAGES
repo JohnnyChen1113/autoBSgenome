@@ -4365,3 +4365,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sharrisii.Ensembl.mSarHar111
+Version: 1.0.0
+NeedsCompilation: no

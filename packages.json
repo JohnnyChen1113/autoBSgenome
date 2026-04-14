@@ -41899,6 +41899,54 @@
       ]
     },
     {
+      "organism": "Sarcophilus harrisii",
+      "common_name": "Tasmanian devil",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Dasyuromorphia",
+        "family": "Dasyuridae",
+        "genus": "Sarcophilus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sharrisii.Ensembl.mSarHar111",
+          "version": "1.0.0",
+          "organism": "Sarcophilus harrisii",
+          "assembly": "mSarHar1.11",
+          "provider": "Ensembl",
+          "accession": "GCA_902635505.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902635505.1/",
+          "file_name": "BSgenome.Sharrisii.Ensembl.mSarHar111_1.0.0.tar.gz",
+          "size": 730887374,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 106,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Dasyuromorphia",
+            "family": "Dasyuridae",
+            "genus": "Sarcophilus"
+          },
+          "common_name": "Tasmanian devil",
+          "published": "2026-04-14T02:46:27Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sharrisii.Ensembl.mSarHar111/BSgenome.Sharrisii.Ensembl.mSarHar111_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Scaptodrosophila lebanonensis",
       "common_name": "",
       "group": "invertebrate",
@@ -84621,6 +84669,38 @@
       "common_name": "",
       "published": "2026-04-14T02:46:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI/BSgenome.Ptextilis.Ensembl.EBS10Xv2PRI_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sharrisii.Ensembl.mSarHar111",
+      "version": "1.0.0",
+      "organism": "Sarcophilus harrisii",
+      "assembly": "mSarHar1.11",
+      "provider": "Ensembl",
+      "accession": "GCA_902635505.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902635505.1/",
+      "file_name": "BSgenome.Sharrisii.Ensembl.mSarHar111_1.0.0.tar.gz",
+      "size": 730887374,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 106,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Dasyuromorphia",
+        "family": "Dasyuridae",
+        "genus": "Sarcophilus"
+      },
+      "common_name": "Tasmanian devil",
+      "published": "2026-04-14T02:46:27Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sharrisii.Ensembl.mSarHar111/BSgenome.Sharrisii.Ensembl.mSarHar111_1.0.0.tar.gz"
     }
   ]
 }
