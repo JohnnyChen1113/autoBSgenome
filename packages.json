@@ -49429,6 +49429,54 @@
       ]
     },
     {
+      "organism": "Xenopus tropicalis",
+      "common_name": "tropical clawed frog",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Anura",
+        "family": "Pipidae",
+        "genus": "Xenopus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Xtropicalis.Ensembl.UCBXtro100",
+          "version": "1.0.0",
+          "organism": "Xenopus tropicalis",
+          "assembly": "UCB_Xtro_10.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000004195.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000004195.4/",
+          "file_name": "BSgenome.Xtropicalis.Ensembl.UCBXtro100_1.0.0.tar.gz",
+          "size": 323630216,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 167,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Amphibia",
+            "order": "Anura",
+            "family": "Pipidae",
+            "genus": "Xenopus"
+          },
+          "common_name": "tropical clawed frog",
+          "published": "2026-04-14T02:45:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xtropicalis.Ensembl.UCBXtro100/BSgenome.Xtropicalis.Ensembl.UCBXtro100_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Xiphophorus couchianus",
       "common_name": "Monterrey platyfish",
       "group": "vertebrate_other",
@@ -84397,6 +84445,38 @@
       "common_name": "",
       "published": "2026-04-14T02:44:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scamelus.Ensembl.ASM69896v1/BSgenome.Scamelus.Ensembl.ASM69896v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Xtropicalis.Ensembl.UCBXtro100",
+      "version": "1.0.0",
+      "organism": "Xenopus tropicalis",
+      "assembly": "UCB_Xtro_10.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000004195.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000004195.4/",
+      "file_name": "BSgenome.Xtropicalis.Ensembl.UCBXtro100_1.0.0.tar.gz",
+      "size": 323630216,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 167,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Anura",
+        "family": "Pipidae",
+        "genus": "Xenopus"
+      },
+      "common_name": "tropical clawed frog",
+      "published": "2026-04-14T02:45:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xtropicalis.Ensembl.UCBXtro100/BSgenome.Xtropicalis.Ensembl.UCBXtro100_1.0.0.tar.gz"
     }
   ]
 }

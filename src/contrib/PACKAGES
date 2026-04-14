@@ -4353,3 +4353,7 @@ NeedsCompilation: no
 Package: BSgenome.Scamelus.Ensembl.ASM69896v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Xtropicalis.Ensembl.UCBXtro100
+Version: 1.0.0
+NeedsCompilation: no
