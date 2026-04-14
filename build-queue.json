@@ -115724,7 +115724,7 @@
     "group": "plants",
     "species_url": "Daucus_carota",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900412535.3",
@@ -115734,7 +115734,7 @@
     "group": "plants",
     "species_url": "Brassica_rapa_z1",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000340665.1",
@@ -115744,7 +115744,7 @@
     "group": "plants",
     "species_url": "Cajanus_cajan",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009730915.1",
@@ -115754,7 +115754,7 @@
     "group": "plants",
     "species_url": "Dioscorea_rotundata",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000633955.1",
@@ -115764,7 +115764,7 @@
     "group": "plants",
     "species_url": "Camelina_sativa",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000751015.1",
@@ -115774,7 +115774,7 @@
     "group": "plants",
     "species_url": "Brassica_napus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002575655.1",
@@ -115784,7 +115784,7 @@
     "group": "plants",
     "species_url": "Aegilops_tauschii",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_902859565.1",
@@ -115794,7 +115794,7 @@
     "group": "plants",
     "species_url": "Digitaria_exilis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_022788535.1",
@@ -115804,7 +115804,7 @@
     "group": "plants",
     "species_url": "Avena_sativa_OT3098",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900149125.1",
@@ -115814,7 +115814,7 @@
     "group": "plants",
     "species_url": "Fraxinus_excelsior",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000341285.1",
@@ -115824,7 +115824,7 @@
     "group": "plants",
     "species_url": "Galdieria_sulphuraria",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900626175.1",
@@ -115834,7 +115834,7 @@
     "group": "plants",
     "species_url": "Cannabis_sativa_female",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_024500355.1",
@@ -115844,7 +115844,7 @@
     "group": "plants",
     "species_url": "Eragrostis_tef",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_020466025.1",
@@ -115854,7 +115854,7 @@
     "group": "plants",
     "species_url": "Echinochloa_crusgalli",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_910574605.1",
@@ -115864,7 +115864,7 @@
     "group": "plants",
     "species_url": "Avena_sativa_Sang",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000493195.1",
