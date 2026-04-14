@@ -4505,3 +4505,7 @@ NeedsCompilation: no
 Package: BSgenome.Btaurus.Ensembl.UOATuli1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oaries.Ensembl.ARSUIRambv30
+Version: 1.0.0
+NeedsCompilation: no

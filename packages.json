@@ -34475,6 +34475,38 @@
           "common_name": "sheep",
           "published": "2026-04-13T21:59:04Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ASM2241675v1/BSgenome.Oaries.Ensembl.ASM2241675v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Oaries.Ensembl.ARSUIRambv30",
+          "version": "1.0.0",
+          "organism": "Ovis aries",
+          "assembly": "ARS-UI_Ramb_v3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_016772045.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_016772045.2/",
+          "file_name": "BSgenome.Oaries.Ensembl.ARSUIRambv30_1.0.0.tar.gz",
+          "size": 629512842,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 143,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Bovidae",
+            "genus": "Ovis"
+          },
+          "common_name": "sheep",
+          "published": "2026-04-14T09:08:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ARSUIRambv30/BSgenome.Oaries.Ensembl.ARSUIRambv30_1.0.0.tar.gz"
         }
       ]
     },
@@ -87082,6 +87114,38 @@
       "common_name": "domestic cattle",
       "published": "2026-04-14T09:08:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Btaurus.Ensembl.UOATuli1/BSgenome.Btaurus.Ensembl.UOATuli1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Oaries.Ensembl.ARSUIRambv30",
+      "version": "1.0.0",
+      "organism": "Ovis aries",
+      "assembly": "ARS-UI_Ramb_v3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_016772045.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_016772045.2/",
+      "file_name": "BSgenome.Oaries.Ensembl.ARSUIRambv30_1.0.0.tar.gz",
+      "size": 629512842,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 143,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Ovis"
+      },
+      "common_name": "sheep",
+      "published": "2026-04-14T09:08:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ARSUIRambv30/BSgenome.Oaries.Ensembl.ARSUIRambv30_1.0.0.tar.gz"
     }
   ]
 }
