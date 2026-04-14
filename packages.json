@@ -45337,6 +45337,38 @@
           "common_name": "pig",
           "published": "2026-04-14T05:29:08Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Meishanpigv1/BSgenome.Sscrofa.Ensembl.Meishanpigv1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Sscrofa.Ensembl.Landracepigv1",
+          "version": "1.0.0",
+          "organism": "Sus scrofa",
+          "assembly": "Landrace_pig_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_001700215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001700215.1/",
+          "file_name": "BSgenome.Sscrofa.Ensembl.Landracepigv1_1.0.0.tar.gz",
+          "size": 589884413,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 613,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Suidae",
+            "genus": "Sus"
+          },
+          "common_name": "pig",
+          "published": "2026-04-14T05:30:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Landracepigv1/BSgenome.Sscrofa.Ensembl.Landracepigv1_1.0.0.tar.gz"
         }
       ]
     },
@@ -85773,6 +85805,38 @@
       "common_name": "gelada",
       "published": "2026-04-14T05:29:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgelada.Ensembl.Tgel10/BSgenome.Tgelada.Ensembl.Tgel10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sscrofa.Ensembl.Landracepigv1",
+      "version": "1.0.0",
+      "organism": "Sus scrofa",
+      "assembly": "Landrace_pig_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_001700215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001700215.1/",
+      "file_name": "BSgenome.Sscrofa.Ensembl.Landracepigv1_1.0.0.tar.gz",
+      "size": 589884413,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 613,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Suidae",
+        "genus": "Sus"
+      },
+      "common_name": "pig",
+      "published": "2026-04-14T05:30:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.Landracepigv1/BSgenome.Sscrofa.Ensembl.Landracepigv1_1.0.0.tar.gz"
     }
   ]
 }
