@@ -4453,3 +4453,7 @@ NeedsCompilation: no
 Package: BSgenome.Zlateralis.Ensembl.ASM128173v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sscrofa.Ensembl.ASM2165605v1
+Version: 1.0.0
+NeedsCompilation: no
