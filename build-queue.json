@@ -116624,7 +116624,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor3474",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951816965.1",
@@ -116634,7 +116634,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_wbdc078",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951816845.1",
@@ -116644,7 +116644,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor9972",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951816725.1",
@@ -116654,7 +116654,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor8117",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783355.1",
@@ -116664,7 +116664,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor14061",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002870075.2",
@@ -116674,7 +116674,7 @@
     "group": "plants",
     "species_url": "Lactuca_sativa",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000325765.3",
@@ -116684,7 +116684,7 @@
     "group": "plants",
     "species_url": "Leersia_perrieri",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002312845.1",
@@ -116694,7 +116694,7 @@
     "group": "plants",
     "species_url": "Kalanchoe_fedtschenkoi",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001411555.2",
@@ -116704,7 +116704,7 @@
     "group": "plants",
     "species_url": "Juglans_regia",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783175.1",
@@ -116714,7 +116714,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_ft144",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_039105155.1",
@@ -116724,7 +116724,7 @@
     "group": "plants",
     "species_url": "Marchantia_polymorpha",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951816615.1",
@@ -116734,7 +116734,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_wbdc184",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_019359855.1",
@@ -116744,7 +116744,7 @@
     "group": "plants",
     "species_url": "Lolium_perenne",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951816885.1",
@@ -116754,7 +116754,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_oun333",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951816695.1",
@@ -116764,7 +116764,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_igri",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_904845865.1",
