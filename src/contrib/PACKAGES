@@ -4521,3 +4521,7 @@ NeedsCompilation: no
 Package: BSgenome.Rnorvegicus.Ensembl.GRCr8
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oaries.Ensembl.Oarv31
+Version: 1.0.0
+NeedsCompilation: no
