@@ -50753,6 +50753,54 @@
       ]
     },
     {
+      "organism": "Zosterops lateralis melanops",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Zosteropidae",
+        "genus": "Zosterops"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Zlateralis.Ensembl.ASM128173v1",
+          "version": "1.0.0",
+          "organism": "Zosterops lateralis melanops",
+          "assembly": "ASM128173v1",
+          "provider": "Ensembl",
+          "accession": "GCA_001281735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001281735.1/",
+          "file_name": "BSgenome.Zlateralis.Ensembl.ASM128173v1_1.0.0.tar.gz",
+          "size": 245494605,
+          "seq_ids": [
+            "LAII01000001.1",
+            "LAII01000002.1",
+            "LAII01000003.1",
+            "LAII01000004.1",
+            "LAII01000005.1"
+          ],
+          "seq_count": 2933,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Zosteropidae",
+            "genus": "Zosterops"
+          },
+          "common_name": "",
+          "published": "2026-04-14T07:11:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zlateralis.Ensembl.ASM128173v1/BSgenome.Zlateralis.Ensembl.ASM128173v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Zygosaccharomyces rouxii",
       "common_name": "",
       "group": "fungi",
@@ -86106,6 +86154,38 @@
       "common_name": "Atlantic salmon",
       "published": "2026-04-14T07:10:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalar.Ensembl.USDANASsal11/BSgenome.Ssalar.Ensembl.USDANASsal11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Zlateralis.Ensembl.ASM128173v1",
+      "version": "1.0.0",
+      "organism": "Zosterops lateralis melanops",
+      "assembly": "ASM128173v1",
+      "provider": "Ensembl",
+      "accession": "GCA_001281735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001281735.1/",
+      "file_name": "BSgenome.Zlateralis.Ensembl.ASM128173v1_1.0.0.tar.gz",
+      "size": 245494605,
+      "seq_ids": [
+        "LAII01000001.1",
+        "LAII01000002.1",
+        "LAII01000003.1",
+        "LAII01000004.1",
+        "LAII01000005.1"
+      ],
+      "seq_count": 2933,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Zosteropidae",
+        "genus": "Zosterops"
+      },
+      "common_name": "",
+      "published": "2026-04-14T07:11:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zlateralis.Ensembl.ASM128173v1/BSgenome.Zlateralis.Ensembl.ASM128173v1_1.0.0.tar.gz"
     }
   ]
 }

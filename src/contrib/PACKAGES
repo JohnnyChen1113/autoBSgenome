@@ -4449,3 +4449,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssalar.Ensembl.USDANASsal11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zlateralis.Ensembl.ASM128173v1
+Version: 1.0.0
+NeedsCompilation: no
