@@ -44270,6 +44270,54 @@
       ]
     },
     {
+      "organism": "Struthio camelus australis",
+      "common_name": "",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Struthioniformes",
+        "family": "Struthionidae",
+        "genus": "Struthio"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Scamelus.Ensembl.ASM69896v1",
+          "version": "1.0.0",
+          "organism": "Struthio camelus australis",
+          "assembly": "ASM69896v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000698965.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000698965.1/",
+          "file_name": "BSgenome.Scamelus.Ensembl.ASM69896v1_1.0.0.tar.gz",
+          "size": 288521299,
+          "seq_ids": [
+            "KL206666.1",
+            "KL207003.1",
+            "KL206236.1",
+            "KL206928.1",
+            "KL206341.1"
+          ],
+          "seq_count": 6915,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Struthioniformes",
+            "family": "Struthionidae",
+            "genus": "Struthio"
+          },
+          "common_name": "",
+          "published": "2026-04-14T02:44:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scamelus.Ensembl.ASM69896v1/BSgenome.Scamelus.Ensembl.ASM69896v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sturnus vulgaris",
       "common_name": "Common starling",
       "group": "vertebrate_other",
@@ -84317,6 +84365,38 @@
       "common_name": "Komodo dragon",
       "published": "2026-04-13T23:51:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vkomodoensis.Ensembl.ASM479886v1/BSgenome.Vkomodoensis.Ensembl.ASM479886v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Scamelus.Ensembl.ASM69896v1",
+      "version": "1.0.0",
+      "organism": "Struthio camelus australis",
+      "assembly": "ASM69896v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000698965.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000698965.1/",
+      "file_name": "BSgenome.Scamelus.Ensembl.ASM69896v1_1.0.0.tar.gz",
+      "size": 288521299,
+      "seq_ids": [
+        "KL206666.1",
+        "KL207003.1",
+        "KL206236.1",
+        "KL206928.1",
+        "KL206341.1"
+      ],
+      "seq_count": 6915,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Struthioniformes",
+        "family": "Struthionidae",
+        "genus": "Struthio"
+      },
+      "common_name": "",
+      "published": "2026-04-14T02:44:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scamelus.Ensembl.ASM69896v1/BSgenome.Scamelus.Ensembl.ASM69896v1_1.0.0.tar.gz"
     }
   ]
 }
