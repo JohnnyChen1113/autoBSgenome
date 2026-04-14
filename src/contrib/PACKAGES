@@ -4465,3 +4465,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscrofa.Ensembl.ASM2471841v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cporcellus.Ensembl.Cavpor30
+Version: 1.0.0
+NeedsCompilation: no

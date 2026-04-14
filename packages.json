@@ -10154,6 +10154,54 @@
       ]
     },
     {
+      "organism": "Cavia porcellus",
+      "common_name": "domestic guinea pig",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Caviidae",
+        "genus": "Cavia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cporcellus.Ensembl.Cavpor30",
+          "version": "1.0.0",
+          "organism": "Cavia porcellus",
+          "assembly": "Cavpor3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000151735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000151735.1/",
+          "file_name": "BSgenome.Cporcellus.Ensembl.Cavpor30_1.0.0.tar.gz",
+          "size": 637735036,
+          "seq_ids": [
+            "DS562855.1",
+            "DS562856.1",
+            "DS562857.1",
+            "DS562858.1",
+            "DS562860.1"
+          ],
+          "seq_count": 3144,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Caviidae",
+            "genus": "Cavia"
+          },
+          "common_name": "domestic guinea pig",
+          "published": "2026-04-14T07:12:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cporcellus.Ensembl.Cavpor30/BSgenome.Cporcellus.Ensembl.Cavpor30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cebus imitator",
       "common_name": "Panamanian white-faced capuchin",
       "group": "vertebrate_mammalian",
@@ -86378,6 +86426,38 @@
       "common_name": "pig",
       "published": "2026-04-14T07:12:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.ASM2471841v1/BSgenome.Sscrofa.Ensembl.ASM2471841v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cporcellus.Ensembl.Cavpor30",
+      "version": "1.0.0",
+      "organism": "Cavia porcellus",
+      "assembly": "Cavpor3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000151735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000151735.1/",
+      "file_name": "BSgenome.Cporcellus.Ensembl.Cavpor30_1.0.0.tar.gz",
+      "size": 637735036,
+      "seq_ids": [
+        "DS562855.1",
+        "DS562856.1",
+        "DS562857.1",
+        "DS562858.1",
+        "DS562860.1"
+      ],
+      "seq_count": 3144,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Caviidae",
+        "genus": "Cavia"
+      },
+      "common_name": "domestic guinea pig",
+      "published": "2026-04-14T07:12:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cporcellus.Ensembl.Cavpor30/BSgenome.Cporcellus.Ensembl.Cavpor30_1.0.0.tar.gz"
     }
   ]
 }
