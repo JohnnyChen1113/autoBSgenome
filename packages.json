@@ -41567,6 +41567,38 @@
           "common_name": "Atlantic salmon",
           "published": "2026-04-13T22:00:34Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalar.Ensembl.SsalALTA/BSgenome.Ssalar.Ensembl.SsalALTA_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ssalar.Ensembl.Ssalv31",
+          "version": "1.0.0",
+          "organism": "Salmo salar",
+          "assembly": "Ssal_v3.1",
+          "provider": "Ensembl",
+          "accession": "GCA_905237065.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_905237065.2/",
+          "file_name": "BSgenome.Ssalar.Ensembl.Ssalv31_1.0.0.tar.gz",
+          "size": 558262390,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 4011,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Salmoniformes",
+            "family": "Salmonidae",
+            "genus": "Salmo"
+          },
+          "common_name": "Atlantic salmon",
+          "published": "2026-04-14T05:28:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalar.Ensembl.Ssalv31/BSgenome.Ssalar.Ensembl.Ssalv31_1.0.0.tar.gz"
         }
       ]
     },
@@ -85085,6 +85117,38 @@
       "common_name": "southern platyfish",
       "published": "2026-04-14T05:27:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xmaculatus.Ensembl.Xmaculatus50male/BSgenome.Xmaculatus.Ensembl.Xmaculatus50male_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ssalar.Ensembl.Ssalv31",
+      "version": "1.0.0",
+      "organism": "Salmo salar",
+      "assembly": "Ssal_v3.1",
+      "provider": "Ensembl",
+      "accession": "GCA_905237065.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_905237065.2/",
+      "file_name": "BSgenome.Ssalar.Ensembl.Ssalv31_1.0.0.tar.gz",
+      "size": 558262390,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 4011,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Salmoniformes",
+        "family": "Salmonidae",
+        "genus": "Salmo"
+      },
+      "common_name": "Atlantic salmon",
+      "published": "2026-04-14T05:28:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalar.Ensembl.Ssalv31/BSgenome.Ssalar.Ensembl.Ssalv31_1.0.0.tar.gz"
     }
   ]
 }
