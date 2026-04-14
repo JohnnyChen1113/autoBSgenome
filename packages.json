@@ -10106,6 +10106,54 @@
       ]
     },
     {
+      "organism": "Cavia aperea",
+      "common_name": "Brazilian guinea pig",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Caviidae",
+        "genus": "Cavia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Caperea.Ensembl.CavAp10",
+          "version": "1.0.0",
+          "organism": "Cavia aperea",
+          "assembly": "CavAp1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000688575.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000688575.1/",
+          "file_name": "BSgenome.Caperea.Ensembl.CavAp10_1.0.0.tar.gz",
+          "size": 442586374,
+          "seq_ids": [
+            "AVPZ01000001.1",
+            "AVPZ01000112.1",
+            "AVPZ01000223.1",
+            "AVPZ01000334.1",
+            "AVPZ01000556.1"
+          ],
+          "seq_count": 3131,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Caviidae",
+            "genus": "Cavia"
+          },
+          "common_name": "Brazilian guinea pig",
+          "published": "2026-04-14T02:47:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Caperea.Ensembl.CavAp10/BSgenome.Caperea.Ensembl.CavAp10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cebus imitator",
       "common_name": "Panamanian white-faced capuchin",
       "group": "vertebrate_mammalian",
@@ -84861,6 +84909,38 @@
       "common_name": "polar bear",
       "published": "2026-04-14T02:47:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Umaritimus.Ensembl.UrsMar10/BSgenome.Umaritimus.Ensembl.UrsMar10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Caperea.Ensembl.CavAp10",
+      "version": "1.0.0",
+      "organism": "Cavia aperea",
+      "assembly": "CavAp1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000688575.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000688575.1/",
+      "file_name": "BSgenome.Caperea.Ensembl.CavAp10_1.0.0.tar.gz",
+      "size": 442586374,
+      "seq_ids": [
+        "AVPZ01000001.1",
+        "AVPZ01000112.1",
+        "AVPZ01000223.1",
+        "AVPZ01000334.1",
+        "AVPZ01000556.1"
+      ],
+      "seq_count": 3131,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Caviidae",
+        "genus": "Cavia"
+      },
+      "common_name": "Brazilian guinea pig",
+      "published": "2026-04-14T02:47:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Caperea.Ensembl.CavAp10/BSgenome.Caperea.Ensembl.CavAp10_1.0.0.tar.gz"
     }
   ]
 }
