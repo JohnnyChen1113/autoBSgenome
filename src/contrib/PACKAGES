@@ -4405,3 +4405,7 @@ NeedsCompilation: no
 Package: BSgenome.Xcouchianus.Ensembl.Xiphophoruscouchianus401
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sscrofa.Ensembl.Meishanpigv1
+Version: 1.0.0
+NeedsCompilation: no
