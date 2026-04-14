@@ -116174,7 +116174,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor21599",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783575.1",
@@ -116184,7 +116184,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor7385",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783095.1",
@@ -116194,7 +116194,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_akashinriki",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783335.1",
@@ -116204,7 +116204,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor14273",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951815805.1",
@@ -116214,7 +116214,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor7552",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783495.1",
@@ -116224,7 +116224,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor3081",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951341805.1",
@@ -116234,7 +116234,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hid380",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783445.1",
@@ -116244,7 +116244,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor21322",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783135.1",
@@ -116254,7 +116254,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_rgtplanet",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783555.1",
@@ -116264,7 +116264,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor1168",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783395.1",
@@ -116274,7 +116274,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor13821",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783485.1",
@@ -116284,7 +116284,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor2779",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783295.1",
@@ -116294,7 +116294,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor13942",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783545.1",
@@ -116304,7 +116304,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor2830",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951341455.1",
@@ -116314,7 +116314,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hid357",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783245.1",
