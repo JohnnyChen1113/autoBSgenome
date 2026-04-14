@@ -116774,7 +116774,7 @@
     "group": "plants",
     "species_url": "Musa_acuminata",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003576645.1",
@@ -116784,7 +116784,7 @@
     "group": "plants",
     "species_url": "Ipomoea_triloba",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001865875.1",
@@ -116794,7 +116794,7 @@
     "group": "plants",
     "species_url": "Lupinus_angustifolius",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001659605.2",
@@ -116804,7 +116804,7 @@
     "group": "plants",
     "species_url": "Manihot_esculenta",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002114115.1",
@@ -116814,7 +116814,7 @@
     "group": "plants",
     "species_url": "Malus_domestica_golden",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783455.1",
@@ -116824,7 +116824,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_hor13594",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_008831285.1",
@@ -116834,7 +116834,7 @@
     "group": "plants",
     "species_url": "Nymphaea_colorata",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003473485.2",
@@ -116844,7 +116844,7 @@
     "group": "plants",
     "species_url": "Medicago_truncatula",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009831275.1",
@@ -116854,7 +116854,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_ketannangka",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000231095.2",
@@ -116864,7 +116864,7 @@
     "group": "plants",
     "species_url": "Oryza_brachyantha",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000789195.1",
@@ -116874,7 +116874,7 @@
     "group": "plants",
     "species_url": "Oryza_longistaminata",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001879085.1",
@@ -116884,7 +116884,7 @@
     "group": "plants",
     "species_url": "Nicotiana_attenuata",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000576495.1",
@@ -116894,7 +116894,7 @@
     "group": "plants",
     "species_url": "Oryza_glumipatula",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009829395.1",
@@ -116904,7 +116904,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_lima",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009830595.1",
@@ -116914,7 +116914,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_azucena",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000817225.1",
