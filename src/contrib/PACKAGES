@@ -4421,3 +4421,7 @@ NeedsCompilation: no
 Package: BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Changlu.Ensembl.CEYv1
+Version: 1.0.0
+NeedsCompilation: no

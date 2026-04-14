@@ -10666,6 +10666,54 @@
       ]
     },
     {
+      "organism": "Cervus hanglu yarkandensis",
+      "common_name": "Yarkand deer",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Cervidae",
+        "genus": "Cervus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Changlu.Ensembl.CEYv1",
+          "version": "1.0.0",
+          "organism": "Cervus hanglu yarkandensis",
+          "assembly": "CEY_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_010411085.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_010411085.1/",
+          "file_name": "BSgenome.Changlu.Ensembl.CEYv1_1.0.0.tar.gz",
+          "size": 613415366,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 17927,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Cervidae",
+            "genus": "Cervus"
+          },
+          "common_name": "Yarkand deer",
+          "published": "2026-04-14T05:29:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Changlu.Ensembl.CEYv1/BSgenome.Changlu.Ensembl.CEYv1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Chaetomium globosum CBS 148.51",
       "common_name": "",
       "group": "fungi",
@@ -85629,6 +85677,38 @@
       "common_name": "",
       "published": "2026-04-14T05:29:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11/BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Changlu.Ensembl.CEYv1",
+      "version": "1.0.0",
+      "organism": "Cervus hanglu yarkandensis",
+      "assembly": "CEY_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_010411085.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_010411085.1/",
+      "file_name": "BSgenome.Changlu.Ensembl.CEYv1_1.0.0.tar.gz",
+      "size": 613415366,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 17927,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Cervidae",
+        "genus": "Cervus"
+      },
+      "common_name": "Yarkand deer",
+      "published": "2026-04-14T05:29:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Changlu.Ensembl.CEYv1/BSgenome.Changlu.Ensembl.CEYv1_1.0.0.tar.gz"
     }
   ]
 }
