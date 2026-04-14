@@ -11169,6 +11169,38 @@
           "common_name": "long-tailed chinchilla",
           "published": "2026-04-03T21:42:18Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanigera.NCBI.ChiLan10/BSgenome.Clanigera.NCBI.ChiLan10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Clanigera.Ensembl.ChiLan10",
+          "version": "1.0.0",
+          "organism": "Chinchilla lanigera",
+          "assembly": "ChiLan1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000276665.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000276665.1/",
+          "file_name": "BSgenome.Clanigera.Ensembl.ChiLan10_1.0.0.tar.gz",
+          "size": 552156691,
+          "seq_ids": [
+            "JH721862.1",
+            "JH721863.1",
+            "JH721864.1",
+            "JH721865.1",
+            "JH721866.1"
+          ],
+          "seq_count": 2839,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Chinchillidae",
+            "genus": "Chinchilla"
+          },
+          "common_name": "long-tailed chinchilla",
+          "published": "2026-04-14T07:13:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanigera.Ensembl.ChiLan10/BSgenome.Clanigera.Ensembl.ChiLan10_1.0.0.tar.gz"
         }
       ]
     },
@@ -86458,6 +86490,38 @@
       "common_name": "domestic guinea pig",
       "published": "2026-04-14T07:12:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cporcellus.Ensembl.Cavpor30/BSgenome.Cporcellus.Ensembl.Cavpor30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Clanigera.Ensembl.ChiLan10",
+      "version": "1.0.0",
+      "organism": "Chinchilla lanigera",
+      "assembly": "ChiLan1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000276665.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000276665.1/",
+      "file_name": "BSgenome.Clanigera.Ensembl.ChiLan10_1.0.0.tar.gz",
+      "size": 552156691,
+      "seq_ids": [
+        "JH721862.1",
+        "JH721863.1",
+        "JH721864.1",
+        "JH721865.1",
+        "JH721866.1"
+      ],
+      "seq_count": 2839,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Chinchillidae",
+        "genus": "Chinchilla"
+      },
+      "common_name": "long-tailed chinchilla",
+      "published": "2026-04-14T07:13:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanigera.Ensembl.ChiLan10/BSgenome.Clanigera.Ensembl.ChiLan10_1.0.0.tar.gz"
     }
   ]
 }
