@@ -44418,6 +44418,54 @@
       ]
     },
     {
+      "organism": "Sphenodon punctatus",
+      "common_name": "tuatara",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Sphenodontia",
+        "family": "Sphenodontidae",
+        "genus": "Sphenodon"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Spunctatus.Ensembl.ASM311381v1",
+          "version": "1.0.0",
+          "organism": "Sphenodon punctatus",
+          "assembly": "ASM311381v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003113815.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003113815.1/",
+          "file_name": "BSgenome.Spunctatus.Ensembl.ASM311381v1_1.0.0.tar.gz",
+          "size": 943209642,
+          "seq_ids": [
+            "QEPC01011901.1",
+            "QEPC01013865.1",
+            "QEPC01000412.1",
+            "QEPC01011341.1",
+            "QEPC01009472.1"
+          ],
+          "seq_count": 16536,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Lepidosauria",
+            "order": "Sphenodontia",
+            "family": "Sphenodontidae",
+            "genus": "Sphenodon"
+          },
+          "common_name": "tuatara",
+          "published": "2026-04-14T09:08:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spunctatus.Ensembl.ASM311381v1/BSgenome.Spunctatus.Ensembl.ASM311381v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Spironucleus salmonicida",
       "common_name": "",
       "group": "other",
@@ -87146,6 +87194,38 @@
       "common_name": "sheep",
       "published": "2026-04-14T09:08:45Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ARSUIRambv30/BSgenome.Oaries.Ensembl.ARSUIRambv30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Spunctatus.Ensembl.ASM311381v1",
+      "version": "1.0.0",
+      "organism": "Sphenodon punctatus",
+      "assembly": "ASM311381v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003113815.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003113815.1/",
+      "file_name": "BSgenome.Spunctatus.Ensembl.ASM311381v1_1.0.0.tar.gz",
+      "size": 943209642,
+      "seq_ids": [
+        "QEPC01011901.1",
+        "QEPC01013865.1",
+        "QEPC01000412.1",
+        "QEPC01011341.1",
+        "QEPC01009472.1"
+      ],
+      "seq_count": 16536,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Lepidosauria",
+        "order": "Sphenodontia",
+        "family": "Sphenodontidae",
+        "genus": "Sphenodon"
+      },
+      "common_name": "tuatara",
+      "published": "2026-04-14T09:08:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spunctatus.Ensembl.ASM311381v1/BSgenome.Spunctatus.Ensembl.ASM311381v1_1.0.0.tar.gz"
     }
   ]
 }
