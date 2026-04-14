@@ -10024,6 +10024,38 @@
           "common_name": "Swainson's thrush",
           "published": "2026-04-04T10:05:16Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Custulatus.NCBI.bCatUst1priv2/BSgenome.Custulatus.NCBI.bCatUst1priv2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Custulatus.Ensembl.bCatUst1pri",
+          "version": "1.0.0",
+          "organism": "Catharus ustulatus",
+          "assembly": "bCatUst1.pri",
+          "provider": "Ensembl",
+          "accession": "GCA_009819885.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009819885.1/",
+          "file_name": "BSgenome.Custulatus.Ensembl.bCatUst1pri_1.0.0.tar.gz",
+          "size": 266036881,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 161,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Turdidae",
+            "genus": "Catharus"
+          },
+          "common_name": "Swainson's thrush",
+          "published": "2026-04-14T02:46:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Custulatus.Ensembl.bCatUst1pri/BSgenome.Custulatus.Ensembl.bCatUst1pri_1.0.0.tar.gz"
         }
       ]
     },
@@ -84477,6 +84509,38 @@
       "common_name": "tropical clawed frog",
       "published": "2026-04-14T02:45:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xtropicalis.Ensembl.UCBXtro100/BSgenome.Xtropicalis.Ensembl.UCBXtro100_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Custulatus.Ensembl.bCatUst1pri",
+      "version": "1.0.0",
+      "organism": "Catharus ustulatus",
+      "assembly": "bCatUst1.pri",
+      "provider": "Ensembl",
+      "accession": "GCA_009819885.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009819885.1/",
+      "file_name": "BSgenome.Custulatus.Ensembl.bCatUst1pri_1.0.0.tar.gz",
+      "size": 266036881,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 161,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Turdidae",
+        "genus": "Catharus"
+      },
+      "common_name": "Swainson's thrush",
+      "published": "2026-04-14T02:46:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Custulatus.Ensembl.bCatUst1pri/BSgenome.Custulatus.Ensembl.bCatUst1pri_1.0.0.tar.gz"
     }
   ]
 }

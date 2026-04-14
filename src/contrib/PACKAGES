@@ -4357,3 +4357,7 @@ NeedsCompilation: no
 Package: BSgenome.Xtropicalis.Ensembl.UCBXtro100
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Custulatus.Ensembl.bCatUst1pri
+Version: 1.0.0
+NeedsCompilation: no
