@@ -4445,3 +4445,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscrofa.Ensembl.Hampshirepigv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssalar.Ensembl.USDANASsal11
+Version: 1.0.0
+NeedsCompilation: no
