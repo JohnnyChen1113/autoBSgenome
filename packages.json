@@ -43302,6 +43302,38 @@
           "common_name": "",
           "published": "2026-04-04T11:04:05Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sgrahami.NCBI.SAMN03320097WGSv11/BSgenome.Sgrahami.NCBI.SAMN03320097WGSv11_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11",
+          "version": "1.0.0",
+          "organism": "Sinocyclocheilus grahami",
+          "assembly": "SAMN03320097.WGS_v1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_001515645.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001515645.1/",
+          "file_name": "BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11_1.0.0.tar.gz",
+          "size": 372287044,
+          "seq_ids": [
+            "LCYQ01S000003.1",
+            "LCYQ01S000054.1",
+            "LCYQ01S000005.1",
+            "LCYQ01S000017.1",
+            "LCYQ01S000021.1"
+          ],
+          "seq_count": 31277,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Sinocyclocheilus"
+          },
+          "common_name": "",
+          "published": "2026-04-14T05:29:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11/BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11_1.0.0.tar.gz"
         }
       ]
     },
@@ -85565,6 +85597,38 @@
       "common_name": "California sea lion",
       "published": "2026-04-14T05:29:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zcalifornianus.Ensembl.mZalCal1pri/BSgenome.Zcalifornianus.Ensembl.mZalCal1pri_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11",
+      "version": "1.0.0",
+      "organism": "Sinocyclocheilus grahami",
+      "assembly": "SAMN03320097.WGS_v1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_001515645.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001515645.1/",
+      "file_name": "BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11_1.0.0.tar.gz",
+      "size": 372287044,
+      "seq_ids": [
+        "LCYQ01S000003.1",
+        "LCYQ01S000054.1",
+        "LCYQ01S000005.1",
+        "LCYQ01S000017.1",
+        "LCYQ01S000021.1"
+      ],
+      "seq_count": 31277,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Sinocyclocheilus"
+      },
+      "common_name": "",
+      "published": "2026-04-14T05:29:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11/BSgenome.Sgrahami.Ensembl.SAMN03320097WGSv11_1.0.0.tar.gz"
     }
   ]
 }
