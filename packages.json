@@ -46851,6 +46851,38 @@
           "common_name": "gelada",
           "published": "2026-04-03T23:43:13Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgelada.NCBI.Tgel10/BSgenome.Tgelada.NCBI.Tgel10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Tgelada.Ensembl.Tgel10",
+          "version": "1.0.0",
+          "organism": "Theropithecus gelada",
+          "assembly": "Tgel_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_003255815.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003255815.1/",
+          "file_name": "BSgenome.Tgelada.Ensembl.Tgel10_1.0.0.tar.gz",
+          "size": 673624753,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 15307,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Theropithecus"
+          },
+          "common_name": "gelada",
+          "published": "2026-04-14T05:29:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgelada.Ensembl.Tgel10/BSgenome.Tgelada.Ensembl.Tgel10_1.0.0.tar.gz"
         }
       ]
     },
@@ -85709,6 +85741,38 @@
       "common_name": "Yarkand deer",
       "published": "2026-04-14T05:29:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Changlu.Ensembl.CEYv1/BSgenome.Changlu.Ensembl.CEYv1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tgelada.Ensembl.Tgel10",
+      "version": "1.0.0",
+      "organism": "Theropithecus gelada",
+      "assembly": "Tgel_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_003255815.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003255815.1/",
+      "file_name": "BSgenome.Tgelada.Ensembl.Tgel10_1.0.0.tar.gz",
+      "size": 673624753,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 15307,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Theropithecus"
+      },
+      "common_name": "gelada",
+      "published": "2026-04-14T05:29:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tgelada.Ensembl.Tgel10/BSgenome.Tgelada.Ensembl.Tgel10_1.0.0.tar.gz"
     }
   ]
 }

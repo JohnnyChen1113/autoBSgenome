@@ -4425,3 +4425,7 @@ NeedsCompilation: no
 Package: BSgenome.Changlu.Ensembl.CEYv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tgelada.Ensembl.Tgel10
+Version: 1.0.0
+NeedsCompilation: no
