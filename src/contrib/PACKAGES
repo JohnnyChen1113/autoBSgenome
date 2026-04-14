@@ -4373,3 +4373,7 @@ NeedsCompilation: no
 Package: BSgenome.Sdauricus.Ensembl.ASM240643v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Umaritimus.Ensembl.UrsMar10
+Version: 1.0.0
+NeedsCompilation: no
