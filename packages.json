@@ -49423,6 +49423,54 @@
       ]
     },
     {
+      "organism": "Ursus americanus",
+      "common_name": "American black bear",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ursidae",
+        "genus": "Ursus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Uamericanus.Ensembl.ASM334442v1",
+          "version": "1.0.0",
+          "organism": "Ursus americanus",
+          "assembly": "ASM334442v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003344425.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003344425.1/",
+          "file_name": "BSgenome.Uamericanus.Ensembl.ASM334442v1_1.0.0.tar.gz",
+          "size": 594134914,
+          "seq_ids": [
+            "LZNR01000008.1",
+            "LZNR01000021.1",
+            "LZNR01000041.1",
+            "LZNR01000142.1",
+            "LZNR01000087.1"
+          ],
+          "seq_count": 111495,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Ursidae",
+            "genus": "Ursus"
+          },
+          "common_name": "American black bear",
+          "published": "2026-04-14T09:09:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Uamericanus.Ensembl.ASM334442v1/BSgenome.Uamericanus.Ensembl.ASM334442v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ursus maritimus",
       "common_name": "polar bear",
       "group": "vertebrate_mammalian",
@@ -87226,6 +87274,38 @@
       "common_name": "tuatara",
       "published": "2026-04-14T09:08:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spunctatus.Ensembl.ASM311381v1/BSgenome.Spunctatus.Ensembl.ASM311381v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Uamericanus.Ensembl.ASM334442v1",
+      "version": "1.0.0",
+      "organism": "Ursus americanus",
+      "assembly": "ASM334442v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003344425.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003344425.1/",
+      "file_name": "BSgenome.Uamericanus.Ensembl.ASM334442v1_1.0.0.tar.gz",
+      "size": 594134914,
+      "seq_ids": [
+        "LZNR01000008.1",
+        "LZNR01000021.1",
+        "LZNR01000041.1",
+        "LZNR01000142.1",
+        "LZNR01000087.1"
+      ],
+      "seq_count": 111495,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Ursidae",
+        "genus": "Ursus"
+      },
+      "common_name": "American black bear",
+      "published": "2026-04-14T09:09:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Uamericanus.Ensembl.ASM334442v1/BSgenome.Uamericanus.Ensembl.ASM334442v1_1.0.0.tar.gz"
     }
   ]
 }

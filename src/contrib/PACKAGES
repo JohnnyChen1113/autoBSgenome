@@ -4513,3 +4513,7 @@ NeedsCompilation: no
 Package: BSgenome.Spunctatus.Ensembl.ASM311381v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Uamericanus.Ensembl.ASM334442v1
+Version: 1.0.0
+NeedsCompilation: no
