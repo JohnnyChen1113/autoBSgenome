@@ -43706,6 +43706,54 @@
       ]
     },
     {
+      "organism": "Spermophilus dauricus",
+      "common_name": "Daurian ground squirrel",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Sciuridae",
+        "genus": "Spermophilus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sdauricus.Ensembl.ASM240643v1",
+          "version": "1.0.0",
+          "organism": "Spermophilus dauricus",
+          "assembly": "ASM240643v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002406435.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002406435.1/",
+          "file_name": "BSgenome.Sdauricus.Ensembl.ASM240643v1_1.0.0.tar.gz",
+          "size": 696755541,
+          "seq_ids": [
+            "KZ293964.1",
+            "KZ293965.1",
+            "KZ293966.1",
+            "KZ293967.1",
+            "KZ293968.1"
+          ],
+          "seq_count": 360804,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Sciuridae",
+            "genus": "Spermophilus"
+          },
+          "common_name": "Daurian ground squirrel",
+          "published": "2026-04-14T02:46:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sdauricus.Ensembl.ASM240643v1/BSgenome.Sdauricus.Ensembl.ASM240643v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sphaeroforma arctica JP610",
       "common_name": "",
       "group": "other",
@@ -84701,6 +84749,38 @@
       "common_name": "Tasmanian devil",
       "published": "2026-04-14T02:46:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sharrisii.Ensembl.mSarHar111/BSgenome.Sharrisii.Ensembl.mSarHar111_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sdauricus.Ensembl.ASM240643v1",
+      "version": "1.0.0",
+      "organism": "Spermophilus dauricus",
+      "assembly": "ASM240643v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002406435.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002406435.1/",
+      "file_name": "BSgenome.Sdauricus.Ensembl.ASM240643v1_1.0.0.tar.gz",
+      "size": 696755541,
+      "seq_ids": [
+        "KZ293964.1",
+        "KZ293965.1",
+        "KZ293966.1",
+        "KZ293967.1",
+        "KZ293968.1"
+      ],
+      "seq_count": 360804,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Sciuridae",
+        "genus": "Spermophilus"
+      },
+      "common_name": "Daurian ground squirrel",
+      "published": "2026-04-14T02:46:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sdauricus.Ensembl.ASM240643v1/BSgenome.Sdauricus.Ensembl.ASM240643v1_1.0.0.tar.gz"
     }
   ]
 }

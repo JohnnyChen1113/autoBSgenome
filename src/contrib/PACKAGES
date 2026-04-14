@@ -4369,3 +4369,7 @@ NeedsCompilation: no
 Package: BSgenome.Sharrisii.Ensembl.mSarHar111
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sdauricus.Ensembl.ASM240643v1
+Version: 1.0.0
+NeedsCompilation: no
