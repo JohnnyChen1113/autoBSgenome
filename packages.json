@@ -49937,6 +49937,38 @@
           "common_name": "southern platyfish",
           "published": "2026-04-04T04:32:15Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xmaculatus.NCBI.Xmaculatus50male/BSgenome.Xmaculatus.NCBI.Xmaculatus50male_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Xmaculatus.Ensembl.Xmaculatus50male",
+          "version": "1.0.0",
+          "organism": "Xiphophorus maculatus",
+          "assembly": "X_maculatus-5.0-male",
+          "provider": "Ensembl",
+          "accession": "GCA_002775205.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002775205.2/",
+          "file_name": "BSgenome.Xmaculatus.Ensembl.Xmaculatus50male_1.0.0.tar.gz",
+          "size": 167365586,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 102,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Poeciliidae",
+            "genus": "Xiphophorus"
+          },
+          "common_name": "southern platyfish",
+          "published": "2026-04-14T05:27:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xmaculatus.Ensembl.Xmaculatus50male/BSgenome.Xmaculatus.Ensembl.Xmaculatus50male_1.0.0.tar.gz"
         }
       ]
     },
@@ -85021,6 +85053,38 @@
       "common_name": "",
       "published": "2026-04-14T02:47:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Uthibetanus.Ensembl.ASM966005v1/BSgenome.Uthibetanus.Ensembl.ASM966005v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Xmaculatus.Ensembl.Xmaculatus50male",
+      "version": "1.0.0",
+      "organism": "Xiphophorus maculatus",
+      "assembly": "X_maculatus-5.0-male",
+      "provider": "Ensembl",
+      "accession": "GCA_002775205.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002775205.2/",
+      "file_name": "BSgenome.Xmaculatus.Ensembl.Xmaculatus50male_1.0.0.tar.gz",
+      "size": 167365586,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 102,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Poeciliidae",
+        "genus": "Xiphophorus"
+      },
+      "common_name": "southern platyfish",
+      "published": "2026-04-14T05:27:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xmaculatus.Ensembl.Xmaculatus50male/BSgenome.Xmaculatus.Ensembl.Xmaculatus50male_1.0.0.tar.gz"
     }
   ]
 }
