@@ -4401,3 +4401,7 @@ NeedsCompilation: no
 Package: BSgenome.Vvulpes.Ensembl.VulVul22
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Xcouchianus.Ensembl.Xiphophoruscouchianus401
+Version: 1.0.0
+NeedsCompilation: no

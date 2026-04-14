@@ -49969,6 +49969,38 @@
           "common_name": "Monterrey platyfish",
           "published": "2026-04-04T04:32:09Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xcouchianus.NCBI.Xcouchianus10/BSgenome.Xcouchianus.NCBI.Xcouchianus10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Xcouchianus.Ensembl.Xiphophoruscouchianus401",
+          "version": "1.0.0",
+          "organism": "Xiphophorus couchianus",
+          "assembly": "Xiphophorus_couchianus-4.0.1",
+          "provider": "Ensembl",
+          "accession": "GCA_001444195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001444195.1/",
+          "file_name": "BSgenome.Xcouchianus.Ensembl.Xiphophoruscouchianus401_1.0.0.tar.gz",
+          "size": 135951053,
+          "seq_ids": [
+            "KQ557225.1",
+            "KQ557219.1",
+            "KQ557204.1",
+            "KQ557210.1",
+            "KQ557220.1"
+          ],
+          "seq_count": 25,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cyprinodontiformes",
+            "family": "Poeciliidae",
+            "genus": "Xiphophorus"
+          },
+          "common_name": "Monterrey platyfish",
+          "published": "2026-04-14T05:28:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xcouchianus.Ensembl.Xiphophoruscouchianus401/BSgenome.Xcouchianus.Ensembl.Xiphophoruscouchianus401_1.0.0.tar.gz"
         }
       ]
     },
@@ -85309,6 +85341,38 @@
       "common_name": "red fox",
       "published": "2026-04-14T05:28:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vvulpes.Ensembl.VulVul22/BSgenome.Vvulpes.Ensembl.VulVul22_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Xcouchianus.Ensembl.Xiphophoruscouchianus401",
+      "version": "1.0.0",
+      "organism": "Xiphophorus couchianus",
+      "assembly": "Xiphophorus_couchianus-4.0.1",
+      "provider": "Ensembl",
+      "accession": "GCA_001444195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001444195.1/",
+      "file_name": "BSgenome.Xcouchianus.Ensembl.Xiphophoruscouchianus401_1.0.0.tar.gz",
+      "size": 135951053,
+      "seq_ids": [
+        "KQ557225.1",
+        "KQ557219.1",
+        "KQ557204.1",
+        "KQ557210.1",
+        "KQ557220.1"
+      ],
+      "seq_count": 25,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cyprinodontiformes",
+        "family": "Poeciliidae",
+        "genus": "Xiphophorus"
+      },
+      "common_name": "Monterrey platyfish",
+      "published": "2026-04-14T05:28:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Xcouchianus.Ensembl.Xiphophoruscouchianus401/BSgenome.Xcouchianus.Ensembl.Xiphophoruscouchianus401_1.0.0.tar.gz"
     }
   ]
 }
