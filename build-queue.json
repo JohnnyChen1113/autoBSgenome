@@ -118574,7 +118574,7 @@
     "group": "fungi",
     "species_url": "Pseudogymnoascus_sp_vkm_f_4516_fw_969_gca_000750815",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002849105.1",
@@ -118584,7 +118584,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_steynii_ibt_23096_gca_002849105",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000149385.1",
@@ -118594,7 +118594,7 @@
     "group": "fungi",
     "species_url": "Cryptococcus_neoformans_var_neoformans_b_3501a_gca_000149385",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000192795.1",
@@ -118604,7 +118604,7 @@
     "group": "fungi",
     "species_url": "Vavraia_culicis_subsp_floridensis_gca_000192795",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000250695.1",
@@ -118614,7 +118614,7 @@
     "group": "fungi",
     "species_url": "Nematocida_sp_1_ertm2_gca_000250695",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004917375.1",
@@ -118624,7 +118624,7 @@
     "group": "fungi",
     "species_url": "Aureobasidium_pullulans_gca_004917375",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002104985.1",
@@ -118634,7 +118634,7 @@
     "group": "fungi",
     "species_url": "Rhizoclosmatium_globosum_gca_002104985",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000403515.1",
@@ -118644,7 +118644,7 @@
     "group": "fungi",
     "species_url": "Pseudozyma_hubeiensis_sy62_gca_000403515",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000430065.1",
@@ -118654,7 +118654,7 @@
     "group": "fungi",
     "species_url": "Spraguea_lophii_42_110_gca_000430065",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000447185.1",
@@ -118664,7 +118664,7 @@
     "group": "fungi",
     "species_url": "Nosema_apis_brl_01_gca_000447185",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002938355.1",
@@ -118674,7 +118674,7 @@
     "group": "fungi",
     "species_url": "Panaeolus_cyanescens_gca_002938355",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000231115.1",
@@ -118684,7 +118684,7 @@
     "group": "fungi",
     "species_url": "Vittaforma_corneae_atcc_50505_gca_000231115",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002104975.1",
@@ -118694,7 +118694,7 @@
     "group": "fungi",
     "species_url": "Neocallimastix_californiae_gca_002104975",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_006535955.1",
@@ -118704,7 +118704,7 @@
     "group": "fungi",
     "species_url": "Synchytrium_endobioticum_gca_006535955",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918515.1",
@@ -118714,7 +118714,7 @@
     "group": "fungi",
     "species_url": "Wallemia_mellicola_gca_004918515",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000385855.2",
