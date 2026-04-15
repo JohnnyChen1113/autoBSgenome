@@ -118424,7 +118424,7 @@
     "group": "fungi",
     "species_url": "_candida_glabrata_gca_002219185",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000385875.2",
@@ -118434,7 +118434,7 @@
     "group": "fungi",
     "species_url": "Anncaliia_algerae_pra339_gca_000385875",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000280035.2",
@@ -118444,7 +118444,7 @@
     "group": "fungi",
     "species_url": "Encephalitozoon_romaleae_sj_2008_gca_000280035",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000003515.2",
@@ -118454,7 +118454,7 @@
     "group": "fungi",
     "species_url": "Uncinocarpus_reesii_1704_gca_000003515",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000275845.1",
@@ -118464,7 +118464,7 @@
     "group": "fungi",
     "species_url": "Dichomitus_squalens_lyad_421_ss1_gca_000275845",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000091225.2",
@@ -118474,7 +118474,7 @@
     "group": "fungi",
     "species_url": "Encephalitozoon_cuniculi_gb_m1_gca_000091225",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000250985.1",
@@ -118484,7 +118484,7 @@
     "group": "fungi",
     "species_url": "Nematocida_parisii_ertm1_gca_000250985",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001574975.1",
@@ -118494,7 +118494,7 @@
     "group": "fungi",
     "species_url": "Gonapodya_prolifera_jel478_gca_001574975",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000149865.1",
@@ -118504,7 +118504,7 @@
     "group": "fungi",
     "species_url": "Batrachochytrium_dendrobatidis_jel423_gca_000149865",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002104945.1",
@@ -118514,7 +118514,7 @@
     "group": "fungi",
     "species_url": "Piromyces_finnis_gca_002104945",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000271625.1",
@@ -118524,7 +118524,7 @@
     "group": "fungi",
     "species_url": "Coniophora_puteana_rwd_64_598_ss2_gca_000271625",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000383075.1",
@@ -118534,7 +118534,7 @@
     "group": "fungi",
     "species_url": "Nosema_bombycis_cq1_gca_000383075",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900120095.1",
@@ -118544,7 +118544,7 @@
     "group": "fungi",
     "species_url": "Microbotryum_silenes_dioicae_gca_900120095",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000146465.1",
@@ -118554,7 +118554,7 @@
     "group": "fungi",
     "species_url": "Encephalitozoon_intestinalis_atcc_50506_gca_000146465",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000182985.1",
@@ -118564,7 +118564,7 @@
     "group": "fungi",
     "species_url": "Nosema_ceranae_brl01_gca_000182985",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000750815.1",
