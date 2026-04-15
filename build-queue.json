@@ -119024,7 +119024,7 @@
     "group": "fungi",
     "species_url": "Rhodotorula_toruloides_np11_gca_000320785",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918735.1",
@@ -119034,7 +119034,7 @@
     "group": "fungi",
     "species_url": "Wallemia_ichthyophaga_gca_004918735",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002087875.1",
@@ -119044,7 +119044,7 @@
     "group": "fungi",
     "species_url": "Hepatospora_eriocheir_gca_002087875",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000264995.1",
@@ -119054,7 +119054,7 @@
     "group": "fungi",
     "species_url": "Punctularia_strigosozonata_hhb_11173_ss5_gca_000264995",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000170615.1",
@@ -119064,7 +119064,7 @@
     "group": "fungi",
     "species_url": "Histoplasma_capsulatum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_010015725.1",
@@ -119074,7 +119074,7 @@
     "group": "fungi",
     "species_url": "Amniculicola_lignicola_cbs_123094_gca_010015725",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002087915.1",
@@ -119084,7 +119084,7 @@
     "group": "fungi",
     "species_url": "Enterospora_canceri_gca_002087915",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918655.1",
@@ -119094,7 +119094,7 @@
     "group": "fungi",
     "species_url": "Wallemia_ichthyophaga_gca_004918655",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000417875.1",
@@ -119104,7 +119104,7 @@
     "group": "fungi",
     "species_url": "Anthracocystis_flocculosa_pf_1_gca_000417875",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_006535985.1",
@@ -119114,7 +119114,7 @@
     "group": "fungi",
     "species_url": "Synchytrium_microbalum_gca_006535985",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001875675.1",
@@ -119124,7 +119124,7 @@
     "group": "fungi",
     "species_url": "Amphiamblys_sp_wsbs2006_gca_001875675",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000750745.1",
@@ -119134,7 +119134,7 @@
     "group": "fungi",
     "species_url": "Pseudogymnoascus_sp_vkm_f_4281_fw_2241_gca_000750745",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002749805.1",
@@ -119144,7 +119144,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_arachidicola_gca_002749805",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000349305.2",
@@ -119154,7 +119154,7 @@
     "group": "fungi",
     "species_url": "Malassezia_sympodialis_atcc_42132_gca_000349305",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002087885.1",
@@ -119164,7 +119164,7 @@
     "group": "fungi",
     "species_url": "Hepatospora_eriocheir_gca_002087885",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918995.1",
