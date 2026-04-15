@@ -116924,7 +116924,7 @@
     "group": "plants",
     "species_url": "Oryza_rufipogon",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000338895.2",
@@ -116934,7 +116934,7 @@
     "group": "plants",
     "species_url": "Oryza_meridionalis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001618785.1",
@@ -116944,7 +116944,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_mh63",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009831255.1",
@@ -116954,7 +116954,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_arc",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000004655.2",
@@ -116964,7 +116964,7 @@
     "group": "plants",
     "species_url": "Oryza_indica",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009831025.1",
@@ -116974,7 +116974,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_gobolsailbalam",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003061485.1",
@@ -116984,7 +116984,7 @@
     "group": "plants",
     "species_url": "Panicum_hallii",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009914875.1",
@@ -116994,7 +116994,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_ir64",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000092065.1",
@@ -117004,7 +117004,7 @@
     "group": "plants",
     "species_url": "Ostreococcus_lucimarinus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000182155.2",
@@ -117014,7 +117014,7 @@
     "group": "plants",
     "species_url": "Oryza_barthii",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001952365.2",
@@ -117024,7 +117024,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_n22",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009831315.1",
@@ -117034,7 +117034,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_chaomeo",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003573695.1",
@@ -117044,7 +117044,7 @@
     "group": "plants",
     "species_url": "Papaver_somniferum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002742605.1",
@@ -117054,7 +117054,7 @@
     "group": "plants",
     "species_url": "Olea_europaea_sylvestris",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009831295.1",
@@ -117064,7 +117064,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_khaoyaiguang",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001618795.1",
