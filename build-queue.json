@@ -117524,7 +117524,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_landmark",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_904066035.1",
@@ -117534,7 +117534,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_norin61",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_903993975.1",
@@ -117544,7 +117544,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_lancer",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949783205.1",
@@ -117554,7 +117554,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_ft11",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_903993985.1",
@@ -117564,7 +117564,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_arinalrfor",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949782985.1",
@@ -117574,7 +117574,7 @@
     "group": "plants",
     "species_url": "Hordeum_vulgare_aizu6",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_903993795.1",
@@ -117584,7 +117584,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_jagger",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004193775.2",
@@ -117594,7 +117594,7 @@
     "group": "plants",
     "species_url": "Glycine_soja",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000002775.4",
@@ -117604,7 +117604,7 @@
     "group": "plants",
     "species_url": "Populus_trichocarpa",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_949126075.1",
@@ -117614,7 +117614,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_paragon",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000003195.3",
@@ -117624,7 +117624,7 @@
     "group": "plants",
     "species_url": "Sorghum_bicolor",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_903994185.1",
@@ -117634,7 +117634,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_mattis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001190045.1",
@@ -117644,7 +117644,7 @@
     "group": "plants",
     "species_url": "Vigna_angularis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_903994195.1",
@@ -117654,7 +117654,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_julius",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_902810685.1",
@@ -117664,7 +117664,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_robigus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900231445.1",
