@@ -118874,7 +118874,7 @@
     "group": "fungi",
     "species_url": "Nosema_ceranae_gca_000988165",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900044135.1",
@@ -118884,7 +118884,7 @@
     "group": "fungi",
     "species_url": "Fusarium_graminearum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002591405.1",
@@ -118894,7 +118894,7 @@
     "group": "fungi",
     "species_url": "Ophiocordyceps_australis_gca_002591405",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001078035.1",
@@ -118904,7 +118904,7 @@
     "group": "fungi",
     "species_url": "Encephalitozoon_cuniculi_ecuniii_l_gca_001078035",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002104895.1",
@@ -118914,7 +118914,7 @@
     "group": "fungi",
     "species_url": "Anaeromyces_robustus_gca_002104895",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004917975.1",
@@ -118924,7 +118924,7 @@
     "group": "fungi",
     "species_url": "Wallemia_mellicola_gca_004917975",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001432165.1",
@@ -118934,7 +118934,7 @@
     "group": "fungi",
     "species_url": "Pseudoloma_neurophilia_gca_001432165",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_005406065.1",
@@ -118944,7 +118944,7 @@
     "group": "fungi",
     "species_url": "Metschnikowia_sp_jcm_33374_gca_005406065",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000497045.1",
@@ -118954,7 +118954,7 @@
     "group": "fungi",
     "species_url": "Kalmanozyma_brasiliensis_ghg001_gca_000497045",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000750875.1",
@@ -118964,7 +118964,7 @@
     "group": "fungi",
     "species_url": "Pseudogymnoascus_sp_vkm_f_4517_fw_2822_gca_000750875",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001642395.1",
@@ -118974,7 +118974,7 @@
     "group": "fungi",
     "species_url": "Nematocida_displodere_gca_001642395",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000145635.1",
@@ -118984,7 +118984,7 @@
     "group": "fungi",
     "species_url": "Gaeumannomyces_graminis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918895.1",
@@ -118994,7 +118994,7 @@
     "group": "fungi",
     "species_url": "Wallemia_ichthyophaga_gca_004918895",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003614705.1",
@@ -119004,7 +119004,7 @@
     "group": "fungi",
     "species_url": "Blyttiomyces_helicus_gca_003614705",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001642415.1",
@@ -119014,7 +119014,7 @@
     "group": "fungi",
     "species_url": "Nematocida_sp_ertm5_gca_001642415",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000320785.2",
