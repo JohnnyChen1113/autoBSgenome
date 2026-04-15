@@ -117224,7 +117224,7 @@
     "group": "plants",
     "species_url": "Quercus_suber",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002207925.1",
@@ -117234,7 +117234,7 @@
     "group": "plants",
     "species_url": "Prunus_avium",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000346465.2",
@@ -117244,7 +117244,7 @@
     "group": "plants",
     "species_url": "Prunus_persica",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_902201215.1",
@@ -117254,7 +117254,7 @@
     "group": "plants",
     "species_url": "Prunus_dulcis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002994745.2",
@@ -117264,7 +117264,7 @@
     "group": "plants",
     "species_url": "Rosa_chinensis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000512975.1",
@@ -117274,7 +117274,7 @@
     "group": "plants",
     "species_url": "Sesamum_indicum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000263155.2",
@@ -117284,7 +117284,7 @@
     "group": "plants",
     "species_url": "Setaria_italica",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_014189475.1",
@@ -117294,7 +117294,7 @@
     "group": "plants",
     "species_url": "Solanum_tuberosum_RH8903916",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_902687465.1",
@@ -117304,7 +117304,7 @@
     "group": "plants",
     "species_url": "Secale_cereale",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_005286985.1",
@@ -117314,7 +117314,7 @@
     "group": "plants",
     "species_url": "Setaria_viridis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000208745.2",
@@ -117324,7 +117324,7 @@
     "group": "plants",
     "species_url": "Theobroma_cacao_criollo",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000143415.1",
@@ -117334,7 +117334,7 @@
     "group": "plants",
     "species_url": "Selaginella_moellendorffii",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900079335.1",
@@ -117344,7 +117344,7 @@
     "group": "plants",
     "species_url": "Trifolium_pratense",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003544955.1",
@@ -117354,7 +117354,7 @@
     "group": "plants",
     "species_url": "Saccharum_spontaneum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000226075.1",
@@ -117364,7 +117364,7 @@
     "group": "plants",
     "species_url": "Solanum_tuberosum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000403535.1",
