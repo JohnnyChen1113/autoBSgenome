@@ -117074,7 +117074,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_zs97",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000573905.1",
@@ -117084,7 +117084,7 @@
     "group": "plants",
     "species_url": "Oryza_punctata",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001433935.1",
@@ -117094,7 +117094,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000147395.1",
@@ -117104,7 +117104,7 @@
     "group": "plants",
     "species_url": "Oryza_glaberrima",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002211085.2",
@@ -117114,7 +117114,7 @@
     "group": "plants",
     "species_url": "Panicum_hallii_fil2",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000499845.1",
@@ -117124,7 +117124,7 @@
     "group": "plants",
     "species_url": "Phaseolus_vulgaris",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_902713445.1",
@@ -117134,7 +117134,7 @@
     "group": "plants",
     "species_url": "Olea_europaea",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009829375.1",
@@ -117144,7 +117144,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_liuxu",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009831045.1",
@@ -117154,7 +117154,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_pr106",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009831335.1",
@@ -117164,7 +117164,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_natelboro",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000002425.2",
@@ -117174,7 +117174,7 @@
     "group": "plants",
     "species_url": "Physcomitrium_patens",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000576065.1",
@@ -117184,7 +117184,7 @@
     "group": "plants",
     "species_url": "Oryza_nivara",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_008641045.1",
@@ -117194,7 +117194,7 @@
     "group": "plants",
     "species_url": "Pistacia_vera",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009831355.1",
@@ -117204,7 +117204,7 @@
     "group": "plants",
     "species_url": "Oryza_sativa_larhamugad",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900700895.2",
@@ -117214,7 +117214,7 @@
     "group": "plants",
     "species_url": "Pisum_sativum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002906115.4",
