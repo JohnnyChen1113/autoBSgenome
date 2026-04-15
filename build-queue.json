@@ -117824,7 +117824,7 @@
     "group": "plants",
     "species_url": "Pisum_sativum_GCA_964186695.1gb",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000091025.3",
@@ -117834,7 +117834,7 @@
     "group": "fungi",
     "species_url": "Ashbya_gossypii",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000150145.1",
@@ -117844,7 +117844,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_fumigatusa1163",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000002715.1",
@@ -117854,7 +117854,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_clavatus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000011425.1",
@@ -117864,7 +117864,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_nidulans",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000002855.2",
@@ -117874,7 +117874,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_niger",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000002655.1",
@@ -117884,7 +117884,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_fumigatus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000149645.4",
@@ -117894,7 +117894,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_fischeri",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001445615.2",
@@ -117904,7 +117904,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_lentulus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000182965.3",
@@ -117914,7 +117914,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000006275.3",
@@ -117924,7 +117924,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_flavus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002759435.2",
@@ -117934,7 +117934,7 @@
     "group": "fungi",
     "species_url": "Candida_auris",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000184455.3",
@@ -117944,7 +117944,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_oryzae",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002926085.1",
@@ -117954,7 +117954,7 @@
     "group": "fungi",
     "species_url": "Candida_duobushaemulonis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001682635.1",
@@ -117964,7 +117964,7 @@
     "group": "fungi",
     "species_url": "Beauveria_bassiana",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000151065.2",
