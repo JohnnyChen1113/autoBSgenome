@@ -118124,7 +118124,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_p76055_gca_000784505",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000750935.1",
@@ -118134,7 +118134,7 @@
     "group": "fungi",
     "species_url": "Pseudogymnoascus_sp_vkm_f_4519_fw_2642_gca_000750935",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900091695.1",
@@ -118144,7 +118144,7 @@
     "group": "fungi",
     "species_url": "Zymoseptoria_tritici_st99ch_3d7_gca_900091695",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000442015.1",
@@ -118154,7 +118154,7 @@
     "group": "fungi",
     "species_url": "Rozella_allomycis_csf55_gca_000442015",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000784595.1",
@@ -118164,7 +118164,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_p75016_gca_000784595",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002794465.1",
@@ -118174,7 +118174,7 @@
     "group": "fungi",
     "species_url": "Paramicrosporidium_saccamoebae_gca_002794465",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004369125.1",
@@ -118184,7 +118184,7 @@
     "group": "fungi",
     "species_url": "Pterula_gracilis_gca_004369125",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000773845.1",
@@ -118194,7 +118194,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_12c_gca_000773845",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000151295.1",
@@ -118204,7 +118204,7 @@
     "group": "fungi",
     "species_url": "Allomyces_macrogynus_atcc_38327_gca_000151295",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900074845.1",
@@ -118214,7 +118214,7 @@
     "group": "fungi",
     "species_url": "Fusarium_culmorum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000784515.1",
@@ -118224,7 +118224,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_p37039_gca_000784515",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004332605.1",
@@ -118234,7 +118234,7 @@
     "group": "fungi",
     "species_url": "Steccherinum_ochraceum_gca_004332605",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900096615.1",
@@ -118244,7 +118244,7 @@
     "group": "fungi",
     "species_url": "Fusarium_fujikuroi_gca_900096615",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000149555.1",
@@ -118254,7 +118254,7 @@
     "group": "fungi",
     "species_url": "Fusarium_verticillioides",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000775525.1",
@@ -118264,7 +118264,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_p75063_gca_000775525",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000784525.1",
