@@ -117374,7 +117374,7 @@
     "group": "plants",
     "species_url": "Theobroma_cacao",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_963425845.1",
@@ -117384,7 +117384,7 @@
     "group": "plants",
     "species_url": "Sphenostylis_stenocarpa",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001633185.2",
@@ -117394,7 +117394,7 @@
     "group": "plants",
     "species_url": "Quercus_lobata",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000188115.3",
@@ -117404,7 +117404,7 @@
     "group": "plants",
     "species_url": "Solanum_lycopersicum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_030704535.1",
@@ -117414,7 +117414,7 @@
     "group": "plants",
     "species_url": "Vitis_vinifera",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003073215.1",
@@ -117424,7 +117424,7 @@
     "group": "plants",
     "species_url": "Triticum_urartu",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004118075.1",
@@ -117434,7 +117434,7 @@
     "group": "plants",
     "species_url": "Vigna_unguiculata",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_951799155.1",
@@ -117444,7 +117444,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_alchemy",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000741045.2",
@@ -117454,7 +117454,7 @@
     "group": "plants",
     "species_url": "Vigna_radiata",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_902167145.1",
@@ -117464,7 +117464,7 @@
     "group": "plants",
     "species_url": "Zea_mays",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_902810645.1",
@@ -117474,7 +117474,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_cadenza",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_948472305.1",
@@ -117484,7 +117484,7 @@
     "group": "plants",
     "species_url": "Vicia_faba",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_937894285.1",
@@ -117494,7 +117494,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_renan",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_018294505.1",
@@ -117504,7 +117504,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_refseqv2",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_910594105.1",
@@ -117514,7 +117514,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_kariega",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_903995565.1",
