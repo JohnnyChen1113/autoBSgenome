@@ -118724,7 +118724,7 @@
     "group": "fungi",
     "species_url": "Anncaliia_algerae_pra109_gca_000385855",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002276285.1",
@@ -118734,7 +118734,7 @@
     "group": "fungi",
     "species_url": "Lomentospora_prolificans_gca_002276285",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000750925.1",
@@ -118744,7 +118744,7 @@
     "group": "fungi",
     "species_url": "Pseudogymnoascus_sp_vkm_f_4518_fw_2643_gca_000750925",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000222805.1",
@@ -118754,7 +118754,7 @@
     "group": "fungi",
     "species_url": "Fusarium_oxysporum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000350255.1",
@@ -118764,7 +118764,7 @@
     "group": "fungi",
     "species_url": "Rhizoctonia_solani_ag_1_ib_gca_000350255",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000151355.1",
@@ -118774,7 +118774,7 @@
     "group": "fungi",
     "species_url": "Fusarium_solani",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000190615.1",
@@ -118784,7 +118784,7 @@
     "group": "fungi",
     "species_url": "Nematocida_parisii_ertm3_gca_000190615",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003611215.1",
@@ -118794,7 +118794,7 @@
     "group": "fungi",
     "species_url": "Golovinomyces_cichoracearum_gca_003611215",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_006536045.1",
@@ -118804,7 +118804,7 @@
     "group": "fungi",
     "species_url": "Synchytrium_endobioticum_gca_006536045",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000803265.1",
@@ -118814,7 +118814,7 @@
     "group": "fungi",
     "species_url": "Ordospora_colligata_oc4_gca_000803265",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000738915.1",
@@ -118824,7 +118824,7 @@
     "group": "fungi",
     "species_url": "Nematocida_sp_1_ertm6_gca_000738915",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_008065305.1",
@@ -118834,7 +118834,7 @@
     "group": "fungi",
     "species_url": "Cutaneotrichosporon_oleaginosum_gca_008065305",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003615035.1",
@@ -118844,7 +118844,7 @@
     "group": "fungi",
     "species_url": "Caulochytrium_protostelioides_gca_003615035",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000218725.1",
@@ -118854,7 +118854,7 @@
     "group": "fungi",
     "species_url": "Serpula_lacrymans_var_lacrymans_s7_3_gca_000218725",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000303195.1",
@@ -118864,7 +118864,7 @@
     "group": "fungi",
     "species_url": "Fusarium_pseudograminearum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000988165.1",
