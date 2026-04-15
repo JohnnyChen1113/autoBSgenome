@@ -117674,7 +117674,7 @@
     "group": "plants",
     "species_url": "Triticum_turgidum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_963921465.1",
@@ -117684,7 +117684,7 @@
     "group": "plants",
     "species_url": "Triticum_timopheevii",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_903994165.1",
@@ -117694,7 +117694,7 @@
     "group": "plants",
     "species_url": "Triticum_spelta",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_903994175.1",
@@ -117704,7 +117704,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_mace",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_902810655.1",
@@ -117714,7 +117714,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_claire",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_902810675.1",
@@ -117724,7 +117724,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_weebil",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002162155.1",
@@ -117734,7 +117734,7 @@
     "group": "plants",
     "species_url": "Triticum_dicoccoides",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_903994155.1",
@@ -117744,7 +117744,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum_stanley",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900519105.1",
@@ -117754,7 +117754,7 @@
     "group": "plants",
     "species_url": "Triticum_aestivum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_910589755.1",
@@ -117764,7 +117764,7 @@
     "group": "plants",
     "species_url": "Avena_longiglumis_cn58138",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_910589765.1",
@@ -117774,7 +117774,7 @@
     "group": "plants",
     "species_url": "Avena_atlantica_cc7277",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_910574615.1",
@@ -117784,7 +117784,7 @@
     "group": "plants",
     "species_url": "Avena_insularis_byu209",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_910589775.1",
@@ -117794,7 +117794,7 @@
     "group": "plants",
     "species_url": "Avena_eriantha_byu132",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_030347555.1",
@@ -117804,7 +117804,7 @@
     "group": "plants",
     "species_url": "Lablab_purpureus_GCA_030347555.1cm",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_024323335.2",
@@ -117814,7 +117814,7 @@
     "group": "plants",
     "species_url": "Pisum_sativum_GCA_024323335.2gb",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_964186695.1",
