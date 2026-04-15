@@ -118274,7 +118274,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_p60002_gca_000784525",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000316135.1",
@@ -118284,7 +118284,7 @@
     "group": "fungi",
     "species_url": "Trachipleistophora_hominis_gca_000316135",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000315255.1",
@@ -118294,7 +118294,7 @@
     "group": "fungi",
     "species_url": "Fusarium_fujikuroi",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000203795.1",
@@ -118304,7 +118304,7 @@
     "group": "fungi",
     "species_url": "Batrachochytrium_dendrobatidis_jam81_gca_000203795",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002211485.2",
@@ -118314,7 +118314,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_niger_gca_002211485",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000226545.1",
@@ -118324,7 +118324,7 @@
     "group": "fungi",
     "species_url": "Podospora_anserina_s_mat_gca_000226545",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000292625.1",
@@ -118334,7 +118334,7 @@
     "group": "fungi",
     "species_url": "Dacryopinax_primogenitus_gca_000292625",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001566745.1",
@@ -118344,7 +118344,7 @@
     "group": "fungi",
     "species_url": "Conidiobolus_coronatus_nrrl_28638_gca_001566745",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000230595.3",
@@ -118354,7 +118354,7 @@
     "group": "fungi",
     "species_url": "Edhazardia_aedis_usnm_41457_gca_000230595",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000277815.3",
@@ -118364,7 +118364,7 @@
     "group": "fungi",
     "species_url": "Encephalitozoon_hellem_atcc_50504_gca_000277815",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000209485.1",
@@ -118374,7 +118374,7 @@
     "group": "fungi",
     "species_url": "Enterocytozoon_bieneusi_h348_gca_000209485",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000182565.2",
@@ -118384,7 +118384,7 @@
     "group": "fungi",
     "species_url": "Spizellomyces_punctatus_daom_br117_gca_000182565",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009733575.1",
@@ -118394,7 +118394,7 @@
     "group": "fungi",
     "species_url": "Gymnopus_androsaceus_jb14_gca_009733575",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000524645.1",
@@ -118404,7 +118404,7 @@
     "group": "fungi",
     "species_url": "Rhizoctonia_solani_ag_3_rhs1ap_gca_000524645",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000814955.1",
@@ -118414,7 +118414,7 @@
     "group": "fungi",
     "species_url": "Metarhizium_guizhouense_arsef_977_gca_000814955",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002219185.1",
