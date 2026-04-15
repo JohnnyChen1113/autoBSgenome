@@ -117974,7 +117974,7 @@
     "group": "fungi",
     "species_url": "Blumeria_graminis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000149035.1",
@@ -117984,7 +117984,7 @@
     "group": "fungi",
     "species_url": "Colletotrichum_graminicola",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000091045.1",
@@ -117994,7 +117994,7 @@
     "group": "fungi",
     "species_url": "Cryptococcus_neoformans",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000350065.1",
@@ -118004,7 +118004,7 @@
     "group": "fungi",
     "species_url": "Colletotrichum_orbiculare",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000149615.1",
@@ -118014,7 +118014,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_terreus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000319635.1",
@@ -118024,7 +118024,7 @@
     "group": "fungi",
     "species_url": "Colletotrichum_gloeosporioides",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000143535.4",
@@ -118034,7 +118034,7 @@
     "group": "fungi",
     "species_url": "Botrytis_cinerea",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000182765.2",
@@ -118044,7 +118044,7 @@
     "group": "fungi",
     "species_url": "Candida_parapsilosis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003013735.1",
@@ -118054,7 +118054,7 @@
     "group": "fungi",
     "species_url": "Candida_pseudohaemulonis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000313795.2",
@@ -118064,7 +118064,7 @@
     "group": "fungi",
     "species_url": "Colletotrichum_higginsianum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000002545.2",
@@ -118074,7 +118074,7 @@
     "group": "fungi",
     "species_url": "Candida_glabrata",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002926055.1",
@@ -118084,7 +118084,7 @@
     "group": "fungi",
     "species_url": "Candida_haemuloni",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000006335.3",
@@ -118094,7 +118094,7 @@
     "group": "fungi",
     "species_url": "Candida_tropicalis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000340195.1",
@@ -118104,7 +118104,7 @@
     "group": "fungi",
     "species_url": "Dothistroma_septosporum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000773755.1",
@@ -118114,7 +118114,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_p94015_gca_000773755",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000784505.1",
