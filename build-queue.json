@@ -120074,7 +120074,7 @@
     "group": "fungi",
     "species_url": "Jaapia_argillacea_mucl_33604_gca_000697665",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000002495.2",
@@ -120084,7 +120084,7 @@
     "group": "fungi",
     "species_url": "Magnaporthe_oryzae",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000786625.1",
@@ -120094,7 +120094,7 @@
     "group": "fungi",
     "species_url": "Neurospora_crassa_gca_000786625",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000697705.1",
@@ -120104,7 +120104,7 @@
     "group": "fungi",
     "species_url": "Botryobasidium_botryosum_fd_172_ss1_gca_000697705",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004126415.1",
@@ -120114,7 +120114,7 @@
     "group": "fungi",
     "species_url": "Psathyrella_aberdarensis_gca_004126415",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009193585.1",
@@ -120124,7 +120124,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_caelatus_gca_009193585",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900099495.1",
@@ -120134,7 +120134,7 @@
     "group": "fungi",
     "species_url": "Zymoseptoria_tritici_st99ch_1a5_gca_900099495",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000750735.1",
@@ -120144,7 +120144,7 @@
     "group": "fungi",
     "species_url": "Pseudogymnoascus_sp_vkm_f_4246_gca_000750735",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000320605.2",
@@ -120154,7 +120154,7 @@
     "group": "fungi",
     "species_url": "Gelatoporia_subvermispora_b_gca_000320605",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000230375.1",
@@ -120164,7 +120164,7 @@
     "group": "fungi",
     "species_url": "Leptosphaeria_maculans",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001638945.1",
@@ -120174,7 +120174,7 @@
     "group": "fungi",
     "species_url": "Mucor_lusitanicus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000775445.1",
@@ -120184,7 +120184,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_19f_gca_000775445",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000300595.1",
@@ -120194,7 +120194,7 @@
     "group": "fungi",
     "species_url": "Phanerochaete_carnosa_hhb_10118_sp_gca_000300595",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002573605.1",
@@ -120204,7 +120204,7 @@
     "group": "fungi",
     "species_url": "Polytolypa_hystricis_uamh7299_gca_002573605",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003184865.1",
@@ -120214,7 +120214,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_homomorphus_cbs_101889_gca_003184865",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000149245.3",
