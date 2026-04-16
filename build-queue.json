@@ -119624,7 +119624,7 @@
     "group": "fungi",
     "species_url": "Rhodotorula_toruloides_atcc_204091_gca_000222205",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000006255.1",
@@ -119634,7 +119634,7 @@
     "group": "fungi",
     "species_url": "Postia_placenta_mad_698_r_gca_000006255",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000027005.1",
@@ -119644,7 +119644,7 @@
     "group": "fungi",
     "species_url": "Komagataella_pastoris",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000784575.1",
@@ -119654,7 +119654,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_p75010_gca_000784575",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003813205.1",
@@ -119664,7 +119664,7 @@
     "group": "fungi",
     "species_url": "Lentinus_tigrinus_alcf2ss1_6_gca_003813205",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002847485.1",
@@ -119674,7 +119674,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_campestris_ibt_28561_gca_002847485",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000344655.2",
@@ -119684,7 +119684,7 @@
     "group": "fungi",
     "species_url": "Fomitopsis_pinicola_fp_58527_ss1_gca_000344655",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918215.1",
@@ -119694,7 +119694,7 @@
     "group": "fungi",
     "species_url": "Aureobasidium_pullulans_gca_004918215",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000775455.1",
@@ -119704,7 +119704,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_l26_gca_000775455",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918015.1",
@@ -119714,7 +119714,7 @@
     "group": "fungi",
     "species_url": "Wallemia_ichthyophaga_gca_004918015",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000313545.1",
@@ -119724,7 +119724,7 @@
     "group": "fungi",
     "species_url": "Serendipita_indica_dsm_11827_gca_000313545",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002120305.1",
@@ -119734,7 +119734,7 @@
     "group": "fungi",
     "species_url": "Hypoxylon_sp_co27_5_gca_002120305",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000804445.1",
@@ -119744,7 +119744,7 @@
     "group": "fungi",
     "species_url": "Metarhizium_album_arsef_1941_gca_000804445",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000488995.1",
@@ -119754,7 +119754,7 @@
     "group": "fungi",
     "species_url": "Moniliophthora_roreri_mca_2997_gca_000488995",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004369175.1",
@@ -119764,7 +119764,7 @@
     "group": "fungi",
     "species_url": "Coprinellus_micaceus_gca_004369175",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004168565.1",
