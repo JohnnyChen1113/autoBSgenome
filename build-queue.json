@@ -120224,7 +120224,7 @@
     "group": "fungi",
     "species_url": "Cryptococcus_neoformans_var_grubii_h99_gca_000149245",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000166175.1",
@@ -120234,7 +120234,7 @@
     "group": "fungi",
     "species_url": "Microbotryum_violaceum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000293215.1",
@@ -120244,7 +120244,7 @@
     "group": "fungi",
     "species_url": "Trichosporon_asahii_var_asahii_cbs_2479_gca_000293215",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002573585.1",
@@ -120254,7 +120254,7 @@
     "group": "fungi",
     "species_url": "Helicocarpus_griseus_uamh5409_gca_002573585",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004786245.1",
@@ -120264,7 +120264,7 @@
     "group": "fungi",
     "species_url": "Botrytis_hyacinthi_gca_004786245",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000750995.1",
@@ -120274,7 +120274,7 @@
     "group": "fungi",
     "species_url": "Pseudogymnoascus_sp_vkm_f_4520_fw_2644_gca_000750995",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_008522505.1",
@@ -120284,7 +120284,7 @@
     "group": "fungi",
     "species_url": "Puccinia_graminis_f_sp_tritici_gca_008522505",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000300555.1",
@@ -120294,7 +120294,7 @@
     "group": "fungi",
     "species_url": "Agaricus_bisporus_var_burnettii_jb137_s8_gca_000300555",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000784495.1",
@@ -120304,7 +120304,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_p76067_gca_000784495",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002591415.1",
@@ -120314,7 +120314,7 @@
     "group": "fungi",
     "species_url": "Ophiocordyceps_australis_gca_002591415",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000241205.2",
@@ -120324,7 +120324,7 @@
     "group": "fungi",
     "species_url": "Mixia_osmundae_iam_14324_gca_000241205",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003260565.1",
@@ -120334,7 +120334,7 @@
     "group": "fungi",
     "species_url": "Monilinia_fructigena_gca_003260565",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000747765.1",
@@ -120344,7 +120344,7 @@
     "group": "fungi",
     "species_url": "Moesziomyces_antarcticus_gca_000747765",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002204255.1",
@@ -120354,7 +120354,7 @@
     "group": "fungi",
     "species_url": "Marssonina_coronariae_gca_002204255",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004022145.1",
@@ -120364,7 +120364,7 @@
     "group": "fungi",
     "species_url": "Byssochlamys_spectabilis_gca_004022145",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000715385.1",
