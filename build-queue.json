@@ -119474,7 +119474,7 @@
     "group": "fungi",
     "species_url": "Psilocybe_cyanescens_gca_002938375",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900074925.1",
@@ -119484,7 +119484,7 @@
     "group": "fungi",
     "species_url": "Ramularia_collo_cygni_gca_900074925",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000400465.1",
@@ -119494,7 +119494,7 @@
     "group": "fungi",
     "species_url": "Wallemia_ichthyophaga_exf_994_gca_000400465",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004917865.1",
@@ -119504,7 +119504,7 @@
     "group": "fungi",
     "species_url": "Wallemia_ichthyophaga_gca_004917865",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000750795.1",
@@ -119514,7 +119514,7 @@
     "group": "fungi",
     "species_url": "Pseudogymnoascus_sp_vkm_f_4514_fw_929_gca_000750795",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900162805.1",
@@ -119524,7 +119524,7 @@
     "group": "fungi",
     "species_url": "Zygosaccharomyces_bailii_gca_900162805",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000185945.1",
@@ -119534,7 +119534,7 @@
     "group": "fungi",
     "species_url": "Cryptococcus_gattii_wm276_gca_000185945",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000812125.1",
@@ -119544,7 +119544,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_ustus_gca_000812125",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000299215.2",
@@ -119554,7 +119554,7 @@
     "group": "fungi",
     "species_url": "Trichosporon_asahii_var_asahii_cbs_8904_gca_000299215",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004679275.1",
@@ -119564,7 +119564,7 @@
     "group": "fungi",
     "species_url": "Dentipellis_fragilis_gca_004679275",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001050175.1",
@@ -119574,7 +119574,7 @@
     "group": "fungi",
     "species_url": "Trichoderma_parareesei_gca_001050175",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000798715.1",
@@ -119584,7 +119584,7 @@
     "group": "fungi",
     "species_url": "Erysiphe_necator_gca_000798715",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000320585.2",
@@ -119594,7 +119594,7 @@
     "group": "fungi",
     "species_url": "Heterobasidion_irregulare_tc_32_1_gca_000320585",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004917925.1",
@@ -119604,7 +119604,7 @@
     "group": "fungi",
     "species_url": "Wallemia_mellicola_gca_004917925",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004154835.1",
@@ -119614,7 +119614,7 @@
     "group": "fungi",
     "species_url": "Alternaria_arborescens_gca_004154835",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000222205.2",
