@@ -121294,7 +121294,7 @@
     "group": "fungi",
     "species_url": "Schizosaccharomyces_cryophilus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918005.1",
@@ -121304,7 +121304,7 @@
     "group": "fungi",
     "species_url": "Wallemia_mellicola_gca_004918005",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000832265.1",
@@ -121314,7 +121314,7 @@
     "group": "fungi",
     "species_url": "Phlebiopsis_gigantea_11061_1_cr5_6_gca_000832265",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000003525.2",
@@ -121324,7 +121324,7 @@
     "group": "fungi",
     "species_url": "Blastomyces_dermatitidis_er_3_gca_000003525",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827265.1",
@@ -121334,7 +121334,7 @@
     "group": "fungi",
     "species_url": "Gymnopus_luxurians_fd_317_m1_gca_000827265",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000143185.2",
@@ -121344,7 +121344,7 @@
     "group": "fungi",
     "species_url": "Schizophyllum_commune",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002335645.1",
@@ -121354,7 +121354,7 @@
     "group": "fungi",
     "species_url": "Saccharomyces_cerevisiae_gca_002335645",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000934395.1",
@@ -121364,7 +121364,7 @@
     "group": "fungi",
     "species_url": "Fistulina_hepatica_atcc_64428_gca_000934395",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_010015635.1",
@@ -121374,7 +121374,7 @@
     "group": "fungi",
     "species_url": "Clathrospora_elynae_gca_010015635",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827325.1",
@@ -121384,7 +121384,7 @@
     "group": "fungi",
     "species_url": "Oidiodendron_maius_zn_gca_000827325",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827495.1",
@@ -121394,7 +121394,7 @@
     "group": "fungi",
     "species_url": "Hypholoma_sublateritium_fd_334_ss_4_gca_000827495",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003118255.1",
@@ -121404,7 +121404,7 @@
     "group": "fungi",
     "species_url": "Trichophyton_mentagrophytes_gca_003118255",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003316985.1",
@@ -121414,7 +121414,7 @@
     "group": "fungi",
     "species_url": "Fusarium_coffeatum_gca_003316985",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827425.1",
@@ -121424,7 +121424,7 @@
     "group": "fungi",
     "species_url": "Scleroderma_citrinum_foug_a_gca_000827425",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000836355.1",
@@ -121434,7 +121434,7 @@
     "group": "fungi",
     "species_url": "Cryptococcus_gattii_ru294_gca_000836355",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000835505.1",
