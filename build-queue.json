@@ -121134,7 +121134,7 @@
     "group": "fungi",
     "species_url": "Exophiala_sideris_gca_000835395",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000223505.1",
@@ -121144,7 +121144,7 @@
     "group": "fungi",
     "species_url": "Puccinia_striiformis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000146045.2",
@@ -121164,7 +121164,7 @@
     "group": "fungi",
     "species_url": "Fomitopsis_rosea_gca_004679265",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004786145.1",
@@ -121174,7 +121174,7 @@
     "group": "fungi",
     "species_url": "Botrytis_paeoniae_gca_004786145",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003231345.1",
@@ -121184,7 +121184,7 @@
     "group": "fungi",
     "species_url": "Pyrenophora_tritici_repentis_gca_003231345",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000350345.1",
@@ -121194,7 +121194,7 @@
     "group": "fungi",
     "species_url": "Fusarium_oxysporum_f_sp_cubense_race_1_gca_000350345",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918645.1",
@@ -121204,7 +121204,7 @@
     "group": "fungi",
     "species_url": "Wallemia_mellicola_gca_004918645",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827415.1",
@@ -121214,7 +121214,7 @@
     "group": "fungi",
     "species_url": "Serendipita_vermifera_maff_305830_gca_000827415",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004917935.1",
@@ -121224,7 +121224,7 @@
     "group": "fungi",
     "species_url": "Wallemia_mellicola_gca_004917935",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000836375.1",
@@ -121234,7 +121234,7 @@
     "group": "fungi",
     "species_url": "Cryptococcus_gattii_vgii_ram5_gca_000836375",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000146945.1",
@@ -121244,7 +121244,7 @@
     "group": "fungi",
     "species_url": "Sclerotinia_sclerotiorum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003610855.1",
@@ -121254,7 +121254,7 @@
     "group": "fungi",
     "species_url": "Oidium_neolycopersici_gca_003610855",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003144605.1",
@@ -121264,7 +121264,7 @@
     "group": "fungi",
     "species_url": "Purpureocillium_lilacinum_gca_003144605",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000150505.2",
@@ -121274,7 +121274,7 @@
     "group": "fungi",
     "species_url": "Schizosaccharomyces_octosporus",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000835455.1",
@@ -121284,7 +121284,7 @@
     "group": "fungi",
     "species_url": "Fonsecaea_pedrosoi_cbs_271_37_gca_000835455",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000004155.2",
