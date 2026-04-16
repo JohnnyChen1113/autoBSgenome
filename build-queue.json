@@ -120524,7 +120524,7 @@
     "group": "fungi",
     "species_url": "Microbotryum_saponariae_gca_900100905",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004917145.1",
@@ -120534,7 +120534,7 @@
     "group": "fungi",
     "species_url": "Aureobasidium_pullulans_gca_004917145",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000934385.1",
@@ -120544,7 +120544,7 @@
     "group": "fungi",
     "species_url": "Cylindrobasidium_torrendii_fp15055_ss_10_gca_000934385",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000597685.1",
@@ -120554,7 +120554,7 @@
     "group": "fungi",
     "species_url": "Rhizophagus_irregularis_daom_197198w_gca_000597685",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918795.1",
@@ -120564,7 +120564,7 @@
     "group": "fungi",
     "species_url": "Wallemia_mellicola_gca_004918795",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003025095.1",
@@ -120574,7 +120574,7 @@
     "group": "fungi",
     "species_url": "Trichoderma_harzianum_cbs_226_95_gca_003025095",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000835755.1",
@@ -120584,7 +120584,7 @@
     "group": "fungi",
     "species_url": "Cryptococcus_gattii_vgiv_ind107_gca_000835755",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918905.1",
@@ -120594,7 +120594,7 @@
     "group": "fungi",
     "species_url": "Wallemia_mellicola_gca_004918905",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003014415.1",
@@ -120604,7 +120604,7 @@
     "group": "fungi",
     "species_url": "_candida_auris_gca_003014415",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000770705.1",
@@ -120614,7 +120614,7 @@
     "group": "fungi",
     "species_url": "Beauveria_bassiana_d1_5_gca_000770705",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827485.1",
@@ -120624,7 +120624,7 @@
     "group": "fungi",
     "species_url": "Amanita_muscaria_koide_bx008_gca_000827485",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000784655.1",
@@ -120634,7 +120634,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_sc5314_gca_000784655",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003704355.1",
@@ -120644,7 +120644,7 @@
     "group": "fungi",
     "species_url": "Hortaea_werneckii_gca_003704355",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004307915.1",
@@ -120654,7 +120654,7 @@
     "group": "fungi",
     "species_url": "Dichomitus_squalens_gca_004307915",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003184535.1",
@@ -120664,7 +120664,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_eucalypticola_cbs_122712_gca_003184535",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000167175.1",
