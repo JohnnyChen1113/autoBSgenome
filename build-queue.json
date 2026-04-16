@@ -119324,7 +119324,7 @@
     "group": "fungi",
     "species_url": "Hamiltosporidium_tvaerminnensis_gca_004325075",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000814975.1",
@@ -119334,7 +119334,7 @@
     "group": "fungi",
     "species_url": "Metarhizium_anisopliae_arsef_549_gca_000814975",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000218685.1",
@@ -119344,7 +119344,7 @@
     "group": "fungi",
     "species_url": "Serpula_lacrymans_var_lacrymans_s7_9_gca_000218685",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003615045.1",
@@ -119354,7 +119354,7 @@
     "group": "fungi",
     "species_url": "Caulochytrium_protostelioides_gca_003615045",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004325065.1",
@@ -119364,7 +119364,7 @@
     "group": "fungi",
     "species_url": "Hamiltosporidium_magnivora_gca_004325065",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004325035.1",
@@ -119374,7 +119374,7 @@
     "group": "fungi",
     "species_url": "Hamiltosporidium_magnivora_gca_004325035",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004917495.1",
@@ -119384,7 +119384,7 @@
     "group": "fungi",
     "species_url": "Aureobasidium_pullulans_gca_004917495",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002105105.1",
@@ -119394,7 +119394,7 @@
     "group": "fungi",
     "species_url": "Protomyces_lactucaedebilis_gca_002105105",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000344685.1",
@@ -119404,7 +119404,7 @@
     "group": "fungi",
     "species_url": "Gloeophyllum_trabeum_atcc_11539_gca_000344685",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000814945.1",
@@ -119414,7 +119414,7 @@
     "group": "fungi",
     "species_url": "Metarhizium_majus_arsef_297_gca_000814945",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000832345.2",
@@ -119424,7 +119424,7 @@
     "group": "fungi",
     "species_url": "Rhizoctonia_solani_ag_1_ib_gca_000832345",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000697645.1",
@@ -119434,7 +119434,7 @@
     "group": "fungi",
     "species_url": "Galerina_marginata_cbs_339_88_gca_000697645",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000774085.1",
@@ -119444,7 +119444,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_p87_gca_000774085",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_005059855.1",
@@ -119454,7 +119454,7 @@
     "group": "fungi",
     "species_url": "Friedmanniomyces_endolithicus_gca_005059855",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000143565.1",
@@ -119464,7 +119464,7 @@
     "group": "fungi",
     "species_url": "Laccaria_bicolor_s238n_h82_gca_000143565",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002938375.1",
