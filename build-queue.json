@@ -119924,7 +119924,7 @@
     "group": "fungi",
     "species_url": "Venturia_inaequalis_gca_009769445",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000697685.1",
@@ -119934,7 +119934,7 @@
     "group": "fungi",
     "species_url": "Pleurotus_ostreatus_pc15_gca_000697685",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000264905.1",
@@ -119944,7 +119944,7 @@
     "group": "fungi",
     "species_url": "Stereum_hirsutum_fp_91666_ss1_gca_000264905",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900096605.1",
@@ -119954,7 +119954,7 @@
     "group": "fungi",
     "species_url": "Fusarium_fujikuroi_gca_900096605",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004802725.1",
@@ -119964,7 +119964,7 @@
     "group": "fungi",
     "species_url": "Antrodiella_citrinella_gca_004802725",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000263375.1",
@@ -119974,7 +119974,7 @@
     "group": "fungi",
     "species_url": "Wallemia_mellicola_cbs_633_66_gca_000263375",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000271585.1",
@@ -119984,7 +119984,7 @@
     "group": "fungi",
     "species_url": "Trametes_versicolor_fp_101664_ss1_gca_000271585",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000204055.1",
@@ -119994,7 +119994,7 @@
     "group": "fungi",
     "species_url": "Melampsora_laricipopulina",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000750755.1",
@@ -120004,7 +120004,7 @@
     "group": "fungi",
     "species_url": "Pseudogymnoascus_sp_vkm_f_4513_fw_928_gca_000750755",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918325.1",
@@ -120014,7 +120014,7 @@
     "group": "fungi",
     "species_url": "Wallemia_hederae_gca_004918325",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000182895.1",
@@ -120024,7 +120024,7 @@
     "group": "fungi",
     "species_url": "Coprinopsis_cinerea_okayama7_130_gca_000182895",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000784695.1",
@@ -120034,7 +120034,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_ca6_gca_000784695",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_010405405.1",
@@ -120044,7 +120044,7 @@
     "group": "fungi",
     "species_url": "Microthyrium_microscopicum_gca_010405405",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004802665.1",
@@ -120054,7 +120054,7 @@
     "group": "fungi",
     "species_url": "Phlebia_centrifuga_gca_004802665",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_900096645.1",
@@ -120064,7 +120064,7 @@
     "group": "fungi",
     "species_url": "Fusarium_fujikuroi_gca_900096645",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000697665.1",
