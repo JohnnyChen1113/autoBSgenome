@@ -119174,7 +119174,7 @@
     "group": "fungi",
     "species_url": "Wallemia_mellicola_gca_004918995",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002081675.1",
@@ -119184,7 +119184,7 @@
     "group": "fungi",
     "species_url": "Enterocytozoon_hepatopenaei_gca_002081675",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_006536005.1",
@@ -119194,7 +119194,7 @@
     "group": "fungi",
     "species_url": "Powellomyces_hirtus_gca_006536005",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004325055.1",
@@ -119204,7 +119204,7 @@
     "group": "fungi",
     "species_url": "Ordospora_colligata_gca_004325055",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004324935.1",
@@ -119214,7 +119214,7 @@
     "group": "fungi",
     "species_url": "Ordospora_colligata_gca_004324935",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000695385.1",
@@ -119224,7 +119224,7 @@
     "group": "fungi",
     "species_url": "Rhizoctonia_solani_ag_8_wac10335_gca_000695385",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004324945.1",
@@ -119234,7 +119234,7 @@
     "group": "fungi",
     "species_url": "Ordospora_colligata_gca_004324945",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000271645.1",
@@ -119244,7 +119244,7 @@
     "group": "fungi",
     "species_url": "Tremella_mesenterica_dsm_1558_gca_000271645",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004154925.1",
@@ -119254,7 +119254,7 @@
     "group": "fungi",
     "species_url": "Monosporascus_cannonballus_gca_004154925",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000271605.1",
@@ -119264,7 +119264,7 @@
     "group": "fungi",
     "species_url": "Fomitiporia_mediterranea_mf3_22_gca_000271605",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_008629635.1",
@@ -119274,7 +119274,7 @@
     "group": "fungi",
     "species_url": "Kwoniella_shandongensis_gca_008629635",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004000155.1",
@@ -119284,7 +119284,7 @@
     "group": "fungi",
     "species_url": "Tubulinosema_ratisbonensis_gca_004000155",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_006535965.1",
@@ -119294,7 +119294,7 @@
     "group": "fungi",
     "species_url": "Spizellomyces_sp_palustris_gca_006535965",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_002105025.1",
@@ -119304,7 +119304,7 @@
     "group": "fungi",
     "species_url": "Clohesyomyces_aquaticus_gca_002105025",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004918065.1",
@@ -119314,7 +119314,7 @@
     "group": "fungi",
     "species_url": "Wallemia_ichthyophaga_gca_004918065",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004325075.1",
