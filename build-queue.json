@@ -120674,7 +120674,7 @@
     "group": "fungi",
     "species_url": "Phanerochaete_chrysosporium",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827195.1",
@@ -120684,7 +120684,7 @@
     "group": "fungi",
     "species_url": "Laccaria_amethystina_laam_08_1_gca_000827195",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000784615.1",
@@ -120694,7 +120694,7 @@
     "group": "fungi",
     "species_url": "Candida_albicans_p78042_gca_000784615",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000875855.1",
@@ -120704,7 +120704,7 @@
     "group": "fungi",
     "species_url": "Cryptococcus_gattii_vgii_mmrl2647_gca_000875855",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004917115.1",
@@ -120714,7 +120714,7 @@
     "group": "fungi",
     "species_url": "Aureobasidium_pullulans_gca_004917115",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003184645.1",
@@ -120724,7 +120724,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_ellipticus_cbs_707_79_gca_003184645",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004379715.1",
@@ -120734,7 +120734,7 @@
     "group": "fungi",
     "species_url": "Crucibulum_laeve_gca_004379715",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827315.1",
@@ -120744,7 +120744,7 @@
     "group": "fungi",
     "species_url": "Piloderma_croceum_f_1598_gca_000827315",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_004917845.1",
@@ -120754,7 +120754,7 @@
     "group": "fungi",
     "species_url": "Wallemia_ichthyophaga_gca_004917845",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000750805.1",
@@ -120764,7 +120764,7 @@
     "group": "fungi",
     "species_url": "Pseudogymnoascus_sp_vkm_f_4515_fw_2607_gca_000750805",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000146915.1",
@@ -120774,7 +120774,7 @@
     "group": "fungi",
     "species_url": "Phaeosphaeria_nodorum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_010093985.1",
@@ -120784,7 +120784,7 @@
     "group": "fungi",
     "species_url": "Cercospora_zeae_maydis_scoh1_5_gca_010093985",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003184635.1",
@@ -120794,7 +120794,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_sclerotiicarbonarius_cbs_121057_gca_003184635",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827255.1",
@@ -120804,7 +120804,7 @@
     "group": "fungi",
     "species_url": "Suillus_luteus_uh_slu_lm8_n1_gca_000827255",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_006352295.1",
@@ -120814,7 +120814,7 @@
     "group": "fungi",
     "species_url": "Rhodotorula_diobovata_gca_006352295",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000182925.2",
