@@ -39585,6 +39585,54 @@
       ]
     },
     {
+      "organism": "Protomyces lactucae-debilis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Taphrinomycetes",
+        "order": "Taphrinales",
+        "family": "Protomycetaceae",
+        "genus": "Protomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Plactucaedebilis.NCBI.Prola1",
+          "version": "1.0.0",
+          "organism": "Protomyces lactucae-debilis",
+          "assembly": "Prola1",
+          "provider": "NCBI",
+          "accession": "GCF_002105105.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002105105.1/",
+          "file_name": "BSgenome.Plactucaedebilis.NCBI.Prola1_1.0.0.tar.gz",
+          "size": 3372614,
+          "seq_ids": [
+            "NW_024467993.1",
+            "NW_024468002.1",
+            "NW_024468003.1",
+            "NW_024468004.1",
+            "NW_024468005.1"
+          ],
+          "seq_count": 44,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Taphrinomycetes",
+            "order": "Taphrinales",
+            "family": "Protomycetaceae",
+            "genus": "Protomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-17T09:52:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Plactucaedebilis.NCBI.Prola1/BSgenome.Plactucaedebilis.NCBI.Prola1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Prunus avium",
       "common_name": "sweet cherry",
       "group": "plant",
@@ -87938,6 +87986,38 @@
       "common_name": "rye",
       "published": "2026-04-17T08:27:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1/BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Plactucaedebilis.NCBI.Prola1",
+      "version": "1.0.0",
+      "organism": "Protomyces lactucae-debilis",
+      "assembly": "Prola1",
+      "provider": "NCBI",
+      "accession": "GCF_002105105.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_002105105.1/",
+      "file_name": "BSgenome.Plactucaedebilis.NCBI.Prola1_1.0.0.tar.gz",
+      "size": 3372614,
+      "seq_ids": [
+        "NW_024467993.1",
+        "NW_024468002.1",
+        "NW_024468003.1",
+        "NW_024468004.1",
+        "NW_024468005.1"
+      ],
+      "seq_count": 44,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Taphrinomycetes",
+        "order": "Taphrinales",
+        "family": "Protomycetaceae",
+        "genus": "Protomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-17T09:52:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Plactucaedebilis.NCBI.Prola1/BSgenome.Plactucaedebilis.NCBI.Prola1_1.0.0.tar.gz"
     }
   ]
 }
