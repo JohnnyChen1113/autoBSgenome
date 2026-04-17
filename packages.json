@@ -43209,6 +43209,38 @@
           "common_name": "pikeperch",
           "published": "2026-04-04T05:45:43Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slucioperca.NCBI.SLUCFBN12/BSgenome.Slucioperca.NCBI.SLUCFBN12_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Slucioperca.Ensembl.SLUCFBN1",
+          "version": "1.0.0",
+          "organism": "Sander lucioperca",
+          "assembly": "SLUC_FBN_1",
+          "provider": "Ensembl",
+          "accession": "GCA_008315115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008315115.1/",
+          "file_name": "BSgenome.Slucioperca.Ensembl.SLUCFBN1_1.0.0.tar.gz",
+          "size": 211427312,
+          "seq_ids": [
+            "VTTG01000001.1",
+            "VTTG01000002.1",
+            "VTTG01000003.1",
+            "VTTG01000004.1",
+            "VTTG01000005.1"
+          ],
+          "seq_count": 1313,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Perciformes",
+            "family": "Percidae",
+            "genus": "Sander"
+          },
+          "common_name": "pikeperch",
+          "published": "2026-04-17T11:01:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slucioperca.Ensembl.SLUCFBN1/BSgenome.Slucioperca.Ensembl.SLUCFBN1_1.0.0.tar.gz"
         }
       ]
     },
@@ -89106,6 +89138,38 @@
       "common_name": "common carp",
       "published": "2026-04-17T11:01:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccarpio.Ensembl.Hunaghecarp20/BSgenome.Ccarpio.Ensembl.Hunaghecarp20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Slucioperca.Ensembl.SLUCFBN1",
+      "version": "1.0.0",
+      "organism": "Sander lucioperca",
+      "assembly": "SLUC_FBN_1",
+      "provider": "Ensembl",
+      "accession": "GCA_008315115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008315115.1/",
+      "file_name": "BSgenome.Slucioperca.Ensembl.SLUCFBN1_1.0.0.tar.gz",
+      "size": 211427312,
+      "seq_ids": [
+        "VTTG01000001.1",
+        "VTTG01000002.1",
+        "VTTG01000003.1",
+        "VTTG01000004.1",
+        "VTTG01000005.1"
+      ],
+      "seq_count": 1313,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Perciformes",
+        "family": "Percidae",
+        "genus": "Sander"
+      },
+      "common_name": "pikeperch",
+      "published": "2026-04-17T11:01:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slucioperca.Ensembl.SLUCFBN1/BSgenome.Slucioperca.Ensembl.SLUCFBN1_1.0.0.tar.gz"
     }
   ]
 }
