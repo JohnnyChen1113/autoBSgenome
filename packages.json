@@ -25784,6 +25784,54 @@
       ]
     },
     {
+      "organism": "Hordeum vulgare",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Hordeum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hvulgare.Ensembl.HvulgarecvBonusBPGv2",
+          "version": "1.0.0",
+          "organism": "Hordeum vulgare",
+          "assembly": "Hvulgare_cv_Bonus_BPGv2",
+          "provider": "Ensembl",
+          "accession": "GCA_949782845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_949782845.1/",
+          "file_name": "BSgenome.Hvulgare.Ensembl.HvulgarecvBonusBPGv2_1.0.0.tar.gz",
+          "size": 993735521,
+          "seq_ids": [
+            "CATKSK010000007.1",
+            "CATKSK010000042.1",
+            "CATKSK010000043.1",
+            "CATKSK010000037.1",
+            "CATKSK010000029.1"
+          ],
+          "seq_count": 1387,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Hordeum"
+          },
+          "common_name": "",
+          "published": "2026-04-17T19:41:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgarecvBonusBPGv2/BSgenome.Hvulgare.Ensembl.HvulgarecvBonusBPGv2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Hucho hucho",
       "common_name": "huchen",
       "group": "vertebrate_other",
@@ -93108,6 +93156,38 @@
       "common_name": "",
       "published": "2026-04-17T19:40:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Esalsugineum.Ensembl.Eutsalg10/BSgenome.Esalsugineum.Ensembl.Eutsalg10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hvulgare.Ensembl.HvulgarecvBonusBPGv2",
+      "version": "1.0.0",
+      "organism": "Hordeum vulgare",
+      "assembly": "Hvulgare_cv_Bonus_BPGv2",
+      "provider": "Ensembl",
+      "accession": "GCA_949782845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_949782845.1/",
+      "file_name": "BSgenome.Hvulgare.Ensembl.HvulgarecvBonusBPGv2_1.0.0.tar.gz",
+      "size": 993735521,
+      "seq_ids": [
+        "CATKSK010000007.1",
+        "CATKSK010000042.1",
+        "CATKSK010000043.1",
+        "CATKSK010000037.1",
+        "CATKSK010000029.1"
+      ],
+      "seq_count": 1387,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Hordeum"
+      },
+      "common_name": "",
+      "published": "2026-04-17T19:41:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgarecvBonusBPGv2/BSgenome.Hvulgare.Ensembl.HvulgarecvBonusBPGv2_1.0.0.tar.gz"
     }
   ]
 }
