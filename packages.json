@@ -42441,6 +42441,54 @@
       ]
     },
     {
+      "organism": "Saccharomyces cerevisiae S288c",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Scerevisiae.Ensembl.R6411",
+          "version": "1.0.0",
+          "organism": "Saccharomyces cerevisiae S288c",
+          "assembly": "R64-1-1",
+          "provider": "Ensembl",
+          "accession": "GCA_000146045.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146045.2/",
+          "file_name": "BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz",
+          "size": 2966670,
+          "seq_ids": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V"
+          ],
+          "seq_count": 17,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Saccharomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-17T11:00:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.R6411/BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Saccharomyces eubayanus",
       "common_name": "",
       "group": "fungi",
@@ -88946,6 +88994,38 @@
       "common_name": "hybrid cattle",
       "published": "2026-04-17T09:59:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bindicus.Ensembl.UOABrahman1/BSgenome.Bindicus.Ensembl.UOABrahman1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Scerevisiae.Ensembl.R6411",
+      "version": "1.0.0",
+      "organism": "Saccharomyces cerevisiae S288c",
+      "assembly": "R64-1-1",
+      "provider": "Ensembl",
+      "accession": "GCA_000146045.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146045.2/",
+      "file_name": "BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz",
+      "size": 2966670,
+      "seq_ids": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "seq_count": 17,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-17T11:00:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.R6411/BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz"
     }
   ]
 }
