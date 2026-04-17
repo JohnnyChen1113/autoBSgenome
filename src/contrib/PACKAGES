@@ -4577,3 +4577,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccarpio.Ensembl.Hunaghecarp20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gaculeatus.Ensembl.GAculeatusUGAversion5
+Version: 1.0.0
+NeedsCompilation: no
