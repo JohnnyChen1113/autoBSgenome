@@ -10144,6 +10144,38 @@
           "common_name": "",
           "published": "2026-04-04T18:51:13Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cannuum.NCBI.UCD10Xv11/BSgenome.Cannuum.NCBI.UCD10Xv11_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cannuum.Ensembl.ASM51225v2",
+          "version": "1.0.0",
+          "organism": "Capsicum annuum",
+          "assembly": "ASM51225v2",
+          "provider": "Ensembl",
+          "accession": "GCA_000512255.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000512255.2/",
+          "file_name": "BSgenome.Cannuum.Ensembl.ASM51225v2_1.0.0.tar.gz",
+          "size": 707867601,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 35797,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Solanaceae",
+            "genus": "Capsicum"
+          },
+          "common_name": "",
+          "published": "2026-04-17T13:55:41Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cannuum.Ensembl.ASM51225v2/BSgenome.Cannuum.Ensembl.ASM51225v2_1.0.0.tar.gz"
         }
       ]
     },
@@ -90290,6 +90322,38 @@
       "common_name": "olive baboon",
       "published": "2026-04-17T13:54:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panubis.Ensembl.Panubis10/BSgenome.Panubis.Ensembl.Panubis10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cannuum.Ensembl.ASM51225v2",
+      "version": "1.0.0",
+      "organism": "Capsicum annuum",
+      "assembly": "ASM51225v2",
+      "provider": "Ensembl",
+      "accession": "GCA_000512255.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000512255.2/",
+      "file_name": "BSgenome.Cannuum.Ensembl.ASM51225v2_1.0.0.tar.gz",
+      "size": 707867601,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 35797,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Capsicum"
+      },
+      "common_name": "",
+      "published": "2026-04-17T13:55:41Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cannuum.Ensembl.ASM51225v2/BSgenome.Cannuum.Ensembl.ASM51225v2_1.0.0.tar.gz"
     }
   ]
 }
