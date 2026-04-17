@@ -5668,6 +5668,54 @@
       ]
     },
     {
+      "organism": "Aureobasidium pullulans EXF-150",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Dothideales",
+        "family": "Saccotheciaceae",
+        "genus": "Aureobasidium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10",
+          "version": "1.0.0",
+          "organism": "Aureobasidium pullulans EXF-150",
+          "assembly": "Aureobasidium pullulans var. pullulans EXF-150, assembly version 1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000721785.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000721785.1/",
+          "file_name": "BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10_1.0.0.tar.gz",
+          "size": 7772841,
+          "seq_ids": [
+            "NW_021941021.1",
+            "NW_021941022.1",
+            "NW_021941023.1",
+            "NW_021941024.1",
+            "NW_021941025.1"
+          ],
+          "seq_count": 186,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Dothideales",
+            "family": "Saccotheciaceae",
+            "genus": "Aureobasidium"
+          },
+          "common_name": "",
+          "published": "2026-04-17T09:52:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10/BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aureobasidium subglaciale EXF-2481",
       "common_name": "",
       "group": "fungi",
@@ -88018,6 +88066,38 @@
       "common_name": "",
       "published": "2026-04-17T09:52:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Plactucaedebilis.NCBI.Prola1/BSgenome.Plactucaedebilis.NCBI.Prola1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10",
+      "version": "1.0.0",
+      "organism": "Aureobasidium pullulans EXF-150",
+      "assembly": "Aureobasidium pullulans var. pullulans EXF-150, assembly version 1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000721785.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000721785.1/",
+      "file_name": "BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10_1.0.0.tar.gz",
+      "size": 7772841,
+      "seq_ids": [
+        "NW_021941021.1",
+        "NW_021941022.1",
+        "NW_021941023.1",
+        "NW_021941024.1",
+        "NW_021941025.1"
+      ],
+      "seq_count": 186,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Dothideales",
+        "family": "Saccotheciaceae",
+        "genus": "Aureobasidium"
+      },
+      "common_name": "",
+      "published": "2026-04-17T09:52:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10/BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10_1.0.0.tar.gz"
     }
   ]
 }
