@@ -10204,6 +10204,54 @@
       ]
     },
     {
+      "organism": "Cannabis sativa",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Cannabaceae",
+        "genus": "Cannabis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Csativa.Ensembl.cs10",
+          "version": "1.0.0",
+          "organism": "Cannabis sativa",
+          "assembly": "cs10",
+          "provider": "Ensembl",
+          "accession": "GCA_900626175.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900626175.1/",
+          "file_name": "BSgenome.Csativa.Ensembl.cs10_1.0.0.tar.gz",
+          "size": 170136313,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 220,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Rosales",
+            "family": "Cannabaceae",
+            "genus": "Cannabis"
+          },
+          "common_name": "",
+          "published": "2026-04-17T18:14:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativa.Ensembl.cs10/BSgenome.Csativa.Ensembl.cs10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Capra hircus",
       "common_name": "goat",
       "group": "vertebrate_mammalian",
@@ -92420,6 +92468,38 @@
       "common_name": "European ash",
       "published": "2026-04-17T18:14:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fexcelsior.Ensembl.BATG05/BSgenome.Fexcelsior.Ensembl.BATG05_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Csativa.Ensembl.cs10",
+      "version": "1.0.0",
+      "organism": "Cannabis sativa",
+      "assembly": "cs10",
+      "provider": "Ensembl",
+      "accession": "GCA_900626175.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900626175.1/",
+      "file_name": "BSgenome.Csativa.Ensembl.cs10_1.0.0.tar.gz",
+      "size": 170136313,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 220,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Cannabaceae",
+        "genus": "Cannabis"
+      },
+      "common_name": "",
+      "published": "2026-04-17T18:14:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativa.Ensembl.cs10/BSgenome.Csativa.Ensembl.cs10_1.0.0.tar.gz"
     }
   ]
 }
