@@ -2811,6 +2811,38 @@
           "common_name": "",
           "published": "2026-04-04T11:40:13Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alyrata.NCBI.v10/BSgenome.Alyrata.NCBI.v10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Alyrata.Ensembl.v10",
+          "version": "1.0.0",
+          "organism": "Arabidopsis lyrata subsp. lyrata",
+          "assembly": "v.1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000004255.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000004255.1/",
+          "file_name": "BSgenome.Alyrata.Ensembl.v10_1.0.0.tar.gz",
+          "size": 43862551,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 695,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Arabidopsis"
+          },
+          "common_name": "",
+          "published": "2026-04-17T14:59:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alyrata.Ensembl.v10/BSgenome.Alyrata.Ensembl.v10_1.0.0.tar.gz"
         }
       ]
     },
@@ -90434,6 +90466,38 @@
       "common_name": "",
       "published": "2026-04-17T14:00:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aumbellulata.Ensembl.TA1851/BSgenome.Aumbellulata.Ensembl.TA1851_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Alyrata.Ensembl.v10",
+      "version": "1.0.0",
+      "organism": "Arabidopsis lyrata subsp. lyrata",
+      "assembly": "v.1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000004255.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000004255.1/",
+      "file_name": "BSgenome.Alyrata.Ensembl.v10_1.0.0.tar.gz",
+      "size": 43862551,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 695,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Arabidopsis"
+      },
+      "common_name": "",
+      "published": "2026-04-17T14:59:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alyrata.Ensembl.v10/BSgenome.Alyrata.Ensembl.v10_1.0.0.tar.gz"
     }
   ]
 }
