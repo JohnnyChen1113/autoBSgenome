@@ -26404,6 +26404,38 @@
           "common_name": "",
           "published": "2026-04-17T20:56:28Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgareHOR7385BPGv2/BSgenome.Hvulgare.Ensembl.HvulgareHOR7385BPGv2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Hvulgare.Ensembl.HvulgareHOR14273BPGv2",
+          "version": "1.0.0",
+          "organism": "Hordeum vulgare",
+          "assembly": "Hvulgare_HOR_14273_BPGv2",
+          "provider": "Ensembl",
+          "accession": "GCA_949783335.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_949783335.1/",
+          "file_name": "BSgenome.Hvulgare.Ensembl.HvulgareHOR14273BPGv2_1.0.0.tar.gz",
+          "size": 999424472,
+          "seq_ids": [
+            "CATKUD010000033.1",
+            "CATKUD010000005.1",
+            "CATKUD010000007.1",
+            "CATKUD010000027.1",
+            "CATKUD010000018.1"
+          ],
+          "seq_count": 778,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Hordeum"
+          },
+          "common_name": "",
+          "published": "2026-04-17T20:56:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgareHOR14273BPGv2/BSgenome.Hvulgare.Ensembl.HvulgareHOR14273BPGv2_1.0.0.tar.gz"
         }
       ]
     },
@@ -94420,6 +94452,38 @@
       "common_name": "",
       "published": "2026-04-17T20:56:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgareHOR7385BPGv2/BSgenome.Hvulgare.Ensembl.HvulgareHOR7385BPGv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hvulgare.Ensembl.HvulgareHOR14273BPGv2",
+      "version": "1.0.0",
+      "organism": "Hordeum vulgare",
+      "assembly": "Hvulgare_HOR_14273_BPGv2",
+      "provider": "Ensembl",
+      "accession": "GCA_949783335.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_949783335.1/",
+      "file_name": "BSgenome.Hvulgare.Ensembl.HvulgareHOR14273BPGv2_1.0.0.tar.gz",
+      "size": 999424472,
+      "seq_ids": [
+        "CATKUD010000033.1",
+        "CATKUD010000005.1",
+        "CATKUD010000007.1",
+        "CATKUD010000027.1",
+        "CATKUD010000018.1"
+      ],
+      "seq_count": 778,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Hordeum"
+      },
+      "common_name": "",
+      "published": "2026-04-17T20:56:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgareHOR14273BPGv2/BSgenome.Hvulgare.Ensembl.HvulgareHOR14273BPGv2_1.0.0.tar.gz"
     }
   ]
 }
