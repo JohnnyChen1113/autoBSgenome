@@ -7252,7 +7252,7 @@
           "accession": "GCA_003369685.2",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003369685.2/",
           "file_name": "BSgenome.Bindicus.Ensembl.UOAAngus1_1.0.0.tar.gz",
-          "size": 604983466,
+          "size": 604983391,
           "seq_ids": [
             "1",
             "2",
@@ -7272,7 +7272,7 @@
             "genus": "Bos"
           },
           "common_name": "hybrid cattle",
-          "published": "2026-04-17T09:54:43Z",
+          "published": "2026-04-17T09:58:56Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bindicus.Ensembl.UOAAngus1/BSgenome.Bindicus.Ensembl.UOAAngus1_1.0.0.tar.gz"
         }
       ]
@@ -88532,38 +88532,6 @@
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlaricipopulina.NCBI.v10/BSgenome.Mlaricipopulina.NCBI.v10_1.0.0.tar.gz"
     },
     {
-      "package": "BSgenome.Bindicus.Ensembl.UOAAngus1",
-      "version": "1.0.0",
-      "organism": "Bos indicus x Bos taurus",
-      "assembly": "UOA_Angus_1",
-      "provider": "Ensembl",
-      "accession": "GCA_003369685.2",
-      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003369685.2/",
-      "file_name": "BSgenome.Bindicus.Ensembl.UOAAngus1_1.0.0.tar.gz",
-      "size": 604983466,
-      "seq_ids": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-      ],
-      "seq_count": 1435,
-      "group": "vertebrate_mammalian",
-      "taxonomy": {
-        "domain": "Eukaryota",
-        "kingdom": "Metazoa",
-        "phylum": "Chordata",
-        "class": "Mammalia",
-        "order": "Artiodactyla",
-        "family": "Bovidae",
-        "genus": "Bos"
-      },
-      "common_name": "hybrid cattle",
-      "published": "2026-04-17T09:54:43Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bindicus.Ensembl.UOAAngus1/BSgenome.Bindicus.Ensembl.UOAAngus1_1.0.0.tar.gz"
-    },
-    {
       "package": "BSgenome.Ccarpio.Ensembl.Hunaghecarp20",
       "version": "1.0.0",
       "organism": "Cyprinus carpio",
@@ -88754,6 +88722,38 @@
       "common_name": "naked mole-rat",
       "published": "2026-04-17T09:58:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal/BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bindicus.Ensembl.UOAAngus1",
+      "version": "1.0.0",
+      "organism": "Bos indicus x Bos taurus",
+      "assembly": "UOA_Angus_1",
+      "provider": "Ensembl",
+      "accession": "GCA_003369685.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003369685.2/",
+      "file_name": "BSgenome.Bindicus.Ensembl.UOAAngus1_1.0.0.tar.gz",
+      "size": 604983391,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1435,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Bovidae",
+        "genus": "Bos"
+      },
+      "common_name": "hybrid cattle",
+      "published": "2026-04-17T09:58:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bindicus.Ensembl.UOAAngus1/BSgenome.Bindicus.Ensembl.UOAAngus1_1.0.0.tar.gz"
     }
   ]
 }
