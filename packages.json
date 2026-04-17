@@ -7958,6 +7958,54 @@
       ]
     },
     {
+      "organism": "Brassica rapa subsp. trilocularis",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Brassica"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Brapa.Ensembl.SCUBraROA23",
+          "version": "1.0.0",
+          "organism": "Brassica rapa subsp. trilocularis",
+          "assembly": "SCU_BraROA_2.3",
+          "provider": "Ensembl",
+          "accession": "GCA_017639395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_017639395.1/",
+          "file_name": "BSgenome.Brapa.Ensembl.SCUBraROA23_1.0.0.tar.gz",
+          "size": 79576161,
+          "seq_ids": [
+            "A10",
+            "A01",
+            "A02",
+            "A03",
+            "A04"
+          ],
+          "seq_count": 295,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Brassica"
+          },
+          "common_name": "",
+          "published": "2026-04-17T13:53:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Brapa.Ensembl.SCUBraROA23/BSgenome.Brapa.Ensembl.SCUBraROA23_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bremia lactucae",
       "common_name": "lettuce downy mildew",
       "group": "other",
@@ -90146,6 +90194,38 @@
       "common_name": "gray rockcress",
       "published": "2026-04-17T13:53:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalpina.Ensembl.AalpinaV4/BSgenome.Aalpina.Ensembl.AalpinaV4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Brapa.Ensembl.SCUBraROA23",
+      "version": "1.0.0",
+      "organism": "Brassica rapa subsp. trilocularis",
+      "assembly": "SCU_BraROA_2.3",
+      "provider": "Ensembl",
+      "accession": "GCA_017639395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_017639395.1/",
+      "file_name": "BSgenome.Brapa.Ensembl.SCUBraROA23_1.0.0.tar.gz",
+      "size": 79576161,
+      "seq_ids": [
+        "A10",
+        "A01",
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "seq_count": 295,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Brassica"
+      },
+      "common_name": "",
+      "published": "2026-04-17T13:53:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Brapa.Ensembl.SCUBraROA23/BSgenome.Brapa.Ensembl.SCUBraROA23_1.0.0.tar.gz"
     }
   ]
 }

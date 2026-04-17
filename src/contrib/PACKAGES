@@ -4681,3 +4681,7 @@ NeedsCompilation: no
 Package: BSgenome.Aalpina.Ensembl.AalpinaV4
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Brapa.Ensembl.SCUBraROA23
+Version: 1.0.0
+NeedsCompilation: no
