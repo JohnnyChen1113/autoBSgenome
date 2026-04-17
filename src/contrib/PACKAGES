@@ -4022,10 +4022,6 @@ Package: BSgenome.Oaries.Ensembl.ASM2243282v1
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Oaries.Ensembl.ASM2243283v1
-Version: 1.0.0
-NeedsCompilation: no
-
 Package: BSgenome.Dlabrax.Ensembl.dlabrax2021
 Version: 1.0.0
 NeedsCompilation: no
@@ -4535,5 +4531,9 @@ Version: 1.0.0
 NeedsCompilation: no
 
 Package: BSgenome.Mlucifugus.Ensembl.Myoluc20
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Oaries.Ensembl.ASM2243283v1
 Version: 1.0.0
 NeedsCompilation: no
