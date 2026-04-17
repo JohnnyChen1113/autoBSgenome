@@ -475,6 +475,38 @@
       ]
     },
     {
+      "organism": "Actinidia chinensis var. chinensis",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Achinensis.Ensembl.Red5PS11690",
+          "version": "1.0.0",
+          "organism": "Actinidia chinensis var. chinensis",
+          "assembly": "Red5_PS1_1.69.0",
+          "provider": "Ensembl",
+          "accession": "GCA_003024255.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003024255.1/",
+          "file_name": "BSgenome.Achinensis.Ensembl.Red5PS11690_1.0.0.tar.gz",
+          "size": 127843750,
+          "seq_ids": [
+            "LG1",
+            "LG10",
+            "LG11",
+            "LG12",
+            "LG13"
+          ],
+          "seq_count": 1234,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-17T12:01:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Achinensis.Ensembl.Red5PS11690/BSgenome.Achinensis.Ensembl.Red5PS11690_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Acyrthosiphon pisum",
       "common_name": "pea aphid",
       "group": "invertebrate",
@@ -89666,6 +89698,30 @@
       "common_name": "",
       "published": "2026-04-17T12:00:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spartitus.Ensembl.Stegastespartitus102/BSgenome.Spartitus.Ensembl.Stegastespartitus102_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Achinensis.Ensembl.Red5PS11690",
+      "version": "1.0.0",
+      "organism": "Actinidia chinensis var. chinensis",
+      "assembly": "Red5_PS1_1.69.0",
+      "provider": "Ensembl",
+      "accession": "GCA_003024255.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003024255.1/",
+      "file_name": "BSgenome.Achinensis.Ensembl.Red5PS11690_1.0.0.tar.gz",
+      "size": 127843750,
+      "seq_ids": [
+        "LG1",
+        "LG10",
+        "LG11",
+        "LG12",
+        "LG13"
+      ],
+      "seq_count": 1234,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-17T12:01:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Achinensis.Ensembl.Red5PS11690/BSgenome.Achinensis.Ensembl.Red5PS11690_1.0.0.tar.gz"
     }
   ]
 }
