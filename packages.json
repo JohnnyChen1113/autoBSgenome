@@ -43416,6 +43416,54 @@
       ]
     },
     {
+      "organism": "Secale cereale",
+      "common_name": "rye",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Secale"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1",
+          "version": "1.0.0",
+          "organism": "Secale cereale",
+          "assembly": "Rye_Lo7_2018_v1p1p1",
+          "provider": "Ensembl",
+          "accession": "GCA_902687465.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902687465.1/",
+          "file_name": "BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1_1.0.0.tar.gz",
+          "size": 1555332876,
+          "seq_ids": [
+            "1R",
+            "2R",
+            "3R",
+            "4R",
+            "5R"
+          ],
+          "seq_count": 8,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Secale"
+          },
+          "common_name": "rye",
+          "published": "2026-04-17T08:27:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1/BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Selaginella moellendorffii",
       "common_name": "",
       "group": "plant",
@@ -87858,6 +87906,38 @@
       "common_name": "Atlantic cod",
       "published": "2026-04-17T08:23:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmorhua.Ensembl.gadMorCeltic/BSgenome.Gmorhua.Ensembl.gadMorCeltic_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1",
+      "version": "1.0.0",
+      "organism": "Secale cereale",
+      "assembly": "Rye_Lo7_2018_v1p1p1",
+      "provider": "Ensembl",
+      "accession": "GCA_902687465.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902687465.1/",
+      "file_name": "BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1_1.0.0.tar.gz",
+      "size": 1555332876,
+      "seq_ids": [
+        "1R",
+        "2R",
+        "3R",
+        "4R",
+        "5R"
+      ],
+      "seq_count": 8,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Secale"
+      },
+      "common_name": "rye",
+      "published": "2026-04-17T08:27:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1/BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1_1.0.0.tar.gz"
     }
   ]
 }

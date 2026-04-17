@@ -4549,3 +4549,7 @@ NeedsCompilation: no
 Package: BSgenome.Gmorhua.Ensembl.gadMorCeltic
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scereale.Ensembl.RyeLo72018v1p1p1
+Version: 1.0.0
+NeedsCompilation: no
