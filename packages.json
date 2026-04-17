@@ -11666,6 +11666,54 @@
       ]
     },
     {
+      "organism": "Chara braunii",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Charophyceae",
+        "order": "Charales",
+        "family": "Characeae",
+        "genus": "Chara"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cbraunii.Ensembl.Cbr10",
+          "version": "1.0.0",
+          "organism": "Chara braunii",
+          "assembly": "Cbr_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_003427395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003427395.1/",
+          "file_name": "BSgenome.Cbraunii.Ensembl.Cbr10_1.0.0.tar.gz",
+          "size": 351625119,
+          "seq_ids": [
+            "BFEA01000001",
+            "BFEA01000002",
+            "BFEA01000003",
+            "BFEA01000004",
+            "BFEA01000005"
+          ],
+          "seq_count": 11654,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Charophyceae",
+            "order": "Charales",
+            "family": "Characeae",
+            "genus": "Chara"
+          },
+          "common_name": "",
+          "published": "2026-04-17T16:10:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbraunii.Ensembl.Cbr10/BSgenome.Cbraunii.Ensembl.Cbr10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Charadrius vociferus",
       "common_name": "killdeer",
       "group": "vertebrate_other",
@@ -91414,6 +91462,38 @@
       "common_name": "quinoa",
       "published": "2026-04-17T16:09:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cquinoa.Ensembl.ASM168347v1/BSgenome.Cquinoa.Ensembl.ASM168347v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cbraunii.Ensembl.Cbr10",
+      "version": "1.0.0",
+      "organism": "Chara braunii",
+      "assembly": "Cbr_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_003427395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003427395.1/",
+      "file_name": "BSgenome.Cbraunii.Ensembl.Cbr10_1.0.0.tar.gz",
+      "size": 351625119,
+      "seq_ids": [
+        "BFEA01000001",
+        "BFEA01000002",
+        "BFEA01000003",
+        "BFEA01000004",
+        "BFEA01000005"
+      ],
+      "seq_count": 11654,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Charophyceae",
+        "order": "Charales",
+        "family": "Characeae",
+        "genus": "Chara"
+      },
+      "common_name": "",
+      "published": "2026-04-17T16:10:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbraunii.Ensembl.Cbr10/BSgenome.Cbraunii.Ensembl.Cbr10_1.0.0.tar.gz"
     }
   ]
 }
