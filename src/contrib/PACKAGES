@@ -4789,3 +4789,7 @@ NeedsCompilation: no
 Package: BSgenome.Drotundata.Ensembl.TDr96F1v2PseudoChromosome
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csativa.Ensembl.Cs
+Version: 1.0.0
+NeedsCompilation: no
