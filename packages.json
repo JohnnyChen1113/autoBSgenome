@@ -8752,6 +8752,38 @@
           "common_name": "",
           "published": "2026-04-05T13:03:38Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdubliniensis.NCBI.ASM2694v1/BSgenome.Cdubliniensis.NCBI.ASM2694v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cdublinien.Ensembl.ASM2694v1",
+          "version": "1.0.0",
+          "organism": "Candida dubliniensis CD36",
+          "assembly": "ASM2694v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000026945.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000026945.1/",
+          "file_name": "BSgenome.Cdublinien.Ensembl.ASM2694v1_1.0.0.tar.gz",
+          "size": 3459466,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Candida"
+          },
+          "common_name": "",
+          "published": "2026-04-17T08:17:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdublinien.Ensembl.ASM2694v1/BSgenome.Cdublinien.Ensembl.ASM2694v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -87554,6 +87586,38 @@
       "common_name": "",
       "published": "2026-04-17T07:30:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aarachidic.Ensembl.ASM274980v1/BSgenome.Aarachidic.Ensembl.ASM274980v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cdublinien.Ensembl.ASM2694v1",
+      "version": "1.0.0",
+      "organism": "Candida dubliniensis CD36",
+      "assembly": "ASM2694v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000026945.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000026945.1/",
+      "file_name": "BSgenome.Cdublinien.Ensembl.ASM2694v1_1.0.0.tar.gz",
+      "size": 3459466,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "common_name": "",
+      "published": "2026-04-17T08:17:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cdublinien.Ensembl.ASM2694v1/BSgenome.Cdublinien.Ensembl.ASM2694v1_1.0.0.tar.gz"
     }
   ]
 }
