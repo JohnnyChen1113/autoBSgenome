@@ -4721,3 +4721,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccapsularis.Ensembl.CCACVL110
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clanatus.Ensembl.Cla97v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -12473,6 +12473,54 @@
       ]
     },
     {
+      "organism": "Citrullus lanatus",
+      "common_name": "watermelon",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Citrullus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Clanatus.Ensembl.Cla97v1",
+          "version": "1.0.0",
+          "organism": "Citrullus lanatus",
+          "assembly": "Cla97_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000238415.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000238415.2/",
+          "file_name": "BSgenome.Clanatus.Ensembl.Cla97v1_1.0.0.tar.gz",
+          "size": 84994403,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 113,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Cucurbitales",
+            "family": "Cucurbitaceae",
+            "genus": "Citrullus"
+          },
+          "common_name": "watermelon",
+          "published": "2026-04-17T15:00:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanatus.Ensembl.Cla97v1/BSgenome.Clanatus.Ensembl.Cla97v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Citrus x clementina",
       "common_name": "",
       "group": "plant",
@@ -90858,6 +90906,38 @@
       "common_name": "",
       "published": "2026-04-17T15:00:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccapsularis.Ensembl.CCACVL110/BSgenome.Ccapsularis.Ensembl.CCACVL110_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Clanatus.Ensembl.Cla97v1",
+      "version": "1.0.0",
+      "organism": "Citrullus lanatus",
+      "assembly": "Cla97_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000238415.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000238415.2/",
+      "file_name": "BSgenome.Clanatus.Ensembl.Cla97v1_1.0.0.tar.gz",
+      "size": 84994403,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 113,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Citrullus"
+      },
+      "common_name": "watermelon",
+      "published": "2026-04-17T15:00:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanatus.Ensembl.Cla97v1/BSgenome.Clanatus.Ensembl.Cla97v1_1.0.0.tar.gz"
     }
   ]
 }
