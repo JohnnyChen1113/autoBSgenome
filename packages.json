@@ -20824,6 +20824,54 @@
       ]
     },
     {
+      "organism": "Fusarium graminearum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fgraminearum.Ensembl.MDCFg13",
+          "version": "1.0.0",
+          "organism": "Fusarium graminearum",
+          "assembly": "MDC_Fg13",
+          "provider": "Ensembl",
+          "accession": "GCA_901446245.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_901446245.1/",
+          "file_name": "BSgenome.Fgraminearum.Ensembl.MDCFg13_1.0.0.tar.gz",
+          "size": 9179681,
+          "seq_ids": [
+            "2121",
+            "2199",
+            "2153",
+            "2186",
+            "2168"
+          ],
+          "seq_count": 283,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Nectriaceae",
+            "genus": "Fusarium"
+          },
+          "common_name": "",
+          "published": "2026-04-17T08:22:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fgraminearum.Ensembl.MDCFg13/BSgenome.Fgraminearum.Ensembl.MDCFg13_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fusarium graminearum PH-1",
       "common_name": "",
       "group": "fungi",
@@ -87618,6 +87666,38 @@
       "common_name": "sheep",
       "published": "2026-04-17T08:19:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaries.Ensembl.ASM2243283v1/BSgenome.Oaries.Ensembl.ASM2243283v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fgraminearum.Ensembl.MDCFg13",
+      "version": "1.0.0",
+      "organism": "Fusarium graminearum",
+      "assembly": "MDC_Fg13",
+      "provider": "Ensembl",
+      "accession": "GCA_901446245.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_901446245.1/",
+      "file_name": "BSgenome.Fgraminearum.Ensembl.MDCFg13_1.0.0.tar.gz",
+      "size": 9179681,
+      "seq_ids": [
+        "2121",
+        "2199",
+        "2153",
+        "2186",
+        "2168"
+      ],
+      "seq_count": 283,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "common_name": "",
+      "published": "2026-04-17T08:22:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fgraminearum.Ensembl.MDCFg13/BSgenome.Fgraminearum.Ensembl.MDCFg13_1.0.0.tar.gz"
     }
   ]
 }
