@@ -7842,6 +7842,38 @@
           "common_name": "stiff brome",
           "published": "2026-04-04T13:01:49Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdistachyon.NCBI.Brachypodiumdistachyonv30/BSgenome.Bdistachyon.NCBI.Brachypodiumdistachyonv30_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30",
+          "version": "1.0.0",
+          "organism": "Brachypodium distachyon",
+          "assembly": "Brachypodium_distachyon_v3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000005505.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000005505.4/",
+          "file_name": "BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30_1.0.0.tar.gz",
+          "size": 66876924,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 10,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Brachypodium"
+          },
+          "common_name": "stiff brome",
+          "published": "2026-04-17T15:00:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30/BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30_1.0.0.tar.gz"
         }
       ]
     },
@@ -90658,6 +90690,38 @@
       "common_name": "",
       "published": "2026-04-17T15:00:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cavellana.Ensembl.CavTom2PMs10/BSgenome.Cavellana.Ensembl.CavTom2PMs10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30",
+      "version": "1.0.0",
+      "organism": "Brachypodium distachyon",
+      "assembly": "Brachypodium_distachyon_v3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000005505.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000005505.4/",
+      "file_name": "BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30_1.0.0.tar.gz",
+      "size": 66876924,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 10,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Brachypodium"
+      },
+      "common_name": "stiff brome",
+      "published": "2026-04-17T15:00:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30/BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30_1.0.0.tar.gz"
     }
   ]
 }

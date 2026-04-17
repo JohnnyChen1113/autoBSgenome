@@ -4709,3 +4709,7 @@ NeedsCompilation: no
 Package: BSgenome.Cavellana.Ensembl.CavTom2PMs10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30
+Version: 1.0.0
+NeedsCompilation: no
