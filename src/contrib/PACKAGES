@@ -4869,3 +4869,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgareHOR10892BPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgarecvBarkeBPGv2
+Version: 1.0.0
+NeedsCompilation: no
