@@ -4605,3 +4605,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgriseus.Ensembl.CriGri10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bindicus.Ensembl.UOABrahman1
+Version: 1.0.0
+NeedsCompilation: no
