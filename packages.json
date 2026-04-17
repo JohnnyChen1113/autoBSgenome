@@ -21092,6 +21092,54 @@
       ]
     },
     {
+      "organism": "Eucalyptus grandis",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Myrtales",
+        "family": "Myrtaceae",
+        "genus": "Eucalyptus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Egrandis.Ensembl.Egrandis10",
+          "version": "1.0.0",
+          "organism": "Eucalyptus grandis",
+          "assembly": "Egrandis1_0",
+          "provider": "Ensembl",
+          "accession": "GCA_000612305.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000612305.1/",
+          "file_name": "BSgenome.Egrandis.Ensembl.Egrandis10_1.0.0.tar.gz",
+          "size": 153751106,
+          "seq_ids": [
+            "KK198755",
+            "KK198757",
+            "KK198760",
+            "KK198754",
+            "KK198758"
+          ],
+          "seq_count": 4950,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Myrtales",
+            "family": "Myrtaceae",
+            "genus": "Eucalyptus"
+          },
+          "common_name": "",
+          "published": "2026-04-17T18:16:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Egrandis.Ensembl.Egrandis10/BSgenome.Egrandis.Ensembl.Egrandis10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Eufriesea mexicana",
       "common_name": "",
       "group": "invertebrate",
@@ -92740,6 +92788,38 @@
       "common_name": "weeping love grass",
       "published": "2026-04-17T18:15:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10/BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Egrandis.Ensembl.Egrandis10",
+      "version": "1.0.0",
+      "organism": "Eucalyptus grandis",
+      "assembly": "Egrandis1_0",
+      "provider": "Ensembl",
+      "accession": "GCA_000612305.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000612305.1/",
+      "file_name": "BSgenome.Egrandis.Ensembl.Egrandis10_1.0.0.tar.gz",
+      "size": 153751106,
+      "seq_ids": [
+        "KK198755",
+        "KK198757",
+        "KK198760",
+        "KK198754",
+        "KK198758"
+      ],
+      "seq_count": 4950,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Myrtales",
+        "family": "Myrtaceae",
+        "genus": "Eucalyptus"
+      },
+      "common_name": "",
+      "published": "2026-04-17T18:16:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Egrandis.Ensembl.Egrandis10/BSgenome.Egrandis.Ensembl.Egrandis10_1.0.0.tar.gz"
     }
   ]
 }
