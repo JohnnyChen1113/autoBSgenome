@@ -35583,6 +35583,54 @@
       ]
     },
     {
+      "organism": "Panthera leo",
+      "common_name": "lion",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Panthera"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pleo.Ensembl.PanLeo10",
+          "version": "1.0.0",
+          "organism": "Panthera leo",
+          "assembly": "PanLeo1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_008795835.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008795835.1/",
+          "file_name": "BSgenome.Pleo.Ensembl.PanLeo10_1.0.0.tar.gz",
+          "size": 573722256,
+          "seq_ids": [
+            "X",
+            "A1",
+            "A2",
+            "A3",
+            "B1"
+          ],
+          "seq_count": 8060,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Felidae",
+            "genus": "Panthera"
+          },
+          "common_name": "lion",
+          "published": "2026-04-17T11:03:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pleo.Ensembl.PanLeo10/BSgenome.Pleo.Ensembl.PanLeo10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Panthera pardus",
       "common_name": "leopard",
       "group": "vertebrate_mammalian",
@@ -89394,6 +89442,38 @@
       "common_name": "western lowland gorilla",
       "published": "2026-04-17T11:03:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ggorilla.Ensembl.gorGor4/BSgenome.Ggorilla.Ensembl.gorGor4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pleo.Ensembl.PanLeo10",
+      "version": "1.0.0",
+      "organism": "Panthera leo",
+      "assembly": "PanLeo1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_008795835.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008795835.1/",
+      "file_name": "BSgenome.Pleo.Ensembl.PanLeo10_1.0.0.tar.gz",
+      "size": 573722256,
+      "seq_ids": [
+        "X",
+        "A1",
+        "A2",
+        "A3",
+        "B1"
+      ],
+      "seq_count": 8060,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Felidae",
+        "genus": "Panthera"
+      },
+      "common_name": "lion",
+      "published": "2026-04-17T11:03:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pleo.Ensembl.PanLeo10/BSgenome.Pleo.Ensembl.PanLeo10_1.0.0.tar.gz"
     }
   ]
 }

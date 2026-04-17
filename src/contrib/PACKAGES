@@ -4633,3 +4633,7 @@ NeedsCompilation: no
 Package: BSgenome.Ggorilla.Ensembl.gorGor4
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pleo.Ensembl.PanLeo10
+Version: 1.0.0
+NeedsCompilation: no
