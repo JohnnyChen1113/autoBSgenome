@@ -23329,6 +23329,38 @@
           "common_name": "naked mole-rat",
           "published": "2026-04-17T09:58:18Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hglaber.Ensembl.Nakedmoleratmaternal/BSgenome.Hglaber.Ensembl.Nakedmoleratmaternal_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal",
+          "version": "1.0.0",
+          "organism": "Heterocephalus glaber",
+          "assembly": "Naked_mole-rat_paternal",
+          "provider": "Ensembl",
+          "accession": "GCA_944319725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_944319725.1/",
+          "file_name": "BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal_1.0.0.tar.gz",
+          "size": 597294230,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 32,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Bathyergidae",
+            "genus": "Heterocephalus"
+          },
+          "common_name": "naked mole-rat",
+          "published": "2026-04-17T09:58:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal/BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal_1.0.0.tar.gz"
         }
       ]
     },
@@ -88690,6 +88722,38 @@
       "common_name": "reedfish",
       "published": "2026-04-17T09:58:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecalabaricus.Ensembl.fErpCal11/BSgenome.Ecalabaricus.Ensembl.fErpCal11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal",
+      "version": "1.0.0",
+      "organism": "Heterocephalus glaber",
+      "assembly": "Naked_mole-rat_paternal",
+      "provider": "Ensembl",
+      "accession": "GCA_944319725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_944319725.1/",
+      "file_name": "BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal_1.0.0.tar.gz",
+      "size": 597294230,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 32,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Bathyergidae",
+        "genus": "Heterocephalus"
+      },
+      "common_name": "naked mole-rat",
+      "published": "2026-04-17T09:58:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal/BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal_1.0.0.tar.gz"
     }
   ]
 }

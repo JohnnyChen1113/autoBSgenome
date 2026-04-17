@@ -4593,3 +4593,7 @@ NeedsCompilation: no
 Package: BSgenome.Ecalabaricus.Ensembl.fErpCal11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hglaber.Ensembl.Nakedmoleratpaternal
+Version: 1.0.0
+NeedsCompilation: no
