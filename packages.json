@@ -12247,6 +12247,37 @@
           "common_name": "carragheen",
           "published": "2026-04-07T02:37:14Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccrispus.NCBI.ASM35022v2/BSgenome.Ccrispus.NCBI.ASM35022v2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ccrispus.Ensembl.ASM35022v2",
+          "version": "1.0.0",
+          "organism": "Chondrus crispus",
+          "assembly": "ASM35022v2",
+          "provider": "Ensembl",
+          "accession": "GCA_000350225.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000350225.2/",
+          "file_name": "BSgenome.Ccrispus.Ensembl.ASM35022v2_1.0.0.tar.gz",
+          "size": 25467191,
+          "seq_ids": [
+            "Pt",
+            "HG001459",
+            "HG001706",
+            "HG001807",
+            "HG001898"
+          ],
+          "seq_count": 926,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Rhodophyta",
+            "class": "Florideophyceae",
+            "order": "Gigartinales",
+            "family": "Gigartinaceae",
+            "genus": "Chondrus"
+          },
+          "common_name": "carragheen",
+          "published": "2026-04-17T16:08:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccrispus.Ensembl.ASM35022v2/BSgenome.Ccrispus.Ensembl.ASM35022v2_1.0.0.tar.gz"
         }
       ]
     },
@@ -91146,6 +91177,37 @@
       "common_name": "",
       "published": "2026-04-17T16:08:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccitriodora.Ensembl.Ccitriodorav21/BSgenome.Ccitriodora.Ensembl.Ccitriodorav21_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccrispus.Ensembl.ASM35022v2",
+      "version": "1.0.0",
+      "organism": "Chondrus crispus",
+      "assembly": "ASM35022v2",
+      "provider": "Ensembl",
+      "accession": "GCA_000350225.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000350225.2/",
+      "file_name": "BSgenome.Ccrispus.Ensembl.ASM35022v2_1.0.0.tar.gz",
+      "size": 25467191,
+      "seq_ids": [
+        "Pt",
+        "HG001459",
+        "HG001706",
+        "HG001807",
+        "HG001898"
+      ],
+      "seq_count": 926,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Rhodophyta",
+        "class": "Florideophyceae",
+        "order": "Gigartinales",
+        "family": "Gigartinaceae",
+        "genus": "Chondrus"
+      },
+      "common_name": "carragheen",
+      "published": "2026-04-17T16:08:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccrispus.Ensembl.ASM35022v2/BSgenome.Ccrispus.Ensembl.ASM35022v2_1.0.0.tar.gz"
     }
   ]
 }
