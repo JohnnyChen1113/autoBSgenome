@@ -12903,6 +12903,38 @@
       ]
     },
     {
+      "organism": "Coffea canephora str. DH200-94",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Ccanephora.Ensembl.AUKPRJEB4211v1",
+          "version": "1.0.0",
+          "organism": "Coffea canephora str. DH200-94",
+          "assembly": "AUK_PRJEB4211_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_900059795.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900059795.1/",
+          "file_name": "BSgenome.Ccanephora.Ensembl.AUKPRJEB4211v1_1.0.0.tar.gz",
+          "size": 112489138,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 13007,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-17T15:00:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccanephora.Ensembl.AUKPRJEB4211v1/BSgenome.Ccanephora.Ensembl.AUKPRJEB4211v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Coffea eugenioides",
       "common_name": "",
       "group": "plant",
@@ -90722,6 +90754,30 @@
       "common_name": "stiff brome",
       "published": "2026-04-17T15:00:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30/BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccanephora.Ensembl.AUKPRJEB4211v1",
+      "version": "1.0.0",
+      "organism": "Coffea canephora str. DH200-94",
+      "assembly": "AUK_PRJEB4211_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_900059795.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900059795.1/",
+      "file_name": "BSgenome.Ccanephora.Ensembl.AUKPRJEB4211v1_1.0.0.tar.gz",
+      "size": 112489138,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 13007,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-17T15:00:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccanephora.Ensembl.AUKPRJEB4211v1/BSgenome.Ccanephora.Ensembl.AUKPRJEB4211v1_1.0.0.tar.gz"
     }
   ]
 }

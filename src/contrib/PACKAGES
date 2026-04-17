@@ -4713,3 +4713,7 @@ NeedsCompilation: no
 Package: BSgenome.Bdistachyon.Ensembl.Brachypodiumdistachyonv30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccanephora.Ensembl.AUKPRJEB4211v1
+Version: 1.0.0
+NeedsCompilation: no
