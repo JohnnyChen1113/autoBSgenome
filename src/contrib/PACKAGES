@@ -4977,3 +4977,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgareHOR1702BPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgarecvRGTPlanetBPGv2
+Version: 1.0.0
+NeedsCompilation: no
