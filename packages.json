@@ -15454,6 +15454,54 @@
       ]
     },
     {
+      "organism": "Cyprinus carpio",
+      "common_name": "common carp",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Cyprinus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccarpio.Ensembl.Hunaghecarp20",
+          "version": "1.0.0",
+          "organism": "Cyprinus carpio",
+          "assembly": "Hunaghe_carp_2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_004011575.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004011575.1/",
+          "file_name": "BSgenome.Ccarpio.Ensembl.Hunaghecarp20_1.0.0.tar.gz",
+          "size": 332843708,
+          "seq_ids": [
+            "SAUI01115379.1",
+            "SAUI01134482.1",
+            "SAUI01025648.1",
+            "SAUI01133121.1",
+            "SAUI01011016.1"
+          ],
+          "seq_count": 143821,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Cyprinus"
+          },
+          "common_name": "common carp",
+          "published": "2026-04-17T09:57:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccarpio.Ensembl.Hunaghecarp20/BSgenome.Ccarpio.Ensembl.Hunaghecarp20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyprinus carpio carpio",
       "common_name": "",
       "group": "vertebrate_other",
@@ -88322,6 +88370,38 @@
       "common_name": "hybrid cattle",
       "published": "2026-04-17T09:54:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bindicus.Ensembl.UOAAngus1/BSgenome.Bindicus.Ensembl.UOAAngus1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccarpio.Ensembl.Hunaghecarp20",
+      "version": "1.0.0",
+      "organism": "Cyprinus carpio",
+      "assembly": "Hunaghe_carp_2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_004011575.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004011575.1/",
+      "file_name": "BSgenome.Ccarpio.Ensembl.Hunaghecarp20_1.0.0.tar.gz",
+      "size": 332843708,
+      "seq_ids": [
+        "SAUI01115379.1",
+        "SAUI01134482.1",
+        "SAUI01025648.1",
+        "SAUI01133121.1",
+        "SAUI01011016.1"
+      ],
+      "seq_count": 143821,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Cyprinus"
+      },
+      "common_name": "common carp",
+      "published": "2026-04-17T09:57:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccarpio.Ensembl.Hunaghecarp20/BSgenome.Ccarpio.Ensembl.Hunaghecarp20_1.0.0.tar.gz"
     }
   ]
 }
