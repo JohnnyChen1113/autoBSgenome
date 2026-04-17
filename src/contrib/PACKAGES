@@ -4853,3 +4853,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgarecvChikurinIbaraki1BPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hannuus.Ensembl.HanXRQr20SUNRISE
+Version: 1.0.0
+NeedsCompilation: no

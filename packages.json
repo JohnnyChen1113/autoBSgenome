@@ -25062,6 +25062,38 @@
           "common_name": "common sunflower",
           "published": "2026-04-04T18:50:11Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hannuus.NCBI.HanXRQr20SUNRISE/BSgenome.Hannuus.NCBI.HanXRQr20SUNRISE_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Hannuus.Ensembl.HanXRQr20SUNRISE",
+          "version": "1.0.0",
+          "organism": "Helianthus annuus",
+          "assembly": "HanXRQr2.0-SUNRISE",
+          "provider": "Ensembl",
+          "accession": "GCA_002127325.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002127325.2/",
+          "file_name": "BSgenome.Hannuus.Ensembl.HanXRQr20SUNRISE_1.0.0.tar.gz",
+          "size": 691284509,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 332,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Asterales",
+            "family": "Asteraceae",
+            "genus": "Helianthus"
+          },
+          "common_name": "common sunflower",
+          "published": "2026-04-17T19:43:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hannuus.Ensembl.HanXRQr20SUNRISE/BSgenome.Hannuus.Ensembl.HanXRQr20SUNRISE_1.0.0.tar.gz"
         }
       ]
     },
@@ -93252,6 +93284,38 @@
       "common_name": "",
       "published": "2026-04-17T19:42:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgarecvChikurinIbaraki1BPGv2/BSgenome.Hvulgare.Ensembl.HvulgarecvChikurinIbaraki1BPGv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hannuus.Ensembl.HanXRQr20SUNRISE",
+      "version": "1.0.0",
+      "organism": "Helianthus annuus",
+      "assembly": "HanXRQr2.0-SUNRISE",
+      "provider": "Ensembl",
+      "accession": "GCA_002127325.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002127325.2/",
+      "file_name": "BSgenome.Hannuus.Ensembl.HanXRQr20SUNRISE_1.0.0.tar.gz",
+      "size": 691284509,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 332,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Asterales",
+        "family": "Asteraceae",
+        "genus": "Helianthus"
+      },
+      "common_name": "common sunflower",
+      "published": "2026-04-17T19:43:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hannuus.Ensembl.HanXRQr20SUNRISE/BSgenome.Hannuus.Ensembl.HanXRQr20SUNRISE_1.0.0.tar.gz"
     }
   ]
 }
