@@ -15605,6 +15605,38 @@
           "common_name": "cucumber",
           "published": "2026-04-04T11:40:51Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativus.NCBI.Cucumber9930V3/BSgenome.Csativus.NCBI.Cucumber9930V3_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Csativus.Ensembl.ASM407v2",
+          "version": "1.0.0",
+          "organism": "Cucumis sativus",
+          "assembly": "ASM407v2",
+          "provider": "Ensembl",
+          "accession": "GCA_000004075.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000004075.2/",
+          "file_name": "BSgenome.Csativus.Ensembl.ASM407v2_1.0.0.tar.gz",
+          "size": 45254827,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 186,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Cucurbitales",
+            "family": "Cucurbitaceae",
+            "genus": "Cucumis"
+          },
+          "common_name": "cucumber",
+          "published": "2026-04-17T17:28:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativus.Ensembl.ASM407v2/BSgenome.Csativus.Ensembl.ASM407v2_1.0.0.tar.gz"
         }
       ]
     },
@@ -91702,6 +91734,38 @@
       "common_name": "",
       "published": "2026-04-17T17:27:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcarota.Ensembl.ASM162521v1/BSgenome.Dcarota.Ensembl.ASM162521v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Csativus.Ensembl.ASM407v2",
+      "version": "1.0.0",
+      "organism": "Cucumis sativus",
+      "assembly": "ASM407v2",
+      "provider": "Ensembl",
+      "accession": "GCA_000004075.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000004075.2/",
+      "file_name": "BSgenome.Csativus.Ensembl.ASM407v2_1.0.0.tar.gz",
+      "size": 45254827,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 186,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Cucurbitales",
+        "family": "Cucurbitaceae",
+        "genus": "Cucumis"
+      },
+      "common_name": "cucumber",
+      "published": "2026-04-17T17:28:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativus.Ensembl.ASM407v2/BSgenome.Csativus.Ensembl.ASM407v2_1.0.0.tar.gz"
     }
   ]
 }

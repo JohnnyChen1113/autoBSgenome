@@ -4769,3 +4769,7 @@ NeedsCompilation: no
 Package: BSgenome.Dcarota.Ensembl.ASM162521v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csativus.Ensembl.ASM407v2
+Version: 1.0.0
+NeedsCompilation: no
