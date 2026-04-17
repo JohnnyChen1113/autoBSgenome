@@ -4565,3 +4565,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptriticirepentis.NCBI.CURPTRM422
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mlaricipopulina.NCBI.v10
+Version: 1.0.0
+NeedsCompilation: no

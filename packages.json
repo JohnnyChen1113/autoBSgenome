@@ -27717,6 +27717,54 @@
       ]
     },
     {
+      "organism": "Melampsora larici-populina 98AG31",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Pucciniomycetes",
+        "order": "Pucciniales",
+        "family": "Melampsoraceae",
+        "genus": "Melampsora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mlaricipopulina.NCBI.v10",
+          "version": "1.0.0",
+          "organism": "Melampsora larici-populina 98AG31",
+          "assembly": "v1.0",
+          "provider": "NCBI",
+          "accession": "GCF_000204055.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000204055.1/",
+          "file_name": "BSgenome.Mlaricipopulina.NCBI.v10_1.0.0.tar.gz",
+          "size": 25751095,
+          "seq_ids": [
+            "NW_006768765.1",
+            "NW_006768766.1",
+            "NW_006768767.1",
+            "NW_006768768.1",
+            "NW_006768769.1"
+          ],
+          "seq_count": 462,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Pucciniomycetes",
+            "order": "Pucciniales",
+            "family": "Melampsoraceae",
+            "genus": "Melampsora"
+          },
+          "common_name": "",
+          "published": "2026-04-17T09:52:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlaricipopulina.NCBI.v10/BSgenome.Mlaricipopulina.NCBI.v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Melanaphis sacchari",
       "common_name": "",
       "group": "invertebrate",
@@ -88178,6 +88226,38 @@
       "common_name": "",
       "published": "2026-04-17T09:52:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptriticirepentis.NCBI.CURPTRM422/BSgenome.Ptriticirepentis.NCBI.CURPTRM422_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mlaricipopulina.NCBI.v10",
+      "version": "1.0.0",
+      "organism": "Melampsora larici-populina 98AG31",
+      "assembly": "v1.0",
+      "provider": "NCBI",
+      "accession": "GCF_000204055.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000204055.1/",
+      "file_name": "BSgenome.Mlaricipopulina.NCBI.v10_1.0.0.tar.gz",
+      "size": 25751095,
+      "seq_ids": [
+        "NW_006768765.1",
+        "NW_006768766.1",
+        "NW_006768767.1",
+        "NW_006768768.1",
+        "NW_006768769.1"
+      ],
+      "seq_count": 462,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Pucciniomycetes",
+        "order": "Pucciniales",
+        "family": "Melampsoraceae",
+        "genus": "Melampsora"
+      },
+      "common_name": "",
+      "published": "2026-04-17T09:52:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlaricipopulina.NCBI.v10/BSgenome.Mlaricipopulina.NCBI.v10_1.0.0.tar.gz"
     }
   ]
 }
