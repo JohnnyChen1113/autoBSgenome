@@ -47195,6 +47195,54 @@
       ]
     },
     {
+      "organism": "Sus scrofa domesticus",
+      "common_name": "domestic pig",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Suidae",
+        "genus": "Sus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sscrofa.Ensembl.ASM1795798v1",
+          "version": "1.0.0",
+          "organism": "Sus scrofa domesticus",
+          "assembly": "ASM1795798v1",
+          "provider": "Ensembl",
+          "accession": "GCA_017957985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_017957985.1/",
+          "file_name": "BSgenome.Sscrofa.Ensembl.ASM1795798v1_1.0.0.tar.gz",
+          "size": 585284112,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 254,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Suidae",
+            "genus": "Sus"
+          },
+          "common_name": "domestic pig",
+          "published": "2026-04-17T11:04:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.ASM1795798v1/BSgenome.Sscrofa.Ensembl.ASM1795798v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sylvia atricapilla",
       "common_name": "blackcap",
       "group": "vertebrate_other",
@@ -89474,6 +89522,38 @@
       "common_name": "lion",
       "published": "2026-04-17T11:03:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pleo.Ensembl.PanLeo10/BSgenome.Pleo.Ensembl.PanLeo10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sscrofa.Ensembl.ASM1795798v1",
+      "version": "1.0.0",
+      "organism": "Sus scrofa domesticus",
+      "assembly": "ASM1795798v1",
+      "provider": "Ensembl",
+      "accession": "GCA_017957985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_017957985.1/",
+      "file_name": "BSgenome.Sscrofa.Ensembl.ASM1795798v1_1.0.0.tar.gz",
+      "size": 585284112,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 254,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Suidae",
+        "genus": "Sus"
+      },
+      "common_name": "domestic pig",
+      "published": "2026-04-17T11:04:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.ASM1795798v1/BSgenome.Sscrofa.Ensembl.ASM1795798v1_1.0.0.tar.gz"
     }
   ]
 }

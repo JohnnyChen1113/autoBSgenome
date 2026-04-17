@@ -4637,3 +4637,7 @@ NeedsCompilation: no
 Package: BSgenome.Pleo.Ensembl.PanLeo10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sscrofa.Ensembl.ASM1795798v1
+Version: 1.0.0
+NeedsCompilation: no
