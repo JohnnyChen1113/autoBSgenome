@@ -32807,6 +32807,38 @@
           "common_name": "northern white-cheeked gibbon",
           "published": "2026-04-03T23:42:05Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nleucogenys.NCBI.AsiaNLEv1/BSgenome.Nleucogenys.NCBI.AsiaNLEv1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Nleucogenys.Ensembl.Nleu30",
+          "version": "1.0.0",
+          "organism": "Nomascus leucogenys",
+          "assembly": "Nleu_3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000146795.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146795.3/",
+          "file_name": "BSgenome.Nleucogenys.Ensembl.Nleu30_1.0.0.tar.gz",
+          "size": 648294547,
+          "seq_ids": [
+            "1a",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 17484,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Hylobatidae",
+            "genus": "Nomascus"
+          },
+          "common_name": "northern white-cheeked gibbon",
+          "published": "2026-04-17T12:03:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nleucogenys.Ensembl.Nleu30/BSgenome.Nleucogenys.Ensembl.Nleu30_1.0.0.tar.gz"
         }
       ]
     },
@@ -89874,6 +89906,38 @@
       "common_name": "",
       "published": "2026-04-17T12:02:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aofficinalis.Ensembl.AspofV1/BSgenome.Aofficinalis.Ensembl.AspofV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nleucogenys.Ensembl.Nleu30",
+      "version": "1.0.0",
+      "organism": "Nomascus leucogenys",
+      "assembly": "Nleu_3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000146795.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146795.3/",
+      "file_name": "BSgenome.Nleucogenys.Ensembl.Nleu30_1.0.0.tar.gz",
+      "size": 648294547,
+      "seq_ids": [
+        "1a",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 17484,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Hylobatidae",
+        "genus": "Nomascus"
+      },
+      "common_name": "northern white-cheeked gibbon",
+      "published": "2026-04-17T12:03:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nleucogenys.Ensembl.Nleu30/BSgenome.Nleucogenys.Ensembl.Nleu30_1.0.0.tar.gz"
     }
   ]
 }
