@@ -4793,3 +4793,7 @@ NeedsCompilation: no
 Package: BSgenome.Csativa.Ensembl.Cs
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bnapus.Ensembl.ASTPRJEB5043v1
+Version: 1.0.0
+NeedsCompilation: no
