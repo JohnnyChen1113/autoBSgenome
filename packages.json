@@ -17898,6 +17898,54 @@
       ]
     },
     {
+      "organism": "Digitaria exilis",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Digitaria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dexilis.Ensembl.FonioCM05836",
+          "version": "1.0.0",
+          "organism": "Digitaria exilis",
+          "assembly": "Fonio_CM05836",
+          "provider": "Ensembl",
+          "accession": "GCA_902859565.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902859565.1/",
+          "file_name": "BSgenome.Dexilis.Ensembl.FonioCM05836_1.0.0.tar.gz",
+          "size": 171328380,
+          "seq_ids": [
+            "1A",
+            "1B",
+            "2A",
+            "2B",
+            "3A"
+          ],
+          "seq_count": 19,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Digitaria"
+          },
+          "common_name": "",
+          "published": "2026-04-17T18:14:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dexilis.Ensembl.FonioCM05836/BSgenome.Dexilis.Ensembl.FonioCM05836_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dinoponera quadriceps",
       "common_name": "",
       "group": "invertebrate",
@@ -92198,6 +92246,38 @@
       "common_name": "rape",
       "published": "2026-04-17T18:13:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bnapus.Ensembl.ASTPRJEB5043v1/BSgenome.Bnapus.Ensembl.ASTPRJEB5043v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dexilis.Ensembl.FonioCM05836",
+      "version": "1.0.0",
+      "organism": "Digitaria exilis",
+      "assembly": "Fonio_CM05836",
+      "provider": "Ensembl",
+      "accession": "GCA_902859565.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902859565.1/",
+      "file_name": "BSgenome.Dexilis.Ensembl.FonioCM05836_1.0.0.tar.gz",
+      "size": 171328380,
+      "seq_ids": [
+        "1A",
+        "1B",
+        "2A",
+        "2B",
+        "3A"
+      ],
+      "seq_count": 19,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Digitaria"
+      },
+      "common_name": "",
+      "published": "2026-04-17T18:14:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dexilis.Ensembl.FonioCM05836/BSgenome.Dexilis.Ensembl.FonioCM05836_1.0.0.tar.gz"
     }
   ]
 }

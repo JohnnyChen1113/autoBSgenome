@@ -4797,3 +4797,7 @@ NeedsCompilation: no
 Package: BSgenome.Bnapus.Ensembl.ASTPRJEB5043v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dexilis.Ensembl.FonioCM05836
+Version: 1.0.0
+NeedsCompilation: no
