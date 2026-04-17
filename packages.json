@@ -693,6 +693,38 @@
           "common_name": "",
           "published": "2026-04-04T18:51:53Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atauschii.NCBI.Aetv60/BSgenome.Atauschii.NCBI.Aetv60_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Atauschii.Ensembl.Aetv40",
+          "version": "1.0.0",
+          "organism": "Aegilops tauschii subsp. strangulata",
+          "assembly": "Aet v4.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002575655.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002575655.1/",
+          "file_name": "BSgenome.Atauschii.Ensembl.Aetv40_1.0.0.tar.gz",
+          "size": 987863011,
+          "seq_ids": [
+            "1D",
+            "2D",
+            "3D",
+            "4D",
+            "5D"
+          ],
+          "seq_count": 109583,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Aegilops"
+          },
+          "common_name": "",
+          "published": "2026-04-17T18:16:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atauschii.Ensembl.Aetv40/BSgenome.Atauschii.Ensembl.Aetv40_1.0.0.tar.gz"
         }
       ]
     },
@@ -92820,6 +92852,38 @@
       "common_name": "",
       "published": "2026-04-17T18:16:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Egrandis.Ensembl.Egrandis10/BSgenome.Egrandis.Ensembl.Egrandis10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Atauschii.Ensembl.Aetv40",
+      "version": "1.0.0",
+      "organism": "Aegilops tauschii subsp. strangulata",
+      "assembly": "Aet v4.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002575655.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002575655.1/",
+      "file_name": "BSgenome.Atauschii.Ensembl.Aetv40_1.0.0.tar.gz",
+      "size": 987863011,
+      "seq_ids": [
+        "1D",
+        "2D",
+        "3D",
+        "4D",
+        "5D"
+      ],
+      "seq_count": 109583,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Aegilops"
+      },
+      "common_name": "",
+      "published": "2026-04-17T18:16:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atauschii.Ensembl.Aetv40/BSgenome.Atauschii.Ensembl.Aetv40_1.0.0.tar.gz"
     }
   ]
 }
