@@ -1107,6 +1107,38 @@
           "common_name": "",
           "published": "2026-04-04T15:37:49Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atrichopoda.NCBI.AMTR10/BSgenome.Atrichopoda.NCBI.AMTR10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Atrichopoda.Ensembl.AMTR10",
+          "version": "1.0.0",
+          "organism": "Amborella trichopoda",
+          "assembly": "AMTR1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000471905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000471905.1/",
+          "file_name": "BSgenome.Atrichopoda.Ensembl.AMTR10_1.0.0.tar.gz",
+          "size": 160640866,
+          "seq_ids": [
+            "AmTr_v1.0_scaffold00001",
+            "AmTr_v1.0_scaffold00002",
+            "AmTr_v1.0_scaffold00003",
+            "AmTr_v1.0_scaffold00004",
+            "AmTr_v1.0_scaffold00005"
+          ],
+          "seq_count": 5745,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Amborellales",
+            "family": "Amborellaceae",
+            "genus": "Amborella"
+          },
+          "common_name": "",
+          "published": "2026-04-17T13:52:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atrichopoda.Ensembl.AMTR10/BSgenome.Atrichopoda.Ensembl.AMTR10_1.0.0.tar.gz"
         }
       ]
     },
@@ -90002,6 +90034,38 @@
       "common_name": "pineapple",
       "published": "2026-04-17T13:52:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acomosus.Ensembl.F153/BSgenome.Acomosus.Ensembl.F153_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Atrichopoda.Ensembl.AMTR10",
+      "version": "1.0.0",
+      "organism": "Amborella trichopoda",
+      "assembly": "AMTR1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000471905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000471905.1/",
+      "file_name": "BSgenome.Atrichopoda.Ensembl.AMTR10_1.0.0.tar.gz",
+      "size": 160640866,
+      "seq_ids": [
+        "AmTr_v1.0_scaffold00001",
+        "AmTr_v1.0_scaffold00002",
+        "AmTr_v1.0_scaffold00003",
+        "AmTr_v1.0_scaffold00004",
+        "AmTr_v1.0_scaffold00005"
+      ],
+      "seq_count": 5745,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Amborellales",
+        "family": "Amborellaceae",
+        "genus": "Amborella"
+      },
+      "common_name": "",
+      "published": "2026-04-17T13:52:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atrichopoda.Ensembl.AMTR10/BSgenome.Atrichopoda.Ensembl.AMTR10_1.0.0.tar.gz"
     }
   ]
 }
