@@ -45992,6 +45992,54 @@
       ]
     },
     {
+      "organism": "Sphaeramia orbicularis",
+      "common_name": "orbiculate cardinalfish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Kurtiformes",
+        "family": "Apogonidae",
+        "genus": "Sphaeramia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sorbicularis.Ensembl.fSphaOr11",
+          "version": "1.0.0",
+          "organism": "Sphaeramia orbicularis",
+          "assembly": "fSphaOr1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_902148855.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902148855.1/",
+          "file_name": "BSgenome.Sorbicularis.Ensembl.fSphaOr11_1.0.0.tar.gz",
+          "size": 305467879,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 340,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Kurtiformes",
+            "family": "Apogonidae",
+            "genus": "Sphaeramia"
+          },
+          "common_name": "orbiculate cardinalfish",
+          "published": "2026-04-17T14:59:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sorbicularis.Ensembl.fSphaOr11/BSgenome.Sorbicularis.Ensembl.fSphaOr11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Sphaeroforma arctica JP610",
       "common_name": "",
       "group": "other",
@@ -90498,6 +90546,38 @@
       "common_name": "",
       "published": "2026-04-17T14:59:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alyrata.Ensembl.v10/BSgenome.Alyrata.Ensembl.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sorbicularis.Ensembl.fSphaOr11",
+      "version": "1.0.0",
+      "organism": "Sphaeramia orbicularis",
+      "assembly": "fSphaOr1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_902148855.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902148855.1/",
+      "file_name": "BSgenome.Sorbicularis.Ensembl.fSphaOr11_1.0.0.tar.gz",
+      "size": 305467879,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 340,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Kurtiformes",
+        "family": "Apogonidae",
+        "genus": "Sphaeramia"
+      },
+      "common_name": "orbiculate cardinalfish",
+      "published": "2026-04-17T14:59:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sorbicularis.Ensembl.fSphaOr11/BSgenome.Sorbicularis.Ensembl.fSphaOr11_1.0.0.tar.gz"
     }
   ]
 }

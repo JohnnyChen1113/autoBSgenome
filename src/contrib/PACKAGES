@@ -4701,3 +4701,7 @@ NeedsCompilation: no
 Package: BSgenome.Alyrata.Ensembl.v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sorbicularis.Ensembl.fSphaOr11
+Version: 1.0.0
+NeedsCompilation: no
