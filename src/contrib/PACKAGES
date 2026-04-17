@@ -4693,3 +4693,7 @@ NeedsCompilation: no
 Package: BSgenome.Cannuum.Ensembl.ASM51225v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aumbellulata.Ensembl.TA1851
+Version: 1.0.0
+NeedsCompilation: no

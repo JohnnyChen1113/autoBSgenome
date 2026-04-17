@@ -697,6 +697,54 @@
       ]
     },
     {
+      "organism": "Aegilops umbellulata",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Aegilops"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aumbellulata.Ensembl.TA1851",
+          "version": "1.0.0",
+          "organism": "Aegilops umbellulata",
+          "assembly": "TA1851",
+          "provider": "Ensembl",
+          "accession": "GCA_032464435.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_032464435.1/",
+          "file_name": "BSgenome.Aumbellulata.Ensembl.TA1851_1.0.0.tar.gz",
+          "size": 999735544,
+          "seq_ids": [
+            "7U_TA1851",
+            "4U_TA1851",
+            "2U_TA1851",
+            "5U_TA1851",
+            "3U_TA1851"
+          ],
+          "seq_count": 8,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Aegilops"
+          },
+          "common_name": "",
+          "published": "2026-04-17T14:00:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aumbellulata.Ensembl.TA1851/BSgenome.Aumbellulata.Ensembl.TA1851_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Agaricus bisporus var. bisporus H97",
       "common_name": "",
       "group": "fungi",
@@ -90354,6 +90402,38 @@
       "common_name": "",
       "published": "2026-04-17T13:55:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cannuum.Ensembl.ASM51225v2/BSgenome.Cannuum.Ensembl.ASM51225v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aumbellulata.Ensembl.TA1851",
+      "version": "1.0.0",
+      "organism": "Aegilops umbellulata",
+      "assembly": "TA1851",
+      "provider": "Ensembl",
+      "accession": "GCA_032464435.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_032464435.1/",
+      "file_name": "BSgenome.Aumbellulata.Ensembl.TA1851_1.0.0.tar.gz",
+      "size": 999735544,
+      "seq_ids": [
+        "7U_TA1851",
+        "4U_TA1851",
+        "2U_TA1851",
+        "5U_TA1851",
+        "3U_TA1851"
+      ],
+      "seq_count": 8,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Aegilops"
+      },
+      "common_name": "",
+      "published": "2026-04-17T14:00:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aumbellulata.Ensembl.TA1851/BSgenome.Aumbellulata.Ensembl.TA1851_1.0.0.tar.gz"
     }
   ]
 }
