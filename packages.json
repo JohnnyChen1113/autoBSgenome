@@ -43213,6 +43213,30 @@
           "common_name": "Atlantic salmon",
           "published": "2026-04-14T07:10:57Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalar.Ensembl.USDANASsal11/BSgenome.Ssalar.Ensembl.USDANASsal11_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ssalar.Ensembl.SsalBrianv10",
+          "version": "1.0.0",
+          "organism": "Salmo salar",
+          "assembly": "Ssal_Brian_v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_923944775.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_923944775.1/",
+          "file_name": "BSgenome.Ssalar.Ensembl.SsalBrianv10_1.0.0.tar.gz",
+          "size": 546597771,
+          "seq_ids": [
+            "ssa01q",
+            "ssa02",
+            "ssa03",
+            "ssa04",
+            "ssa05"
+          ],
+          "seq_count": 2653,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-17T12:02:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalar.Ensembl.SsalBrianv10/BSgenome.Ssalar.Ensembl.SsalBrianv10_1.0.0.tar.gz"
         }
       ]
     },
@@ -89778,6 +89802,30 @@
       "common_name": "",
       "published": "2026-04-17T12:01:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahalleri.Ensembl.Ahal22/BSgenome.Ahalleri.Ensembl.Ahal22_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ssalar.Ensembl.SsalBrianv10",
+      "version": "1.0.0",
+      "organism": "Salmo salar",
+      "assembly": "Ssal_Brian_v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_923944775.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_923944775.1/",
+      "file_name": "BSgenome.Ssalar.Ensembl.SsalBrianv10_1.0.0.tar.gz",
+      "size": 546597771,
+      "seq_ids": [
+        "ssa01q",
+        "ssa02",
+        "ssa03",
+        "ssa04",
+        "ssa05"
+      ],
+      "seq_count": 2653,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-17T12:02:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssalar.Ensembl.SsalBrianv10/BSgenome.Ssalar.Ensembl.SsalBrianv10_1.0.0.tar.gz"
     }
   ]
 }
