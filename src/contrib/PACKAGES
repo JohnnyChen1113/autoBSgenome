@@ -5041,3 +5041,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgareWBDC207BPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgareWBDC078BPGv2
+Version: 1.0.0
+NeedsCompilation: no
