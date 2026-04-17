@@ -2767,6 +2767,54 @@
       ]
     },
     {
+      "organism": "Arabis alpina",
+      "common_name": "gray rockcress",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Arabis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aalpina.Ensembl.AalpinaV4",
+          "version": "1.0.0",
+          "organism": "Arabis alpina",
+          "assembly": "A_alpina_V4",
+          "provider": "Ensembl",
+          "accession": "GCA_000733195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000733195.1/",
+          "file_name": "BSgenome.Aalpina.Ensembl.AalpinaV4_1.0.0.tar.gz",
+          "size": 68434337,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 27771,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Arabis"
+          },
+          "common_name": "gray rockcress",
+          "published": "2026-04-17T13:53:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalpina.Ensembl.AalpinaV4/BSgenome.Aalpina.Ensembl.AalpinaV4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Arachis duranensis",
       "common_name": "",
       "group": "plant",
@@ -90066,6 +90114,38 @@
       "common_name": "",
       "published": "2026-04-17T13:52:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atrichopoda.Ensembl.AMTR10/BSgenome.Atrichopoda.Ensembl.AMTR10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aalpina.Ensembl.AalpinaV4",
+      "version": "1.0.0",
+      "organism": "Arabis alpina",
+      "assembly": "A_alpina_V4",
+      "provider": "Ensembl",
+      "accession": "GCA_000733195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000733195.1/",
+      "file_name": "BSgenome.Aalpina.Ensembl.AalpinaV4_1.0.0.tar.gz",
+      "size": 68434337,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 27771,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Arabis"
+      },
+      "common_name": "gray rockcress",
+      "published": "2026-04-17T13:53:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalpina.Ensembl.AalpinaV4/BSgenome.Aalpina.Ensembl.AalpinaV4_1.0.0.tar.gz"
     }
   ]
 }
