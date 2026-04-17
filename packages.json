@@ -22036,6 +22036,54 @@
       ]
     },
     {
+      "organism": "Ficus carica",
+      "common_name": "common fig",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Moraceae",
+        "genus": "Ficus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fcarica.Ensembl.UNIPIFiCari10",
+          "version": "1.0.0",
+          "organism": "Ficus carica",
+          "assembly": "UNIPI_FiCari_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_009761775.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009761775.1/",
+          "file_name": "BSgenome.Fcarica.Ensembl.UNIPIFiCari10_1.0.0.tar.gz",
+          "size": 78309557,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 511,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Rosales",
+            "family": "Moraceae",
+            "genus": "Ficus"
+          },
+          "common_name": "common fig",
+          "published": "2026-04-17T19:40:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcarica.Ensembl.UNIPIFiCari10/BSgenome.Fcarica.Ensembl.UNIPIFiCari10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Folsomia candida",
       "common_name": "",
       "group": "invertebrate",
@@ -92964,6 +93012,38 @@
       "common_name": "Peruvian cotton",
       "published": "2026-04-17T19:39:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Graimondii.Ensembl.Graimondii20v6/BSgenome.Graimondii.Ensembl.Graimondii20v6_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fcarica.Ensembl.UNIPIFiCari10",
+      "version": "1.0.0",
+      "organism": "Ficus carica",
+      "assembly": "UNIPI_FiCari_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_009761775.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009761775.1/",
+      "file_name": "BSgenome.Fcarica.Ensembl.UNIPIFiCari10_1.0.0.tar.gz",
+      "size": 78309557,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 511,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Moraceae",
+        "genus": "Ficus"
+      },
+      "common_name": "common fig",
+      "published": "2026-04-17T19:40:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcarica.Ensembl.UNIPIFiCari10/BSgenome.Fcarica.Ensembl.UNIPIFiCari10_1.0.0.tar.gz"
     }
   ]
 }
