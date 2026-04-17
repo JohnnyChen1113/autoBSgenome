@@ -4921,3 +4921,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgarecvHockettBPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgareHOR7385BPGv2
+Version: 1.0.0
+NeedsCompilation: no
