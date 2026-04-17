@@ -4653,3 +4653,7 @@ NeedsCompilation: no
 Package: BSgenome.Achinensis.Ensembl.Red5PS11690
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ahalleri.Ensembl.Ahal22
+Version: 1.0.0
+NeedsCompilation: no

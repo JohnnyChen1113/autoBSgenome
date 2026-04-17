@@ -2623,6 +2623,38 @@
       ]
     },
     {
+      "organism": "Arabidopsis halleri subsp. gemmifera",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Ahalleri.Ensembl.Ahal22",
+          "version": "1.0.0",
+          "organism": "Arabidopsis halleri subsp. gemmifera",
+          "assembly": "Ahal2.2",
+          "provider": "Ensembl",
+          "accession": "GCA_900078215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900078215.1/",
+          "file_name": "BSgenome.Ahalleri.Ensembl.Ahal22_1.0.0.tar.gz",
+          "size": 40746905,
+          "seq_ids": [
+            "FJVB01000001.1",
+            "FJVB01000002.1",
+            "FJVB01000003.1",
+            "FJVB01000004.1",
+            "FJVB01000005.1"
+          ],
+          "seq_count": 2239,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-17T12:01:26Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahalleri.Ensembl.Ahal22/BSgenome.Ahalleri.Ensembl.Ahal22_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Arabidopsis lyrata subsp. lyrata",
       "common_name": "",
       "group": "plant",
@@ -89722,6 +89754,30 @@
       "common_name": "",
       "published": "2026-04-17T12:01:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Achinensis.Ensembl.Red5PS11690/BSgenome.Achinensis.Ensembl.Red5PS11690_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ahalleri.Ensembl.Ahal22",
+      "version": "1.0.0",
+      "organism": "Arabidopsis halleri subsp. gemmifera",
+      "assembly": "Ahal2.2",
+      "provider": "Ensembl",
+      "accession": "GCA_900078215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900078215.1/",
+      "file_name": "BSgenome.Ahalleri.Ensembl.Ahal22_1.0.0.tar.gz",
+      "size": 40746905,
+      "seq_ids": [
+        "FJVB01000001.1",
+        "FJVB01000002.1",
+        "FJVB01000003.1",
+        "FJVB01000004.1",
+        "FJVB01000005.1"
+      ],
+      "seq_count": 2239,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-17T12:01:26Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahalleri.Ensembl.Ahal22/BSgenome.Ahalleri.Ensembl.Ahal22_1.0.0.tar.gz"
     }
   ]
 }
