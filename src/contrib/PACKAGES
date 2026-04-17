@@ -4993,3 +4993,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgareHID101BPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgarecvChibaZDM02064BPGv2
+Version: 1.0.0
+NeedsCompilation: no
