@@ -33807,6 +33807,54 @@
       ]
     },
     {
+      "organism": "Oryza glumipatula",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15",
+          "version": "1.0.0",
+          "organism": "Oryza glumipatula",
+          "assembly": "Oryza_glumaepatula_v1.5",
+          "provider": "Ensembl",
+          "accession": "GCA_000576495.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000576495.1/",
+          "file_name": "BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15_1.0.0.tar.gz",
+          "size": 74509649,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 12,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Oryza"
+          },
+          "common_name": "",
+          "published": "2026-04-17T08:23:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15/BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oryzias javanicus",
       "common_name": "javanese ricefish",
       "group": "vertebrate_other",
@@ -87698,6 +87746,38 @@
       "common_name": "",
       "published": "2026-04-17T08:22:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fgraminearum.Ensembl.MDCFg13/BSgenome.Fgraminearum.Ensembl.MDCFg13_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15",
+      "version": "1.0.0",
+      "organism": "Oryza glumipatula",
+      "assembly": "Oryza_glumaepatula_v1.5",
+      "provider": "Ensembl",
+      "accession": "GCA_000576495.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000576495.1/",
+      "file_name": "BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15_1.0.0.tar.gz",
+      "size": 74509649,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 12,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "common_name": "",
+      "published": "2026-04-17T08:23:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15/BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15_1.0.0.tar.gz"
     }
   ]
 }

@@ -4541,3 +4541,7 @@ NeedsCompilation: no
 Package: BSgenome.Fgraminearum.Ensembl.MDCFg13
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15
+Version: 1.0.0
+NeedsCompilation: no
