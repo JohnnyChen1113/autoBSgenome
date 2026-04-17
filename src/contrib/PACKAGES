@@ -4777,3 +4777,7 @@ NeedsCompilation: no
 Package: BSgenome.Bjuncea.Ensembl.ASM1870372v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Brapa.Ensembl.brapaz1v2
+Version: 1.0.0
+NeedsCompilation: no
