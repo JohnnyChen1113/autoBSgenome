@@ -8768,6 +8768,38 @@
           "common_name": "pigeon pea",
           "published": "2026-04-04T15:36:30Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccajan.NCBI.CcajanV11/BSgenome.Ccajan.NCBI.CcajanV11_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ccajan.Ensembl.CcajanV10",
+          "version": "1.0.0",
+          "organism": "Cajanus cajan",
+          "assembly": "C.cajan_V1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000340665.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000340665.1/",
+          "file_name": "BSgenome.Ccajan.Ensembl.CcajanV10_1.0.0.tar.gz",
+          "size": 130838338,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 36535,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Cajanus"
+          },
+          "common_name": "pigeon pea",
+          "published": "2026-04-17T17:28:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccajan.Ensembl.CcajanV10/BSgenome.Ccajan.Ensembl.CcajanV10_1.0.0.tar.gz"
         }
       ]
     },
@@ -91910,6 +91942,38 @@
       "common_name": "field mustard",
       "published": "2026-04-17T17:28:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Brapa.Ensembl.brapaz1v2/BSgenome.Brapa.Ensembl.brapaz1v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccajan.Ensembl.CcajanV10",
+      "version": "1.0.0",
+      "organism": "Cajanus cajan",
+      "assembly": "C.cajan_V1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000340665.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000340665.1/",
+      "file_name": "BSgenome.Ccajan.Ensembl.CcajanV10_1.0.0.tar.gz",
+      "size": 130838338,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 36535,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Cajanus"
+      },
+      "common_name": "pigeon pea",
+      "published": "2026-04-17T17:28:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccajan.Ensembl.CcajanV10/BSgenome.Ccajan.Ensembl.CcajanV10_1.0.0.tar.gz"
     }
   ]
 }
