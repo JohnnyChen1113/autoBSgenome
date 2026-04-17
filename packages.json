@@ -40761,6 +40761,54 @@
       ]
     },
     {
+      "organism": "Pyrenophora tritici-repentis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Pyrenophora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ptriticirepentis.NCBI.CURPTRM422",
+          "version": "1.0.0",
+          "organism": "Pyrenophora tritici-repentis",
+          "assembly": "CUR_PTRM4_2.2",
+          "provider": "NCBI",
+          "accession": "GCF_003171515.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003171515.1/",
+          "file_name": "BSgenome.Ptriticirepentis.NCBI.CURPTRM422_1.0.0.tar.gz",
+          "size": 10275938,
+          "seq_ids": [
+            "NC_089390.1",
+            "NC_089391.1",
+            "NC_089392.1",
+            "NC_089393.1",
+            "NC_089394.1"
+          ],
+          "seq_count": 41,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Pleosporaceae",
+            "genus": "Pyrenophora"
+          },
+          "common_name": "",
+          "published": "2026-04-17T09:52:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptriticirepentis.NCBI.CURPTRM422/BSgenome.Ptriticirepentis.NCBI.CURPTRM422_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pyricularia grisea",
       "common_name": "",
       "group": "fungi",
@@ -88098,6 +88146,38 @@
       "common_name": "",
       "published": "2026-04-17T09:52:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10/BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ptriticirepentis.NCBI.CURPTRM422",
+      "version": "1.0.0",
+      "organism": "Pyrenophora tritici-repentis",
+      "assembly": "CUR_PTRM4_2.2",
+      "provider": "NCBI",
+      "accession": "GCF_003171515.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003171515.1/",
+      "file_name": "BSgenome.Ptriticirepentis.NCBI.CURPTRM422_1.0.0.tar.gz",
+      "size": 10275938,
+      "seq_ids": [
+        "NC_089390.1",
+        "NC_089391.1",
+        "NC_089392.1",
+        "NC_089393.1",
+        "NC_089394.1"
+      ],
+      "seq_count": 41,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Pyrenophora"
+      },
+      "common_name": "",
+      "published": "2026-04-17T09:52:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptriticirepentis.NCBI.CURPTRM422/BSgenome.Ptriticirepentis.NCBI.CURPTRM422_1.0.0.tar.gz"
     }
   ]
 }

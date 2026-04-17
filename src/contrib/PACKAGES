@@ -4561,3 +4561,7 @@ NeedsCompilation: no
 Package: BSgenome.Apullulans.NCBI.AureobasidiumpullulansvarpullulansEXF150assemblyversion10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptriticirepentis.NCBI.CURPTRM422
+Version: 1.0.0
+NeedsCompilation: no
