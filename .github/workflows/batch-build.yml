@@ -236,41 +236,47 @@ jobs:
         if: steps.queue.outputs.has_work == 'true' && steps.breaker.outputs.breaker_open != 'true'
         run: |
           cd ${{ github.workspace }}
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Mark dispatched items as 'building' in-place. Keep the minified JSON
-          # format that matches the canonical on-disk layout (indent=2 would
-          # produce a spurious 139K-line diff).
-          python3 <<'PYEOF'
+          # Rebase is fragile on the minified 3 MB JSON because any concurrent
+          # writer (update-repo-index.yml landing completed-build status) touches
+          # the same line. Instead, re-fetch the freshest queue and re-apply our
+          # 'mark as building' change against it. Idempotent, conflict-free.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin gh-pages
+            git reset --hard origin/gh-pages
+
+            python3 <<'PYEOF'
           import json
           with open('batch.json') as f: batch = json.load(f)
           batch_accessions = {item['accession'] for item in batch}
           with open('build-queue.json') as f: queue = json.load(f)
+          changed = 0
           for item in queue:
-              if item['accession'] in batch_accessions:
+              if item['accession'] in batch_accessions and item['status'] != 'building':
                   item['status'] = 'building'
+                  changed += 1
           with open('build-queue.json', 'w') as f:
               json.dump(queue, f, separators=(', ', ': '))
           n = lambda s: sum(1 for it in queue if it['status'] == s)
-          print(f"Queue: {n('pending')} pending, {n('building')} building, {n('done')} done")
+          print(f"Queue: {n('pending')} pending, {n('building')} building, {n('done')} done; changed={changed}")
           PYEOF
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add build-queue.json
-          git diff --cached --quiet && exit 0
+            git add build-queue.json
+            if git diff --cached --quiet; then
+              echo "Nothing to commit (all items already marked building)"
+              exit 0
+            fi
 
-          BATCH_COUNT=$(python3 -c 'import json;print(len(json.load(open("batch.json"))))')
-          git commit -m "batch: Mark $BATCH_COUNT packages as building"
+            BATCH_COUNT=$(python3 -c 'import json;print(len(json.load(open("batch.json"))))')
+            git commit -m "batch: Mark $BATCH_COUNT packages as building"
 
-          # Retry on push conflicts — update-repo-index.yml can land commits on
-          # gh-pages between our checkout and push.
-          for attempt in 1 2 3 4 5; do
             if git push origin gh-pages; then
               exit 0
             fi
-            echo "Push attempt $attempt rejected; rebasing on latest gh-pages..."
-            git fetch origin gh-pages
-            git rebase origin/gh-pages || { echo "Rebase failed; aborting."; exit 1; }
+            echo "Push attempt $attempt rejected; will re-fetch and retry..."
+            sleep 2
           done
           echo "ERROR: push still failing after 5 attempts"
           exit 1
