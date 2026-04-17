@@ -13,44 +13,36 @@ Usage:
   python3 resolve_ensembl_fasta.py <species_url> <group> [accession]
 """
 import json
-import os
 import re
 import sys
 import urllib.request
 import urllib.error
 
-DIVISION_MAP = {
-    "vertebrates": None,
-    "fungi": "fungi",
-    "plants": "plants",
-    "metazoa": "metazoa",
-    "protists": "protists",
-    "bacteria": "bacteria",
-}
+EG_DIVISIONS = {"fungi", "plants", "metazoa", "protists", "bacteria"}
 
 USER_AGENT = "autoBSgenome/1.0 (+https://github.com/JohnnyChen1113/autoBSgenome)"
 TIMEOUT = 30
 
 
 def http_get(url):
+    """GET a URL. Returns (status_code, body_text). 0 on network failure."""
     try:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
             return r.status, r.read().decode("utf-8", errors="replace")
     except urllib.error.HTTPError as e:
         return e.code, ""
-    except Exception:
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        print(f"[resolve] network error for {url}: {e}", file=sys.stderr)
         return 0, ""
 
 
 def get_main_ensembl_release():
+    """Fetch current main-Ensembl release number. Raises on REST failure."""
     s, body = http_get("https://rest.ensembl.org/info/data/?content-type=application/json")
-    if s == 200:
-        try:
-            return json.loads(body)["releases"][0]
-        except Exception:
-            pass
-    return 115
+    if s != 200:
+        raise RuntimeError(f"Ensembl REST /info/data returned HTTP {s}")
+    return json.loads(body)["releases"][0]
 
 
 def find_eg_release(division):
@@ -70,7 +62,6 @@ def find_toplevel(dir_url):
 
 
 def name_variants(species_norm, accession):
-    """Build ordered list of candidate species directory names."""
     variants = [species_norm]
     if accession:
         acc_digits = re.sub(r'[^\d]', '', accession.split('.')[0])
@@ -90,8 +81,19 @@ def name_variants(species_norm, accession):
     return [n for n in variants if not (n in seen or seen.add(n))]
 
 
+def try_directories(base_template, names):
+    """Probe each `base_template.format(name=n)` for a toplevel FASTA. Returns full URL or None."""
+    for name in names:
+        dir_url = base_template.format(name=name)
+        print(f"[resolve] try {dir_url}", file=sys.stderr)
+        fname = find_toplevel(dir_url)
+        if fname:
+            return f"{dir_url}{fname}"
+    return None
+
+
 def scan_collections(division, release, species_norm, accession):
-    """Walk *_collection/ subdirs and look for matching species directory."""
+    """Walk *_collection/ subdirs. Returns the final FASTA URL (not just the dir) or None."""
     base = f"http://ftp.ensemblgenomes.org/pub/{division}/release-{release}/fasta/"
     s, body = http_get(base)
     if s != 200:
@@ -108,55 +110,57 @@ def scan_collections(division, release, species_norm, accession):
         cs, cb = http_get(col_url)
         if cs != 200:
             continue
+        matched = None
         for cand in candidates:
             if re.search(rf'href="{re.escape(cand)}/"', cb):
-                return f"{col_url}{cand}/dna/"
-        if acc_digits:
-            matches = re.findall(
+                matched = cand
+                break
+        if not matched and acc_digits:
+            fuzzy = re.findall(
                 rf'href="({re.escape(genus_species)}[^"]*?{acc_digits}[^"]*)/"', cb
             )
-            if matches:
-                return f"{col_url}{matches[0]}/dna/"
+            if fuzzy:
+                matched = fuzzy[0]
+        if matched:
+            dir_url = f"{col_url}{matched}/dna/"
+            print(f"[resolve] collection hit {dir_url}", file=sys.stderr)
+            fname = find_toplevel(dir_url)
+            if fname:
+                return f"{dir_url}{fname}"
     return None
 
 
 def resolve(species_url, group, accession):
     species_norm = species_url.lower()
-    main_release = get_main_ensembl_release()
-    print(f"[resolve] species_norm={species_norm} group={group} accession={accession} main_release={main_release}", file=sys.stderr)
+    print(f"[resolve] species_norm={species_norm} group={group} accession={accession}", file=sys.stderr)
+
+    names = name_variants(species_norm, accession)
 
     if group == "vertebrates":
-        for name in name_variants(species_norm, accession):
-            dir_url = f"https://ftp.ensembl.org/pub/release-{main_release}/fasta/{name}/dna/"
-            print(f"[resolve] vertebrate try {dir_url}", file=sys.stderr)
-            f = find_toplevel(dir_url)
-            if f:
-                return f"{dir_url}{f}"
-        return None
+        release = get_main_ensembl_release()
+        print(f"[resolve] main Ensembl release={release}", file=sys.stderr)
+        template = f"https://ftp.ensembl.org/pub/release-{release}/fasta/{{name}}/dna/"
+        return try_directories(template, names)
 
-    division = DIVISION_MAP.get(group)
-    if not division:
+    if group not in EG_DIVISIONS:
         print(f"[resolve] unknown group {group!r}", file=sys.stderr)
         return None
 
-    eg_release = find_eg_release(division)
-    print(f"[resolve] EG {division} release={eg_release}", file=sys.stderr)
+    eg_release = find_eg_release(group)
+    print(f"[resolve] EG {group} release={eg_release}", file=sys.stderr)
     if not eg_release:
         return None
 
-    for release in (eg_release, eg_release - 1) if eg_release > 1 else (eg_release,):
-        for name in name_variants(species_norm, accession):
-            dir_url = f"http://ftp.ensemblgenomes.org/pub/{division}/release-{release}/fasta/{name}/dna/"
-            print(f"[resolve] direct try {dir_url}", file=sys.stderr)
-            f = find_toplevel(dir_url)
-            if f:
-                return f"{dir_url}{f}"
-        col_dir = scan_collections(division, release, species_norm, accession)
-        if col_dir:
-            print(f"[resolve] collection match {col_dir}", file=sys.stderr)
-            f = find_toplevel(col_dir)
-            if f:
-                return f"{col_dir}{f}"
+    # EnsemblGenomes occasionally drops species from the latest release after
+    # a taxonomy re-shuffle; fall back one release if current misses.
+    for release in (eg_release, eg_release - 1):
+        template = f"http://ftp.ensemblgenomes.org/pub/{group}/release-{release}/fasta/{{name}}/dna/"
+        url = try_directories(template, names)
+        if url:
+            return url
+        url = scan_collections(group, release, species_norm, accession)
+        if url:
+            return url
     return None
 
 

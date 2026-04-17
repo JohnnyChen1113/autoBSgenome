@@ -104,42 +104,34 @@ jobs:
         id: breaker
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_OUTPUT: ${{ env.GITHUB_OUTPUT }}
         run: |
-          # Check the last 30 completed build-bsgenome runs. If failure rate >= 80%,
-          # skip dispatching this batch. Cron will retry on the next tick — once
-          # someone fixes the underlying issue, the breaker auto-clears.
-          python3 -c "
-          import json, subprocess, sys
+          # Skip dispatch when recent build-bsgenome failure rate >= 80%. Cron retries
+          # next tick, so the breaker auto-clears once a systemic issue is fixed.
+          python3 <<'PYEOF'
+          import json, os, subprocess
           r = subprocess.run(
               ['gh', 'run', 'list', '--workflow', 'build-bsgenome.yml',
-               '--repo', '${{ github.repository }}', '--limit', '30',
+               '--repo', os.environ['GITHUB_REPOSITORY'], '--limit', '30',
                '--status', 'completed', '--json', 'conclusion'],
               capture_output=True, text=True
           )
+          runs = json.loads(r.stdout or '[]') if r.returncode == 0 else []
+          breaker_open = False
           if r.returncode != 0:
               print('Could not query run history; allowing batch to proceed')
-              print('breaker_open=false')
-              sys.exit(0)
-          runs = json.loads(r.stdout or '[]')
-          if len(runs) < 10:
+          elif len(runs) < 10:
               print(f'Only {len(runs)} recent runs; allowing batch')
-              print('breaker_open=false')
-              sys.exit(0)
-          failures = sum(1 for run in runs if run.get('conclusion') == 'failure')
-          rate = failures / len(runs)
-          print(f'Recent build-bsgenome failure rate: {failures}/{len(runs)} ({rate:.0%})')
-          if rate >= 0.80:
-              print('CIRCUIT BREAKER OPEN: skipping dispatch (will retry next cron tick)')
-              print('breaker_open=true')
           else:
-              print('breaker_open=false')
-          " | tee /tmp/breaker.log
-
-          if grep -q "breaker_open=true" /tmp/breaker.log; then
-            echo "breaker_open=true" >> $GITHUB_OUTPUT
-          else
-            echo "breaker_open=false" >> $GITHUB_OUTPUT
-          fi
+              failures = sum(1 for run in runs if run.get('conclusion') == 'failure')
+              rate = failures / len(runs)
+              print(f'Recent build-bsgenome failure rate: {failures}/{len(runs)} ({rate:.0%})')
+              if rate >= 0.80:
+                  print('CIRCUIT BREAKER OPEN: skipping dispatch')
+                  breaker_open = True
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f'breaker_open={"true" if breaker_open else "false"}\n')
+          PYEOF
 
       - name: Checkout main (for build tools)
         if: steps.queue.outputs.has_work == 'true' && steps.breaker.outputs.breaker_open != 'true'

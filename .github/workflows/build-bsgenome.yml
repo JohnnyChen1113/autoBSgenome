@@ -38,14 +38,20 @@ jobs:
           echo "circ_seqs=${{ github.event.client_payload.circ_seqs }}" >> $GITHUB_OUTPUT
           echo "accession=${{ github.event.client_payload.accession }}" >> $GITHUB_OUTPUT
 
-          # Parse extra JSON field
-          EXTRA='${{ github.event.client_payload.extra }}'
-          echo "data_source=$(echo "$EXTRA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('data_source','ncbi'))")" >> $GITHUB_OUTPUT
-          echo "release_date=$(echo "$EXTRA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('release_date',''))")" >> $GITHUB_OUTPUT
-          echo "title=$(echo "$EXTRA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('title',''))")" >> $GITHUB_OUTPUT
-          echo "source_url=$(echo "$EXTRA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('source_url',''))")" >> $GITHUB_OUTPUT
-          echo "species_url=$(echo "$EXTRA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('species_url',''))")" >> $GITHUB_OUTPUT
-          echo "ensembl_group=$(echo "$EXTRA" | python3 -c "import json,sys; print(json.load(sys.stdin).get('ensembl_group',''))")" >> $GITHUB_OUTPUT
+          # Parse extra JSON into outputs in a single pass
+          EXTRA='${{ github.event.client_payload.extra }}' python3 <<'PYEOF' >> $GITHUB_OUTPUT
+          import json, os
+          d = json.loads(os.environ['EXTRA'] or '{}')
+          for key, default in (
+              ('data_source', 'ncbi'),
+              ('release_date', ''),
+              ('title', ''),
+              ('source_url', ''),
+              ('species_url', ''),
+              ('ensembl_group', ''),
+          ):
+              print(f'{key}={d.get(key, default)}')
+          PYEOF
 
       - name: Download FASTA from NCBI
         if: steps.params.outputs.data_source == 'ncbi'
