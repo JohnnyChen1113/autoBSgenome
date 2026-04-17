@@ -8050,6 +8050,38 @@
           "common_name": "",
           "published": "2026-04-04T15:35:25Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Boleracea.NCBI.BOL/BSgenome.Boleracea.NCBI.BOL_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Boleracea.Ensembl.BOL",
+          "version": "1.0.0",
+          "organism": "Brassica oleracea var. oleracea",
+          "assembly": "BOL",
+          "provider": "Ensembl",
+          "accession": "GCA_000695525.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000695525.1/",
+          "file_name": "BSgenome.Boleracea.Ensembl.BOL_1.0.0.tar.gz",
+          "size": 107332690,
+          "seq_ids": [
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "C5"
+          ],
+          "seq_count": 32928,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Brassica"
+          },
+          "common_name": "",
+          "published": "2026-04-17T16:08:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Boleracea.Ensembl.BOL/BSgenome.Boleracea.Ensembl.BOL_1.0.0.tar.gz"
         }
       ]
     },
@@ -91002,6 +91034,38 @@
       "common_name": "peanut",
       "published": "2026-04-17T15:01:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5/BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Boleracea.Ensembl.BOL",
+      "version": "1.0.0",
+      "organism": "Brassica oleracea var. oleracea",
+      "assembly": "BOL",
+      "provider": "Ensembl",
+      "accession": "GCA_000695525.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000695525.1/",
+      "file_name": "BSgenome.Boleracea.Ensembl.BOL_1.0.0.tar.gz",
+      "size": 107332690,
+      "seq_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "seq_count": 32928,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Brassica"
+      },
+      "common_name": "",
+      "published": "2026-04-17T16:08:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Boleracea.Ensembl.BOL/BSgenome.Boleracea.Ensembl.BOL_1.0.0.tar.gz"
     }
   ]
 }
