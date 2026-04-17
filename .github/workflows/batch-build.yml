@@ -99,15 +99,57 @@ jobs:
             echo "has_work=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Checkout main (for build tools)
+      - name: Failure-rate circuit breaker
         if: steps.queue.outputs.has_work == 'true'
+        id: breaker
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Check the last 30 completed build-bsgenome runs. If failure rate >= 80%,
+          # skip dispatching this batch. Cron will retry on the next tick — once
+          # someone fixes the underlying issue, the breaker auto-clears.
+          python3 -c "
+          import json, subprocess, sys
+          r = subprocess.run(
+              ['gh', 'run', 'list', '--workflow', 'build-bsgenome.yml',
+               '--repo', '${{ github.repository }}', '--limit', '30',
+               '--status', 'completed', '--json', 'conclusion'],
+              capture_output=True, text=True
+          )
+          if r.returncode != 0:
+              print('Could not query run history; allowing batch to proceed')
+              print('breaker_open=false')
+              sys.exit(0)
+          runs = json.loads(r.stdout or '[]')
+          if len(runs) < 10:
+              print(f'Only {len(runs)} recent runs; allowing batch')
+              print('breaker_open=false')
+              sys.exit(0)
+          failures = sum(1 for run in runs if run.get('conclusion') == 'failure')
+          rate = failures / len(runs)
+          print(f'Recent build-bsgenome failure rate: {failures}/{len(runs)} ({rate:.0%})')
+          if rate >= 0.80:
+              print('CIRCUIT BREAKER OPEN: skipping dispatch (will retry next cron tick)')
+              print('breaker_open=true')
+          else:
+              print('breaker_open=false')
+          " | tee /tmp/breaker.log
+
+          if grep -q "breaker_open=true" /tmp/breaker.log; then
+            echo "breaker_open=true" >> $GITHUB_OUTPUT
+          else
+            echo "breaker_open=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Checkout main (for build tools)
+        if: steps.queue.outputs.has_work == 'true' && steps.breaker.outputs.breaker_open != 'true'
         uses: actions/checkout@v4
         with:
           ref: main
           path: main-repo
 
       - name: Trigger builds via API
-        if: steps.queue.outputs.has_work == 'true'
+        if: steps.queue.outputs.has_work == 'true' && steps.breaker.outputs.breaker_open != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -141,6 +183,16 @@ jobs:
                   data_source = 'ncbi'
                   source_url = f'https://www.ncbi.nlm.nih.gov/datasets/genome/{accession}/'
 
+              extra_fields = {
+                  'data_source': data_source,
+                  'release_date': '',
+                  'title': f'Full genome sequences for {organism} ({provider} version {item[\"assembly\"]})',
+                  'source_url': source_url,
+              }
+              if is_ensembl:
+                  extra_fields['species_url'] = item.get('species_url', '')
+                  extra_fields['ensembl_group'] = item.get('group', '')
+
               payload = {
                   'event_type': 'build_bsgenome',
                   'client_payload': {
@@ -153,12 +205,7 @@ jobs:
                       'version': '1.0.0',
                       'circ_seqs': 'character(0)',
                       'accession': accession,
-                      'extra': json.dumps({
-                          'data_source': data_source,
-                          'release_date': '',
-                          'title': f'Full genome sequences for {organism} ({provider} version {item[\"assembly\"]})',
-                          'source_url': source_url,
-                      })
+                      'extra': json.dumps(extra_fields)
                   }
               }
 
@@ -184,7 +231,7 @@ jobs:
           "
 
       - name: Update queue status
-        if: steps.queue.outputs.has_work == 'true'
+        if: steps.queue.outputs.has_work == 'true' && steps.breaker.outputs.breaker_open != 'true'
         run: |
           # Switch back to gh-pages to update the queue
           cd ${{ github.workspace }}
