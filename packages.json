@@ -15715,6 +15715,37 @@
           "common_name": "",
           "published": "2026-04-06T17:50:13Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmerolae.NCBI.ASM9120v1/BSgenome.Cmerolae.NCBI.ASM9120v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cmerolae.Ensembl.ASM9120v1",
+          "version": "1.0.0",
+          "organism": "Cyanidioschyzon merolae strain 10D",
+          "assembly": "ASM9120v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000091205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000091205.1/",
+          "file_name": "BSgenome.Cmerolae.Ensembl.ASM9120v1_1.0.0.tar.gz",
+          "size": 4113056,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 22,
+          "group": "other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "phylum": "Rhodophyta",
+            "class": "Bangiophyceae",
+            "order": "Cyanidiales",
+            "family": "Cyanidiaceae",
+            "genus": "Cyanidioschyzon"
+          },
+          "common_name": "",
+          "published": "2026-04-17T16:09:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmerolae.Ensembl.ASM9120v1/BSgenome.Cmerolae.Ensembl.ASM9120v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -91288,6 +91319,37 @@
       "common_name": "thale cress",
       "published": "2026-04-17T16:09:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Athaliana.Ensembl.TAIR10/BSgenome.Athaliana.Ensembl.TAIR10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cmerolae.Ensembl.ASM9120v1",
+      "version": "1.0.0",
+      "organism": "Cyanidioschyzon merolae strain 10D",
+      "assembly": "ASM9120v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000091205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000091205.1/",
+      "file_name": "BSgenome.Cmerolae.Ensembl.ASM9120v1_1.0.0.tar.gz",
+      "size": 4113056,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 22,
+      "group": "other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "phylum": "Rhodophyta",
+        "class": "Bangiophyceae",
+        "order": "Cyanidiales",
+        "family": "Cyanidiaceae",
+        "genus": "Cyanidioschyzon"
+      },
+      "common_name": "",
+      "published": "2026-04-17T16:09:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cmerolae.Ensembl.ASM9120v1/BSgenome.Cmerolae.Ensembl.ASM9120v1_1.0.0.tar.gz"
     }
   ]
 }
