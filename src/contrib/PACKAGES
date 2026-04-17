@@ -4957,3 +4957,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgareFT880BPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgareFT262BPGv2
+Version: 1.0.0
+NeedsCompilation: no
