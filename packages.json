@@ -8102,6 +8102,54 @@
       ]
     },
     {
+      "organism": "Brassica juncea",
+      "common_name": "brown mustard",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Brassica"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bjuncea.Ensembl.ASM1870372v1",
+          "version": "1.0.0",
+          "organism": "Brassica juncea",
+          "assembly": "ASM1870372v1",
+          "provider": "Ensembl",
+          "accession": "GCA_018703725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_018703725.1/",
+          "file_name": "BSgenome.Bjuncea.Ensembl.ASM1870372v1_1.0.0.tar.gz",
+          "size": 199929384,
+          "seq_ids": [
+            "A10",
+            "A01",
+            "A02",
+            "A03",
+            "A04"
+          ],
+          "seq_count": 1544,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Brassica"
+          },
+          "common_name": "brown mustard",
+          "published": "2026-04-17T17:28:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bjuncea.Ensembl.ASM1870372v1/BSgenome.Bjuncea.Ensembl.ASM1870372v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Brassica oleracea var. oleracea",
       "common_name": "",
       "group": "plant",
@@ -91766,6 +91814,38 @@
       "common_name": "cucumber",
       "published": "2026-04-17T17:28:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativus.Ensembl.ASM407v2/BSgenome.Csativus.Ensembl.ASM407v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bjuncea.Ensembl.ASM1870372v1",
+      "version": "1.0.0",
+      "organism": "Brassica juncea",
+      "assembly": "ASM1870372v1",
+      "provider": "Ensembl",
+      "accession": "GCA_018703725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_018703725.1/",
+      "file_name": "BSgenome.Bjuncea.Ensembl.ASM1870372v1_1.0.0.tar.gz",
+      "size": 199929384,
+      "seq_ids": [
+        "A10",
+        "A01",
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "seq_count": 1544,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Brassica"
+      },
+      "common_name": "brown mustard",
+      "published": "2026-04-17T17:28:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bjuncea.Ensembl.ASM1870372v1/BSgenome.Bjuncea.Ensembl.ASM1870372v1_1.0.0.tar.gz"
     }
   ]
 }
