@@ -9912,6 +9912,38 @@
           "common_name": "goldfish",
           "published": "2026-04-04T11:04:40Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauratus.NCBI.ASM336829v1/BSgenome.Cauratus.NCBI.ASM336829v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cauratus.Ensembl.ASM336829v1",
+          "version": "1.0.0",
+          "organism": "Carassius auratus",
+          "assembly": "ASM336829v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003368295.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003368295.1/",
+          "file_name": "BSgenome.Cauratus.Ensembl.ASM336829v1_1.0.0.tar.gz",
+          "size": 427972726,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 6216,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Actinopteri",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Carassius"
+          },
+          "common_name": "goldfish",
+          "published": "2026-04-17T09:57:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauratus.Ensembl.ASM336829v1/BSgenome.Cauratus.Ensembl.ASM336829v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -88482,6 +88514,38 @@
       "common_name": "three-spined stickleback",
       "published": "2026-04-17T09:57:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gaculeatus.Ensembl.GAculeatusUGAversion5/BSgenome.Gaculeatus.Ensembl.GAculeatusUGAversion5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cauratus.Ensembl.ASM336829v1",
+      "version": "1.0.0",
+      "organism": "Carassius auratus",
+      "assembly": "ASM336829v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003368295.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003368295.1/",
+      "file_name": "BSgenome.Cauratus.Ensembl.ASM336829v1_1.0.0.tar.gz",
+      "size": 427972726,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 6216,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Actinopteri",
+        "order": "Cypriniformes",
+        "family": "Cyprinidae",
+        "genus": "Carassius"
+      },
+      "common_name": "goldfish",
+      "published": "2026-04-17T09:57:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauratus.Ensembl.ASM336829v1/BSgenome.Cauratus.Ensembl.ASM336829v1_1.0.0.tar.gz"
     }
   ]
 }
