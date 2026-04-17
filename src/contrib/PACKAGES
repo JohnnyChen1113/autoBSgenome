@@ -4661,3 +4661,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssalar.Ensembl.SsalBrianv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aofficinalis.Ensembl.AspofV1
+Version: 1.0.0
+NeedsCompilation: no
