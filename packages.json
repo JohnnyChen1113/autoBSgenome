@@ -13787,6 +13787,54 @@
       ]
     },
     {
+      "organism": "Corylus avellana",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Betulaceae",
+        "genus": "Corylus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cavellana.Ensembl.CavTom2PMs10",
+          "version": "1.0.0",
+          "organism": "Corylus avellana",
+          "assembly": "CavTom2PMs-1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_901000735.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_901000735.2/",
+          "file_name": "BSgenome.Cavellana.Ensembl.CavTom2PMs10_1.0.0.tar.gz",
+          "size": 86406100,
+          "seq_ids": [
+            "ca1",
+            "ca10",
+            "ca11",
+            "ca2",
+            "ca3"
+          ],
+          "seq_count": 11,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fagales",
+            "family": "Betulaceae",
+            "genus": "Corylus"
+          },
+          "common_name": "",
+          "published": "2026-04-17T15:00:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cavellana.Ensembl.CavTom2PMs10/BSgenome.Cavellana.Ensembl.CavTom2PMs10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cottoperca gobio",
       "common_name": "",
       "group": "vertebrate_other",
@@ -90578,6 +90626,38 @@
       "common_name": "orbiculate cardinalfish",
       "published": "2026-04-17T14:59:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sorbicularis.Ensembl.fSphaOr11/BSgenome.Sorbicularis.Ensembl.fSphaOr11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cavellana.Ensembl.CavTom2PMs10",
+      "version": "1.0.0",
+      "organism": "Corylus avellana",
+      "assembly": "CavTom2PMs-1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_901000735.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_901000735.2/",
+      "file_name": "BSgenome.Cavellana.Ensembl.CavTom2PMs10_1.0.0.tar.gz",
+      "size": 86406100,
+      "seq_ids": [
+        "ca1",
+        "ca10",
+        "ca11",
+        "ca2",
+        "ca3"
+      ],
+      "seq_count": 11,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Betulaceae",
+        "genus": "Corylus"
+      },
+      "common_name": "",
+      "published": "2026-04-17T15:00:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cavellana.Ensembl.CavTom2PMs10/BSgenome.Cavellana.Ensembl.CavTom2PMs10_1.0.0.tar.gz"
     }
   ]
 }
