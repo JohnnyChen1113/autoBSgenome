@@ -4757,3 +4757,7 @@ NeedsCompilation: no
 Package: BSgenome.Cbraunii.Ensembl.Cbr10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bvulgaris.Ensembl.RefBeet122
+Version: 1.0.0
+NeedsCompilation: no

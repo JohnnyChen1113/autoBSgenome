@@ -6954,6 +6954,54 @@
       ]
     },
     {
+      "organism": "Beta vulgaris subsp. vulgaris",
+      "common_name": "sugar beet",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Beta"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bvulgaris.Ensembl.RefBeet122",
+          "version": "1.0.0",
+          "organism": "Beta vulgaris subsp. vulgaris",
+          "assembly": "RefBeet-1.2.2",
+          "provider": "Ensembl",
+          "accession": "GCA_000511025.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000511025.2/",
+          "file_name": "BSgenome.Bvulgaris.Ensembl.RefBeet122_1.0.0.tar.gz",
+          "size": 124713860,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 40245,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Caryophyllales",
+            "family": "Amaranthaceae",
+            "genus": "Beta"
+          },
+          "common_name": "sugar beet",
+          "published": "2026-04-17T17:27:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bvulgaris.Ensembl.RefBeet122/BSgenome.Bvulgaris.Ensembl.RefBeet122_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Betta splendens",
       "common_name": "Siamese fighting fish",
       "group": "vertebrate_other",
@@ -91494,6 +91542,38 @@
       "common_name": "",
       "published": "2026-04-17T16:10:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cbraunii.Ensembl.Cbr10/BSgenome.Cbraunii.Ensembl.Cbr10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bvulgaris.Ensembl.RefBeet122",
+      "version": "1.0.0",
+      "organism": "Beta vulgaris subsp. vulgaris",
+      "assembly": "RefBeet-1.2.2",
+      "provider": "Ensembl",
+      "accession": "GCA_000511025.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000511025.2/",
+      "file_name": "BSgenome.Bvulgaris.Ensembl.RefBeet122_1.0.0.tar.gz",
+      "size": 124713860,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 40245,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Caryophyllales",
+        "family": "Amaranthaceae",
+        "genus": "Beta"
+      },
+      "common_name": "sugar beet",
+      "published": "2026-04-17T17:27:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bvulgaris.Ensembl.RefBeet122/BSgenome.Bvulgaris.Ensembl.RefBeet122_1.0.0.tar.gz"
     }
   ]
 }
