@@ -13032,6 +13032,54 @@
       ]
     },
     {
+      "organism": "Citrus clementina",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Sapindales",
+        "family": "Rutaceae",
+        "genus": "Citrus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cclementina.Ensembl.Citrusclementinav10",
+          "version": "1.0.0",
+          "organism": "Citrus clementina",
+          "assembly": "Citrus_clementina_v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000493195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000493195.1/",
+          "file_name": "BSgenome.Cclementina.Ensembl.Citrusclementinav10_1.0.0.tar.gz",
+          "size": 68598580,
+          "seq_ids": [
+            "KI536661",
+            "KI536799",
+            "KI536312",
+            "KI537036",
+            "KI535697"
+          ],
+          "seq_count": 1398,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Sapindales",
+            "family": "Rutaceae",
+            "genus": "Citrus"
+          },
+          "common_name": "",
+          "published": "2026-04-17T18:15:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cclementina.Ensembl.Citrusclementinav10/BSgenome.Cclementina.Ensembl.Citrusclementinav10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Citrus x clementina",
       "common_name": "",
       "group": "plant",
@@ -92500,6 +92548,38 @@
       "common_name": "",
       "published": "2026-04-17T18:14:54Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Csativa.Ensembl.cs10/BSgenome.Csativa.Ensembl.cs10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cclementina.Ensembl.Citrusclementinav10",
+      "version": "1.0.0",
+      "organism": "Citrus clementina",
+      "assembly": "Citrus_clementina_v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000493195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000493195.1/",
+      "file_name": "BSgenome.Cclementina.Ensembl.Citrusclementinav10_1.0.0.tar.gz",
+      "size": 68598580,
+      "seq_ids": [
+        "KI536661",
+        "KI536799",
+        "KI536312",
+        "KI537036",
+        "KI535697"
+      ],
+      "seq_count": 1398,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Sapindales",
+        "family": "Rutaceae",
+        "genus": "Citrus"
+      },
+      "common_name": "",
+      "published": "2026-04-17T18:15:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cclementina.Ensembl.Citrusclementinav10/BSgenome.Cclementina.Ensembl.Citrusclementinav10_1.0.0.tar.gz"
     }
   ]
 }

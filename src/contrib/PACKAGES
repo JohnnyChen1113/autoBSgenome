@@ -4813,3 +4813,7 @@ NeedsCompilation: no
 Package: BSgenome.Csativa.Ensembl.cs10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cclementina.Ensembl.Citrusclementinav10
+Version: 1.0.0
+NeedsCompilation: no
