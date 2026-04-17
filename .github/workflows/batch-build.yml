@@ -27,6 +27,12 @@ jobs:
         with:
           ref: gh-pages
 
+      - name: Checkout main (for build tools)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main-repo
+
       - name: Check for pending builds
         id: queue
         run: |
@@ -39,12 +45,14 @@ jobs:
           BATCH_SIZE="${{ inputs.batch_size || '15' }}"
 
           # First: mark 'building' items as 'done' if their pkg- release exists
-          python3 -c "
-          import json, subprocess
+          python3 <<'PYEOF' || true
+          import json, subprocess, sys
+          sys.path.insert(0, 'main-repo/scripts')
+          from normalize_package_name import build_package_name
+
           with open('build-queue.json') as f:
               queue = json.load(f)
 
-          # Get existing pkg- releases
           result = subprocess.run(
               ['gh', 'release', 'list', '--repo', '${{ github.repository }}', '--limit', '500', '--json', 'tagName'],
               capture_output=True, text=True
@@ -52,36 +60,47 @@ jobs:
           existing_tags = set()
           try:
               existing_tags = {r['tagName'] for r in json.loads(result.stdout)}
-          except:
+          except Exception:
               pass
 
           updated = 0
           for item in queue:
-              if item['status'] in ('building', 'pending'):
-                  if not item.get('organism') or not item.get('assembly'):
-                      continue
-                  parts = item['organism'].split()
-                  abbrev = parts[0][0].upper() + parts[1].lower() if len(parts) >= 2 else parts[0]
-                  assembly = (item['assembly'] or '').replace('.','').replace(' ','').replace('-','').replace('_','')
-                  provider = 'Ensembl' if item.get('data_source') == 'ensembl' else 'NCBI'
-                  pkg_tag = f'pkg-BSgenome.{abbrev}.{provider}.{assembly}'
-                  if pkg_tag in existing_tags:
-                      item['status'] = 'done'
-                      updated += 1
+              if item['status'] not in ('building', 'pending'):
+                  continue
+              provider = 'Ensembl' if item.get('data_source') == 'ensembl' else 'NCBI'
+              name, _ = build_package_name(item.get('organism',''), provider, item.get('assembly',''))
+              if name and f'pkg-{name}' in existing_tags:
+                  item['status'] = 'done'
+                  updated += 1
 
           if updated > 0:
               with open('build-queue.json', 'w') as f:
                   json.dump(queue, f)
               print(f'Marked {updated} items as done')
-          " || true
+          PYEOF
 
-          # Then: pick next batch
-          python3 -c "
-          import json
+          # Then: pick next batch (skipping items whose name won't normalize)
+          BATCH_SIZE=$BATCH_SIZE python3 <<'PYEOF' > /tmp/queue_check.txt
+          import json, os, sys
+          sys.path.insert(0, 'main-repo/scripts')
+          from normalize_package_name import build_package_name
+
+          batch_size = int(os.environ['BATCH_SIZE'])
           with open('build-queue.json') as f:
               queue = json.load(f)
-          pending = [item for item in queue if item['status'] == 'pending' and item.get('accession') and item.get('assembly') and item.get('organism')]
-          batch = pending[:${BATCH_SIZE}]
+
+          pending = []
+          for item in queue:
+              if item['status'] != 'pending': continue
+              if not (item.get('accession') and item.get('assembly') and item.get('organism')): continue
+              provider = 'Ensembl' if item.get('data_source') == 'ensembl' else 'NCBI'
+              name, reason = build_package_name(item['organism'], provider, item['assembly'])
+              if not name:
+                  print(f'  [skip-malformed] {item["accession"]} {item["organism"]}: {reason}')
+                  continue
+              pending.append(item)
+
+          batch = pending[:batch_size]
           print(f'Pending: {len(pending)}, Batch size: {len(batch)}')
           if not batch:
               print('NO_WORK')
@@ -89,8 +108,8 @@ jobs:
               with open('batch.json', 'w') as f:
                   json.dump(batch, f)
               for item in batch:
-                  print(f'  - {item[\"accession\"]} {item[\"organism\"]} [{item.get(\"data_source\",\"ncbi\")}]')
-          " > /tmp/queue_check.txt
+                  print(f'  - {item["accession"]} {item["organism"]} [{item.get("data_source","ncbi")}]')
+          PYEOF
           cat /tmp/queue_check.txt
 
           if grep -q "NO_WORK" /tmp/queue_check.txt; then
@@ -133,52 +152,44 @@ jobs:
               f.write(f'breaker_open={"true" if breaker_open else "false"}\n')
           PYEOF
 
-      - name: Checkout main (for build tools)
-        if: steps.queue.outputs.has_work == 'true' && steps.breaker.outputs.breaker_open != 'true'
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          path: main-repo
-
       - name: Trigger builds via API
         if: steps.queue.outputs.has_work == 'true' && steps.breaker.outputs.breaker_open != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
         run: |
-          python3 -c "
-          import json, urllib.request, time, os
+          python3 <<'PYEOF'
+          import json, os, sys, time, urllib.request
+          sys.path.insert(0, 'main-repo/scripts')
+          from normalize_package_name import build_package_name
 
           with open('batch.json') as f:
               batch = json.load(f)
-
           token = os.environ['GH_TOKEN']
-          repo = '${{ github.repository }}'
+          repo = os.environ['REPO']
 
           for item in batch:
-              accession = item.get('accession')
-              organism = item.get('organism')
-              assembly_raw = item.get('assembly')
-              if not accession or not organism or not assembly_raw:
-                  print(f'Skipped: missing fields - accession={accession!r}, organism={organism!r}, assembly={assembly_raw!r}')
-                  continue
-              parts = organism.split()
-              abbrev = parts[0][0].upper() + parts[1].lower() if len(parts) >= 2 else parts[0]
-              assembly = assembly_raw.replace('.','').replace(' ','').replace('-','').replace('_','')
+              accession = item['accession']
+              organism = item['organism']
+              assembly_raw = item['assembly']
               is_ensembl = item.get('data_source') == 'ensembl'
               provider = 'Ensembl' if is_ensembl else 'NCBI'
-              package_name = f'BSgenome.{abbrev}.{provider}.{assembly}'
+
+              package_name, reason = build_package_name(organism, provider, assembly_raw)
+              if not package_name:
+                  print(f'Skipped (malformed): {accession} {organism}: {reason}')
+                  continue
 
               if is_ensembl:
-                  data_source = 'ensembl'
-                  source_url = f'https://www.ensembl.org/{item.get(\"species_url\", organism.replace(\" \", \"_\"))}/Info/Index'
+                  species_url = item.get('species_url') or organism.replace(' ', '_')
+                  source_url = f'https://www.ensembl.org/{species_url}/Info/Index'
               else:
-                  data_source = 'ncbi'
                   source_url = f'https://www.ncbi.nlm.nih.gov/datasets/genome/{accession}/'
 
               extra_fields = {
-                  'data_source': data_source,
+                  'data_source': 'ensembl' if is_ensembl else 'ncbi',
                   'release_date': '',
-                  'title': f'Full genome sequences for {organism} ({provider} version {item[\"assembly\"]})',
+                  'title': f'Full genome sequences for {organism} ({provider} version {assembly_raw})',
                   'source_url': source_url,
               }
               if is_ensembl:
@@ -188,17 +199,17 @@ jobs:
               payload = {
                   'event_type': 'build_bsgenome',
                   'client_payload': {
-                      'job_id': accession.replace('_','').replace('.','')[-8:],
+                      'job_id': accession.replace('_', '').replace('.', '')[-8:],
                       'package_name': package_name,
                       'organism': organism,
                       'common_name': '',
-                      'genome': item['assembly'],
+                      'genome': assembly_raw,
                       'provider': provider,
                       'version': '1.0.0',
                       'circ_seqs': 'character(0)',
                       'accession': accession,
-                      'extra': json.dumps(extra_fields)
-                  }
+                      'extra': json.dumps(extra_fields),
+                  },
               }
 
               req = urllib.request.Request(
@@ -210,7 +221,7 @@ jobs:
                       'Content-Type': 'application/json',
                       'X-GitHub-Api-Version': '2022-11-28',
                   },
-                  method='POST'
+                  method='POST',
               )
               try:
                   urllib.request.urlopen(req)
@@ -218,9 +229,8 @@ jobs:
               except Exception as e:
                   print(f'Failed: {accession} -> {e}')
 
-              # Wait between dispatches to avoid rate limits
               time.sleep(10)
-          "
+          PYEOF
 
       - name: Update queue status
         if: steps.queue.outputs.has_work == 'true' && steps.breaker.outputs.breaker_open != 'true'

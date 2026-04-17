@@ -16,6 +16,9 @@ import sys
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from normalize_package_name import build_package_name
+
 REFSEQ_SUMMARY_URL = "https://ftp.ncbi.nlm.nih.gov/genomes/refseq/assembly_summary_refseq.txt"
 
 # Priority order for organism groups (lower = higher priority)
@@ -85,28 +88,23 @@ def make_queue(entries):
         genome_size = int(e.get("genome_size", "0") or "0")
         asm_name = e.get("asm_name", "")
 
-        # Generate package name
-        parts = organism.split()
-        if len(parts) >= 2:
-            abbrev = parts[0][0].upper() + parts[1].lower()
-        else:
-            abbrev = parts[0] if parts else "Unknown"
-        assembly_clean = asm_name.replace(".", "").replace(" ", "").replace("-", "").replace("_", "")
-        package_name = f"BSgenome.{abbrev}.NCBI.{assembly_clean}"
-
+        package_name, reason = build_package_name(organism, "NCBI", asm_name)
         priority = GROUP_PRIORITY.get(group, 9)
 
-        queue.append({
+        item = {
             "accession": accession,
             "organism": organism,
             "assembly": asm_name,
-            "package_name": package_name,
+            "package_name": package_name or "",
             "group": group,
             "genome_size_bp": genome_size,
             "genome_size_mb": round(genome_size / 1_000_000, 1),
             "priority": priority,
-            "status": "pending",
-        })
+            "status": "pending" if package_name else "skip_malformed",
+        }
+        if not package_name:
+            item["skip_reason"] = reason
+        queue.append(item)
 
     # Sort: priority first, then genome size ascending (small builds first)
     queue.sort(key=lambda x: (x["priority"], x["genome_size_bp"]))
