@@ -19182,6 +19182,54 @@
       ]
     },
     {
+      "organism": "Erpetoichthys calabaricus",
+      "common_name": "reedfish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Cladistia",
+        "order": "Polypteriformes",
+        "family": "Polypteridae",
+        "genus": "Erpetoichthys"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ecalabaricus.Ensembl.fErpCal11",
+          "version": "1.0.0",
+          "organism": "Erpetoichthys calabaricus",
+          "assembly": "fErpCal1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_900747795.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900747795.2/",
+          "file_name": "BSgenome.Ecalabaricus.Ensembl.fErpCal11_1.0.0.tar.gz",
+          "size": 856569545,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1884,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Cladistia",
+            "order": "Polypteriformes",
+            "family": "Polypteridae",
+            "genus": "Erpetoichthys"
+          },
+          "common_name": "reedfish",
+          "published": "2026-04-17T09:58:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecalabaricus.Ensembl.fErpCal11/BSgenome.Ecalabaricus.Ensembl.fErpCal11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Erythranthe guttata",
       "common_name": "spotted monkey flower",
       "group": "plant",
@@ -88610,6 +88658,38 @@
       "common_name": "naked mole-rat",
       "published": "2026-04-17T09:58:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hglaber.Ensembl.Nakedmoleratmaternal/BSgenome.Hglaber.Ensembl.Nakedmoleratmaternal_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ecalabaricus.Ensembl.fErpCal11",
+      "version": "1.0.0",
+      "organism": "Erpetoichthys calabaricus",
+      "assembly": "fErpCal1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_900747795.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900747795.2/",
+      "file_name": "BSgenome.Ecalabaricus.Ensembl.fErpCal11_1.0.0.tar.gz",
+      "size": 856569545,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1884,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Cladistia",
+        "order": "Polypteriformes",
+        "family": "Polypteridae",
+        "genus": "Erpetoichthys"
+      },
+      "common_name": "reedfish",
+      "published": "2026-04-17T09:58:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecalabaricus.Ensembl.fErpCal11/BSgenome.Ecalabaricus.Ensembl.fErpCal11_1.0.0.tar.gz"
     }
   ]
 }
