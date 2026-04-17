@@ -4761,3 +4761,7 @@ NeedsCompilation: no
 Package: BSgenome.Bvulgaris.Ensembl.RefBeet122
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccardunculus.Ensembl.CcrdV1
+Version: 1.0.0
+NeedsCompilation: no
