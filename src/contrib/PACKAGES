@@ -3618,10 +3618,6 @@ Package: BSgenome.Cjaponica.Ensembl.Coturnixjaponica20
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Gmorhua.Ensembl.gadMorCeltic
-Version: 1.0.0
-NeedsCompilation: no
-
 Package: BSgenome.Easinus.Ensembl.ASM1607732v2
 Version: 1.0.0
 NeedsCompilation: no
@@ -4547,5 +4543,9 @@ Version: 1.0.0
 NeedsCompilation: no
 
 Package: BSgenome.Orufipogon.Ensembl.ORW1943
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Gmorhua.Ensembl.gadMorCeltic
 Version: 1.0.0
 NeedsCompilation: no
