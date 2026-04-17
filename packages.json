@@ -26312,6 +26312,54 @@
       ]
     },
     {
+      "organism": "Hordeum vulgare subsp. vulgare",
+      "common_name": "domesticated barley",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Hordeum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hvulgare.Ensembl.MorexV3pseudomoleculesassembly",
+          "version": "1.0.0",
+          "organism": "Hordeum vulgare subsp. vulgare",
+          "assembly": "MorexV3_pseudomolecules_assembly",
+          "provider": "Ensembl",
+          "accession": "GCA_904849725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_904849725.1/",
+          "file_name": "BSgenome.Hvulgare.Ensembl.MorexV3pseudomoleculesassembly_1.0.0.tar.gz",
+          "size": 993782524,
+          "seq_ids": [
+            "1H",
+            "2H",
+            "3H",
+            "4H",
+            "5H"
+          ],
+          "seq_count": 290,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Hordeum"
+          },
+          "common_name": "domesticated barley",
+          "published": "2026-04-17T20:55:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.MorexV3pseudomoleculesassembly/BSgenome.Hvulgare.Ensembl.MorexV3pseudomoleculesassembly_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Hucho hucho",
       "common_name": "huchen",
       "group": "vertebrate_other",
@@ -94148,6 +94196,38 @@
       "common_name": "",
       "published": "2026-04-17T20:55:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgareHOR2180BPGv2/BSgenome.Hvulgare.Ensembl.HvulgareHOR2180BPGv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hvulgare.Ensembl.MorexV3pseudomoleculesassembly",
+      "version": "1.0.0",
+      "organism": "Hordeum vulgare subsp. vulgare",
+      "assembly": "MorexV3_pseudomolecules_assembly",
+      "provider": "Ensembl",
+      "accession": "GCA_904849725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_904849725.1/",
+      "file_name": "BSgenome.Hvulgare.Ensembl.MorexV3pseudomoleculesassembly_1.0.0.tar.gz",
+      "size": 993782524,
+      "seq_ids": [
+        "1H",
+        "2H",
+        "3H",
+        "4H",
+        "5H"
+      ],
+      "seq_count": 290,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Hordeum"
+      },
+      "common_name": "domesticated barley",
+      "published": "2026-04-17T20:55:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.MorexV3pseudomoleculesassembly/BSgenome.Hvulgare.Ensembl.MorexV3pseudomoleculesassembly_1.0.0.tar.gz"
     }
   ]
 }
