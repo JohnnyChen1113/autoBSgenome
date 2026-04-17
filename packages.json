@@ -33855,6 +33855,54 @@
       ]
     },
     {
+      "organism": "Oryza rufipogon",
+      "common_name": "brownbeard rice",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Orufipogon.Ensembl.ORW1943",
+          "version": "1.0.0",
+          "organism": "Oryza rufipogon",
+          "assembly": "OR_W1943",
+          "provider": "Ensembl",
+          "accession": "GCA_000817225.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000817225.1/",
+          "file_name": "BSgenome.Orufipogon.Ensembl.ORW1943_1.0.0.tar.gz",
+          "size": 81845474,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 12,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Oryza"
+          },
+          "common_name": "brownbeard rice",
+          "published": "2026-04-17T08:23:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Orufipogon.Ensembl.ORW1943/BSgenome.Orufipogon.Ensembl.ORW1943_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oryzias javanicus",
       "common_name": "javanese ricefish",
       "group": "vertebrate_other",
@@ -87778,6 +87826,38 @@
       "common_name": "",
       "published": "2026-04-17T08:23:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15/BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Orufipogon.Ensembl.ORW1943",
+      "version": "1.0.0",
+      "organism": "Oryza rufipogon",
+      "assembly": "OR_W1943",
+      "provider": "Ensembl",
+      "accession": "GCA_000817225.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000817225.1/",
+      "file_name": "BSgenome.Orufipogon.Ensembl.ORW1943_1.0.0.tar.gz",
+      "size": 81845474,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 12,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "common_name": "brownbeard rice",
+      "published": "2026-04-17T08:23:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Orufipogon.Ensembl.ORW1943/BSgenome.Orufipogon.Ensembl.ORW1943_1.0.0.tar.gz"
     }
   ]
 }
