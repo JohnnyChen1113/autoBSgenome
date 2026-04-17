@@ -24177,6 +24177,38 @@
           "common_name": "soybean",
           "published": "2026-04-04T16:42:04Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmax.NCBI.Glycinemaxv40/BSgenome.Gmax.NCBI.Glycinemaxv40_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Gmax.Ensembl.Glycinemaxv21",
+          "version": "1.0.0",
+          "organism": "Glycine max",
+          "assembly": "Glycine_max_v2.1",
+          "provider": "Ensembl",
+          "accession": "GCA_000004515.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000004515.4/",
+          "file_name": "BSgenome.Gmax.Ensembl.Glycinemaxv21_1.0.0.tar.gz",
+          "size": 222777021,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1190,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Glycine"
+          },
+          "common_name": "soybean",
+          "published": "2026-04-17T20:51:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmax.Ensembl.Glycinemaxv21/BSgenome.Gmax.Ensembl.Glycinemaxv21_1.0.0.tar.gz"
         }
       ]
     },
@@ -93700,6 +93732,38 @@
       "common_name": "",
       "published": "2026-04-17T19:48:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2/BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gmax.Ensembl.Glycinemaxv21",
+      "version": "1.0.0",
+      "organism": "Glycine max",
+      "assembly": "Glycine_max_v2.1",
+      "provider": "Ensembl",
+      "accession": "GCA_000004515.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000004515.4/",
+      "file_name": "BSgenome.Gmax.Ensembl.Glycinemaxv21_1.0.0.tar.gz",
+      "size": 222777021,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1190,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Glycine"
+      },
+      "common_name": "soybean",
+      "published": "2026-04-17T20:51:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmax.Ensembl.Glycinemaxv21/BSgenome.Gmax.Ensembl.Glycinemaxv21_1.0.0.tar.gz"
     }
   ]
 }
