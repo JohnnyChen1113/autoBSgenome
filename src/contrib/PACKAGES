@@ -4821,3 +4821,7 @@ NeedsCompilation: no
 Package: BSgenome.Ecrusgalli.Ensembl.ecv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10
+Version: 1.0.0
+NeedsCompilation: no

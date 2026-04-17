@@ -20660,6 +20660,54 @@
       ]
     },
     {
+      "organism": "Eragrostis curvula",
+      "common_name": "weeping love grass",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Eragrostis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10",
+          "version": "1.0.0",
+          "organism": "Eragrostis curvula",
+          "assembly": "CERZOS_E.curvula1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_007726485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_007726485.1/",
+          "file_name": "BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10_1.0.0.tar.gz",
+          "size": 145900043,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1143,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Eragrostis"
+          },
+          "common_name": "weeping love grass",
+          "published": "2026-04-17T18:15:41Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10/BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Eremothecium cymbalariae DBVPG#7215",
       "common_name": "",
       "group": "fungi",
@@ -92660,6 +92708,38 @@
       "common_name": "barnyard grass",
       "published": "2026-04-17T18:15:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecrusgalli.Ensembl.ecv3/BSgenome.Ecrusgalli.Ensembl.ecv3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10",
+      "version": "1.0.0",
+      "organism": "Eragrostis curvula",
+      "assembly": "CERZOS_E.curvula1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_007726485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_007726485.1/",
+      "file_name": "BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10_1.0.0.tar.gz",
+      "size": 145900043,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1143,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Eragrostis"
+      },
+      "common_name": "weeping love grass",
+      "published": "2026-04-17T18:15:41Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10/BSgenome.Ecurvula.Ensembl.CERZOSEcurvula10_1.0.0.tar.gz"
     }
   ]
 }
