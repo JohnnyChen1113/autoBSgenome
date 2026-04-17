@@ -4717,3 +4717,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccanephora.Ensembl.AUKPRJEB4211v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccapsularis.Ensembl.CCACVL110
+Version: 1.0.0
+NeedsCompilation: no
