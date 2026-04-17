@@ -4585,3 +4585,7 @@ NeedsCompilation: no
 Package: BSgenome.Cauratus.Ensembl.ASM336829v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hglaber.Ensembl.Nakedmoleratmaternal
+Version: 1.0.0
+NeedsCompilation: no
