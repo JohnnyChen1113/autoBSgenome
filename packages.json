@@ -24717,6 +24717,54 @@
       ]
     },
     {
+      "organism": "Junco hyemalis",
+      "common_name": "dark-eyed junco",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Passerellidae",
+        "genus": "Junco"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Jhyemalis.Ensembl.ASM382977v1",
+          "version": "1.0.0",
+          "organism": "Junco hyemalis",
+          "assembly": "ASM382977v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003829775.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003829775.1/",
+          "file_name": "BSgenome.Jhyemalis.Ensembl.ASM382977v1_1.0.0.tar.gz",
+          "size": 223520930,
+          "seq_ids": [
+            "QZWM01002668.1",
+            "QZWM01000963.1",
+            "QZWM01001491.1",
+            "QZWM01001238.1",
+            "QZWM01002655.1"
+          ],
+          "seq_count": 4457,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Passerellidae",
+            "genus": "Junco"
+          },
+          "common_name": "dark-eyed junco",
+          "published": "2026-04-17T11:00:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jhyemalis.Ensembl.ASM382977v1/BSgenome.Jhyemalis.Ensembl.ASM382977v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Kalmanozyma brasiliensis GHG001",
       "common_name": "",
       "group": "fungi",
@@ -89026,6 +89074,38 @@
       "common_name": "",
       "published": "2026-04-17T11:00:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.R6411/BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Jhyemalis.Ensembl.ASM382977v1",
+      "version": "1.0.0",
+      "organism": "Junco hyemalis",
+      "assembly": "ASM382977v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003829775.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003829775.1/",
+      "file_name": "BSgenome.Jhyemalis.Ensembl.ASM382977v1_1.0.0.tar.gz",
+      "size": 223520930,
+      "seq_ids": [
+        "QZWM01002668.1",
+        "QZWM01000963.1",
+        "QZWM01001491.1",
+        "QZWM01001238.1",
+        "QZWM01002655.1"
+      ],
+      "seq_count": 4457,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Passerellidae",
+        "genus": "Junco"
+      },
+      "common_name": "dark-eyed junco",
+      "published": "2026-04-17T11:00:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jhyemalis.Ensembl.ASM382977v1/BSgenome.Jhyemalis.Ensembl.ASM382977v1_1.0.0.tar.gz"
     }
   ]
 }

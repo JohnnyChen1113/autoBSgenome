@@ -4613,3 +4613,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.R6411
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Jhyemalis.Ensembl.ASM382977v1
+Version: 1.0.0
+NeedsCompilation: no
