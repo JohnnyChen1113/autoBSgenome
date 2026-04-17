@@ -36195,6 +36195,38 @@
           "common_name": "olive baboon",
           "published": "2026-04-03T23:42:58Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panubis.NCBI.Panubis10/BSgenome.Panubis.NCBI.Panubis10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Panubis.Ensembl.Panubis10",
+          "version": "1.0.0",
+          "organism": "Papio anubis",
+          "assembly": "Panubis1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_008728515.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008728515.1/",
+          "file_name": "BSgenome.Panubis.Ensembl.Panubis10_1.0.0.tar.gz",
+          "size": 681698629,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 11145,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Cercopithecidae",
+            "genus": "Papio"
+          },
+          "common_name": "olive baboon",
+          "published": "2026-04-17T13:54:26Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panubis.Ensembl.Panubis10/BSgenome.Panubis.Ensembl.Panubis10_1.0.0.tar.gz"
         }
       ]
     },
@@ -90226,6 +90258,38 @@
       "common_name": "",
       "published": "2026-04-17T13:53:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Brapa.Ensembl.SCUBraROA23/BSgenome.Brapa.Ensembl.SCUBraROA23_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Panubis.Ensembl.Panubis10",
+      "version": "1.0.0",
+      "organism": "Papio anubis",
+      "assembly": "Panubis1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_008728515.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008728515.1/",
+      "file_name": "BSgenome.Panubis.Ensembl.Panubis10_1.0.0.tar.gz",
+      "size": 681698629,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 11145,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Cercopithecidae",
+        "genus": "Papio"
+      },
+      "common_name": "olive baboon",
+      "published": "2026-04-17T13:54:26Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panubis.Ensembl.Panubis10/BSgenome.Panubis.Ensembl.Panubis10_1.0.0.tar.gz"
     }
   ]
 }

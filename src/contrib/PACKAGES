@@ -4685,3 +4685,7 @@ NeedsCompilation: no
 Package: BSgenome.Brapa.Ensembl.SCUBraROA23
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Panubis.Ensembl.Panubis10
+Version: 1.0.0
+NeedsCompilation: no
