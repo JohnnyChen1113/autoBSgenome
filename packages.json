@@ -26932,6 +26932,38 @@
           "common_name": "domesticated barley",
           "published": "2026-04-17T20:55:56Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.MorexV3pseudomoleculesassembly/BSgenome.Hvulgare.Ensembl.MorexV3pseudomoleculesassembly_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Hvulgare.Ensembl.MorexV2scaf",
+          "version": "1.0.0",
+          "organism": "Hordeum vulgare subsp. vulgare",
+          "assembly": "Morex_V2_scaf",
+          "provider": "Ensembl",
+          "accession": "GCA_903813605.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_903813605.1/",
+          "file_name": "BSgenome.Hvulgare.Ensembl.MorexV2scaf_1.0.0.tar.gz",
+          "size": 984674741,
+          "seq_ids": [
+            "1H",
+            "2H",
+            "3H",
+            "4H",
+            "5H"
+          ],
+          "seq_count": 7,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Hordeum"
+          },
+          "common_name": "domesticated barley",
+          "published": "2026-04-17T22:45:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.MorexV2scaf/BSgenome.Hvulgare.Ensembl.MorexV2scaf_1.0.0.tar.gz"
         }
       ]
     },
@@ -95380,6 +95412,38 @@
       "common_name": "",
       "published": "2026-04-17T21:50:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgareHID357BPGv2/BSgenome.Hvulgare.Ensembl.HvulgareHID357BPGv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hvulgare.Ensembl.MorexV2scaf",
+      "version": "1.0.0",
+      "organism": "Hordeum vulgare subsp. vulgare",
+      "assembly": "Morex_V2_scaf",
+      "provider": "Ensembl",
+      "accession": "GCA_903813605.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_903813605.1/",
+      "file_name": "BSgenome.Hvulgare.Ensembl.MorexV2scaf_1.0.0.tar.gz",
+      "size": 984674741,
+      "seq_ids": [
+        "1H",
+        "2H",
+        "3H",
+        "4H",
+        "5H"
+      ],
+      "seq_count": 7,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Hordeum"
+      },
+      "common_name": "domesticated barley",
+      "published": "2026-04-17T22:45:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.MorexV2scaf/BSgenome.Hvulgare.Ensembl.MorexV2scaf_1.0.0.tar.gz"
     }
   ]
 }
