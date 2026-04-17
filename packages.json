@@ -3167,6 +3167,38 @@
       ]
     },
     {
+      "organism": "Aspergillus arachidicola str. CBS 117610",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Aarachidic.Ensembl.ASM274980v1",
+          "version": "1.0.0",
+          "organism": "Aspergillus arachidicola str. CBS 117610",
+          "assembly": "ASM274980v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002749805.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002749805.1/",
+          "file_name": "BSgenome.Aarachidic.Ensembl.ASM274980v1_1.0.0.tar.gz",
+          "size": 9722620,
+          "seq_ids": [
+            "contig_1",
+            "contig_2",
+            "contig_3",
+            "contig_4",
+            "contig_5"
+          ],
+          "seq_count": 754,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-17T07:30:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aarachidic.Ensembl.ASM274980v1/BSgenome.Aarachidic.Ensembl.ASM274980v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus bombycis",
       "common_name": "",
       "group": "fungi",
@@ -87498,6 +87530,30 @@
       "common_name": "brewer's yeast",
       "published": "2026-04-17T00:08:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.ASM304671v1/BSgenome.Scerevisiae.Ensembl.ASM304671v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aarachidic.Ensembl.ASM274980v1",
+      "version": "1.0.0",
+      "organism": "Aspergillus arachidicola str. CBS 117610",
+      "assembly": "ASM274980v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002749805.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002749805.1/",
+      "file_name": "BSgenome.Aarachidic.Ensembl.ASM274980v1_1.0.0.tar.gz",
+      "size": 9722620,
+      "seq_ids": [
+        "contig_1",
+        "contig_2",
+        "contig_3",
+        "contig_4",
+        "contig_5"
+      ],
+      "seq_count": 754,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-17T07:30:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aarachidic.Ensembl.ASM274980v1/BSgenome.Aarachidic.Ensembl.ASM274980v1_1.0.0.tar.gz"
     }
   ]
 }
