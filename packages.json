@@ -26052,6 +26052,38 @@
           "common_name": "",
           "published": "2026-04-17T19:47:00Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgareFT333BPGv2/BSgenome.Hvulgare.Ensembl.HvulgareFT333BPGv2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2",
+          "version": "1.0.0",
+          "organism": "Hordeum vulgare",
+          "assembly": "Hvulgare_cv_Golden_Melon_BPGv2",
+          "provider": "Ensembl",
+          "accession": "GCA_949783165.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_949783165.1/",
+          "file_name": "BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2_1.0.0.tar.gz",
+          "size": 994132264,
+          "seq_ids": [
+            "CATKTB010000015.1",
+            "CATKTB010000018.1",
+            "CATKTB010000014.1",
+            "CATKTB010000007.1",
+            "CATKTB010000019.1"
+          ],
+          "seq_count": 454,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Hordeum"
+          },
+          "common_name": "",
+          "published": "2026-04-17T19:48:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2/BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2_1.0.0.tar.gz"
         }
       ]
     },
@@ -93636,6 +93668,38 @@
       "common_name": "",
       "published": "2026-04-17T19:47:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgareFT333BPGv2/BSgenome.Hvulgare.Ensembl.HvulgareFT333BPGv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2",
+      "version": "1.0.0",
+      "organism": "Hordeum vulgare",
+      "assembly": "Hvulgare_cv_Golden_Melon_BPGv2",
+      "provider": "Ensembl",
+      "accession": "GCA_949783165.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_949783165.1/",
+      "file_name": "BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2_1.0.0.tar.gz",
+      "size": 994132264,
+      "seq_ids": [
+        "CATKTB010000015.1",
+        "CATKTB010000018.1",
+        "CATKTB010000014.1",
+        "CATKTB010000007.1",
+        "CATKTB010000019.1"
+      ],
+      "seq_count": 454,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Hordeum"
+      },
+      "common_name": "",
+      "published": "2026-04-17T19:48:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2/BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2_1.0.0.tar.gz"
     }
   ]
 }

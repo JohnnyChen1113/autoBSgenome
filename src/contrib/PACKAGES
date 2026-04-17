@@ -4877,3 +4877,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgareFT333BPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgarecvGoldenMelonBPGv2
+Version: 1.0.0
+NeedsCompilation: no
