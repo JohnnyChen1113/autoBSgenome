@@ -4641,3 +4641,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscrofa.Ensembl.ASM1795798v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sscrofa.Ensembl.ASM2056790v1
+Version: 1.0.0
+NeedsCompilation: no

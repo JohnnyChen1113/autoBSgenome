@@ -47239,6 +47239,38 @@
           "common_name": "domestic pig",
           "published": "2026-04-17T11:04:49Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.ASM1795798v1/BSgenome.Sscrofa.Ensembl.ASM1795798v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Sscrofa.Ensembl.ASM2056790v1",
+          "version": "1.0.0",
+          "organism": "Sus scrofa domesticus",
+          "assembly": "ASM2056790v1",
+          "provider": "Ensembl",
+          "accession": "GCA_020567905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_020567905.1/",
+          "file_name": "BSgenome.Sscrofa.Ensembl.ASM2056790v1_1.0.0.tar.gz",
+          "size": 582151760,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 121,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Artiodactyla",
+            "family": "Suidae",
+            "genus": "Sus"
+          },
+          "common_name": "domestic pig",
+          "published": "2026-04-17T11:05:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.ASM2056790v1/BSgenome.Sscrofa.Ensembl.ASM2056790v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -89554,6 +89586,38 @@
       "common_name": "domestic pig",
       "published": "2026-04-17T11:04:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.ASM1795798v1/BSgenome.Sscrofa.Ensembl.ASM1795798v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sscrofa.Ensembl.ASM2056790v1",
+      "version": "1.0.0",
+      "organism": "Sus scrofa domesticus",
+      "assembly": "ASM2056790v1",
+      "provider": "Ensembl",
+      "accession": "GCA_020567905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_020567905.1/",
+      "file_name": "BSgenome.Sscrofa.Ensembl.ASM2056790v1_1.0.0.tar.gz",
+      "size": 582151760,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 121,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Artiodactyla",
+        "family": "Suidae",
+        "genus": "Sus"
+      },
+      "common_name": "domestic pig",
+      "published": "2026-04-17T11:05:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.ASM2056790v1/BSgenome.Sscrofa.Ensembl.ASM2056790v1_1.0.0.tar.gz"
     }
   ]
 }
