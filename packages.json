@@ -22318,6 +22318,54 @@
       ]
     },
     {
+      "organism": "Fraxinus excelsior",
+      "common_name": "European ash",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Oleaceae",
+        "genus": "Fraxinus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Fexcelsior.Ensembl.BATG05",
+          "version": "1.0.0",
+          "organism": "Fraxinus excelsior",
+          "assembly": "BATG-0.5",
+          "provider": "Ensembl",
+          "accession": "GCA_900149125.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900149125.1/",
+          "file_name": "BSgenome.Fexcelsior.Ensembl.BATG05_1.0.0.tar.gz",
+          "size": 173466894,
+          "seq_ids": [
+            "FTPI01000002.1",
+            "FTPI01000001.1",
+            "FTPI01000218.1",
+            "FTPI01000003.1",
+            "FTPI01000015.1"
+          ],
+          "seq_count": 89515,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Lamiales",
+            "family": "Oleaceae",
+            "genus": "Fraxinus"
+          },
+          "common_name": "European ash",
+          "published": "2026-04-17T18:14:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fexcelsior.Ensembl.BATG05/BSgenome.Fexcelsior.Ensembl.BATG05_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fukomys damarensis",
       "common_name": "Damara mole-rat",
       "group": "vertebrate_mammalian",
@@ -92340,6 +92388,38 @@
       "common_name": "",
       "published": "2026-04-17T18:14:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsulphuraria.Ensembl.ASM34128v1/BSgenome.Gsulphuraria.Ensembl.ASM34128v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fexcelsior.Ensembl.BATG05",
+      "version": "1.0.0",
+      "organism": "Fraxinus excelsior",
+      "assembly": "BATG-0.5",
+      "provider": "Ensembl",
+      "accession": "GCA_900149125.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900149125.1/",
+      "file_name": "BSgenome.Fexcelsior.Ensembl.BATG05_1.0.0.tar.gz",
+      "size": 173466894,
+      "seq_ids": [
+        "FTPI01000002.1",
+        "FTPI01000001.1",
+        "FTPI01000218.1",
+        "FTPI01000003.1",
+        "FTPI01000015.1"
+      ],
+      "seq_count": 89515,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Oleaceae",
+        "genus": "Fraxinus"
+      },
+      "common_name": "European ash",
+      "published": "2026-04-17T18:14:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fexcelsior.Ensembl.BATG05/BSgenome.Fexcelsior.Ensembl.BATG05_1.0.0.tar.gz"
     }
   ]
 }
