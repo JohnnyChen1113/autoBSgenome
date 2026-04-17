@@ -121444,7 +121444,7 @@
     "group": "fungi",
     "species_url": "Exophiala_xenobiotica_gca_000835505",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003231355.1",
@@ -121454,7 +121454,7 @@
     "group": "fungi",
     "species_url": "Pyrenophora_tritici_repentis_gca_003231355",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003344505.1",
@@ -121464,7 +121464,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_phoenicis_atcc_13157_gca_003344505",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827335.1",
@@ -121474,7 +121474,7 @@
     "group": "fungi",
     "species_url": "Pisolithus_tinctorius_marx_270_gca_000827335",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000149985.1",
@@ -121484,7 +121484,7 @@
     "group": "fungi",
     "species_url": "Pyrenophora_triticirepentis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000836455.1",
@@ -121494,7 +121494,7 @@
     "group": "fungi",
     "species_url": "Cryptococcus_gattii_vgii_99_473_gca_000836455",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000426985.1",
@@ -121504,7 +121504,7 @@
     "group": "fungi",
     "species_url": "Metarhizium_anisopliae_brip_53284_gca_000426985",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003320035.1",
@@ -121514,7 +121514,7 @@
     "group": "fungi",
     "species_url": "Verticillium_dahliae_gca_003320035",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000938715.1",
@@ -121524,7 +121524,7 @@
     "group": "fungi",
     "species_url": "Lachancea_lanzarotensis_gca_000938715",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003184625.1",
@@ -121534,7 +121534,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_neoniger_cbs_115656_gca_003184625",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827465.1",
@@ -121544,7 +121544,7 @@
     "group": "fungi",
     "species_url": "Tulasnella_calospora_mut_4182_gca_000827465",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000170995.2",
@@ -121554,7 +121554,7 @@
     "group": "fungi",
     "species_url": "Trichoderma_virens",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003046715.1",
@@ -121564,7 +121564,7 @@
     "group": "fungi",
     "species_url": "Saccharomyces_cerevisiae_gca_003046715",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_010724255.1",
@@ -121574,7 +121574,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_udagawae_gca_010724255",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000149925.1",
@@ -121584,7 +121584,7 @@
     "group": "fungi",
     "species_url": "Puccinia_graminis",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000827215.1",
