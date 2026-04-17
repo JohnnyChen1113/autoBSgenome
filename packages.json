@@ -21408,6 +21408,38 @@
           "common_name": "",
           "published": "2026-04-04T13:00:55Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Esalsugineum.NCBI.Eutsalg10/BSgenome.Esalsugineum.NCBI.Eutsalg10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Esalsugineum.Ensembl.Eutsalg10",
+          "version": "1.0.0",
+          "organism": "Eutrema salsugineum",
+          "assembly": "Eutsalg1_0",
+          "provider": "Ensembl",
+          "accession": "GCA_000478725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000478725.1/",
+          "file_name": "BSgenome.Esalsugineum.Ensembl.Eutsalg10_1.0.0.tar.gz",
+          "size": 56575143,
+          "seq_ids": [
+            "KI517384",
+            "KI517464",
+            "KI517537",
+            "KI517609",
+            "KI517683"
+          ],
+          "seq_count": 638,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Eutrema"
+          },
+          "common_name": "",
+          "published": "2026-04-17T19:40:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Esalsugineum.Ensembl.Eutsalg10/BSgenome.Esalsugineum.Ensembl.Eutsalg10_1.0.0.tar.gz"
         }
       ]
     },
@@ -93044,6 +93076,38 @@
       "common_name": "common fig",
       "published": "2026-04-17T19:40:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fcarica.Ensembl.UNIPIFiCari10/BSgenome.Fcarica.Ensembl.UNIPIFiCari10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Esalsugineum.Ensembl.Eutsalg10",
+      "version": "1.0.0",
+      "organism": "Eutrema salsugineum",
+      "assembly": "Eutsalg1_0",
+      "provider": "Ensembl",
+      "accession": "GCA_000478725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000478725.1/",
+      "file_name": "BSgenome.Esalsugineum.Ensembl.Eutsalg10_1.0.0.tar.gz",
+      "size": 56575143,
+      "seq_ids": [
+        "KI517384",
+        "KI517464",
+        "KI517537",
+        "KI517609",
+        "KI517683"
+      ],
+      "seq_count": 638,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Eutrema"
+      },
+      "common_name": "",
+      "published": "2026-04-17T19:40:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Esalsugineum.Ensembl.Eutsalg10/BSgenome.Esalsugineum.Ensembl.Eutsalg10_1.0.0.tar.gz"
     }
   ]
 }
