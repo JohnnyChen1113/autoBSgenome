@@ -121744,7 +121744,7 @@
     "group": "fungi",
     "species_url": "Phaffia_rhodozyma_gca_001007165",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_010093515.1",
@@ -121754,7 +121754,7 @@
     "group": "fungi",
     "species_url": "Lineolata_rhizophorae_gca_010093515",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000230245.1",
@@ -121764,7 +121764,7 @@
     "group": "fungi",
     "species_url": "Sporisorium_reilianum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003231425.1",
@@ -121774,7 +121774,7 @@
     "group": "fungi",
     "species_url": "Pyrenophora_tritici_repentis_gca_003231425",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000002945.2",
@@ -121784,7 +121784,7 @@
     "group": "fungi",
     "species_url": "Schizosaccharomyces_pombe",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001020605.1",
@@ -121794,7 +121794,7 @@
     "group": "fungi",
     "species_url": "Schizopora_paradoxa_gca_001020605",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000820605.1",
@@ -121804,7 +121804,7 @@
     "group": "fungi",
     "species_url": "Sporothrix_brasiliensis_5110_gca_000820605",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001027345.1",
@@ -121814,7 +121814,7 @@
     "group": "fungi",
     "species_url": "Cutaneotrichosporon_oleaginosum_gca_001027345",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003184925.1",
@@ -121824,7 +121824,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_vadensis_cbs_113365_gca_003184925",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009193665.1",
@@ -121834,7 +121834,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_pseudocaelatus_gca_009193665",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001263375.1",
@@ -121844,7 +121844,7 @@
     "group": "fungi",
     "species_url": "Puccinia_sorghi_gca_001263375",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000835515.1",
@@ -121854,7 +121854,7 @@
     "group": "fungi",
     "species_url": "Exophiala_oligosperma_gca_000835515",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_000151645.1",
@@ -121864,7 +121864,7 @@
     "group": "fungi",
     "species_url": "Tuber_melanosporum",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_003184765.1",
@@ -121874,7 +121874,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_aculeatinus_cbs_121060_gca_003184765",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_009193545.1",
@@ -121884,7 +121884,7 @@
     "group": "fungi",
     "species_url": "Aspergillus_arachidicola_gca_009193545",
     "data_source": "ensembl",
-    "status": "pending"
+    "status": "building"
   },
   {
     "accession": "GCA_001191645.1",
