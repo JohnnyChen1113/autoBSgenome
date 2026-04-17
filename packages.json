@@ -17914,6 +17914,54 @@
       ]
     },
     {
+      "organism": "Dioscorea rotundata",
+      "common_name": "Guinea yam",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Dioscoreales",
+        "family": "Dioscoreaceae",
+        "genus": "Dioscorea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Drotundata.Ensembl.TDr96F1v2PseudoChromosome",
+          "version": "1.0.0",
+          "organism": "Dioscorea rotundata",
+          "assembly": "TDr96_F1_v2_PseudoChromosome",
+          "provider": "Ensembl",
+          "accession": "GCA_009730915.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009730915.1/",
+          "file_name": "BSgenome.Drotundata.Ensembl.TDr96F1v2PseudoChromosome_1.0.0.tar.gz",
+          "size": 137954784,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 2253,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Dioscoreales",
+            "family": "Dioscoreaceae",
+            "genus": "Dioscorea"
+          },
+          "common_name": "Guinea yam",
+          "published": "2026-04-17T17:28:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Drotundata.Ensembl.TDr96F1v2PseudoChromosome/BSgenome.Drotundata.Ensembl.TDr96F1v2PseudoChromosome_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Diplodia corticola",
       "common_name": "",
       "group": "fungi",
@@ -91974,6 +92022,38 @@
       "common_name": "pigeon pea",
       "published": "2026-04-17T17:28:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccajan.Ensembl.CcajanV10/BSgenome.Ccajan.Ensembl.CcajanV10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Drotundata.Ensembl.TDr96F1v2PseudoChromosome",
+      "version": "1.0.0",
+      "organism": "Dioscorea rotundata",
+      "assembly": "TDr96_F1_v2_PseudoChromosome",
+      "provider": "Ensembl",
+      "accession": "GCA_009730915.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009730915.1/",
+      "file_name": "BSgenome.Drotundata.Ensembl.TDr96F1v2PseudoChromosome_1.0.0.tar.gz",
+      "size": 137954784,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 2253,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Dioscoreales",
+        "family": "Dioscoreaceae",
+        "genus": "Dioscorea"
+      },
+      "common_name": "Guinea yam",
+      "published": "2026-04-17T17:28:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Drotundata.Ensembl.TDr96F1v2PseudoChromosome/BSgenome.Drotundata.Ensembl.TDr96F1v2PseudoChromosome_1.0.0.tar.gz"
     }
   ]
 }

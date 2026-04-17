@@ -4785,3 +4785,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccajan.Ensembl.CcajanV10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Drotundata.Ensembl.TDr96F1v2PseudoChromosome
+Version: 1.0.0
+NeedsCompilation: no
