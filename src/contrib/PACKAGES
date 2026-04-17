@@ -4725,3 +4725,7 @@ NeedsCompilation: no
 Package: BSgenome.Clanatus.Ensembl.Cla97v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5
+Version: 1.0.0
+NeedsCompilation: no

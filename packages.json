@@ -2987,6 +2987,38 @@
           "common_name": "peanut",
           "published": "2026-04-04T17:38:38Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahypogaea.NCBI.arahyTifrunnergnm2J5K5/BSgenome.Ahypogaea.NCBI.arahyTifrunnergnm2J5K5_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5",
+          "version": "1.0.0",
+          "organism": "Arachis hypogaea",
+          "assembly": "arahy.Tifrunner.gnm2.J5K5",
+          "provider": "Ensembl",
+          "accession": "GCA_003086295.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003086295.3/",
+          "file_name": "BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5_1.0.0.tar.gz",
+          "size": 590506294,
+          "seq_ids": [
+            "PIVG02000079.1",
+            "PIVG02000080.1",
+            "PIVG02000081.1",
+            "PIVG02000082.1",
+            "PIVG02000083.1"
+          ],
+          "seq_count": 442,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Arachis"
+          },
+          "common_name": "peanut",
+          "published": "2026-04-17T15:01:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5/BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5_1.0.0.tar.gz"
         }
       ]
     },
@@ -90938,6 +90970,38 @@
       "common_name": "watermelon",
       "published": "2026-04-17T15:00:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Clanatus.Ensembl.Cla97v1/BSgenome.Clanatus.Ensembl.Cla97v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5",
+      "version": "1.0.0",
+      "organism": "Arachis hypogaea",
+      "assembly": "arahy.Tifrunner.gnm2.J5K5",
+      "provider": "Ensembl",
+      "accession": "GCA_003086295.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003086295.3/",
+      "file_name": "BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5_1.0.0.tar.gz",
+      "size": 590506294,
+      "seq_ids": [
+        "PIVG02000079.1",
+        "PIVG02000080.1",
+        "PIVG02000081.1",
+        "PIVG02000082.1",
+        "PIVG02000083.1"
+      ],
+      "seq_count": 442,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Arachis"
+      },
+      "common_name": "peanut",
+      "published": "2026-04-17T15:01:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5/BSgenome.Ahypogaea.Ensembl.arahyTifrunnergnm2J5K5_1.0.0.tar.gz"
     }
   ]
 }
