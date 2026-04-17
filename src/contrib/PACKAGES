@@ -4885,3 +4885,7 @@ NeedsCompilation: no
 Package: BSgenome.Gmax.Ensembl.Glycinemaxv21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgareFT628BPGv2
+Version: 1.0.0
+NeedsCompilation: no
