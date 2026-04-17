@@ -22619,6 +22619,54 @@
       ]
     },
     {
+      "organism": "Gorilla gorilla gorilla",
+      "common_name": "western lowland gorilla",
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Hominidae",
+        "genus": "Gorilla"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ggorilla.Ensembl.gorGor4",
+          "version": "1.0.0",
+          "organism": "Gorilla gorilla gorilla",
+          "assembly": "gorGor4",
+          "provider": "Ensembl",
+          "accession": "GCA_000151905.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000151905.3/",
+          "file_name": "BSgenome.Ggorilla.Ensembl.gorGor4_1.0.0.tar.gz",
+          "size": 682061446,
+          "seq_ids": [
+            "1",
+            "2A",
+            "2B",
+            "3",
+            "4"
+          ],
+          "seq_count": 40711,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Primates",
+            "family": "Hominidae",
+            "genus": "Gorilla"
+          },
+          "common_name": "western lowland gorilla",
+          "published": "2026-04-17T11:03:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ggorilla.Ensembl.gorGor4/BSgenome.Ggorilla.Ensembl.gorGor4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Gossypium hirsutum",
       "common_name": "cotton",
       "group": "plant",
@@ -89314,6 +89362,38 @@
       "common_name": "Chinese hamster",
       "published": "2026-04-17T11:02:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgriseus.Ensembl.CriGriPICRH10/BSgenome.Cgriseus.Ensembl.CriGriPICRH10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ggorilla.Ensembl.gorGor4",
+      "version": "1.0.0",
+      "organism": "Gorilla gorilla gorilla",
+      "assembly": "gorGor4",
+      "provider": "Ensembl",
+      "accession": "GCA_000151905.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000151905.3/",
+      "file_name": "BSgenome.Ggorilla.Ensembl.gorGor4_1.0.0.tar.gz",
+      "size": 682061446,
+      "seq_ids": [
+        "1",
+        "2A",
+        "2B",
+        "3",
+        "4"
+      ],
+      "seq_count": 40711,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Primates",
+        "family": "Hominidae",
+        "genus": "Gorilla"
+      },
+      "common_name": "western lowland gorilla",
+      "published": "2026-04-17T11:03:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ggorilla.Ensembl.gorGor4/BSgenome.Ggorilla.Ensembl.gorGor4_1.0.0.tar.gz"
     }
   ]
 }

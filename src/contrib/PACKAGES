@@ -4629,3 +4629,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgriseus.Ensembl.CriGriPICRH10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ggorilla.Ensembl.gorGor4
+Version: 1.0.0
+NeedsCompilation: no
