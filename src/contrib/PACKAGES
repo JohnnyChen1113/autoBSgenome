@@ -4945,3 +4945,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgareHOR21322BPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgareHID380BPGv2
+Version: 1.0.0
+NeedsCompilation: no
