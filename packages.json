@@ -46008,6 +46008,30 @@
           "common_name": "bicolor damselfish",
           "published": "2026-04-04T05:44:16Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spartitus.NCBI.Stegastespartitus102/BSgenome.Spartitus.NCBI.Stegastespartitus102_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Spartitus.Ensembl.Stegastespartitus102",
+          "version": "1.0.0",
+          "organism": "Stegastes partitus",
+          "assembly": "Stegastes_partitus-1.0.2",
+          "provider": "Ensembl",
+          "accession": "GCA_000690725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000690725.1/",
+          "file_name": "BSgenome.Spartitus.Ensembl.Stegastespartitus102_1.0.0.tar.gz",
+          "size": 183081651,
+          "seq_ids": [
+            "KK580071.1",
+            "KK580072.1",
+            "KK580074.1",
+            "KK580073.1",
+            "KK580075.1"
+          ],
+          "seq_count": 5818,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-17T12:00:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spartitus.Ensembl.Stegastespartitus102/BSgenome.Spartitus.Ensembl.Stegastespartitus102_1.0.0.tar.gz"
         }
       ]
     },
@@ -89618,6 +89642,30 @@
       "common_name": "domestic pig",
       "published": "2026-04-17T11:05:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sscrofa.Ensembl.ASM2056790v1/BSgenome.Sscrofa.Ensembl.ASM2056790v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Spartitus.Ensembl.Stegastespartitus102",
+      "version": "1.0.0",
+      "organism": "Stegastes partitus",
+      "assembly": "Stegastes_partitus-1.0.2",
+      "provider": "Ensembl",
+      "accession": "GCA_000690725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000690725.1/",
+      "file_name": "BSgenome.Spartitus.Ensembl.Stegastespartitus102_1.0.0.tar.gz",
+      "size": 183081651,
+      "seq_ids": [
+        "KK580071.1",
+        "KK580072.1",
+        "KK580074.1",
+        "KK580073.1",
+        "KK580075.1"
+      ],
+      "seq_count": 5818,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-17T12:00:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spartitus.Ensembl.Stegastespartitus102/BSgenome.Spartitus.Ensembl.Stegastespartitus102_1.0.0.tar.gz"
     }
   ]
 }
