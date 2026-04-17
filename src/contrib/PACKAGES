@@ -4570,10 +4570,6 @@ Package: BSgenome.Mlaricipopulina.NCBI.v10
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Ccarpio.Ensembl.Hunaghecarp20
-Version: 1.0.0
-NeedsCompilation: no
-
 Package: BSgenome.Gaculeatus.Ensembl.GAculeatusUGAversion5
 Version: 1.0.0
 NeedsCompilation: no
@@ -4615,5 +4611,9 @@ Version: 1.0.0
 NeedsCompilation: no
 
 Package: BSgenome.Jhyemalis.Ensembl.ASM382977v1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Ccarpio.Ensembl.Hunaghecarp20
 Version: 1.0.0
 NeedsCompilation: no
