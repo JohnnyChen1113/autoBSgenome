@@ -19362,6 +19362,54 @@
       ]
     },
     {
+      "organism": "Echinochloa crus-galli",
+      "common_name": "barnyard grass",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Echinochloa"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ecrusgalli.Ensembl.ecv3",
+          "version": "1.0.0",
+          "organism": "Echinochloa crus-galli",
+          "assembly": "ec_v3",
+          "provider": "Ensembl",
+          "accession": "GCA_020466025.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_020466025.1/",
+          "file_name": "BSgenome.Ecrusgalli.Ensembl.ecv3_1.0.0.tar.gz",
+          "size": 323782819,
+          "seq_ids": [
+            "AH01",
+            "BH01",
+            "CH01",
+            "AH02",
+            "BH02"
+          ],
+          "seq_count": 2058,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Echinochloa"
+          },
+          "common_name": "barnyard grass",
+          "published": "2026-04-17T18:15:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecrusgalli.Ensembl.ecv3/BSgenome.Ecrusgalli.Ensembl.ecv3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Echinococcus granulosus",
       "common_name": "",
       "group": "invertebrate",
@@ -92580,6 +92628,38 @@
       "common_name": "",
       "published": "2026-04-17T18:15:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cclementina.Ensembl.Citrusclementinav10/BSgenome.Cclementina.Ensembl.Citrusclementinav10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ecrusgalli.Ensembl.ecv3",
+      "version": "1.0.0",
+      "organism": "Echinochloa crus-galli",
+      "assembly": "ec_v3",
+      "provider": "Ensembl",
+      "accession": "GCA_020466025.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_020466025.1/",
+      "file_name": "BSgenome.Ecrusgalli.Ensembl.ecv3_1.0.0.tar.gz",
+      "size": 323782819,
+      "seq_ids": [
+        "AH01",
+        "BH01",
+        "CH01",
+        "AH02",
+        "BH02"
+      ],
+      "seq_count": 2058,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Echinochloa"
+      },
+      "common_name": "barnyard grass",
+      "published": "2026-04-17T18:15:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecrusgalli.Ensembl.ecv3/BSgenome.Ecrusgalli.Ensembl.ecv3_1.0.0.tar.gz"
     }
   ]
 }
