@@ -4849,3 +4849,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgarecvBonusBPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgarecvChikurinIbaraki1BPGv2
+Version: 1.0.0
+NeedsCompilation: no
