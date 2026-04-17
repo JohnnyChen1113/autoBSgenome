@@ -24368,6 +24368,54 @@
       ]
     },
     {
+      "organism": "Gossypium raimondii",
+      "common_name": "Peruvian cotton",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Gossypium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Graimondii.Ensembl.Graimondii20v6",
+          "version": "1.0.0",
+          "organism": "Gossypium raimondii",
+          "assembly": "Graimondii2_0_v6",
+          "provider": "Ensembl",
+          "accession": "GCA_000327365.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000327365.1/",
+          "file_name": "BSgenome.Graimondii.Ensembl.Graimondii20v6_1.0.0.tar.gz",
+          "size": 177190348,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1033,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Malvales",
+            "family": "Malvaceae",
+            "genus": "Gossypium"
+          },
+          "common_name": "Peruvian cotton",
+          "published": "2026-04-17T19:39:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Graimondii.Ensembl.Graimondii20v6/BSgenome.Graimondii.Ensembl.Graimondii20v6_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Gouania willdenowi",
       "common_name": "blunt-snouted clingfish",
       "group": "vertebrate_other",
@@ -92884,6 +92932,38 @@
       "common_name": "",
       "published": "2026-04-17T18:16:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Atauschii.Ensembl.Aetv40/BSgenome.Atauschii.Ensembl.Aetv40_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Graimondii.Ensembl.Graimondii20v6",
+      "version": "1.0.0",
+      "organism": "Gossypium raimondii",
+      "assembly": "Graimondii2_0_v6",
+      "provider": "Ensembl",
+      "accession": "GCA_000327365.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000327365.1/",
+      "file_name": "BSgenome.Graimondii.Ensembl.Graimondii20v6_1.0.0.tar.gz",
+      "size": 177190348,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1033,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malvales",
+        "family": "Malvaceae",
+        "genus": "Gossypium"
+      },
+      "common_name": "Peruvian cotton",
+      "published": "2026-04-17T19:39:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Graimondii.Ensembl.Graimondii20v6/BSgenome.Graimondii.Ensembl.Graimondii20v6_1.0.0.tar.gz"
     }
   ]
 }
