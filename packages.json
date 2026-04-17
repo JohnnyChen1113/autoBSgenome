@@ -16990,6 +16990,38 @@
           "common_name": "",
           "published": "2026-04-04T14:42:03Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcarota.NCBI.DH1v30/BSgenome.Dcarota.NCBI.DH1v30_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Dcarota.Ensembl.ASM162521v1",
+          "version": "1.0.0",
+          "organism": "Daucus carota subsp. sativus",
+          "assembly": "ASM162521v1",
+          "provider": "Ensembl",
+          "accession": "GCA_001625215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001625215.1/",
+          "file_name": "BSgenome.Dcarota.Ensembl.ASM162521v1_1.0.0.tar.gz",
+          "size": 90962691,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 4826,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Apiales",
+            "family": "Apiaceae",
+            "genus": "Daucus"
+          },
+          "common_name": "",
+          "published": "2026-04-17T17:27:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcarota.Ensembl.ASM162521v1/BSgenome.Dcarota.Ensembl.ASM162521v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -91638,6 +91670,38 @@
       "common_name": "artichoke",
       "published": "2026-04-17T17:27:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccardunculus.Ensembl.CcrdV1/BSgenome.Ccardunculus.Ensembl.CcrdV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dcarota.Ensembl.ASM162521v1",
+      "version": "1.0.0",
+      "organism": "Daucus carota subsp. sativus",
+      "assembly": "ASM162521v1",
+      "provider": "Ensembl",
+      "accession": "GCA_001625215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001625215.1/",
+      "file_name": "BSgenome.Dcarota.Ensembl.ASM162521v1_1.0.0.tar.gz",
+      "size": 90962691,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 4826,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Apiales",
+        "family": "Apiaceae",
+        "genus": "Daucus"
+      },
+      "common_name": "",
+      "published": "2026-04-17T17:27:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dcarota.Ensembl.ASM162521v1/BSgenome.Dcarota.Ensembl.ASM162521v1_1.0.0.tar.gz"
     }
   ]
 }
