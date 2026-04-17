@@ -2847,6 +2847,54 @@
       ]
     },
     {
+      "organism": "Arabidopsis thaliana",
+      "common_name": "thale cress",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Arabidopsis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Athaliana.Ensembl.TAIR10",
+          "version": "1.0.0",
+          "organism": "Arabidopsis thaliana",
+          "assembly": "TAIR10",
+          "provider": "Ensembl",
+          "accession": "GCA_000001735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000001735.1/",
+          "file_name": "BSgenome.Athaliana.Ensembl.TAIR10_1.0.0.tar.gz",
+          "size": 28558570,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 7,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Brassicales",
+            "family": "Brassicaceae",
+            "genus": "Arabidopsis"
+          },
+          "common_name": "thale cress",
+          "published": "2026-04-17T16:09:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Athaliana.Ensembl.TAIR10/BSgenome.Athaliana.Ensembl.TAIR10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Arabis alpina",
       "common_name": "gray rockcress",
       "group": "plant",
@@ -91208,6 +91256,38 @@
       "common_name": "carragheen",
       "published": "2026-04-17T16:08:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccrispus.Ensembl.ASM35022v2/BSgenome.Ccrispus.Ensembl.ASM35022v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Athaliana.Ensembl.TAIR10",
+      "version": "1.0.0",
+      "organism": "Arabidopsis thaliana",
+      "assembly": "TAIR10",
+      "provider": "Ensembl",
+      "accession": "GCA_000001735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000001735.1/",
+      "file_name": "BSgenome.Athaliana.Ensembl.TAIR10_1.0.0.tar.gz",
+      "size": 28558570,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 7,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Brassicales",
+        "family": "Brassicaceae",
+        "genus": "Arabidopsis"
+      },
+      "common_name": "thale cress",
+      "published": "2026-04-17T16:09:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Athaliana.Ensembl.TAIR10/BSgenome.Athaliana.Ensembl.TAIR10_1.0.0.tar.gz"
     }
   ]
 }
