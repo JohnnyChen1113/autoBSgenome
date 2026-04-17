@@ -13567,6 +13567,38 @@
           "common_name": "Chinese hamster",
           "published": "2026-04-03T21:41:57Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgriseus.NCBI.CriGri10/BSgenome.Cgriseus.NCBI.CriGri10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cgriseus.Ensembl.CHOK1GSHDv1",
+          "version": "1.0.0",
+          "organism": "Cricetulus griseus",
+          "assembly": "CHOK1GS_HDv1",
+          "provider": "Ensembl",
+          "accession": "GCA_900186095.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900186095.1/",
+          "file_name": "BSgenome.Cgriseus.Ensembl.CHOK1GSHDv1_1.0.0.tar.gz",
+          "size": 556933574,
+          "seq_ids": [
+            "scaffold_0",
+            "scaffold_1",
+            "scaffold_2",
+            "scaffold_3",
+            "scaffold_4"
+          ],
+          "seq_count": 8265,
+          "group": "vertebrate_mammalian",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Rodentia",
+            "family": "Cricetidae",
+            "genus": "Cricetulus"
+          },
+          "common_name": "Chinese hamster",
+          "published": "2026-04-17T09:59:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgriseus.Ensembl.CHOK1GSHDv1/BSgenome.Cgriseus.Ensembl.CHOK1GSHDv1_1.0.0.tar.gz"
         }
       ]
     },
@@ -88754,6 +88786,38 @@
       "common_name": "hybrid cattle",
       "published": "2026-04-17T09:58:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bindicus.Ensembl.UOAAngus1/BSgenome.Bindicus.Ensembl.UOAAngus1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cgriseus.Ensembl.CHOK1GSHDv1",
+      "version": "1.0.0",
+      "organism": "Cricetulus griseus",
+      "assembly": "CHOK1GS_HDv1",
+      "provider": "Ensembl",
+      "accession": "GCA_900186095.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900186095.1/",
+      "file_name": "BSgenome.Cgriseus.Ensembl.CHOK1GSHDv1_1.0.0.tar.gz",
+      "size": 556933574,
+      "seq_ids": [
+        "scaffold_0",
+        "scaffold_1",
+        "scaffold_2",
+        "scaffold_3",
+        "scaffold_4"
+      ],
+      "seq_count": 8265,
+      "group": "vertebrate_mammalian",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Cricetidae",
+        "genus": "Cricetulus"
+      },
+      "common_name": "Chinese hamster",
+      "published": "2026-04-17T09:59:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgriseus.Ensembl.CHOK1GSHDv1/BSgenome.Cgriseus.Ensembl.CHOK1GSHDv1_1.0.0.tar.gz"
     }
   ]
 }
