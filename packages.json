@@ -15008,6 +15008,54 @@
       ]
     },
     {
+      "organism": "Cyanoderma ruficeps",
+      "common_name": "rufous-capped babbler",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Timaliidae",
+        "genus": "Cyanoderma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cruficeps.Ensembl.ASM869450v1",
+          "version": "1.0.0",
+          "organism": "Cyanoderma ruficeps",
+          "assembly": "ASM869450v1",
+          "provider": "Ensembl",
+          "accession": "GCA_008694505.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008694505.1/",
+          "file_name": "BSgenome.Cruficeps.Ensembl.ASM869450v1_1.0.0.tar.gz",
+          "size": 249440912,
+          "seq_ids": [
+            "VZDJ01007755.1",
+            "VZDJ01007749.1",
+            "VZDJ01007753.1",
+            "VZDJ01007754.1",
+            "VZDJ01007747.1"
+          ],
+          "seq_count": 7756,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Aves",
+            "order": "Passeriformes",
+            "family": "Timaliidae",
+            "genus": "Cyanoderma"
+          },
+          "common_name": "rufous-capped babbler",
+          "published": "2026-04-17T11:02:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cruficeps.Ensembl.ASM869450v1/BSgenome.Cruficeps.Ensembl.ASM869450v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cyberlindnera jadinii NRRL Y-1542",
       "common_name": "",
       "group": "fungi",
@@ -89170,6 +89218,38 @@
       "common_name": "pikeperch",
       "published": "2026-04-17T11:01:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slucioperca.Ensembl.SLUCFBN1/BSgenome.Slucioperca.Ensembl.SLUCFBN1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cruficeps.Ensembl.ASM869450v1",
+      "version": "1.0.0",
+      "organism": "Cyanoderma ruficeps",
+      "assembly": "ASM869450v1",
+      "provider": "Ensembl",
+      "accession": "GCA_008694505.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008694505.1/",
+      "file_name": "BSgenome.Cruficeps.Ensembl.ASM869450v1_1.0.0.tar.gz",
+      "size": 249440912,
+      "seq_ids": [
+        "VZDJ01007755.1",
+        "VZDJ01007749.1",
+        "VZDJ01007753.1",
+        "VZDJ01007754.1",
+        "VZDJ01007747.1"
+      ],
+      "seq_count": 7756,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Passeriformes",
+        "family": "Timaliidae",
+        "genus": "Cyanoderma"
+      },
+      "common_name": "rufous-capped babbler",
+      "published": "2026-04-17T11:02:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cruficeps.Ensembl.ASM869450v1/BSgenome.Cruficeps.Ensembl.ASM869450v1_1.0.0.tar.gz"
     }
   ]
 }
