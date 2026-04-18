@@ -59606,6 +59606,38 @@
       ]
     },
     {
+      "organism": "[Candida] haemuloni",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Chaemuloni.Ensembl.GCA002926055v1",
+          "version": "1.0.0",
+          "organism": "[Candida] haemuloni",
+          "assembly": "GCA002926055v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002926055.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002926055.1/",
+          "file_name": "BSgenome.Chaemuloni.Ensembl.GCA002926055v1_1.0.0.tar.gz",
+          "size": 3298565,
+          "seq_ids": [
+            "PKFO01000012",
+            "PKFO01000005",
+            "PKFO01000001",
+            "PKFO01000003",
+            "PKFO01000010"
+          ],
+          "seq_count": 12,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T11:12:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chaemuloni.Ensembl.GCA002926055v1/BSgenome.Chaemuloni.Ensembl.GCA002926055v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "[Candida] pseudohaemulonii",
       "common_name": "",
       "group": "fungi",
@@ -102388,6 +102420,30 @@
       "common_name": "",
       "published": "2026-04-18T11:11:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cglabrata.Ensembl.GCA000002545v2/BSgenome.Cglabrata.Ensembl.GCA000002545v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Chaemuloni.Ensembl.GCA002926055v1",
+      "version": "1.0.0",
+      "organism": "[Candida] haemuloni",
+      "assembly": "GCA002926055v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002926055.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002926055.1/",
+      "file_name": "BSgenome.Chaemuloni.Ensembl.GCA002926055v1_1.0.0.tar.gz",
+      "size": 3298565,
+      "seq_ids": [
+        "PKFO01000012",
+        "PKFO01000005",
+        "PKFO01000001",
+        "PKFO01000003",
+        "PKFO01000010"
+      ],
+      "seq_count": 12,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T11:12:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chaemuloni.Ensembl.GCA002926055v1/BSgenome.Chaemuloni.Ensembl.GCA002926055v1_1.0.0.tar.gz"
     }
   ]
 }
