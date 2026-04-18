@@ -51237,6 +51237,38 @@
           "common_name": "",
           "published": "2026-04-05T15:04:38Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rtoruloides.NCBI.RHOziaDV10/BSgenome.Rtoruloides.NCBI.RHOziaDV10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Rtoruloides.Ensembl.RHOziaDV10",
+          "version": "1.0.0",
+          "organism": "Rhodotorula toruloides NP11",
+          "assembly": "RHOziaDV1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000320785.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000320785.2/",
+          "file_name": "BSgenome.Rtoruloides.Ensembl.RHOziaDV10_1.0.0.tar.gz",
+          "size": 4882346,
+          "seq_ids": [
+            "KB722642",
+            "KB722643",
+            "KB722644",
+            "KB722645",
+            "KB722646"
+          ],
+          "seq_count": 94,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Microbotryomycetes",
+            "order": "Sporidiobolales",
+            "family": "Sporidiobolaceae",
+            "genus": "Rhodotorula"
+          },
+          "common_name": "",
+          "published": "2026-04-18T16:05:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rtoruloides.Ensembl.RHOziaDV10/BSgenome.Rtoruloides.Ensembl.RHOziaDV10_1.0.0.tar.gz"
         }
       ]
     },
@@ -107795,6 +107827,38 @@
       "common_name": "",
       "published": "2026-04-18T16:04:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bhelicus.Ensembl.Blyhe1/BSgenome.Bhelicus.Ensembl.Blyhe1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rtoruloides.Ensembl.RHOziaDV10",
+      "version": "1.0.0",
+      "organism": "Rhodotorula toruloides NP11",
+      "assembly": "RHOziaDV1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000320785.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000320785.2/",
+      "file_name": "BSgenome.Rtoruloides.Ensembl.RHOziaDV10_1.0.0.tar.gz",
+      "size": 4882346,
+      "seq_ids": [
+        "KB722642",
+        "KB722643",
+        "KB722644",
+        "KB722645",
+        "KB722646"
+      ],
+      "seq_count": 94,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Microbotryomycetes",
+        "order": "Sporidiobolales",
+        "family": "Sporidiobolaceae",
+        "genus": "Rhodotorula"
+      },
+      "common_name": "",
+      "published": "2026-04-18T16:05:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rtoruloides.Ensembl.RHOziaDV10/BSgenome.Rtoruloides.Ensembl.RHOziaDV10_1.0.0.tar.gz"
     }
   ]
 }
