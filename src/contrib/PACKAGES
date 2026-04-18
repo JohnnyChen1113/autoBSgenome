@@ -6093,3 +6093,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CNA3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hgriseus.Ensembl.Heligris5409V1
+Version: 1.0.0
+NeedsCompilation: no
