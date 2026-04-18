@@ -4619,6 +4619,38 @@
           "common_name": "",
           "published": "2026-04-05T23:39:35Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aeucalypticola.NCBI.Aspeuc1/BSgenome.Aeucalypticola.NCBI.Aspeuc1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Aeucalypticola.Ensembl.Aspeuc1",
+          "version": "1.0.0",
+          "organism": "Aspergillus eucalypticola CBS 122712",
+          "assembly": "Aspeuc1",
+          "provider": "Ensembl",
+          "accession": "GCA_003184535.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003184535.1/",
+          "file_name": "BSgenome.Aeucalypticola.Ensembl.Aspeuc1_1.0.0.tar.gz",
+          "size": 8658949,
+          "seq_ids": [
+            "BO83scaffold_1",
+            "BO83scaffold_2",
+            "BO83scaffold_3",
+            "BO83scaffold_4",
+            "BO83scaffold_5"
+          ],
+          "seq_count": 131,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:40:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aeucalypticola.Ensembl.Aspeuc1/BSgenome.Aeucalypticola.Ensembl.Aspeuc1_1.0.0.tar.gz"
         }
       ]
     },
@@ -116586,6 +116618,38 @@
       "common_name": "",
       "published": "2026-04-18T23:40:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hwerneckii.Ensembl.ASM370435v1/BSgenome.Hwerneckii.Ensembl.ASM370435v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aeucalypticola.Ensembl.Aspeuc1",
+      "version": "1.0.0",
+      "organism": "Aspergillus eucalypticola CBS 122712",
+      "assembly": "Aspeuc1",
+      "provider": "Ensembl",
+      "accession": "GCA_003184535.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003184535.1/",
+      "file_name": "BSgenome.Aeucalypticola.Ensembl.Aspeuc1_1.0.0.tar.gz",
+      "size": 8658949,
+      "seq_ids": [
+        "BO83scaffold_1",
+        "BO83scaffold_2",
+        "BO83scaffold_3",
+        "BO83scaffold_4",
+        "BO83scaffold_5"
+      ],
+      "seq_count": 131,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:40:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aeucalypticola.Ensembl.Aspeuc1/BSgenome.Aeucalypticola.Ensembl.Aspeuc1_1.0.0.tar.gz"
     }
   ]
 }
