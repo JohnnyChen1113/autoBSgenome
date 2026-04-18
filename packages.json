@@ -59283,6 +59283,38 @@
           "common_name": "",
           "published": "2026-04-05T18:49:26Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmesenterica.NCBI.Treme1/BSgenome.Tmesenterica.NCBI.Treme1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Tmesenterica.Ensembl.Treme1",
+          "version": "1.0.0",
+          "organism": "Tremella mesenterica DSM 1558",
+          "assembly": "Treme1",
+          "provider": "Ensembl",
+          "accession": "GCA_000271645.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000271645.1/",
+          "file_name": "BSgenome.Tmesenterica.Ensembl.Treme1_1.0.0.tar.gz",
+          "size": 6879379,
+          "seq_ids": [
+            "JH711528",
+            "JH711529",
+            "JH711530",
+            "JH711531",
+            "JH711532"
+          ],
+          "seq_count": 45,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Tremellaceae",
+            "genus": "Tremella"
+          },
+          "common_name": "",
+          "published": "2026-04-18T17:09:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmesenterica.Ensembl.Treme1/BSgenome.Tmesenterica.Ensembl.Treme1_1.0.0.tar.gz"
         }
       ]
     },
@@ -108837,6 +108869,38 @@
       "common_name": "",
       "published": "2026-04-18T17:08:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.Ensembl.OrdosporaNOV7v1/BSgenome.Ocolligata.Ensembl.OrdosporaNOV7v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tmesenterica.Ensembl.Treme1",
+      "version": "1.0.0",
+      "organism": "Tremella mesenterica DSM 1558",
+      "assembly": "Treme1",
+      "provider": "Ensembl",
+      "accession": "GCA_000271645.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000271645.1/",
+      "file_name": "BSgenome.Tmesenterica.Ensembl.Treme1_1.0.0.tar.gz",
+      "size": 6879379,
+      "seq_ids": [
+        "JH711528",
+        "JH711529",
+        "JH711530",
+        "JH711531",
+        "JH711532"
+      ],
+      "seq_count": 45,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Tremellaceae",
+        "genus": "Tremella"
+      },
+      "common_name": "",
+      "published": "2026-04-18T17:09:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmesenterica.Ensembl.Treme1/BSgenome.Tmesenterica.Ensembl.Treme1_1.0.0.tar.gz"
     }
   ]
 }

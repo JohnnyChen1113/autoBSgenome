@@ -5769,3 +5769,7 @@ NeedsCompilation: no
 Package: BSgenome.Ocolligata.Ensembl.OrdosporaNOV7v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmesenterica.Ensembl.Treme1
+Version: 1.0.0
+NeedsCompilation: no
