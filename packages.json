@@ -22531,6 +22531,38 @@
       ]
     },
     {
+      "organism": "Enterocytozoon hepatopenaei str. TH1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Ehepatopenaei.Ensembl.ASM208167v1",
+          "version": "1.0.0",
+          "organism": "Enterocytozoon hepatopenaei str. TH1",
+          "assembly": "ASM208167v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002081675.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002081675.1/",
+          "file_name": "BSgenome.Ehepatopenaei.Ensembl.ASM208167v1_1.0.0.tar.gz",
+          "size": 730404,
+          "seq_ids": [
+            "scaffold_00011",
+            "scaffold_00007",
+            "scaffold_00010",
+            "scaffold_00013",
+            "scaffold_00014"
+          ],
+          "seq_count": 62,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T17:08:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehepatopenaei.Ensembl.ASM208167v1/BSgenome.Ehepatopenaei.Ensembl.ASM208167v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Enterospora canceri str. GB1",
       "common_name": "",
       "group": "other",
@@ -108451,6 +108483,30 @@
       "common_name": "",
       "published": "2026-04-18T17:08:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.ASM491899v1/BSgenome.Wmellicola.Ensembl.ASM491899v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ehepatopenaei.Ensembl.ASM208167v1",
+      "version": "1.0.0",
+      "organism": "Enterocytozoon hepatopenaei str. TH1",
+      "assembly": "ASM208167v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002081675.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002081675.1/",
+      "file_name": "BSgenome.Ehepatopenaei.Ensembl.ASM208167v1_1.0.0.tar.gz",
+      "size": 730404,
+      "seq_ids": [
+        "scaffold_00011",
+        "scaffold_00007",
+        "scaffold_00010",
+        "scaffold_00013",
+        "scaffold_00014"
+      ],
+      "seq_count": 62,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T17:08:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehepatopenaei.Ensembl.ASM208167v1/BSgenome.Ehepatopenaei.Ensembl.ASM208167v1_1.0.0.tar.gz"
     }
   ]
 }
