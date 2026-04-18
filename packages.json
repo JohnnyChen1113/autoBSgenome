@@ -7798,6 +7798,54 @@
       ]
     },
     {
+      "organism": "Blumeria graminis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Erysiphales",
+        "family": "Erysiphaceae",
+        "genus": "Blumeria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bgraminis.Ensembl.EF2",
+          "version": "1.0.0",
+          "organism": "Blumeria graminis",
+          "assembly": "EF2",
+          "provider": "Ensembl",
+          "accession": "GCA_000151065.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000151065.2/",
+          "file_name": "BSgenome.Bgraminis.Ensembl.EF2_1.0.0.tar.gz",
+          "size": 29946267,
+          "seq_ids": [
+            "scaffold_8",
+            "scaffold_6",
+            "scaffold_16",
+            "scaffold_18",
+            "scaffold_23"
+          ],
+          "seq_count": 318,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Blumeria"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:10:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bgraminis.Ensembl.EF2/BSgenome.Bgraminis.Ensembl.EF2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bombus impatiens",
       "common_name": "common eastern bumble bee",
       "group": "invertebrate",
@@ -101676,6 +101724,38 @@
       "common_name": "",
       "published": "2026-04-18T11:10:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1/BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bgraminis.Ensembl.EF2",
+      "version": "1.0.0",
+      "organism": "Blumeria graminis",
+      "assembly": "EF2",
+      "provider": "Ensembl",
+      "accession": "GCA_000151065.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000151065.2/",
+      "file_name": "BSgenome.Bgraminis.Ensembl.EF2_1.0.0.tar.gz",
+      "size": 29946267,
+      "seq_ids": [
+        "scaffold_8",
+        "scaffold_6",
+        "scaffold_16",
+        "scaffold_18",
+        "scaffold_23"
+      ],
+      "seq_count": 318,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Erysiphales",
+        "family": "Erysiphaceae",
+        "genus": "Blumeria"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:10:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bgraminis.Ensembl.EF2/BSgenome.Bgraminis.Ensembl.EF2_1.0.0.tar.gz"
     }
   ]
 }

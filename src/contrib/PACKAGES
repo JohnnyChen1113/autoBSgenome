@@ -5353,3 +5353,7 @@ NeedsCompilation: no
 Package: BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bgraminis.Ensembl.EF2
+Version: 1.0.0
+NeedsCompilation: no
