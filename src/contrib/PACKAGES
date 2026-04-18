@@ -5389,3 +5389,7 @@ NeedsCompilation: no
 Package: BSgenome.Chigginsianum.Ensembl.ASM31379v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cglabrata.Ensembl.GCA000002545v2
+Version: 1.0.0
+NeedsCompilation: no
