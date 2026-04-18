@@ -6173,3 +6173,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.CandalbiP57055V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgarecvDuLiHuangZDM01467BPGv2
+Version: 1.0.0
+NeedsCompilation: no
