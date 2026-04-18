@@ -5149,3 +5149,7 @@ NeedsCompilation: no
 Package: BSgenome.Nattenuata.Ensembl.NIATTr2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Osativa.Ensembl.OsIR64RS1
+Version: 1.0.0
+NeedsCompilation: no
