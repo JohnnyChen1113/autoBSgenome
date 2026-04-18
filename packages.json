@@ -34361,6 +34361,54 @@
       ]
     },
     {
+      "organism": "Musa acuminata subsp. malaccensis",
+      "common_name": "wild Malaysian banana",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Zingiberales",
+        "family": "Musaceae",
+        "genus": "Musa"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Macuminata.Ensembl.Musaacuminatav2",
+          "version": "1.0.0",
+          "organism": "Musa acuminata subsp. malaccensis",
+          "assembly": "Musa_acuminata_v2",
+          "provider": "Ensembl",
+          "accession": "GCA_904845865.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_904845865.1/",
+          "file_name": "BSgenome.Macuminata.Ensembl.Musaacuminatav2_1.0.0.tar.gz",
+          "size": 97666428,
+          "seq_ids": [
+            "CAJGYN010000024.1",
+            "CAJGYN010000008.1",
+            "CAJGYN010000005.1",
+            "CAJGYN010000009.1",
+            "CAJGYN010000010.1"
+          ],
+          "seq_count": 24,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Zingiberales",
+            "family": "Musaceae",
+            "genus": "Musa"
+          },
+          "common_name": "wild Malaysian banana",
+          "published": "2026-04-18T02:36:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Macuminata.Ensembl.Musaacuminatav2/BSgenome.Macuminata.Ensembl.Musaacuminatav2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Mustela erminea",
       "common_name": "ermine",
       "group": "vertebrate_mammalian",
@@ -96772,6 +96820,38 @@
       "common_name": "Persian walnut",
       "published": "2026-04-18T02:36:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jregia.Ensembl.Walnut20/BSgenome.Jregia.Ensembl.Walnut20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Macuminata.Ensembl.Musaacuminatav2",
+      "version": "1.0.0",
+      "organism": "Musa acuminata subsp. malaccensis",
+      "assembly": "Musa_acuminata_v2",
+      "provider": "Ensembl",
+      "accession": "GCA_904845865.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_904845865.1/",
+      "file_name": "BSgenome.Macuminata.Ensembl.Musaacuminatav2_1.0.0.tar.gz",
+      "size": 97666428,
+      "seq_ids": [
+        "CAJGYN010000024.1",
+        "CAJGYN010000008.1",
+        "CAJGYN010000005.1",
+        "CAJGYN010000009.1",
+        "CAJGYN010000010.1"
+      ],
+      "seq_count": 24,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Zingiberales",
+        "family": "Musaceae",
+        "genus": "Musa"
+      },
+      "common_name": "wild Malaysian banana",
+      "published": "2026-04-18T02:36:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Macuminata.Ensembl.Musaacuminatav2/BSgenome.Macuminata.Ensembl.Musaacuminatav2_1.0.0.tar.gz"
     }
   ]
 }
