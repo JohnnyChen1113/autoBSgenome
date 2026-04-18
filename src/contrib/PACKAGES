@@ -5457,3 +5457,7 @@ NeedsCompilation: no
 Package: BSgenome.Fverticillioides.Ensembl.ASM14955v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ffujikuroi.Ensembl.version1
+Version: 1.0.0
+NeedsCompilation: no
