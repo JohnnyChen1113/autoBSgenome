@@ -25089,6 +25089,38 @@
           "common_name": "",
           "published": "2026-04-06T05:29:39Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpseudograminearum.NCBI.FP7/BSgenome.Fpseudograminearum.NCBI.FP7_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Fpseudograminearum.Ensembl.FP7",
+          "version": "1.0.0",
+          "organism": "Fusarium pseudograminearum CS3096",
+          "assembly": "FP7",
+          "provider": "Ensembl",
+          "accession": "GCA_000303195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000303195.1/",
+          "file_name": "BSgenome.Fpseudograminearum.Ensembl.FP7_1.0.0.tar.gz",
+          "size": 9201970,
+          "seq_ids": [
+            "Mt",
+            "Contig1190",
+            "Contig1273",
+            "Contig2163",
+            "Contig1195"
+          ],
+          "seq_count": 685,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Nectriaceae",
+            "genus": "Fusarium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T15:10:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpseudograminearum.Ensembl.FP7/BSgenome.Fpseudograminearum.Ensembl.FP7_1.0.0.tar.gz"
         }
       ]
     },
@@ -106951,6 +106983,38 @@
       "common_name": "",
       "published": "2026-04-18T15:10:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cprotostelioides.Ensembl.CauprSCcomb/BSgenome.Cprotostelioides.Ensembl.CauprSCcomb_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fpseudograminearum.Ensembl.FP7",
+      "version": "1.0.0",
+      "organism": "Fusarium pseudograminearum CS3096",
+      "assembly": "FP7",
+      "provider": "Ensembl",
+      "accession": "GCA_000303195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000303195.1/",
+      "file_name": "BSgenome.Fpseudograminearum.Ensembl.FP7_1.0.0.tar.gz",
+      "size": 9201970,
+      "seq_ids": [
+        "Mt",
+        "Contig1190",
+        "Contig1273",
+        "Contig2163",
+        "Contig1195"
+      ],
+      "seq_count": 685,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T15:10:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpseudograminearum.Ensembl.FP7/BSgenome.Fpseudograminearum.Ensembl.FP7_1.0.0.tar.gz"
     }
   ]
 }

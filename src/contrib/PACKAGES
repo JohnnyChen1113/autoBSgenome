@@ -5657,3 +5657,7 @@ NeedsCompilation: no
 Package: BSgenome.Cprotostelioides.Ensembl.CauprSCcomb
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fpseudograminearum.Ensembl.FP7
+Version: 1.0.0
+NeedsCompilation: no
