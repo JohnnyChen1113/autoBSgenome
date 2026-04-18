@@ -5153,3 +5153,7 @@ NeedsCompilation: no
 Package: BSgenome.Osativa.Ensembl.OsIR64RS1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Obarthii.Ensembl.Obarthiiv1
+Version: 1.0.0
+NeedsCompilation: no

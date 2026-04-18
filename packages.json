@@ -38484,6 +38484,54 @@
       ]
     },
     {
+      "organism": "Oryza barthii",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Obarthii.Ensembl.Obarthiiv1",
+          "version": "1.0.0",
+          "organism": "Oryza barthii",
+          "assembly": "O.barthii_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000182155.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000182155.2/",
+          "file_name": "BSgenome.Obarthii.Ensembl.Obarthiiv1_1.0.0.tar.gz",
+          "size": 75374919,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 12,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Oryza"
+          },
+          "common_name": "",
+          "published": "2026-04-18T05:11:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Obarthii.Ensembl.Obarthiiv1/BSgenome.Obarthii.Ensembl.Obarthiiv1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oryza brachyantha",
       "common_name": "malo sina",
       "group": "plant",
@@ -98212,6 +98260,38 @@
       "common_name": "long-grained rice",
       "published": "2026-04-18T05:11:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.OsIR64RS1/BSgenome.Osativa.Ensembl.OsIR64RS1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Obarthii.Ensembl.Obarthiiv1",
+      "version": "1.0.0",
+      "organism": "Oryza barthii",
+      "assembly": "O.barthii_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000182155.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000182155.2/",
+      "file_name": "BSgenome.Obarthii.Ensembl.Obarthiiv1_1.0.0.tar.gz",
+      "size": 75374919,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 12,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "common_name": "",
+      "published": "2026-04-18T05:11:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Obarthii.Ensembl.Obarthiiv1/BSgenome.Obarthii.Ensembl.Obarthiiv1_1.0.0.tar.gz"
     }
   ]
 }
