@@ -5129,3 +5129,7 @@ NeedsCompilation: no
 Package: BSgenome.Olongistaminata.Ensembl.Olongistaminatav10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Osativa.Ensembl.Os127564RS1
+Version: 1.0.0
+NeedsCompilation: no
