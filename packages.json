@@ -37935,6 +37935,38 @@
           "common_name": "",
           "published": "2026-04-05T14:06:58Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mosmundae.NCBI.Mixiaosmundaev10/BSgenome.Mosmundae.NCBI.Mixiaosmundaev10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Mosmundae.Ensembl.Mosmundae20",
+          "version": "1.0.0",
+          "organism": "Mixia osmundae IAM 14324",
+          "assembly": "Mosmundae_2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000241205.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000241205.2/",
+          "file_name": "BSgenome.Mosmundae.Ensembl.Mosmundae20_1.0.0.tar.gz",
+          "size": 3300516,
+          "seq_ids": [
+            "BABT02000220",
+            "BABT02000150",
+            "BABT02000062",
+            "BABT02000165",
+            "BABT02000025"
+          ],
+          "seq_count": 283,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Mixiomycetes",
+            "order": "Mixiales",
+            "family": "Mixiaceae",
+            "genus": "Mixia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T22:38:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mosmundae.Ensembl.Mosmundae20/BSgenome.Mosmundae.Ensembl.Mosmundae20_1.0.0.tar.gz"
         }
       ]
     },
@@ -114717,6 +114749,38 @@
       "common_name": "",
       "published": "2026-04-18T22:38:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaustralis.Ensembl.OphauB2/BSgenome.Oaustralis.Ensembl.OphauB2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mosmundae.Ensembl.Mosmundae20",
+      "version": "1.0.0",
+      "organism": "Mixia osmundae IAM 14324",
+      "assembly": "Mosmundae_2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000241205.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000241205.2/",
+      "file_name": "BSgenome.Mosmundae.Ensembl.Mosmundae20_1.0.0.tar.gz",
+      "size": 3300516,
+      "seq_ids": [
+        "BABT02000220",
+        "BABT02000150",
+        "BABT02000062",
+        "BABT02000165",
+        "BABT02000025"
+      ],
+      "seq_count": 283,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Mixiomycetes",
+        "order": "Mixiales",
+        "family": "Mixiaceae",
+        "genus": "Mixia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T22:38:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mosmundae.Ensembl.Mosmundae20/BSgenome.Mosmundae.Ensembl.Mosmundae20_1.0.0.tar.gz"
     }
   ]
 }

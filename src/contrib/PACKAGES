@@ -6109,3 +6109,7 @@ NeedsCompilation: no
 Package: BSgenome.Oaustralis.Ensembl.OphauB2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mosmundae.Ensembl.Mosmundae20
+Version: 1.0.0
+NeedsCompilation: no
