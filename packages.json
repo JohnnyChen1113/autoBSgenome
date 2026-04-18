@@ -51459,6 +51459,54 @@
       ]
     },
     {
+      "organism": "Rhizoctonia solani AG-8 WAC10335",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Cantharellales",
+        "family": "Ceratobasidiaceae",
+        "genus": "Rhizoctonia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rsolani.Ensembl.RSAG81V1",
+          "version": "1.0.0",
+          "organism": "Rhizoctonia solani AG-8 WAC10335",
+          "assembly": "RSAG8-1.V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000695385.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000695385.1/",
+          "file_name": "BSgenome.Rsolani.Ensembl.RSAG81V1_1.0.0.tar.gz",
+          "size": 8681598,
+          "seq_ids": [
+            "KK764649",
+            "KK764650",
+            "KK764651",
+            "KK764652",
+            "KK764653"
+          ],
+          "seq_count": 857,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Cantharellales",
+            "family": "Ceratobasidiaceae",
+            "genus": "Rhizoctonia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T17:08:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.RSAG81V1/BSgenome.Rsolani.Ensembl.RSAG81V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhizopus delemar RA 99-880",
       "common_name": "",
       "group": "fungi",
@@ -108697,6 +108745,38 @@
       "common_name": "",
       "published": "2026-04-18T17:08:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1/BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rsolani.Ensembl.RSAG81V1",
+      "version": "1.0.0",
+      "organism": "Rhizoctonia solani AG-8 WAC10335",
+      "assembly": "RSAG8-1.V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000695385.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000695385.1/",
+      "file_name": "BSgenome.Rsolani.Ensembl.RSAG81V1_1.0.0.tar.gz",
+      "size": 8681598,
+      "seq_ids": [
+        "KK764649",
+        "KK764650",
+        "KK764651",
+        "KK764652",
+        "KK764653"
+      ],
+      "seq_count": 857,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Cantharellales",
+        "family": "Ceratobasidiaceae",
+        "genus": "Rhizoctonia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T17:08:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.RSAG81V1/BSgenome.Rsolani.Ensembl.RSAG81V1_1.0.0.tar.gz"
     }
   ]
 }
