@@ -5333,3 +5333,7 @@ NeedsCompilation: no
 Package: BSgenome.Afischeri.Ensembl.GCA000149645v4
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Alentulus.Ensembl.GCA001445615v2
+Version: 1.0.0
+NeedsCompilation: no

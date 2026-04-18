@@ -4615,6 +4615,54 @@
       ]
     },
     {
+      "organism": "Aspergillus lentulus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Alentulus.Ensembl.GCA001445615v2",
+          "version": "1.0.0",
+          "organism": "Aspergillus lentulus",
+          "assembly": "GCA001445615v2",
+          "provider": "Ensembl",
+          "accession": "GCA_001445615.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001445615.2/",
+          "file_name": "BSgenome.Alentulus.Ensembl.GCA001445615v2_1.0.0.tar.gz",
+          "size": 7644411,
+          "seq_ids": [
+            "BCLY01000008",
+            "BCLY01000016",
+            "BCLY01000004",
+            "BCLY01000012",
+            "BCLY01000001"
+          ],
+          "seq_count": 12,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:09:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alentulus.Ensembl.GCA001445615v2/BSgenome.Alentulus.Ensembl.GCA001445615v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus luchuensis",
       "common_name": "",
       "group": "fungi",
@@ -101292,6 +101340,38 @@
       "common_name": "",
       "published": "2026-04-18T11:08:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afischeri.Ensembl.GCA000149645v4/BSgenome.Afischeri.Ensembl.GCA000149645v4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Alentulus.Ensembl.GCA001445615v2",
+      "version": "1.0.0",
+      "organism": "Aspergillus lentulus",
+      "assembly": "GCA001445615v2",
+      "provider": "Ensembl",
+      "accession": "GCA_001445615.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001445615.2/",
+      "file_name": "BSgenome.Alentulus.Ensembl.GCA001445615v2_1.0.0.tar.gz",
+      "size": 7644411,
+      "seq_ids": [
+        "BCLY01000008",
+        "BCLY01000016",
+        "BCLY01000004",
+        "BCLY01000012",
+        "BCLY01000001"
+      ],
+      "seq_count": 12,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:09:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alentulus.Ensembl.GCA001445615v2/BSgenome.Alentulus.Ensembl.GCA001445615v2_1.0.0.tar.gz"
     }
   ]
 }
