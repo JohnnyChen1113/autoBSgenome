@@ -5817,3 +5817,7 @@ NeedsCompilation: no
 Package: BSgenome.Gtrabeum.Ensembl.Glotr11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmajus.Ensembl.MAJ10
+Version: 1.0.0
+NeedsCompilation: no

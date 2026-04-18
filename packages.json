@@ -35724,6 +35724,54 @@
       ]
     },
     {
+      "organism": "Metarhizium majus ARSEF 297",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Metarhizium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mmajus.Ensembl.MAJ10",
+          "version": "1.0.0",
+          "organism": "Metarhizium majus ARSEF 297",
+          "assembly": "MAJ_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000814945.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000814945.1/",
+          "file_name": "BSgenome.Mmajus.Ensembl.MAJ10_1.0.0.tar.gz",
+          "size": 10471400,
+          "seq_ids": [
+            "Scaffold_1",
+            "Scaffold_2",
+            "Scaffold_3",
+            "Scaffold_4",
+            "Scaffold_5"
+          ],
+          "seq_count": 1134,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Clavicipitaceae",
+            "genus": "Metarhizium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T18:05:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmajus.Ensembl.MAJ10/BSgenome.Mmajus.Ensembl.MAJ10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Metarhizium robertsii ARSEF 23",
       "common_name": "",
       "group": "fungi",
@@ -109596,6 +109644,38 @@
       "common_name": "",
       "published": "2026-04-18T18:05:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gtrabeum.Ensembl.Glotr11/BSgenome.Gtrabeum.Ensembl.Glotr11_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mmajus.Ensembl.MAJ10",
+      "version": "1.0.0",
+      "organism": "Metarhizium majus ARSEF 297",
+      "assembly": "MAJ_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000814945.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000814945.1/",
+      "file_name": "BSgenome.Mmajus.Ensembl.MAJ10_1.0.0.tar.gz",
+      "size": 10471400,
+      "seq_ids": [
+        "Scaffold_1",
+        "Scaffold_2",
+        "Scaffold_3",
+        "Scaffold_4",
+        "Scaffold_5"
+      ],
+      "seq_count": 1134,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Metarhizium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T18:05:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmajus.Ensembl.MAJ10/BSgenome.Mmajus.Ensembl.MAJ10_1.0.0.tar.gz"
     }
   ]
 }
