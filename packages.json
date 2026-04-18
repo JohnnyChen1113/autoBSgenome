@@ -28370,6 +28370,54 @@
       ]
     },
     {
+      "organism": "Kalanchoe fedtschenkoi",
+      "common_name": "South American air plant",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Saxifragales",
+        "family": "Crassulaceae",
+        "genus": "Kalanchoe"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1",
+          "version": "1.0.0",
+          "organism": "Kalanchoe fedtschenkoi",
+          "assembly": "K_fedtschenkoi_M2_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002312845.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002312845.1/",
+          "file_name": "BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1_1.0.0.tar.gz",
+          "size": 58433016,
+          "seq_ids": [
+            "Scaffold_11",
+            "Scaffold_24",
+            "Scaffold_48",
+            "Scaffold_8",
+            "Scaffold_40"
+          ],
+          "seq_count": 1324,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Saxifragales",
+            "family": "Crassulaceae",
+            "genus": "Kalanchoe"
+          },
+          "common_name": "South American air plant",
+          "published": "2026-04-18T02:35:26Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1/BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Kalmanozyma brasiliensis GHG001",
       "common_name": "",
       "group": "fungi",
@@ -96548,6 +96596,38 @@
       "common_name": "",
       "published": "2026-04-18T02:35:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lperrieri.Ensembl.LperrV14/BSgenome.Lperrieri.Ensembl.LperrV14_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1",
+      "version": "1.0.0",
+      "organism": "Kalanchoe fedtschenkoi",
+      "assembly": "K_fedtschenkoi_M2_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002312845.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002312845.1/",
+      "file_name": "BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1_1.0.0.tar.gz",
+      "size": 58433016,
+      "seq_ids": [
+        "Scaffold_11",
+        "Scaffold_24",
+        "Scaffold_48",
+        "Scaffold_8",
+        "Scaffold_40"
+      ],
+      "seq_count": 1324,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Saxifragales",
+        "family": "Crassulaceae",
+        "genus": "Kalanchoe"
+      },
+      "common_name": "South American air plant",
+      "published": "2026-04-18T02:35:26Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1/BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1_1.0.0.tar.gz"
     }
   ]
 }

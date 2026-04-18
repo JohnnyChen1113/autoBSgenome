@@ -5057,3 +5057,7 @@ NeedsCompilation: no
 Package: BSgenome.Lperrieri.Ensembl.LperrV14
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1
+Version: 1.0.0
+NeedsCompilation: no
