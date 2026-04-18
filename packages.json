@@ -66035,6 +66035,54 @@
       ]
     },
     {
+      "organism": "Zymoseptoria tritici ST99CH_1A5",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Zymoseptoria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ztritici.Ensembl.ZT1A5completeassembly",
+          "version": "1.0.0",
+          "organism": "Zymoseptoria tritici ST99CH_1A5",
+          "assembly": "ZT1A5 complete assembly",
+          "provider": "Ensembl",
+          "accession": "GCA_900099495.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900099495.1/",
+          "file_name": "BSgenome.Ztritici.Ensembl.ZT1A5completeassembly_1.0.0.tar.gz",
+          "size": 9834987,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 21,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Mycosphaerellales",
+            "family": "Mycosphaerellaceae",
+            "genus": "Zymoseptoria"
+          },
+          "common_name": "",
+          "published": "2026-04-18T21:38:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ztritici.Ensembl.ZT1A5completeassembly/BSgenome.Ztritici.Ensembl.ZT1A5completeassembly_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Zymoseptoria tritici ST99CH_3D7",
       "common_name": "",
       "group": "fungi",
@@ -113832,6 +113880,38 @@
       "common_name": "",
       "published": "2026-04-18T21:38:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acaelatus.Ensembl.Aspcae1/BSgenome.Acaelatus.Ensembl.Aspcae1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ztritici.Ensembl.ZT1A5completeassembly",
+      "version": "1.0.0",
+      "organism": "Zymoseptoria tritici ST99CH_1A5",
+      "assembly": "ZT1A5 complete assembly",
+      "provider": "Ensembl",
+      "accession": "GCA_900099495.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900099495.1/",
+      "file_name": "BSgenome.Ztritici.Ensembl.ZT1A5completeassembly_1.0.0.tar.gz",
+      "size": 9834987,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 21,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Zymoseptoria"
+      },
+      "common_name": "",
+      "published": "2026-04-18T21:38:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ztritici.Ensembl.ZT1A5completeassembly/BSgenome.Ztritici.Ensembl.ZT1A5completeassembly_1.0.0.tar.gz"
     }
   ]
 }

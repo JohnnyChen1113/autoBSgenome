@@ -6061,3 +6061,7 @@ NeedsCompilation: no
 Package: BSgenome.Acaelatus.Ensembl.Aspcae1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ztritici.Ensembl.ZT1A5completeassembly
+Version: 1.0.0
+NeedsCompilation: no
