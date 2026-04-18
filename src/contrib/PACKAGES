@@ -5861,3 +5861,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgattii.Ensembl.ASM18594v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tasahii.Ensembl.ASM29921v2
+Version: 1.0.0
+NeedsCompilation: no

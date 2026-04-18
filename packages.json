@@ -60697,6 +60697,54 @@
       ]
     },
     {
+      "organism": "Trichosporon asahii var. asahii CBS 8904",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Trichosporonales",
+        "family": "Trichosporonaceae",
+        "genus": "Trichosporon"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tasahii.Ensembl.ASM29921v2",
+          "version": "1.0.0",
+          "organism": "Trichosporon asahii var. asahii CBS 8904",
+          "assembly": "ASM29921v2",
+          "provider": "Ensembl",
+          "accession": "GCA_000299215.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000299215.2/",
+          "file_name": "BSgenome.Tasahii.Ensembl.ASM29921v2_1.0.0.tar.gz",
+          "size": 6142213,
+          "seq_ids": [
+            "MT",
+            "JH925096",
+            "JH925095",
+            "JH925093",
+            "JH925092"
+          ],
+          "seq_count": 194,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Trichosporonales",
+            "family": "Trichosporonaceae",
+            "genus": "Trichosporon"
+          },
+          "common_name": "",
+          "published": "2026-04-18T19:24:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tasahii.Ensembl.ASM29921v2/BSgenome.Tasahii.Ensembl.ASM29921v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trifolium pratense",
       "common_name": "red clover",
       "group": "plant",
@@ -110388,6 +110436,38 @@
       "common_name": "",
       "published": "2026-04-18T19:24:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.ASM18594v1/BSgenome.Cgattii.Ensembl.ASM18594v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tasahii.Ensembl.ASM29921v2",
+      "version": "1.0.0",
+      "organism": "Trichosporon asahii var. asahii CBS 8904",
+      "assembly": "ASM29921v2",
+      "provider": "Ensembl",
+      "accession": "GCA_000299215.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000299215.2/",
+      "file_name": "BSgenome.Tasahii.Ensembl.ASM29921v2_1.0.0.tar.gz",
+      "size": 6142213,
+      "seq_ids": [
+        "MT",
+        "JH925096",
+        "JH925095",
+        "JH925093",
+        "JH925092"
+      ],
+      "seq_count": 194,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Trichosporonales",
+        "family": "Trichosporonaceae",
+        "genus": "Trichosporon"
+      },
+      "common_name": "",
+      "published": "2026-04-18T19:24:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tasahii.Ensembl.ASM29921v2/BSgenome.Tasahii.Ensembl.ASM29921v2_1.0.0.tar.gz"
     }
   ]
 }
