@@ -11721,6 +11721,38 @@
           "common_name": "",
           "published": "2026-04-18T20:03:35Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiSC5314V4/BSgenome.Calbicans.Ensembl.CandalbiSC5314V4_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Calbicans.Ensembl.CandalbiSC5314V3",
+          "version": "1.0.0",
+          "organism": "Candida albicans SC5314",
+          "assembly": "Cand_albi_SC5314_V3",
+          "provider": "Ensembl",
+          "accession": "GCA_000784655.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000784655.1/",
+          "file_name": "BSgenome.Calbicans.Ensembl.CandalbiSC5314V3_1.0.0.tar.gz",
+          "size": 3460886,
+          "seq_ids": [
+            "supercont3.23",
+            "supercont3.12",
+            "supercont3.5",
+            "supercont3.29",
+            "supercont3.70"
+          ],
+          "seq_count": 77,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Candida"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:40:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiSC5314V3/BSgenome.Calbicans.Ensembl.CandalbiSC5314V3_1.0.0.tar.gz"
         }
       ]
     },
@@ -116442,6 +116474,38 @@
       "common_name": "",
       "published": "2026-04-18T23:40:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10/BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Calbicans.Ensembl.CandalbiSC5314V3",
+      "version": "1.0.0",
+      "organism": "Candida albicans SC5314",
+      "assembly": "Cand_albi_SC5314_V3",
+      "provider": "Ensembl",
+      "accession": "GCA_000784655.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000784655.1/",
+      "file_name": "BSgenome.Calbicans.Ensembl.CandalbiSC5314V3_1.0.0.tar.gz",
+      "size": 3460886,
+      "seq_ids": [
+        "supercont3.23",
+        "supercont3.12",
+        "supercont3.5",
+        "supercont3.29",
+        "supercont3.70"
+      ],
+      "seq_count": 77,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:40:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiSC5314V3/BSgenome.Calbicans.Ensembl.CandalbiSC5314V3_1.0.0.tar.gz"
     }
   ]
 }
