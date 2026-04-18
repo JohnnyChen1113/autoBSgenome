@@ -6101,3 +6101,7 @@ NeedsCompilation: no
 Package: BSgenome.Psp.Ensembl.DG39
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgraminis.Ensembl.Pgt210
+Version: 1.0.0
+NeedsCompilation: no

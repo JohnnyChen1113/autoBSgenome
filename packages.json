@@ -52375,6 +52375,54 @@
       ]
     },
     {
+      "organism": "Puccinia graminis f. sp. tritici",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Pucciniomycetes",
+        "order": "Pucciniales",
+        "family": "Pucciniaceae",
+        "genus": "Puccinia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pgraminis.Ensembl.Pgt210",
+          "version": "1.0.0",
+          "organism": "Puccinia graminis f. sp. tritici",
+          "assembly": "Pgt_210",
+          "provider": "Ensembl",
+          "accession": "GCA_008522505.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008522505.1/",
+          "file_name": "BSgenome.Pgraminis.Ensembl.Pgt210_1.0.0.tar.gz",
+          "size": 42861681,
+          "seq_ids": [
+            "chr5B",
+            "chr1B",
+            "chr4B",
+            "chr1A",
+            "chr2B"
+          ],
+          "seq_count": 208,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Pucciniomycetes",
+            "order": "Pucciniales",
+            "family": "Pucciniaceae",
+            "genus": "Puccinia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T21:41:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgraminis.Ensembl.Pgt210/BSgenome.Pgraminis.Ensembl.Pgt210_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Puccinia graminis f. sp. tritici CRL 75-36-700-3",
       "common_name": "",
       "group": "fungi",
@@ -114573,6 +114621,38 @@
       "common_name": "",
       "published": "2026-04-18T21:41:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG39/BSgenome.Psp.Ensembl.DG39_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pgraminis.Ensembl.Pgt210",
+      "version": "1.0.0",
+      "organism": "Puccinia graminis f. sp. tritici",
+      "assembly": "Pgt_210",
+      "provider": "Ensembl",
+      "accession": "GCA_008522505.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008522505.1/",
+      "file_name": "BSgenome.Pgraminis.Ensembl.Pgt210_1.0.0.tar.gz",
+      "size": 42861681,
+      "seq_ids": [
+        "chr5B",
+        "chr1B",
+        "chr4B",
+        "chr1A",
+        "chr2B"
+      ],
+      "seq_count": 208,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Pucciniomycetes",
+        "order": "Pucciniales",
+        "family": "Pucciniaceae",
+        "genus": "Puccinia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T21:41:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgraminis.Ensembl.Pgt210/BSgenome.Pgraminis.Ensembl.Pgt210_1.0.0.tar.gz"
     }
   ]
 }
