@@ -5873,3 +5873,7 @@ NeedsCompilation: no
 Package: BSgenome.Enecator.Ensembl.ASM79871v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tparareesei.Ensembl.Tparav10
+Version: 1.0.0
+NeedsCompilation: no

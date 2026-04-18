@@ -60345,6 +60345,54 @@
       ]
     },
     {
+      "organism": "Trichoderma parareesei",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tparareesei.Ensembl.Tparav10",
+          "version": "1.0.0",
+          "organism": "Trichoderma parareesei",
+          "assembly": "Tpara_v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_001050175.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001050175.1/",
+          "file_name": "BSgenome.Tparareesei.Ensembl.Tparav10_1.0.0.tar.gz",
+          "size": 7965441,
+          "seq_ids": [
+            "contig_233",
+            "contig_749",
+            "contig_203",
+            "contig_201",
+            "contig_988"
+          ],
+          "seq_count": 885,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Hypocreaceae",
+            "genus": "Trichoderma"
+          },
+          "common_name": "",
+          "published": "2026-04-18T19:24:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tparareesei.Ensembl.Tparav10/BSgenome.Tparareesei.Ensembl.Tparav10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichoderma reesei QM6a",
       "common_name": "",
       "group": "fungi",
@@ -110604,6 +110652,38 @@
       "common_name": "grape powdery mildew",
       "published": "2026-04-18T19:24:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Enecator.Ensembl.ASM79871v1/BSgenome.Enecator.Ensembl.ASM79871v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tparareesei.Ensembl.Tparav10",
+      "version": "1.0.0",
+      "organism": "Trichoderma parareesei",
+      "assembly": "Tpara_v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_001050175.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001050175.1/",
+      "file_name": "BSgenome.Tparareesei.Ensembl.Tparav10_1.0.0.tar.gz",
+      "size": 7965441,
+      "seq_ids": [
+        "contig_233",
+        "contig_749",
+        "contig_203",
+        "contig_201",
+        "contig_988"
+      ],
+      "seq_count": 885,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "common_name": "",
+      "published": "2026-04-18T19:24:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tparareesei.Ensembl.Tparav10/BSgenome.Tparareesei.Ensembl.Tparav10_1.0.0.tar.gz"
     }
   ]
 }
