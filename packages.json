@@ -4987,6 +4987,38 @@
           "common_name": "",
           "published": "2026-04-05T23:38:13Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahomomorphus.NCBI.Asphom1/BSgenome.Ahomomorphus.NCBI.Asphom1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ahomomorphus.Ensembl.Asphom1",
+          "version": "1.0.0",
+          "organism": "Aspergillus homomorphus CBS 101889",
+          "assembly": "Asphom1",
+          "provider": "Ensembl",
+          "accession": "GCA_003184865.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003184865.1/",
+          "file_name": "BSgenome.Ahomomorphus.Ensembl.Asphom1_1.0.0.tar.gz",
+          "size": 8435949,
+          "seq_ids": [
+            "KZ824267",
+            "KZ824268",
+            "KZ824269",
+            "KZ824270",
+            "KZ824271"
+          ],
+          "seq_count": 152,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T21:40:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahomomorphus.Ensembl.Asphom1/BSgenome.Ahomomorphus.Ensembl.Asphom1_1.0.0.tar.gz"
         }
       ]
     },
@@ -114293,6 +114325,38 @@
       "common_name": "",
       "published": "2026-04-18T21:40:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phystricis.Ensembl.Polyhyst7299V1/BSgenome.Phystricis.Ensembl.Polyhyst7299V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ahomomorphus.Ensembl.Asphom1",
+      "version": "1.0.0",
+      "organism": "Aspergillus homomorphus CBS 101889",
+      "assembly": "Asphom1",
+      "provider": "Ensembl",
+      "accession": "GCA_003184865.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003184865.1/",
+      "file_name": "BSgenome.Ahomomorphus.Ensembl.Asphom1_1.0.0.tar.gz",
+      "size": 8435949,
+      "seq_ids": [
+        "KZ824267",
+        "KZ824268",
+        "KZ824269",
+        "KZ824270",
+        "KZ824271"
+      ],
+      "seq_count": 152,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T21:40:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahomomorphus.Ensembl.Asphom1/BSgenome.Ahomomorphus.Ensembl.Asphom1_1.0.0.tar.gz"
     }
   ]
 }

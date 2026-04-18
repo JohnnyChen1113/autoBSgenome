@@ -6085,3 +6085,7 @@ NeedsCompilation: no
 Package: BSgenome.Phystricis.Ensembl.Polyhyst7299V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ahomomorphus.Ensembl.Asphom1
+Version: 1.0.0
+NeedsCompilation: no
