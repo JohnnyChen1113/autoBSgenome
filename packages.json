@@ -16399,6 +16399,38 @@
           "common_name": "",
           "published": "2026-04-06T05:28:20Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccinerea.NCBI.CC3/BSgenome.Ccinerea.NCBI.CC3_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ccinerea.Ensembl.CC3",
+          "version": "1.0.0",
+          "organism": "Coprinopsis cinerea okayama7#130",
+          "assembly": "CC3",
+          "provider": "Ensembl",
+          "accession": "GCA_000182895.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000182895.1/",
+          "file_name": "BSgenome.Ccinerea.Ensembl.CC3_1.0.0.tar.gz",
+          "size": 9007498,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 68,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Psathyrellaceae",
+            "genus": "Coprinopsis"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:51:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccinerea.Ensembl.CC3/BSgenome.Ccinerea.Ensembl.CC3_1.0.0.tar.gz"
         }
       ]
     },
@@ -113192,6 +113224,38 @@
       "common_name": "",
       "published": "2026-04-18T20:51:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Whederae.Ensembl.ASM491832v1/BSgenome.Whederae.Ensembl.ASM491832v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccinerea.Ensembl.CC3",
+      "version": "1.0.0",
+      "organism": "Coprinopsis cinerea okayama7#130",
+      "assembly": "CC3",
+      "provider": "Ensembl",
+      "accession": "GCA_000182895.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000182895.1/",
+      "file_name": "BSgenome.Ccinerea.Ensembl.CC3_1.0.0.tar.gz",
+      "size": 9007498,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 68,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Psathyrellaceae",
+        "genus": "Coprinopsis"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:51:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccinerea.Ensembl.CC3/BSgenome.Ccinerea.Ensembl.CC3_1.0.0.tar.gz"
     }
   ]
 }
