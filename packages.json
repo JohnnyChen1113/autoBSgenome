@@ -20913,6 +20913,50 @@
       ]
     },
     {
+      "organism": "Edhazardia aedis USNM 41457",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Culicosporidae",
+        "genus": "Edhazardia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Eaedis.Ensembl.EdhaaedisV4b",
+          "version": "1.0.0",
+          "organism": "Edhazardia aedis USNM 41457",
+          "assembly": "Edha_aedis_V4b",
+          "provider": "Ensembl",
+          "accession": "GCA_000230595.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000230595.3/",
+          "file_name": "BSgenome.Eaedis.Ensembl.EdhaaedisV4b_1.0.0.tar.gz",
+          "size": 11281531,
+          "seq_ids": [
+            "supercont1.1",
+            "supercont1.2",
+            "supercont1.3",
+            "supercont1.4",
+            "supercont1.5"
+          ],
+          "seq_count": 1429,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Culicosporidae",
+            "genus": "Edhazardia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:22:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eaedis.Ensembl.EdhaaedisV4b/BSgenome.Eaedis.Ensembl.EdhaaedisV4b_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Egretta garzetta",
       "common_name": "little egret",
       "group": "vertebrate_other",
@@ -104227,6 +104271,36 @@
       "common_name": "",
       "published": "2026-04-18T13:22:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638/BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Eaedis.Ensembl.EdhaaedisV4b",
+      "version": "1.0.0",
+      "organism": "Edhazardia aedis USNM 41457",
+      "assembly": "Edha_aedis_V4b",
+      "provider": "Ensembl",
+      "accession": "GCA_000230595.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000230595.3/",
+      "file_name": "BSgenome.Eaedis.Ensembl.EdhaaedisV4b_1.0.0.tar.gz",
+      "size": 11281531,
+      "seq_ids": [
+        "supercont1.1",
+        "supercont1.2",
+        "supercont1.3",
+        "supercont1.4",
+        "supercont1.5"
+      ],
+      "seq_count": 1429,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Culicosporidae",
+        "genus": "Edhazardia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:22:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eaedis.Ensembl.EdhaaedisV4b/BSgenome.Eaedis.Ensembl.EdhaaedisV4b_1.0.0.tar.gz"
     }
   ]
 }
