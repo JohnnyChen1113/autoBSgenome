@@ -5925,3 +5925,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsp.Ensembl.HypCO275v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mroreri.Ensembl.MroreriMCA2997v1
+Version: 1.0.0
+NeedsCompilation: no

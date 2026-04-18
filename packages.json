@@ -37252,6 +37252,54 @@
       ]
     },
     {
+      "organism": "Moniliophthora roreri MCA 2997",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Marasmiaceae",
+        "genus": "Moniliophthora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mroreri.Ensembl.MroreriMCA2997v1",
+          "version": "1.0.0",
+          "organism": "Moniliophthora roreri MCA 2997",
+          "assembly": "M_roreri_MCA_2997_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000488995.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000488995.1/",
+          "file_name": "BSgenome.Mroreri.Ensembl.MroreriMCA2997v1_1.0.0.tar.gz",
+          "size": 13033670,
+          "seq_ids": [
+            "sctg_0001_0002",
+            "sctg_0007_0001",
+            "sctg_0010_0002",
+            "sctg_0009_0002",
+            "sctg_0013_0001"
+          ],
+          "seq_count": 3280,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Marasmiaceae",
+            "genus": "Moniliophthora"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:01:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mroreri.Ensembl.MroreriMCA2997v1/BSgenome.Mroreri.Ensembl.MroreriMCA2997v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Monocercomonoides exilis",
       "common_name": "",
       "group": "other",
@@ -111538,6 +111586,38 @@
       "common_name": "",
       "published": "2026-04-18T20:01:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsp.Ensembl.HypCO275v10/BSgenome.Hsp.Ensembl.HypCO275v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mroreri.Ensembl.MroreriMCA2997v1",
+      "version": "1.0.0",
+      "organism": "Moniliophthora roreri MCA 2997",
+      "assembly": "M_roreri_MCA_2997_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000488995.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000488995.1/",
+      "file_name": "BSgenome.Mroreri.Ensembl.MroreriMCA2997v1_1.0.0.tar.gz",
+      "size": 13033670,
+      "seq_ids": [
+        "sctg_0001_0002",
+        "sctg_0007_0001",
+        "sctg_0010_0002",
+        "sctg_0009_0002",
+        "sctg_0013_0001"
+      ],
+      "seq_count": 3280,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Marasmiaceae",
+        "genus": "Moniliophthora"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:01:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mroreri.Ensembl.MroreriMCA2997v1/BSgenome.Mroreri.Ensembl.MroreriMCA2997v1_1.0.0.tar.gz"
     }
   ]
 }
