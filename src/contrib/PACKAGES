@@ -5805,3 +5805,7 @@ NeedsCompilation: no
 Package: BSgenome.Manisopliae.Ensembl.MAN10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cprotostelioides.Ensembl.Caupr1
+Version: 1.0.0
+NeedsCompilation: no
