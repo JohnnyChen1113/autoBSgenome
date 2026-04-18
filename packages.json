@@ -55542,6 +55542,54 @@
       ]
     },
     {
+      "organism": "Trifolium pratense",
+      "common_name": "red clover",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Trifolium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tpratense.Ensembl.Trpr",
+          "version": "1.0.0",
+          "organism": "Trifolium pratense",
+          "assembly": "Trpr",
+          "provider": "Ensembl",
+          "accession": "GCA_900079335.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900079335.1/",
+          "file_name": "BSgenome.Tpratense.Ensembl.Trpr_1.0.0.tar.gz",
+          "size": 64604158,
+          "seq_ids": [
+            "LG1",
+            "LG2",
+            "LG3",
+            "LG4",
+            "LG5"
+          ],
+          "seq_count": 8595,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Trifolium"
+          },
+          "common_name": "red clover",
+          "published": "2026-04-18T08:01:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tpratense.Ensembl.Trpr/BSgenome.Tpratense.Ensembl.Trpr_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Triticum urartu",
       "common_name": "",
       "group": "plant",
@@ -99820,6 +99868,38 @@
       "common_name": "",
       "published": "2026-04-18T08:01:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smoellendorffii.Ensembl.v10/BSgenome.Smoellendorffii.Ensembl.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tpratense.Ensembl.Trpr",
+      "version": "1.0.0",
+      "organism": "Trifolium pratense",
+      "assembly": "Trpr",
+      "provider": "Ensembl",
+      "accession": "GCA_900079335.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900079335.1/",
+      "file_name": "BSgenome.Tpratense.Ensembl.Trpr_1.0.0.tar.gz",
+      "size": 64604158,
+      "seq_ids": [
+        "LG1",
+        "LG2",
+        "LG3",
+        "LG4",
+        "LG5"
+      ],
+      "seq_count": 8595,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Trifolium"
+      },
+      "common_name": "red clover",
+      "published": "2026-04-18T08:01:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tpratense.Ensembl.Trpr/BSgenome.Tpratense.Ensembl.Trpr_1.0.0.tar.gz"
     }
   ]
 }

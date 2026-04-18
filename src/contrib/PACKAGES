@@ -5249,3 +5249,7 @@ NeedsCompilation: no
 Package: BSgenome.Smoellendorffii.Ensembl.v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tpratense.Ensembl.Trpr
+Version: 1.0.0
+NeedsCompilation: no
