@@ -41031,6 +41031,38 @@
       ]
     },
     {
+      "organism": "Neurospora crassa str. 73",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Ncrassa.Ensembl.Neucrtrp31",
+          "version": "1.0.0",
+          "organism": "Neurospora crassa str. 73",
+          "assembly": "Neucr_trp3_1",
+          "provider": "Ensembl",
+          "accession": "GCA_000786625.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000786625.1/",
+          "file_name": "BSgenome.Ncrassa.Ensembl.Neucrtrp31_1.0.0.tar.gz",
+          "size": 9953959,
+          "seq_ids": [
+            "KN389625",
+            "KN389626",
+            "KN389627",
+            "KN389628",
+            "KN389629"
+          ],
+          "seq_count": 358,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T20:53:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncrassa.Ensembl.Neucrtrp31/BSgenome.Ncrassa.Ensembl.Neucrtrp31_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Neurospora tetrasperma FGSC 2508",
       "common_name": "",
       "group": "fungi",
@@ -113584,6 +113616,30 @@
       "common_name": "",
       "published": "2026-04-18T20:53:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Moryzae.Ensembl.MG8/BSgenome.Moryzae.Ensembl.MG8_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ncrassa.Ensembl.Neucrtrp31",
+      "version": "1.0.0",
+      "organism": "Neurospora crassa str. 73",
+      "assembly": "Neucr_trp3_1",
+      "provider": "Ensembl",
+      "accession": "GCA_000786625.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000786625.1/",
+      "file_name": "BSgenome.Ncrassa.Ensembl.Neucrtrp31_1.0.0.tar.gz",
+      "size": 9953959,
+      "seq_ids": [
+        "KN389625",
+        "KN389626",
+        "KN389627",
+        "KN389628",
+        "KN389629"
+      ],
+      "seq_count": 358,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T20:53:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncrassa.Ensembl.Neucrtrp31/BSgenome.Ncrassa.Ensembl.Neucrtrp31_1.0.0.tar.gz"
     }
   ]
 }
