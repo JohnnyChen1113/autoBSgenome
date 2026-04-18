@@ -63131,6 +63131,54 @@
       ]
     },
     {
+      "organism": "Venturia inaequalis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Venturiales",
+        "family": "Venturiaceae",
+        "genus": "Venturia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vinaequalis.Ensembl.ASM976944v1",
+          "version": "1.0.0",
+          "organism": "Venturia inaequalis",
+          "assembly": "ASM976944v1",
+          "provider": "Ensembl",
+          "accession": "GCA_009769445.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009769445.1/",
+          "file_name": "BSgenome.Vinaequalis.Ensembl.ASM976944v1_1.0.0.tar.gz",
+          "size": 10690036,
+          "seq_ids": [
+            "BLS_1",
+            "BLS_2",
+            "BLS_3",
+            "BLS_4",
+            "BLS_5"
+          ],
+          "seq_count": 6349,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Venturiales",
+            "family": "Venturiaceae",
+            "genus": "Venturia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:50:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vinaequalis.Ensembl.ASM976944v1/BSgenome.Vinaequalis.Ensembl.ASM976944v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Venustampulla echinocandica",
       "common_name": "",
       "group": "fungi",
@@ -112560,6 +112608,38 @@
       "common_name": "",
       "published": "2026-04-18T20:49:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiP34048V1/BSgenome.Calbicans.Ensembl.CandalbiP34048V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vinaequalis.Ensembl.ASM976944v1",
+      "version": "1.0.0",
+      "organism": "Venturia inaequalis",
+      "assembly": "ASM976944v1",
+      "provider": "Ensembl",
+      "accession": "GCA_009769445.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009769445.1/",
+      "file_name": "BSgenome.Vinaequalis.Ensembl.ASM976944v1_1.0.0.tar.gz",
+      "size": 10690036,
+      "seq_ids": [
+        "BLS_1",
+        "BLS_2",
+        "BLS_3",
+        "BLS_4",
+        "BLS_5"
+      ],
+      "seq_count": 6349,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Venturiales",
+        "family": "Venturiaceae",
+        "genus": "Venturia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:50:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vinaequalis.Ensembl.ASM976944v1/BSgenome.Vinaequalis.Ensembl.ASM976944v1_1.0.0.tar.gz"
     }
   ]
 }
