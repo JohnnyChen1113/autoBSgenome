@@ -5656,6 +5656,38 @@
           "common_name": "",
           "published": "2026-04-05T18:50:46Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aterreus.NCBI.ASM14961v1/BSgenome.Aterreus.NCBI.ASM14961v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Aterreus.Ensembl.ASM14961v1",
+          "version": "1.0.0",
+          "organism": "Aspergillus terreus NIH2624",
+          "assembly": "ASM14961v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000149615.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000149615.1/",
+          "file_name": "BSgenome.Aterreus.Ensembl.ASM14961v1_1.0.0.tar.gz",
+          "size": 7294539,
+          "seq_ids": [
+            "Mt",
+            "CH476594",
+            "CH476595",
+            "CH476596",
+            "CH476597"
+          ],
+          "seq_count": 27,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:11:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aterreus.Ensembl.ASM14961v1/BSgenome.Aterreus.Ensembl.ASM14961v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -101956,6 +101988,38 @@
       "common_name": "",
       "published": "2026-04-18T11:10:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Corbiculare.Ensembl.Corbiculare240422v01/BSgenome.Corbiculare.Ensembl.Corbiculare240422v01_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aterreus.Ensembl.ASM14961v1",
+      "version": "1.0.0",
+      "organism": "Aspergillus terreus NIH2624",
+      "assembly": "ASM14961v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000149615.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000149615.1/",
+      "file_name": "BSgenome.Aterreus.Ensembl.ASM14961v1_1.0.0.tar.gz",
+      "size": 7294539,
+      "seq_ids": [
+        "Mt",
+        "CH476594",
+        "CH476595",
+        "CH476596",
+        "CH476597"
+      ],
+      "seq_count": 27,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:11:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aterreus.Ensembl.ASM14961v1/BSgenome.Aterreus.Ensembl.ASM14961v1_1.0.0.tar.gz"
     }
   ]
 }
