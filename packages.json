@@ -47682,6 +47682,38 @@
           "common_name": "",
           "published": "2026-04-04T14:43:29Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rchinensis.NCBI.RchiOBHmV2/BSgenome.Rchinensis.NCBI.RchiOBHmV2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Rchinensis.Ensembl.RchiOBHmV2",
+          "version": "1.0.0",
+          "organism": "Rosa chinensis",
+          "assembly": "RchiOBHm-V2",
+          "provider": "Ensembl",
+          "accession": "GCA_002994745.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002994745.2/",
+          "file_name": "BSgenome.Rchinensis.Ensembl.RchiOBHmV2_1.0.0.tar.gz",
+          "size": 122927225,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 55,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Rosales",
+            "family": "Rosaceae",
+            "genus": "Rosa"
+          },
+          "common_name": "",
+          "published": "2026-04-18T06:50:24Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rchinensis.Ensembl.RchiOBHmV2/BSgenome.Rchinensis.Ensembl.RchiOBHmV2_1.0.0.tar.gz"
         }
       ]
     },
@@ -99356,6 +99388,38 @@
       "common_name": "almond",
       "published": "2026-04-18T06:50:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdulcis.Ensembl.ALMONDv2/BSgenome.Pdulcis.Ensembl.ALMONDv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rchinensis.Ensembl.RchiOBHmV2",
+      "version": "1.0.0",
+      "organism": "Rosa chinensis",
+      "assembly": "RchiOBHm-V2",
+      "provider": "Ensembl",
+      "accession": "GCA_002994745.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002994745.2/",
+      "file_name": "BSgenome.Rchinensis.Ensembl.RchiOBHmV2_1.0.0.tar.gz",
+      "size": 122927225,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 55,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Rosa"
+      },
+      "common_name": "",
+      "published": "2026-04-18T06:50:24Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rchinensis.Ensembl.RchiOBHmV2/BSgenome.Rchinensis.Ensembl.RchiOBHmV2_1.0.0.tar.gz"
     }
   ]
 }
