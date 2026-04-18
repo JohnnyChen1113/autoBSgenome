@@ -6149,3 +6149,7 @@ NeedsCompilation: no
 Package: BSgenome.Dbispora.Ensembl.Denbi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491891v1
+Version: 1.0.0
+NeedsCompilation: no
