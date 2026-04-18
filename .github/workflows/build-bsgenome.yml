@@ -17,7 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     container:
       image: ghcr.io/johnnychen1113/autobsgenome-builder:latest
 
@@ -206,12 +206,29 @@ jobs:
           PROVIDER="${{ steps.params.outputs.provider }}"
           TARBALL="${PACKAGE}_${VERSION}.tar.gz"
           PERM_TAG="pkg-${PACKAGE}"
-
-          # Delete existing permanent release if any
-          gh release delete "${PERM_TAG}" --yes --cleanup-tag 2>/dev/null || true
-
           ACCESSION="${{ steps.params.outputs.accession }}"
+          LOCAL_SIZE=$(stat -c%s "${TARBALL}" 2>/dev/null || stat -f%z "${TARBALL}" 2>/dev/null || echo "0")
 
+          # Inspect any existing release. A draft means a prior upload was
+          # interrupted — delete so we can retry cleanly. A non-draft release
+          # with the same asset size is already good; skip the re-upload to
+          # save ~500 MB-2 GB of redundant bandwidth on large genomes.
+          EXISTING=$(gh release view "${PERM_TAG}" --json isDraft,assets 2>/dev/null || echo '{}')
+          IS_DRAFT=$(echo "$EXISTING" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('isDraft', 'missing'))")
+          EXISTING_SIZE=$(echo "$EXISTING" | python3 -c "import json,sys; d=json.load(sys.stdin); a=d.get('assets',[]); print(a[0].get('size',0) if a else 0)")
+
+          if [ "$IS_DRAFT" = "True" ]; then
+            echo "Existing release is a draft (orphan from interrupted upload); deleting and re-uploading"
+            gh release delete "${PERM_TAG}" --yes --cleanup-tag 2>/dev/null || true
+          elif [ "$IS_DRAFT" = "False" ] && [ "$EXISTING_SIZE" = "$LOCAL_SIZE" ]; then
+            echo "Release already published with matching tarball size ($EXISTING_SIZE bytes); skipping re-upload"
+            SKIP_UPLOAD=1
+          elif [ "$IS_DRAFT" = "False" ]; then
+            echo "Existing release has different asset size ($EXISTING_SIZE vs local $LOCAL_SIZE); replacing"
+            gh release delete "${PERM_TAG}" --yes --cleanup-tag 2>/dev/null || true
+          fi
+
+          if [ "${SKIP_UPLOAD:-0}" != "1" ]; then
           gh release create "${PERM_TAG}" \
             "${TARBALL}" \
             --title "${PACKAGE} ${VERSION}" \
@@ -232,6 +249,7 @@ jobs:
           > [Browse all packages](https://johnnychen1113.github.io/autoBSgenome) | [Build your own](https://autobsgenome.pages.dev)
 
           Published via [AutoBSgenome](https://autobsgenome.pages.dev)."
+          fi  # end: if SKIP_UPLOAD != 1
 
           # Trigger index update on gh-pages
           FILESIZE=$(stat -c%s "${TARBALL}" 2>/dev/null || stat -f%z "${TARBALL}" 2>/dev/null || echo "0")
