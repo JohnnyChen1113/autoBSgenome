@@ -5525,3 +5525,7 @@ NeedsCompilation: no
 Package: BSgenome.Mguizhouense.Ensembl.MGU10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2
+Version: 1.0.0
+NeedsCompilation: no

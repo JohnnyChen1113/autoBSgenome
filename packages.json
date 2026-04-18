@@ -1875,6 +1875,50 @@
       ]
     },
     {
+      "organism": "Anncaliia algerae PRA339",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Tubulinosematidae",
+        "genus": "Anncaliia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2",
+          "version": "1.0.0",
+          "organism": "Anncaliia algerae PRA339",
+          "assembly": "Annc_alge_insect_USDA_JJB_V2",
+          "provider": "Ensembl",
+          "accession": "GCA_000385875.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000385875.2/",
+          "file_name": "BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2_1.0.0.tar.gz",
+          "size": 2237094,
+          "seq_ids": [
+            "KK365130",
+            "KK365131",
+            "KK365132",
+            "KK365133",
+            "KK365134"
+          ],
+          "seq_count": 431,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Tubulinosematidae",
+            "genus": "Anncaliia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:23:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2/BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Anolis carolinensis",
       "common_name": "green anole",
       "group": "vertebrate_other",
@@ -104739,6 +104783,36 @@
       "common_name": "",
       "published": "2026-04-18T13:23:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mguizhouense.Ensembl.MGU10/BSgenome.Mguizhouense.Ensembl.MGU10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2",
+      "version": "1.0.0",
+      "organism": "Anncaliia algerae PRA339",
+      "assembly": "Annc_alge_insect_USDA_JJB_V2",
+      "provider": "Ensembl",
+      "accession": "GCA_000385875.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000385875.2/",
+      "file_name": "BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2_1.0.0.tar.gz",
+      "size": 2237094,
+      "seq_ids": [
+        "KK365130",
+        "KK365131",
+        "KK365132",
+        "KK365133",
+        "KK365134"
+      ],
+      "seq_count": 431,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Tubulinosematidae",
+        "genus": "Anncaliia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:23:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2/BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2_1.0.0.tar.gz"
     }
   ]
 }
