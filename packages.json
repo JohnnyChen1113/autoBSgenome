@@ -21949,6 +21949,50 @@
       ]
     },
     {
+      "organism": "Enterocytozoon bieneusi H348",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Enterocytozoonidae",
+        "genus": "Enterocytozoon"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ebieneusi.Ensembl.ASM20948v1",
+          "version": "1.0.0",
+          "organism": "Enterocytozoon bieneusi H348",
+          "assembly": "ASM20948v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000209485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000209485.1/",
+          "file_name": "BSgenome.Ebieneusi.Ensembl.ASM20948v1_1.0.0.tar.gz",
+          "size": 902680,
+          "seq_ids": [
+            "ctg01_678",
+            "ctg01_1951",
+            "ctg01_1012",
+            "ctg01_168",
+            "ctg01_115"
+          ],
+          "seq_count": 1743,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Enterocytozoonidae",
+            "genus": "Enterocytozoon"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:22:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ebieneusi.Ensembl.ASM20948v1/BSgenome.Ebieneusi.Ensembl.ASM20948v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Epinephelus moara",
       "common_name": "kelp grouper",
       "group": "vertebrate_other",
@@ -104361,6 +104405,36 @@
       "common_name": "",
       "published": "2026-04-18T13:22:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehellem.Ensembl.ASM27781v3/BSgenome.Ehellem.Ensembl.ASM27781v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ebieneusi.Ensembl.ASM20948v1",
+      "version": "1.0.0",
+      "organism": "Enterocytozoon bieneusi H348",
+      "assembly": "ASM20948v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000209485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000209485.1/",
+      "file_name": "BSgenome.Ebieneusi.Ensembl.ASM20948v1_1.0.0.tar.gz",
+      "size": 902680,
+      "seq_ids": [
+        "ctg01_678",
+        "ctg01_1951",
+        "ctg01_1012",
+        "ctg01_168",
+        "ctg01_115"
+      ],
+      "seq_count": 1743,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Enterocytozoonidae",
+        "genus": "Enterocytozoon"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:22:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ebieneusi.Ensembl.ASM20948v1/BSgenome.Ebieneusi.Ensembl.ASM20948v1_1.0.0.tar.gz"
     }
   ]
 }
