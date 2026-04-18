@@ -5901,3 +5901,7 @@ NeedsCompilation: no
 Package: BSgenome.Ltigrinus.Ensembl.Lenti61
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fpinicola.Ensembl.Fompi3
+Version: 1.0.0
+NeedsCompilation: no

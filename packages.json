@@ -24619,6 +24619,38 @@
       ]
     },
     {
+      "organism": "Fomitopsis pinicola FP-58527 SS1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Fpinicola.Ensembl.Fompi3",
+          "version": "1.0.0",
+          "organism": "Fomitopsis pinicola FP-58527 SS1",
+          "assembly": "Fompi3",
+          "provider": "Ensembl",
+          "accession": "GCA_000344655.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000344655.2/",
+          "file_name": "BSgenome.Fpinicola.Ensembl.Fompi3_1.0.0.tar.gz",
+          "size": 9846681,
+          "seq_ids": [
+            "KE504123",
+            "KE504122",
+            "KE504125",
+            "KE504124",
+            "KE504126"
+          ],
+          "seq_count": 504,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T19:26:24Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpinicola.Ensembl.Fompi3/BSgenome.Fpinicola.Ensembl.Fompi3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fonsecaea erecta",
       "common_name": "",
       "group": "fungi",
@@ -111130,6 +111162,30 @@
       "common_name": "",
       "published": "2026-04-18T19:26:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ltigrinus.Ensembl.Lenti61/BSgenome.Ltigrinus.Ensembl.Lenti61_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fpinicola.Ensembl.Fompi3",
+      "version": "1.0.0",
+      "organism": "Fomitopsis pinicola FP-58527 SS1",
+      "assembly": "Fompi3",
+      "provider": "Ensembl",
+      "accession": "GCA_000344655.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000344655.2/",
+      "file_name": "BSgenome.Fpinicola.Ensembl.Fompi3_1.0.0.tar.gz",
+      "size": 9846681,
+      "seq_ids": [
+        "KE504123",
+        "KE504122",
+        "KE504125",
+        "KE504124",
+        "KE504126"
+      ],
+      "seq_count": 504,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T19:26:24Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpinicola.Ensembl.Fompi3/BSgenome.Fpinicola.Ensembl.Fompi3_1.0.0.tar.gz"
     }
   ]
 }
