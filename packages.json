@@ -3343,6 +3343,54 @@
       ]
     },
     {
+      "organism": "Ashbya gossypii ATCC 10895",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Eremothecium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Agossypii.Ensembl.ASM9102v1",
+          "version": "1.0.0",
+          "organism": "Ashbya gossypii ATCC 10895",
+          "assembly": "ASM9102v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000091025.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000091025.3/",
+          "file_name": "BSgenome.Agossypii.Ensembl.ASM9102v1_1.0.0.tar.gz",
+          "size": 2205087,
+          "seq_ids": [
+            "IV",
+            "MT",
+            "V",
+            "III",
+            "II"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Eremothecium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T10:10:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Agossypii.Ensembl.ASM9102v1/BSgenome.Agossypii.Ensembl.ASM9102v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Asparagus officinalis",
       "common_name": "garden asparagus",
       "group": "plant",
@@ -100876,6 +100924,38 @@
       "common_name": "",
       "published": "2026-04-18T09:07:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgareFT11B1K0412BPGv2/BSgenome.Hvulgare.Ensembl.HvulgareFT11B1K0412BPGv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Agossypii.Ensembl.ASM9102v1",
+      "version": "1.0.0",
+      "organism": "Ashbya gossypii ATCC 10895",
+      "assembly": "ASM9102v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000091025.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000091025.3/",
+      "file_name": "BSgenome.Agossypii.Ensembl.ASM9102v1_1.0.0.tar.gz",
+      "size": 2205087,
+      "seq_ids": [
+        "IV",
+        "MT",
+        "V",
+        "III",
+        "II"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Eremothecium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T10:10:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Agossypii.Ensembl.ASM9102v1/BSgenome.Agossypii.Ensembl.ASM9102v1_1.0.0.tar.gz"
     }
   ]
 }

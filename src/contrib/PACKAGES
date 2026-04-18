@@ -5309,3 +5309,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgareFT11B1K0412BPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Agossypii.Ensembl.ASM9102v1
+Version: 1.0.0
+NeedsCompilation: no
