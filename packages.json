@@ -9884,6 +9884,54 @@
       ]
     },
     {
+      "organism": "Candida auris",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cauris.Ensembl.GCA002759435v2",
+          "version": "1.0.0",
+          "organism": "Candida auris",
+          "assembly": "GCA002759435v2",
+          "provider": "Ensembl",
+          "accession": "GCA_002759435.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002759435.2/",
+          "file_name": "BSgenome.Cauris.Ensembl.GCA002759435v2_1.0.0.tar.gz",
+          "size": 3062558,
+          "seq_ids": [
+            "PEKT02000007",
+            "PEKT02000010",
+            "PEKT02000002",
+            "PEKT02000001",
+            "PEKT02000003"
+          ],
+          "seq_count": 15,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Metschnikowiaceae",
+            "genus": "Candidozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:09:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauris.Ensembl.GCA002759435v2/BSgenome.Cauris.Ensembl.GCA002759435v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Candida dubliniensis CD36",
       "common_name": "",
       "group": "fungi",
@@ -101452,6 +101500,38 @@
       "common_name": "",
       "published": "2026-04-18T11:09:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.GCA000182965v3/BSgenome.Calbicans.Ensembl.GCA000182965v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cauris.Ensembl.GCA002759435v2",
+      "version": "1.0.0",
+      "organism": "Candida auris",
+      "assembly": "GCA002759435v2",
+      "provider": "Ensembl",
+      "accession": "GCA_002759435.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002759435.2/",
+      "file_name": "BSgenome.Cauris.Ensembl.GCA002759435v2_1.0.0.tar.gz",
+      "size": 3062558,
+      "seq_ids": [
+        "PEKT02000007",
+        "PEKT02000010",
+        "PEKT02000002",
+        "PEKT02000001",
+        "PEKT02000003"
+      ],
+      "seq_count": 15,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:09:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauris.Ensembl.GCA002759435v2/BSgenome.Cauris.Ensembl.GCA002759435v2_1.0.0.tar.gz"
     }
   ]
 }

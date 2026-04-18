@@ -5341,3 +5341,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.GCA000182965v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cauris.Ensembl.GCA002759435v2
+Version: 1.0.0
+NeedsCompilation: no
