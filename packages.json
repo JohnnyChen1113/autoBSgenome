@@ -38090,6 +38090,48 @@
       ]
     },
     {
+      "organism": "Nematocida sp. 1 ERTm2",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nsp.Ensembl.NemaparisiiERTm2V1",
+          "version": "1.0.0",
+          "organism": "Nematocida sp. 1 ERTm2",
+          "assembly": "Nema_parisii_ERTm2_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000250695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000250695.1/",
+          "file_name": "BSgenome.Nsp.Ensembl.NemaparisiiERTm2V1_1.0.0.tar.gz",
+          "size": 1124463,
+          "seq_ids": [
+            "JH604633",
+            "JH604634",
+            "JH604635",
+            "JH604636",
+            "JH604637"
+          ],
+          "seq_count": 202,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "genus": "Nematocida"
+          },
+          "common_name": "",
+          "published": "2026-04-18T14:12:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nsp.Ensembl.NemaparisiiERTm2V1/BSgenome.Nsp.Ensembl.NemaparisiiERTm2V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Neogobius melanostomus",
       "common_name": "round goby",
       "group": "vertebrate_other",
@@ -105762,6 +105804,35 @@
       "common_name": "",
       "published": "2026-04-18T14:12:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vculicis.Ensembl.VavrculifloridensisV1/BSgenome.Vculicis.Ensembl.VavrculifloridensisV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nsp.Ensembl.NemaparisiiERTm2V1",
+      "version": "1.0.0",
+      "organism": "Nematocida sp. 1 ERTm2",
+      "assembly": "Nema_parisii_ERTm2_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000250695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000250695.1/",
+      "file_name": "BSgenome.Nsp.Ensembl.NemaparisiiERTm2V1_1.0.0.tar.gz",
+      "size": 1124463,
+      "seq_ids": [
+        "JH604633",
+        "JH604634",
+        "JH604635",
+        "JH604636",
+        "JH604637"
+      ],
+      "seq_count": 202,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
+      "common_name": "",
+      "published": "2026-04-18T14:12:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nsp.Ensembl.NemaparisiiERTm2V1/BSgenome.Nsp.Ensembl.NemaparisiiERTm2V1_1.0.0.tar.gz"
     }
   ]
 }
