@@ -40680,6 +40680,54 @@
       ]
     },
     {
+      "organism": "Ophiocordyceps australis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Ophiocordycipitaceae",
+        "genus": "Ophiocordyceps"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Oaustralis.Ensembl.OphauG2",
+          "version": "1.0.0",
+          "organism": "Ophiocordyceps australis",
+          "assembly": "OphauG2",
+          "provider": "Ensembl",
+          "accession": "GCA_002591405.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002591405.1/",
+          "file_name": "BSgenome.Oaustralis.Ensembl.OphauG2_1.0.0.tar.gz",
+          "size": 5498582,
+          "seq_ids": [
+            "Contig_1",
+            "Contig_2",
+            "Contig_3",
+            "Contig_4",
+            "Contig_5"
+          ],
+          "seq_count": 2297,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Ophiocordycipitaceae",
+            "genus": "Ophiocordyceps"
+          },
+          "common_name": "",
+          "published": "2026-04-18T15:11:12Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaustralis.Ensembl.OphauG2/BSgenome.Oaustralis.Ensembl.OphauG2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Opisthorchis viverrini",
       "common_name": "",
       "group": "invertebrate",
@@ -107089,6 +107137,38 @@
       "common_name": "",
       "published": "2026-04-18T15:10:55Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nceranae.Ensembl.ASM98816v1/BSgenome.Nceranae.Ensembl.ASM98816v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Oaustralis.Ensembl.OphauG2",
+      "version": "1.0.0",
+      "organism": "Ophiocordyceps australis",
+      "assembly": "OphauG2",
+      "provider": "Ensembl",
+      "accession": "GCA_002591405.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002591405.1/",
+      "file_name": "BSgenome.Oaustralis.Ensembl.OphauG2_1.0.0.tar.gz",
+      "size": 5498582,
+      "seq_ids": [
+        "Contig_1",
+        "Contig_2",
+        "Contig_3",
+        "Contig_4",
+        "Contig_5"
+      ],
+      "seq_count": 2297,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Ophiocordycipitaceae",
+        "genus": "Ophiocordyceps"
+      },
+      "common_name": "",
+      "published": "2026-04-18T15:11:12Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaustralis.Ensembl.OphauG2/BSgenome.Oaustralis.Ensembl.OphauG2_1.0.0.tar.gz"
     }
   ]
 }
