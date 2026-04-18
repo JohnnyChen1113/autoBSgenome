@@ -4792,6 +4792,38 @@
           "common_name": "",
           "published": "2026-04-05T23:38:03Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.NCBI.ASM285v2/BSgenome.Aniger.NCBI.ASM285v2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Aniger.Ensembl.ASM285v2",
+          "version": "1.0.0",
+          "organism": "Aspergillus niger",
+          "assembly": "ASM285v2",
+          "provider": "Ensembl",
+          "accession": "GCA_000002855.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002855.2/",
+          "file_name": "BSgenome.Aniger.Ensembl.ASM285v2_1.0.0.tar.gz",
+          "size": 8482825,
+          "seq_ids": [
+            "AM270981",
+            "AM270980",
+            "AM270987",
+            "AM270990",
+            "AM270991"
+          ],
+          "seq_count": 19,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T10:11:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.Ensembl.ASM285v2/BSgenome.Aniger.Ensembl.ASM285v2_1.0.0.tar.gz"
         }
       ]
     },
@@ -101084,6 +101116,38 @@
       "common_name": "",
       "published": "2026-04-18T10:11:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anidulans.Ensembl.ASM1142v1/BSgenome.Anidulans.Ensembl.ASM1142v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aniger.Ensembl.ASM285v2",
+      "version": "1.0.0",
+      "organism": "Aspergillus niger",
+      "assembly": "ASM285v2",
+      "provider": "Ensembl",
+      "accession": "GCA_000002855.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002855.2/",
+      "file_name": "BSgenome.Aniger.Ensembl.ASM285v2_1.0.0.tar.gz",
+      "size": 8482825,
+      "seq_ids": [
+        "AM270981",
+        "AM270980",
+        "AM270987",
+        "AM270990",
+        "AM270991"
+      ],
+      "seq_count": 19,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T10:11:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.Ensembl.ASM285v2/BSgenome.Aniger.Ensembl.ASM285v2_1.0.0.tar.gz"
     }
   ]
 }
