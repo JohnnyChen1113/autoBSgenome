@@ -48565,6 +48565,38 @@
       ]
     },
     {
+      "organism": "Powellomyces hirtus str. CBS 809.83",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Phirtus.Ensembl.ASM653600v1",
+          "version": "1.0.0",
+          "organism": "Powellomyces hirtus str. CBS 809.83",
+          "assembly": "ASM653600v1",
+          "provider": "Ensembl",
+          "accession": "GCA_006536005.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006536005.1/",
+          "file_name": "BSgenome.Phirtus.Ensembl.ASM653600v1_1.0.0.tar.gz",
+          "size": 6535230,
+          "seq_ids": [
+            "PhCBS80983_scf0001",
+            "PhCBS80983_scf0002",
+            "PhCBS80983_scf0003",
+            "PhCBS80983_scf0004",
+            "PhCBS80983_scf0005"
+          ],
+          "seq_count": 482,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T17:08:33Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phirtus.Ensembl.ASM653600v1/BSgenome.Phirtus.Ensembl.ASM653600v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Priapulus caudatus",
       "common_name": "",
       "group": "invertebrate",
@@ -108581,6 +108613,30 @@
       "common_name": "",
       "published": "2026-04-18T17:08:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1/BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Phirtus.Ensembl.ASM653600v1",
+      "version": "1.0.0",
+      "organism": "Powellomyces hirtus str. CBS 809.83",
+      "assembly": "ASM653600v1",
+      "provider": "Ensembl",
+      "accession": "GCA_006536005.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006536005.1/",
+      "file_name": "BSgenome.Phirtus.Ensembl.ASM653600v1_1.0.0.tar.gz",
+      "size": 6535230,
+      "seq_ids": [
+        "PhCBS80983_scf0001",
+        "PhCBS80983_scf0002",
+        "PhCBS80983_scf0003",
+        "PhCBS80983_scf0004",
+        "PhCBS80983_scf0005"
+      ],
+      "seq_count": 482,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T17:08:33Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phirtus.Ensembl.ASM653600v1/BSgenome.Phirtus.Ensembl.ASM653600v1_1.0.0.tar.gz"
     }
   ]
 }
