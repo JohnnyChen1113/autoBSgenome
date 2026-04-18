@@ -5921,3 +5921,7 @@ NeedsCompilation: no
 Package: BSgenome.Sindica.Ensembl.ASM31354v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsp.Ensembl.HypCO275v10
+Version: 1.0.0
+NeedsCompilation: no

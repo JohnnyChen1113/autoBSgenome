@@ -31195,6 +31195,54 @@
       ]
     },
     {
+      "organism": "Hypoxylon sp. CO27-5",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Xylariales",
+        "family": "Hypoxylaceae",
+        "genus": "Hypoxylon"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hsp.Ensembl.HypCO275v10",
+          "version": "1.0.0",
+          "organism": "Hypoxylon sp. CO27-5",
+          "assembly": "HypCO275 v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002120305.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002120305.1/",
+          "file_name": "BSgenome.Hsp.Ensembl.HypCO275v10_1.0.0.tar.gz",
+          "size": 11379193,
+          "seq_ids": [
+            "KZ112422",
+            "KZ112423",
+            "KZ112424",
+            "KZ112425",
+            "KZ112426"
+          ],
+          "seq_count": 505,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Xylariales",
+            "family": "Hypoxylaceae",
+            "genus": "Hypoxylon"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:01:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsp.Ensembl.HypCO275v10/BSgenome.Hsp.Ensembl.HypCO275v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ichthyophthirius multifiliis",
       "common_name": "",
       "group": "other",
@@ -111458,6 +111506,38 @@
       "common_name": "",
       "published": "2026-04-18T20:01:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sindica.Ensembl.ASM31354v1/BSgenome.Sindica.Ensembl.ASM31354v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hsp.Ensembl.HypCO275v10",
+      "version": "1.0.0",
+      "organism": "Hypoxylon sp. CO27-5",
+      "assembly": "HypCO275 v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002120305.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002120305.1/",
+      "file_name": "BSgenome.Hsp.Ensembl.HypCO275v10_1.0.0.tar.gz",
+      "size": 11379193,
+      "seq_ids": [
+        "KZ112422",
+        "KZ112423",
+        "KZ112424",
+        "KZ112425",
+        "KZ112426"
+      ],
+      "seq_count": 505,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Xylariales",
+        "family": "Hypoxylaceae",
+        "genus": "Hypoxylon"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:01:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hsp.Ensembl.HypCO275v10/BSgenome.Hsp.Ensembl.HypCO275v10_1.0.0.tar.gz"
     }
   ]
 }
