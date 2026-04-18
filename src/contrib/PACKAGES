@@ -5717,3 +5717,7 @@ NeedsCompilation: no
 Package: BSgenome.Alignicola.Ensembl.Amnli1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ecanceri.Ensembl.ASM208791v1
+Version: 1.0.0
+NeedsCompilation: no

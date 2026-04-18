@@ -22499,6 +22499,38 @@
       ]
     },
     {
+      "organism": "Enterospora canceri str. GB1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Ecanceri.Ensembl.ASM208791v1",
+          "version": "1.0.0",
+          "organism": "Enterospora canceri str. GB1",
+          "assembly": "ASM208791v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002087915.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002087915.1/",
+          "file_name": "BSgenome.Ecanceri.Ensembl.ASM208791v1_1.0.0.tar.gz",
+          "size": 746406,
+          "seq_ids": [
+            "scaffold_1",
+            "scaffold_5",
+            "scaffold_2",
+            "scaffold_4",
+            "scaffold_3"
+          ],
+          "seq_count": 537,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T16:06:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecanceri.Ensembl.ASM208791v1/BSgenome.Ecanceri.Ensembl.ASM208791v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Epinephelus moara",
       "common_name": "kelp grouper",
       "group": "vertebrate_other",
@@ -108019,6 +108051,30 @@
       "common_name": "",
       "published": "2026-04-18T16:05:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Alignicola.Ensembl.Amnli1/BSgenome.Alignicola.Ensembl.Amnli1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ecanceri.Ensembl.ASM208791v1",
+      "version": "1.0.0",
+      "organism": "Enterospora canceri str. GB1",
+      "assembly": "ASM208791v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002087915.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002087915.1/",
+      "file_name": "BSgenome.Ecanceri.Ensembl.ASM208791v1_1.0.0.tar.gz",
+      "size": 746406,
+      "seq_ids": [
+        "scaffold_1",
+        "scaffold_5",
+        "scaffold_2",
+        "scaffold_4",
+        "scaffold_3"
+      ],
+      "seq_count": 537,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T16:06:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecanceri.Ensembl.ASM208791v1/BSgenome.Ecanceri.Ensembl.ASM208791v1_1.0.0.tar.gz"
     }
   ]
 }
