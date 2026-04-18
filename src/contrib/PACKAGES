@@ -5625,3 +5625,7 @@ NeedsCompilation: no
 Package: BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lprolificans.Ensembl.Lprolificanspilon
+Version: 1.0.0
+NeedsCompilation: no

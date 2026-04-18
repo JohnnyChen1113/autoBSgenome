@@ -33043,6 +33043,38 @@
       ]
     },
     {
+      "organism": "Lomentospora prolificans str. JHH-5317",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Lprolificans.Ensembl.Lprolificanspilon",
+          "version": "1.0.0",
+          "organism": "Lomentospora prolificans str. JHH-5317",
+          "assembly": "Lprolificans_pilon",
+          "provider": "Ensembl",
+          "accession": "GCA_002276285.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002276285.1/",
+          "file_name": "BSgenome.Lprolificans.Ensembl.Lprolificanspilon_1.0.0.tar.gz",
+          "size": 9381531,
+          "seq_ids": [
+            "Scaffold_8",
+            "Scaffold_11",
+            "Scaffold_703",
+            "Scaffold_4",
+            "Scaffold_6"
+          ],
+          "seq_count": 1625,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T15:08:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lprolificans.Ensembl.Lprolificanspilon/BSgenome.Lprolificans.Ensembl.Lprolificanspilon_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lonchura striata domestica",
       "common_name": "white-rumped munia",
       "group": "vertebrate_other",
@@ -106436,6 +106468,30 @@
       "common_name": "",
       "published": "2026-04-18T15:08:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4/BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lprolificans.Ensembl.Lprolificanspilon",
+      "version": "1.0.0",
+      "organism": "Lomentospora prolificans str. JHH-5317",
+      "assembly": "Lprolificans_pilon",
+      "provider": "Ensembl",
+      "accession": "GCA_002276285.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002276285.1/",
+      "file_name": "BSgenome.Lprolificans.Ensembl.Lprolificanspilon_1.0.0.tar.gz",
+      "size": 9381531,
+      "seq_ids": [
+        "Scaffold_8",
+        "Scaffold_11",
+        "Scaffold_703",
+        "Scaffold_4",
+        "Scaffold_6"
+      ],
+      "seq_count": 1625,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T15:08:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lprolificans.Ensembl.Lprolificanspilon/BSgenome.Lprolificans.Ensembl.Lprolificanspilon_1.0.0.tar.gz"
     }
   ]
 }
