@@ -29466,6 +29466,38 @@
           "common_name": "garden lettuce",
           "published": "2026-04-04T17:38:58Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lsativa.NCBI.LsatSalinasv15/BSgenome.Lsativa.NCBI.LsatSalinasv15_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Lsativa.Ensembl.LsatSalinasv7",
+          "version": "1.0.0",
+          "organism": "Lactuca sativa",
+          "assembly": "Lsat_Salinas_v7",
+          "provider": "Ensembl",
+          "accession": "GCA_002870075.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002870075.2/",
+          "file_name": "BSgenome.Lsativa.Ensembl.LsatSalinasv7_1.0.0.tar.gz",
+          "size": 531343777,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 8323,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Asterales",
+            "family": "Asteraceae",
+            "genus": "Lactuca"
+          },
+          "common_name": "garden lettuce",
+          "published": "2026-04-18T02:37:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lsativa.Ensembl.LsatSalinasv7/BSgenome.Lsativa.Ensembl.LsatSalinasv7_1.0.0.tar.gz"
         }
       ]
     },
@@ -97124,6 +97156,38 @@
       "common_name": "pocket water lily",
       "published": "2026-04-18T02:37:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncolorata.Ensembl.ASM883128v1/BSgenome.Ncolorata.Ensembl.ASM883128v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lsativa.Ensembl.LsatSalinasv7",
+      "version": "1.0.0",
+      "organism": "Lactuca sativa",
+      "assembly": "Lsat_Salinas_v7",
+      "provider": "Ensembl",
+      "accession": "GCA_002870075.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002870075.2/",
+      "file_name": "BSgenome.Lsativa.Ensembl.LsatSalinasv7_1.0.0.tar.gz",
+      "size": 531343777,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 8323,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Asterales",
+        "family": "Asteraceae",
+        "genus": "Lactuca"
+      },
+      "common_name": "garden lettuce",
+      "published": "2026-04-18T02:37:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lsativa.Ensembl.LsatSalinasv7/BSgenome.Lsativa.Ensembl.LsatSalinasv7_1.0.0.tar.gz"
     }
   ]
 }
