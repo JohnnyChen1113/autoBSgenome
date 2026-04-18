@@ -31514,6 +31514,54 @@
       ]
     },
     {
+      "organism": "Marchantia polymorpha",
+      "common_name": "common liverwort",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Marchantiopsida",
+        "order": "Marchantiales",
+        "family": "Marchantiaceae",
+        "genus": "Marchantia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mpolymorpha.Ensembl.MpTak1v71",
+          "version": "1.0.0",
+          "organism": "Marchantia polymorpha",
+          "assembly": "MpTak1_v7.1",
+          "provider": "Ensembl",
+          "accession": "GCA_039105155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_039105155.1/",
+          "file_name": "BSgenome.Mpolymorpha.Ensembl.MpTak1v71_1.0.0.tar.gz",
+          "size": 58482646,
+          "seq_ids": [
+            "2",
+            "4",
+            "1",
+            "5",
+            "3"
+          ],
+          "seq_count": 10,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Marchantiopsida",
+            "order": "Marchantiales",
+            "family": "Marchantiaceae",
+            "genus": "Marchantia"
+          },
+          "common_name": "common liverwort",
+          "published": "2026-04-18T02:36:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpolymorpha.Ensembl.MpTak1v71/BSgenome.Mpolymorpha.Ensembl.MpTak1v71_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Marmota marmota marmota",
       "common_name": "Alpine marmot",
       "group": "vertebrate_mammalian",
@@ -96628,6 +96676,38 @@
       "common_name": "South American air plant",
       "published": "2026-04-18T02:35:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1/BSgenome.Kfedtschenkoi.Ensembl.KfedtschenkoiM2v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mpolymorpha.Ensembl.MpTak1v71",
+      "version": "1.0.0",
+      "organism": "Marchantia polymorpha",
+      "assembly": "MpTak1_v7.1",
+      "provider": "Ensembl",
+      "accession": "GCA_039105155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_039105155.1/",
+      "file_name": "BSgenome.Mpolymorpha.Ensembl.MpTak1v71_1.0.0.tar.gz",
+      "size": 58482646,
+      "seq_ids": [
+        "2",
+        "4",
+        "1",
+        "5",
+        "3"
+      ],
+      "seq_count": 10,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Marchantiopsida",
+        "order": "Marchantiales",
+        "family": "Marchantiaceae",
+        "genus": "Marchantia"
+      },
+      "common_name": "common liverwort",
+      "published": "2026-04-18T02:36:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpolymorpha.Ensembl.MpTak1v71/BSgenome.Mpolymorpha.Ensembl.MpTak1v71_1.0.0.tar.gz"
     }
   ]
 }
