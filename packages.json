@@ -26568,6 +26568,38 @@
           "common_name": "",
           "published": "2026-04-06T07:11:25Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gtrabeum.NCBI.Glotr11/BSgenome.Gtrabeum.NCBI.Glotr11_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Gtrabeum.Ensembl.Glotr11",
+          "version": "1.0.0",
+          "organism": "Gloeophyllum trabeum ATCC 11539",
+          "assembly": "Glotr1_1",
+          "provider": "Ensembl",
+          "accession": "GCA_000344685.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000344685.1/",
+          "file_name": "BSgenome.Gtrabeum.Ensembl.Glotr11_1.0.0.tar.gz",
+          "size": 8576769,
+          "seq_ids": [
+            "KB469296",
+            "KB469297",
+            "KB469298",
+            "KB469299",
+            "KB469300"
+          ],
+          "seq_count": 442,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Gloeophyllales",
+            "family": "Gloeophyllaceae",
+            "genus": "Gloeophyllum"
+          },
+          "common_name": "",
+          "published": "2026-04-18T18:05:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gtrabeum.Ensembl.Glotr11/BSgenome.Gtrabeum.Ensembl.Glotr11_1.0.0.tar.gz"
         }
       ]
     },
@@ -109532,6 +109564,38 @@
       "common_name": "",
       "published": "2026-04-18T18:05:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apullulans.Ensembl.ASM491749v1/BSgenome.Apullulans.Ensembl.ASM491749v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gtrabeum.Ensembl.Glotr11",
+      "version": "1.0.0",
+      "organism": "Gloeophyllum trabeum ATCC 11539",
+      "assembly": "Glotr1_1",
+      "provider": "Ensembl",
+      "accession": "GCA_000344685.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000344685.1/",
+      "file_name": "BSgenome.Gtrabeum.Ensembl.Glotr11_1.0.0.tar.gz",
+      "size": 8576769,
+      "seq_ids": [
+        "KB469296",
+        "KB469297",
+        "KB469298",
+        "KB469299",
+        "KB469300"
+      ],
+      "seq_count": 442,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Gloeophyllales",
+        "family": "Gloeophyllaceae",
+        "genus": "Gloeophyllum"
+      },
+      "common_name": "",
+      "published": "2026-04-18T18:05:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gtrabeum.Ensembl.Glotr11/BSgenome.Gtrabeum.Ensembl.Glotr11_1.0.0.tar.gz"
     }
   ]
 }
