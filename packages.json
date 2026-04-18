@@ -48608,6 +48608,38 @@
           "common_name": "",
           "published": "2026-04-05T15:02:54Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phubeiensis.NCBI.ASM40351v1/BSgenome.Phubeiensis.NCBI.ASM40351v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Phubeiensis.Ensembl.ASM40351v1",
+          "version": "1.0.0",
+          "organism": "Pseudozyma hubeiensis SY62",
+          "assembly": "ASM40351v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000403515.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000403515.1/",
+          "file_name": "BSgenome.Phubeiensis.Ensembl.ASM40351v1_1.0.0.tar.gz",
+          "size": 4546753,
+          "seq_ids": [
+            "scaffold_PHS45",
+            "scaffold_PHS38",
+            "scaffold_PHS58",
+            "scaffold_PHS68",
+            "scaffold_PHS47"
+          ],
+          "seq_count": 74,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Ustilaginomycetes",
+            "order": "Ustilaginales",
+            "family": "Ustilaginaceae",
+            "genus": "Pseudozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-18T14:13:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phubeiensis.Ensembl.ASM40351v1/BSgenome.Phubeiensis.Ensembl.ASM40351v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -105969,6 +106001,38 @@
       "common_name": "",
       "published": "2026-04-18T14:13:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rglobosum.Ensembl.Rhihy1/BSgenome.Rglobosum.Ensembl.Rhihy1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Phubeiensis.Ensembl.ASM40351v1",
+      "version": "1.0.0",
+      "organism": "Pseudozyma hubeiensis SY62",
+      "assembly": "ASM40351v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000403515.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000403515.1/",
+      "file_name": "BSgenome.Phubeiensis.Ensembl.ASM40351v1_1.0.0.tar.gz",
+      "size": 4546753,
+      "seq_ids": [
+        "scaffold_PHS45",
+        "scaffold_PHS38",
+        "scaffold_PHS58",
+        "scaffold_PHS68",
+        "scaffold_PHS47"
+      ],
+      "seq_count": 74,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Ustilaginomycetes",
+        "order": "Ustilaginales",
+        "family": "Ustilaginaceae",
+        "genus": "Pseudozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-18T14:13:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phubeiensis.Ensembl.ASM40351v1/BSgenome.Phubeiensis.Ensembl.ASM40351v1_1.0.0.tar.gz"
     }
   ]
 }

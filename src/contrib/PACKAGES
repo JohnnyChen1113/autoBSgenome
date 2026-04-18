@@ -5597,3 +5597,7 @@ NeedsCompilation: no
 Package: BSgenome.Rglobosum.Ensembl.Rhihy1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Phubeiensis.Ensembl.ASM40351v1
+Version: 1.0.0
+NeedsCompilation: no
