@@ -5949,3 +5949,7 @@ NeedsCompilation: no
 Package: BSgenome.Fradiculosa.Ensembl.ASM31352v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mbrunneum.Ensembl.MBR10
+Version: 1.0.0
+NeedsCompilation: no
