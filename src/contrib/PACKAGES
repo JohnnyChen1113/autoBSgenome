@@ -5137,3 +5137,7 @@ NeedsCompilation: no
 Package: BSgenome.Osativa.Ensembl.AzucenaRS1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Osativa.Ensembl.Os117425RS1
+Version: 1.0.0
+NeedsCompilation: no
