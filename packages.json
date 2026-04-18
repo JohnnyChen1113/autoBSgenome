@@ -60995,6 +60995,38 @@
           "common_name": "",
           "published": "2026-04-06T12:09:53Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tversicolor.NCBI.Trametesversicolorv10/BSgenome.Tversicolor.NCBI.Trametesversicolorv10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Tversicolor.Ensembl.Trametesversicolorv10",
+          "version": "1.0.0",
+          "organism": "Trametes versicolor FP-101664 SS1",
+          "assembly": "Trametes versicolor v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000271585.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000271585.1/",
+          "file_name": "BSgenome.Tversicolor.Ensembl.Trametesversicolorv10_1.0.0.tar.gz",
+          "size": 10593681,
+          "seq_ids": [
+            "JH711783",
+            "JH711784",
+            "JH711785",
+            "JH711786",
+            "JH711787"
+          ],
+          "seq_count": 283,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Polyporales",
+            "family": "Polyporaceae",
+            "genus": "Trametes"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:51:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tversicolor.Ensembl.Trametesversicolorv10/BSgenome.Tversicolor.Ensembl.Trametesversicolorv10_1.0.0.tar.gz"
         }
       ]
     },
@@ -112904,6 +112936,38 @@
       "common_name": "",
       "published": "2026-04-18T20:50:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.Wallemiasebiv10/BSgenome.Wmellicola.Ensembl.Wallemiasebiv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tversicolor.Ensembl.Trametesversicolorv10",
+      "version": "1.0.0",
+      "organism": "Trametes versicolor FP-101664 SS1",
+      "assembly": "Trametes versicolor v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000271585.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000271585.1/",
+      "file_name": "BSgenome.Tversicolor.Ensembl.Trametesversicolorv10_1.0.0.tar.gz",
+      "size": 10593681,
+      "seq_ids": [
+        "JH711783",
+        "JH711784",
+        "JH711785",
+        "JH711786",
+        "JH711787"
+      ],
+      "seq_count": 283,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Polyporaceae",
+        "genus": "Trametes"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:51:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tversicolor.Ensembl.Trametesversicolorv10/BSgenome.Tversicolor.Ensembl.Trametesversicolorv10_1.0.0.tar.gz"
     }
   ]
 }

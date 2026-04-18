@@ -6005,3 +6005,7 @@ NeedsCompilation: no
 Package: BSgenome.Wmellicola.Ensembl.Wallemiasebiv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tversicolor.Ensembl.Trametesversicolorv10
+Version: 1.0.0
+NeedsCompilation: no
