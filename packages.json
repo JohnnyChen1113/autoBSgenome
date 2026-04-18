@@ -5144,6 +5144,38 @@
           "common_name": "",
           "published": "2026-04-06T08:55:03Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aoryzae.NCBI.ASM18445v3/BSgenome.Aoryzae.NCBI.ASM18445v3_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Aoryzae.Ensembl.ASM18445v3",
+          "version": "1.0.0",
+          "organism": "Aspergillus oryzae RIB40",
+          "assembly": "ASM18445v3",
+          "provider": "Ensembl",
+          "accession": "GCA_000184455.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000184455.3/",
+          "file_name": "BSgenome.Aoryzae.Ensembl.ASM18445v3_1.0.0.tar.gz",
+          "size": 9280007,
+          "seq_ids": [
+            "Mt",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "seq_count": 12,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:09:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aoryzae.Ensembl.ASM18445v3/BSgenome.Aoryzae.Ensembl.ASM18445v3_1.0.0.tar.gz"
         }
       ]
     },
@@ -101532,6 +101564,38 @@
       "common_name": "",
       "published": "2026-04-18T11:09:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauris.Ensembl.GCA002759435v2/BSgenome.Cauris.Ensembl.GCA002759435v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aoryzae.Ensembl.ASM18445v3",
+      "version": "1.0.0",
+      "organism": "Aspergillus oryzae RIB40",
+      "assembly": "ASM18445v3",
+      "provider": "Ensembl",
+      "accession": "GCA_000184455.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000184455.3/",
+      "file_name": "BSgenome.Aoryzae.Ensembl.ASM18445v3_1.0.0.tar.gz",
+      "size": 9280007,
+      "seq_ids": [
+        "Mt",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "seq_count": 12,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:09:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aoryzae.Ensembl.ASM18445v3/BSgenome.Aoryzae.Ensembl.ASM18445v3_1.0.0.tar.gz"
     }
   ]
 }
