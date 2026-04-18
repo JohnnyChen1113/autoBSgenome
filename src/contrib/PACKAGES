@@ -5101,3 +5101,7 @@ NeedsCompilation: no
 Package: BSgenome.Osativa.Ensembl.Os128077RS1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgareOUN333BPGv2
+Version: 1.0.0
+NeedsCompilation: no
