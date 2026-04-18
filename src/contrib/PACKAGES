@@ -5893,3 +5893,7 @@ NeedsCompilation: no
 Package: BSgenome.Kpastoris.Ensembl.ASM2700v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Calbicans.Ensembl.CandalbiP75010V1
+Version: 1.0.0
+NeedsCompilation: no
