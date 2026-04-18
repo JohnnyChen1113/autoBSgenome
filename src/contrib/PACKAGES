@@ -5401,3 +5401,7 @@ NeedsCompilation: no
 Package: BSgenome.Ctropicalis.Ensembl.GCA000006335v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dseptosporum.Ensembl.DothistromaseptosporumNZE10v10
+Version: 1.0.0
+NeedsCompilation: no

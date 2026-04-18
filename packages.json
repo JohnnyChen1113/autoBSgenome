@@ -19282,6 +19282,54 @@
       ]
     },
     {
+      "organism": "Dothistroma septosporum NZE10",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Dothistroma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dseptosporum.Ensembl.DothistromaseptosporumNZE10v10",
+          "version": "1.0.0",
+          "organism": "Dothistroma septosporum NZE10",
+          "assembly": "Dothistroma septosporum NZE10 v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000340195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000340195.1/",
+          "file_name": "BSgenome.Dseptosporum.Ensembl.DothistromaseptosporumNZE10v10_1.0.0.tar.gz",
+          "size": 7469149,
+          "seq_ids": [
+            "DOTSEscaffold_1",
+            "DOTSEscaffold_2",
+            "DOTSEscaffold_3",
+            "DOTSEscaffold_4",
+            "DOTSEscaffold_5"
+          ],
+          "seq_count": 20,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Mycosphaerellales",
+            "family": "Mycosphaerellaceae",
+            "genus": "Dothistroma"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:58:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dseptosporum.Ensembl.DothistromaseptosporumNZE10v10/BSgenome.Dseptosporum.Ensembl.DothistromaseptosporumNZE10v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Drechmeria coniospora",
       "common_name": "",
       "group": "fungi",
@@ -102524,6 +102572,38 @@
       "common_name": "",
       "published": "2026-04-18T11:58:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctropicalis.Ensembl.GCA000006335v3/BSgenome.Ctropicalis.Ensembl.GCA000006335v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dseptosporum.Ensembl.DothistromaseptosporumNZE10v10",
+      "version": "1.0.0",
+      "organism": "Dothistroma septosporum NZE10",
+      "assembly": "Dothistroma septosporum NZE10 v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000340195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000340195.1/",
+      "file_name": "BSgenome.Dseptosporum.Ensembl.DothistromaseptosporumNZE10v10_1.0.0.tar.gz",
+      "size": 7469149,
+      "seq_ids": [
+        "DOTSEscaffold_1",
+        "DOTSEscaffold_2",
+        "DOTSEscaffold_3",
+        "DOTSEscaffold_4",
+        "DOTSEscaffold_5"
+      ],
+      "seq_count": 20,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Dothistroma"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:58:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dseptosporum.Ensembl.DothistromaseptosporumNZE10v10/BSgenome.Dseptosporum.Ensembl.DothistromaseptosporumNZE10v10_1.0.0.tar.gz"
     }
   ]
 }
