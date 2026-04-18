@@ -40260,6 +40260,38 @@
       ]
     },
     {
+      "organism": "Panicum hallii str. FIL2",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Phallii.Ensembl.PHalliiv31",
+          "version": "1.0.0",
+          "organism": "Panicum hallii str. FIL2",
+          "assembly": "PHallii_v3.1",
+          "provider": "Ensembl",
+          "accession": "GCA_002211085.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002211085.2/",
+          "file_name": "BSgenome.Phallii.Ensembl.PHalliiv31_1.0.0.tar.gz",
+          "size": 127913488,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 291,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T06:47:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phallii.Ensembl.PHalliiv31/BSgenome.Phallii.Ensembl.PHalliiv31_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Panthera leo",
       "common_name": "lion",
       "group": "vertebrate_mammalian",
@@ -98692,6 +98724,30 @@
       "common_name": "African rice",
       "published": "2026-04-18T06:47:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1/BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Phallii.Ensembl.PHalliiv31",
+      "version": "1.0.0",
+      "organism": "Panicum hallii str. FIL2",
+      "assembly": "PHallii_v3.1",
+      "provider": "Ensembl",
+      "accession": "GCA_002211085.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002211085.2/",
+      "file_name": "BSgenome.Phallii.Ensembl.PHalliiv31_1.0.0.tar.gz",
+      "size": 127913488,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 291,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T06:47:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phallii.Ensembl.PHalliiv31/BSgenome.Phallii.Ensembl.PHalliiv31_1.0.0.tar.gz"
     }
   ]
 }

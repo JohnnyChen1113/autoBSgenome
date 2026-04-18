@@ -5181,3 +5181,7 @@ NeedsCompilation: no
 Package: BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Phallii.Ensembl.PHalliiv31
+Version: 1.0.0
+NeedsCompilation: no
