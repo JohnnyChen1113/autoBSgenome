@@ -35540,6 +35540,54 @@
       ]
     },
     {
+      "organism": "Metarhizium anisopliae ARSEF 549",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Metarhizium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Manisopliae.Ensembl.MAN10",
+          "version": "1.0.0",
+          "organism": "Metarhizium anisopliae ARSEF 549",
+          "assembly": "MAN_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000814975.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000814975.1/",
+          "file_name": "BSgenome.Manisopliae.Ensembl.MAN10_1.0.0.tar.gz",
+          "size": 9552296,
+          "seq_ids": [
+            "scaffold_1",
+            "scaffold_2",
+            "scaffold_3",
+            "scaffold_4",
+            "scaffold_5"
+          ],
+          "seq_count": 74,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Clavicipitaceae",
+            "genus": "Metarhizium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T18:04:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Manisopliae.Ensembl.MAN10/BSgenome.Manisopliae.Ensembl.MAN10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Metarhizium guizhouense ARSEF 977",
       "common_name": "",
       "group": "fungi",
@@ -109340,6 +109388,38 @@
       "common_name": "",
       "published": "2026-04-18T18:04:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Htvaerminnensis.Ensembl.ILG3v1/BSgenome.Htvaerminnensis.Ensembl.ILG3v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Manisopliae.Ensembl.MAN10",
+      "version": "1.0.0",
+      "organism": "Metarhizium anisopliae ARSEF 549",
+      "assembly": "MAN_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000814975.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000814975.1/",
+      "file_name": "BSgenome.Manisopliae.Ensembl.MAN10_1.0.0.tar.gz",
+      "size": 9552296,
+      "seq_ids": [
+        "scaffold_1",
+        "scaffold_2",
+        "scaffold_3",
+        "scaffold_4",
+        "scaffold_5"
+      ],
+      "seq_count": 74,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Metarhizium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T18:04:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Manisopliae.Ensembl.MAN10/BSgenome.Manisopliae.Ensembl.MAN10_1.0.0.tar.gz"
     }
   ]
 }
