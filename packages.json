@@ -50533,6 +50533,54 @@
       ]
     },
     {
+      "organism": "Solanum lycopersicum",
+      "common_name": "tomato",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Solanum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Slycopersicum.Ensembl.SL30",
+          "version": "1.0.0",
+          "organism": "Solanum lycopersicum",
+          "assembly": "SL3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000188115.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000188115.3/",
+          "file_name": "BSgenome.Slycopersicum.Ensembl.SL30_1.0.0.tar.gz",
+          "size": 176705725,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 3148,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Solanaceae",
+            "genus": "Solanum"
+          },
+          "common_name": "tomato",
+          "published": "2026-04-18T08:02:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slycopersicum.Ensembl.SL30/BSgenome.Slycopersicum.Ensembl.SL30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Solanum pennellii",
       "common_name": "",
       "group": "plant",
@@ -100108,6 +100156,38 @@
       "common_name": "wine grape",
       "published": "2026-04-18T08:02:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vvinifera.Ensembl.ASM3070453v1/BSgenome.Vvinifera.Ensembl.ASM3070453v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Slycopersicum.Ensembl.SL30",
+      "version": "1.0.0",
+      "organism": "Solanum lycopersicum",
+      "assembly": "SL3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000188115.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000188115.3/",
+      "file_name": "BSgenome.Slycopersicum.Ensembl.SL30_1.0.0.tar.gz",
+      "size": 176705725,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 3148,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Solanum"
+      },
+      "common_name": "tomato",
+      "published": "2026-04-18T08:02:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slycopersicum.Ensembl.SL30/BSgenome.Slycopersicum.Ensembl.SL30_1.0.0.tar.gz"
     }
   ]
 }
