@@ -38067,6 +38067,38 @@
       ]
     },
     {
+      "organism": "Moesziomyces antarcticus str. JCM 10317",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Mantarcticus.Ensembl.ASM74776v1",
+          "version": "1.0.0",
+          "organism": "Moesziomyces antarcticus str. JCM 10317",
+          "assembly": "ASM74776v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000747765.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000747765.1/",
+          "file_name": "BSgenome.Mantarcticus.Ensembl.ASM74776v1_1.0.0.tar.gz",
+          "size": 4409071,
+          "seq_ids": [
+            "DF830068.1",
+            "DF830069.1",
+            "DF830070.1",
+            "DF830071.1",
+            "DF830072.1"
+          ],
+          "seq_count": 197,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T22:38:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mantarcticus.Ensembl.ASM74776v1/BSgenome.Mantarcticus.Ensembl.ASM74776v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Moesziomyces aphidis DSM 70725",
       "common_name": "",
       "group": "other",
@@ -114837,6 +114869,30 @@
       "common_name": "",
       "published": "2026-04-18T22:38:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mfructigena.Ensembl.ASM326056v1/BSgenome.Mfructigena.Ensembl.ASM326056v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mantarcticus.Ensembl.ASM74776v1",
+      "version": "1.0.0",
+      "organism": "Moesziomyces antarcticus str. JCM 10317",
+      "assembly": "ASM74776v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000747765.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000747765.1/",
+      "file_name": "BSgenome.Mantarcticus.Ensembl.ASM74776v1_1.0.0.tar.gz",
+      "size": 4409071,
+      "seq_ids": [
+        "DF830068.1",
+        "DF830069.1",
+        "DF830070.1",
+        "DF830071.1",
+        "DF830072.1"
+      ],
+      "seq_count": 197,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T22:38:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mantarcticus.Ensembl.ASM74776v1/BSgenome.Mantarcticus.Ensembl.ASM74776v1_1.0.0.tar.gz"
     }
   ]
 }
