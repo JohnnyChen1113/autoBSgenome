@@ -5385,3 +5385,7 @@ NeedsCompilation: no
 Package: BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Chigginsianum.Ensembl.ASM31379v2
+Version: 1.0.0
+NeedsCompilation: no

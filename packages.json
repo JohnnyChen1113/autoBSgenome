@@ -14342,6 +14342,54 @@
       ]
     },
     {
+      "organism": "Colletotrichum higginsianum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Glomerellaceae",
+        "genus": "Colletotrichum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Chigginsianum.Ensembl.ASM31379v2",
+          "version": "1.0.0",
+          "organism": "Colletotrichum higginsianum",
+          "assembly": "ASM31379v2",
+          "provider": "Ensembl",
+          "accession": "GCA_000313795.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000313795.2/",
+          "file_name": "BSgenome.Chigginsianum.Ensembl.ASM31379v2_1.0.0.tar.gz",
+          "size": 12462154,
+          "seq_ids": [
+            "CACQ02001347",
+            "CACQ02002458",
+            "CACQ02003569",
+            "CACQ02004680",
+            "CACQ02005791"
+          ],
+          "seq_count": 10235,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Glomerellales",
+            "family": "Glomerellaceae",
+            "genus": "Colletotrichum"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:11:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chigginsianum.Ensembl.ASM31379v2/BSgenome.Chigginsianum.Ensembl.ASM31379v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Colletotrichum higginsianum IMI 349063",
       "common_name": "",
       "group": "fungi",
@@ -102228,6 +102276,38 @@
       "common_name": "",
       "published": "2026-04-18T11:11:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1/BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Chigginsianum.Ensembl.ASM31379v2",
+      "version": "1.0.0",
+      "organism": "Colletotrichum higginsianum",
+      "assembly": "ASM31379v2",
+      "provider": "Ensembl",
+      "accession": "GCA_000313795.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000313795.2/",
+      "file_name": "BSgenome.Chigginsianum.Ensembl.ASM31379v2_1.0.0.tar.gz",
+      "size": 12462154,
+      "seq_ids": [
+        "CACQ02001347",
+        "CACQ02002458",
+        "CACQ02003569",
+        "CACQ02004680",
+        "CACQ02005791"
+      ],
+      "seq_count": 10235,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Glomerellaceae",
+        "genus": "Colletotrichum"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:11:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chigginsianum.Ensembl.ASM31379v2/BSgenome.Chigginsianum.Ensembl.ASM31379v2_1.0.0.tar.gz"
     }
   ]
 }
