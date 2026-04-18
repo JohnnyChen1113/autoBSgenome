@@ -29654,6 +29654,54 @@
       ]
     },
     {
+      "organism": "Leersia perrieri",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Leersia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lperrieri.Ensembl.LperrV14",
+          "version": "1.0.0",
+          "organism": "Leersia perrieri",
+          "assembly": "Lperr_V1.4",
+          "provider": "Ensembl",
+          "accession": "GCA_000325765.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000325765.3/",
+          "file_name": "BSgenome.Lperrieri.Ensembl.LperrV14_1.0.0.tar.gz",
+          "size": 65770080,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 12,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Leersia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T02:35:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lperrieri.Ensembl.LperrV14/BSgenome.Lperrieri.Ensembl.LperrV14_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Leishmania braziliensis MHOM/BR/75/M2904",
       "common_name": "",
       "group": "other",
@@ -96468,6 +96516,38 @@
       "common_name": "",
       "published": "2026-04-17T23:48:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgareHOR3474BPGv2/BSgenome.Hvulgare.Ensembl.HvulgareHOR3474BPGv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lperrieri.Ensembl.LperrV14",
+      "version": "1.0.0",
+      "organism": "Leersia perrieri",
+      "assembly": "Lperr_V1.4",
+      "provider": "Ensembl",
+      "accession": "GCA_000325765.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000325765.3/",
+      "file_name": "BSgenome.Lperrieri.Ensembl.LperrV14_1.0.0.tar.gz",
+      "size": 65770080,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 12,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Leersia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T02:35:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lperrieri.Ensembl.LperrV14/BSgenome.Lperrieri.Ensembl.LperrV14_1.0.0.tar.gz"
     }
   ]
 }

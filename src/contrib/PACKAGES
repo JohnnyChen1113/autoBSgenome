@@ -5053,3 +5053,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgareHOR3474BPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lperrieri.Ensembl.LperrV14
+Version: 1.0.0
+NeedsCompilation: no
