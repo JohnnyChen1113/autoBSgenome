@@ -50382,6 +50382,54 @@
       ]
     },
     {
+      "organism": "Rhizoctonia solani AG-1 IB",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Cantharellales",
+        "family": "Ceratobasidiaceae",
+        "genus": "Rhizoctonia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rsolani.Ensembl.ASM35025v1",
+          "version": "1.0.0",
+          "organism": "Rhizoctonia solani AG-1 IB",
+          "assembly": "ASM35025v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000350255.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000350255.1/",
+          "file_name": "BSgenome.Rsolani.Ensembl.ASM35025v1_1.0.0.tar.gz",
+          "size": 12297942,
+          "seq_ids": [
+            "05642",
+            "05883",
+            "17779",
+            "05633",
+            "17257"
+          ],
+          "seq_count": 23355,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Cantharellales",
+            "family": "Ceratobasidiaceae",
+            "genus": "Rhizoctonia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T15:09:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.ASM35025v1/BSgenome.Rsolani.Ensembl.ASM35025v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhizoctonia solani AG-3 Rhs1AP",
       "common_name": "",
       "group": "fungi",
@@ -106572,6 +106620,38 @@
       "common_name": "",
       "published": "2026-04-18T15:08:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Foxysporum.Ensembl.FO2/BSgenome.Foxysporum.Ensembl.FO2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rsolani.Ensembl.ASM35025v1",
+      "version": "1.0.0",
+      "organism": "Rhizoctonia solani AG-1 IB",
+      "assembly": "ASM35025v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000350255.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000350255.1/",
+      "file_name": "BSgenome.Rsolani.Ensembl.ASM35025v1_1.0.0.tar.gz",
+      "size": 12297942,
+      "seq_ids": [
+        "05642",
+        "05883",
+        "17779",
+        "05633",
+        "17257"
+      ],
+      "seq_count": 23355,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Cantharellales",
+        "family": "Ceratobasidiaceae",
+        "genus": "Rhizoctonia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T15:09:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.ASM35025v1/BSgenome.Rsolani.Ensembl.ASM35025v1_1.0.0.tar.gz"
     }
   ]
 }
