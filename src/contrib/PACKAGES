@@ -6009,3 +6009,7 @@ NeedsCompilation: no
 Package: BSgenome.Tversicolor.Ensembl.Trametesversicolorv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mlaricipopulina.Ensembl.v10
+Version: 1.0.0
+NeedsCompilation: no

@@ -36134,6 +36134,38 @@
           "common_name": "",
           "published": "2026-04-17T09:52:42Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlaricipopulina.NCBI.v10/BSgenome.Mlaricipopulina.NCBI.v10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Mlaricipopulina.Ensembl.v10",
+          "version": "1.0.0",
+          "organism": "Melampsora larici-populina 98AG31",
+          "assembly": "v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000204055.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000204055.1/",
+          "file_name": "BSgenome.Mlaricipopulina.Ensembl.v10_1.0.0.tar.gz",
+          "size": 23943050,
+          "seq_ids": [
+            "GL883090",
+            "GL883091",
+            "GL883092",
+            "GL883093",
+            "GL883094"
+          ],
+          "seq_count": 462,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Pucciniomycetes",
+            "order": "Pucciniales",
+            "family": "Melampsoraceae",
+            "genus": "Melampsora"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:51:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlaricipopulina.Ensembl.v10/BSgenome.Mlaricipopulina.Ensembl.v10_1.0.0.tar.gz"
         }
       ]
     },
@@ -112968,6 +113000,38 @@
       "common_name": "",
       "published": "2026-04-18T20:51:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tversicolor.Ensembl.Trametesversicolorv10/BSgenome.Tversicolor.Ensembl.Trametesversicolorv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mlaricipopulina.Ensembl.v10",
+      "version": "1.0.0",
+      "organism": "Melampsora larici-populina 98AG31",
+      "assembly": "v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000204055.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000204055.1/",
+      "file_name": "BSgenome.Mlaricipopulina.Ensembl.v10_1.0.0.tar.gz",
+      "size": 23943050,
+      "seq_ids": [
+        "GL883090",
+        "GL883091",
+        "GL883092",
+        "GL883093",
+        "GL883094"
+      ],
+      "seq_count": 462,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Pucciniomycetes",
+        "order": "Pucciniales",
+        "family": "Melampsoraceae",
+        "genus": "Melampsora"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:51:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlaricipopulina.Ensembl.v10/BSgenome.Mlaricipopulina.Ensembl.v10_1.0.0.tar.gz"
     }
   ]
 }
