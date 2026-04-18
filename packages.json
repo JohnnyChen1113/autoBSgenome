@@ -42160,6 +42160,38 @@
       ]
     },
     {
+      "organism": "Paramicrosporidium saccamoebae str. KSL3",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Psaccamoebae.Ensembl.KSL3v6",
+          "version": "1.0.0",
+          "organism": "Paramicrosporidium saccamoebae str. KSL3",
+          "assembly": "KSL3_v6",
+          "provider": "Ensembl",
+          "accession": "GCA_002794465.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002794465.1/",
+          "file_name": "BSgenome.Psaccamoebae.Ensembl.KSL3v6_1.0.0.tar.gz",
+          "size": 1794889,
+          "seq_ids": [
+            "Mt",
+            "NODE_2205_length_257200_cov_57.445713",
+            "NODE_22816_length_188263_cov_58.145428",
+            "NODE_10393_length_186937_cov_59.810085",
+            "NODE_8824_length_181878_cov_59.967083"
+          ],
+          "seq_count": 222,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T12:00:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psaccamoebae.Ensembl.KSL3v6/BSgenome.Psaccamoebae.Ensembl.KSL3v6_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Paramormyrops kingsleyae",
       "common_name": "",
       "group": "vertebrate_other",
@@ -103075,6 +103107,30 @@
       "common_name": "",
       "published": "2026-04-18T11:59:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiP75016V1/BSgenome.Calbicans.Ensembl.CandalbiP75016V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psaccamoebae.Ensembl.KSL3v6",
+      "version": "1.0.0",
+      "organism": "Paramicrosporidium saccamoebae str. KSL3",
+      "assembly": "KSL3_v6",
+      "provider": "Ensembl",
+      "accession": "GCA_002794465.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002794465.1/",
+      "file_name": "BSgenome.Psaccamoebae.Ensembl.KSL3v6_1.0.0.tar.gz",
+      "size": 1794889,
+      "seq_ids": [
+        "Mt",
+        "NODE_2205_length_257200_cov_57.445713",
+        "NODE_22816_length_188263_cov_58.145428",
+        "NODE_10393_length_186937_cov_59.810085",
+        "NODE_8824_length_181878_cov_59.967083"
+      ],
+      "seq_count": 222,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T12:00:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psaccamoebae.Ensembl.KSL3v6/BSgenome.Psaccamoebae.Ensembl.KSL3v6_1.0.0.tar.gz"
     }
   ]
 }
