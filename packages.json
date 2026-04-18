@@ -50084,6 +50084,38 @@
       ]
     },
     {
+      "organism": "Rhizoclosmatium globosum str. JEL800",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Rglobosum.Ensembl.Rhihy1",
+          "version": "1.0.0",
+          "organism": "Rhizoclosmatium globosum str. JEL800",
+          "assembly": "Rhihy1",
+          "provider": "Ensembl",
+          "accession": "GCA_002104985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002104985.1/",
+          "file_name": "BSgenome.Rglobosum.Ensembl.Rhihy1_1.0.0.tar.gz",
+          "size": 13827590,
+          "seq_ids": [
+            "BCR33scaffold_1",
+            "BCR33scaffold_2",
+            "BCR33scaffold_3",
+            "BCR33scaffold_4",
+            "BCR33scaffold_5"
+          ],
+          "seq_count": 437,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T14:13:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rglobosum.Ensembl.Rhihy1/BSgenome.Rglobosum.Ensembl.Rhihy1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhizoctonia solani AG-3 Rhs1AP",
       "common_name": "",
       "group": "fungi",
@@ -105913,6 +105945,30 @@
       "common_name": "",
       "published": "2026-04-18T14:13:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apullulans.Ensembl.ASM491737v1/BSgenome.Apullulans.Ensembl.ASM491737v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rglobosum.Ensembl.Rhihy1",
+      "version": "1.0.0",
+      "organism": "Rhizoclosmatium globosum str. JEL800",
+      "assembly": "Rhihy1",
+      "provider": "Ensembl",
+      "accession": "GCA_002104985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002104985.1/",
+      "file_name": "BSgenome.Rglobosum.Ensembl.Rhihy1_1.0.0.tar.gz",
+      "size": 13827590,
+      "seq_ids": [
+        "BCR33scaffold_1",
+        "BCR33scaffold_2",
+        "BCR33scaffold_3",
+        "BCR33scaffold_4",
+        "BCR33scaffold_5"
+      ],
+      "seq_count": 437,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T14:13:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rglobosum.Ensembl.Rhihy1/BSgenome.Rglobosum.Ensembl.Rhihy1_1.0.0.tar.gz"
     }
   ]
 }
