@@ -28039,6 +28039,54 @@
       ]
     },
     {
+      "organism": "Histoplasma capsulatum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Ajellomycetaceae",
+        "genus": "Histoplasma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hcapsulatum.Ensembl.GCA000170615v1",
+          "version": "1.0.0",
+          "organism": "Histoplasma capsulatum",
+          "assembly": "GCA000170615v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000170615.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000170615.1/",
+          "file_name": "BSgenome.Hcapsulatum.Ensembl.GCA000170615v1_1.0.0.tar.gz",
+          "size": 9467011,
+          "seq_ids": [
+            "HISTO_ZL.Contig1161",
+            "HISTO_ZZ.Contig127",
+            "HISTO_ZU.Contig65",
+            "HISTO_DA.Contig93",
+            "HISTO_HS.Contig68"
+          ],
+          "seq_count": 261,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Onygenales",
+            "family": "Ajellomycetaceae",
+            "genus": "Histoplasma"
+          },
+          "common_name": "",
+          "published": "2026-04-18T16:05:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcapsulatum.Ensembl.GCA000170615v1/BSgenome.Hcapsulatum.Ensembl.GCA000170615v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Histoplasma capsulatum G186AR",
       "common_name": "",
       "group": "fungi",
@@ -107859,6 +107907,38 @@
       "common_name": "",
       "published": "2026-04-18T16:05:04Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rtoruloides.Ensembl.RHOziaDV10/BSgenome.Rtoruloides.Ensembl.RHOziaDV10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hcapsulatum.Ensembl.GCA000170615v1",
+      "version": "1.0.0",
+      "organism": "Histoplasma capsulatum",
+      "assembly": "GCA000170615v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000170615.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000170615.1/",
+      "file_name": "BSgenome.Hcapsulatum.Ensembl.GCA000170615v1_1.0.0.tar.gz",
+      "size": 9467011,
+      "seq_ids": [
+        "HISTO_ZL.Contig1161",
+        "HISTO_ZZ.Contig127",
+        "HISTO_ZU.Contig65",
+        "HISTO_DA.Contig93",
+        "HISTO_HS.Contig68"
+      ],
+      "seq_count": 261,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Onygenales",
+        "family": "Ajellomycetaceae",
+        "genus": "Histoplasma"
+      },
+      "common_name": "",
+      "published": "2026-04-18T16:05:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcapsulatum.Ensembl.GCA000170615v1/BSgenome.Hcapsulatum.Ensembl.GCA000170615v1_1.0.0.tar.gz"
     }
   ]
 }
