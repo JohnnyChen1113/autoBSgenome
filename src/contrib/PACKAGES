@@ -5577,3 +5577,7 @@ NeedsCompilation: no
 Package: BSgenome.Psp.Ensembl.DG11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asteynii.Ensembl.Aspste1
+Version: 1.0.0
+NeedsCompilation: no
