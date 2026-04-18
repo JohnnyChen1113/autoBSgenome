@@ -41399,6 +41399,36 @@
           "common_name": "",
           "published": "2026-04-18T17:08:28Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1/BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1",
+          "version": "1.0.0",
+          "organism": "Ordospora colligata",
+          "assembly": "Ordospora GBEP v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004324935.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004324935.1/",
+          "file_name": "BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1_1.0.0.tar.gz",
+          "size": 563195,
+          "seq_ids": [
+            "contig-01",
+            "contig-04",
+            "contig-02",
+            "contig-12",
+            "contig-09"
+          ],
+          "seq_count": 18,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Ordosporidae",
+            "genus": "Ordospora"
+          },
+          "common_name": "",
+          "published": "2026-04-18T17:08:38Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1/BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1_1.0.0.tar.gz"
         }
       ]
     },
@@ -108637,6 +108667,36 @@
       "common_name": "",
       "published": "2026-04-18T17:08:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phirtus.Ensembl.ASM653600v1/BSgenome.Phirtus.Ensembl.ASM653600v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1",
+      "version": "1.0.0",
+      "organism": "Ordospora colligata",
+      "assembly": "Ordospora GBEP v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004324935.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004324935.1/",
+      "file_name": "BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1_1.0.0.tar.gz",
+      "size": 563195,
+      "seq_ids": [
+        "contig-01",
+        "contig-04",
+        "contig-02",
+        "contig-12",
+        "contig-09"
+      ],
+      "seq_count": 18,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Ordosporidae",
+        "genus": "Ordospora"
+      },
+      "common_name": "",
+      "published": "2026-04-18T17:08:38Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1/BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1_1.0.0.tar.gz"
     }
   ]
 }

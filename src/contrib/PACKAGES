@@ -5757,3 +5757,7 @@ NeedsCompilation: no
 Package: BSgenome.Phirtus.Ensembl.ASM653600v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ocolligata.Ensembl.OrdosporaGBEPv1
+Version: 1.0.0
+NeedsCompilation: no
