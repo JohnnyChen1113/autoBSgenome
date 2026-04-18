@@ -6201,3 +6201,7 @@ NeedsCompilation: no
 Package: BSgenome.Cauris.Ensembl.CandaurisB11243
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bbassiana.Ensembl.BBA10
+Version: 1.0.0
+NeedsCompilation: no

@@ -8097,6 +8097,54 @@
       ]
     },
     {
+      "organism": "Beauveria bassiana D1-5",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Cordycipitaceae",
+        "genus": "Beauveria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bbassiana.Ensembl.BBA10",
+          "version": "1.0.0",
+          "organism": "Beauveria bassiana D1-5",
+          "assembly": "BBA1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000770705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000770705.1/",
+          "file_name": "BSgenome.Bbassiana.Ensembl.BBA10_1.0.0.tar.gz",
+          "size": 9155081,
+          "seq_ids": [
+            "Mt",
+            "contig00055",
+            "contig00754",
+            "contig00347",
+            "contig00606"
+          ],
+          "seq_count": 1745,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Cordycipitaceae",
+            "genus": "Beauveria"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:39:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbassiana.Ensembl.BBA10/BSgenome.Bbassiana.Ensembl.BBA10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Benincasa hispida",
       "common_name": "wax gourd",
       "group": "plant",
@@ -116282,6 +116330,38 @@
       "common_name": "",
       "published": "2026-04-18T23:39:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauris.Ensembl.CandaurisB11243/BSgenome.Cauris.Ensembl.CandaurisB11243_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bbassiana.Ensembl.BBA10",
+      "version": "1.0.0",
+      "organism": "Beauveria bassiana D1-5",
+      "assembly": "BBA1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000770705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000770705.1/",
+      "file_name": "BSgenome.Bbassiana.Ensembl.BBA10_1.0.0.tar.gz",
+      "size": 9155081,
+      "seq_ids": [
+        "Mt",
+        "contig00055",
+        "contig00754",
+        "contig00347",
+        "contig00606"
+      ],
+      "seq_count": 1745,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Cordycipitaceae",
+        "genus": "Beauveria"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:39:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbassiana.Ensembl.BBA10/BSgenome.Bbassiana.Ensembl.BBA10_1.0.0.tar.gz"
     }
   ]
 }
