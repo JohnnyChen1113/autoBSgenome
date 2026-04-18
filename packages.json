@@ -37853,6 +37853,35 @@
             "NW_013524650.1"
           ],
           "seq_count": 65
+        },
+        {
+          "package": "BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3",
+          "version": "1.0.0",
+          "organism": "Nematocida parisii ERTm1",
+          "assembly": "Nema_parisii_ERTm1_V3",
+          "provider": "Ensembl",
+          "accession": "GCA_000250985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000250985.1/",
+          "file_name": "BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3_1.0.0.tar.gz",
+          "size": 966687,
+          "seq_ids": [
+            "JH605023",
+            "JH605024",
+            "JH605025",
+            "JH605026",
+            "JH605027"
+          ],
+          "seq_count": 65,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "genus": "Nematocida"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:24:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3/BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3_1.0.0.tar.gz"
         }
       ]
     },
@@ -104993,6 +105022,35 @@
       "common_name": "",
       "published": "2026-04-18T13:24:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecuniculi.Ensembl.ASM9122v2/BSgenome.Ecuniculi.Ensembl.ASM9122v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3",
+      "version": "1.0.0",
+      "organism": "Nematocida parisii ERTm1",
+      "assembly": "Nema_parisii_ERTm1_V3",
+      "provider": "Ensembl",
+      "accession": "GCA_000250985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000250985.1/",
+      "file_name": "BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3_1.0.0.tar.gz",
+      "size": 966687,
+      "seq_ids": [
+        "JH605023",
+        "JH605024",
+        "JH605025",
+        "JH605026",
+        "JH605027"
+      ],
+      "seq_count": 65,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "genus": "Nematocida"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:24:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3/BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3_1.0.0.tar.gz"
     }
   ]
 }

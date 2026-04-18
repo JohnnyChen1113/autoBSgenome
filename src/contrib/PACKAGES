@@ -5541,3 +5541,7 @@ NeedsCompilation: no
 Package: BSgenome.Ecuniculi.Ensembl.ASM9122v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3
+Version: 1.0.0
+NeedsCompilation: no
