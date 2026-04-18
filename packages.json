@@ -2395,6 +2395,38 @@
       ]
     },
     {
+      "organism": "Antrodiella citrinella str. DSM 108506",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Acitrinella.Ensembl.ASM480272v1",
+          "version": "1.0.0",
+          "organism": "Antrodiella citrinella str. DSM 108506",
+          "assembly": "ASM480272v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004802725.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004802725.1/",
+          "file_name": "BSgenome.Acitrinella.Ensembl.ASM480272v1_1.0.0.tar.gz",
+          "size": 8328794,
+          "seq_ids": [
+            "Contig_1",
+            "Contig_2",
+            "Contig_3",
+            "Contig_4",
+            "Contig_5"
+          ],
+          "seq_count": 1228,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T20:50:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acitrinella.Ensembl.ASM480272v1/BSgenome.Acitrinella.Ensembl.ASM480272v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Antrostomus carolinensis",
       "common_name": "chuck-will's-widow",
       "group": "vertebrate_other",
@@ -112784,6 +112816,30 @@
       "common_name": "",
       "published": "2026-04-18T20:50:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shirsutum.Ensembl.Stehi1/BSgenome.Shirsutum.Ensembl.Stehi1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acitrinella.Ensembl.ASM480272v1",
+      "version": "1.0.0",
+      "organism": "Antrodiella citrinella str. DSM 108506",
+      "assembly": "ASM480272v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004802725.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004802725.1/",
+      "file_name": "BSgenome.Acitrinella.Ensembl.ASM480272v1_1.0.0.tar.gz",
+      "size": 8328794,
+      "seq_ids": [
+        "Contig_1",
+        "Contig_2",
+        "Contig_3",
+        "Contig_4",
+        "Contig_5"
+      ],
+      "seq_count": 1228,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T20:50:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acitrinella.Ensembl.ASM480272v1/BSgenome.Acitrinella.Ensembl.ASM480272v1_1.0.0.tar.gz"
     }
   ]
 }
