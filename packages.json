@@ -58587,6 +58587,38 @@
       ]
     },
     {
+      "organism": "Uncinocarpus reesii 1704 str. UAMH 1704",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Ureesii.Ensembl.ASM351v2",
+          "version": "1.0.0",
+          "organism": "Uncinocarpus reesii 1704 str. UAMH 1704",
+          "assembly": "ASM351v2",
+          "provider": "Ensembl",
+          "accession": "GCA_000003515.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000003515.2/",
+          "file_name": "BSgenome.Ureesii.Ensembl.ASM351v2_1.0.0.tar.gz",
+          "size": 5526698,
+          "seq_ids": [
+            "scaffold_1",
+            "scaffold_2",
+            "scaffold_3",
+            "scaffold_4",
+            "scaffold_5"
+          ],
+          "seq_count": 45,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T13:24:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ureesii.Ensembl.ASM351v2/BSgenome.Ureesii.Ensembl.ASM351v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Urocitellus parryii",
       "common_name": "Arctic ground squirrel",
       "group": "vertebrate_mammalian",
@@ -104813,6 +104845,30 @@
       "common_name": "",
       "published": "2026-04-18T13:23:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2/BSgenome.Aalgerae.Ensembl.AnncalgeinsectUSDAJJBV2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ureesii.Ensembl.ASM351v2",
+      "version": "1.0.0",
+      "organism": "Uncinocarpus reesii 1704 str. UAMH 1704",
+      "assembly": "ASM351v2",
+      "provider": "Ensembl",
+      "accession": "GCA_000003515.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000003515.2/",
+      "file_name": "BSgenome.Ureesii.Ensembl.ASM351v2_1.0.0.tar.gz",
+      "size": 5526698,
+      "seq_ids": [
+        "scaffold_1",
+        "scaffold_2",
+        "scaffold_3",
+        "scaffold_4",
+        "scaffold_5"
+      ],
+      "seq_count": 45,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T13:24:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ureesii.Ensembl.ASM351v2/BSgenome.Ureesii.Ensembl.ASM351v2_1.0.0.tar.gz"
     }
   ]
 }
