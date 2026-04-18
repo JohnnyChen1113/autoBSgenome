@@ -49811,6 +49811,54 @@
       ]
     },
     {
+      "organism": "Pseudogymnoascus sp. VKM F-4514 (FW-929)",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psp.Ensembl.DG8",
+          "version": "1.0.0",
+          "organism": "Pseudogymnoascus sp. VKM F-4514 (FW-929)",
+          "assembly": "DG8",
+          "provider": "Ensembl",
+          "accession": "GCA_000750795.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750795.1/",
+          "file_name": "BSgenome.Psp.Ensembl.DG8_1.0.0.tar.gz",
+          "size": 6784350,
+          "seq_ids": [
+            "contig_177",
+            "contig_816",
+            "contig_2087",
+            "contig_458",
+            "contig_560"
+          ],
+          "seq_count": 3211,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Thelebolales",
+            "family": "Thelebolaceae",
+            "genus": "Pseudogymnoascus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T19:23:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG8/BSgenome.Psp.Ensembl.DG8_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudogymnoascus sp. VKM F-4516 (FW-969)",
       "common_name": "",
       "group": "fungi",
@@ -110164,6 +110212,38 @@
       "common_name": "",
       "published": "2026-04-18T18:07:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.ASM491786v1/BSgenome.Wichthyophaga.Ensembl.ASM491786v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psp.Ensembl.DG8",
+      "version": "1.0.0",
+      "organism": "Pseudogymnoascus sp. VKM F-4514 (FW-929)",
+      "assembly": "DG8",
+      "provider": "Ensembl",
+      "accession": "GCA_000750795.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750795.1/",
+      "file_name": "BSgenome.Psp.Ensembl.DG8_1.0.0.tar.gz",
+      "size": 6784350,
+      "seq_ids": [
+        "contig_177",
+        "contig_816",
+        "contig_2087",
+        "contig_458",
+        "contig_560"
+      ],
+      "seq_count": 3211,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T19:23:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG8/BSgenome.Psp.Ensembl.DG8_1.0.0.tar.gz"
     }
   ]
 }

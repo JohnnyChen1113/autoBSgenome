@@ -5849,3 +5849,7 @@ NeedsCompilation: no
 Package: BSgenome.Wichthyophaga.Ensembl.ASM491786v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psp.Ensembl.DG8
+Version: 1.0.0
+NeedsCompilation: no
