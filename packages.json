@@ -62787,6 +62787,38 @@
           "common_name": "",
           "published": "2026-04-05T09:42:02Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10/BSgenome.Wichthyophaga.NCBI.Wallemiaichthyophagaversion10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10",
+          "version": "1.0.0",
+          "organism": "Wallemia ichthyophaga EXF-994",
+          "assembly": "Wallemia ichthyophaga version 1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000400465.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000400465.1/",
+          "file_name": "BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10_1.0.0.tar.gz",
+          "size": 2390754,
+          "seq_ids": [
+            "KE007224",
+            "KE007225",
+            "KE007226",
+            "KE007227",
+            "KE007228"
+          ],
+          "seq_count": 82,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Wallemiomycetes",
+            "order": "Wallemiales",
+            "family": "Wallemiaceae",
+            "genus": "Wallemia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T18:06:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10/BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10_1.0.0.tar.gz"
         }
       ]
     },
@@ -109956,6 +109988,38 @@
       "common_name": "",
       "published": "2026-04-18T18:06:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbicolor.Ensembl.V10/BSgenome.Lbicolor.Ensembl.V10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10",
+      "version": "1.0.0",
+      "organism": "Wallemia ichthyophaga EXF-994",
+      "assembly": "Wallemia ichthyophaga version 1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000400465.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000400465.1/",
+      "file_name": "BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10_1.0.0.tar.gz",
+      "size": 2390754,
+      "seq_ids": [
+        "KE007224",
+        "KE007225",
+        "KE007226",
+        "KE007227",
+        "KE007228"
+      ],
+      "seq_count": 82,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Wallemiomycetes",
+        "order": "Wallemiales",
+        "family": "Wallemiaceae",
+        "genus": "Wallemia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T18:06:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10/BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10_1.0.0.tar.gz"
     }
   ]
 }

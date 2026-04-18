@@ -5837,3 +5837,7 @@ NeedsCompilation: no
 Package: BSgenome.Lbicolor.Ensembl.V10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10
+Version: 1.0.0
+NeedsCompilation: no
