@@ -50817,6 +50817,54 @@
       ]
     },
     {
+      "organism": "Pseudogymnoascus sp. VKM F-4513 (FW-928)",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psp.Ensembl.DG7",
+          "version": "1.0.0",
+          "organism": "Pseudogymnoascus sp. VKM F-4513 (FW-928)",
+          "assembly": "DG7",
+          "provider": "Ensembl",
+          "accession": "GCA_000750755.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750755.1/",
+          "file_name": "BSgenome.Psp.Ensembl.DG7_1.0.0.tar.gz",
+          "size": 6633803,
+          "seq_ids": [
+            "contig_1037",
+            "contig_1911",
+            "contig_1987",
+            "contig_1504",
+            "contig_1781"
+          ],
+          "seq_count": 3425,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Thelebolales",
+            "family": "Thelebolaceae",
+            "genus": "Pseudogymnoascus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:51:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG7/BSgenome.Psp.Ensembl.DG7_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudogymnoascus sp. VKM F-4514 (FW-929)",
       "common_name": "",
       "group": "fungi",
@@ -113032,6 +113080,38 @@
       "common_name": "",
       "published": "2026-04-18T20:51:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mlaricipopulina.Ensembl.v10/BSgenome.Mlaricipopulina.Ensembl.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psp.Ensembl.DG7",
+      "version": "1.0.0",
+      "organism": "Pseudogymnoascus sp. VKM F-4513 (FW-928)",
+      "assembly": "DG7",
+      "provider": "Ensembl",
+      "accession": "GCA_000750755.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750755.1/",
+      "file_name": "BSgenome.Psp.Ensembl.DG7_1.0.0.tar.gz",
+      "size": 6633803,
+      "seq_ids": [
+        "contig_1037",
+        "contig_1911",
+        "contig_1987",
+        "contig_1504",
+        "contig_1781"
+      ],
+      "seq_count": 3425,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:51:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG7/BSgenome.Psp.Ensembl.DG7_1.0.0.tar.gz"
     }
   ]
 }
