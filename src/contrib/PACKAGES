@@ -6017,3 +6017,7 @@ NeedsCompilation: no
 Package: BSgenome.Psp.Ensembl.DG7
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Whederae.Ensembl.ASM491832v1
+Version: 1.0.0
+NeedsCompilation: no
