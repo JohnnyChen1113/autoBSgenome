@@ -6164,6 +6164,54 @@
       ]
     },
     {
+      "organism": "Aspergillus turcosus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aturcosus.Ensembl.ASM223497v2",
+          "version": "1.0.0",
+          "organism": "Aspergillus turcosus",
+          "assembly": "ASM223497v2",
+          "provider": "Ensembl",
+          "accession": "GCA_002234975.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002234975.2/",
+          "file_name": "BSgenome.Aturcosus.Ensembl.ASM223497v2_1.0.0.tar.gz",
+          "size": 8374142,
+          "seq_ids": [
+            "NODE_1",
+            "NODE_2",
+            "NODE_3",
+            "NODE_4",
+            "NODE_5"
+          ],
+          "seq_count": 1043,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:02:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aturcosus.Ensembl.ASM223497v2/BSgenome.Aturcosus.Ensembl.ASM223497v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus udagawae",
       "common_name": "",
       "group": "fungi",
@@ -112024,6 +112072,38 @@
       "common_name": "",
       "published": "2026-04-18T20:02:32Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mbrunneum.Ensembl.MBR10/BSgenome.Mbrunneum.Ensembl.MBR10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aturcosus.Ensembl.ASM223497v2",
+      "version": "1.0.0",
+      "organism": "Aspergillus turcosus",
+      "assembly": "ASM223497v2",
+      "provider": "Ensembl",
+      "accession": "GCA_002234975.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002234975.2/",
+      "file_name": "BSgenome.Aturcosus.Ensembl.ASM223497v2_1.0.0.tar.gz",
+      "size": 8374142,
+      "seq_ids": [
+        "NODE_1",
+        "NODE_2",
+        "NODE_3",
+        "NODE_4",
+        "NODE_5"
+      ],
+      "seq_count": 1043,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:02:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aturcosus.Ensembl.ASM223497v2/BSgenome.Aturcosus.Ensembl.ASM223497v2_1.0.0.tar.gz"
     }
   ]
 }
