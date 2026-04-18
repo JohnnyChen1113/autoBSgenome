@@ -1875,6 +1875,50 @@
       ]
     },
     {
+      "organism": "Anncaliia algerae PRA109",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Tubulinosematidae",
+        "genus": "Anncaliia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4",
+          "version": "1.0.0",
+          "organism": "Anncaliia algerae PRA109",
+          "assembly": "Annc_alge_PRA109_V4",
+          "provider": "Ensembl",
+          "accession": "GCA_000385855.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000385855.2/",
+          "file_name": "BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4_1.0.0.tar.gz",
+          "size": 3158114,
+          "seq_ids": [
+            "KK358017",
+            "KK358018",
+            "KK358019",
+            "KK358020",
+            "KK358021"
+          ],
+          "seq_count": 7113,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Tubulinosematidae",
+            "genus": "Anncaliia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T15:08:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4/BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Anncaliia algerae PRA339",
       "common_name": "",
       "group": "fungi",
@@ -106362,6 +106406,36 @@
       "common_name": "",
       "published": "2026-04-18T15:08:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.ASM491851v1/BSgenome.Wmellicola.Ensembl.ASM491851v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4",
+      "version": "1.0.0",
+      "organism": "Anncaliia algerae PRA109",
+      "assembly": "Annc_alge_PRA109_V4",
+      "provider": "Ensembl",
+      "accession": "GCA_000385855.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000385855.2/",
+      "file_name": "BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4_1.0.0.tar.gz",
+      "size": 3158114,
+      "seq_ids": [
+        "KK358017",
+        "KK358018",
+        "KK358019",
+        "KK358020",
+        "KK358021"
+      ],
+      "seq_count": 7113,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Tubulinosematidae",
+        "genus": "Anncaliia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T15:08:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4/BSgenome.Aalgerae.Ensembl.AnncalgePRA109V4_1.0.0.tar.gz"
     }
   ]
 }
