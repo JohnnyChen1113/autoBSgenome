@@ -5261,3 +5261,7 @@ NeedsCompilation: no
 Package: BSgenome.Stuberosum.Ensembl.SolTub30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vvinifera.Ensembl.ASM3070453v1
+Version: 1.0.0
+NeedsCompilation: no

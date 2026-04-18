@@ -57148,6 +57148,54 @@
       ]
     },
     {
+      "organism": "Vitis vinifera",
+      "common_name": "wine grape",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Vitales",
+        "family": "Vitaceae",
+        "genus": "Vitis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vvinifera.Ensembl.ASM3070453v1",
+          "version": "1.0.0",
+          "organism": "Vitis vinifera",
+          "assembly": "ASM3070453v1",
+          "provider": "Ensembl",
+          "accession": "GCA_030704535.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_030704535.1/",
+          "file_name": "BSgenome.Vvinifera.Ensembl.ASM3070453v1_1.0.0.tar.gz",
+          "size": 111122789,
+          "seq_ids": [
+            "CP126648.1",
+            "CP126649.1",
+            "CP126650.1",
+            "CP126651.1",
+            "CP126652.1"
+          ],
+          "seq_count": 19,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Vitales",
+            "family": "Vitaceae",
+            "genus": "Vitis"
+          },
+          "common_name": "wine grape",
+          "published": "2026-04-18T08:02:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vvinifera.Ensembl.ASM3070453v1/BSgenome.Vvinifera.Ensembl.ASM3070453v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Vittaforma corneae ATCC 50505",
       "common_name": "",
       "group": "fungi",
@@ -100028,6 +100076,38 @@
       "common_name": "potato",
       "published": "2026-04-18T08:02:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Stuberosum.Ensembl.SolTub30/BSgenome.Stuberosum.Ensembl.SolTub30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vvinifera.Ensembl.ASM3070453v1",
+      "version": "1.0.0",
+      "organism": "Vitis vinifera",
+      "assembly": "ASM3070453v1",
+      "provider": "Ensembl",
+      "accession": "GCA_030704535.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_030704535.1/",
+      "file_name": "BSgenome.Vvinifera.Ensembl.ASM3070453v1_1.0.0.tar.gz",
+      "size": 111122789,
+      "seq_ids": [
+        "CP126648.1",
+        "CP126649.1",
+        "CP126650.1",
+        "CP126651.1",
+        "CP126652.1"
+      ],
+      "seq_count": 19,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Vitales",
+        "family": "Vitaceae",
+        "genus": "Vitis"
+      },
+      "common_name": "wine grape",
+      "published": "2026-04-18T08:02:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vvinifera.Ensembl.ASM3070453v1/BSgenome.Vvinifera.Ensembl.ASM3070453v1_1.0.0.tar.gz"
     }
   ]
 }
