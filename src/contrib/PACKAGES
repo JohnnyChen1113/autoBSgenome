@@ -5741,3 +5741,7 @@ NeedsCompilation: no
 Package: BSgenome.Heriocheir.Ensembl.ASM208788v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491899v1
+Version: 1.0.0
+NeedsCompilation: no
