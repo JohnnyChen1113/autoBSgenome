@@ -57196,6 +57196,54 @@
       ]
     },
     {
+      "organism": "Vigna angularis",
+      "common_name": "adzuki bean",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Vigna"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Vangularis.Ensembl.Vigan11",
+          "version": "1.0.0",
+          "organism": "Vigna angularis",
+          "assembly": "Vigan1.1",
+          "provider": "Ensembl",
+          "accession": "GCA_001190045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001190045.1/",
+          "file_name": "BSgenome.Vangularis.Ensembl.Vigan11_1.0.0.tar.gz",
+          "size": 105737494,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 37373,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Vigna"
+          },
+          "common_name": "adzuki bean",
+          "published": "2026-04-18T09:05:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vangularis.Ensembl.Vigan11/BSgenome.Vangularis.Ensembl.Vigan11_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Vigna radiata var. radiata",
       "common_name": "mung bean",
       "group": "plant",
@@ -100668,6 +100716,38 @@
       "common_name": "",
       "published": "2026-04-18T09:05:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsoja.Ensembl.ASM419377v2/BSgenome.Gsoja.Ensembl.ASM419377v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vangularis.Ensembl.Vigan11",
+      "version": "1.0.0",
+      "organism": "Vigna angularis",
+      "assembly": "Vigan1.1",
+      "provider": "Ensembl",
+      "accession": "GCA_001190045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001190045.1/",
+      "file_name": "BSgenome.Vangularis.Ensembl.Vigan11_1.0.0.tar.gz",
+      "size": 105737494,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 37373,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Vigna"
+      },
+      "common_name": "adzuki bean",
+      "published": "2026-04-18T09:05:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vangularis.Ensembl.Vigan11/BSgenome.Vangularis.Ensembl.Vigan11_1.0.0.tar.gz"
     }
   ]
 }

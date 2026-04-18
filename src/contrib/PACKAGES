@@ -5297,3 +5297,7 @@ NeedsCompilation: no
 Package: BSgenome.Gsoja.Ensembl.ASM419377v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vangularis.Ensembl.Vigan11
+Version: 1.0.0
+NeedsCompilation: no
