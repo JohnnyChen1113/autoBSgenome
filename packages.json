@@ -35290,6 +35290,38 @@
       ]
     },
     {
+      "organism": "Magnaporthe oryzae 70-15",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Moryzae.Ensembl.MG8",
+          "version": "1.0.0",
+          "organism": "Magnaporthe oryzae 70-15",
+          "assembly": "MG8",
+          "provider": "Ensembl",
+          "accession": "GCA_000002495.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002495.2/",
+          "file_name": "BSgenome.Moryzae.Ensembl.MG8_1.0.0.tar.gz",
+          "size": 10128506,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 8,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T20:53:02Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Moryzae.Ensembl.MG8/BSgenome.Moryzae.Ensembl.MG8_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Malassezia globosa CBS 7966",
       "common_name": "",
       "group": "fungi",
@@ -113528,6 +113560,30 @@
       "common_name": "",
       "published": "2026-04-18T20:52:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jargillacea.Ensembl.Jaaar1/BSgenome.Jargillacea.Ensembl.Jaaar1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Moryzae.Ensembl.MG8",
+      "version": "1.0.0",
+      "organism": "Magnaporthe oryzae 70-15",
+      "assembly": "MG8",
+      "provider": "Ensembl",
+      "accession": "GCA_000002495.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002495.2/",
+      "file_name": "BSgenome.Moryzae.Ensembl.MG8_1.0.0.tar.gz",
+      "size": 10128506,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 8,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T20:53:02Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Moryzae.Ensembl.MG8/BSgenome.Moryzae.Ensembl.MG8_1.0.0.tar.gz"
     }
   ]
 }

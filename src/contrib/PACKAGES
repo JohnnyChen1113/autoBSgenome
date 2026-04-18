@@ -6041,3 +6041,7 @@ NeedsCompilation: no
 Package: BSgenome.Jargillacea.Ensembl.Jaaar1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Moryzae.Ensembl.MG8
+Version: 1.0.0
+NeedsCompilation: no
