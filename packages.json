@@ -39082,6 +39082,38 @@
       ]
     },
     {
+      "organism": "Nosema apis BRL 01",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Napis.Ensembl.NapisBRLv01",
+          "version": "1.0.0",
+          "organism": "Nosema apis BRL 01",
+          "assembly": "NapisBRLv01",
+          "provider": "Ensembl",
+          "accession": "GCA_000447185.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000447185.1/",
+          "file_name": "BSgenome.Napis.Ensembl.NapisBRLv01_1.0.0.tar.gz",
+          "size": 1826228,
+          "seq_ids": [
+            "KE647164",
+            "KE647339",
+            "KE647306",
+            "KE647374",
+            "KE647331"
+          ],
+          "seq_count": 554,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T14:13:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Napis.Ensembl.NapisBRLv01/BSgenome.Napis.Ensembl.NapisBRLv01_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nosema bombycis CQ1",
       "common_name": "",
       "group": "fungi",
@@ -106033,6 +106065,30 @@
       "common_name": "",
       "published": "2026-04-18T14:13:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Phubeiensis.Ensembl.ASM40351v1/BSgenome.Phubeiensis.Ensembl.ASM40351v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Napis.Ensembl.NapisBRLv01",
+      "version": "1.0.0",
+      "organism": "Nosema apis BRL 01",
+      "assembly": "NapisBRLv01",
+      "provider": "Ensembl",
+      "accession": "GCA_000447185.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000447185.1/",
+      "file_name": "BSgenome.Napis.Ensembl.NapisBRLv01_1.0.0.tar.gz",
+      "size": 1826228,
+      "seq_ids": [
+        "KE647164",
+        "KE647339",
+        "KE647306",
+        "KE647374",
+        "KE647331"
+      ],
+      "seq_count": 554,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T14:13:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Napis.Ensembl.NapisBRLv01/BSgenome.Napis.Ensembl.NapisBRLv01_1.0.0.tar.gz"
     }
   ]
 }
