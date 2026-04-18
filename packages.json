@@ -26036,6 +26036,54 @@
       ]
     },
     {
+      "organism": "Gonapodya prolifera JEL478",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Monoblepharidomycetes",
+        "order": "Monoblepharidales",
+        "family": "Gonapodyaceae",
+        "genus": "Gonapodya"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gprolifera.Ensembl.Ganpr1",
+          "version": "1.0.0",
+          "organism": "Gonapodya prolifera JEL478",
+          "assembly": "Ganpr1",
+          "provider": "Ensembl",
+          "accession": "GCA_001574975.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001574975.1/",
+          "file_name": "BSgenome.Gprolifera.Ensembl.Ganpr1_1.0.0.tar.gz",
+          "size": 12023498,
+          "seq_ids": [
+            "KQ965731",
+            "KQ965732",
+            "KQ965733",
+            "KQ965734",
+            "KQ965735"
+          ],
+          "seq_count": 352,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Chytridiomycota",
+            "class": "Monoblepharidomycetes",
+            "order": "Monoblepharidales",
+            "family": "Gonapodyaceae",
+            "genus": "Gonapodya"
+          },
+          "common_name": "",
+          "published": "2026-04-18T14:10:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gprolifera.Ensembl.Ganpr1/BSgenome.Gprolifera.Ensembl.Ganpr1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Gopherus agassizii",
       "common_name": "Agassiz's desert tortoise",
       "group": "vertebrate_other",
@@ -105051,6 +105099,38 @@
       "common_name": "",
       "published": "2026-04-18T13:24:40Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3/BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gprolifera.Ensembl.Ganpr1",
+      "version": "1.0.0",
+      "organism": "Gonapodya prolifera JEL478",
+      "assembly": "Ganpr1",
+      "provider": "Ensembl",
+      "accession": "GCA_001574975.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001574975.1/",
+      "file_name": "BSgenome.Gprolifera.Ensembl.Ganpr1_1.0.0.tar.gz",
+      "size": 12023498,
+      "seq_ids": [
+        "KQ965731",
+        "KQ965732",
+        "KQ965733",
+        "KQ965734",
+        "KQ965735"
+      ],
+      "seq_count": 352,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Monoblepharidomycetes",
+        "order": "Monoblepharidales",
+        "family": "Gonapodyaceae",
+        "genus": "Gonapodya"
+      },
+      "common_name": "",
+      "published": "2026-04-18T14:10:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gprolifera.Ensembl.Ganpr1/BSgenome.Gprolifera.Ensembl.Ganpr1_1.0.0.tar.gz"
     }
   ]
 }

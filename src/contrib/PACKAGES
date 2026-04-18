@@ -5545,3 +5545,7 @@ NeedsCompilation: no
 Package: BSgenome.Nparisii.Ensembl.NemaparisiiERTm1V3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gprolifera.Ensembl.Ganpr1
+Version: 1.0.0
+NeedsCompilation: no
