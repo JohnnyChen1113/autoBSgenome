@@ -5933,3 +5933,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmicaceus.Ensembl.Copmic2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Atenuissima.Ensembl.ASM416856v1
+Version: 1.0.0
+NeedsCompilation: no
