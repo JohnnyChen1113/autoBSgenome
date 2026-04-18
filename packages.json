@@ -18144,6 +18144,38 @@
       ]
     },
     {
+      "organism": "Cryptococcus gattii VGII MMRL2647",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2",
+          "version": "1.0.0",
+          "organism": "Cryptococcus gattii VGII MMRL2647",
+          "assembly": "Cryp_gatt_MMRL2647_V2",
+          "provider": "Ensembl",
+          "accession": "GCA_000875855.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000875855.1/",
+          "file_name": "BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2_1.0.0.tar.gz",
+          "size": 4335084,
+          "seq_ids": [
+            "KN848922",
+            "KN848923",
+            "KN848924",
+            "KN848925",
+            "KN848926"
+          ],
+          "seq_count": 25,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T23:41:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2/BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus gattii WM276",
       "common_name": "",
       "group": "fungi",
@@ -116890,6 +116922,30 @@
       "common_name": "",
       "published": "2026-04-18T23:41:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiP78042V1/BSgenome.Calbicans.Ensembl.CandalbiP78042V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2",
+      "version": "1.0.0",
+      "organism": "Cryptococcus gattii VGII MMRL2647",
+      "assembly": "Cryp_gatt_MMRL2647_V2",
+      "provider": "Ensembl",
+      "accession": "GCA_000875855.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000875855.1/",
+      "file_name": "BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2_1.0.0.tar.gz",
+      "size": 4335084,
+      "seq_ids": [
+        "KN848922",
+        "KN848923",
+        "KN848924",
+        "KN848925",
+        "KN848926"
+      ],
+      "seq_count": 25,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T23:41:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2/BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2_1.0.0.tar.gz"
     }
   ]
 }

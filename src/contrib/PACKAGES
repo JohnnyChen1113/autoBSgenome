@@ -6233,3 +6233,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.CandalbiP78042V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2
+Version: 1.0.0
+NeedsCompilation: no
