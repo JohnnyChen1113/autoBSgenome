@@ -14194,6 +14194,38 @@
           "common_name": "",
           "published": "2026-04-06T14:52:57Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfructicola.NCBI.ASM31963v2/BSgenome.Cfructicola.NCBI.ASM31963v2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5",
+          "version": "1.0.0",
+          "organism": "Colletotrichum fructicola Nara gc5",
+          "assembly": "Colletotrichum gloeosporioides Nara gc-5",
+          "provider": "Ensembl",
+          "accession": "GCA_000319635.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000319635.1/",
+          "file_name": "BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5_1.0.0.tar.gz",
+          "size": 13858855,
+          "seq_ids": [
+            "scaffold15",
+            "scaffold104",
+            "scaffold403",
+            "scaffold266",
+            "scaffold2"
+          ],
+          "seq_count": 1241,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Glomerellales",
+            "family": "Glomerellaceae",
+            "genus": "Colletotrichum"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:11:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5/BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5_1.0.0.tar.gz"
         }
       ]
     },
@@ -102020,6 +102052,38 @@
       "common_name": "",
       "published": "2026-04-18T11:11:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aterreus.Ensembl.ASM14961v1/BSgenome.Aterreus.Ensembl.ASM14961v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5",
+      "version": "1.0.0",
+      "organism": "Colletotrichum fructicola Nara gc5",
+      "assembly": "Colletotrichum gloeosporioides Nara gc-5",
+      "provider": "Ensembl",
+      "accession": "GCA_000319635.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000319635.1/",
+      "file_name": "BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5_1.0.0.tar.gz",
+      "size": 13858855,
+      "seq_ids": [
+        "scaffold15",
+        "scaffold104",
+        "scaffold403",
+        "scaffold266",
+        "scaffold2"
+      ],
+      "seq_count": 1241,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Glomerellaceae",
+        "genus": "Colletotrichum"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:11:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5/BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5_1.0.0.tar.gz"
     }
   ]
 }

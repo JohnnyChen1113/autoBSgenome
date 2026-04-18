@@ -5373,3 +5373,7 @@ NeedsCompilation: no
 Package: BSgenome.Aterreus.Ensembl.ASM14961v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5
+Version: 1.0.0
+NeedsCompilation: no
