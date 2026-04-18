@@ -5909,3 +5909,7 @@ NeedsCompilation: no
 Package: BSgenome.Acampestris.Ensembl.Aspcam1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491821v1
+Version: 1.0.0
+NeedsCompilation: no
