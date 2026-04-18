@@ -5897,3 +5897,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.CandalbiP75010V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ltigrinus.Ensembl.Lenti61
+Version: 1.0.0
+NeedsCompilation: no

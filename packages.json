@@ -33471,6 +33471,54 @@
       ]
     },
     {
+      "organism": "Lentinus tigrinus ALCF2SS1-6",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Polyporaceae",
+        "genus": "Lentinus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ltigrinus.Ensembl.Lenti61",
+          "version": "1.0.0",
+          "organism": "Lentinus tigrinus ALCF2SS1-6",
+          "assembly": "Lenti6_1",
+          "provider": "Ensembl",
+          "accession": "GCA_003813205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003813205.1/",
+          "file_name": "BSgenome.Ltigrinus.Ensembl.Lenti61_1.0.0.tar.gz",
+          "size": 9816737,
+          "seq_ids": [
+            "ML122250",
+            "ML122251",
+            "ML122252",
+            "ML122253",
+            "ML122254"
+          ],
+          "seq_count": 286,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Polyporales",
+            "family": "Polyporaceae",
+            "genus": "Lentinus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T19:26:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ltigrinus.Ensembl.Lenti61/BSgenome.Ltigrinus.Ensembl.Lenti61_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Lentinus tigrinus ALCF2SS1-7",
       "common_name": "",
       "group": "fungi",
@@ -111050,6 +111098,38 @@
       "common_name": "",
       "published": "2026-04-18T19:25:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiP75010V1/BSgenome.Calbicans.Ensembl.CandalbiP75010V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ltigrinus.Ensembl.Lenti61",
+      "version": "1.0.0",
+      "organism": "Lentinus tigrinus ALCF2SS1-6",
+      "assembly": "Lenti6_1",
+      "provider": "Ensembl",
+      "accession": "GCA_003813205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003813205.1/",
+      "file_name": "BSgenome.Ltigrinus.Ensembl.Lenti61_1.0.0.tar.gz",
+      "size": 9816737,
+      "seq_ids": [
+        "ML122250",
+        "ML122251",
+        "ML122252",
+        "ML122253",
+        "ML122254"
+      ],
+      "seq_count": 286,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Polyporaceae",
+        "genus": "Lentinus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T19:26:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ltigrinus.Ensembl.Lenti61/BSgenome.Ltigrinus.Ensembl.Lenti61_1.0.0.tar.gz"
     }
   ]
 }
