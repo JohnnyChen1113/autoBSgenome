@@ -47459,6 +47459,38 @@
       ]
     },
     {
+      "organism": "Phlebia centrifuga str. DSM 108282",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Pcentrifuga.Ensembl.ASM480266v1",
+          "version": "1.0.0",
+          "organism": "Phlebia centrifuga str. DSM 108282",
+          "assembly": "ASM480266v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004802665.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004802665.1/",
+          "file_name": "BSgenome.Pcentrifuga.Ensembl.ASM480266v1_1.0.0.tar.gz",
+          "size": 9308366,
+          "seq_ids": [
+            "Contig_1",
+            "Contig_2",
+            "Contig_3",
+            "Contig_4",
+            "Contig_5"
+          ],
+          "seq_count": 1328,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T20:52:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcentrifuga.Ensembl.ASM480266v1/BSgenome.Pcentrifuga.Ensembl.ASM480266v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phoca vitulina",
       "common_name": "harbor seal",
       "group": "vertebrate_mammalian",
@@ -113392,6 +113424,30 @@
       "common_name": "",
       "published": "2026-04-18T20:52:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmicroscopicum.Ensembl.Micmi1/BSgenome.Mmicroscopicum.Ensembl.Micmi1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcentrifuga.Ensembl.ASM480266v1",
+      "version": "1.0.0",
+      "organism": "Phlebia centrifuga str. DSM 108282",
+      "assembly": "ASM480266v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004802665.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004802665.1/",
+      "file_name": "BSgenome.Pcentrifuga.Ensembl.ASM480266v1_1.0.0.tar.gz",
+      "size": 9308366,
+      "seq_ids": [
+        "Contig_1",
+        "Contig_2",
+        "Contig_3",
+        "Contig_4",
+        "Contig_5"
+      ],
+      "seq_count": 1328,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T20:52:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcentrifuga.Ensembl.ASM480266v1/BSgenome.Pcentrifuga.Ensembl.ASM480266v1_1.0.0.tar.gz"
     }
   ]
 }

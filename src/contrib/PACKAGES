@@ -6033,3 +6033,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmicroscopicum.Ensembl.Micmi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcentrifuga.Ensembl.ASM480266v1
+Version: 1.0.0
+NeedsCompilation: no
