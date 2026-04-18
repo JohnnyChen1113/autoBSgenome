@@ -37060,6 +37060,38 @@
           "common_name": "pocket water lily",
           "published": "2026-04-04T14:01:03Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncolorata.NCBI.ASM883128v2/BSgenome.Ncolorata.NCBI.ASM883128v2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ncolorata.Ensembl.ASM883128v1",
+          "version": "1.0.0",
+          "organism": "Nymphaea colorata",
+          "assembly": "ASM883128v1",
+          "provider": "Ensembl",
+          "accession": "GCA_008831285.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008831285.1/",
+          "file_name": "BSgenome.Ncolorata.Ensembl.ASM883128v1_1.0.0.tar.gz",
+          "size": 96846694,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 799,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Nymphaeales",
+            "family": "Nymphaeaceae",
+            "genus": "Nymphaea"
+          },
+          "common_name": "pocket water lily",
+          "published": "2026-04-18T02:37:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncolorata.Ensembl.ASM883128v1/BSgenome.Ncolorata.Ensembl.ASM883128v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -97060,6 +97092,38 @@
       "common_name": "apple",
       "published": "2026-04-18T02:37:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdomestica.Ensembl.ASM211411v1/BSgenome.Mdomestica.Ensembl.ASM211411v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ncolorata.Ensembl.ASM883128v1",
+      "version": "1.0.0",
+      "organism": "Nymphaea colorata",
+      "assembly": "ASM883128v1",
+      "provider": "Ensembl",
+      "accession": "GCA_008831285.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008831285.1/",
+      "file_name": "BSgenome.Ncolorata.Ensembl.ASM883128v1_1.0.0.tar.gz",
+      "size": 96846694,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 799,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Nymphaeales",
+        "family": "Nymphaeaceae",
+        "genus": "Nymphaea"
+      },
+      "common_name": "pocket water lily",
+      "published": "2026-04-18T02:37:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncolorata.Ensembl.ASM883128v1/BSgenome.Ncolorata.Ensembl.ASM883128v1_1.0.0.tar.gz"
     }
   ]
 }
