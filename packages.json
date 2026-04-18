@@ -14210,6 +14210,38 @@
           "common_name": "",
           "published": "2026-04-06T14:52:34Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgraminicola.NCBI.CgraminicolaM1001V1/BSgenome.Cgraminicola.NCBI.CgraminicolaM1001V1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cgraminicola.Ensembl.CgraminicolaM1001V1",
+          "version": "1.0.0",
+          "organism": "Colletotrichum graminicola M1.001",
+          "assembly": "C_graminicola_M1_001_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000149035.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000149035.1/",
+          "file_name": "BSgenome.Cgraminicola.Ensembl.CgraminicolaM1001V1_1.0.0.tar.gz",
+          "size": 12513303,
+          "seq_ids": [
+            "GG697331",
+            "GG697332",
+            "GG697333",
+            "GG697334",
+            "GG697337"
+          ],
+          "seq_count": 654,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Glomerellales",
+            "family": "Glomerellaceae",
+            "genus": "Colletotrichum"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:10:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgraminicola.Ensembl.CgraminicolaM1001V1/BSgenome.Cgraminicola.Ensembl.CgraminicolaM1001V1_1.0.0.tar.gz"
         }
       ]
     },
@@ -101756,6 +101788,38 @@
       "common_name": "",
       "published": "2026-04-18T11:10:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bgraminis.Ensembl.EF2/BSgenome.Bgraminis.Ensembl.EF2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cgraminicola.Ensembl.CgraminicolaM1001V1",
+      "version": "1.0.0",
+      "organism": "Colletotrichum graminicola M1.001",
+      "assembly": "C_graminicola_M1_001_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000149035.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000149035.1/",
+      "file_name": "BSgenome.Cgraminicola.Ensembl.CgraminicolaM1001V1_1.0.0.tar.gz",
+      "size": 12513303,
+      "seq_ids": [
+        "GG697331",
+        "GG697332",
+        "GG697333",
+        "GG697334",
+        "GG697337"
+      ],
+      "seq_count": 654,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Glomerellaceae",
+        "genus": "Colletotrichum"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:10:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgraminicola.Ensembl.CgraminicolaM1001V1/BSgenome.Cgraminicola.Ensembl.CgraminicolaM1001V1_1.0.0.tar.gz"
     }
   ]
 }
