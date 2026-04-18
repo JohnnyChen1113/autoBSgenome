@@ -5000,6 +5000,38 @@
           "common_name": "",
           "published": "2026-04-18T10:11:39Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.Ensembl.ASM285v2/BSgenome.Aniger.Ensembl.ASM285v2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Aniger.Ensembl.ASM221148v2",
+          "version": "1.0.0",
+          "organism": "Aspergillus niger",
+          "assembly": "ASM221148v2",
+          "provider": "Ensembl",
+          "accession": "GCA_002211485.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002211485.2/",
+          "file_name": "BSgenome.Aniger.Ensembl.ASM221148v2_1.0.0.tar.gz",
+          "size": 8913565,
+          "seq_ids": [
+            "unitig_0_quiver_pilon",
+            "unitig_1_quiver_pilon",
+            "unitig_2_quiver_pilon",
+            "unitig_3_quiver_pilon",
+            "unitig_4_quiver_pilon"
+          ],
+          "seq_count": 25,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:21:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.Ensembl.ASM221148v2/BSgenome.Aniger.Ensembl.ASM221148v2_1.0.0.tar.gz"
         }
       ]
     },
@@ -103963,6 +103995,38 @@
       "common_name": "",
       "published": "2026-04-18T13:21:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdendrobatidis.Ensembl.v10/BSgenome.Bdendrobatidis.Ensembl.v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aniger.Ensembl.ASM221148v2",
+      "version": "1.0.0",
+      "organism": "Aspergillus niger",
+      "assembly": "ASM221148v2",
+      "provider": "Ensembl",
+      "accession": "GCA_002211485.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002211485.2/",
+      "file_name": "BSgenome.Aniger.Ensembl.ASM221148v2_1.0.0.tar.gz",
+      "size": 8913565,
+      "seq_ids": [
+        "unitig_0_quiver_pilon",
+        "unitig_1_quiver_pilon",
+        "unitig_2_quiver_pilon",
+        "unitig_3_quiver_pilon",
+        "unitig_4_quiver_pilon"
+      ],
+      "seq_count": 25,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:21:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.Ensembl.ASM221148v2/BSgenome.Aniger.Ensembl.ASM221148v2_1.0.0.tar.gz"
     }
   ]
 }

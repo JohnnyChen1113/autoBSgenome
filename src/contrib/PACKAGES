@@ -5481,3 +5481,7 @@ NeedsCompilation: no
 Package: BSgenome.Bdendrobatidis.Ensembl.v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aniger.Ensembl.ASM221148v2
+Version: 1.0.0
+NeedsCompilation: no
