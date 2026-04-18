@@ -5301,3 +5301,7 @@ NeedsCompilation: no
 Package: BSgenome.Vangularis.Ensembl.Vigan11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgare.Ensembl.HvulgarecvAizu6BPGv2
+Version: 1.0.0
+NeedsCompilation: no
