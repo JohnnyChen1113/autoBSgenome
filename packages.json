@@ -24555,6 +24555,38 @@
       ]
     },
     {
+      "organism": "Fibroporia radiculosa str. TFFH 294",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Fradiculosa.Ensembl.ASM31352v1",
+          "version": "1.0.0",
+          "organism": "Fibroporia radiculosa str. TFFH 294",
+          "assembly": "ASM31352v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000313525.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000313525.1/",
+          "file_name": "BSgenome.Fradiculosa.Ensembl.ASM31352v1_1.0.0.tar.gz",
+          "size": 7071993,
+          "seq_ids": [
+            "scaffold8592",
+            "scaffold3721",
+            "scaffold31",
+            "scaffold3773",
+            "scaffold3327"
+          ],
+          "seq_count": 861,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T20:02:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fradiculosa.Ensembl.ASM31352v1/BSgenome.Fradiculosa.Ensembl.ASM31352v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ficedula albicollis",
       "common_name": "Collared flycatcher",
       "group": "vertebrate_other",
@@ -111888,6 +111920,30 @@
       "common_name": "",
       "published": "2026-04-18T20:02:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Maphidis.Ensembl.PseuAph10/BSgenome.Maphidis.Ensembl.PseuAph10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fradiculosa.Ensembl.ASM31352v1",
+      "version": "1.0.0",
+      "organism": "Fibroporia radiculosa str. TFFH 294",
+      "assembly": "ASM31352v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000313525.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000313525.1/",
+      "file_name": "BSgenome.Fradiculosa.Ensembl.ASM31352v1_1.0.0.tar.gz",
+      "size": 7071993,
+      "seq_ids": [
+        "scaffold8592",
+        "scaffold3721",
+        "scaffold31",
+        "scaffold3773",
+        "scaffold3327"
+      ],
+      "seq_count": 861,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T20:02:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fradiculosa.Ensembl.ASM31352v1/BSgenome.Fradiculosa.Ensembl.ASM31352v1_1.0.0.tar.gz"
     }
   ]
 }
