@@ -34164,6 +34164,38 @@
           "common_name": "",
           "published": "2026-04-05T08:48:45Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msympodialis.NCBI.ASM34930v2/BSgenome.Msympodialis.NCBI.ASM34930v2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Msympodialis.Ensembl.ASM34930v2",
+          "version": "1.0.0",
+          "organism": "Malassezia sympodialis ATCC 42132",
+          "assembly": "ASM34930v2",
+          "provider": "Ensembl",
+          "accession": "GCA_000349305.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000349305.2/",
+          "file_name": "BSgenome.Msympodialis.Ensembl.ASM34930v2_1.0.0.tar.gz",
+          "size": 1883321,
+          "seq_ids": [
+            "HE999557.1",
+            "HE999549.1",
+            "HE999552.1",
+            "HE999559.1",
+            "HE999550.1"
+          ],
+          "seq_count": 65,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Malasseziomycetes",
+            "order": "Malasseziales",
+            "family": "Malasseziaceae",
+            "genus": "Malassezia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T17:07:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msympodialis.Ensembl.ASM34930v2/BSgenome.Msympodialis.Ensembl.ASM34930v2_1.0.0.tar.gz"
         }
       ]
     },
@@ -108267,6 +108299,38 @@
       "common_name": "",
       "published": "2026-04-18T17:07:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG6/BSgenome.Psp.Ensembl.DG6_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Msympodialis.Ensembl.ASM34930v2",
+      "version": "1.0.0",
+      "organism": "Malassezia sympodialis ATCC 42132",
+      "assembly": "ASM34930v2",
+      "provider": "Ensembl",
+      "accession": "GCA_000349305.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000349305.2/",
+      "file_name": "BSgenome.Msympodialis.Ensembl.ASM34930v2_1.0.0.tar.gz",
+      "size": 1883321,
+      "seq_ids": [
+        "HE999557.1",
+        "HE999549.1",
+        "HE999552.1",
+        "HE999559.1",
+        "HE999550.1"
+      ],
+      "seq_count": 65,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Malasseziomycetes",
+        "order": "Malasseziales",
+        "family": "Malasseziaceae",
+        "genus": "Malassezia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T17:07:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msympodialis.Ensembl.ASM34930v2/BSgenome.Msympodialis.Ensembl.ASM34930v2_1.0.0.tar.gz"
     }
   ]
 }
