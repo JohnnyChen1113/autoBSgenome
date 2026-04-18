@@ -51759,6 +51759,54 @@
       ]
     },
     {
+      "organism": "Pseudogymnoascus sp. VKM F-4520 (FW-2644)",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psp.Ensembl.DG39",
+          "version": "1.0.0",
+          "organism": "Pseudogymnoascus sp. VKM F-4520 (FW-2644)",
+          "assembly": "DG39",
+          "provider": "Ensembl",
+          "accession": "GCA_000750995.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750995.1/",
+          "file_name": "BSgenome.Psp.Ensembl.DG39_1.0.0.tar.gz",
+          "size": 8560306,
+          "seq_ids": [
+            "contig_2356",
+            "contig_2295",
+            "contig_1527",
+            "contig_496",
+            "contig_1484"
+          ],
+          "seq_count": 4294,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Thelebolales",
+            "family": "Thelebolaceae",
+            "genus": "Pseudogymnoascus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T21:41:03Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG39/BSgenome.Psp.Ensembl.DG39_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudogymnoascus verrucosus",
       "common_name": "",
       "group": "fungi",
@@ -114493,6 +114541,38 @@
       "common_name": "",
       "published": "2026-04-18T21:40:43Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hgriseus.Ensembl.Heligris5409V1/BSgenome.Hgriseus.Ensembl.Heligris5409V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psp.Ensembl.DG39",
+      "version": "1.0.0",
+      "organism": "Pseudogymnoascus sp. VKM F-4520 (FW-2644)",
+      "assembly": "DG39",
+      "provider": "Ensembl",
+      "accession": "GCA_000750995.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750995.1/",
+      "file_name": "BSgenome.Psp.Ensembl.DG39_1.0.0.tar.gz",
+      "size": 8560306,
+      "seq_ids": [
+        "contig_2356",
+        "contig_2295",
+        "contig_1527",
+        "contig_496",
+        "contig_1484"
+      ],
+      "seq_count": 4294,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T21:41:03Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG39/BSgenome.Psp.Ensembl.DG39_1.0.0.tar.gz"
     }
   ]
 }
