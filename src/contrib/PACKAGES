@@ -5781,3 +5781,7 @@ NeedsCompilation: no
 Package: BSgenome.Kshandongensis.Ensembl.KwonshanCBS12478V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tratisbonensis.Ensembl.ASM400015v1
+Version: 1.0.0
+NeedsCompilation: no
