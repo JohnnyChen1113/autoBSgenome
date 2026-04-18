@@ -6129,3 +6129,7 @@ NeedsCompilation: no
 Package: BSgenome.Bspectabilis.Ensembl.Paevar1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsolani.Ensembl.Rhizoctoniasolani123Ev1
+Version: 1.0.0
+NeedsCompilation: no
