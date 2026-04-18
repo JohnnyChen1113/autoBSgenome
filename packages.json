@@ -31402,6 +31402,54 @@
       ]
     },
     {
+      "organism": "Malus domestica",
+      "common_name": "apple",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Malus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mdomestica.Ensembl.ASM211411v1",
+          "version": "1.0.0",
+          "organism": "Malus domestica",
+          "assembly": "ASM211411v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002114115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002114115.1/",
+          "file_name": "BSgenome.Mdomestica.Ensembl.ASM211411v1_1.0.0.tar.gz",
+          "size": 149651780,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 806,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Rosales",
+            "family": "Rosaceae",
+            "genus": "Malus"
+          },
+          "common_name": "apple",
+          "published": "2026-04-18T02:37:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdomestica.Ensembl.ASM211411v1/BSgenome.Mdomestica.Ensembl.ASM211411v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Manacus vitellinus",
       "common_name": "golden-collared manakin",
       "group": "vertebrate_other",
@@ -96980,6 +97028,38 @@
       "common_name": "narrow-leaved blue lupine",
       "published": "2026-04-18T02:37:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Langustifolius.Ensembl.LupAngTanjilv10/BSgenome.Langustifolius.Ensembl.LupAngTanjilv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mdomestica.Ensembl.ASM211411v1",
+      "version": "1.0.0",
+      "organism": "Malus domestica",
+      "assembly": "ASM211411v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002114115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002114115.1/",
+      "file_name": "BSgenome.Mdomestica.Ensembl.ASM211411v1_1.0.0.tar.gz",
+      "size": 149651780,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 806,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Malus"
+      },
+      "common_name": "apple",
+      "published": "2026-04-18T02:37:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mdomestica.Ensembl.ASM211411v1/BSgenome.Mdomestica.Ensembl.ASM211411v1_1.0.0.tar.gz"
     }
   ]
 }

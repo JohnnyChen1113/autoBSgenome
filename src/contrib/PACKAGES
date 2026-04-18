@@ -5081,3 +5081,7 @@ NeedsCompilation: no
 Package: BSgenome.Langustifolius.Ensembl.LupAngTanjilv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mdomestica.Ensembl.ASM211411v1
+Version: 1.0.0
+NeedsCompilation: no
