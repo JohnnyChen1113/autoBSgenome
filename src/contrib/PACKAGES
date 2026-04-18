@@ -5381,3 +5381,7 @@ NeedsCompilation: no
 Package: BSgenome.Bcinerea.Ensembl.ASM83294v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -59508,6 +59508,54 @@
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ztritici.NCBI.MYCGRv20/BSgenome.Ztritici.NCBI.MYCGRv20_1.0.0.tar.gz"
         }
       ]
+    },
+    {
+      "organism": "[Candida] pseudohaemulonii",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1",
+          "version": "1.0.0",
+          "organism": "[Candida] pseudohaemulonii",
+          "assembly": "GCA003013735v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003013735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003013735.1/",
+          "file_name": "BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1_1.0.0.tar.gz",
+          "size": 3129255,
+          "seq_ids": [
+            "PYFQ01000001",
+            "PYFQ01000002",
+            "PYFQ01000003",
+            "PYFQ01000004",
+            "PYFQ01000005"
+          ],
+          "seq_count": 36,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Metschnikowiaceae",
+            "genus": "Candidozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:11:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1/BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1_1.0.0.tar.gz"
+        }
+      ]
     }
   ],
   "flat": [
@@ -102148,6 +102196,38 @@
       "common_name": "",
       "published": "2026-04-18T11:11:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bcinerea.Ensembl.ASM83294v1/BSgenome.Bcinerea.Ensembl.ASM83294v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1",
+      "version": "1.0.0",
+      "organism": "[Candida] pseudohaemulonii",
+      "assembly": "GCA003013735v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003013735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003013735.1/",
+      "file_name": "BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1_1.0.0.tar.gz",
+      "size": 3129255,
+      "seq_ids": [
+        "PYFQ01000001",
+        "PYFQ01000002",
+        "PYFQ01000003",
+        "PYFQ01000004",
+        "PYFQ01000005"
+      ],
+      "seq_count": 36,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:11:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1/BSgenome.Cpseudohaemulonii.Ensembl.GCA003013735v1_1.0.0.tar.gz"
     }
   ]
 }
