@@ -10765,6 +10765,54 @@
       ]
     },
     {
+      "organism": "Candida albicans Ca6",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Calbicans.Ensembl.CandalbiCa6V2",
+          "version": "1.0.0",
+          "organism": "Candida albicans Ca6",
+          "assembly": "Cand_albi_Ca6_V2",
+          "provider": "Ensembl",
+          "accession": "GCA_000784695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000784695.1/",
+          "file_name": "BSgenome.Calbicans.Ensembl.CandalbiCa6V2_1.0.0.tar.gz",
+          "size": 3447318,
+          "seq_ids": [
+            "supercont2.10",
+            "supercont2.7",
+            "supercont2.14",
+            "supercont2.75",
+            "supercont2.12"
+          ],
+          "seq_count": 82,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Candida"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:52:02Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiCa6V2/BSgenome.Calbicans.Ensembl.CandalbiCa6V2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Candida albicans P34048",
       "common_name": "",
       "group": "fungi",
@@ -113256,6 +113304,38 @@
       "common_name": "",
       "published": "2026-04-18T20:51:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccinerea.Ensembl.CC3/BSgenome.Ccinerea.Ensembl.CC3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Calbicans.Ensembl.CandalbiCa6V2",
+      "version": "1.0.0",
+      "organism": "Candida albicans Ca6",
+      "assembly": "Cand_albi_Ca6_V2",
+      "provider": "Ensembl",
+      "accession": "GCA_000784695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000784695.1/",
+      "file_name": "BSgenome.Calbicans.Ensembl.CandalbiCa6V2_1.0.0.tar.gz",
+      "size": 3447318,
+      "seq_ids": [
+        "supercont2.10",
+        "supercont2.7",
+        "supercont2.14",
+        "supercont2.75",
+        "supercont2.12"
+      ],
+      "seq_count": 82,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:52:02Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiCa6V2/BSgenome.Calbicans.Ensembl.CandalbiCa6V2_1.0.0.tar.gz"
     }
   ]
 }
