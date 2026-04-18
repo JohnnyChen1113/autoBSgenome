@@ -8338,6 +8338,38 @@
           "common_name": "",
           "published": "2026-04-06T11:30:25Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bcinerea.NCBI.ASM14353v4/BSgenome.Bcinerea.NCBI.ASM14353v4_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Bcinerea.Ensembl.ASM83294v1",
+          "version": "1.0.0",
+          "organism": "Botrytis cinerea B05.10",
+          "assembly": "ASM83294v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000143535.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000143535.4/",
+          "file_name": "BSgenome.Bcinerea.Ensembl.ASM83294v1_1.0.0.tar.gz",
+          "size": 10509707,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 18,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Helotiales",
+            "family": "Sclerotiniaceae",
+            "genus": "Botrytis"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:11:21Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bcinerea.Ensembl.ASM83294v1/BSgenome.Bcinerea.Ensembl.ASM83294v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -102084,6 +102116,38 @@
       "common_name": "",
       "published": "2026-04-18T11:11:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5/BSgenome.Cfructicola.Ensembl.ColletotrichumgloeosporioidesNaragc5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bcinerea.Ensembl.ASM83294v1",
+      "version": "1.0.0",
+      "organism": "Botrytis cinerea B05.10",
+      "assembly": "ASM83294v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000143535.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000143535.4/",
+      "file_name": "BSgenome.Bcinerea.Ensembl.ASM83294v1_1.0.0.tar.gz",
+      "size": 10509707,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 18,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Sclerotiniaceae",
+        "genus": "Botrytis"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:11:21Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bcinerea.Ensembl.ASM83294v1/BSgenome.Bcinerea.Ensembl.ASM83294v1_1.0.0.tar.gz"
     }
   ]
 }
