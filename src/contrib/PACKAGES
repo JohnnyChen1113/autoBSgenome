@@ -5065,3 +5065,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpolymorpha.Ensembl.MpTak1v71
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Jregia.Ensembl.Walnut20
+Version: 1.0.0
+NeedsCompilation: no

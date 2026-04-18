@@ -28318,6 +28318,38 @@
           "common_name": "Persian walnut",
           "published": "2026-04-04T15:36:05Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jregia.NCBI.Walnut20/BSgenome.Jregia.NCBI.Walnut20_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Jregia.Ensembl.Walnut20",
+          "version": "1.0.0",
+          "organism": "Juglans regia",
+          "assembly": "Walnut_2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_001411555.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001411555.2/",
+          "file_name": "BSgenome.Jregia.Ensembl.Walnut20_1.0.0.tar.gz",
+          "size": 136016027,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 24756,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fagales",
+            "family": "Juglandaceae",
+            "genus": "Juglans"
+          },
+          "common_name": "Persian walnut",
+          "published": "2026-04-18T02:36:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jregia.Ensembl.Walnut20/BSgenome.Jregia.Ensembl.Walnut20_1.0.0.tar.gz"
         }
       ]
     },
@@ -96708,6 +96740,38 @@
       "common_name": "common liverwort",
       "published": "2026-04-18T02:36:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mpolymorpha.Ensembl.MpTak1v71/BSgenome.Mpolymorpha.Ensembl.MpTak1v71_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Jregia.Ensembl.Walnut20",
+      "version": "1.0.0",
+      "organism": "Juglans regia",
+      "assembly": "Walnut_2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_001411555.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001411555.2/",
+      "file_name": "BSgenome.Jregia.Ensembl.Walnut20_1.0.0.tar.gz",
+      "size": 136016027,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 24756,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Juglandaceae",
+        "genus": "Juglans"
+      },
+      "common_name": "Persian walnut",
+      "published": "2026-04-18T02:36:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jregia.Ensembl.Walnut20/BSgenome.Jregia.Ensembl.Walnut20_1.0.0.tar.gz"
     }
   ]
 }
