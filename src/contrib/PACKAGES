@@ -5553,3 +5553,7 @@ NeedsCompilation: no
 Package: BSgenome.Bdendrobatidis.Ensembl.BDJEL423
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfinnis.Ensembl.Piromycesspfinnisv30
+Version: 1.0.0
+NeedsCompilation: no

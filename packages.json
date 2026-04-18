@@ -45412,6 +45412,54 @@
       ]
     },
     {
+      "organism": "Piromyces finnis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Neocallimastigomycetes",
+        "order": "Neocallimastigales",
+        "family": "Neocallimastigaceae",
+        "genus": "Piromyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pfinnis.Ensembl.Piromycesspfinnisv30",
+          "version": "1.0.0",
+          "organism": "Piromyces finnis",
+          "assembly": "Piromyces sp. finnis v3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002104945.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002104945.1/",
+          "file_name": "BSgenome.Pfinnis.Ensembl.Piromycesspfinnisv30_1.0.0.tar.gz",
+          "size": 12094857,
+          "seq_ids": [
+            "BCR36scaffold_1",
+            "BCR36scaffold_2",
+            "BCR36scaffold_3",
+            "BCR36scaffold_4",
+            "BCR36scaffold_5"
+          ],
+          "seq_count": 232,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Chytridiomycota",
+            "class": "Neocallimastigomycetes",
+            "order": "Neocallimastigales",
+            "family": "Neocallimastigaceae",
+            "genus": "Piromyces"
+          },
+          "common_name": "",
+          "published": "2026-04-18T14:11:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfinnis.Ensembl.Piromycesspfinnisv30/BSgenome.Pfinnis.Ensembl.Piromycesspfinnisv30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pistacia vera",
       "common_name": "",
       "group": "plant",
@@ -105208,6 +105256,38 @@
       "common_name": "",
       "published": "2026-04-18T14:11:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdendrobatidis.Ensembl.BDJEL423/BSgenome.Bdendrobatidis.Ensembl.BDJEL423_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pfinnis.Ensembl.Piromycesspfinnisv30",
+      "version": "1.0.0",
+      "organism": "Piromyces finnis",
+      "assembly": "Piromyces sp. finnis v3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002104945.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002104945.1/",
+      "file_name": "BSgenome.Pfinnis.Ensembl.Piromycesspfinnisv30_1.0.0.tar.gz",
+      "size": 12094857,
+      "seq_ids": [
+        "BCR36scaffold_1",
+        "BCR36scaffold_2",
+        "BCR36scaffold_3",
+        "BCR36scaffold_4",
+        "BCR36scaffold_5"
+      ],
+      "seq_count": 232,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Neocallimastigomycetes",
+        "order": "Neocallimastigales",
+        "family": "Neocallimastigaceae",
+        "genus": "Piromyces"
+      },
+      "common_name": "",
+      "published": "2026-04-18T14:11:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pfinnis.Ensembl.Piromycesspfinnisv30/BSgenome.Pfinnis.Ensembl.Piromycesspfinnisv30_1.0.0.tar.gz"
     }
   ]
 }
