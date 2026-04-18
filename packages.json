@@ -49825,6 +49825,38 @@
           "common_name": "sesame",
           "published": "2026-04-04T13:02:44Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sindicum.NCBI.Sindicumv10/BSgenome.Sindicum.NCBI.Sindicumv10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Sindicum.Ensembl.Sindicumv10",
+          "version": "1.0.0",
+          "organism": "Sesamum indicum",
+          "assembly": "S_indicum_v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000512975.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000512975.1/",
+          "file_name": "BSgenome.Sindicum.Ensembl.Sindicumv10_1.0.0.tar.gz",
+          "size": 64483502,
+          "seq_ids": [
+            "LG1",
+            "LG10",
+            "LG11",
+            "LG12",
+            "LG13"
+          ],
+          "seq_count": 16235,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Lamiales",
+            "family": "Pedaliaceae",
+            "genus": "Sesamum"
+          },
+          "common_name": "sesame",
+          "published": "2026-04-18T06:50:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sindicum.Ensembl.Sindicumv10/BSgenome.Sindicum.Ensembl.Sindicumv10_1.0.0.tar.gz"
         }
       ]
     },
@@ -99420,6 +99452,38 @@
       "common_name": "",
       "published": "2026-04-18T06:50:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rchinensis.Ensembl.RchiOBHmV2/BSgenome.Rchinensis.Ensembl.RchiOBHmV2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sindicum.Ensembl.Sindicumv10",
+      "version": "1.0.0",
+      "organism": "Sesamum indicum",
+      "assembly": "S_indicum_v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000512975.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000512975.1/",
+      "file_name": "BSgenome.Sindicum.Ensembl.Sindicumv10_1.0.0.tar.gz",
+      "size": 64483502,
+      "seq_ids": [
+        "LG1",
+        "LG10",
+        "LG11",
+        "LG12",
+        "LG13"
+      ],
+      "seq_count": 16235,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Lamiales",
+        "family": "Pedaliaceae",
+        "genus": "Sesamum"
+      },
+      "common_name": "sesame",
+      "published": "2026-04-18T06:50:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sindicum.Ensembl.Sindicumv10/BSgenome.Sindicum.Ensembl.Sindicumv10_1.0.0.tar.gz"
     }
   ]
 }
