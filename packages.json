@@ -50657,6 +50657,38 @@
           "common_name": "potato",
           "published": "2026-04-18T08:01:09Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Stuberosum.Ensembl.ASM1418947v1/BSgenome.Stuberosum.Ensembl.ASM1418947v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Stuberosum.Ensembl.SolTub30",
+          "version": "1.0.0",
+          "organism": "Solanum tuberosum",
+          "assembly": "SolTub_3.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000226075.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000226075.1/",
+          "file_name": "BSgenome.Stuberosum.Ensembl.SolTub30_1.0.0.tar.gz",
+          "size": 162151021,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 13,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Solanaceae",
+            "genus": "Solanum"
+          },
+          "common_name": "potato",
+          "published": "2026-04-18T08:02:24Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Stuberosum.Ensembl.SolTub30/BSgenome.Stuberosum.Ensembl.SolTub30_1.0.0.tar.gz"
         }
       ]
     },
@@ -99964,6 +99996,38 @@
       "common_name": "cacao",
       "published": "2026-04-18T08:02:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tcacao.Ensembl.Theobromacacao20110822/BSgenome.Tcacao.Ensembl.Theobromacacao20110822_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Stuberosum.Ensembl.SolTub30",
+      "version": "1.0.0",
+      "organism": "Solanum tuberosum",
+      "assembly": "SolTub_3.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000226075.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000226075.1/",
+      "file_name": "BSgenome.Stuberosum.Ensembl.SolTub30_1.0.0.tar.gz",
+      "size": 162151021,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 13,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Solanaceae",
+        "genus": "Solanum"
+      },
+      "common_name": "potato",
+      "published": "2026-04-18T08:02:24Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Stuberosum.Ensembl.SolTub30/BSgenome.Stuberosum.Ensembl.SolTub30_1.0.0.tar.gz"
     }
   ]
 }

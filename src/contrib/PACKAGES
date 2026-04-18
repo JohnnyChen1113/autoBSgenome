@@ -5257,3 +5257,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcacao.Ensembl.Theobromacacao20110822
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Stuberosum.Ensembl.SolTub30
+Version: 1.0.0
+NeedsCompilation: no
