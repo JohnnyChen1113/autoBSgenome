@@ -5469,3 +5469,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.CandalbiP60002V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Thominis.Ensembl.ASM31613v1
+Version: 1.0.0
+NeedsCompilation: no
