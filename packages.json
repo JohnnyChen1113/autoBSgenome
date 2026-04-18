@@ -59634,6 +59634,36 @@
           "common_name": "",
           "published": "2026-04-05T07:58:07Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vculicis.NCBI.VavrculifloridensisV1/BSgenome.Vculicis.NCBI.VavrculifloridensisV1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Vculicis.Ensembl.VavrculifloridensisV1",
+          "version": "1.0.0",
+          "organism": "Vavraia culicis subsp. floridensis",
+          "assembly": "Vavr_culi_floridensis_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000192795.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000192795.1/",
+          "file_name": "BSgenome.Vculicis.Ensembl.VavrculifloridensisV1_1.0.0.tar.gz",
+          "size": 1480162,
+          "seq_ids": [
+            "GL877404",
+            "GL877405",
+            "GL877406",
+            "GL877407",
+            "GL877408"
+          ],
+          "seq_count": 379,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Pleistophoridae",
+            "genus": "Vavraia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T14:12:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vculicis.Ensembl.VavrculifloridensisV1/BSgenome.Vculicis.Ensembl.VavrculifloridensisV1_1.0.0.tar.gz"
         }
       ]
     },
@@ -105702,6 +105732,36 @@
       "common_name": "",
       "published": "2026-04-18T14:12:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asteynii.Ensembl.Aspste1/BSgenome.Asteynii.Ensembl.Aspste1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vculicis.Ensembl.VavrculifloridensisV1",
+      "version": "1.0.0",
+      "organism": "Vavraia culicis subsp. floridensis",
+      "assembly": "Vavr_culi_floridensis_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000192795.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000192795.1/",
+      "file_name": "BSgenome.Vculicis.Ensembl.VavrculifloridensisV1_1.0.0.tar.gz",
+      "size": 1480162,
+      "seq_ids": [
+        "GL877404",
+        "GL877405",
+        "GL877406",
+        "GL877407",
+        "GL877408"
+      ],
+      "seq_count": 379,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Pleistophoridae",
+        "genus": "Vavraia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T14:12:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vculicis.Ensembl.VavrculifloridensisV1/BSgenome.Vculicis.Ensembl.VavrculifloridensisV1_1.0.0.tar.gz"
     }
   ]
 }
