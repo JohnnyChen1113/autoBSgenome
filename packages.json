@@ -53254,6 +53254,38 @@
           "common_name": "",
           "published": "2026-04-05T16:40:57Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spunctatus.NCBI.SpunctatusV1/BSgenome.Spunctatus.NCBI.SpunctatusV1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Spunctatus.Ensembl.SpunctatusV1",
+          "version": "1.0.0",
+          "organism": "Spizellomyces punctatus DAOM BR117",
+          "assembly": "S_punctatus_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000182565.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000182565.2/",
+          "file_name": "BSgenome.Spunctatus.Ensembl.SpunctatusV1_1.0.0.tar.gz",
+          "size": 5945747,
+          "seq_ids": [
+            "KQ257450",
+            "KQ257451",
+            "KQ257452",
+            "KQ257453",
+            "KQ257454"
+          ],
+          "seq_count": 38,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Chytridiomycota",
+            "class": "Chytridiomycetes",
+            "order": "Spizellomycetales",
+            "family": "Spizellomycetaceae",
+            "genus": "Spizellomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:23:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spunctatus.Ensembl.SpunctatusV1/BSgenome.Spunctatus.Ensembl.SpunctatusV1_1.0.0.tar.gz"
         }
       ]
     },
@@ -104435,6 +104467,38 @@
       "common_name": "",
       "published": "2026-04-18T13:22:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ebieneusi.Ensembl.ASM20948v1/BSgenome.Ebieneusi.Ensembl.ASM20948v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Spunctatus.Ensembl.SpunctatusV1",
+      "version": "1.0.0",
+      "organism": "Spizellomyces punctatus DAOM BR117",
+      "assembly": "S_punctatus_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000182565.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000182565.2/",
+      "file_name": "BSgenome.Spunctatus.Ensembl.SpunctatusV1_1.0.0.tar.gz",
+      "size": 5945747,
+      "seq_ids": [
+        "KQ257450",
+        "KQ257451",
+        "KQ257452",
+        "KQ257453",
+        "KQ257454"
+      ],
+      "seq_count": 38,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "order": "Spizellomycetales",
+        "family": "Spizellomycetaceae",
+        "genus": "Spizellomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:23:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spunctatus.Ensembl.SpunctatusV1/BSgenome.Spunctatus.Ensembl.SpunctatusV1_1.0.0.tar.gz"
     }
   ]
 }
