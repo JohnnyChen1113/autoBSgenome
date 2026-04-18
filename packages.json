@@ -55794,6 +55794,38 @@
           "common_name": "",
           "published": "2026-04-04T18:53:18Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Turartu.NCBI.Tu21/BSgenome.Turartu.NCBI.Tu21_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Turartu.Ensembl.Tu20",
+          "version": "1.0.0",
+          "organism": "Triticum urartu",
+          "assembly": "Tu2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_003073215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003073215.1/",
+          "file_name": "BSgenome.Turartu.Ensembl.Tu20_1.0.0.tar.gz",
+          "size": 1163036766,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 10284,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Triticum"
+          },
+          "common_name": "",
+          "published": "2026-04-18T08:06:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Turartu.Ensembl.Tu20/BSgenome.Turartu.Ensembl.Tu20_1.0.0.tar.gz"
         }
       ]
     },
@@ -100476,6 +100508,38 @@
       "common_name": "",
       "published": "2026-04-18T08:05:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50/BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Turartu.Ensembl.Tu20",
+      "version": "1.0.0",
+      "organism": "Triticum urartu",
+      "assembly": "Tu2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_003073215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003073215.1/",
+      "file_name": "BSgenome.Turartu.Ensembl.Tu20_1.0.0.tar.gz",
+      "size": 1163036766,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 10284,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Triticum"
+      },
+      "common_name": "",
+      "published": "2026-04-18T08:06:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Turartu.Ensembl.Tu20/BSgenome.Turartu.Ensembl.Tu20_1.0.0.tar.gz"
     }
   ]
 }
