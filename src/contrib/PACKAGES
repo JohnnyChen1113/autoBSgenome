@@ -5701,3 +5701,7 @@ NeedsCompilation: no
 Package: BSgenome.Wichthyophaga.Ensembl.ASM491889v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bhelicus.Ensembl.Blyhe1
+Version: 1.0.0
+NeedsCompilation: no

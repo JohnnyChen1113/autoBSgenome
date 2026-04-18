@@ -8235,6 +8235,50 @@
       ]
     },
     {
+      "organism": "Blyttiomyces helicus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "genus": "Blyttiomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bhelicus.Ensembl.Blyhe1",
+          "version": "1.0.0",
+          "organism": "Blyttiomyces helicus",
+          "assembly": "Blyhe1",
+          "provider": "Ensembl",
+          "accession": "GCA_003614705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003614705.1/",
+          "file_name": "BSgenome.Bhelicus.Ensembl.Blyhe1_1.0.0.tar.gz",
+          "size": 11566484,
+          "seq_ids": [
+            "KZ993809",
+            "KZ993810",
+            "KZ993811",
+            "KZ993812",
+            "KZ993813"
+          ],
+          "seq_count": 8398,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Chytridiomycota",
+            "class": "Chytridiomycetes",
+            "genus": "Blyttiomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-18T16:04:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bhelicus.Ensembl.Blyhe1/BSgenome.Bhelicus.Ensembl.Blyhe1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Bombus impatiens",
       "common_name": "common eastern bumble bee",
       "group": "invertebrate",
@@ -107721,6 +107765,36 @@
       "common_name": "",
       "published": "2026-04-18T16:04:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.ASM491889v1/BSgenome.Wichthyophaga.Ensembl.ASM491889v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bhelicus.Ensembl.Blyhe1",
+      "version": "1.0.0",
+      "organism": "Blyttiomyces helicus",
+      "assembly": "Blyhe1",
+      "provider": "Ensembl",
+      "accession": "GCA_003614705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003614705.1/",
+      "file_name": "BSgenome.Bhelicus.Ensembl.Blyhe1_1.0.0.tar.gz",
+      "size": 11566484,
+      "seq_ids": [
+        "KZ993809",
+        "KZ993810",
+        "KZ993811",
+        "KZ993812",
+        "KZ993813"
+      ],
+      "seq_count": 8398,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "genus": "Blyttiomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-18T16:04:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bhelicus.Ensembl.Blyhe1/BSgenome.Bhelicus.Ensembl.Blyhe1_1.0.0.tar.gz"
     }
   ]
 }
