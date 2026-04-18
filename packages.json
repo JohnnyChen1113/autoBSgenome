@@ -49601,6 +49601,38 @@
           "common_name": "",
           "published": "2026-04-04T11:40:28Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smoellendorffii.NCBI.v10/BSgenome.Smoellendorffii.NCBI.v10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Smoellendorffii.Ensembl.v10",
+          "version": "1.0.0",
+          "organism": "Selaginella moellendorffii",
+          "assembly": "v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000143415.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000143415.1/",
+          "file_name": "BSgenome.Smoellendorffii.Ensembl.v10_1.0.0.tar.gz",
+          "size": 50356414,
+          "seq_ids": [
+            "GL377565",
+            "GL377566",
+            "GL377567",
+            "GL377568",
+            "GL377569"
+          ],
+          "seq_count": 759,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Lycopodiopsida",
+            "order": "Selaginellales",
+            "family": "Selaginellaceae",
+            "genus": "Selaginella"
+          },
+          "common_name": "",
+          "published": "2026-04-18T08:01:16Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smoellendorffii.Ensembl.v10/BSgenome.Smoellendorffii.Ensembl.v10_1.0.0.tar.gz"
         }
       ]
     },
@@ -99756,6 +99788,38 @@
       "common_name": "potato",
       "published": "2026-04-18T08:01:09Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Stuberosum.Ensembl.ASM1418947v1/BSgenome.Stuberosum.Ensembl.ASM1418947v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Smoellendorffii.Ensembl.v10",
+      "version": "1.0.0",
+      "organism": "Selaginella moellendorffii",
+      "assembly": "v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000143415.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000143415.1/",
+      "file_name": "BSgenome.Smoellendorffii.Ensembl.v10_1.0.0.tar.gz",
+      "size": 50356414,
+      "seq_ids": [
+        "GL377565",
+        "GL377566",
+        "GL377567",
+        "GL377568",
+        "GL377569"
+      ],
+      "seq_count": 759,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Lycopodiopsida",
+        "order": "Selaginellales",
+        "family": "Selaginellaceae",
+        "genus": "Selaginella"
+      },
+      "common_name": "",
+      "published": "2026-04-18T08:01:16Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smoellendorffii.Ensembl.v10/BSgenome.Smoellendorffii.Ensembl.v10_1.0.0.tar.gz"
     }
   ]
 }
