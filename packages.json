@@ -48966,6 +48966,48 @@
       ]
     },
     {
+      "organism": "Rozella allomycis CSF55",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Cryptomycota",
+        "genus": "Rozella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rallomycis.Ensembl.Rozellak41t100",
+          "version": "1.0.0",
+          "organism": "Rozella allomycis CSF55",
+          "assembly": "Rozella_k41_t100",
+          "provider": "Ensembl",
+          "accession": "GCA_000442015.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000442015.1/",
+          "file_name": "BSgenome.Rallomycis.Ensembl.Rozellak41t100_1.0.0.tar.gz",
+          "size": 2842763,
+          "seq_ids": [
+            "KE561209",
+            "KE561047",
+            "KE560959",
+            "KE560848",
+            "KE561117"
+          ],
+          "seq_count": 1059,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Cryptomycota",
+            "genus": "Rozella"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:59:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rallomycis.Ensembl.Rozellak41t100/BSgenome.Rallomycis.Ensembl.Rozellak41t100_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Saccharomyces cerevisiae",
       "common_name": "brewer's yeast",
       "group": "fungi",
@@ -102924,6 +102966,35 @@
       "common_name": "",
       "published": "2026-04-18T11:59:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ztritici.Ensembl.ZtST99CH3D7/BSgenome.Ztritici.Ensembl.ZtST99CH3D7_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rallomycis.Ensembl.Rozellak41t100",
+      "version": "1.0.0",
+      "organism": "Rozella allomycis CSF55",
+      "assembly": "Rozella_k41_t100",
+      "provider": "Ensembl",
+      "accession": "GCA_000442015.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000442015.1/",
+      "file_name": "BSgenome.Rallomycis.Ensembl.Rozellak41t100_1.0.0.tar.gz",
+      "size": 2842763,
+      "seq_ids": [
+        "KE561209",
+        "KE561047",
+        "KE560959",
+        "KE560848",
+        "KE561117"
+      ],
+      "seq_count": 1059,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Cryptomycota",
+        "genus": "Rozella"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:59:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rallomycis.Ensembl.Rozellak41t100/BSgenome.Rallomycis.Ensembl.Rozellak41t100_1.0.0.tar.gz"
     }
   ]
 }

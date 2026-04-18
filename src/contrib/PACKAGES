@@ -5421,3 +5421,7 @@ NeedsCompilation: no
 Package: BSgenome.Ztritici.Ensembl.ZtST99CH3D7
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rallomycis.Ensembl.Rozellak41t100
+Version: 1.0.0
+NeedsCompilation: no
