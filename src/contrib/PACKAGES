@@ -5169,3 +5169,7 @@ NeedsCompilation: no
 Package: BSgenome.Oeuropaea.Ensembl.Oeuropaeav1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psomniferum.Ensembl.ASM357369v1
+Version: 1.0.0
+NeedsCompilation: no

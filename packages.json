@@ -40368,6 +40368,38 @@
           "common_name": "opium poppy",
           "published": "2026-04-04T17:39:18Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psomniferum.NCBI.ASM357369v1/BSgenome.Psomniferum.NCBI.ASM357369v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Psomniferum.Ensembl.ASM357369v1",
+          "version": "1.0.0",
+          "organism": "Papaver somniferum",
+          "assembly": "ASM357369v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003573695.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003573695.1/",
+          "file_name": "BSgenome.Psomniferum.Ensembl.ASM357369v1_1.0.0.tar.gz",
+          "size": 624524893,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 34380,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Ranunculales",
+            "family": "Papaveraceae",
+            "genus": "Papaver"
+          },
+          "common_name": "opium poppy",
+          "published": "2026-04-18T05:14:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psomniferum.Ensembl.ASM357369v1/BSgenome.Psomniferum.Ensembl.ASM357369v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -98484,6 +98516,38 @@
       "common_name": "",
       "published": "2026-04-18T05:12:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oeuropaea.Ensembl.Oeuropaeav1/BSgenome.Oeuropaea.Ensembl.Oeuropaeav1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psomniferum.Ensembl.ASM357369v1",
+      "version": "1.0.0",
+      "organism": "Papaver somniferum",
+      "assembly": "ASM357369v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003573695.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003573695.1/",
+      "file_name": "BSgenome.Psomniferum.Ensembl.ASM357369v1_1.0.0.tar.gz",
+      "size": 624524893,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 34380,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Ranunculales",
+        "family": "Papaveraceae",
+        "genus": "Papaver"
+      },
+      "common_name": "opium poppy",
+      "published": "2026-04-18T05:14:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psomniferum.Ensembl.ASM357369v1/BSgenome.Psomniferum.Ensembl.ASM357369v1_1.0.0.tar.gz"
     }
   ]
 }
