@@ -5793,3 +5793,7 @@ NeedsCompilation: no
 Package: BSgenome.Caquaticus.Ensembl.Cloaq1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wichthyophaga.Ensembl.ASM491806v1
+Version: 1.0.0
+NeedsCompilation: no
