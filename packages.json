@@ -41359,6 +41359,50 @@
       ]
     },
     {
+      "organism": "Ordospora colligata",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Ordosporidae",
+        "genus": "Ordospora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1",
+          "version": "1.0.0",
+          "organism": "Ordospora colligata",
+          "assembly": "Ordospora FISK v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004325055.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004325055.1/",
+          "file_name": "BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1_1.0.0.tar.gz",
+          "size": 554097,
+          "seq_ids": [
+            "contig_01",
+            "contig_04",
+            "contig_12",
+            "contig_03",
+            "contig_02c"
+          ],
+          "seq_count": 26,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Ordosporidae",
+            "genus": "Ordospora"
+          },
+          "common_name": "",
+          "published": "2026-04-18T17:08:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1/BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Ordospora colligata OC4",
       "common_name": "",
       "group": "fungi",
@@ -108507,6 +108551,36 @@
       "common_name": "",
       "published": "2026-04-18T17:08:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehepatopenaei.Ensembl.ASM208167v1/BSgenome.Ehepatopenaei.Ensembl.ASM208167v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1",
+      "version": "1.0.0",
+      "organism": "Ordospora colligata",
+      "assembly": "Ordospora FISK v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004325055.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004325055.1/",
+      "file_name": "BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1_1.0.0.tar.gz",
+      "size": 554097,
+      "seq_ids": [
+        "contig_01",
+        "contig_04",
+        "contig_12",
+        "contig_03",
+        "contig_02c"
+      ],
+      "seq_count": 26,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Ordosporidae",
+        "genus": "Ordospora"
+      },
+      "common_name": "",
+      "published": "2026-04-18T17:08:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1/BSgenome.Ocolligata.Ensembl.OrdosporaFISKv1_1.0.0.tar.gz"
     }
   ]
 }
