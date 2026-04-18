@@ -34012,6 +34012,54 @@
       ]
     },
     {
+      "organism": "Laccaria amethystina LaAM-08-1",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Hydnangiaceae",
+        "genus": "Laccaria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lamethystina.Ensembl.LaccariaamethystinaLaAM081v10",
+          "version": "1.0.0",
+          "organism": "Laccaria amethystina LaAM-08-1",
+          "assembly": "Laccaria amethystina LaAM-08-1 v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000827195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827195.1/",
+          "file_name": "BSgenome.Lamethystina.Ensembl.LaccariaamethystinaLaAM081v10_1.0.0.tar.gz",
+          "size": 11893564,
+          "seq_ids": [
+            "KN838536",
+            "KN838537",
+            "KN838538",
+            "KN838539",
+            "KN838540"
+          ],
+          "seq_count": 1299,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Hydnangiaceae",
+            "genus": "Laccaria"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:40:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lamethystina.Ensembl.LaccariaamethystinaLaAM081v10/BSgenome.Lamethystina.Ensembl.LaccariaamethystinaLaAM081v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Laccaria bicolor S238N-H82",
       "common_name": "",
       "group": "fungi",
@@ -116730,6 +116778,38 @@
       "common_name": "",
       "published": "2026-04-18T23:40:45Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pchrysosporium.Ensembl.GCA000167175v1/BSgenome.Pchrysosporium.Ensembl.GCA000167175v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lamethystina.Ensembl.LaccariaamethystinaLaAM081v10",
+      "version": "1.0.0",
+      "organism": "Laccaria amethystina LaAM-08-1",
+      "assembly": "Laccaria amethystina LaAM-08-1 v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000827195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827195.1/",
+      "file_name": "BSgenome.Lamethystina.Ensembl.LaccariaamethystinaLaAM081v10_1.0.0.tar.gz",
+      "size": 11893564,
+      "seq_ids": [
+        "KN838536",
+        "KN838537",
+        "KN838538",
+        "KN838539",
+        "KN838540"
+      ],
+      "seq_count": 1299,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Hydnangiaceae",
+        "genus": "Laccaria"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:40:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lamethystina.Ensembl.LaccariaamethystinaLaAM081v10/BSgenome.Lamethystina.Ensembl.LaccariaamethystinaLaAM081v10_1.0.0.tar.gz"
     }
   ]
 }
