@@ -5777,3 +5777,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcannonballus.Ensembl.ASM415492v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kshandongensis.Ensembl.KwonshanCBS12478V1
+Version: 1.0.0
+NeedsCompilation: no

@@ -31948,6 +31948,38 @@
       ]
     },
     {
+      "organism": "Kwoniella shandongensis str. CBS 12478",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Kshandongensis.Ensembl.KwonshanCBS12478V1",
+          "version": "1.0.0",
+          "organism": "Kwoniella shandongensis str. CBS 12478",
+          "assembly": "Kwon_shan_CBS_12478_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_008629635.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008629635.1/",
+          "file_name": "BSgenome.Kshandongensis.Ensembl.KwonshanCBS12478V1_1.0.0.tar.gz",
+          "size": 5307488,
+          "seq_ids": [
+            "scaffold00001",
+            "scaffold00002",
+            "scaffold00003",
+            "scaffold00004",
+            "scaffold00005"
+          ],
+          "seq_count": 132,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T17:09:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kshandongensis.Ensembl.KwonshanCBS12478V1/BSgenome.Kshandongensis.Ensembl.KwonshanCBS12478V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Labrus bergylta",
       "common_name": "ballan wrasse",
       "group": "vertebrate_other",
@@ -108978,6 +109010,30 @@
       "common_name": "",
       "published": "2026-04-18T17:09:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcannonballus.Ensembl.ASM415492v1/BSgenome.Mcannonballus.Ensembl.ASM415492v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kshandongensis.Ensembl.KwonshanCBS12478V1",
+      "version": "1.0.0",
+      "organism": "Kwoniella shandongensis str. CBS 12478",
+      "assembly": "Kwon_shan_CBS_12478_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_008629635.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008629635.1/",
+      "file_name": "BSgenome.Kshandongensis.Ensembl.KwonshanCBS12478V1_1.0.0.tar.gz",
+      "size": 5307488,
+      "seq_ids": [
+        "scaffold00001",
+        "scaffold00002",
+        "scaffold00003",
+        "scaffold00004",
+        "scaffold00005"
+      ],
+      "seq_count": 132,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T17:09:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kshandongensis.Ensembl.KwonshanCBS12478V1/BSgenome.Kshandongensis.Ensembl.KwonshanCBS12478V1_1.0.0.tar.gz"
     }
   ]
 }
