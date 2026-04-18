@@ -48817,6 +48817,54 @@
       ]
     },
     {
+      "organism": "Pleurotus ostreatus PC15",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Pleurotaceae",
+        "genus": "Pleurotus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Postreatus.Ensembl.PleosPC152",
+          "version": "1.0.0",
+          "organism": "Pleurotus ostreatus PC15",
+          "assembly": "PleosPC15_2",
+          "provider": "Ensembl",
+          "accession": "GCA_000697685.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000697685.1/",
+          "file_name": "BSgenome.Postreatus.Ensembl.PleosPC152_1.0.0.tar.gz",
+          "size": 8555394,
+          "seq_ids": [
+            "KL198004",
+            "KL198006",
+            "KL198007",
+            "KL198008",
+            "KL198010"
+          ],
+          "seq_count": 12,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Pleurotaceae",
+            "genus": "Pleurotus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:50:24Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Postreatus.Ensembl.PleosPC152/BSgenome.Postreatus.Ensembl.PleosPC152_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pneumocystis carinii B80",
       "common_name": "",
       "group": "fungi",
@@ -112640,6 +112688,38 @@
       "common_name": "",
       "published": "2026-04-18T20:50:13Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vinaequalis.Ensembl.ASM976944v1/BSgenome.Vinaequalis.Ensembl.ASM976944v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Postreatus.Ensembl.PleosPC152",
+      "version": "1.0.0",
+      "organism": "Pleurotus ostreatus PC15",
+      "assembly": "PleosPC15_2",
+      "provider": "Ensembl",
+      "accession": "GCA_000697685.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000697685.1/",
+      "file_name": "BSgenome.Postreatus.Ensembl.PleosPC152_1.0.0.tar.gz",
+      "size": 8555394,
+      "seq_ids": [
+        "KL198004",
+        "KL198006",
+        "KL198007",
+        "KL198008",
+        "KL198010"
+      ],
+      "seq_count": 12,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Pleurotaceae",
+        "genus": "Pleurotus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:50:24Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Postreatus.Ensembl.PleosPC152/BSgenome.Postreatus.Ensembl.PleosPC152_1.0.0.tar.gz"
     }
   ]
 }
