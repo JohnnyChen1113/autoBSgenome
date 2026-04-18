@@ -64033,6 +64033,38 @@
           "common_name": "",
           "published": "2026-04-18T20:00:53Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.ASM491801v1/BSgenome.Wichthyophaga.Ensembl.ASM491801v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Wichthyophaga.Ensembl.ASM491888v1",
+          "version": "1.0.0",
+          "organism": "Wallemia ichthyophaga",
+          "assembly": "ASM491888v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004918885.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004918885.1/",
+          "file_name": "BSgenome.Wichthyophaga.Ensembl.ASM491888v1_1.0.0.tar.gz",
+          "size": 2371834,
+          "seq_ids": [
+            "contig-120_0",
+            "contig-120_1",
+            "contig-120_2",
+            "contig-120_3",
+            "contig-120_4"
+          ],
+          "seq_count": 195,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Wallemiomycetes",
+            "order": "Wallemiales",
+            "family": "Wallemiaceae",
+            "genus": "Wallemia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:03:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.ASM491888v1/BSgenome.Wichthyophaga.Ensembl.ASM491888v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -112416,6 +112448,38 @@
       "common_name": "",
       "published": "2026-04-18T20:03:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Uhordei.Ensembl.ASM28603v1/BSgenome.Uhordei.Ensembl.ASM28603v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Wichthyophaga.Ensembl.ASM491888v1",
+      "version": "1.0.0",
+      "organism": "Wallemia ichthyophaga",
+      "assembly": "ASM491888v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004918885.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004918885.1/",
+      "file_name": "BSgenome.Wichthyophaga.Ensembl.ASM491888v1_1.0.0.tar.gz",
+      "size": 2371834,
+      "seq_ids": [
+        "contig-120_0",
+        "contig-120_1",
+        "contig-120_2",
+        "contig-120_3",
+        "contig-120_4"
+      ],
+      "seq_count": 195,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Wallemiomycetes",
+        "order": "Wallemiales",
+        "family": "Wallemiaceae",
+        "genus": "Wallemia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:03:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.ASM491888v1/BSgenome.Wichthyophaga.Ensembl.ASM491888v1_1.0.0.tar.gz"
     }
   ]
 }
