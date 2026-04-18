@@ -5289,3 +5289,7 @@ NeedsCompilation: no
 Package: BSgenome.Turartu.Ensembl.Tu20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptrichocarpa.Ensembl.Poptriv4
+Version: 1.0.0
+NeedsCompilation: no

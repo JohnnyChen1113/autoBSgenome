@@ -45010,6 +45010,38 @@
           "common_name": "black cottonwood",
           "published": "2026-04-04T14:00:28Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41/BSgenome.Ptrichocarpa.NCBI.Ptrichocarpav41_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ptrichocarpa.Ensembl.Poptriv4",
+          "version": "1.0.0",
+          "organism": "Populus trichocarpa",
+          "assembly": "Pop_tri_v4",
+          "provider": "Ensembl",
+          "accession": "GCA_000002775.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002775.4/",
+          "file_name": "BSgenome.Ptrichocarpa.Ensembl.Poptriv4_1.0.0.tar.gz",
+          "size": 91472527,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 46,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Malpighiales",
+            "family": "Salicaceae",
+            "genus": "Populus"
+          },
+          "common_name": "black cottonwood",
+          "published": "2026-04-18T09:04:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptrichocarpa.Ensembl.Poptriv4/BSgenome.Ptrichocarpa.Ensembl.Poptriv4_1.0.0.tar.gz"
         }
       ]
     },
@@ -100540,6 +100572,38 @@
       "common_name": "",
       "published": "2026-04-18T08:06:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Turartu.Ensembl.Tu20/BSgenome.Turartu.Ensembl.Tu20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ptrichocarpa.Ensembl.Poptriv4",
+      "version": "1.0.0",
+      "organism": "Populus trichocarpa",
+      "assembly": "Pop_tri_v4",
+      "provider": "Ensembl",
+      "accession": "GCA_000002775.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002775.4/",
+      "file_name": "BSgenome.Ptrichocarpa.Ensembl.Poptriv4_1.0.0.tar.gz",
+      "size": 91472527,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 46,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Malpighiales",
+        "family": "Salicaceae",
+        "genus": "Populus"
+      },
+      "common_name": "black cottonwood",
+      "published": "2026-04-18T09:04:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ptrichocarpa.Ensembl.Poptriv4/BSgenome.Ptrichocarpa.Ensembl.Poptriv4_1.0.0.tar.gz"
     }
   ]
 }
