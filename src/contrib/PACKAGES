@@ -6169,3 +6169,7 @@ NeedsCompilation: no
 Package: BSgenome.Vdahliae.Ensembl.ASM289299v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Calbicans.Ensembl.CandalbiP57055V1
+Version: 1.0.0
+NeedsCompilation: no
