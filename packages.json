@@ -60484,6 +60484,36 @@
             "NW_006889838.1"
           ],
           "seq_count": 220
+        },
+        {
+          "package": "BSgenome.Vcorneae.Ensembl.VittcornV1",
+          "version": "1.0.0",
+          "organism": "Vittaforma corneae ATCC 50505",
+          "assembly": "Vitt_corn_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000231115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000231115.1/",
+          "file_name": "BSgenome.Vcorneae.Ensembl.VittcornV1_1.0.0.tar.gz",
+          "size": 767105,
+          "seq_ids": [
+            "JH370130",
+            "JH370131",
+            "JH370132",
+            "JH370133",
+            "JH370134"
+          ],
+          "seq_count": 220,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Nosematidae",
+            "genus": "Vittaforma"
+          },
+          "common_name": "",
+          "published": "2026-04-18T14:14:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vcorneae.Ensembl.VittcornV1/BSgenome.Vcorneae.Ensembl.VittcornV1_1.0.0.tar.gz"
         }
       ]
     },
@@ -106166,6 +106196,36 @@
       "common_name": "",
       "published": "2026-04-18T14:13:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcyanescens.Ensembl.ASM293835v1/BSgenome.Pcyanescens.Ensembl.ASM293835v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vcorneae.Ensembl.VittcornV1",
+      "version": "1.0.0",
+      "organism": "Vittaforma corneae ATCC 50505",
+      "assembly": "Vitt_corn_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000231115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000231115.1/",
+      "file_name": "BSgenome.Vcorneae.Ensembl.VittcornV1_1.0.0.tar.gz",
+      "size": 767105,
+      "seq_ids": [
+        "JH370130",
+        "JH370131",
+        "JH370132",
+        "JH370133",
+        "JH370134"
+      ],
+      "seq_count": 220,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Nosematidae",
+        "genus": "Vittaforma"
+      },
+      "common_name": "",
+      "published": "2026-04-18T14:14:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vcorneae.Ensembl.VittcornV1/BSgenome.Vcorneae.Ensembl.VittcornV1_1.0.0.tar.gz"
     }
   ]
 }
