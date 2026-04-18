@@ -27216,6 +27216,54 @@
       ]
     },
     {
+      "organism": "Gelatoporia subvermispora B",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Gelatoporiaceae",
+        "genus": "Gelatoporia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10",
+          "version": "1.0.0",
+          "organism": "Gelatoporia subvermispora B",
+          "assembly": "Ceriporiopsis subvermispora B v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000320605.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000320605.2/",
+          "file_name": "BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10_1.0.0.tar.gz",
+          "size": 9435980,
+          "seq_ids": [
+            "KB445791",
+            "KB445792",
+            "KB445793",
+            "KB445794",
+            "KB445795"
+          ],
+          "seq_count": 740,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Polyporales",
+            "family": "Gelatoporiaceae",
+            "genus": "Gelatoporia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T21:39:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10/BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Geospiza fortis",
       "common_name": "medium ground-finch",
       "group": "vertebrate_other",
@@ -113992,6 +114040,38 @@
       "common_name": "",
       "published": "2026-04-18T21:38:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG5/BSgenome.Psp.Ensembl.DG5_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10",
+      "version": "1.0.0",
+      "organism": "Gelatoporia subvermispora B",
+      "assembly": "Ceriporiopsis subvermispora B v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000320605.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000320605.2/",
+      "file_name": "BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10_1.0.0.tar.gz",
+      "size": 9435980,
+      "seq_ids": [
+        "KB445791",
+        "KB445792",
+        "KB445793",
+        "KB445794",
+        "KB445795"
+      ],
+      "seq_count": 740,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Gelatoporiaceae",
+        "genus": "Gelatoporia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T21:39:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10/BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10_1.0.0.tar.gz"
     }
   ]
 }
