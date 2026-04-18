@@ -5329,3 +5329,7 @@ NeedsCompilation: no
 Package: BSgenome.Afumigatus.Ensembl.GCA000002655v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Afischeri.Ensembl.GCA000149645v4
+Version: 1.0.0
+NeedsCompilation: no
