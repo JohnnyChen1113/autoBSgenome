@@ -1271,6 +1271,54 @@
       ]
     },
     {
+      "organism": "Amanita muscaria Koide BX008",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Amanitaceae",
+        "genus": "Amanita"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10",
+          "version": "1.0.0",
+          "organism": "Amanita muscaria Koide BX008",
+          "assembly": "Amanita muscaria Koide BX008 v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000827485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827485.1/",
+          "file_name": "BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10_1.0.0.tar.gz",
+          "size": 8938295,
+          "seq_ids": [
+            "KN818222",
+            "KN818224",
+            "KN818223",
+            "KN818225",
+            "KN818226"
+          ],
+          "seq_count": 1101,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Amanitaceae",
+            "genus": "Amanita"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:40:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10/BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Amazona collaria",
       "common_name": "yellow-billed parrot",
       "group": "vertebrate_other",
@@ -116362,6 +116410,38 @@
       "common_name": "",
       "published": "2026-04-18T23:39:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbassiana.Ensembl.BBA10/BSgenome.Bbassiana.Ensembl.BBA10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10",
+      "version": "1.0.0",
+      "organism": "Amanita muscaria Koide BX008",
+      "assembly": "Amanita muscaria Koide BX008 v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000827485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827485.1/",
+      "file_name": "BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10_1.0.0.tar.gz",
+      "size": 8938295,
+      "seq_ids": [
+        "KN818222",
+        "KN818224",
+        "KN818223",
+        "KN818225",
+        "KN818226"
+      ],
+      "seq_count": 1101,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Amanitaceae",
+        "genus": "Amanita"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:40:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10/BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10_1.0.0.tar.gz"
     }
   ]
 }

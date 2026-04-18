@@ -6205,3 +6205,7 @@ NeedsCompilation: no
 Package: BSgenome.Bbassiana.Ensembl.BBA10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amuscaria.Ensembl.AmanitamuscariaKoideBX008v10
+Version: 1.0.0
+NeedsCompilation: no
