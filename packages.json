@@ -15895,6 +15895,38 @@
       ]
     },
     {
+      "organism": "Cryptococcus neoformans var. neoformans JEC21",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Cneoformans.Ensembl.ASM9104v1",
+          "version": "1.0.0",
+          "organism": "Cryptococcus neoformans var. neoformans JEC21",
+          "assembly": "ASM9104v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000091045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000091045.1/",
+          "file_name": "BSgenome.Cneoformans.Ensembl.ASM9104v1_1.0.0.tar.gz",
+          "size": 4746542,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 14,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T11:10:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cneoformans.Ensembl.ASM9104v1/BSgenome.Cneoformans.Ensembl.ASM9104v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus tetragattii IND107",
       "common_name": "",
       "group": "fungi",
@@ -101820,6 +101852,30 @@
       "common_name": "",
       "published": "2026-04-18T11:10:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgraminicola.Ensembl.CgraminicolaM1001V1/BSgenome.Cgraminicola.Ensembl.CgraminicolaM1001V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cneoformans.Ensembl.ASM9104v1",
+      "version": "1.0.0",
+      "organism": "Cryptococcus neoformans var. neoformans JEC21",
+      "assembly": "ASM9104v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000091045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000091045.1/",
+      "file_name": "BSgenome.Cneoformans.Ensembl.ASM9104v1_1.0.0.tar.gz",
+      "size": 4746542,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 14,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T11:10:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cneoformans.Ensembl.ASM9104v1/BSgenome.Cneoformans.Ensembl.ASM9104v1_1.0.0.tar.gz"
     }
   ]
 }
