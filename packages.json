@@ -31977,6 +31977,54 @@
       ]
     },
     {
+      "organism": "Hortaea werneckii",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Teratosphaeriaceae",
+        "genus": "Hortaea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Hwerneckii.Ensembl.ASM370435v1",
+          "version": "1.0.0",
+          "organism": "Hortaea werneckii",
+          "assembly": "ASM370435v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003704355.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003704355.1/",
+          "file_name": "BSgenome.Hwerneckii.Ensembl.ASM370435v1_1.0.0.tar.gz",
+          "size": 12117345,
+          "seq_ids": [
+            "contig-180_0",
+            "contig-180_1",
+            "contig-180_2",
+            "contig-180_3",
+            "contig-180_4"
+          ],
+          "seq_count": 5120,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Mycosphaerellales",
+            "family": "Teratosphaeriaceae",
+            "genus": "Hortaea"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:40:24Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hwerneckii.Ensembl.ASM370435v1/BSgenome.Hwerneckii.Ensembl.ASM370435v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Hucho hucho",
       "common_name": "huchen",
       "group": "vertebrate_other",
@@ -116506,6 +116554,38 @@
       "common_name": "",
       "published": "2026-04-18T23:40:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiSC5314V3/BSgenome.Calbicans.Ensembl.CandalbiSC5314V3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hwerneckii.Ensembl.ASM370435v1",
+      "version": "1.0.0",
+      "organism": "Hortaea werneckii",
+      "assembly": "ASM370435v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003704355.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003704355.1/",
+      "file_name": "BSgenome.Hwerneckii.Ensembl.ASM370435v1_1.0.0.tar.gz",
+      "size": 12117345,
+      "seq_ids": [
+        "contig-180_0",
+        "contig-180_1",
+        "contig-180_2",
+        "contig-180_3",
+        "contig-180_4"
+      ],
+      "seq_count": 5120,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Teratosphaeriaceae",
+        "genus": "Hortaea"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:40:24Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hwerneckii.Ensembl.ASM370435v1/BSgenome.Hwerneckii.Ensembl.ASM370435v1_1.0.0.tar.gz"
     }
   ]
 }

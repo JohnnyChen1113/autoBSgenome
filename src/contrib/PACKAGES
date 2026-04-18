@@ -6213,3 +6213,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.CandalbiSC5314V3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hwerneckii.Ensembl.ASM370435v1
+Version: 1.0.0
+NeedsCompilation: no
