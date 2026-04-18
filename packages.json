@@ -47422,6 +47422,38 @@
       ]
     },
     {
+      "organism": "Pterula gracilis str. CBS 309.79",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Pgracilis.Ensembl.Ptegra1",
+          "version": "1.0.0",
+          "organism": "Pterula gracilis str. CBS 309.79",
+          "assembly": "Ptegra1",
+          "provider": "Ensembl",
+          "accession": "GCA_004369125.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004369125.1/",
+          "file_name": "BSgenome.Pgracilis.Ensembl.Ptegra1_1.0.0.tar.gz",
+          "size": 8414149,
+          "seq_ids": [
+            "ML178814",
+            "ML178815",
+            "ML178816",
+            "ML178817",
+            "ML178818"
+          ],
+          "seq_count": 221,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T12:00:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgracilis.Ensembl.Ptegra1/BSgenome.Pgracilis.Ensembl.Ptegra1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Puccinia graminis f. sp. tritici CRL 75-36-700-3",
       "common_name": "",
       "group": "fungi",
@@ -103131,6 +103163,30 @@
       "common_name": "",
       "published": "2026-04-18T12:00:03Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psaccamoebae.Ensembl.KSL3v6/BSgenome.Psaccamoebae.Ensembl.KSL3v6_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pgracilis.Ensembl.Ptegra1",
+      "version": "1.0.0",
+      "organism": "Pterula gracilis str. CBS 309.79",
+      "assembly": "Ptegra1",
+      "provider": "Ensembl",
+      "accession": "GCA_004369125.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004369125.1/",
+      "file_name": "BSgenome.Pgracilis.Ensembl.Ptegra1_1.0.0.tar.gz",
+      "size": 8414149,
+      "seq_ids": [
+        "ML178814",
+        "ML178815",
+        "ML178816",
+        "ML178817",
+        "ML178818"
+      ],
+      "seq_count": 221,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T12:00:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pgracilis.Ensembl.Ptegra1/BSgenome.Pgracilis.Ensembl.Ptegra1_1.0.0.tar.gz"
     }
   ]
 }

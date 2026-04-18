@@ -5433,3 +5433,7 @@ NeedsCompilation: no
 Package: BSgenome.Psaccamoebae.Ensembl.KSL3v6
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgracilis.Ensembl.Ptegra1
+Version: 1.0.0
+NeedsCompilation: no
