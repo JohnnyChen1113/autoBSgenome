@@ -47535,6 +47535,38 @@
           "common_name": "",
           "published": "2026-04-06T13:53:49Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcarnosa.NCBI.PhanerochaetecarnosaHHB10118Spv10/BSgenome.Pcarnosa.NCBI.PhanerochaetecarnosaHHB10118Spv10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Pcarnosa.Ensembl.PhanerochaetecarnosaHHB10118Spv10",
+          "version": "1.0.0",
+          "organism": "Phanerochaete carnosa HHB-10118-sp",
+          "assembly": "Phanerochaete carnosa HHB-10118-Sp v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000300595.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000300595.1/",
+          "file_name": "BSgenome.Pcarnosa.Ensembl.PhanerochaetecarnosaHHB10118Spv10_1.0.0.tar.gz",
+          "size": 10742423,
+          "seq_ids": [
+            "JH930468",
+            "JH930469",
+            "JH930470",
+            "JH930471",
+            "JH930472"
+          ],
+          "seq_count": 1137,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Polyporales",
+            "family": "Phanerochaetaceae",
+            "genus": "Phanerochaete"
+          },
+          "common_name": "",
+          "published": "2026-04-18T21:39:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcarnosa.Ensembl.PhanerochaetecarnosaHHB10118Spv10/BSgenome.Pcarnosa.Ensembl.PhanerochaetecarnosaHHB10118Spv10_1.0.0.tar.gz"
         }
       ]
     },
@@ -114152,6 +114184,38 @@
       "common_name": "",
       "published": "2026-04-18T21:39:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.Candalbi19FV2/BSgenome.Calbicans.Ensembl.Candalbi19FV2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcarnosa.Ensembl.PhanerochaetecarnosaHHB10118Spv10",
+      "version": "1.0.0",
+      "organism": "Phanerochaete carnosa HHB-10118-sp",
+      "assembly": "Phanerochaete carnosa HHB-10118-Sp v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000300595.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000300595.1/",
+      "file_name": "BSgenome.Pcarnosa.Ensembl.PhanerochaetecarnosaHHB10118Spv10_1.0.0.tar.gz",
+      "size": 10742423,
+      "seq_ids": [
+        "JH930468",
+        "JH930469",
+        "JH930470",
+        "JH930471",
+        "JH930472"
+      ],
+      "seq_count": 1137,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Phanerochaetaceae",
+        "genus": "Phanerochaete"
+      },
+      "common_name": "",
+      "published": "2026-04-18T21:39:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcarnosa.Ensembl.PhanerochaetecarnosaHHB10118Spv10/BSgenome.Pcarnosa.Ensembl.PhanerochaetecarnosaHHB10118Spv10_1.0.0.tar.gz"
     }
   ]
 }
