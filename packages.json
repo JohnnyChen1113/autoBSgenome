@@ -19373,6 +19373,54 @@
       ]
     },
     {
+      "organism": "Cylindrobasidium torrendii FP15055 ss-10",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Physalacriaceae",
+        "genus": "Cylindrobasidium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ctorrendii.Ensembl.Cylto1",
+          "version": "1.0.0",
+          "organism": "Cylindrobasidium torrendii FP15055 ss-10",
+          "assembly": "Cylto1",
+          "provider": "Ensembl",
+          "accession": "GCA_000934385.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000934385.1/",
+          "file_name": "BSgenome.Ctorrendii.Ensembl.Cylto1_1.0.0.tar.gz",
+          "size": 7887391,
+          "seq_ids": [
+            "KN880431",
+            "KN880432",
+            "KN880433",
+            "KN880434",
+            "KN880435"
+          ],
+          "seq_count": 1149,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Physalacriaceae",
+            "genus": "Cylindrobasidium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:38:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctorrendii.Ensembl.Cylto1/BSgenome.Ctorrendii.Ensembl.Cylto1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cynara cardunculus var. scolymus",
       "common_name": "artichoke",
       "group": "plant",
@@ -115994,6 +116042,38 @@
       "common_name": "",
       "published": "2026-04-18T23:38:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apullulans.Ensembl.ASM491714v1/BSgenome.Apullulans.Ensembl.ASM491714v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ctorrendii.Ensembl.Cylto1",
+      "version": "1.0.0",
+      "organism": "Cylindrobasidium torrendii FP15055 ss-10",
+      "assembly": "Cylto1",
+      "provider": "Ensembl",
+      "accession": "GCA_000934385.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000934385.1/",
+      "file_name": "BSgenome.Ctorrendii.Ensembl.Cylto1_1.0.0.tar.gz",
+      "size": 7887391,
+      "seq_ids": [
+        "KN880431",
+        "KN880432",
+        "KN880433",
+        "KN880434",
+        "KN880435"
+      ],
+      "seq_count": 1149,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Physalacriaceae",
+        "genus": "Cylindrobasidium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:38:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctorrendii.Ensembl.Cylto1/BSgenome.Ctorrendii.Ensembl.Cylto1_1.0.0.tar.gz"
     }
   ]
 }
