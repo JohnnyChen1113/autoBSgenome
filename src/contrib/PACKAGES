@@ -6221,3 +6221,7 @@ NeedsCompilation: no
 Package: BSgenome.Aeucalypticola.Ensembl.Aspeuc1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pchrysosporium.Ensembl.GCA000167175v1
+Version: 1.0.0
+NeedsCompilation: no

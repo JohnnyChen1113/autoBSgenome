@@ -48401,6 +48401,54 @@
       ]
     },
     {
+      "organism": "Phanerochaete chrysosporium",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Phanerochaetaceae",
+        "genus": "Phanerodontia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pchrysosporium.Ensembl.GCA000167175v1",
+          "version": "1.0.0",
+          "organism": "Phanerochaete chrysosporium",
+          "assembly": "GCA000167175v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000167175.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000167175.1/",
+          "file_name": "BSgenome.Pchrysosporium.Ensembl.GCA000167175v1_1.0.0.tar.gz",
+          "size": 8066759,
+          "seq_ids": [
+            "PchrRP-78_SC001",
+            "PchrRP-78_SC002",
+            "PchrRP-78_SC003",
+            "PchrRP-78_SC004",
+            "PchrRP-78_SC005"
+          ],
+          "seq_count": 232,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Polyporales",
+            "family": "Phanerochaetaceae",
+            "genus": "Phanerodontia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:40:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pchrysosporium.Ensembl.GCA000167175v1/BSgenome.Pchrysosporium.Ensembl.GCA000167175v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phascolarctos cinereus",
       "common_name": "koala",
       "group": "vertebrate_mammalian",
@@ -116650,6 +116698,38 @@
       "common_name": "",
       "published": "2026-04-18T23:40:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aeucalypticola.Ensembl.Aspeuc1/BSgenome.Aeucalypticola.Ensembl.Aspeuc1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pchrysosporium.Ensembl.GCA000167175v1",
+      "version": "1.0.0",
+      "organism": "Phanerochaete chrysosporium",
+      "assembly": "GCA000167175v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000167175.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000167175.1/",
+      "file_name": "BSgenome.Pchrysosporium.Ensembl.GCA000167175v1_1.0.0.tar.gz",
+      "size": 8066759,
+      "seq_ids": [
+        "PchrRP-78_SC001",
+        "PchrRP-78_SC002",
+        "PchrRP-78_SC003",
+        "PchrRP-78_SC004",
+        "PchrRP-78_SC005"
+      ],
+      "seq_count": 232,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Polyporales",
+        "family": "Phanerochaetaceae",
+        "genus": "Phanerodontia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:40:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pchrysosporium.Ensembl.GCA000167175v1/BSgenome.Pchrysosporium.Ensembl.GCA000167175v1_1.0.0.tar.gz"
     }
   ]
 }
