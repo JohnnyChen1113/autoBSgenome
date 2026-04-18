@@ -6181,3 +6181,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgattii.Ensembl.CrypgattNT10V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491714v1
+Version: 1.0.0
+NeedsCompilation: no
