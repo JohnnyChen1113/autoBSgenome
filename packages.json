@@ -17116,6 +17116,38 @@
           "common_name": "",
           "published": "2026-04-05T14:09:08Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.NCBI.ASM18594v1/BSgenome.Cgattii.NCBI.ASM18594v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Cgattii.Ensembl.ASM18594v1",
+          "version": "1.0.0",
+          "organism": "Cryptococcus gattii WM276",
+          "assembly": "ASM18594v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000185945.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000185945.1/",
+          "file_name": "BSgenome.Cgattii.Ensembl.ASM18594v1_1.0.0.tar.gz",
+          "size": 4488413,
+          "seq_ids": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          "seq_count": 14,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T19:24:07Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.ASM18594v1/BSgenome.Cgattii.Ensembl.ASM18594v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -110324,6 +110356,38 @@
       "common_name": "",
       "published": "2026-04-18T19:23:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zbailii.Ensembl.version1/BSgenome.Zbailii.Ensembl.version1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cgattii.Ensembl.ASM18594v1",
+      "version": "1.0.0",
+      "organism": "Cryptococcus gattii WM276",
+      "assembly": "ASM18594v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000185945.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000185945.1/",
+      "file_name": "BSgenome.Cgattii.Ensembl.ASM18594v1_1.0.0.tar.gz",
+      "size": 4488413,
+      "seq_ids": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "seq_count": 14,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T19:24:07Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.ASM18594v1/BSgenome.Cgattii.Ensembl.ASM18594v1_1.0.0.tar.gz"
     }
   ]
 }

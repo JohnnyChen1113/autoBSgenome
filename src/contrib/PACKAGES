@@ -5857,3 +5857,7 @@ NeedsCompilation: no
 Package: BSgenome.Zbailii.Ensembl.version1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgattii.Ensembl.ASM18594v1
+Version: 1.0.0
+NeedsCompilation: no
