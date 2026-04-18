@@ -51779,6 +51779,38 @@
       ]
     },
     {
+      "organism": "Rhizoctonia solani AG-1 IB str. 7/3/14",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Rsolani.Ensembl.7314",
+          "version": "1.0.0",
+          "organism": "Rhizoctonia solani AG-1 IB str. 7/3/14",
+          "assembly": "7_3_14",
+          "provider": "Ensembl",
+          "accession": "GCA_000832345.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000832345.2/",
+          "file_name": "BSgenome.Rsolani.Ensembl.7314_1.0.0.tar.gz",
+          "size": 10657885,
+          "seq_ids": [
+            "7_3_14_scaffold00002",
+            "7_3_14_scaffold00001",
+            "7_3_14_scaffold00003",
+            "7_3_14_scaffold00004",
+            "7_3_14_scaffold00005"
+          ],
+          "seq_count": 5674,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T18:05:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.7314/BSgenome.Rsolani.Ensembl.7314_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhizoctonia solani AG-3 Rhs1AP",
       "common_name": "",
       "group": "fungi",
@@ -109676,6 +109708,30 @@
       "common_name": "",
       "published": "2026-04-18T18:05:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mmajus.Ensembl.MAJ10/BSgenome.Mmajus.Ensembl.MAJ10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rsolani.Ensembl.7314",
+      "version": "1.0.0",
+      "organism": "Rhizoctonia solani AG-1 IB str. 7/3/14",
+      "assembly": "7_3_14",
+      "provider": "Ensembl",
+      "accession": "GCA_000832345.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000832345.2/",
+      "file_name": "BSgenome.Rsolani.Ensembl.7314_1.0.0.tar.gz",
+      "size": 10657885,
+      "seq_ids": [
+        "7_3_14_scaffold00002",
+        "7_3_14_scaffold00001",
+        "7_3_14_scaffold00003",
+        "7_3_14_scaffold00004",
+        "7_3_14_scaffold00005"
+      ],
+      "seq_count": 5674,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T18:05:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.7314/BSgenome.Rsolani.Ensembl.7314_1.0.0.tar.gz"
     }
   ]
 }

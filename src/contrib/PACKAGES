@@ -5821,3 +5821,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmajus.Ensembl.MAJ10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsolani.Ensembl.7314
+Version: 1.0.0
+NeedsCompilation: no
