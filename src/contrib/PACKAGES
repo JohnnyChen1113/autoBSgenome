@@ -5937,3 +5937,7 @@ NeedsCompilation: no
 Package: BSgenome.Atenuissima.Ensembl.ASM416856v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kphaffii.Ensembl.ASM90023503v1
+Version: 1.0.0
+NeedsCompilation: no
