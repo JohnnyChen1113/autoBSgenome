@@ -5685,3 +5685,7 @@ NeedsCompilation: no
 Package: BSgenome.Msp.Ensembl.Metsp10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kbrasiliensis.Ensembl.PSEUBRA1
+Version: 1.0.0
+NeedsCompilation: no
