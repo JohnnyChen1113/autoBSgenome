@@ -46826,6 +46826,38 @@
           "common_name": "",
           "published": "2026-04-04T16:40:35Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Qsuber.NCBI.Corkoak20/BSgenome.Qsuber.NCBI.Corkoak20_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Qsuber.Ensembl.CorkOak10",
+          "version": "1.0.0",
+          "organism": "Quercus suber",
+          "assembly": "CorkOak1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002906115.4",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002906115.4/",
+          "file_name": "BSgenome.Qsuber.Ensembl.CorkOak10_1.0.0.tar.gz",
+          "size": 221082687,
+          "seq_ids": [
+            "PKMF03020878.1",
+            "PKMF03021703.1",
+            "PKMF03008928.1",
+            "PKMF03018859.1",
+            "PKMF03010082.1"
+          ],
+          "seq_count": 23344,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fagales",
+            "family": "Fagaceae",
+            "genus": "Quercus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T06:51:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Qsuber.Ensembl.CorkOak10/BSgenome.Qsuber.Ensembl.CorkOak10_1.0.0.tar.gz"
         }
       ]
     },
@@ -99484,6 +99516,38 @@
       "common_name": "sesame",
       "published": "2026-04-18T06:50:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sindicum.Ensembl.Sindicumv10/BSgenome.Sindicum.Ensembl.Sindicumv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Qsuber.Ensembl.CorkOak10",
+      "version": "1.0.0",
+      "organism": "Quercus suber",
+      "assembly": "CorkOak1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002906115.4",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002906115.4/",
+      "file_name": "BSgenome.Qsuber.Ensembl.CorkOak10_1.0.0.tar.gz",
+      "size": 221082687,
+      "seq_ids": [
+        "PKMF03020878.1",
+        "PKMF03021703.1",
+        "PKMF03008928.1",
+        "PKMF03018859.1",
+        "PKMF03010082.1"
+      ],
+      "seq_count": 23344,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fagales",
+        "family": "Fagaceae",
+        "genus": "Quercus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T06:51:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Qsuber.Ensembl.CorkOak10/BSgenome.Qsuber.Ensembl.CorkOak10_1.0.0.tar.gz"
     }
   ]
 }
