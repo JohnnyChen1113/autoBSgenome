@@ -5565,3 +5565,7 @@ NeedsCompilation: no
 Package: BSgenome.Msilenesdioicae.Ensembl.MsdSdi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eintestinalis.Ensembl.ASM14646v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -21781,6 +21781,36 @@
             "NC_014419.1"
           ],
           "seq_count": 11
+        },
+        {
+          "package": "BSgenome.Eintestinalis.Ensembl.ASM14646v1",
+          "version": "1.0.0",
+          "organism": "Encephalitozoon intestinalis ATCC 50506",
+          "assembly": "ASM14646v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000146465.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146465.1/",
+          "file_name": "BSgenome.Eintestinalis.Ensembl.ASM14646v1_1.0.0.tar.gz",
+          "size": 545003,
+          "seq_ids": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "IX"
+          ],
+          "seq_count": 11,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Unikaryonidae",
+            "genus": "Encephalitozoon"
+          },
+          "common_name": "",
+          "published": "2026-04-18T14:11:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eintestinalis.Ensembl.ASM14646v1/BSgenome.Eintestinalis.Ensembl.ASM14646v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -105442,6 +105472,36 @@
       "common_name": "",
       "published": "2026-04-18T14:11:45Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msilenesdioicae.Ensembl.MsdSdi1/BSgenome.Msilenesdioicae.Ensembl.MsdSdi1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Eintestinalis.Ensembl.ASM14646v1",
+      "version": "1.0.0",
+      "organism": "Encephalitozoon intestinalis ATCC 50506",
+      "assembly": "ASM14646v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000146465.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146465.1/",
+      "file_name": "BSgenome.Eintestinalis.Ensembl.ASM14646v1_1.0.0.tar.gz",
+      "size": 545003,
+      "seq_ids": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "IX"
+      ],
+      "seq_count": 11,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "common_name": "",
+      "published": "2026-04-18T14:11:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eintestinalis.Ensembl.ASM14646v1/BSgenome.Eintestinalis.Ensembl.ASM14646v1_1.0.0.tar.gz"
     }
   ]
 }
