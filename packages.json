@@ -45382,6 +45382,54 @@
       ]
     },
     {
+      "organism": "Prunus dulcis",
+      "common_name": "almond",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pdulcis.Ensembl.ALMONDv2",
+          "version": "1.0.0",
+          "organism": "Prunus dulcis",
+          "assembly": "ALMONDv2",
+          "provider": "Ensembl",
+          "accession": "GCA_902201215.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902201215.1/",
+          "file_name": "BSgenome.Pdulcis.Ensembl.ALMONDv2_1.0.0.tar.gz",
+          "size": 53693896,
+          "seq_ids": [
+            "pdulcis26_s0001",
+            "pdulcis26_s0002",
+            "pdulcis26_s0003",
+            "pdulcis26_s0004",
+            "pdulcis26_s0005"
+          ],
+          "seq_count": 1699,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Rosales",
+            "family": "Rosaceae",
+            "genus": "Prunus"
+          },
+          "common_name": "almond",
+          "published": "2026-04-18T06:50:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdulcis.Ensembl.ALMONDv2/BSgenome.Pdulcis.Ensembl.ALMONDv2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Prunus mume",
       "common_name": "Japanese apricot",
       "group": "plant",
@@ -99276,6 +99324,38 @@
       "common_name": "peach",
       "published": "2026-04-18T06:49:49Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2/BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pdulcis.Ensembl.ALMONDv2",
+      "version": "1.0.0",
+      "organism": "Prunus dulcis",
+      "assembly": "ALMONDv2",
+      "provider": "Ensembl",
+      "accession": "GCA_902201215.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902201215.1/",
+      "file_name": "BSgenome.Pdulcis.Ensembl.ALMONDv2_1.0.0.tar.gz",
+      "size": 53693896,
+      "seq_ids": [
+        "pdulcis26_s0001",
+        "pdulcis26_s0002",
+        "pdulcis26_s0003",
+        "pdulcis26_s0004",
+        "pdulcis26_s0005"
+      ],
+      "seq_count": 1699,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "common_name": "almond",
+      "published": "2026-04-18T06:50:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pdulcis.Ensembl.ALMONDv2/BSgenome.Pdulcis.Ensembl.ALMONDv2_1.0.0.tar.gz"
     }
   ]
 }
