@@ -5161,3 +5161,7 @@ NeedsCompilation: no
 Package: BSgenome.Osativa.Ensembl.Os132278RS1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Osativa.Ensembl.Os127518RS1
+Version: 1.0.0
+NeedsCompilation: no
