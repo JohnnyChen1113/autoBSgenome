@@ -25,13 +25,29 @@ Each entry captures:
 
 | Organism | Genome | Tarball | Built status |
 |---|---|---|---|
+| **Hordeum vulgare cv. DuLiHuang** | **~5.3 GB** | **1.00 GB** | ✅ done (retested 2026-04-18 after fix, took 3 min 42 s total) |
 | Triticum urartu (wild wheat) | 4.85 GB | ~900 MB (est) | ✅ done |
 | Orycteropus afer (aardvark) | 4.44 GB | 893 MB | ✅ done |
 | Chrysochloris asiatica (Cape golden mole) | 4.21 GB | 881 MB | ✅ done |
 | Aegilops tauschii (goatgrass) | 4.12 GB | ~800 MB | ✅ done |
 | Nicotiana tabacum (tobacco) | 4.00 GB | — | ✅ done |
 
-**Empirical ceiling (as of 2026-04-18): the system has successfully produced packages for genomes up to ~4.85 GB.** Cancellations below that size are not size-limited — they are transient upload/network issues.
+**Empirical ceiling (as of 2026-04-18): the system has successfully produced packages for genomes up to ~5.3 GB.** Cancellations below that size are not size-limited — they are transient upload/network issues.
+
+### Re-test results (post-fix)
+
+Re-dispatched the Hordeum DuLiHuang cultivar that had cancelled on 2026-04-17 after applying the timeout-60 + skip-upload fixes. Run `24615911380`, step-level timing:
+
+| Step | Duration |
+|---|---|
+| Download FASTA from Ensembl | 43 s |
+| Convert FASTA to 2bit | 24 s |
+| Generate seed file + R CMD build | 68 s |
+| Create GitHub Release | 35 s |
+| Publish to permanent repository | **25 s** (cancelled at 30 min on prior run) |
+| **Total** | **3 min 42 s** |
+
+The 25-second publish step confirms the previous cancellation was a transient runner-bandwidth fluke, not a structural limit. Current runner achieved ~40 MB/s upload for the 1 GB tarball.
 
 ## Cancelled runs
 
