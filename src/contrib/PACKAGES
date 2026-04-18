@@ -5661,3 +5661,7 @@ NeedsCompilation: no
 Package: BSgenome.Fpseudograminearum.Ensembl.FP7
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nceranae.Ensembl.ASM98816v1
+Version: 1.0.0
+NeedsCompilation: no

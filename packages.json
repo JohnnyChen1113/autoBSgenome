@@ -39452,6 +39452,50 @@
       ]
     },
     {
+      "organism": "Nosema ceranae",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Nosematidae",
+        "genus": "Vairimorpha"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Nceranae.Ensembl.ASM98816v1",
+          "version": "1.0.0",
+          "organism": "Nosema ceranae",
+          "assembly": "ASM98816v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000988165.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000988165.1/",
+          "file_name": "BSgenome.Nceranae.Ensembl.ASM98816v1_1.0.0.tar.gz",
+          "size": 1301187,
+          "seq_ids": [
+            "NODE_1",
+            "NODE_2",
+            "NODE_3",
+            "NODE_4",
+            "NODE_5"
+          ],
+          "seq_count": 536,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Nosematidae",
+            "genus": "Vairimorpha"
+          },
+          "common_name": "",
+          "published": "2026-04-18T15:10:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nceranae.Ensembl.ASM98816v1/BSgenome.Nceranae.Ensembl.ASM98816v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Nosema ceranae BRL01",
       "common_name": "",
       "group": "other",
@@ -107015,6 +107059,36 @@
       "common_name": "",
       "published": "2026-04-18T15:10:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpseudograminearum.Ensembl.FP7/BSgenome.Fpseudograminearum.Ensembl.FP7_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Nceranae.Ensembl.ASM98816v1",
+      "version": "1.0.0",
+      "organism": "Nosema ceranae",
+      "assembly": "ASM98816v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000988165.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000988165.1/",
+      "file_name": "BSgenome.Nceranae.Ensembl.ASM98816v1_1.0.0.tar.gz",
+      "size": 1301187,
+      "seq_ids": [
+        "NODE_1",
+        "NODE_2",
+        "NODE_3",
+        "NODE_4",
+        "NODE_5"
+      ],
+      "seq_count": 536,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Nosematidae",
+        "genus": "Vairimorpha"
+      },
+      "common_name": "",
+      "published": "2026-04-18T15:10:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nceranae.Ensembl.ASM98816v1/BSgenome.Nceranae.Ensembl.ASM98816v1_1.0.0.tar.gz"
     }
   ]
 }
