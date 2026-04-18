@@ -42722,6 +42722,52 @@
       ]
     },
     {
+      "organism": "Panaeolus cyanescens",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "genus": "Panaeolus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcyanescens.Ensembl.ASM293835v1",
+          "version": "1.0.0",
+          "organism": "Panaeolus cyanescens",
+          "assembly": "ASM293835v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002938355.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002938355.1/",
+          "file_name": "BSgenome.Pcyanescens.Ensembl.ASM293835v1_1.0.0.tar.gz",
+          "size": 11075567,
+          "seq_ids": [
+            "C89201",
+            "scaffold814",
+            "scaffold1383",
+            "scaffold1382",
+            "scaffold1168"
+          ],
+          "seq_count": 6137,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "genus": "Panaeolus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T14:13:58Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcyanescens.Ensembl.ASM293835v1/BSgenome.Pcyanescens.Ensembl.ASM293835v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Panicum hallii",
       "common_name": "",
       "group": "plant",
@@ -106089,6 +106135,37 @@
       "common_name": "",
       "published": "2026-04-18T14:13:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Napis.Ensembl.NapisBRLv01/BSgenome.Napis.Ensembl.NapisBRLv01_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcyanescens.Ensembl.ASM293835v1",
+      "version": "1.0.0",
+      "organism": "Panaeolus cyanescens",
+      "assembly": "ASM293835v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002938355.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002938355.1/",
+      "file_name": "BSgenome.Pcyanescens.Ensembl.ASM293835v1_1.0.0.tar.gz",
+      "size": 11075567,
+      "seq_ids": [
+        "C89201",
+        "scaffold814",
+        "scaffold1383",
+        "scaffold1382",
+        "scaffold1168"
+      ],
+      "seq_count": 6137,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "genus": "Panaeolus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T14:13:58Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcyanescens.Ensembl.ASM293835v1/BSgenome.Pcyanescens.Ensembl.ASM293835v1_1.0.0.tar.gz"
     }
   ]
 }

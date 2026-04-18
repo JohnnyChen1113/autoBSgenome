@@ -5605,3 +5605,7 @@ NeedsCompilation: no
 Package: BSgenome.Napis.Ensembl.NapisBRLv01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcyanescens.Ensembl.ASM293835v1
+Version: 1.0.0
+NeedsCompilation: no
