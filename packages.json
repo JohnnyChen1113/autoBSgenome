@@ -7287,6 +7287,52 @@
       ]
     },
     {
+      "organism": "Batrachochytrium dendrobatidis JEL423",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "order": "Rhizophydiales",
+        "genus": "Batrachochytrium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bdendrobatidis.Ensembl.BDJEL423",
+          "version": "1.0.0",
+          "organism": "Batrachochytrium dendrobatidis JEL423",
+          "assembly": "BD_JEL423",
+          "provider": "Ensembl",
+          "accession": "GCA_000149865.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000149865.1/",
+          "file_name": "BSgenome.Bdendrobatidis.Ensembl.BDJEL423_1.0.0.tar.gz",
+          "size": 5709515,
+          "seq_ids": [
+            "cont1.55",
+            "cont1.128",
+            "cont1.8",
+            "cont1.61",
+            "cont1.157"
+          ],
+          "seq_count": 351,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Chytridiomycota",
+            "class": "Chytridiomycetes",
+            "order": "Rhizophydiales",
+            "genus": "Batrachochytrium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T14:11:09Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdendrobatidis.Ensembl.BDJEL423/BSgenome.Bdendrobatidis.Ensembl.BDJEL423_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Baudoinia panamericana UAMH 10762",
       "common_name": "",
       "group": "fungi",
@@ -105131,6 +105177,37 @@
       "common_name": "",
       "published": "2026-04-18T14:10:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gprolifera.Ensembl.Ganpr1/BSgenome.Gprolifera.Ensembl.Ganpr1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bdendrobatidis.Ensembl.BDJEL423",
+      "version": "1.0.0",
+      "organism": "Batrachochytrium dendrobatidis JEL423",
+      "assembly": "BD_JEL423",
+      "provider": "Ensembl",
+      "accession": "GCA_000149865.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000149865.1/",
+      "file_name": "BSgenome.Bdendrobatidis.Ensembl.BDJEL423_1.0.0.tar.gz",
+      "size": 5709515,
+      "seq_ids": [
+        "cont1.55",
+        "cont1.128",
+        "cont1.8",
+        "cont1.61",
+        "cont1.157"
+      ],
+      "seq_count": 351,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Chytridiomycota",
+        "class": "Chytridiomycetes",
+        "order": "Rhizophydiales",
+        "genus": "Batrachochytrium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T14:11:09Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bdendrobatidis.Ensembl.BDJEL423/BSgenome.Bdendrobatidis.Ensembl.BDJEL423_1.0.0.tar.gz"
     }
   ]
 }

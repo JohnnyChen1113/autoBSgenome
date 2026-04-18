@@ -5549,3 +5549,7 @@ NeedsCompilation: no
 Package: BSgenome.Gprolifera.Ensembl.Ganpr1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bdendrobatidis.Ensembl.BDJEL423
+Version: 1.0.0
+NeedsCompilation: no
