@@ -31938,6 +31938,53 @@
       ]
     },
     {
+      "organism": "Komagataella pastoris",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Pichiales",
+        "family": "Pichiaceae",
+        "genus": "Komagataella"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Kpastoris.Ensembl.ASM2700v1",
+          "version": "1.0.0",
+          "organism": "Komagataella pastoris",
+          "assembly": "ASM2700v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000027005.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000027005.1/",
+          "file_name": "BSgenome.Kpastoris.Ensembl.ASM2700v1_1.0.0.tar.gz",
+          "size": 2273329,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "seq_count": 4,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Pichiales",
+            "family": "Pichiaceae",
+            "genus": "Komagataella"
+          },
+          "common_name": "",
+          "published": "2026-04-18T19:25:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kpastoris.Ensembl.ASM2700v1/BSgenome.Kpastoris.Ensembl.ASM2700v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Komagataella phaffii GS115",
       "common_name": "",
       "group": "fungi",
@@ -110892,6 +110939,37 @@
       "common_name": "",
       "published": "2026-04-18T19:25:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rtoruloides.Ensembl.Rglutinis2/BSgenome.Rtoruloides.Ensembl.Rglutinis2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Kpastoris.Ensembl.ASM2700v1",
+      "version": "1.0.0",
+      "organism": "Komagataella pastoris",
+      "assembly": "ASM2700v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000027005.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000027005.1/",
+      "file_name": "BSgenome.Kpastoris.Ensembl.ASM2700v1_1.0.0.tar.gz",
+      "size": 2273329,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "seq_count": 4,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Pichiales",
+        "family": "Pichiaceae",
+        "genus": "Komagataella"
+      },
+      "common_name": "",
+      "published": "2026-04-18T19:25:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Kpastoris.Ensembl.ASM2700v1/BSgenome.Kpastoris.Ensembl.ASM2700v1_1.0.0.tar.gz"
     }
   ]
 }
