@@ -5725,3 +5725,7 @@ NeedsCompilation: no
 Package: BSgenome.Aflocculosa.Ensembl.Pflocc10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Smicrobalum.Ensembl.ASM653598v1
+Version: 1.0.0
+NeedsCompilation: no

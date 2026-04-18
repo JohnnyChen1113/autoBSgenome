@@ -56829,6 +56829,38 @@
       ]
     },
     {
+      "organism": "Synchytrium microbalum str. JEL517",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Smicrobalum.Ensembl.ASM653598v1",
+          "version": "1.0.0",
+          "organism": "Synchytrium microbalum str. JEL517",
+          "assembly": "ASM653598v1",
+          "provider": "Ensembl",
+          "accession": "GCA_006535985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006535985.1/",
+          "file_name": "BSgenome.Smicrobalum.Ensembl.ASM653598v1_1.0.0.tar.gz",
+          "size": 6509475,
+          "seq_ids": [
+            "SmJEL517_scf0001",
+            "SmJEL517_scf0002",
+            "SmJEL517_scf0003",
+            "SmJEL517_scf0004",
+            "SmJEL517_scf0005"
+          ],
+          "seq_count": 169,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T17:07:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smicrobalum.Ensembl.ASM653598v1/BSgenome.Smicrobalum.Ensembl.ASM653598v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Tachypleus tridentatus",
       "common_name": "Chinese horseshoe crab",
       "group": "invertebrate",
@@ -108131,6 +108163,30 @@
       "common_name": "",
       "published": "2026-04-18T17:07:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aflocculosa.Ensembl.Pflocc10/BSgenome.Aflocculosa.Ensembl.Pflocc10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Smicrobalum.Ensembl.ASM653598v1",
+      "version": "1.0.0",
+      "organism": "Synchytrium microbalum str. JEL517",
+      "assembly": "ASM653598v1",
+      "provider": "Ensembl",
+      "accession": "GCA_006535985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006535985.1/",
+      "file_name": "BSgenome.Smicrobalum.Ensembl.ASM653598v1_1.0.0.tar.gz",
+      "size": 6509475,
+      "seq_ids": [
+        "SmJEL517_scf0001",
+        "SmJEL517_scf0002",
+        "SmJEL517_scf0003",
+        "SmJEL517_scf0004",
+        "SmJEL517_scf0005"
+      ],
+      "seq_count": 169,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T17:07:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smicrobalum.Ensembl.ASM653598v1/BSgenome.Smicrobalum.Ensembl.ASM653598v1_1.0.0.tar.gz"
     }
   ]
 }
