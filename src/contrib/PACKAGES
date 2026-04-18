@@ -5737,3 +5737,7 @@ NeedsCompilation: no
 Package: BSgenome.Msympodialis.Ensembl.ASM34930v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Heriocheir.Ensembl.ASM208788v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -27673,6 +27673,38 @@
       ]
     },
     {
+      "organism": "Hepatospora eriocheir str. GB1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Heriocheir.Ensembl.ASM208788v1",
+          "version": "1.0.0",
+          "organism": "Hepatospora eriocheir str. GB1",
+          "assembly": "ASM208788v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002087885.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002087885.1/",
+          "file_name": "BSgenome.Heriocheir.Ensembl.ASM208788v1_1.0.0.tar.gz",
+          "size": 1023028,
+          "seq_ids": [
+            "NODE_1127",
+            "NODE_1216",
+            "NODE_1275",
+            "NODE_5812",
+            "NODE_777"
+          ],
+          "seq_count": 1300,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T17:07:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Heriocheir.Ensembl.ASM208788v1/BSgenome.Heriocheir.Ensembl.ASM208788v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Herrania umbratica",
       "common_name": "",
       "group": "plant",
@@ -108331,6 +108363,30 @@
       "common_name": "",
       "published": "2026-04-18T17:07:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msympodialis.Ensembl.ASM34930v2/BSgenome.Msympodialis.Ensembl.ASM34930v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Heriocheir.Ensembl.ASM208788v1",
+      "version": "1.0.0",
+      "organism": "Hepatospora eriocheir str. GB1",
+      "assembly": "ASM208788v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002087885.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002087885.1/",
+      "file_name": "BSgenome.Heriocheir.Ensembl.ASM208788v1_1.0.0.tar.gz",
+      "size": 1023028,
+      "seq_ids": [
+        "NODE_1127",
+        "NODE_1216",
+        "NODE_1275",
+        "NODE_5812",
+        "NODE_777"
+      ],
+      "seq_count": 1300,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T17:07:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Heriocheir.Ensembl.ASM208788v1/BSgenome.Heriocheir.Ensembl.ASM208788v1_1.0.0.tar.gz"
     }
   ]
 }
