@@ -38816,6 +38816,38 @@
           "common_name": "",
           "published": "2026-04-18T02:38:19Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os128077RS1/BSgenome.Osativa.Ensembl.Os128077RS1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Osativa.Ensembl.AzucenaRS1",
+          "version": "1.0.0",
+          "organism": "Oryza sativa tropical japonica subgroup",
+          "assembly": "AzucenaRS1",
+          "provider": "Ensembl",
+          "accession": "GCA_009830595.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009830595.1/",
+          "file_name": "BSgenome.Osativa.Ensembl.AzucenaRS1_1.0.0.tar.gz",
+          "size": 92352077,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 37,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Oryza"
+          },
+          "common_name": "",
+          "published": "2026-04-18T05:10:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.AzucenaRS1/BSgenome.Osativa.Ensembl.AzucenaRS1_1.0.0.tar.gz"
         }
       ]
     },
@@ -97876,6 +97908,38 @@
       "common_name": "long-grained rice",
       "published": "2026-04-18T05:09:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os127564RS1/BSgenome.Osativa.Ensembl.Os127564RS1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Osativa.Ensembl.AzucenaRS1",
+      "version": "1.0.0",
+      "organism": "Oryza sativa tropical japonica subgroup",
+      "assembly": "AzucenaRS1",
+      "provider": "Ensembl",
+      "accession": "GCA_009830595.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009830595.1/",
+      "file_name": "BSgenome.Osativa.Ensembl.AzucenaRS1_1.0.0.tar.gz",
+      "size": 92352077,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 37,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "common_name": "",
+      "published": "2026-04-18T05:10:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.AzucenaRS1/BSgenome.Osativa.Ensembl.AzucenaRS1_1.0.0.tar.gz"
     }
   ]
 }
