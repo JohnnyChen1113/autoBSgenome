@@ -6161,3 +6161,7 @@ NeedsCompilation: no
 Package: BSgenome.Psp.Ensembl.DG30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491900v1
+Version: 1.0.0
+NeedsCompilation: no
