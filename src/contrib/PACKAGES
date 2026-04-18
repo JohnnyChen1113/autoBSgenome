@@ -5317,3 +5317,7 @@ NeedsCompilation: no
 Package: BSgenome.Aclavatus.Ensembl.ASM271v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Anidulans.Ensembl.ASM1142v1
+Version: 1.0.0
+NeedsCompilation: no

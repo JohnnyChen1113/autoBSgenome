@@ -4712,6 +4712,38 @@
           "common_name": "",
           "published": "2026-04-05T19:36:18Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anidulans.NCBI.ASM1142v1/BSgenome.Anidulans.NCBI.ASM1142v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Anidulans.Ensembl.ASM1142v1",
+          "version": "1.0.0",
+          "organism": "Aspergillus nidulans FGSC A4",
+          "assembly": "ASM1142v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000011425.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000011425.1/",
+          "file_name": "BSgenome.Anidulans.Ensembl.ASM1142v1_1.0.0.tar.gz",
+          "size": 7453571,
+          "seq_ids": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T10:11:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anidulans.Ensembl.ASM1142v1/BSgenome.Anidulans.Ensembl.ASM1142v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -101020,6 +101052,38 @@
       "common_name": "",
       "published": "2026-04-18T10:11:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aclavatus.Ensembl.ASM271v1/BSgenome.Aclavatus.Ensembl.ASM271v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Anidulans.Ensembl.ASM1142v1",
+      "version": "1.0.0",
+      "organism": "Aspergillus nidulans FGSC A4",
+      "assembly": "ASM1142v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000011425.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000011425.1/",
+      "file_name": "BSgenome.Anidulans.Ensembl.ASM1142v1_1.0.0.tar.gz",
+      "size": 7453571,
+      "seq_ids": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T10:11:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Anidulans.Ensembl.ASM1142v1/BSgenome.Anidulans.Ensembl.ASM1142v1_1.0.0.tar.gz"
     }
   ]
 }
