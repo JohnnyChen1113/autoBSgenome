@@ -39172,6 +39172,54 @@
       ]
     },
     {
+      "organism": "Oryza sativa aus subgroup",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Osativa.Ensembl.Os127652RS1",
+          "version": "1.0.0",
+          "organism": "Oryza sativa aus subgroup",
+          "assembly": "Os127652RS1",
+          "provider": "Ensembl",
+          "accession": "GCA_009831335.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009831335.1/",
+          "file_name": "BSgenome.Osativa.Ensembl.Os127652RS1_1.0.0.tar.gz",
+          "size": 92973511,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 19,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Oryza"
+          },
+          "common_name": "",
+          "published": "2026-04-18T06:48:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os127652RS1/BSgenome.Osativa.Ensembl.Os127652RS1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oryza sativa tropical japonica subgroup",
       "common_name": "",
       "group": "plant",
@@ -98876,6 +98924,38 @@
       "common_name": "long-grained rice",
       "published": "2026-04-18T06:48:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os127742RS1/BSgenome.Osativa.Ensembl.Os127742RS1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Osativa.Ensembl.Os127652RS1",
+      "version": "1.0.0",
+      "organism": "Oryza sativa aus subgroup",
+      "assembly": "Os127652RS1",
+      "provider": "Ensembl",
+      "accession": "GCA_009831335.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009831335.1/",
+      "file_name": "BSgenome.Osativa.Ensembl.Os127652RS1_1.0.0.tar.gz",
+      "size": 92973511,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 19,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "common_name": "",
+      "published": "2026-04-18T06:48:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os127652RS1/BSgenome.Osativa.Ensembl.Os127652RS1_1.0.0.tar.gz"
     }
   ]
 }
