@@ -5125,3 +5125,7 @@ NeedsCompilation: no
 Package: BSgenome.Obrachyantha.Ensembl.Oryzabrachyanthav14b
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Olongistaminata.Ensembl.Olongistaminatav10
+Version: 1.0.0
+NeedsCompilation: no

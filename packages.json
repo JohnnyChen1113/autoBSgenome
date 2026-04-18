@@ -38628,6 +38628,54 @@
       ]
     },
     {
+      "organism": "Oryza longistaminata",
+      "common_name": "longstamen rice",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Olongistaminata.Ensembl.Olongistaminatav10",
+          "version": "1.0.0",
+          "organism": "Oryza longistaminata",
+          "assembly": "O_longistaminata_v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000789195.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000789195.1/",
+          "file_name": "BSgenome.Olongistaminata.Ensembl.Olongistaminatav10_1.0.0.tar.gz",
+          "size": 73762650,
+          "seq_ids": [
+            "KN538681.1",
+            "KN538682.1",
+            "KN538683.1",
+            "KN538684.1",
+            "KN538685.1"
+          ],
+          "seq_count": 60198,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Oryza"
+          },
+          "common_name": "longstamen rice",
+          "published": "2026-04-18T05:09:28Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Olongistaminata.Ensembl.Olongistaminatav10/BSgenome.Olongistaminata.Ensembl.Olongistaminatav10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oryza rufipogon",
       "common_name": "brownbeard rice",
       "group": "plant",
@@ -97716,6 +97764,38 @@
       "common_name": "malo sina",
       "published": "2026-04-18T05:09:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Obrachyantha.Ensembl.Oryzabrachyanthav14b/BSgenome.Obrachyantha.Ensembl.Oryzabrachyanthav14b_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Olongistaminata.Ensembl.Olongistaminatav10",
+      "version": "1.0.0",
+      "organism": "Oryza longistaminata",
+      "assembly": "O_longistaminata_v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000789195.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000789195.1/",
+      "file_name": "BSgenome.Olongistaminata.Ensembl.Olongistaminatav10_1.0.0.tar.gz",
+      "size": 73762650,
+      "seq_ids": [
+        "KN538681.1",
+        "KN538682.1",
+        "KN538683.1",
+        "KN538684.1",
+        "KN538685.1"
+      ],
+      "seq_count": 60198,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "common_name": "longstamen rice",
+      "published": "2026-04-18T05:09:28Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Olongistaminata.Ensembl.Olongistaminatav10/BSgenome.Olongistaminata.Ensembl.Olongistaminatav10_1.0.0.tar.gz"
     }
   ]
 }
