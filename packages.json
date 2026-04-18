@@ -14294,6 +14294,54 @@
       ]
     },
     {
+      "organism": "Colletotrichum orbiculare MAFF 240422",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Glomerellaceae",
+        "genus": "Colletotrichum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Corbiculare.Ensembl.Corbiculare240422v01",
+          "version": "1.0.0",
+          "organism": "Colletotrichum orbiculare MAFF 240422",
+          "assembly": "Corbiculare240422v01",
+          "provider": "Ensembl",
+          "accession": "GCA_000350065.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000350065.1/",
+          "file_name": "BSgenome.Corbiculare.Ensembl.Corbiculare240422v01_1.0.0.tar.gz",
+          "size": 20389373,
+          "seq_ids": [
+            "Scaffold_127",
+            "Scaffold_381",
+            "Scaffold_366",
+            "Scaffold_494",
+            "Scaffold_189"
+          ],
+          "seq_count": 3370,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Glomerellales",
+            "family": "Glomerellaceae",
+            "genus": "Colletotrichum"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:10:56Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Corbiculare.Ensembl.Corbiculare240422v01/BSgenome.Corbiculare.Ensembl.Corbiculare240422v01_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Colletotrichum orchidophilum",
       "common_name": "",
       "group": "fungi",
@@ -101876,6 +101924,38 @@
       "common_name": "",
       "published": "2026-04-18T11:10:35Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cneoformans.Ensembl.ASM9104v1/BSgenome.Cneoformans.Ensembl.ASM9104v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Corbiculare.Ensembl.Corbiculare240422v01",
+      "version": "1.0.0",
+      "organism": "Colletotrichum orbiculare MAFF 240422",
+      "assembly": "Corbiculare240422v01",
+      "provider": "Ensembl",
+      "accession": "GCA_000350065.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000350065.1/",
+      "file_name": "BSgenome.Corbiculare.Ensembl.Corbiculare240422v01_1.0.0.tar.gz",
+      "size": 20389373,
+      "seq_ids": [
+        "Scaffold_127",
+        "Scaffold_381",
+        "Scaffold_366",
+        "Scaffold_494",
+        "Scaffold_189"
+      ],
+      "seq_count": 3370,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Glomerellales",
+        "family": "Glomerellaceae",
+        "genus": "Colletotrichum"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:10:56Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Corbiculare.Ensembl.Corbiculare240422v01/BSgenome.Corbiculare.Ensembl.Corbiculare240422v01_1.0.0.tar.gz"
     }
   ]
 }

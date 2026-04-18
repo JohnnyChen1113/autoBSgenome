@@ -5365,3 +5365,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.ASM9104v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Corbiculare.Ensembl.Corbiculare240422v01
+Version: 1.0.0
+NeedsCompilation: no
