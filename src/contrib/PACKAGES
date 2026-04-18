@@ -5449,3 +5449,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.CandalbiP37039V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sochraceum.Ensembl.INBIStOhrav10
+Version: 1.0.0
+NeedsCompilation: no
