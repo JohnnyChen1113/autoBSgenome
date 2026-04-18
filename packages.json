@@ -36745,6 +36745,52 @@
       ]
     },
     {
+      "organism": "Monosporascus cannonballus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Xylariales",
+        "genus": "Monosporascus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mcannonballus.Ensembl.ASM415492v1",
+          "version": "1.0.0",
+          "organism": "Monosporascus cannonballus",
+          "assembly": "ASM415492v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004154925.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004154925.1/",
+          "file_name": "BSgenome.Mcannonballus.Ensembl.ASM415492v1_1.0.0.tar.gz",
+          "size": 21372178,
+          "seq_ids": [
+            "NODE_1",
+            "NODE_2",
+            "NODE_747",
+            "NODE_4",
+            "NODE_5"
+          ],
+          "seq_count": 753,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Xylariales",
+            "genus": "Monosporascus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T17:09:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcannonballus.Ensembl.ASM415492v1/BSgenome.Mcannonballus.Ensembl.ASM415492v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Morchella importuna",
       "common_name": "",
       "group": "fungi",
@@ -108901,6 +108947,37 @@
       "common_name": "",
       "published": "2026-04-18T17:09:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tmesenterica.Ensembl.Treme1/BSgenome.Tmesenterica.Ensembl.Treme1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mcannonballus.Ensembl.ASM415492v1",
+      "version": "1.0.0",
+      "organism": "Monosporascus cannonballus",
+      "assembly": "ASM415492v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004154925.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004154925.1/",
+      "file_name": "BSgenome.Mcannonballus.Ensembl.ASM415492v1_1.0.0.tar.gz",
+      "size": 21372178,
+      "seq_ids": [
+        "NODE_1",
+        "NODE_2",
+        "NODE_747",
+        "NODE_4",
+        "NODE_5"
+      ],
+      "seq_count": 753,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Xylariales",
+        "genus": "Monosporascus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T17:09:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcannonballus.Ensembl.ASM415492v1/BSgenome.Mcannonballus.Ensembl.ASM415492v1_1.0.0.tar.gz"
     }
   ]
 }
