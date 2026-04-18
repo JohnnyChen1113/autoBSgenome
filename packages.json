@@ -51725,6 +51725,54 @@
       ]
     },
     {
+      "organism": "Pseudogymnoascus sp. VKM F-103",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psp.Ensembl.DG30",
+          "version": "1.0.0",
+          "organism": "Pseudogymnoascus sp. VKM F-103",
+          "assembly": "DG30",
+          "provider": "Ensembl",
+          "accession": "GCA_000750895.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750895.1/",
+          "file_name": "BSgenome.Psp.Ensembl.DG30_1.0.0.tar.gz",
+          "size": 7579082,
+          "seq_ids": [
+            "contig_583",
+            "contig_101",
+            "contig_146",
+            "contig_399",
+            "contig_546"
+          ],
+          "seq_count": 1794,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Thelebolales",
+            "family": "Thelebolaceae",
+            "genus": "Pseudogymnoascus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T22:40:35Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG30/BSgenome.Psp.Ensembl.DG30_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudogymnoascus sp. VKM F-3775",
       "common_name": "",
       "group": "fungi",
@@ -115482,6 +115530,38 @@
       "common_name": "",
       "published": "2026-04-18T22:40:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aminisclerotigenes.Ensembl.Aspmin1/BSgenome.Aminisclerotigenes.Ensembl.Aspmin1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psp.Ensembl.DG30",
+      "version": "1.0.0",
+      "organism": "Pseudogymnoascus sp. VKM F-103",
+      "assembly": "DG30",
+      "provider": "Ensembl",
+      "accession": "GCA_000750895.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750895.1/",
+      "file_name": "BSgenome.Psp.Ensembl.DG30_1.0.0.tar.gz",
+      "size": 7579082,
+      "seq_ids": [
+        "contig_583",
+        "contig_101",
+        "contig_146",
+        "contig_399",
+        "contig_546"
+      ],
+      "seq_count": 1794,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T22:40:35Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG30/BSgenome.Psp.Ensembl.DG30_1.0.0.tar.gz"
     }
   ]
 }
