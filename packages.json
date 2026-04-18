@@ -38788,6 +38788,54 @@
       ]
     },
     {
+      "organism": "Oryza punctata",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Opunctata.Ensembl.Oryzapunctatav12",
+          "version": "1.0.0",
+          "organism": "Oryza punctata",
+          "assembly": "Oryza_punctata_v1.2",
+          "provider": "Ensembl",
+          "accession": "GCA_000573905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000573905.1/",
+          "file_name": "BSgenome.Opunctata.Ensembl.Oryzapunctatav12_1.0.0.tar.gz",
+          "size": 96345720,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 12,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Oryza"
+          },
+          "common_name": "",
+          "published": "2026-04-18T06:47:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Opunctata.Ensembl.Oryzapunctatav12/BSgenome.Opunctata.Ensembl.Oryzapunctatav12_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oryza rufipogon",
       "common_name": "brownbeard rice",
       "group": "plant",
@@ -98548,6 +98596,38 @@
       "common_name": "opium poppy",
       "published": "2026-04-18T05:14:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psomniferum.Ensembl.ASM357369v1/BSgenome.Psomniferum.Ensembl.ASM357369v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Opunctata.Ensembl.Oryzapunctatav12",
+      "version": "1.0.0",
+      "organism": "Oryza punctata",
+      "assembly": "Oryza_punctata_v1.2",
+      "provider": "Ensembl",
+      "accession": "GCA_000573905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000573905.1/",
+      "file_name": "BSgenome.Opunctata.Ensembl.Oryzapunctatav12_1.0.0.tar.gz",
+      "size": 96345720,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 12,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "common_name": "",
+      "published": "2026-04-18T06:47:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Opunctata.Ensembl.Oryzapunctatav12/BSgenome.Opunctata.Ensembl.Oryzapunctatav12_1.0.0.tar.gz"
     }
   ]
 }

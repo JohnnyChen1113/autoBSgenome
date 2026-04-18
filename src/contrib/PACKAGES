@@ -5173,3 +5173,7 @@ NeedsCompilation: no
 Package: BSgenome.Psomniferum.Ensembl.ASM357369v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Opunctata.Ensembl.Oryzapunctatav12
+Version: 1.0.0
+NeedsCompilation: no
