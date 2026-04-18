@@ -5237,3 +5237,7 @@ NeedsCompilation: no
 Package: BSgenome.Psativum.Ensembl.Pisumsativumv1a
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sitalica.Ensembl.Setariaitalicav20
+Version: 1.0.0
+NeedsCompilation: no
