@@ -10044,6 +10044,54 @@
       ]
     },
     {
+      "organism": "Candida duobushaemulonis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1",
+          "version": "1.0.0",
+          "organism": "Candida duobushaemulonis",
+          "assembly": "GCA002926085v1",
+          "provider": "Ensembl",
+          "accession": "GCA_002926085.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002926085.1/",
+          "file_name": "BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1_1.0.0.tar.gz",
+          "size": 3123577,
+          "seq_ids": [
+            "PKFP01000007",
+            "PKFP01000008",
+            "PKFP01000001",
+            "PKFP01000003",
+            "PKFP01000004"
+          ],
+          "seq_count": 8,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Metschnikowiaceae",
+            "genus": "Candidozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:10:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1/BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Candida orthopsilosis Co 90-125",
       "common_name": "",
       "group": "fungi",
@@ -101596,6 +101644,38 @@
       "common_name": "",
       "published": "2026-04-18T11:09:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aoryzae.Ensembl.ASM18445v3/BSgenome.Aoryzae.Ensembl.ASM18445v3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1",
+      "version": "1.0.0",
+      "organism": "Candida duobushaemulonis",
+      "assembly": "GCA002926085v1",
+      "provider": "Ensembl",
+      "accession": "GCA_002926085.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002926085.1/",
+      "file_name": "BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1_1.0.0.tar.gz",
+      "size": 3123577,
+      "seq_ids": [
+        "PKFP01000007",
+        "PKFP01000008",
+        "PKFP01000001",
+        "PKFP01000003",
+        "PKFP01000004"
+      ],
+      "seq_count": 8,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:10:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1/BSgenome.Cduobushaemulonis.Ensembl.GCA002926085v1_1.0.0.tar.gz"
     }
   ]
 }
