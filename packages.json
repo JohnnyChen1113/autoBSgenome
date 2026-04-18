@@ -34887,6 +34887,54 @@
       ]
     },
     {
+      "organism": "Microbotryum silenes-dioicae",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Microbotryomycetes",
+        "order": "Microbotryales",
+        "family": "Microbotryaceae",
+        "genus": "Microbotryum"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Msilenesdioicae.Ensembl.MsdSdi1",
+          "version": "1.0.0",
+          "organism": "Microbotryum silenes-dioicae",
+          "assembly": "MsdSdi1",
+          "provider": "Ensembl",
+          "accession": "GCA_900120095.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900120095.1/",
+          "file_name": "BSgenome.Msilenesdioicae.Ensembl.MsdSdi1_1.0.0.tar.gz",
+          "size": 8096399,
+          "seq_ids": [
+            "MvSdioicae_1303_FR02_D_N206_PbcR_C001",
+            "MvSdioicae_1303_FR02_D_N206_PbcR_C002",
+            "MvSdioicae_1303_FR02_D_N206_PbcR_C003",
+            "MvSdioicae_1303_FR02_D_N206_PbcR_C004",
+            "MvSdioicae_1303_FR02_D_N206_PbcR_C005"
+          ],
+          "seq_count": 143,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Microbotryomycetes",
+            "order": "Microbotryales",
+            "family": "Microbotryaceae",
+            "genus": "Microbotryum"
+          },
+          "common_name": "",
+          "published": "2026-04-18T14:11:45Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msilenesdioicae.Ensembl.MsdSdi1/BSgenome.Msilenesdioicae.Ensembl.MsdSdi1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Microcebus murinus",
       "common_name": "gray mouse lemur",
       "group": "vertebrate_mammalian",
@@ -105362,6 +105410,38 @@
       "common_name": "",
       "published": "2026-04-18T14:11:33Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nbombycis.Ensembl.NosBomCQ1v10/BSgenome.Nbombycis.Ensembl.NosBomCQ1v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Msilenesdioicae.Ensembl.MsdSdi1",
+      "version": "1.0.0",
+      "organism": "Microbotryum silenes-dioicae",
+      "assembly": "MsdSdi1",
+      "provider": "Ensembl",
+      "accession": "GCA_900120095.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900120095.1/",
+      "file_name": "BSgenome.Msilenesdioicae.Ensembl.MsdSdi1_1.0.0.tar.gz",
+      "size": 8096399,
+      "seq_ids": [
+        "MvSdioicae_1303_FR02_D_N206_PbcR_C001",
+        "MvSdioicae_1303_FR02_D_N206_PbcR_C002",
+        "MvSdioicae_1303_FR02_D_N206_PbcR_C003",
+        "MvSdioicae_1303_FR02_D_N206_PbcR_C004",
+        "MvSdioicae_1303_FR02_D_N206_PbcR_C005"
+      ],
+      "seq_count": 143,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Microbotryomycetes",
+        "order": "Microbotryales",
+        "family": "Microbotryaceae",
+        "genus": "Microbotryum"
+      },
+      "common_name": "",
+      "published": "2026-04-18T14:11:45Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Msilenesdioicae.Ensembl.MsdSdi1/BSgenome.Msilenesdioicae.Ensembl.MsdSdi1_1.0.0.tar.gz"
     }
   ]
 }
