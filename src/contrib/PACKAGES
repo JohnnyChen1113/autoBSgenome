@@ -5521,3 +5521,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mguizhouense.Ensembl.MGU10
+Version: 1.0.0
+NeedsCompilation: no

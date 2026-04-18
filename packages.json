@@ -34495,6 +34495,54 @@
       ]
     },
     {
+      "organism": "Metarhizium guizhouense ARSEF 977",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Metarhizium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Mguizhouense.Ensembl.MGU10",
+          "version": "1.0.0",
+          "organism": "Metarhizium guizhouense ARSEF 977",
+          "assembly": "MGU_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000814955.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000814955.1/",
+          "file_name": "BSgenome.Mguizhouense.Ensembl.MGU10_1.0.0.tar.gz",
+          "size": 10801309,
+          "seq_ids": [
+            "scaffold_1",
+            "scaffold_2",
+            "scaffold_3",
+            "scaffold_4",
+            "scaffold_5"
+          ],
+          "seq_count": 563,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Clavicipitaceae",
+            "genus": "Metarhizium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:23:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mguizhouense.Ensembl.MGU10/BSgenome.Mguizhouense.Ensembl.MGU10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Metarhizium robertsii ARSEF 23",
       "common_name": "",
       "group": "fungi",
@@ -104659,6 +104707,38 @@
       "common_name": "",
       "published": "2026-04-18T13:23:22Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3/BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Mguizhouense.Ensembl.MGU10",
+      "version": "1.0.0",
+      "organism": "Metarhizium guizhouense ARSEF 977",
+      "assembly": "MGU_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000814955.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000814955.1/",
+      "file_name": "BSgenome.Mguizhouense.Ensembl.MGU10_1.0.0.tar.gz",
+      "size": 10801309,
+      "seq_ids": [
+        "scaffold_1",
+        "scaffold_2",
+        "scaffold_3",
+        "scaffold_4",
+        "scaffold_5"
+      ],
+      "seq_count": 563,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Clavicipitaceae",
+        "genus": "Metarhizium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:23:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mguizhouense.Ensembl.MGU10/BSgenome.Mguizhouense.Ensembl.MGU10_1.0.0.tar.gz"
     }
   ]
 }
