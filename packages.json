@@ -50977,6 +50977,38 @@
       ]
     },
     {
+      "organism": "Psathyrella aberdarensis str. IHI B618",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Paberdarensis.Ensembl.ASM412641v1",
+          "version": "1.0.0",
+          "organism": "Psathyrella aberdarensis str. IHI B618",
+          "assembly": "ASM412641v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004126415.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004126415.1/",
+          "file_name": "BSgenome.Paberdarensis.Ensembl.ASM412641v1_1.0.0.tar.gz",
+          "size": 15249469,
+          "seq_ids": [
+            "Contig_1",
+            "Contig_2",
+            "Contig_3",
+            "Contig_4",
+            "Contig_5"
+          ],
+          "seq_count": 2303,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T21:38:21Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Paberdarensis.Ensembl.ASM412641v1/BSgenome.Paberdarensis.Ensembl.ASM412641v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudocercospora fijiensis CIRAD86",
       "common_name": "",
       "group": "fungi",
@@ -113720,6 +113752,30 @@
       "common_name": "",
       "published": "2026-04-18T20:53:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbotryosum.Ensembl.Botbo1/BSgenome.Bbotryosum.Ensembl.Botbo1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Paberdarensis.Ensembl.ASM412641v1",
+      "version": "1.0.0",
+      "organism": "Psathyrella aberdarensis str. IHI B618",
+      "assembly": "ASM412641v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004126415.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004126415.1/",
+      "file_name": "BSgenome.Paberdarensis.Ensembl.ASM412641v1_1.0.0.tar.gz",
+      "size": 15249469,
+      "seq_ids": [
+        "Contig_1",
+        "Contig_2",
+        "Contig_3",
+        "Contig_4",
+        "Contig_5"
+      ],
+      "seq_count": 2303,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T21:38:21Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Paberdarensis.Ensembl.ASM412641v1/BSgenome.Paberdarensis.Ensembl.ASM412641v1_1.0.0.tar.gz"
     }
   ]
 }

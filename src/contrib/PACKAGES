@@ -6053,3 +6053,7 @@ NeedsCompilation: no
 Package: BSgenome.Bbotryosum.Ensembl.Botbo1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Paberdarensis.Ensembl.ASM412641v1
+Version: 1.0.0
+NeedsCompilation: no
