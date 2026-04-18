@@ -5281,3 +5281,7 @@ NeedsCompilation: no
 Package: BSgenome.Sspontaneum.Ensembl.SsponHiCchrasm
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50
+Version: 1.0.0
+NeedsCompilation: no

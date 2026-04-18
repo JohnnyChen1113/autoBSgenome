@@ -58310,6 +58310,54 @@
       ]
     },
     {
+      "organism": "Zea mays",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Zea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50",
+          "version": "1.0.0",
+          "organism": "Zea mays",
+          "assembly": "Zm-B73-REFERENCE-NAM-5.0",
+          "provider": "Ensembl",
+          "accession": "GCA_902167145.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902167145.1/",
+          "file_name": "BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50_1.0.0.tar.gz",
+          "size": 512569232,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 685,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Zea"
+          },
+          "common_name": "",
+          "published": "2026-04-18T08:05:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50/BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Zonotrichia albicollis",
       "common_name": "white-throated sparrow",
       "group": "vertebrate_other",
@@ -100396,6 +100444,38 @@
       "common_name": "wild sugarcane",
       "published": "2026-04-18T08:03:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sspontaneum.Ensembl.SsponHiCchrasm/BSgenome.Sspontaneum.Ensembl.SsponHiCchrasm_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50",
+      "version": "1.0.0",
+      "organism": "Zea mays",
+      "assembly": "Zm-B73-REFERENCE-NAM-5.0",
+      "provider": "Ensembl",
+      "accession": "GCA_902167145.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_902167145.1/",
+      "file_name": "BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50_1.0.0.tar.gz",
+      "size": 512569232,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 685,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Zea"
+      },
+      "common_name": "",
+      "published": "2026-04-18T08:05:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50/BSgenome.Zmays.Ensembl.ZmB73REFERENCENAM50_1.0.0.tar.gz"
     }
   ]
 }
