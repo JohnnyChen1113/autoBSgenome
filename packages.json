@@ -43402,6 +43402,54 @@
       ]
     },
     {
+      "organism": "Pisum sativum",
+      "common_name": "garden pea",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Lathyrus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psativum.Ensembl.Pisumsativumv1a",
+          "version": "1.0.0",
+          "organism": "Pisum sativum",
+          "assembly": "Pisum_sativum_v1a",
+          "provider": "Ensembl",
+          "accession": "GCA_900700895.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900700895.2/",
+          "file_name": "BSgenome.Psativum.Ensembl.Pisumsativumv1a_1.0.0.tar.gz",
+          "size": 750871838,
+          "seq_ids": [
+            "1LG6",
+            "2LG1",
+            "3LG5",
+            "4LG4",
+            "5LG3"
+          ],
+          "seq_count": 14273,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Lathyrus"
+          },
+          "common_name": "garden pea",
+          "published": "2026-04-18T06:51:43Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psativum.Ensembl.Pisumsativumv1a/BSgenome.Psativum.Ensembl.Pisumsativumv1a_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Plasmodium coatneyi",
       "common_name": "",
       "group": "other",
@@ -99548,6 +99596,38 @@
       "common_name": "",
       "published": "2026-04-18T06:51:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Qsuber.Ensembl.CorkOak10/BSgenome.Qsuber.Ensembl.CorkOak10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psativum.Ensembl.Pisumsativumv1a",
+      "version": "1.0.0",
+      "organism": "Pisum sativum",
+      "assembly": "Pisum_sativum_v1a",
+      "provider": "Ensembl",
+      "accession": "GCA_900700895.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900700895.2/",
+      "file_name": "BSgenome.Psativum.Ensembl.Pisumsativumv1a_1.0.0.tar.gz",
+      "size": 750871838,
+      "seq_ids": [
+        "1LG6",
+        "2LG1",
+        "3LG5",
+        "4LG4",
+        "5LG3"
+      ],
+      "seq_count": 14273,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Lathyrus"
+      },
+      "common_name": "garden pea",
+      "published": "2026-04-18T06:51:43Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psativum.Ensembl.Pisumsativumv1a/BSgenome.Psativum.Ensembl.Pisumsativumv1a_1.0.0.tar.gz"
     }
   ]
 }

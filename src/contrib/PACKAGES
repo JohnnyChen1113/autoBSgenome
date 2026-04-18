@@ -5233,3 +5233,7 @@ NeedsCompilation: no
 Package: BSgenome.Qsuber.Ensembl.CorkOak10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psativum.Ensembl.Pisumsativumv1a
+Version: 1.0.0
+NeedsCompilation: no
