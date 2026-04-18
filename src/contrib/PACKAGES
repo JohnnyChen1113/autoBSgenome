@@ -5121,3 +5121,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgare.Ensembl.HvulgareIgriBPGv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Obrachyantha.Ensembl.Oryzabrachyanthav14b
+Version: 1.0.0
+NeedsCompilation: no
