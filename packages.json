@@ -39120,6 +39120,38 @@
           "common_name": "long-grained rice",
           "published": "2026-04-18T06:48:25Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os127742RS1/BSgenome.Osativa.Ensembl.Os127742RS1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Osativa.Ensembl.Os125619RS1",
+          "version": "1.0.0",
+          "organism": "Oryza sativa Indica Group",
+          "assembly": "Os125619RS1",
+          "provider": "Ensembl",
+          "accession": "GCA_009831355.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009831355.1/",
+          "file_name": "BSgenome.Osativa.Ensembl.Os125619RS1_1.0.0.tar.gz",
+          "size": 94802722,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 42,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Oryza"
+          },
+          "common_name": "long-grained rice",
+          "published": "2026-04-18T06:49:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os125619RS1/BSgenome.Osativa.Ensembl.Os125619RS1_1.0.0.tar.gz"
         }
       ]
     },
@@ -99020,6 +99052,38 @@
       "common_name": "",
       "published": "2026-04-18T06:48:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppatens.Ensembl.PhypaV3/BSgenome.Ppatens.Ensembl.PhypaV3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Osativa.Ensembl.Os125619RS1",
+      "version": "1.0.0",
+      "organism": "Oryza sativa Indica Group",
+      "assembly": "Os125619RS1",
+      "provider": "Ensembl",
+      "accession": "GCA_009831355.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009831355.1/",
+      "file_name": "BSgenome.Osativa.Ensembl.Os125619RS1_1.0.0.tar.gz",
+      "size": 94802722,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 42,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "common_name": "long-grained rice",
+      "published": "2026-04-18T06:49:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os125619RS1/BSgenome.Osativa.Ensembl.Os125619RS1_1.0.0.tar.gz"
     }
   ]
 }
