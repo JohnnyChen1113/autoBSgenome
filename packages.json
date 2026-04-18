@@ -45857,6 +45857,38 @@
           "common_name": "",
           "published": "2026-04-06T02:41:28Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panserina.NCBI.ASM22654v1/BSgenome.Panserina.NCBI.ASM22654v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Panserina.Ensembl.ASM22654v1",
+          "version": "1.0.0",
+          "organism": "Podospora anserina S mat+",
+          "assembly": "ASM22654v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000226545.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000226545.1/",
+          "file_name": "BSgenome.Panserina.Ensembl.ASM22654v1_1.0.0.tar.gz",
+          "size": 8536744,
+          "seq_ids": [
+            "CU640366.1",
+            "CU633900.1",
+            "CU633438.1",
+            "CU638743.1",
+            "CU638744.1"
+          ],
+          "seq_count": 33,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Sordariales",
+            "family": "Podosporaceae",
+            "genus": "Podospora"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:21:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panserina.Ensembl.ASM22654v1/BSgenome.Panserina.Ensembl.ASM22654v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -104027,6 +104059,38 @@
       "common_name": "",
       "published": "2026-04-18T13:21:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.Ensembl.ASM221148v2/BSgenome.Aniger.Ensembl.ASM221148v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Panserina.Ensembl.ASM22654v1",
+      "version": "1.0.0",
+      "organism": "Podospora anserina S mat+",
+      "assembly": "ASM22654v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000226545.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000226545.1/",
+      "file_name": "BSgenome.Panserina.Ensembl.ASM22654v1_1.0.0.tar.gz",
+      "size": 8536744,
+      "seq_ids": [
+        "CU640366.1",
+        "CU633900.1",
+        "CU633438.1",
+        "CU638743.1",
+        "CU638744.1"
+      ],
+      "seq_count": 33,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Sordariales",
+        "family": "Podosporaceae",
+        "genus": "Podospora"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:21:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Panserina.Ensembl.ASM22654v1/BSgenome.Panserina.Ensembl.ASM22654v1_1.0.0.tar.gz"
     }
   ]
 }

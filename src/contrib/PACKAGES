@@ -5485,3 +5485,7 @@ NeedsCompilation: no
 Package: BSgenome.Aniger.Ensembl.ASM221148v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Panserina.Ensembl.ASM22654v1
+Version: 1.0.0
+NeedsCompilation: no
