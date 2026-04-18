@@ -27465,6 +27465,50 @@
       ]
     },
     {
+      "organism": "Hamiltosporidium tvaerminnensis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Dubosqiidae",
+        "genus": "Hamiltosporidium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Htvaerminnensis.Ensembl.ILG3v1",
+          "version": "1.0.0",
+          "organism": "Hamiltosporidium tvaerminnensis",
+          "assembly": "ILG3 v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004325075.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004325075.1/",
+          "file_name": "BSgenome.Htvaerminnensis.Ensembl.ILG3v1_1.0.0.tar.gz",
+          "size": 5755082,
+          "seq_ids": [
+            "contig-0001",
+            "contig-0002",
+            "contig-0003",
+            "contig-0004",
+            "contig-0005"
+          ],
+          "seq_count": 2738,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Dubosqiidae",
+            "genus": "Hamiltosporidium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T18:04:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Htvaerminnensis.Ensembl.ILG3v1/BSgenome.Htvaerminnensis.Ensembl.ILG3v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Haplochromis burtoni",
       "common_name": "Burton's mouthbrooder",
       "group": "vertebrate_other",
@@ -109266,6 +109310,36 @@
       "common_name": "",
       "published": "2026-04-18T18:03:58Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.ASM491806v1/BSgenome.Wichthyophaga.Ensembl.ASM491806v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Htvaerminnensis.Ensembl.ILG3v1",
+      "version": "1.0.0",
+      "organism": "Hamiltosporidium tvaerminnensis",
+      "assembly": "ILG3 v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004325075.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004325075.1/",
+      "file_name": "BSgenome.Htvaerminnensis.Ensembl.ILG3v1_1.0.0.tar.gz",
+      "size": 5755082,
+      "seq_ids": [
+        "contig-0001",
+        "contig-0002",
+        "contig-0003",
+        "contig-0004",
+        "contig-0005"
+      ],
+      "seq_count": 2738,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Dubosqiidae",
+        "genus": "Hamiltosporidium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T18:04:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Htvaerminnensis.Ensembl.ILG3v1/BSgenome.Htvaerminnensis.Ensembl.ILG3v1_1.0.0.tar.gz"
     }
   ]
 }
