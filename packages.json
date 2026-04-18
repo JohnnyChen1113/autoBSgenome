@@ -4239,6 +4239,38 @@
       ]
     },
     {
+      "organism": "Aspergillus caelatus str. CBS 763.97",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Acaelatus.Ensembl.Aspcae1",
+          "version": "1.0.0",
+          "organism": "Aspergillus caelatus str. CBS 763.97",
+          "assembly": "Aspcae1",
+          "provider": "Ensembl",
+          "accession": "GCA_009193585.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009193585.1/",
+          "file_name": "BSgenome.Acaelatus.Ensembl.Aspcae1_1.0.0.tar.gz",
+          "size": 10004009,
+          "seq_ids": [
+            "ML737563",
+            "ML737564",
+            "ML737565",
+            "ML737566",
+            "ML737567"
+          ],
+          "seq_count": 729,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T21:38:32Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acaelatus.Ensembl.Aspcae1/BSgenome.Acaelatus.Ensembl.Aspcae1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus campestris IBT 28561",
       "common_name": "",
       "group": "fungi",
@@ -113776,6 +113808,30 @@
       "common_name": "",
       "published": "2026-04-18T21:38:21Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Paberdarensis.Ensembl.ASM412641v1/BSgenome.Paberdarensis.Ensembl.ASM412641v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acaelatus.Ensembl.Aspcae1",
+      "version": "1.0.0",
+      "organism": "Aspergillus caelatus str. CBS 763.97",
+      "assembly": "Aspcae1",
+      "provider": "Ensembl",
+      "accession": "GCA_009193585.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009193585.1/",
+      "file_name": "BSgenome.Acaelatus.Ensembl.Aspcae1_1.0.0.tar.gz",
+      "size": 10004009,
+      "seq_ids": [
+        "ML737563",
+        "ML737564",
+        "ML737565",
+        "ML737566",
+        "ML737567"
+      ],
+      "seq_count": 729,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T21:38:32Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acaelatus.Ensembl.Aspcae1/BSgenome.Acaelatus.Ensembl.Aspcae1_1.0.0.tar.gz"
     }
   ]
 }
