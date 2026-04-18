@@ -6125,3 +6125,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcoronariae.Ensembl.ASM220425v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bspectabilis.Ensembl.Paevar1
+Version: 1.0.0
+NeedsCompilation: no

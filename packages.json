@@ -9989,6 +9989,38 @@
       ]
     },
     {
+      "organism": "Byssochlamys spectabilis str. CBS 101075",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Bspectabilis.Ensembl.Paevar1",
+          "version": "1.0.0",
+          "organism": "Byssochlamys spectabilis str. CBS 101075",
+          "assembly": "Paevar1",
+          "provider": "Ensembl",
+          "accession": "GCA_004022145.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004022145.1/",
+          "file_name": "BSgenome.Bspectabilis.Ensembl.Paevar1_1.0.0.tar.gz",
+          "size": 7449873,
+          "seq_ids": [
+            "C8Q69scaffold_1",
+            "C8Q69scaffold_2",
+            "C8Q69scaffold_3",
+            "C8Q69scaffold_4",
+            "C8Q69scaffold_5"
+          ],
+          "seq_count": 86,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T22:38:59Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bspectabilis.Ensembl.Paevar1/BSgenome.Bspectabilis.Ensembl.Paevar1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Caenorhabditis briggsae",
       "common_name": "",
       "group": "invertebrate",
@@ -114949,6 +114981,30 @@
       "common_name": "",
       "published": "2026-04-18T22:38:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mcoronariae.Ensembl.ASM220425v1/BSgenome.Mcoronariae.Ensembl.ASM220425v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bspectabilis.Ensembl.Paevar1",
+      "version": "1.0.0",
+      "organism": "Byssochlamys spectabilis str. CBS 101075",
+      "assembly": "Paevar1",
+      "provider": "Ensembl",
+      "accession": "GCA_004022145.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004022145.1/",
+      "file_name": "BSgenome.Bspectabilis.Ensembl.Paevar1_1.0.0.tar.gz",
+      "size": 7449873,
+      "seq_ids": [
+        "C8Q69scaffold_1",
+        "C8Q69scaffold_2",
+        "C8Q69scaffold_3",
+        "C8Q69scaffold_4",
+        "C8Q69scaffold_5"
+      ],
+      "seq_count": 86,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T22:38:59Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bspectabilis.Ensembl.Paevar1/BSgenome.Bspectabilis.Ensembl.Paevar1_1.0.0.tar.gz"
     }
   ]
 }
