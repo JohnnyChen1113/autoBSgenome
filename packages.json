@@ -9079,6 +9079,54 @@
       ]
     },
     {
+      "organism": "Botryobasidium botryosum FD-172 SS1",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Cantharellales",
+        "family": "Botryobasidiaceae",
+        "genus": "Botryobasidium"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bbotryosum.Ensembl.Botbo1",
+          "version": "1.0.0",
+          "organism": "Botryobasidium botryosum FD-172 SS1",
+          "assembly": "Botbo1",
+          "provider": "Ensembl",
+          "accession": "GCA_000697705.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000697705.1/",
+          "file_name": "BSgenome.Bbotryosum.Ensembl.Botbo1_1.0.0.tar.gz",
+          "size": 11413542,
+          "seq_ids": [
+            "KL198016",
+            "KL198017",
+            "KL198018",
+            "KL198019",
+            "KL198020"
+          ],
+          "seq_count": 334,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Cantharellales",
+            "family": "Botryobasidiaceae",
+            "genus": "Botryobasidium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:53:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbotryosum.Ensembl.Botbo1/BSgenome.Bbotryosum.Ensembl.Botbo1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Botrytis cinerea B05.10",
       "common_name": "",
       "group": "fungi",
@@ -113640,6 +113688,38 @@
       "common_name": "",
       "published": "2026-04-18T20:53:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncrassa.Ensembl.Neucrtrp31/BSgenome.Ncrassa.Ensembl.Neucrtrp31_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bbotryosum.Ensembl.Botbo1",
+      "version": "1.0.0",
+      "organism": "Botryobasidium botryosum FD-172 SS1",
+      "assembly": "Botbo1",
+      "provider": "Ensembl",
+      "accession": "GCA_000697705.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000697705.1/",
+      "file_name": "BSgenome.Bbotryosum.Ensembl.Botbo1_1.0.0.tar.gz",
+      "size": 11413542,
+      "seq_ids": [
+        "KL198016",
+        "KL198017",
+        "KL198018",
+        "KL198019",
+        "KL198020"
+      ],
+      "seq_count": 334,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Cantharellales",
+        "family": "Botryobasidiaceae",
+        "genus": "Botryobasidium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:53:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bbotryosum.Ensembl.Botbo1/BSgenome.Bbotryosum.Ensembl.Botbo1_1.0.0.tar.gz"
     }
   ]
 }

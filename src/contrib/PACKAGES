@@ -6049,3 +6049,7 @@ NeedsCompilation: no
 Package: BSgenome.Ncrassa.Ensembl.Neucrtrp31
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bbotryosum.Ensembl.Botbo1
+Version: 1.0.0
+NeedsCompilation: no
