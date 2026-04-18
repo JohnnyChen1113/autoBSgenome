@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
     inputs:
       batch_size:
-        description: "Number of packages to build in this batch"
-        default: "15"
+        description: "Number of packages to build in this batch (max 20 to stay under GHA free-tier concurrency cap)"
+        default: "20"
         type: string
 
 permissions:
@@ -42,7 +42,7 @@ jobs:
             exit 0
           fi
 
-          BATCH_SIZE="${{ inputs.batch_size || '15' }}"
+          BATCH_SIZE="${{ inputs.batch_size || '20' }}"
 
           # First: mark 'building' items as 'done' if their pkg- release exists
           python3 <<'PYEOF' || true
