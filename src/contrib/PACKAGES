@@ -6089,3 +6089,7 @@ NeedsCompilation: no
 Package: BSgenome.Ahomomorphus.Ensembl.Asphom1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CNA3
+Version: 1.0.0
+NeedsCompilation: no

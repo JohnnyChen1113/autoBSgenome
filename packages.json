@@ -17872,6 +17872,38 @@
       ]
     },
     {
+      "organism": "Cryptococcus neoformans var. grubii H99",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Cneoformans.Ensembl.CNA3",
+          "version": "1.0.0",
+          "organism": "Cryptococcus neoformans var. grubii H99",
+          "assembly": "CNA3",
+          "provider": "Ensembl",
+          "accession": "GCA_000149245.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000149245.3/",
+          "file_name": "BSgenome.Cneoformans.Ensembl.CNA3_1.0.0.tar.gz",
+          "size": 4714935,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 15,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T21:40:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cneoformans.Ensembl.CNA3/BSgenome.Cneoformans.Ensembl.CNA3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus neoformans var. neoformans JEC21",
       "common_name": "",
       "group": "other",
@@ -114357,6 +114389,30 @@
       "common_name": "",
       "published": "2026-04-18T21:40:10Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ahomomorphus.Ensembl.Asphom1/BSgenome.Ahomomorphus.Ensembl.Asphom1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cneoformans.Ensembl.CNA3",
+      "version": "1.0.0",
+      "organism": "Cryptococcus neoformans var. grubii H99",
+      "assembly": "CNA3",
+      "provider": "Ensembl",
+      "accession": "GCA_000149245.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000149245.3/",
+      "file_name": "BSgenome.Cneoformans.Ensembl.CNA3_1.0.0.tar.gz",
+      "size": 4714935,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 15,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T21:40:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cneoformans.Ensembl.CNA3/BSgenome.Cneoformans.Ensembl.CNA3_1.0.0.tar.gz"
     }
   ]
 }
