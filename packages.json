@@ -67423,6 +67423,54 @@
       ]
     },
     {
+      "organism": "[Candida] auris",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cauris.Ensembl.CandaurisB11243",
+          "version": "1.0.0",
+          "organism": "[Candida] auris",
+          "assembly": "Cand_auris_B11243",
+          "provider": "Ensembl",
+          "accession": "GCA_003014415.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003014415.1/",
+          "file_name": "BSgenome.Cauris.Ensembl.CandaurisB11243_1.0.0.tar.gz",
+          "size": 3061948,
+          "seq_ids": [
+            "scaffold00001",
+            "scaffold00002",
+            "scaffold00003",
+            "scaffold00004",
+            "scaffold00005"
+          ],
+          "seq_count": 238,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Metschnikowiaceae",
+            "genus": "Candidozyma"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:39:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauris.Ensembl.CandaurisB11243/BSgenome.Cauris.Ensembl.CandaurisB11243_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "[Candida] haemuloni",
       "common_name": "",
       "group": "other",
@@ -116202,6 +116250,38 @@
       "common_name": "",
       "published": "2026-04-18T23:39:27Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.ASM491890v1/BSgenome.Wmellicola.Ensembl.ASM491890v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cauris.Ensembl.CandaurisB11243",
+      "version": "1.0.0",
+      "organism": "[Candida] auris",
+      "assembly": "Cand_auris_B11243",
+      "provider": "Ensembl",
+      "accession": "GCA_003014415.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003014415.1/",
+      "file_name": "BSgenome.Cauris.Ensembl.CandaurisB11243_1.0.0.tar.gz",
+      "size": 3061948,
+      "seq_ids": [
+        "scaffold00001",
+        "scaffold00002",
+        "scaffold00003",
+        "scaffold00004",
+        "scaffold00005"
+      ],
+      "seq_count": 238,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Metschnikowiaceae",
+        "genus": "Candidozyma"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:39:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cauris.Ensembl.CandaurisB11243/BSgenome.Cauris.Ensembl.CandaurisB11243_1.0.0.tar.gz"
     }
   ]
 }

@@ -6197,3 +6197,7 @@ NeedsCompilation: no
 Package: BSgenome.Wmellicola.Ensembl.ASM491890v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cauris.Ensembl.CandaurisB11243
+Version: 1.0.0
+NeedsCompilation: no
