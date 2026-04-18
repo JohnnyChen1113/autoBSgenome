@@ -5829,3 +5829,7 @@ NeedsCompilation: no
 Package: BSgenome.Gmarginata.Ensembl.Galma1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Calbicans.Ensembl.CandalbiP87V2
+Version: 1.0.0
+NeedsCompilation: no
