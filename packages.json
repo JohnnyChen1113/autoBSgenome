@@ -40724,6 +40724,36 @@
             "NW_014575403.1"
           ],
           "seq_count": 15
+        },
+        {
+          "package": "BSgenome.Ocolligata.Ensembl.ASM80326v1",
+          "version": "1.0.0",
+          "organism": "Ordospora colligata OC4",
+          "assembly": "ASM80326v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000803265.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000803265.1/",
+          "file_name": "BSgenome.Ocolligata.Ensembl.ASM80326v1_1.0.0.tar.gz",
+          "size": 559045,
+          "seq_ids": [
+            "contig_01",
+            "contig_05",
+            "contig_04",
+            "contig_12",
+            "contig_02"
+          ],
+          "seq_count": 15,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Ordosporidae",
+            "genus": "Ordospora"
+          },
+          "common_name": "",
+          "published": "2026-04-18T15:09:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.Ensembl.ASM80326v1/BSgenome.Ocolligata.Ensembl.ASM80326v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -106779,6 +106809,36 @@
       "common_name": "",
       "published": "2026-04-18T15:09:42Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sendobioticum.Ensembl.ASM653604v1/BSgenome.Sendobioticum.Ensembl.ASM653604v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ocolligata.Ensembl.ASM80326v1",
+      "version": "1.0.0",
+      "organism": "Ordospora colligata OC4",
+      "assembly": "ASM80326v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000803265.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000803265.1/",
+      "file_name": "BSgenome.Ocolligata.Ensembl.ASM80326v1_1.0.0.tar.gz",
+      "size": 559045,
+      "seq_ids": [
+        "contig_01",
+        "contig_05",
+        "contig_04",
+        "contig_12",
+        "contig_02"
+      ],
+      "seq_count": 15,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Ordosporidae",
+        "genus": "Ordospora"
+      },
+      "common_name": "",
+      "published": "2026-04-18T15:09:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ocolligata.Ensembl.ASM80326v1/BSgenome.Ocolligata.Ensembl.ASM80326v1_1.0.0.tar.gz"
     }
   ]
 }

@@ -5645,3 +5645,7 @@ NeedsCompilation: no
 Package: BSgenome.Sendobioticum.Ensembl.ASM653604v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ocolligata.Ensembl.ASM80326v1
+Version: 1.0.0
+NeedsCompilation: no
