@@ -38484,6 +38484,54 @@
       ]
     },
     {
+      "organism": "Oryza sativa tropical japonica subgroup",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Osativa.Ensembl.Os128077RS1",
+          "version": "1.0.0",
+          "organism": "Oryza sativa tropical japonica subgroup",
+          "assembly": "Os128077RS1",
+          "provider": "Ensembl",
+          "accession": "GCA_009831275.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009831275.1/",
+          "file_name": "BSgenome.Osativa.Ensembl.Os128077RS1_1.0.0.tar.gz",
+          "size": 92684682,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 25,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Oryza"
+          },
+          "common_name": "",
+          "published": "2026-04-18T02:38:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os128077RS1/BSgenome.Osativa.Ensembl.Os128077RS1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Oryzias javanicus",
       "common_name": "javanese ricefish",
       "group": "vertebrate_other",
@@ -97252,6 +97300,38 @@
       "common_name": "barrel medic",
       "published": "2026-04-18T02:38:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Mtruncatula.Ensembl.MtrunA17r50ANR/BSgenome.Mtruncatula.Ensembl.MtrunA17r50ANR_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Osativa.Ensembl.Os128077RS1",
+      "version": "1.0.0",
+      "organism": "Oryza sativa tropical japonica subgroup",
+      "assembly": "Os128077RS1",
+      "provider": "Ensembl",
+      "accession": "GCA_009831275.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009831275.1/",
+      "file_name": "BSgenome.Osativa.Ensembl.Os128077RS1_1.0.0.tar.gz",
+      "size": 92684682,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 25,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "common_name": "",
+      "published": "2026-04-18T02:38:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os128077RS1/BSgenome.Osativa.Ensembl.Os128077RS1_1.0.0.tar.gz"
     }
   ]
 }

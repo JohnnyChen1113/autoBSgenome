@@ -5097,3 +5097,7 @@ NeedsCompilation: no
 Package: BSgenome.Mtruncatula.Ensembl.MtrunA17r50ANR
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Osativa.Ensembl.Os128077RS1
+Version: 1.0.0
+NeedsCompilation: no
