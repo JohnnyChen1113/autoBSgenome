@@ -5881,3 +5881,7 @@ NeedsCompilation: no
 Package: BSgenome.Wmellicola.Ensembl.ASM491792v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aarborescens.Ensembl.ASM415483v1
+Version: 1.0.0
+NeedsCompilation: no
