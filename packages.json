@@ -32332,6 +32332,38 @@
           "common_name": "",
           "published": "2026-04-06T14:53:20Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbicolor.NCBI.V10/BSgenome.Lbicolor.NCBI.V10_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Lbicolor.Ensembl.V10",
+          "version": "1.0.0",
+          "organism": "Laccaria bicolor S238N-H82",
+          "assembly": "V1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000143565.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000143565.1/",
+          "file_name": "BSgenome.Lbicolor.Ensembl.V10_1.0.0.tar.gz",
+          "size": 14374216,
+          "seq_ids": [
+            "LACBIscaffold_1",
+            "LACBIscaffold_2",
+            "LACBIscaffold_3",
+            "LACBIscaffold_4",
+            "LACBIscaffold_5"
+          ],
+          "seq_count": 665,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Hydnangiaceae",
+            "genus": "Laccaria"
+          },
+          "common_name": "",
+          "published": "2026-04-18T18:06:40Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbicolor.Ensembl.V10/BSgenome.Lbicolor.Ensembl.V10_1.0.0.tar.gz"
         }
       ]
     },
@@ -109892,6 +109924,38 @@
       "common_name": "",
       "published": "2026-04-18T18:06:16Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiP87V2/BSgenome.Calbicans.Ensembl.CandalbiP87V2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Lbicolor.Ensembl.V10",
+      "version": "1.0.0",
+      "organism": "Laccaria bicolor S238N-H82",
+      "assembly": "V1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000143565.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000143565.1/",
+      "file_name": "BSgenome.Lbicolor.Ensembl.V10_1.0.0.tar.gz",
+      "size": 14374216,
+      "seq_ids": [
+        "LACBIscaffold_1",
+        "LACBIscaffold_2",
+        "LACBIscaffold_3",
+        "LACBIscaffold_4",
+        "LACBIscaffold_5"
+      ],
+      "seq_count": 665,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Hydnangiaceae",
+        "genus": "Laccaria"
+      },
+      "common_name": "",
+      "published": "2026-04-18T18:06:40Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lbicolor.Ensembl.V10/BSgenome.Lbicolor.Ensembl.V10_1.0.0.tar.gz"
     }
   ]
 }
