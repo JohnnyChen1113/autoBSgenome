@@ -6081,3 +6081,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcarnosa.Ensembl.PhanerochaetecarnosaHHB10118Spv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Phystricis.Ensembl.Polyhyst7299V1
+Version: 1.0.0
+NeedsCompilation: no
