@@ -24362,6 +24362,38 @@
           "common_name": "",
           "published": "2026-04-06T11:30:03Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fverticillioides.NCBI.ASM14955v1/BSgenome.Fverticillioides.NCBI.ASM14955v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Fverticillioides.Ensembl.ASM14955v1",
+          "version": "1.0.0",
+          "organism": "Fusarium verticillioides 7600",
+          "assembly": "ASM14955v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000149555.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000149555.1/",
+          "file_name": "BSgenome.Fverticillioides.Ensembl.ASM14955v1_1.0.0.tar.gz",
+          "size": 10433230,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 24,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Nectriaceae",
+            "genus": "Fusarium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T12:01:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fverticillioides.Ensembl.ASM14955v1/BSgenome.Fverticillioides.Ensembl.ASM14955v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -103459,6 +103491,38 @@
       "common_name": "",
       "published": "2026-04-18T12:01:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sochraceum.Ensembl.INBIStOhrav10/BSgenome.Sochraceum.Ensembl.INBIStOhrav10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Fverticillioides.Ensembl.ASM14955v1",
+      "version": "1.0.0",
+      "organism": "Fusarium verticillioides 7600",
+      "assembly": "ASM14955v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000149555.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000149555.1/",
+      "file_name": "BSgenome.Fverticillioides.Ensembl.ASM14955v1_1.0.0.tar.gz",
+      "size": 10433230,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 24,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T12:01:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fverticillioides.Ensembl.ASM14955v1/BSgenome.Fverticillioides.Ensembl.ASM14955v1_1.0.0.tar.gz"
     }
   ]
 }

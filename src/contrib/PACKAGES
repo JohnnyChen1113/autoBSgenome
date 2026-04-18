@@ -5453,3 +5453,7 @@ NeedsCompilation: no
 Package: BSgenome.Sochraceum.Ensembl.INBIStOhrav10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fverticillioides.Ensembl.ASM14955v1
+Version: 1.0.0
+NeedsCompilation: no
