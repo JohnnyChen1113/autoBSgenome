@@ -19595,6 +19595,38 @@
       ]
     },
     {
+      "organism": "Dentipellis fragilis str. DSM 105465",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Dfragilis.Ensembl.ASM467927v1",
+          "version": "1.0.0",
+          "organism": "Dentipellis fragilis str. DSM 105465",
+          "assembly": "ASM467927v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004679275.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004679275.1/",
+          "file_name": "BSgenome.Dfragilis.Ensembl.ASM467927v1_1.0.0.tar.gz",
+          "size": 8104969,
+          "seq_ids": [
+            "Contig_1",
+            "Contig_2",
+            "Contig_3",
+            "Contig_4",
+            "Contig_5"
+          ],
+          "seq_count": 2045,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T19:24:24Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dfragilis.Ensembl.ASM467927v1/BSgenome.Dfragilis.Ensembl.ASM467927v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Dermochelys coriacea",
       "common_name": "leatherback sea turtle",
       "group": "vertebrate_other",
@@ -110468,6 +110500,30 @@
       "common_name": "",
       "published": "2026-04-18T19:24:15Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tasahii.Ensembl.ASM29921v2/BSgenome.Tasahii.Ensembl.ASM29921v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dfragilis.Ensembl.ASM467927v1",
+      "version": "1.0.0",
+      "organism": "Dentipellis fragilis str. DSM 105465",
+      "assembly": "ASM467927v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004679275.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004679275.1/",
+      "file_name": "BSgenome.Dfragilis.Ensembl.ASM467927v1_1.0.0.tar.gz",
+      "size": 8104969,
+      "seq_ids": [
+        "Contig_1",
+        "Contig_2",
+        "Contig_3",
+        "Contig_4",
+        "Contig_5"
+      ],
+      "seq_count": 2045,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T19:24:24Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dfragilis.Ensembl.ASM467927v1/BSgenome.Dfragilis.Ensembl.ASM467927v1_1.0.0.tar.gz"
     }
   ]
 }
