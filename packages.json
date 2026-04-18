@@ -1175,6 +1175,54 @@
       ]
     },
     {
+      "organism": "Alternaria sp. MG1",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Alternaria"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Asp.Ensembl.ASM357452v1",
+          "version": "1.0.0",
+          "organism": "Alternaria sp. MG1",
+          "assembly": "ASM357452v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003574525.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003574525.1/",
+          "file_name": "BSgenome.Asp.Ensembl.ASM357452v1_1.0.0.tar.gz",
+          "size": 8503936,
+          "seq_ids": [
+            "NODE_273",
+            "NODE_297",
+            "NODE_55",
+            "NODE_133",
+            "NODE_284"
+          ],
+          "seq_count": 130,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Pleosporaceae",
+            "genus": "Alternaria"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:03:08Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asp.Ensembl.ASM357452v1/BSgenome.Asp.Ensembl.ASM357452v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Alternaria tenuissima",
       "common_name": "",
       "group": "fungi",
@@ -112104,6 +112152,38 @@
       "common_name": "",
       "published": "2026-04-18T20:02:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aturcosus.Ensembl.ASM223497v2/BSgenome.Aturcosus.Ensembl.ASM223497v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Asp.Ensembl.ASM357452v1",
+      "version": "1.0.0",
+      "organism": "Alternaria sp. MG1",
+      "assembly": "ASM357452v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003574525.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003574525.1/",
+      "file_name": "BSgenome.Asp.Ensembl.ASM357452v1_1.0.0.tar.gz",
+      "size": 8503936,
+      "seq_ids": [
+        "NODE_273",
+        "NODE_297",
+        "NODE_55",
+        "NODE_133",
+        "NODE_284"
+      ],
+      "seq_count": 130,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Pleosporaceae",
+        "genus": "Alternaria"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:03:08Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asp.Ensembl.ASM357452v1/BSgenome.Asp.Ensembl.ASM357452v1_1.0.0.tar.gz"
     }
   ]
 }
