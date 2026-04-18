@@ -5961,3 +5961,7 @@ NeedsCompilation: no
 Package: BSgenome.Asp.Ensembl.ASM357452v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsolani.Ensembl.RhisolAG1IA10
+Version: 1.0.0
+NeedsCompilation: no

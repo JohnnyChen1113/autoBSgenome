@@ -52769,6 +52769,38 @@
       ]
     },
     {
+      "organism": "Rhizoctonia solani AG-1 IA str. AG1 IA",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Rsolani.Ensembl.RhisolAG1IA10",
+          "version": "1.0.0",
+          "organism": "Rhizoctonia solani AG-1 IA str. AG1 IA",
+          "assembly": "Rhisol_AG1IA_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000334115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000334115.1/",
+          "file_name": "BSgenome.Rsolani.Ensembl.RhisolAG1IA10_1.0.0.tar.gz",
+          "size": 8720771,
+          "seq_ids": [
+            "KB317696",
+            "KB317697",
+            "KB317698",
+            "KB317699",
+            "KB317700"
+          ],
+          "seq_count": 2648,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T20:03:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.RhisolAG1IA10/BSgenome.Rsolani.Ensembl.RhisolAG1IA10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhizoctonia solani AG-1 IB",
       "common_name": "",
       "group": "fungi",
@@ -112184,6 +112216,30 @@
       "common_name": "",
       "published": "2026-04-18T20:03:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asp.Ensembl.ASM357452v1/BSgenome.Asp.Ensembl.ASM357452v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rsolani.Ensembl.RhisolAG1IA10",
+      "version": "1.0.0",
+      "organism": "Rhizoctonia solani AG-1 IA str. AG1 IA",
+      "assembly": "Rhisol_AG1IA_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000334115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000334115.1/",
+      "file_name": "BSgenome.Rsolani.Ensembl.RhisolAG1IA10_1.0.0.tar.gz",
+      "size": 8720771,
+      "seq_ids": [
+        "KB317696",
+        "KB317697",
+        "KB317698",
+        "KB317699",
+        "KB317700"
+      ],
+      "seq_count": 2648,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T20:03:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.RhisolAG1IA10/BSgenome.Rsolani.Ensembl.RhisolAG1IA10_1.0.0.tar.gz"
     }
   ]
 }
