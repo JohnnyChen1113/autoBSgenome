@@ -56028,6 +56028,38 @@
       ]
     },
     {
+      "organism": "Synchytrium endobioticum str. LEV6574",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Sendobioticum.Ensembl.ASM653604v1",
+          "version": "1.0.0",
+          "organism": "Synchytrium endobioticum str. LEV6574",
+          "assembly": "ASM653604v1",
+          "provider": "Ensembl",
+          "accession": "GCA_006536045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006536045.1/",
+          "file_name": "BSgenome.Sendobioticum.Ensembl.ASM653604v1_1.0.0.tar.gz",
+          "size": 5778996,
+          "seq_ids": [
+            "SeLEV6574_ctg0001",
+            "SeLEV6574_ctg0002",
+            "SeLEV6574_ctg0003",
+            "SeLEV6574_ctg0004",
+            "SeLEV6574_ctg0005"
+          ],
+          "seq_count": 1285,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T15:09:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sendobioticum.Ensembl.ASM653604v1/BSgenome.Sendobioticum.Ensembl.ASM653604v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Synchytrium microbalum",
       "common_name": "",
       "group": "fungi",
@@ -106723,6 +106755,30 @@
       "common_name": "",
       "published": "2026-04-18T15:09:37Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nparisii.Ensembl.NemaparisiiERTm3V1/BSgenome.Nparisii.Ensembl.NemaparisiiERTm3V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sendobioticum.Ensembl.ASM653604v1",
+      "version": "1.0.0",
+      "organism": "Synchytrium endobioticum str. LEV6574",
+      "assembly": "ASM653604v1",
+      "provider": "Ensembl",
+      "accession": "GCA_006536045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006536045.1/",
+      "file_name": "BSgenome.Sendobioticum.Ensembl.ASM653604v1_1.0.0.tar.gz",
+      "size": 5778996,
+      "seq_ids": [
+        "SeLEV6574_ctg0001",
+        "SeLEV6574_ctg0002",
+        "SeLEV6574_ctg0003",
+        "SeLEV6574_ctg0004",
+        "SeLEV6574_ctg0005"
+      ],
+      "seq_count": 1285,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T15:09:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sendobioticum.Ensembl.ASM653604v1/BSgenome.Sendobioticum.Ensembl.ASM653604v1_1.0.0.tar.gz"
     }
   ]
 }

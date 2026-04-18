@@ -5641,3 +5641,7 @@ NeedsCompilation: no
 Package: BSgenome.Nparisii.Ensembl.NemaparisiiERTm3V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sendobioticum.Ensembl.ASM653604v1
+Version: 1.0.0
+NeedsCompilation: no
