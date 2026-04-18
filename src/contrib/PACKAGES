@@ -5613,3 +5613,7 @@ NeedsCompilation: no
 Package: BSgenome.Vcorneae.Ensembl.VittcornV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ncaliforniae.Ensembl.NeocallimastixspG1v10
+Version: 1.0.0
+NeedsCompilation: no

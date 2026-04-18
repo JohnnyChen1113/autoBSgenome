@@ -38180,6 +38180,38 @@
       ]
     },
     {
+      "organism": "Neocallimastix californiae str. G1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Ncaliforniae.Ensembl.NeocallimastixspG1v10",
+          "version": "1.0.0",
+          "organism": "Neocallimastix californiae str. G1",
+          "assembly": "Neocallimastix sp. G1 v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_002104975.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002104975.1/",
+          "file_name": "BSgenome.Ncaliforniae.Ensembl.NeocallimastixspG1v10_1.0.0.tar.gz",
+          "size": 39636870,
+          "seq_ids": [
+            "LY90scaffold_1",
+            "LY90scaffold_2",
+            "LY90scaffold_3",
+            "LY90scaffold_4",
+            "LY90scaffold_5"
+          ],
+          "seq_count": 1819,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T15:08:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncaliforniae.Ensembl.NeocallimastixspG1v10/BSgenome.Ncaliforniae.Ensembl.NeocallimastixspG1v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Neogobius melanostomus",
       "common_name": "round goby",
       "group": "vertebrate_other",
@@ -106226,6 +106258,30 @@
       "common_name": "",
       "published": "2026-04-18T14:14:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vcorneae.Ensembl.VittcornV1/BSgenome.Vcorneae.Ensembl.VittcornV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ncaliforniae.Ensembl.NeocallimastixspG1v10",
+      "version": "1.0.0",
+      "organism": "Neocallimastix californiae str. G1",
+      "assembly": "Neocallimastix sp. G1 v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_002104975.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002104975.1/",
+      "file_name": "BSgenome.Ncaliforniae.Ensembl.NeocallimastixspG1v10_1.0.0.tar.gz",
+      "size": 39636870,
+      "seq_ids": [
+        "LY90scaffold_1",
+        "LY90scaffold_2",
+        "LY90scaffold_3",
+        "LY90scaffold_4",
+        "LY90scaffold_5"
+      ],
+      "seq_count": 1819,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T15:08:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ncaliforniae.Ensembl.NeocallimastixspG1v10/BSgenome.Ncaliforniae.Ensembl.NeocallimastixspG1v10_1.0.0.tar.gz"
     }
   ]
 }
