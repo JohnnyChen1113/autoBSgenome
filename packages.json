@@ -57144,6 +57144,38 @@
           "common_name": "cowpea",
           "published": "2026-04-04T14:43:36Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vunguiculata.NCBI.ASM411807v2/BSgenome.Vunguiculata.NCBI.ASM411807v2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Vunguiculata.Ensembl.ASM411807v1",
+          "version": "1.0.0",
+          "organism": "Vigna unguiculata",
+          "assembly": "ASM411807v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004118075.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004118075.1/",
+          "file_name": "BSgenome.Vunguiculata.Ensembl.ASM411807v1_1.0.0.tar.gz",
+          "size": 117563249,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 682,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Fabales",
+            "family": "Fabaceae",
+            "genus": "Vigna"
+          },
+          "common_name": "cowpea",
+          "published": "2026-04-18T08:03:13Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vunguiculata.Ensembl.ASM411807v1/BSgenome.Vunguiculata.Ensembl.ASM411807v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -100188,6 +100220,38 @@
       "common_name": "tomato",
       "published": "2026-04-18T08:02:56Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Slycopersicum.Ensembl.SL30/BSgenome.Slycopersicum.Ensembl.SL30_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Vunguiculata.Ensembl.ASM411807v1",
+      "version": "1.0.0",
+      "organism": "Vigna unguiculata",
+      "assembly": "ASM411807v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004118075.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004118075.1/",
+      "file_name": "BSgenome.Vunguiculata.Ensembl.ASM411807v1_1.0.0.tar.gz",
+      "size": 117563249,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 682,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Fabales",
+        "family": "Fabaceae",
+        "genus": "Vigna"
+      },
+      "common_name": "cowpea",
+      "published": "2026-04-18T08:03:13Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Vunguiculata.Ensembl.ASM411807v1/BSgenome.Vunguiculata.Ensembl.ASM411807v1_1.0.0.tar.gz"
     }
   ]
 }

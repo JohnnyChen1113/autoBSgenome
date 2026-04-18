@@ -5269,3 +5269,7 @@ NeedsCompilation: no
 Package: BSgenome.Slycopersicum.Ensembl.SL30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vunguiculata.Ensembl.ASM411807v1
+Version: 1.0.0
+NeedsCompilation: no
