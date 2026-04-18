@@ -51259,6 +51259,54 @@
       ]
     },
     {
+      "organism": "Ramularia collo-cygni",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Ramularia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rcollocygni.Ensembl.version1",
+          "version": "1.0.0",
+          "organism": "Ramularia collo-cygni",
+          "assembly": "version 1",
+          "provider": "Ensembl",
+          "accession": "GCA_900074925.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900074925.1/",
+          "file_name": "BSgenome.Rcollocygni.Ensembl.version1_1.0.0.tar.gz",
+          "size": 7940966,
+          "seq_ids": [
+            "RCC_scaffold01",
+            "RCC_scaffold02",
+            "RCC_scaffold03",
+            "RCC_scaffold04",
+            "RCC_scaffold05"
+          ],
+          "seq_count": 78,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Mycosphaerellales",
+            "family": "Mycosphaerellaceae",
+            "genus": "Ramularia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T18:07:04Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rcollocygni.Ensembl.version1/BSgenome.Rcollocygni.Ensembl.version1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Raphanus sativus",
       "common_name": "radish",
       "group": "plant",
@@ -110020,6 +110068,38 @@
       "common_name": "",
       "published": "2026-04-18T18:06:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10/BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rcollocygni.Ensembl.version1",
+      "version": "1.0.0",
+      "organism": "Ramularia collo-cygni",
+      "assembly": "version 1",
+      "provider": "Ensembl",
+      "accession": "GCA_900074925.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900074925.1/",
+      "file_name": "BSgenome.Rcollocygni.Ensembl.version1_1.0.0.tar.gz",
+      "size": 7940966,
+      "seq_ids": [
+        "RCC_scaffold01",
+        "RCC_scaffold02",
+        "RCC_scaffold03",
+        "RCC_scaffold04",
+        "RCC_scaffold05"
+      ],
+      "seq_count": 78,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Ramularia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T18:07:04Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rcollocygni.Ensembl.version1/BSgenome.Rcollocygni.Ensembl.version1_1.0.0.tar.gz"
     }
   ]
 }

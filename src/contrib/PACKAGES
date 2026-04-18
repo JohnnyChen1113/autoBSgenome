@@ -5841,3 +5841,7 @@ NeedsCompilation: no
 Package: BSgenome.Wichthyophaga.Ensembl.Wallemiaichthyophagaversion10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rcollocygni.Ensembl.version1
+Version: 1.0.0
+NeedsCompilation: no
