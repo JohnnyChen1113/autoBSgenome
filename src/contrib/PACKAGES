@@ -5537,3 +5537,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsqualens.Ensembl.Dichomitussqualensv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ecuniculi.Ensembl.ASM9122v2
+Version: 1.0.0
+NeedsCompilation: no
