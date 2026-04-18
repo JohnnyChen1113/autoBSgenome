@@ -5493,3 +5493,7 @@ NeedsCompilation: no
 Package: BSgenome.Dprimogenitus.Ensembl.DacryopinaxspDJM731SSP1v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638
+Version: 1.0.0
+NeedsCompilation: no

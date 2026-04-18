@@ -15149,6 +15149,54 @@
       ]
     },
     {
+      "organism": "Conidiobolus coronatus NRRL 28638",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Zoopagomycota",
+        "class": "Entomophthoromycetes",
+        "order": "Entomophthorales",
+        "family": "Ancylistaceae",
+        "genus": "Conidiobolus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638",
+          "version": "1.0.0",
+          "organism": "Conidiobolus coronatus NRRL 28638",
+          "assembly": "Conidiobolus coronatus NRRL28638",
+          "provider": "Ensembl",
+          "accession": "GCA_001566745.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001566745.1/",
+          "file_name": "BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638_1.0.0.tar.gz",
+          "size": 7456654,
+          "seq_ids": [
+            "KQ964418",
+            "KQ964419",
+            "KQ964420",
+            "KQ964421",
+            "KQ964422"
+          ],
+          "seq_count": 1050,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Zoopagomycota",
+            "class": "Entomophthoromycetes",
+            "order": "Entomophthorales",
+            "family": "Ancylistaceae",
+            "genus": "Conidiobolus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:22:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638/BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Coniophora puteana RWD-64-598 SS2",
       "common_name": "",
       "group": "fungi",
@@ -104147,6 +104195,38 @@
       "common_name": "",
       "published": "2026-04-18T13:22:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dprimogenitus.Ensembl.DacryopinaxspDJM731SSP1v10/BSgenome.Dprimogenitus.Ensembl.DacryopinaxspDJM731SSP1v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638",
+      "version": "1.0.0",
+      "organism": "Conidiobolus coronatus NRRL 28638",
+      "assembly": "Conidiobolus coronatus NRRL28638",
+      "provider": "Ensembl",
+      "accession": "GCA_001566745.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001566745.1/",
+      "file_name": "BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638_1.0.0.tar.gz",
+      "size": 7456654,
+      "seq_ids": [
+        "KQ964418",
+        "KQ964419",
+        "KQ964420",
+        "KQ964421",
+        "KQ964422"
+      ],
+      "seq_count": 1050,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Zoopagomycota",
+        "class": "Entomophthoromycetes",
+        "order": "Entomophthorales",
+        "family": "Ancylistaceae",
+        "genus": "Conidiobolus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:22:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638/BSgenome.Ccoronatus.Ensembl.ConidioboluscoronatusNRRL28638_1.0.0.tar.gz"
     }
   ]
 }
