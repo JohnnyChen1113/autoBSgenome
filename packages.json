@@ -51137,6 +51137,54 @@
       ]
     },
     {
+      "organism": "Pseudogymnoascus sp. VKM F-4246",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psp.Ensembl.DG5",
+          "version": "1.0.0",
+          "organism": "Pseudogymnoascus sp. VKM F-4246",
+          "assembly": "DG5",
+          "provider": "Ensembl",
+          "accession": "GCA_000750735.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750735.1/",
+          "file_name": "BSgenome.Psp.Ensembl.DG5_1.0.0.tar.gz",
+          "size": 6469085,
+          "seq_ids": [
+            "contig_112",
+            "contig_2683",
+            "contig_2052",
+            "contig_79",
+            "contig_1252"
+          ],
+          "seq_count": 3685,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Thelebolales",
+            "family": "Thelebolaceae",
+            "genus": "Pseudogymnoascus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T21:38:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG5/BSgenome.Psp.Ensembl.DG5_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudogymnoascus sp. VKM F-4281 (FW-2241)",
       "common_name": "",
       "group": "fungi",
@@ -113912,6 +113960,38 @@
       "common_name": "",
       "published": "2026-04-18T21:38:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ztritici.Ensembl.ZT1A5completeassembly/BSgenome.Ztritici.Ensembl.ZT1A5completeassembly_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psp.Ensembl.DG5",
+      "version": "1.0.0",
+      "organism": "Pseudogymnoascus sp. VKM F-4246",
+      "assembly": "DG5",
+      "provider": "Ensembl",
+      "accession": "GCA_000750735.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750735.1/",
+      "file_name": "BSgenome.Psp.Ensembl.DG5_1.0.0.tar.gz",
+      "size": 6469085,
+      "seq_ids": [
+        "contig_112",
+        "contig_2683",
+        "contig_2052",
+        "contig_79",
+        "contig_1252"
+      ],
+      "seq_count": 3685,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T21:38:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG5/BSgenome.Psp.Ensembl.DG5_1.0.0.tar.gz"
     }
   ]
 }

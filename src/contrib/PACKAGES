@@ -6065,3 +6065,7 @@ NeedsCompilation: no
 Package: BSgenome.Ztritici.Ensembl.ZT1A5completeassembly
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psp.Ensembl.DG5
+Version: 1.0.0
+NeedsCompilation: no
