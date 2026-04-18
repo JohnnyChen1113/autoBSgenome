@@ -2235,6 +2235,38 @@
       ]
     },
     {
+      "organism": "Anthracocystis flocculosa PF-1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Aflocculosa.Ensembl.Pflocc10",
+          "version": "1.0.0",
+          "organism": "Anthracocystis flocculosa PF-1",
+          "assembly": "Pflocc_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000417875.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000417875.1/",
+          "file_name": "BSgenome.Aflocculosa.Ensembl.Pflocc10_1.0.0.tar.gz",
+          "size": 5512088,
+          "seq_ids": [
+            "KE361623",
+            "KE361624",
+            "KE361625",
+            "KE361626",
+            "KE361627"
+          ],
+          "seq_count": 39,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T17:07:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aflocculosa.Ensembl.Pflocc10/BSgenome.Aflocculosa.Ensembl.Pflocc10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Antrostomus carolinensis",
       "common_name": "chuck-will's-widow",
       "group": "vertebrate_other",
@@ -108075,6 +108107,30 @@
       "common_name": "",
       "published": "2026-04-18T16:06:07Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecanceri.Ensembl.ASM208791v1/BSgenome.Ecanceri.Ensembl.ASM208791v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aflocculosa.Ensembl.Pflocc10",
+      "version": "1.0.0",
+      "organism": "Anthracocystis flocculosa PF-1",
+      "assembly": "Pflocc_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000417875.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000417875.1/",
+      "file_name": "BSgenome.Aflocculosa.Ensembl.Pflocc10_1.0.0.tar.gz",
+      "size": 5512088,
+      "seq_ids": [
+        "KE361623",
+        "KE361624",
+        "KE361625",
+        "KE361626",
+        "KE361627"
+      ],
+      "seq_count": 39,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T17:07:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aflocculosa.Ensembl.Pflocc10/BSgenome.Aflocculosa.Ensembl.Pflocc10_1.0.0.tar.gz"
     }
   ]
 }

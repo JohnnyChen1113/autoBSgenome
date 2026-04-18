@@ -5721,3 +5721,7 @@ NeedsCompilation: no
 Package: BSgenome.Ecanceri.Ensembl.ASM208791v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aflocculosa.Ensembl.Pflocc10
+Version: 1.0.0
+NeedsCompilation: no
