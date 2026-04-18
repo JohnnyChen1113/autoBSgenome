@@ -43366,6 +43366,38 @@
           "common_name": "",
           "published": "2026-04-04T16:39:59Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvera.NCBI.PisVerv2/BSgenome.Pvera.NCBI.PisVerv2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Pvera.Ensembl.PisVerv2",
+          "version": "1.0.0",
+          "organism": "Pistacia vera",
+          "assembly": "PisVer_v2",
+          "provider": "Ensembl",
+          "accession": "GCA_008641045.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008641045.1/",
+          "file_name": "BSgenome.Pvera.Ensembl.PisVerv2_1.0.0.tar.gz",
+          "size": 157589615,
+          "seq_ids": [
+            "Contig320",
+            "Contig223",
+            "Contig40",
+            "Contig78",
+            "Contig117"
+          ],
+          "seq_count": 1888,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Sapindales",
+            "family": "Anacardiaceae",
+            "genus": "Pistacia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T06:49:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvera.Ensembl.PisVerv2/BSgenome.Pvera.Ensembl.PisVerv2_1.0.0.tar.gz"
         }
       ]
     },
@@ -99084,6 +99116,38 @@
       "common_name": "long-grained rice",
       "published": "2026-04-18T06:49:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os125619RS1/BSgenome.Osativa.Ensembl.Os125619RS1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pvera.Ensembl.PisVerv2",
+      "version": "1.0.0",
+      "organism": "Pistacia vera",
+      "assembly": "PisVer_v2",
+      "provider": "Ensembl",
+      "accession": "GCA_008641045.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_008641045.1/",
+      "file_name": "BSgenome.Pvera.Ensembl.PisVerv2_1.0.0.tar.gz",
+      "size": 157589615,
+      "seq_ids": [
+        "Contig320",
+        "Contig223",
+        "Contig40",
+        "Contig78",
+        "Contig117"
+      ],
+      "seq_count": 1888,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Sapindales",
+        "family": "Anacardiaceae",
+        "genus": "Pistacia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T06:49:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pvera.Ensembl.PisVerv2/BSgenome.Pvera.Ensembl.PisVerv2_1.0.0.tar.gz"
     }
   ]
 }
