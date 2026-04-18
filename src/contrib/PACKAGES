@@ -5397,3 +5397,7 @@ NeedsCompilation: no
 Package: BSgenome.Chaemuloni.Ensembl.GCA002926055v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ctropicalis.Ensembl.GCA000006335v3
+Version: 1.0.0
+NeedsCompilation: no

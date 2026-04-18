@@ -10348,6 +10348,54 @@
       ]
     },
     {
+      "organism": "Candida tropicalis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ctropicalis.Ensembl.GCA000006335v3",
+          "version": "1.0.0",
+          "organism": "Candida tropicalis",
+          "assembly": "GCA000006335v3",
+          "provider": "Ensembl",
+          "accession": "GCA_000006335.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000006335.3/",
+          "file_name": "BSgenome.Ctropicalis.Ensembl.GCA000006335v3_1.0.0.tar.gz",
+          "size": 3459625,
+          "seq_ids": [
+            "GG692418",
+            "GG692395",
+            "GG692396",
+            "GG692397",
+            "GG692398"
+          ],
+          "seq_count": 24,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Candida"
+          },
+          "common_name": "",
+          "published": "2026-04-18T11:58:26Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctropicalis.Ensembl.GCA000006335v3/BSgenome.Ctropicalis.Ensembl.GCA000006335v3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Candida tropicalis MYA-3404",
       "common_name": "",
       "group": "fungi",
@@ -102444,6 +102492,38 @@
       "common_name": "",
       "published": "2026-04-18T11:12:05Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Chaemuloni.Ensembl.GCA002926055v1/BSgenome.Chaemuloni.Ensembl.GCA002926055v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ctropicalis.Ensembl.GCA000006335v3",
+      "version": "1.0.0",
+      "organism": "Candida tropicalis",
+      "assembly": "GCA000006335v3",
+      "provider": "Ensembl",
+      "accession": "GCA_000006335.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000006335.3/",
+      "file_name": "BSgenome.Ctropicalis.Ensembl.GCA000006335v3_1.0.0.tar.gz",
+      "size": 3459625,
+      "seq_ids": [
+        "GG692418",
+        "GG692395",
+        "GG692396",
+        "GG692397",
+        "GG692398"
+      ],
+      "seq_count": 24,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "common_name": "",
+      "published": "2026-04-18T11:58:26Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ctropicalis.Ensembl.GCA000006335v3/BSgenome.Ctropicalis.Ensembl.GCA000006335v3_1.0.0.tar.gz"
     }
   ]
 }
