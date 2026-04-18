@@ -10845,6 +10845,54 @@
       ]
     },
     {
+      "organism": "Candida albicans 19F",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Calbicans.Ensembl.Candalbi19FV2",
+          "version": "1.0.0",
+          "organism": "Candida albicans 19F",
+          "assembly": "Cand_albi_19F_V2",
+          "provider": "Ensembl",
+          "accession": "GCA_000775445.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000775445.1/",
+          "file_name": "BSgenome.Calbicans.Ensembl.Candalbi19FV2_1.0.0.tar.gz",
+          "size": 3417364,
+          "seq_ids": [
+            "supercont2.7",
+            "supercont2.35",
+            "supercont2.12",
+            "supercont2.27",
+            "supercont2.49"
+          ],
+          "seq_count": 60,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Candida"
+          },
+          "common_name": "",
+          "published": "2026-04-18T21:39:37Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.Candalbi19FV2/BSgenome.Calbicans.Ensembl.Candalbi19FV2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Candida albicans Ca6",
       "common_name": "",
       "group": "fungi",
@@ -114072,6 +114120,38 @@
       "common_name": "",
       "published": "2026-04-18T21:39:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10/BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Calbicans.Ensembl.Candalbi19FV2",
+      "version": "1.0.0",
+      "organism": "Candida albicans 19F",
+      "assembly": "Cand_albi_19F_V2",
+      "provider": "Ensembl",
+      "accession": "GCA_000775445.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000775445.1/",
+      "file_name": "BSgenome.Calbicans.Ensembl.Candalbi19FV2_1.0.0.tar.gz",
+      "size": 3417364,
+      "seq_ids": [
+        "supercont2.7",
+        "supercont2.35",
+        "supercont2.12",
+        "supercont2.27",
+        "supercont2.49"
+      ],
+      "seq_count": 60,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "common_name": "",
+      "published": "2026-04-18T21:39:37Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.Candalbi19FV2/BSgenome.Calbicans.Ensembl.Candalbi19FV2_1.0.0.tar.gz"
     }
   ]
 }

@@ -6073,3 +6073,7 @@ NeedsCompilation: no
 Package: BSgenome.Gsubvermispora.Ensembl.CeriporiopsissubvermisporaBv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Calbicans.Ensembl.Candalbi19FV2
+Version: 1.0.0
+NeedsCompilation: no
