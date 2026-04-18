@@ -5204,6 +5204,38 @@
       ]
     },
     {
+      "organism": "Aspergillus minisclerotigenes str. CBS 117635",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Aminisclerotigenes.Ensembl.Aspmin1",
+          "version": "1.0.0",
+          "organism": "Aspergillus minisclerotigenes str. CBS 117635",
+          "assembly": "Aspmin1",
+          "provider": "Ensembl",
+          "accession": "GCA_009176455.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009176455.1/",
+          "file_name": "BSgenome.Aminisclerotigenes.Ensembl.Aspmin1_1.0.0.tar.gz",
+          "size": 9268172,
+          "seq_ids": [
+            "ML732764",
+            "ML732765",
+            "ML732766",
+            "ML732767",
+            "ML732768"
+          ],
+          "seq_count": 296,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T22:40:15Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aminisclerotigenes.Ensembl.Aspmin1/BSgenome.Aminisclerotigenes.Ensembl.Aspmin1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus mulundensis",
       "common_name": "",
       "group": "fungi",
@@ -115426,6 +115458,30 @@
       "common_name": "",
       "published": "2026-04-18T22:40:08Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.ASM491891v1/BSgenome.Wmellicola.Ensembl.ASM491891v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aminisclerotigenes.Ensembl.Aspmin1",
+      "version": "1.0.0",
+      "organism": "Aspergillus minisclerotigenes str. CBS 117635",
+      "assembly": "Aspmin1",
+      "provider": "Ensembl",
+      "accession": "GCA_009176455.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009176455.1/",
+      "file_name": "BSgenome.Aminisclerotigenes.Ensembl.Aspmin1_1.0.0.tar.gz",
+      "size": 9268172,
+      "seq_ids": [
+        "ML732764",
+        "ML732765",
+        "ML732766",
+        "ML732767",
+        "ML732768"
+      ],
+      "seq_count": 296,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T22:40:15Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aminisclerotigenes.Ensembl.Aspmin1/BSgenome.Aminisclerotigenes.Ensembl.Aspmin1_1.0.0.tar.gz"
     }
   ]
 }
