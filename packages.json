@@ -17856,6 +17856,54 @@
       ]
     },
     {
+      "organism": "Cryptococcus gattii NT-10",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Cgattii.Ensembl.CrypgattNT10V1",
+          "version": "1.0.0",
+          "organism": "Cryptococcus gattii NT-10",
+          "assembly": "Cryp_gatt_NT-10_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000935105.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000935105.1/",
+          "file_name": "BSgenome.Cgattii.Ensembl.CrypgattNT10V1_1.0.0.tar.gz",
+          "size": 4446296,
+          "seq_ids": [
+            "KN905583",
+            "KN905584",
+            "KN905585",
+            "KN905586",
+            "KN905587"
+          ],
+          "seq_count": 226,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Tremellomycetes",
+            "order": "Tremellales",
+            "family": "Cryptococcaceae",
+            "genus": "Cryptococcus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:38:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattNT10V1/BSgenome.Cgattii.Ensembl.CrypgattNT10V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus gattii WM276",
       "common_name": "",
       "group": "fungi",
@@ -115850,6 +115898,38 @@
       "common_name": "",
       "published": "2026-04-18T23:08:26Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hvulgare.Ensembl.HvulgarecvDuLiHuangZDM01467BPGv2/BSgenome.Hvulgare.Ensembl.HvulgarecvDuLiHuangZDM01467BPGv2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cgattii.Ensembl.CrypgattNT10V1",
+      "version": "1.0.0",
+      "organism": "Cryptococcus gattii NT-10",
+      "assembly": "Cryp_gatt_NT-10_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000935105.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000935105.1/",
+      "file_name": "BSgenome.Cgattii.Ensembl.CrypgattNT10V1_1.0.0.tar.gz",
+      "size": 4446296,
+      "seq_ids": [
+        "KN905583",
+        "KN905584",
+        "KN905585",
+        "KN905586",
+        "KN905587"
+      ],
+      "seq_count": 226,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Tremellomycetes",
+        "order": "Tremellales",
+        "family": "Cryptococcaceae",
+        "genus": "Cryptococcus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:38:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattNT10V1/BSgenome.Cgattii.Ensembl.CrypgattNT10V1_1.0.0.tar.gz"
     }
   ]
 }
