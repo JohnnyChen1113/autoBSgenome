@@ -5825,3 +5825,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsolani.Ensembl.7314
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gmarginata.Ensembl.Galma1
+Version: 1.0.0
+NeedsCompilation: no

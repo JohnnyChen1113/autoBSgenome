@@ -25938,6 +25938,54 @@
       ]
     },
     {
+      "organism": "Galerina marginata CBS 339.88",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Strophariaceae",
+        "genus": "Galerina"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gmarginata.Ensembl.Galma1",
+          "version": "1.0.0",
+          "organism": "Galerina marginata CBS 339.88",
+          "assembly": "Galma1",
+          "provider": "Ensembl",
+          "accession": "GCA_000697645.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000697645.1/",
+          "file_name": "BSgenome.Gmarginata.Ensembl.Galma1_1.0.0.tar.gz",
+          "size": 14415588,
+          "seq_ids": [
+            "KL142367",
+            "KL142368",
+            "KL142369",
+            "KL142370",
+            "KL142371"
+          ],
+          "seq_count": 414,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Strophariaceae",
+            "genus": "Galerina"
+          },
+          "common_name": "",
+          "published": "2026-04-18T18:06:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmarginata.Ensembl.Galma1/BSgenome.Gmarginata.Ensembl.Galma1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Gallus gallus",
       "common_name": "chicken",
       "group": "vertebrate_other",
@@ -109732,6 +109780,38 @@
       "common_name": "",
       "published": "2026-04-18T18:05:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.7314/BSgenome.Rsolani.Ensembl.7314_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gmarginata.Ensembl.Galma1",
+      "version": "1.0.0",
+      "organism": "Galerina marginata CBS 339.88",
+      "assembly": "Galma1",
+      "provider": "Ensembl",
+      "accession": "GCA_000697645.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000697645.1/",
+      "file_name": "BSgenome.Gmarginata.Ensembl.Galma1_1.0.0.tar.gz",
+      "size": 14415588,
+      "seq_ids": [
+        "KL142367",
+        "KL142368",
+        "KL142369",
+        "KL142370",
+        "KL142371"
+      ],
+      "seq_count": 414,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Strophariaceae",
+        "genus": "Galerina"
+      },
+      "common_name": "",
+      "published": "2026-04-18T18:06:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gmarginata.Ensembl.Galma1/BSgenome.Gmarginata.Ensembl.Galma1_1.0.0.tar.gz"
     }
   ]
 }
