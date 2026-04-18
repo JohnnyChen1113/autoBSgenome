@@ -5213,3 +5213,7 @@ NeedsCompilation: no
 Package: BSgenome.Pavium.Ensembl.PAVr10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2
+Version: 1.0.0
+NeedsCompilation: no

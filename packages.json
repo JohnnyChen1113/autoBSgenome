@@ -45474,6 +45474,38 @@
           "common_name": "peach",
           "published": "2026-04-04T11:40:55Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2/BSgenome.Ppersica.NCBI.PrunuspersicaNCBIv2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2",
+          "version": "1.0.0",
+          "organism": "Prunus persica",
+          "assembly": "Prunus_persica_NCBIv2",
+          "provider": "Ensembl",
+          "accession": "GCA_000346465.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000346465.2/",
+          "file_name": "BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2_1.0.0.tar.gz",
+          "size": 53250424,
+          "seq_ids": [
+            "G1",
+            "G2",
+            "G3",
+            "G4",
+            "G5"
+          ],
+          "seq_count": 191,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Rosales",
+            "family": "Rosaceae",
+            "genus": "Prunus"
+          },
+          "common_name": "peach",
+          "published": "2026-04-18T06:49:49Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2/BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2_1.0.0.tar.gz"
         }
       ]
     },
@@ -99212,6 +99244,38 @@
       "common_name": "sweet cherry",
       "published": "2026-04-18T06:49:41Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pavium.Ensembl.PAVr10/BSgenome.Pavium.Ensembl.PAVr10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2",
+      "version": "1.0.0",
+      "organism": "Prunus persica",
+      "assembly": "Prunus_persica_NCBIv2",
+      "provider": "Ensembl",
+      "accession": "GCA_000346465.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000346465.2/",
+      "file_name": "BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2_1.0.0.tar.gz",
+      "size": 53250424,
+      "seq_ids": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "G5"
+      ],
+      "seq_count": 191,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Prunus"
+      },
+      "common_name": "peach",
+      "published": "2026-04-18T06:49:49Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2/BSgenome.Ppersica.Ensembl.PrunuspersicaNCBIv2_1.0.0.tar.gz"
     }
   ]
 }
