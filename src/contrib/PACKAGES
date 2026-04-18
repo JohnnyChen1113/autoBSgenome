@@ -5845,3 +5845,7 @@ NeedsCompilation: no
 Package: BSgenome.Rcollocygni.Ensembl.version1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wichthyophaga.Ensembl.ASM491786v1
+Version: 1.0.0
+NeedsCompilation: no
