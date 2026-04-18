@@ -5885,3 +5885,7 @@ NeedsCompilation: no
 Package: BSgenome.Aarborescens.Ensembl.ASM415483v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rtoruloides.Ensembl.Rglutinis2
+Version: 1.0.0
+NeedsCompilation: no

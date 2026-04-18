@@ -52419,6 +52419,54 @@
       ]
     },
     {
+      "organism": "Rhodotorula toruloides ATCC 204091",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Microbotryomycetes",
+        "order": "Sporidiobolales",
+        "family": "Sporidiobolaceae",
+        "genus": "Rhodotorula"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rtoruloides.Ensembl.Rglutinis2",
+          "version": "1.0.0",
+          "organism": "Rhodotorula toruloides ATCC 204091",
+          "assembly": "R.glutinis2",
+          "provider": "Ensembl",
+          "accession": "GCA_000222205.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000222205.2/",
+          "file_name": "BSgenome.Rtoruloides.Ensembl.Rglutinis2_1.0.0.tar.gz",
+          "size": 4950061,
+          "seq_ids": [
+            "scaffold00013",
+            "scaffold00008",
+            "scaffold00005",
+            "scaffold00003",
+            "scaffold00029"
+          ],
+          "seq_count": 29,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Microbotryomycetes",
+            "order": "Sporidiobolales",
+            "family": "Sporidiobolaceae",
+            "genus": "Rhodotorula"
+          },
+          "common_name": "",
+          "published": "2026-04-18T19:25:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rtoruloides.Ensembl.Rglutinis2/BSgenome.Rtoruloides.Ensembl.Rglutinis2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhodotorula toruloides NP11",
       "common_name": "",
       "group": "fungi",
@@ -110812,6 +110860,38 @@
       "common_name": "",
       "published": "2026-04-18T19:25:17Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aarborescens.Ensembl.ASM415483v1/BSgenome.Aarborescens.Ensembl.ASM415483v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rtoruloides.Ensembl.Rglutinis2",
+      "version": "1.0.0",
+      "organism": "Rhodotorula toruloides ATCC 204091",
+      "assembly": "R.glutinis2",
+      "provider": "Ensembl",
+      "accession": "GCA_000222205.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000222205.2/",
+      "file_name": "BSgenome.Rtoruloides.Ensembl.Rglutinis2_1.0.0.tar.gz",
+      "size": 4950061,
+      "seq_ids": [
+        "scaffold00013",
+        "scaffold00008",
+        "scaffold00005",
+        "scaffold00003",
+        "scaffold00029"
+      ],
+      "seq_count": 29,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Microbotryomycetes",
+        "order": "Sporidiobolales",
+        "family": "Sporidiobolaceae",
+        "genus": "Rhodotorula"
+      },
+      "common_name": "",
+      "published": "2026-04-18T19:25:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rtoruloides.Ensembl.Rglutinis2/BSgenome.Rtoruloides.Ensembl.Rglutinis2_1.0.0.tar.gz"
     }
   ]
 }
