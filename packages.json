@@ -38688,6 +38688,38 @@
           "common_name": "African rice",
           "published": "2026-04-04T13:59:41Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oglaberrima.NCBI.OglaRS2/BSgenome.Oglaberrima.NCBI.OglaRS2_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1",
+          "version": "1.0.0",
+          "organism": "Oryza glaberrima",
+          "assembly": "Oryza_glaberrima_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000147395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000147395.1/",
+          "file_name": "BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1_1.0.0.tar.gz",
+          "size": 75155629,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 1951,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Oryza"
+          },
+          "common_name": "African rice",
+          "published": "2026-04-18T06:47:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1/BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1_1.0.0.tar.gz"
         }
       ]
     },
@@ -98628,6 +98660,38 @@
       "common_name": "",
       "published": "2026-04-18T06:47:25Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Opunctata.Ensembl.Oryzapunctatav12/BSgenome.Opunctata.Ensembl.Oryzapunctatav12_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1",
+      "version": "1.0.0",
+      "organism": "Oryza glaberrima",
+      "assembly": "Oryza_glaberrima_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000147395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000147395.1/",
+      "file_name": "BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1_1.0.0.tar.gz",
+      "size": 75155629,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 1951,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Oryza"
+      },
+      "common_name": "African rice",
+      "published": "2026-04-18T06:47:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1/BSgenome.Oglaberrima.Ensembl.OryzaglaberrimaV1_1.0.0.tar.gz"
     }
   ]
 }
