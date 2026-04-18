@@ -11581,6 +11581,54 @@
       ]
     },
     {
+      "organism": "Candida albicans P78042",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Calbicans.Ensembl.CandalbiP78042V1",
+          "version": "1.0.0",
+          "organism": "Candida albicans P78042",
+          "assembly": "Cand_albi_P78042_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000784615.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000784615.1/",
+          "file_name": "BSgenome.Calbicans.Ensembl.CandalbiP78042V1_1.0.0.tar.gz",
+          "size": 3424201,
+          "seq_ids": [
+            "supercont1.6",
+            "supercont1.16",
+            "supercont1.4",
+            "supercont1.22",
+            "supercont1.58"
+          ],
+          "seq_count": 70,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Serinales",
+            "family": "Debaryomycetaceae",
+            "genus": "Candida"
+          },
+          "common_name": "",
+          "published": "2026-04-18T23:41:12Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiP78042V1/BSgenome.Calbicans.Ensembl.CandalbiP78042V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Candida albicans P87",
       "common_name": "",
       "group": "fungi",
@@ -116810,6 +116858,38 @@
       "common_name": "",
       "published": "2026-04-18T23:40:59Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Lamethystina.Ensembl.LaccariaamethystinaLaAM081v10/BSgenome.Lamethystina.Ensembl.LaccariaamethystinaLaAM081v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Calbicans.Ensembl.CandalbiP78042V1",
+      "version": "1.0.0",
+      "organism": "Candida albicans P78042",
+      "assembly": "Cand_albi_P78042_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000784615.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000784615.1/",
+      "file_name": "BSgenome.Calbicans.Ensembl.CandalbiP78042V1_1.0.0.tar.gz",
+      "size": 3424201,
+      "seq_ids": [
+        "supercont1.6",
+        "supercont1.16",
+        "supercont1.4",
+        "supercont1.22",
+        "supercont1.58"
+      ],
+      "seq_count": 70,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Serinales",
+        "family": "Debaryomycetaceae",
+        "genus": "Candida"
+      },
+      "common_name": "",
+      "published": "2026-04-18T23:41:12Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Calbicans.Ensembl.CandalbiP78042V1/BSgenome.Calbicans.Ensembl.CandalbiP78042V1_1.0.0.tar.gz"
     }
   ]
 }
