@@ -5637,3 +5637,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsolani.Ensembl.ASM35025v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nparisii.Ensembl.NemaparisiiERTm3V1
+Version: 1.0.0
+NeedsCompilation: no
