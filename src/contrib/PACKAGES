@@ -5973,3 +5973,7 @@ NeedsCompilation: no
 Package: BSgenome.Tmesenterica.Ensembl.TremmeseATCC28783V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Uhordei.Ensembl.ASM28603v1
+Version: 1.0.0
+NeedsCompilation: no
