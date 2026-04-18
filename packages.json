@@ -51615,6 +51615,54 @@
       ]
     },
     {
+      "organism": "Pseudogymnoascus sp. VKM F-3775",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psp.Ensembl.DG4",
+          "version": "1.0.0",
+          "organism": "Pseudogymnoascus sp. VKM F-3775",
+          "assembly": "DG4",
+          "provider": "Ensembl",
+          "accession": "GCA_000750715.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750715.1/",
+          "file_name": "BSgenome.Psp.Ensembl.DG4_1.0.0.tar.gz",
+          "size": 7187741,
+          "seq_ids": [
+            "contig_777",
+            "contig_27",
+            "contig_1720",
+            "contig_748",
+            "contig_4885"
+          ],
+          "seq_count": 6880,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Thelebolales",
+            "family": "Thelebolaceae",
+            "genus": "Pseudogymnoascus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T22:39:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG4/BSgenome.Psp.Ensembl.DG4_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudogymnoascus sp. VKM F-4246",
       "common_name": "",
       "group": "fungi",
@@ -115085,6 +115133,38 @@
       "common_name": "",
       "published": "2026-04-18T22:39:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.Rhizoctoniasolani123Ev1/BSgenome.Rsolani.Ensembl.Rhizoctoniasolani123Ev1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psp.Ensembl.DG4",
+      "version": "1.0.0",
+      "organism": "Pseudogymnoascus sp. VKM F-3775",
+      "assembly": "DG4",
+      "provider": "Ensembl",
+      "accession": "GCA_000750715.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750715.1/",
+      "file_name": "BSgenome.Psp.Ensembl.DG4_1.0.0.tar.gz",
+      "size": 7187741,
+      "seq_ids": [
+        "contig_777",
+        "contig_27",
+        "contig_1720",
+        "contig_748",
+        "contig_4885"
+      ],
+      "seq_count": 6880,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T22:39:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG4/BSgenome.Psp.Ensembl.DG4_1.0.0.tar.gz"
     }
   ]
 }
