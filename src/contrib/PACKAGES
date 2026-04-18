@@ -5917,3 +5917,7 @@ NeedsCompilation: no
 Package: BSgenome.Wichthyophaga.Ensembl.ASM491801v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sindica.Ensembl.ASM31354v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -54843,6 +54843,54 @@
       ]
     },
     {
+      "organism": "Serendipita indica DSM 11827",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Sebacinales",
+        "family": "Serendipitaceae",
+        "genus": "Serendipita"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Sindica.Ensembl.ASM31354v1",
+          "version": "1.0.0",
+          "organism": "Serendipita indica DSM 11827",
+          "assembly": "ASM31354v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000313545.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000313545.1/",
+          "file_name": "BSgenome.Sindica.Ensembl.ASM31354v1_1.0.0.tar.gz",
+          "size": 6205238,
+          "seq_ids": [
+            "PIRI_contig_0001",
+            "PIRI_contig_0002",
+            "PIRI_contig_0003",
+            "PIRI_contig_0004",
+            "PIRI_contig_0005"
+          ],
+          "seq_count": 1884,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Sebacinales",
+            "family": "Serendipitaceae",
+            "genus": "Serendipita"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:01:10Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sindica.Ensembl.ASM31354v1/BSgenome.Sindica.Ensembl.ASM31354v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Serinus canaria",
       "common_name": "Common canary",
       "group": "vertebrate_other",
@@ -111378,6 +111426,38 @@
       "common_name": "",
       "published": "2026-04-18T20:00:53Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.ASM491801v1/BSgenome.Wichthyophaga.Ensembl.ASM491801v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Sindica.Ensembl.ASM31354v1",
+      "version": "1.0.0",
+      "organism": "Serendipita indica DSM 11827",
+      "assembly": "ASM31354v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000313545.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000313545.1/",
+      "file_name": "BSgenome.Sindica.Ensembl.ASM31354v1_1.0.0.tar.gz",
+      "size": 6205238,
+      "seq_ids": [
+        "PIRI_contig_0001",
+        "PIRI_contig_0002",
+        "PIRI_contig_0003",
+        "PIRI_contig_0004",
+        "PIRI_contig_0005"
+      ],
+      "seq_count": 1884,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Sebacinales",
+        "family": "Serendipitaceae",
+        "genus": "Serendipita"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:01:10Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Sindica.Ensembl.ASM31354v1/BSgenome.Sindica.Ensembl.ASM31354v1_1.0.0.tar.gz"
     }
   ]
 }
