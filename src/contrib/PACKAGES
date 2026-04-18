@@ -5293,3 +5293,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptrichocarpa.Ensembl.Poptriv4
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gsoja.Ensembl.ASM419377v2
+Version: 1.0.0
+NeedsCompilation: no
