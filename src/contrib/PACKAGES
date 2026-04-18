@@ -5277,3 +5277,7 @@ NeedsCompilation: no
 Package: BSgenome.Vradiata.Ensembl.Vradiataver6
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sspontaneum.Ensembl.SsponHiCchrasm
+Version: 1.0.0
+NeedsCompilation: no
