@@ -4247,6 +4247,54 @@
       ]
     },
     {
+      "organism": "Aspergillus fumigatus",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Afumigatus.Ensembl.GCA000002655v1",
+          "version": "1.0.0",
+          "organism": "Aspergillus fumigatus",
+          "assembly": "GCA000002655v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000002655.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002655.1/",
+          "file_name": "BSgenome.Afumigatus.Ensembl.GCA000002655v1_1.0.0.tar.gz",
+          "size": 7201791,
+          "seq_ids": [
+            "Chr1_A_fumigatus_Af293",
+            "Chr2_A_fumigatus_Af293",
+            "Chr3_A_fumigatus_Af293",
+            "Chr4_A_fumigatus_Af293",
+            "mito_A_fumigatus_Af293"
+          ],
+          "seq_count": 9,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T10:11:51Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afumigatus.Ensembl.GCA000002655v1/BSgenome.Afumigatus.Ensembl.GCA000002655v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus fumigatus Af293",
       "common_name": "",
       "group": "fungi",
@@ -101148,6 +101196,38 @@
       "common_name": "",
       "published": "2026-04-18T10:11:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aniger.Ensembl.ASM285v2/BSgenome.Aniger.Ensembl.ASM285v2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Afumigatus.Ensembl.GCA000002655v1",
+      "version": "1.0.0",
+      "organism": "Aspergillus fumigatus",
+      "assembly": "GCA000002655v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000002655.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002655.1/",
+      "file_name": "BSgenome.Afumigatus.Ensembl.GCA000002655v1_1.0.0.tar.gz",
+      "size": 7201791,
+      "seq_ids": [
+        "Chr1_A_fumigatus_Af293",
+        "Chr2_A_fumigatus_Af293",
+        "Chr3_A_fumigatus_Af293",
+        "Chr4_A_fumigatus_Af293",
+        "mito_A_fumigatus_Af293"
+      ],
+      "seq_count": 9,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T10:11:51Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Afumigatus.Ensembl.GCA000002655v1/BSgenome.Afumigatus.Ensembl.GCA000002655v1_1.0.0.tar.gz"
     }
   ]
 }
