@@ -28128,6 +28128,38 @@
           "common_name": "trilobed morning glory",
           "published": "2026-04-04T14:42:19Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Itriloba.NCBI.ASM357664v1/BSgenome.Itriloba.NCBI.ASM357664v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Itriloba.Ensembl.ASM357664v1",
+          "version": "1.0.0",
+          "organism": "Ipomoea triloba",
+          "assembly": "ASM357664v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003576645.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003576645.1/",
+          "file_name": "BSgenome.Itriloba.Ensembl.ASM357664v1_1.0.0.tar.gz",
+          "size": 101092324,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 16,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Solanales",
+            "family": "Convolvulaceae",
+            "genus": "Ipomoea"
+          },
+          "common_name": "trilobed morning glory",
+          "published": "2026-04-18T02:37:05Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Itriloba.Ensembl.ASM357664v1/BSgenome.Itriloba.Ensembl.ASM357664v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -96852,6 +96884,38 @@
       "common_name": "wild Malaysian banana",
       "published": "2026-04-18T02:36:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Macuminata.Ensembl.Musaacuminatav2/BSgenome.Macuminata.Ensembl.Musaacuminatav2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Itriloba.Ensembl.ASM357664v1",
+      "version": "1.0.0",
+      "organism": "Ipomoea triloba",
+      "assembly": "ASM357664v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003576645.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003576645.1/",
+      "file_name": "BSgenome.Itriloba.Ensembl.ASM357664v1_1.0.0.tar.gz",
+      "size": 101092324,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 16,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Solanales",
+        "family": "Convolvulaceae",
+        "genus": "Ipomoea"
+      },
+      "common_name": "trilobed morning glory",
+      "published": "2026-04-18T02:37:05Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Itriloba.Ensembl.ASM357664v1/BSgenome.Itriloba.Ensembl.ASM357664v1_1.0.0.tar.gz"
     }
   ]
 }

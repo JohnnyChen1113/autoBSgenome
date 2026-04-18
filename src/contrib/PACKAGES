@@ -5073,3 +5073,7 @@ NeedsCompilation: no
 Package: BSgenome.Macuminata.Ensembl.Musaacuminatav2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Itriloba.Ensembl.ASM357664v1
+Version: 1.0.0
+NeedsCompilation: no
