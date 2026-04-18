@@ -21749,6 +21749,50 @@
       ]
     },
     {
+      "organism": "Encephalitozoon cuniculi EcunIII-L",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Ecuniculi.Ensembl.ECIIIL",
+          "version": "1.0.0",
+          "organism": "Encephalitozoon cuniculi EcunIII-L",
+          "assembly": "ECIIIL",
+          "provider": "Ensembl",
+          "accession": "GCA_001078035.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001078035.1/",
+          "file_name": "BSgenome.Ecuniculi.Ensembl.ECIIIL_1.0.0.tar.gz",
+          "size": 569413,
+          "seq_ids": [
+            "CH11_ECIII-L",
+            "CH10_ECIII-L",
+            "CH07_ECIII-L",
+            "CH08_ECIII-L",
+            "CH05_ECIII-L"
+          ],
+          "seq_count": 15,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Unikaryonidae",
+            "genus": "Encephalitozoon"
+          },
+          "common_name": "",
+          "published": "2026-04-18T16:02:57Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecuniculi.Ensembl.ECIIIL/BSgenome.Ecuniculi.Ensembl.ECIIIL_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Encephalitozoon cuniculi GB-M1",
       "common_name": "",
       "group": "fungi",
@@ -107169,6 +107213,36 @@
       "common_name": "",
       "published": "2026-04-18T15:11:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Oaustralis.Ensembl.OphauG2/BSgenome.Oaustralis.Ensembl.OphauG2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ecuniculi.Ensembl.ECIIIL",
+      "version": "1.0.0",
+      "organism": "Encephalitozoon cuniculi EcunIII-L",
+      "assembly": "ECIIIL",
+      "provider": "Ensembl",
+      "accession": "GCA_001078035.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001078035.1/",
+      "file_name": "BSgenome.Ecuniculi.Ensembl.ECIIIL_1.0.0.tar.gz",
+      "size": 569413,
+      "seq_ids": [
+        "CH11_ECIII-L",
+        "CH10_ECIII-L",
+        "CH07_ECIII-L",
+        "CH08_ECIII-L",
+        "CH05_ECIII-L"
+      ],
+      "seq_count": 15,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "common_name": "",
+      "published": "2026-04-18T16:02:57Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ecuniculi.Ensembl.ECIIIL/BSgenome.Ecuniculi.Ensembl.ECIIIL_1.0.0.tar.gz"
     }
   ]
 }
