@@ -26431,6 +26431,54 @@
       ]
     },
     {
+      "organism": "Gymnopus androsaceus JB14",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Omphalotaceae",
+        "genus": "Gymnopus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gandrosaceus.Ensembl.Gyman1",
+          "version": "1.0.0",
+          "organism": "Gymnopus androsaceus JB14",
+          "assembly": "Gyman1",
+          "provider": "Ensembl",
+          "accession": "GCA_009733575.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009733575.1/",
+          "file_name": "BSgenome.Gandrosaceus.Ensembl.Gyman1_1.0.0.tar.gz",
+          "size": 21812992,
+          "seq_ids": [
+            "ML769383",
+            "ML769384",
+            "ML769385",
+            "ML769386",
+            "ML769387"
+          ],
+          "seq_count": 2516,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "family": "Omphalotaceae",
+            "genus": "Gymnopus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:23:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gandrosaceus.Ensembl.Gyman1/BSgenome.Gandrosaceus.Ensembl.Gyman1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Habropoda laboriosa",
       "common_name": "",
       "group": "invertebrate",
@@ -104499,6 +104547,38 @@
       "common_name": "",
       "published": "2026-04-18T13:23:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Spunctatus.Ensembl.SpunctatusV1/BSgenome.Spunctatus.Ensembl.SpunctatusV1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gandrosaceus.Ensembl.Gyman1",
+      "version": "1.0.0",
+      "organism": "Gymnopus androsaceus JB14",
+      "assembly": "Gyman1",
+      "provider": "Ensembl",
+      "accession": "GCA_009733575.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009733575.1/",
+      "file_name": "BSgenome.Gandrosaceus.Ensembl.Gyman1_1.0.0.tar.gz",
+      "size": 21812992,
+      "seq_ids": [
+        "ML769383",
+        "ML769384",
+        "ML769385",
+        "ML769386",
+        "ML769387"
+      ],
+      "seq_count": 2516,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "family": "Omphalotaceae",
+        "genus": "Gymnopus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:23:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gandrosaceus.Ensembl.Gyman1/BSgenome.Gandrosaceus.Ensembl.Gyman1_1.0.0.tar.gz"
     }
   ]
 }

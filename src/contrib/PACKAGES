@@ -5513,3 +5513,7 @@ NeedsCompilation: no
 Package: BSgenome.Spunctatus.Ensembl.SpunctatusV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gandrosaceus.Ensembl.Gyman1
+Version: 1.0.0
+NeedsCompilation: no
