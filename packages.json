@@ -31943,6 +31943,54 @@
       ]
     },
     {
+      "organism": "Jaapia argillacea MUCL 33604",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Jaapiales",
+        "family": "Jaapiaceae",
+        "genus": "Jaapia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Jargillacea.Ensembl.Jaaar1",
+          "version": "1.0.0",
+          "organism": "Jaapia argillacea MUCL 33604",
+          "assembly": "Jaaar1",
+          "provider": "Ensembl",
+          "accession": "GCA_000697665.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000697665.1/",
+          "file_name": "BSgenome.Jargillacea.Ensembl.Jaaar1_1.0.0.tar.gz",
+          "size": 10769729,
+          "seq_ids": [
+            "KL197709",
+            "KL197710",
+            "KL197711",
+            "KL197712",
+            "KL197713"
+          ],
+          "seq_count": 295,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Jaapiales",
+            "family": "Jaapiaceae",
+            "genus": "Jaapia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:52:52Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jargillacea.Ensembl.Jaaar1/BSgenome.Jargillacea.Ensembl.Jaaar1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Jaculus jaculus",
       "common_name": "lesser Egyptian jerboa",
       "group": "vertebrate_mammalian",
@@ -113448,6 +113496,38 @@
       "common_name": "",
       "published": "2026-04-18T20:52:38Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ffujikuroi.Ensembl.version1/BSgenome.Ffujikuroi.Ensembl.version1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Jargillacea.Ensembl.Jaaar1",
+      "version": "1.0.0",
+      "organism": "Jaapia argillacea MUCL 33604",
+      "assembly": "Jaaar1",
+      "provider": "Ensembl",
+      "accession": "GCA_000697665.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000697665.1/",
+      "file_name": "BSgenome.Jargillacea.Ensembl.Jaaar1_1.0.0.tar.gz",
+      "size": 10769729,
+      "seq_ids": [
+        "KL197709",
+        "KL197710",
+        "KL197711",
+        "KL197712",
+        "KL197713"
+      ],
+      "seq_count": 295,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Jaapiales",
+        "family": "Jaapiaceae",
+        "genus": "Jaapia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:52:52Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Jargillacea.Ensembl.Jaaar1/BSgenome.Jargillacea.Ensembl.Jaaar1_1.0.0.tar.gz"
     }
   ]
 }
