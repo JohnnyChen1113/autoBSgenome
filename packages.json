@@ -20315,6 +20315,52 @@
       ]
     },
     {
+      "organism": "Dendrothele bispora CBS 962.96",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "genus": "Dendrothele"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Dbispora.Ensembl.Denbi1",
+          "version": "1.0.0",
+          "organism": "Dendrothele bispora CBS 962.96",
+          "assembly": "Denbi1",
+          "provider": "Ensembl",
+          "accession": "GCA_004369135.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004369135.1/",
+          "file_name": "BSgenome.Dbispora.Ensembl.Denbi1_1.0.0.tar.gz",
+          "size": 31018059,
+          "seq_ids": [
+            "ML179035",
+            "ML179036",
+            "ML179037",
+            "ML179038",
+            "ML179039"
+          ],
+          "seq_count": 3942,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Agaricales",
+            "genus": "Dendrothele"
+          },
+          "common_name": "",
+          "published": "2026-04-18T22:39:53Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dbispora.Ensembl.Denbi1/BSgenome.Dbispora.Ensembl.Denbi1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Denticeps clupeoides",
       "common_name": "denticle herring",
       "group": "vertebrate_other",
@@ -115285,6 +115331,37 @@
       "common_name": "",
       "published": "2026-04-18T22:39:31Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cfabianii.Ensembl.ASM320585v1/BSgenome.Cfabianii.Ensembl.ASM320585v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Dbispora.Ensembl.Denbi1",
+      "version": "1.0.0",
+      "organism": "Dendrothele bispora CBS 962.96",
+      "assembly": "Denbi1",
+      "provider": "Ensembl",
+      "accession": "GCA_004369135.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004369135.1/",
+      "file_name": "BSgenome.Dbispora.Ensembl.Denbi1_1.0.0.tar.gz",
+      "size": 31018059,
+      "seq_ids": [
+        "ML179035",
+        "ML179036",
+        "ML179037",
+        "ML179038",
+        "ML179039"
+      ],
+      "seq_count": 3942,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Agaricales",
+        "genus": "Dendrothele"
+      },
+      "common_name": "",
+      "published": "2026-04-18T22:39:53Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Dbispora.Ensembl.Denbi1/BSgenome.Dbispora.Ensembl.Denbi1_1.0.0.tar.gz"
     }
   ]
 }
