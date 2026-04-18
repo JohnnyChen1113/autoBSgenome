@@ -49065,6 +49065,54 @@
       ]
     },
     {
+      "organism": "Pseudogymnoascus sp. VKM F-4281 (FW-2241)",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Psp.Ensembl.DG6",
+          "version": "1.0.0",
+          "organism": "Pseudogymnoascus sp. VKM F-4281 (FW-2241)",
+          "assembly": "DG6",
+          "provider": "Ensembl",
+          "accession": "GCA_000750745.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750745.1/",
+          "file_name": "BSgenome.Psp.Ensembl.DG6_1.0.0.tar.gz",
+          "size": 6665248,
+          "seq_ids": [
+            "contig_1808",
+            "contig_739",
+            "contig_290",
+            "contig_1474",
+            "contig_2569"
+          ],
+          "seq_count": 3783,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Thelebolales",
+            "family": "Thelebolaceae",
+            "genus": "Pseudogymnoascus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T17:07:31Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG6/BSgenome.Psp.Ensembl.DG6_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pseudogymnoascus sp. VKM F-4516 (FW-969)",
       "common_name": "",
       "group": "fungi",
@@ -108187,6 +108235,38 @@
       "common_name": "",
       "published": "2026-04-18T17:07:14Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Smicrobalum.Ensembl.ASM653598v1/BSgenome.Smicrobalum.Ensembl.ASM653598v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Psp.Ensembl.DG6",
+      "version": "1.0.0",
+      "organism": "Pseudogymnoascus sp. VKM F-4281 (FW-2241)",
+      "assembly": "DG6",
+      "provider": "Ensembl",
+      "accession": "GCA_000750745.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000750745.1/",
+      "file_name": "BSgenome.Psp.Ensembl.DG6_1.0.0.tar.gz",
+      "size": 6665248,
+      "seq_ids": [
+        "contig_1808",
+        "contig_739",
+        "contig_290",
+        "contig_1474",
+        "contig_2569"
+      ],
+      "seq_count": 3783,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Thelebolales",
+        "family": "Thelebolaceae",
+        "genus": "Pseudogymnoascus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T17:07:31Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Psp.Ensembl.DG6/BSgenome.Psp.Ensembl.DG6_1.0.0.tar.gz"
     }
   ]
 }

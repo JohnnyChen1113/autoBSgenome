@@ -5729,3 +5729,7 @@ NeedsCompilation: no
 Package: BSgenome.Smicrobalum.Ensembl.ASM653598v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psp.Ensembl.DG6
+Version: 1.0.0
+NeedsCompilation: no
