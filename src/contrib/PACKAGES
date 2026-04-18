@@ -5501,3 +5501,7 @@ NeedsCompilation: no
 Package: BSgenome.Eaedis.Ensembl.EdhaaedisV4b
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ehellem.Ensembl.ASM27781v3
+Version: 1.0.0
+NeedsCompilation: no

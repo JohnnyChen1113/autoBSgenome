@@ -21555,6 +21555,36 @@
             "NC_018472.1"
           ],
           "seq_count": 12
+        },
+        {
+          "package": "BSgenome.Ehellem.Ensembl.ASM27781v3",
+          "version": "1.0.0",
+          "organism": "Encephalitozoon hellem ATCC 50504",
+          "assembly": "ASM27781v3",
+          "provider": "Ensembl",
+          "accession": "GCA_000277815.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000277815.3/",
+          "file_name": "BSgenome.Ehellem.Ensembl.ASM27781v3_1.0.0.tar.gz",
+          "size": 556762,
+          "seq_ids": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "IXa"
+          ],
+          "seq_count": 12,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Microsporidia",
+            "family": "Unikaryonidae",
+            "genus": "Encephalitozoon"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:22:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehellem.Ensembl.ASM27781v3/BSgenome.Ehellem.Ensembl.ASM27781v3_1.0.0.tar.gz"
         }
       ]
     },
@@ -104301,6 +104331,36 @@
       "common_name": "",
       "published": "2026-04-18T13:22:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Eaedis.Ensembl.EdhaaedisV4b/BSgenome.Eaedis.Ensembl.EdhaaedisV4b_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ehellem.Ensembl.ASM27781v3",
+      "version": "1.0.0",
+      "organism": "Encephalitozoon hellem ATCC 50504",
+      "assembly": "ASM27781v3",
+      "provider": "Ensembl",
+      "accession": "GCA_000277815.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000277815.3/",
+      "file_name": "BSgenome.Ehellem.Ensembl.ASM27781v3_1.0.0.tar.gz",
+      "size": 556762,
+      "seq_ids": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "IXa"
+      ],
+      "seq_count": 12,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Microsporidia",
+        "family": "Unikaryonidae",
+        "genus": "Encephalitozoon"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:22:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ehellem.Ensembl.ASM27781v3/BSgenome.Ehellem.Ensembl.ASM27781v3_1.0.0.tar.gz"
     }
   ]
 }
