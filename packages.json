@@ -24218,6 +24218,38 @@
           "common_name": "",
           "published": "2026-04-18T12:01:19Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ffujikuroi.Ensembl.version1/BSgenome.Ffujikuroi.Ensembl.version1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ffujikuroi.Ensembl.EF1",
+          "version": "1.0.0",
+          "organism": "Fusarium fujikuroi",
+          "assembly": "EF 1",
+          "provider": "Ensembl",
+          "accession": "GCA_000315255.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000315255.1/",
+          "file_name": "BSgenome.Ffujikuroi.Ensembl.EF1_1.0.0.tar.gz",
+          "size": 10915297,
+          "seq_ids": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V"
+          ],
+          "seq_count": 14,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Nectriaceae",
+            "genus": "Fusarium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:21:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ffujikuroi.Ensembl.EF1/BSgenome.Ffujikuroi.Ensembl.EF1_1.0.0.tar.gz"
         }
       ]
     },
@@ -103837,6 +103869,38 @@
       "common_name": "",
       "published": "2026-04-18T12:01:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Thominis.Ensembl.ASM31613v1/BSgenome.Thominis.Ensembl.ASM31613v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ffujikuroi.Ensembl.EF1",
+      "version": "1.0.0",
+      "organism": "Fusarium fujikuroi",
+      "assembly": "EF 1",
+      "provider": "Ensembl",
+      "accession": "GCA_000315255.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000315255.1/",
+      "file_name": "BSgenome.Ffujikuroi.Ensembl.EF1_1.0.0.tar.gz",
+      "size": 10915297,
+      "seq_ids": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "seq_count": 14,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Nectriaceae",
+        "genus": "Fusarium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:21:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ffujikuroi.Ensembl.EF1/BSgenome.Ffujikuroi.Ensembl.EF1_1.0.0.tar.gz"
     }
   ]
 }

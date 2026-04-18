@@ -5473,3 +5473,7 @@ NeedsCompilation: no
 Package: BSgenome.Thominis.Ensembl.ASM31613v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ffujikuroi.Ensembl.EF1
+Version: 1.0.0
+NeedsCompilation: no
