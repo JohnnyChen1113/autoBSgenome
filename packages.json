@@ -42796,6 +42796,38 @@
           "common_name": "",
           "published": "2026-04-04T14:42:45Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppatens.NCBI.PhypaV5/BSgenome.Ppatens.NCBI.PhypaV5_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Ppatens.Ensembl.PhypaV3",
+          "version": "1.0.0",
+          "organism": "Physcomitrium patens",
+          "assembly": "Phypa V3",
+          "provider": "Ensembl",
+          "accession": "GCA_000002425.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002425.2/",
+          "file_name": "BSgenome.Ppatens.Ensembl.PhypaV3_1.0.0.tar.gz",
+          "size": 110041506,
+          "seq_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "seq_count": 357,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Bryopsida",
+            "order": "Funariales",
+            "family": "Funariaceae",
+            "genus": "Physcomitrium"
+          },
+          "common_name": "",
+          "published": "2026-04-18T06:48:50Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppatens.Ensembl.PhypaV3/BSgenome.Ppatens.Ensembl.PhypaV3_1.0.0.tar.gz"
         }
       ]
     },
@@ -98956,6 +98988,38 @@
       "common_name": "",
       "published": "2026-04-18T06:48:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Osativa.Ensembl.Os127652RS1/BSgenome.Osativa.Ensembl.Os127652RS1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ppatens.Ensembl.PhypaV3",
+      "version": "1.0.0",
+      "organism": "Physcomitrium patens",
+      "assembly": "Phypa V3",
+      "provider": "Ensembl",
+      "accession": "GCA_000002425.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002425.2/",
+      "file_name": "BSgenome.Ppatens.Ensembl.PhypaV3_1.0.0.tar.gz",
+      "size": 110041506,
+      "seq_ids": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "seq_count": 357,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Bryopsida",
+        "order": "Funariales",
+        "family": "Funariaceae",
+        "genus": "Physcomitrium"
+      },
+      "common_name": "",
+      "published": "2026-04-18T06:48:50Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ppatens.Ensembl.PhypaV3/BSgenome.Ppatens.Ensembl.PhypaV3_1.0.0.tar.gz"
     }
   ]
 }

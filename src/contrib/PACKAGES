@@ -5197,3 +5197,7 @@ NeedsCompilation: no
 Package: BSgenome.Osativa.Ensembl.Os127652RS1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppatens.Ensembl.PhypaV3
+Version: 1.0.0
+NeedsCompilation: no
