@@ -12425,6 +12425,38 @@
       ]
     },
     {
+      "organism": "Caulochytrium protostelioides str. ATCC 52028",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Cprotostelioides.Ensembl.CauprSCcomb",
+          "version": "1.0.0",
+          "organism": "Caulochytrium protostelioides str. ATCC 52028",
+          "assembly": "Caupr_SCcomb",
+          "provider": "Ensembl",
+          "accession": "GCA_003615035.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003615035.1/",
+          "file_name": "BSgenome.Cprotostelioides.Ensembl.CauprSCcomb_1.0.0.tar.gz",
+          "size": 2609517,
+          "seq_ids": [
+            "ML009110",
+            "ML009111",
+            "ML009112",
+            "ML009113",
+            "ML009114"
+          ],
+          "seq_count": 5001,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T15:10:25Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cprotostelioides.Ensembl.CauprSCcomb/BSgenome.Cprotostelioides.Ensembl.CauprSCcomb_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cavenderia fasciculata",
       "common_name": "",
       "group": "other",
@@ -106895,6 +106927,30 @@
       "common_name": "",
       "published": "2026-04-18T15:10:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Nsp.Ensembl.Nemasp1ERTm6V2/BSgenome.Nsp.Ensembl.Nemasp1ERTm6V2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cprotostelioides.Ensembl.CauprSCcomb",
+      "version": "1.0.0",
+      "organism": "Caulochytrium protostelioides str. ATCC 52028",
+      "assembly": "Caupr_SCcomb",
+      "provider": "Ensembl",
+      "accession": "GCA_003615035.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003615035.1/",
+      "file_name": "BSgenome.Cprotostelioides.Ensembl.CauprSCcomb_1.0.0.tar.gz",
+      "size": 2609517,
+      "seq_ids": [
+        "ML009110",
+        "ML009111",
+        "ML009112",
+        "ML009113",
+        "ML009114"
+      ],
+      "seq_count": 5001,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T15:10:25Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cprotostelioides.Ensembl.CauprSCcomb/BSgenome.Cprotostelioides.Ensembl.CauprSCcomb_1.0.0.tar.gz"
     }
   ]
 }
