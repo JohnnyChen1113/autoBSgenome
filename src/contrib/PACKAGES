@@ -5785,3 +5785,7 @@ NeedsCompilation: no
 Package: BSgenome.Tratisbonensis.Ensembl.ASM400015v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssp.Ensembl.ASM653596v1
+Version: 1.0.0
+NeedsCompilation: no

@@ -55550,6 +55550,38 @@
       ]
     },
     {
+      "organism": "Spizellomyces sp. palustris str. CBS 455.65",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Ssp.Ensembl.ASM653596v1",
+          "version": "1.0.0",
+          "organism": "Spizellomyces sp. palustris str. CBS 455.65",
+          "assembly": "ASM653596v1",
+          "provider": "Ensembl",
+          "accession": "GCA_006535965.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006535965.1/",
+          "file_name": "BSgenome.Ssp.Ensembl.ASM653596v1_1.0.0.tar.gz",
+          "size": 5726709,
+          "seq_ids": [
+            "SpCBS45565_scf0001",
+            "SpCBS45565_scf0002",
+            "SpCBS45565_scf0003",
+            "SpCBS45565_scf0004",
+            "SpCBS45565_scf0005"
+          ],
+          "seq_count": 213,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T17:10:01Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssp.Ensembl.ASM653596v1/BSgenome.Ssp.Ensembl.ASM653596v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Spodoptera litura",
       "common_name": "",
       "group": "invertebrate",
@@ -109090,6 +109122,30 @@
       "common_name": "",
       "published": "2026-04-18T17:09:52Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tratisbonensis.Ensembl.ASM400015v1/BSgenome.Tratisbonensis.Ensembl.ASM400015v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Ssp.Ensembl.ASM653596v1",
+      "version": "1.0.0",
+      "organism": "Spizellomyces sp. palustris str. CBS 455.65",
+      "assembly": "ASM653596v1",
+      "provider": "Ensembl",
+      "accession": "GCA_006535965.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_006535965.1/",
+      "file_name": "BSgenome.Ssp.Ensembl.ASM653596v1_1.0.0.tar.gz",
+      "size": 5726709,
+      "seq_ids": [
+        "SpCBS45565_scf0001",
+        "SpCBS45565_scf0002",
+        "SpCBS45565_scf0003",
+        "SpCBS45565_scf0004",
+        "SpCBS45565_scf0005"
+      ],
+      "seq_count": 213,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T17:10:01Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssp.Ensembl.ASM653596v1/BSgenome.Ssp.Ensembl.ASM653596v1_1.0.0.tar.gz"
     }
   ]
 }
