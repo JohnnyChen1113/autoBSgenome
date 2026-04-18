@@ -14857,6 +14857,38 @@
       ]
     },
     {
+      "organism": "Clohesyomyces aquaticus str. CBS 115471",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Caquaticus.Ensembl.Cloaq1",
+          "version": "1.0.0",
+          "organism": "Clohesyomyces aquaticus str. CBS 115471",
+          "assembly": "Cloaq1",
+          "provider": "Ensembl",
+          "accession": "GCA_002105025.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002105025.1/",
+          "file_name": "BSgenome.Caquaticus.Ensembl.Cloaq1_1.0.0.tar.gz",
+          "size": 12315546,
+          "seq_ids": [
+            "BCR34scaffold_1",
+            "BCR34scaffold_2",
+            "BCR34scaffold_3",
+            "BCR34scaffold_4",
+            "BCR34scaffold_5"
+          ],
+          "seq_count": 761,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-18T17:10:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Caquaticus.Ensembl.Cloaq1/BSgenome.Caquaticus.Ensembl.Cloaq1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Clupea harengus",
       "common_name": "Atlantic herring",
       "group": "vertebrate_other",
@@ -109146,6 +109178,30 @@
       "common_name": "",
       "published": "2026-04-18T17:10:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Ssp.Ensembl.ASM653596v1/BSgenome.Ssp.Ensembl.ASM653596v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Caquaticus.Ensembl.Cloaq1",
+      "version": "1.0.0",
+      "organism": "Clohesyomyces aquaticus str. CBS 115471",
+      "assembly": "Cloaq1",
+      "provider": "Ensembl",
+      "accession": "GCA_002105025.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002105025.1/",
+      "file_name": "BSgenome.Caquaticus.Ensembl.Cloaq1_1.0.0.tar.gz",
+      "size": 12315546,
+      "seq_ids": [
+        "BCR34scaffold_1",
+        "BCR34scaffold_2",
+        "BCR34scaffold_3",
+        "BCR34scaffold_4",
+        "BCR34scaffold_5"
+      ],
+      "seq_count": 761,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-18T17:10:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Caquaticus.Ensembl.Cloaq1/BSgenome.Caquaticus.Ensembl.Cloaq1_1.0.0.tar.gz"
     }
   ]
 }
