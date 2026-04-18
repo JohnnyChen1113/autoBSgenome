@@ -5993,3 +5993,7 @@ NeedsCompilation: no
 Package: BSgenome.Postreatus.Ensembl.PleosPC152
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Shirsutum.Ensembl.Stehi1
+Version: 1.0.0
+NeedsCompilation: no

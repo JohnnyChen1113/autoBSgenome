@@ -57506,6 +57506,38 @@
           "common_name": "",
           "published": "2026-04-06T13:53:58Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shirsutum.NCBI.Stehi1/BSgenome.Shirsutum.NCBI.Stehi1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Shirsutum.Ensembl.Stehi1",
+          "version": "1.0.0",
+          "organism": "Stereum hirsutum FP-91666 SS1",
+          "assembly": "Stehi1",
+          "provider": "Ensembl",
+          "accession": "GCA_000264905.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000264905.1/",
+          "file_name": "BSgenome.Shirsutum.Ensembl.Stehi1_1.0.0.tar.gz",
+          "size": 11383775,
+          "seq_ids": [
+            "JH687379",
+            "JH687380",
+            "JH687381",
+            "JH687382",
+            "JH687383"
+          ],
+          "seq_count": 159,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Russulales",
+            "family": "Stereaceae",
+            "genus": "Stereum"
+          },
+          "common_name": "",
+          "published": "2026-04-18T20:50:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shirsutum.Ensembl.Stehi1/BSgenome.Shirsutum.Ensembl.Stehi1_1.0.0.tar.gz"
         }
       ]
     },
@@ -112720,6 +112752,38 @@
       "common_name": "",
       "published": "2026-04-18T20:50:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Postreatus.Ensembl.PleosPC152/BSgenome.Postreatus.Ensembl.PleosPC152_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Shirsutum.Ensembl.Stehi1",
+      "version": "1.0.0",
+      "organism": "Stereum hirsutum FP-91666 SS1",
+      "assembly": "Stehi1",
+      "provider": "Ensembl",
+      "accession": "GCA_000264905.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000264905.1/",
+      "file_name": "BSgenome.Shirsutum.Ensembl.Stehi1_1.0.0.tar.gz",
+      "size": 11383775,
+      "seq_ids": [
+        "JH687379",
+        "JH687380",
+        "JH687381",
+        "JH687382",
+        "JH687383"
+      ],
+      "seq_count": 159,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Russulales",
+        "family": "Stereaceae",
+        "genus": "Stereum"
+      },
+      "common_name": "",
+      "published": "2026-04-18T20:50:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Shirsutum.Ensembl.Stehi1/BSgenome.Shirsutum.Ensembl.Stehi1_1.0.0.tar.gz"
     }
   ]
 }
