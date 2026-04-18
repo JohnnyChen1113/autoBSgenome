@@ -49435,6 +49435,54 @@
       ]
     },
     {
+      "organism": "Rhizoctonia solani AG-3 Rhs1AP",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Cantharellales",
+        "family": "Ceratobasidiaceae",
+        "genus": "Rhizoctonia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3",
+          "version": "1.0.0",
+          "organism": "Rhizoctonia solani AG-3 Rhs1AP",
+          "assembly": "Rhizoctonia solani AG-3",
+          "provider": "Ensembl",
+          "accession": "GCA_000524645.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000524645.1/",
+          "file_name": "BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3_1.0.0.tar.gz",
+          "size": 11701732,
+          "seq_ids": [
+            "scf1119142671170",
+            "scf1119142671166",
+            "scf1119142671163",
+            "scf1119142671160",
+            "scf1119142671156"
+          ],
+          "seq_count": 326,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Cantharellales",
+            "family": "Ceratobasidiaceae",
+            "genus": "Rhizoctonia"
+          },
+          "common_name": "",
+          "published": "2026-04-18T13:23:22Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3/BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Rhizopus delemar RA 99-880",
       "common_name": "",
       "group": "fungi",
@@ -104579,6 +104627,38 @@
       "common_name": "",
       "published": "2026-04-18T13:23:11Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gandrosaceus.Ensembl.Gyman1/BSgenome.Gandrosaceus.Ensembl.Gyman1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3",
+      "version": "1.0.0",
+      "organism": "Rhizoctonia solani AG-3 Rhs1AP",
+      "assembly": "Rhizoctonia solani AG-3",
+      "provider": "Ensembl",
+      "accession": "GCA_000524645.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000524645.1/",
+      "file_name": "BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3_1.0.0.tar.gz",
+      "size": 11701732,
+      "seq_ids": [
+        "scf1119142671170",
+        "scf1119142671166",
+        "scf1119142671163",
+        "scf1119142671160",
+        "scf1119142671156"
+      ],
+      "seq_count": 326,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Cantharellales",
+        "family": "Ceratobasidiaceae",
+        "genus": "Rhizoctonia"
+      },
+      "common_name": "",
+      "published": "2026-04-18T13:23:22Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3/BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3_1.0.0.tar.gz"
     }
   ]
 }

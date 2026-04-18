@@ -5517,3 +5517,7 @@ NeedsCompilation: no
 Package: BSgenome.Gandrosaceus.Ensembl.Gyman1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsolani.Ensembl.RhizoctoniasolaniAG3
+Version: 1.0.0
+NeedsCompilation: no
