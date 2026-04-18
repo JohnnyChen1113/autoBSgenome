@@ -4155,6 +4155,38 @@
           "common_name": "",
           "published": "2026-04-05T17:36:42Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acampestris.NCBI.Aspcam1/BSgenome.Acampestris.NCBI.Aspcam1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Acampestris.Ensembl.Aspcam1",
+          "version": "1.0.0",
+          "organism": "Aspergillus campestris IBT 28561",
+          "assembly": "Aspcam1",
+          "provider": "Ensembl",
+          "accession": "GCA_002847485.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002847485.1/",
+          "file_name": "BSgenome.Acampestris.Ensembl.Aspcam1_1.0.0.tar.gz",
+          "size": 7004727,
+          "seq_ids": [
+            "P168scaffold_1",
+            "P168scaffold_2",
+            "P168scaffold_3",
+            "P168scaffold_4",
+            "P168scaffold_5"
+          ],
+          "seq_count": 62,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T19:26:30Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acampestris.Ensembl.Aspcam1/BSgenome.Acampestris.Ensembl.Aspcam1_1.0.0.tar.gz"
         }
       ]
     },
@@ -111186,6 +111218,38 @@
       "common_name": "",
       "published": "2026-04-18T19:26:24Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Fpinicola.Ensembl.Fompi3/BSgenome.Fpinicola.Ensembl.Fompi3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Acampestris.Ensembl.Aspcam1",
+      "version": "1.0.0",
+      "organism": "Aspergillus campestris IBT 28561",
+      "assembly": "Aspcam1",
+      "provider": "Ensembl",
+      "accession": "GCA_002847485.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002847485.1/",
+      "file_name": "BSgenome.Acampestris.Ensembl.Aspcam1_1.0.0.tar.gz",
+      "size": 7004727,
+      "seq_ids": [
+        "P168scaffold_1",
+        "P168scaffold_2",
+        "P168scaffold_3",
+        "P168scaffold_4",
+        "P168scaffold_5"
+      ],
+      "seq_count": 62,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T19:26:30Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Acampestris.Ensembl.Aspcam1/BSgenome.Acampestris.Ensembl.Aspcam1_1.0.0.tar.gz"
     }
   ]
 }

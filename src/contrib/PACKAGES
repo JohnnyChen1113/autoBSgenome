@@ -5905,3 +5905,7 @@ NeedsCompilation: no
 Package: BSgenome.Fpinicola.Ensembl.Fompi3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acampestris.Ensembl.Aspcam1
+Version: 1.0.0
+NeedsCompilation: no
