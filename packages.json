@@ -3971,6 +3971,38 @@
           "common_name": "",
           "published": "2026-04-05T18:48:58Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aclavatus.NCBI.ASM271v1/BSgenome.Aclavatus.NCBI.ASM271v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Aclavatus.Ensembl.ASM271v1",
+          "version": "1.0.0",
+          "organism": "Aspergillus clavatus NRRL 1",
+          "assembly": "ASM271v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000002715.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002715.1/",
+          "file_name": "BSgenome.Aclavatus.Ensembl.ASM271v1_1.0.0.tar.gz",
+          "size": 6921015,
+          "seq_ids": [
+            "DS027059",
+            "DS027056",
+            "DS027045",
+            "DS027049",
+            "DS027060"
+          ],
+          "seq_count": 143,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-18T10:11:19Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aclavatus.Ensembl.ASM271v1/BSgenome.Aclavatus.Ensembl.ASM271v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -100956,6 +100988,38 @@
       "common_name": "",
       "published": "2026-04-18T10:10:57Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Agossypii.Ensembl.ASM9102v1/BSgenome.Agossypii.Ensembl.ASM9102v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aclavatus.Ensembl.ASM271v1",
+      "version": "1.0.0",
+      "organism": "Aspergillus clavatus NRRL 1",
+      "assembly": "ASM271v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000002715.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000002715.1/",
+      "file_name": "BSgenome.Aclavatus.Ensembl.ASM271v1_1.0.0.tar.gz",
+      "size": 6921015,
+      "seq_ids": [
+        "DS027059",
+        "DS027056",
+        "DS027045",
+        "DS027049",
+        "DS027060"
+      ],
+      "seq_count": 143,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-18T10:11:19Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aclavatus.Ensembl.ASM271v1/BSgenome.Aclavatus.Ensembl.ASM271v1_1.0.0.tar.gz"
     }
   ]
 }
