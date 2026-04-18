@@ -5713,3 +5713,7 @@ NeedsCompilation: no
 Package: BSgenome.Hcapsulatum.Ensembl.GCA000170615v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Alignicola.Ensembl.Amnli1
+Version: 1.0.0
+NeedsCompilation: no
