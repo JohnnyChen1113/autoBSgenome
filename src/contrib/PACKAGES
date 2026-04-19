@@ -7193,3 +7193,7 @@ NeedsCompilation: no
 Package: BSgenome.Lcreatinivorum.Ensembl.Leucr1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CrypneofTu2591V1
+Version: 1.0.0
+NeedsCompilation: no
