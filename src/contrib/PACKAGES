@@ -6701,3 +6701,7 @@ NeedsCompilation: no
 Package: BSgenome.Ylipolytica.Ensembl.ASM252v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tborchii.Ensembl.Tubbor1
+Version: 1.0.0
+NeedsCompilation: no
