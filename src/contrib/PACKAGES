@@ -7053,3 +7053,7 @@ NeedsCompilation: no
 Package: BSgenome.Rmicrosporus.Ensembl.RmicroCBS34429AllpathsLG
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gsinense.Ensembl.GanSi16
+Version: 1.0.0
+NeedsCompilation: no
