@@ -7289,3 +7289,7 @@ NeedsCompilation: no
 Package: BSgenome.Scrispa.Ensembl.SCP11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.ASM221672v1
+Version: 1.0.0
+NeedsCompilation: no
