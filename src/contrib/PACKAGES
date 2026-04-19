@@ -6565,3 +6565,7 @@ NeedsCompilation: no
 Package: BSgenome.Themipterigena.Ensembl.AllpathsLG
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Prhodozyma.Ensembl.Xden1
+Version: 1.0.0
+NeedsCompilation: no
