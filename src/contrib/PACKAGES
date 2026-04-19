@@ -7401,3 +7401,7 @@ NeedsCompilation: no
 Package: BSgenome.Dhaptotyla.Ensembl.MHAv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM984v1
+Version: 1.0.0
+NeedsCompilation: no
