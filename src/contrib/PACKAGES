@@ -6509,3 +6509,7 @@ NeedsCompilation: no
 Package: BSgenome.Llanzarotensis.Ensembl.LALA0
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tvirens.Ensembl.ASM17099v1
+Version: 1.0.0
+NeedsCompilation: no
