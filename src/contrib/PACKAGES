@@ -6413,3 +6413,7 @@ NeedsCompilation: no
 Package: BSgenome.Plilacinum.Ensembl.ASM314460v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fpedrosoi.Ensembl.FonspedrCBS27137V1
+Version: 1.0.0
+NeedsCompilation: no
