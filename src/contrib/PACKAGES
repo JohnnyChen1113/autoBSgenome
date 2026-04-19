@@ -7365,3 +7365,7 @@ NeedsCompilation: no
 Package: BSgenome.Cposadasii.Ensembl.JCVIcpa110
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM1355v1
+Version: 1.0.0
+NeedsCompilation: no
