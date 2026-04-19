@@ -6473,3 +6473,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgattii.Ensembl.CrypgattRu294V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Exenobiotica.Ensembl.ExopxenoCBS118157V1
+Version: 1.0.0
+NeedsCompilation: no
