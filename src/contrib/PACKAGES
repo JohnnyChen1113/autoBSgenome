@@ -7373,3 +7373,7 @@ NeedsCompilation: no
 Package: BSgenome.Aaegerita.Ensembl.AAE3genes
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csp.Ensembl.Cadsp1
+Version: 1.0.0
+NeedsCompilation: no
