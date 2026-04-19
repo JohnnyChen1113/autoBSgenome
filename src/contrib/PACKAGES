@@ -6593,3 +6593,7 @@ NeedsCompilation: no
 Package: BSgenome.Avadensis.Ensembl.Aspvad1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psorghi.Ensembl.ASM126337v1
+Version: 1.0.0
+NeedsCompilation: no
