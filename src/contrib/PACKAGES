@@ -6689,3 +6689,7 @@ NeedsCompilation: no
 Package: BSgenome.Fmultimorphosa.Ensembl.FonsmultCBS102226V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Smurrayae.Ensembl.ASM289598v1
+Version: 1.0.0
+NeedsCompilation: no
