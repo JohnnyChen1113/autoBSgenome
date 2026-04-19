@@ -7221,3 +7221,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CrypneofAD260aV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bgraminis.Ensembl.Bgt454newblerassembly
+Version: 1.0.0
+NeedsCompilation: no
