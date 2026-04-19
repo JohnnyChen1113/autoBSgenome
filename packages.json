@@ -6116,6 +6116,54 @@
       ]
     },
     {
+      "organism": "Aspergillus sclerotiicarbonarius CBS 121057",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Asclerotiicarbonarius.Ensembl.Aspscle1",
+          "version": "1.0.0",
+          "organism": "Aspergillus sclerotiicarbonarius CBS 121057",
+          "assembly": "Aspscle1",
+          "provider": "Ensembl",
+          "accession": "GCA_003184635.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003184635.1/",
+          "file_name": "BSgenome.Asclerotiicarbonarius.Ensembl.Aspscle1_1.0.0.tar.gz",
+          "size": 9283149,
+          "seq_ids": [
+            "KZ826315",
+            "KZ826316",
+            "KZ826317",
+            "KZ826318",
+            "KZ826319"
+          ],
+          "seq_count": 166,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-19T02:52:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asclerotiicarbonarius.Ensembl.Aspscle1/BSgenome.Asclerotiicarbonarius.Ensembl.Aspscle1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus sclerotioniger CBS 115572",
       "common_name": "",
       "group": "fungi",
@@ -117450,6 +117498,38 @@
       "common_name": "",
       "published": "2026-04-19T02:52:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Czeaemaydis.Ensembl.Cerzm1/BSgenome.Czeaemaydis.Ensembl.Cerzm1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Asclerotiicarbonarius.Ensembl.Aspscle1",
+      "version": "1.0.0",
+      "organism": "Aspergillus sclerotiicarbonarius CBS 121057",
+      "assembly": "Aspscle1",
+      "provider": "Ensembl",
+      "accession": "GCA_003184635.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003184635.1/",
+      "file_name": "BSgenome.Asclerotiicarbonarius.Ensembl.Aspscle1_1.0.0.tar.gz",
+      "size": 9283149,
+      "seq_ids": [
+        "KZ826315",
+        "KZ826316",
+        "KZ826317",
+        "KZ826318",
+        "KZ826319"
+      ],
+      "seq_count": 166,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-19T02:52:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asclerotiicarbonarius.Ensembl.Aspscle1/BSgenome.Asclerotiicarbonarius.Ensembl.Aspscle1_1.0.0.tar.gz"
     }
   ]
 }
