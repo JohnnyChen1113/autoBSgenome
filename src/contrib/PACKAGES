@@ -7085,3 +7085,7 @@ NeedsCompilation: no
 Package: BSgenome.Aostoyae.Ensembl.version2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CrypneofCHC193V1
+Version: 1.0.0
+NeedsCompilation: no
