@@ -6465,3 +6465,7 @@ NeedsCompilation: no
 Package: BSgenome.Fcoffeatum.Ensembl.ASM331698v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scitrinum.Ensembl.SclerodermacitrinumFougAv10
+Version: 1.0.0
+NeedsCompilation: no
