@@ -6965,3 +6965,7 @@ NeedsCompilation: no
 Package: BSgenome.Msympodialis.Ensembl.MsyATCC42132Feb2016
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Treesei.Ensembl.TrireRUTC301
+Version: 1.0.0
+NeedsCompilation: no
