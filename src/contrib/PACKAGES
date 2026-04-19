@@ -7405,3 +7405,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM984v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asaccharolyticus.Ensembl.Aspsac1
+Version: 1.0.0
+NeedsCompilation: no
