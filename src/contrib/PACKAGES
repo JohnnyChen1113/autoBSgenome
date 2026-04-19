@@ -6289,3 +6289,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgattii.Ensembl.CrypgattCA1280V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hwerneckii.Ensembl.ASM370468v1
+Version: 1.0.0
+NeedsCompilation: no
