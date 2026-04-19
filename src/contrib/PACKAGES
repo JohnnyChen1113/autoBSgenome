@@ -6325,3 +6325,7 @@ NeedsCompilation: no
 Package: BSgenome.Wichthyophaga.Ensembl.ASM491874v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScFostersBv01
+Version: 1.0.0
+NeedsCompilation: no

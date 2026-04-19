@@ -56207,6 +56207,54 @@
       ]
     },
     {
+      "organism": "Saccharomyces cerevisiae FostersB",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Scerevisiae.Ensembl.ScFostersBv01",
+          "version": "1.0.0",
+          "organism": "Saccharomyces cerevisiae FostersB",
+          "assembly": "ScFostersB_v01",
+          "provider": "Ensembl",
+          "accession": "GCA_000190255.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000190255.1/",
+          "file_name": "BSgenome.Scerevisiae.Ensembl.ScFostersBv01_1.0.0.tar.gz",
+          "size": 2915381,
+          "seq_ids": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "IX"
+          ],
+          "seq_count": 80,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Saccharomycetes",
+            "order": "Saccharomycetales",
+            "family": "Saccharomycetaceae",
+            "genus": "Saccharomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-19T05:33:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.ScFostersBv01/BSgenome.Scerevisiae.Ensembl.ScFostersBv01_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Saccharomyces cerevisiae S288c",
       "common_name": "",
       "group": "fungi",
@@ -118466,6 +118514,38 @@
       "common_name": "",
       "published": "2026-04-19T05:32:50Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.ASM491874v1/BSgenome.Wichthyophaga.Ensembl.ASM491874v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Scerevisiae.Ensembl.ScFostersBv01",
+      "version": "1.0.0",
+      "organism": "Saccharomyces cerevisiae FostersB",
+      "assembly": "ScFostersB_v01",
+      "provider": "Ensembl",
+      "accession": "GCA_000190255.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000190255.1/",
+      "file_name": "BSgenome.Scerevisiae.Ensembl.ScFostersBv01_1.0.0.tar.gz",
+      "size": 2915381,
+      "seq_ids": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "IX"
+      ],
+      "seq_count": 80,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-19T05:33:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.ScFostersBv01/BSgenome.Scerevisiae.Ensembl.ScFostersBv01_1.0.0.tar.gz"
     }
   ]
 }
