@@ -10117,6 +10117,54 @@
       ]
     },
     {
+      "organism": "Brettanomyces naardenensis",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Pichiales",
+        "family": "Pichiaceae",
+        "genus": "Brettanomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bnaardenensis.Ensembl.BRENARv1",
+          "version": "1.0.0",
+          "organism": "Brettanomyces naardenensis",
+          "assembly": "BRENAR_v1",
+          "provider": "Ensembl",
+          "accession": "GCA_900660285.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900660285.1/",
+          "file_name": "BSgenome.Bnaardenensis.Ensembl.BRENARv1_1.0.0.tar.gz",
+          "size": 2803342,
+          "seq_ids": [
+            "y922_scaffold1",
+            "y922_scaffold2",
+            "y922_scaffold3",
+            "y922_scaffold4",
+            "y922_scaffold5"
+          ],
+          "seq_count": 76,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Pichiomycetes",
+            "order": "Pichiales",
+            "family": "Pichiaceae",
+            "genus": "Brettanomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-19T05:32:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bnaardenensis.Ensembl.BRENARv1/BSgenome.Bnaardenensis.Ensembl.BRENARv1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Brugia malayi",
       "common_name": "",
       "group": "invertebrate",
@@ -118162,6 +118210,38 @@
       "common_name": "",
       "published": "2026-04-19T05:32:12Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.ASM491863v1/BSgenome.Wmellicola.Ensembl.ASM491863v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bnaardenensis.Ensembl.BRENARv1",
+      "version": "1.0.0",
+      "organism": "Brettanomyces naardenensis",
+      "assembly": "BRENAR_v1",
+      "provider": "Ensembl",
+      "accession": "GCA_900660285.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900660285.1/",
+      "file_name": "BSgenome.Bnaardenensis.Ensembl.BRENARv1_1.0.0.tar.gz",
+      "size": 2803342,
+      "seq_ids": [
+        "y922_scaffold1",
+        "y922_scaffold2",
+        "y922_scaffold3",
+        "y922_scaffold4",
+        "y922_scaffold5"
+      ],
+      "seq_count": 76,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Pichiomycetes",
+        "order": "Pichiales",
+        "family": "Pichiaceae",
+        "genus": "Brettanomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-19T05:32:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bnaardenensis.Ensembl.BRENARv1/BSgenome.Bnaardenensis.Ensembl.BRENARv1_1.0.0.tar.gz"
     }
   ]
 }

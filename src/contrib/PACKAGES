@@ -6309,3 +6309,7 @@ NeedsCompilation: no
 Package: BSgenome.Wmellicola.Ensembl.ASM491863v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bnaardenensis.Ensembl.BRENARv1
+Version: 1.0.0
+NeedsCompilation: no
