@@ -6345,3 +6345,7 @@ NeedsCompilation: no
 Package: BSgenome.Bpanamericana.Ensembl.Bauco1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asclerotioniger.Ensembl.Aspscl1
+Version: 1.0.0
+NeedsCompilation: no
