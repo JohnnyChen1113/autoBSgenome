@@ -6677,3 +6677,7 @@ NeedsCompilation: no
 Package: BSgenome.Fsp.Ensembl.Fibsp1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Anovoparasiticus.Ensembl.Aspnovo1
+Version: 1.0.0
+NeedsCompilation: no
