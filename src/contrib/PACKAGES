@@ -6757,3 +6757,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccornea.Ensembl.Calco1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptriticirepentis.Ensembl.Ptr134
+Version: 1.0.0
+NeedsCompilation: no
