@@ -7353,3 +7353,7 @@ NeedsCompilation: no
 Package: BSgenome.Nencephala.Ensembl.Treen1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM193v1
+Version: 1.0.0
+NeedsCompilation: no
