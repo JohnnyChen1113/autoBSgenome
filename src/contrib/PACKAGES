@@ -6533,3 +6533,7 @@ NeedsCompilation: no
 Package: BSgenome.Sjaponicus.Ensembl.SJ5
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ylipolytica.Ensembl.YarliYB420
+Version: 1.0.0
+NeedsCompilation: no
