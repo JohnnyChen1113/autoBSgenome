@@ -6781,3 +6781,7 @@ NeedsCompilation: no
 Package: BSgenome.Vdahliae.Ensembl.ASM289304v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eglandulosa.Ensembl.Exigl1
+Version: 1.0.0
+NeedsCompilation: no
