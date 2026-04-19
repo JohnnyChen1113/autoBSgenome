@@ -7349,3 +7349,7 @@ NeedsCompilation: no
 Package: BSgenome.Tterrestris.Ensembl.ASM22611v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nencephala.Ensembl.Treen1
+Version: 1.0.0
+NeedsCompilation: no
