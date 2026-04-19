@@ -56661,7 +56661,7 @@
           "accession": "GCA_000146045.2",
           "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146045.2/",
           "file_name": "BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz",
-          "size": 2966670,
+          "size": 2966671,
           "seq_ids": [
             "I",
             "II",
@@ -56681,7 +56681,7 @@
             "genus": "Saccharomyces"
           },
           "common_name": "",
-          "published": "2026-04-17T11:00:08Z",
+          "published": "2026-04-19T07:23:47Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.R6411/BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz"
         }
       ]
@@ -105762,38 +105762,6 @@
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bindicus.Ensembl.UOABrahman1/BSgenome.Bindicus.Ensembl.UOABrahman1_1.0.0.tar.gz"
     },
     {
-      "package": "BSgenome.Scerevisiae.Ensembl.R6411",
-      "version": "1.0.0",
-      "organism": "Saccharomyces cerevisiae S288c",
-      "assembly": "R64-1-1",
-      "provider": "Ensembl",
-      "accession": "GCA_000146045.2",
-      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146045.2/",
-      "file_name": "BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz",
-      "size": 2966670,
-      "seq_ids": [
-        "I",
-        "II",
-        "III",
-        "IV",
-        "V"
-      ],
-      "seq_count": 17,
-      "group": "fungi",
-      "taxonomy": {
-        "domain": "Eukaryota",
-        "kingdom": "Fungi",
-        "phylum": "Ascomycota",
-        "class": "Saccharomycetes",
-        "order": "Saccharomycetales",
-        "family": "Saccharomycetaceae",
-        "genus": "Saccharomyces"
-      },
-      "common_name": "",
-      "published": "2026-04-17T11:00:08Z",
-      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.R6411/BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz"
-    },
-    {
       "package": "BSgenome.Jhyemalis.Ensembl.ASM382977v1",
       "version": "1.0.0",
       "organism": "Junco hyemalis",
@@ -119282,6 +119250,38 @@
       "common_name": "",
       "published": "2026-04-19T07:23:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pstriiformis.Ensembl.PST13010/BSgenome.Pstriiformis.Ensembl.PST13010_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Scerevisiae.Ensembl.R6411",
+      "version": "1.0.0",
+      "organism": "Saccharomyces cerevisiae S288c",
+      "assembly": "R64-1-1",
+      "provider": "Ensembl",
+      "accession": "GCA_000146045.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146045.2/",
+      "file_name": "BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz",
+      "size": 2966671,
+      "seq_ids": [
+        "I",
+        "II",
+        "III",
+        "IV",
+        "V"
+      ],
+      "seq_count": 17,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Saccharomycetes",
+        "order": "Saccharomycetales",
+        "family": "Saccharomycetaceae",
+        "genus": "Saccharomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-19T07:23:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.R6411/BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz"
     }
   ]
 }
