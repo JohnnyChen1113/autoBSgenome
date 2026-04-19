@@ -6661,3 +6661,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ASM304674v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vgallopava.Ensembl.OgallCBS43764
+Version: 1.0.0
+NeedsCompilation: no
