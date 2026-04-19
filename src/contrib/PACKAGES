@@ -6681,3 +6681,7 @@ NeedsCompilation: no
 Package: BSgenome.Anovoparasiticus.Ensembl.Aspnovo1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lsp.Ensembl.ASM156373v1
+Version: 1.0.0
+NeedsCompilation: no
