@@ -7105,3 +7105,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.Crypneofgrubiicng5V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dhansenii.Ensembl.ASM644v2
+Version: 1.0.0
+NeedsCompilation: no
