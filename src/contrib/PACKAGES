@@ -6653,3 +6653,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ASM304669v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rgraminis.Ensembl.Rhoba11
+Version: 1.0.0
+NeedsCompilation: no
