@@ -7277,3 +7277,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcoccinea.Ensembl.Pycco1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cimmitis.Ensembl.ASM14989v1
+Version: 1.0.0
+NeedsCompilation: no
