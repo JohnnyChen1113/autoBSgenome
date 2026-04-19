@@ -66,16 +66,26 @@ def name_variants(species_norm, accession):
     if accession:
         acc_digits = re.sub(r'[^\d]', '', accession.split('.')[0])
         acc_ver = accession.split('.')[1] if '.' in accession else '1'
-        species_clean = re.sub(r'_gca[_]?\d+(?:v\d+)?$', '', species_norm, flags=re.IGNORECASE)
+        # Strip any _gca... / _cn.../ cultivar-code suffix so we can re-append cleanly
+        species_clean = re.sub(
+            r'_(?:gca|cn)[_]?\d+(?:v\d+)?(?:cm)?$',
+            '',
+            species_norm,
+            flags=re.IGNORECASE,
+        )
         parts = species_clean.split("_")
         genus_species = "_".join(parts[:2]) if len(parts) >= 2 else species_clean
         variants += [
             f"{species_clean}_gca_{acc_digits}",
             f"{species_clean}_gca{acc_digits}",
             f"{species_clean}_gca{acc_digits}v{acc_ver}",
+            # "cm" suffix appears on some EnsemblPlants paths
+            # (e.g. avena_longiglumis_gca910589755v1cm)
+            f"{species_clean}_gca{acc_digits}v{acc_ver}cm",
             f"{genus_species}_gca_{acc_digits}",
             f"{genus_species}_gca{acc_digits}",
             f"{genus_species}_gca{acc_digits}v{acc_ver}",
+            f"{genus_species}_gca{acc_digits}v{acc_ver}cm",
         ]
     seen = set()
     return [n for n in variants if not (n in seen or seen.add(n))]
