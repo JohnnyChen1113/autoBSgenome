@@ -7117,3 +7117,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.Crypneofgrubiicng4V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ctheobromae.Ensembl.ASM907832v1
+Version: 1.0.0
+NeedsCompilation: no
