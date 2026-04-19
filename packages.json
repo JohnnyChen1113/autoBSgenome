@@ -7264,6 +7264,38 @@
           "common_name": "",
           "published": "2026-04-18T23:38:28Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apullulans.Ensembl.ASM491714v1/BSgenome.Apullulans.Ensembl.ASM491714v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Apullulans.Ensembl.ASM491711v1",
+          "version": "1.0.0",
+          "organism": "Aureobasidium pullulans",
+          "assembly": "ASM491711v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004917115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004917115.1/",
+          "file_name": "BSgenome.Apullulans.Ensembl.ASM491711v1_1.0.0.tar.gz",
+          "size": 5972554,
+          "seq_ids": [
+            "contig_0",
+            "contig_1",
+            "contig_2",
+            "contig_3",
+            "contig_4"
+          ],
+          "seq_count": 7433,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Dothideales",
+            "family": "Saccotheciaceae",
+            "genus": "Aureobasidium"
+          },
+          "common_name": "",
+          "published": "2026-04-19T02:51:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apullulans.Ensembl.ASM491711v1/BSgenome.Apullulans.Ensembl.ASM491711v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -116946,6 +116978,38 @@
       "common_name": "",
       "published": "2026-04-18T23:41:28Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2/BSgenome.Cgattii.Ensembl.CrypgattMMRL2647V2_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Apullulans.Ensembl.ASM491711v1",
+      "version": "1.0.0",
+      "organism": "Aureobasidium pullulans",
+      "assembly": "ASM491711v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004917115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004917115.1/",
+      "file_name": "BSgenome.Apullulans.Ensembl.ASM491711v1_1.0.0.tar.gz",
+      "size": 5972554,
+      "seq_ids": [
+        "contig_0",
+        "contig_1",
+        "contig_2",
+        "contig_3",
+        "contig_4"
+      ],
+      "seq_count": 7433,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Dothideales",
+        "family": "Saccotheciaceae",
+        "genus": "Aureobasidium"
+      },
+      "common_name": "",
+      "published": "2026-04-19T02:51:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apullulans.Ensembl.ASM491711v1/BSgenome.Apullulans.Ensembl.ASM491711v1_1.0.0.tar.gz"
     }
   ]
 }
