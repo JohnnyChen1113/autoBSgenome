@@ -7369,3 +7369,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM1355v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aaegerita.Ensembl.AAE3genes
+Version: 1.0.0
+NeedsCompilation: no
