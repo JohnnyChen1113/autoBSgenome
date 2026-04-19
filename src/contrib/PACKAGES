@@ -6997,3 +6997,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM1332v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CrypneofC8V1
+Version: 1.0.0
+NeedsCompilation: no
