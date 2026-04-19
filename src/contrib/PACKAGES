@@ -6429,3 +6429,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgigantea.Ensembl.Phlgi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bdermatitidis.Ensembl.BDER3V1
+Version: 1.0.0
+NeedsCompilation: no
