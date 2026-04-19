@@ -7325,3 +7325,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CrypneofBt85V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM987v1
+Version: 1.0.0
+NeedsCompilation: no
