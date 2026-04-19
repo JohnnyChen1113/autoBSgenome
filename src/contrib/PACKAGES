@@ -6645,3 +6645,7 @@ NeedsCompilation: no
 Package: BSgenome.Aflavus.Ensembl.ASM95283v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wichthyophaga.Ensembl.ASM491834v1
+Version: 1.0.0
+NeedsCompilation: no
