@@ -64019,6 +64019,54 @@
       ]
     },
     {
+      "organism": "Trichoderma longibrachiatum ATCC 18648",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Tlongibrachiatum.Ensembl.Trilo3",
+          "version": "1.0.0",
+          "organism": "Trichoderma longibrachiatum ATCC 18648",
+          "assembly": "Trilo3",
+          "provider": "Ensembl",
+          "accession": "GCA_003025155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003025155.1/",
+          "file_name": "BSgenome.Tlongibrachiatum.Ensembl.Trilo3_1.0.0.tar.gz",
+          "size": 7742944,
+          "seq_ids": [
+            "KZ679126",
+            "KZ679127",
+            "KZ679128",
+            "KZ679129",
+            "KZ679130"
+          ],
+          "seq_count": 130,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Hypocreales",
+            "family": "Hypocreaceae",
+            "genus": "Trichoderma"
+          },
+          "common_name": "",
+          "published": "2026-04-19T05:32:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tlongibrachiatum.Ensembl.Trilo3/BSgenome.Tlongibrachiatum.Ensembl.Trilo3_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Trichoderma parareesei",
       "common_name": "",
       "group": "fungi",
@@ -118242,6 +118290,38 @@
       "common_name": "",
       "published": "2026-04-19T05:32:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bnaardenensis.Ensembl.BRENARv1/BSgenome.Bnaardenensis.Ensembl.BRENARv1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Tlongibrachiatum.Ensembl.Trilo3",
+      "version": "1.0.0",
+      "organism": "Trichoderma longibrachiatum ATCC 18648",
+      "assembly": "Trilo3",
+      "provider": "Ensembl",
+      "accession": "GCA_003025155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003025155.1/",
+      "file_name": "BSgenome.Tlongibrachiatum.Ensembl.Trilo3_1.0.0.tar.gz",
+      "size": 7742944,
+      "seq_ids": [
+        "KZ679126",
+        "KZ679127",
+        "KZ679128",
+        "KZ679129",
+        "KZ679130"
+      ],
+      "seq_count": 130,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Hypocreales",
+        "family": "Hypocreaceae",
+        "genus": "Trichoderma"
+      },
+      "common_name": "",
+      "published": "2026-04-19T05:32:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tlongibrachiatum.Ensembl.Trilo3/BSgenome.Tlongibrachiatum.Ensembl.Trilo3_1.0.0.tar.gz"
     }
   ]
 }
