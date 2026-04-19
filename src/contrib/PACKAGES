@@ -6541,3 +6541,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscitamineum.Ensembl.ASM90000236v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgattii.Ensembl.Crypgatt20019351V1
+Version: 1.0.0
+NeedsCompilation: no
