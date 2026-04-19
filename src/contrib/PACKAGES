@@ -7281,3 +7281,7 @@ NeedsCompilation: no
 Package: BSgenome.Cimmitis.Ensembl.ASM14989v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.Crypneofgrubiicng7V1
+Version: 1.0.0
+NeedsCompilation: no
