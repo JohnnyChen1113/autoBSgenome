@@ -7049,3 +7049,7 @@ NeedsCompilation: no
 Package: BSgenome.Pteres.Ensembl.ASM972864v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rmicrosporus.Ensembl.RmicroCBS34429AllpathsLG
+Version: 1.0.0
+NeedsCompilation: no
