@@ -7161,3 +7161,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.Crypneofgrubiicng11V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcapitatum.Ensembl.ASM290118v1
+Version: 1.0.0
+NeedsCompilation: no
