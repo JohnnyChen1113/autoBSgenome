@@ -7037,3 +7037,7 @@ NeedsCompilation: no
 Package: BSgenome.Cplatani.Ensembl.ASM97888v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clustricola.Ensembl.Coniellalustricolav10
+Version: 1.0.0
+NeedsCompilation: no
