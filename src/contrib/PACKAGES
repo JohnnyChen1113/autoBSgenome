@@ -6953,3 +6953,7 @@ NeedsCompilation: no
 Package: BSgenome.Aimmersus.Ensembl.Ascim1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM554v1
+Version: 1.0.0
+NeedsCompilation: no
