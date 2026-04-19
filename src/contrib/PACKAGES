@@ -6861,3 +6861,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmaydis.Ensembl.Umaydis52120
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rtoruloides.Ensembl.IFO0880HGAP3v1
+Version: 1.0.0
+NeedsCompilation: no
