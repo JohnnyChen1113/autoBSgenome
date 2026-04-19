@@ -28,6 +28,9 @@ jobs:
           FILE_SIZE='${{ github.event.client_payload.file_size }}'
           SEQ_IDS='${{ github.event.client_payload.seq_ids }}'
           SEQ_COUNT='${{ github.event.client_payload.seq_count }}'
+          STORAGE='${{ github.event.client_payload.storage }}'
+          EXTERNAL_URL='${{ github.event.client_payload.download_url }}'
+          DOI='${{ github.event.client_payload.doi }}'
 
           # Add or update entry in packages.json (supports organism-centric format)
           python3 -c "
@@ -84,6 +87,10 @@ jobs:
               print(f'Taxonomy lookup failed: {e}')
 
           # Add new entry
+          storage = '${STORAGE}' or 'github-release'
+          external_url = '${EXTERNAL_URL}'
+          doi = '${DOI}'
+          default_url = 'https://github.com/${{ github.repository }}/releases/download/pkg-${PACKAGE}/${FILE_NAME}'
           new_entry = {
               'package': '${PACKAGE}',
               'version': '${VERSION}',
@@ -100,8 +107,11 @@ jobs:
               'taxonomy': taxonomy,
               'common_name': common_name,
               'published': '$(date -u +%Y-%m-%dT%H:%M:%SZ)',
-              'download_url': 'https://github.com/${{ github.repository }}/releases/download/pkg-${PACKAGE}/${FILE_NAME}'
+              'storage': storage,
+              'download_url': external_url or default_url,
           }
+          if doi:
+              new_entry['doi'] = doi
           flat.append(new_entry)
 
           # Rebuild organism-centric format
