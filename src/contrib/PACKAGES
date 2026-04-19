@@ -7077,3 +7077,7 @@ NeedsCompilation: no
 Package: BSgenome.Mguilliermondii.Ensembl.ASM14942v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcitrinoviride.Ensembl.Triciv40
+Version: 1.0.0
+NeedsCompilation: no
