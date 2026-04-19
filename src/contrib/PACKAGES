@@ -7141,3 +7141,7 @@ NeedsCompilation: no
 Package: BSgenome.Pplacenta.Ensembl.PosplRSB121
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tsoudanense.Ensembl.TricsoudCBS45261V1
+Version: 1.0.0
+NeedsCompilation: no
