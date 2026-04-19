@@ -6601,3 +6601,7 @@ NeedsCompilation: no
 Package: BSgenome.Eoligosperma.Ensembl.ExopoligCBS72588V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmelanosporum.Ensembl.ASM15164v1
+Version: 1.0.0
+NeedsCompilation: no
