@@ -6613,3 +6613,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpachydermatis.Ensembl.MalaPachy
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Manisopliae.Ensembl.ASM42696v1
+Version: 1.0.0
+NeedsCompilation: no
