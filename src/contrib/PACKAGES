@@ -6417,3 +6417,7 @@ NeedsCompilation: no
 Package: BSgenome.Fpedrosoi.Ensembl.FonspedrCBS27137V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scryophilus.Ensembl.SCY4
+Version: 1.0.0
+NeedsCompilation: no
