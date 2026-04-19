@@ -6889,3 +6889,7 @@ NeedsCompilation: no
 Package: BSgenome.Eaustralis.Ensembl.ASM301379v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cwingfieldii.Ensembl.TsucwingCBS7118V1
+Version: 1.0.0
+NeedsCompilation: no
