@@ -6477,3 +6477,7 @@ NeedsCompilation: no
 Package: BSgenome.Exenobiotica.Ensembl.ExopxenoCBS118157V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptriticirepentis.Ensembl.Ptr11137
+Version: 1.0.0
+NeedsCompilation: no
