@@ -6433,3 +6433,7 @@ NeedsCompilation: no
 Package: BSgenome.Bdermatitidis.Ensembl.BDER3V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gluxurians.Ensembl.Gymlu1
+Version: 1.0.0
+NeedsCompilation: no
