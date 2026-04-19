@@ -1,0 +1,27 @@
+name: Test Zenodo integration
+
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ping Zenodo API (verify token)
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+        run: |
+          if [ -z "$ZENODO_TOKEN" ]; then
+            echo "ZENODO_TOKEN secret is empty or not set"
+            exit 1
+          fi
+          python3 scripts/zenodo_upload.py ping
+
+      - name: Draft-upload-delete round-trip (no DOI minted)
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+        run: |
+          python3 scripts/zenodo_upload.py test
