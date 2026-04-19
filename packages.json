@@ -4575,6 +4575,54 @@
       ]
     },
     {
+      "organism": "Aspergillus ellipticus CBS 707.79",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aellipticus.Ensembl.Aspell1",
+          "version": "1.0.0",
+          "organism": "Aspergillus ellipticus CBS 707.79",
+          "assembly": "Aspell1",
+          "provider": "Ensembl",
+          "accession": "GCA_003184645.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003184645.1/",
+          "file_name": "BSgenome.Aellipticus.Ensembl.Aspell1_1.0.0.tar.gz",
+          "size": 9955264,
+          "seq_ids": [
+            "KZ825797",
+            "KZ825798",
+            "KZ825799",
+            "KZ825800",
+            "KZ825801"
+          ],
+          "seq_count": 518,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Eurotiomycetes",
+            "order": "Eurotiales",
+            "family": "Aspergillaceae",
+            "genus": "Aspergillus"
+          },
+          "common_name": "",
+          "published": "2026-04-19T02:51:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aellipticus.Ensembl.Aspell1/BSgenome.Aellipticus.Ensembl.Aspell1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Aspergillus eucalypticola CBS 122712",
       "common_name": "",
       "group": "fungi",
@@ -117010,6 +117058,38 @@
       "common_name": "",
       "published": "2026-04-19T02:51:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Apullulans.Ensembl.ASM491711v1/BSgenome.Apullulans.Ensembl.ASM491711v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Aellipticus.Ensembl.Aspell1",
+      "version": "1.0.0",
+      "organism": "Aspergillus ellipticus CBS 707.79",
+      "assembly": "Aspell1",
+      "provider": "Ensembl",
+      "accession": "GCA_003184645.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003184645.1/",
+      "file_name": "BSgenome.Aellipticus.Ensembl.Aspell1_1.0.0.tar.gz",
+      "size": 9955264,
+      "seq_ids": [
+        "KZ825797",
+        "KZ825798",
+        "KZ825799",
+        "KZ825800",
+        "KZ825801"
+      ],
+      "seq_count": 518,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Eurotiomycetes",
+        "order": "Eurotiales",
+        "family": "Aspergillaceae",
+        "genus": "Aspergillus"
+      },
+      "common_name": "",
+      "published": "2026-04-19T02:51:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aellipticus.Ensembl.Aspell1/BSgenome.Aellipticus.Ensembl.Aspell1_1.0.0.tar.gz"
     }
   ]
 }
