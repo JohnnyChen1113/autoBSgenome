@@ -65,7 +65,12 @@ jobs:
             echo "ERROR: No FASTA file found in download"
             exit 1
           fi
-          cp "$FASTA" genome.fa
+          # Use mv (not cp) + immediate cleanup to avoid two full copies of
+          # the FASTA on disk. For a 28 GB genome this saves ~28 GB plus the
+          # ~8 GB zip that would otherwise linger.
+          mv "$FASTA" genome.fa
+          rm -f genome.zip
+          rm -rf ncbi_dataset README.md md5sum.txt
           ls -lh genome.fa
 
       - name: Download FASTA from Ensembl
@@ -122,6 +127,11 @@ jobs:
             faToTwoBit genome.fa genome.2bit
           fi
           ls -lh genome.2bit
+          # Delete raw FASTA now that the 2bit is produced. R CMD build and
+          # all downstream steps read only the 2bit. This reclaims one
+          # genome-sized block of disk (up to ~30 GB on huge assemblies).
+          rm -f genome.fa
+          df -h . | tail -2
 
       - name: Generate seed file and build package
         run: |

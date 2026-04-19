@@ -79,5 +79,18 @@ Known eukaryote genomes larger than 14.57 GB that are candidates for pushing the
 
 **Hard limits** to watch:
 - Zenodo per-record: 50 GB → rules out *Paris japonica* and most *Fritillaria* without chunking
-- GHA runner free disk: ~14 GB usable by default → may need `free-disk-space` action for raw FASTA + intermediate files totaling > 20 GB on disk simultaneously
-- GHA build job `timeout-minutes: 60` → at current ~12 min for 14.57 GB, linear scaling gives ~40 min at 50 GB; safe
+- GHA runner free disk: ~75 GB usable on standard `ubuntu-latest` → at peak FASTA + 2bit + tarball co-exist
+- GHA build job `timeout-minutes: 60` → linear extrapolation gives ~50 min at 50 GB genome; safe
+
+## Disk-usage defense layers (order of cheapness)
+
+| Layer | Mechanism | Recovered | Status |
+|---|---|---|---|
+| 1 | `mv` (not `cp`) when staging NCBI FASTA; `rm` the `.zip` and extracted dir after move | ~28 GB + ~8 GB zip on large genomes | **Active** (commit forthcoming) |
+| 2 | Delete `genome.fa` immediately after `faToTwoBit` succeeds | One genome-size block (up to ~30 GB) | **Active** (commit forthcoming) |
+| 3 | `jlumbroso/free-disk-space@main` action to remove preinstalled Android/.NET/Haskell SDKs | ~30 GB extra | Documented; activate via workflow-level toggle if Layer 1-2 prove insufficient |
+| 4 | Stream-download FASTA directly into `faToTwoBit` stdin (no full-file landing) | ~30 GB peak | Requires reworking NCBI download path; not implemented |
+| 5 | GHA paid larger runner (`runs-on: ubuntu-latest-4cores` with 150 GB disk) | +75 GB usable | $0.008/min; trivial for a one-off, real-money if turned on for whole queue |
+| 6 | Self-hosted runner on a 100-500 GB VPS | unlimited (within budget) | Already planned in `docs/SELF-HOSTED-RUNNER-PLAN.md`; long-term answer |
+
+With Layers 1 + 2 active, peak concurrent disk usage for a 28 GB genome drops from an estimated 70+ GB to ~35-40 GB, giving comfortable headroom on the ~75 GB runner.
