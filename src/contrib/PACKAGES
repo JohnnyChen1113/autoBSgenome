@@ -6641,3 +6641,7 @@ NeedsCompilation: no
 Package: BSgenome.Lhyalina.Ensembl.CFIALhyaEG2017
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aflavus.Ensembl.ASM95283v1
+Version: 1.0.0
+NeedsCompilation: no
