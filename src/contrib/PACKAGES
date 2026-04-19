@@ -6985,3 +6985,7 @@ NeedsCompilation: no
 Package: BSgenome.Tpubescens.Ensembl.ASM189594v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CrypneofMWRSA852V1
+Version: 1.0.0
+NeedsCompilation: no
