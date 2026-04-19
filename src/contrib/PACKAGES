@@ -7109,3 +7109,7 @@ NeedsCompilation: no
 Package: BSgenome.Dhansenii.Ensembl.ASM644v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Taestivum.Ensembl.IWGSCRefSeqv21
+Version: 1.0.0
+NeedsCompilation: no
