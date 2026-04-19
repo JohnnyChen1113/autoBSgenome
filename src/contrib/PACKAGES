@@ -6377,3 +6377,7 @@ NeedsCompilation: no
 Package: BSgenome.Frosea.Ensembl.ASM467926v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bpaeoniae.Ensembl.ASM478614v1
+Version: 1.0.0
+NeedsCompilation: no

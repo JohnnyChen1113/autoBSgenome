@@ -9655,6 +9655,54 @@
       ]
     },
     {
+      "organism": "Botrytis paeoniae",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Sclerotiniaceae",
+        "genus": "Botrytis"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Bpaeoniae.Ensembl.ASM478614v1",
+          "version": "1.0.0",
+          "organism": "Botrytis paeoniae",
+          "assembly": "ASM478614v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004786145.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004786145.1/",
+          "file_name": "BSgenome.Bpaeoniae.Ensembl.ASM478614v1_1.0.0.tar.gz",
+          "size": 11356179,
+          "seq_ids": [
+            "BPAE_0001",
+            "BPAE_0002",
+            "BPAE_0003",
+            "BPAE_0004",
+            "BPAE_0005"
+          ],
+          "seq_count": 1830,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Helotiales",
+            "family": "Sclerotiniaceae",
+            "genus": "Botrytis"
+          },
+          "common_name": "",
+          "published": "2026-04-19T07:24:14Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bpaeoniae.Ensembl.ASM478614v1/BSgenome.Bpaeoniae.Ensembl.ASM478614v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Brachypodium distachyon",
       "common_name": "stiff brome",
       "group": "plant",
@@ -119338,6 +119386,38 @@
       "common_name": "",
       "published": "2026-04-19T07:24:06Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Frosea.Ensembl.ASM467926v1/BSgenome.Frosea.Ensembl.ASM467926v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bpaeoniae.Ensembl.ASM478614v1",
+      "version": "1.0.0",
+      "organism": "Botrytis paeoniae",
+      "assembly": "ASM478614v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004786145.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004786145.1/",
+      "file_name": "BSgenome.Bpaeoniae.Ensembl.ASM478614v1_1.0.0.tar.gz",
+      "size": 11356179,
+      "seq_ids": [
+        "BPAE_0001",
+        "BPAE_0002",
+        "BPAE_0003",
+        "BPAE_0004",
+        "BPAE_0005"
+      ],
+      "seq_count": 1830,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Helotiales",
+        "family": "Sclerotiniaceae",
+        "genus": "Botrytis"
+      },
+      "common_name": "",
+      "published": "2026-04-19T07:24:14Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bpaeoniae.Ensembl.ASM478614v1/BSgenome.Bpaeoniae.Ensembl.ASM478614v1_1.0.0.tar.gz"
     }
   ]
 }
