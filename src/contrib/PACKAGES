@@ -6913,3 +6913,7 @@ NeedsCompilation: no
 Package: BSgenome.Lsuecica.Ensembl.CFIALsueEG2017
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ASM26988v1
+Version: 1.0.0
+NeedsCompilation: no
