@@ -7245,3 +7245,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvariabilis.Ensembl.Melva1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kimperatae.Ensembl.Kocim1
+Version: 1.0.0
+NeedsCompilation: no
