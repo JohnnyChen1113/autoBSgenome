@@ -6505,3 +6505,7 @@ NeedsCompilation: no
 Package: BSgenome.Aneoniger.Ensembl.Aspneo1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Llanzarotensis.Ensembl.LALA0
+Version: 1.0.0
+NeedsCompilation: no
