@@ -6385,3 +6385,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptriticirepentis.Ensembl.Ptr5213
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491864v1
+Version: 1.0.0
+NeedsCompilation: no
