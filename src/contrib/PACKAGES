@@ -6297,3 +6297,7 @@ NeedsCompilation: no
 Package: BSgenome.Orivulosa.Ensembl.Obbri1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgattii.Ensembl.CrypgattLA55V1
+Version: 1.0.0
+NeedsCompilation: no

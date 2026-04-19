@@ -18384,6 +18384,38 @@
       ]
     },
     {
+      "organism": "Cryptococcus gattii VGII LA55",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Cgattii.Ensembl.CrypgattLA55V1",
+          "version": "1.0.0",
+          "organism": "Cryptococcus gattii VGII LA55",
+          "assembly": "Cryp_gatt_LA55_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000836315.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000836315.1/",
+          "file_name": "BSgenome.Cgattii.Ensembl.CrypgattLA55V1_1.0.0.tar.gz",
+          "size": 4328512,
+          "seq_ids": [
+            "KN848129",
+            "KN848130",
+            "KN848131",
+            "KN848132",
+            "KN848133"
+          ],
+          "seq_count": 134,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-19T05:31:46Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattLA55V1/BSgenome.Cgattii.Ensembl.CrypgattLA55V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus gattii VGII MMRL2647",
       "common_name": "",
       "group": "other",
@@ -117986,6 +118018,30 @@
       "common_name": "",
       "published": "2026-04-19T02:54:39Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Orivulosa.Ensembl.Obbri1/BSgenome.Orivulosa.Ensembl.Obbri1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cgattii.Ensembl.CrypgattLA55V1",
+      "version": "1.0.0",
+      "organism": "Cryptococcus gattii VGII LA55",
+      "assembly": "Cryp_gatt_LA55_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000836315.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000836315.1/",
+      "file_name": "BSgenome.Cgattii.Ensembl.CrypgattLA55V1_1.0.0.tar.gz",
+      "size": 4328512,
+      "seq_ids": [
+        "KN848129",
+        "KN848130",
+        "KN848131",
+        "KN848132",
+        "KN848133"
+      ],
+      "seq_count": 134,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-19T05:31:46Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattLA55V1/BSgenome.Cgattii.Ensembl.CrypgattLA55V1_1.0.0.tar.gz"
     }
   ]
 }
