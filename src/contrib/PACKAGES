@@ -6977,3 +6977,7 @@ NeedsCompilation: no
 Package: BSgenome.Xmultiplex.Ensembl.ASM1105790v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Auvarum.Ensembl.Aspuva1
+Version: 1.0.0
+NeedsCompilation: no
