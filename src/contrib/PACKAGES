@@ -7069,3 +7069,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CrypneofD171V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lcervina.Ensembl.CFIALcerEG2017
+Version: 1.0.0
+NeedsCompilation: no
