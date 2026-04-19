@@ -6697,3 +6697,7 @@ NeedsCompilation: no
 Package: BSgenome.Asclerotialis.Ensembl.phiScl10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ylipolytica.Ensembl.ASM252v1
+Version: 1.0.0
+NeedsCompilation: no
