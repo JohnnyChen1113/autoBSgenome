@@ -6785,3 +6785,7 @@ NeedsCompilation: no
 Package: BSgenome.Eglandulosa.Ensembl.Exigl1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491853v1
+Version: 1.0.0
+NeedsCompilation: no
