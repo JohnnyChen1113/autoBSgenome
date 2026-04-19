@@ -6933,3 +6933,7 @@ NeedsCompilation: no
 Package: BSgenome.Tmagnatum.Ensembl.ASM318201v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rvesiculosus.Ensembl.RvesAMOR1105610
+Version: 1.0.0
+NeedsCompilation: no
