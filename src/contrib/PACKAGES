@@ -7149,3 +7149,7 @@ NeedsCompilation: no
 Package: BSgenome.Mintermedium.Ensembl.MicrobotriumIntermediumAssembly
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aheteromorphus.Ensembl.Asphet1
+Version: 1.0.0
+NeedsCompilation: no
