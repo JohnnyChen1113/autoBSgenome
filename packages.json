@@ -25593,6 +25593,38 @@
       ]
     },
     {
+      "organism": "Exophiala spinifera str. CBS 89968",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1",
+          "version": "1.0.0",
+          "organism": "Exophiala spinifera str. CBS 89968",
+          "assembly": "Exop_spin_CBS89968_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000836115.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000836115.1/",
+          "file_name": "BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1_1.0.0.tar.gz",
+          "size": 8197207,
+          "seq_ids": [
+            "KN847492",
+            "KN847493",
+            "KN847494",
+            "KN847495",
+            "KN847496"
+          ],
+          "seq_count": 28,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-19T05:32:00Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1/BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Exophiala xenobiotica",
       "common_name": "",
       "group": "fungi",
@@ -118042,6 +118074,30 @@
       "common_name": "",
       "published": "2026-04-19T05:31:46Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattLA55V1/BSgenome.Cgattii.Ensembl.CrypgattLA55V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1",
+      "version": "1.0.0",
+      "organism": "Exophiala spinifera str. CBS 89968",
+      "assembly": "Exop_spin_CBS89968_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000836115.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000836115.1/",
+      "file_name": "BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1_1.0.0.tar.gz",
+      "size": 8197207,
+      "seq_ids": [
+        "KN847492",
+        "KN847493",
+        "KN847494",
+        "KN847495",
+        "KN847496"
+      ],
+      "seq_count": 28,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-19T05:32:00Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1/BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1_1.0.0.tar.gz"
     }
   ]
 }
