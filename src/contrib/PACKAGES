@@ -6989,3 +6989,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CrypneofMWRSA852V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ttimopheevii.Ensembl.WRCtimopheeviigenomewithorganelles
+Version: 1.0.0
+NeedsCompilation: no
