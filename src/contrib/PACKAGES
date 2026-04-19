@@ -7317,3 +7317,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CrypneofTh84V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.FOFo47V1
+Version: 1.0.0
+NeedsCompilation: no
