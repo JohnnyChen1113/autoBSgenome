@@ -6365,3 +6365,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgattii.Ensembl.CrypgattCBS10090V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcrispa.Ensembl.Plicr1
+Version: 1.0.0
+NeedsCompilation: no

@@ -51343,6 +51343,54 @@
       ]
     },
     {
+      "organism": "Plicaturopsis crispa FD-325 SS-3",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Amylocorticiales",
+        "family": "Amylocorticiaceae",
+        "genus": "Plicatura"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcrispa.Ensembl.Plicr1",
+          "version": "1.0.0",
+          "organism": "Plicaturopsis crispa FD-325 SS-3",
+          "assembly": "Plicr1",
+          "provider": "Ensembl",
+          "accession": "GCA_000827205.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827205.1/",
+          "file_name": "BSgenome.Pcrispa.Ensembl.Plicr1_1.0.0.tar.gz",
+          "size": 8307833,
+          "seq_ids": [
+            "KN832554",
+            "KN832555",
+            "KN832556",
+            "KN832557",
+            "KN832558"
+          ],
+          "seq_count": 316,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Amylocorticiales",
+            "family": "Amylocorticiaceae",
+            "genus": "Plicatura"
+          },
+          "common_name": "",
+          "published": "2026-04-19T07:23:23Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcrispa.Ensembl.Plicr1/BSgenome.Pcrispa.Ensembl.Plicr1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pneumocystis carinii B80",
       "common_name": "",
       "group": "fungi",
@@ -119146,6 +119194,38 @@
       "common_name": "",
       "published": "2026-04-19T05:35:02Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattCBS10090V1/BSgenome.Cgattii.Ensembl.CrypgattCBS10090V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcrispa.Ensembl.Plicr1",
+      "version": "1.0.0",
+      "organism": "Plicaturopsis crispa FD-325 SS-3",
+      "assembly": "Plicr1",
+      "provider": "Ensembl",
+      "accession": "GCA_000827205.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827205.1/",
+      "file_name": "BSgenome.Pcrispa.Ensembl.Plicr1_1.0.0.tar.gz",
+      "size": 8307833,
+      "seq_ids": [
+        "KN832554",
+        "KN832555",
+        "KN832556",
+        "KN832557",
+        "KN832558"
+      ],
+      "seq_count": 316,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Amylocorticiales",
+        "family": "Amylocorticiaceae",
+        "genus": "Plicatura"
+      },
+      "common_name": "",
+      "published": "2026-04-19T07:23:23Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcrispa.Ensembl.Plicr1/BSgenome.Pcrispa.Ensembl.Plicr1_1.0.0.tar.gz"
     }
   ]
 }
