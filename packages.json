@@ -67325,6 +67325,38 @@
           "common_name": "",
           "published": "2026-04-19T02:53:34Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.ASM491892v1/BSgenome.Wmellicola.Ensembl.ASM491892v1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Wmellicola.Ensembl.ASM491863v1",
+          "version": "1.0.0",
+          "organism": "Wallemia mellicola",
+          "assembly": "ASM491863v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004918635.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004918635.1/",
+          "file_name": "BSgenome.Wmellicola.Ensembl.ASM491863v1_1.0.0.tar.gz",
+          "size": 2393106,
+          "seq_ids": [
+            "contig-120_0",
+            "contig-120_1",
+            "contig-120_2",
+            "contig-120_3",
+            "contig-120_4"
+          ],
+          "seq_count": 237,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Wallemiomycetes",
+            "order": "Wallemiales",
+            "family": "Wallemiaceae",
+            "genus": "Wallemia"
+          },
+          "common_name": "",
+          "published": "2026-04-19T05:32:12Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.ASM491863v1/BSgenome.Wmellicola.Ensembl.ASM491863v1_1.0.0.tar.gz"
         }
       ]
     },
@@ -118098,6 +118130,38 @@
       "common_name": "",
       "published": "2026-04-19T05:32:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1/BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Wmellicola.Ensembl.ASM491863v1",
+      "version": "1.0.0",
+      "organism": "Wallemia mellicola",
+      "assembly": "ASM491863v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004918635.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004918635.1/",
+      "file_name": "BSgenome.Wmellicola.Ensembl.ASM491863v1_1.0.0.tar.gz",
+      "size": 2393106,
+      "seq_ids": [
+        "contig-120_0",
+        "contig-120_1",
+        "contig-120_2",
+        "contig-120_3",
+        "contig-120_4"
+      ],
+      "seq_count": 237,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Wallemiomycetes",
+        "order": "Wallemiales",
+        "family": "Wallemiaceae",
+        "genus": "Wallemia"
+      },
+      "common_name": "",
+      "published": "2026-04-19T05:32:12Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.ASM491863v1/BSgenome.Wmellicola.Ensembl.ASM491863v1_1.0.0.tar.gz"
     }
   ]
 }

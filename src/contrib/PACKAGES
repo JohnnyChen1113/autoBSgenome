@@ -6305,3 +6305,7 @@ NeedsCompilation: no
 Package: BSgenome.Espinifera.Ensembl.ExopspinCBS89968V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491863v1
+Version: 1.0.0
+NeedsCompilation: no
