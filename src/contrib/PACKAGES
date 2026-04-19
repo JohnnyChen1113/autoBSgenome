@@ -7073,3 +7073,7 @@ NeedsCompilation: no
 Package: BSgenome.Lcervina.Ensembl.CFIALcerEG2017
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mguilliermondii.Ensembl.ASM14942v1
+Version: 1.0.0
+NeedsCompilation: no
