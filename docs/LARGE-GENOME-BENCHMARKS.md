@@ -21,6 +21,7 @@ Timings include the full pipeline end-to-end:
 | 2026-04-18 | *Hordeum vulgare* cv. DuLiHuang ZDM01467 | `Hvulgare_cv_Du_Li_Huang_ZDM01467_BPGv2` | 5.3 GB | 1.00 GB | GitHub Release | **3 min 42 s** | [`pkg-BSgenome.Hvulgare.Ensembl.HvulgarecvDuLiHuangZDM01467BPGv2`](https://github.com/JohnnyChen1113/autoBSgenome/releases/tag/pkg-BSgenome.Hvulgare.Ensembl.HvulgarecvDuLiHuangZDM01467BPGv2) | [24615911380](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24615911380) |
 | 2026-04-19 | *Triticum timopheevii* | `WRC_timopheevii_genome_with_organelles` | 9.35 GB | 2.20 GB | Zenodo | **7 min 53 s** | [10.5281/zenodo.19653884](https://doi.org/10.5281/zenodo.19653884) | [24634536259](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24634536259) |
 | 2026-04-19 | *Triticum aestivum* cv. Chinese Spring | `IWGSC_RefSeq_v2.1` | **14.57 GB** | **3.43 GB** | Zenodo | **12 min 05 s** | [10.5281/zenodo.19655002](https://doi.org/10.5281/zenodo.19655002) | [24637137434](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24637137434) |
+| 2026-04-19 | *Pinus taeda* (loblolly pine) | `Ptaeda2.0` | **22.10 GB** | **5.51 GB** | Zenodo (`-long` 2bit) | **34 min 18 s** | [10.5281/zenodo.19655359](https://doi.org/10.5281/zenodo.19655359) | [24637880719](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24637880719) |
 
 ## Per-step breakdown (14.57 GB bread wheat, as illustrative case)
 
