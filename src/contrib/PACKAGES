@@ -6885,3 +6885,7 @@ NeedsCompilation: no
 Package: BSgenome.Tamestolkiae.Ensembl.ASM189636v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eaustralis.Ensembl.ASM301379v1
+Version: 1.0.0
+NeedsCompilation: no
