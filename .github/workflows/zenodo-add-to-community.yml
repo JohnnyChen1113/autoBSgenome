@@ -1,0 +1,27 @@
+name: Add Zenodo record to community
+
+on:
+  workflow_dispatch:
+    inputs:
+      record_id:
+        description: "Zenodo record ID (just the number, e.g. 19653884)"
+        required: true
+        type: string
+      community:
+        description: "Community identifier"
+        default: "autobsgenome"
+        type: string
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Submit record to community
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+        run: |
+          python3 scripts/zenodo_upload.py add-to-community \
+            "${{ inputs.record_id }}" \
+            --community "${{ inputs.community }}"

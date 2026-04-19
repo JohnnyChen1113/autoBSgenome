@@ -175,6 +175,44 @@ def cmd_upload(args):
     return 0
 
 
+def cmd_add_to_community(args):
+    """Retroactively add an already-published record to a community.
+
+    Uses the edit → update metadata → publish cycle so only metadata changes
+    (no new version). Record owner must also own the community or the
+    community must auto-accept.
+    """
+    rid = args.record_id
+    status, _ = _req("POST", f"/deposit/depositions/{rid}/actions/edit")
+    if status not in (200, 201):
+        print(f"edit unlock failed: {status}", file=sys.stderr)
+        return 1
+
+    status, dep = _req("GET", f"/deposit/depositions/{rid}")
+    if status != 200:
+        print(f"get failed: {status}", file=sys.stderr)
+        return 1
+    metadata = dep.get("metadata", {})
+
+    communities = metadata.get("communities", [])
+    if not any(c.get("identifier") == args.community for c in communities):
+        communities.append({"identifier": args.community})
+    metadata["communities"] = communities
+
+    status, body = _req("PUT", f"/deposit/depositions/{rid}",
+                        data={"metadata": metadata})
+    if status != 200:
+        print(f"metadata update failed: {status} {body}", file=sys.stderr)
+        return 1
+
+    status, body = _req("POST", f"/deposit/depositions/{rid}/actions/publish")
+    if status not in (200, 202):
+        print(f"publish failed: {status} {body}", file=sys.stderr)
+        return 1
+    print(f"OK: record {rid} submitted to community {args.community}")
+    return 0
+
+
 def main():
     p = argparse.ArgumentParser()
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -191,10 +229,15 @@ def main():
     up.add_argument("--community", default=None)
     up.add_argument("--keywords", default=None)
     up.add_argument("--related", default=None)
+    add = sub.add_parser("add-to-community",
+                         help="Add an already-published record to a Zenodo community.")
+    add.add_argument("record_id")
+    add.add_argument("--community", required=True)
     args = p.parse_args()
     if args.cmd == "upload" and not args.creator:
         args.creator = ["JohnnyChen1113"]
-    sys.exit(globals()[f"cmd_{args.cmd}"](args))
+    fn_name = f"cmd_{args.cmd.replace('-', '_')}"
+    sys.exit(globals()[fn_name](args))
 
 
 if __name__ == "__main__":
