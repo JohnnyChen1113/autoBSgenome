@@ -6457,3 +6457,7 @@ NeedsCompilation: no
 Package: BSgenome.Omaius.Ensembl.OidiodendronmaiusZnv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmentagrophytes.Ensembl.ABySS70bp45k152covv1
+Version: 1.0.0
+NeedsCompilation: no
