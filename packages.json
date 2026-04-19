@@ -16049,6 +16049,38 @@
       ]
     },
     {
+      "organism": "Cladophialophora immunda str. CBS 83496",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Cimmunda.Ensembl.CladimmuCBS83496V1",
+          "version": "1.0.0",
+          "organism": "Cladophialophora immunda str. CBS 83496",
+          "assembly": "Clad_immu_CBS83496_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000835495.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000835495.1/",
+          "file_name": "BSgenome.Cimmunda.Ensembl.CladimmuCBS83496V1_1.0.0.tar.gz",
+          "size": 10705262,
+          "seq_ids": [
+            "KN847040",
+            "KN847041",
+            "KN847042",
+            "KN847043",
+            "KN847044"
+          ],
+          "seq_count": 277,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-19T05:33:42Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cimmunda.Ensembl.CladimmuCBS83496V1/BSgenome.Cimmunda.Ensembl.CladimmuCBS83496V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cladophialophora psammophila CBS 110553",
       "common_name": "",
       "group": "fungi",
@@ -118602,6 +118634,30 @@
       "common_name": "",
       "published": "2026-04-19T05:33:20Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattCA1014V1/BSgenome.Cgattii.Ensembl.CrypgattCA1014V1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cimmunda.Ensembl.CladimmuCBS83496V1",
+      "version": "1.0.0",
+      "organism": "Cladophialophora immunda str. CBS 83496",
+      "assembly": "Clad_immu_CBS83496_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000835495.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000835495.1/",
+      "file_name": "BSgenome.Cimmunda.Ensembl.CladimmuCBS83496V1_1.0.0.tar.gz",
+      "size": 10705262,
+      "seq_ids": [
+        "KN847040",
+        "KN847041",
+        "KN847042",
+        "KN847043",
+        "KN847044"
+      ],
+      "seq_count": 277,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-19T05:33:42Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cimmunda.Ensembl.CladimmuCBS83496V1/BSgenome.Cimmunda.Ensembl.CladimmuCBS83496V1_1.0.0.tar.gz"
     }
   ]
 }
