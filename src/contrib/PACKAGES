@@ -6797,3 +6797,7 @@ NeedsCompilation: no
 Package: BSgenome.Kpini.Ensembl.CryppinuCBS10737V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM681v1
+Version: 1.0.0
+NeedsCompilation: no
