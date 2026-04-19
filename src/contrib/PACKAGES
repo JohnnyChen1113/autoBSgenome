@@ -6557,3 +6557,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM1199v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgattii.Ensembl.CrypgattE566V1
+Version: 1.0.0
+NeedsCompilation: no
