@@ -6349,3 +6349,7 @@ NeedsCompilation: no
 Package: BSgenome.Asclerotioniger.Ensembl.Aspscl1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gcichoracearum.Ensembl.ASM361123v1
+Version: 1.0.0
+NeedsCompilation: no

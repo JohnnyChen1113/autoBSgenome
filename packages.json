@@ -28826,6 +28826,54 @@
       ]
     },
     {
+      "organism": "Golovinomyces cichoracearum",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Erysiphales",
+        "family": "Erysiphaceae",
+        "genus": "Golovinomyces"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Gcichoracearum.Ensembl.ASM361123v1",
+          "version": "1.0.0",
+          "organism": "Golovinomyces cichoracearum",
+          "assembly": "ASM361123v1",
+          "provider": "Ensembl",
+          "accession": "GCA_003611235.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003611235.1/",
+          "file_name": "BSgenome.Gcichoracearum.Ensembl.ASM361123v1_1.0.0.tar.gz",
+          "size": 16462515,
+          "seq_ids": [
+            "GcM1_contig_59",
+            "GcM1_contig_81",
+            "GcM1_contig_11",
+            "GcM1_contig_1454",
+            "GcM1_contig_88"
+          ],
+          "seq_count": 25079,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Leotiomycetes",
+            "order": "Erysiphales",
+            "family": "Erysiphaceae",
+            "genus": "Golovinomyces"
+          },
+          "common_name": "",
+          "published": "2026-04-19T05:34:29Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gcichoracearum.Ensembl.ASM361123v1/BSgenome.Gcichoracearum.Ensembl.ASM361123v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Gonapodya prolifera JEL478",
       "common_name": "",
       "group": "fungi",
@@ -118850,6 +118898,38 @@
       "common_name": "",
       "published": "2026-04-19T05:34:19Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Asclerotioniger.Ensembl.Aspscl1/BSgenome.Asclerotioniger.Ensembl.Aspscl1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Gcichoracearum.Ensembl.ASM361123v1",
+      "version": "1.0.0",
+      "organism": "Golovinomyces cichoracearum",
+      "assembly": "ASM361123v1",
+      "provider": "Ensembl",
+      "accession": "GCA_003611235.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_003611235.1/",
+      "file_name": "BSgenome.Gcichoracearum.Ensembl.ASM361123v1_1.0.0.tar.gz",
+      "size": 16462515,
+      "seq_ids": [
+        "GcM1_contig_59",
+        "GcM1_contig_81",
+        "GcM1_contig_11",
+        "GcM1_contig_1454",
+        "GcM1_contig_88"
+      ],
+      "seq_count": 25079,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Leotiomycetes",
+        "order": "Erysiphales",
+        "family": "Erysiphaceae",
+        "genus": "Golovinomyces"
+      },
+      "common_name": "",
+      "published": "2026-04-19T05:34:29Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gcichoracearum.Ensembl.ASM361123v1/BSgenome.Gcichoracearum.Ensembl.ASM361123v1_1.0.0.tar.gz"
     }
   ]
 }
