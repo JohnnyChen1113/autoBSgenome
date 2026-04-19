@@ -7173,3 +7173,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CrypneofBt120V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rtoruloides.Ensembl.Rt10032v1
+Version: 1.0.0
+NeedsCompilation: no
