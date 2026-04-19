@@ -7113,3 +7113,7 @@ NeedsCompilation: no
 Package: BSgenome.Taestivum.Ensembl.IWGSCRefSeqv21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.Crypneofgrubiicng4V1
+Version: 1.0.0
+NeedsCompilation: no
