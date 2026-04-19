@@ -6817,3 +6817,7 @@ NeedsCompilation: no
 Package: BSgenome.Vdahliae.Ensembl.ASM289302v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vdahliae.Ensembl.ASM15067v2
+Version: 1.0.0
+NeedsCompilation: no
