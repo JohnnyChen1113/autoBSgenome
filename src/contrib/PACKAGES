@@ -6437,3 +6437,7 @@ NeedsCompilation: no
 Package: BSgenome.Gluxurians.Ensembl.Gymlu1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scommune.Ensembl.GCA000143185v2
+Version: 1.0.0
+NeedsCompilation: no
