@@ -7045,3 +7045,7 @@ NeedsCompilation: no
 Package: BSgenome.Tblattae.Ensembl.ASM31591v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pteres.Ensembl.ASM972864v1
+Version: 1.0.0
+NeedsCompilation: no
