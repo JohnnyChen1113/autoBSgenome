@@ -54453,6 +54453,38 @@
       ]
     },
     {
+      "organism": "Puccinia striiformis f. sp. tritici PST-130 str. Race 130",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Pstriiformis.Ensembl.PST13010",
+          "version": "1.0.0",
+          "organism": "Puccinia striiformis f. sp. tritici PST-130 str. Race 130",
+          "assembly": "PST-130_1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000223505.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000223505.1/",
+          "file_name": "BSgenome.Pstriiformis.Ensembl.PST13010_1.0.0.tar.gz",
+          "size": 16313274,
+          "seq_ids": [
+            "PST130_8308",
+            "PST130_6952",
+            "PST130_7251",
+            "PST130_7806",
+            "PST130_7242"
+          ],
+          "seq_count": 29178,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-19T07:23:34Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pstriiformis.Ensembl.PST13010/BSgenome.Pstriiformis.Ensembl.PST13010_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Puma concolor",
       "common_name": "puma",
       "group": "vertebrate_mammalian",
@@ -119226,6 +119258,30 @@
       "common_name": "",
       "published": "2026-04-19T07:23:23Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcrispa.Ensembl.Plicr1/BSgenome.Pcrispa.Ensembl.Plicr1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pstriiformis.Ensembl.PST13010",
+      "version": "1.0.0",
+      "organism": "Puccinia striiformis f. sp. tritici PST-130 str. Race 130",
+      "assembly": "PST-130_1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000223505.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000223505.1/",
+      "file_name": "BSgenome.Pstriiformis.Ensembl.PST13010_1.0.0.tar.gz",
+      "size": 16313274,
+      "seq_ids": [
+        "PST130_8308",
+        "PST130_6952",
+        "PST130_7251",
+        "PST130_7806",
+        "PST130_7242"
+      ],
+      "seq_count": 29178,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-19T07:23:34Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pstriiformis.Ensembl.PST13010/BSgenome.Pstriiformis.Ensembl.PST13010_1.0.0.tar.gz"
     }
   ]
 }

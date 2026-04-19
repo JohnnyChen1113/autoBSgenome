@@ -6369,3 +6369,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcrispa.Ensembl.Plicr1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pstriiformis.Ensembl.PST13010
+Version: 1.0.0
+NeedsCompilation: no
