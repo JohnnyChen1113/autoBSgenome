@@ -88,12 +88,14 @@ Known eukaryote genomes larger than 14.57 GB that are candidates for pushing the
 |---|---|---|---|
 | 1 | `mv` (not `cp`) when staging NCBI FASTA; `rm` the `.zip` and extracted dir after move | ~28 GB + ~8 GB zip on large genomes | **Active** (commit forthcoming) |
 | 2 | Delete `genome.fa` immediately after `faToTwoBit` succeeds | One genome-size block (up to ~30 GB) | **Active** (commit forthcoming) |
+| 2b | Delete source `genome.2bit` once `forgeBSgenomeDataPkg` has copied it into the package dir; fallback path uses `file.rename` (mv) instead of `file.copy` | One 2bit-size block (up to ~12 GB on 150 GB genomes) | **Active** |
+| 2c | `rm -rf ${PACKAGE}/` staging dir after `R CMD build` produces the tarball | One 2bit-size block (package dir contains the 2bit copy) | **Active** |
 | 3 | `jlumbroso/free-disk-space@main` action to remove preinstalled Android/.NET/Haskell SDKs | ~30 GB extra | Documented; activate via workflow-level toggle if Layer 1-2 prove insufficient |
 | 4 | Stream-download FASTA directly into `faToTwoBit` stdin (no full-file landing) | Full raw-FASTA size (can be 30-100+ GB) | Feasible but unimplemented — see notes below |
 | 5 | GHA paid larger runner (`runs-on: ubuntu-latest-4cores` with 150 GB disk) | +75 GB usable | $0.008/min; trivial for a one-off, real-money if turned on for whole queue |
 | 6 | Self-hosted runner on a 100-500 GB VPS | unlimited (within budget) | Already planned in `docs/SELF-HOSTED-RUNNER-PLAN.md`; long-term answer |
 
-With Layers 1 + 2 active, peak concurrent disk usage for a 28 GB genome drops from an estimated 70+ GB to ~35-40 GB, giving comfortable headroom on the ~75 GB runner.
+With Layers 1 + 2 + 2b + 2c active, peak concurrent disk for a 100 GB raw genome is dominated by a brief overlap of `${PACKAGE}` staging dir plus tarball (~50 GB), and for a 28 GB genome drops to ~15 GB. The ceiling on the free-tier runner rises from ~100 GB raw genome (before these cleanups) to roughly 150 GB.
 
 ## Notes on Layer 4 (streaming FASTA → faToTwoBit)
 

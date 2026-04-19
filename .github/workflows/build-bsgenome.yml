@@ -175,20 +175,40 @@ jobs:
           sed -i 's/^          //' "${PACKAGE}.seed"
           echo "=== Seed file ===" && cat "${PACKAGE}.seed"
 
-          # Build
+          # Build. forgeBSgenomeDataPkg copies genome.2bit into
+          # ${PACKAGE}/inst/extdata/single_sequences.2bit. The fallback path
+          # uses file.rename so the source 2bit is MOVED (not copied) — no
+          # transient duplication on disk. The primary path still copies,
+          # but we reclaim the source immediately after forge succeeds.
           Rscript -e "
             suppressPackageStartupMessages(library(BSgenome))
             tryCatch({
               forgeBSgenomeDataPkg('${PACKAGE}.seed')
             }, error = function(e) {
               message('forgeBSgenomeDataPkg error: ', e\$message)
-              message('Attempting manual package creation...')
+              message('Attempting manual package creation (mv instead of copy)...')
               dir.create('./${PACKAGE}/inst/extdata/', recursive = TRUE, showWarnings = FALSE)
-              file.copy('./genome.2bit', './${PACKAGE}/inst/extdata/single_sequences.2bit')
+              ok <- file.rename('./genome.2bit', './${PACKAGE}/inst/extdata/single_sequences.2bit')
+              if (!ok) {
+                file.copy('./genome.2bit', './${PACKAGE}/inst/extdata/single_sequences.2bit')
+              }
             })
           "
+          # If the source 2bit still exists (primary forge path copied it),
+          # reclaim the space now — everything downstream reads the in-package
+          # copy, not this one.
+          if [ -f genome.2bit ] && [ -f "./${PACKAGE}/inst/extdata/single_sequences.2bit" ]; then
+            echo "Removing source genome.2bit (already copied into package)"
+            rm -f genome.2bit
+          fi
+          df -h . | tail -2
+
           R CMD build "${PACKAGE}"
           ls -lh ${PACKAGE}_*.tar.gz
+          # Tarball is the only thing downstream needs. Drop the staging dir,
+          # which also contains a full copy of the 2bit inside inst/extdata/.
+          rm -rf "${PACKAGE}"
+          df -h . | tail -2
 
       - name: Determine storage backend
         id: storage
