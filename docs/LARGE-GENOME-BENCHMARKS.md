@@ -43,6 +43,23 @@ Timings include the full pipeline end-to-end:
 - **No step hit its timeout** on any genome up to 14.57 GB. The workflow's `timeout-minutes: 60` has a 4× headroom at this scale.
 - **Compositional architecture pays off at the upload boundary**: `Determine storage backend` adds <1 second but routes 9+ GB genomes cleanly from GitHub Releases (2 GiB cap) to Zenodo (50 GB per record).
 
+## Failures encountered on the way up
+
+### Pinus taeda (22.10 GB) — first attempt, 2026-04-19
+
+- Run: [24637566386](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24637566386)
+- Failed at step: `Convert FASTA to 2bit`
+- Error: `faToTwoBit index overflow at APFE031164235.1 — The 2bit format does not support indexes larger than 4Gb, please split up into smaller files, or use -long option.`
+- Cause: UCSC 2bit default format uses 32-bit offsets, capping output at 4 GB. A 22 GB FASTA produces a ~5.5 GB 2bit file and overflows.
+- Fix: pass `-long` to `faToTwoBit` (switches to 64-bit indexes). Applied as a conditional in the workflow when input FASTA exceeds 12 GB.
+
+This is a genuine format limit, distinct from the earlier GitHub Release 2 GiB asset cap. It means the pipeline has TWO size thresholds:
+
+| Threshold | Value | What it switches |
+|---|---|---|
+| Tarball size | 1.9 GiB | Storage backend (GitHub Release → Zenodo) |
+| Input FASTA size | 12 GB | 2bit index width (default → `-long`) |
+
 ## Upper-bound candidates (to be tested)
 
 Known eukaryote genomes larger than 14.57 GB that are candidates for pushing the ceiling:

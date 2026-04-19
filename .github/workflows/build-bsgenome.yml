@@ -107,7 +107,20 @@ jobs:
 
       - name: Convert FASTA to 2bit
         run: |
-          faToTwoBit genome.fa genome.2bit
+          # Use -long for genomes likely to produce a 2bit file > 4 GB.
+          # The default 2bit format has a 32-bit index and fails with
+          # "index overflow" past 4 GB output. -long switches to 64-bit indexes.
+          # Threshold at 12 GB input FASTA is conservative; 2bit is roughly
+          # 25-30% of raw FASTA size, so 12 GB FASTA → ~3.5 GB 2bit (close
+          # to the 4 GB ceiling).
+          SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
+          THRESHOLD=$((12 * 1024 * 1024 * 1024))
+          if [ "$SIZE" -gt "$THRESHOLD" ]; then
+            echo "Large FASTA ($SIZE bytes); using -long 2bit format"
+            faToTwoBit -long genome.fa genome.2bit
+          else
+            faToTwoBit genome.fa genome.2bit
+          fi
           ls -lh genome.2bit
 
       - name: Generate seed file and build package
