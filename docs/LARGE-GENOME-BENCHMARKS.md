@@ -135,3 +135,23 @@ Why this is on the shelf rather than the floor:
 - For genomes > 120 GB (e.g. marbled lungfish *Protopterus aethiopicus* at ~130 GB) the streaming optimization becomes worthwhile but must be paired with either a paid larger runner or the R-build intermediate staged to `/tmp` while the main workspace carries the final tarball.
 
 Keep this ready as a one-file patch for when a specific oversized target shows up.
+
+## Key observation for the Plan C paper
+
+**The practical build ceiling depends on assembly contiguity, not on raw genome size.**
+
+Evidence from our upper-bound tests on the same free-tier runner:
+
+| Organism | Raw size | Contigs | Outcome |
+|---|---|---|---|
+| *Triticum aestivum* IWGSC v2.1 | 14.57 GB | ~21 large scaffolds | ✅ built in 12:05 |
+| *Pinus taeda* Ptaeda2.0 | 22.10 GB | ~few thousand scaffolds | ✅ built in 34:18 |
+| *Ambystoma mexicanum* AmbMex60DD | 28.21 GB | **27,157 contigs** | ❌ runner killed at R-side forge |
+
+The memory footprint of `forgeBSgenomeDataPkg` and `R CMD build` grows with per-sequence object overhead in R, not with base-count. Bread wheat's 14.57 GB spread across 21 scaffolds produces a much smaller in-memory object graph than axolotl's 28.21 GB fragmented into 27,000 contigs, even though bread wheat has ~half the DNA.
+
+Framing for the paper: "Practical scale-out of BSgenome construction is bounded by the number of sequence records rather than total genome size. Chromosome-level reference assemblies — the target for which BSgenome packages are most useful — build reliably up to and beyond 22 GB on free-tier infrastructure. Draft assemblies with tens of thousands of small contigs compress the effective ceiling because R-side package assembly is per-sequence."
+
+## Future feature idea (not implemented)
+
+Expose an optional **contig length filter** at build-submission time so users with highly fragmented assemblies can drop unplaced scaffolds below a threshold (e.g. `min_contig_length=10000`). Common in the community for ChIP-seq / ATAC-seq workflows where unplaced short scaffolds contribute little and cost a lot in per-sequence overhead. Default off (preserve faithful round-trip); opt-in from the web UI + API for users who want to build a fragmented draft assembly on free-tier infrastructure.
