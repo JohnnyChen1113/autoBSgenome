@@ -6249,3 +6249,7 @@ NeedsCompilation: no
 Package: BSgenome.Claeve.Ensembl.Crula1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcroceum.Ensembl.PilodermacroceumF1598v10
+Version: 1.0.0
+NeedsCompilation: no

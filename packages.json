@@ -49731,6 +49731,54 @@
       ]
     },
     {
+      "organism": "Piloderma croceum F 1598",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Atheliales",
+        "family": "Atheliaceae",
+        "genus": "Piloderma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pcroceum.Ensembl.PilodermacroceumF1598v10",
+          "version": "1.0.0",
+          "organism": "Piloderma croceum F 1598",
+          "assembly": "Piloderma croceum F 1598 v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000827315.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827315.1/",
+          "file_name": "BSgenome.Pcroceum.Ensembl.PilodermacroceumF1598v10_1.0.0.tar.gz",
+          "size": 13059598,
+          "seq_ids": [
+            "KN832970",
+            "KN832971",
+            "KN832973",
+            "KN832974",
+            "KN832972"
+          ],
+          "seq_count": 715,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Atheliales",
+            "family": "Atheliaceae",
+            "genus": "Piloderma"
+          },
+          "common_name": "",
+          "published": "2026-04-19T02:51:54Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcroceum.Ensembl.PilodermacroceumF1598v10/BSgenome.Pcroceum.Ensembl.PilodermacroceumF1598v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pipra filicauda",
       "common_name": "Wire-tailed manakin",
       "group": "vertebrate_other",
@@ -117146,6 +117194,38 @@
       "common_name": "",
       "published": "2026-04-19T02:51:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Claeve.Ensembl.Crula1/BSgenome.Claeve.Ensembl.Crula1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pcroceum.Ensembl.PilodermacroceumF1598v10",
+      "version": "1.0.0",
+      "organism": "Piloderma croceum F 1598",
+      "assembly": "Piloderma croceum F 1598 v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000827315.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827315.1/",
+      "file_name": "BSgenome.Pcroceum.Ensembl.PilodermacroceumF1598v10_1.0.0.tar.gz",
+      "size": 13059598,
+      "seq_ids": [
+        "KN832970",
+        "KN832971",
+        "KN832973",
+        "KN832974",
+        "KN832972"
+      ],
+      "seq_count": 715,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Atheliales",
+        "family": "Atheliaceae",
+        "genus": "Piloderma"
+      },
+      "common_name": "",
+      "published": "2026-04-19T02:51:54Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pcroceum.Ensembl.PilodermacroceumF1598v10/BSgenome.Pcroceum.Ensembl.PilodermacroceumF1598v10_1.0.0.tar.gz"
     }
   ]
 }
