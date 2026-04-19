@@ -6549,3 +6549,7 @@ NeedsCompilation: no
 Package: BSgenome.Treesei.Ensembl.GCA000167675v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptriticina.Ensembl.GCA000151525v2
+Version: 1.0.0
+NeedsCompilation: no
