@@ -6705,3 +6705,7 @@ NeedsCompilation: no
 Package: BSgenome.Tborchii.Ensembl.Tubbor1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tsp.Ensembl.TerJ13210
+Version: 1.0.0
+NeedsCompilation: no
