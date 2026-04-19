@@ -6569,3 +6569,7 @@ NeedsCompilation: no
 Package: BSgenome.Prhodozyma.Ensembl.Xden1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lrhizophorae.Ensembl.Linrh1
+Version: 1.0.0
+NeedsCompilation: no
