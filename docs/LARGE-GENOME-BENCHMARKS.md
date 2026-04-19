@@ -89,8 +89,38 @@ Known eukaryote genomes larger than 14.57 GB that are candidates for pushing the
 | 1 | `mv` (not `cp`) when staging NCBI FASTA; `rm` the `.zip` and extracted dir after move | ~28 GB + ~8 GB zip on large genomes | **Active** (commit forthcoming) |
 | 2 | Delete `genome.fa` immediately after `faToTwoBit` succeeds | One genome-size block (up to ~30 GB) | **Active** (commit forthcoming) |
 | 3 | `jlumbroso/free-disk-space@main` action to remove preinstalled Android/.NET/Haskell SDKs | ~30 GB extra | Documented; activate via workflow-level toggle if Layer 1-2 prove insufficient |
-| 4 | Stream-download FASTA directly into `faToTwoBit` stdin (no full-file landing) | ~30 GB peak | Requires reworking NCBI download path; not implemented |
+| 4 | Stream-download FASTA directly into `faToTwoBit` stdin (no full-file landing) | Full raw-FASTA size (can be 30-100+ GB) | Feasible but unimplemented — see notes below |
 | 5 | GHA paid larger runner (`runs-on: ubuntu-latest-4cores` with 150 GB disk) | +75 GB usable | $0.008/min; trivial for a one-off, real-money if turned on for whole queue |
 | 6 | Self-hosted runner on a 100-500 GB VPS | unlimited (within budget) | Already planned in `docs/SELF-HOSTED-RUNNER-PLAN.md`; long-term answer |
 
 With Layers 1 + 2 active, peak concurrent disk usage for a 28 GB genome drops from an estimated 70+ GB to ~35-40 GB, giving comfortable headroom on the ~75 GB runner.
+
+## Notes on Layer 4 (streaming FASTA → faToTwoBit)
+
+Feasibility confirmed:
+
+- `faToTwoBit` reads input **sequentially**, so the input file can be a Unix pipe (`/dev/stdin`) rather than a seekable file.
+- Output (the 2bit file) must be on disk — `faToTwoBit` seeks back to the header at the end to patch in sequence offsets.
+- Memory footprint stays bounded because only the index (sequence names + output offsets) is held in RAM, not the sequence bases themselves. A 100 GB genome with ~1 M contigs has an index on the order of 50 MB, well within the runner's 16 GB RAM.
+
+One-liner implementations:
+
+```bash
+# Ensembl (clean: server serves gzipped FASTA directly)
+curl -sL "<ensembl .fa.gz url>" \
+  | gunzip -c \
+  | faToTwoBit /dev/stdin genome.2bit
+
+# NCBI (datasets streams a zip archive; select the .fna on the fly)
+datasets download genome accession "$ACC" --include genome -o - \
+  | bsdtar -O -xf - '*.fna' \
+  | faToTwoBit /dev/stdin genome.2bit
+```
+
+Why this is on the shelf rather than the floor:
+
+- Current queue has no genomes exceeding ~50 GB raw size.
+- Moving to streaming removes full-FASTA disk cost (up to 30 GB on current biggest candidates) but does **not** remove the R-package build step's concurrent copies (2bit + package staging dir + tarball), which bound the practical ceiling at ~100-120 GB raw genome on the free-tier runner even with streaming.
+- For genomes > 120 GB (e.g. marbled lungfish *Protopterus aethiopicus* at ~130 GB) the streaming optimization becomes worthwhile but must be paired with either a paid larger runner or the R-build intermediate staged to `/tmp` while the main workspace carries the final tarball.
+
+Keep this ready as a one-file patch for when a specific oversized target shows up.
