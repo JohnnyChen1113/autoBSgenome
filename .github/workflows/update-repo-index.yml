@@ -28,9 +28,10 @@ jobs:
           FILE_SIZE='${{ github.event.client_payload.file_size }}'
           SEQ_IDS='${{ github.event.client_payload.seq_ids }}'
           SEQ_COUNT='${{ github.event.client_payload.seq_count }}'
-          STORAGE='${{ github.event.client_payload.storage }}'
-          EXTERNAL_URL='${{ github.event.client_payload.download_url }}'
-          DOI='${{ github.event.client_payload.doi }}'
+          STORAGE_INFO='${{ github.event.client_payload.storage_info }}'
+          STORAGE=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('storage',''))" "$STORAGE_INFO")
+          EXTERNAL_URL=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('download_url',''))" "$STORAGE_INFO")
+          DOI=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('doi',''))" "$STORAGE_INFO")
 
           # Add or update entry in packages.json (supports organism-centric format)
           python3 -c "

@@ -326,6 +326,12 @@ jobs:
           echo "Zenodo DOI: $DOI"
           echo "Zenodo URL: $URL"
 
+          # repository_dispatch client_payload is capped at 10 properties, so
+          # pack storage+doi+download_url into a single JSON field.
+          STORAGE_INFO=$(python3 -c "import json,os; print(json.dumps({'storage':'zenodo','doi':os.environ['DOI'],'download_url':os.environ['URL']}))" \
+            DOI="$DOI" URL="$URL" 2>/dev/null || \
+            python3 -c "import json,sys; print(json.dumps({'storage':'zenodo','doi':sys.argv[1],'download_url':sys.argv[2]}))" "$DOI" "$URL")
+
           gh api repos/${{ github.repository }}/dispatches \
             --method POST \
             -f event_type=update_repo_index \
@@ -338,10 +344,7 @@ jobs:
             -f "client_payload[file_name]=${TARBALL}" \
             -f "client_payload[file_size]=${FILESIZE}" \
             -f "client_payload[seq_ids]=${SEQ_IDS}" \
-            -f "client_payload[seq_count]=${SEQ_COUNT}" \
-            -f "client_payload[storage]=zenodo" \
-            -f "client_payload[download_url]=${URL}" \
-            -f "client_payload[doi]=${DOI}"
+            -f "client_payload[storage_info]=${STORAGE_INFO}"
 
       - name: Report failure
         if: failure()
