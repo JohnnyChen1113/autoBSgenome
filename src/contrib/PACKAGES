@@ -6621,3 +6621,7 @@ NeedsCompilation: no
 Package: BSgenome.Aviolaceofuscus.Ensembl.Aspvio1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsolani.Ensembl.AG22IIIB
+Version: 1.0.0
+NeedsCompilation: no
