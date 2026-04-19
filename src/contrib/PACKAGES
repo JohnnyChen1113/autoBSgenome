@@ -6869,3 +6869,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsp.Ensembl.ASM294638v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ahederae.Ensembl.Aulhe2
+Version: 1.0.0
+NeedsCompilation: no
