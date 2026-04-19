@@ -17936,6 +17936,38 @@
       ]
     },
     {
+      "organism": "Crucibulum laeve str. CBS 166.37",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Claeve.Ensembl.Crula1",
+          "version": "1.0.0",
+          "organism": "Crucibulum laeve str. CBS 166.37",
+          "assembly": "Crula1",
+          "provider": "Ensembl",
+          "accession": "GCA_004379715.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004379715.1/",
+          "file_name": "BSgenome.Claeve.Ensembl.Crula1_1.0.0.tar.gz",
+          "size": 10736768,
+          "seq_ids": [
+            "ML213590",
+            "ML213591",
+            "ML213592",
+            "ML213593",
+            "ML213594"
+          ],
+          "seq_count": 574,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-19T02:51:47Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Claeve.Ensembl.Crula1/BSgenome.Claeve.Ensembl.Crula1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus amylolentus CBS 6039",
       "common_name": "",
       "group": "fungi",
@@ -117090,6 +117122,30 @@
       "common_name": "",
       "published": "2026-04-19T02:51:36Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aellipticus.Ensembl.Aspell1/BSgenome.Aellipticus.Ensembl.Aspell1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Claeve.Ensembl.Crula1",
+      "version": "1.0.0",
+      "organism": "Crucibulum laeve str. CBS 166.37",
+      "assembly": "Crula1",
+      "provider": "Ensembl",
+      "accession": "GCA_004379715.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004379715.1/",
+      "file_name": "BSgenome.Claeve.Ensembl.Crula1_1.0.0.tar.gz",
+      "size": 10736768,
+      "seq_ids": [
+        "ML213590",
+        "ML213591",
+        "ML213592",
+        "ML213593",
+        "ML213594"
+      ],
+      "seq_count": 574,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-19T02:51:47Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Claeve.Ensembl.Crula1/BSgenome.Claeve.Ensembl.Crula1_1.0.0.tar.gz"
     }
   ]
 }

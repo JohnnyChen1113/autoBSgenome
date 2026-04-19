@@ -6245,3 +6245,7 @@ NeedsCompilation: no
 Package: BSgenome.Aellipticus.Ensembl.Aspell1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Claeve.Ensembl.Crula1
+Version: 1.0.0
+NeedsCompilation: no
