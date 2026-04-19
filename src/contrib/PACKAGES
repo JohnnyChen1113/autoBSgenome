@@ -6833,3 +6833,7 @@ NeedsCompilation: no
 Package: BSgenome.Sniveocremeum.Ensembl.Sisni1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apiperis.Ensembl.Asppip1
+Version: 1.0.0
+NeedsCompilation: no
