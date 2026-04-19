@@ -6293,3 +6293,7 @@ NeedsCompilation: no
 Package: BSgenome.Hwerneckii.Ensembl.ASM370468v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Orivulosa.Ensembl.Obbri1
+Version: 1.0.0
+NeedsCompilation: no

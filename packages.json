@@ -43645,6 +43645,38 @@
       ]
     },
     {
+      "organism": "Obba rivulosa str. 3A-2",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Orivulosa.Ensembl.Obbri1",
+          "version": "1.0.0",
+          "organism": "Obba rivulosa str. 3A-2",
+          "assembly": "Obbri1",
+          "provider": "Ensembl",
+          "accession": "GCA_001687445.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001687445.1/",
+          "file_name": "BSgenome.Orivulosa.Ensembl.Obbri1_1.0.0.tar.gz",
+          "size": 8474018,
+          "seq_ids": [
+            "KV722330",
+            "KV722331",
+            "KV722332",
+            "KV722333",
+            "KV722334"
+          ],
+          "seq_count": 712,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-19T02:54:39Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Orivulosa.Ensembl.Obbri1/BSgenome.Orivulosa.Ensembl.Obbri1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Octodon degus",
       "common_name": "degu",
       "group": "vertebrate_mammalian",
@@ -117930,6 +117962,30 @@
       "common_name": "",
       "published": "2026-04-19T02:54:30Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hwerneckii.Ensembl.ASM370468v1/BSgenome.Hwerneckii.Ensembl.ASM370468v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Orivulosa.Ensembl.Obbri1",
+      "version": "1.0.0",
+      "organism": "Obba rivulosa str. 3A-2",
+      "assembly": "Obbri1",
+      "provider": "Ensembl",
+      "accession": "GCA_001687445.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_001687445.1/",
+      "file_name": "BSgenome.Orivulosa.Ensembl.Obbri1_1.0.0.tar.gz",
+      "size": 8474018,
+      "seq_ids": [
+        "KV722330",
+        "KV722331",
+        "KV722332",
+        "KV722333",
+        "KV722334"
+      ],
+      "seq_count": 712,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-19T02:54:39Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Orivulosa.Ensembl.Obbri1/BSgenome.Orivulosa.Ensembl.Obbri1_1.0.0.tar.gz"
     }
   ]
 }
