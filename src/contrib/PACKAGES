@@ -7213,3 +7213,7 @@ NeedsCompilation: no
 Package: BSgenome.Foxysporum.Ensembl.FOHDV247V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CrypneofZe901V1
+Version: 1.0.0
+NeedsCompilation: no
