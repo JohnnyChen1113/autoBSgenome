@@ -6585,3 +6585,7 @@ NeedsCompilation: no
 Package: BSgenome.Sbrasiliensis.Ensembl.Sbrasiliensis5110v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Coleaginosum.Ensembl.Triol1
+Version: 1.0.0
+NeedsCompilation: no
