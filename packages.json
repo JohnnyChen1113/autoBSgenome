@@ -48465,6 +48465,54 @@
       ]
     },
     {
+      "organism": "Phaeosphaeria nodorum SN15",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Phaeosphaeriaceae",
+        "genus": "Parastagonospora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pnodorum.Ensembl.ASM14691v1",
+          "version": "1.0.0",
+          "organism": "Phaeosphaeria nodorum SN15",
+          "assembly": "ASM14691v1",
+          "provider": "Ensembl",
+          "accession": "GCA_000146915.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146915.1/",
+          "file_name": "BSgenome.Pnodorum.Ensembl.ASM14691v1_1.0.0.tar.gz",
+          "size": 9182337,
+          "seq_ids": [
+            "supercont1.1",
+            "supercont1.2",
+            "supercont1.3",
+            "supercont1.4",
+            "supercont1.5"
+          ],
+          "seq_count": 110,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Pleosporales",
+            "family": "Phaeosphaeriaceae",
+            "genus": "Parastagonospora"
+          },
+          "common_name": "",
+          "published": "2026-04-19T02:52:18Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnodorum.Ensembl.ASM14691v1/BSgenome.Pnodorum.Ensembl.ASM14691v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Phaethon lepturus",
       "common_name": "White-tailed tropicbird",
       "group": "vertebrate_other",
@@ -117290,6 +117338,38 @@
       "common_name": "",
       "published": "2026-04-19T02:52:01Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wichthyophaga.Ensembl.ASM491784v1/BSgenome.Wichthyophaga.Ensembl.ASM491784v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pnodorum.Ensembl.ASM14691v1",
+      "version": "1.0.0",
+      "organism": "Phaeosphaeria nodorum SN15",
+      "assembly": "ASM14691v1",
+      "provider": "Ensembl",
+      "accession": "GCA_000146915.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000146915.1/",
+      "file_name": "BSgenome.Pnodorum.Ensembl.ASM14691v1_1.0.0.tar.gz",
+      "size": 9182337,
+      "seq_ids": [
+        "supercont1.1",
+        "supercont1.2",
+        "supercont1.3",
+        "supercont1.4",
+        "supercont1.5"
+      ],
+      "seq_count": 110,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Pleosporales",
+        "family": "Phaeosphaeriaceae",
+        "genus": "Parastagonospora"
+      },
+      "common_name": "",
+      "published": "2026-04-19T02:52:18Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnodorum.Ensembl.ASM14691v1/BSgenome.Pnodorum.Ensembl.ASM14691v1_1.0.0.tar.gz"
     }
   ]
 }
