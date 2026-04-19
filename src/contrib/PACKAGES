@@ -6545,3 +6545,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgattii.Ensembl.Crypgatt20019351V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Treesei.Ensembl.GCA000167675v2
+Version: 1.0.0
+NeedsCompilation: no
