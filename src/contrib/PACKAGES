@@ -6721,3 +6721,7 @@ NeedsCompilation: no
 Package: BSgenome.Hhepaticicola.Ensembl.Rhier1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rmackenziei.Ensembl.RhinmackCBS65093V1
+Version: 1.0.0
+NeedsCompilation: no
