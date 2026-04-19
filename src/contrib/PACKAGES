@@ -7265,3 +7265,7 @@ NeedsCompilation: no
 Package: BSgenome.Cthermophilum.Ensembl.CTHT30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lelongisporus.Ensembl.ASM14968v1
+Version: 1.0.0
+NeedsCompilation: no
