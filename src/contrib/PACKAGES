@@ -6497,3 +6497,7 @@ NeedsCompilation: no
 Package: BSgenome.Manisopliae.Ensembl.ASM42698v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vdahliae.Ensembl.VdGwydir1A3
+Version: 1.0.0
+NeedsCompilation: no
