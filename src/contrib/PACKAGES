@@ -7409,3 +7409,7 @@ NeedsCompilation: no
 Package: BSgenome.Asaccharolyticus.Ensembl.Aspsac1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CrypneofC23V1
+Version: 1.0.0
+NeedsCompilation: no
