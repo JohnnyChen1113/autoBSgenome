@@ -6941,3 +6941,7 @@ NeedsCompilation: no
 Package: BSgenome.Sschenckii.Ensembl.Sschenckiiv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Capollinis.Ensembl.ConiapolCBS100218V1
+Version: 1.0.0
+NeedsCompilation: no
