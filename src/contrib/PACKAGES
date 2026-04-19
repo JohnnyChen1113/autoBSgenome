@@ -6521,3 +6521,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgraminis.Ensembl.ASM14992v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sstellatus.Ensembl.Sphst1
+Version: 1.0.0
+NeedsCompilation: no
