@@ -6625,3 +6625,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsolani.Ensembl.AG22IIIB
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ffloridanum.Ensembl.NRRL62606SPAdes
+Version: 1.0.0
+NeedsCompilation: no
