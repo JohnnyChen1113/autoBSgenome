@@ -6961,3 +6961,7 @@ NeedsCompilation: no
 Package: BSgenome.Ledodes.Ensembl.Lenedassembly01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Msympodialis.Ensembl.MsyATCC42132Feb2016
+Version: 1.0.0
+NeedsCompilation: no
