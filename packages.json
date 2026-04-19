@@ -26377,6 +26377,38 @@
       ]
     },
     {
+      "organism": "Fomitopsis rosea str. DSM 105464",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Frosea.Ensembl.ASM467926v1",
+          "version": "1.0.0",
+          "organism": "Fomitopsis rosea str. DSM 105464",
+          "assembly": "ASM467926v1",
+          "provider": "Ensembl",
+          "accession": "GCA_004679265.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004679265.1/",
+          "file_name": "BSgenome.Frosea.Ensembl.ASM467926v1_1.0.0.tar.gz",
+          "size": 9134792,
+          "seq_ids": [
+            "Contig_1",
+            "Contig_2",
+            "Contig_3",
+            "Contig_4",
+            "Contig_5"
+          ],
+          "seq_count": 1724,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-19T07:24:06Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Frosea.Ensembl.ASM467926v1/BSgenome.Frosea.Ensembl.ASM467926v1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Fonsecaea erecta",
       "common_name": "",
       "group": "fungi",
@@ -119282,6 +119314,30 @@
       "common_name": "",
       "published": "2026-04-19T07:23:47Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.R6411/BSgenome.Scerevisiae.Ensembl.R6411_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Frosea.Ensembl.ASM467926v1",
+      "version": "1.0.0",
+      "organism": "Fomitopsis rosea str. DSM 105464",
+      "assembly": "ASM467926v1",
+      "provider": "Ensembl",
+      "accession": "GCA_004679265.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_004679265.1/",
+      "file_name": "BSgenome.Frosea.Ensembl.ASM467926v1_1.0.0.tar.gz",
+      "size": 9134792,
+      "seq_ids": [
+        "Contig_1",
+        "Contig_2",
+        "Contig_3",
+        "Contig_4",
+        "Contig_5"
+      ],
+      "seq_count": 1724,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-19T07:24:06Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Frosea.Ensembl.ASM467926v1/BSgenome.Frosea.Ensembl.ASM467926v1_1.0.0.tar.gz"
     }
   ]
 }
