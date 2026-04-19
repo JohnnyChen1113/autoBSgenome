@@ -7125,3 +7125,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CrypneofBt1V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vdahliae.Ensembl.ASM289303v1
+Version: 1.0.0
+NeedsCompilation: no
