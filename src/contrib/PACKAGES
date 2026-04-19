@@ -6481,3 +6481,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptriticirepentis.Ensembl.Ptr11137
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aphoenicis.Ensembl.Aspph1
+Version: 1.0.0
+NeedsCompilation: no
