@@ -8253,6 +8253,38 @@
           "common_name": "",
           "published": "2026-04-05T15:57:11Z",
           "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bpanamericana.NCBI.Bauco1/BSgenome.Bpanamericana.NCBI.Bauco1_1.0.0.tar.gz"
+        },
+        {
+          "package": "BSgenome.Bpanamericana.Ensembl.Bauco1",
+          "version": "1.0.0",
+          "organism": "Baudoinia panamericana UAMH 10762",
+          "assembly": "Bauco1",
+          "provider": "Ensembl",
+          "accession": "GCA_000338955.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000338955.1/",
+          "file_name": "BSgenome.Bpanamericana.Ensembl.Bauco1_1.0.0.tar.gz",
+          "size": 5438094,
+          "seq_ids": [
+            "KB445550",
+            "KB445551",
+            "KB445552",
+            "KB445553",
+            "KB445554"
+          ],
+          "seq_count": 19,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Mycosphaerellales",
+            "family": "Teratosphaeriaceae",
+            "genus": "Baudoinia"
+          },
+          "common_name": "",
+          "published": "2026-04-19T05:34:11Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bpanamericana.Ensembl.Bauco1/BSgenome.Bpanamericana.Ensembl.Bauco1_1.0.0.tar.gz"
         }
       ]
     },
@@ -118722,6 +118754,38 @@
       "common_name": "",
       "published": "2026-04-19T05:33:51Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.ASM491802v1/BSgenome.Wmellicola.Ensembl.ASM491802v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Bpanamericana.Ensembl.Bauco1",
+      "version": "1.0.0",
+      "organism": "Baudoinia panamericana UAMH 10762",
+      "assembly": "Bauco1",
+      "provider": "Ensembl",
+      "accession": "GCA_000338955.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000338955.1/",
+      "file_name": "BSgenome.Bpanamericana.Ensembl.Bauco1_1.0.0.tar.gz",
+      "size": 5438094,
+      "seq_ids": [
+        "KB445550",
+        "KB445551",
+        "KB445552",
+        "KB445553",
+        "KB445554"
+      ],
+      "seq_count": 19,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Teratosphaeriaceae",
+        "genus": "Baudoinia"
+      },
+      "common_name": "",
+      "published": "2026-04-19T05:34:11Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Bpanamericana.Ensembl.Bauco1/BSgenome.Bpanamericana.Ensembl.Bauco1_1.0.0.tar.gz"
     }
   ]
 }
