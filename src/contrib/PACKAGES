@@ -6285,3 +6285,7 @@ NeedsCompilation: no
 Package: BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgattii.Ensembl.CrypgattCA1280V1
+Version: 1.0.0
+NeedsCompilation: no

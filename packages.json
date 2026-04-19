@@ -18304,6 +18304,38 @@
       ]
     },
     {
+      "organism": "Cryptococcus gattii CA1280",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Cgattii.Ensembl.CrypgattCA1280V1",
+          "version": "1.0.0",
+          "organism": "Cryptococcus gattii CA1280",
+          "assembly": "Cryp_gatt_CA1280_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000836335.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000836335.1/",
+          "file_name": "BSgenome.Cgattii.Ensembl.CrypgattCA1280V1_1.0.0.tar.gz",
+          "size": 4368791,
+          "seq_ids": [
+            "KN847973",
+            "KN847974",
+            "KN847975",
+            "KN847976",
+            "KN847977"
+          ],
+          "seq_count": 89,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-19T02:54:17Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattCA1280V1/BSgenome.Cgattii.Ensembl.CrypgattCA1280V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus gattii NT-10",
       "common_name": "",
       "group": "fungi",
@@ -117810,6 +117842,30 @@
       "common_name": "",
       "published": "2026-04-19T02:53:48Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20/BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cgattii.Ensembl.CrypgattCA1280V1",
+      "version": "1.0.0",
+      "organism": "Cryptococcus gattii CA1280",
+      "assembly": "Cryp_gatt_CA1280_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000836335.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000836335.1/",
+      "file_name": "BSgenome.Cgattii.Ensembl.CrypgattCA1280V1_1.0.0.tar.gz",
+      "size": 4368791,
+      "seq_ids": [
+        "KN847973",
+        "KN847974",
+        "KN847975",
+        "KN847976",
+        "KN847977"
+      ],
+      "seq_count": 89,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-19T02:54:17Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattCA1280V1/BSgenome.Cgattii.Ensembl.CrypgattCA1280V1_1.0.0.tar.gz"
     }
   ]
 }
