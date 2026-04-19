@@ -7393,3 +7393,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CneoseroAWM1408
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CrypneofMWRSA36V1
+Version: 1.0.0
+NeedsCompilation: no
