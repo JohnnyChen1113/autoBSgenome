@@ -7437,3 +7437,7 @@ NeedsCompilation: no
 Package: BSgenome.Mvespertilionis.Ensembl.ASM281822v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsp.Ensembl.ASM294642v1
+Version: 1.0.0
+NeedsCompilation: no
