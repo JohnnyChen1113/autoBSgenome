@@ -6401,3 +6401,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgattii.Ensembl.CrypgattRam5V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssclerotiorum.Ensembl.ASM14694v1
+Version: 1.0.0
+NeedsCompilation: no
