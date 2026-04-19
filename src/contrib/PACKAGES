@@ -6937,3 +6937,7 @@ NeedsCompilation: no
 Package: BSgenome.Rvesiculosus.Ensembl.RvesAMOR1105610
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sschenckii.Ensembl.Sschenckiiv1
+Version: 1.0.0
+NeedsCompilation: no
