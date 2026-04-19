@@ -7377,3 +7377,7 @@ NeedsCompilation: no
 Package: BSgenome.Csp.Ensembl.Cadsp1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CrypneofBt63V1
+Version: 1.0.0
+NeedsCompilation: no
