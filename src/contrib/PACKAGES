@@ -6517,3 +6517,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcalospora.Ensembl.TulasnellacalosporaAL134Dv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgraminis.Ensembl.ASM14992v1
+Version: 1.0.0
+NeedsCompilation: no
