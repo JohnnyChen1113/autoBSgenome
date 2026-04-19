@@ -48249,6 +48249,54 @@
       ]
     },
     {
+      "organism": "Paxillus rubicundulus Ve08.2h10",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Boletales",
+        "family": "Paxillaceae",
+        "genus": "Paxillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10",
+          "version": "1.0.0",
+          "organism": "Paxillus rubicundulus Ve08.2h10",
+          "assembly": "Paxillus rubicundulus Ve08.2h10 v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000827395.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827395.1/",
+          "file_name": "BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10_1.0.0.tar.gz",
+          "size": 13128098,
+          "seq_ids": [
+            "KN824823",
+            "KN824824",
+            "KN824825",
+            "KN824826",
+            "KN824827"
+          ],
+          "seq_count": 6945,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Boletales",
+            "family": "Paxillaceae",
+            "genus": "Paxillus"
+          },
+          "common_name": "",
+          "published": "2026-04-19T05:34:44Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10/BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pediculus humanus corporis",
       "common_name": "human body louse",
       "group": "invertebrate",
@@ -118930,6 +118978,38 @@
       "common_name": "",
       "published": "2026-04-19T05:34:29Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Gcichoracearum.Ensembl.ASM361123v1/BSgenome.Gcichoracearum.Ensembl.ASM361123v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10",
+      "version": "1.0.0",
+      "organism": "Paxillus rubicundulus Ve08.2h10",
+      "assembly": "Paxillus rubicundulus Ve08.2h10 v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000827395.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827395.1/",
+      "file_name": "BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10_1.0.0.tar.gz",
+      "size": 13128098,
+      "seq_ids": [
+        "KN824823",
+        "KN824824",
+        "KN824825",
+        "KN824826",
+        "KN824827"
+      ],
+      "seq_count": 6945,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Boletales",
+        "family": "Paxillaceae",
+        "genus": "Paxillus"
+      },
+      "common_name": "",
+      "published": "2026-04-19T05:34:44Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10/BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10_1.0.0.tar.gz"
     }
   ]
 }
