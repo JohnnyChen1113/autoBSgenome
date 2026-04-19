@@ -7013,3 +7013,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.Crypneof12591V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aniger.Ensembl.ASPNIv30
+Version: 1.0.0
+NeedsCompilation: no
