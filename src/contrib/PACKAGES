@@ -6949,3 +6949,7 @@ NeedsCompilation: no
 Package: BSgenome.Ataichungensis.Ensembl.Asptaic1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aimmersus.Ensembl.Ascim1
+Version: 1.0.0
+NeedsCompilation: no
