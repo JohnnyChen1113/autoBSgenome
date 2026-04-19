@@ -6841,3 +6841,7 @@ NeedsCompilation: no
 Package: BSgenome.Cviscosa.Ensembl.Calvi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kheveanensis.Ensembl.CrypheveBCC8398V1
+Version: 1.0.0
+NeedsCompilation: no
