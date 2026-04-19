@@ -6901,3 +6901,7 @@ NeedsCompilation: no
 Package: BSgenome.Wsorbophila.Ensembl.ASM225199v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Camylolentus.Ensembl.CrypamylCBS6273V2
+Version: 1.0.0
+NeedsCompilation: no
