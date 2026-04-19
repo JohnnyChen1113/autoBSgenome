@@ -6577,3 +6577,7 @@ NeedsCompilation: no
 Package: BSgenome.Spombe.Ensembl.ASM294v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sparadoxa.Ensembl.Schpa1
+Version: 1.0.0
+NeedsCompilation: no
