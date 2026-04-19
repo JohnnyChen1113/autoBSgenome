@@ -46,6 +46,15 @@ Timings include the full pipeline end-to-end:
 
 ## Failures encountered on the way up
 
+### Ambystoma mexicanum (28.21 GB) — 2026-04-19
+
+- Run: [24638585963](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24638585963)
+- Failed at step: `Generate seed file and build package` (R CMD build / forgeBSgenomeDataPkg)
+- Symptom: log goes silent at 20:55:52 (right as the step begins); job marked failure at 21:06:52, 11 minutes later. No error message emitted.
+- Cause (likely): runner-level termination by the host, typically OOM. The assembly contains **27,157 sequences** and a 7.6 GB 2bit; `forgeBSgenomeDataPkg` iterates per-sequence during package construction, and R's memory footprint can exceed the free-tier 16 GB RAM.
+- Pre-existing code state: this run predates commits `259cde4` (FASTA cleanup) and `abee65f` (2bit dedup), so peak concurrent disk was ~52 GB — within the 75 GB disk cap. Disk is therefore unlikely to be the sole trigger; memory is the probable cause.
+- Established empirical ceiling on free-tier runner (16 GB RAM, 75 GB disk): **22.10 GB** genome succeeds (Pinus taeda), **28.21 GB** fails at R build. The 22-28 GB range is where per-sequence overhead × many-contig counts outgrows free-tier memory.
+
 ### Pinus taeda (22.10 GB) — first attempt, 2026-04-19
 
 - Run: [24637566386](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24637566386)
