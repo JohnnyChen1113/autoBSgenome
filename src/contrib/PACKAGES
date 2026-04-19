@@ -7225,3 +7225,7 @@ NeedsCompilation: no
 Package: BSgenome.Bgraminis.Ensembl.Bgt454newblerassembly
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM428v1
+Version: 1.0.0
+NeedsCompilation: no
