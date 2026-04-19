@@ -48025,6 +48025,54 @@
       ]
     },
     {
+      "organism": "Paxillus involutus ATCC 200175",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Boletales",
+        "family": "Paxillaceae",
+        "genus": "Paxillus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pinvolutus.Ensembl.PaxillusinvolutusATCC200175v10",
+          "version": "1.0.0",
+          "organism": "Paxillus involutus ATCC 200175",
+          "assembly": "Paxillus involutus ATCC 200175 v1.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000827475.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827475.1/",
+          "file_name": "BSgenome.Pinvolutus.Ensembl.PaxillusinvolutusATCC200175v10_1.0.0.tar.gz",
+          "size": 12223260,
+          "seq_ids": [
+            "KN819323",
+            "KN819324",
+            "KN819325",
+            "KN819326",
+            "KN819327"
+          ],
+          "seq_count": 2681,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Basidiomycota",
+            "class": "Agaricomycetes",
+            "order": "Boletales",
+            "family": "Paxillaceae",
+            "genus": "Paxillus"
+          },
+          "common_name": "",
+          "published": "2026-04-19T05:32:41Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pinvolutus.Ensembl.PaxillusinvolutusATCC200175v10/BSgenome.Pinvolutus.Ensembl.PaxillusinvolutusATCC200175v10_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Pediculus humanus corporis",
       "common_name": "human body louse",
       "group": "invertebrate",
@@ -118322,6 +118370,38 @@
       "common_name": "",
       "published": "2026-04-19T05:32:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Tlongibrachiatum.Ensembl.Trilo3/BSgenome.Tlongibrachiatum.Ensembl.Trilo3_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Pinvolutus.Ensembl.PaxillusinvolutusATCC200175v10",
+      "version": "1.0.0",
+      "organism": "Paxillus involutus ATCC 200175",
+      "assembly": "Paxillus involutus ATCC 200175 v1.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000827475.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827475.1/",
+      "file_name": "BSgenome.Pinvolutus.Ensembl.PaxillusinvolutusATCC200175v10_1.0.0.tar.gz",
+      "size": 12223260,
+      "seq_ids": [
+        "KN819323",
+        "KN819324",
+        "KN819325",
+        "KN819326",
+        "KN819327"
+      ],
+      "seq_count": 2681,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Basidiomycota",
+        "class": "Agaricomycetes",
+        "order": "Boletales",
+        "family": "Paxillaceae",
+        "genus": "Paxillus"
+      },
+      "common_name": "",
+      "published": "2026-04-19T05:32:41Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pinvolutus.Ensembl.PaxillusinvolutusATCC200175v10/BSgenome.Pinvolutus.Ensembl.PaxillusinvolutusATCC200175v10_1.0.0.tar.gz"
     }
   ]
 }

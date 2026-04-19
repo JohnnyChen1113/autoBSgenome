@@ -6317,3 +6317,7 @@ NeedsCompilation: no
 Package: BSgenome.Tlongibrachiatum.Ensembl.Trilo3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pinvolutus.Ensembl.PaxillusinvolutusATCC200175v10
+Version: 1.0.0
+NeedsCompilation: no
