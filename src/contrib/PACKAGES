@@ -7137,3 +7137,7 @@ NeedsCompilation: no
 Package: BSgenome.Sbrunnea.Ensembl.Sphbr2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pplacenta.Ensembl.PosplRSB121
+Version: 1.0.0
+NeedsCompilation: no
