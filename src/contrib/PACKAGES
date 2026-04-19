@@ -6769,3 +6769,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM1389v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dquercina.Ensembl.Daequ1
+Version: 1.0.0
+NeedsCompilation: no
