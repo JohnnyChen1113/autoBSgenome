@@ -1,0 +1,51 @@
+name: Diagnose Zenodo community requests
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: List all community-submission requests visible to my token
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+        run: |
+          python3 <<'PYEOF'
+          import json, os, urllib.request
+          for path in [
+              "/api/requests?size=100",
+              "/api/requests?status=submitted&size=100",
+              "/api/requests?status=accepted&size=100",
+              "/api/communities/autobsgenome",
+              "/api/communities/autobsgenome/requests?size=100",
+          ]:
+              url = "https://zenodo.org" + path
+              req = urllib.request.Request(url, headers={
+                  "Authorization": f"Bearer {os.environ['ZENODO_TOKEN']}",
+                  "Accept": "application/json",
+              })
+              print(f"\n=== GET {path} ===")
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      body = r.read().decode()
+                      try:
+                          d = json.loads(body)
+                          # show just top-level hits and a few fields
+                          if isinstance(d, dict) and "hits" in d:
+                              total = d.get("hits",{}).get("total", 0)
+                              hits = d.get("hits",{}).get("hits", [])
+                              print(f"  total={total}, showing {len(hits)}:")
+                              for h in hits:
+                                  t = h.get("type") or h.get("id") or h
+                                  title = (h.get("title") or h.get("topic",{}).get("record") or "")
+                                  status = h.get("status","")
+                                  print(f"    type={t} status={status} title={str(title)[:80]}")
+                          else:
+                              print(f"  status={d.get('status','?')} id={d.get('id','?')}")
+                      except Exception:
+                          print(f"  raw: {body[:500]}")
+              except Exception as e:
+                  print(f"  error: {e}")
+          PYEOF
