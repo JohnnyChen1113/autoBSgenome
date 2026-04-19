@@ -6405,3 +6405,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssclerotiorum.Ensembl.ASM14694v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oneolycopersici.Ensembl.ASM361085v1
+Version: 1.0.0
+NeedsCompilation: no
