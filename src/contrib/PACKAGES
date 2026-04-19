@@ -6741,3 +6741,7 @@ NeedsCompilation: no
 Package: BSgenome.Kmangroviensis.Ensembl.KwonmangCBS8507V2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hbicolor.Ensembl.Melbi2
+Version: 1.0.0
+NeedsCompilation: no
