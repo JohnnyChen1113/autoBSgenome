@@ -6849,3 +6849,7 @@ NeedsCompilation: no
 Package: BSgenome.Kmangroviensis.Ensembl.KwonmangCBS10435V2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ooligospora.Ensembl.ASM476876v1
+Version: 1.0.0
+NeedsCompilation: no
