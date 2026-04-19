@@ -14443,6 +14443,54 @@
       ]
     },
     {
+      "organism": "Cercospora zeae-maydis SCOH1-5",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Cercospora"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Czeaemaydis.Ensembl.Cerzm1",
+          "version": "1.0.0",
+          "organism": "Cercospora zeae-maydis SCOH1-5",
+          "assembly": "Cerzm1",
+          "provider": "Ensembl",
+          "accession": "GCA_010093985.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_010093985.1/",
+          "file_name": "BSgenome.Czeaemaydis.Ensembl.Cerzm1_1.0.0.tar.gz",
+          "size": 10169632,
+          "seq_ids": [
+            "ML992662",
+            "ML992663",
+            "ML992664",
+            "ML992665",
+            "ML992666"
+          ],
+          "seq_count": 917,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Dothideomycetes",
+            "order": "Mycosphaerellales",
+            "family": "Mycosphaerellaceae",
+            "genus": "Cercospora"
+          },
+          "common_name": "",
+          "published": "2026-04-19T02:52:36Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Czeaemaydis.Ensembl.Cerzm1/BSgenome.Czeaemaydis.Ensembl.Cerzm1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cervus hanglu yarkandensis",
       "common_name": "Yarkand deer",
       "group": "vertebrate_mammalian",
@@ -117370,6 +117418,38 @@
       "common_name": "",
       "published": "2026-04-19T02:52:18Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Pnodorum.Ensembl.ASM14691v1/BSgenome.Pnodorum.Ensembl.ASM14691v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Czeaemaydis.Ensembl.Cerzm1",
+      "version": "1.0.0",
+      "organism": "Cercospora zeae-maydis SCOH1-5",
+      "assembly": "Cerzm1",
+      "provider": "Ensembl",
+      "accession": "GCA_010093985.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_010093985.1/",
+      "file_name": "BSgenome.Czeaemaydis.Ensembl.Cerzm1_1.0.0.tar.gz",
+      "size": 10169632,
+      "seq_ids": [
+        "ML992662",
+        "ML992663",
+        "ML992664",
+        "ML992665",
+        "ML992666"
+      ],
+      "seq_count": 917,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Dothideomycetes",
+        "order": "Mycosphaerellales",
+        "family": "Mycosphaerellaceae",
+        "genus": "Cercospora"
+      },
+      "common_name": "",
+      "published": "2026-04-19T02:52:36Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Czeaemaydis.Ensembl.Cerzm1/BSgenome.Czeaemaydis.Ensembl.Cerzm1_1.0.0.tar.gz"
     }
   ]
 }

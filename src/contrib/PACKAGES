@@ -6261,3 +6261,7 @@ NeedsCompilation: no
 Package: BSgenome.Pnodorum.Ensembl.ASM14691v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Czeaemaydis.Ensembl.Cerzm1
+Version: 1.0.0
+NeedsCompilation: no
