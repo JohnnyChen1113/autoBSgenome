@@ -7341,3 +7341,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CrypneofAD183aV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scomplicata.Ensembl.Scomplicata30
+Version: 1.0.0
+NeedsCompilation: no
