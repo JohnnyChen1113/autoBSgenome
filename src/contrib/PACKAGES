@@ -6361,3 +6361,7 @@ NeedsCompilation: no
 Package: BSgenome.Moryzae.Ensembl.GCA900474545v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgattii.Ensembl.CrypgattCBS10090V1
+Version: 1.0.0
+NeedsCompilation: no
