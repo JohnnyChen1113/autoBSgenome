@@ -6253,3 +6253,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcroceum.Ensembl.PilodermacroceumF1598v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wichthyophaga.Ensembl.ASM491784v1
+Version: 1.0.0
+NeedsCompilation: no
