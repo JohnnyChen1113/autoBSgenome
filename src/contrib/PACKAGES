@@ -6717,3 +6717,7 @@ NeedsCompilation: no
 Package: BSgenome.Fproliferatum.Ensembl.FpA8v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hhepaticicola.Ensembl.Rhier1
+Version: 1.0.0
+NeedsCompilation: no
