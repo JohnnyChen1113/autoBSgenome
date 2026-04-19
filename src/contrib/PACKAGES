@@ -6357,3 +6357,7 @@ NeedsCompilation: no
 Package: BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Moryzae.Ensembl.GCA900474545v2
+Version: 1.0.0
+NeedsCompilation: no

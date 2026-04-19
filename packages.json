@@ -36856,6 +36856,54 @@
       ]
     },
     {
+      "organism": "Magnaporthe oryzae",
+      "common_name": "",
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Magnaporthales",
+        "family": "Pyriculariaceae",
+        "genus": "Pyricularia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Moryzae.Ensembl.GCA900474545v2",
+          "version": "1.0.0",
+          "organism": "Magnaporthe oryzae",
+          "assembly": "GCA900474545v2",
+          "provider": "Ensembl",
+          "accession": "GCA_900474545.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900474545.2/",
+          "file_name": "BSgenome.Moryzae.Ensembl.GCA900474545v2_1.0.0.tar.gz",
+          "size": 9934653,
+          "seq_ids": [
+            "BR32_scaffold00001",
+            "BR32_scaffold00002",
+            "BR32_scaffold00003",
+            "BR32_scaffold00004",
+            "BR32_scaffold00005"
+          ],
+          "seq_count": 111,
+          "group": "fungi",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Fungi",
+            "phylum": "Ascomycota",
+            "class": "Sordariomycetes",
+            "order": "Magnaporthales",
+            "family": "Pyriculariaceae",
+            "genus": "Pyricularia"
+          },
+          "common_name": "",
+          "published": "2026-04-19T05:34:55Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Moryzae.Ensembl.GCA900474545v2/BSgenome.Moryzae.Ensembl.GCA900474545v2_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Magnaporthe oryzae 70-15",
       "common_name": "",
       "group": "other",
@@ -119010,6 +119058,38 @@
       "common_name": "",
       "published": "2026-04-19T05:34:44Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10/BSgenome.Prubicundulus.Ensembl.PaxillusrubicundulusVe082h10v10_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Moryzae.Ensembl.GCA900474545v2",
+      "version": "1.0.0",
+      "organism": "Magnaporthe oryzae",
+      "assembly": "GCA900474545v2",
+      "provider": "Ensembl",
+      "accession": "GCA_900474545.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_900474545.2/",
+      "file_name": "BSgenome.Moryzae.Ensembl.GCA900474545v2_1.0.0.tar.gz",
+      "size": 9934653,
+      "seq_ids": [
+        "BR32_scaffold00001",
+        "BR32_scaffold00002",
+        "BR32_scaffold00003",
+        "BR32_scaffold00004",
+        "BR32_scaffold00005"
+      ],
+      "seq_count": 111,
+      "group": "fungi",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Fungi",
+        "phylum": "Ascomycota",
+        "class": "Sordariomycetes",
+        "order": "Magnaporthales",
+        "family": "Pyriculariaceae",
+        "genus": "Pyricularia"
+      },
+      "common_name": "",
+      "published": "2026-04-19T05:34:55Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Moryzae.Ensembl.GCA900474545v2/BSgenome.Moryzae.Ensembl.GCA900474545v2_1.0.0.tar.gz"
     }
   ]
 }
