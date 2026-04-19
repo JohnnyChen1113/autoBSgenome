@@ -175,6 +175,66 @@ def cmd_upload(args):
     return 0
 
 
+def _edit_and_publish(record_id, mutate):
+    """Unlock a published record, apply `mutate(metadata) -> metadata`, re-publish."""
+    status, _ = _req("POST", f"/deposit/depositions/{record_id}/actions/edit")
+    if status not in (200, 201):
+        return status, "edit unlock failed"
+    status, dep = _req("GET", f"/deposit/depositions/{record_id}")
+    if status != 200:
+        return status, "get failed"
+    metadata = dep.get("metadata", {})
+    metadata = mutate(metadata)
+    status, body = _req("PUT", f"/deposit/depositions/{record_id}",
+                        data={"metadata": metadata})
+    if status != 200:
+        return status, f"metadata update failed: {body}"
+    status, body = _req("POST", f"/deposit/depositions/{record_id}/actions/publish")
+    if status not in (200, 202):
+        return status, f"publish failed: {body}"
+    return 0, "OK"
+
+
+def cmd_update_metadata(args):
+    """Overwrite specific metadata fields on a published record.
+
+    Reads the NEW metadata values from CLI flags and merges into the existing
+    metadata. Supports description, title, keywords, related_identifiers.
+    Use --description-file to read HTML from disk (workflow input sizes are
+    capped, so file input is safer for rich HTML).
+    """
+    patches = {}
+    if args.description_file:
+        with open(args.description_file) as f:
+            patches["description"] = f.read()
+    elif args.description:
+        patches["description"] = args.description
+    if args.title:
+        patches["title"] = args.title
+    if args.keywords:
+        patches["keywords"] = [k.strip() for k in args.keywords.split(",") if k.strip()]
+    if args.related:
+        patches["related_identifiers"] = [
+            {"identifier": r.strip(), "relation": "isSupplementTo", "scheme": "url"}
+            for r in args.related.split(",") if r.strip()
+        ]
+
+    if not patches:
+        print("no fields to update", file=sys.stderr)
+        return 1
+
+    def mutate(md):
+        md.update(patches)
+        return md
+
+    rc, msg = _edit_and_publish(args.record_id, mutate)
+    if rc == 0:
+        print(f"OK: record {args.record_id} metadata updated ({list(patches.keys())})")
+        return 0
+    print(f"FAIL {rc}: {msg}", file=sys.stderr)
+    return 1
+
+
 def cmd_add_to_community(args):
     """Retroactively add an already-published record to a community.
 
@@ -233,6 +293,18 @@ def main():
                          help="Add an already-published record to a Zenodo community.")
     add.add_argument("record_id")
     add.add_argument("--community", required=True)
+    um = sub.add_parser("update-metadata",
+                        help="Overwrite metadata fields on a published record (edit→update→publish).")
+    um.add_argument("record_id")
+    um.add_argument("--description", default=None,
+                    help="New description (HTML). Use --description-file for multi-line HTML.")
+    um.add_argument("--description-file", default=None,
+                    help="Path to a file whose contents become the new description.")
+    um.add_argument("--title", default=None)
+    um.add_argument("--keywords", default=None,
+                    help="Comma-separated keyword list.")
+    um.add_argument("--related", default=None,
+                    help="Comma-separated URLs; each becomes a related_identifier.")
     args = p.parse_args()
     if args.cmd == "upload" and not args.creator:
         args.creator = ["JohnnyChen1113"]
