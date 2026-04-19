@@ -7165,3 +7165,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcapitatum.Ensembl.ASM290118v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zbrevis.Ensembl.ASM96659v1
+Version: 1.0.0
+NeedsCompilation: no
