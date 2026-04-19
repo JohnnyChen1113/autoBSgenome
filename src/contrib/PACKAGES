@@ -7129,3 +7129,7 @@ NeedsCompilation: no
 Package: BSgenome.Vdahliae.Ensembl.ASM289303v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aochraceoroseus.Ensembl.ASM98666v1
+Version: 1.0.0
+NeedsCompilation: no
