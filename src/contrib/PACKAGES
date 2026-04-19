@@ -7081,3 +7081,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcitrinoviride.Ensembl.Triciv40
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aostoyae.Ensembl.version2
+Version: 1.0.0
+NeedsCompilation: no
