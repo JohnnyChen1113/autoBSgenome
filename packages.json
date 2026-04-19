@@ -18432,6 +18432,38 @@
       ]
     },
     {
+      "organism": "Cryptococcus gattii VGII CA1014",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Cgattii.Ensembl.CrypgattCA1014V1",
+          "version": "1.0.0",
+          "organism": "Cryptococcus gattii VGII CA1014",
+          "assembly": "Cryp_gatt_CA1014_V1",
+          "provider": "Ensembl",
+          "accession": "GCA_000875795.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000875795.1/",
+          "file_name": "BSgenome.Cgattii.Ensembl.CrypgattCA1014V1_1.0.0.tar.gz",
+          "size": 4344910,
+          "seq_ids": [
+            "KN848504",
+            "KN848505",
+            "KN848506",
+            "KN848507",
+            "KN848508"
+          ],
+          "seq_count": 21,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-19T05:33:20Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattCA1014V1/BSgenome.Cgattii.Ensembl.CrypgattCA1014V1_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Cryptococcus gattii VGII LA55",
       "common_name": "",
       "group": "other",
@@ -118546,6 +118578,30 @@
       "common_name": "",
       "published": "2026-04-19T05:33:00Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Scerevisiae.Ensembl.ScFostersBv01/BSgenome.Scerevisiae.Ensembl.ScFostersBv01_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Cgattii.Ensembl.CrypgattCA1014V1",
+      "version": "1.0.0",
+      "organism": "Cryptococcus gattii VGII CA1014",
+      "assembly": "Cryp_gatt_CA1014_V1",
+      "provider": "Ensembl",
+      "accession": "GCA_000875795.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000875795.1/",
+      "file_name": "BSgenome.Cgattii.Ensembl.CrypgattCA1014V1_1.0.0.tar.gz",
+      "size": 4344910,
+      "seq_ids": [
+        "KN848504",
+        "KN848505",
+        "KN848506",
+        "KN848507",
+        "KN848508"
+      ],
+      "seq_count": 21,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-19T05:33:20Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Cgattii.Ensembl.CrypgattCA1014V1/BSgenome.Cgattii.Ensembl.CrypgattCA1014V1_1.0.0.tar.gz"
     }
   ]
 }
