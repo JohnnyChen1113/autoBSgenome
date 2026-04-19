@@ -6281,3 +6281,7 @@ NeedsCompilation: no
 Package: BSgenome.Wmellicola.Ensembl.ASM491892v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20
+Version: 1.0.0
+NeedsCompilation: no

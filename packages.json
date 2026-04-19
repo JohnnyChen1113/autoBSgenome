@@ -29483,6 +29483,38 @@
       ]
     },
     {
+      "organism": "Hebeloma cylindrosporum h7",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {},
+      "builds": [
+        {
+          "package": "BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20",
+          "version": "1.0.0",
+          "organism": "Hebeloma cylindrosporum h7",
+          "assembly": "Hebeloma cylindrosporum h7 v2.0",
+          "provider": "Ensembl",
+          "accession": "GCA_000827355.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827355.1/",
+          "file_name": "BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20_1.0.0.tar.gz",
+          "size": 9028685,
+          "seq_ids": [
+            "KN831768",
+            "KN831769",
+            "KN831770",
+            "KN831771",
+            "KN831772"
+          ],
+          "seq_count": 176,
+          "group": "other",
+          "taxonomy": {},
+          "common_name": "",
+          "published": "2026-04-19T02:53:48Z",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20/BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20_1.0.0.tar.gz"
+        }
+      ]
+    },
+    {
       "organism": "Helianthus annuus",
       "common_name": "common sunflower",
       "group": "plant",
@@ -117754,6 +117786,30 @@
       "common_name": "",
       "published": "2026-04-19T02:53:34Z",
       "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Wmellicola.Ensembl.ASM491892v1/BSgenome.Wmellicola.Ensembl.ASM491892v1_1.0.0.tar.gz"
+    },
+    {
+      "package": "BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20",
+      "version": "1.0.0",
+      "organism": "Hebeloma cylindrosporum h7",
+      "assembly": "Hebeloma cylindrosporum h7 v2.0",
+      "provider": "Ensembl",
+      "accession": "GCA_000827355.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000827355.1/",
+      "file_name": "BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20_1.0.0.tar.gz",
+      "size": 9028685,
+      "seq_ids": [
+        "KN831768",
+        "KN831769",
+        "KN831770",
+        "KN831771",
+        "KN831772"
+      ],
+      "seq_count": 176,
+      "group": "other",
+      "taxonomy": {},
+      "common_name": "",
+      "published": "2026-04-19T02:53:48Z",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20/BSgenome.Hcylindrosporum.Ensembl.Hebelomacylindrosporumh7v20_1.0.0.tar.gz"
     }
   ]
 }
