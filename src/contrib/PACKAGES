@@ -6809,3 +6809,7 @@ NeedsCompilation: no
 Package: BSgenome.Flongipes.Ensembl.FusariumlongipesNRRL20695FLONG3contigs
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mrestricta.Ensembl.ASM369160v1
+Version: 1.0.0
+NeedsCompilation: no
