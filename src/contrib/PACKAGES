@@ -7033,3 +7033,7 @@ NeedsCompilation: no
 Package: BSgenome.Cneoformans.Ensembl.CrypneofA21025V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cplatani.Ensembl.ASM97888v1
+Version: 1.0.0
+NeedsCompilation: no
