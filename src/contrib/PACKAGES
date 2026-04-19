@@ -6793,3 +6793,7 @@ NeedsCompilation: no
 Package: BSgenome.Abrunneoviolaceus.Ensembl.Aspbru1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kpini.Ensembl.CryppinuCBS10737V1
+Version: 1.0.0
+NeedsCompilation: no
