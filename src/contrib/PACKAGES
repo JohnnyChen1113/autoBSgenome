@@ -7201,3 +7201,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM1477v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asolidipes.Ensembl.Armost1
+Version: 1.0.0
+NeedsCompilation: no
