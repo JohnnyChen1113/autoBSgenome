@@ -7261,3 +7261,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM271v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cthermophilum.Ensembl.CTHT30
+Version: 1.0.0
+NeedsCompilation: no
