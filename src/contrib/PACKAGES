@@ -7029,3 +7029,7 @@ NeedsCompilation: no
 Package: BSgenome.Ttonsurans.Ensembl.ASM15145v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CrypneofA21025V1
+Version: 1.0.0
+NeedsCompilation: no
