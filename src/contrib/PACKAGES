@@ -7229,3 +7229,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM428v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pnoxium.Ensembl.ASM228747v2
+Version: 1.0.0
+NeedsCompilation: no
