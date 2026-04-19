@@ -6749,3 +6749,7 @@ NeedsCompilation: no
 Package: BSgenome.Rvinicolor.Ensembl.Rhivi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lsubtilissima.Ensembl.CFIALsubEG2017
+Version: 1.0.0
+NeedsCompilation: no
