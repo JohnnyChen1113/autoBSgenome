@@ -7057,3 +7057,7 @@ NeedsCompilation: no
 Package: BSgenome.Gsinense.Ensembl.GanSi16
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cneoformans.Ensembl.CrypneofBt15V1
+Version: 1.0.0
+NeedsCompilation: no
