@@ -7345,3 +7345,7 @@ NeedsCompilation: no
 Package: BSgenome.Scomplicata.Ensembl.Scomplicata30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tterrestris.Ensembl.ASM22611v1
+Version: 1.0.0
+NeedsCompilation: no
