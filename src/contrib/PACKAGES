@@ -6665,3 +6665,7 @@ NeedsCompilation: no
 Package: BSgenome.Vgallopava.Ensembl.OgallCBS43764
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ztritici.Ensembl.MG2
+Version: 1.0.0
+NeedsCompilation: no
