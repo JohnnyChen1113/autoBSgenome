@@ -6469,3 +6469,7 @@ NeedsCompilation: no
 Package: BSgenome.Scitrinum.Ensembl.SclerodermacitrinumFougAv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgattii.Ensembl.CrypgattRu294V1
+Version: 1.0.0
+NeedsCompilation: no
