@@ -97,17 +97,53 @@ The 25-second publish step confirms the previous cancellation was a transient ru
 4. **For genomes > some threshold (TBD, but likely > 6 GB), skip the "Publish to permanent repository" step** — keep the Bioconductor tarball only as a GitHub Release artifact, not a CRAN-like entry. Users can still `install.packages()` via the direct Release URL. (moderate, requires API work)
 5. **Split the upload across a separate workflow with a longer timeout** — moves the upload out of the 30-min build job. (expensive)
 
-## Candidates for a "skip_oversized" threshold
+## Candidates for a "skip_oversized" threshold — UPDATED with hard-limit evidence
 
-We do not yet have evidence of a hard size ceiling. Current thinking:
+### The real ceiling: GitHub Releases 2 GiB per-asset limit
 
-- **< 3 GB**: should always work (peanut cancel was spurious)
-- **3-5 GB**: works empirically (wheat, aardvark, mole, goatgrass, tobacco all done)
-- **5-6 GB**: untested in autoBSgenome; some barley cultivars live here
-- **> 6 GB**: wheat (~15 GB) falls here; likely genuinely beyond our upload envelope
-- **> 10 GB**: known oversized, already tagged `skip_oversized` at queue-generation time (1 item currently)
+On 2026-04-19 a 9.35 GB Triticum timopheevii build (run `24633969340`) succeeded through the entire pipeline (FASTA download, 2bit conversion, R CMD build) and then failed at `gh release create` with:
 
-After the proposed fixes land, re-run the two cancelled items and a couple of 5-6 GB candidates to pin down where the real wall is.
+```
+HTTP 422: Validation Failed
+size must be less than 2147483648
+```
+
+That's exactly 2 GiB. GitHub's Release asset API rejects larger files.
+
+### Empirical genome-size → tarball-size ratio
+
+| Genome | Tarball | Ratio |
+|---|---|---|
+| Hordeum vulgare 5.3 GB | 1.00 GB | 18.9% |
+| Orycteropus afer 4.44 GB | 893 MB | 20.1% |
+| Chrysochloris asiatica 4.21 GB | 881 MB | 20.9% |
+
+Average: ~20%. A 2 GiB tarball cap translates to a **~10 GB genome ceiling** for the current architecture.
+
+### Recommended `skip_oversized` threshold
+
+| Zone | Threshold | Behavior |
+|---|---|---|
+| Safe | ≤ 8 GB genome | proceed; <1.6 GB tarball gives comfortable margin |
+| Caution | 8-10 GB genome | attempt but likely fail at upload |
+| Hard skip | ≥ 10 GB genome | mark `skip_oversized` at queue time |
+
+Current queue has only 1 item tagged `skip_oversized` (Triticum dicoccoides, 10.68 GB — correct). Others likely slip through because Ensembl items lack `genome_size_mb` in the queue. Proper enrichment of Ensembl genome sizes is a prerequisite for acting on this threshold.
+
+### Paths to raise the ceiling beyond 10 GB
+
+1. **Cloudflare R2 + custom repo index** — R2 has no per-file limit; use it as the tarball host and point `install.packages()` URLs there. Preserves the architecture pattern but adds a second provider. (moderate effort)
+2. **Zenodo deposit** — permanent DOI + no per-file limit (up to 50 GB per record). Best for papers/citability, more workflow work.
+3. **Split tarball** — ugly, breaks `install.packages()`. Not recommended.
+
+### Second failure from this testing round
+
+#### Avena longiglumis (run 24633904184, 2026-04-19)
+
+- **Size**: 7.40 GB — inside the safe zone
+- **Accession**: GCA_910589755.1
+- **Cause**: resolver gap, not size. EnsemblPlants hosts this species at path `avena_longiglumis_gca910589755v1cm/` — the `cm` suffix was missing from our variant list.
+- **Fixed in commit** `6b92248` — variant list now includes `_gca<digits>v<ver>cm` form. Unblocks Avena longiglumis and its 4 siblings (atlantica, byzantina, eriantha, insularis).
 
 ## Action items
 
