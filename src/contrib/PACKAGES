@@ -7417,3 +7417,7 @@ NeedsCompilation: no
 Package: BSgenome.Wcocos.Ensembl.Wolco1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccoronata.Ensembl.CaprcoroCBS61796V1
+Version: 1.0.0
+NeedsCompilation: no
