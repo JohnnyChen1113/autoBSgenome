@@ -7845,3 +7845,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM189v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bgalanthina.Ensembl.ASM491687v1
+Version: 1.0.0
+NeedsCompilation: no
