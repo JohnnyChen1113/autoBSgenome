@@ -8149,3 +8149,7 @@ NeedsCompilation: no
 Package: BSgenome.Aflagrans.Ensembl.DF10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.ASM799451v1
+Version: 1.0.0
+NeedsCompilation: no
