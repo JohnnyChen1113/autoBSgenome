@@ -8281,3 +8281,7 @@ NeedsCompilation: no
 Package: BSgenome.Ooligospora.Ensembl.ASM1106671v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Larida.Ensembl.CFIALariEG2017
+Version: 1.0.0
+NeedsCompilation: no
