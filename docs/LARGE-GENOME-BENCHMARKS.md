@@ -22,6 +22,7 @@ Timings include the full pipeline end-to-end:
 | 2026-04-19 | *Triticum timopheevii* | `WRC_timopheevii_genome_with_organelles` | 9.35 GB | 2.20 GB | Zenodo | **7 min 53 s** | [10.5281/zenodo.19653884](https://doi.org/10.5281/zenodo.19653884) | [24634536259](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24634536259) |
 | 2026-04-19 | *Triticum aestivum* cv. Chinese Spring | `IWGSC_RefSeq_v2.1` | **14.57 GB** | **3.43 GB** | Zenodo | **12 min 05 s** | [10.5281/zenodo.19655002](https://doi.org/10.5281/zenodo.19655002) | [24637137434](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24637137434) |
 | 2026-04-19 | *Pinus taeda* (loblolly pine) | `Ptaeda2.0` | **22.10 GB** | **5.51 GB** | Zenodo (`-long` 2bit) | **34 min 18 s** | [10.5281/zenodo.19655359](https://doi.org/10.5281/zenodo.19655359) | [24637880719](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24637880719) |
+| 2026-04-20 | *Neoceratodus forsteri* (Australian lungfish) | `neoFor_v3.1` | **34.56 GB** | **9.04 GB** | Zenodo (`-long` 2bit + external GNU tar) | **35 min 20 s** | [10.5281/zenodo.19656794](https://doi.org/10.5281/zenodo.19656794) | [24644421308](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24644421308) |
 
 ## Per-step breakdown (14.57 GB bread wheat, as illustrative case)
 
@@ -97,7 +98,7 @@ Known eukaryote genomes larger than 14.57 GB that are candidates for pushing the
 
 **Hard limits** to watch:
 - Zenodo per-record: 50 GB → rules out *Paris japonica* and most *Fritillaria* without chunking
-- GHA runner free disk: ~75 GB usable on standard `ubuntu-latest` → at peak FASTA + 2bit + tarball co-exist
+- GHA runner free disk: empirically **~144 GB total**, ~88 GB available at job start on `ubuntu-latest` (corrected from earlier estimates; measured on the lungfish run)
 - GHA build job `timeout-minutes: 60` → linear extrapolation gives ~50 min at 50 GB genome; safe
 
 ## Disk-usage defense layers (order of cheapness)
@@ -156,8 +157,11 @@ Evidence from our upper-bound tests on the same free-tier runner:
 | *Triticum aestivum* IWGSC v2.1 | 14.57 GB | ~21 large scaffolds | ✅ built in 12:05 |
 | *Pinus taeda* Ptaeda2.0 | 22.10 GB | ~few thousand scaffolds | ✅ built in 34:18 |
 | *Ambystoma mexicanum* AmbMex60DD | 28.21 GB | **27,157 contigs** | ❌ runner killed at R-side forge |
+| *Neoceratodus forsteri* neoFor_v3.1 | **34.56 GB** | **46 chromosome-level seqs** | ✅ built in 35:20, forge peak mem 708 MB |
 
 The memory footprint of `forgeBSgenomeDataPkg` and `R CMD build` grows with per-sequence object overhead in R, not with base-count. Bread wheat's 14.57 GB spread across 21 scaffolds produces a much smaller in-memory object graph than axolotl's 28.21 GB fragmented into 27,000 contigs, even though bread wheat has ~half the DNA.
+
+**Decisive empirical confirmation**: Australian lungfish (*Neoceratodus forsteri*, 34.56 GB, 46 chromosome-level sequences) built end-to-end in 35 minutes with a forge-stage peak RSS of **708 MB**. Axolotl (*Ambystoma mexicanum*, 28.21 GB, 27,157 contigs) on the same infrastructure OOM'd at the forge stage. Lungfish is 23% *larger* in base-count yet uses >20× *less* R memory during forge, because its sequence count is 591× lower. This is a same-stack, same-step, different-input comparison that isolates the contiguity axis.
 
 Framing for the paper: "Practical scale-out of BSgenome construction is bounded by the number of sequence records rather than total genome size. Chromosome-level reference assemblies — the target for which BSgenome packages are most useful — build reliably up to and beyond 22 GB on free-tier infrastructure. Draft assemblies with tens of thousands of small contigs compress the effective ceiling because R-side package assembly is per-sequence."
 
