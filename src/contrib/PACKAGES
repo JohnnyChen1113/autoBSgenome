@@ -7645,3 +7645,7 @@ NeedsCompilation: no
 Package: BSgenome.Huvarum.Ensembl.Huva20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491848v1
+Version: 1.0.0
+NeedsCompilation: no
