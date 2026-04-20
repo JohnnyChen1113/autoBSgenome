@@ -7885,3 +7885,7 @@ NeedsCompilation: no
 Package: BSgenome.Klactis.Ensembl.ASM251v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vpolyspora.Ensembl.ASM15003v1
+Version: 1.0.0
+NeedsCompilation: no
