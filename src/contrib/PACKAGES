@@ -7817,3 +7817,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM1463v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Remersonii.Ensembl.ASM96859v1
+Version: 1.0.0
+NeedsCompilation: no
