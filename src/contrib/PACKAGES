@@ -7925,3 +7925,7 @@ NeedsCompilation: no
 Package: BSgenome.Tthermophilus.Ensembl.ASM22609v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rmicrosporus.Ensembl.RhimiATCC115591
+Version: 1.0.0
+NeedsCompilation: no
