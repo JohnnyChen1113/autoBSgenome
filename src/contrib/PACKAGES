@@ -7741,3 +7741,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM978v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vhumicola.Ensembl.ASM806527v1
+Version: 1.0.0
+NeedsCompilation: no
