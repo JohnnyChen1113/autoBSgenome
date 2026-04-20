@@ -7489,3 +7489,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcoronata.Ensembl.ASM287327v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsp.Ensembl.ASM294641v1
+Version: 1.0.0
+NeedsCompilation: no
