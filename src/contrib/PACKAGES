@@ -7905,3 +7905,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptriticirepentis.Ensembl.PtrV0001
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Alentulus.Ensembl.ASM1072491v1
+Version: 1.0.0
+NeedsCompilation: no
