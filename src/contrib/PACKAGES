@@ -7549,3 +7549,7 @@ NeedsCompilation: no
 Package: BSgenome.Wichthyophaga.Ensembl.ASM491830v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vpalustris.Ensembl.Ustsp1
+Version: 1.0.0
+NeedsCompilation: no
