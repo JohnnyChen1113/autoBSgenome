@@ -8137,3 +8137,7 @@ NeedsCompilation: no
 Package: BSgenome.Phyperparasitica.Ensembl.Psehy1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bporri.Ensembl.ASM478626v1
+Version: 1.0.0
+NeedsCompilation: no
