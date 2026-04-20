@@ -7949,3 +7949,7 @@ NeedsCompilation: no
 Package: BSgenome.Rmicrosporus.Ensembl.RhimiATCC528141
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.ASM593051v1
+Version: 1.0.0
+NeedsCompilation: no
