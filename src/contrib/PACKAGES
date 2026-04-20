@@ -8105,3 +8105,7 @@ NeedsCompilation: no
 Package: BSgenome.Sracemosum.Ensembl.Synrac1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491713v1
+Version: 1.0.0
+NeedsCompilation: no
