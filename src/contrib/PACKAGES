@@ -7545,3 +7545,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmiltonrushii.Ensembl.Meimi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wichthyophaga.Ensembl.ASM491830v1
+Version: 1.0.0
+NeedsCompilation: no
