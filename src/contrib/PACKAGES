@@ -7541,3 +7541,7 @@ NeedsCompilation: no
 Package: BSgenome.Pverticillata.Ensembl.MortvertNRRL6337V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmiltonrushii.Ensembl.Meimi1
+Version: 1.0.0
+NeedsCompilation: no
