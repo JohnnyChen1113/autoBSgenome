@@ -7749,3 +7749,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM1450v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tequinum.Ensembl.ASM15117v1
+Version: 1.0.0
+NeedsCompilation: no
