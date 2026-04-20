@@ -7789,3 +7789,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsqualens.Ensembl.Dicsqu183701
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491796v1
+Version: 1.0.0
+NeedsCompilation: no
