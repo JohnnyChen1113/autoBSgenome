@@ -7573,3 +7573,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcyperi.Ensembl.Tescy1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491852v1
+Version: 1.0.0
+NeedsCompilation: no
