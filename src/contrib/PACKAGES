@@ -7517,3 +7517,7 @@ NeedsCompilation: no
 Package: BSgenome.Lquebecensis.Ensembl.ASM290092v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Jrosea.Ensembl.Jamsp1
+Version: 1.0.0
+NeedsCompilation: no
