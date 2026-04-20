@@ -8049,3 +8049,7 @@ NeedsCompilation: no
 Package: BSgenome.Apullulans.Ensembl.ASM491750v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gcichoracearum.Ensembl.ASM361119v1
+Version: 1.0.0
+NeedsCompilation: no
