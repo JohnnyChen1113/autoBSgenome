@@ -8201,3 +8201,7 @@ NeedsCompilation: no
 Package: BSgenome.Mrileyi.Ensembl.ASM786632v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bcinerea.Ensembl.BcDW1
+Version: 1.0.0
+NeedsCompilation: no
