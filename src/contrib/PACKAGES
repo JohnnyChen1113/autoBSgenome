@@ -8017,3 +8017,7 @@ NeedsCompilation: no
 Package: BSgenome.Arepens.Ensembl.Absrep1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.FOFOSC3aV1
+Version: 1.0.0
+NeedsCompilation: no
