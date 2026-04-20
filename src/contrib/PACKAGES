@@ -7509,3 +7509,7 @@ NeedsCompilation: no
 Package: BSgenome.Pglucosiphilum.Ensembl.Rhodsp1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM1479v1
+Version: 1.0.0
+NeedsCompilation: no
