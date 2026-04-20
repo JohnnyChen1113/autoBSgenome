@@ -7465,3 +7465,7 @@ NeedsCompilation: no
 Package: BSgenome.Aingoldii.Ensembl.Acain1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csp.Ensembl.Hirsu2
+Version: 1.0.0
+NeedsCompilation: no
