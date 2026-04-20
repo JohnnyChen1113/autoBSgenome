@@ -7653,3 +7653,7 @@ NeedsCompilation: no
 Package: BSgenome.Cfloricola.Ensembl.TsucwingDSM27421V6
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wichthyophaga.Ensembl.ASM491841v1
+Version: 1.0.0
+NeedsCompilation: no
