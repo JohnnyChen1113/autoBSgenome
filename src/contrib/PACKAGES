@@ -7825,3 +7825,7 @@ NeedsCompilation: no
 Package: BSgenome.Hminnesotensis.Ensembl.ASM95604v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM1078v1
+Version: 1.0.0
+NeedsCompilation: no
