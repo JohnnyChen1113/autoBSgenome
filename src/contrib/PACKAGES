@@ -7929,3 +7929,7 @@ NeedsCompilation: no
 Package: BSgenome.Rmicrosporus.Ensembl.RhimiATCC115591
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csp.Ensembl.ASM369366v1
+Version: 1.0.0
+NeedsCompilation: no
