@@ -25,6 +25,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Initialize build metrics
+        run: |
+          echo '{"schema_version":1}' > /tmp/build_metrics.json
+          # Capture runner hardware profile once for context (RAM, disk, CPU)
+          TOTAL_MEM_KB=$(awk '/MemTotal/ {print $2}' /proc/meminfo)
+          DISK_TOTAL_KB=$(df -Pk . | awk 'NR==2 {print $2}')
+          DISK_AVAIL_KB=$(df -Pk . | awk 'NR==2 {print $4}')
+          python3 scripts/record_metric.py runner.total_mem_mb $((TOTAL_MEM_KB / 1024))
+          python3 scripts/record_metric.py runner.disk_total_gb $(awk "BEGIN{printf \"%.2f\", $DISK_TOTAL_KB/1024/1024}")
+          python3 scripts/record_metric.py runner.disk_avail_start_gb $(awk "BEGIN{printf \"%.2f\", $DISK_AVAIL_KB/1024/1024}")
+          python3 scripts/record_metric.py runner.cpu_count $(nproc)
+
       - name: Parse build parameters
         id: params
         run: |
@@ -56,6 +68,7 @@ jobs:
       - name: Download FASTA from NCBI
         if: steps.params.outputs.data_source == 'ncbi'
         run: |
+          START=$(date +%s)
           ACCESSION="${{ steps.params.outputs.accession }}"
           echo "Downloading FASTA for ${ACCESSION} from NCBI..."
           datasets download genome accession "${ACCESSION}" --include genome --filename genome.zip
@@ -65,13 +78,17 @@ jobs:
             echo "ERROR: No FASTA file found in download"
             exit 1
           fi
-          # Use mv (not cp) + immediate cleanup to avoid two full copies of
-          # the FASTA on disk. For a 28 GB genome this saves ~28 GB plus the
-          # ~8 GB zip that would otherwise linger.
           mv "$FASTA" genome.fa
           rm -f genome.zip
           rm -rf ncbi_dataset README.md md5sum.txt
           ls -lh genome.fa
+
+          END=$(date +%s)
+          FASTA_SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
+          DISK_AVAIL_KB=$(df -Pk . | awk 'NR==2 {print $4}')
+          python3 scripts/record_metric.py timings_sec.fasta_download $((END - START))
+          python3 scripts/record_metric.py fasta_size_bytes $FASTA_SIZE
+          python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Download FASTA from Ensembl
         if: steps.params.outputs.data_source == 'ensembl'
@@ -92,9 +109,15 @@ jobs:
             exit 1
           fi
           echo "Resolved: $URL"
+          START=$(date +%s)
           curl -fL -o genome.fa.gz "$URL"
           gunzip genome.fa.gz
           ls -lh genome.fa
+          END=$(date +%s)
+          FASTA_SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
+          python3 scripts/record_metric.py timings_sec.fasta_download $((END - START))
+          python3 scripts/record_metric.py fasta_size_bytes $FASTA_SIZE
+          python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Extract FASTA headers and stats
         id: fasta_info
@@ -112,26 +135,28 @@ jobs:
 
       - name: Convert FASTA to 2bit
         run: |
-          # Use -long for genomes likely to produce a 2bit file > 4 GB.
-          # The default 2bit format has a 32-bit index and fails with
-          # "index overflow" past 4 GB output. -long switches to 64-bit indexes.
-          # Threshold at 12 GB input FASTA is conservative; 2bit is roughly
-          # 25-30% of raw FASTA size, so 12 GB FASTA → ~3.5 GB 2bit (close
-          # to the 4 GB ceiling).
+          # -long for FASTA > 12 GB (2bit default 4 GB cap; -long = 64-bit index)
+          START=$(date +%s)
           SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
           THRESHOLD=$((12 * 1024 * 1024 * 1024))
+          USED_LONG=false
           if [ "$SIZE" -gt "$THRESHOLD" ]; then
             echo "Large FASTA ($SIZE bytes); using -long 2bit format"
             faToTwoBit -long genome.fa genome.2bit
+            USED_LONG=true
           else
             faToTwoBit genome.fa genome.2bit
           fi
           ls -lh genome.2bit
-          # Delete raw FASTA now that the 2bit is produced. R CMD build and
-          # all downstream steps read only the 2bit. This reclaims one
-          # genome-sized block of disk (up to ~30 GB on huge assemblies).
           rm -f genome.fa
           df -h . | tail -2
+
+          END=$(date +%s)
+          TWOBIT_SIZE=$(stat -c%s genome.2bit 2>/dev/null || stat -f%z genome.2bit 2>/dev/null || echo 0)
+          python3 scripts/record_metric.py timings_sec.fasta_to_2bit $((END - START))
+          python3 scripts/record_metric.py twobit_size_bytes $TWOBIT_SIZE
+          python3 scripts/record_metric.py used_long_2bit $USED_LONG
+          python3 scripts/record_metric.py peak_disk_gb.after_2bit $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Generate seed file
         run: |
@@ -174,12 +199,9 @@ jobs:
           echo "=== Seed file ===" && cat "${PACKAGE}.seed"
 
       - name: Forge BSgenome data package (R)
-        # Split out from R CMD build so the failure log points cleanly at
-        # forge vs at R CMD build's own checking overhead. Isolating these
-        # two is how we diagnose memory issues on very large / fragmented
-        # assemblies (e.g. Ambystoma mexicanum 28.21 GB / 27,157 contigs).
         run: |
           PACKAGE="${{ steps.params.outputs.package_name }}"
+          START=$(date +%s)
           Rscript -e "
             suppressPackageStartupMessages(library(BSgenome))
             tryCatch({
@@ -193,26 +215,51 @@ jobs:
                 file.copy('./genome.2bit', './${PACKAGE}/inst/extdata/single_sequences.2bit')
               }
             })
-          "
+            # Report peak RSS for this R process — VmHWM is the high-water mark.
+            status <- readLines('/proc/self/status')
+            hwm <- grep('^VmHWM:', status, value = TRUE)
+            if (length(hwm)) cat(sprintf('METRIC_FORGE_HWM_KB=%s\n', sub('[^0-9]*([0-9]+).*', '\\\\1', hwm)))
+          " 2>&1 | tee /tmp/forge.log
+
           if [ -f genome.2bit ] && [ -f "./${PACKAGE}/inst/extdata/single_sequences.2bit" ]; then
             echo "Removing source genome.2bit (already copied into package)"
             rm -f genome.2bit
           fi
           df -h . | tail -2
 
+          END=$(date +%s)
+          HWM_KB=$(grep '^METRIC_FORGE_HWM_KB=' /tmp/forge.log | tail -1 | sed 's/.*=//')
+          python3 scripts/record_metric.py timings_sec.forge $((END - START))
+          [ -n "$HWM_KB" ] && python3 scripts/record_metric.py peak_mem_mb.forge $((HWM_KB / 1024)) || true
+          python3 scripts/record_metric.py peak_disk_gb.after_forge $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+
       - name: R CMD build (assemble tarball)
         run: |
           PACKAGE="${{ steps.params.outputs.package_name }}"
-          # --no-manual skips pdflatex of man pages (saves ~50 MB tempfiles)
-          # --no-build-vignettes skips vignette evaluation (BSgenome packages
-          # ship none, so this is pure overhead elimination)
-          # Both flags reduce R CMD build's peak memory/disk footprint, which
-          # matters most on large fragmented assemblies.
-          R CMD build --no-manual --no-build-vignettes "${PACKAGE}"
+          START=$(date +%s)
+          # Wrap with GNU time if available, so we capture Max RSS across the
+          # whole R-CMD-build subprocess tree (plain R cannot self-report its
+          # subprocesses). Fall back to plain invocation if time(1) is missing.
+          if command -v /usr/bin/time >/dev/null 2>&1; then
+            /usr/bin/time -v -o /tmp/rbuild_time.log \
+              R CMD build --no-manual --no-build-vignettes "${PACKAGE}"
+          else
+            R CMD build --no-manual --no-build-vignettes "${PACKAGE}"
+          fi
           ls -lh ${PACKAGE}_*.tar.gz
-          # Drop staging dir once tarball exists (contains another 2bit copy).
           rm -rf "${PACKAGE}"
           df -h . | tail -2
+
+          END=$(date +%s)
+          python3 scripts/record_metric.py timings_sec.rcmd_build $((END - START))
+          if [ -f /tmp/rbuild_time.log ]; then
+            MAX_KB=$(grep "Maximum resident set size" /tmp/rbuild_time.log | awk '{print $NF}')
+            [ -n "$MAX_KB" ] && python3 scripts/record_metric.py peak_mem_mb.rcmd_build $((MAX_KB / 1024)) || true
+          fi
+          TARBALL=$(ls ${PACKAGE}_*.tar.gz | head -1)
+          TB_SIZE=$(stat -c%s "$TARBALL" 2>/dev/null || stat -f%z "$TARBALL" 2>/dev/null || echo 0)
+          python3 scripts/record_metric.py tarball_size_bytes $TB_SIZE
+          python3 scripts/record_metric.py peak_disk_gb.after_rcmd_build $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Determine storage backend
         id: storage
@@ -319,10 +366,24 @@ jobs:
           Published via [AutoBSgenome](https://autobsgenome.pages.dev)."
           fi  # end: if SKIP_UPLOAD != 1
 
-          # Trigger index update on gh-pages
+          # Trigger index update on gh-pages. Pack seq_ids + metrics into
+          # storage_info to stay under the 10-property client_payload cap.
           FILESIZE=$(stat -c%s "${TARBALL}" 2>/dev/null || stat -f%z "${TARBALL}" 2>/dev/null || echo "0")
           SEQ_IDS="${{ steps.fasta_info.outputs.seq_ids }}"
           SEQ_COUNT="${{ steps.fasta_info.outputs.seq_count }}"
+          # Record seq_count in metrics too so it lives alongside the rest.
+          python3 scripts/record_metric.py seq_count "${SEQ_COUNT:-0}"
+          STORAGE_INFO=$(SEQ_IDS="$SEQ_IDS" python3 -c "
+          import json, os
+          try:
+              metrics = json.load(open('/tmp/build_metrics.json'))
+          except Exception:
+              metrics = {}
+          print(json.dumps({
+              'storage': 'github-release',
+              'seq_ids': os.environ.get('SEQ_IDS',''),
+              'metrics': metrics,
+          }))")
           gh api repos/${{ github.repository }}/dispatches \
             --method POST \
             -f event_type=update_repo_index \
@@ -334,8 +395,8 @@ jobs:
             -f "client_payload[accession]=${ACCESSION}" \
             -f "client_payload[file_name]=${TARBALL}" \
             -f "client_payload[file_size]=${FILESIZE}" \
-            -f "client_payload[seq_ids]=${SEQ_IDS}" \
-            -f "client_payload[seq_count]=${SEQ_COUNT}"
+            -f "client_payload[seq_count]=${SEQ_COUNT}" \
+            -f "client_payload[storage_info]=${STORAGE_INFO}"
 
       - name: Publish oversized tarball to Zenodo
         if: steps.storage.outputs.backend == 'zenodo'
@@ -385,11 +446,22 @@ jobs:
           echo "Zenodo DOI: $DOI"
           echo "Zenodo URL: $URL"
 
-          # repository_dispatch client_payload is capped at 10 properties, so
-          # pack storage+doi+download_url into a single JSON field.
-          STORAGE_INFO=$(python3 -c "import json,os; print(json.dumps({'storage':'zenodo','doi':os.environ['DOI'],'download_url':os.environ['URL']}))" \
-            DOI="$DOI" URL="$URL" 2>/dev/null || \
-            python3 -c "import json,sys; print(json.dumps({'storage':'zenodo','doi':sys.argv[1],'download_url':sys.argv[2]}))" "$DOI" "$URL")
+          # Pack storage + seq_ids + metrics into one JSON field so we stay
+          # under the 10-property client_payload cap.
+          python3 scripts/record_metric.py seq_count "${SEQ_COUNT:-0}"
+          STORAGE_INFO=$(DOI="$DOI" URL="$URL" SEQ_IDS="$SEQ_IDS" python3 -c "
+          import json, os
+          try:
+              metrics = json.load(open('/tmp/build_metrics.json'))
+          except Exception:
+              metrics = {}
+          print(json.dumps({
+              'storage': 'zenodo',
+              'doi': os.environ.get('DOI',''),
+              'download_url': os.environ.get('URL',''),
+              'seq_ids': os.environ.get('SEQ_IDS',''),
+              'metrics': metrics,
+          }))")
 
           gh api repos/${{ github.repository }}/dispatches \
             --method POST \
@@ -402,7 +474,7 @@ jobs:
             -f "client_payload[accession]=${ACCESSION}" \
             -f "client_payload[file_name]=${TARBALL}" \
             -f "client_payload[file_size]=${FILESIZE}" \
-            -f "client_payload[seq_ids]=${SEQ_IDS}" \
+            -f "client_payload[seq_count]=${SEQ_COUNT}" \
             -f "client_payload[storage_info]=${STORAGE_INFO}"
 
       - name: Report failure

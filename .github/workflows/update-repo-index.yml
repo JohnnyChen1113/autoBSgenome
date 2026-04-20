@@ -32,6 +32,10 @@ jobs:
           STORAGE=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('storage',''))" "$STORAGE_INFO")
           EXTERNAL_URL=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('download_url',''))" "$STORAGE_INFO")
           DOI=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('doi',''))" "$STORAGE_INFO")
+          # seq_ids moved into storage_info to stay under the 10-property cap
+          SEQ_IDS_PACKED=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('seq_ids',''))" "$STORAGE_INFO")
+          if [ -n "$SEQ_IDS_PACKED" ]; then SEQ_IDS="$SEQ_IDS_PACKED"; fi
+          METRICS_JSON=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(json.dumps(d.get('metrics',{})))" "$STORAGE_INFO")
 
           # Add or update entry in packages.json (supports organism-centric format)
           python3 -c "
@@ -92,6 +96,10 @@ jobs:
           external_url = '${EXTERNAL_URL}'
           doi = '${DOI}'
           default_url = 'https://github.com/${{ github.repository }}/releases/download/pkg-${PACKAGE}/${FILE_NAME}'
+          try:
+              metrics_blob = json.loads('''${METRICS_JSON}''')
+          except Exception:
+              metrics_blob = {}
           new_entry = {
               'package': '${PACKAGE}',
               'version': '${VERSION}',
@@ -113,6 +121,8 @@ jobs:
           }
           if doi:
               new_entry['doi'] = doi
+          if metrics_blob:
+              new_entry['metrics'] = metrics_blob
           flat.append(new_entry)
 
           # Rebuild organism-centric format
