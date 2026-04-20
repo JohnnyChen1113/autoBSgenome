@@ -7801,3 +7801,7 @@ NeedsCompilation: no
 Package: BSgenome.Ntetrasperma.Ensembl.v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vmalicola.Ensembl.ASM379531v1
+Version: 1.0.0
+NeedsCompilation: no
