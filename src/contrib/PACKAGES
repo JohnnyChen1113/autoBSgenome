@@ -8129,3 +8129,7 @@ NeedsCompilation: no
 Package: BSgenome.Foxysporum.Ensembl.FoC125v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lmacrostomum.Ensembl.Lopma1
+Version: 1.0.0
+NeedsCompilation: no
