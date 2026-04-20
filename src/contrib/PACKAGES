@@ -7585,3 +7585,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgraminis.Ensembl.PgtUg99
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ajaponicus.Ensembl.Aspjap1
+Version: 1.0.0
+NeedsCompilation: no
