@@ -7793,3 +7793,7 @@ NeedsCompilation: no
 Package: BSgenome.Wmellicola.Ensembl.ASM491796v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dseriata.Ensembl.UCDDS831v01
+Version: 1.0.0
+NeedsCompilation: no
