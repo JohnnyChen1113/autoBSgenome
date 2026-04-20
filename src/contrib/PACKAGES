@@ -7821,3 +7821,7 @@ NeedsCompilation: no
 Package: BSgenome.Remersonii.Ensembl.ASM96859v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hminnesotensis.Ensembl.ASM95604v1
+Version: 1.0.0
+NeedsCompilation: no
