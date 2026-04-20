@@ -7677,3 +7677,7 @@ NeedsCompilation: no
 Package: BSgenome.Wichthyophaga.Ensembl.ASM491875v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rmellea.Ensembl.Ricmel1
+Version: 1.0.0
+NeedsCompilation: no
