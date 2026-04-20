@@ -8253,3 +8253,7 @@ NeedsCompilation: no
 Package: BSgenome.Vechinocandica.Ensembl.ASM335714v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aterreus.Ensembl.AterIFO636501
+Version: 1.0.0
+NeedsCompilation: no
