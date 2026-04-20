@@ -8117,3 +8117,7 @@ NeedsCompilation: no
 Package: BSgenome.Hwerneckii.Ensembl.ASM370461v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mpulcherrima.Ensembl.ASM421770v1
+Version: 1.0.0
+NeedsCompilation: no
