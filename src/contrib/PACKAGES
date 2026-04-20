@@ -7697,3 +7697,7 @@ NeedsCompilation: no
 Package: BSgenome.Arambellii.Ensembl.ASM98664v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sgraminicola.Ensembl.PGRAMIIB10
+Version: 1.0.0
+NeedsCompilation: no
