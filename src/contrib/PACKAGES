@@ -8041,3 +8041,7 @@ NeedsCompilation: no
 Package: BSgenome.Msp.Ensembl.ASM415505v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cfructicola.Ensembl.ASM977102v1
+Version: 1.0.0
+NeedsCompilation: no
