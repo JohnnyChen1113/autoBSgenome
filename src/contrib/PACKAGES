@@ -7501,3 +7501,7 @@ NeedsCompilation: no
 Package: BSgenome.Tparadoxum.Ensembl.ASM291650v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pstriiformis.Ensembl.ASM292006v1
+Version: 1.0.0
+NeedsCompilation: no
