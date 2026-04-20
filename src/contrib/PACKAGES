@@ -7953,3 +7953,7 @@ NeedsCompilation: no
 Package: BSgenome.Foxysporum.Ensembl.ASM593051v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clusitaniae.Ensembl.ASM949809v1
+Version: 1.0.0
+NeedsCompilation: no
