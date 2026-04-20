@@ -8097,3 +8097,7 @@ NeedsCompilation: no
 Package: BSgenome.Pfructicola.Ensembl.ASM159280v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491782v1
+Version: 1.0.0
+NeedsCompilation: no
