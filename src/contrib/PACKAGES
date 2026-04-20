@@ -7869,3 +7869,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScQA23v01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ASM18143v1
+Version: 1.0.0
+NeedsCompilation: no
