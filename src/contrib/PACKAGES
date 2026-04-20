@@ -8233,3 +8233,7 @@ NeedsCompilation: no
 Package: BSgenome.Aarborescens.Ensembl.ASM415481v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tbisporula.Ensembl.Tribi1
+Version: 1.0.0
+NeedsCompilation: no
