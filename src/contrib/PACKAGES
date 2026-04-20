@@ -8077,3 +8077,7 @@ NeedsCompilation: no
 Package: BSgenome.Vinaequalis.Ensembl.ASM335107v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Salkalinus.Ensembl.Sodal1
+Version: 1.0.0
+NeedsCompilation: no
