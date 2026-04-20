@@ -8181,3 +8181,7 @@ NeedsCompilation: no
 Package: BSgenome.Aavenaceus.Ensembl.Aspave1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmarneffei.Ensembl.JCVIPMFA120
+Version: 1.0.0
+NeedsCompilation: no
