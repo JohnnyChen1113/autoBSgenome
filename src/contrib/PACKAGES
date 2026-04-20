@@ -8057,3 +8057,7 @@ NeedsCompilation: no
 Package: BSgenome.Ffujikuroi.Ensembl.ASM966305v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Elata.Ensembl.UCREL1V03
+Version: 1.0.0
+NeedsCompilation: no
