@@ -8085,3 +8085,7 @@ NeedsCompilation: no
 Package: BSgenome.Atenuissima.Ensembl.ASM415473v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491738v1
+Version: 1.0.0
+NeedsCompilation: no
