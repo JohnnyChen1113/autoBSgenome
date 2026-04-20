@@ -8285,3 +8285,7 @@ NeedsCompilation: no
 Package: BSgenome.Larida.Ensembl.CFIALariEG2017
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfici.Ensembl.PFICI
+Version: 1.0.0
+NeedsCompilation: no
