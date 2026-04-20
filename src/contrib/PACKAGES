@@ -8121,3 +8121,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpulcherrima.Ensembl.ASM421770v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491816v1
+Version: 1.0.0
+NeedsCompilation: no
