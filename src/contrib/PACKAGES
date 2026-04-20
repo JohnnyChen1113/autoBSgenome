@@ -8157,3 +8157,7 @@ NeedsCompilation: no
 Package: BSgenome.Ooligospora.Ensembl.ASM1106679v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491779v1
+Version: 1.0.0
+NeedsCompilation: no
