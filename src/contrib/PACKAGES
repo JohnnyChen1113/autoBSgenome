@@ -7729,3 +7729,7 @@ NeedsCompilation: no
 Package: BSgenome.Wichthyophaga.Ensembl.ASM491831v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pdigitatum.Ensembl.PdigPd1v1
+Version: 1.0.0
+NeedsCompilation: no
