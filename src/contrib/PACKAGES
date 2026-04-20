@@ -8245,3 +8245,7 @@ NeedsCompilation: no
 Package: BSgenome.Csp.Ensembl.Conioc1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Belliptica.Ensembl.ASM478620v1
+Version: 1.0.0
+NeedsCompilation: no
