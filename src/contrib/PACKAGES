@@ -7989,3 +7989,7 @@ NeedsCompilation: no
 Package: BSgenome.Vdahliae.Ensembl.ASM410974v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Trubrum.Ensembl.TricrubrD6V1
+Version: 1.0.0
+NeedsCompilation: no
