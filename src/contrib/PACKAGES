@@ -7441,3 +7441,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsp.Ensembl.ASM294642v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nforsteri.NCBI.neoForv31
+Version: 1.0.0
+NeedsCompilation: no
