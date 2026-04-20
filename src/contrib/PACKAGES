@@ -7849,3 +7849,7 @@ NeedsCompilation: no
 Package: BSgenome.Bgalanthina.Ensembl.ASM491687v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ffujikuroi.Ensembl.ASM102303v1
+Version: 1.0.0
+NeedsCompilation: no
