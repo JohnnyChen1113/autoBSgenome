@@ -8089,3 +8089,7 @@ NeedsCompilation: no
 Package: BSgenome.Apullulans.Ensembl.ASM491738v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ffujikuroi.Ensembl.ASM966309v1
+Version: 1.0.0
+NeedsCompilation: no
