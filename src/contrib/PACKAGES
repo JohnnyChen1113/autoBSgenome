@@ -7665,3 +7665,7 @@ NeedsCompilation: no
 Package: BSgenome.Ffujikuroi.Ensembl.ASM102306v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491866v1
+Version: 1.0.0
+NeedsCompilation: no
