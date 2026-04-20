@@ -8029,3 +8029,7 @@ NeedsCompilation: no
 Package: BSgenome.Ndairenensis.Ensembl.ASM22711v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.FoCFus2v1
+Version: 1.0.0
+NeedsCompilation: no
