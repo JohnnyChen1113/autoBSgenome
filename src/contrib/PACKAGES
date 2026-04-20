@@ -8277,3 +8277,7 @@ NeedsCompilation: no
 Package: BSgenome.Kafricana.Ensembl.KaCBS2517
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ooligospora.Ensembl.ASM1106671v1
+Version: 1.0.0
+NeedsCompilation: no
