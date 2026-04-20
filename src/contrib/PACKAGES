@@ -7581,3 +7581,7 @@ NeedsCompilation: no
 Package: BSgenome.Vdahliae.Ensembl.ASM289298v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgraminis.Ensembl.PgtUg99
+Version: 1.0.0
+NeedsCompilation: no
