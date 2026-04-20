@@ -7469,3 +7469,7 @@ NeedsCompilation: no
 Package: BSgenome.Csp.Ensembl.Hirsu2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM1402v1
+Version: 1.0.0
+NeedsCompilation: no
