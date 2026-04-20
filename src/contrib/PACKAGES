@@ -8081,3 +8081,7 @@ NeedsCompilation: no
 Package: BSgenome.Salkalinus.Ensembl.Sodal1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Atenuissima.Ensembl.ASM415473v1
+Version: 1.0.0
+NeedsCompilation: no
