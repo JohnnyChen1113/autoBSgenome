@@ -7993,3 +7993,7 @@ NeedsCompilation: no
 Package: BSgenome.Trubrum.Ensembl.TricrubrD6V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM244v1
+Version: 1.0.0
+NeedsCompilation: no
