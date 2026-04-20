@@ -152,6 +152,18 @@ The memory footprint of `forgeBSgenomeDataPkg` and `R CMD build` grows with per-
 
 Framing for the paper: "Practical scale-out of BSgenome construction is bounded by the number of sequence records rather than total genome size. Chromosome-level reference assemblies — the target for which BSgenome packages are most useful — build reliably up to and beyond 22 GB on free-tier infrastructure. Draft assemblies with tens of thousands of small contigs compress the effective ceiling because R-side package assembly is per-sequence."
 
+### The contiguity advantage extends below R — it reaches into the 2bit layer too
+
+Contiguity is a single cause with two independent benefits in our stack:
+
+1. **R / BSgenomeForge layer**: fewer sequences → fewer per-record R objects → lower peak memory during `forgeBSgenomeDataPkg` and `R CMD build`. This is the ceiling-setting constraint we measured empirically.
+
+2. **UCSC 2bit storage layer**: the 2bit format stores actual DNA at 2 bits per base, but represents `N`s and soft-masked regions as *separate block-index entries* rather than inline. High-quality chromosome-level assemblies have few `N` stretches (mostly ACGT), so the block index stays small and compression approaches the theoretical 2-bit-per-base floor. Draft assemblies with thousands of unplaced contigs tend to have long N-padding between chunks and heavy repeat-masking, inflating the block index and degrading compression.
+
+So the same assembly-quality axis that makes an R package buildable also makes its on-disk representation more compact — both savings compound. A 40 GB chromosome-level genome produces a smaller 2bit and a smaller package than a 40 GB fragmented draft with the same raw base count.
+
+This is a worthwhile sentence for the paper because it reframes "high-quality assembly" from an abstract scientific good into a measurable infrastructure benefit — reviewers appreciate connections that travel across layers of the stack.
+
 ## Future feature idea (not implemented)
 
 Expose an optional **contig length filter** at build-submission time so users with highly fragmented assemblies can drop unplaced scaffolds below a threshold (e.g. `min_contig_length=10000`). Common in the community for ChIP-seq / ATAC-seq workflows where unplaced short scaffolds contribute little and cost a lot in per-sequence overhead. Default off (preserve faithful round-trip); opt-in from the web UI + API for users who want to build a fragmented draft assembly on free-tier infrastructure.
