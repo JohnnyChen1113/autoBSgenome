@@ -8013,3 +8013,7 @@ NeedsCompilation: no
 Package: BSgenome.Clusitaniae.Ensembl.ASM949807v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Arepens.Ensembl.Absrep1
+Version: 1.0.0
+NeedsCompilation: no
