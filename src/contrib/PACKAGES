@@ -7609,3 +7609,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM456v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsulcata.Ensembl.Helsul1
+Version: 1.0.0
+NeedsCompilation: no
