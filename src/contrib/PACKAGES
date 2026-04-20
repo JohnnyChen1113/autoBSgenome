@@ -7621,3 +7621,7 @@ NeedsCompilation: no
 Package: BSgenome.Wichthyophaga.Ensembl.ASM491789v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491807v1
+Version: 1.0.0
+NeedsCompilation: no
