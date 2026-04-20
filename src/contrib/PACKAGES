@@ -7861,3 +7861,7 @@ NeedsCompilation: no
 Package: BSgenome.Lelongata.Ensembl.MortierellaelongataAG77v20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zrhizophila.Ensembl.Zoprh1
+Version: 1.0.0
+NeedsCompilation: no
