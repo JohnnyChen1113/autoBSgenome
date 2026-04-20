@@ -7977,3 +7977,7 @@ NeedsCompilation: no
 Package: BSgenome.Ooligospora.Ensembl.ASM1106660v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hcapsulatum.Ensembl.ASM15100v2
+Version: 1.0.0
+NeedsCompilation: no
