@@ -8061,3 +8061,7 @@ NeedsCompilation: no
 Package: BSgenome.Elata.Ensembl.UCREL1V03
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491741v1
+Version: 1.0.0
+NeedsCompilation: no
