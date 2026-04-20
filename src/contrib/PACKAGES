@@ -7733,3 +7733,7 @@ NeedsCompilation: no
 Package: BSgenome.Pdigitatum.Ensembl.PdigPd1v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kcapsulata.Ensembl.AUHPRJEB4427v1
+Version: 1.0.0
+NeedsCompilation: no
