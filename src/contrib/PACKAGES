@@ -7921,3 +7921,7 @@ NeedsCompilation: no
 Package: BSgenome.Foxysporum.Ensembl.FoPGv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tthermophilus.Ensembl.ASM22609v1
+Version: 1.0.0
+NeedsCompilation: no
