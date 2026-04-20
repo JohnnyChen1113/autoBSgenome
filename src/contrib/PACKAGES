@@ -8293,3 +8293,7 @@ NeedsCompilation: no
 Package: BSgenome.Rirregularis.Ensembl.ASM159314v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fsimplex.Ensembl.ASM505986v1
+Version: 1.0.0
+NeedsCompilation: no
