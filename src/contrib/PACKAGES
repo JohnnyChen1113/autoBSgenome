@@ -7457,3 +7457,7 @@ NeedsCompilation: no
 Package: BSgenome.Rtoruloides.Ensembl.ASM98887v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM1478v1
+Version: 1.0.0
+NeedsCompilation: no
