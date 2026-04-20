@@ -7753,3 +7753,7 @@ NeedsCompilation: no
 Package: BSgenome.Tequinum.Ensembl.ASM15117v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Utrichophora.Ensembl.Utrichov1
+Version: 1.0.0
+NeedsCompilation: no
