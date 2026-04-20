@@ -7797,3 +7797,7 @@ NeedsCompilation: no
 Package: BSgenome.Dseriata.Ensembl.UCDDS831v01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ntetrasperma.Ensembl.v10
+Version: 1.0.0
+NeedsCompilation: no
