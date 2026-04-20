@@ -7565,3 +7565,7 @@ NeedsCompilation: no
 Package: BSgenome.Gdilepis.Ensembl.ASM293838v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fvenenatum.Ensembl.ASM90000737v1
+Version: 1.0.0
+NeedsCompilation: no
