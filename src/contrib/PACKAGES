@@ -7589,3 +7589,7 @@ NeedsCompilation: no
 Package: BSgenome.Ajaponicus.Ensembl.Aspjap1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aporosum.Ensembl.ASM394220v1
+Version: 1.0.0
+NeedsCompilation: no
