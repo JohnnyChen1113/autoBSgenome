@@ -46,6 +46,15 @@ Timings include the full pipeline end-to-end:
 
 ## Failures encountered on the way up
 
+### Neoceratodus forsteri (34.56 GB, chromosome-level, 50 seqs) — 2026-04-19 (first attempt)
+
+- Run: [24643756088](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24643756088)
+- Failed at step: `R CMD build (assemble tarball)` — specifically at the final `utils::tar()` call that gzips the package directory.
+- Error: `file size is limited to 8GB` — R's **internal** tar implementation (used by default in `R CMD build`) rejects archives exceeding 8 GB. The 2bit file alone was ~8.6 GB; a gzipped tar containing it would reach ~8 GB and overflow R's limit.
+- **Forge succeeded in 55 seconds with Peak RSS = 709 MB** — directly demonstrating the contiguity hypothesis. Axolotl (28.21 GB / 27,157 contigs) OOM'd during forge on the same runner; lungfish (34.56 GB / 50 seqs) forged cleanly in under a minute with <1 GB of RAM, despite being 23% larger. The binding constraint is sequence count, not base count.
+- Fix: set `R_BUILD_TAR=tar` env var on the R CMD build step so it uses the external GNU `tar` binary (no 8 GB limit; supports large files via POSIX pax format). Applied in commit immediately after this failure.
+- New documented limit (third architectural threshold): R's internal tar → 8 GB tarball limit → switches to external tar via `R_BUILD_TAR=tar`.
+
 ### Ambystoma mexicanum (28.21 GB) — 2026-04-19
 
 - Run: [24638585963](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/24638585963)

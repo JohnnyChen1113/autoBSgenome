@@ -234,6 +234,11 @@ jobs:
           python3 scripts/record_metric.py peak_disk_gb.after_forge $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: R CMD build (assemble tarball)
+        env:
+          # R's built-in utils::tar() rejects files > 8 GB. Force use of the
+          # external GNU tar binary, which has no such limit. Discovered via
+          # Neoceratodus forsteri 34.56 GB (2bit ~8.6 GB, tarball ~8 GB).
+          R_BUILD_TAR: tar
         run: |
           PACKAGE="${{ steps.params.outputs.package_name }}"
           START=$(date +%s)
