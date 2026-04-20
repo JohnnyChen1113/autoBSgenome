@@ -7717,3 +7717,7 @@ NeedsCompilation: no
 Package: BSgenome.Wmellicola.Ensembl.ASM491815v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cposadasii.Ensembl.ASM15005v1
+Version: 1.0.0
+NeedsCompilation: no
