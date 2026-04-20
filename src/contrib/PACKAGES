@@ -7713,3 +7713,7 @@ NeedsCompilation: no
 Package: BSgenome.Mrestricta.Ensembl.ASM329048v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wmellicola.Ensembl.ASM491815v1
+Version: 1.0.0
+NeedsCompilation: no
