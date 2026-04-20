@@ -8213,3 +8213,7 @@ NeedsCompilation: no
 Package: BSgenome.Ffujikuroi.Ensembl.ASM966311v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491742v1
+Version: 1.0.0
+NeedsCompilation: no
