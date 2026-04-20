@@ -7969,3 +7969,7 @@ NeedsCompilation: no
 Package: BSgenome.Ltransversale.Ensembl.Lobtra1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mbicuspidata.Ensembl.MetbiSCcomb
+Version: 1.0.0
+NeedsCompilation: no
