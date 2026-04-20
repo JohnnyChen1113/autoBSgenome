@@ -7709,3 +7709,7 @@ NeedsCompilation: no
 Package: BSgenome.Mresinicola.Ensembl.Mytre1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mrestricta.Ensembl.ASM329048v1
+Version: 1.0.0
+NeedsCompilation: no
