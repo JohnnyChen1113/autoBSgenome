@@ -8053,3 +8053,7 @@ NeedsCompilation: no
 Package: BSgenome.Gcichoracearum.Ensembl.ASM361119v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ffujikuroi.Ensembl.ASM966305v1
+Version: 1.0.0
+NeedsCompilation: no
