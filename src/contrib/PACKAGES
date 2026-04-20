@@ -7897,3 +7897,7 @@ NeedsCompilation: no
 Package: BSgenome.Tstipitatus.Ensembl.JCVITSTA130
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aglauca.Ensembl.AGv1
+Version: 1.0.0
+NeedsCompilation: no
