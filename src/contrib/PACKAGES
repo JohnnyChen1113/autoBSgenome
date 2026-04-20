@@ -8273,3 +8273,7 @@ NeedsCompilation: no
 Package: BSgenome.Pbrasiliensis.Ensembl.ParacoccibrPb18V2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kafricana.Ensembl.KaCBS2517
+Version: 1.0.0
+NeedsCompilation: no
