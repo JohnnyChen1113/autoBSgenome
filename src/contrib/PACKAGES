@@ -7937,3 +7937,7 @@ NeedsCompilation: no
 Package: BSgenome.Trubrum.Ensembl.TricmegnCBS73588V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491722v1
+Version: 1.0.0
+NeedsCompilation: no
