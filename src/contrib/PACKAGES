@@ -7965,3 +7965,7 @@ NeedsCompilation: no
 Package: BSgenome.Cauris.Ensembl.ASM716870v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ltransversale.Ensembl.Lobtra1
+Version: 1.0.0
+NeedsCompilation: no
