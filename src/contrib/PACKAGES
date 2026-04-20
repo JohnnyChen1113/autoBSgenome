@@ -7889,3 +7889,7 @@ NeedsCompilation: no
 Package: BSgenome.Vpolyspora.Ensembl.ASM15003v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Chigginsianum.Ensembl.ASM492035v1
+Version: 1.0.0
+NeedsCompilation: no
