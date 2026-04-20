@@ -7485,3 +7485,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM195v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcoronata.Ensembl.ASM287327v1
+Version: 1.0.0
+NeedsCompilation: no
