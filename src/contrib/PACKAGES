@@ -8493,3 +8493,7 @@ NeedsCompilation: no
 Package: BSgenome.Wciferrii.Ensembl.ASM31348v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csp.Ensembl.ASM370982v1
+Version: 1.0.0
+NeedsCompilation: no
