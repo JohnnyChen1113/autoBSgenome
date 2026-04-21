@@ -9093,3 +9093,7 @@ NeedsCompilation: no
 Package: BSgenome.Aalternata.Ensembl.ASM415475v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Atanneri.Ensembl.ASM479882v1
+Version: 1.0.0
+NeedsCompilation: no
