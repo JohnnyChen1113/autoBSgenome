@@ -8585,3 +8585,7 @@ NeedsCompilation: no
 Package: BSgenome.Tnubilosa.Ensembl.Ternu1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssp.Ensembl.ASM367603v1
+Version: 1.0.0
+NeedsCompilation: no
