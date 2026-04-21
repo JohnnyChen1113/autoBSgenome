@@ -8529,3 +8529,7 @@ NeedsCompilation: no
 Package: BSgenome.Apullulans.Ensembl.ASM491710v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hcapsulatum.Ensembl.ASM15011v1
+Version: 1.0.0
+NeedsCompilation: no
