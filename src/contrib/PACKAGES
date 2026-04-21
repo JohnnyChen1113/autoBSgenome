@@ -8781,3 +8781,7 @@ NeedsCompilation: no
 Package: BSgenome.Loccidentalis.Ensembl.CFIALoccEG2017
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tterrestris.Ensembl.ThteLPH172
+Version: 1.0.0
+NeedsCompilation: no
