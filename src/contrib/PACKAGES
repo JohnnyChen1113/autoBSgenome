@@ -9085,3 +9085,7 @@ NeedsCompilation: no
 Package: BSgenome.Atenuissima.Ensembl.ASM415601v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Afijiensis.Ensembl.Aspfij1
+Version: 1.0.0
+NeedsCompilation: no
