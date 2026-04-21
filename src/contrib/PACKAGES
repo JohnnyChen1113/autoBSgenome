@@ -8673,3 +8673,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.ASM14944v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ytenuis.Ensembl.Candidatenuisv10
+Version: 1.0.0
+NeedsCompilation: no
