@@ -8305,3 +8305,7 @@ NeedsCompilation: no
 Package: BSgenome.Gstellatum.Ensembl.GloniumstellatumCBS20734v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.FOCL57V1
+Version: 1.0.0
+NeedsCompilation: no
