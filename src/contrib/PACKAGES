@@ -8933,3 +8933,7 @@ NeedsCompilation: no
 Package: BSgenome.Cspinosum.Ensembl.ASM436682v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mfructicola.Ensembl.ASM869222v1
+Version: 1.0.0
+NeedsCompilation: no
