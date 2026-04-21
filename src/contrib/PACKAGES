@@ -8433,3 +8433,7 @@ NeedsCompilation: no
 Package: BSgenome.Ooligospora.Ensembl.ASM1106673v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ASM1035692v1
+Version: 1.0.0
+NeedsCompilation: no
