@@ -8657,3 +8657,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM1387v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Edermatitidis.Ensembl.ExopdermV1
+Version: 1.0.0
+NeedsCompilation: no
