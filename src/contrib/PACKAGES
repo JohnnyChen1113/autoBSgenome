@@ -8637,3 +8637,7 @@ NeedsCompilation: no
 Package: BSgenome.Bdermatitidis.Ensembl.BDATCC18188V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM1433v1
+Version: 1.0.0
+NeedsCompilation: no
