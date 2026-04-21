@@ -8753,3 +8753,7 @@ NeedsCompilation: no
 Package: BSgenome.Ylipolytica.Ensembl.YarliYB419
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Slycopersici.Ensembl.ASM326831v1
+Version: 1.0.0
+NeedsCompilation: no
