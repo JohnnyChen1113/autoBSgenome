@@ -8961,3 +8961,7 @@ NeedsCompilation: no
 Package: BSgenome.Pteres.Ensembl.ASM972867v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ngypsea.Ensembl.MSCBS118893
+Version: 1.0.0
+NeedsCompilation: no
