@@ -8921,3 +8921,7 @@ NeedsCompilation: no
 Package: BSgenome.Odisseminans.Ensembl.Ophdi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Casianum.Ensembl.ASM980641v1
+Version: 1.0.0
+NeedsCompilation: no
