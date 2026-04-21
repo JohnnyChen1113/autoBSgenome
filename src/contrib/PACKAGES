@@ -8341,3 +8341,7 @@ NeedsCompilation: no
 Package: BSgenome.Pchlamydosporia.Ensembl.PcB1v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cyegresii.Ensembl.CladyegrCBS114405V1
+Version: 1.0.0
+NeedsCompilation: no
