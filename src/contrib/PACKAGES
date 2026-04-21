@@ -9009,3 +9009,7 @@ NeedsCompilation: no
 Package: BSgenome.Apullulans.Ensembl.ASM491824v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psp.Ensembl.DG3
+Version: 1.0.0
+NeedsCompilation: no
