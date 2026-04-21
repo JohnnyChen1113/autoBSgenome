@@ -8809,3 +8809,7 @@ NeedsCompilation: no
 Package: BSgenome.Pbrasiliensis.Ensembl.ParacoccibrPb03V2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Poxalicum.Ensembl.pdev10
+Version: 1.0.0
+NeedsCompilation: no
