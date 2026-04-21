@@ -8581,3 +8581,7 @@ NeedsCompilation: no
 Package: BSgenome.Pteres.Ensembl.ASM972863v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tnubilosa.Ensembl.Ternu1
+Version: 1.0.0
+NeedsCompilation: no
