@@ -8737,3 +8737,7 @@ NeedsCompilation: no
 Package: BSgenome.Cvenosus.Ensembl.Chove1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptracheiphilus.Ensembl.Photr1
+Version: 1.0.0
+NeedsCompilation: no
