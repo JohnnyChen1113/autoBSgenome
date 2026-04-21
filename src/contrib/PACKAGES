@@ -8441,3 +8441,7 @@ NeedsCompilation: no
 Package: BSgenome.Cauris.Ensembl.ASM827514v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mpulvispyrius.Ensembl.Melpu1
+Version: 1.0.0
+NeedsCompilation: no
