@@ -8677,3 +8677,7 @@ NeedsCompilation: no
 Package: BSgenome.Ytenuis.Ensembl.Candidatenuisv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sschenckii.Ensembl.SporscheATCC58251V1
+Version: 1.0.0
+NeedsCompilation: no
