@@ -8957,3 +8957,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsymphoricarpi.Ensembl.Dotsy1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pteres.Ensembl.ASM972867v1
+Version: 1.0.0
+NeedsCompilation: no
