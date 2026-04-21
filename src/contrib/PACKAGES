@@ -8369,3 +8369,7 @@ NeedsCompilation: no
 Package: BSgenome.Clusitaniae.Ensembl.ASM949813v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Trubrum.Ensembl.TricfishCBS28886V1
+Version: 1.0.0
+NeedsCompilation: no
