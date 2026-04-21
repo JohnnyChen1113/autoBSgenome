@@ -8361,3 +8361,7 @@ NeedsCompilation: no
 Package: BSgenome.Cpurpurea.Ensembl.ASM34735v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Grosea.Ensembl.ASM355032v1
+Version: 1.0.0
+NeedsCompilation: no
