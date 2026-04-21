@@ -8969,3 +8969,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM1592v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tatroviride.Ensembl.TRIATv20
+Version: 1.0.0
+NeedsCompilation: no
