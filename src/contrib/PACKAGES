@@ -8325,3 +8325,7 @@ NeedsCompilation: no
 Package: BSgenome.Cepimyces.Ensembl.CaprepimCBS60696V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aparasiticus.Ensembl.ASM95608v1
+Version: 1.0.0
+NeedsCompilation: no
