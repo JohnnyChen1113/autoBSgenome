@@ -8409,3 +8409,7 @@ NeedsCompilation: no
 Package: BSgenome.Atenuissima.Ensembl.ASM415603v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsp.Ensembl.ASM354999v1
+Version: 1.0.0
+NeedsCompilation: no
