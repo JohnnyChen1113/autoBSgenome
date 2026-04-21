@@ -8589,3 +8589,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssp.Ensembl.ASM367603v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491730v1
+Version: 1.0.0
+NeedsCompilation: no
