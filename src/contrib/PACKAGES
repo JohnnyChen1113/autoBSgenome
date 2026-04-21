@@ -9073,3 +9073,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.CandalbiP37037V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.FoA13v1
+Version: 1.0.0
+NeedsCompilation: no
