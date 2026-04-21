@@ -8417,3 +8417,7 @@ NeedsCompilation: no
 Package: BSgenome.Amulundensis.Ensembl.ASM336962v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zcellare.Ensembl.Zasce1
+Version: 1.0.0
+NeedsCompilation: no
