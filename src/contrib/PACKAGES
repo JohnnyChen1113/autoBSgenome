@@ -8713,3 +8713,7 @@ NeedsCompilation: no
 Package: BSgenome.Glozoyensis.Ensembl.GLAREA
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cglobosum.Ensembl.ASM14336v1
+Version: 1.0.0
+NeedsCompilation: no
