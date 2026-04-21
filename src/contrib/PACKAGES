@@ -8633,3 +8633,7 @@ NeedsCompilation: no
 Package: BSgenome.Hcapsulatum.Ensembl.ASM14958v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bdermatitidis.Ensembl.BDATCC18188V1
+Version: 1.0.0
+NeedsCompilation: no
