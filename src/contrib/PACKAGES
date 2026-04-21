@@ -8869,3 +8869,7 @@ NeedsCompilation: no
 Package: BSgenome.Pminimum.Ensembl.UCRPA7V03
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Proqueforti.Ensembl.PROQFM16420130607
+Version: 1.0.0
+NeedsCompilation: no
