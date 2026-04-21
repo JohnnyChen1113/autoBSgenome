@@ -8349,3 +8349,7 @@ NeedsCompilation: no
 Package: BSgenome.Aflavus.Ensembl.ASM244319v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.FOMN25V1
+Version: 1.0.0
+NeedsCompilation: no
