@@ -8613,3 +8613,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpurpureus.Ensembl.ASM654248v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScVIN13v01
+Version: 1.0.0
+NeedsCompilation: no
