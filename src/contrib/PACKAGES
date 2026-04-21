@@ -8769,3 +8769,7 @@ NeedsCompilation: no
 Package: BSgenome.Apullulans.Ensembl.ASM491762v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fflagelliforme.Ensembl.FIESC12NRRL13405FIE12Zcontigs
+Version: 1.0.0
+NeedsCompilation: no
