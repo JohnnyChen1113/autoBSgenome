@@ -8833,3 +8833,7 @@ NeedsCompilation: no
 Package: BSgenome.Bsorokiniana.Ensembl.Cocsa1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.FOPHW808V1
+Version: 1.0.0
+NeedsCompilation: no
