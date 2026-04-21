@@ -8521,3 +8521,7 @@ NeedsCompilation: no
 Package: BSgenome.Razygosporus.Ensembl.RazyCA
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csidae.Ensembl.ASM436793v1
+Version: 1.0.0
+NeedsCompilation: no
