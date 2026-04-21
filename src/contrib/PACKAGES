@@ -8609,3 +8609,7 @@ NeedsCompilation: no
 Package: BSgenome.Aflavus.Ensembl.ASM370902v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mpurpureus.Ensembl.ASM654248v1
+Version: 1.0.0
+NeedsCompilation: no
