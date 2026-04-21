@@ -8505,3 +8505,7 @@ NeedsCompilation: no
 Package: BSgenome.Cglabrata.Ensembl.ASM1011175v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Uvirens.Ensembl.Assemblyforversion1oftheVillosiclavavirensgenome
+Version: 1.0.0
+NeedsCompilation: no
