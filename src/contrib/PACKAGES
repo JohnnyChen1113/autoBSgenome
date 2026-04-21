@@ -8413,3 +8413,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsp.Ensembl.ASM354999v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amulundensis.Ensembl.ASM336962v1
+Version: 1.0.0
+NeedsCompilation: no
