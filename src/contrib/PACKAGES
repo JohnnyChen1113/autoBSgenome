@@ -8397,3 +8397,7 @@ NeedsCompilation: no
 Package: BSgenome.Rstolonifer.Ensembl.RstolCA
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hwerneckii.Ensembl.ASM370434v1
+Version: 1.0.0
+NeedsCompilation: no
