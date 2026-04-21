@@ -8621,3 +8621,7 @@ NeedsCompilation: no
 Package: BSgenome.Acostaricaensis.Ensembl.Aspcos1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Feuwallaceae.Ensembl.FeuwUCR1854v2
+Version: 1.0.0
+NeedsCompilation: no
