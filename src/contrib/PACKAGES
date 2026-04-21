@@ -8953,3 +8953,7 @@ NeedsCompilation: no
 Package: BSgenome.Atamarii.Ensembl.Asptam1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dsymphoricarpi.Ensembl.Dotsy1
+Version: 1.0.0
+NeedsCompilation: no
