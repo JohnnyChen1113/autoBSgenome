@@ -9029,3 +9029,7 @@ NeedsCompilation: no
 Package: BSgenome.Manisopliae.Ensembl.Metarhiziumanisopliae
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eaquamarina.Ensembl.ExopaquaCBS119918V1
+Version: 1.0.0
+NeedsCompilation: no
