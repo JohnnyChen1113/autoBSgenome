@@ -8729,3 +8729,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgloeosporioides.Ensembl.Colletotrichumgloeosporioides1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ooligospora.Ensembl.ASM1106692v1
+Version: 1.0.0
+NeedsCompilation: no
