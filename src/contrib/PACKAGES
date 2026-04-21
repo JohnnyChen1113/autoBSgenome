@@ -8561,3 +8561,7 @@ NeedsCompilation: no
 Package: BSgenome.Apullulans.Ensembl.ASM491727v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Jflammicorona.Ensembl.JimflGMNB391
+Version: 1.0.0
+NeedsCompilation: no
