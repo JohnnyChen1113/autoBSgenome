@@ -8693,3 +8693,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.p301
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mfarinosa.Ensembl.ASM31589v1
+Version: 1.0.0
+NeedsCompilation: no
