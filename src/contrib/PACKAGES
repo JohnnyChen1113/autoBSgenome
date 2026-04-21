@@ -8845,3 +8845,7 @@ NeedsCompilation: no
 Package: BSgenome.Trubrum.Ensembl.TricrubrMR850V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cjavanica.Ensembl.ASM698198v1
+Version: 1.0.0
+NeedsCompilation: no
