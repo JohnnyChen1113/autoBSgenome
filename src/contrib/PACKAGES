@@ -8825,3 +8825,7 @@ NeedsCompilation: no
 Package: BSgenome.Tbenhamiae.Ensembl.ASM15112v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Boryzae.Ensembl.Cochliobolusmiyabeanusv10
+Version: 1.0.0
+NeedsCompilation: no
