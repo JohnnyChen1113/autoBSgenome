@@ -9017,3 +9017,7 @@ NeedsCompilation: no
 Package: BSgenome.Sapiospermum.Ensembl.ScApio10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asubglaciale.Ensembl.AureobasidiumpullulansvarsubglacialeEXF2481v10
+Version: 1.0.0
+NeedsCompilation: no
