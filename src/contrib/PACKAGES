@@ -9069,3 +9069,7 @@ NeedsCompilation: no
 Package: BSgenome.Ctanaceti.Ensembl.ASM535089v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Calbicans.Ensembl.CandalbiP37037V1
+Version: 1.0.0
+NeedsCompilation: no
