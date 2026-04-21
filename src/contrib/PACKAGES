@@ -8477,3 +8477,7 @@ NeedsCompilation: no
 Package: BSgenome.Mlaxa.Ensembl.ASM929945v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Msp.Ensembl.ASM415591v1
+Version: 1.0.0
+NeedsCompilation: no
