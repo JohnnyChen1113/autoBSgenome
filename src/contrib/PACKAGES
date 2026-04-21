@@ -8917,3 +8917,7 @@ NeedsCompilation: no
 Package: BSgenome.Mphaseolina.Ensembl.MphMS610
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Odisseminans.Ensembl.Ophdi1
+Version: 1.0.0
+NeedsCompilation: no
