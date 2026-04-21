@@ -9037,3 +9037,7 @@ NeedsCompilation: no
 Package: BSgenome.Ooligospora.Ensembl.ASM1106656v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmarneffei.Ensembl.ASM75011v1
+Version: 1.0.0
+NeedsCompilation: no
