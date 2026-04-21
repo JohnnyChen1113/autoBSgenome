@@ -9057,3 +9057,7 @@ NeedsCompilation: no
 Package: BSgenome.Schartarum.Ensembl.S40288v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Anamibiae.Ensembl.AureobasidiumpullulansvarnamibiaeCBS14797v10
+Version: 1.0.0
+NeedsCompilation: no
