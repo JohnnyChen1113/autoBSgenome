@@ -8513,3 +8513,7 @@ NeedsCompilation: no
 Package: BSgenome.Tarundinaceum.Ensembl.TrichodermaarundinaceumIBT40837contigs
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Valfalfae.Ensembl.ASM15082v1
+Version: 1.0.0
+NeedsCompilation: no
