@@ -8989,3 +8989,7 @@ NeedsCompilation: no
 Package: BSgenome.Oparapolymorpha.Ensembl.Hansenula2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amelanogenum.Ensembl.AureobasidiumpullulansvarmelanogenumCBS110374v10
+Version: 1.0.0
+NeedsCompilation: no
