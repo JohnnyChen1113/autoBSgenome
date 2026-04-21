@@ -8381,3 +8381,7 @@ NeedsCompilation: no
 Package: BSgenome.Atenuissima.Ensembl.ASM415474v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ylipolytica.Ensembl.YarliYB392
+Version: 1.0.0
+NeedsCompilation: no
