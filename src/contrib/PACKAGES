@@ -8705,3 +8705,7 @@ NeedsCompilation: no
 Package: BSgenome.Hcapsulatum.Ensembl.ASM15103v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScFostersOv01
+Version: 1.0.0
+NeedsCompilation: no
