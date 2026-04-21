@@ -8473,3 +8473,7 @@ NeedsCompilation: no
 Package: BSgenome.Sstipitis.Ensembl.ASM20916v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mlaxa.Ensembl.ASM929945v1
+Version: 1.0.0
+NeedsCompilation: no
