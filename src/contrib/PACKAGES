@@ -8873,3 +8873,7 @@ NeedsCompilation: no
 Package: BSgenome.Proqueforti.Ensembl.PROQFM16420130607
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmilitaris.Ensembl.CmilitarisCM01v01
+Version: 1.0.0
+NeedsCompilation: no
