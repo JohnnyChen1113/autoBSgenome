@@ -9089,3 +9089,7 @@ NeedsCompilation: no
 Package: BSgenome.Afijiensis.Ensembl.Aspfij1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aalternata.Ensembl.ASM415475v1
+Version: 1.0.0
+NeedsCompilation: no
