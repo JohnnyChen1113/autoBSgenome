@@ -8501,3 +8501,7 @@ NeedsCompilation: no
 Package: BSgenome.Atanneri.Ensembl.ASM342696v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cglabrata.Ensembl.ASM1011175v1
+Version: 1.0.0
+NeedsCompilation: no
