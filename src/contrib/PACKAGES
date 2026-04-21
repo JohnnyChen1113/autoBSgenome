@@ -8681,3 +8681,7 @@ NeedsCompilation: no
 Package: BSgenome.Sschenckii.Ensembl.SporscheATCC58251V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491781v1
+Version: 1.0.0
+NeedsCompilation: no
