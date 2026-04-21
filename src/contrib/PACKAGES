@@ -8317,3 +8317,7 @@ NeedsCompilation: no
 Package: BSgenome.Ceuropaea.Ensembl.PhiaeuroCBS101466V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apseudonomius.Ensembl.Asppse1
+Version: 1.0.0
+NeedsCompilation: no
