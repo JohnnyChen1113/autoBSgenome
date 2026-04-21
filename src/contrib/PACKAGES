@@ -8385,3 +8385,7 @@ NeedsCompilation: no
 Package: BSgenome.Ylipolytica.Ensembl.YarliYB392
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cimmitis.Ensembl.ASM14933v2
+Version: 1.0.0
+NeedsCompilation: no
