@@ -8793,3 +8793,7 @@ NeedsCompilation: no
 Package: BSgenome.Vinaequalis.Ensembl.ASM976942v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Opolyrhachisfurcata.Ensembl.OPFBCC54312improved
+Version: 1.0.0
+NeedsCompilation: no
