@@ -8353,3 +8353,7 @@ NeedsCompilation: no
 Package: BSgenome.Foxysporum.Ensembl.FOMN25V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tverrucosum.Ensembl.ASM15150v1
+Version: 1.0.0
+NeedsCompilation: no
