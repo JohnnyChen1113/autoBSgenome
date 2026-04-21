@@ -8645,3 +8645,7 @@ NeedsCompilation: no
 Package: BSgenome.Prubens.Ensembl.PenChrNov2007
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cimmitis.Ensembl.ASM14981v1
+Version: 1.0.0
+NeedsCompilation: no
