@@ -8885,3 +8885,7 @@ NeedsCompilation: no
 Package: BSgenome.Audagawae.Ensembl.ASM1072479v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmilitaris.Ensembl.ASM808049v1
+Version: 1.0.0
+NeedsCompilation: no
