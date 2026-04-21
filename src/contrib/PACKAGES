@@ -8749,3 +8749,7 @@ NeedsCompilation: no
 Package: BSgenome.Aalliaceus.Ensembl.Aspalbe1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ylipolytica.Ensembl.YarliYB419
+Version: 1.0.0
+NeedsCompilation: no
