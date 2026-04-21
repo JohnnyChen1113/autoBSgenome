@@ -8481,3 +8481,7 @@ NeedsCompilation: no
 Package: BSgenome.Msp.Ensembl.ASM415591v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ffujikuroi.Ensembl.ASM102304v1
+Version: 1.0.0
+NeedsCompilation: no
