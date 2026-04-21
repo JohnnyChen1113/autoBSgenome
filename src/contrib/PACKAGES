@@ -9077,3 +9077,7 @@ NeedsCompilation: no
 Package: BSgenome.Foxysporum.Ensembl.FoA13v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aibericus.Ensembl.Aspibe1
+Version: 1.0.0
+NeedsCompilation: no
