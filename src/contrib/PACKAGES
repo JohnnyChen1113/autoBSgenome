@@ -8797,3 +8797,7 @@ NeedsCompilation: no
 Package: BSgenome.Opolyrhachisfurcata.Ensembl.OPFBCC54312improved
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM1190v1
+Version: 1.0.0
+NeedsCompilation: no
