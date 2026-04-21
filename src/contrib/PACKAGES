@@ -8817,3 +8817,7 @@ NeedsCompilation: no
 Package: BSgenome.Ecymbalariae.Ensembl.ASM23536v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Osinensis.Ensembl.ASM44836v1
+Version: 1.0.0
+NeedsCompilation: no
