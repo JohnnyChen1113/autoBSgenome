@@ -8629,3 +8629,7 @@ NeedsCompilation: no
 Package: BSgenome.Bbassiana.Ensembl.ASM28067v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hcapsulatum.Ensembl.ASM14958v1
+Version: 1.0.0
+NeedsCompilation: no
