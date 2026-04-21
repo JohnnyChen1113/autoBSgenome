@@ -8453,3 +8453,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM248v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pchlamydospora.Ensembl.UCRPA7V10
+Version: 1.0.0
+NeedsCompilation: no
