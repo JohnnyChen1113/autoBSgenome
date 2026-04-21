@@ -8309,3 +8309,7 @@ NeedsCompilation: no
 Package: BSgenome.Foxysporum.Ensembl.FOCL57V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Spastorianus.Ensembl.ASM1102231v1
+Version: 1.0.0
+NeedsCompilation: no
