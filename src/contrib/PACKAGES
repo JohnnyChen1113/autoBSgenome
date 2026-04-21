@@ -8761,3 +8761,7 @@ NeedsCompilation: no
 Package: BSgenome.Clusitaniae.Ensembl.ASM383v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bgraminis.Ensembl.Bgtgenomev316
+Version: 1.0.0
+NeedsCompilation: no
