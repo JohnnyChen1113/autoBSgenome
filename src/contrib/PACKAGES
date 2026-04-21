@@ -8721,3 +8721,7 @@ NeedsCompilation: no
 Package: BSgenome.Bcinerea.Ensembl.BotFucMar2011
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmaydis.Ensembl.CocheC53
+Version: 1.0.0
+NeedsCompilation: no
