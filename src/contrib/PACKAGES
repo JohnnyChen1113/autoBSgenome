@@ -8973,3 +8973,7 @@ NeedsCompilation: no
 Package: BSgenome.Tatroviride.Ensembl.TRIATv20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sborealis.Ensembl.SBOR1
+Version: 1.0.0
+NeedsCompilation: no
