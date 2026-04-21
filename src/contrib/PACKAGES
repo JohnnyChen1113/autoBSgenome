@@ -8545,3 +8545,7 @@ NeedsCompilation: no
 Package: BSgenome.Foxysporum.Ensembl.FoCB3v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491720v1
+Version: 1.0.0
+NeedsCompilation: no
