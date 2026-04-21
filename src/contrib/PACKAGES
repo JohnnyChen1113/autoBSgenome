@@ -8709,3 +8709,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScFostersOv01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Glozoyensis.Ensembl.GLAREA
+Version: 1.0.0
+NeedsCompilation: no
