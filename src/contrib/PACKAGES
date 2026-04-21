@@ -8465,3 +8465,7 @@ NeedsCompilation: no
 Package: BSgenome.Gcerebriforme.Ensembl.ASM355030v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Veffusa.Ensembl.ASM773564v1
+Version: 1.0.0
+NeedsCompilation: no
