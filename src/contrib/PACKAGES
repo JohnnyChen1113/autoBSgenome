@@ -8617,3 +8617,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScVIN13v01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acostaricaensis.Ensembl.Aspcos1
+Version: 1.0.0
+NeedsCompilation: no
