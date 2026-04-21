@@ -8525,3 +8525,7 @@ NeedsCompilation: no
 Package: BSgenome.Csidae.Ensembl.ASM436793v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491710v1
+Version: 1.0.0
+NeedsCompilation: no
