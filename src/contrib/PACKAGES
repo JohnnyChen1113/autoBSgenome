@@ -9001,3 +9001,7 @@ NeedsCompilation: no
 Package: BSgenome.Schlorohalonata.Ensembl.S40285v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.AureobasidiumpullulansvarpullulansEXF150assemblyversion10
+Version: 1.0.0
+NeedsCompilation: no
