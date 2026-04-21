@@ -8557,3 +8557,7 @@ NeedsCompilation: no
 Package: BSgenome.Gmargarita.Ensembl.UNITOGmarBEG3410
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491727v1
+Version: 1.0.0
+NeedsCompilation: no
