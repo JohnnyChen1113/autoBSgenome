@@ -8897,3 +8897,7 @@ NeedsCompilation: no
 Package: BSgenome.Kmarxianus.Ensembl.ASM185444v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aprunicola.Ensembl.Aplpr1
+Version: 1.0.0
+NeedsCompilation: no
