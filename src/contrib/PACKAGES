@@ -8553,3 +8553,7 @@ NeedsCompilation: no
 Package: BSgenome.Clusitaniae.Ensembl.ASM949811v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gmargarita.Ensembl.UNITOGmarBEG3410
+Version: 1.0.0
+NeedsCompilation: no
