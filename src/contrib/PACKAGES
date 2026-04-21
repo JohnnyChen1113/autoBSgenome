@@ -8541,3 +8541,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.CandalbiCa529LV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.FoCB3v1
+Version: 1.0.0
+NeedsCompilation: no
