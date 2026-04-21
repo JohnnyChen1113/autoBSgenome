@@ -8489,3 +8489,7 @@ NeedsCompilation: no
 Package: BSgenome.Vnashicola.Ensembl.ASM452265v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wciferrii.Ensembl.ASM31348v1
+Version: 1.0.0
+NeedsCompilation: no
