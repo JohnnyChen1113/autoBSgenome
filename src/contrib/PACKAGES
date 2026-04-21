@@ -8985,3 +8985,7 @@ NeedsCompilation: no
 Package: BSgenome.Ooligospora.Ensembl.AOL2492710
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oparapolymorpha.Ensembl.Hansenula2
+Version: 1.0.0
+NeedsCompilation: no
