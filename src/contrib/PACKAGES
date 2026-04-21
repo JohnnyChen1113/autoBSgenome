@@ -8421,3 +8421,7 @@ NeedsCompilation: no
 Package: BSgenome.Zcellare.Ensembl.Zasce1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Jflammicorona.Ensembl.JimflAD1
+Version: 1.0.0
+NeedsCompilation: no
