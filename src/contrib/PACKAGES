@@ -8773,3 +8773,7 @@ NeedsCompilation: no
 Package: BSgenome.Fflagelliforme.Ensembl.FIESC12NRRL13405FIE12Zcontigs
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csp.Ensembl.ASM370986v1
+Version: 1.0.0
+NeedsCompilation: no
