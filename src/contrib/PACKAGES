@@ -8313,3 +8313,7 @@ NeedsCompilation: no
 Package: BSgenome.Spastorianus.Ensembl.ASM1102231v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ceuropaea.Ensembl.PhiaeuroCBS101466V1
+Version: 1.0.0
+NeedsCompilation: no
