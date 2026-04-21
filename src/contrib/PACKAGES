@@ -8565,3 +8565,7 @@ NeedsCompilation: no
 Package: BSgenome.Jflammicorona.Ensembl.JimflGMNB391
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Anigricans.Ensembl.Ascni1
+Version: 1.0.0
+NeedsCompilation: no
