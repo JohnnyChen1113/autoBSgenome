@@ -8945,3 +8945,7 @@ NeedsCompilation: no
 Package: BSgenome.Corthopsilosis.Ensembl.ASM31587v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dstenobrocha.Ensembl.DREv1
+Version: 1.0.0
+NeedsCompilation: no
