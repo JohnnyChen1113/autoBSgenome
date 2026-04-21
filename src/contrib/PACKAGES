@@ -8321,3 +8321,7 @@ NeedsCompilation: no
 Package: BSgenome.Apseudonomius.Ensembl.Asppse1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cepimyces.Ensembl.CaprepimCBS60696V1
+Version: 1.0.0
+NeedsCompilation: no
