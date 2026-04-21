@@ -8925,3 +8925,7 @@ NeedsCompilation: no
 Package: BSgenome.Casianum.Ensembl.ASM980641v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gmagnicellulatus.Ensembl.ASM691211v1
+Version: 1.0.0
+NeedsCompilation: no
