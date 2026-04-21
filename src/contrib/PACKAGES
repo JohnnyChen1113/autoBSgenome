@@ -8717,3 +8717,7 @@ NeedsCompilation: no
 Package: BSgenome.Cglobosum.Ensembl.ASM14336v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bcinerea.Ensembl.BotFucMar2011
+Version: 1.0.0
+NeedsCompilation: no
