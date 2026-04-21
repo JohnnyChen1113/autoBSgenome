@@ -8605,3 +8605,7 @@ NeedsCompilation: no
 Package: BSgenome.Apullulans.Ensembl.ASM491850v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aflavus.Ensembl.ASM370902v1
+Version: 1.0.0
+NeedsCompilation: no
