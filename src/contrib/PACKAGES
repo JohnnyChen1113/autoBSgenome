@@ -9021,3 +9021,7 @@ NeedsCompilation: no
 Package: BSgenome.Asubglaciale.Ensembl.AureobasidiumpullulansvarsubglacialeEXF2481v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ScYJM1383v1
+Version: 1.0.0
+NeedsCompilation: no
