@@ -8789,3 +8789,7 @@ NeedsCompilation: no
 Package: BSgenome.Bnarcissicola.Ensembl.ASM478622v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vinaequalis.Ensembl.ASM976942v1
+Version: 1.0.0
+NeedsCompilation: no
