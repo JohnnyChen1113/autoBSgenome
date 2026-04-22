@@ -9381,3 +9381,7 @@ NeedsCompilation: no
 Package: BSgenome.Apullulans.Ensembl.ASM491752v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.GLBRCY223
+Version: 1.0.0
+NeedsCompilation: no
