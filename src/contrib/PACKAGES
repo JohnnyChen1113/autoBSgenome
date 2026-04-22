@@ -9777,3 +9777,7 @@ NeedsCompilation: no
 Package: BSgenome.Pdecumbens.Ensembl.ASM207224v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Parizonense.Ensembl.ASM177332v1
+Version: 1.0.0
+NeedsCompilation: no
