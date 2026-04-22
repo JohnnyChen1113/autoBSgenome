@@ -9493,3 +9493,7 @@ NeedsCompilation: no
 Package: BSgenome.Atubingensis.Ensembl.ASM1334032v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Chigginsianum.Ensembl.ASM167251v1
+Version: 1.0.0
+NeedsCompilation: no
