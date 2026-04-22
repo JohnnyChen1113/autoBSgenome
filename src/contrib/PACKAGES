@@ -9797,3 +9797,7 @@ NeedsCompilation: no
 Package: BSgenome.Rnecatrix.Ensembl.Rnecatrix20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aturcosus.Ensembl.ASM223496v2
+Version: 1.0.0
+NeedsCompilation: no
