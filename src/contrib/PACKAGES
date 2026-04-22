@@ -9945,3 +9945,7 @@ NeedsCompilation: no
 Package: BSgenome.Apisum.Ensembl.peaaphid22Mar20184r6urv2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aobliqua.Ensembl.idAnaObli110
+Version: 1.0.0
+NeedsCompilation: no
