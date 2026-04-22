@@ -9453,3 +9453,7 @@ NeedsCompilation: no
 Package: BSgenome.Opolymorpha.Ensembl.Hanpo2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pdestructans.Ensembl.ASM164126v1
+Version: 1.0.0
+NeedsCompilation: no
