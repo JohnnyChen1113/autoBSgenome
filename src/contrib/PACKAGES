@@ -9741,3 +9741,7 @@ NeedsCompilation: no
 Package: BSgenome.Aoryzae.Ensembl.ASM200794v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ldasiensis.Ensembl.LADA0
+Version: 1.0.0
+NeedsCompilation: no
