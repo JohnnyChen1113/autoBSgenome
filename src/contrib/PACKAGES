@@ -9949,3 +9949,7 @@ NeedsCompilation: no
 Package: BSgenome.Aobliqua.Ensembl.idAnaObli110
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Adarlingi.Ensembl.AdarC3
+Version: 1.0.0
+NeedsCompilation: no
