@@ -9217,3 +9217,7 @@ NeedsCompilation: no
 Package: BSgenome.Poryzae.Ensembl.ASM434696v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.ASM14995v2
+Version: 1.0.0
+NeedsCompilation: no
