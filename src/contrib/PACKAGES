@@ -9417,3 +9417,7 @@ NeedsCompilation: no
 Package: BSgenome.Plilacinum.Ensembl.ASM165320v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM167811v1
+Version: 1.0.0
+NeedsCompilation: no
