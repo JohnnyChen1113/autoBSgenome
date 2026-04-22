@@ -9229,3 +9229,7 @@ NeedsCompilation: no
 Package: BSgenome.Cauris.Ensembl.ASM118947v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fkuroshium.Ensembl.FusspAF12v10
+Version: 1.0.0
+NeedsCompilation: no
