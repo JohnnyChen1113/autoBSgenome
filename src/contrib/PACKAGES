@@ -9717,3 +9717,7 @@ NeedsCompilation: no
 Package: BSgenome.Fproliferatum.Ensembl.FproliferatumNRRL62905version1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aluchuensis.Ensembl.Aspfo1
+Version: 1.0.0
+NeedsCompilation: no
