@@ -9181,3 +9181,7 @@ NeedsCompilation: no
 Package: BSgenome.Asergii.Ensembl.Aspser1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aquisqualis.Ensembl.Ampqui1
+Version: 1.0.0
+NeedsCompilation: no
