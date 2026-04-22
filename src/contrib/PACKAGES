@@ -9869,3 +9869,7 @@ NeedsCompilation: no
 Package: BSgenome.Bparvus.Ensembl.Emmonparv130
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsp.Ensembl.ASM207704v2
+Version: 1.0.0
+NeedsCompilation: no
