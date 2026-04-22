@@ -9581,3 +9581,7 @@ NeedsCompilation: no
 Package: BSgenome.Kpastoris.Ensembl.ASM170810v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lstarkeyi.Ensembl.Lipst11
+Version: 1.0.0
+NeedsCompilation: no
