@@ -9806,10 +9806,6 @@ Package: BSgenome.Psp.Ensembl.ASM238285v1
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Ffujikuroi.Ensembl.version1
-Version: 1.0.0
-NeedsCompilation: no
-
 Package: BSgenome.Pkudriavzevii.Ensembl.CandkrusCkrusei653V21
 Version: 1.0.0
 NeedsCompilation: no
@@ -9819,5 +9815,9 @@ Version: 1.0.0
 NeedsCompilation: no
 
 Package: BSgenome.Tharzianum.Ensembl.ASM283884v1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Ffujikuroi.Ensembl.version1
 Version: 1.0.0
 NeedsCompilation: no
