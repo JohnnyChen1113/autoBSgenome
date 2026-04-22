@@ -9133,3 +9133,7 @@ NeedsCompilation: no
 Package: BSgenome.Nditissima.Ensembl.R0905v20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pexpansum.Ensembl.ASM76973v1
+Version: 1.0.0
+NeedsCompilation: no
