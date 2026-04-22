@@ -9257,3 +9257,7 @@ NeedsCompilation: no
 Package: BSgenome.Fgraminearum.Ensembl.ASM24013v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cglabrata.Ensembl.ASM146657v1
+Version: 1.0.0
+NeedsCompilation: no
