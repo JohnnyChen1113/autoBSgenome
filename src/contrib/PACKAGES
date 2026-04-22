@@ -9861,3 +9861,7 @@ NeedsCompilation: no
 Package: BSgenome.Afumigatus.Ensembl.ASM223498v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scerevisiae.Ensembl.ASM280432v1
+Version: 1.0.0
+NeedsCompilation: no
