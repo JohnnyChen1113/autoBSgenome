@@ -9929,3 +9929,7 @@ NeedsCompilation: no
 Package: BSgenome.Aechinatior.Ensembl.Aech39
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aalbimanus.Ensembl.AalbS2
+Version: 1.0.0
+NeedsCompilation: no
