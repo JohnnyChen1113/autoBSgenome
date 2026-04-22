@@ -9365,3 +9365,7 @@ NeedsCompilation: no
 Package: BSgenome.Cnymphaeae.Ensembl.CNYM01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eweberi.Ensembl.ASM127849v1
+Version: 1.0.0
+NeedsCompilation: no
