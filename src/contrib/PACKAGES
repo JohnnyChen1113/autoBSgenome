@@ -9345,3 +9345,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmusae.Ensembl.ASM157822v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfreii.Ensembl.ASM151392v1
+Version: 1.0.0
+NeedsCompilation: no
