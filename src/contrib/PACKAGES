@@ -9925,3 +9925,7 @@ NeedsCompilation: no
 Package: BSgenome.Aplanipennis.Ensembl.Apla20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aechinatior.Ensembl.Aech39
+Version: 1.0.0
+NeedsCompilation: no
