@@ -9693,3 +9693,7 @@ NeedsCompilation: no
 Package: BSgenome.Pantarcticum.Ensembl.ASM207234v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aglaucus.Ensembl.Aspgl1
+Version: 1.0.0
+NeedsCompilation: no
