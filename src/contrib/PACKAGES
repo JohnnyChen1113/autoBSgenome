@@ -9573,3 +9573,7 @@ NeedsCompilation: no
 Package: BSgenome.Hopuntiae.Ensembl.ASM174979v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foxysporum.Ensembl.ASM1308505v1
+Version: 1.0.0
+NeedsCompilation: no
