@@ -9161,3 +9161,7 @@ NeedsCompilation: no
 Package: BSgenome.Achrysogenum.Ensembl.ASM76926v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491774v1
+Version: 1.0.0
+NeedsCompilation: no
