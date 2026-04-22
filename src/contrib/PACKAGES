@@ -9389,3 +9389,7 @@ NeedsCompilation: no
 Package: BSgenome.Smacrospora.Ensembl.ASM869232v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vmali.Ensembl.ASM81815v1
+Version: 1.0.0
+NeedsCompilation: no
