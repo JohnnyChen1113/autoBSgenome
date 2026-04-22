@@ -9293,3 +9293,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmycetomatis.Ensembl.ASM127576v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pchrysogenum.Ensembl.ASM71027v1
+Version: 1.0.0
+NeedsCompilation: no
