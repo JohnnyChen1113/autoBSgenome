@@ -9505,3 +9505,7 @@ NeedsCompilation: no
 Package: BSgenome.Cfumosorosea.Ensembl.ISF10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psp.Ensembl.ASM166258v1
+Version: 1.0.0
+NeedsCompilation: no
