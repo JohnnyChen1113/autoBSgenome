@@ -9597,3 +9597,7 @@ NeedsCompilation: no
 Package: BSgenome.Tasperellum.Ensembl.TaspIC101
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Carabinofermentans.Ensembl.Canar1
+Version: 1.0.0
+NeedsCompilation: no
