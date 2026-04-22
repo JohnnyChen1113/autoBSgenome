@@ -9621,3 +9621,7 @@ NeedsCompilation: no
 Package: BSgenome.Lfermentati.Ensembl.LAFE0
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rantarcticum.Ensembl.ASM207706v1
+Version: 1.0.0
+NeedsCompilation: no
