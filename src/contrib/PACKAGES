@@ -9469,3 +9469,7 @@ NeedsCompilation: no
 Package: BSgenome.Ooligospora.Ensembl.ASM1106658v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Alecanii.Ensembl.ASM165321v1
+Version: 1.0.0
+NeedsCompilation: no
