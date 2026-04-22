@@ -9377,3 +9377,7 @@ NeedsCompilation: no
 Package: BSgenome.Slignicola.Ensembl.ASM281274v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apullulans.Ensembl.ASM491752v1
+Version: 1.0.0
+NeedsCompilation: no
