@@ -9633,3 +9633,7 @@ NeedsCompilation: no
 Package: BSgenome.Cligniaria.Ensembl.Conligv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cchlorophyti.Ensembl.ASM193710v1
+Version: 1.0.0
+NeedsCompilation: no
