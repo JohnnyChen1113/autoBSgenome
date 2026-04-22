@@ -9849,3 +9849,7 @@ NeedsCompilation: no
 Package: BSgenome.Ecrescens.Ensembl.Emmoncres4076V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Enigrum.Ensembl.ASM211631v1
+Version: 1.0.0
+NeedsCompilation: no
