@@ -9729,3 +9729,7 @@ NeedsCompilation: no
 Package: BSgenome.Ylipolytica.Ensembl.ASM1449061v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tglobosa.Ensembl.ASM1369444v1
+Version: 1.0.0
+NeedsCompilation: no
