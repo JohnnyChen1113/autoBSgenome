@@ -9733,3 +9733,7 @@ NeedsCompilation: no
 Package: BSgenome.Tglobosa.Ensembl.ASM1369444v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tglobosa.Ensembl.ASM1413389v1
+Version: 1.0.0
+NeedsCompilation: no
