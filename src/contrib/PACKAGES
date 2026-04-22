@@ -9433,3 +9433,7 @@ NeedsCompilation: no
 Package: BSgenome.Sinsectorum.Ensembl.SPI10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psporulosa.Ensembl.Parsp1
+Version: 1.0.0
+NeedsCompilation: no
