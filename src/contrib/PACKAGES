@@ -9617,3 +9617,7 @@ NeedsCompilation: no
 Package: BSgenome.Huvarum.Ensembl.ASM174705v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lfermentati.Ensembl.LAFE0
+Version: 1.0.0
+NeedsCompilation: no
