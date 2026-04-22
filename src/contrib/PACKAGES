@@ -9405,3 +9405,7 @@ NeedsCompilation: no
 Package: BSgenome.Psp.Ensembl.ASM166257v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssp.Ensembl.Stasp1
+Version: 1.0.0
+NeedsCompilation: no
