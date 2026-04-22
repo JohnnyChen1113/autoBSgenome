@@ -4534,10 +4534,6 @@ Package: BSgenome.Oaries.Ensembl.ASM2243283v1
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Fgraminearum.Ensembl.MDCFg13
-Version: 1.0.0
-NeedsCompilation: no
-
 Package: BSgenome.Oglumipatula.Ensembl.Oryzaglumaepatulav15
 Version: 1.0.0
 NeedsCompilation: no
@@ -9767,5 +9763,9 @@ Version: 1.0.0
 NeedsCompilation: no
 
 Package: BSgenome.Cfabianii.Ensembl.ASM198330v1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Fgraminearum.Ensembl.MDCFg13
 Version: 1.0.0
 NeedsCompilation: no
