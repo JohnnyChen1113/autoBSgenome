@@ -9822,10 +9822,6 @@ Package: BSgenome.Psp.Ensembl.ASM238283v1
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Ffujikuroi.Ensembl.version1
-Version: 1.0.0
-NeedsCompilation: no
-
 Package: BSgenome.Anovofumigatus.Ensembl.Aspnov1
 Version: 1.0.0
 NeedsCompilation: no
@@ -9835,5 +9831,9 @@ Version: 1.0.0
 NeedsCompilation: no
 
 Package: BSgenome.Acandidus.Ensembl.Aspcand1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Ffujikuroi.Ensembl.version1
 Version: 1.0.0
 NeedsCompilation: no
