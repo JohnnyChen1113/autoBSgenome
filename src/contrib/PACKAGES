@@ -9533,3 +9533,7 @@ NeedsCompilation: no
 Package: BSgenome.Dhelianthi.Ensembl.DHEL01v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pbrasiliensis.Ensembl.ASM171364v1
+Version: 1.0.0
+NeedsCompilation: no
