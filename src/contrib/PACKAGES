@@ -9645,3 +9645,7 @@ NeedsCompilation: no
 Package: BSgenome.Abombycis.Ensembl.ASM179269v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aaculeatus.Ensembl.Aspac1
+Version: 1.0.0
+NeedsCompilation: no
