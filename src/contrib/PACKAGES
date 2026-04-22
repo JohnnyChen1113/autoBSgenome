@@ -9237,3 +9237,7 @@ NeedsCompilation: no
 Package: BSgenome.Cinconspicua.Ensembl.ASM493185v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tpertusa.Ensembl.Trepe1
+Version: 1.0.0
+NeedsCompilation: no
