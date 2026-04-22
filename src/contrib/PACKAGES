@@ -9425,3 +9425,7 @@ NeedsCompilation: no
 Package: BSgenome.Csp.Ensembl.ASM370984v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mlibera.Ensembl.AAL10
+Version: 1.0.0
+NeedsCompilation: no
