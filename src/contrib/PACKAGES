@@ -9461,3 +9461,7 @@ NeedsCompilation: no
 Package: BSgenome.Plilacinum.Ensembl.ASM165326v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fnubica.Ensembl.ASM164696v1
+Version: 1.0.0
+NeedsCompilation: no
