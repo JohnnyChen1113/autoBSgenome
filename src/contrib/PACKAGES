@@ -9897,3 +9897,7 @@ NeedsCompilation: no
 Package: BSgenome.Amelas.Ensembl.AmelC2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aludens.Ensembl.idAnaLude11
+Version: 1.0.0
+NeedsCompilation: no
