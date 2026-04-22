@@ -9361,3 +9361,7 @@ NeedsCompilation: no
 Package: BSgenome.Pscopiformis.Ensembl.Phisc1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnymphaeae.Ensembl.CNYM01
+Version: 1.0.0
+NeedsCompilation: no
