@@ -9317,3 +9317,7 @@ NeedsCompilation: no
 Package: BSgenome.Ctofieldiae.Ensembl.Ct0861v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csalicis.Ensembl.CSAL01
+Version: 1.0.0
+NeedsCompilation: no
