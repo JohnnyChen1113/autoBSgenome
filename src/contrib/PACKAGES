@@ -9673,3 +9673,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ASM198331v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcoprophilum.Ensembl.ASM207240v1
+Version: 1.0.0
+NeedsCompilation: no
