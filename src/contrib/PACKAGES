@@ -9397,3 +9397,7 @@ NeedsCompilation: no
 Package: BSgenome.Psp.Ensembl.ASM166260v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fmultimorphosa.Ensembl.ASM164698v1
+Version: 1.0.0
+NeedsCompilation: no
