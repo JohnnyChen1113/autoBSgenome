@@ -9841,3 +9841,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsp.Ensembl.DalEC12v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsp.Ensembl.HypEC38v30
+Version: 1.0.0
+NeedsCompilation: no
