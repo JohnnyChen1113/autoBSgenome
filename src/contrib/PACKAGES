@@ -9609,3 +9609,7 @@ NeedsCompilation: no
 Package: BSgenome.Cjadinii.Ensembl.Cybja1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hburtonii.Ensembl.Hypbu1
+Version: 1.0.0
+NeedsCompilation: no
