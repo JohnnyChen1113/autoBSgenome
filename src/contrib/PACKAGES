@@ -9769,3 +9769,7 @@ NeedsCompilation: no
 Package: BSgenome.Fgraminearum.Ensembl.MDCFg13
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lnothofagi.Ensembl.LANO0
+Version: 1.0.0
+NeedsCompilation: no
