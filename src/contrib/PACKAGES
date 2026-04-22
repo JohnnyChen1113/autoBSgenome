@@ -9329,3 +9329,7 @@ NeedsCompilation: no
 Package: BSgenome.Kmarxianus.Ensembl.KM177703
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cincanum.Ensembl.Ci238704v1
+Version: 1.0.0
+NeedsCompilation: no
