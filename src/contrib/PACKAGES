@@ -9477,3 +9477,7 @@ NeedsCompilation: no
 Package: BSgenome.Aflavus.Ensembl.ASM1411748v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cglabrata.Ensembl.ASM1421772v1
+Version: 1.0.0
+NeedsCompilation: no
