@@ -9753,3 +9753,7 @@ NeedsCompilation: no
 Package: BSgenome.Fmangiferae.Ensembl.Genomeassemblyversion1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Abrasiliensis.Ensembl.Aspbr1
+Version: 1.0.0
+NeedsCompilation: no
