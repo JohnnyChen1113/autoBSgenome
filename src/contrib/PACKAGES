@@ -9409,3 +9409,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssp.Ensembl.Stasp1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Trubrum.Ensembl.CMCCFT1i
+Version: 1.0.0
+NeedsCompilation: no
