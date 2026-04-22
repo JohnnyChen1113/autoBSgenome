@@ -9893,3 +9893,7 @@ NeedsCompilation: no
 Package: BSgenome.Aculicifacies.Ensembl.AculA1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amelas.Ensembl.AmelC2
+Version: 1.0.0
+NeedsCompilation: no
