@@ -9697,3 +9697,7 @@ NeedsCompilation: no
 Package: BSgenome.Aglaucus.Ensembl.Aspgl1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lmeyersii.Ensembl.LAME0
+Version: 1.0.0
+NeedsCompilation: no
