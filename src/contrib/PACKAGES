@@ -9905,3 +9905,7 @@ NeedsCompilation: no
 Package: BSgenome.Acooleyi.Ensembl.UGAACOO11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Adarlingi.Ensembl.GCA943734745v1
+Version: 1.0.0
+NeedsCompilation: no
