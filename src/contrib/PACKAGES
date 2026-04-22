@@ -9169,3 +9169,7 @@ NeedsCompilation: no
 Package: BSgenome.Abertholletiae.Ensembl.Aspber1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vdahliae.Ensembl.VDG110
+Version: 1.0.0
+NeedsCompilation: no
