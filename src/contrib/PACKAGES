@@ -9921,3 +9921,7 @@ NeedsCompilation: no
 Package: BSgenome.Achristyi.Ensembl.AchrA1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aplanipennis.Ensembl.Apla20
+Version: 1.0.0
+NeedsCompilation: no
