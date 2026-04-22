@@ -9297,3 +9297,7 @@ NeedsCompilation: no
 Package: BSgenome.Pchrysogenum.Ensembl.ASM71027v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Arichmondensis.Ensembl.AcidomycesrichmondensisBFWv10
+Version: 1.0.0
+NeedsCompilation: no
