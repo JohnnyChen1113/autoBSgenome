@@ -9653,3 +9653,7 @@ NeedsCompilation: no
 Package: BSgenome.Pkudriavzevii.Ensembl.ASM198332v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lmirantina.Ensembl.LAMI0
+Version: 1.0.0
+NeedsCompilation: no
