@@ -9353,3 +9353,7 @@ NeedsCompilation: no
 Package: BSgenome.Aniger.Ensembl.ASM151534v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csimmondsii.Ensembl.CSIM01
+Version: 1.0.0
+NeedsCompilation: no
