@@ -9818,10 +9818,10 @@ Package: BSgenome.Tharzianum.Ensembl.ASM283884v1
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Ffujikuroi.Ensembl.version1
+Package: BSgenome.Psp.Ensembl.ASM238283v1
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Psp.Ensembl.ASM238283v1
+Package: BSgenome.Ffujikuroi.Ensembl.version1
 Version: 1.0.0
 NeedsCompilation: no
