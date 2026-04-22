@@ -9805,3 +9805,7 @@ NeedsCompilation: no
 Package: BSgenome.Drosae.Ensembl.ASM231799v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psp.Ensembl.ASM238285v1
+Version: 1.0.0
+NeedsCompilation: no
