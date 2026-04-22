@@ -9761,3 +9761,7 @@ NeedsCompilation: no
 Package: BSgenome.Fculmorum.Ensembl.FculmorumUK99Mt
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cintermedia.Ensembl.CBS141442assembly
+Version: 1.0.0
+NeedsCompilation: no
