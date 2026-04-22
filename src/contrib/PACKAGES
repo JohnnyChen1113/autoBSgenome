@@ -9269,3 +9269,7 @@ NeedsCompilation: no
 Package: BSgenome.Aniger.Ensembl.AspnibvT1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cglabrata.Ensembl.ASM146652v1
+Version: 1.0.0
+NeedsCompilation: no
