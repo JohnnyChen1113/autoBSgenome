@@ -9153,3 +9153,7 @@ NeedsCompilation: no
 Package: BSgenome.Calbicans.Ensembl.CandalbiGC75V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Slycopersici.Ensembl.ASM119154v1
+Version: 1.0.0
+NeedsCompilation: no
