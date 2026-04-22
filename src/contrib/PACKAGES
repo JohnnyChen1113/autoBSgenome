@@ -9685,3 +9685,7 @@ NeedsCompilation: no
 Package: BSgenome.Zrouxii.Ensembl.ZYGRassembly01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psubalpina.Ensembl.PACversion1
+Version: 1.0.0
+NeedsCompilation: no
