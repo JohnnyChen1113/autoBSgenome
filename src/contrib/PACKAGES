@@ -9113,3 +9113,7 @@ NeedsCompilation: no
 Package: BSgenome.Atenuissima.Ensembl.ASM415476v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pkudriavzevii.Ensembl.ASM76445v1
+Version: 1.0.0
+NeedsCompilation: no
