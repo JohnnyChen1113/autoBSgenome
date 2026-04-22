@@ -9109,3 +9109,7 @@ NeedsCompilation: no
 Package: BSgenome.Scerevisiae.Ensembl.ScYJM1439v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Atenuissima.Ensembl.ASM415476v1
+Version: 1.0.0
+NeedsCompilation: no
