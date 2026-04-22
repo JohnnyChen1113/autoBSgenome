@@ -9605,3 +9605,7 @@ NeedsCompilation: no
 Package: BSgenome.Ylipolytica.Ensembl.ASM176148v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cjadinii.Ensembl.Cybja1
+Version: 1.0.0
+NeedsCompilation: no
