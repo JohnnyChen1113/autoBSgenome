@@ -9745,3 +9745,7 @@ NeedsCompilation: no
 Package: BSgenome.Ldasiensis.Ensembl.LADA0
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acarbonarius.Ensembl.Aspca3
+Version: 1.0.0
+NeedsCompilation: no
