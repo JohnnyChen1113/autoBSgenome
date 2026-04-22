@@ -9881,3 +9881,7 @@ NeedsCompilation: no
 Package: BSgenome.Aatroparvus.Ensembl.atroparvushifiasmn225277Mb
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Afarauti.Ensembl.AfarF2
+Version: 1.0.0
+NeedsCompilation: no
