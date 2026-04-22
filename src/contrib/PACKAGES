@@ -9833,3 +9833,7 @@ NeedsCompilation: no
 Package: BSgenome.Afumigatus.Ensembl.ASM223495v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acandidus.Ensembl.Aspcand1
+Version: 1.0.0
+NeedsCompilation: no
