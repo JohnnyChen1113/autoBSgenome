@@ -9885,3 +9885,7 @@ NeedsCompilation: no
 Package: BSgenome.Afarauti.Ensembl.AfarF2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amerus.Ensembl.AmerM2
+Version: 1.0.0
+NeedsCompilation: no
