@@ -6026,10 +6026,6 @@ Package: BSgenome.Pcentrifuga.Ensembl.ASM480266v1
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Ffujikuroi.Ensembl.version1
-Version: 1.0.0
-NeedsCompilation: no
-
 Package: BSgenome.Jargillacea.Ensembl.Jaaar1
 Version: 1.0.0
 NeedsCompilation: no
@@ -9807,5 +9803,9 @@ Version: 1.0.0
 NeedsCompilation: no
 
 Package: BSgenome.Psp.Ensembl.ASM238285v1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Ffujikuroi.Ensembl.version1
 Version: 1.0.0
 NeedsCompilation: no
