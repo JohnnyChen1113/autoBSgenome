@@ -9173,3 +9173,7 @@ NeedsCompilation: no
 Package: BSgenome.Vdahliae.Ensembl.VDG110
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ylipolytica.Ensembl.YarliYB566
+Version: 1.0.0
+NeedsCompilation: no
