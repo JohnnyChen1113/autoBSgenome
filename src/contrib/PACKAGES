@@ -9661,3 +9661,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmembranifaciens.Ensembl.Pmembrenifaciens10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lsp.Ensembl.LAFA0
+Version: 1.0.0
+NeedsCompilation: no
