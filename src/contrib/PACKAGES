@@ -9209,3 +9209,7 @@ NeedsCompilation: no
 Package: BSgenome.Vlongisporum.Ensembl.vl2denovov1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fambrosium.Ensembl.NRRL20438v1
+Version: 1.0.0
+NeedsCompilation: no
