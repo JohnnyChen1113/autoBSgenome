@@ -9485,3 +9485,7 @@ NeedsCompilation: no
 Package: BSgenome.Mbicuspidata.Ensembl.Metbi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psp.Ensembl.ASM166264v1
+Version: 1.0.0
+NeedsCompilation: no
