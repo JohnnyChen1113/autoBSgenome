@@ -9765,3 +9765,7 @@ NeedsCompilation: no
 Package: BSgenome.Cintermedia.Ensembl.CBS141442assembly
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cfabianii.Ensembl.ASM198330v1
+Version: 1.0.0
+NeedsCompilation: no
