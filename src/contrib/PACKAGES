@@ -9373,3 +9373,7 @@ NeedsCompilation: no
 Package: BSgenome.Xgrammica.Ensembl.ASM401481v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Slignicola.Ensembl.ASM281274v2
+Version: 1.0.0
+NeedsCompilation: no
