@@ -9853,3 +9853,7 @@ NeedsCompilation: no
 Package: BSgenome.Enigrum.Ensembl.ASM211631v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsp.Ensembl.HypCI4Av10
+Version: 1.0.0
+NeedsCompilation: no
