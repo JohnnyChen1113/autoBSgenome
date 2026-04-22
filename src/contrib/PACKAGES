@@ -9641,3 +9641,7 @@ NeedsCompilation: no
 Package: BSgenome.Aversicolor.Ensembl.Aspve1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Abombycis.Ensembl.ASM179269v1
+Version: 1.0.0
+NeedsCompilation: no
