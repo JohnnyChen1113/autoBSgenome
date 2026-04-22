@@ -9545,3 +9545,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccarrionii.Ensembl.ASM170077v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptannophilus.Ensembl.Pacta12
+Version: 1.0.0
+NeedsCompilation: no
