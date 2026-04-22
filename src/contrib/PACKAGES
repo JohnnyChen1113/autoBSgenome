@@ -9141,3 +9141,7 @@ NeedsCompilation: no
 Package: BSgenome.Atenuissima.Ensembl.ASM415484v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ounilateralis.Ensembl.ASM127257v2
+Version: 1.0.0
+NeedsCompilation: no
