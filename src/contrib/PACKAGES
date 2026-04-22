@@ -9713,3 +9713,7 @@ NeedsCompilation: no
 Package: BSgenome.Mbrunneum.Ensembl.ASM1342620v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fproliferatum.Ensembl.FproliferatumNRRL62905version1
+Version: 1.0.0
+NeedsCompilation: no
