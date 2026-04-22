@@ -9445,3 +9445,7 @@ NeedsCompilation: no
 Package: BSgenome.Pverrucosus.Ensembl.ASM166265v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psp.Ensembl.ASM166259v1
+Version: 1.0.0
+NeedsCompilation: no
