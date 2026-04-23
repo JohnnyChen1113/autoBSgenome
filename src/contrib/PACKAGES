@@ -9985,3 +9985,7 @@ NeedsCompilation: no
 Package: BSgenome.Btabaci.Ensembl.Uganda1n5713630Mb
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aflorea.Ensembl.Aflo10
+Version: 1.0.0
+NeedsCompilation: no
