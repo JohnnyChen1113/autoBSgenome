@@ -10297,3 +10297,7 @@ NeedsCompilation: no
 Package: BSgenome.Csculpturatus.Ensembl.Cexi20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Esinensis.Ensembl.ASM2467909v1
+Version: 1.0.0
+NeedsCompilation: no
