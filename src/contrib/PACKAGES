@@ -10433,3 +10433,7 @@ NeedsCompilation: no
 Package: BSgenome.Mscalaris.Ensembl.Msca1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lpictus.Ensembl.UCSDLpic21
+Version: 1.0.0
+NeedsCompilation: no
