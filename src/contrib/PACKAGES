@@ -10545,3 +10545,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmonodon.Ensembl.NSTDAPmon1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Shaematobium.Ensembl.SchHae20
+Version: 1.0.0
+NeedsCompilation: no
