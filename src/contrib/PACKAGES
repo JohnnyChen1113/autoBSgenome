@@ -10305,3 +10305,7 @@ NeedsCompilation: no
 Package: BSgenome.Hlaboriosa.Ensembl.ASM126327v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsaltator.Ensembl.Hsalv85
+Version: 1.0.0
+NeedsCompilation: no
