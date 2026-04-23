@@ -10505,3 +10505,7 @@ NeedsCompilation: no
 Package: BSgenome.Oedulis.Ensembl.OEROSLIN11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pargentipes.Ensembl.Phlebotomusargentipesgenomeassembly
+Version: 1.0.0
+NeedsCompilation: no
