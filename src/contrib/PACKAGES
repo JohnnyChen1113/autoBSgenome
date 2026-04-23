@@ -10573,3 +10573,7 @@ NeedsCompilation: no
 Package: BSgenome.Rmicroplus.Ensembl.ASM1333972v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcanaliculata.Ensembl.ASM307304v1
+Version: 1.0.0
+NeedsCompilation: no
