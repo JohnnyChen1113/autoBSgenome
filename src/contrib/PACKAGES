@@ -10349,3 +10349,7 @@ NeedsCompilation: no
 Package: BSgenome.Ipersulcatus.Ensembl.GCA013358835v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ixanthorius.Ensembl.iyIchXant11
+Version: 1.0.0
+NeedsCompilation: no
