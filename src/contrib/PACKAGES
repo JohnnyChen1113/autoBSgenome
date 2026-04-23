@@ -10273,3 +10273,7 @@ NeedsCompilation: no
 Package: BSgenome.Dnovaeangliae.Ensembl.ASM127255v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gaegis.Ensembl.Gaehostgenome
+Version: 1.0.0
+NeedsCompilation: no
