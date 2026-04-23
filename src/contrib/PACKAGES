@@ -10537,3 +10537,7 @@ NeedsCompilation: no
 Package: BSgenome.Pbarbatus.Ensembl.PbarUMDV03
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pperniciosus.Ensembl.pperniciosusasmv20
+Version: 1.0.0
+NeedsCompilation: no
