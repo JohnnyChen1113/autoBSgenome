@@ -10497,3 +10497,7 @@ NeedsCompilation: no
 Package: BSgenome.Otaurus.Ensembl.Otau20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Marenaria.Ensembl.ASM2691426v1
+Version: 1.0.0
+NeedsCompilation: no
