@@ -10125,3 +10125,7 @@ NeedsCompilation: no
 Package: BSgenome.Dtinctorium.Ensembl.DtinU1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cformicarius.Ensembl.icCylForm11
+Version: 1.0.0
+NeedsCompilation: no
