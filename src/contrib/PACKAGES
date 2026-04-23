@@ -10149,3 +10149,7 @@ NeedsCompilation: no
 Package: BSgenome.Dgrimshawi.Ensembl.ASM1815329v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dficusphila.Ensembl.ASM1815226v1
+Version: 1.0.0
+NeedsCompilation: no
