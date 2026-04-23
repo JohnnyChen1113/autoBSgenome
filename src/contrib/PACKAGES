@@ -10565,3 +10565,7 @@ NeedsCompilation: no
 Package: BSgenome.Sflava.Ensembl.YSAversion1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Skowalevskii.Ensembl.Skow11
+Version: 1.0.0
+NeedsCompilation: no
