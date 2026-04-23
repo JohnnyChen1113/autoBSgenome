@@ -10117,3 +10117,7 @@ NeedsCompilation: no
 Package: BSgenome.Cglomerata.Ensembl.MPMCglomv23
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Darizonae.Ensembl.ASM165402v1
+Version: 1.0.0
+NeedsCompilation: no
