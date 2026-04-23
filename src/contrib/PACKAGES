@@ -10293,3 +10293,7 @@ NeedsCompilation: no
 Package: BSgenome.Egranulosus.Ensembl.ASM52419v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csculpturatus.Ensembl.Cexi20
+Version: 1.0.0
+NeedsCompilation: no
