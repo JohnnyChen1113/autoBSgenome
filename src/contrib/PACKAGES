@@ -10141,3 +10141,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsilvarum.Ensembl.BIMEDsil14
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cquadricarinatus.Ensembl.ASM2687515v2
+Version: 1.0.0
+NeedsCompilation: no
