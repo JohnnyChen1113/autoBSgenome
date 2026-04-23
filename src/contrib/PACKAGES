@@ -10145,3 +10145,7 @@ NeedsCompilation: no
 Package: BSgenome.Cquadricarinatus.Ensembl.ASM2687515v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dgrimshawi.Ensembl.ASM1815329v1
+Version: 1.0.0
+NeedsCompilation: no
