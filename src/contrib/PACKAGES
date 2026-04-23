@@ -10057,3 +10057,7 @@ NeedsCompilation: no
 Package: BSgenome.Chispanica.Ensembl.ULBChis110
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Btryoni.Ensembl.CSIROBtryS06freeze1
+Version: 1.0.0
+NeedsCompilation: no
