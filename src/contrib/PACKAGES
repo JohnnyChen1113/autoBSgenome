@@ -10209,3 +10209,7 @@ NeedsCompilation: no
 Package: BSgenome.Dnoxia.Ensembl.Dnoxia10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cfloridanum.Ensembl.Cflo20
+Version: 1.0.0
+NeedsCompilation: no
