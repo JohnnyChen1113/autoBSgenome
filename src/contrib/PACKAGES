@@ -10377,3 +10377,7 @@ NeedsCompilation: no
 Package: BSgenome.Mgenurostris.Ensembl.Malgen11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Iscapularis.Ensembl.ASM1692078v2
+Version: 1.0.0
+NeedsCompilation: no
