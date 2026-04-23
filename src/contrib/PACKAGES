@@ -10541,3 +10541,7 @@ NeedsCompilation: no
 Package: BSgenome.Pperniciosus.Ensembl.pperniciosusasmv20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmonodon.Ensembl.NSTDAPmon1
+Version: 1.0.0
+NeedsCompilation: no
