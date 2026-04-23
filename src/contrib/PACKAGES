@@ -10397,3 +10397,7 @@ NeedsCompilation: no
 Package: BSgenome.Lanatina.Ensembl.LinAna20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lfortunei.Ensembl.xbLimFort51
+Version: 1.0.0
+NeedsCompilation: no
