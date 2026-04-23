@@ -10621,3 +10621,7 @@ NeedsCompilation: no
 Package: BSgenome.Spiceifrons.Ensembl.iqSchPice11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Samericana.Ensembl.iqSchAmer21
+Version: 1.0.0
+NeedsCompilation: no
