@@ -10185,3 +10185,7 @@ NeedsCompilation: no
 Package: BSgenome.Dgigantea.Ensembl.DenGig10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dsubobscura.Ensembl.UCBerkDsub10
+Version: 1.0.0
+NeedsCompilation: no
