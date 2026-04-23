@@ -10373,3 +10373,7 @@ NeedsCompilation: no
 Package: BSgenome.Ldeliense.Ensembl.LdelU1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mgenurostris.Ensembl.Malgen11
+Version: 1.0.0
+NeedsCompilation: no
