@@ -10569,3 +10569,7 @@ NeedsCompilation: no
 Package: BSgenome.Skowalevskii.Ensembl.Skow11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rmicroplus.Ensembl.ASM1333972v1
+Version: 1.0.0
+NeedsCompilation: no
