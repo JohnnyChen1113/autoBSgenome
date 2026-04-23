@@ -9993,3 +9993,7 @@ NeedsCompilation: no
 Package: BSgenome.Acalifornica.Ensembl.AplCal30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asinensis.Ensembl.AsinC2
+Version: 1.0.0
+NeedsCompilation: no
