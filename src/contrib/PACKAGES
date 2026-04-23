@@ -10109,3 +10109,7 @@ NeedsCompilation: no
 Package: BSgenome.Cquinquefasciatus.Ensembl.VPISUCqui10pripaternal
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cinsularis.Ensembl.ASM1335770v1
+Version: 1.0.0
+NeedsCompilation: no
