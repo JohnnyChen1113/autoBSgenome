@@ -9961,3 +9961,7 @@ NeedsCompilation: no
 Package: BSgenome.Aequina.Ensembl.equinasmartdenarrow4noredun
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amaculatus.Ensembl.AmacM1
+Version: 1.0.0
+NeedsCompilation: no
