@@ -10065,3 +10065,7 @@ NeedsCompilation: no
 Package: BSgenome.Agrandis.Ensembl.icAntGran13
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cteleta.Ensembl.Capitellateletav10
+Version: 1.0.0
+NeedsCompilation: no
