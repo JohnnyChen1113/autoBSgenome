@@ -10249,3 +10249,7 @@ NeedsCompilation: no
 Package: BSgenome.Goccidentalis.Ensembl.Mocc10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dandersoni.Ensembl.qqDerAnde12
+Version: 1.0.0
+NeedsCompilation: no
