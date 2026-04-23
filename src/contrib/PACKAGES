@@ -10413,3 +10413,7 @@ NeedsCompilation: no
 Package: BSgenome.Maethiopoides.Ensembl.UoOMaethIR
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lmarmoratus.Ensembl.iiLimMarm11
+Version: 1.0.0
+NeedsCompilation: no
