@@ -10393,3 +10393,7 @@ NeedsCompilation: no
 Package: BSgenome.Mquadrilineatus.Ensembl.UCMALF10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lanatina.Ensembl.LinAna20
+Version: 1.0.0
+NeedsCompilation: no
