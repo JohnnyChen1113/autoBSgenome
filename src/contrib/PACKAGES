@@ -9977,3 +9977,7 @@ NeedsCompilation: no
 Package: BSgenome.Aalbopictus.Ensembl.GCA035046485v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amellifera.Ensembl.AmelHAv31
+Version: 1.0.0
+NeedsCompilation: no
