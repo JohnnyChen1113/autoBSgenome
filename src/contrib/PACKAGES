@@ -10425,3 +10425,7 @@ NeedsCompilation: no
 Package: BSgenome.Mleidyi.Ensembl.MneLeiAug2011
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Llongipalpis.Ensembl.LlonJ1
+Version: 1.0.0
+NeedsCompilation: no
