@@ -10261,3 +10261,7 @@ NeedsCompilation: no
 Package: BSgenome.Emexicana.Ensembl.ASM148370v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dmiranda.Ensembl.DmirandaPacBio21
+Version: 1.0.0
+NeedsCompilation: no
