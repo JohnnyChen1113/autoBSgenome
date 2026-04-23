@@ -10465,3 +10465,7 @@ NeedsCompilation: no
 Package: BSgenome.Phumanus.Ensembl.PhumU2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmercenaria.Ensembl.ASM1480567v11
+Version: 1.0.0
+NeedsCompilation: no
