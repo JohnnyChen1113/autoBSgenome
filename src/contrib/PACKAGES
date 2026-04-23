@@ -10457,3 +10457,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpharaonis.Ensembl.ASM1337386v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nlugens.Ensembl.ASM1435652v1
+Version: 1.0.0
+NeedsCompilation: no
