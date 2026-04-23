@@ -10369,3 +10369,7 @@ NeedsCompilation: no
 Package: BSgenome.Msacchari.Ensembl.SCAv20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ldeliense.Ensembl.LdelU1
+Version: 1.0.0
+NeedsCompilation: no
