@@ -10161,3 +10161,7 @@ NeedsCompilation: no
 Package: BSgenome.Dbiarmipes.Ensembl.RUDBiaV11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Deugracilis.Ensembl.ASM1815383v1
+Version: 1.0.0
+NeedsCompilation: no
