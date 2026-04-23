@@ -10093,3 +10093,7 @@ NeedsCompilation: no
 Package: BSgenome.Dvitifoliae.Ensembl.ASM2509136v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csonorensis.Ensembl.Cson1
+Version: 1.0.0
+NeedsCompilation: no
