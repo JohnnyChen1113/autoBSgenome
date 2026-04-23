@@ -10005,3 +10005,7 @@ NeedsCompilation: no
 Package: BSgenome.Baffinis.Ensembl.iyBomAffi12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bneohumeralis.Ensembl.APGPCSIROBneowtdbg2raconallhicjuiceboxfastav2
+Version: 1.0.0
+NeedsCompilation: no
