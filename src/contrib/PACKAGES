@@ -10137,3 +10137,7 @@ NeedsCompilation: no
 Package: BSgenome.Dcarinulata.Ensembl.icDioCari11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dsilvarum.Ensembl.BIMEDsil14
+Version: 1.0.0
+NeedsCompilation: no
