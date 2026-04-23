@@ -10417,3 +10417,7 @@ NeedsCompilation: no
 Package: BSgenome.Lmarmoratus.Ensembl.iiLimMarm11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Msexta.Ensembl.JHUMsexv10
+Version: 1.0.0
+NeedsCompilation: no
