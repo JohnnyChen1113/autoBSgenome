@@ -9997,3 +9997,7 @@ NeedsCompilation: no
 Package: BSgenome.Asinensis.Ensembl.AsinC2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ajaponica.Ensembl.ASM1163010v1
+Version: 1.0.0
+NeedsCompilation: no
