@@ -10281,3 +10281,7 @@ NeedsCompilation: no
 Package: BSgenome.Dcitri.Ensembl.Diacipsyllidgenomeassemblyversion11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aquadriannulatus.Ensembl.AquaS1
+Version: 1.0.0
+NeedsCompilation: no
