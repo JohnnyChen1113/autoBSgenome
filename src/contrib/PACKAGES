@@ -10361,3 +10361,7 @@ NeedsCompilation: no
 Package: BSgenome.Llongipalpis.Ensembl.ASM2433408v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lglycinivorella.Ensembl.LegGlyc11
+Version: 1.0.0
+NeedsCompilation: no
