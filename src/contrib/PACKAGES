@@ -10309,3 +10309,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsaltator.Ensembl.Hsalv85
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hzea.Ensembl.ilHelZeax11
+Version: 1.0.0
+NeedsCompilation: no
