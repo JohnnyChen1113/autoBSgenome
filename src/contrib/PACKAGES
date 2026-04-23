@@ -10213,3 +10213,7 @@ NeedsCompilation: no
 Package: BSgenome.Cfloridanum.Ensembl.Cflo20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dsubpulchrella.Ensembl.RUDsubv11
+Version: 1.0.0
+NeedsCompilation: no
