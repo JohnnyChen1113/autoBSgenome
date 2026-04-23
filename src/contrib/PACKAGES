@@ -10593,3 +10593,7 @@ NeedsCompilation: no
 Package: BSgenome.Rmaidis.Ensembl.ASM367621v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tspiralis.Ensembl.Tspiralis1
+Version: 1.0.0
+NeedsCompilation: no
