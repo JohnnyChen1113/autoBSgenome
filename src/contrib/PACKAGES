@@ -10329,3 +10329,7 @@ NeedsCompilation: no
 Package: BSgenome.Hanthracinus.Ensembl.UHHiyHylAnth10haploid
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hexemplaris.Ensembl.nHd31
+Version: 1.0.0
+NeedsCompilation: no
