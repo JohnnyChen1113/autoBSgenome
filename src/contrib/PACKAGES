@@ -10409,3 +10409,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmediator.Ensembl.iyMicMedi21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Maethiopoides.Ensembl.UoOMaethIR
+Version: 1.0.0
+NeedsCompilation: no
