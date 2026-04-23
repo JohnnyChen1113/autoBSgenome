@@ -10081,3 +10081,7 @@ NeedsCompilation: no
 Package: BSgenome.Bglabrata.Ensembl.GCA947242115v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cpipiens.Ensembl.TSCPPV2
+Version: 1.0.0
+NeedsCompilation: no
