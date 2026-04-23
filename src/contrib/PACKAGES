@@ -10033,3 +10033,7 @@ NeedsCompilation: no
 Package: BSgenome.Blatifrons.Ensembl.ASM185335v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Agifuensis.Ensembl.ASM1490517v1
+Version: 1.0.0
+NeedsCompilation: no
