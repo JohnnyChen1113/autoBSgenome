@@ -10521,3 +10521,7 @@ NeedsCompilation: no
 Package: BSgenome.Pdamicornis.Ensembl.ASM370409v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppollicipes.Ensembl.Ppol2
+Version: 1.0.0
+NeedsCompilation: no
