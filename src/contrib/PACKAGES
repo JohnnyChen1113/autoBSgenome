@@ -10473,3 +10473,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcalifornianus.Ensembl.xbMytCali10p
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptepidariorum.Ensembl.Ptep30
+Version: 1.0.0
+NeedsCompilation: no
