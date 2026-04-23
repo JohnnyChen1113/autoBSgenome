@@ -10617,3 +10617,7 @@ NeedsCompilation: no
 Package: BSgenome.Sgregaria.Ensembl.iqSchGreg12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Spiceifrons.Ensembl.iqSchPice11
+Version: 1.0.0
+NeedsCompilation: no
