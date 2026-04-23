@@ -10217,3 +10217,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsubpulchrella.Ensembl.RUDsubv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dpseudoobscura.Ensembl.Dpse30
+Version: 1.0.0
+NeedsCompilation: no
