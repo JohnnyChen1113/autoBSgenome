@@ -10221,3 +10221,7 @@ NeedsCompilation: no
 Package: BSgenome.Dpseudoobscura.Ensembl.Dpse30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dnavojoa.Ensembl.UFRJDnav42
+Version: 1.0.0
+NeedsCompilation: no
