@@ -10317,3 +10317,7 @@ NeedsCompilation: no
 Package: BSgenome.Csecundus.Ensembl.Csec10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hrufescens.Ensembl.xgHalRufe10p
+Version: 1.0.0
+NeedsCompilation: no
