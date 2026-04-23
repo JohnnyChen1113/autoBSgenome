@@ -10581,3 +10581,7 @@ NeedsCompilation: no
 Package: BSgenome.Spistillata.Ensembl.Stylophorapistillatav1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmadens.Ensembl.TmadKSU11
+Version: 1.0.0
+NeedsCompilation: no
