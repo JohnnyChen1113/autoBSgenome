@@ -10485,3 +10485,7 @@ NeedsCompilation: no
 Package: BSgenome.Obimaculoides.Ensembl.ASM119413v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oabietinus.Ensembl.Oabi20
+Version: 1.0.0
+NeedsCompilation: no
