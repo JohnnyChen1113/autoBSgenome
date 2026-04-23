@@ -10353,3 +10353,7 @@ NeedsCompilation: no
 Package: BSgenome.Ixanthorius.Ensembl.iyIchXant11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hazteca.Ensembl.Hazt20
+Version: 1.0.0
+NeedsCompilation: no
