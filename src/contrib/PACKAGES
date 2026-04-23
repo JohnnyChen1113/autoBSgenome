@@ -10441,3 +10441,7 @@ NeedsCompilation: no
 Package: BSgenome.Myessoensis.Ensembl.ASM211388v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Npinetum.Ensembl.iyNeoPine11
+Version: 1.0.0
+NeedsCompilation: no
