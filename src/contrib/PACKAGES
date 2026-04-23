@@ -9969,3 +9969,7 @@ NeedsCompilation: no
 Package: BSgenome.Arosae.Ensembl.iyAthRosa11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Arubens.Ensembl.eAstRub13
+Version: 1.0.0
+NeedsCompilation: no
