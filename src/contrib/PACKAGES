@@ -10613,3 +10613,7 @@ NeedsCompilation: no
 Package: BSgenome.Sdumicola.Ensembl.ASM1061486v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sgregaria.Ensembl.iqSchGreg12
+Version: 1.0.0
+NeedsCompilation: no
