@@ -10493,3 +10493,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgossypiella.Ensembl.ilPecGoss11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Otaurus.Ensembl.Otau20
+Version: 1.0.0
+NeedsCompilation: no
