@@ -10357,3 +10357,7 @@ NeedsCompilation: no
 Package: BSgenome.Hazteca.Ensembl.Hazt20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Llongipalpis.Ensembl.ASM2433408v1
+Version: 1.0.0
+NeedsCompilation: no
