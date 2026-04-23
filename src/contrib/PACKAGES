@@ -10481,3 +10481,7 @@ NeedsCompilation: no
 Package: BSgenome.Osinensis.Ensembl.ASM634580v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Obimaculoides.Ensembl.ASM119413v2
+Version: 1.0.0
+NeedsCompilation: no
