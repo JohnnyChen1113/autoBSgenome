@@ -10205,3 +10205,7 @@ NeedsCompilation: no
 Package: BSgenome.Dteissieri.Ensembl.PrinDtei11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dnoxia.Ensembl.Dnoxia10
+Version: 1.0.0
+NeedsCompilation: no
