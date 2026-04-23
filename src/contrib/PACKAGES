@@ -10113,3 +10113,7 @@ NeedsCompilation: no
 Package: BSgenome.Cinsularis.Ensembl.ASM1335770v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cglomerata.Ensembl.MPMCglomv23
+Version: 1.0.0
+NeedsCompilation: no
