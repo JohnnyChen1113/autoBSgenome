@@ -10153,3 +10153,7 @@ NeedsCompilation: no
 Package: BSgenome.Dficusphila.Ensembl.ASM1815226v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dalbomicans.Ensembl.ASM965048v2
+Version: 1.0.0
+NeedsCompilation: no
