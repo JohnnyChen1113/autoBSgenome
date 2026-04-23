@@ -10405,3 +10405,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcinxia.Ensembl.ilMelCinx11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmediator.Ensembl.iyMicMedi21
+Version: 1.0.0
+NeedsCompilation: no
