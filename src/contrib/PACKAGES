@@ -9953,3 +9953,7 @@ NeedsCompilation: no
 Package: BSgenome.Adarlingi.Ensembl.AdarC3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aepiroticus.Ensembl.AepiE1
+Version: 1.0.0
+NeedsCompilation: no
