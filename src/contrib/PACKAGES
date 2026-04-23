@@ -10053,3 +10053,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccapitata.Ensembl.Ccap20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Chispanica.Ensembl.ULBChis110
+Version: 1.0.0
+NeedsCompilation: no
