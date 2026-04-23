@@ -10021,3 +10021,7 @@ NeedsCompilation: no
 Package: BSgenome.Btabaci.Ensembl.SSA2Nigerian785625mb
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bantarctica.Ensembl.ASM77530v1
+Version: 1.0.0
+NeedsCompilation: no
