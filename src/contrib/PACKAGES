@@ -10165,3 +10165,7 @@ NeedsCompilation: no
 Package: BSgenome.Deugracilis.Ensembl.ASM1815383v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dpulex.Ensembl.ASM2113471v1
+Version: 1.0.0
+NeedsCompilation: no
