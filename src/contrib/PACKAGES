@@ -10401,3 +10401,7 @@ NeedsCompilation: no
 Package: BSgenome.Lfortunei.Ensembl.xbLimFort51
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mcinxia.Ensembl.ilMelCinx11
+Version: 1.0.0
+NeedsCompilation: no
