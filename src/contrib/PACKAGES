@@ -10193,3 +10193,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsantomea.Ensembl.PrinDsan11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cvirginica.Ensembl.Cvirginica30
+Version: 1.0.0
+NeedsCompilation: no
