@@ -10105,3 +10105,7 @@ NeedsCompilation: no
 Package: BSgenome.Dmagna.Ensembl.ASM2063170v11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cquinquefasciatus.Ensembl.VPISUCqui10pripaternal
+Version: 1.0.0
+NeedsCompilation: no
