@@ -10201,3 +10201,7 @@ NeedsCompilation: no
 Package: BSgenome.Dvirgifera.Ensembl.PGIDIABVIV3a
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dteissieri.Ensembl.PrinDtei11
+Version: 1.0.0
+NeedsCompilation: no
