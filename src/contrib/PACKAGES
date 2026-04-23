@@ -10337,3 +10337,7 @@ NeedsCompilation: no
 Package: BSgenome.Hillucens.Ensembl.iHerIll22curated20191125
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hasiaticum.Ensembl.GCA013339685v2
+Version: 1.0.0
+NeedsCompilation: no
