@@ -10133,3 +10133,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsublineata.Ensembl.icDioSubl11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dcarinulata.Ensembl.icDioCari11
+Version: 1.0.0
+NeedsCompilation: no
