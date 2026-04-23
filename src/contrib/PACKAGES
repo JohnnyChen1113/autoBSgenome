@@ -10229,3 +10229,7 @@ NeedsCompilation: no
 Package: BSgenome.Dmojavensis.Ensembl.ASM1815372v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dbusckii.Ensembl.ASM1175060v1
+Version: 1.0.0
+NeedsCompilation: no
