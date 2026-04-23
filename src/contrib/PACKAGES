@@ -10009,3 +10009,7 @@ NeedsCompilation: no
 Package: BSgenome.Bneohumeralis.Ensembl.APGPCSIROBneowtdbg2raconallhicjuiceboxfastav2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Astephensi.Ensembl.AsteI2
+Version: 1.0.0
+NeedsCompilation: no
