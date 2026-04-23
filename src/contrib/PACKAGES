@@ -10073,3 +10073,7 @@ NeedsCompilation: no
 Package: BSgenome.Cfloridanus.Ensembl.Cflov75
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Blanceolatum.Ensembl.BraLan2
+Version: 1.0.0
+NeedsCompilation: no
