@@ -10577,3 +10577,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcanaliculata.Ensembl.ASM307304v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Spistillata.Ensembl.Stylophorapistillatav1
+Version: 1.0.0
+NeedsCompilation: no
