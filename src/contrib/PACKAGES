@@ -10453,3 +10453,7 @@ NeedsCompilation: no
 Package: BSgenome.Obiroi.Ensembl.Obirv54
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mpharaonis.Ensembl.ASM1337386v2
+Version: 1.0.0
+NeedsCompilation: no
