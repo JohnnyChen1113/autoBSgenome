@@ -10553,3 +10553,7 @@ NeedsCompilation: no
 Package: BSgenome.Rpomonella.Ensembl.Rhpom10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppapatasi.Ensembl.Ppap20
+Version: 1.0.0
+NeedsCompilation: no
