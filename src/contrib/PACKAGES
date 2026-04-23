@@ -10077,3 +10077,7 @@ NeedsCompilation: no
 Package: BSgenome.Blanceolatum.Ensembl.BraLan2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bglabrata.Ensembl.GCA947242115v1
+Version: 1.0.0
+NeedsCompilation: no
