@@ -10237,3 +10237,7 @@ NeedsCompilation: no
 Package: BSgenome.Dwillistoni.Ensembl.UCIdwil11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cfelis.Ensembl.ASM342690v1
+Version: 1.0.0
+NeedsCompilation: no
