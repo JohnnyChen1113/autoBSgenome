@@ -10265,3 +10265,7 @@ NeedsCompilation: no
 Package: BSgenome.Dmiranda.Ensembl.DmirandaPacBio21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ediaphana.Ensembl.Aiptasiagenome11
+Version: 1.0.0
+NeedsCompilation: no
