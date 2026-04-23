@@ -10345,3 +10345,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvitripennis.Ensembl.UTGWSS21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ipersulcatus.Ensembl.GCA013358835v2
+Version: 1.0.0
+NeedsCompilation: no
