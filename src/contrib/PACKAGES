@@ -10517,3 +10517,7 @@ NeedsCompilation: no
 Package: BSgenome.Pminiata.Ensembl.Pmin30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pdamicornis.Ensembl.ASM370409v1
+Version: 1.0.0
+NeedsCompilation: no
