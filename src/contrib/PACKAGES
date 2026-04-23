@@ -10041,3 +10041,7 @@ NeedsCompilation: no
 Package: BSgenome.Btabaci.Ensembl.SSA3Nigeria2278n648mb
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Btabaci.Ensembl.ASIAII5n227616Mb
+Version: 1.0.0
+NeedsCompilation: no
