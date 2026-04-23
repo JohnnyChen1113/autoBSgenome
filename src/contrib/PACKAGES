@@ -10449,3 +10449,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmetropolitanus.Ensembl.Prichtersiv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Obiroi.Ensembl.Obirv54
+Version: 1.0.0
+NeedsCompilation: no
