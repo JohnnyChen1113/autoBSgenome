@@ -9957,3 +9957,7 @@ NeedsCompilation: no
 Package: BSgenome.Aepiroticus.Ensembl.AepiE1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aequina.Ensembl.equinasmartdenarrow4noredun
+Version: 1.0.0
+NeedsCompilation: no
