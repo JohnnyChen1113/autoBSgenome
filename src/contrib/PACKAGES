@@ -10313,3 +10313,7 @@ NeedsCompilation: no
 Package: BSgenome.Hzea.Ensembl.ilHelZeax11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csecundus.Ensembl.Csec10
+Version: 1.0.0
+NeedsCompilation: no
