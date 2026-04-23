@@ -10365,3 +10365,7 @@ NeedsCompilation: no
 Package: BSgenome.Lglycinivorella.Ensembl.LegGlyc11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Msacchari.Ensembl.SCAv20
+Version: 1.0.0
+NeedsCompilation: no
