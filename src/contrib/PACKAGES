@@ -10609,3 +10609,7 @@ NeedsCompilation: no
 Package: BSgenome.Tpalmi.Ensembl.TpBJ2018v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sdumicola.Ensembl.ASM1061486v2
+Version: 1.0.0
+NeedsCompilation: no
