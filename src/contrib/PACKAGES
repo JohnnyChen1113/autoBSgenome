@@ -10325,3 +10325,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvolcanicus.Ensembl.UHHiyHylVolc10haploid
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hanthracinus.Ensembl.UHHiyHylAnth10haploid
+Version: 1.0.0
+NeedsCompilation: no
