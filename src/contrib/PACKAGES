@@ -10197,3 +10197,7 @@ NeedsCompilation: no
 Package: BSgenome.Cvirginica.Ensembl.Cvirginica30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dvirgifera.Ensembl.PGIDIABVIV3a
+Version: 1.0.0
+NeedsCompilation: no
