@@ -10333,3 +10333,7 @@ NeedsCompilation: no
 Package: BSgenome.Hexemplaris.Ensembl.nHd31
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hillucens.Ensembl.iHerIll22curated20191125
+Version: 1.0.0
+NeedsCompilation: no
