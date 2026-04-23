@@ -10169,3 +10169,7 @@ NeedsCompilation: no
 Package: BSgenome.Dpulex.Ensembl.ASM2113471v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dmauritiana.Ensembl.ASM438214v1
+Version: 1.0.0
+NeedsCompilation: no
