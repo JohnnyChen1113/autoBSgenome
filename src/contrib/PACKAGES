@@ -10225,3 +10225,7 @@ NeedsCompilation: no
 Package: BSgenome.Dnavojoa.Ensembl.UFRJDnav42
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dmojavensis.Ensembl.ASM1815372v1
+Version: 1.0.0
+NeedsCompilation: no
