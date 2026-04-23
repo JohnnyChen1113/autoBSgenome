@@ -10561,3 +10561,7 @@ NeedsCompilation: no
 Package: BSgenome.Pdominula.Ensembl.Pdomr12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sflava.Ensembl.YSAversion1
+Version: 1.0.0
+NeedsCompilation: no
