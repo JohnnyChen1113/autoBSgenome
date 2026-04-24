@@ -10749,3 +10749,7 @@ NeedsCompilation: no
 Package: BSgenome.Bdorsalis.Ensembl.ASM2337382v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppyralis.Ensembl.Ppyr13
+Version: 1.0.0
+NeedsCompilation: no
