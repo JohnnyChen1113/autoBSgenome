@@ -10697,3 +10697,7 @@ NeedsCompilation: no
 Package: BSgenome.Delegans.Ensembl.ASM1815250v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dmontana.Ensembl.ASM3504440v1
+Version: 1.0.0
+NeedsCompilation: no
