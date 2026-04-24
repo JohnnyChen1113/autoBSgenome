@@ -11241,3 +11241,7 @@ NeedsCompilation: no
 Package: BSgenome.Pfalciparum.Ensembl.ASM18605v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfalciparum.Ensembl.ASM14979v1
+Version: 1.0.0
+NeedsCompilation: no
