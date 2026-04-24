@@ -11225,3 +11225,7 @@ NeedsCompilation: no
 Package: BSgenome.Preichenowi.Ensembl.ASM160185v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tgondii.Ensembl.TGARIv2
+Version: 1.0.0
+NeedsCompilation: no
