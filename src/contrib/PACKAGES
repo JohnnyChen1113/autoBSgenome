@@ -10761,3 +10761,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmercenaria.Ensembl.MADLMemer1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Shermaphroditum.Ensembl.Sherm11
+Version: 1.0.0
+NeedsCompilation: no
