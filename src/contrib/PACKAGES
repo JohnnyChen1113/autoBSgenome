@@ -11001,3 +11001,7 @@ NeedsCompilation: no
 Package: BSgenome.Torientalis.Ensembl.GCA003072545v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cfasciculata.Ensembl.DFas20
+Version: 1.0.0
+NeedsCompilation: no
