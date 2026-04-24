@@ -11073,3 +11073,7 @@ NeedsCompilation: no
 Package: BSgenome.Pinui.Ensembl.PlasinuiSanAntonio1V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pyoelii.Ensembl.Plasyoel17XV2
+Version: 1.0.0
+NeedsCompilation: no
