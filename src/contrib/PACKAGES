@@ -11109,3 +11109,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcruzi.Ensembl.ASM20906v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfalciparum.Ensembl.PlasfalcNF1355C10V1
+Version: 1.0.0
+NeedsCompilation: no
