@@ -10685,3 +10685,7 @@ NeedsCompilation: no
 Package: BSgenome.Lgigantea.Ensembl.Lotgi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Atransitella.Ensembl.ilAmyTran11
+Version: 1.0.0
+NeedsCompilation: no
