@@ -11205,3 +11205,7 @@ NeedsCompilation: no
 Package: BSgenome.Pvivax.Ensembl.PVIndiaVIIV2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppersalinus.Ensembl.ASM144751v1
+Version: 1.0.0
+NeedsCompilation: no
