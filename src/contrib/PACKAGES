@@ -10877,3 +10877,7 @@ NeedsCompilation: no
 Package: BSgenome.Pkernoviae.Ensembl.PhyKer238432v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pchabaudi.Ensembl.PCHAS01
+Version: 1.0.0
+NeedsCompilation: no
