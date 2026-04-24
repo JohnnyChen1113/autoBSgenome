@@ -11165,3 +11165,7 @@ NeedsCompilation: no
 Package: BSgenome.Tequi.Ensembl.JCVIbewagv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfragile.Ensembl.PlasfragnilgiriV1
+Version: 1.0.0
+NeedsCompilation: no
