@@ -10805,3 +10805,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgaris.Ensembl.HydraT2TAEP
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bbovis.Ensembl.GCA000165395v2
+Version: 1.0.0
+NeedsCompilation: no
