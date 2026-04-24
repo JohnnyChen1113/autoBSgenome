@@ -10953,3 +10953,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssalmonicida.Ensembl.GCA000497125v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ehistolytica.Ensembl.EHACBv1
+Version: 1.0.0
+NeedsCompilation: no
