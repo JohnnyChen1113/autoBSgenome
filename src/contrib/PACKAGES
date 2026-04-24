@@ -10809,3 +10809,7 @@ NeedsCompilation: no
 Package: BSgenome.Bbovis.Ensembl.GCA000165395v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bnatans.Ensembl.Bigna1
+Version: 1.0.0
+NeedsCompilation: no
