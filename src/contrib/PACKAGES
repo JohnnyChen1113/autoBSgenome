@@ -10893,3 +10893,7 @@ NeedsCompilation: no
 Package: BSgenome.Glamblia.Ensembl.ASM18266v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptetraurelia.Ensembl.ASM16542v1
+Version: 1.0.0
+NeedsCompilation: no
