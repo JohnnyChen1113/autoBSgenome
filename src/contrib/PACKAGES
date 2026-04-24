@@ -11185,3 +11185,7 @@ NeedsCompilation: no
 Package: BSgenome.Ngaditana.Ensembl.ASM24072v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lpyrrhocoris.Ensembl.ASM129339v1
+Version: 1.0.0
+NeedsCompilation: no
