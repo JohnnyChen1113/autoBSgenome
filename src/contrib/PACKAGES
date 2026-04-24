@@ -10789,3 +10789,7 @@ NeedsCompilation: no
 Package: BSgenome.Boleae.Ensembl.MUBoleaev2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acastellanii.Ensembl.GCA000313135v1
+Version: 1.0.0
+NeedsCompilation: no
