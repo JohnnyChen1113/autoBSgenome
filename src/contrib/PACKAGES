@@ -10845,3 +10845,7 @@ NeedsCompilation: no
 Package: BSgenome.Harabidopsidis.Ensembl.HyaAraEmoy220
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lmajor.Ensembl.ASM272v2
+Version: 1.0.0
+NeedsCompilation: no
