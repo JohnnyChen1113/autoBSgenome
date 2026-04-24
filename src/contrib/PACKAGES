@@ -10717,3 +10717,7 @@ NeedsCompilation: no
 Package: BSgenome.Dvirilis.Ensembl.DvirAGIRSIIME
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dtropicalis.Ensembl.ASM1815108v1
+Version: 1.0.0
+NeedsCompilation: no
