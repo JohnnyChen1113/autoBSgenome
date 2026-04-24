@@ -11149,3 +11149,7 @@ NeedsCompilation: no
 Package: BSgenome.Sculicis.Ensembl.StrigomonasculicisGenome
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Slemnae.Ensembl.Stylonychialemnaeasmv10
+Version: 1.0.0
+NeedsCompilation: no
