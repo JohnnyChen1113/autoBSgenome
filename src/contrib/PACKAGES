@@ -10801,3 +10801,7 @@ NeedsCompilation: no
 Package: BSgenome.Aastaci.Ensembl.GCA000520075v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgaris.Ensembl.HydraT2TAEP
+Version: 1.0.0
+NeedsCompilation: no
