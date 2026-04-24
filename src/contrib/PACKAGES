@@ -10745,3 +10745,7 @@ NeedsCompilation: no
 Package: BSgenome.Oturicata.Ensembl.ASM3712646v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bdorsalis.Ensembl.ASM2337382v1
+Version: 1.0.0
+NeedsCompilation: no
