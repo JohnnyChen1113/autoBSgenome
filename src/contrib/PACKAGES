@@ -11085,3 +11085,7 @@ NeedsCompilation: no
 Package: BSgenome.Cparvum.Ensembl.ASM16534v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tgondii.Ensembl.TGVEG
+Version: 1.0.0
+NeedsCompilation: no
