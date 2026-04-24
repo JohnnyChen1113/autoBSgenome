@@ -11029,3 +11029,7 @@ NeedsCompilation: no
 Package: BSgenome.Torientalis.Ensembl.GCA003072535v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Etenella.Ensembl.ETH001
+Version: 1.0.0
+NeedsCompilation: no
