@@ -10977,3 +10977,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmuris.Ensembl.JCVIcmgv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Edispar.Ensembl.JCVIEDISG10
+Version: 1.0.0
+NeedsCompilation: no
