@@ -11125,3 +11125,7 @@ NeedsCompilation: no
 Package: BSgenome.Pfalciparum.Ensembl.Plasfalc02000708V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ttrahens.Ensembl.TheTraMay2010
+Version: 1.0.0
+NeedsCompilation: no
