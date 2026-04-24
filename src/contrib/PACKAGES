@@ -10881,3 +10881,7 @@ NeedsCompilation: no
 Package: BSgenome.Pchabaudi.Ensembl.PCHAS01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ngruberi.Ensembl.V10
+Version: 1.0.0
+NeedsCompilation: no
