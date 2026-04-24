@@ -10661,3 +10661,7 @@ NeedsCompilation: no
 Package: BSgenome.Vjacobsoni.Ensembl.vjacob10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zcesonia.Ensembl.Zerenecesonia11
+Version: 1.0.0
+NeedsCompilation: no
