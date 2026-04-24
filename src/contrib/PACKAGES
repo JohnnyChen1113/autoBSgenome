@@ -10997,3 +10997,7 @@ NeedsCompilation: no
 Package: BSgenome.Imultifiliis.Ensembl.JCVIIMG1V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Torientalis.Ensembl.GCA003072545v3
+Version: 1.0.0
+NeedsCompilation: no
