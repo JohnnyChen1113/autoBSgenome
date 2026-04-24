@@ -10741,3 +10741,7 @@ NeedsCompilation: no
 Package: BSgenome.Lpictus.Ensembl.Lp30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oturicata.Ensembl.ASM3712646v1
+Version: 1.0.0
+NeedsCompilation: no
