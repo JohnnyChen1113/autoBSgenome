@@ -10841,3 +10841,7 @@ NeedsCompilation: no
 Package: BSgenome.Ehuxleyi.Ensembl.EmilianahuxleyiCCMP1516maingenomeassemblyv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Harabidopsidis.Ensembl.HyaAraEmoy220
+Version: 1.0.0
+NeedsCompilation: no
