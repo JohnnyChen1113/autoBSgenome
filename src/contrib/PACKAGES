@@ -11297,3 +11297,7 @@ NeedsCompilation: no
 Package: BSgenome.Pparasitica.Ensembl.PhytparaP10297V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Candersoni.Ensembl.ASM186535v1
+Version: 1.0.0
+NeedsCompilation: no
