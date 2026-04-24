@@ -11017,3 +11017,7 @@ NeedsCompilation: no
 Package: BSgenome.Pisolate.Ensembl.AKHPRJEB1535v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tthermophila.Ensembl.JCVITTA122
+Version: 1.0.0
+NeedsCompilation: no
