@@ -11097,3 +11097,7 @@ NeedsCompilation: no
 Package: BSgenome.Tbrucei.Ensembl.TryBruApr2005chr11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eacervulina.Ensembl.EAH001
+Version: 1.0.0
+NeedsCompilation: no
