@@ -10721,3 +10721,7 @@ NeedsCompilation: no
 Package: BSgenome.Dtropicalis.Ensembl.ASM1815108v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Harmigera.Ensembl.ASM3070526v1
+Version: 1.0.0
+NeedsCompilation: no
