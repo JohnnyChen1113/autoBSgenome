@@ -11325,3 +11325,7 @@ NeedsCompilation: no
 Package: BSgenome.Pfalciparum.Ensembl.ASM283179v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgonderi.Ensembl.Pgonderiassembly01
+Version: 1.0.0
+NeedsCompilation: no
