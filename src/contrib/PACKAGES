@@ -11289,3 +11289,7 @@ NeedsCompilation: no
 Package: BSgenome.Pparasitica.Ensembl.PPINRA310V2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scoeruleus.Ensembl.ASM197095v1
+Version: 1.0.0
+NeedsCompilation: no
