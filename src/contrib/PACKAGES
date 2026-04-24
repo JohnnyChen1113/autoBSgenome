@@ -10941,3 +10941,7 @@ NeedsCompilation: no
 Package: BSgenome.Gintestinalis.Ensembl.GduodenalisAssBBAH15c1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmarinus.Ensembl.JCVIPMG10
+Version: 1.0.0
+NeedsCompilation: no
