@@ -10861,3 +10861,7 @@ NeedsCompilation: no
 Package: BSgenome.Psp.Ensembl.GCA900257145v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pinfestans.Ensembl.ASM14294v1
+Version: 1.0.0
+NeedsCompilation: no
