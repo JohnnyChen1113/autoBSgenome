@@ -11173,3 +11173,7 @@ NeedsCompilation: no
 Package: BSgenome.Trangeli.Ensembl.TrangeliSC58v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bbigemina.Ensembl.Bbig001
+Version: 1.0.0
+NeedsCompilation: no
