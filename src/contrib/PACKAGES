@@ -11273,3 +11273,7 @@ NeedsCompilation: no
 Package: BSgenome.Povale.Ensembl.Pow1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmalariae.Ensembl.Pmal
+Version: 1.0.0
+NeedsCompilation: no
