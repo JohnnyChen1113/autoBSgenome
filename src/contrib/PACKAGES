@@ -10913,3 +10913,7 @@ NeedsCompilation: no
 Package: BSgenome.Gintestinalis.Ensembl.ASM49871v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Srosetta.Ensembl.ProterospongiaspATCC50818
+Version: 1.0.0
+NeedsCompilation: no
