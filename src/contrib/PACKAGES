@@ -10981,3 +10981,7 @@ NeedsCompilation: no
 Package: BSgenome.Edispar.Ensembl.JCVIEDISG10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcynomolgi.Ensembl.PcynB10
+Version: 1.0.0
+NeedsCompilation: no
