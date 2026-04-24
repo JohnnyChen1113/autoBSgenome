@@ -10889,3 +10889,7 @@ NeedsCompilation: no
 Package: BSgenome.Gintestinalis.Ensembl.ASM49873v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Glamblia.Ensembl.ASM18266v1
+Version: 1.0.0
+NeedsCompilation: no
