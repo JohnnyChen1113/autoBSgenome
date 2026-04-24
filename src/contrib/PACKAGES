@@ -10909,3 +10909,7 @@ NeedsCompilation: no
 Package: BSgenome.Otrifallax.Ensembl.oxytrichaasmv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gintestinalis.Ensembl.ASM49871v1
+Version: 1.0.0
+NeedsCompilation: no
