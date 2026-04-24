@@ -11181,3 +11181,7 @@ NeedsCompilation: no
 Package: BSgenome.Pvivax.Ensembl.PVNKoreanV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ngaditana.Ensembl.ASM24072v1
+Version: 1.0.0
+NeedsCompilation: no
