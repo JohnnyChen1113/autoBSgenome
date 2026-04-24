@@ -10769,3 +10769,7 @@ NeedsCompilation: no
 Package: BSgenome.Banynana.Ensembl.ilBicAnyn11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnasturtii.Ensembl.AAFCCNas11
+Version: 1.0.0
+NeedsCompilation: no
