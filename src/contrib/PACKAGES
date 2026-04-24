@@ -11369,3 +11369,7 @@ NeedsCompilation: no
 Package: BSgenome.Tgondii.Ensembl.TGCATBR9v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pparasitica.Ensembl.PhytparaCHvinca01V1
+Version: 1.0.0
+NeedsCompilation: no
