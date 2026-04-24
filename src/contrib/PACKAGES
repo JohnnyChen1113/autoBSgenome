@@ -10825,3 +10825,7 @@ NeedsCompilation: no
 Package: BSgenome.Gultimum.Ensembl.GCA000387525v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Emitis.Ensembl.GCA000499745v2
+Version: 1.0.0
+NeedsCompilation: no
