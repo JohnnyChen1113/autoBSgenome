@@ -11117,3 +11117,7 @@ NeedsCompilation: no
 Package: BSgenome.Pvinckei.Ensembl.PlasvincpettCRV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cparamecium.Ensembl.ASM19445v1
+Version: 1.0.0
+NeedsCompilation: no
