@@ -11281,3 +11281,7 @@ NeedsCompilation: no
 Package: BSgenome.Povale.Ensembl.Pow2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccayetanensis.Ensembl.ASM76915v2
+Version: 1.0.0
+NeedsCompilation: no
