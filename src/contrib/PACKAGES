@@ -10957,3 +10957,7 @@ NeedsCompilation: no
 Package: BSgenome.Ehistolytica.Ensembl.EHACBv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tgondii.Ensembl.TGGT1
+Version: 1.0.0
+NeedsCompilation: no
