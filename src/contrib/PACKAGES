@@ -10633,3 +10633,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcalifornicus.Ensembl.TcalSDv21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcaudatus.Ensembl.Priapuluscaudatus501
+Version: 1.0.0
+NeedsCompilation: no
