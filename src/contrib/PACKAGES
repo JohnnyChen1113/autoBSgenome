@@ -11137,3 +11137,7 @@ NeedsCompilation: no
 Package: BSgenome.Tgondii.Ensembl.TGGABGALDOM2v21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcruzi.Ensembl.TcruziDm28cv01
+Version: 1.0.0
+NeedsCompilation: no
