@@ -11253,3 +11253,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgaboni.Ensembl.ASM160202v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pyoelii.Ensembl.PYYM01
+Version: 1.0.0
+NeedsCompilation: no
