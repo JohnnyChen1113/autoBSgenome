@@ -10781,3 +10781,7 @@ NeedsCompilation: no
 Package: BSgenome.Bcoprophila.Ensembl.BUBcopv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dponderosae.Ensembl.DponF20191213v2
+Version: 1.0.0
+NeedsCompilation: no
