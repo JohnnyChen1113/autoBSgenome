@@ -10869,3 +10869,7 @@ NeedsCompilation: no
 Package: BSgenome.Pvivax.Ensembl.ASM241v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pberghei.Ensembl.GCA900002375v2
+Version: 1.0.0
+NeedsCompilation: no
