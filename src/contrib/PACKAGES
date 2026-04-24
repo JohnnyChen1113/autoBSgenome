@@ -11189,3 +11189,7 @@ NeedsCompilation: no
 Package: BSgenome.Lpyrrhocoris.Ensembl.ASM129339v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pvivax.Ensembl.PVMauritaniaIV1
+Version: 1.0.0
+NeedsCompilation: no
