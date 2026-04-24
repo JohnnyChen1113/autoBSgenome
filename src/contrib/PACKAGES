@@ -11045,3 +11045,7 @@ NeedsCompilation: no
 Package: BSgenome.Einvadens.Ensembl.EIA2v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Epraecox.Ensembl.EPH001
+Version: 1.0.0
+NeedsCompilation: no
