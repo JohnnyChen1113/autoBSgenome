@@ -10693,3 +10693,7 @@ NeedsCompilation: no
 Package: BSgenome.Dnovamexicana.Ensembl.DnovRS21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Delegans.Ensembl.ASM1815250v1
+Version: 1.0.0
+NeedsCompilation: no
