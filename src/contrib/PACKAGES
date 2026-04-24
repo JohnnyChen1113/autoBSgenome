@@ -11213,3 +11213,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcruzi.Ensembl.TCCdiploid10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tconorhini.Ensembl.ASM371948v1
+Version: 1.0.0
+NeedsCompilation: no
