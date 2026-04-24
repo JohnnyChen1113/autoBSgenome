@@ -11257,3 +11257,7 @@ NeedsCompilation: no
 Package: BSgenome.Pyoelii.Ensembl.PYYM01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Toceanica.Ensembl.ThaOc10
+Version: 1.0.0
+NeedsCompilation: no
