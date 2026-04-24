@@ -10853,3 +10853,7 @@ NeedsCompilation: no
 Package: BSgenome.Plateralis.Ensembl.MPF4v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pvivax.Ensembl.GCA900093555v2
+Version: 1.0.0
+NeedsCompilation: no
