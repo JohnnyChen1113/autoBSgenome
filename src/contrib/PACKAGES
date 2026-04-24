@@ -11209,3 +11209,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppersalinus.Ensembl.ASM144751v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcruzi.Ensembl.TCCdiploid10
+Version: 1.0.0
+NeedsCompilation: no
