@@ -11217,3 +11217,7 @@ NeedsCompilation: no
 Package: BSgenome.Tconorhini.Ensembl.ASM371948v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Trangeli.Ensembl.ASM371947v1
+Version: 1.0.0
+NeedsCompilation: no
