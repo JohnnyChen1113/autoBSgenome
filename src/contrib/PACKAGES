@@ -10813,3 +10813,7 @@ NeedsCompilation: no
 Package: BSgenome.Bnatans.Ensembl.Bigna1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ddiscoideum.Ensembl.dicty27
+Version: 1.0.0
+NeedsCompilation: no
