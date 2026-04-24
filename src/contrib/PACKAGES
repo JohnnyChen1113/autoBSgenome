@@ -11129,3 +11129,7 @@ NeedsCompilation: no
 Package: BSgenome.Ttrahens.Ensembl.TheTraMay2010
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Torientalis.Ensembl.ASM74089v1
+Version: 1.0.0
+NeedsCompilation: no
