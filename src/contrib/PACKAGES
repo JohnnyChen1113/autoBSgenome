@@ -11413,3 +11413,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmegakarya.Ensembl.ASM221536v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppalmivora.Ensembl.ASM291172v1
+Version: 1.0.0
+NeedsCompilation: no
