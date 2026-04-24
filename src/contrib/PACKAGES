@@ -11157,3 +11157,7 @@ NeedsCompilation: no
 Package: BSgenome.Lpanamensis.Ensembl.ASM75516v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tgondii.Ensembl.TGVANDv2
+Version: 1.0.0
+NeedsCompilation: no
