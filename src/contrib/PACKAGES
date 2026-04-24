@@ -10753,3 +10753,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppyralis.Ensembl.Ppyr13
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmolitor.Ensembl.Tenebriomolitorv3
+Version: 1.0.0
+NeedsCompilation: no
