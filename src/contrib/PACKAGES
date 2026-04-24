@@ -11409,3 +11409,7 @@ NeedsCompilation: no
 Package: BSgenome.Tclavata.Ensembl.Thrclav1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmegakarya.Ensembl.ASM221536v1
+Version: 1.0.0
+NeedsCompilation: no
