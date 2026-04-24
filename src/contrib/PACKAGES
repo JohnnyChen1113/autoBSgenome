@@ -11305,3 +11305,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmalariae.Ensembl.PmUG01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bsp.Ensembl.Bxinjiang10
+Version: 1.0.0
+NeedsCompilation: no
