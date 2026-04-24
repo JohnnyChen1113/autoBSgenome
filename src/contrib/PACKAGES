@@ -10873,3 +10873,7 @@ NeedsCompilation: no
 Package: BSgenome.Pberghei.Ensembl.GCA900002375v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pkernoviae.Ensembl.PhyKer238432v1
+Version: 1.0.0
+NeedsCompilation: no
