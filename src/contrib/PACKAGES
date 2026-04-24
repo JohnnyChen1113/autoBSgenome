@@ -11405,3 +11405,7 @@ NeedsCompilation: no
 Package: BSgenome.Ahypogyna.Ensembl.ACHlanev1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tclavata.Ensembl.Thrclav1
+Version: 1.0.0
+NeedsCompilation: no
