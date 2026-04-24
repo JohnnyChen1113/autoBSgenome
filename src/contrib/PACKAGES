@@ -10653,3 +10653,7 @@ NeedsCompilation: no
 Package: BSgenome.Zcucurbitae.Ensembl.idZeuCucr12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tvaporariorum.Ensembl.ASM1176424v1
+Version: 1.0.0
+NeedsCompilation: no
