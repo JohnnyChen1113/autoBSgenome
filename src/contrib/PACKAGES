@@ -11089,3 +11089,7 @@ NeedsCompilation: no
 Package: BSgenome.Tgondii.Ensembl.TGVEG
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfalciparum.Ensembl.PlasfalcVietnamOakKnollFVOV1
+Version: 1.0.0
+NeedsCompilation: no
