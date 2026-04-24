@@ -11349,3 +11349,7 @@ NeedsCompilation: no
 Package: BSgenome.Psp.Ensembl.PGABG02
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmeleagridis.Ensembl.CryMelUKMEL110
+Version: 1.0.0
+NeedsCompilation: no
