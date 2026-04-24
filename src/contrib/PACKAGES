@@ -11113,3 +11113,7 @@ NeedsCompilation: no
 Package: BSgenome.Pfalciparum.Ensembl.PlasfalcNF1355C10V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pvinckei.Ensembl.PlasvincpettCRV1
+Version: 1.0.0
+NeedsCompilation: no
