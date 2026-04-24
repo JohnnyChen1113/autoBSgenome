@@ -11033,3 +11033,7 @@ NeedsCompilation: no
 Package: BSgenome.Etenella.Ensembl.ETH001
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ehistolytica.Ensembl.EHAku27v1
+Version: 1.0.0
+NeedsCompilation: no
