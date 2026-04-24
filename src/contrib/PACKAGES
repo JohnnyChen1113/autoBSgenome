@@ -11065,3 +11065,7 @@ NeedsCompilation: no
 Package: BSgenome.Pfalciparum.Ensembl.PlasfalcNF4V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfalciparum.Ensembl.PlasfalcUgandaPaloAltoFUPHV1
+Version: 1.0.0
+NeedsCompilation: no
