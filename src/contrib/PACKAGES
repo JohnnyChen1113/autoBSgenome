@@ -10625,3 +10625,7 @@ NeedsCompilation: no
 Package: BSgenome.Samericana.Ensembl.iqSchAmer21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tpretiosum.Ensembl.Tpre20
+Version: 1.0.0
+NeedsCompilation: no
