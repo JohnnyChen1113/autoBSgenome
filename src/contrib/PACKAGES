@@ -11385,3 +11385,7 @@ NeedsCompilation: no
 Package: BSgenome.Ngaditana.Ensembl.NagaB3110
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pparasitica.Ensembl.PhytparaCJ01A1V1
+Version: 1.0.0
+NeedsCompilation: no
