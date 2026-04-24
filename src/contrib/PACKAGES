@@ -10701,3 +10701,7 @@ NeedsCompilation: no
 Package: BSgenome.Dmontana.Ensembl.ASM3504440v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dserrata.Ensembl.Dser11
+Version: 1.0.0
+NeedsCompilation: no
