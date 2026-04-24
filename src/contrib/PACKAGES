@@ -11353,3 +11353,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmeleagridis.Ensembl.CryMelUKMEL110
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bovata.Ensembl.Bovata71
+Version: 1.0.0
+NeedsCompilation: no
