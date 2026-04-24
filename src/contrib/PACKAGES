@@ -11417,3 +11417,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppalmivora.Ensembl.ASM291172v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pkernoviae.Ensembl.PkChile4v20
+Version: 1.0.0
+NeedsCompilation: no
