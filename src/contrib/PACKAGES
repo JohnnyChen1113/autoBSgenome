@@ -10929,3 +10929,7 @@ NeedsCompilation: no
 Package: BSgenome.Parrhenomanes.Ensembl.parscaffoldsv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pvexans.Ensembl.pvescaffoldsv1
+Version: 1.0.0
+NeedsCompilation: no
