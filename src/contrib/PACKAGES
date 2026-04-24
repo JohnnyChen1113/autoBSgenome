@@ -11233,3 +11233,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcruzi.Ensembl.ASM371915v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sparasitica.Ensembl.ASM15154v2
+Version: 1.0.0
+NeedsCompilation: no
