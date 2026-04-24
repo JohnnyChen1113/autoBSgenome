@@ -10865,3 +10865,7 @@ NeedsCompilation: no
 Package: BSgenome.Pinfestans.Ensembl.ASM14294v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pvivax.Ensembl.ASM241v2
+Version: 1.0.0
+NeedsCompilation: no
