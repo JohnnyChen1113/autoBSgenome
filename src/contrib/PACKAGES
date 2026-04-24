@@ -10677,3 +10677,7 @@ NeedsCompilation: no
 Package: BSgenome.Snitens.Ensembl.iqSchNite11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gpalpalis.Ensembl.GpapI1
+Version: 1.0.0
+NeedsCompilation: no
