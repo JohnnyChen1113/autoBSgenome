@@ -11381,3 +11381,7 @@ NeedsCompilation: no
 Package: BSgenome.Sdiclina.Ensembl.SapdiclinaVS20V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ngaditana.Ensembl.NagaB3110
+Version: 1.0.0
+NeedsCompilation: no
