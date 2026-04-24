@@ -11397,3 +11397,7 @@ NeedsCompilation: no
 Package: BSgenome.Pnicotianae.Ensembl.ASM148298v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pnicotianae.Ensembl.ASM148301v1
+Version: 1.0.0
+NeedsCompilation: no
