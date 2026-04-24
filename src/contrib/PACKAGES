@@ -10961,3 +10961,7 @@ NeedsCompilation: no
 Package: BSgenome.Tgondii.Ensembl.TGGT1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmultistriata.Ensembl.ASM90066040v1
+Version: 1.0.0
+NeedsCompilation: no
