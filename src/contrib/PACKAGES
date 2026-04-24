@@ -10885,3 +10885,7 @@ NeedsCompilation: no
 Package: BSgenome.Ngruberi.Ensembl.V10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gintestinalis.Ensembl.ASM49873v1
+Version: 1.0.0
+NeedsCompilation: no
