@@ -10969,3 +10969,7 @@ NeedsCompilation: no
 Package: BSgenome.Pfalciparum.Ensembl.PlasfalcMaliPS096E11V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rfilosa.Ensembl.Retiassembly10
+Version: 1.0.0
+NeedsCompilation: no
