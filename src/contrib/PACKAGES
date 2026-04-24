@@ -10713,3 +10713,7 @@ NeedsCompilation: no
 Package: BSgenome.Lhumile.Ensembl.LhumUNILv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dvirilis.Ensembl.DvirAGIRSIIME
+Version: 1.0.0
+NeedsCompilation: no
