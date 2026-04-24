@@ -10821,3 +10821,7 @@ NeedsCompilation: no
 Package: BSgenome.Ehistolytica.Ensembl.JCVIESG210
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gultimum.Ensembl.GCA000387525v2
+Version: 1.0.0
+NeedsCompilation: no
