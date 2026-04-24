@@ -11249,3 +11249,7 @@ NeedsCompilation: no
 Package: BSgenome.Pberghei.Ensembl.PbK173
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgaboni.Ensembl.ASM160202v1
+Version: 1.0.0
+NeedsCompilation: no
