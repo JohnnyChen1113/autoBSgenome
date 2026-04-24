@@ -11357,3 +11357,7 @@ NeedsCompilation: no
 Package: BSgenome.Bovata.Ensembl.Bovata71
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Torientalis.Ensembl.ASM307252v1
+Version: 1.0.0
+NeedsCompilation: no
