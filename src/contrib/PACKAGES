@@ -10985,3 +10985,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcynomolgi.Ensembl.PcynB10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pbrassicae.Ensembl.pbe3h15
+Version: 1.0.0
+NeedsCompilation: no
