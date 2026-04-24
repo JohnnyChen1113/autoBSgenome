@@ -11425,3 +11425,7 @@ NeedsCompilation: no
 Package: BSgenome.Peffusa.Ensembl.PeffR14
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aastaci.Ensembl.astaciKB13
+Version: 1.0.0
+NeedsCompilation: no
