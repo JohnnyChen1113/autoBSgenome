@@ -10793,3 +10793,7 @@ NeedsCompilation: no
 Package: BSgenome.Acastellanii.Ensembl.GCA000313135v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ainvadans.Ensembl.GCA000520115v1
+Version: 1.0.0
+NeedsCompilation: no
