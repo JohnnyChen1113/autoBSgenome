@@ -11049,3 +11049,7 @@ NeedsCompilation: no
 Package: BSgenome.Epraecox.Ensembl.EPH001
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcruzi.Ensembl.ASM30049v1
+Version: 1.0.0
+NeedsCompilation: no
