@@ -11005,3 +11005,7 @@ NeedsCompilation: no
 Package: BSgenome.Cfasciculata.Ensembl.DFas20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pyoelii.Ensembl.GCA900002385v2
+Version: 1.0.0
+NeedsCompilation: no
