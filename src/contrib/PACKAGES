@@ -11037,3 +11037,7 @@ NeedsCompilation: no
 Package: BSgenome.Ehistolytica.Ensembl.EHAku27v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfalciparum.Ensembl.Plasfalc7G8V1
+Version: 1.0.0
+NeedsCompilation: no
