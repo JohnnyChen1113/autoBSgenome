@@ -10949,3 +10949,7 @@ NeedsCompilation: no
 Package: BSgenome.Sarctica.Ensembl.SphaarcticaJP610V1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssalmonicida.Ensembl.GCA000497125v2
+Version: 1.0.0
+NeedsCompilation: no
