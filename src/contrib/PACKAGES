@@ -10917,3 +10917,7 @@ NeedsCompilation: no
 Package: BSgenome.Srosetta.Ensembl.ProterospongiaspATCC50818
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tfoetus.Ensembl.ASM183968v1
+Version: 1.0.0
+NeedsCompilation: no
