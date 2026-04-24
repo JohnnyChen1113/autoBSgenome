@@ -11269,3 +11269,7 @@ NeedsCompilation: no
 Package: BSgenome.Povale.Ensembl.Poc1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Povale.Ensembl.Pow1
+Version: 1.0.0
+NeedsCompilation: no
