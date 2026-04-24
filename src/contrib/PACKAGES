@@ -10705,3 +10705,7 @@ NeedsCompilation: no
 Package: BSgenome.Dserrata.Ensembl.Dser11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dsulfurigaster.Ensembl.ASM2355843v2
+Version: 1.0.0
+NeedsCompilation: no
