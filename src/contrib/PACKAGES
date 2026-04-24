@@ -11329,3 +11329,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgonderi.Ensembl.Pgonderiassembly01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csuis.Ensembl.ASM260058v1
+Version: 1.0.0
+NeedsCompilation: no
