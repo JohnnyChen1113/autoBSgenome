@@ -11445,3 +11445,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcactorum.Ensembl.Pcac10300v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pkernoviae.Ensembl.PkChile6v20
+Version: 1.0.0
+NeedsCompilation: no
