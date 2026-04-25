@@ -11465,3 +11465,7 @@ NeedsCompilation: no
 Package: BSgenome.Aastaci.Ensembl.astaciD2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pkernoviae.Ensembl.PkChile7v20
+Version: 1.0.0
+NeedsCompilation: no
