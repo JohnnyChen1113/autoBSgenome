@@ -11441,3 +11441,7 @@ NeedsCompilation: no
 Package: BSgenome.Ainvadans.Ensembl.invNJM0002
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcactorum.Ensembl.Pcac10300v1
+Version: 1.0.0
+NeedsCompilation: no
