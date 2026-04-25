@@ -11449,3 +11449,7 @@ NeedsCompilation: no
 Package: BSgenome.Pkernoviae.Ensembl.PkChile6v20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pkernoviae.Ensembl.PkChile2v20
+Version: 1.0.0
+NeedsCompilation: no
