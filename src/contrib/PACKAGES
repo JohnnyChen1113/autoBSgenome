@@ -11617,3 +11617,7 @@ NeedsCompilation: no
 Package: BSgenome.Tnigroviridis.Ensembl.TETRAODON80
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eeuropaeus.Ensembl.eriEur1
+Version: 1.0.0
+NeedsCompilation: no
