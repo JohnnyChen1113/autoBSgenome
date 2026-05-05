@@ -11469,3 +11469,7 @@ NeedsCompilation: no
 Package: BSgenome.Pkernoviae.Ensembl.PkChile7v20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vfaba.Ensembl.Hedin2genomev1
+Version: 1.0.0
+NeedsCompilation: no
