@@ -11573,3 +11573,7 @@ NeedsCompilation: no
 Package: BSgenome.Taestivum.Ensembl.TGACrobigus
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dpolymorpha.Ensembl.UMNDpol10
+Version: 1.0.0
+NeedsCompilation: no
