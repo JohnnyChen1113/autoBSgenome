@@ -92,11 +92,17 @@ jobs:
           pending = []
           for item in queue:
               if item['status'] != 'pending': continue
-              if not (item.get('accession') and item.get('assembly') and item.get('organism')): continue
-              provider = 'Ensembl' if item.get('data_source') == 'ensembl' else 'NCBI'
+              if not (item.get('assembly') and item.get('organism')): continue
+              is_ensembl = item.get('data_source') == 'ensembl'
+              # NCBI builds require an accession (it's the download key); Ensembl
+              # resolves by species_url so accession can be missing for legacy
+              # 2008-era assemblies that predate GenBank Assembly registry.
+              if not is_ensembl and not item.get('accession'): continue
+              if is_ensembl and not item.get('species_url'): continue
+              provider = 'Ensembl' if is_ensembl else 'NCBI'
               name, reason = build_package_name(item['organism'], provider, item['assembly'])
               if not name:
-                  print(f'  [skip-malformed] {item["accession"]} {item["organism"]}: {reason}')
+                  print(f'  [skip-malformed] {item.get("accession") or item.get("species_url")} {item["organism"]}: {reason}')
                   continue
               pending.append(item)
 
@@ -108,7 +114,7 @@ jobs:
               with open('batch.json', 'w') as f:
                   json.dump(batch, f)
               for item in batch:
-                  print(f'  - {item["accession"]} {item["organism"]} [{item.get("data_source","ncbi")}]')
+                  print(f'  - {item.get("accession") or item.get("species_url")} {item["organism"]} [{item.get("data_source","ncbi")}]')
           PYEOF
           cat /tmp/queue_check.txt
 
@@ -175,7 +181,7 @@ jobs:
           repo = os.environ['REPO']
 
           for item in batch:
-              accession = item['accession']
+              accession = item.get('accession') or ''
               organism = item['organism']
               assembly_raw = item['assembly']
               is_ensembl = item.get('data_source') == 'ensembl'
@@ -183,7 +189,7 @@ jobs:
 
               package_name, reason = build_package_name(organism, provider, assembly_raw)
               if not package_name:
-                  print(f'Skipped (malformed): {accession} {organism}: {reason}')
+                  print(f'Skipped (malformed): {accession or item.get("species_url")} {organism}: {reason}')
                   continue
 
               if is_ensembl:
@@ -202,10 +208,15 @@ jobs:
                   extra_fields['species_url'] = item.get('species_url', '')
                   extra_fields['ensembl_group'] = item.get('group', '')
 
+              # job_id needs a stable short token; fall back to species_url for
+              # Ensembl items whose accession is missing.
+              token_src = accession or item.get('species_url') or organism
+              job_id = ''.join(c for c in token_src if c.isalnum())[-8:]
+
               payload = {
                   'event_type': 'build_bsgenome',
                   'client_payload': {
-                      'job_id': accession.replace('_', '').replace('.', '')[-8:],
+                      'job_id': job_id,
                       'package_name': package_name,
                       'organism': organism,
                       'common_name': '',
@@ -256,11 +267,12 @@ jobs:
             python3 <<'PYEOF'
           import json
           with open('batch.json') as f: batch = json.load(f)
-          batch_accessions = {item['accession'] for item in batch}
+          # Match on package_name; accession may be None for legacy Ensembl items.
+          batch_pkgs = {item.get('package_name') for item in batch if item.get('package_name')}
           with open('build-queue.json') as f: queue = json.load(f)
           changed = 0
           for item in queue:
-              if item['accession'] in batch_accessions and item['status'] != 'building':
+              if item.get('package_name') in batch_pkgs and item['status'] != 'building':
                   item['status'] = 'building'
                   changed += 1
           with open('build-queue.json', 'w') as f:
