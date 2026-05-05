@@ -11513,3 +11513,7 @@ NeedsCompilation: no
 Package: BSgenome.Taestivum.Ensembl.PGSBv20Lancer
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lpurpureus.Ensembl.ILRILpur
+Version: 1.0.0
+NeedsCompilation: no
