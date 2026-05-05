@@ -11545,3 +11545,7 @@ NeedsCompilation: no
 Package: BSgenome.Tdicoccoides.Ensembl.WEWSeqv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Taestivum.Ensembl.TGACparagon
+Version: 1.0.0
+NeedsCompilation: no
