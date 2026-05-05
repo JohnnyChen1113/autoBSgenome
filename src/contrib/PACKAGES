@@ -11497,3 +11497,7 @@ NeedsCompilation: no
 Package: BSgenome.Taestivum.Ensembl.PGSBv20Mattis
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Taestivum.Ensembl.GCA949126075v1
+Version: 1.0.0
+NeedsCompilation: no
