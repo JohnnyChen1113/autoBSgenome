@@ -11633,3 +11633,7 @@ NeedsCompilation: no
 Package: BSgenome.Tbelangeri.Ensembl.tupBel1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vpacos.Ensembl.vicPac1
+Version: 1.0.0
+NeedsCompilation: no
