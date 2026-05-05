@@ -11529,3 +11529,7 @@ NeedsCompilation: no
 Package: BSgenome.Alongiglumis.Ensembl.GCA910589755v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aeriantha.Ensembl.AvenaerianthaBYU132v1assembly
+Version: 1.0.0
+NeedsCompilation: no
