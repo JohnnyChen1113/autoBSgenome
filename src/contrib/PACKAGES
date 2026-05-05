@@ -11601,3 +11601,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmusculus.Ensembl.WSBEiJv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmusculus.Ensembl.CASTEiJv3
+Version: 1.0.0
+NeedsCompilation: no
