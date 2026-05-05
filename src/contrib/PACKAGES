@@ -11569,3 +11569,7 @@ NeedsCompilation: no
 Package: BSgenome.Taestivum.Ensembl.EIWeebilV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Taestivum.Ensembl.TGACrobigus
+Version: 1.0.0
+NeedsCompilation: no
