@@ -11561,3 +11561,7 @@ NeedsCompilation: no
 Package: BSgenome.Taestivum.Ensembl.PGSBv20Mace
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tspelta.Ensembl.PGSBv20Spelta
+Version: 1.0.0
+NeedsCompilation: no
