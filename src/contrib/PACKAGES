@@ -11593,3 +11593,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmusculus.Ensembl.PWKPhJv3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmusculus.Ensembl.JF1MsJv3
+Version: 1.0.0
+NeedsCompilation: no
