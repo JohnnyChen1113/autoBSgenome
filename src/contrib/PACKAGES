@@ -11537,3 +11537,7 @@ NeedsCompilation: no
 Package: BSgenome.Tturgidum.Ensembl.svevo
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ainsularis.Ensembl.GCA910574615v1
+Version: 1.0.0
+NeedsCompilation: no
