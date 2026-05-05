@@ -11585,3 +11585,7 @@ NeedsCompilation: no
 Package: BSgenome.Scancellata.Ensembl.iqSchCanc21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccarpio.Ensembl.GermanMirrorcarp10
+Version: 1.0.0
+NeedsCompilation: no
