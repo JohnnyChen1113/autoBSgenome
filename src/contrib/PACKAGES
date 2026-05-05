@@ -11517,3 +11517,7 @@ NeedsCompilation: no
 Package: BSgenome.Lpurpureus.Ensembl.ILRILpur
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Avaga.Ensembl.AMSPRJEB1171v1
+Version: 1.0.0
+NeedsCompilation: no
