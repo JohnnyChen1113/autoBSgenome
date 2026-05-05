@@ -11533,3 +11533,7 @@ NeedsCompilation: no
 Package: BSgenome.Aeriantha.Ensembl.AvenaerianthaBYU132v1assembly
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tturgidum.Ensembl.svevo
+Version: 1.0.0
+NeedsCompilation: no
