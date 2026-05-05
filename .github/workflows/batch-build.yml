@@ -125,26 +125,32 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_OUTPUT: ${{ env.GITHUB_OUTPUT }}
         run: |
-          # Skip dispatch when recent build-bsgenome failure rate >= 80%. Cron retries
-          # next tick, so the breaker auto-clears once a systemic issue is fixed.
+          # Skip dispatch when recent build-bsgenome failure rate >= 80%.
+          # "Recent" means completed within the last 6 hours; old failures must
+          # not deadlock the queue after a fix has shipped (otherwise, with no
+          # new dispatches happening, the rolling window never refreshes).
           python3 <<'PYEOF'
           import json, os, subprocess
+          from datetime import datetime, timedelta, timezone
           r = subprocess.run(
               ['gh', 'run', 'list', '--workflow', 'build-bsgenome.yml',
-               '--repo', os.environ['GITHUB_REPOSITORY'], '--limit', '30',
-               '--status', 'completed', '--json', 'conclusion'],
+               '--repo', os.environ['GITHUB_REPOSITORY'], '--limit', '50',
+               '--status', 'completed', '--json', 'conclusion,updatedAt'],
               capture_output=True, text=True
           )
-          runs = json.loads(r.stdout or '[]') if r.returncode == 0 else []
+          all_runs = json.loads(r.stdout or '[]') if r.returncode == 0 else []
+          cutoff = datetime.now(timezone.utc) - timedelta(hours=6)
+          def ts(s): return datetime.fromisoformat(s.replace('Z', '+00:00'))
+          runs = [run for run in all_runs if ts(run['updatedAt']) >= cutoff]
           breaker_open = False
           if r.returncode != 0:
               print('Could not query run history; allowing batch to proceed')
           elif len(runs) < 10:
-              print(f'Only {len(runs)} recent runs; allowing batch')
+              print(f'Only {len(runs)} runs in last 6h (of {len(all_runs)} fetched); allowing batch')
           else:
               failures = sum(1 for run in runs if run.get('conclusion') == 'failure')
               rate = failures / len(runs)
-              print(f'Recent build-bsgenome failure rate: {failures}/{len(runs)} ({rate:.0%})')
+              print(f'Recent (6h) build-bsgenome failure rate: {failures}/{len(runs)} ({rate:.0%})')
               if rate >= 0.80:
                   print('CIRCUIT BREAKER OPEN: skipping dispatch')
                   breaker_open = True
