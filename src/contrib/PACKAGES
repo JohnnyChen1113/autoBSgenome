@@ -11553,3 +11553,7 @@ NeedsCompilation: no
 Package: BSgenome.Taestivum.Ensembl.IWGSC
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Taestivum.Ensembl.PGSBv22Stanley
+Version: 1.0.0
+NeedsCompilation: no
