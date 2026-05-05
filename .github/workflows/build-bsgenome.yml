@@ -39,30 +39,43 @@ jobs:
 
       - name: Parse build parameters
         id: params
+        env:
+          # Pass the entire dispatch payload via env to avoid shell-injection from
+          # quotes/backticks/dollars in organism names (e.g. "Saccharomycetaceae sp.
+          # 'Ashbya aceri'"). toJSON serializes safely as a single env value.
+          PAYLOAD: ${{ toJSON(github.event.client_payload) }}
         run: |
-          echo "job_id=${{ github.event.client_payload.job_id }}" >> $GITHUB_OUTPUT
-          echo "package_name=${{ github.event.client_payload.package_name }}" >> $GITHUB_OUTPUT
-          echo "organism=${{ github.event.client_payload.organism }}" >> $GITHUB_OUTPUT
-          echo "common_name=${{ github.event.client_payload.common_name }}" >> $GITHUB_OUTPUT
-          echo "genome=${{ github.event.client_payload.genome }}" >> $GITHUB_OUTPUT
-          echo "provider=${{ github.event.client_payload.provider }}" >> $GITHUB_OUTPUT
-          echo "version=${{ github.event.client_payload.version }}" >> $GITHUB_OUTPUT
-          echo "circ_seqs=${{ github.event.client_payload.circ_seqs }}" >> $GITHUB_OUTPUT
-          echo "accession=${{ github.event.client_payload.accession }}" >> $GITHUB_OUTPUT
-
-          # Parse extra JSON into outputs in a single pass
-          EXTRA='${{ github.event.client_payload.extra }}' python3 <<'PYEOF' >> $GITHUB_OUTPUT
+          python3 <<'PYEOF' >> $GITHUB_OUTPUT
           import json, os
-          d = json.loads(os.environ['EXTRA'] or '{}')
-          for key, default in (
-              ('data_source', 'ncbi'),
-              ('release_date', ''),
-              ('title', ''),
-              ('source_url', ''),
-              ('species_url', ''),
-              ('ensembl_group', ''),
-          ):
-              print(f'{key}={d.get(key, default)}')
+          p = json.loads(os.environ['PAYLOAD'])
+          extra = p.get('extra') or {}
+          if isinstance(extra, str):
+              extra = json.loads(extra) if extra else {}
+          fields = {
+              'job_id': p.get('job_id', ''),
+              'package_name': p.get('package_name', ''),
+              'organism': p.get('organism', ''),
+              'common_name': p.get('common_name', ''),
+              'genome': p.get('genome', ''),
+              'provider': p.get('provider', ''),
+              'version': p.get('version', ''),
+              'circ_seqs': p.get('circ_seqs', ''),
+              'accession': p.get('accession', ''),
+              'data_source': extra.get('data_source', 'ncbi'),
+              'release_date': extra.get('release_date', ''),
+              'title': extra.get('title', ''),
+              'source_url': extra.get('source_url', ''),
+              'species_url': extra.get('species_url', ''),
+              'ensembl_group': extra.get('ensembl_group', ''),
+          }
+          for k, v in fields.items():
+              v = '' if v is None else str(v)
+              if '\n' in v:
+                  print(f'{k}<<__GHA_EOF__')
+                  print(v)
+                  print('__GHA_EOF__')
+              else:
+                  print(f'{k}={v}')
           PYEOF
 
       - name: Download FASTA from NCBI

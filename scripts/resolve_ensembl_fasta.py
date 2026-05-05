@@ -63,6 +63,14 @@ def find_toplevel(dir_url):
 
 def name_variants(species_norm, accession):
     variants = [species_norm]
+
+    # Ensembl mouse strains and a few fish keep the strain tag concatenated:
+    # mus_musculus_pwk_phj -> mus_musculus_pwkphj
+    # cyprinus_carpio_german_mirror -> cyprinus_carpio_germanmirror
+    parts_orig = species_norm.split("_")
+    if len(parts_orig) > 2:
+        variants.append(parts_orig[0] + "_" + parts_orig[1] + "_" + "".join(parts_orig[2:]))
+
     if accession:
         acc_digits = re.sub(r'[^\d]', '', accession.split('.')[0])
         acc_ver = accession.split('.')[1] if '.' in accession else '1'
@@ -89,6 +97,31 @@ def name_variants(species_norm, accession):
         ]
     seen = set()
     return [n for n in variants if not (n in seen or seen.add(n))]
+
+
+def fuzzy_listing_match(parent_url, species_norm):
+    """List parent_url and find a dir whose name starts with genus_species and
+    contains the strain tail (parts[2:] joined without underscores) as substring.
+    Used for Ensembl mouse strains where the dir name embeds an extra subspecies
+    word, e.g. mus_musculus_jf1_msj -> mus_musculus_molossinusjf1msj."""
+    parts = species_norm.split("_")
+    if len(parts) <= 2:
+        return None
+    genus_species = "_".join(parts[:2])
+    tail = "".join(parts[2:])
+    if not tail:
+        return None
+    s, body = http_get(parent_url)
+    if s != 200:
+        return None
+    pattern = rf'href="({re.escape(genus_species)}_[^"/]*{re.escape(tail)}[^"/]*)/"'
+    hits = re.findall(pattern, body)
+    if len(hits) == 1:
+        print(f"[resolve] fuzzy listing match: {hits[0]}", file=sys.stderr)
+        return hits[0]
+    if len(hits) > 1:
+        print(f"[resolve] fuzzy listing ambiguous ({len(hits)} hits): {hits}", file=sys.stderr)
+    return None
 
 
 def try_directories(base_template, names):
@@ -149,8 +182,21 @@ def resolve(species_url, group, accession):
     if group == "vertebrates":
         release = get_main_ensembl_release()
         print(f"[resolve] main Ensembl release={release}", file=sys.stderr)
-        template = f"https://ftp.ensembl.org/pub/release-{release}/fasta/{{name}}/dna/"
-        return try_directories(template, names)
+        # Vertebrates only ship the latest 1-2 releases on the FTP, but strain
+        # subspecies sometimes lag behind so fall back one release if needed.
+        for rel in (release, release - 1):
+            base = f"https://ftp.ensembl.org/pub/release-{rel}/fasta/"
+            template = f"{base}{{name}}/dna/"
+            url = try_directories(template, names)
+            if url:
+                return url
+            fuzzy = fuzzy_listing_match(base, species_norm)
+            if fuzzy:
+                dir_url = f"{base}{fuzzy}/dna/"
+                fname = find_toplevel(dir_url)
+                if fname:
+                    return f"{dir_url}{fname}"
+        return None
 
     if group not in EG_DIVISIONS:
         print(f"[resolve] unknown group {group!r}", file=sys.stderr)
