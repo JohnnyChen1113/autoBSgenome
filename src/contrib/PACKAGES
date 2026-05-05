@@ -11557,3 +11557,7 @@ NeedsCompilation: no
 Package: BSgenome.Taestivum.Ensembl.PGSBv22Stanley
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Taestivum.Ensembl.PGSBv20Mace
+Version: 1.0.0
+NeedsCompilation: no
