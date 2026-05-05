@@ -11541,3 +11541,7 @@ NeedsCompilation: no
 Package: BSgenome.Ainsularis.Ensembl.GCA910574615v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tdicoccoides.Ensembl.WEWSeqv10
+Version: 1.0.0
+NeedsCompilation: no
