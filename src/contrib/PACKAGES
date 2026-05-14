@@ -11637,3 +11637,7 @@ NeedsCompilation: no
 Package: BSgenome.Vpacos.Ensembl.vicPac1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tdicoccoides.NCBI.WEWv21
+Version: 1.0.0
+NeedsCompilation: no
