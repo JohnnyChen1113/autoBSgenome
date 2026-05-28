@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Source_Serif_4, Inter, JetBrains_Mono } from "next/font/google";
+import { Crimson_Pro, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const sourceSerif = Source_Serif_4({
+const crimson = Crimson_Pro({
   variable: "--font-serif",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -21,9 +22,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AutoBSgenome — Build BSgenome R Packages Online",
+  title: "AutoBSgenome - BSgenome Packages and Builder",
   description:
-    "Build BSgenome R packages for any organism in minutes. Paste an NCBI or Ensembl accession, review auto-filled metadata, and download a ready-to-install package. No local R setup required. Free and open source.",
+    "Build, browse, and automate BSgenome R packages from NCBI and Ensembl assemblies.",
   keywords: [
     "BSgenome",
     "Bioconductor",
@@ -38,19 +39,19 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Junhao Chen", url: "https://github.com/JohnnyChen1113" }],
   openGraph: {
-    title: "AutoBSgenome — Build BSgenome R Packages Online",
+    title: "AutoBSgenome - BSgenome Packages and Builder",
     description:
-      "Build BSgenome R packages for any organism in under a minute. Supports NCBI and Ensembl. Free, open source, zero setup.",
-    url: "https://autobsgenome.pages.dev",
+      "Build, browse, and automate BSgenome R packages from NCBI and Ensembl assemblies.",
+    url: "https://autobsgenome.org",
     siteName: "AutoBSgenome",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AutoBSgenome — Build BSgenome R Packages Online",
+    title: "AutoBSgenome - BSgenome Packages and Builder",
     description:
-      "Build BSgenome R packages for any organism in under a minute. Supports NCBI and Ensembl.",
+      "Build, browse, and automate BSgenome R packages from NCBI and Ensembl assemblies.",
   },
   robots: {
     index: true,
@@ -66,7 +67,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${sourceSerif.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${crimson.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

@@ -1,25 +1,13 @@
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 
 export default function ApiDocs() {
-  const WORKER = "https://autobsgenome-api.dailylifecjh.workers.dev";
+  const WORKER = "https://api.autobsgenome.org";
 
   return (
     <div className="flex flex-col flex-1 bg-background">
-      <header className="border-b border-border">
-        <div className="mx-auto max-w-4xl px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-mono text-xs font-bold">BS</span>
-            </div>
-            <span className="font-heading text-lg font-semibold">AutoBSgenome API</span>
-          </div>
-          <nav className="flex items-center gap-5 text-base text-muted-foreground">
-            <a href="/" className="hover:text-foreground transition-colors">Build Tool</a>
-            <a href="https://johnnychen1113.github.io/autoBSgenome" className="hover:text-foreground transition-colors">Browse Packages</a>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader active="api" />
 
       <main className="flex-1 mx-auto max-w-4xl px-6 py-12">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">API Reference</h1>
@@ -185,12 +173,7 @@ install.packages(
         </section>
       </main>
 
-      <footer className="border-t border-border bg-secondary">
-        <div className="mx-auto max-w-4xl px-6 py-6 text-center text-sm text-muted-foreground">
-          <a href="https://github.com/JohnnyChen1113/autoBSgenome" className="text-primary hover:underline">AutoBSgenome</a>
-          {" "}&mdash; Making BSgenome accessible for every organism.
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

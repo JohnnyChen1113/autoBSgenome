@@ -17,7 +17,7 @@ import {
   detectCircularFromKaryotype,
 } from "@/lib/ensembl";
 
-const WORKER_API = "https://autobsgenome-api.dailylifecjh.workers.dev";
+const WORKER_API = "https://api.autobsgenome.org";
 
 type BatchStatus = "pending" | "fetching" | "ready" | "ambiguous" | "error" | "building" | "done" | "failed";
 type Source = "ncbi" | "ensembl";

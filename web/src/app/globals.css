@@ -7,9 +7,13 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-rule: var(--rule);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
   --font-heading: var(--font-serif);
+  --font-serif: var(--font-serif);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -50,41 +54,51 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* SLU Academic Theme — Light Mode */
+/* AutoBSgenome — Editorial Journal theme, SLU royal blue */
 :root {
-  --background: #ffffff;
-  --foreground: #1a1a2e;
+  /* Surfaces */
+  --background: #f7f2e5;          /* warm cream — clearly off-white */
+  --paper: #ece3cc;               /* deeper paper for alt sections */
+  --foreground: #14181f;          /* near-ink for body */
+  --ink: #0b0e14;                 /* true ink for display headings */
   --card: #ffffff;
-  --card-foreground: #1a1a2e;
+  --card-foreground: #14181f;
   --popover: #ffffff;
-  --popover-foreground: #1a1a2e;
+  --popover-foreground: #14181f;
+
+  /* SLU royal blue — preserved as primary */
   --primary: #003DA5;
   --primary-foreground: #ffffff;
-  --secondary: #f7f8fa;
-  --secondary-foreground: #1a1a2e;
-  --muted: #f7f8fa;
-  --muted-foreground: #4a4a6a;
-  --accent: #f0f4fa;
+
+  --secondary: #f4f1ea;
+  --secondary-foreground: #14181f;
+  --muted: #f4f1ea;
+  --muted-foreground: #4f5260;
+  --accent: #eaeef7;
   --accent-foreground: #003DA5;
-  --destructive: #c41e3a;
-  --border: #e2e5eb;
-  --input: #e2e5eb;
+  --destructive: #b1233a;
+  --border: #e6e2d6;              /* warm rule line */
+  --rule: #1a1d24;                /* hairline editorial rule */
+  --input: #d8d3c5;
   --ring: #003DA5;
   --success: #0f7b3f;
   --success-foreground: #ecfdf5;
+
   --chart-1: #003DA5;
   --chart-2: #4a7ec7;
   --chart-3: #7aa3d9;
   --chart-4: #b0c8ea;
   --chart-5: #d6e2f5;
-  --radius: 0.5rem;
-  --sidebar: #f7f8fa;
-  --sidebar-foreground: #1a1a2e;
+
+  --radius: 0.375rem;
+
+  --sidebar: #f4f1ea;
+  --sidebar-foreground: #14181f;
   --sidebar-primary: #003DA5;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f0f4fa;
+  --sidebar-accent: #eaeef7;
   --sidebar-accent-foreground: #003DA5;
-  --sidebar-border: #e2e5eb;
+  --sidebar-border: #e6e2d6;
   --sidebar-ring: #003DA5;
 }
 
@@ -94,11 +108,58 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv11", "ss03";
+    background-image:
+      radial-gradient(rgba(20, 24, 31, 0.035) 1px, transparent 1.2px);
+    background-size: 22px 22px;
   }
   html {
     @apply font-sans;
   }
   h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif), "Source Serif 4", Georgia, serif;
+    color: var(--ink);
+    font-feature-settings: "lnum", "ss01";
+    letter-spacing: -0.01em;
+  }
+  h1 {
+    letter-spacing: -0.025em;
+  }
+  /* Tabular figures for data-dense numbers */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  /* Mono small-caps "eyebrow" label used across pages */
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground;
+  }
+  .eyebrow-accent {
+    @apply font-mono text-[11px] uppercase tracking-[0.18em] text-primary;
+  }
+  /* Hairline editorial rule */
+  .rule {
+    @apply border-t border-[color:var(--rule)]/15;
+  }
+  .rule-strong {
+    @apply border-t border-[color:var(--rule)]/40;
+  }
+  /* Display H1 — used on hero */
+  .display {
     font-family: var(--font-serif), Georgia, serif;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 0.98;
+    color: var(--ink);
+  }
+  /* Subtle paper noise background for alt sections */
+  .bg-paper {
+    background-color: var(--paper);
+  }
+  /* Inline link with editorial underline */
+  .link-underline {
+    @apply text-primary underline decoration-primary/30 decoration-1 underline-offset-[5px] transition-colors hover:decoration-primary;
   }
 }
