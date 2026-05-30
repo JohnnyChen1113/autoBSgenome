@@ -1,0 +1,50 @@
+name: Backfill Ensembl source_urls
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Monthly on the 1st at 7:00 AM UTC. The set of Ensembl-tagged builds
+    # without source_url shrinks over time, so this doesn't need to run as
+    # often as the metadata enrichment job.
+    - cron: "0 7 1 * *"
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Checkout backfill script
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: _main
+          sparse-checkout: scripts/backfill-ensembl-urls.py
+          sparse-checkout-cone-mode: false
+
+      - name: Run backfill
+        run: |
+          python3 _main/scripts/backfill-ensembl-urls.py packages.json > packages-backfilled.json
+          mv packages-backfilled.json packages.json
+          rm -rf _main
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packages.json
+          git diff --cached --quiet || {
+            git commit -m "chore: backfill Ensembl source_url for verified species pages"
+            git push
+          }

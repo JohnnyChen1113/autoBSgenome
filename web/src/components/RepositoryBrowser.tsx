@@ -56,6 +56,11 @@ type BuildPackage = {
   doi?: string;
   bioc_url?: string;
   _bioc?: boolean;
+  // Set by scripts/backfill-ensembl-urls.py when a build's species was
+  // probed against every plausible Ensembl URL and all 404'd. The UI uses
+  // this to suppress the Ensembl chip for cases the upstream really
+  // doesn't host, instead of offering a link that lands on 404.
+  _ensembl_status?: "not_indexed";
 };
 
 type OrganismEntry = {
@@ -222,11 +227,14 @@ function ensemblSlug(
     }
   }
 
-  // Title-case binomial: Genus_species
-  return cleaned
-    .split(/\s+/)
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
-    .join("_");
+  // Capital Genus, lowercase species. Ensembl uses /Arabidopsis_thaliana,
+  // not /Arabidopsis_Thaliana (the latter 301-redirects to the canonical
+  // form). Keep the redirect-free URL.
+  const parts = cleaned.split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return cleaned;
+  const genus = parts[0].charAt(0).toUpperCase() + parts[0].slice(1).toLowerCase();
+  const rest = parts.slice(1).map((p) => p.toLowerCase());
+  return [genus, ...rest].join("_");
 }
 
 // Per-build source link. The chip shows where THIS specific build pulled
@@ -252,6 +260,11 @@ function buildSourceLink(
   if (provider === "ensembl") {
     if (build.source_url && /\bensembl\.org\b/i.test(build.source_url)) {
       return { label: "Ensembl", url: build.source_url };
+    }
+    // The backfill script already verified this species isn't on any
+    // Ensembl subdomain. Don't offer a chip that will lead to a 404.
+    if (build._ensembl_status === "not_indexed") {
+      return null;
     }
     const subdomain = ensemblSubdomain(group);
     const slug = ensemblSlug(speciesQuery, group, build.accession);
