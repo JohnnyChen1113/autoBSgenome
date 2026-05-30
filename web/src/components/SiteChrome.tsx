@@ -47,13 +47,10 @@ export function SiteHeader({ active }: { active?: NavKey }) {
           href="/"
           className="flex shrink-0 items-center gap-3 py-3 group"
         >
-          {/* mix-blend-multiply lets the PNG's white background blend into the
-             warm cream page color, faking transparency without a real vector
-             source. Switch to a proper SVG once one is available. */}
           <img
-            src="/brand-icon.png"
+            src="/brand-icon.svg"
             alt=""
-            className="h-14 w-14 mix-blend-multiply transition-transform group-hover:rotate-3"
+            className="h-14 w-14 transition-transform group-hover:rotate-3"
           />
           <span className="font-heading text-[1.18rem] font-semibold tracking-tight text-ink group-hover:text-primary transition-colors">
             AutoBSgenome
@@ -94,9 +91,9 @@ export function SiteFooter() {
           <div>
             <div className="flex items-center gap-2.5">
               <img
-                src="/brand-icon.png"
+                src="/brand-icon.svg"
                 alt=""
-                className="h-8 w-8 mix-blend-multiply"
+                className="h-8 w-8"
               />
               <span className="font-heading text-base font-semibold tracking-tight text-ink">
                 AutoBSgenome

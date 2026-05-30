@@ -66,6 +66,11 @@ type OrganismEntry = {
   builds: BuildPackage[];
   _source?: "community" | "bioconductor" | "both" | "catalog";
   _accessions?: CatalogAccession[];
+  // Optional fields populated by the offline catalog-enrichment script
+  // once it lands. UI renders them when present, otherwise falls back to
+  // the raw `organism` string from NCBI assembly metadata.
+  canonical_name?: string;
+  synonyms?: string[];
 };
 
 type RepositoryData = {
@@ -183,18 +188,6 @@ function sourceUrl(build: BuildPackage): string {
   return "";
 }
 
-// Pick the right Ensembl subdomain based on what taxonomic group the
-// organism belongs to. Ensembl main hosts vertebrates; everything else
-// lives on a sister site (plants, fungi, metazoa, protists, bacteria).
-function ensemblSubdomain(group?: string): string {
-  if (isPlant(group)) return "plants.ensembl.org";
-  if (isFungi(group)) return "fungi.ensembl.org";
-  if (group === "invertebrate" || group === "metazoa") return "metazoa.ensembl.org";
-  if (group === "protozoa" || group === "protists") return "protists.ensembl.org";
-  if (isProkaryote(group)) return "bacteria.ensembl.org";
-  return "www.ensembl.org";
-}
-
 function externalLinks(org: OrganismEntry): {
   ncbi?: string;
   ensembl?: string;
@@ -215,25 +208,18 @@ function externalLinks(org: OrganismEntry): {
         speciesName(org.organism)
       )}`;
 
-  // Ensembl: the build's recorded source_url is canonical — it's the exact
-  // page we resolved during the build, with the correct subdomain and the
-  // species name Ensembl actually uses (which may differ from the NCBI name
-  // we display, e.g. "[Candida] arabinofermentans" -> "Ogataea_arabinofermentans"
-  // on fungi.ensembl.org). Prefer it; reconstruct only as a last resort.
-  const ensemblBuild = builds.find(
-    (b) => b.provider?.toLowerCase() === "ensembl"
-  );
-  if (ensemblBuild?.source_url) {
-    links.ensembl = ensemblBuild.source_url;
-  } else {
-    const hasEnsembl =
-      Boolean(ensemblBuild) ||
-      accessions.some((a) => a.source === "ensembl");
-    if (hasEnsembl) {
-      const slug = speciesName(org.organism).replace(/\s+/g, "_");
-      const host = ensemblSubdomain(org.group);
-      links.ensembl = `https://${host}/${slug}/Info/Index`;
-    }
+  // Ensembl: STRICT. We only show the Ensembl chip when a build's
+  // source_url actually points at an ensembl.org subdomain. We used to
+  // synthesize URLs from organism name + a guessed subdomain, but that
+  // produced 404s for organisms whose `provider="Ensembl"` label was
+  // wrong (e.g. organisms tagged Ensembl in catalog metadata but not
+  // actually indexed by any Ensembl site). Better no link than a broken
+  // link.
+  const ensemblSourceUrl = builds
+    .map((b) => b.source_url)
+    .find((url) => url && /\bensembl\.org\b/i.test(url));
+  if (ensemblSourceUrl) {
+    links.ensembl = ensemblSourceUrl;
   }
 
   return links;
@@ -814,15 +800,27 @@ export function RepositoryBrowser() {
                 <CardContent className="px-0">
                   <div className="flex flex-col gap-4 p-4 md:flex-row md:items-start md:justify-between">
                     <div className="min-w-0 flex-1">
-                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-                        <h2 className="font-heading text-lg font-semibold leading-snug text-foreground">
-                          <span className="italic">{speciesName(org.organism)}</span>
-                          {strainInfo(org.organism) && (
-                            <span className="ml-1 font-sans text-sm font-normal text-muted-foreground">
-                              {strainInfo(org.organism)}
-                            </span>
-                          )}
-                        </h2>
+                      {(() => {
+                        // Prefer the offline-enriched canonical name when
+                        // present, otherwise fall back to the raw NCBI
+                        // assembly metadata string.
+                        const displayName = org.canonical_name ?? org.organism;
+                        const synonyms = (org.synonyms ?? []).filter(
+                          (s) =>
+                            stripGenusBrackets(s).trim() !==
+                            stripGenusBrackets(displayName).trim()
+                        );
+                        return (
+                          <>
+                            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+                              <h2 className="font-heading text-lg font-semibold leading-snug text-foreground">
+                                <span className="italic">{speciesName(displayName)}</span>
+                                {strainInfo(displayName) && (
+                                  <span className="ml-1 font-sans text-sm font-normal text-muted-foreground">
+                                    {strainInfo(displayName)}
+                                  </span>
+                                )}
+                              </h2>
                         {(() => {
                           const links = externalLinks(org);
                           return (
@@ -860,6 +858,19 @@ export function RepositoryBrowser() {
                           </span>
                         )}
                       </div>
+                      {synonyms.length > 0 && (
+                        <div className="mt-1 text-xs text-muted-foreground">
+                          <span className="font-medium">Formerly:</span>{" "}
+                          <span className="italic">
+                            {synonyms
+                              .map((s) => stripGenusBrackets(s).trim())
+                              .join("; ")}
+                          </span>
+                        </div>
+                      )}
+                          </>
+                        );
+                      })()}
                       <div className="mt-2 flex flex-wrap gap-1.5">
                         <Badge variant="outline">{groupLabel(org.group)}</Badge>
                         {builds.length > 0 && (
@@ -1075,37 +1086,46 @@ export function RepositoryBrowser() {
                                   );
                                 }
 
-                                // Both methods, stacked. Snippet on top, a
-                                // small Download button right below as the
-                                // explicit offline alternative.
+                                // Two methods side by side. Left column is
+                                // the install snippet (takes remaining width).
+                                // Right column is a compact download card
+                                // (auto-width, top-aligned, not stretched).
                                 return (
-                                  <div className="mt-4 space-y-2">
-                                    <div className="flex items-center justify-between">
-                                      <span className="text-xs font-medium uppercase tracking-wide text-foreground/60">
+                                  <div className="mt-4 grid items-start gap-3 md:grid-cols-[1fr_minmax(11rem,auto)]">
+                                    {/* Method 1 — install in R online */}
+                                    <div className="min-w-0 space-y-2">
+                                      <div className="text-xs font-medium uppercase tracking-wide text-foreground/60">
                                         Install in R (online)
-                                      </span>
+                                      </div>
+                                      <div className="relative rounded-md bg-secondary p-3 pr-20">
+                                        <pre className="m-0 min-w-0 overflow-hidden whitespace-pre-wrap break-all font-mono text-xs leading-5 text-foreground">
+                                          {cmd}
+                                        </pre>
+                                        <Button
+                                          type="button"
+                                          size="sm"
+                                          variant="outline"
+                                          className="absolute right-2 top-2 bg-background"
+                                          onClick={() => copyCommand(cmd, copyKey)}
+                                        >
+                                          <Copy className="size-3.5" />
+                                          {copied === copyKey ? "Copied" : "Copy"}
+                                        </Button>
+                                      </div>
+                                    </div>
+
+                                    {/* Method 2 — download tarball (compact) */}
+                                    <div className="space-y-2">
+                                      <div className="text-xs font-medium uppercase tracking-wide text-foreground/60">
+                                        Or download (offline)
+                                      </div>
                                       <a
                                         href={build.download_url}
-                                        className="inline-flex h-7 items-center gap-1.5 rounded border border-primary/30 bg-background px-2.5 text-xs font-medium text-primary transition-colors hover:border-primary hover:bg-primary hover:text-primary-foreground"
+                                        className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-sm"
                                       >
-                                        <Download className="size-3.5" />
-                                        Download {build.size ? formatBytes(build.size) : ".tar.gz"}
+                                        <Download className="size-4" />
+                                        {build.size ? formatBytes(build.size) : ".tar.gz"}
                                       </a>
-                                    </div>
-                                    <div className="relative rounded-md bg-secondary p-3 pr-20">
-                                      <pre className="m-0 min-w-0 overflow-hidden whitespace-pre-wrap break-all font-mono text-xs leading-5 text-foreground">
-                                        {cmd}
-                                      </pre>
-                                      <Button
-                                        type="button"
-                                        size="sm"
-                                        variant="outline"
-                                        className="absolute right-2 top-2 bg-background"
-                                        onClick={() => copyCommand(cmd, copyKey)}
-                                      >
-                                        <Copy className="size-3.5" />
-                                        {copied === copyKey ? "Copied" : "Copy"}
-                                      </Button>
                                     </div>
                                   </div>
                                 );
