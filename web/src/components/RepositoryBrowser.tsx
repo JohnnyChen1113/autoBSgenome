@@ -188,16 +188,58 @@ function sourceUrl(build: BuildPackage): string {
   return "";
 }
 
+// Pick the right Ensembl subdomain by taxonomic kingdom. Vertebrates live
+// on the main site; everything else has its own EnsemblGenomes sister.
+function ensemblSubdomain(group?: string): string {
+  if (isPlant(group)) return "plants.ensembl.org";
+  if (isFungi(group)) return "fungi.ensembl.org";
+  if (group === "invertebrate" || group === "metazoa") return "metazoa.ensembl.org";
+  if (group === "protozoa" || group === "protists") return "protists.ensembl.org";
+  if (isProkaryote(group)) return "bacteria.ensembl.org";
+  return "www.ensembl.org";
+}
+
+// Construct an Ensembl species-page slug. EnsemblGenomes (Plants/Fungi/etc.)
+// uses two URL conventions and we have to pick one:
+//   - Multi-assembly species: /_genus_species_gca_NNNNNNNNN/Info/Index
+//   - Single canonical species: /Genus_species/Info/Index
+// When we have a GCA accession for a non-vertebrate organism, prefer the
+// accession-anchored form because it's the one that resolves for species
+// where multiple assemblies coexist on Ensembl (e.g. Candida auris).
+function ensemblSlug(
+  speciesQuery: string,
+  group?: string,
+  accession?: string
+): string {
+  const cleaned = stripGenusBrackets(speciesQuery).trim();
+  const isVertebrate = group?.startsWith("vertebrate_") ?? false;
+
+  if (!isVertebrate && accession?.startsWith("GCA_")) {
+    const accDigits = accession.match(/GCA_(\d+)/)?.[1];
+    if (accDigits) {
+      const lower = cleaned.toLowerCase().replace(/\s+/g, "_");
+      return `_${lower}_gca_${accDigits}`;
+    }
+  }
+
+  // Title-case binomial: Genus_species
+  return cleaned
+    .split(/\s+/)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+    .join("_");
+}
+
 // Per-build source link. The chip shows where THIS specific build pulled
 // its reference sequence from — which can differ from another build for
 // the same organism (an NCBI build and an Ensembl build for one species).
 // For Ensembl we prefer the build's recorded source_url; if missing, we
-// fall back to the EnsemblGenomes search portal, which routes across all
-// Ensembl subsites (Plants/Fungi/Metazoa/Protists/Bacteria) and won't
-// 404 even when the species isn't actually indexed.
+// construct a best-guess species URL on the right subdomain. Some species
+// genuinely aren't indexed on any Ensembl site and will 404 regardless,
+// which is a data-source problem we can't fix client-side.
 function buildSourceLink(
   build: BuildPackage,
-  speciesQuery: string
+  speciesQuery: string,
+  group: string | undefined
 ): { label: string; url: string } | null {
   if (build._bioc) {
     return build.bioc_url
@@ -211,11 +253,11 @@ function buildSourceLink(
     if (build.source_url && /\bensembl\.org\b/i.test(build.source_url)) {
       return { label: "Ensembl", url: build.source_url };
     }
+    const subdomain = ensemblSubdomain(group);
+    const slug = ensemblSlug(speciesQuery, group, build.accession);
     return {
       label: "Ensembl",
-      url: `https://ensemblgenomes.org/search?query=${encodeURIComponent(
-        speciesQuery
-      )}`,
+      url: `https://${subdomain}/${slug}/Info/Index`,
     };
   }
 
@@ -940,7 +982,8 @@ export function RepositoryBrowser() {
                                 {(() => {
                                   const src = buildSourceLink(
                                     build,
-                                    speciesName(org.canonical_name ?? org.organism)
+                                    speciesName(org.canonical_name ?? org.organism),
+                                    org.group
                                   );
                                   if (!src) return null;
                                   return (
