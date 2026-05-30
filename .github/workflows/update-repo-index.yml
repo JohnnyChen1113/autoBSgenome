@@ -32,6 +32,7 @@ jobs:
           STORAGE=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('storage',''))" "$STORAGE_INFO")
           EXTERNAL_URL=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('download_url',''))" "$STORAGE_INFO")
           DOI=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('doi',''))" "$STORAGE_INFO")
+          SOURCE_URL=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('source_url',''))" "$STORAGE_INFO")
           # seq_ids moved into storage_info to stay under the 10-property cap
           SEQ_IDS_PACKED=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('seq_ids',''))" "$STORAGE_INFO")
           if [ -n "$SEQ_IDS_PACKED" ]; then SEQ_IDS="$SEQ_IDS_PACKED"; fi
@@ -100,14 +101,23 @@ jobs:
               metrics_blob = json.loads('''${METRICS_JSON}''')
           except Exception:
               metrics_blob = {}
+          incoming_source_url = '''${SOURCE_URL}'''.strip()
+          provider = '${PROVIDER}'
+          accession = '${ACCESSION}'
+          if incoming_source_url:
+              source_url = incoming_source_url
+          elif provider == 'NCBI' and accession:
+              source_url = f'https://www.ncbi.nlm.nih.gov/datasets/genome/{accession}/'
+          else:
+              source_url = ''
           new_entry = {
               'package': '${PACKAGE}',
               'version': '${VERSION}',
               'organism': '${ORGANISM}',
               'assembly': '${ASSEMBLY}',
-              'provider': '${PROVIDER}',
-              'accession': '${ACCESSION}',
-              'source_url': 'https://www.ncbi.nlm.nih.gov/datasets/genome/${ACCESSION}/' if '${ACCESSION}' else '',
+              'provider': provider,
+              'accession': accession,
+              'source_url': source_url,
               'file_name': '${FILE_NAME}',
               'size': int('${FILE_SIZE}') if '${FILE_SIZE}'.isdigit() else 0,
               'seq_ids': '${SEQ_IDS}'.split(',') if '${SEQ_IDS}' else [],

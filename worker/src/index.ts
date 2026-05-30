@@ -5,14 +5,20 @@ interface Env {
 }
 
 function corsHeaders(origin: string, allowedOrigin: string): HeadersInit {
+  const allowedOrigins = allowedOrigin
+    .split(",")
+    .map((entry) => entry.trim())
+    .filter(Boolean);
+  const fallbackOrigin = allowedOrigins[0] ?? allowedOrigin;
+
   // Allow localhost for development
   const isAllowed =
-    origin === allowedOrigin ||
+    allowedOrigins.includes(origin) ||
     origin.endsWith(".autobsgenome.pages.dev") ||
     origin.startsWith("http://localhost:");
 
   return {
-    "Access-Control-Allow-Origin": isAllowed ? origin : allowedOrigin,
+    "Access-Control-Allow-Origin": isAllowed ? origin : fallbackOrigin,
     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
   };
@@ -377,6 +383,7 @@ async function handlePublish(
   }
 
   const meta = body.metadata ?? {};
+  const sourceUrl = meta.source_url ?? "";
   const createRes = await fetch(
     `https://api.github.com/repos/${env.GITHUB_REPO}/releases`,
     {
@@ -391,6 +398,7 @@ async function handlePublish(
           `| **Organism** | ${meta.organism ?? "N/A"} |`,
           `| **Assembly** | ${meta.assembly ?? "N/A"} |`,
           `| **Provider** | ${meta.provider ?? "NCBI"} |`,
+          ...(sourceUrl ? [`| **Source** | [${meta.provider ?? "source"}](${sourceUrl}) |`] : []),
           `| **Version** | ${meta.version ?? "1.0.0"} |`,
           `| **Package** | \`${packageBaseName}\` |`,
           "",
@@ -399,9 +407,9 @@ async function handlePublish(
           `install.packages("${packageBaseName}", repos = "https://johnnychen1113.github.io/autoBSgenome")`,
           "```",
           "",
-          `> Browse all packages: [autobsgenome.pages.dev](https://autobsgenome.pages.dev) | [Package repository](https://johnnychen1113.github.io/autoBSgenome)`,
+          `> Browse all packages: [autobsgenome.org](https://autobsgenome.org) | [Package repository](https://johnnychen1113.github.io/autoBSgenome)`,
           "",
-          "Published via [AutoBSgenome Web](https://autobsgenome.pages.dev).",
+          "Published via [AutoBSgenome Web](https://autobsgenome.org).",
         ].join("\n"),
       }),
     }
@@ -440,8 +448,14 @@ async function handlePublish(
           organism: meta.organism ?? "",
           assembly: meta.assembly ?? "",
           provider: meta.provider ?? "",
+          accession: meta.accession ?? "",
           file_name: asset.name,
           file_size: String(asset.size),
+          seq_count: meta.seq_count ?? "",
+          storage_info: JSON.stringify({
+            storage: "github-release",
+            source_url: sourceUrl,
+          }),
         },
       }),
     }

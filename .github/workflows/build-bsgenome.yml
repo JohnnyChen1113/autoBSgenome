@@ -340,6 +340,14 @@ jobs:
           TARBALL="${PACKAGE}_${VERSION}.tar.gz"
           PERM_TAG="pkg-${PACKAGE}"
           ACCESSION="${{ steps.params.outputs.accession }}"
+          SOURCE_URL="${{ steps.params.outputs.source_url }}"
+          if [ -z "$SOURCE_URL" ]; then
+            if [ "${{ steps.params.outputs.data_source }}" = "ensembl" ]; then
+              SOURCE_URL="https://www.ensembl.org/"
+            else
+              SOURCE_URL="https://www.ncbi.nlm.nih.gov/datasets/genome/${ACCESSION}/"
+            fi
+          fi
           LOCAL_SIZE=$(stat -c%s "${TARBALL}" 2>/dev/null || stat -f%z "${TARBALL}" 2>/dev/null || echo "0")
 
           # Inspect any existing release. A draft means a prior upload was
@@ -370,7 +378,7 @@ jobs:
           | **Organism** | ${ORGANISM} |
           | **Assembly** | ${ASSEMBLY} |
           | **Provider** | ${PROVIDER} |
-          | **Accession** | [\`${ACCESSION}\`](https://www.ncbi.nlm.nih.gov/datasets/genome/${ACCESSION}/) |
+          | **Accession** | [\`${ACCESSION}\`](${SOURCE_URL}) |
           | **Version** | ${VERSION} |
           | **Package** | \`${PACKAGE}\` |
 
@@ -391,7 +399,7 @@ jobs:
           SEQ_COUNT="${{ steps.fasta_info.outputs.seq_count }}"
           # Record seq_count in metrics too so it lives alongside the rest.
           python3 scripts/record_metric.py seq_count "${SEQ_COUNT:-0}"
-          STORAGE_INFO=$(SEQ_IDS="$SEQ_IDS" python3 -c "
+          STORAGE_INFO=$(SEQ_IDS="$SEQ_IDS" SOURCE_URL="$SOURCE_URL" python3 -c "
           import json, os
           try:
               metrics = json.load(open('/tmp/build_metrics.json'))
@@ -399,6 +407,7 @@ jobs:
               metrics = {}
           print(json.dumps({
               'storage': 'github-release',
+              'source_url': os.environ.get('SOURCE_URL',''),
               'seq_ids': os.environ.get('SEQ_IDS',''),
               'metrics': metrics,
           }))")
@@ -467,7 +476,7 @@ jobs:
           # Pack storage + seq_ids + metrics into one JSON field so we stay
           # under the 10-property client_payload cap.
           python3 scripts/record_metric.py seq_count "${SEQ_COUNT:-0}"
-          STORAGE_INFO=$(DOI="$DOI" URL="$URL" SEQ_IDS="$SEQ_IDS" python3 -c "
+          STORAGE_INFO=$(DOI="$DOI" URL="$URL" SEQ_IDS="$SEQ_IDS" SOURCE_URL="$SOURCE_URL" python3 -c "
           import json, os
           try:
               metrics = json.load(open('/tmp/build_metrics.json'))
@@ -477,6 +486,7 @@ jobs:
               'storage': 'zenodo',
               'doi': os.environ.get('DOI',''),
               'download_url': os.environ.get('URL',''),
+              'source_url': os.environ.get('SOURCE_URL',''),
               'seq_ids': os.environ.get('SEQ_IDS',''),
               'metrics': metrics,
           }))")
