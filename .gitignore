@@ -170,6 +170,8 @@ cython_debug/
 /faToTwoBit
 /*.2bit
 .superpowers/
+.DS_Store
+.nezha/
 web/node_modules/
 web/.next/
 worker/node_modules/
