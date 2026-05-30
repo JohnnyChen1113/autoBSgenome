@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Dna } from "lucide-react";
 
 type NavKey = "home" | "build" | "packages" | "help" | "api" | "agents";
 
@@ -19,7 +20,7 @@ function navLinkClass(active: boolean): string {
   // The active indicator is the link's own bottom border, pulled down 1px
   // so it overlaps the header's bottom border. No magic spacing required.
   return [
-    "inline-flex items-center font-heading text-[1.05rem] font-semibold tracking-tight transition-colors",
+    "inline-flex items-center font-heading text-[1.18rem] font-semibold tracking-tight transition-colors",
     "border-b-2 -mb-px",
     active
       ? "border-primary text-primary"
@@ -42,20 +43,22 @@ export function SiteHeader({ active }: { active?: NavKey }) {
 
   return (
     <header className="sticky top-0 z-40 border-b border-[color:var(--rule)]/10 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70">
-      <div className="mx-auto flex max-w-6xl items-stretch gap-6 px-6">
+      <div className="mx-auto flex max-w-6xl items-stretch gap-8 px-6">
         <Link
           href="/"
-          className="flex shrink-0 items-baseline gap-2.5 py-4 group"
+          className="flex shrink-0 items-center gap-3 py-4 group"
         >
-          <span className="flex h-7 w-7 items-center justify-center rounded-sm bg-primary font-mono text-[10px] font-bold tracking-wider text-primary-foreground">
-            BS
-          </span>
-          <span className="font-heading text-[1.05rem] font-semibold tracking-tight text-ink group-hover:text-primary transition-colors">
+          <Dna
+            className="size-12 text-primary transition-transform group-hover:rotate-12"
+            strokeWidth={1.6}
+            aria-hidden="true"
+          />
+          <span className="font-heading text-[1.18rem] font-semibold tracking-tight text-ink group-hover:text-primary transition-colors">
             AutoBSgenome
           </span>
         </Link>
 
-        <nav className="flex flex-wrap items-stretch gap-x-6">
+        <nav className="flex flex-wrap items-stretch gap-x-7">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -87,10 +90,8 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <div className="flex items-baseline gap-2.5">
-              <span className="flex h-6 w-6 items-center justify-center rounded-sm bg-primary font-mono text-[9px] font-bold tracking-wider text-primary-foreground">
-                BS
-              </span>
+            <div className="flex items-center gap-2.5">
+              <Dna className="size-7 text-primary" strokeWidth={1.6} aria-hidden="true" />
               <span className="font-heading text-base font-semibold tracking-tight text-ink">
                 AutoBSgenome
               </span>

@@ -173,6 +173,37 @@ function sourceUrl(build: BuildPackage): string {
   return "";
 }
 
+function externalLinks(org: OrganismEntry): {
+  ncbi?: string;
+  ensembl?: string;
+} {
+  const builds = org.builds ?? [];
+  const accessions = org._accessions ?? [];
+  const links: { ncbi?: string; ensembl?: string } = {};
+
+  // NCBI: prefer a real assembly accession from a build, then catalog rows.
+  // Fall back to a taxonomy text search so we always have *something* to link to.
+  const ncbiAccession =
+    builds.find((b) => b.accession?.startsWith("GC"))?.accession ??
+    accessions.find((a) => a.accession?.startsWith("GC"))?.accession;
+  links.ncbi = ncbiAccession
+    ? `https://www.ncbi.nlm.nih.gov/datasets/genome/${ncbiAccession}/`
+    : `https://www.ncbi.nlm.nih.gov/datasets/taxonomy/?term=${encodeURIComponent(
+        speciesName(org.organism)
+      )}`;
+
+  // Ensembl: only show when there's actually Ensembl data for this organism.
+  const hasEnsembl =
+    builds.some((b) => b.provider?.toLowerCase() === "ensembl") ||
+    accessions.some((a) => a.source === "ensembl");
+  if (hasEnsembl) {
+    const slug = speciesName(org.organism).replace(/\s+/g, "_");
+    links.ensembl = `https://www.ensembl.org/${slug}/Info/Index`;
+  }
+
+  return links;
+}
+
 function installCommand(build: BuildPackage): string | null {
   if (build._bioc) {
     return `BiocManager::install("${build.package}")`;
@@ -741,14 +772,14 @@ export function RepositoryBrowser() {
             const firstAccession = accessions[0];
             const catalogOnly = builds.length === 0 && accessions.length > 0;
             const crumbs = taxonomyBreadcrumb(org.taxonomy);
-            const visibleBuilds = isOpen ? builds : builds.slice(0, 2);
+            const visibleBuilds = isOpen ? builds : builds.slice(0, 1);
 
             return (
               <Card key={key} className="rounded-lg py-0">
                 <CardContent className="px-0">
                   <div className="flex flex-col gap-4 p-4 md:flex-row md:items-start md:justify-between">
                     <div className="min-w-0 flex-1">
-                      <div className="flex flex-wrap items-center gap-2">
+                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
                         <h2 className="font-heading text-lg font-semibold leading-snug text-foreground">
                           <span className="italic">{speciesName(org.organism)}</span>
                           {strainInfo(org.organism) && (
@@ -757,6 +788,37 @@ export function RepositoryBrowser() {
                             </span>
                           )}
                         </h2>
+                        {(() => {
+                          const links = externalLinks(org);
+                          return (
+                            <div className="flex items-center gap-1.5">
+                              {links.ncbi && (
+                                <a
+                                  href={links.ncbi}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  title="View this genome on NCBI"
+                                  className="inline-flex h-6 items-center gap-1 rounded border border-border bg-background px-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                                >
+                                  NCBI
+                                  <ExternalLink className="size-3" />
+                                </a>
+                              )}
+                              {links.ensembl && (
+                                <a
+                                  href={links.ensembl}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  title="View this species on Ensembl"
+                                  className="inline-flex h-6 items-center gap-1 rounded border border-border bg-background px-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                                >
+                                  Ensembl
+                                  <ExternalLink className="size-3" />
+                                </a>
+                              )}
+                            </div>
+                          );
+                        })()}
                         {org.common_name && (
                           <span className="text-sm text-muted-foreground">
                             {org.common_name}
@@ -813,7 +875,9 @@ export function RepositoryBrowser() {
                         >
                           Build
                         </a>
-                      ) : (
+                      ) : builds.length > 1 ? (
+                        // Only offer Details when there's actually something to
+                        // expand. A single-build card already shows everything.
                         <Button
                           type="button"
                           variant="outline"
@@ -827,7 +891,7 @@ export function RepositoryBrowser() {
                             )}
                           />
                         </Button>
-                      )}
+                      ) : null}
                     </div>
                   </div>
 
@@ -838,7 +902,7 @@ export function RepositoryBrowser() {
                         return (
                           <div
                             key={copyKey}
-                            className="grid gap-3 border-b border-border px-4 py-4 last:border-b-0 lg:grid-cols-[1fr_auto]"
+                            className="border-b border-border px-4 py-4 last:border-b-0"
                           >
                             <div className="min-w-0">
                               <div className="break-words font-mono text-sm font-medium text-foreground">
@@ -919,86 +983,120 @@ export function RepositoryBrowser() {
                               </div>
                               {(() => {
                                 const cmd = installCommand(build);
-                                if (!cmd) {
+
+                                // Bioconductor: only the BiocManager command,
+                                // no download (Bioc hosts the binary itself).
+                                if (build._bioc) {
                                   return (
-                                    <div className="mt-3 rounded-md border border-dashed border-border bg-secondary/50 px-3 py-2 text-xs text-muted-foreground">
-                                      Tarball URL not yet published for this
-                                      build. Use the Download button to grab
-                                      the file when available.
+                                    <div className="mt-4 space-y-2">
+                                      <div className="text-xs font-medium uppercase tracking-wide text-foreground/60">
+                                        Install from Bioconductor
+                                      </div>
+                                      <div className="relative rounded-md bg-secondary p-3 pr-20">
+                                        <pre className="m-0 min-w-0 overflow-hidden whitespace-pre-wrap break-all font-mono text-xs leading-5 text-foreground">
+                                          {cmd ?? `BiocManager::install("${build.package}")`}
+                                        </pre>
+                                        <Button
+                                          type="button"
+                                          size="sm"
+                                          variant="outline"
+                                          className="absolute right-2 top-2 bg-background"
+                                          onClick={() =>
+                                            copyCommand(
+                                              cmd ?? `BiocManager::install("${build.package}")`,
+                                              copyKey
+                                            )
+                                          }
+                                        >
+                                          <Copy className="size-3.5" />
+                                          {copied === copyKey ? "Copied" : "Copy"}
+                                        </Button>
+                                      </div>
+                                      {build.bioc_url && (
+                                        <a
+                                          href={build.bioc_url}
+                                          target="_blank"
+                                          rel="noreferrer"
+                                          className="inline-flex h-8 items-center gap-1.5 text-xs font-medium text-primary link-underline"
+                                        >
+                                          View on Bioconductor
+                                          <ExternalLink className="size-3.5" />
+                                        </a>
+                                      )}
                                     </div>
                                   );
                                 }
-                                return (
-                                  <div className="mt-3 space-y-1.5">
-                                    <div className="flex items-center justify-between">
-                                      <span className="text-xs font-medium text-foreground/70">
-                                        {build._bioc
-                                          ? "Install from Bioconductor"
-                                          : "Install in R (one line, online)"}
-                                      </span>
-                                      {!build._bioc && (
-                                        <span className="text-xs text-muted-foreground">
-                                          or click Download for offline install
-                                        </span>
-                                      )}
+
+                                // Community build: requires download_url to
+                                // produce a working snippet AND a working
+                                // direct download. If missing, show one note.
+                                if (!cmd || !build.download_url) {
+                                  return (
+                                    <div className="mt-4 rounded-md border border-dashed border-border bg-secondary/50 px-3 py-2 text-xs text-muted-foreground">
+                                      Tarball not yet published for this build.
+                                      Check back later, or open an issue if it's
+                                      been stuck for more than a day.
                                     </div>
-                                    <div className="relative rounded-md bg-secondary p-3 pr-20">
-                                      <pre className="m-0 min-w-0 overflow-hidden whitespace-pre-wrap break-all font-mono text-xs leading-5 text-foreground">
-                                        {cmd}
-                                      </pre>
-                                      <Button
-                                        type="button"
-                                        size="sm"
-                                        variant="outline"
-                                        className="absolute right-2 top-2 bg-background"
-                                        onClick={() => copyCommand(cmd, copyKey)}
+                                  );
+                                }
+
+                                // Both methods, presented as parallel options.
+                                return (
+                                  <div className="mt-4 grid gap-3 md:grid-cols-[1fr_auto] md:items-stretch">
+                                    {/* Method 1 — install in R online */}
+                                    <div className="min-w-0 space-y-2">
+                                      <div className="text-xs font-medium uppercase tracking-wide text-foreground/60">
+                                        Install in R (online)
+                                      </div>
+                                      <div className="relative rounded-md bg-secondary p-3 pr-20">
+                                        <pre className="m-0 min-w-0 overflow-hidden whitespace-pre-wrap break-all font-mono text-xs leading-5 text-foreground">
+                                          {cmd}
+                                        </pre>
+                                        <Button
+                                          type="button"
+                                          size="sm"
+                                          variant="outline"
+                                          className="absolute right-2 top-2 bg-background"
+                                          onClick={() => copyCommand(cmd, copyKey)}
+                                        >
+                                          <Copy className="size-3.5" />
+                                          {copied === copyKey ? "Copied" : "Copy"}
+                                        </Button>
+                                      </div>
+                                    </div>
+
+                                    {/* Method 2 — download tarball */}
+                                    <div className="flex flex-col gap-2 md:w-44">
+                                      <div className="text-xs font-medium uppercase tracking-wide text-foreground/60">
+                                        Or download (offline)
+                                      </div>
+                                      <a
+                                        href={build.download_url}
+                                        className="inline-flex flex-1 items-center justify-center gap-2 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-sm"
                                       >
-                                        <Copy className="size-3.5" />
-                                        {copied === copyKey ? "Copied" : "Copy"}
-                                      </Button>
+                                        <Download className="size-4" />
+                                        Download {build.size ? formatBytes(build.size) : ".tar.gz"}
+                                      </a>
                                     </div>
                                   </div>
                                 );
                               })()}
-                            </div>
-
-                            <div className="flex items-start gap-2 lg:justify-end">
-                              {build._bioc ? (
-                                <a
-                                  href={build.bioc_url}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                  className="inline-flex h-8 items-center justify-center gap-1.5 rounded-lg bg-primary px-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-                                >
-                                  <ExternalLink className="size-4" />
-                                  Bioconductor
-                                </a>
-                              ) : (
-                                <a
-                                  href={
-                                    build.download_url ??
-                                    `${REPO_BASE}/src/contrib/${build.file_name}`
-                                  }
-                                  className="inline-flex h-8 items-center justify-center gap-1.5 rounded-lg bg-primary px-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-                                >
-                                  <Download className="size-4" />
-                                  Download
-                                </a>
-                              )}
                             </div>
                           </div>
                         );
                       })}
 
                       {!isOpen && builds.length > visibleBuilds.length && (
-                        <button
-                          type="button"
-                          className="w-full px-4 py-3 text-left text-sm text-primary transition-colors hover:bg-secondary"
-                          onClick={() => toggleExpanded(key)}
-                        >
-                          Show {builds.length - visibleBuilds.length} more build
-                          {builds.length - visibleBuilds.length === 1 ? "" : "s"}
-                        </button>
+                        <div className="flex justify-center px-4 py-4">
+                          <button
+                            type="button"
+                            className="inline-flex h-9 items-center gap-2 rounded-md border border-primary/30 bg-background px-4 text-sm font-medium text-primary transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-sm"
+                            onClick={() => toggleExpanded(key)}
+                          >
+                            Show {builds.length - visibleBuilds.length} more
+                            <ChevronDown className="size-4" />
+                          </button>
+                        </div>
                       )}
                     </div>
                   )}
