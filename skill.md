@@ -35,7 +35,7 @@ Or browse: https://johnnychen1113.github.io/autoBSgenome
 ### Step 1: Trigger Build
 
 ```bash
-curl -s -X POST https://autobsgenome-api.dailylifecjh.workers.dev/api/build \
+curl -s -X POST https://api.autobsgenome.org/api/build \
   -H "Content-Type: application/json" \
   -d '{
     "package_name": "BSgenome.ORGANISM.PROVIDER.ASSEMBLY",
@@ -59,7 +59,7 @@ Response: `{"job_id": "xxx", "status": "queued"}`
 ### Step 2: Poll for Completion
 
 ```bash
-curl -s https://autobsgenome-api.dailylifecjh.workers.dev/api/status/JOB_ID
+curl -s https://api.autobsgenome.org/api/status/JOB_ID
 ```
 
 Response when done:
@@ -89,14 +89,14 @@ install.packages("PACKAGE_NAME",
 
 ```bash
 # Trigger
-RESULT=$(curl -s -X POST https://autobsgenome-api.dailylifecjh.workers.dev/api/build \
+RESULT=$(curl -s -X POST https://api.autobsgenome.org/api/build \
   -H "Content-Type: application/json" \
   -d '{"package_name":"BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308","organism":"Aspergillus luchuensis","accession":"GCF_016861625.1","data_source":"ncbi","version":"1.0.0","circ_seqs":"character(0)"}')
 JOB_ID=$(echo $RESULT | python3 -c "import json,sys;print(json.load(sys.stdin)['job_id'])")
 
 # Wait for completion
 while true; do
-  STATUS=$(curl -s "https://autobsgenome-api.dailylifecjh.workers.dev/api/status/$JOB_ID")
+  STATUS=$(curl -s "https://api.autobsgenome.org/api/status/$JOB_ID")
   echo $STATUS | python3 -c "import json,sys;d=json.load(sys.stdin);print(d['status'])"
   echo $STATUS | python3 -c "import json,sys;d=json.load(sys.stdin);exit(0 if d['status'] in ('complete','failed') else 1)" && break
   sleep 10
@@ -121,7 +121,7 @@ If the user provides an organism name but not an accession:
 
 ## Web Interface
 
-Users can also build packages at: https://autobsgenome.pages.dev
+Users can also build packages at: https://autobsgenome.org
 - Paste NCBI accession or Ensembl URL
 - Auto-fills all metadata
 - Download .tar.gz in under 1 minute

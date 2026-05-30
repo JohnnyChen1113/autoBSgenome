@@ -4,7 +4,7 @@ Build BSgenome R packages for any organism — via the **web** or the **command 
 
 ## Web Tool (New!)
 
-**https://autobsgenome.pages.dev**
+**https://autobsgenome.org**
 
 Build BSgenome packages directly in your browser. No local R, Python, or command-line tools required.
 

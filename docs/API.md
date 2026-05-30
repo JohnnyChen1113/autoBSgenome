@@ -1,6 +1,6 @@
 # AutoBSgenome Web API
 
-Base URL: `https://autobsgenome-api.dailylifecjh.workers.dev`
+Base URL: `https://api.autobsgenome.org`
 
 ## Endpoints
 
@@ -91,7 +91,7 @@ Check build status.
 
 ```bash
 # 1. Trigger build
-JOB=$(curl -s -X POST https://autobsgenome-api.dailylifecjh.workers.dev/api/build \
+JOB=$(curl -s -X POST https://api.autobsgenome.org/api/build \
   -H "Content-Type: application/json" \
   -d '{"package_name":"BSgenome.Drerio.NCBI.GRCz11","organism":"Danio rerio","accession":"GCF_000002035.6","data_source":"ncbi","version":"1.0.0","circ_seqs":"MT"}')
 JOB_ID=$(echo $JOB | python3 -c "import json,sys; print(json.load(sys.stdin)['job_id'])")
@@ -99,7 +99,7 @@ echo "Job ID: $JOB_ID"
 
 # 2. Poll for completion
 while true; do
-  STATUS=$(curl -s "https://autobsgenome-api.dailylifecjh.workers.dev/api/status/$JOB_ID")
+  STATUS=$(curl -s "https://api.autobsgenome.org/api/status/$JOB_ID")
   echo "$STATUS"
   echo "$STATUS" | python3 -c "import json,sys; s=json.load(sys.stdin)['status']; exit(0 if s in ('complete','failed') else 1)" && break
   sleep 10
@@ -123,6 +123,8 @@ install.packages(
 ## CORS
 
 The API allows requests from:
+- `https://autobsgenome.org`
+- `https://www.autobsgenome.org`
 - `https://autobsgenome.pages.dev`
 - `*.autobsgenome.pages.dev` (preview deployments)
 - `http://localhost:*` (development)
