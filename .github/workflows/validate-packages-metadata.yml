@@ -1,0 +1,32 @@
+name: Validate Package Metadata
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Weekly on Sundays at 5:30 AM UTC.
+    - cron: "30 5 * * 0"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Checkout validator
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: _main
+          sparse-checkout: |
+            scripts/validate-packages-metadata.py
+          sparse-checkout-cone-mode: false
+
+      - name: Validate packages.json
+        run: |
+          python3 _main/scripts/validate-packages-metadata.py packages.json

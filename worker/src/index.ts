@@ -39,6 +39,13 @@ function jsonResponse(
   });
 }
 
+async function sha256Hex(blob: Blob): Promise<string> {
+  const digest = await crypto.subtle.digest("SHA-256", await blob.arrayBuffer());
+  return [...new Uint8Array(digest)]
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
@@ -384,6 +391,8 @@ async function handlePublish(
 
   const meta = body.metadata ?? {};
   const sourceUrl = meta.source_url ?? "";
+  const packageSha256 = await sha256Hex(assetBlob);
+  const builtAt = new Date().toISOString().replace(/\.\d{3}Z$/, "Z");
   const createRes = await fetch(
     `https://api.github.com/repos/${env.GITHUB_REPO}/releases`,
     {
@@ -455,6 +464,15 @@ async function handlePublish(
           storage_info: JSON.stringify({
             storage: "github-release",
             source_url: sourceUrl,
+            provenance: {
+              schema_version: 1,
+              provider: meta.provider ?? "",
+              source_url: sourceUrl,
+              source_accession: meta.accession ?? "",
+              built_at: builtAt,
+              builder_image: "cloudflare-worker-publish",
+              package_sha256: packageSha256,
+            },
           }),
         },
       }),

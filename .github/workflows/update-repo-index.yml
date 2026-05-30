@@ -16,6 +16,15 @@ jobs:
         with:
           ref: gh-pages
 
+      - name: Checkout metadata tools
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: _main
+          sparse-checkout: |
+            scripts/validate-packages-metadata.py
+          sparse-checkout-cone-mode: false
+
       - name: Update packages.json
         run: |
           PACKAGE='${{ github.event.client_payload.package_name }}'
@@ -33,6 +42,7 @@ jobs:
           EXTERNAL_URL=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('download_url',''))" "$STORAGE_INFO")
           DOI=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('doi',''))" "$STORAGE_INFO")
           SOURCE_URL=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('source_url',''))" "$STORAGE_INFO")
+          PROVENANCE_JSON=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(json.dumps(d.get('provenance',{})))" "$STORAGE_INFO")
           # seq_ids moved into storage_info to stay under the 10-property cap
           SEQ_IDS_PACKED=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('seq_ids',''))" "$STORAGE_INFO")
           if [ -n "$SEQ_IDS_PACKED" ]; then SEQ_IDS="$SEQ_IDS_PACKED"; fi
@@ -101,6 +111,10 @@ jobs:
               metrics_blob = json.loads('''${METRICS_JSON}''')
           except Exception:
               metrics_blob = {}
+          try:
+              provenance_blob = json.loads('''${PROVENANCE_JSON}''')
+          except Exception:
+              provenance_blob = {}
           incoming_source_url = '''${SOURCE_URL}'''.strip()
           provider = '${PROVIDER}'
           accession = '${ACCESSION}'
@@ -133,6 +147,11 @@ jobs:
               new_entry['doi'] = doi
           if metrics_blob:
               new_entry['metrics'] = metrics_blob
+          if provenance_blob:
+              provenance_blob.setdefault('provider', provider)
+              provenance_blob.setdefault('source_url', source_url)
+              provenance_blob.setdefault('source_accession', accession)
+              new_entry['provenance'] = provenance_blob
           flat.append(new_entry)
 
           # Rebuild organism-centric format
@@ -162,9 +181,34 @@ jobs:
 
           with open('packages.json', 'w') as f:
               json.dump(result, f, indent=2)
+
+          ledger_entry = {
+              'schema_version': 1,
+              'event': 'package_index_update',
+              'indexed_at': new_entry['published'],
+              'package': new_entry['package'],
+              'version': new_entry['version'],
+              'provider': provider,
+              'accession': accession,
+              'source_url': source_url,
+              'download_url': new_entry['download_url'],
+              'storage': storage,
+              'doi': doi,
+              'provenance': provenance_blob,
+          }
+          import os
+          os.makedirs('provenance', exist_ok=True)
+          with open('provenance/builds.jsonl', 'a') as f:
+              f.write(json.dumps(ledger_entry, sort_keys=True) + '\n')
           "
           echo "Updated packages.json:"
           cat packages.json
+
+      - name: Validate package metadata
+        run: |
+          python3 _main/scripts/validate-packages-metadata.py \
+            packages.json \
+            --require-provenance-package '${{ github.event.client_payload.package_name }}'
 
       - name: Update build-queue.json status
         run: |
@@ -213,6 +257,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add packages.json src/contrib/PACKAGES build-queue.json
+          git add packages.json src/contrib/PACKAGES build-queue.json provenance/builds.jsonl
           git diff --cached --quiet || git commit -m "Update repository index: ${{ github.event.client_payload.package_name }}"
           git push

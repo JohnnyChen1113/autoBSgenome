@@ -138,17 +138,18 @@ assembly `GCF_000146045.2` after verifying the NCBI page title:
 
 ## Applied repair
 
-Applied to `gh-pages/packages.json` on 2026-05-30 in two commits:
+Applied to `gh-pages/packages.json` on 2026-05-30 in three commits:
 
 - `eb96a7f` (`Fix package source URLs from DESCRIPTION metadata`)
 - `53b6d79` (`Complete package source URL repair`)
+- `6722e7d` (`Fill missing NCBI accessions`)
 
 The applied repair changed these fields:
 
 | Field | Count | Notes |
 |---|---:|---|
 | `source_url` | 2,087 | 2,086 from package `DESCRIPTION`; 1 manual NCBI R64 correction. |
-| `accession` | 1 | Filled `BSgenome.Scerevisiae.NCBI.R64` with `GCF_000146045.2`. |
+| `accession` | 14 | Filled `BSgenome.Scerevisiae.NCBI.R64` manually and 13 legacy NCBI accessions from their validated `source_url` values. |
 
 Final public `packages.json` validation:
 
@@ -159,3 +160,5 @@ Final public `packages.json` validation:
 | Ensembl provider-correct `source_url` | 2,073 |
 | NCBI provider-correct `source_url` | 838 |
 | Provider/source-url conflicts | 0 |
+| Metadata validator errors | 0 |
+| Metadata validator warnings | 0 |
