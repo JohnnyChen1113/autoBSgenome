@@ -104,3 +104,4 @@ All three framings are saved; we can pivot between them after discussion with ad
 - 2026-04-18: User rejected MGG as target ("硬凹"); switched to NARGAB + bioRxiv preprint.
 - 2026-04-18: User's preference order: C > A >> B.
 - Pending: advisor discussion to finalize A vs C.
+- **2026-05-14: After advisor discussion, the zero-cost / architectural-sustainability angle is dropped from the paper's positioning.** Framing C is retired. The paper returns to a Framing-A-style resource-and-tool thesis, but with a sharper mission statement: **"让天底下没有难构建的 BSgenome" — no BSgenome is hard to build.** Architecture (Cloudflare + GHA + Releases) is no longer a co-equal contribution; it stays in Methods as implementation detail only, with no marketing of "free tier" or "zero cost" anywhere in abstract/discussion. See `draft-v4-outline.md` for the new structure.
