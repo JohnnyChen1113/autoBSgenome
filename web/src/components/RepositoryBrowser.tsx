@@ -188,41 +188,47 @@ function sourceUrl(build: BuildPackage): string {
   return "";
 }
 
-function externalLinks(org: OrganismEntry): {
-  ncbi?: string;
-  ensembl?: string;
-} {
-  const builds = org.builds ?? [];
-  const accessions = org._accessions ?? [];
-  const links: { ncbi?: string; ensembl?: string } = {};
-
-  // NCBI: accession-based URLs work regardless of how the species is named
-  // in our local data, so always prefer them. Falls back to a taxonomy text
-  // search on the cleaned name.
-  const ncbiAccession =
-    builds.find((b) => b.accession?.startsWith("GC"))?.accession ??
-    accessions.find((a) => a.accession?.startsWith("GC"))?.accession;
-  links.ncbi = ncbiAccession
-    ? `https://www.ncbi.nlm.nih.gov/datasets/genome/${ncbiAccession}/`
-    : `https://www.ncbi.nlm.nih.gov/datasets/taxonomy/?term=${encodeURIComponent(
-        speciesName(org.organism)
-      )}`;
-
-  // Ensembl: STRICT. We only show the Ensembl chip when a build's
-  // source_url actually points at an ensembl.org subdomain. We used to
-  // synthesize URLs from organism name + a guessed subdomain, but that
-  // produced 404s for organisms whose `provider="Ensembl"` label was
-  // wrong (e.g. organisms tagged Ensembl in catalog metadata but not
-  // actually indexed by any Ensembl site). Better no link than a broken
-  // link.
-  const ensemblSourceUrl = builds
-    .map((b) => b.source_url)
-    .find((url) => url && /\bensembl\.org\b/i.test(url));
-  if (ensemblSourceUrl) {
-    links.ensembl = ensemblSourceUrl;
+// Per-build source link. The chip shows where THIS specific build pulled
+// its reference sequence from — which can differ from another build for
+// the same organism (an NCBI build and an Ensembl build for one species).
+// We only return a link when we can construct one that actually works:
+// Ensembl needs a confirmed ensembl.org source_url; UCSC needs a known
+// UCSC assembly slug; NCBI works whenever there's a GC* accession.
+function buildSourceLink(
+  build: BuildPackage
+): { label: string; url: string } | null {
+  if (build._bioc) {
+    return build.bioc_url
+      ? { label: "Bioconductor", url: build.bioc_url }
+      : null;
   }
 
-  return links;
+  const provider = build.provider?.toLowerCase();
+
+  if (provider === "ensembl") {
+    if (build.source_url && /\bensembl\.org\b/i.test(build.source_url)) {
+      return { label: "Ensembl", url: build.source_url };
+    }
+    return null;
+  }
+
+  if (provider === "ucsc" && build.assembly) {
+    return {
+      label: "UCSC",
+      url: `https://genome.ucsc.edu/cgi-bin/hgGateway?db=${encodeURIComponent(
+        build.assembly
+      )}`,
+    };
+  }
+
+  if (build.accession?.startsWith("GC")) {
+    return {
+      label: "NCBI",
+      url: `https://www.ncbi.nlm.nih.gov/datasets/genome/${build.accession}/`,
+    };
+  }
+
+  return null;
 }
 
 function installCommand(build: BuildPackage): string | null {
@@ -821,43 +827,12 @@ export function RepositoryBrowser() {
                                   </span>
                                 )}
                               </h2>
-                        {(() => {
-                          const links = externalLinks(org);
-                          return (
-                            <div className="flex items-center gap-1.5">
-                              {links.ncbi && (
-                                <a
-                                  href={links.ncbi}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                  title="View this genome on NCBI"
-                                  className="inline-flex h-6 items-center gap-1 rounded border border-border bg-background px-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground transition-colors hover:border-primary hover:text-primary"
-                                >
-                                  NCBI
-                                  <ExternalLink className="size-3" />
-                                </a>
-                              )}
-                              {links.ensembl && (
-                                <a
-                                  href={links.ensembl}
-                                  target="_blank"
-                                  rel="noreferrer"
-                                  title="View this species on Ensembl"
-                                  className="inline-flex h-6 items-center gap-1 rounded border border-border bg-background px-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground transition-colors hover:border-primary hover:text-primary"
-                                >
-                                  Ensembl
-                                  <ExternalLink className="size-3" />
-                                </a>
+                              {org.common_name && (
+                                <span className="text-sm text-muted-foreground">
+                                  {org.common_name}
+                                </span>
                               )}
                             </div>
-                          );
-                        })()}
-                        {org.common_name && (
-                          <span className="text-sm text-muted-foreground">
-                            {org.common_name}
-                          </span>
-                        )}
-                      </div>
                       {synonyms.length > 0 && (
                         <div className="mt-1 text-xs text-muted-foreground">
                           <span className="font-medium">Formerly:</span>{" "}
@@ -951,8 +926,26 @@ export function RepositoryBrowser() {
                             className="border-b border-border px-4 py-4 last:border-b-0"
                           >
                             <div className="min-w-0">
-                              <div className="break-words font-mono text-sm font-medium text-foreground">
-                                {build.package}
+                              <div className="flex flex-wrap items-center gap-2">
+                                <div className="break-words font-mono text-sm font-medium text-foreground">
+                                  {build.package}
+                                </div>
+                                {(() => {
+                                  const src = buildSourceLink(build);
+                                  if (!src) return null;
+                                  return (
+                                    <a
+                                      href={src.url}
+                                      target="_blank"
+                                      rel="noreferrer"
+                                      title={`View this build's reference on ${src.label}`}
+                                      className="inline-flex h-6 items-center gap-1 rounded border border-border bg-background px-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                                    >
+                                      {src.label}
+                                      <ExternalLink className="size-3" />
+                                    </a>
+                                  );
+                                })()}
                               </div>
                               <div className="mt-2 grid gap-x-4 gap-y-1 text-sm text-muted-foreground sm:grid-cols-2 lg:grid-cols-4">
                                 <span>
@@ -1091,7 +1084,7 @@ export function RepositoryBrowser() {
                                 // Right column is a compact download card
                                 // (auto-width, top-aligned, not stretched).
                                 return (
-                                  <div className="mt-4 grid items-start gap-3 md:grid-cols-[1fr_minmax(11rem,auto)]">
+                                  <div className="mt-4 grid items-center gap-3 md:grid-cols-[1fr_minmax(11rem,auto)]">
                                     {/* Method 1 — install in R online */}
                                     <div className="min-w-0 space-y-2">
                                       <div className="text-xs font-medium uppercase tracking-wide text-foreground/60">
