@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Dna } from "lucide-react";
 
 type NavKey = "home" | "build" | "packages" | "help" | "api" | "agents";
 
@@ -46,12 +45,15 @@ export function SiteHeader({ active }: { active?: NavKey }) {
       <div className="mx-auto flex max-w-6xl items-stretch gap-8 px-6">
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-3 py-4 group"
+          className="flex shrink-0 items-center gap-3 py-3 group"
         >
-          <Dna
-            className="size-12 text-primary transition-transform group-hover:rotate-12"
-            strokeWidth={1.6}
-            aria-hidden="true"
+          {/* mix-blend-multiply lets the PNG's white background blend into the
+             warm cream page color, faking transparency without a real vector
+             source. Switch to a proper SVG once one is available. */}
+          <img
+            src="/brand-icon.png"
+            alt=""
+            className="h-14 w-14 mix-blend-multiply transition-transform group-hover:rotate-3"
           />
           <span className="font-heading text-[1.18rem] font-semibold tracking-tight text-ink group-hover:text-primary transition-colors">
             AutoBSgenome
@@ -91,7 +93,11 @@ export function SiteFooter() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <div className="flex items-center gap-2.5">
-              <Dna className="size-7 text-primary" strokeWidth={1.6} aria-hidden="true" />
+              <img
+                src="/brand-icon.png"
+                alt=""
+                className="h-8 w-8 mix-blend-multiply"
+              />
               <span className="font-heading text-base font-semibold tracking-tight text-ink">
                 AutoBSgenome
               </span>
