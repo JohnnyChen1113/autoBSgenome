@@ -191,11 +191,13 @@ function sourceUrl(build: BuildPackage): string {
 // Per-build source link. The chip shows where THIS specific build pulled
 // its reference sequence from — which can differ from another build for
 // the same organism (an NCBI build and an Ensembl build for one species).
-// We only return a link when we can construct one that actually works:
-// Ensembl needs a confirmed ensembl.org source_url; UCSC needs a known
-// UCSC assembly slug; NCBI works whenever there's a GC* accession.
+// For Ensembl we prefer the build's recorded source_url; if missing, we
+// fall back to the EnsemblGenomes search portal, which routes across all
+// Ensembl subsites (Plants/Fungi/Metazoa/Protists/Bacteria) and won't
+// 404 even when the species isn't actually indexed.
 function buildSourceLink(
-  build: BuildPackage
+  build: BuildPackage,
+  speciesQuery: string
 ): { label: string; url: string } | null {
   if (build._bioc) {
     return build.bioc_url
@@ -209,7 +211,12 @@ function buildSourceLink(
     if (build.source_url && /\bensembl\.org\b/i.test(build.source_url)) {
       return { label: "Ensembl", url: build.source_url };
     }
-    return null;
+    return {
+      label: "Ensembl",
+      url: `https://ensemblgenomes.org/search?query=${encodeURIComponent(
+        speciesQuery
+      )}`,
+    };
   }
 
   if (provider === "ucsc" && build.assembly) {
@@ -931,7 +938,10 @@ export function RepositoryBrowser() {
                                   {build.package}
                                 </div>
                                 {(() => {
-                                  const src = buildSourceLink(build);
+                                  const src = buildSourceLink(
+                                    build,
+                                    speciesName(org.canonical_name ?? org.organism)
+                                  );
                                   if (!src) return null;
                                   return (
                                     <a
