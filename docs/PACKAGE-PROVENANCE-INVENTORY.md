@@ -108,45 +108,54 @@ index. This was a read-only scan; no metadata was changed.
 | Category | Count | Meaning |
 |---|---:|---|
 | Already valid in current index | 824 | Current `source_url` is already provider-correct. |
-| Recover from `DESCRIPTION` | 2,063 | Current index is wrong/empty, but package `DESCRIPTION` has a provider-correct `source_url`. |
+| Recover from `DESCRIPTION` | 2,086 | Current index is wrong/empty, but package `DESCRIPTION` has a provider-correct `source_url`. |
 | `DESCRIPTION` empty/broken | 1 | Tarball was readable, but `source_url` is empty or unusable. |
 | Provider/URL conflict | 0 | No readable package contradicted its indexed provider. |
-| Tarball read failed after targeted retry | 23 | All are large Ensembl tarballs; these likely need near-full tarball reads because `DESCRIPTION` is after the `.2bit` payload. |
+| Tarball read failed after full-download retry | 0 | All initially unreadable Ensembl tarballs were resolved by full tarball reads. |
 
 ### Raw DESCRIPTION content categories
 
 | DESCRIPTION result | Count |
 |---|---:|
 | Correct NCBI URL in `DESCRIPTION` | 830 |
-| Correct Ensembl URL in `DESCRIPTION` | 2,050 |
+| Correct Ensembl URL in `DESCRIPTION` | 2,073 |
 | Empty/broken `source_url` in `DESCRIPTION` | 1 |
-| DESCRIPTION read failed | 30 |
+| DESCRIPTION read failed | 7 |
 
 The targeted retry recovered 105 of the 128 repair-blocking failures:
 51 with an 8 MB range retry, then 54 more with a 64 MB range retry.
+The remaining 23 large Ensembl tarballs were then downloaded fully, read,
+and deleted from local temporary storage; all 23 yielded provider-correct
+Ensembl `source_url` values.
 
-The difference between "tarball read failed" (23) and "DESCRIPTION read
-failed" (30) is that 7 failed reads are NCBI packages whose current
-index URL is already valid, so they do not block the source-url repair.
+The final 7 DESCRIPTION read failures are NCBI packages whose current
+index URL was already valid, so they did not block the source-url repair.
 
-The remaining 23 repair-blocking tarballs have GitHub asset sizes totaling
-about 5.50 GiB; the largest single tarball is about 1.14 GB. A spot check
-confirmed the package structure can place `DESCRIPTION` after
-`inst/extdata/single_sequences.2bit`, so these failures are consistent
-with insufficient range length rather than provider/source conflicts.
+`BSgenome.Scerevisiae.NCBI.R64` was the only readable package with an
+empty `source_url` in `DESCRIPTION`. It was manually curated as NCBI
+assembly `GCF_000146045.2` after verifying the NCBI page title:
+`Saccharomyces cerevisiae S288C genome assembly R64`.
 
 ## Applied repair
 
-Applied to `gh-pages/packages.json` on 2026-05-30 in commit `eb96a7f`
-(`Fix package source URLs from DESCRIPTION metadata`).
+Applied to `gh-pages/packages.json` on 2026-05-30 in two commits:
 
-The applied repair changed only `source_url` fields:
+- `eb96a7f` (`Fix package source URLs from DESCRIPTION metadata`)
+- `53b6d79` (`Complete package source URL repair`)
 
-| Provider | Changed `source_url` count |
+The applied repair changed these fields:
+
+| Field | Count | Notes |
+|---|---:|---|
+| `source_url` | 2,087 | 2,086 from package `DESCRIPTION`; 1 manual NCBI R64 correction. |
+| `accession` | 1 | Filled `BSgenome.Scerevisiae.NCBI.R64` with `GCF_000146045.2`. |
+
+Final public `packages.json` validation:
+
+| Provider/source-url status | Count |
 |---|---:|
-| Ensembl | 2,050 |
-| NCBI | 13 |
-| Total | 2,063 |
-
-Post-apply validation compared the pre/post `flat` package records and
-found 2,063 `source_url` changes and 0 changes to any other package field.
+| Total packages | 2,911 |
+| Provider-correct `source_url` | 2,911 |
+| Ensembl provider-correct `source_url` | 2,073 |
+| NCBI provider-correct `source_url` | 838 |
+| Provider/source-url conflicts | 0 |
