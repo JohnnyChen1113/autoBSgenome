@@ -11697,3 +11697,7 @@ NeedsCompilation: no
 Package: BSgenome.Ctownsendii.NCBI.mCorTow11hap2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Myumanensis.NCBI.mMyoYum10hap1
+Version: 1.0.0
+NeedsCompilation: no
