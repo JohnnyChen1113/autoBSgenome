@@ -12225,3 +12225,7 @@ NeedsCompilation: no
 Package: BSgenome.Dexcisus.NCBI.RoLDexcGuamv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Omordax.NCBI.fOsmMor3pri
+Version: 1.0.0
+NeedsCompilation: no
