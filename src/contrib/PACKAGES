@@ -12413,3 +12413,7 @@ NeedsCompilation: no
 Package: BSgenome.Xgladius.NCBI.ASM1685928v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tvachellii.NCBI.HZAUPvacv1
+Version: 1.0.0
+NeedsCompilation: no
