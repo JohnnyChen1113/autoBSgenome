@@ -12345,3 +12345,7 @@ NeedsCompilation: no
 Package: BSgenome.Smelops.NCBI.fSymMel21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sbiaculeatus.NCBI.ASM1980259v1
+Version: 1.0.0
+NeedsCompilation: no
