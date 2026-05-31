@@ -12257,3 +12257,7 @@ NeedsCompilation: no
 Package: BSgenome.Atestudineus.NCBI.fAnaTes13
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mfascicularis.NCBI.T2TMFA8v11
+Version: 1.0.0
+NeedsCompilation: no
