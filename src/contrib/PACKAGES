@@ -11781,3 +11781,7 @@ NeedsCompilation: no
 Package: BSgenome.Csphinx.NCBI.ASM3001541v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mschreibersii.NCBI.mMinSch1hap12
+Version: 1.0.0
+NeedsCompilation: no
