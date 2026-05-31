@@ -12365,3 +12365,7 @@ NeedsCompilation: no
 Package: BSgenome.Saureovittata.NCBI.ASM2101889v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptaeniolatus.NCBI.UORPtae12
+Version: 1.0.0
+NeedsCompilation: no
