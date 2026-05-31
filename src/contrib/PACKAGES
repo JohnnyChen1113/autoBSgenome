@@ -12233,3 +12233,7 @@ NeedsCompilation: no
 Package: BSgenome.Gaculeatus.NCBI.fGasAcu3hap11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Smaximus.NCBI.ASM2237912v1
+Version: 1.0.0
+NeedsCompilation: no
