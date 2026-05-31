@@ -11749,3 +11749,7 @@ NeedsCompilation: no
 Package: BSgenome.Mwogura.NCBI.Mwogura10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vmurinus.NCBI.mVesMur1hap12
+Version: 1.0.0
+NeedsCompilation: no
