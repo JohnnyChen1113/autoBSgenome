@@ -11833,3 +11833,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcalifornicus.NCBI.mMyoCai10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mauriculus.NCBI.mMyoAui10
+Version: 1.0.0
+NeedsCompilation: no
