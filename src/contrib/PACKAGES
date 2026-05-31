@@ -11761,3 +11761,7 @@ NeedsCompilation: no
 Package: BSgenome.Pkuhlii.NCBI.mPipKuh1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Trobustula.NCBI.ASM5586095v1
+Version: 1.0.0
+NeedsCompilation: no
