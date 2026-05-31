@@ -11945,3 +11945,7 @@ NeedsCompilation: no
 Package: BSgenome.Dphaeotis.NCBI.mDerPha1hap2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mfindleyi.NCBI.ASM3863079v1
+Version: 1.0.0
+NeedsCompilation: no
