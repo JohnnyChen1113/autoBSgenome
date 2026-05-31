@@ -12349,3 +12349,7 @@ NeedsCompilation: no
 Package: BSgenome.Sbiaculeatus.NCBI.ASM1980259v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Crostratus.NCBI.fCheRos1pri
+Version: 1.0.0
+NeedsCompilation: no
