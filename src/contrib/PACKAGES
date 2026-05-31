@@ -11893,3 +11893,7 @@ NeedsCompilation: no
 Package: BSgenome.Mplaniceps.NCBI.ASM3625017v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hgriseus.NCBI.PGDPHapGri
+Version: 1.0.0
+NeedsCompilation: no
