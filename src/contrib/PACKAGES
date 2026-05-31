@@ -11721,3 +11721,7 @@ NeedsCompilation: no
 Package: BSgenome.Espelaea.NCBI.Espev1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mnesopolus.NCBI.mMyoNes1hap2
+Version: 1.0.0
+NeedsCompilation: no
