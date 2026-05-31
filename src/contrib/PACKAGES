@@ -11805,3 +11805,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmicrotis.NCBI.mMicMic1hap2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lglama.NCBI.ASM1323958v1
+Version: 1.0.0
+NeedsCompilation: no
