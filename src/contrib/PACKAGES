@@ -12193,3 +12193,7 @@ NeedsCompilation: no
 Package: BSgenome.Scoeruleoalba.NCBI.mSteCoe11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Munguiculatus.NCBI.BangorMerUng61
+Version: 1.0.0
+NeedsCompilation: no
