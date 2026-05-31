@@ -12165,3 +12165,7 @@ NeedsCompilation: no
 Package: BSgenome.Mreevesi.NCBI.mMunRee11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ddelphis.NCBI.mDelDel12
+Version: 1.0.0
+NeedsCompilation: no
