@@ -12109,3 +12109,7 @@ NeedsCompilation: no
 Package: BSgenome.Lalbirostris.NCBI.mLagAlb11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hamphibius.NCBI.mHipAmp2hap2
+Version: 1.0.0
+NeedsCompilation: no
