@@ -11657,3 +11657,7 @@ NeedsCompilation: no
 Package: BSgenome.Naviator.NCBI.NENUNavi20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pkuhlii.NCBI.mPipKuh1p
+Version: 1.0.0
+NeedsCompilation: no
