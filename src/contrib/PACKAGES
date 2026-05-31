@@ -12001,3 +12001,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmurinus.NCBI.MmurinusIninamat10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Arussatus.NCBI.mAcoRus11
+Version: 1.0.0
+NeedsCompilation: no
