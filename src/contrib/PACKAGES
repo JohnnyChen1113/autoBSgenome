@@ -12385,3 +12385,7 @@ NeedsCompilation: no
 Package: BSgenome.Ctrifascialis.NCBI.fChaTrf1hap1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Peques.NCBI.UORPequ11
+Version: 1.0.0
+NeedsCompilation: no
