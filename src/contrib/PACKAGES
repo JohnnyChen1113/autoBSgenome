@@ -11717,3 +11717,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmyotis.NCBI.mMyoMyo1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Espelaea.NCBI.Espev1
+Version: 1.0.0
+NeedsCompilation: no
