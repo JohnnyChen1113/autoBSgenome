@@ -340,6 +340,7 @@ jobs:
           TARBALL="${PACKAGE}_${VERSION}.tar.gz"
           PERM_TAG="pkg-${PACKAGE}"
           ACCESSION="${{ steps.params.outputs.accession }}"
+          RELEASE_DATE="${{ steps.params.outputs.release_date }}"
           SOURCE_URL="${{ steps.params.outputs.source_url }}"
           if [ -z "$SOURCE_URL" ]; then
             if [ "${{ steps.params.outputs.data_source }}" = "ensembl" ]; then
@@ -419,7 +420,7 @@ jobs:
           SEQ_COUNT="${{ steps.fasta_info.outputs.seq_count }}"
           # Record seq_count in metrics too so it lives alongside the rest.
           python3 scripts/record_metric.py seq_count "${SEQ_COUNT:-0}"
-          STORAGE_INFO=$(SEQ_IDS="$SEQ_IDS" SOURCE_URL="$SOURCE_URL" PROVIDER="$PROVIDER" ACCESSION="$ACCESSION" BUILT_AT="$BUILT_AT" WORKFLOW_RUN_ID="${{ github.run_id }}" WORKFLOW_RUN_URL="$WORKFLOW_RUN_URL" BUILDER_IMAGE="$BUILDER_IMAGE" PACKAGE_SHA256="$PACKAGE_SHA256" DESCRIPTION_SHA256="$DESCRIPTION_SHA256" python3 -c "
+          STORAGE_INFO=$(SEQ_IDS="$SEQ_IDS" SOURCE_URL="$SOURCE_URL" RELEASE_DATE="$RELEASE_DATE" PROVIDER="$PROVIDER" ACCESSION="$ACCESSION" BUILT_AT="$BUILT_AT" WORKFLOW_RUN_ID="${{ github.run_id }}" WORKFLOW_RUN_URL="$WORKFLOW_RUN_URL" BUILDER_IMAGE="$BUILDER_IMAGE" PACKAGE_SHA256="$PACKAGE_SHA256" DESCRIPTION_SHA256="$DESCRIPTION_SHA256" python3 -c "
           import json, os
           try:
               metrics = json.load(open('/tmp/build_metrics.json'))
@@ -428,6 +429,7 @@ jobs:
           print(json.dumps({
               'storage': 'github-release',
               'source_url': os.environ.get('SOURCE_URL',''),
+              'release_date': os.environ.get('RELEASE_DATE',''),
               'seq_ids': os.environ.get('SEQ_IDS',''),
               'metrics': metrics,
               'provenance': {
@@ -469,6 +471,7 @@ jobs:
           ASSEMBLY="${{ steps.params.outputs.genome }}"
           PROVIDER="${{ steps.params.outputs.provider }}"
           ACCESSION="${{ steps.params.outputs.accession }}"
+          RELEASE_DATE="${{ steps.params.outputs.release_date }}"
           TARBALL="${PACKAGE}_${VERSION}.tar.gz"
           SEQ_IDS="${{ steps.fasta_info.outputs.seq_ids }}"
           SEQ_COUNT="${{ steps.fasta_info.outputs.seq_count }}"
@@ -528,7 +531,7 @@ jobs:
           # Pack storage + seq_ids + metrics into one JSON field so we stay
           # under the 10-property client_payload cap.
           python3 scripts/record_metric.py seq_count "${SEQ_COUNT:-0}"
-          STORAGE_INFO=$(DOI="$DOI" URL="$URL" SEQ_IDS="$SEQ_IDS" SOURCE_URL="$SOURCE_URL" PROVIDER="$PROVIDER" ACCESSION="$ACCESSION" BUILT_AT="$BUILT_AT" WORKFLOW_RUN_ID="${{ github.run_id }}" WORKFLOW_RUN_URL="$WORKFLOW_RUN_URL" BUILDER_IMAGE="$BUILDER_IMAGE" PACKAGE_SHA256="$PACKAGE_SHA256" DESCRIPTION_SHA256="$DESCRIPTION_SHA256" python3 -c "
+          STORAGE_INFO=$(DOI="$DOI" URL="$URL" SEQ_IDS="$SEQ_IDS" SOURCE_URL="$SOURCE_URL" RELEASE_DATE="$RELEASE_DATE" PROVIDER="$PROVIDER" ACCESSION="$ACCESSION" BUILT_AT="$BUILT_AT" WORKFLOW_RUN_ID="${{ github.run_id }}" WORKFLOW_RUN_URL="$WORKFLOW_RUN_URL" BUILDER_IMAGE="$BUILDER_IMAGE" PACKAGE_SHA256="$PACKAGE_SHA256" DESCRIPTION_SHA256="$DESCRIPTION_SHA256" python3 -c "
           import json, os
           try:
               metrics = json.load(open('/tmp/build_metrics.json'))
@@ -539,6 +542,7 @@ jobs:
               'doi': os.environ.get('DOI',''),
               'download_url': os.environ.get('URL',''),
               'source_url': os.environ.get('SOURCE_URL',''),
+              'release_date': os.environ.get('RELEASE_DATE',''),
               'seq_ids': os.environ.get('SEQ_IDS',''),
               'metrics': metrics,
               'provenance': {

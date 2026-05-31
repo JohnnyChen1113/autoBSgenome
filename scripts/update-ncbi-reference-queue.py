@@ -83,12 +83,17 @@ def clean_organism(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+def normalize_release_date(value: str) -> str:
+    return value.strip().replace("/", "-")
+
+
 def queue_item(row: dict[str, str], status: str = "pending") -> dict[str, object] | None:
     organism = clean_organism(row.get("organism_name", ""))
     assembly = row.get("asm_name", "").strip()
     accession = row.get("assembly_accession", "").strip()
     group = row.get("group", "other").strip() or "other"
     genome_size = int(row.get("genome_size", "0") or "0")
+    release_date = normalize_release_date(row.get("seq_rel_date", ""))
     package_name, reason = build_package_name(organism, "NCBI", assembly)
     if not package_name:
         return {
@@ -101,9 +106,10 @@ def queue_item(row: dict[str, str], status: str = "pending") -> dict[str, object
             "genome_size_mb": round(genome_size / 1_000_000, 1),
             "priority": 9,
             "status": "skip_malformed",
+            "release_date": release_date,
             "skip_reason": reason,
         }
-    return {
+    item = {
         "accession": accession,
         "organism": organism,
         "assembly": assembly,
@@ -114,6 +120,9 @@ def queue_item(row: dict[str, str], status: str = "pending") -> dict[str, object
         "priority": priority_for_group(group),
         "status": status,
     }
+    if release_date:
+        item["release_date"] = release_date
+    return item
 
 
 def priority_for_group(group: str) -> int:
@@ -217,6 +226,19 @@ def main() -> None:
     published_accessions = {item.get("accession") for item in packages if item.get("provider") == "NCBI"}
 
     refseq_rows = list(iter_summary(args.refseq_summary))
+    wanted_accessions = {
+        str(item.get("accession")) for item in queue if item.get("accession")
+    }
+    release_by_accession = {}
+    for row in refseq_rows:
+        accession = row.get("assembly_accession", "")
+        if accession in wanted_accessions:
+            release_by_accession[accession] = normalize_release_date(row.get("seq_rel_date", ""))
+    for row in iter_summary(args.genbank_summary):
+        accession = row.get("assembly_accession", "")
+        if accession in wanted_accessions and accession not in release_by_accession:
+            release_by_accession[accession] = normalize_release_date(row.get("seq_rel_date", ""))
+
     by_key = {dedupe_key(item): item for item in queue}
     by_accession = {str(item.get("accession")): item for item in queue if item.get("accession")}
     by_package = {
@@ -224,6 +246,13 @@ def main() -> None:
     }
 
     changes = Counter()
+
+    for item in queue:
+        accession = str(item.get("accession") or "")
+        release_date = release_by_accession.get(accession)
+        if release_date and item.get("release_date") != release_date:
+            item["release_date"] = release_date
+            changes["set_existing_release_date"] += 1
 
     for item in queue:
         if item.get("status") != "building":

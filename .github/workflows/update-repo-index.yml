@@ -42,6 +42,7 @@ jobs:
           EXTERNAL_URL=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('download_url',''))" "$STORAGE_INFO")
           DOI=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('doi',''))" "$STORAGE_INFO")
           SOURCE_URL=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('source_url',''))" "$STORAGE_INFO")
+          RELEASE_DATE=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('release_date',''))" "$STORAGE_INFO")
           PROVENANCE_JSON=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(json.dumps(d.get('provenance',{})))" "$STORAGE_INFO")
           # seq_ids moved into storage_info to stay under the 10-property cap
           SEQ_IDS_PACKED=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('seq_ids',''))" "$STORAGE_INFO")
@@ -116,6 +117,8 @@ jobs:
           except Exception:
               provenance_blob = {}
           incoming_source_url = '''${SOURCE_URL}'''.strip()
+          release_date = '''${RELEASE_DATE}'''.strip()
+          indexed_at = '$(date -u +%Y-%m-%dT%H:%M:%SZ)'
           provider = '${PROVIDER}'
           accession = '${ACCESSION}'
           if incoming_source_url:
@@ -139,10 +142,15 @@ jobs:
               'group': group,
               'taxonomy': taxonomy,
               'common_name': common_name,
-              'published': '$(date -u +%Y-%m-%dT%H:%M:%SZ)',
+              'indexed_at': indexed_at,
               'storage': storage,
               'download_url': external_url or default_url,
           }
+          if release_date:
+              new_entry['release_date'] = release_date
+              # Legacy field kept for older consumers; semantically this is the
+              # genome/assembly release date, not the package index timestamp.
+              new_entry['published'] = release_date
           if doi:
               new_entry['doi'] = doi
           if metrics_blob:
@@ -185,7 +193,8 @@ jobs:
           ledger_entry = {
               'schema_version': 1,
               'event': 'package_index_update',
-              'indexed_at': new_entry['published'],
+              'indexed_at': indexed_at,
+              'release_date': release_date,
               'package': new_entry['package'],
               'version': new_entry['version'],
               'provider': provider,

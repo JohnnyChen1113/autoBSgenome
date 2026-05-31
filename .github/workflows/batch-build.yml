@@ -200,7 +200,7 @@ jobs:
 
               extra_fields = {
                   'data_source': 'ensembl' if is_ensembl else 'ncbi',
-                  'release_date': '',
+                  'release_date': item.get('release_date') or item.get('seq_rel_date') or '',
                   'title': f'Full genome sequences for {organism} ({provider} version {assembly_raw})',
                   'source_url': source_url,
               }

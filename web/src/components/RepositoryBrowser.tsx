@@ -51,6 +51,8 @@ type BuildPackage = {
   taxonomy?: Taxonomy;
   common_name?: string;
   published?: string;
+  release_date?: string;
+  indexed_at?: string;
   storage?: string;
   download_url?: string;
   doi?: string;
@@ -183,6 +185,14 @@ function formatBytes(bytes?: number): string {
     unit += 1;
   }
   return `${value.toFixed(unit < 2 ? 0 : 1)} ${units[unit]}`;
+}
+
+function formatMetadataDate(value?: string): string {
+  if (!value) return "";
+  const normalized = value.replace(/\//g, "-");
+  const date = new Date(normalized);
+  if (Number.isNaN(date.getTime())) return value;
+  return date.toLocaleDateString();
 }
 
 function sourceUrl(build: BuildPackage): string {
@@ -1064,11 +1074,11 @@ export function RepositoryBrowser() {
                                     </span>
                                   </span>
                                 )}
-                                {build.published && (
+                                {build.release_date && (
                                   <span>
-                                    Published:{" "}
+                                    Genome release:{" "}
                                     <span className="text-foreground">
-                                      {new Date(build.published).toLocaleDateString()}
+                                      {formatMetadataDate(build.release_date)}
                                     </span>
                                   </span>
                                 )}
