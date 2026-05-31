@@ -11961,3 +11961,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsinicus.NCBI.ASM3656204v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Drotundus.NCBI.HLdesRot8A1
+Version: 1.0.0
+NeedsCompilation: no
