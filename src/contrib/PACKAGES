@@ -12033,3 +12033,7 @@ NeedsCompilation: no
 Package: BSgenome.Saraneus.NCBI.mSorAra2pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Erufifrons.NCBI.OSUERuf1
+Version: 1.0.0
+NeedsCompilation: no
