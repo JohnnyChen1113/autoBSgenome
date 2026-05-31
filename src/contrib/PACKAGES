@@ -12025,3 +12025,7 @@ NeedsCompilation: no
 Package: BSgenome.Hgrypus.NCBI.mHalGry1hap11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lweddellii.NCBI.ASM5417740v2
+Version: 1.0.0
+NeedsCompilation: no
