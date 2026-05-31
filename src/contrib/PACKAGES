@@ -11729,3 +11729,7 @@ NeedsCompilation: no
 Package: BSgenome.Pblainvillei.NCBI.ASM1175407v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Efuscus.NCBI.DDASMmEF20220401
+Version: 1.0.0
+NeedsCompilation: no
