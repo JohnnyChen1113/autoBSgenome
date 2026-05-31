@@ -11969,3 +11969,7 @@ NeedsCompilation: no
 Package: BSgenome.Mdaubentonii.NCBI.mMyoDau21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pauritus.NCBI.mPleAur11
+Version: 1.0.0
+NeedsCompilation: no
