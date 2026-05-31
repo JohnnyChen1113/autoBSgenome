@@ -11901,3 +11901,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmeridionalis.NCBI.PGDPHapMer
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mvivesi.NCBI.ASM3577139v1
+Version: 1.0.0
+NeedsCompilation: no
