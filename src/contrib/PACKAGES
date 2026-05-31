@@ -12061,3 +12061,7 @@ NeedsCompilation: no
 Package: BSgenome.Otorridus.NCBI.mOncTor11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nnebulosa.NCBI.mNeoNeb1pri
+Version: 1.0.0
+NeedsCompilation: no
