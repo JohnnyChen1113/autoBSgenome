@@ -11853,3 +11853,7 @@ NeedsCompilation: no
 Package: BSgenome.Toccidentalis.NCBI.MPIMGtalOcc4v21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmystacinus.NCBI.mMyoMys1hap12
+Version: 1.0.0
+NeedsCompilation: no
