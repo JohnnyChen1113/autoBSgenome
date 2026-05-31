@@ -12053,3 +12053,7 @@ NeedsCompilation: no
 Package: BSgenome.Pafricanus.NCBI.ROSPafrv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Llutra.NCBI.mLutLut12
+Version: 1.0.0
+NeedsCompilation: no
