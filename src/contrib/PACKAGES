@@ -11669,3 +11669,7 @@ NeedsCompilation: no
 Package: BSgenome.Ehelvum.NCBI.ASM46528v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tbottae.NCBI.ThBott
+Version: 1.0.0
+NeedsCompilation: no
