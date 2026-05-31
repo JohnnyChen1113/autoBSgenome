@@ -12405,3 +12405,7 @@ NeedsCompilation: no
 Package: BSgenome.Pplatessa.NCBI.fPlePla11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Alatus.NCBI.fAcaLat11
+Version: 1.0.0
+NeedsCompilation: no
