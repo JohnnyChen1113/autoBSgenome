@@ -11873,3 +11873,7 @@ NeedsCompilation: no
 Package: BSgenome.Nleporinus.NCBI.NocLepv1BIUU
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Halaotrensis.NCBI.PGDPHapAla
+Version: 1.0.0
+NeedsCompilation: no
