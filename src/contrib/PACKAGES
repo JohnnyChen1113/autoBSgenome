@@ -11985,3 +11985,7 @@ NeedsCompilation: no
 Package: BSgenome.Pleo.NCBI.PleoPle1pat11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lcatta.NCBI.mLemCat1pri
+Version: 1.0.0
+NeedsCompilation: no
