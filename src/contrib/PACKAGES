@@ -11789,3 +11789,7 @@ NeedsCompilation: no
 Package: BSgenome.Gbursarius.NCBI.GeBurs
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pnathusii.NCBI.mPipNatpri
+Version: 1.0.0
+NeedsCompilation: no
