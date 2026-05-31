@@ -12273,3 +12273,7 @@ NeedsCompilation: no
 Package: BSgenome.Sargus.NCBI.fScaArg1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Earmatus.NCBI.fEnoArm2hap1
+Version: 1.0.0
+NeedsCompilation: no
