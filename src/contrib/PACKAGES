@@ -11813,3 +11813,7 @@ NeedsCompilation: no
 Package: BSgenome.Moccultus.NCBI.mMyoOcc10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gkeenani.NCBI.mGarKee1hap2
+Version: 1.0.0
+NeedsCompilation: no
