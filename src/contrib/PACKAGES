@@ -12269,3 +12269,7 @@ NeedsCompilation: no
 Package: BSgenome.Dclupeoides.NCBI.fDenClu12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sargus.NCBI.fScaArg1pri
+Version: 1.0.0
+NeedsCompilation: no
