@@ -11745,3 +11745,7 @@ NeedsCompilation: no
 Package: BSgenome.Mgigas.NCBI.mMacGig1220250303
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mwogura.NCBI.Mwogura10
+Version: 1.0.0
+NeedsCompilation: no
