@@ -11881,3 +11881,7 @@ NeedsCompilation: no
 Package: BSgenome.Rrex.NCBI.ASM4182541v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ajamaicensis.NCBI.CSHLJamfinal
+Version: 1.0.0
+NeedsCompilation: no
