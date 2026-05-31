@@ -12093,3 +12093,7 @@ NeedsCompilation: no
 Package: BSgenome.Mavellanarius.NCBI.mMusAve11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eprzewalskii.NCBI.EquPr2
+Version: 1.0.0
+NeedsCompilation: no
