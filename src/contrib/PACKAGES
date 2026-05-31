@@ -12237,3 +12237,7 @@ NeedsCompilation: no
 Package: BSgenome.Smaximus.NCBI.ASM2237912v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hzosterae.NCBI.ASM2543408v3
+Version: 1.0.0
+NeedsCompilation: no
