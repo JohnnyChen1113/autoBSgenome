@@ -11733,3 +11733,7 @@ NeedsCompilation: no
 Package: BSgenome.Efuscus.NCBI.DDASMmEF20220401
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Marvalis.NCBI.MicArv10
+Version: 1.0.0
+NeedsCompilation: no
