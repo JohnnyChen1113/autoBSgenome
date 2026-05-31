@@ -11769,3 +11769,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppygmaeus.NCBI.mPipPyg2hap12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dmoschata.NCBI.ASM5110793v1
+Version: 1.0.0
+NeedsCompilation: no
