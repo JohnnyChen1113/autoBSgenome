@@ -12429,3 +12429,7 @@ NeedsCompilation: no
 Package: BSgenome.Lbergylta.NCBI.fLabBer11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bocellaris.NCBI.fBleOce11
+Version: 1.0.0
+NeedsCompilation: no
