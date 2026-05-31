@@ -7,6 +7,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-repo-index
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -221,24 +225,38 @@ jobs:
 
       - name: Update build-queue.json status
         run: |
+          PACKAGE='${{ github.event.client_payload.package_name }}'
+          ACCESSION='${{ github.event.client_payload.accession }}'
           ORGANISM='${{ github.event.client_payload.organism }}'
+          ASSEMBLY='${{ github.event.client_payload.assembly }}'
           if [ -f build-queue.json ]; then
             python3 -c "
           import json
+          package = '${PACKAGE}'
+          accession = '${ACCESSION}'
+          organism = '${ORGANISM}'
+          assembly = '${ASSEMBLY}'
           with open('build-queue.json', 'r') as f:
               queue = json.load(f)
           updated = False
           for item in queue:
-              if item.get('organism') == '${ORGANISM}' and item.get('status') in ('building', 'pending'):
+              same_package = package and item.get('package_name') == package
+              same_accession = accession and item.get('accession') == accession
+              same_organism_assembly = (
+                  organism and assembly
+                  and item.get('organism') == organism
+                  and item.get('assembly') == assembly
+              )
+              if (same_package or same_accession or same_organism_assembly) and item.get('status') in ('building', 'pending'):
                   item['status'] = 'done'
                   updated = True
                   break
           if updated:
               with open('build-queue.json', 'w') as f:
                   json.dump(queue, f)
-              print(f'Marked {\"${ORGANISM}\"} as done in build-queue.json')
+              print(f'Marked {package or accession or organism} as done in build-queue.json')
           else:
-              print(f'No matching entry found for {\"${ORGANISM}\"}')
+              print(f'No matching queue entry found for {package or accession or organism}')
           "
           fi
 
