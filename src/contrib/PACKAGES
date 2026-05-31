@@ -11925,3 +11925,7 @@ NeedsCompilation: no
 Package: BSgenome.Ocurzoniae.NCBI.NIBSOcur10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cperspicillata.NCBI.mCarPer12
+Version: 1.0.0
+NeedsCompilation: no
