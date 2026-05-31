@@ -7,7 +7,7 @@ assembly_summary TSV files and an existing build-queue.json, then:
 - marks stale Ensembl resolver failures as skip_unresolved_ensembl;
 - restores all queued archaea from skip_prokaryote to pending;
 - restores/adds a small bacterial pilot set from RefSeq reference genomes;
-- adds missing current reference eukaryotes from RefSeq.
+- adds a representative set of missing current reference eukaryotes from RefSeq.
 
 GenBank reference genomes are intentionally not queued wholesale. The GenBank
 reference set is large enough to swamp the catalog, so those assemblies should
@@ -27,13 +27,13 @@ from typing import Iterable
 from normalize_package_name import build_package_name
 
 
-EUKARYOTE_GROUPS = {
-    "fungi",
-    "invertebrate",
-    "plant",
-    "protozoa",
-    "vertebrate_mammalian",
-    "vertebrate_other",
+REFSEQ_EUKARYOTE_LIMITS = {
+    "vertebrate_mammalian": 80,
+    "vertebrate_other": 120,
+    "plant": 80,
+    "invertebrate": 120,
+    "fungi": 100,
+    "protozoa": 20,
 }
 
 ASSEMBLY_LEVEL_RANK = {
@@ -213,6 +213,60 @@ def select_bacteria(rows: list[dict[str, str]], limit: int) -> list[dict[str, st
     return selected
 
 
+def eukaryote_priority(row: dict[str, str]) -> tuple[int, int, str]:
+    return (
+        ASSEMBLY_LEVEL_RANK.get(row.get("assembly_level", ""), 9),
+        int(row.get("genome_size", "0") or "0"),
+        clean_organism(row.get("organism_name", "")),
+    )
+
+
+def select_refseq_eukaryotes(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    by_group: dict[str, list[dict[str, str]]] = {group: [] for group in REFSEQ_EUKARYOTE_LIMITS}
+    for row in rows:
+        group = row.get("group")
+        if row.get("version_status") != "latest":
+            continue
+        if row.get("refseq_category") != "reference genome":
+            continue
+        if group not in by_group:
+            continue
+        by_group[group].append(row)
+
+    selected: list[dict[str, str]] = []
+    for group, group_rows in by_group.items():
+        limit = REFSEQ_EUKARYOTE_LIMITS[group]
+        group_rows.sort(key=eukaryote_priority)
+        group_selected: list[dict[str, str]] = []
+        seen_accessions: set[str] = set()
+        seen_genera: set[str] = set()
+
+        for row in group_rows:
+            organism = clean_organism(row.get("organism_name", ""))
+            genus = organism.split()[0] if organism else ""
+            accession = row.get("assembly_accession", "")
+            if accession in seen_accessions or genus in seen_genera:
+                continue
+            group_selected.append(row)
+            seen_accessions.add(accession)
+            seen_genera.add(genus)
+            if len(group_selected) >= limit:
+                break
+
+        if len(group_selected) < limit:
+            for row in group_rows:
+                accession = row.get("assembly_accession", "")
+                if accession in seen_accessions:
+                    continue
+                group_selected.append(row)
+                seen_accessions.add(accession)
+                if len(group_selected) >= limit:
+                    break
+
+        selected.extend(group_selected)
+    return selected
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--queue", required=True, type=Path)
@@ -297,13 +351,7 @@ def main() -> None:
             by_package[package_name] = item
             changes["added_bacteria"] += 1
 
-    for row in refseq_rows:
-        if row.get("version_status") != "latest":
-            continue
-        if row.get("refseq_category") != "reference genome":
-            continue
-        if row.get("group") not in EUKARYOTE_GROUPS:
-            continue
+    for row in select_refseq_eukaryotes(refseq_rows):
         accession = row.get("assembly_accession")
         if accession in published_accessions or accession in by_accession:
             continue
