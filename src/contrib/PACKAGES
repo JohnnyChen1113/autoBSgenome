@@ -12069,3 +12069,7 @@ NeedsCompilation: no
 Package: BSgenome.Pbengalensis.NCBI.FcatPben11paternalpri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Setruscus.NCBI.mSunEtr1pricur
+Version: 1.0.0
+NeedsCompilation: no
