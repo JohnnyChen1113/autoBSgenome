@@ -84,7 +84,17 @@ jobs:
           START=$(date +%s)
           ACCESSION="${{ steps.params.outputs.accession }}"
           echo "Downloading FASTA for ${ACCESSION} from NCBI..."
-          datasets download genome accession "${ACCESSION}" --include genome --filename genome.zip
+          for attempt in 1 2 3; do
+            rm -f genome.zip
+            if datasets download genome accession "${ACCESSION}" --include genome --filename genome.zip; then
+              break
+            fi
+            if [ "$attempt" = "3" ]; then
+              echo "ERROR: NCBI FASTA download failed after ${attempt} attempts"
+              exit 1
+            fi
+            sleep $((attempt * 30))
+          done
           unzip -o genome.zip
           FASTA=$(find ncbi_dataset/data -name "*.fna" | head -1)
           if [ -z "$FASTA" ]; then
@@ -123,7 +133,7 @@ jobs:
           fi
           echo "Resolved: $URL"
           START=$(date +%s)
-          curl -fL -o genome.fa.gz "$URL"
+          curl -fL --retry 3 --retry-delay 10 --retry-all-errors -o genome.fa.gz "$URL"
           gunzip genome.fa.gz
           ls -lh genome.fa
           END=$(date +%s)
