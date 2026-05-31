@@ -12209,3 +12209,7 @@ NeedsCompilation: no
 Package: BSgenome.Bhirsutus.NCBI.CSIROAGIBhirv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Htranspacificus.NCBI.fHypTra1
+Version: 1.0.0
+NeedsCompilation: no
