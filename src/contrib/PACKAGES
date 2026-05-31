@@ -12189,3 +12189,7 @@ NeedsCompilation: no
 Package: BSgenome.Mdensirostris.NCBI.mMesDen1primaryhaplotype
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scoeruleoalba.NCBI.mSteCoe11
+Version: 1.0.0
+NeedsCompilation: no
