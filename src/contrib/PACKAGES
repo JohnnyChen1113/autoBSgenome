@@ -12017,3 +12017,7 @@ NeedsCompilation: no
 Package: BSgenome.Rrattus.NCBI.RrattusCSIROv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnivalis.NCBI.mChiNiv11
+Version: 1.0.0
+NeedsCompilation: no
