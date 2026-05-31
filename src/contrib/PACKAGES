@@ -12089,3 +12089,7 @@ NeedsCompilation: no
 Package: BSgenome.Aniloticus.NCBI.mArvNil1patX
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mavellanarius.NCBI.mMusAve11
+Version: 1.0.0
+NeedsCompilation: no
