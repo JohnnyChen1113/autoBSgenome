@@ -12049,3 +12049,7 @@ NeedsCompilation: no
 Package: BSgenome.Uarctos.NCBI.UrsArc20
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pafricanus.NCBI.ROSPafrv1
+Version: 1.0.0
+NeedsCompilation: no
