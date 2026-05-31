@@ -12377,3 +12377,7 @@ NeedsCompilation: no
 Package: BSgenome.Cchanos.NCBI.fChaCha11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mgelatinosum.NCBI.fMelGel11
+Version: 1.0.0
+NeedsCompilation: no
