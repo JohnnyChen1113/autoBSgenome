@@ -12077,3 +12077,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpahari.NCBI.PAHARIEIJv11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clupus.NCBI.UUCfamGSD10
+Version: 1.0.0
+NeedsCompilation: no
