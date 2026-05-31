@@ -12181,3 +12181,7 @@ NeedsCompilation: no
 Package: BSgenome.Lacutus.NCBI.mLagAcu1hap11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nvison.NCBI.ASMNNV1
+Version: 1.0.0
+NeedsCompilation: no
