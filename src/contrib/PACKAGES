@@ -12141,3 +12141,7 @@ NeedsCompilation: no
 Package: BSgenome.Bmutus.NCBI.NWIPBWYAK11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bbubalis.NCBI.NDDBSH1
+Version: 1.0.0
+NeedsCompilation: no
