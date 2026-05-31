@@ -11997,3 +11997,7 @@ NeedsCompilation: no
 Package: BSgenome.Vlagopus.NCBI.ASM1834538v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmurinus.NCBI.MmurinusIninamat10
+Version: 1.0.0
+NeedsCompilation: no
