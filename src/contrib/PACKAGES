@@ -11649,3 +11649,7 @@ NeedsCompilation: no
 Package: BSgenome.Mculionensis.NCBI.ASM3220610v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cbrachyotis.NCBI.ASM979314v1
+Version: 1.0.0
+NeedsCompilation: no
