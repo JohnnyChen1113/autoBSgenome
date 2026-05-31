@@ -11701,3 +11701,7 @@ NeedsCompilation: no
 Package: BSgenome.Myumanensis.NCBI.mMyoYum10hap1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rblasii.NCBI.mRhiBla1hap2
+Version: 1.0.0
+NeedsCompilation: no
