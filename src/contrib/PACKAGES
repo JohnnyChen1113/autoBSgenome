@@ -12065,3 +12065,7 @@ NeedsCompilation: no
 Package: BSgenome.Nnebulosa.NCBI.mNeoNeb1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pbengalensis.NCBI.FcatPben11paternalpri
+Version: 1.0.0
+NeedsCompilation: no
