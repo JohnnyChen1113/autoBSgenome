@@ -11981,3 +11981,7 @@ NeedsCompilation: no
 Package: BSgenome.Taculeatus.NCBI.mTacAcu1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pleo.NCBI.PleoPle1pat11
+Version: 1.0.0
+NeedsCompilation: no
