@@ -12425,3 +12425,7 @@ NeedsCompilation: no
 Package: BSgenome.Llimanda.NCBI.fLimLim11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lbergylta.NCBI.fLabBer11
+Version: 1.0.0
+NeedsCompilation: no
