@@ -11885,3 +11885,7 @@ NeedsCompilation: no
 Package: BSgenome.Ajamaicensis.NCBI.CSHLJamfinal
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tbakeri.NCBI.TonSauv1BIUU
+Version: 1.0.0
+NeedsCompilation: no
