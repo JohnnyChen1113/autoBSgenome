@@ -11765,3 +11765,7 @@ NeedsCompilation: no
 Package: BSgenome.Trobustula.NCBI.ASM5586095v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppygmaeus.NCBI.mPipPyg2hap12
+Version: 1.0.0
+NeedsCompilation: no
