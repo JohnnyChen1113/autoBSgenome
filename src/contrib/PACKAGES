@@ -11965,3 +11965,7 @@ NeedsCompilation: no
 Package: BSgenome.Drotundus.NCBI.HLdesRot8A1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mdaubentonii.NCBI.mMyoDau21
+Version: 1.0.0
+NeedsCompilation: no
