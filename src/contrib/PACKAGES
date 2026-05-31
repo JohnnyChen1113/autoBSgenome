@@ -12249,3 +12249,7 @@ NeedsCompilation: no
 Package: BSgenome.Enaucrates.NCBI.fEcheNa12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pranga.NCBI.fParRan22
+Version: 1.0.0
+NeedsCompilation: no
