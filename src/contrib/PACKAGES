@@ -12201,3 +12201,7 @@ NeedsCompilation: no
 Package: BSgenome.Sacus.NCBI.fSynAcu12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Snigra.NCBI.RoLSnig11
+Version: 1.0.0
+NeedsCompilation: no
