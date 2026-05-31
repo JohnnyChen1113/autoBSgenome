@@ -12373,3 +12373,7 @@ NeedsCompilation: no
 Package: BSgenome.Afimbria.NCBI.AfimUVic2022
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cchanos.NCBI.fChaCha11
+Version: 1.0.0
+NeedsCompilation: no
