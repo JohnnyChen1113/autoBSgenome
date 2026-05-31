@@ -12341,3 +12341,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcephalus.NCBI.CIBAMcephalus11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Smelops.NCBI.fSymMel21
+Version: 1.0.0
+NeedsCompilation: no
