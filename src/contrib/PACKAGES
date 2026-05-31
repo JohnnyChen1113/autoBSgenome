@@ -12013,3 +12013,7 @@ NeedsCompilation: no
 Package: BSgenome.Ajubatus.NCBI.VMUAjubasmv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rrattus.NCBI.RrattusCSIROv1
+Version: 1.0.0
+NeedsCompilation: no
