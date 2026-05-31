@@ -11737,3 +11737,7 @@ NeedsCompilation: no
 Package: BSgenome.Marvalis.NCBI.MicArv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmyotis.NCBI.mMyoMyo1p
+Version: 1.0.0
+NeedsCompilation: no
