@@ -12177,3 +12177,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcrassidens.NCBI.mPseCra1hap1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lacutus.NCBI.mLagAcu1hap11
+Version: 1.0.0
+NeedsCompilation: no
