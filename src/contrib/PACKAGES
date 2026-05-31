@@ -12393,3 +12393,7 @@ NeedsCompilation: no
 Package: BSgenome.Ddactyliophorus.NCBI.RoLDdac11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cargus.NCBI.Channaargusmalev10
+Version: 1.0.0
+NeedsCompilation: no
