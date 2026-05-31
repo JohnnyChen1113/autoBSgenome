@@ -12289,3 +12289,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgunnellus.NCBI.fPhoGun12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Marmatus.NCBI.fMasArm13
+Version: 1.0.0
+NeedsCompilation: no
