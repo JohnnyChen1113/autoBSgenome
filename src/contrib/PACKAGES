@@ -12253,3 +12253,7 @@ NeedsCompilation: no
 Package: BSgenome.Pranga.NCBI.fParRan22
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Atestudineus.NCBI.fAnaTes13
+Version: 1.0.0
+NeedsCompilation: no
