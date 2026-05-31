@@ -12149,3 +12149,7 @@ NeedsCompilation: no
 Package: BSgenome.Gmelas.NCBI.mGloMel12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Oorca.NCBI.mOrcOrc11
+Version: 1.0.0
+NeedsCompilation: no
