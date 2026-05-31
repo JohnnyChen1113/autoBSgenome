@@ -11829,3 +11829,7 @@ NeedsCompilation: no
 Package: BSgenome.Saquaticus.NCBI.ScaAquv1BIUU
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mcalifornicus.NCBI.mMyoCai10
+Version: 1.0.0
+NeedsCompilation: no
