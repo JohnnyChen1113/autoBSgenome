@@ -12309,3 +12309,7 @@ NeedsCompilation: no
 Package: BSgenome.Tdalaica.NCBI.ASM1584641v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssenegalensis.NCBI.IFAPASoseM1
+Version: 1.0.0
+NeedsCompilation: no
