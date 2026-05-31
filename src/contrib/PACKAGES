@@ -12161,3 +12161,7 @@ NeedsCompilation: no
 Package: BSgenome.Oaries.NCBI.ARSUIRambv30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mreevesi.NCBI.mMunRee11
+Version: 1.0.0
+NeedsCompilation: no
