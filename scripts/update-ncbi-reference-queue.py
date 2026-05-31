@@ -7,7 +7,11 @@ assembly_summary TSV files and an existing build-queue.json, then:
 - marks stale Ensembl resolver failures as skip_unresolved_ensembl;
 - restores all queued archaea from skip_prokaryote to pending;
 - restores/adds a small bacterial pilot set from RefSeq reference genomes;
-- adds missing current reference eukaryotes from RefSeq and GenBank.
+- adds missing current reference eukaryotes from RefSeq.
+
+GenBank reference genomes are intentionally not queued wholesale. The GenBank
+reference set is large enough to swamp the catalog, so those assemblies should
+be handled through smaller representative selections or on-demand builds.
 """
 
 from __future__ import annotations
@@ -293,32 +297,28 @@ def main() -> None:
             by_package[package_name] = item
             changes["added_bacteria"] += 1
 
-    for source, rows in (
-        ("refseq", refseq_rows),
-        ("genbank", iter_summary(args.genbank_summary)),
-    ):
-        for row in rows:
-            if row.get("version_status") != "latest":
-                continue
-            if row.get("refseq_category") != "reference genome":
-                continue
-            if row.get("group") not in EUKARYOTE_GROUPS:
-                continue
-            accession = row.get("assembly_accession")
-            if accession in published_accessions or accession in by_accession:
-                continue
-            item = queue_item(row)
-            if not item:
-                continue
-            package_name = str(item.get("package_name") or "")
-            if package_name in published_packages or package_name in by_package:
-                continue
-            item["queue_source"] = f"ncbi_{source}_reference_2026-05-31"
-            queue.append(item)
-            by_key[dedupe_key(item)] = item
-            by_accession[str(item.get("accession"))] = item
-            by_package[package_name] = item
-            changes[f"added_{source}_eukaryote"] += 1
+    for row in refseq_rows:
+        if row.get("version_status") != "latest":
+            continue
+        if row.get("refseq_category") != "reference genome":
+            continue
+        if row.get("group") not in EUKARYOTE_GROUPS:
+            continue
+        accession = row.get("assembly_accession")
+        if accession in published_accessions or accession in by_accession:
+            continue
+        item = queue_item(row)
+        if not item:
+            continue
+        package_name = str(item.get("package_name") or "")
+        if package_name in published_packages or package_name in by_package:
+            continue
+        item["queue_source"] = "ncbi_refseq_reference_2026-05-31"
+        queue.append(item)
+        by_key[dedupe_key(item)] = item
+        by_accession[str(item.get("accession"))] = item
+        by_package[package_name] = item
+        changes["added_refseq_eukaryote"] += 1
 
     queue.sort(
         key=lambda item: (
