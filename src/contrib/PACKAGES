@@ -11689,3 +11689,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppipistrellus.NCBI.mPipPip2hap12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mfuliginosus.NCBI.ASM5120146v1
+Version: 1.0.0
+NeedsCompilation: no
