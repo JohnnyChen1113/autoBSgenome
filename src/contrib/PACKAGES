@@ -12353,3 +12353,7 @@ NeedsCompilation: no
 Package: BSgenome.Crostratus.NCBI.fCheRos1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ecragini.NCBI.CSUEcrag10
+Version: 1.0.0
+NeedsCompilation: no
