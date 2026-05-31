@@ -11905,3 +11905,7 @@ NeedsCompilation: no
 Package: BSgenome.Mvivesi.NCBI.ASM3577139v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Alituratus.NCBI.mArtLit1hap2
+Version: 1.0.0
+NeedsCompilation: no
