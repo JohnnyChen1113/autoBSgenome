@@ -11909,3 +11909,7 @@ NeedsCompilation: no
 Package: BSgenome.Alituratus.NCBI.mArtLit1hap2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gdolichurus.NCBI.ASM1984383v1
+Version: 1.0.0
+NeedsCompilation: no
