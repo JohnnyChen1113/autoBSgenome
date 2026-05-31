@@ -12357,3 +12357,7 @@ NeedsCompilation: no
 Package: BSgenome.Ecragini.NCBI.CSUEcrag10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pklunzingeri.NCBI.fPemKlu1hap1
+Version: 1.0.0
+NeedsCompilation: no
