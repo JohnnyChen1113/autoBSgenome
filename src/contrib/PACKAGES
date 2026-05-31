@@ -12333,3 +12333,7 @@ NeedsCompilation: no
 Package: BSgenome.Pswirei.NCBI.NWPUhadalv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vmargaritifer.NCBI.RoLVmar10
+Version: 1.0.0
+NeedsCompilation: no
