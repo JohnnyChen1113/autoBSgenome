@@ -7,10 +7,6 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: update-repo-index
-  cancel-in-progress: false
-
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -26,264 +22,38 @@ jobs:
           ref: main
           path: _main
           sparse-checkout: |
+            scripts/apply-repo-index-update.py
             scripts/validate-packages-metadata.py
           sparse-checkout-cone-mode: false
 
-      - name: Update packages.json
-        run: |
-          PACKAGE='${{ github.event.client_payload.package_name }}'
-          VERSION='${{ github.event.client_payload.version }}'
-          ORGANISM='${{ github.event.client_payload.organism }}'
-          ASSEMBLY='${{ github.event.client_payload.assembly }}'
-          PROVIDER='${{ github.event.client_payload.provider }}'
-          ACCESSION='${{ github.event.client_payload.accession }}'
-          FILE_NAME='${{ github.event.client_payload.file_name }}'
-          FILE_SIZE='${{ github.event.client_payload.file_size }}'
-          SEQ_IDS='${{ github.event.client_payload.seq_ids }}'
-          SEQ_COUNT='${{ github.event.client_payload.seq_count }}'
-          STORAGE_INFO='${{ github.event.client_payload.storage_info }}'
-          STORAGE=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('storage',''))" "$STORAGE_INFO")
-          EXTERNAL_URL=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('download_url',''))" "$STORAGE_INFO")
-          DOI=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('doi',''))" "$STORAGE_INFO")
-          SOURCE_URL=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('source_url',''))" "$STORAGE_INFO")
-          RELEASE_DATE=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('release_date',''))" "$STORAGE_INFO")
-          PROVENANCE_JSON=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(json.dumps(d.get('provenance',{})))" "$STORAGE_INFO")
-          # seq_ids moved into storage_info to stay under the 10-property cap
-          SEQ_IDS_PACKED=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(d.get('seq_ids',''))" "$STORAGE_INFO")
-          if [ -n "$SEQ_IDS_PACKED" ]; then SEQ_IDS="$SEQ_IDS_PACKED"; fi
-          METRICS_JSON=$(python3 -c "import json,sys;d=json.loads(sys.argv[1] or '{}');print(json.dumps(d.get('metrics',{})))" "$STORAGE_INFO")
-
-          # Add or update entry in packages.json (supports organism-centric format)
-          python3 -c "
-          import json
-          with open('packages.json', 'r') as f:
-              data = json.load(f)
-
-          # Handle both formats
-          if isinstance(data, dict) and 'flat' in data:
-              flat = data['flat']
-          elif isinstance(data, list):
-              flat = data
-          else:
-              flat = []
-
-          # Remove existing entry for this package
-          flat = [p for p in flat if p.get('package') != '${PACKAGE}']
-
-          # Fetch taxonomy from NCBI
-          taxonomy = {}
-          group = 'other'
-          common_name = ''
-          try:
-              import urllib.request, urllib.parse
-              encoded = urllib.parse.quote('${ORGANISM}')
-              url = f'https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/{encoded}/dataset_report'
-              req = urllib.request.Request(url, headers={'Accept': 'application/json'})
-              with urllib.request.urlopen(req, timeout=10) as resp:
-                  tdata = json.loads(resp.read())
-              tax = tdata.get('reports', [{}])[0].get('taxonomy', {})
-              classification = tax.get('classification', {})
-              for rank in ['domain', 'kingdom', 'phylum', 'class', 'order', 'family', 'genus']:
-                  if rank in classification:
-                      taxonomy[rank] = classification[rank]['name']
-              common_name = tax.get('curator_common_name', '')
-              # Set group from taxonomy
-              kingdom = taxonomy.get('kingdom', '')
-              phylum = taxonomy.get('phylum', '')
-              if kingdom == 'Metazoa' and taxonomy.get('class') == 'Mammalia':
-                  group = 'vertebrate_mammalian'
-              elif kingdom == 'Metazoa' and phylum == 'Chordata':
-                  group = 'vertebrate_other'
-              elif kingdom == 'Metazoa':
-                  group = 'invertebrate'
-              elif kingdom == 'Viridiplantae' or phylum in ('Streptophyta', 'Chlorophyta'):
-                  group = 'plant'
-              elif kingdom == 'Fungi':
-                  group = 'fungi'
-              elif taxonomy.get('domain') == 'Bacteria':
-                  group = 'bacteria'
-              elif taxonomy.get('domain') == 'Archaea':
-                  group = 'archaea'
-          except Exception as e:
-              print(f'Taxonomy lookup failed: {e}')
-
-          # Add new entry
-          storage = '${STORAGE}' or 'github-release'
-          external_url = '${EXTERNAL_URL}'
-          doi = '${DOI}'
-          default_url = 'https://github.com/${{ github.repository }}/releases/download/pkg-${PACKAGE}/${FILE_NAME}'
-          try:
-              metrics_blob = json.loads('''${METRICS_JSON}''')
-          except Exception:
-              metrics_blob = {}
-          try:
-              provenance_blob = json.loads('''${PROVENANCE_JSON}''')
-          except Exception:
-              provenance_blob = {}
-          incoming_source_url = '''${SOURCE_URL}'''.strip()
-          release_date = '''${RELEASE_DATE}'''.strip()
-          indexed_at = '$(date -u +%Y-%m-%dT%H:%M:%SZ)'
-          provider = '${PROVIDER}'
-          accession = '${ACCESSION}'
-          if incoming_source_url:
-              source_url = incoming_source_url
-          elif provider == 'NCBI' and accession:
-              source_url = f'https://www.ncbi.nlm.nih.gov/datasets/genome/{accession}/'
-          else:
-              source_url = ''
-          new_entry = {
-              'package': '${PACKAGE}',
-              'version': '${VERSION}',
-              'organism': '${ORGANISM}',
-              'assembly': '${ASSEMBLY}',
-              'provider': provider,
-              'accession': accession,
-              'source_url': source_url,
-              'file_name': '${FILE_NAME}',
-              'size': int('${FILE_SIZE}') if '${FILE_SIZE}'.isdigit() else 0,
-              'seq_ids': '${SEQ_IDS}'.split(',') if '${SEQ_IDS}' else [],
-              'seq_count': int('${SEQ_COUNT}') if '${SEQ_COUNT}'.isdigit() else 0,
-              'group': group,
-              'taxonomy': taxonomy,
-              'common_name': common_name,
-              'indexed_at': indexed_at,
-              'storage': storage,
-              'download_url': external_url or default_url,
-          }
-          if release_date:
-              new_entry['release_date'] = release_date
-              # Legacy field kept for older consumers; semantically this is the
-              # genome/assembly release date, not the package index timestamp.
-              new_entry['published'] = release_date
-          if doi:
-              new_entry['doi'] = doi
-          if metrics_blob:
-              new_entry['metrics'] = metrics_blob
-          if provenance_blob:
-              provenance_blob.setdefault('provider', provider)
-              provenance_blob.setdefault('source_url', source_url)
-              provenance_blob.setdefault('source_accession', accession)
-              new_entry['provenance'] = provenance_blob
-          flat.append(new_entry)
-
-          # Rebuild organism-centric format
-          organisms = {}
-          for pkg in flat:
-              org = pkg.get('organism', 'Unknown') or 'Unknown'
-              if org not in organisms:
-                  organisms[org] = {
-                      'organism': org,
-                      'common_name': pkg.get('common_name', ''),
-                      'group': pkg.get('group', 'other'),
-                      'taxonomy': pkg.get('taxonomy', {}),
-                      'builds': []
-                  }
-              organisms[org]['builds'].append(pkg)
-              if pkg.get('group') and pkg['group'] != 'other' and organisms[org].get('group') == 'other':
-                  organisms[org]['group'] = pkg['group']
-              if pkg.get('taxonomy') and not organisms[org].get('taxonomy'):
-                  organisms[org]['taxonomy'] = pkg['taxonomy']
-              if pkg.get('common_name') and not organisms[org].get('common_name'):
-                  organisms[org]['common_name'] = pkg['common_name']
-
-          result = {
-              'organisms': sorted(organisms.values(), key=lambda o: o['organism']),
-              'flat': flat
-          }
-
-          with open('packages.json', 'w') as f:
-              json.dump(result, f, indent=2)
-
-          ledger_entry = {
-              'schema_version': 1,
-              'event': 'package_index_update',
-              'indexed_at': indexed_at,
-              'release_date': release_date,
-              'package': new_entry['package'],
-              'version': new_entry['version'],
-              'provider': provider,
-              'accession': accession,
-              'source_url': source_url,
-              'download_url': new_entry['download_url'],
-              'storage': storage,
-              'doi': doi,
-              'provenance': provenance_blob,
-          }
-          import os
-          os.makedirs('provenance', exist_ok=True)
-          with open('provenance/builds.jsonl', 'a') as f:
-              f.write(json.dumps(ledger_entry, sort_keys=True) + '\n')
-          "
-          echo "Updated packages.json:"
-          cat packages.json
-
-      - name: Validate package metadata
-        run: |
-          python3 _main/scripts/validate-packages-metadata.py \
-            packages.json \
-            --require-provenance-package '${{ github.event.client_payload.package_name }}'
-
-      - name: Update build-queue.json status
-        run: |
-          PACKAGE='${{ github.event.client_payload.package_name }}'
-          ACCESSION='${{ github.event.client_payload.accession }}'
-          ORGANISM='${{ github.event.client_payload.organism }}'
-          ASSEMBLY='${{ github.event.client_payload.assembly }}'
-          if [ -f build-queue.json ]; then
-            python3 -c "
-          import json
-          package = '${PACKAGE}'
-          accession = '${ACCESSION}'
-          organism = '${ORGANISM}'
-          assembly = '${ASSEMBLY}'
-          with open('build-queue.json', 'r') as f:
-              queue = json.load(f)
-          updated = False
-          for item in queue:
-              same_package = package and item.get('package_name') == package
-              same_accession = accession and item.get('accession') == accession
-              same_organism_assembly = (
-                  organism and assembly
-                  and item.get('organism') == organism
-                  and item.get('assembly') == assembly
-              )
-              if (same_package or same_accession or same_organism_assembly) and item.get('status') in ('building', 'pending'):
-                  item['status'] = 'done'
-                  updated = True
-                  break
-          if updated:
-              with open('build-queue.json', 'w') as f:
-                  json.dump(queue, f)
-              print(f'Marked {package or accession or organism} as done in build-queue.json')
-          else:
-              print(f'No matching queue entry found for {package or accession or organism}')
-          "
-          fi
-
-      - name: Regenerate PACKAGES index
-        run: |
-          # Generate PACKAGES file from packages.json
-          python3 -c "
-          import json
-          with open('packages.json', 'r') as f:
-              data = json.load(f)
-          pkgs = data.get('flat', data) if isinstance(data, dict) else data
-          lines = []
-          for p in pkgs:
-              lines.append(f'Package: {p[\"package\"]}')
-              lines.append(f'Version: {p[\"version\"]}')
-              lines.append('NeedsCompilation: no')
-              lines.append('')
-          with open('src/contrib/PACKAGES', 'w') as f:
-              f.write('\n'.join(lines))
-          "
-          echo "Updated PACKAGES:"
-          cat src/contrib/PACKAGES
-
-      - name: Commit and push
+      - name: Apply index update and push
+        env:
+          PAYLOAD: ${{ toJSON(github.event.client_payload) }}
+          REPO: ${{ github.repository }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add packages.json src/contrib/PACKAGES build-queue.json provenance/builds.jsonl
-          git diff --cached --quiet || git commit -m "Update repository index: ${{ github.event.client_payload.package_name }}"
-          git push
+          for attempt in 1 2 3 4 5; do
+            git fetch origin gh-pages
+            git reset --hard origin/gh-pages
+
+            python3 _main/scripts/apply-repo-index-update.py
+            python3 _main/scripts/validate-packages-metadata.py \
+              packages.json \
+              --require-provenance-package '${{ github.event.client_payload.package_name }}'
+
+            git add packages.json src/contrib/PACKAGES build-queue.json provenance/builds.jsonl
+            if git diff --cached --quiet; then
+              echo "Nothing to commit"
+              exit 0
+            fi
+            git commit -m "Update repository index: ${{ github.event.client_payload.package_name }}"
+
+            if git push origin HEAD:gh-pages; then
+              exit 0
+            fi
+            echo "Push attempt ${attempt} rejected; retrying from latest gh-pages..."
+            sleep $((attempt * 2))
+          done
+          echo "ERROR: push still failing after 5 attempts"
+          exit 1
