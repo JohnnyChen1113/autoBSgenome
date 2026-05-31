@@ -12301,3 +12301,7 @@ NeedsCompilation: no
 Package: BSgenome.Emaclovinus.NCBI.JCEmacrtcrv5
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppollachius.NCBI.fPolPol21
+Version: 1.0.0
+NeedsCompilation: no
