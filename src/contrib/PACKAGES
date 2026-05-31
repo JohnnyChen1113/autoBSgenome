@@ -11705,3 +11705,7 @@ NeedsCompilation: no
 Package: BSgenome.Rblasii.NCBI.mRhiBla1hap2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmedius.NCBI.Masrlrunion100
+Version: 1.0.0
+NeedsCompilation: no
