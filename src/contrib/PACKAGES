@@ -11817,3 +11817,7 @@ NeedsCompilation: no
 Package: BSgenome.Gkeenani.NCBI.mGarKee1hap2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lguanicoe.NCBI.ASM1323962v1
+Version: 1.0.0
+NeedsCompilation: no
