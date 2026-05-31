@@ -11973,3 +11973,7 @@ NeedsCompilation: no
 Package: BSgenome.Pauritus.NCBI.mPleAur11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Plongimembris.NCBI.ASM2315922v1
+Version: 1.0.0
+NeedsCompilation: no
