@@ -11825,3 +11825,7 @@ NeedsCompilation: no
 Package: BSgenome.Vvicugna.NCBI.ASM1326549v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Saquaticus.NCBI.ScaAquv1BIUU
+Version: 1.0.0
+NeedsCompilation: no
