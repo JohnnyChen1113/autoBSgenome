@@ -12285,3 +12285,7 @@ NeedsCompilation: no
 Package: BSgenome.Polivaceus.NCBI.ASM2471397v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgunnellus.NCBI.fPhoGun12
+Version: 1.0.0
+NeedsCompilation: no
