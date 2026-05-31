@@ -12101,3 +12101,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccanadensis.NCBI.ASM1932006v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sscrofa.NCBI.Sscrofa111
+Version: 1.0.0
+NeedsCompilation: no
