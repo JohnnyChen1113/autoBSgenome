@@ -12317,3 +12317,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgobio.NCBI.fCotGob31
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tbubalis.NCBI.fTauBub21
+Version: 1.0.0
+NeedsCompilation: no
