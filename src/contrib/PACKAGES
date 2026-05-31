@@ -12321,3 +12321,7 @@ NeedsCompilation: no
 Package: BSgenome.Tbubalis.NCBI.fTauBub21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bbarbatula.NCBI.fBarBar11
+Version: 1.0.0
+NeedsCompilation: no
