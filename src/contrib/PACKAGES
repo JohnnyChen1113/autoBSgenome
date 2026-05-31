@@ -12105,3 +12105,7 @@ NeedsCompilation: no
 Package: BSgenome.Sscrofa.NCBI.Sscrofa111
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lalbirostris.NCBI.mLagAlb11
+Version: 1.0.0
+NeedsCompilation: no
