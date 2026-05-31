@@ -11877,3 +11877,7 @@ NeedsCompilation: no
 Package: BSgenome.Halaotrensis.NCBI.PGDPHapAla
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rrex.NCBI.ASM4182541v1
+Version: 1.0.0
+NeedsCompilation: no
