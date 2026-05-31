@@ -12401,3 +12401,7 @@ NeedsCompilation: no
 Package: BSgenome.Gaffinis.NCBI.SWUGaff10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pplatessa.NCBI.fPlePla11
+Version: 1.0.0
+NeedsCompilation: no
