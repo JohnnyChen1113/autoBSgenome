@@ -11713,3 +11713,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpilosus.NCBI.ASM3601025v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmyotis.NCBI.mMyoMyo1pri
+Version: 1.0.0
+NeedsCompilation: no
