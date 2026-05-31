@@ -11949,3 +11949,7 @@ NeedsCompilation: no
 Package: BSgenome.Mfindleyi.NCBI.ASM3863079v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Smaritimensis.NCBI.SorMar10
+Version: 1.0.0
+NeedsCompilation: no
