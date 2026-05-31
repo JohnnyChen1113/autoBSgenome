@@ -551,7 +551,7 @@ export function RepositoryBrowser() {
 
       if (queue) {
         const eukaryotes = queue.filter(
-          (item) => !item.status?.startsWith("skip_prokaryote")
+          (item) => !item.status?.startsWith("skip_")
         );
         setProgress({
           total: eukaryotes.length,
