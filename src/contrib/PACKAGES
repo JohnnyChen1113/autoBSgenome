@@ -11777,3 +11777,7 @@ NeedsCompilation: no
 Package: BSgenome.Msobrinus.NCBI.MacSobv1BIUU
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csphinx.NCBI.ASM3001541v1
+Version: 1.0.0
+NeedsCompilation: no
