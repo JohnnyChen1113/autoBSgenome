@@ -12217,3 +12217,7 @@ NeedsCompilation: no
 Package: BSgenome.Bsplendens.NCBI.fBetSpl54
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppungitius.NCBI.fPunPun21
+Version: 1.0.0
+NeedsCompilation: no
