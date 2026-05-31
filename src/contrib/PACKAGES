@@ -11953,3 +11953,7 @@ NeedsCompilation: no
 Package: BSgenome.Smaritimensis.NCBI.SorMar10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Prufus.NCBI.mPteRuf1hap2
+Version: 1.0.0
+NeedsCompilation: no
