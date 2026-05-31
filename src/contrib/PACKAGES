@@ -12129,3 +12129,7 @@ NeedsCompilation: no
 Package: BSgenome.Mjavanica.NCBI.MJLKY
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gtippelskirchi.NCBI.T2TmGirTip1v12pri
+Version: 1.0.0
+NeedsCompilation: no
