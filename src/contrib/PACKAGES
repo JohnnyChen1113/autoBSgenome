@@ -11857,3 +11857,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmystacinus.NCBI.mMyoMys1hap12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Shondurensis.NCBI.ASM1482457v3
+Version: 1.0.0
+NeedsCompilation: no
