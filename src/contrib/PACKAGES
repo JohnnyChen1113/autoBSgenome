@@ -11725,3 +11725,7 @@ NeedsCompilation: no
 Package: BSgenome.Mnesopolus.NCBI.mMyoNes1hap2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pblainvillei.NCBI.ASM1175407v1
+Version: 1.0.0
+NeedsCompilation: no
