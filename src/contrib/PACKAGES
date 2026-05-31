@@ -12041,3 +12041,7 @@ NeedsCompilation: no
 Package: BSgenome.Ovirginianus.NCBI.Ovbor12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fcatus.NCBI.FcatusFca126mat10
+Version: 1.0.0
+NeedsCompilation: no
