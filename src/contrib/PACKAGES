@@ -11641,3 +11641,7 @@ NeedsCompilation: no
 Package: BSgenome.Tdicoccoides.NCBI.WEWv21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bvariegatus.NCBI.BraVarv1BIUU
+Version: 1.0.0
+NeedsCompilation: no
