@@ -11797,3 +11797,7 @@ NeedsCompilation: no
 Package: BSgenome.Pabramus.NCBI.ASM4488510v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Phanaki.NCBI.mPipHan15
+Version: 1.0.0
+NeedsCompilation: no
