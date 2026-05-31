@@ -11757,3 +11757,7 @@ NeedsCompilation: no
 Package: BSgenome.Rleschenaultii.NCBI.ASM5353835v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pkuhlii.NCBI.mPipKuh1pri
+Version: 1.0.0
+NeedsCompilation: no
