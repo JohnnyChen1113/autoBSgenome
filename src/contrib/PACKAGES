@@ -11913,3 +11913,7 @@ NeedsCompilation: no
 Package: BSgenome.Gdolichurus.NCBI.ASM1984383v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Phastatus.NCBI.TTUPhHast11
+Version: 1.0.0
+NeedsCompilation: no
