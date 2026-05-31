@@ -11809,3 +11809,7 @@ NeedsCompilation: no
 Package: BSgenome.Lglama.NCBI.ASM1323958v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Moccultus.NCBI.mMyoOcc10
+Version: 1.0.0
+NeedsCompilation: no
