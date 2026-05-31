@@ -12137,3 +12137,7 @@ NeedsCompilation: no
 Package: BSgenome.Sleptura.NCBI.mSacLep1priphasedcurated
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmutus.NCBI.NWIPBWYAK11
+Version: 1.0.0
+NeedsCompilation: no
