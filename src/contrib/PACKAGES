@@ -11933,3 +11933,7 @@ NeedsCompilation: no
 Package: BSgenome.Mevotis.NCBI.mMyoEvo10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnilssonii.NCBI.mEptNil11
+Version: 1.0.0
+NeedsCompilation: no
