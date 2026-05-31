@@ -12245,3 +12245,7 @@ NeedsCompilation: no
 Package: BSgenome.Astriatus.NCBI.ASM4005453v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Enaucrates.NCBI.fEcheNa12
+Version: 1.0.0
+NeedsCompilation: no
