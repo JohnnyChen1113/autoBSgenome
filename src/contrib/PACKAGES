@@ -11941,3 +11941,7 @@ NeedsCompilation: no
 Package: BSgenome.Teuropaea.NCBI.mTalEur1hap11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dphaeotis.NCBI.mDerPha1hap2
+Version: 1.0.0
+NeedsCompilation: no
