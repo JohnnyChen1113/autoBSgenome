@@ -12221,3 +12221,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppungitius.NCBI.fPunPun21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dexcisus.NCBI.RoLDexcGuamv11
+Version: 1.0.0
+NeedsCompilation: no
