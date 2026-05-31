@@ -12329,3 +12329,7 @@ NeedsCompilation: no
 Package: BSgenome.Tjaculatrix.NCBI.fToxJac2pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pswirei.NCBI.NWPUhadalv1
+Version: 1.0.0
+NeedsCompilation: no
