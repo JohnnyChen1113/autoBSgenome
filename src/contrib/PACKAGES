@@ -12477,3 +12477,7 @@ NeedsCompilation: no
 Package: BSgenome.Sformosus.NCBI.fSclFor11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmajor.NCBI.PmaNU10
+Version: 1.0.0
+NeedsCompilation: no
