@@ -12529,3 +12529,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmurdjan.NCBI.fMyrMur11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssprattus.NCBI.fSprSpr11
+Version: 1.0.0
+NeedsCompilation: no
