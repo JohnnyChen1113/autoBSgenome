@@ -12669,3 +12669,7 @@ NeedsCompilation: no
 Package: BSgenome.Crostrata.NCBI.lpCarRost12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Drerio.NCBI.GRCz12tu
+Version: 1.0.0
+NeedsCompilation: no
