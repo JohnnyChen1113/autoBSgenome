@@ -12833,3 +12833,7 @@ NeedsCompilation: no
 Package: BSgenome.Dbusckii.NCBI.ASM1175060v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ceumyota.NCBI.kaCorEumy41
+Version: 1.0.0
+NeedsCompilation: no
