@@ -12869,3 +12869,7 @@ NeedsCompilation: no
 Package: BSgenome.Esimilis.NCBI.ESF1311
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vpensylvanica.NCBI.ASM1446617v1
+Version: 1.0.0
+NeedsCompilation: no
