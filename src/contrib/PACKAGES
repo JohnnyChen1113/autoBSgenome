@@ -12549,3 +12549,7 @@ NeedsCompilation: no
 Package: BSgenome.Spilchardus.NCBI.fSarPil11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gniger.NCBI.fGobNig11
+Version: 1.0.0
+NeedsCompilation: no
