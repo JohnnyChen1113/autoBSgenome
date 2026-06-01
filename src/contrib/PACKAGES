@@ -12785,3 +12785,7 @@ NeedsCompilation: no
 Package: BSgenome.Qrobur.NCBI.dhQueRobu31
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tspeciosissima.NCBI.Tspev1
+Version: 1.0.0
+NeedsCompilation: no
