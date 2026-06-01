@@ -12601,3 +12601,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcyprinoides.NCBI.fMegCyp1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lplaneri.NCBI.kcLamPlan12h2
+Version: 1.0.0
+NeedsCompilation: no
