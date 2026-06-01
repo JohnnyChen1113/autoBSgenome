@@ -12777,3 +12777,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccajan.NCBI.NIPBCcT2T4
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Csativa.NCBI.ASM2916894v1
+Version: 1.0.0
+NeedsCompilation: no
