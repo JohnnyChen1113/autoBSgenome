@@ -12729,3 +12729,7 @@ NeedsCompilation: no
 Package: BSgenome.Bvulgaris.NCBI.EL102
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ttruncatus.NCBI.mTurTru1matY
+Version: 1.0.0
+NeedsCompilation: no
