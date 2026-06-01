@@ -12561,3 +12561,7 @@ NeedsCompilation: no
 Package: BSgenome.Cidella.NCBI.HZGC01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Omacrolepis.NCBI.ASM1243209v1
+Version: 1.0.0
+NeedsCompilation: no
