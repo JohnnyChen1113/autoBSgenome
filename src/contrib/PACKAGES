@@ -12765,3 +12765,7 @@ NeedsCompilation: no
 Package: BSgenome.Csativa.NCBI.ASM4071231v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mintegrifolia.NCBI.SCUMintv3
+Version: 1.0.0
+NeedsCompilation: no
