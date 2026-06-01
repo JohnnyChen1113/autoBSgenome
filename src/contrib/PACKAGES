@@ -12545,3 +12545,7 @@ NeedsCompilation: no
 Package: BSgenome.Mboesemani.NCBI.fMelBoe1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Spilchardus.NCBI.fSarPil11
+Version: 1.0.0
+NeedsCompilation: no
