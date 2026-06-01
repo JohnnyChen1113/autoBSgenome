@@ -12689,3 +12689,7 @@ NeedsCompilation: no
 Package: BSgenome.Rrugosa.NCBI.drRosRugo11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ecanadensis.NCBI.Ccanadensisv1
+Version: 1.0.0
+NeedsCompilation: no
