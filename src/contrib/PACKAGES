@@ -12877,3 +12877,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccandelabrum.NCBI.ooCorCand11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cdipterum.NCBI.ieCloDipt11
+Version: 1.0.0
+NeedsCompilation: no
