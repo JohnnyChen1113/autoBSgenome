@@ -12713,3 +12713,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcommunis.NCBI.drPyrComm11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vvinifera.NCBI.ASM3070453v1
+Version: 1.0.0
+NeedsCompilation: no
