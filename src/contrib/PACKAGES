@@ -12653,3 +12653,7 @@ NeedsCompilation: no
 Package: BSgenome.Waustraliana.NCBI.ASM2967742v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clonga.NCBI.ITBCLG2611
+Version: 1.0.0
+NeedsCompilation: no
