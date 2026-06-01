@@ -12745,3 +12745,7 @@ NeedsCompilation: no
 Package: BSgenome.Mdomestica.NCBI.GDT2Thap1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dlotus.NCBI.ASM1463336v1
+Version: 1.0.0
+NeedsCompilation: no
