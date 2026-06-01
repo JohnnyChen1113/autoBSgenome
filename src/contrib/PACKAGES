@@ -12497,3 +12497,7 @@ NeedsCompilation: no
 Package: BSgenome.Svitreus.NCBI.sanVit1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sfasciatus.NCBI.fSalaFa11
+Version: 1.0.0
+NeedsCompilation: no
