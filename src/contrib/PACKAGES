@@ -12697,3 +12697,7 @@ NeedsCompilation: no
 Package: BSgenome.Mannua.NCBI.ddMerAnnu12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vangularis.NCBI.ASM1680809v1
+Version: 1.0.0
+NeedsCompilation: no
