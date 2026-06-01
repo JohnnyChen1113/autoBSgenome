@@ -12837,3 +12837,7 @@ NeedsCompilation: no
 Package: BSgenome.Ceumyota.NCBI.kaCorEumy41
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cbrevitarsis.NCBI.AGICSIROCbrev1
+Version: 1.0.0
+NeedsCompilation: no
