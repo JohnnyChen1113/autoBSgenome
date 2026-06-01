@@ -12857,3 +12857,7 @@ NeedsCompilation: no
 Package: BSgenome.Agifuensis.NCBI.ASM1490517v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Abellator.NCBI.idAnoBellASSP24062
+Version: 1.0.0
+NeedsCompilation: no
