@@ -12557,3 +12557,7 @@ NeedsCompilation: no
 Package: BSgenome.Elucius.NCBI.fEsoLuc1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cidella.NCBI.HZGC01
+Version: 1.0.0
+NeedsCompilation: no
