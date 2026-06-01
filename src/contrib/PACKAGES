@@ -12593,3 +12593,7 @@ NeedsCompilation: no
 Package: BSgenome.Apolyacanthus.NCBI.KAUSTApolyChrSc
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Astuartgranti.NCBI.fAulStu21
+Version: 1.0.0
+NeedsCompilation: no
