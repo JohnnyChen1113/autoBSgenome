@@ -12521,3 +12521,7 @@ NeedsCompilation: no
 Package: BSgenome.Eelectricus.NCBI.ASM4190279v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Saurata.NCBI.fSpaAur12
+Version: 1.0.0
+NeedsCompilation: no
