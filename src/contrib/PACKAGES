@@ -12445,3 +12445,7 @@ NeedsCompilation: no
 Package: BSgenome.Smeridionalis.NCBI.ASM1480568v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Preticulata.NCBI.Preticulatamalev2
+Version: 1.0.0
+NeedsCompilation: no
