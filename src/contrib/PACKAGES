@@ -12913,3 +12913,7 @@ NeedsCompilation: no
 Package: BSgenome.Acerana.NCBI.AcerK10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Itypographus.NCBI.UJItyp20
+Version: 1.0.0
+NeedsCompilation: no
