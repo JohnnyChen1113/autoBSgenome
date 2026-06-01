@@ -12705,3 +12705,7 @@ NeedsCompilation: no
 Package: BSgenome.Aglutinosa.NCBI.dhAlnGlut11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Phuaijiensis.NCBI.ASM1229523v2
+Version: 1.0.0
+NeedsCompilation: no
