@@ -12485,3 +12485,7 @@ NeedsCompilation: no
 Package: BSgenome.Hwyckioides.NCBI.SWUHwy10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Charengus.NCBI.Chv202
+Version: 1.0.0
+NeedsCompilation: no
