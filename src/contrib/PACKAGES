@@ -12517,3 +12517,7 @@ NeedsCompilation: no
 Package: BSgenome.Ifurcatus.NCBI.Billie10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eelectricus.NCBI.ASM4190279v1
+Version: 1.0.0
+NeedsCompilation: no
