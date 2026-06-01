@@ -12637,3 +12637,7 @@ NeedsCompilation: no
 Package: BSgenome.Rcommunis.NCBI.ASM1957865v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Shispanica.NCBI.UniMelbShispWGS10
+Version: 1.0.0
+NeedsCompilation: no
