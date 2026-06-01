@@ -12641,3 +12641,7 @@ NeedsCompilation: no
 Package: BSgenome.Shispanica.NCBI.UniMelbShispWGS10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rargentea.NCBI.ASM2092103v1
+Version: 1.0.0
+NeedsCompilation: no
