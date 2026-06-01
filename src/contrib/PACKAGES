@@ -12465,3 +12465,7 @@ NeedsCompilation: no
 Package: BSgenome.Amarinus.NCBI.fAmmMar11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cgerrardi.NCBI.fCenGer3hap1cur20231027
+Version: 1.0.0
+NeedsCompilation: no
