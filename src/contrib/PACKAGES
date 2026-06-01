@@ -12681,3 +12681,7 @@ NeedsCompilation: no
 Package: BSgenome.Zjujuba.NCBI.ASM3175591v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tpratense.NCBI.ARSRC11
+Version: 1.0.0
+NeedsCompilation: no
