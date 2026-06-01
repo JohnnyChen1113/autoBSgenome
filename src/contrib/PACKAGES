@@ -12629,3 +12629,7 @@ NeedsCompilation: no
 Package: BSgenome.Csinensis.NCBI.DVSA10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aplatyrhynchos.NCBI.IASCAASPekinDuckT2T
+Version: 1.0.0
+NeedsCompilation: no
