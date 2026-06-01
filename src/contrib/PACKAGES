@@ -12621,3 +12621,7 @@ NeedsCompilation: no
 Package: BSgenome.Echinensis.NCBI.bCotChi1hap2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aanserina.NCBI.drPotAnse11
+Version: 1.0.0
+NeedsCompilation: no
