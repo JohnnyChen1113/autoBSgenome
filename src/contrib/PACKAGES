@@ -12537,3 +12537,7 @@ NeedsCompilation: no
 Package: BSgenome.Aalosa.NCBI.AALOGeno11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aocellaris.NCBI.ASM2253959v1
+Version: 1.0.0
+NeedsCompilation: no
