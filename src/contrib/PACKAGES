@@ -12633,3 +12633,7 @@ NeedsCompilation: no
 Package: BSgenome.Aplatyrhynchos.NCBI.IASCAASPekinDuckT2T
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rcommunis.NCBI.ASM1957865v1
+Version: 1.0.0
+NeedsCompilation: no
