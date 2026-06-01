@@ -12657,3 +12657,7 @@ NeedsCompilation: no
 Package: BSgenome.Clonga.NCBI.ITBCLG2611
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cavellana.NCBI.CavTom2PMs10
+Version: 1.0.0
+NeedsCompilation: no
