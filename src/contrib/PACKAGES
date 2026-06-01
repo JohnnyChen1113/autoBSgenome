@@ -12893,3 +12893,7 @@ NeedsCompilation: no
 Package: BSgenome.Dlongicaudata.NCBI.iyDiaLong2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amentula.NCBI.kaAscMent11
+Version: 1.0.0
+NeedsCompilation: no
