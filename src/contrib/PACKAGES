@@ -12781,3 +12781,7 @@ NeedsCompilation: no
 Package: BSgenome.Csativa.NCBI.ASM2916894v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Qrobur.NCBI.dhQueRobu31
+Version: 1.0.0
+NeedsCompilation: no
