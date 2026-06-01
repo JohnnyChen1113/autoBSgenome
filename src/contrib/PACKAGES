@@ -12797,3 +12797,7 @@ NeedsCompilation: no
 Package: BSgenome.Slycopersicum.NCBI.SLMr21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Paustralis.NCBI.lpPhrAust11
+Version: 1.0.0
+NeedsCompilation: no
