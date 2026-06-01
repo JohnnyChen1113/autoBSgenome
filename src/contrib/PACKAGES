@@ -12721,3 +12721,7 @@ NeedsCompilation: no
 Package: BSgenome.Atricolor.NCBI.ASM2621246v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rvialii.NCBI.ASM3025357v1
+Version: 1.0.0
+NeedsCompilation: no
