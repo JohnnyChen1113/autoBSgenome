@@ -12489,3 +12489,7 @@ NeedsCompilation: no
 Package: BSgenome.Charengus.NCBI.Chv202
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bgauderio.NCBI.BGAUD02
+Version: 1.0.0
+NeedsCompilation: no
