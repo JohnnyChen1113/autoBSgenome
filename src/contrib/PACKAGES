@@ -12813,3 +12813,7 @@ NeedsCompilation: no
 Package: BSgenome.Hpumila.NCBI.ASM3356847v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bobovatus.NCBI.ASM5058044v1
+Version: 1.0.0
+NeedsCompilation: no
