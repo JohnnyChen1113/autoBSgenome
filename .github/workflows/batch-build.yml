@@ -272,7 +272,7 @@ jobs:
           with open('build-queue.json') as f: queue = json.load(f)
           changed = 0
           for item in queue:
-              if item.get('package_name') in batch_pkgs and item['status'] != 'building':
+              if item.get('package_name') in batch_pkgs and item['status'] == 'pending':
                   item['status'] = 'building'
                   changed += 1
           with open('build-queue.json', 'w') as f:
