@@ -12469,3 +12469,7 @@ NeedsCompilation: no
 Package: BSgenome.Cgerrardi.NCBI.fCenGer3hap1cur20231027
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmaccoyii.NCBI.fThuMac11
+Version: 1.0.0
+NeedsCompilation: no
