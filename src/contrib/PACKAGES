@@ -12853,3 +12853,7 @@ NeedsCompilation: no
 Package: BSgenome.Llongipalpis.NCBI.ASM2433408v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Agifuensis.NCBI.ASM1490517v1
+Version: 1.0.0
+NeedsCompilation: no
