@@ -12649,3 +12649,7 @@ NeedsCompilation: no
 Package: BSgenome.Twilfordii.NCBI.ASM1340144v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Waustraliana.NCBI.ASM2967742v1
+Version: 1.0.0
+NeedsCompilation: no
