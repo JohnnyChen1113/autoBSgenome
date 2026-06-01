@@ -12757,3 +12757,7 @@ NeedsCompilation: no
 Package: BSgenome.Aeriantha.NCBI.MaoHuaMHT
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cillinoinensis.NCBI.CillinoinensisPawneev1
+Version: 1.0.0
+NeedsCompilation: no
