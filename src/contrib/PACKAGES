@@ -12845,3 +12845,7 @@ NeedsCompilation: no
 Package: BSgenome.Hpanicea.NCBI.odHalPani11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cintestinalis.NCBI.ASM1832782v2
+Version: 1.0.0
+NeedsCompilation: no
