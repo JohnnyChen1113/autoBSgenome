@@ -12825,3 +12825,7 @@ NeedsCompilation: no
 Package: BSgenome.Soleracea.NCBI.BTISOVV1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dcarinata.NCBI.CSIROAGIDcarHiCV3
+Version: 1.0.0
+NeedsCompilation: no
