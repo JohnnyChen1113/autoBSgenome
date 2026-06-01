@@ -12801,3 +12801,7 @@ NeedsCompilation: no
 Package: BSgenome.Paustralis.NCBI.lpPhrAust11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Odioica.NCBI.OKI2018I6810
+Version: 1.0.0
+NeedsCompilation: no
