@@ -12569,3 +12569,7 @@ NeedsCompilation: no
 Package: BSgenome.Cstriata.NCBI.Cstriata10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acalliptera.NCBI.fAstCal681
+Version: 1.0.0
+NeedsCompilation: no
