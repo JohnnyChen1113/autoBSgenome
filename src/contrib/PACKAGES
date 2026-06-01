@@ -12737,3 +12737,7 @@ NeedsCompilation: no
 Package: BSgenome.Egrandis.NCBI.ASM1654582v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ljaponicus.NCBI.LjGifuv12
+Version: 1.0.0
+NeedsCompilation: no
