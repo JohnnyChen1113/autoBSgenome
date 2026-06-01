@@ -12817,3 +12817,7 @@ NeedsCompilation: no
 Package: BSgenome.Bobovatus.NCBI.ASM5058044v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Celegans.NCBI.WBcel235
+Version: 1.0.0
+NeedsCompilation: no
