@@ -12685,3 +12685,7 @@ NeedsCompilation: no
 Package: BSgenome.Tpratense.NCBI.ARSRC11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rrugosa.NCBI.drRosRugo11
+Version: 1.0.0
+NeedsCompilation: no
