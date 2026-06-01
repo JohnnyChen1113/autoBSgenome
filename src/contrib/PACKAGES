@@ -12901,3 +12901,7 @@ NeedsCompilation: no
 Package: BSgenome.Chispanica.NCBI.ULBChis110
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clepadiformis.NCBI.kaClaLepa11
+Version: 1.0.0
+NeedsCompilation: no
