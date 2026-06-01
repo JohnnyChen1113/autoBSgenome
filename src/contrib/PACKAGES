@@ -12733,3 +12733,7 @@ NeedsCompilation: no
 Package: BSgenome.Ttruncatus.NCBI.mTurTru1matY
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Egrandis.NCBI.ASM1654582v1
+Version: 1.0.0
+NeedsCompilation: no
