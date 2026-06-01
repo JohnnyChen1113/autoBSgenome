@@ -12821,3 +12821,7 @@ NeedsCompilation: no
 Package: BSgenome.Celegans.NCBI.WBcel235
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Soleracea.NCBI.BTISOVV1
+Version: 1.0.0
+NeedsCompilation: no
