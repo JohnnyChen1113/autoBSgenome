@@ -12457,3 +12457,7 @@ NeedsCompilation: no
 Package: BSgenome.Phypophthalmus.NCBI.fPanHyp1pri
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lpholis.NCBI.fLipPho21
+Version: 1.0.0
+NeedsCompilation: no
