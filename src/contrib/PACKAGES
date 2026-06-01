@@ -12885,3 +12885,7 @@ NeedsCompilation: no
 Package: BSgenome.Cobscurior.NCBI.Cobs31
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vvelutina.NCBI.iVesVel21
+Version: 1.0.0
+NeedsCompilation: no
