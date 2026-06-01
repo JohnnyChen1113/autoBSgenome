@@ -12577,3 +12577,7 @@ NeedsCompilation: no
 Package: BSgenome.Pkingsleyae.NCBI.PKINGS04
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gwilldenowi.NCBI.fGouWil22
+Version: 1.0.0
+NeedsCompilation: no
