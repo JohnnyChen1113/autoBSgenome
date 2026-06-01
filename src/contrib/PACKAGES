@@ -12509,3 +12509,7 @@ NeedsCompilation: no
 Package: BSgenome.Zfaber.NCBI.fZeuFab81
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mdolomieu.NCBI.ASM2129224v1
+Version: 1.0.0
+NeedsCompilation: no
