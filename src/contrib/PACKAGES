@@ -13209,3 +13209,7 @@ NeedsCompilation: no
 Package: BSgenome.Opatagonica.NCBI.crgOcupat
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Plutea.NCBI.jaPorLute21
+Version: 1.0.0
+NeedsCompilation: no
