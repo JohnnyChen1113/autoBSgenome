@@ -13301,3 +13301,7 @@ NeedsCompilation: no
 Package: BSgenome.Dtothii.NCBI.Diptot1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ksuomiensis.NCBI.Lipsuo1
+Version: 1.0.0
+NeedsCompilation: no
