@@ -13109,3 +13109,7 @@ NeedsCompilation: no
 Package: BSgenome.Bfloridae.NCBI.Bbhap
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lcuprina.NCBI.ASM2204524v1
+Version: 1.0.0
+NeedsCompilation: no
