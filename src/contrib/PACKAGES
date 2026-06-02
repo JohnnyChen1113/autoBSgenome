@@ -13261,3 +13261,7 @@ NeedsCompilation: no
 Package: BSgenome.Ytenuis.NCBI.ASM2920330v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sosmophilus.NCBI.ASM2792174v1
+Version: 1.0.0
+NeedsCompilation: no
