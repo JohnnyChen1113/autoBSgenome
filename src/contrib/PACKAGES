@@ -12937,3 +12937,7 @@ NeedsCompilation: no
 Package: BSgenome.Lhumile.NCBI.LhumUNILv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dplexippus.NCBI.MEXDaPlex
+Version: 1.0.0
+NeedsCompilation: no
