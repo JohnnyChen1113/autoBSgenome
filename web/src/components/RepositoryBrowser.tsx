@@ -850,12 +850,12 @@ export function RepositoryBrowser() {
         </div>
 
         <div className="mt-3 flex flex-wrap gap-2">
-          {availabilityOptions.map((option) => (
+          {kingdomOptions.map((option) => (
             <Button
               key={option.key}
               type="button"
-              variant={availability === option.key ? "default" : "outline"}
-              onClick={() => setAvailability(option.key)}
+              variant={kingdom === option.key ? "default" : "outline"}
+              onClick={() => setKingdom(option.key)}
             >
               {option.label}
               <span className="font-mono text-xs opacity-75">
@@ -866,12 +866,12 @@ export function RepositoryBrowser() {
         </div>
 
         <div className="mt-3 flex flex-wrap gap-2">
-          {kingdomOptions.map((option) => (
+          {availabilityOptions.map((option) => (
             <Button
               key={option.key}
               type="button"
-              variant={kingdom === option.key ? "default" : "outline"}
-              onClick={() => setKingdom(option.key)}
+              variant={availability === option.key ? "default" : "outline"}
+              onClick={() => setAvailability(option.key)}
             >
               {option.label}
               <span className="font-mono text-xs opacity-75">
