@@ -13357,3 +13357,7 @@ NeedsCompilation: no
 Package: BSgenome.Pbellaemahoneyi.NCBI.CBS112042p10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Adauci.NCBI.ASM4210011v1
+Version: 1.0.0
+NeedsCompilation: no
