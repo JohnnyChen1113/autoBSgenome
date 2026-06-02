@@ -12957,3 +12957,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvolcanicus.NCBI.UHHiyHylVolc10haploid
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Atumida.NCBI.icAetTumi11
+Version: 1.0.0
+NeedsCompilation: no
