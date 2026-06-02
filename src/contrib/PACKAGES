@@ -13217,3 +13217,7 @@ NeedsCompilation: no
 Package: BSgenome.Davara.NCBI.odDysAvar14
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccarnea.NCBI.inChrCarn11
+Version: 1.0.0
+NeedsCompilation: no
