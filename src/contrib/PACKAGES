@@ -13093,3 +13093,7 @@ NeedsCompilation: no
 Package: BSgenome.Agemmatalis.NCBI.ilAntGemm2primary
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cseptempunctata.NCBI.icCocSept11
+Version: 1.0.0
+NeedsCompilation: no
