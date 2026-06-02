@@ -13113,3 +13113,7 @@ NeedsCompilation: no
 Package: BSgenome.Lcuprina.NCBI.ASM2204524v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dcarinulata.NCBI.icDioCari11
+Version: 1.0.0
+NeedsCompilation: no
