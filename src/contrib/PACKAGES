@@ -13005,3 +13005,7 @@ NeedsCompilation: no
 Package: BSgenome.Otaurus.NCBI.IUOtau30
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pinterpunctella.NCBI.ilPloInte32
+Version: 1.0.0
+NeedsCompilation: no
