@@ -13145,3 +13145,7 @@ NeedsCompilation: no
 Package: BSgenome.Boleae.NCBI.idBacOlea1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmori.NCBI.ASM3026992v2
+Version: 1.0.0
+NeedsCompilation: no
