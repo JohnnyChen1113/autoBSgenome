@@ -13061,3 +13061,7 @@ NeedsCompilation: no
 Package: BSgenome.Harmigera.NCBI.ASM3070526v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acerasifolii.NCBI.iyAndCera1principal
+Version: 1.0.0
+NeedsCompilation: no
