@@ -12973,3 +12973,7 @@ NeedsCompilation: no
 Package: BSgenome.Bmicroptera.NCBI.MBARIBmic10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zcesonia.NCBI.Zerenecesonia11
+Version: 1.0.0
+NeedsCompilation: no
