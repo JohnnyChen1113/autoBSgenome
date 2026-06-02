@@ -13277,3 +13277,7 @@ NeedsCompilation: no
 Package: BSgenome.Skudriavzevii.NCBI.SkudIFO1802
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Larxii.NCBI.Liparx1
+Version: 1.0.0
+NeedsCompilation: no
