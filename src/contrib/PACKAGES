@@ -13169,3 +13169,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsymbiolongicarpus.NCBI.HSymV21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Onubilalis.NCBI.ilOstNubi11
+Version: 1.0.0
+NeedsCompilation: no
