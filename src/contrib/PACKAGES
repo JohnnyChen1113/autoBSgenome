@@ -13053,3 +13053,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppapatasi.NCBI.Ppap21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pverrucosa.NCBI.ASM3666991v2
+Version: 1.0.0
+NeedsCompilation: no
