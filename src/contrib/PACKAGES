@@ -12945,3 +12945,7 @@ NeedsCompilation: no
 Package: BSgenome.Agracilipes.NCBI.ASM4749672v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bpyrosoma.NCBI.ASM1482585v1
+Version: 1.0.0
+NeedsCompilation: no
