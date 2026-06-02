@@ -13069,3 +13069,7 @@ NeedsCompilation: no
 Package: BSgenome.Vtameamea.NCBI.ilVanTame1primaryhaplotype
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sclava.NCBI.kaStyClav1hap12
+Version: 1.0.0
+NeedsCompilation: no
