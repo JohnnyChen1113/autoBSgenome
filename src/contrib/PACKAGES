@@ -13241,3 +13241,7 @@ NeedsCompilation: no
 Package: BSgenome.Tglobosa.NCBI.ASM1413389v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lbaleicum.NCBI.iyLasBale1
+Version: 1.0.0
+NeedsCompilation: no
