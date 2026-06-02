@@ -13321,3 +13321,7 @@ NeedsCompilation: no
 Package: BSgenome.Lbeijingensis.NCBI.lodBeiA1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsubhashii.NCBI.ASM1920270v1
+Version: 1.0.0
+NeedsCompilation: no
