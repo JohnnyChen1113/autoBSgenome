@@ -13065,3 +13065,7 @@ NeedsCompilation: no
 Package: BSgenome.Acerasifolii.NCBI.iyAndCera1principal
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vtameamea.NCBI.ilVanTame1primaryhaplotype
+Version: 1.0.0
+NeedsCompilation: no
