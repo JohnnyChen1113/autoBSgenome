@@ -13189,3 +13189,7 @@ NeedsCompilation: no
 Package: BSgenome.Ofranksi.NCBI.jaOrbFran11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Paegeria.NCBI.ilParAegt11
+Version: 1.0.0
+NeedsCompilation: no
