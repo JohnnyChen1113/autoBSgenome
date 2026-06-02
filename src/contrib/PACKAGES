@@ -13197,3 +13197,7 @@ NeedsCompilation: no
 Package: BSgenome.Cvirginica.NCBI.ASM5347728v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ebalteatus.NCBI.idEpiBalt11
+Version: 1.0.0
+NeedsCompilation: no
