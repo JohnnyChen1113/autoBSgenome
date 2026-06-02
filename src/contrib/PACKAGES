@@ -13361,3 +13361,7 @@ NeedsCompilation: no
 Package: BSgenome.Adauci.NCBI.ASM4210011v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cjavanica.NCBI.ASM5110311v1
+Version: 1.0.0
+NeedsCompilation: no
