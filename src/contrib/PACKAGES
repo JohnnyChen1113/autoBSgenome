@@ -13333,3 +13333,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccavernicola.NCBI.ASM3086435v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vpseudolonga.NCBI.ASM2090651v1
+Version: 1.0.0
+NeedsCompilation: no
