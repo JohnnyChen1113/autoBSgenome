@@ -13025,3 +13025,7 @@ NeedsCompilation: no
 Package: BSgenome.Pxylostella.NCBI.ilPluXylo32
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bcoprophila.NCBI.BUBcopv21
+Version: 1.0.0
+NeedsCompilation: no
