@@ -13317,3 +13317,7 @@ NeedsCompilation: no
 Package: BSgenome.Vnecatrix.NCBI.ASM3663032v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lbeijingensis.NCBI.lodBeiA1
+Version: 1.0.0
+NeedsCompilation: no
