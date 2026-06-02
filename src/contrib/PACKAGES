@@ -13365,3 +13365,7 @@ NeedsCompilation: no
 Package: BSgenome.Cjavanica.NCBI.ASM5110311v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptakamizusanense.NCBI.ASM2260516v1
+Version: 1.0.0
+NeedsCompilation: no
