@@ -12933,3 +12933,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcastaneum.NCBI.icTriCast11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lhumile.NCBI.LhumUNILv10
+Version: 1.0.0
+NeedsCompilation: no
