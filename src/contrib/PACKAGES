@@ -13305,3 +13305,7 @@ NeedsCompilation: no
 Package: BSgenome.Ksuomiensis.NCBI.Lipsuo1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lsmithiae.NCBI.Lipsmi1
+Version: 1.0.0
+NeedsCompilation: no
