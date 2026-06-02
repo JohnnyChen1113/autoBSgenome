@@ -13101,3 +13101,7 @@ NeedsCompilation: no
 Package: BSgenome.Mjurtina.NCBI.ilManJurt11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcitri.NCBI.ihPlaCitr11
+Version: 1.0.0
+NeedsCompilation: no
