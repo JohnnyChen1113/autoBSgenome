@@ -13161,3 +13161,7 @@ NeedsCompilation: no
 Package: BSgenome.Pgossypiella.NCBI.ilPecGoss11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mdirhodum.NCBI.ASM1992520v1
+Version: 1.0.0
+NeedsCompilation: no
