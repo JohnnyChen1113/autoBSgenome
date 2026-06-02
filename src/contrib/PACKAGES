@@ -13257,3 +13257,7 @@ NeedsCompilation: no
 Package: BSgenome.Bnanus.NCBI.ASM1107486v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ytenuis.NCBI.ASM2920330v1
+Version: 1.0.0
+NeedsCompilation: no
