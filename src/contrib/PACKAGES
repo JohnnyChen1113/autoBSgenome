@@ -13045,3 +13045,7 @@ NeedsCompilation: no
 Package: BSgenome.Atransitella.NCBI.ilAmyTran11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Agossypii.NCBI.ASM2018417v2
+Version: 1.0.0
+NeedsCompilation: no
