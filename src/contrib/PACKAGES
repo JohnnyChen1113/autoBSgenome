@@ -13325,3 +13325,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsubhashii.NCBI.ASM1920270v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Scrataegensis.NCBI.ASM3710258v1
+Version: 1.0.0
+NeedsCompilation: no
