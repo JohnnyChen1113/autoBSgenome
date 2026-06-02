@@ -13353,3 +13353,7 @@ NeedsCompilation: no
 Package: BSgenome.Achevalieri.NCBI.AchevalieriM1assembly01
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pbellaemahoneyi.NCBI.CBS112042p10
+Version: 1.0.0
+NeedsCompilation: no
