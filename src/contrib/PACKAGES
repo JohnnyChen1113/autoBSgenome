@@ -13369,3 +13369,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptakamizusanense.NCBI.ASM2260516v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cbeticola.NCBI.ASM3347349v1
+Version: 1.0.0
+NeedsCompilation: no
