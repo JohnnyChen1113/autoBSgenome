@@ -12965,3 +12965,7 @@ NeedsCompilation: no
 Package: BSgenome.Prapae.NCBI.ilPieRapa11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nfabricii.NCBI.iyNeoFabr11
+Version: 1.0.0
+NeedsCompilation: no
