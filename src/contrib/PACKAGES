@@ -13037,3 +13037,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccroceus.NCBI.ilColCroc21
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apalmata.NCBI.jaAcrPala13
+Version: 1.0.0
+NeedsCompilation: no
