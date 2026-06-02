@@ -13293,3 +13293,7 @@ NeedsCompilation: no
 Package: BSgenome.Mbarnettii.NCBI.KABA2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nglabratus.NCBI.ASM1011175v1
+Version: 1.0.0
+NeedsCompilation: no
