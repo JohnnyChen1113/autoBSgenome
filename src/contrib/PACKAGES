@@ -13173,3 +13173,7 @@ NeedsCompilation: no
 Package: BSgenome.Onubilalis.NCBI.ilOstNubi11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bschlosseri.NCBI.Bshap1
+Version: 1.0.0
+NeedsCompilation: no
