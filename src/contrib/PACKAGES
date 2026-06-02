@@ -13281,3 +13281,7 @@ NeedsCompilation: no
 Package: BSgenome.Larxii.NCBI.Liparx1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asaopauloensis.NCBI.ASM3561040v1
+Version: 1.0.0
+NeedsCompilation: no
