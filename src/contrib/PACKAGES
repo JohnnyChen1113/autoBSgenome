@@ -13117,3 +13117,7 @@ NeedsCompilation: no
 Package: BSgenome.Dcarinulata.NCBI.icDioCari11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aagestis.NCBI.ilAriAges11
+Version: 1.0.0
+NeedsCompilation: no
