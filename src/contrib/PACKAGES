@@ -13249,3 +13249,7 @@ NeedsCompilation: no
 Package: BSgenome.Gtalaboti.NCBI.keGlaTala11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zmrakii.NCBI.ASM1340291v1
+Version: 1.0.0
+NeedsCompilation: no
