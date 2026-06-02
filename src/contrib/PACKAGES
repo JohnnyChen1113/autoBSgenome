@@ -13049,3 +13049,7 @@ NeedsCompilation: no
 Package: BSgenome.Agossypii.NCBI.ASM2018417v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppapatasi.NCBI.Ppap21
+Version: 1.0.0
+NeedsCompilation: no
