@@ -13309,3 +13309,7 @@ NeedsCompilation: no
 Package: BSgenome.Lsmithiae.NCBI.Lipsmi1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bvanleenenianus.NCBI.TRVA0
+Version: 1.0.0
+NeedsCompilation: no
