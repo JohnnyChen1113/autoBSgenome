@@ -13269,3 +13269,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvulgaris.NCBI.HydraT2T105
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcarsonii.NCBI.AQFACPRJEB9495v1
+Version: 1.0.0
+NeedsCompilation: no
