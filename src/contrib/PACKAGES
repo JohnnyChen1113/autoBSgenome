@@ -13265,3 +13265,7 @@ NeedsCompilation: no
 Package: BSgenome.Sosmophilus.NCBI.ASM2792174v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvulgaris.NCBI.HydraT2T105
+Version: 1.0.0
+NeedsCompilation: no
