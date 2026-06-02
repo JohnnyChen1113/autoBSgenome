@@ -13349,3 +13349,7 @@ NeedsCompilation: no
 Package: BSgenome.Cposadasii.NCBI.ASM1841601v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Achevalieri.NCBI.AchevalieriM1assembly01
+Version: 1.0.0
+NeedsCompilation: no
