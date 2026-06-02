@@ -12981,3 +12981,7 @@ NeedsCompilation: no
 Package: BSgenome.Tpolymorphus.NCBI.tnTubPoly12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nvectensis.NCBI.jaNemVect11
+Version: 1.0.0
+NeedsCompilation: no
