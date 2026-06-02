@@ -12949,3 +12949,7 @@ NeedsCompilation: no
 Package: BSgenome.Bpyrosoma.NCBI.ASM1482585v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmachaon.NCBI.ilPapMach11
+Version: 1.0.0
+NeedsCompilation: no
