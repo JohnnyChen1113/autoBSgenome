@@ -13157,3 +13157,7 @@ NeedsCompilation: no
 Package: BSgenome.Msexta.NCBI.JHUMsexv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pgossypiella.NCBI.ilPecGoss11
+Version: 1.0.0
+NeedsCompilation: no
