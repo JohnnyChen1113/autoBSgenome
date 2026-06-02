@@ -13105,3 +13105,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcitri.NCBI.ihPlaCitr11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bfloridae.NCBI.Bbhap
+Version: 1.0.0
+NeedsCompilation: no
