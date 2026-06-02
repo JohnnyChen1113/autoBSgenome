@@ -13181,3 +13181,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcinxia.NCBI.ilMelCinx11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Camplana.NCBI.ilCydAmpl11
+Version: 1.0.0
+NeedsCompilation: no
