@@ -13253,3 +13253,7 @@ NeedsCompilation: no
 Package: BSgenome.Zmrakii.NCBI.ASM1340291v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bnanus.NCBI.ASM1107486v2
+Version: 1.0.0
+NeedsCompilation: no
