@@ -13073,3 +13073,7 @@ NeedsCompilation: no
 Package: BSgenome.Sclava.NCBI.kaStyClav1hap12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sinvicta.NCBI.UNILSinv30
+Version: 1.0.0
+NeedsCompilation: no
