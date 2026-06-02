@@ -13233,3 +13233,7 @@ NeedsCompilation: no
 Package: BSgenome.Xsonorina.NCBI.iyXylSono1principal
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cfumiferana.NCBI.NRCanCFum1
+Version: 1.0.0
+NeedsCompilation: no
