@@ -13313,3 +13313,7 @@ NeedsCompilation: no
 Package: BSgenome.Bvanleenenianus.NCBI.TRVA0
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vnecatrix.NCBI.ASM3663032v1
+Version: 1.0.0
+NeedsCompilation: no
