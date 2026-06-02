@@ -13057,3 +13057,7 @@ NeedsCompilation: no
 Package: BSgenome.Pverrucosa.NCBI.ASM3666991v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Harmigera.NCBI.ASM3070526v1
+Version: 1.0.0
+NeedsCompilation: no
