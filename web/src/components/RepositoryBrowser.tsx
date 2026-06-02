@@ -102,7 +102,8 @@ type ProgressData = {
 };
 
 type Kingdom = "all" | "animal" | "plant" | "fungi" | "prokaryote";
-type SourceFilter = "ready" | "community" | "bioconductor" | "catalog";
+type AvailabilityFilter = "built" | "unbuilt" | "catalog";
+type DataSourceFilter = "all" | "ncbi" | "ensembl" | "bioconductor";
 
 async function fetchJson<T>(path: string): Promise<T | null> {
   try {
@@ -330,21 +331,55 @@ function matchesKingdom(group: string | undefined, kingdom: Kingdom): boolean {
   }
 }
 
-function matchesSource(
+function matchesAvailability(
   org: OrganismEntry,
-  source: SourceFilter
+  availability: AvailabilityFilter
 ): boolean {
   const builds = org.builds ?? [];
-  switch (source) {
-    case "ready":
+  const accessions = org._accessions ?? [];
+  switch (availability) {
+    case "built":
       return builds.length > 0;
-    case "community":
-      return builds.some((b) => !b._bioc);
-    case "bioconductor":
-      return builds.some((b) => b._bioc);
+    case "unbuilt":
+      return builds.length === 0 && accessions.length > 0;
     case "catalog":
       return true;
   }
+}
+
+function catalogAccessionSource(accession: CatalogAccession): DataSourceFilter | "" {
+  const raw = accession.source.toLowerCase();
+  if (raw.includes("ensembl")) return "ensembl";
+  if (
+    raw.includes("ncbi") ||
+    raw.includes("refseq") ||
+    raw.includes("genbank") ||
+    accession.accession.startsWith("GC")
+  ) {
+    return "ncbi";
+  }
+  return "";
+}
+
+function buildDataSource(build: BuildPackage): DataSourceFilter | "" {
+  if (build._bioc) return "bioconductor";
+  const provider = build.provider?.toLowerCase();
+  if (provider === "ensembl") return "ensembl";
+  if (provider === "ncbi" || build.accession?.startsWith("GC")) return "ncbi";
+  return "";
+}
+
+function matchesDataSource(
+  org: OrganismEntry,
+  dataSource: DataSourceFilter
+): boolean {
+  if (dataSource === "all") return true;
+  return (
+    (org.builds ?? []).some((build) => buildDataSource(build) === dataSource) ||
+    (org._accessions ?? []).some(
+      (accession) => catalogAccessionSource(accession) === dataSource
+    )
+  );
 }
 
 function mergeRepositoryData(
@@ -451,18 +486,16 @@ function mergeRepositoryData(
 function filterOrganisms(
   organisms: OrganismEntry[],
   kingdom: Kingdom,
-  source: SourceFilter,
+  availability: AvailabilityFilter,
+  dataSource: DataSourceFilter,
   query: string,
   letter: string
 ): OrganismEntry[] {
   const normalized = query.trim().toLowerCase();
   return organisms.filter((org) => {
-    // When the user is typing a free search, ignore both filter axes
-    // so the search can find anything in the index.
-    if (normalized.length < 2) {
-      if (!matchesKingdom(org.group, kingdom)) return false;
-      if (!matchesSource(org, source)) return false;
-    }
+    if (!matchesKingdom(org.group, kingdom)) return false;
+    if (!matchesAvailability(org, availability)) return false;
+    if (!matchesDataSource(org, dataSource)) return false;
 
     if (letter && speciesName(org.organism)[0]?.toUpperCase() !== letter) {
       return false;
@@ -509,6 +542,12 @@ function providerTone(provider?: string): string {
   return "border-blue-200 bg-blue-50 text-blue-800";
 }
 
+function initialSearchQuery(): string {
+  if (typeof window === "undefined") return "";
+  const params = new URLSearchParams(window.location.search);
+  return params.get("q") ?? params.get("search") ?? "";
+}
+
 export function RepositoryBrowser() {
   const [organisms, setOrganisms] = useState<OrganismEntry[]>([]);
   const [flatCount, setFlatCount] = useState(0);
@@ -516,22 +555,17 @@ export function RepositoryBrowser() {
   const [progress, setProgress] = useState<ProgressData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(initialSearchQuery);
   const [kingdom, setKingdom] = useState<Kingdom>("all");
-  const [source, setSource] = useState<SourceFilter>("ready");
+  const [availability, setAvailability] = useState<AvailabilityFilter>("built");
+  const [dataSource, setDataSource] = useState<DataSourceFilter>("all");
   const [letter, setLetter] = useState("");
-  const [visibleCount, setVisibleCount] = useState(INITIAL_LIMIT);
+  const [visibleLimit, setVisibleLimit] = useState({
+    filterKey: "",
+    count: INITIAL_LIMIT,
+  });
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [copied, setCopied] = useState("");
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const initialQuery = params.get("q") ?? params.get("search");
-    if (initialQuery) {
-      setQuery(initialQuery);
-      setLetter("");
-    }
-  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -581,10 +615,6 @@ export function RepositoryBrowser() {
     };
   }, []);
 
-  useEffect(() => {
-    setVisibleCount(INITIAL_LIMIT);
-  }, [query, kingdom, source, letter]);
-
   // Absolute number of organisms with any installable build. Used in the
   // top stats card, where filter state should not affect the headline number.
   const readyOrganisms = useMemo(
@@ -603,7 +633,8 @@ export function RepositoryBrowser() {
   const kingdomCounts = useMemo(() => {
     const c = { all: 0, animal: 0, plant: 0, fungi: 0, prokaryote: 0 };
     for (const org of organisms) {
-      if (!matchesSource(org, source)) continue;
+      if (!matchesAvailability(org, availability)) continue;
+      if (!matchesDataSource(org, dataSource)) continue;
       c.all += 1;
       if (isAnimal(org.group)) c.animal += 1;
       if (isPlant(org.group)) c.plant += 1;
@@ -611,35 +642,50 @@ export function RepositoryBrowser() {
       if (isProkaryote(org.group)) c.prokaryote += 1;
     }
     return c;
-  }, [organisms, source]);
+  }, [organisms, availability, dataSource]);
 
-  const sourceCounts = useMemo(() => {
-    const c = { ready: 0, community: 0, bioconductor: 0, catalog: 0 };
+  const availabilityCounts = useMemo(() => {
+    const c = { built: 0, unbuilt: 0, catalog: 0 };
     for (const org of organisms) {
       if (!matchesKingdom(org.group, kingdom)) continue;
-      const builds = org.builds ?? [];
-      if (builds.length > 0) c.ready += 1;
-      if (builds.some((b) => !b._bioc)) c.community += 1;
-      if (builds.some((b) => b._bioc)) c.bioconductor += 1;
+      if (!matchesDataSource(org, dataSource)) continue;
+      if (matchesAvailability(org, "built")) c.built += 1;
+      if (matchesAvailability(org, "unbuilt")) c.unbuilt += 1;
       c.catalog += 1;
     }
     return c;
-  }, [organisms, kingdom]);
+  }, [organisms, kingdom, dataSource]);
+
+  const dataSourceCounts = useMemo(() => {
+    const c = { all: 0, ncbi: 0, ensembl: 0, bioconductor: 0 };
+    for (const org of organisms) {
+      if (!matchesKingdom(org.group, kingdom)) continue;
+      if (!matchesAvailability(org, availability)) continue;
+      c.all += 1;
+      if (matchesDataSource(org, "ncbi")) c.ncbi += 1;
+      if (matchesDataSource(org, "ensembl")) c.ensembl += 1;
+      if (matchesDataSource(org, "bioconductor")) c.bioconductor += 1;
+    }
+    return c;
+  }, [organisms, kingdom, availability]);
 
   const availableLetters = useMemo(() => {
     const set = new Set<string>();
-    for (const org of filterOrganisms(organisms, kingdom, source, query, "")) {
+    for (const org of filterOrganisms(organisms, kingdom, availability, dataSource, query, "")) {
       const first = speciesName(org.organism)[0]?.toUpperCase();
       if (first) set.add(first);
     }
     return set;
-  }, [kingdom, source, organisms, query]);
+  }, [kingdom, availability, dataSource, organisms, query]);
 
   const filtered = useMemo(
-    () => filterOrganisms(organisms, kingdom, source, query, letter),
-    [kingdom, source, letter, organisms, query]
+    () => filterOrganisms(organisms, kingdom, availability, dataSource, query, letter),
+    [kingdom, availability, dataSource, letter, organisms, query]
   );
 
+  const filterKey = `${query}\u0000${kingdom}\u0000${availability}\u0000${dataSource}\u0000${letter}`;
+  const visibleCount =
+    visibleLimit.filterKey === filterKey ? visibleLimit.count : INITIAL_LIMIT;
   const displayed = filtered.slice(0, visibleCount);
   const progressPercent =
     progress && progress.total > 0 ? (progress.done / progress.total) * 100 : 0;
@@ -663,18 +709,32 @@ export function RepositoryBrowser() {
   }
 
   const kingdomOptions: { key: Kingdom; label: string; count: number }[] = [
-    { key: "all", label: "All", count: kingdomCounts.all },
+    { key: "all", label: "All taxa", count: kingdomCounts.all },
     { key: "animal", label: "Animals", count: kingdomCounts.animal },
     { key: "plant", label: "Plants", count: kingdomCounts.plant },
     { key: "fungi", label: "Fungi", count: kingdomCounts.fungi },
     { key: "prokaryote", label: "Prokaryotes", count: kingdomCounts.prokaryote },
   ];
 
-  const sourceOptions: { key: SourceFilter; label: string; count: number }[] = [
-    { key: "ready", label: "All built", count: sourceCounts.ready },
-    { key: "community", label: "Built by us", count: sourceCounts.community },
-    { key: "bioconductor", label: "Bioconductor", count: sourceCounts.bioconductor },
-    { key: "catalog", label: "Full catalog", count: sourceCounts.catalog },
+  const availabilityOptions: {
+    key: AvailabilityFilter;
+    label: string;
+    count: number;
+  }[] = [
+    { key: "built", label: "Already built", count: availabilityCounts.built },
+    { key: "unbuilt", label: "Not built yet", count: availabilityCounts.unbuilt },
+    { key: "catalog", label: "Full catalog", count: availabilityCounts.catalog },
+  ];
+
+  const dataSourceOptions: {
+    key: DataSourceFilter;
+    label: string;
+    count: number;
+  }[] = [
+    { key: "all", label: "All sources", count: dataSourceCounts.all },
+    { key: "ncbi", label: "NCBI", count: dataSourceCounts.ncbi },
+    { key: "ensembl", label: "Ensembl", count: dataSourceCounts.ensembl },
+    { key: "bioconductor", label: "Bioconductor", count: dataSourceCounts.bioconductor },
   ];
 
   return (
@@ -763,33 +823,23 @@ export function RepositoryBrowser() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-6">
-        {/* Row 1: Kingdom */}
-        <div className="flex flex-wrap gap-2">
-          {kingdomOptions.map((option) => (
-            <Button
-              key={option.key}
-              type="button"
-              variant={kingdom === option.key ? "default" : "outline"}
-              onClick={() => setKingdom(option.key)}
-            >
-              {option.label}
-              {option.count !== null && (
-                <span className="font-mono text-xs opacity-75">
-                  {option.count.toLocaleString()}
-                </span>
-              )}
-            </Button>
-          ))}
+        <div className="relative">
+          <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+          <Input
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Search organism, package, accession, assembly..."
+            className="pl-9"
+          />
         </div>
 
-        {/* Row 2: Source */}
-        <div className="mt-3 flex flex-wrap gap-2">
-          {sourceOptions.map((option) => (
+        <div className="mt-4 flex flex-wrap gap-2">
+          {dataSourceOptions.map((option) => (
             <Button
               key={option.key}
               type="button"
-              variant={source === option.key ? "default" : "outline"}
-              onClick={() => setSource(option.key)}
+              variant={dataSource === option.key ? "default" : "outline"}
+              onClick={() => setDataSource(option.key)}
             >
               {option.label}
               <span className="font-mono text-xs opacity-75">
@@ -799,15 +849,36 @@ export function RepositoryBrowser() {
           ))}
         </div>
 
-        {/* Row 3: Search */}
-        <div className="relative mt-4">
-          <Search className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-          <Input
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search organism, package, accession, assembly..."
-            className="pl-9"
-          />
+        <div className="mt-3 flex flex-wrap gap-2">
+          {availabilityOptions.map((option) => (
+            <Button
+              key={option.key}
+              type="button"
+              variant={availability === option.key ? "default" : "outline"}
+              onClick={() => setAvailability(option.key)}
+            >
+              {option.label}
+              <span className="font-mono text-xs opacity-75">
+                {option.count.toLocaleString()}
+              </span>
+            </Button>
+          ))}
+        </div>
+
+        <div className="mt-3 flex flex-wrap gap-2">
+          {kingdomOptions.map((option) => (
+            <Button
+              key={option.key}
+              type="button"
+              variant={kingdom === option.key ? "default" : "outline"}
+              onClick={() => setKingdom(option.key)}
+            >
+              {option.label}
+              <span className="font-mono text-xs opacity-75">
+                {option.count.toLocaleString()}
+              </span>
+            </Button>
+          ))}
         </div>
 
         <div className="mt-4 flex flex-wrap gap-1">
@@ -1149,7 +1220,7 @@ export function RepositoryBrowser() {
                                   return (
                                     <div className="mt-4 rounded-md border border-dashed border-border bg-secondary/50 px-3 py-2 text-xs text-muted-foreground">
                                       Tarball not yet published for this build.
-                                      Check back later, or open an issue if it's
+                                      Check back later, or open an issue if it&apos;s
                                       been stuck for more than a day.
                                     </div>
                                   );
@@ -1229,7 +1300,12 @@ export function RepositoryBrowser() {
             <Button
               type="button"
               variant="outline"
-              onClick={() => setVisibleCount((value) => value + PAGE_SIZE)}
+              onClick={() =>
+                setVisibleLimit({
+                  filterKey,
+                  count: visibleCount + PAGE_SIZE,
+                })
+              }
             >
               Show more
               <span className="font-mono text-xs opacity-75">
