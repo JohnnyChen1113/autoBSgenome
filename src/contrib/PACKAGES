@@ -13001,3 +13001,7 @@ NeedsCompilation: no
 Package: BSgenome.Vcanescens.NCBI.ASM1945775v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Otaurus.NCBI.IUOtau30
+Version: 1.0.0
+NeedsCompilation: no
