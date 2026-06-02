@@ -12969,3 +12969,7 @@ NeedsCompilation: no
 Package: BSgenome.Nfabricii.NCBI.iyNeoFabr11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmicroptera.NCBI.MBARIBmic10
+Version: 1.0.0
+NeedsCompilation: no
