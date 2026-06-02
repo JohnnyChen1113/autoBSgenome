@@ -13009,3 +13009,7 @@ NeedsCompilation: no
 Package: BSgenome.Pinterpunctella.NCBI.ilPloInte32
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tlongispinosus.NCBI.TlonJGUv1
+Version: 1.0.0
+NeedsCompilation: no
