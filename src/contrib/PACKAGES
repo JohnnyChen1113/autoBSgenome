@@ -13329,3 +13329,7 @@ NeedsCompilation: no
 Package: BSgenome.Scrataegensis.NCBI.ASM3710258v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ccavernicola.NCBI.ASM3086435v1
+Version: 1.0.0
+NeedsCompilation: no
