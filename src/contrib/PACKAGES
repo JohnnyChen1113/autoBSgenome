@@ -13381,3 +13381,7 @@ NeedsCompilation: no
 Package: BSgenome.Tatroviride.NCBI.ASM2064779v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mbrunneum.NCBI.ASM1342620v1
+Version: 1.0.0
+NeedsCompilation: no
