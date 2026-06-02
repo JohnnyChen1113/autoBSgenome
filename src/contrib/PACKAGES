@@ -13221,3 +13221,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccarnea.NCBI.inChrCarn11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mgigas.NCBI.xbMagGiga11
+Version: 1.0.0
+NeedsCompilation: no
