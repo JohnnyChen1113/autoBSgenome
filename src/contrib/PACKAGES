@@ -12921,3 +12921,7 @@ NeedsCompilation: no
 Package: BSgenome.Namericanus.NCBI.NecamAr10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mdemolitor.NCBI.iyMicDemo21a
+Version: 1.0.0
+NeedsCompilation: no
