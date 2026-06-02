@@ -12953,3 +12953,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmachaon.NCBI.ilPapMach11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hvolcanicus.NCBI.UHHiyHylVolc10haploid
+Version: 1.0.0
+NeedsCompilation: no
