@@ -12929,3 +12929,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmammillata.NCBI.kaPhaMamm4hap11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcastaneum.NCBI.icTriCast11
+Version: 1.0.0
+NeedsCompilation: no
