@@ -13085,3 +13085,7 @@ NeedsCompilation: no
 Package: BSgenome.Llongissimus.NCBI.tnLinLong12
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nio.NCBI.ilAglIoxx11
+Version: 1.0.0
+NeedsCompilation: no
