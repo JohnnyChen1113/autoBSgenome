@@ -13185,3 +13185,7 @@ NeedsCompilation: no
 Package: BSgenome.Camplana.NCBI.ilCydAmpl11
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ofranksi.NCBI.jaOrbFran11
+Version: 1.0.0
+NeedsCompilation: no
