@@ -13709,3 +13709,7 @@ NeedsCompilation: no
 Package: BSgenome.Pneutrophilum.NCBI.ASM1980v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gahangari.NCBI.ASM100604v1
+Version: 1.0.0
+NeedsCompilation: no
