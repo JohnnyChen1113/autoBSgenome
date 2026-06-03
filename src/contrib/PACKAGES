@@ -13565,3 +13565,7 @@ NeedsCompilation: no
 Package: BSgenome.Mbathoardescens.NCBI.ASM73906v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nkoreense.NCBI.ASM22017v1
+Version: 1.0.0
+NeedsCompilation: no
