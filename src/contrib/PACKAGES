@@ -13845,3 +13845,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcleftensis.NCBI.ASM26552v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tparalvinellae.NCBI.ASM51744v1
+Version: 1.0.0
+NeedsCompilation: no
