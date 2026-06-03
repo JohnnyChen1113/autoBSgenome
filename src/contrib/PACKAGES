@@ -13729,3 +13729,7 @@ NeedsCompilation: no
 Package: BSgenome.Nadriaticus.NCBI.ASM95617v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mlabreanum.NCBI.ASM1576v1
+Version: 1.0.0
+NeedsCompilation: no
