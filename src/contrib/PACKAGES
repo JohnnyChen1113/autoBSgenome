@@ -13421,3 +13421,7 @@ NeedsCompilation: no
 Package: BSgenome.Pyoelii.NCBI.GCA900002385
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rirregularis.NCBI.ASM2621079v1
+Version: 1.0.0
+NeedsCompilation: no
