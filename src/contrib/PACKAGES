@@ -13685,3 +13685,7 @@ NeedsCompilation: no
 Package: BSgenome.Tadornatum.NCBI.ASM44601v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mvulcanius.NCBI.ASM2462v1
+Version: 1.0.0
+NeedsCompilation: no
