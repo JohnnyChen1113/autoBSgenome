@@ -13549,3 +13549,7 @@ NeedsCompilation: no
 Package: BSgenome.Shellenicus.NCBI.ASM9246v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tvolcanium.NCBI.ASM1118v1
+Version: 1.0.0
+NeedsCompilation: no
