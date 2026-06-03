@@ -13657,3 +13657,7 @@ NeedsCompilation: no
 Package: BSgenome.Npiranensis.NCBI.ASM87577v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmaripaludis.NCBI.ASM294532v1
+Version: 1.0.0
+NeedsCompilation: no
