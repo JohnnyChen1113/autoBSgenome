@@ -13785,3 +13785,7 @@ NeedsCompilation: no
 Package: BSgenome.Ppacificus.NCBI.ASM72542v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gacetivorans.NCBI.ASM78925v1
+Version: 1.0.0
+NeedsCompilation: no
