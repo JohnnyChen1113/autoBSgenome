@@ -13741,3 +13741,7 @@ NeedsCompilation: no
 Package: BSgenome.Pislandicum.NCBI.ASM1520v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Facidiphilum.NCBI.ASM207835v1
+Version: 1.0.0
+NeedsCompilation: no
