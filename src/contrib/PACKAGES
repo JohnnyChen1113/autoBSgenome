@@ -13525,3 +13525,7 @@ NeedsCompilation: no
 Package: BSgenome.Clagunensis.NCBI.ASM31779v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aprofundus.NCBI.ASM2528v1
+Version: 1.0.0
+NeedsCompilation: no
