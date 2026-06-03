@@ -13429,3 +13429,7 @@ NeedsCompilation: no
 Package: BSgenome.Phertigi.NCBI.LUPher10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnanobsidianus.NCBI.ASM308641v2
+Version: 1.0.0
+NeedsCompilation: no
