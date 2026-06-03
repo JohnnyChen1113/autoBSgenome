@@ -13621,3 +13621,7 @@ NeedsCompilation: no
 Package: BSgenome.Mokinawensis.NCBI.ASM17957v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mthermolithotrophicus.NCBI.ASM37696v1
+Version: 1.0.0
+NeedsCompilation: no
