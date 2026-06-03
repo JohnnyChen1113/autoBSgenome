@@ -13641,3 +13641,7 @@ NeedsCompilation: no
 Package: BSgenome.Mparvum.NCBI.ASM228721v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mdefluvii.NCBI.ASM338575v1
+Version: 1.0.0
+NeedsCompilation: no
