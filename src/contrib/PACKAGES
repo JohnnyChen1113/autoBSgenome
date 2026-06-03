@@ -13501,3 +13501,7 @@ NeedsCompilation: no
 Package: BSgenome.Asaccharovorans.NCBI.ASM14491v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mfervens.NCBI.ASM2398v1
+Version: 1.0.0
+NeedsCompilation: no
