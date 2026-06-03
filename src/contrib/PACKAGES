@@ -13397,3 +13397,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsolani.NCBI.ASM1690653v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Moreades.NCBI.UUMaror2
+Version: 1.0.0
+NeedsCompilation: no
