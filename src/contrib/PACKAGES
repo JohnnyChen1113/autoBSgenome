@@ -13489,3 +13489,7 @@ NeedsCompilation: no
 Package: BSgenome.Damylolyticus.NCBI.ASM23101v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Iislandicus.NCBI.ASM148168v1
+Version: 1.0.0
+NeedsCompilation: no
