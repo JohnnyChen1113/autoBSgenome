@@ -13509,3 +13509,7 @@ NeedsCompilation: no
 Package: BSgenome.Mthermophilum.NCBI.ASM215391v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mshengliensis.NCBI.ASM71190v1
+Version: 1.0.0
+NeedsCompilation: no
