@@ -13749,3 +13749,7 @@ NeedsCompilation: no
 Package: BSgenome.Mprofundi.NCBI.ASM413785v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mcuprina.NCBI.ASM20492v1
+Version: 1.0.0
+NeedsCompilation: no
