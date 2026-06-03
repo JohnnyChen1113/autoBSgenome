@@ -13853,3 +13853,7 @@ NeedsCompilation: no
 Package: BSgenome.Tchitonophagus.NCBI.ASM221460v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pkukulkanii.NCBI.ASM157777v1
+Version: 1.0.0
+NeedsCompilation: no
