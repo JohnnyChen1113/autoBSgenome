@@ -13817,3 +13817,7 @@ NeedsCompilation: no
 Package: BSgenome.Aveneficus.NCBI.ASM19462v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tguaymasensis.NCBI.ASM81610v1
+Version: 1.0.0
+NeedsCompilation: no
