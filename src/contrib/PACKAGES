@@ -13413,3 +13413,7 @@ NeedsCompilation: no
 Package: BSgenome.Ffulva.NCBI.CfulvR5v5
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ptriticina.NCBI.ASM2691418v1
+Version: 1.0.0
+NeedsCompilation: no
