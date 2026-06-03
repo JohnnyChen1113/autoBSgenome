@@ -13605,3 +13605,7 @@ NeedsCompilation: no
 Package: BSgenome.Malvi.NCBI.ASM371124v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hbutylicus.NCBI.ASM1514v1
+Version: 1.0.0
+NeedsCompilation: no
