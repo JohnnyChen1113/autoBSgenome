@@ -13801,3 +13801,7 @@ NeedsCompilation: no
 Package: BSgenome.Mgottschalkii.NCBI.ASM381483v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mthermoacetophila.NCBI.ASM1494v1
+Version: 1.0.0
+NeedsCompilation: no
