@@ -13577,3 +13577,7 @@ NeedsCompilation: no
 Package: BSgenome.Cnitrosocaldus.NCBI.ASM290621v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnitrosotenuis.NCBI.ASM95590v3
+Version: 1.0.0
+NeedsCompilation: no
