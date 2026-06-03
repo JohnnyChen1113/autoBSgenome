@@ -13733,3 +13733,7 @@ NeedsCompilation: no
 Package: BSgenome.Mlabreanum.NCBI.ASM1576v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tpendens.NCBI.ASM1522v1
+Version: 1.0.0
+NeedsCompilation: no
