@@ -13545,3 +13545,7 @@ NeedsCompilation: no
 Package: BSgenome.Cnitrosopumilus.NCBI.ASM24287v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Shellenicus.NCBI.ASM9246v1
+Version: 1.0.0
+NeedsCompilation: no
