@@ -13441,3 +13441,7 @@ NeedsCompilation: no
 Package: BSgenome.Cnanohalobium.NCBI.ASM961797v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmancarchaeum.NCBI.ASM221416v1
+Version: 1.0.0
+NeedsCompilation: no
