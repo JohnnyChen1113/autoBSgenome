@@ -13813,3 +13813,7 @@ NeedsCompilation: no
 Package: BSgenome.Tpeptonophilus.NCBI.ASM159243v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aveneficus.NCBI.ASM19462v1
+Version: 1.0.0
+NeedsCompilation: no
