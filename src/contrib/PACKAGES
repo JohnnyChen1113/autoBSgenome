@@ -13821,3 +13821,7 @@ NeedsCompilation: no
 Package: BSgenome.Tguaymasensis.NCBI.ASM81610v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tbarossii.NCBI.ASM221446v1
+Version: 1.0.0
+NeedsCompilation: no
