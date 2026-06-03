@@ -13717,3 +13717,7 @@ NeedsCompilation: no
 Package: BSgenome.Aaeolicum.NCBI.ASM140294v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mblatticola.NCBI.ASM436321v1
+Version: 1.0.0
+NeedsCompilation: no
