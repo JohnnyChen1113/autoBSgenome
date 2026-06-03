@@ -13405,3 +13405,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcubensis.NCBI.MGCPenvy1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cdestructivum.NCBI.ASM3444790v1
+Version: 1.0.0
+NeedsCompilation: no
