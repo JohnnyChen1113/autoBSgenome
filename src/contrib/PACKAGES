@@ -13573,3 +13573,7 @@ NeedsCompilation: no
 Package: BSgenome.Iuzonense.NCBI.ASM99380v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnitrosocaldus.NCBI.ASM290621v1
+Version: 1.0.0
+NeedsCompilation: no
