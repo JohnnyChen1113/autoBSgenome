@@ -13533,3 +13533,7 @@ NeedsCompilation: no
 Package: BSgenome.Tacidophilum.NCBI.ASM19591v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Maeolicus.NCBI.ASM1718v1
+Version: 1.0.0
+NeedsCompilation: no
