@@ -13485,3 +13485,7 @@ NeedsCompilation: no
 Package: BSgenome.Cnitrosomarinus.NCBI.ASM215696v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Damylolyticus.NCBI.ASM23101v3
+Version: 1.0.0
+NeedsCompilation: no
