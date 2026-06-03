@@ -13661,3 +13661,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmaripaludis.NCBI.ASM294532v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pyayanosii.NCBI.ASM21599v1
+Version: 1.0.0
+NeedsCompilation: no
