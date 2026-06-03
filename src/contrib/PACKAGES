@@ -13753,3 +13753,7 @@ NeedsCompilation: no
 Package: BSgenome.Mcuprina.NCBI.ASM20492v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ttenax.NCBI.ASM25305v1
+Version: 1.0.0
+NeedsCompilation: no
