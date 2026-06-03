@@ -13493,3 +13493,7 @@ NeedsCompilation: no
 Package: BSgenome.Iislandicus.NCBI.ASM148168v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmethanoplasma.NCBI.ASM80080v1
+Version: 1.0.0
+NeedsCompilation: no
