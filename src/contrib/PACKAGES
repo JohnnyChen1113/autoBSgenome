@@ -13521,3 +13521,7 @@ NeedsCompilation: no
 Package: BSgenome.Poshimae.NCBI.ASM826v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clagunensis.NCBI.ASM31779v1
+Version: 1.0.0
+NeedsCompilation: no
