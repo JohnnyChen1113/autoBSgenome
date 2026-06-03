@@ -13737,3 +13737,7 @@ NeedsCompilation: no
 Package: BSgenome.Tpendens.NCBI.ASM1522v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pislandicum.NCBI.ASM1520v1
+Version: 1.0.0
+NeedsCompilation: no
