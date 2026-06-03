@@ -13837,3 +13837,7 @@ NeedsCompilation: no
 Package: BSgenome.Facidarmanus.NCBI.ASM15226v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tuzoniensis.NCBI.ASM19337v1
+Version: 1.0.0
+NeedsCompilation: no
