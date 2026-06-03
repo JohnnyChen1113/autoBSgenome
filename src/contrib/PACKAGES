@@ -13481,3 +13481,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcalderae.NCBI.ASM26449v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnitrosomarinus.NCBI.ASM215696v1
+Version: 1.0.0
+NeedsCompilation: no
