@@ -13669,3 +13669,7 @@ NeedsCompilation: no
 Package: BSgenome.Mvannielii.NCBI.ASM1716v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acupricumulans.NCBI.ASM140293v1
+Version: 1.0.0
+NeedsCompilation: no
