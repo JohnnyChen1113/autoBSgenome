@@ -13665,3 +13665,7 @@ NeedsCompilation: no
 Package: BSgenome.Pyayanosii.NCBI.ASM21599v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mvannielii.NCBI.ASM1716v1
+Version: 1.0.0
+NeedsCompilation: no
