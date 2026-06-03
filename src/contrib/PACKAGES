@@ -13841,3 +13841,7 @@ NeedsCompilation: no
 Package: BSgenome.Tuzoniensis.NCBI.ASM19337v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcleftensis.NCBI.ASM26552v1
+Version: 1.0.0
+NeedsCompilation: no
