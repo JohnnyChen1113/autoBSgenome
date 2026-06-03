@@ -13617,3 +13617,7 @@ NeedsCompilation: no
 Package: BSgenome.Tgorgonarius.NCBI.ASM221438v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mokinawensis.NCBI.ASM17957v2
+Version: 1.0.0
+NeedsCompilation: no
