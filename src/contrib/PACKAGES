@@ -13473,3 +13473,7 @@ NeedsCompilation: no
 Package: BSgenome.Ffontis.NCBI.ASM25842v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Minfernus.NCBI.ASM9230v1
+Version: 1.0.0
+NeedsCompilation: no
