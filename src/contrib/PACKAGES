@@ -13693,3 +13693,7 @@ NeedsCompilation: no
 Package: BSgenome.Cnitrosotenuis.NCBI.NKMY2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tzilligii.NCBI.TheZil10
+Version: 1.0.0
+NeedsCompilation: no
