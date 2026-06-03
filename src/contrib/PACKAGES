@@ -13433,3 +13433,7 @@ NeedsCompilation: no
 Package: BSgenome.Cnanobsidianus.NCBI.ASM308641v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tvaginalis.NCBI.NYUTvagG32
+Version: 1.0.0
+NeedsCompilation: no
