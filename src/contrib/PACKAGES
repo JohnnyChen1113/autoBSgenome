@@ -13461,3 +13461,7 @@ NeedsCompilation: no
 Package: BSgenome.Mabyssi.NCBI.ASM431039v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dmucosus.NCBI.ASM18636v1
+Version: 1.0.0
+NeedsCompilation: no
