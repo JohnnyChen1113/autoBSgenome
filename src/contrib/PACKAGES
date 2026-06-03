@@ -13745,3 +13745,7 @@ NeedsCompilation: no
 Package: BSgenome.Facidiphilum.NCBI.ASM207835v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mprofundi.NCBI.ASM413785v1
+Version: 1.0.0
+NeedsCompilation: no
