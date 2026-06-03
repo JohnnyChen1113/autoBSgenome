@@ -13765,3 +13765,7 @@ NeedsCompilation: no
 Package: BSgenome.Tsibiricus.NCBI.ASM2254v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tonnurineus.NCBI.ASM1836v1
+Version: 1.0.0
+NeedsCompilation: no
