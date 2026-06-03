@@ -13757,3 +13757,7 @@ NeedsCompilation: no
 Package: BSgenome.Ttenax.NCBI.ASM25305v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfumarii.NCBI.ASM22339v1
+Version: 1.0.0
+NeedsCompilation: no
