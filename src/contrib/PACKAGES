@@ -13825,3 +13825,7 @@ NeedsCompilation: no
 Package: BSgenome.Tbarossii.NCBI.ASM221446v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mcuniculi.NCBI.ASM228719v1
+Version: 1.0.0
+NeedsCompilation: no
