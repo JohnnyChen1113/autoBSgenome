@@ -13589,3 +13589,7 @@ NeedsCompilation: no
 Package: BSgenome.Cnitrosotenuis.NCBI.APF1883PRJEB4650
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmarburgensis.NCBI.ASM14529v1
+Version: 1.0.0
+NeedsCompilation: no
