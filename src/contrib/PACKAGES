@@ -13849,3 +13849,7 @@ NeedsCompilation: no
 Package: BSgenome.Tparalvinellae.NCBI.ASM51744v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tchitonophagus.NCBI.ASM221460v1
+Version: 1.0.0
+NeedsCompilation: no
