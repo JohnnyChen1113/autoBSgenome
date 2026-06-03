@@ -13453,3 +13453,7 @@ NeedsCompilation: no
 Package: BSgenome.Ihospitalis.NCBI.ASM1794v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mvillosus.NCBI.ASM37180v1
+Version: 1.0.0
+NeedsCompilation: no
