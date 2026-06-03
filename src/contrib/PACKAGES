@@ -13861,3 +13861,7 @@ NeedsCompilation: no
 Package: BSgenome.Meuhalobius.NCBI.ASM434064v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sazoricus.NCBI.ASM972903v1
+Version: 1.0.0
+NeedsCompilation: no
