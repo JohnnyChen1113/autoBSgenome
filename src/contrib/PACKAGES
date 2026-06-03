@@ -13793,3 +13793,7 @@ NeedsCompilation: no
 Package: BSgenome.Tceler.NCBI.ASM221436v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tradiotolerans.NCBI.ASM221456v1
+Version: 1.0.0
+NeedsCompilation: no
