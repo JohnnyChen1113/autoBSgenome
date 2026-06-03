@@ -13437,3 +13437,7 @@ NeedsCompilation: no
 Package: BSgenome.Tvaginalis.NCBI.NYUTvagG32
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnanohalobium.NCBI.ASM961797v1
+Version: 1.0.0
+NeedsCompilation: no
