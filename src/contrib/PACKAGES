@@ -13725,3 +13725,7 @@ NeedsCompilation: no
 Package: BSgenome.Tpacificus.NCBI.ASM221448v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nadriaticus.NCBI.ASM95617v1
+Version: 1.0.0
+NeedsCompilation: no
