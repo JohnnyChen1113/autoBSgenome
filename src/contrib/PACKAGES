@@ -13417,3 +13417,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptriticina.NCBI.ASM2691418v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pyoelii.NCBI.GCA900002385
+Version: 1.0.0
+NeedsCompilation: no
