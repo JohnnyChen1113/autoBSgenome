@@ -13805,3 +13805,7 @@ NeedsCompilation: no
 Package: BSgenome.Mthermoacetophila.NCBI.ASM1494v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pfuriosus.NCBI.ASM824508v1
+Version: 1.0.0
+NeedsCompilation: no
