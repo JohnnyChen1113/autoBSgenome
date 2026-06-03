@@ -13593,3 +13593,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmarburgensis.NCBI.ASM14529v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnitrosopumilus.NCBI.ASM29936v1
+Version: 1.0.0
+NeedsCompilation: no
