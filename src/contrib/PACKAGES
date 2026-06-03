@@ -13869,3 +13869,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcalidifontis.NCBI.ASM1580v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmahii.NCBI.ASM2586v1
+Version: 1.0.0
+NeedsCompilation: no
