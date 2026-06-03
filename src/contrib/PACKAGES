@@ -13649,3 +13649,7 @@ NeedsCompilation: no
 Package: BSgenome.Mbavaricum.NCBI.ASM43090v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmobile.NCBI.ASM71121v1
+Version: 1.0.0
+NeedsCompilation: no
