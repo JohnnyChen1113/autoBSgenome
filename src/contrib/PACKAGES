@@ -14209,3 +14209,7 @@ NeedsCompilation: no
 Package: BSgenome.Cnitrososphaera.NCBI.ASM30315v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mformicica.NCBI.ASM32748v1
+Version: 1.0.0
+NeedsCompilation: no
