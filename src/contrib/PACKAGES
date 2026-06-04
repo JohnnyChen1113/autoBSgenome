@@ -14085,3 +14085,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmethylutens.NCBI.MmetVersion1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Msubterraneum.NCBI.ASM281369v1
+Version: 1.0.0
+NeedsCompilation: no
