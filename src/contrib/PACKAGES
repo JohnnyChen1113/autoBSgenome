@@ -14329,3 +14329,7 @@ NeedsCompilation: no
 Package: BSgenome.Hruber.NCBI.ASM32852v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hasiaticus.NCBI.ASM33751v1
+Version: 1.0.0
+NeedsCompilation: no
