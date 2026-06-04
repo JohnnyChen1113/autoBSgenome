@@ -14353,3 +14353,7 @@ NeedsCompilation: no
 Package: BSgenome.Hhalodurans.NCBI.ASM225298v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Haethiopicum.NCBI.ASM154290v1
+Version: 1.0.0
+NeedsCompilation: no
