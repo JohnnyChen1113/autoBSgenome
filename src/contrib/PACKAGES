@@ -14501,3 +14501,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmarinus.NCBI.ASM452189v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hkocurii.NCBI.ASM33735v1
+Version: 1.0.0
+NeedsCompilation: no
