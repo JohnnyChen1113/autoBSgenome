@@ -13985,3 +13985,7 @@ NeedsCompilation: no
 Package: BSgenome.Ainfernus.NCBI.ASM972954v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Paerophilum.NCBI.ASM722v1
+Version: 1.0.0
+NeedsCompilation: no
