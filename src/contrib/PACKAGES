@@ -14517,3 +14517,7 @@ NeedsCompilation: no
 Package: BSgenome.Hpleomorpha.NCBI.ASM386249v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsalina.NCBI.ASM504928v1
+Version: 1.0.0
+NeedsCompilation: no
