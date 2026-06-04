@@ -13981,3 +13981,7 @@ NeedsCompilation: no
 Package: BSgenome.Tlitoralis.NCBI.ASM24698v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ainfernus.NCBI.ASM972954v1
+Version: 1.0.0
+NeedsCompilation: no
