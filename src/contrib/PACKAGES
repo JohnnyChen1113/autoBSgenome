@@ -13941,3 +13941,7 @@ NeedsCompilation: no
 Package: BSgenome.Ahospitalis.NCBI.ASM21321v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mzhilinae.NCBI.ASM21799v1
+Version: 1.0.0
+NeedsCompilation: no
