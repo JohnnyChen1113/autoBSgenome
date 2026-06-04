@@ -14017,3 +14017,7 @@ NeedsCompilation: no
 Package: BSgenome.Vmoutnovskia.NCBI.ASM19031v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tcelericrescens.NCBI.ASM148419v1
+Version: 1.0.0
+NeedsCompilation: no
