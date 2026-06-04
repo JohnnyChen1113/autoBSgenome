@@ -14433,3 +14433,7 @@ NeedsCompilation: no
 Package: BSgenome.Hhalophilus.NCBI.ASM343992v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hmarinisediminis.NCBI.ASM967458v1
+Version: 1.0.0
+NeedsCompilation: no
