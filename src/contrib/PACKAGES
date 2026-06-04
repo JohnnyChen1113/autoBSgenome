@@ -14077,3 +14077,7 @@ NeedsCompilation: no
 Package: BSgenome.Msediminis.NCBI.ASM101712v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mformicicum.NCBI.Mb9
+Version: 1.0.0
+NeedsCompilation: no
