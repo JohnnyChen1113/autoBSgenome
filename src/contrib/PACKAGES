@@ -14473,3 +14473,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsalinus.NCBI.ASM333624v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hrallus.NCBI.ASM976227v1
+Version: 1.0.0
+NeedsCompilation: no
