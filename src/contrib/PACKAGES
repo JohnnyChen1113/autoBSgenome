@@ -14045,3 +14045,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsalinarum.NCBI.ASM479960v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Marboriphilus.NCBI.ASM207221v1
+Version: 1.0.0
+NeedsCompilation: no
