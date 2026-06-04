@@ -14065,3 +14065,7 @@ NeedsCompilation: no
 Package: BSgenome.Haquaticus.NCBI.ASM360557v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mliminatans.NCBI.ASM27586v1
+Version: 1.0.0
+NeedsCompilation: no
