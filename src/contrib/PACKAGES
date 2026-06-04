@@ -14461,3 +14461,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsalsus.NCBI.ASM990071v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nlimicola.NCBI.ASM33747v1
+Version: 1.0.0
+NeedsCompilation: no
