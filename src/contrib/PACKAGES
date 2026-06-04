@@ -13973,3 +13973,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsulfurireducens.NCBI.ASM101111v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Smetallicus.NCBI.ASM972951v1
+Version: 1.0.0
+NeedsCompilation: no
