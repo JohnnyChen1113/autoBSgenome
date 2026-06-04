@@ -14585,3 +14585,7 @@ NeedsCompilation: no
 Package: BSgenome.Hamylolyticus.NCBI.ASM414348v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ngregoryi.NCBI.ASM23071v3
+Version: 1.0.0
+NeedsCompilation: no
