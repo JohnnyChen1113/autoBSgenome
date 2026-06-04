@@ -13957,3 +13957,7 @@ NeedsCompilation: no
 Package: BSgenome.Fplacidus.NCBI.ASM2550v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Molleyae.NCBI.ASM156324v1
+Version: 1.0.0
+NeedsCompilation: no
