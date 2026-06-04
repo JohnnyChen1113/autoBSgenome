@@ -14413,3 +14413,7 @@ NeedsCompilation: no
 Package: BSgenome.Nsulfidifaciens.NCBI.ASM33773v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hamylolytica.NCBI.ASM494497v1
+Version: 1.0.0
+NeedsCompilation: no
