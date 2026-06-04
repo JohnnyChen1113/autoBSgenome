@@ -14365,3 +14365,7 @@ NeedsCompilation: no
 Package: BSgenome.Hlitchfieldiae.NCBI.ASM278821v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hmukohataei.NCBI.ASM2396v1
+Version: 1.0.0
+NeedsCompilation: no
