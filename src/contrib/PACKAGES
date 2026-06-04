@@ -14021,3 +14021,7 @@ NeedsCompilation: no
 Package: BSgenome.Tcelericrescens.NCBI.ASM148419v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mfontis.NCBI.ASM429718v1
+Version: 1.0.0
+NeedsCompilation: no
