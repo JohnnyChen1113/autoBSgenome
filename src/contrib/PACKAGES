@@ -13977,3 +13977,7 @@ NeedsCompilation: no
 Package: BSgenome.Smetallicus.NCBI.ASM972951v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tlitoralis.NCBI.ASM24698v3
+Version: 1.0.0
+NeedsCompilation: no
