@@ -14233,3 +14233,7 @@ NeedsCompilation: no
 Package: BSgenome.Nsalsuginis.NCBI.ASM523913v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nmoolapensis.NCBI.ASM59105v1
+Version: 1.0.0
+NeedsCompilation: no
