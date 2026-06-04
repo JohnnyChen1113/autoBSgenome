@@ -13921,3 +13921,7 @@ NeedsCompilation: no
 Package: BSgenome.Mportucalensis.NCBI.ASM276129v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hformicicum.NCBI.ASM188695v1
+Version: 1.0.0
+NeedsCompilation: no
