@@ -14505,3 +14505,7 @@ NeedsCompilation: no
 Package: BSgenome.Hkocurii.NCBI.ASM33735v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hamylolyticum.NCBI.ASM411499v1
+Version: 1.0.0
+NeedsCompilation: no
