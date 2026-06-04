@@ -13885,3 +13885,7 @@ NeedsCompilation: no
 Package: BSgenome.Mhalophilus.NCBI.ASM188940v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pdelaneyi.NCBI.ASM141261v1
+Version: 1.0.0
+NeedsCompilation: no
