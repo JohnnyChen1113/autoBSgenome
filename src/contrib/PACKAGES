@@ -14049,3 +14049,7 @@ NeedsCompilation: no
 Package: BSgenome.Marboriphilus.NCBI.ASM207221v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mhoronobensis.NCBI.ASM160237v1
+Version: 1.0.0
+NeedsCompilation: no
