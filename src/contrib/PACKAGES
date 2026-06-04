@@ -14157,3 +14157,7 @@ NeedsCompilation: no
 Package: BSgenome.Hrubeus.NCBI.ASM918454v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mcariaci.NCBI.ASM131594v1
+Version: 1.0.0
+NeedsCompilation: no
