@@ -14429,3 +14429,7 @@ NeedsCompilation: no
 Package: BSgenome.Hagarilyticus.NCBI.ASM33489v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hhalophilus.NCBI.ASM343992v1
+Version: 1.0.0
+NeedsCompilation: no
