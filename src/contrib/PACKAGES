@@ -14213,3 +14213,7 @@ NeedsCompilation: no
 Package: BSgenome.Mformicica.NCBI.ASM32748v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsediminis.NCBI.halo7
+Version: 1.0.0
+NeedsCompilation: no
