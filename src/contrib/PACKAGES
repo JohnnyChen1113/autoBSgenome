@@ -13961,3 +13961,7 @@ NeedsCompilation: no
 Package: BSgenome.Molleyae.NCBI.ASM156324v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Msedula.NCBI.ASM522252v1
+Version: 1.0.0
+NeedsCompilation: no
