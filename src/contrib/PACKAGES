@@ -14273,3 +14273,7 @@ NeedsCompilation: no
 Package: BSgenome.Hpersicus.NCBI.ASM235563v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Haidingense.NCBI.ASM33699v1
+Version: 1.0.0
+NeedsCompilation: no
