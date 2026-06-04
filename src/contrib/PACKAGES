@@ -14537,3 +14537,7 @@ NeedsCompilation: no
 Package: BSgenome.Hcaliforniense.NCBI.ASM33687v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hnitratireducens.NCBI.ASM33789v1
+Version: 1.0.0
+NeedsCompilation: no
