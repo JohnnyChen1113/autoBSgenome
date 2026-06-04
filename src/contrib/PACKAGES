@@ -14525,3 +14525,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsalsamenti.NCBI.ASM767168v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Chalobonum.NCBI.Htyrrel10
+Version: 1.0.0
+NeedsCompilation: no
