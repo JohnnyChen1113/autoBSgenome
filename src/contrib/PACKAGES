@@ -14437,3 +14437,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmarinisediminis.NCBI.ASM967458v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hbonnevillei.NCBI.ASM983155v1
+Version: 1.0.0
+NeedsCompilation: no
