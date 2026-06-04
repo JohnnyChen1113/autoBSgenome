@@ -13993,3 +13993,7 @@ NeedsCompilation: no
 Package: BSgenome.Mthermophilus.NCBI.ASM157140v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sacidocaldarius.NCBI.ASM1228v1
+Version: 1.0.0
+NeedsCompilation: no
