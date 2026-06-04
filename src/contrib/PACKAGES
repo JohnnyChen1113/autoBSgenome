@@ -14549,3 +14549,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsalina.NCBI.ASM367585v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hezzemoulense.NCBI.ASM412651v1
+Version: 1.0.0
+NeedsCompilation: no
