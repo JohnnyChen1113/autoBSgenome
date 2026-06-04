@@ -14149,3 +14149,7 @@ NeedsCompilation: no
 Package: BSgenome.Hacidiphilum.NCBI.ASM47423v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssolfataricus.NCBI.ASM385215v1
+Version: 1.0.0
+NeedsCompilation: no
