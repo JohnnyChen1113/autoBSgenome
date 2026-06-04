@@ -13933,3 +13933,7 @@ NeedsCompilation: no
 Package: BSgenome.Parsenaticum.NCBI.ASM1638v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Teurythermalis.NCBI.ASM76965v1
+Version: 1.0.0
+NeedsCompilation: no
