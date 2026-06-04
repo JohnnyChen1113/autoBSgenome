@@ -14253,3 +14253,7 @@ NeedsCompilation: no
 Package: BSgenome.Abrierleyi.NCBI.ASM320183v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mpaludicola.NCBI.ASM1100v1
+Version: 1.0.0
+NeedsCompilation: no
