@@ -14169,3 +14169,7 @@ NeedsCompilation: no
 Package: BSgenome.Stokodaii.NCBI.ASM1120v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Methanolicus.NCBI.ASM157138v1
+Version: 1.0.0
+NeedsCompilation: no
