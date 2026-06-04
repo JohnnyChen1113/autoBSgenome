@@ -14029,3 +14029,7 @@ NeedsCompilation: no
 Package: BSgenome.Vdistributa.NCBI.ASM14838v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mconradii.NCBI.ASM25110v1
+Version: 1.0.0
+NeedsCompilation: no
