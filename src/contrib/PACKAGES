@@ -14309,3 +14309,7 @@ NeedsCompilation: no
 Package: BSgenome.Hwalsbyi.NCBI.ASM918v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Marvoryzae.NCBI.ASM6344v1
+Version: 1.0.0
+NeedsCompilation: no
