@@ -13909,3 +13909,7 @@ NeedsCompilation: no
 Package: BSgenome.Tbarophilus.NCBI.ASM15110v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asulfaticallidus.NCBI.ASM38556v1
+Version: 1.0.0
+NeedsCompilation: no
