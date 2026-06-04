@@ -14125,3 +14125,7 @@ NeedsCompilation: no
 Package: BSgenome.Sislandicus.NCBI.ASM2244v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mlacus.NCBI.ASM19158v1
+Version: 1.0.0
+NeedsCompilation: no
