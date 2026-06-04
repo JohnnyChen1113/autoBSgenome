@@ -13925,3 +13925,7 @@ NeedsCompilation: no
 Package: BSgenome.Hformicicum.NCBI.ASM188695v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tkodakarensis.NCBI.ASM996v1
+Version: 1.0.0
+NeedsCompilation: no
