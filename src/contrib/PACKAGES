@@ -14245,3 +14245,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpalustris.NCBI.ASM2196v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cnitrososphaera.NCBI.ASM73028v1
+Version: 1.0.0
+NeedsCompilation: no
