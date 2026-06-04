@@ -14337,3 +14337,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsedimenti.NCBI.HalopeDYS10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hcarboxidivorans.NCBI.ASM983157v1
+Version: 1.0.0
+NeedsCompilation: no
