@@ -14189,3 +14189,7 @@ NeedsCompilation: no
 Package: BSgenome.Hlongus.NCBI.ASM966339v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mbourgensis.NCBI.MbMS2
+Version: 1.0.0
+NeedsCompilation: no
