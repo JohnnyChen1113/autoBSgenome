@@ -14481,3 +14481,7 @@ NeedsCompilation: no
 Package: BSgenome.Htropicale.NCBI.ASM128045v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hpersicum.NCBI.ASM272712v1
+Version: 1.0.0
+NeedsCompilation: no
