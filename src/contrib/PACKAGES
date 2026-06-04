@@ -14325,3 +14325,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmethanoperedens.NCBI.ANME2DV10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hruber.NCBI.ASM32852v1
+Version: 1.0.0
+NeedsCompilation: no
