@@ -14225,3 +14225,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpetrolearia.NCBI.ASM14787v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sohwakuensis.NCBI.ASM972905v1
+Version: 1.0.0
+NeedsCompilation: no
