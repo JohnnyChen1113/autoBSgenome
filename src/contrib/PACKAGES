@@ -14509,3 +14509,7 @@ NeedsCompilation: no
 Package: BSgenome.Hamylolyticum.NCBI.ASM411499v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hcoriense.NCBI.ASM33703v1
+Version: 1.0.0
+NeedsCompilation: no
