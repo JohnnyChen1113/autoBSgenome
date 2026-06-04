@@ -14285,3 +14285,7 @@ NeedsCompilation: no
 Package: BSgenome.Mthermophila.NCBI.ASM96988v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hhubeiense.NCBI.HalobacteriumhubeienseJI201
+Version: 1.0.0
+NeedsCompilation: no
