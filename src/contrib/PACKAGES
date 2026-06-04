@@ -13945,3 +13945,7 @@ NeedsCompilation: no
 Package: BSgenome.Mzhilinae.NCBI.ASM21799v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Afulgidus.NCBI.ASM866v1
+Version: 1.0.0
+NeedsCompilation: no
