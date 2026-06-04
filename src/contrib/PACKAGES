@@ -13969,3 +13969,7 @@ NeedsCompilation: no
 Package: BSgenome.Pferrophilus.NCBI.ASM96626v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsulfurireducens.NCBI.ASM101111v1
+Version: 1.0.0
+NeedsCompilation: no
