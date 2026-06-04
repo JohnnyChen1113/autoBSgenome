@@ -14109,3 +14109,7 @@ NeedsCompilation: no
 Package: BSgenome.Stepidarius.NCBI.SulIC00610
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hroseus.NCBI.ASM686165v1
+Version: 1.0.0
+NeedsCompilation: no
