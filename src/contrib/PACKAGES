@@ -14265,3 +14265,7 @@ NeedsCompilation: no
 Package: BSgenome.Hpteroides.NCBI.ASM360563v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Msoehngenii.NCBI.ASM20441v1
+Version: 1.0.0
+NeedsCompilation: no
