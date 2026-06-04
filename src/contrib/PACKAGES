@@ -14013,3 +14013,7 @@ NeedsCompilation: no
 Package: BSgenome.Asulfidivorans.NCBI.ASM320176v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vmoutnovskia.NCBI.ASM19031v1
+Version: 1.0.0
+NeedsCompilation: no
