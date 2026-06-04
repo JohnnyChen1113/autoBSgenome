@@ -14241,3 +14241,7 @@ NeedsCompilation: no
 Package: BSgenome.Mruminantium.NCBI.ASM2418v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mpalustris.NCBI.ASM2196v1
+Version: 1.0.0
+NeedsCompilation: no
