@@ -14445,3 +14445,7 @@ NeedsCompilation: no
 Package: BSgenome.Hpelagicus.NCBI.ASM408783v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Haerogenes.NCBI.ASM385683v1
+Version: 1.0.0
+NeedsCompilation: no
