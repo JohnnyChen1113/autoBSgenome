@@ -14485,3 +14485,7 @@ NeedsCompilation: no
 Package: BSgenome.Hpersicum.NCBI.ASM272712v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hlitoreum.NCBI.ASM967460v1
+Version: 1.0.0
+NeedsCompilation: no
