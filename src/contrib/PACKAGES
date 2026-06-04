@@ -14405,3 +14405,7 @@ NeedsCompilation: no
 Package: BSgenome.Hlipolyticum.NCBI.ASM33737v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsalinum.NCBI.ASM479966v1
+Version: 1.0.0
+NeedsCompilation: no
