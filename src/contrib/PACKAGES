@@ -14061,3 +14061,7 @@ NeedsCompilation: no
 Package: BSgenome.Pferrireducens.NCBI.ASM23480v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Haquaticus.NCBI.ASM360557v1
+Version: 1.0.0
+NeedsCompilation: no
