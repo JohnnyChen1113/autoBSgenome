@@ -14301,3 +14301,7 @@ NeedsCompilation: no
 Package: BSgenome.Htiamatea.NCBI.HATI1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mpsychrotolerans.NCBI.ASM224304v1
+Version: 1.0.0
+NeedsCompilation: no
