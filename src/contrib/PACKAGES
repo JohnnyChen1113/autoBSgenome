@@ -14401,3 +14401,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsaccharovorum.NCBI.ASM33791v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hlipolyticum.NCBI.ASM33737v1
+Version: 1.0.0
+NeedsCompilation: no
