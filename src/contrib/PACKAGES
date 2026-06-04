@@ -13897,3 +13897,7 @@ NeedsCompilation: no
 Package: BSgenome.Mwolinii.NCBI.ASM62196v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tprofundus.NCBI.ASM221458v1
+Version: 1.0.0
+NeedsCompilation: no
