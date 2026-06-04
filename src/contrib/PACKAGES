@@ -14025,3 +14025,7 @@ NeedsCompilation: no
 Package: BSgenome.Mfontis.NCBI.ASM429718v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vdistributa.NCBI.ASM14838v1
+Version: 1.0.0
+NeedsCompilation: no
