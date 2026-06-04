@@ -14089,3 +14089,7 @@ NeedsCompilation: no
 Package: BSgenome.Msubterraneum.NCBI.ASM281369v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nviennensis.NCBI.ASM69878v1
+Version: 1.0.0
+NeedsCompilation: no
