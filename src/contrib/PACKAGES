@@ -14577,3 +14577,7 @@ NeedsCompilation: no
 Package: BSgenome.Npallidum.NCBI.ASM589019v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hlitorea.NCBI.ASM478595v1
+Version: 1.0.0
+NeedsCompilation: no
