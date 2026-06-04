@@ -14369,3 +14369,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmukohataei.NCBI.ASM2396v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hcaptivus.NCBI.ASM765548v1
+Version: 1.0.0
+NeedsCompilation: no
