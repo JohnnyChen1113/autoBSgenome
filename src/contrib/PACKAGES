@@ -14137,3 +14137,7 @@ NeedsCompilation: no
 Package: BSgenome.Mfiliformis.NCBI.ASM163926v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mluminyensis.NCBI.ASM30821v1
+Version: 1.0.0
+NeedsCompilation: no
