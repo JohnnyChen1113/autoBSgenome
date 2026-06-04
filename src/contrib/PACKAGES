@@ -14269,3 +14269,7 @@ NeedsCompilation: no
 Package: BSgenome.Msoehngenii.NCBI.ASM20441v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hpersicus.NCBI.ASM235563v1
+Version: 1.0.0
+NeedsCompilation: no
