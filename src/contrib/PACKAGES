@@ -14553,3 +14553,7 @@ NeedsCompilation: no
 Package: BSgenome.Hezzemoulense.NCBI.ASM412651v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hlacusprofundi.NCBI.ASM2220v1
+Version: 1.0.0
+NeedsCompilation: no
