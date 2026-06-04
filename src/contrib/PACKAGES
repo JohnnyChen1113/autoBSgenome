@@ -13917,3 +13917,7 @@ NeedsCompilation: no
 Package: BSgenome.Cmaquilingensis.NCBI.ASM1830v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mportucalensis.NCBI.ASM276129v1
+Version: 1.0.0
+NeedsCompilation: no
