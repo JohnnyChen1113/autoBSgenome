@@ -14449,3 +14449,7 @@ NeedsCompilation: no
 Package: BSgenome.Haerogenes.NCBI.ASM385683v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsalipaludis.NCBI.ASM228698v1
+Version: 1.0.0
+NeedsCompilation: no
