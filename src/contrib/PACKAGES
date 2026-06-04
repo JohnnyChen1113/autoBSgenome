@@ -14377,3 +14377,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmucosum.NCBI.ASM33781v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssalinus.NCBI.ASM983145v1
+Version: 1.0.0
+NeedsCompilation: no
