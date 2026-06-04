@@ -14493,3 +14493,7 @@ NeedsCompilation: no
 Package: BSgenome.Hkatesii.NCBI.ASM37908v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsubterraneus.NCBI.ASM369781v1
+Version: 1.0.0
+NeedsCompilation: no
