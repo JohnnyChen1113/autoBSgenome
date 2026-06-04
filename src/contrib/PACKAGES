@@ -14081,3 +14081,7 @@ NeedsCompilation: no
 Package: BSgenome.Mformicicum.NCBI.Mb9
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmethylutens.NCBI.MmetVersion1
+Version: 1.0.0
+NeedsCompilation: no
