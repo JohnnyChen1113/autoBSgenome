@@ -14193,3 +14193,7 @@ NeedsCompilation: no
 Package: BSgenome.Mbourgensis.NCBI.MbMS2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mtaiwanensis.NCBI.ASM410272v1
+Version: 1.0.0
+NeedsCompilation: no
