@@ -14009,3 +14009,7 @@ NeedsCompilation: no
 Package: BSgenome.Aambivalens.NCBI.ASM972901v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Asulfidivorans.NCBI.ASM320176v2
+Version: 1.0.0
+NeedsCompilation: no
