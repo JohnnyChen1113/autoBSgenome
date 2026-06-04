@@ -14557,3 +14557,7 @@ NeedsCompilation: no
 Package: BSgenome.Hlacusprofundi.NCBI.ASM2220v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hrubicundus.NCBI.ASM334267v1
+Version: 1.0.0
+NeedsCompilation: no
