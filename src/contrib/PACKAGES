@@ -14069,3 +14069,7 @@ NeedsCompilation: no
 Package: BSgenome.Mliminatans.NCBI.ASM27586v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmarisnigri.NCBI.ASM1582v1
+Version: 1.0.0
+NeedsCompilation: no
