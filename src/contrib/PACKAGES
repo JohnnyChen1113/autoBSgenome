@@ -14441,3 +14441,7 @@ NeedsCompilation: no
 Package: BSgenome.Hbonnevillei.NCBI.ASM983155v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hpelagicus.NCBI.ASM408783v1
+Version: 1.0.0
+NeedsCompilation: no
