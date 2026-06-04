@@ -14469,3 +14469,7 @@ NeedsCompilation: no
 Package: BSgenome.Mhungatei.NCBI.ASM1344v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsalinus.NCBI.ASM333624v1
+Version: 1.0.0
+NeedsCompilation: no
