@@ -14381,3 +14381,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssalinus.NCBI.ASM983145v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mveterum.NCBI.ASM74548v1
+Version: 1.0.0
+NeedsCompilation: no
