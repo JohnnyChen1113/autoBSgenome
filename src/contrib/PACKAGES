@@ -13877,3 +13877,7 @@ NeedsCompilation: no
 Package: BSgenome.Tnautili.NCBI.ASM58549v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vthermophila.NCBI.ASM174838v1
+Version: 1.0.0
+NeedsCompilation: no
