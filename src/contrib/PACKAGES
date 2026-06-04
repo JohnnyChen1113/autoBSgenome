@@ -14425,3 +14425,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmarinum.NCBI.ASM967462v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hagarilyticus.NCBI.ASM33489v1
+Version: 1.0.0
+NeedsCompilation: no
