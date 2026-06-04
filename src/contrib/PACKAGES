@@ -14385,3 +14385,7 @@ NeedsCompilation: no
 Package: BSgenome.Mveterum.NCBI.ASM74548v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Marcticum.NCBI.ASM74607v1
+Version: 1.0.0
+NeedsCompilation: no
