@@ -14181,3 +14181,7 @@ NeedsCompilation: no
 Package: BSgenome.Hcellulosivorans.NCBI.ASM305836v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Npharaonis.NCBI.ASM2604v1
+Version: 1.0.0
+NeedsCompilation: no
