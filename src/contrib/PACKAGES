@@ -14101,3 +14101,7 @@ NeedsCompilation: no
 Package: BSgenome.Mhakonensis.NCBI.ASM320167v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mpaludis.NCBI.ASM21472v1
+Version: 1.0.0
+NeedsCompilation: no
