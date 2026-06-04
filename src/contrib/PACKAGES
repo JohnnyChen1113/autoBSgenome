@@ -14421,3 +14421,7 @@ NeedsCompilation: no
 Package: BSgenome.Mbryantii.NCBI.ASM228717v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hmarinum.NCBI.ASM967462v1
+Version: 1.0.0
+NeedsCompilation: no
