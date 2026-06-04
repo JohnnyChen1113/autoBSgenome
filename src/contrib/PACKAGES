@@ -14105,3 +14105,7 @@ NeedsCompilation: no
 Package: BSgenome.Mpaludis.NCBI.ASM21472v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Stepidarius.NCBI.SulIC00610
+Version: 1.0.0
+NeedsCompilation: no
