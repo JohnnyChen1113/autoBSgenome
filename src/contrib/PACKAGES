@@ -14261,3 +14261,7 @@ NeedsCompilation: no
 Package: BSgenome.Hrubra.NCBI.ASM73955v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hpteroides.NCBI.ASM360563v1
+Version: 1.0.0
+NeedsCompilation: no
