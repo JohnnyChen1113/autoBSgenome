@@ -14397,3 +14397,7 @@ NeedsCompilation: no
 Package: BSgenome.Hhamelinensis.NCBI.ASM33667v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsaccharovorum.NCBI.ASM33791v1
+Version: 1.0.0
+NeedsCompilation: no
