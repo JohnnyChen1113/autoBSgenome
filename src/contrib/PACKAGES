@@ -14053,3 +14053,7 @@ NeedsCompilation: no
 Package: BSgenome.Mhoronobensis.NCBI.ASM160237v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cacidianus.NCBI.AciCop10
+Version: 1.0.0
+NeedsCompilation: no
