@@ -14489,3 +14489,7 @@ NeedsCompilation: no
 Package: BSgenome.Hlitoreum.NCBI.ASM967460v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hkatesii.NCBI.ASM37908v1
+Version: 1.0.0
+NeedsCompilation: no
