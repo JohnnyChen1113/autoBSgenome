@@ -14097,3 +14097,7 @@ NeedsCompilation: no
 Package: BSgenome.Mboonei.NCBI.ASM1762v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mhakonensis.NCBI.ASM320167v2
+Version: 1.0.0
+NeedsCompilation: no
