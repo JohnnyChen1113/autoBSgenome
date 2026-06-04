@@ -14001,3 +14001,7 @@ NeedsCompilation: no
 Package: BSgenome.Tindicus.NCBI.ASM627460v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mthaueri.NCBI.ASM311162v1
+Version: 1.0.0
+NeedsCompilation: no
