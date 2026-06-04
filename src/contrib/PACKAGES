@@ -13893,3 +13893,7 @@ NeedsCompilation: no
 Package: BSgenome.Tsiculi.NCBI.ASM221450v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mwolinii.NCBI.ASM62196v1
+Version: 1.0.0
+NeedsCompilation: no
