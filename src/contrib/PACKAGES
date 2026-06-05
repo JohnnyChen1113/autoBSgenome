@@ -15173,3 +15173,7 @@ NeedsCompilation: no
 Package: BSgenome.Pparva.NCBI.ASM4586653v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pcongonensis.NCBI.UHGGMGYGHGUT02419
+Version: 1.0.0
+NeedsCompilation: no
