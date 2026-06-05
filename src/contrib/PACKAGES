@@ -14757,3 +14757,7 @@ NeedsCompilation: no
 Package: BSgenome.Hamylolytica.NCBI.ASM33661v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nhispanicum.NCBI.ASM421733v1
+Version: 1.0.0
+NeedsCompilation: no
