@@ -15013,3 +15013,7 @@ NeedsCompilation: no
 Package: BSgenome.Msubdolum.NCBI.ASM3354681v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cendosymbiont.NCBI.ASM285049v1
+Version: 1.0.0
+NeedsCompilation: no
