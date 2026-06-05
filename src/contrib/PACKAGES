@@ -14701,3 +14701,7 @@ NeedsCompilation: no
 Package: BSgenome.Ngari.NCBI.ASM33717v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hthailandensis.NCBI.ASM33671v1
+Version: 1.0.0
+NeedsCompilation: no
