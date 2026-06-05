@@ -15073,3 +15073,7 @@ NeedsCompilation: no
 Package: BSgenome.Bmiyamotoi.NCBI.ASM1966850v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Twhipplei.NCBI.ASM19607v1
+Version: 1.0.0
+NeedsCompilation: no
