@@ -14709,3 +14709,7 @@ NeedsCompilation: no
 Package: BSgenome.Msoligelidi.NCBI.ASM74431v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Horiensis.NCBI.ASM979139v1
+Version: 1.0.0
+NeedsCompilation: no
