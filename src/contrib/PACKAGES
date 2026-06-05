@@ -15121,3 +15121,7 @@ NeedsCompilation: no
 Package: BSgenome.Nmikurensis.NCBI.ASM2429900v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Llaojiaonis.NCBI.ASM2061659v1
+Version: 1.0.0
+NeedsCompilation: no
