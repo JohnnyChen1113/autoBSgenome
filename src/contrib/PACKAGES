@@ -14745,3 +14745,7 @@ NeedsCompilation: no
 Package: BSgenome.Shalophilum.NCBI.ASM700473v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nswarupiae.NCBI.ASM824522v1
+Version: 1.0.0
+NeedsCompilation: no
