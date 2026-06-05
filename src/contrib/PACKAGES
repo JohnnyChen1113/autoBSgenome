@@ -14957,3 +14957,7 @@ NeedsCompilation: no
 Package: BSgenome.Eof.NCBI.ASM429649v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ebacterium.NCBI.ASM4715937v1
+Version: 1.0.0
+NeedsCompilation: no
