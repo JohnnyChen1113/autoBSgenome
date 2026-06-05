@@ -15129,3 +15129,7 @@ NeedsCompilation: no
 Package: BSgenome.Abombintestini.NCBI.ASM362703v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fsanfranciscensis.NCBI.ASM2902368v1
+Version: 1.0.0
+NeedsCompilation: no
