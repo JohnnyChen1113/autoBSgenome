@@ -15069,3 +15069,7 @@ NeedsCompilation: no
 Package: BSgenome.Wsomnilux.NCBI.ASM280400v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmiyamotoi.NCBI.ASM1966850v1
+Version: 1.0.0
+NeedsCompilation: no
