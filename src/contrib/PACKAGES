@@ -14685,3 +14685,7 @@ NeedsCompilation: no
 Package: BSgenome.Nsaccharevitans.NCBI.ASM195374v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hirregulare.NCBI.ASM742192v1
+Version: 1.0.0
+NeedsCompilation: no
