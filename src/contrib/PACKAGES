@@ -14921,3 +14921,7 @@ NeedsCompilation: no
 Package: BSgenome.Mhoronobensis.NCBI.ASM97028v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsalinum.NCBI.ASM373019v1
+Version: 1.0.0
+NeedsCompilation: no
