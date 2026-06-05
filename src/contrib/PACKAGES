@@ -14777,3 +14777,7 @@ NeedsCompilation: no
 Package: BSgenome.Hruber.NCBI.ASM476578v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psyntrophicum.NCBI.ASM800077v2
+Version: 1.0.0
+NeedsCompilation: no
