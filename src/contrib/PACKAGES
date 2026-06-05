@@ -14941,3 +14941,7 @@ NeedsCompilation: no
 Package: BSgenome.Npandeyae.NCBI.ASM812220v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hturkmenica.NCBI.ASM2532v1
+Version: 1.0.0
+NeedsCompilation: no
