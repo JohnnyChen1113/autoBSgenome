@@ -14601,3 +14601,7 @@ NeedsCompilation: no
 Package: BSgenome.Hdenitrificans.NCBI.ASM33779v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hprofundi.NCBI.ASM146986v1
+Version: 1.0.0
+NeedsCompilation: no
