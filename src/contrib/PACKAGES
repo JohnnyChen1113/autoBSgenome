@@ -14789,3 +14789,7 @@ NeedsCompilation: no
 Package: BSgenome.Npellirubrum.NCBI.ASM23073v3
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hxanaduensis.NCBI.ASM21771v1
+Version: 1.0.0
+NeedsCompilation: no
