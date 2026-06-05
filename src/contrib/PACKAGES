@@ -15005,3 +15005,7 @@ NeedsCompilation: no
 Package: BSgenome.Baphidicola.NCBI.ASM736v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmeleagridis.NCBI.57612E013
+Version: 1.0.0
+NeedsCompilation: no
