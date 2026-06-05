@@ -15105,3 +15105,7 @@ NeedsCompilation: no
 Package: BSgenome.Rprowazekii.NCBI.ASM27716v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tparaluiscuniculi.NCBI.ASM21765v1
+Version: 1.0.0
+NeedsCompilation: no
