@@ -15037,3 +15037,7 @@ NeedsCompilation: no
 Package: BSgenome.Bendosymbiont.NCBI.ASM1485706v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mmoatsii.NCBI.ASM4527691v1
+Version: 1.0.0
+NeedsCompilation: no
