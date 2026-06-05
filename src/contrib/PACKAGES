@@ -14873,3 +14873,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsoli.NCBI.ASM284419v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ntaiwanensis.NCBI.ASM33759v1
+Version: 1.0.0
+NeedsCompilation: no
