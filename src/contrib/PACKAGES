@@ -14725,3 +14725,7 @@ NeedsCompilation: no
 Package: BSgenome.Hlarsenii.NCBI.ASM51762v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mlacustris.NCBI.ASM97026v1
+Version: 1.0.0
+NeedsCompilation: no
