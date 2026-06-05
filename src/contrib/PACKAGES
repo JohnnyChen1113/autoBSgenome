@@ -14841,3 +14841,7 @@ NeedsCompilation: no
 Package: BSgenome.Njeotgali.NCBI.ASM33769v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Shalalkaliphilus.NCBI.ASM654304v1
+Version: 1.0.0
+NeedsCompilation: no
