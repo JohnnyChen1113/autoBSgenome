@@ -14653,3 +14653,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmarisrubri.NCBI.ASM146995v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hcibarius.NCBI.HAPD431
+Version: 1.0.0
+NeedsCompilation: no
