@@ -15125,3 +15125,7 @@ NeedsCompilation: no
 Package: BSgenome.Llaojiaonis.NCBI.ASM2061659v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Abombintestini.NCBI.ASM362703v1
+Version: 1.0.0
+NeedsCompilation: no
