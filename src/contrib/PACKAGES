@@ -14741,3 +14741,7 @@ NeedsCompilation: no
 Package: BSgenome.Nversiforme.NCBI.ASM33719v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Shalophilum.NCBI.ASM700473v1
+Version: 1.0.0
+NeedsCompilation: no
