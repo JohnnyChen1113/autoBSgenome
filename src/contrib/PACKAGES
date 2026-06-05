@@ -14849,3 +14849,7 @@ NeedsCompilation: no
 Package: BSgenome.Nhalalkaliphilum.NCBI.ASM983478v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mvacuolata.NCBI.ASM96990v1
+Version: 1.0.0
+NeedsCompilation: no
