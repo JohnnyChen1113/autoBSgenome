@@ -14837,3 +14837,7 @@ NeedsCompilation: no
 Package: BSgenome.Nejinorense.NCBI.ASM249434v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Njeotgali.NCBI.ASM33769v1
+Version: 1.0.0
+NeedsCompilation: no
