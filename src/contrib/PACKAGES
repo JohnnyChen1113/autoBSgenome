@@ -15049,3 +15049,7 @@ NeedsCompilation: no
 Package: BSgenome.Uparvum.NCBI.ASM1934v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mflorum.NCBI.ASM830v1
+Version: 1.0.0
+NeedsCompilation: no
