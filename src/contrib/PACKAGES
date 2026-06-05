@@ -14785,3 +14785,7 @@ NeedsCompilation: no
 Package: BSgenome.Naibiense.NCBI.ASM939289v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Npellirubrum.NCBI.ASM23073v3
+Version: 1.0.0
+NeedsCompilation: no
