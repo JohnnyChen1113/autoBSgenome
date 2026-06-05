@@ -14933,3 +14933,7 @@ NeedsCompilation: no
 Package: BSgenome.Mspelaei.NCBI.ASM228723v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsalinisoli.NCBI.ASM523943v1
+Version: 1.0.0
+NeedsCompilation: no
