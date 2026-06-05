@@ -14773,3 +14773,7 @@ NeedsCompilation: no
 Package: BSgenome.Noccultus.NCBI.ASM32868v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hruber.NCBI.ASM476578v1
+Version: 1.0.0
+NeedsCompilation: no
