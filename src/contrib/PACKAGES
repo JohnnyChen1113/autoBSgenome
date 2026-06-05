@@ -14897,3 +14897,7 @@ NeedsCompilation: no
 Package: BSgenome.Hsalina.NCBI.ASM33749v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Haswanensis.NCBI.ASM361019v1
+Version: 1.0.0
+NeedsCompilation: no
