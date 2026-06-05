@@ -15197,3 +15197,7 @@ NeedsCompilation: no
 Package: BSgenome.Talbus.NCBI.ASM2560v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Truber.NCBI.ASM5538089v1
+Version: 1.0.0
+NeedsCompilation: no
