@@ -14597,3 +14597,7 @@ NeedsCompilation: no
 Package: BSgenome.Hnatans.NCBI.ASM42768v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hdenitrificans.NCBI.ASM33779v1
+Version: 1.0.0
+NeedsCompilation: no
