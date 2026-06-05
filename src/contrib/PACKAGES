@@ -14997,3 +14997,7 @@ NeedsCompilation: no
 Package: BSgenome.Bpunctulatus.NCBI.ASM322669v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cendosymbiont.NCBI.ASM988379v1
+Version: 1.0.0
+NeedsCompilation: no
