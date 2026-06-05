@@ -14661,3 +14661,7 @@ NeedsCompilation: no
 Package: BSgenome.Naegyptiacum.NCBI.ASM215670v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hhalobius.NCBI.ASM476580v1
+Version: 1.0.0
+NeedsCompilation: no
