@@ -15201,3 +15201,7 @@ NeedsCompilation: no
 Package: BSgenome.Truber.NCBI.ASM5538089v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fpersica.NCBI.ASM127536v1
+Version: 1.0.0
+NeedsCompilation: no
