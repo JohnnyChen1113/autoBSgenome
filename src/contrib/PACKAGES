@@ -15065,3 +15065,7 @@ NeedsCompilation: no
 Package: BSgenome.Nfindlayensis.NCBI.ASM985652v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wsomnilux.NCBI.ASM280400v1
+Version: 1.0.0
+NeedsCompilation: no
