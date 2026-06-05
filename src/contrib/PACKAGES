@@ -14793,3 +14793,7 @@ NeedsCompilation: no
 Package: BSgenome.Hxanaduensis.NCBI.ASM21771v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hrarus.NCBI.ASM336983v1
+Version: 1.0.0
+NeedsCompilation: no
