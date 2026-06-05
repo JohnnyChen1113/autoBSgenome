@@ -14953,3 +14953,7 @@ NeedsCompilation: no
 Package: BSgenome.Cvidania.NCBI.ASM5376052v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eof.NCBI.ASM429649v1
+Version: 1.0.0
+NeedsCompilation: no
