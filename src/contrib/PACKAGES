@@ -15185,3 +15185,7 @@ NeedsCompilation: no
 Package: BSgenome.Ahippikon.NCBI.57792F013
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dmccartyi.NCBI.ASM1190v1
+Version: 1.0.0
+NeedsCompilation: no
