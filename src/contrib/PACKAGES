@@ -15109,3 +15109,7 @@ NeedsCompilation: no
 Package: BSgenome.Tparaluiscuniculi.NCBI.ASM21765v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cphoenicopteri.NCBI.142711R47
+Version: 1.0.0
+NeedsCompilation: no
