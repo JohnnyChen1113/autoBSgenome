@@ -14853,3 +14853,7 @@ NeedsCompilation: no
 Package: BSgenome.Mvacuolata.NCBI.ASM96990v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nchitinivorans.NCBI.ASM384150v1
+Version: 1.0.0
+NeedsCompilation: no
