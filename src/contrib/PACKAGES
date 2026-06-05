@@ -15061,3 +15061,7 @@ NeedsCompilation: no
 Package: BSgenome.Esennetsu.NCBI.ASM1316v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nfindlayensis.NCBI.ASM985652v1
+Version: 1.0.0
+NeedsCompilation: no
