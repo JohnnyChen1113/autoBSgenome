@@ -14977,3 +14977,7 @@ NeedsCompilation: no
 Package: BSgenome.Eendosymbiont.NCBI.ASM1257134v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Wendosymbiont.NCBI.ASM2502192v1
+Version: 1.0.0
+NeedsCompilation: no
