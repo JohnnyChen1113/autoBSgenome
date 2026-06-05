@@ -15213,3 +15213,7 @@ NeedsCompilation: no
 Package: BSgenome.Swiggsiae.NCBI.ASM5104598v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lcrescens.NCBI.ASM154330v1
+Version: 1.0.0
+NeedsCompilation: no
