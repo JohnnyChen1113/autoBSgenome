@@ -14821,3 +14821,7 @@ NeedsCompilation: no
 Package: BSgenome.Nmagadii.NCBI.ASM2562v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hhalophilus.NCBI.ASM883154v1
+Version: 1.0.0
+NeedsCompilation: no
