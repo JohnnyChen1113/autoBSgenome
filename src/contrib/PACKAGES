@@ -14625,3 +14625,7 @@ NeedsCompilation: no
 Package: BSgenome.Hhispanica.NCBI.ASM22390v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hmarisrubri.NCBI.ASM146987v2
+Version: 1.0.0
+NeedsCompilation: no
