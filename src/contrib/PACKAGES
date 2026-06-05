@@ -14949,3 +14949,7 @@ NeedsCompilation: no
 Package: BSgenome.Macetivorans.NCBI.ASM734v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cvidania.NCBI.ASM5376052v1
+Version: 1.0.0
+NeedsCompilation: no
