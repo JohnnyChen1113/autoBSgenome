@@ -14969,3 +14969,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssecondary.NCBI.SoDrplatanoidis3702v10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Abacterium.NCBI.ilTilCitr1Alphaproteobacteriasp11
+Version: 1.0.0
+NeedsCompilation: no
