@@ -15113,3 +15113,7 @@ NeedsCompilation: no
 Package: BSgenome.Cphoenicopteri.NCBI.142711R47
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amarginale.NCBI.ASM2030v1
+Version: 1.0.0
+NeedsCompilation: no
