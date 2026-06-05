@@ -14961,3 +14961,7 @@ NeedsCompilation: no
 Package: BSgenome.Ebacterium.NCBI.ASM4715937v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sendosymbiont.NCBI.TRABTM
+Version: 1.0.0
+NeedsCompilation: no
