@@ -14825,3 +14825,7 @@ NeedsCompilation: no
 Package: BSgenome.Hhalophilus.NCBI.ASM883154v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hquadrata.NCBI.ASM363471v1
+Version: 1.0.0
+NeedsCompilation: no
