@@ -14765,3 +14765,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmarismortui.NCBI.ASM1108v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nchahannaoensis.NCBI.ASM33713v1
+Version: 1.0.0
+NeedsCompilation: no
