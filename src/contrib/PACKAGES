@@ -14889,3 +14889,7 @@ NeedsCompilation: no
 Package: BSgenome.Nhalophilum.NCBI.ASM523942v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsalinus.NCBI.ASM476581v2
+Version: 1.0.0
+NeedsCompilation: no
