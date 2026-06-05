@@ -14621,3 +14621,7 @@ NeedsCompilation: no
 Package: BSgenome.Hpelagica.NCBI.ASM476201v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hhispanica.NCBI.ASM22390v1
+Version: 1.0.0
+NeedsCompilation: no
