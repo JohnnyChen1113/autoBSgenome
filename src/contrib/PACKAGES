@@ -14797,3 +14797,7 @@ NeedsCompilation: no
 Package: BSgenome.Hrarus.NCBI.ASM336983v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nlacisalsi.NCBI.ASM22697v3
+Version: 1.0.0
+NeedsCompilation: no
