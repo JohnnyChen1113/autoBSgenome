@@ -14605,3 +14605,7 @@ NeedsCompilation: no
 Package: BSgenome.Hprofundi.NCBI.ASM146986v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ndaqingense.NCBI.ASM197170v1
+Version: 1.0.0
+NeedsCompilation: no
