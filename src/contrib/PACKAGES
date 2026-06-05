@@ -15181,3 +15181,7 @@ NeedsCompilation: no
 Package: BSgenome.Ifossajaponicum.NCBI.ASM1659261v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ahippikon.NCBI.57792F013
+Version: 1.0.0
+NeedsCompilation: no
