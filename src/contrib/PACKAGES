@@ -14857,3 +14857,7 @@ NeedsCompilation: no
 Package: BSgenome.Nchitinivorans.NCBI.ASM384150v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mbarkeri.NCBI.ASM97002v1
+Version: 1.0.0
+NeedsCompilation: no
