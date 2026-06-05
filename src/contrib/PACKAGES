@@ -14717,3 +14717,7 @@ NeedsCompilation: no
 Package: BSgenome.Hpallida.NCBI.ASM411832v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hlimicola.NCBI.ASM367587v1
+Version: 1.0.0
+NeedsCompilation: no
