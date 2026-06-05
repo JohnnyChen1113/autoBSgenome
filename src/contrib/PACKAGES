@@ -15177,3 +15177,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcongonensis.NCBI.UHGGMGYGHGUT02419
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ifossajaponicum.NCBI.ASM1659261v1
+Version: 1.0.0
+NeedsCompilation: no
