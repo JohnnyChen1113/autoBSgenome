@@ -14861,3 +14861,7 @@ NeedsCompilation: no
 Package: BSgenome.Mbarkeri.NCBI.ASM97002v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ninnermongolicus.NCBI.ASM33721v1
+Version: 1.0.0
+NeedsCompilation: no
