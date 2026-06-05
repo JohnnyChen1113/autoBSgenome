@@ -14917,3 +14917,7 @@ NeedsCompilation: no
 Package: BSgenome.Msiciliae.NCBI.ASM97008v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mhoronobensis.NCBI.ASM97028v1
+Version: 1.0.0
+NeedsCompilation: no
