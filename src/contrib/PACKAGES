@@ -15081,3 +15081,7 @@ NeedsCompilation: no
 Package: BSgenome.Cendosymbiont.NCBI.CChcEper1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Slethal.NCBI.ASM39718v1
+Version: 1.0.0
+NeedsCompilation: no
