@@ -14993,3 +14993,7 @@ NeedsCompilation: no
 Package: BSgenome.Mgenitalium.NCBI.ASM4055692v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bpunctulatus.NCBI.ASM322669v1
+Version: 1.0.0
+NeedsCompilation: no
