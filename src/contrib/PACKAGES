@@ -14985,3 +14985,7 @@ NeedsCompilation: no
 Package: BSgenome.Mparvum.NCBI.ASM47741v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Sof.NCBI.assemblyendosymbiontAbruennichi1Ctgraven
+Version: 1.0.0
+NeedsCompilation: no
