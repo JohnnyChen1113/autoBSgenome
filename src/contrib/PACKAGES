@@ -14753,3 +14753,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmannanilytica.NCBI.ASM540612v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hamylolytica.NCBI.ASM33661v1
+Version: 1.0.0
+NeedsCompilation: no
