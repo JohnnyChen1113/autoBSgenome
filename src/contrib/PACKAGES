@@ -14737,3 +14737,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmazei.NCBI.ASM97020v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nversiforme.NCBI.ASM33719v1
+Version: 1.0.0
+NeedsCompilation: no
