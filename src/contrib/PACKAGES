@@ -14869,3 +14869,7 @@ NeedsCompilation: no
 Package: BSgenome.Noligotrophus.NCBI.ASM384146v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsoli.NCBI.ASM284419v1
+Version: 1.0.0
+NeedsCompilation: no
