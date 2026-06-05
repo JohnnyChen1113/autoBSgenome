@@ -15077,3 +15077,7 @@ NeedsCompilation: no
 Package: BSgenome.Twhipplei.NCBI.ASM19607v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cendosymbiont.NCBI.CChcEper1
+Version: 1.0.0
+NeedsCompilation: no
