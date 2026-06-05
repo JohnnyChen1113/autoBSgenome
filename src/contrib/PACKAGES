@@ -14713,3 +14713,7 @@ NeedsCompilation: no
 Package: BSgenome.Horiensis.NCBI.ASM979139v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hpallida.NCBI.ASM411832v1
+Version: 1.0.0
+NeedsCompilation: no
