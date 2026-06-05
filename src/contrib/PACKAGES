@@ -15089,3 +15089,7 @@ NeedsCompilation: no
 Package: BSgenome.Bbavariensis.NCBI.ASM19621v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ctrachomatis.NCBI.ASM872v1
+Version: 1.0.0
+NeedsCompilation: no
