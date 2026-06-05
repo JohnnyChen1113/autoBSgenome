@@ -15117,3 +15117,7 @@ NeedsCompilation: no
 Package: BSgenome.Amarginale.NCBI.ASM2030v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nmikurensis.NCBI.ASM2429900v1
+Version: 1.0.0
+NeedsCompilation: no
