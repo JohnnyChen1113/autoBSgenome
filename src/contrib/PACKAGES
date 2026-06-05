@@ -14645,3 +14645,7 @@ NeedsCompilation: no
 Package: BSgenome.Hgibbonsii.NCBI.ASM119096v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nbaerhuensis.NCBI.ASM217713v1
+Version: 1.0.0
+NeedsCompilation: no
