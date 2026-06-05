@@ -14929,3 +14929,7 @@ NeedsCompilation: no
 Package: BSgenome.Hamylovorans.NCBI.ASM468118v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mspelaei.NCBI.ASM228723v1
+Version: 1.0.0
+NeedsCompilation: no
