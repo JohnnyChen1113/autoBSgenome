@@ -14693,3 +14693,7 @@ NeedsCompilation: no
 Package: BSgenome.Hvolcanii.NCBI.ASM2568v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hmassiliensis.NCBI.PRJEB5949assembly1
+Version: 1.0.0
+NeedsCompilation: no
