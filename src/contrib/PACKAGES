@@ -14721,3 +14721,7 @@ NeedsCompilation: no
 Package: BSgenome.Hlimicola.NCBI.ASM367587v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hlarsenii.NCBI.ASM51762v1
+Version: 1.0.0
+NeedsCompilation: no
