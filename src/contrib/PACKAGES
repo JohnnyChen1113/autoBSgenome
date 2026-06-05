@@ -15149,3 +15149,7 @@ NeedsCompilation: no
 Package: BSgenome.Wtructae.NCBI.ASM1850250v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rlimnophila.NCBI.ASM584536v1
+Version: 1.0.0
+NeedsCompilation: no
