@@ -15097,3 +15097,7 @@ NeedsCompilation: no
 Package: BSgenome.Mmuris.NCBI.ASM4677442v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bmaritima.NCBI.ASM893184v1
+Version: 1.0.0
+NeedsCompilation: no
