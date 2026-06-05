@@ -14637,3 +14637,7 @@ NeedsCompilation: no
 Package: BSgenome.Hgoleimassiliensis.NCBI.Halgo
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hmediterranei.NCBI.ASM540632v1
+Version: 1.0.0
+NeedsCompilation: no
