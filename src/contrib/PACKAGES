@@ -14769,3 +14769,7 @@ NeedsCompilation: no
 Package: BSgenome.Nchahannaoensis.NCBI.ASM33713v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Noccultus.NCBI.ASM32868v1
+Version: 1.0.0
+NeedsCompilation: no
