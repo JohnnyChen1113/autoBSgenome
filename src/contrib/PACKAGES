@@ -14905,3 +14905,7 @@ NeedsCompilation: no
 Package: BSgenome.Htardaugens.NCBI.ASM411640v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ntibetense.NCBI.ASM38397v1
+Version: 1.0.0
+NeedsCompilation: no
