@@ -15217,3 +15217,7 @@ NeedsCompilation: no
 Package: BSgenome.Lcrescens.NCBI.ASM154330v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vcoleopterorum.NCBI.ASM1130395v1
+Version: 1.0.0
+NeedsCompilation: no
