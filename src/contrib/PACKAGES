@@ -15165,3 +15165,7 @@ NeedsCompilation: no
 Package: BSgenome.Bbacilliformis.NCBI.ASM1544v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fvaginae.NCBI.ASM1602657v1
+Version: 1.0.0
+NeedsCompilation: no
