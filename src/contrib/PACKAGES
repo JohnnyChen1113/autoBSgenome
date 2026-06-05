@@ -14885,3 +14885,7 @@ NeedsCompilation: no
 Package: BSgenome.Hcarlsbadense.NCBI.ASM33745v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nhalophilum.NCBI.ASM523942v1
+Version: 1.0.0
+NeedsCompilation: no
