@@ -15625,3 +15625,7 @@ NeedsCompilation: no
 Package: BSgenome.Bpsittacipulmonis.NCBI.ASM74394v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmelissae.NCBI.ASM2449829v1
+Version: 1.0.0
+NeedsCompilation: no
