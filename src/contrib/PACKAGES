@@ -15337,3 +15337,7 @@ NeedsCompilation: no
 Package: BSgenome.Fgonidiaformans.NCBI.ASM301969v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cmediatlanticus.NCBI.ASM584398v1
+Version: 1.0.0
+NeedsCompilation: no
