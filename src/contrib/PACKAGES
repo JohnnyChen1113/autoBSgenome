@@ -15681,3 +15681,7 @@ NeedsCompilation: no
 Package: BSgenome.Nmeningitidis.NCBI.ASM2286964v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Blongum.NCBI.ASM19655v1
+Version: 1.0.0
+NeedsCompilation: no
