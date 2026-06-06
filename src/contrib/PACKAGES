@@ -15245,3 +15245,7 @@ NeedsCompilation: no
 Package: BSgenome.Nampullae.NCBI.ASM1935749v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Apalmae.NCBI.ASM96805v1
+Version: 1.0.0
+NeedsCompilation: no
