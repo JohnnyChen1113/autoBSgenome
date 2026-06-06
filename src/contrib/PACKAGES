@@ -15585,3 +15585,7 @@ NeedsCompilation: no
 Package: BSgenome.Sxiamenensis.NCBI.ASM925804v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Iseriolicida.NCBI.ASM236995v1
+Version: 1.0.0
+NeedsCompilation: no
