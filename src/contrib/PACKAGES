@@ -15685,3 +15685,7 @@ NeedsCompilation: no
 Package: BSgenome.Blongum.NCBI.ASM19655v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cdiphtheriae.NCBI.NCTC11397
+Version: 1.0.0
+NeedsCompilation: no
