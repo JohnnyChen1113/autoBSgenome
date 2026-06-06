@@ -15413,3 +15413,7 @@ NeedsCompilation: no
 Package: BSgenome.Rendosymbiont.NCBI.ASM393273v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ssalinus.NCBI.ASM31957v2
+Version: 1.0.0
+NeedsCompilation: no
