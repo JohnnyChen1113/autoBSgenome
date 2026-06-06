@@ -15701,3 +15701,7 @@ NeedsCompilation: no
 Package: BSgenome.Abaumannii.NCBI.ASM903584v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dradiodurans.NCBI.ASM2054668v1
+Version: 1.0.0
+NeedsCompilation: no
