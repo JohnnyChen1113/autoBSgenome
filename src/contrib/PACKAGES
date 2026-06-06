@@ -15601,3 +15601,7 @@ NeedsCompilation: no
 Package: BSgenome.Bapis.NCBI.ASM3309594v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ntergarcus.NCBI.ASM2794617v1
+Version: 1.0.0
+NeedsCompilation: no
