@@ -15557,3 +15557,7 @@ NeedsCompilation: no
 Package: BSgenome.Pdenticolens.NCBI.ASM104267v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Haxanthum.NCBI.57728G013
+Version: 1.0.0
+NeedsCompilation: no
