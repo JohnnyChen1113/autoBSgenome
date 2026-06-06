@@ -15445,3 +15445,7 @@ NeedsCompilation: no
 Package: BSgenome.Tmarina.NCBI.ASM1231758v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pramosa.NCBI.ASM5649678v1
+Version: 1.0.0
+NeedsCompilation: no
