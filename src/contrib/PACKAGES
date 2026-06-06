@@ -15553,3 +15553,7 @@ NeedsCompilation: no
 Package: BSgenome.Hinfluenzae.NCBI.ASM2073604v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pdenticolens.NCBI.ASM104267v1
+Version: 1.0.0
+NeedsCompilation: no
