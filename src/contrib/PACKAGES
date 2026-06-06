@@ -15457,3 +15457,7 @@ NeedsCompilation: no
 Package: BSgenome.Eculicis.NCBI.ASM2874814v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dloeffleri.NCBI.ASM3709449v1
+Version: 1.0.0
+NeedsCompilation: no
