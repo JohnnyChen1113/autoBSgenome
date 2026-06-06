@@ -15389,3 +15389,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmarinus.NCBI.ASM1566v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pequinus.NCBI.ASM2792144v1
+Version: 1.0.0
+NeedsCompilation: no
