@@ -15577,3 +15577,7 @@ NeedsCompilation: no
 Package: BSgenome.Athereius.NCBI.ASM421481v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmelanesiensis.NCBI.ASM1690v1
+Version: 1.0.0
+NeedsCompilation: no
