@@ -15693,3 +15693,7 @@ NeedsCompilation: no
 Package: BSgenome.Saureus.NCBI.ASM1342v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lmonocytogenes.NCBI.ASM19603v1
+Version: 1.0.0
+NeedsCompilation: no
