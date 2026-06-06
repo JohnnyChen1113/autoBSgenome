@@ -15417,3 +15417,7 @@ NeedsCompilation: no
 Package: BSgenome.Ssalinus.NCBI.ASM31957v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Rsymbiont.NCBI.RSOCIDigiganteumPALHv10
+Version: 1.0.0
+NeedsCompilation: no
