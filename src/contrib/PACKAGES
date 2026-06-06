@@ -15545,3 +15545,7 @@ NeedsCompilation: no
 Package: BSgenome.Acanis.NCBI.ASM2962543v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Msepticus.NCBI.ASM326522v1
+Version: 1.0.0
+NeedsCompilation: no
