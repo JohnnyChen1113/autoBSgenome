@@ -15653,3 +15653,7 @@ NeedsCompilation: no
 Package: BSgenome.Lacidophilus.NCBI.ASM3429813v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Acolombiense.NCBI.ASM2588v1
+Version: 1.0.0
+NeedsCompilation: no
