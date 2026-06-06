@@ -15637,3 +15637,7 @@ NeedsCompilation: no
 Package: BSgenome.Gadiacens.NCBI.ASM1993100v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Bintestinalis.NCBI.ASM81482v1
+Version: 1.0.0
+NeedsCompilation: no
