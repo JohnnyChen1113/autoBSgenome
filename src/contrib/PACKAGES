@@ -15473,3 +15473,7 @@ NeedsCompilation: no
 Package: BSgenome.Pcatena.NCBI.ASM396695v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fsanguinis.NCBI.ASM299829v1
+Version: 1.0.0
+NeedsCompilation: no
