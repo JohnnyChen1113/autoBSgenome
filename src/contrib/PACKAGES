@@ -15345,3 +15345,7 @@ NeedsCompilation: no
 Package: BSgenome.Hpylori.NCBI.ASM2599845v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lcarnosum.NCBI.ASM795452v1
+Version: 1.0.0
+NeedsCompilation: no
