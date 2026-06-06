@@ -15333,3 +15333,7 @@ NeedsCompilation: no
 Package: BSgenome.Osicerae.NCBI.ASM410204v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fgonidiaformans.NCBI.ASM301969v1
+Version: 1.0.0
+NeedsCompilation: no
