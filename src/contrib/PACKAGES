@@ -15433,3 +15433,7 @@ NeedsCompilation: no
 Package: BSgenome.Mneglectum.NCBI.ASM3064420v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Psalivibrio.NCBI.ASM295057v1
+Version: 1.0.0
+NeedsCompilation: no
