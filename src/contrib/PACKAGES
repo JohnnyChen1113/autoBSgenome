@@ -15297,3 +15297,7 @@ NeedsCompilation: no
 Package: BSgenome.Ccurtum.NCBI.ASM2384v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aminutum.NCBI.ASM235553v1
+Version: 1.0.0
+NeedsCompilation: no
