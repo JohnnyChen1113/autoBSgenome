@@ -15313,3 +15313,7 @@ NeedsCompilation: no
 Package: BSgenome.Sazorense.NCBI.ASM2154v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cjejuni.NCBI.ASM908v1
+Version: 1.0.0
+NeedsCompilation: no
