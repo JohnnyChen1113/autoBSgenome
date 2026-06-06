@@ -15233,3 +15233,7 @@ NeedsCompilation: no
 Package: BSgenome.Dthermolithotrophum.NCBI.ASM19104v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aphaseoliformis.NCBI.ASM1659259v1
+Version: 1.0.0
+NeedsCompilation: no
