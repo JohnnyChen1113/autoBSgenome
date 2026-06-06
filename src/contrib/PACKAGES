@@ -15393,3 +15393,7 @@ NeedsCompilation: no
 Package: BSgenome.Pequinus.NCBI.ASM2792144v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tmicantisoli.NCBI.ASM5539274v1
+Version: 1.0.0
+NeedsCompilation: no
