@@ -15397,3 +15397,7 @@ NeedsCompilation: no
 Package: BSgenome.Tmicantisoli.NCBI.ASM5539274v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lpontis.NCBI.ASM942896v1
+Version: 1.0.0
+NeedsCompilation: no
