@@ -15561,3 +15561,7 @@ NeedsCompilation: no
 Package: BSgenome.Haxanthum.NCBI.57728G013
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mcatarrhalis.NCBI.49595F01
+Version: 1.0.0
+NeedsCompilation: no
