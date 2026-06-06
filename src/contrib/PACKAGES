@@ -15361,3 +15361,7 @@ NeedsCompilation: no
 Package: BSgenome.Nprofundicola.NCBI.ASM2172v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsubterraneus.NCBI.ASM5539019v1
+Version: 1.0.0
+NeedsCompilation: no
