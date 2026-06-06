@@ -15425,3 +15425,7 @@ NeedsCompilation: no
 Package: BSgenome.Aalbus.NCBI.ASM198957v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Spyogenes.NCBI.41965F01
+Version: 1.0.0
+NeedsCompilation: no
