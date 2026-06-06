@@ -15589,3 +15589,7 @@ NeedsCompilation: no
 Package: BSgenome.Iseriolicida.NCBI.ASM236995v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Falocis.NCBI.ASM16389v2
+Version: 1.0.0
+NeedsCompilation: no
