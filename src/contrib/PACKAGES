@@ -15465,3 +15465,7 @@ NeedsCompilation: no
 Package: BSgenome.Hovis.NCBI.ASM452477v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tacidiphilum.NCBI.ASM305796v1
+Version: 1.0.0
+NeedsCompilation: no
