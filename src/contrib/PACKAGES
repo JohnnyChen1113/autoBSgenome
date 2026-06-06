@@ -15649,3 +15649,7 @@ NeedsCompilation: no
 Package: BSgenome.Dsavutiense.NCBI.ASM3983009v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lacidophilus.NCBI.ASM3429813v1
+Version: 1.0.0
+NeedsCompilation: no
