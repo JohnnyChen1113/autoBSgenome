@@ -15401,3 +15401,7 @@ NeedsCompilation: no
 Package: BSgenome.Lpontis.NCBI.ASM942896v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lintracellularis.NCBI.ASM33171v1
+Version: 1.0.0
+NeedsCompilation: no
