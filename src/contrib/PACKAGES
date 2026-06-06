@@ -15713,3 +15713,7 @@ NeedsCompilation: no
 Package: BSgenome.Cdifficile.NCBI.ASM1888508v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Vcholerae.NCBI.ASM836960v1
+Version: 1.0.0
+NeedsCompilation: no
