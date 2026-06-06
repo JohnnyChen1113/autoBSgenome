@@ -15629,3 +15629,7 @@ NeedsCompilation: no
 Package: BSgenome.Tmelissae.NCBI.ASM2449829v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Foecophyllae.NCBI.ASM654239v2
+Version: 1.0.0
+NeedsCompilation: no
