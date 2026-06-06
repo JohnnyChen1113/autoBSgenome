@@ -15305,3 +15305,7 @@ NeedsCompilation: no
 Package: BSgenome.Sendosymbiont.NCBI.HBAv1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tgeofontis.NCBI.ASM21597v1
+Version: 1.0.0
+NeedsCompilation: no
