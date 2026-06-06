@@ -15281,3 +15281,7 @@ NeedsCompilation: no
 Package: BSgenome.Fmassiliensis.NCBI.ASM2334770v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aamylophilus.NCBI.ASM193633v1
+Version: 1.0.0
+NeedsCompilation: no
