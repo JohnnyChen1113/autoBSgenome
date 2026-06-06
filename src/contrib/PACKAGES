@@ -15369,3 +15369,7 @@ NeedsCompilation: no
 Package: BSgenome.Mvaginalis.NCBI.UHGGMGYGHGUT01563
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pdiazotrophicum.NCBI.ASM3397132v1
+Version: 1.0.0
+NeedsCompilation: no
