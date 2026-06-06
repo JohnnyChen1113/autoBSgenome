@@ -15613,3 +15613,7 @@ NeedsCompilation: no
 Package: BSgenome.Soryzae.NCBI.ASM5539681v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Fnodosum.NCBI.ASM1754v1
+Version: 1.0.0
+NeedsCompilation: no
