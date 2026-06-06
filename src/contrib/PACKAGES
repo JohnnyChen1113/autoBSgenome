@@ -15261,3 +15261,7 @@ NeedsCompilation: no
 Package: BSgenome.Lcholophilus.NCBI.ASM3038949v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Zthermophilus.NCBI.ASM2618443v1
+Version: 1.0.0
+NeedsCompilation: no
