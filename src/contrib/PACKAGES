@@ -15437,3 +15437,7 @@ NeedsCompilation: no
 Package: BSgenome.Psalivibrio.NCBI.ASM295057v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Gmorbillorum.NCBI.50279D01
+Version: 1.0.0
+NeedsCompilation: no
