@@ -15741,3 +15741,7 @@ NeedsCompilation: no
 Package: BSgenome.Paeruginosa.NCBI.ASM676v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Kpneumoniae.NCBI.ASM24018v2
+Version: 1.0.0
+NeedsCompilation: no
