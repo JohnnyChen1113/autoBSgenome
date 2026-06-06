@@ -15497,3 +15497,7 @@ NeedsCompilation: no
 Package: BSgenome.Cthiodismutans.NCBI.ASM154827v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ttakaii.NCBI.ASM154773v1
+Version: 1.0.0
+NeedsCompilation: no
