@@ -15605,3 +15605,7 @@ NeedsCompilation: no
 Package: BSgenome.Ntergarcus.NCBI.ASM2794617v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Osaccharovorans.NCBI.ASM654237v1
+Version: 1.0.0
+NeedsCompilation: no
