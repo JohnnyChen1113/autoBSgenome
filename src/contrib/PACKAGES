@@ -15669,3 +15669,7 @@ NeedsCompilation: no
 Package: BSgenome.Spneumoniae.NCBI.NCTC7465
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tthermophilus.NCBI.ASM9154v1
+Version: 1.0.0
+NeedsCompilation: no
