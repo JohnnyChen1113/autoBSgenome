@@ -15645,3 +15645,7 @@ NeedsCompilation: no
 Package: BSgenome.Rarcticus.NCBI.ASM5538291v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dsavutiense.NCBI.ASM3983009v1
+Version: 1.0.0
+NeedsCompilation: no
