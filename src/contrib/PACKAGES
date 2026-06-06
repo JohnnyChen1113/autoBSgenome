@@ -15485,3 +15485,7 @@ NeedsCompilation: no
 Package: BSgenome.Hnucleasis.NCBI.ASM1374511v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mindolicus.NCBI.ASM2522v1
+Version: 1.0.0
+NeedsCompilation: no
