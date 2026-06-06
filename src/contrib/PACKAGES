@@ -15529,3 +15529,7 @@ NeedsCompilation: no
 Package: BSgenome.Poligofermentans.NCBI.LactobacillusoligofermentansLMG22743genome
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tacidaminovorans.NCBI.ASM2490v1
+Version: 1.0.0
+NeedsCompilation: no
