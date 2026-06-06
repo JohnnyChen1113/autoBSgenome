@@ -15385,3 +15385,7 @@ NeedsCompilation: no
 Package: BSgenome.Ubacterial.NCBI.Harlequinendosymbiont1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pmarinus.NCBI.ASM1566v1
+Version: 1.0.0
+NeedsCompilation: no
