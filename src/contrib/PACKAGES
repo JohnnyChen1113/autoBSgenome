@@ -15501,3 +15501,7 @@ NeedsCompilation: no
 Package: BSgenome.Ttakaii.NCBI.ASM154773v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tobliviosus.NCBI.ASM4045142v1
+Version: 1.0.0
+NeedsCompilation: no
