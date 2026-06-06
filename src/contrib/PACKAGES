@@ -15249,3 +15249,7 @@ NeedsCompilation: no
 Package: BSgenome.Apalmae.NCBI.ASM96805v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Cexile.NCBI.ASM28433v1
+Version: 1.0.0
+NeedsCompilation: no
