@@ -15229,3 +15229,7 @@ NeedsCompilation: no
 Package: BSgenome.Marchaeiphilus.NCBI.ASM4715973v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Dthermolithotrophum.NCBI.ASM19104v1
+Version: 1.0.0
+NeedsCompilation: no
