@@ -15421,3 +15421,7 @@ NeedsCompilation: no
 Package: BSgenome.Rsymbiont.NCBI.RSOCIDigiganteumPALHv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aalbus.NCBI.ASM198957v1
+Version: 1.0.0
+NeedsCompilation: no
