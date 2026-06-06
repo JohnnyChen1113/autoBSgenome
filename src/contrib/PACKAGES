@@ -15489,3 +15489,7 @@ NeedsCompilation: no
 Package: BSgenome.Mindolicus.NCBI.ASM2522v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pproximum.NCBI.ASM5038978v1
+Version: 1.0.0
+NeedsCompilation: no
