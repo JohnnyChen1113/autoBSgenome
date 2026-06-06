@@ -15721,3 +15721,7 @@ NeedsCompilation: no
 Package: BSgenome.Bsubtilis.NCBI.ASM904v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Mtuberculosis.NCBI.ASM19595v2
+Version: 1.0.0
+NeedsCompilation: no
