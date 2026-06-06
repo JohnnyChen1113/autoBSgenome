@@ -15509,3 +15509,7 @@ NeedsCompilation: no
 Package: BSgenome.Tpetrophila.NCBI.ASM1678v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hokinawensis.NCBI.ASM5538551v1
+Version: 1.0.0
+NeedsCompilation: no
