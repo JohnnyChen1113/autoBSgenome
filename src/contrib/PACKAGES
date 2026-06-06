@@ -15377,3 +15377,7 @@ NeedsCompilation: no
 Package: BSgenome.Eminutum.NCBI.ASM2014v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Achristensenii.NCBI.ASM154310v1
+Version: 1.0.0
+NeedsCompilation: no
