@@ -15661,3 +15661,7 @@ NeedsCompilation: no
 Package: BSgenome.Pmarina.NCBI.ASM2156v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Clactatifermentans.NCBI.ASM1331581v1
+Version: 1.0.0
+NeedsCompilation: no
