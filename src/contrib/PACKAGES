@@ -15285,3 +15285,7 @@ NeedsCompilation: no
 Package: BSgenome.Aamylophilus.NCBI.ASM193633v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amartiniensis.NCBI.ASM4318748v1
+Version: 1.0.0
+NeedsCompilation: no
