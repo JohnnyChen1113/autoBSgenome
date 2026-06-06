@@ -15525,3 +15525,7 @@ NeedsCompilation: no
 Package: BSgenome.Adelphinicola.NCBI.57566E02
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Poligofermentans.NCBI.LactobacillusoligofermentansLMG22743genome
+Version: 1.0.0
+NeedsCompilation: no
