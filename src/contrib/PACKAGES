@@ -15349,3 +15349,7 @@ NeedsCompilation: no
 Package: BSgenome.Lcarnosum.NCBI.ASM795452v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hmaritima.NCBI.ASM19413v1
+Version: 1.0.0
+NeedsCompilation: no
