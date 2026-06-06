@@ -15321,3 +15321,7 @@ NeedsCompilation: no
 Package: BSgenome.Aguangzhouensis.NCBI.ASM81522v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ppaludilacus.NCBI.ASM1868759v1
+Version: 1.0.0
+NeedsCompilation: no
