@@ -15521,3 +15521,7 @@ NeedsCompilation: no
 Package: BSgenome.Ldextrinicus.NCBI.ASM883138v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Adelphinicola.NCBI.57566E02
+Version: 1.0.0
+NeedsCompilation: no
