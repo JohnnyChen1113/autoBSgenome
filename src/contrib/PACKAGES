@@ -15673,3 +15673,7 @@ NeedsCompilation: no
 Package: BSgenome.Tthermophilus.NCBI.ASM9154v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ngonorrhoeae.NCBI.ASM1303007v1
+Version: 1.0.0
+NeedsCompilation: no
