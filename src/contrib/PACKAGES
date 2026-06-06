@@ -15677,3 +15677,7 @@ NeedsCompilation: no
 Package: BSgenome.Ngonorrhoeae.NCBI.ASM1303007v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Nmeningitidis.NCBI.ASM2286964v1
+Version: 1.0.0
+NeedsCompilation: no
