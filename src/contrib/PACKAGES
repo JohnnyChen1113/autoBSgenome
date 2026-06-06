@@ -15477,3 +15477,7 @@ NeedsCompilation: no
 Package: BSgenome.Fsanguinis.NCBI.ASM299829v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lgraminis.NCBI.ASM902587v1
+Version: 1.0.0
+NeedsCompilation: no
