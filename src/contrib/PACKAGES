@@ -15273,3 +15273,7 @@ NeedsCompilation: no
 Package: BSgenome.Hducreyi.NCBI.ASM164769v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Aaeolicus.NCBI.ASM862v1
+Version: 1.0.0
+NeedsCompilation: no
