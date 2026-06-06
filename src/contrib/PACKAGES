@@ -15353,3 +15353,7 @@ NeedsCompilation: no
 Package: BSgenome.Hmaritima.NCBI.ASM19413v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Tasinigenitalis.NCBI.ASM22662v1
+Version: 1.0.0
+NeedsCompilation: no
