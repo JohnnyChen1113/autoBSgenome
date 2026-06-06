@@ -15453,3 +15453,7 @@ NeedsCompilation: no
 Package: BSgenome.Nkaiyonis.NCBI.ASM2794372v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Eculicis.NCBI.ASM2874814v1
+Version: 1.0.0
+NeedsCompilation: no
