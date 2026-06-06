@@ -15573,3 +15573,7 @@ NeedsCompilation: no
 Package: BSgenome.Sturicensis.NCBI.ASM1938025v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Athereius.NCBI.ASM421481v1
+Version: 1.0.0
+NeedsCompilation: no
