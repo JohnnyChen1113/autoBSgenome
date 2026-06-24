@@ -52,7 +52,34 @@ Trigger a BSgenome package build.
 ```json
 {
   "job_id": "4c1e14f7",
-  "status": "queued"
+  "status": "queued",
+  "queue_position": 0,
+  "delete_token": "hmac-token-for-this-job"
+}
+```
+
+Keep `delete_token` private. It lets the original browser session delete the temporary GitHub Release for this build before the scheduled 14-day cleanup.
+
+### DELETE /api/build/:jobId
+
+Delete a temporary build release and its Git tag. This only applies to temporary `build-<jobId>` GitHub Releases; it does not delete packages already published to the permanent package repository.
+
+**Request:**
+
+```json
+{
+  "delete_token": "hmac-token-from-post-build"
+}
+```
+
+**Response (200):**
+
+```json
+{
+  "status": "deleted",
+  "job_id": "4c1e14f7",
+  "release_deleted": true,
+  "tag_deleted": true
 }
 ```
 
@@ -176,6 +203,7 @@ JOB=$(curl -s -X POST https://api.autobsgenome.org/api/build \
   -H "Content-Type: application/json" \
   -d '{"package_name":"BSgenome.Drerio.NCBI.GRCz11","organism":"Danio rerio","accession":"GCF_000002035.6","data_source":"ncbi","version":"1.0.0","circ_seqs":"MT"}')
 JOB_ID=$(echo $JOB | python3 -c "import json,sys; print(json.load(sys.stdin)['job_id'])")
+DELETE_TOKEN=$(echo $JOB | python3 -c "import json,sys; print(json.load(sys.stdin)['delete_token'])")
 echo "Job ID: $JOB_ID"
 
 # 2. Poll for completion
@@ -189,6 +217,11 @@ done
 # 3. Download
 URL=$(echo "$STATUS" | python3 -c "import json,sys; print(json.load(sys.stdin).get('download_url',''))")
 curl -L -o package.tar.gz "$URL"
+
+# Optional: delete the temporary public release before the 14-day cleanup
+curl -X DELETE "https://api.autobsgenome.org/api/build/$JOB_ID" \
+  -H "Content-Type: application/json" \
+  -d "{\"delete_token\":\"$DELETE_TOKEN\"}"
 ```
 
 ## Usage Example (R)
@@ -214,4 +247,5 @@ The API allows requests from:
 
 - Build triggers: limited by GitHub Actions concurrency (1 concurrent build per repo)
 - Status checks: no limit (Cloudflare Workers)
-- Packages are available for **14 days** after build, then automatically cleaned up
+- Temporary packages are available for **14 days** after build, then automatically cleaned up
+- Users can delete their current temporary build earlier with `DELETE /api/build/:jobId` when they still have the `delete_token` returned by `POST /api/build`

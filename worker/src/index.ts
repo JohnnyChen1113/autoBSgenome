@@ -99,6 +99,10 @@ async function uploadToken(
   return hmacHex(uploadSecret(env), `${uploadId}:${fileName}:${expiresAt}`);
 }
 
+async function buildDeleteToken(env: Env, jobId: string): Promise<string> {
+  return hmacHex(uploadSecret(env), `build-delete:${jobId}`);
+}
+
 function uploadKey(uploadId: string, fileName: string): string {
   return `uploads/${uploadId}/${fileName}`;
 }
@@ -152,6 +156,12 @@ export default {
     // POST /api/build — trigger a BSgenome build
     if (url.pathname === "/api/build" && request.method === "POST") {
       return handleBuild(request, env, origin);
+    }
+
+    // DELETE /api/build/:jobId — delete a temporary build release
+    const deleteBuildMatch = url.pathname.match(/^\/api\/build\/([a-zA-Z0-9-]+)$/);
+    if (deleteBuildMatch && request.method === "DELETE") {
+      return handleDeleteBuild(deleteBuildMatch[1], request, env, origin);
     }
 
     // POST /api/uploads — create a signed R2 upload URL for user FASTA files
@@ -602,6 +612,94 @@ async function handleBuild(
       job_id: jobId,
       status: "queued",
       queue_position: queue.running + queue.queued,
+      delete_token: await buildDeleteToken(env, jobId),
+    },
+    200,
+    origin,
+    env.ALLOWED_ORIGIN
+  );
+}
+
+async function handleDeleteBuild(
+  jobId: string,
+  request: Request,
+  env: Env,
+  origin: string
+): Promise<Response> {
+  const body = await request.json<{ delete_token?: string }>().catch(() => ({}));
+  const token = body.delete_token ?? "";
+  const expected = await buildDeleteToken(env, jobId);
+  if (!constantTimeEqual(token, expected)) {
+    return jsonResponse(
+      { error: "Invalid delete token" },
+      403,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  const ghHeaders = {
+    Authorization: `Bearer ${env.GITHUB_PAT}`,
+    Accept: "application/vnd.github+json",
+    "User-Agent": "AutoBSgenome-Worker",
+    "X-GitHub-Api-Version": "2022-11-28",
+  };
+  const tag = `build-${jobId}`;
+
+  let releaseDeleted = false;
+  const releaseRes = await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/releases/tags/${tag}`,
+    { headers: ghHeaders }
+  );
+  if (releaseRes.ok) {
+    const release = await releaseRes.json<{ id: number }>();
+    const deleteReleaseRes = await fetch(
+      `https://api.github.com/repos/${env.GITHUB_REPO}/releases/${release.id}`,
+      { method: "DELETE", headers: ghHeaders }
+    );
+    if (!deleteReleaseRes.ok) {
+      const details = await deleteReleaseRes.text();
+      return jsonResponse(
+        { error: "Failed to delete temporary release", details },
+        500,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+    releaseDeleted = true;
+  } else if (releaseRes.status !== 404) {
+    const details = await releaseRes.text();
+    return jsonResponse(
+      { error: "Failed to look up temporary release", details },
+      500,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  let tagDeleted = false;
+  const deleteTagRes = await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/git/refs/tags/${tag}`,
+    { method: "DELETE", headers: ghHeaders }
+  );
+  if (deleteTagRes.status === 204) {
+    tagDeleted = true;
+  } else if (deleteTagRes.status !== 404) {
+    const details = await deleteTagRes.text();
+    return jsonResponse(
+      { error: "Temporary release was deleted, but deleting its tag failed", details },
+      500,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  return jsonResponse(
+    {
+      status: "deleted",
+      job_id: jobId,
+      release_deleted: releaseDeleted,
+      tag_deleted: tagDeleted,
     },
     200,
     origin,

@@ -306,6 +306,10 @@ export default function Home() {
 
   const [jobId, setJobId] = useState("");
   const [buildError, setBuildError] = useState("");
+  const [deleteToken, setDeleteToken] = useState("");
+  const [deleteError, setDeleteError] = useState("");
+  const [deletingBuild, setDeletingBuild] = useState(false);
+  const [buildDeleted, setBuildDeleted] = useState(false);
   const [downloadUrl, setDownloadUrl] = useState("");
   const [fileName, setFileName] = useState("");
   const [fileSize, setFileSize] = useState(0);
@@ -361,6 +365,9 @@ export default function Home() {
     const resumeJob = params.get("job");
     if (resumeJob) {
       setJobId(resumeJob);
+      setDeleteToken("");
+      setBuildDeleted(false);
+      setDeleteError("");
       const now = Date.now();
       setBuildStartTime(now);
       buildStartTimeRef.current = now;
@@ -459,6 +466,9 @@ export default function Home() {
 
   const handleBuild = async () => {
     setBuildError("");
+    setDeleteError("");
+    setDeleteToken("");
+    setBuildDeleted(false);
     setUploadError("");
 
     if (form.fastaSource === "url") {
@@ -550,12 +560,18 @@ export default function Home() {
         }),
       });
 
-      const data = await res.json() as { job_id?: string; error?: string; queue_position?: number };
+      const data = await res.json() as {
+        job_id?: string;
+        delete_token?: string;
+        error?: string;
+        queue_position?: number;
+      };
       if (!res.ok || !data.job_id) {
         throw new Error(data.error ?? "Failed to start build");
       }
 
       setJobId(data.job_id);
+      setDeleteToken(data.delete_token ?? "");
       setBuildStep(1);
       if (data.queue_position && data.queue_position > 0) {
         setBuildError(`Your build is #${data.queue_position + 1} in queue. It will start automatically.`);
@@ -570,6 +586,35 @@ export default function Home() {
       setBuildError(e instanceof Error ? e.message : "Build request failed");
       setUploadState("idle");
       setStep("review");
+    }
+  };
+
+  const handleDeleteBuild = async () => {
+    if (!jobId || !deleteToken || deletingBuild) return;
+    const confirmed = window.confirm(
+      "Delete this temporary GitHub Release now? This removes the download link and cannot be undone."
+    );
+    if (!confirmed) return;
+
+    setDeletingBuild(true);
+    setDeleteError("");
+    try {
+      const res = await fetch(`${WORKER_API}/api/build/${jobId}`, {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ delete_token: deleteToken }),
+      });
+      const data = await res.json().catch(() => null) as { error?: string } | null;
+      if (!res.ok) {
+        throw new Error(data?.error ?? "Failed to delete temporary package");
+      }
+      setBuildDeleted(true);
+      setDownloadUrl("");
+      setDeleteToken("");
+    } catch (e) {
+      setDeleteError(e instanceof Error ? e.message : "Failed to delete temporary package");
+    } finally {
+      setDeletingBuild(false);
     }
   };
 
@@ -1531,7 +1576,7 @@ export default function Home() {
                 )}
 
                 <div className="flex gap-3 justify-center">
-                  {downloadUrl ? (
+                  {downloadUrl && !buildDeleted ? (
                     <a
                       href={downloadUrl}
                       download
@@ -1545,7 +1590,9 @@ export default function Home() {
                   <Button
                     variant="outline"
                     className="h-11 px-8 text-base"
+                    disabled={!downloadUrl || buildDeleted}
                     onClick={() => {
+                      if (!downloadUrl || buildDeleted) return;
                       const cmd = `install.packages("${downloadUrl}", repos = NULL, type = "source")`;
                       navigator.clipboard.writeText(cmd);
                     }}
@@ -1556,70 +1603,108 @@ export default function Home() {
 
                 <Separator />
 
-                <div className="space-y-2">
-                  <Label>Install directly in R:</Label>
-                  <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
-                    install.packages(
-                    <br />
-                    &nbsp;&nbsp;
-                    <span className="text-primary">
-                      &quot;{downloadUrl || "loading..."}&quot;
-                    </span>
-                    ,
-                    <br />
-                    &nbsp;&nbsp;repos = NULL, type ={" "}
-                    <span className="text-primary">&quot;source&quot;</span>
-                    <br />)
+                {buildDeleted ? (
+                  <div className="bg-[--success-foreground] border border-[--success]/20 rounded-md px-4 py-3 text-sm" style={{ color: "#0f7b3f" }}>
+                    Temporary GitHub Release deleted. The package download link is no longer available.
                   </div>
-                </div>
+                ) : (
+                  <div className="space-y-2">
+                    <Label>Install directly in R:</Label>
+                    <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
+                      install.packages(
+                      <br />
+                      &nbsp;&nbsp;
+                      <span className="text-primary">
+                        &quot;{downloadUrl || "loading..."}&quot;
+                      </span>
+                      ,
+                      <br />
+                      &nbsp;&nbsp;repos = NULL, type ={" "}
+                      <span className="text-primary">&quot;source&quot;</span>
+                      <br />)
+                    </div>
+                  </div>
+                )}
 
-                <div className="bg-accent border-l-[3px] border-primary rounded-r-md px-4 py-3 text-sm text-muted-foreground">
-                  This package will remain available for{" "}
-                  <strong className="text-foreground">14 days</strong> at{" "}
-                  <a
-                    href="https://github.com/JohnnyChen1113/autoBSgenome/releases"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline"
-                  >
-                    GitHub Releases
-                  </a>
-                  . Download a local copy for permanent use.
-                </div>
+                {!buildDeleted && (
+                  <div className="space-y-3">
+                    <div className="bg-accent border-l-[3px] border-primary rounded-r-md px-4 py-3 text-sm text-muted-foreground">
+                      This package will remain available for{" "}
+                      <strong className="text-foreground">14 days</strong> at{" "}
+                      <a
+                        href="https://github.com/JohnnyChen1113/autoBSgenome/releases"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline"
+                      >
+                        GitHub Releases
+                      </a>
+                      . Download a local copy for permanent use.
+                    </div>
+                    {deleteToken && (
+                      <div className="border border-border rounded-lg p-4 space-y-3 text-sm">
+                        <div>
+                          <h4 className="font-heading font-semibold text-foreground">Remove temporary download</h4>
+                          <p className="text-muted-foreground mt-1">
+                            Delete this build&apos;s temporary GitHub Release now instead of waiting for cleanup.
+                          </p>
+                        </div>
+                        {deleteError && (
+                          <p className="text-sm text-destructive">{deleteError}</p>
+                        )}
+                        <Button
+                          type="button"
+                          variant="outline"
+                          className="w-full border-destructive/40 text-destructive hover:bg-destructive/10"
+                          disabled={deletingBuild}
+                          onClick={handleDeleteBuild}
+                        >
+                          {deletingBuild ? "Deleting..." : "Delete temporary package"}
+                        </Button>
+                      </div>
+                    )}
+                  </div>
+                )}
 
                 {/* AI tool prompt */}
-                <Accordion>
-                  <AccordionItem value="ai-prompt">
-                    <AccordionTrigger className="text-sm">
-                      Use with AI coding tools (Claude Code, Claw, Cursor...)
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      <p className="text-sm text-muted-foreground mb-2">
-                        Copy this prompt and paste it into your AI coding assistant:
-                      </p>
-                      <div className="relative">
-                        <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
-                          Help me install this BSgenome R package:{" "}
-                          {downloadUrl || `https://github.com/JohnnyChen1113/autoBSgenome/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}
+                {!buildDeleted && (
+                  <Accordion>
+                    <AccordionItem value="ai-prompt">
+                      <AccordionTrigger className="text-sm">
+                        Use with AI coding tools (Claude Code, Claw, Cursor...)
+                      </AccordionTrigger>
+                      <AccordionContent>
+                        <p className="text-sm text-muted-foreground mb-2">
+                          Copy this prompt and paste it into your AI coding assistant:
+                        </p>
+                        <div className="relative">
+                          <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
+                            Help me install this BSgenome R package:{" "}
+                            {downloadUrl || `https://github.com/JohnnyChen1113/autoBSgenome/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}
+                          </div>
+                          <button
+                            type="button"
+                            className="absolute top-2 right-2 p-1.5 rounded bg-background border border-border text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                            onClick={() => {
+                              const prompt = `Help me install this BSgenome R package: ${downloadUrl || `https://github.com/JohnnyChen1113/autoBSgenome/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}`;
+                              navigator.clipboard.writeText(prompt);
+                            }}
+                            title="Copy to clipboard"
+                          >
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                          </button>
                         </div>
-                        <button
-                          type="button"
-                          className="absolute top-2 right-2 p-1.5 rounded bg-background border border-border text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-                          onClick={() => {
-                            const prompt = `Help me install this BSgenome R package: ${downloadUrl || `https://github.com/JohnnyChen1113/autoBSgenome/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}`;
-                            navigator.clipboard.writeText(prompt);
-                          }}
-                          title="Copy to clipboard"
-                        >
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                        </button>
-                      </div>
-                    </AccordionContent>
-                  </AccordionItem>
-                </Accordion>
+                      </AccordionContent>
+                    </AccordionItem>
+                  </Accordion>
+                )}
 
                 {/* Publish to permanent repo */}
-                {form.fastaSource !== "ncbi" ? (
+                {buildDeleted && !isPublished ? (
+                  <div className="border border-border rounded-lg p-4 text-sm text-muted-foreground">
+                    This temporary build was deleted. Publishing is no longer available for this build.
+                  </div>
+                ) : form.fastaSource !== "ncbi" ? (
                   <div className="border border-border rounded-lg p-4 text-sm text-muted-foreground">
                     User-supplied FASTA builds are temporary public GitHub Release downloads only. They are not published to the community package repository because AutoBSgenome cannot verify a public source accession for the sequence data.
                   </div>
@@ -1699,6 +1784,10 @@ export default function Home() {
                     setUploadedFasta(null);
                     setUploadError("");
                     setUploadState("idle");
+                    setDeleteToken("");
+                    setDeleteError("");
+                    setDeletingBuild(false);
+                    setBuildDeleted(false);
                   }}
                 >
                   Build Another Package
