@@ -226,7 +226,7 @@ The right peer comparison for BSgenome is not universal-infrastructure cornersto
 - On GitHub Actions hosted runners (16 GB RAM, ~88 GB usable disk), chromosome-level assemblies have been successfully built up to 34.56 GB (Australian lungfish, 46 sequences). Two regimes currently fall outside this envelope:
   1. **Highly fragmented assemblies** (≳30,000 contigs) — R-side forge stage exceeds 16 GB RAM regardless of total base count (see R4). Mitigations: optional contig-length filter at submission, or self-hosted runner with more memory.
   2. **Very large genomes** (raw size ≳150 GB, e.g. *Paris japonica*, some *Fritillaria* spp.) — exceed runner disk envelope and Zenodo per-record 50 GB cap. Requires self-hosted runner and chunked artifact distribution; planned in `docs/SELF-HOSTED-RUNNER-PLAN.md`.
-- User-provided FASTA not yet supported; only public-accession inputs through NCBI Datasets and Ensembl REST.
+- User-provided FASTA is now supported through HTTPS FASTA URLs and local multipart upload. These builds are temporary by default, include nucleotide FASTA validation, can be deleted by the user, and can enter the permanent repository only through explicit public-release opt-in with user-asserted provenance.
 - A small set of Ensembl assemblies use non-standard filename patterns and require manual resolver entries; coverage of these is ongoing.
 - Masked BSgenome variants are intentionally not provided, consistent with Bioconductor's `BSgenome` + `MaskerSet` overlay model.
 - 34.56 GB is the **current** empirical ceiling, not a theoretical one. The architecture admits further upward stress testing on additional chromosome-level large-genome targets (e.g. African lungfish ~40 GB, conifer references in the 20–31 GB range).
