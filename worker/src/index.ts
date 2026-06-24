@@ -49,7 +49,7 @@ async function sha256Hex(blob: Blob): Promise<string> {
 }
 
 const MAX_QUEUE_SIZE = 5;
-const MAX_FASTA_UPLOAD_BYTES = 2 * 1024 * 1024 * 1024;
+const MAX_FASTA_UPLOAD_BYTES = 100 * 1024 * 1024;
 const UPLOAD_URL_TTL_SECONDS = 7 * 24 * 60 * 60;
 const FASTA_EXT_RE = /\.(fa|fasta|fna|fas)(\.gz)?$/i;
 
@@ -445,10 +445,38 @@ async function handleBuild(
 
   const fastaSource = body.fasta_source === "upload"
     ? "upload"
+    : body.fasta_source === "url"
+    ? "url"
     : body.data_source ?? "ncbi";
   let fastaUploadUrl = "";
+  let fastaUrl = "";
   let fastaFileName = "";
   let fastaFileSize = "";
+
+  if (fastaSource === "url") {
+    if (!body.fasta_url) {
+      return jsonResponse(
+        { error: "Missing fasta_url for FASTA URL build" },
+        400,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+    try {
+      const parsed = new URL(body.fasta_url);
+      if (parsed.protocol !== "https:" && parsed.protocol !== "http:") {
+        throw new Error("unsupported protocol");
+      }
+      fastaUrl = parsed.toString();
+    } catch {
+      return jsonResponse(
+        { error: "Invalid fasta_url; use an http or https URL" },
+        400,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+  }
 
   if (fastaSource === "upload") {
     if (!env.FASTA_UPLOADS) {
@@ -545,6 +573,7 @@ async function handleBuild(
           extra: JSON.stringify({
             data_source: body.data_source ?? "ncbi",
             fasta_source: fastaSource,
+            fasta_url: fastaUrl,
             fasta_upload_url: fastaUploadUrl,
             fasta_file_name: fastaFileName,
             fasta_file_size: fastaFileSize,
@@ -683,9 +712,9 @@ async function handlePublish(
   if (!body.job_id) {
     return jsonResponse({ error: "Missing job_id" }, 400, origin, env.ALLOWED_ORIGIN);
   }
-  if (body.metadata?.fasta_source === "upload") {
+  if (body.metadata?.fasta_source === "upload" || body.metadata?.fasta_source === "url") {
     return jsonResponse(
-      { error: "Uploaded FASTA builds are temporary and cannot be published to the public repository" },
+      { error: "User-supplied FASTA builds are temporary and cannot be published to the public repository" },
       400,
       origin,
       env.ALLOWED_ORIGIN

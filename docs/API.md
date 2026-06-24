@@ -38,7 +38,8 @@ Trigger a BSgenome package build.
 | `circ_seqs` | No | Circular sequences, comma-separated (e.g. `MT`) or `character(0)` |
 | `accession` | No | NCBI accession (e.g. `GCF_000001405.40`) — used for FASTA download |
 | `data_source` | No | `ncbi` or `ensembl` (default: `ncbi`) — determines FASTA download source |
-| `fasta_source` | No | `upload` to use a user-uploaded FASTA; otherwise omitted or set by `data_source` |
+| `fasta_source` | No | `url` to download a user-provided FASTA URL, `upload` to use a browser-uploaded FASTA; otherwise omitted or set by `data_source` |
+| `fasta_url` | Only for URL builds | HTTP(S) URL for a `.fa`, `.fasta`, `.fna`, `.fas`, or gzip-compressed FASTA file |
 | `fasta_upload_url` | Only for uploads | Signed `download_url` returned by `POST /api/uploads` |
 | `fasta_file_name` | Only for uploads | Original uploaded FASTA filename |
 | `fasta_file_size` | Only for uploads | Uploaded FASTA byte size |
@@ -54,6 +55,27 @@ Trigger a BSgenome package build.
   "status": "queued"
 }
 ```
+
+### FASTA URL builds
+
+Use `fasta_source: "url"` when the FASTA file is hosted outside NCBI or Ensembl, for example on a lab server, ENA/JGI/UCSC download endpoint, Zenodo draft file, or an object-store signed URL.
+
+```json
+{
+  "package_name": "BSgenome.Custom.URL.MyAssembly",
+  "organism": "Custom organism",
+  "genome": "MyAssembly",
+  "provider": "URL",
+  "version": "1.0.0",
+  "circ_seqs": "character(0)",
+  "data_source": "ncbi",
+  "fasta_source": "url",
+  "fasta_url": "https://example.org/path/genome.fa.gz",
+  "source_url": "https://example.org/assembly-page"
+}
+```
+
+The build workflow downloads `fasta_url` directly in GitHub Actions and does not echo the URL in logs. The final package is still delivered as a temporary public GitHub Release asset, so do not use private or sensitive sequence data unless public temporary artifacts are acceptable.
 
 ### POST /api/uploads
 
@@ -79,7 +101,7 @@ Create a signed upload URL for a user-provided FASTA file. The API stores the fi
   "upload_url": "https://api.autobsgenome.org/api/uploads/...",
   "download_url": "https://api.autobsgenome.org/api/uploads/...",
   "expires_at": "2026-06-25T18:00:00.000Z",
-  "max_upload_bytes": 2147483648
+  "max_upload_bytes": 104857600
 }
 ```
 
@@ -108,7 +130,7 @@ Then trigger a build with:
 ```
 
 Supported file names end in `.fa`, `.fasta`, `.fna`, or `.fas`, optionally with `.gz`.
-Uploaded FASTA builds produce temporary GitHub Release downloads only; they are not added to the public package repository or `packages.json`. Do not upload private or sensitive sequence data unless the deployment's artifact storage policy is appropriate for that data.
+Browser uploads currently support files up to 100 MB because the file body passes through the Worker request. Use FASTA URL for larger files until multipart direct upload is implemented. Uploaded FASTA builds produce temporary GitHub Release downloads only; they are not added to the public package repository or `packages.json`. Do not upload private or sensitive sequence data unless the deployment's artifact storage policy is appropriate for that data.
 
 ### GET /api/status/:jobId
 

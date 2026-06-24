@@ -51,7 +51,8 @@ interface FormData {
   title: string;
   description: string;
   sourceUrl: string;
-  fastaSource: "ncbi" | "upload";
+  fastaSource: "ncbi" | "url" | "upload";
+  fastaUrl: string;
 }
 
 const EMPTY_FORM: FormData = {
@@ -67,6 +68,7 @@ const EMPTY_FORM: FormData = {
   description: "",
   sourceUrl: "",
   fastaSource: "ncbi",
+  fastaUrl: "",
 };
 
 type Step = "input" | "review" | "building" | "result";
@@ -89,7 +91,7 @@ interface UploadSession {
   max_upload_bytes: number;
 }
 
-const MAX_FASTA_UPLOAD_BYTES = 2 * 1024 * 1024 * 1024;
+const MAX_FASTA_UPLOAD_BYTES = 100 * 1024 * 1024;
 const FASTA_FILE_RE = /\.(fa|fasta|fna|fas)(\.gz)?$/i;
 
 function formatBytes(bytes: number) {
@@ -233,6 +235,7 @@ export default function Home() {
           description: `Full genome sequences for ${ensInfo.organism} (${ensInfo.commonName}) as provided by Ensembl (${ensInfo.assemblyName}) and stored in Biostrings objects.`,
           sourceUrl: `https://www.ensembl.org/${species.charAt(0).toUpperCase() + species.slice(1)}/Info/Index`,
           fastaSource: "ncbi",
+          fastaUrl: "",
         };
 
         setGcfSuggestion(null);
@@ -271,6 +274,7 @@ export default function Home() {
           description: generateDescription(info, info.commonName),
           sourceUrl: info.sourceUrl,
           fastaSource: "ncbi",
+          fastaUrl: "",
         };
 
         // If GCA_ has no circular seqs but has a paired GCF_, suggest switching
@@ -457,6 +461,19 @@ export default function Home() {
     setBuildError("");
     setUploadError("");
 
+    if (form.fastaSource === "url") {
+      try {
+        const parsed = new URL(form.fastaUrl.trim());
+        if (parsed.protocol !== "https:" && parsed.protocol !== "http:") {
+          setUploadError("FASTA URL must start with http:// or https://.");
+          return;
+        }
+      } catch {
+        setUploadError("Enter a valid FASTA download URL before starting the build.");
+        return;
+      }
+    }
+
     if (form.fastaSource === "upload" && !uploadedFasta) {
       setUploadError("Choose a FASTA file before starting the build.");
       return;
@@ -527,6 +544,7 @@ export default function Home() {
           source_url: form.sourceUrl,
           accession: accessionInput,
           fasta_source: form.fastaSource,
+          fasta_url: form.fastaUrl.trim(),
           data_source: dataSource,
           ...uploadPayload,
         }),
@@ -635,14 +653,18 @@ export default function Home() {
   };
 
   const needsUploadedFasta = form.fastaSource === "upload" && !uploadedFasta;
+  const needsFastaUrl = form.fastaSource === "url" && !form.fastaUrl.trim();
   const buildButtonDisabled =
     !form.packageName ||
     !form.organism ||
     packageValidation.status !== "valid" ||
-    needsUploadedFasta;
+    needsUploadedFasta ||
+    needsFastaUrl;
   const buildButtonText =
     packageValidation.status !== "valid"
       ? "Validate Package Name First"
+      : needsFastaUrl
+      ? "Enter a FASTA URL First"
       : needsUploadedFasta
       ? "Choose a FASTA File First"
       : "Build BSgenome Package";
@@ -651,6 +673,14 @@ export default function Home() {
       ? [
           "Uploading FASTA",
           "Queuing build on GitHub Actions",
+          "Converting to 2bit format",
+          "Building R package",
+          "Uploading package release",
+        ]
+      : form.fastaSource === "url"
+      ? [
+          "Queuing build on GitHub Actions",
+          "Downloading FASTA URL",
           "Converting to 2bit format",
           "Building R package",
           "Uploading package release",
@@ -1180,7 +1210,7 @@ export default function Home() {
                 {/* FASTA Source */}
                 <div className="space-y-2">
                   <Label>FASTA Source</Label>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                     <button
                       type="button"
                       className={`rounded-md border px-4 py-2.5 text-sm font-medium transition-colors cursor-pointer ${
@@ -1195,6 +1225,17 @@ export default function Home() {
                     <button
                       type="button"
                       className={`rounded-md border px-4 py-2.5 text-sm font-medium transition-colors cursor-pointer ${
+                        form.fastaSource === "url"
+                          ? "bg-accent border-primary text-primary"
+                          : "bg-background border-border text-muted-foreground hover:bg-secondary"
+                      }`}
+                      onClick={() => updateField("fastaSource", "url")}
+                    >
+                      Use FASTA URL
+                    </button>
+                    <button
+                      type="button"
+                      className={`rounded-md border px-4 py-2.5 text-sm font-medium transition-colors cursor-pointer ${
                         form.fastaSource === "upload"
                           ? "bg-accent border-primary text-primary"
                           : "bg-background border-border text-muted-foreground hover:bg-secondary"
@@ -1205,6 +1246,29 @@ export default function Home() {
                     </button>
                   </div>
                 </div>
+
+                {/* FASTA URL area */}
+                {form.fastaSource === "url" && (
+                  <div className="space-y-2">
+                    <Label htmlFor="fastaUrl">FASTA Download URL</Label>
+                    <Input
+                      id="fastaUrl"
+                      className="font-mono text-xs"
+                      placeholder="https://example.org/path/genome.fa.gz"
+                      value={form.fastaUrl}
+                      onChange={(e) => {
+                        setUploadError("");
+                        updateField("fastaUrl", e.target.value);
+                      }}
+                    />
+                    {uploadError && (
+                      <p className="text-sm text-destructive">{uploadError}</p>
+                    )}
+                    <p className="text-sm text-muted-foreground">
+                      GitHub Actions downloads this URL directly. Signed URLs are accepted, but the finished package is still delivered through a temporary public GitHub Release. Do not use private or sensitive sequence data here.
+                    </p>
+                  </div>
+                )}
 
                 {/* Upload area (shown when "upload" selected) */}
                 {form.fastaSource === "upload" && (
@@ -1281,7 +1345,7 @@ export default function Home() {
                       <p className="text-sm text-destructive">{uploadError}</p>
                     )}
                     <p className="text-sm text-muted-foreground">
-                      Uploaded FASTA builds create a temporary GitHub Release for download; they are not added to the public package repository. Do not upload private or sensitive sequence data.
+                      Browser upload currently supports files up to {formatBytes(MAX_FASTA_UPLOAD_BYTES)}. Use FASTA URL for larger files. The finished package is delivered through a temporary public GitHub Release, so do not upload private or sensitive sequence data.
                     </p>
                   </div>
                 )}
@@ -1555,9 +1619,9 @@ export default function Home() {
                 </Accordion>
 
                 {/* Publish to permanent repo */}
-                {form.fastaSource === "upload" ? (
+                {form.fastaSource !== "ncbi" ? (
                   <div className="border border-border rounded-lg p-4 text-sm text-muted-foreground">
-                    Uploaded FASTA builds are temporary GitHub Release downloads only. They are not published to the public package repository because AutoBSgenome cannot verify a public source accession for user-supplied sequence data.
+                    User-supplied FASTA builds are temporary public GitHub Release downloads only. They are not published to the community package repository because AutoBSgenome cannot verify a public source accession for the sequence data.
                   </div>
                 ) : !isPublished ? (
                   <div className="border border-border rounded-lg p-4 space-y-3">

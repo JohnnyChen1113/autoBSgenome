@@ -63,6 +63,7 @@ jobs:
               'accession': p.get('accession', ''),
               'data_source': extra.get('data_source', 'ncbi'),
               'fasta_source': extra.get('fasta_source', extra.get('data_source', 'ncbi')),
+              'fasta_url': extra.get('fasta_url', ''),
               'fasta_upload_url': extra.get('fasta_upload_url', ''),
               'fasta_file_name': extra.get('fasta_file_name', ''),
               'fasta_file_size': extra.get('fasta_file_size', ''),
@@ -83,7 +84,7 @@ jobs:
           PYEOF
 
       - name: Download FASTA from NCBI
-        if: steps.params.outputs.fasta_source != 'upload' && steps.params.outputs.data_source == 'ncbi'
+        if: steps.params.outputs.fasta_source == 'ncbi'
         run: |
           START=$(date +%s)
           ACCESSION="${{ steps.params.outputs.accession }}"
@@ -118,7 +119,7 @@ jobs:
           python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Download FASTA from Ensembl
-        if: steps.params.outputs.fasta_source != 'upload' && steps.params.outputs.data_source == 'ensembl'
+        if: steps.params.outputs.fasta_source == 'ensembl'
         run: |
           SPECIES_URL="${{ steps.params.outputs.species_url }}"
           GROUP="${{ steps.params.outputs.ensembl_group }}"
@@ -144,6 +145,40 @@ jobs:
           FASTA_SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
           python3 scripts/record_metric.py timings_sec.fasta_download $((END - START))
           python3 scripts/record_metric.py fasta_size_bytes $FASTA_SIZE
+          python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+
+      - name: Download FASTA from URL
+        if: steps.params.outputs.fasta_source == 'url'
+        env:
+          FASTA_URL: ${{ steps.params.outputs.fasta_url }}
+        run: |
+          START=$(date +%s)
+          if [ -z "$FASTA_URL" ]; then
+            echo "ERROR: missing FASTA URL"
+            exit 1
+          fi
+
+          echo "Downloading user-provided FASTA URL..."
+          curl -fL --retry 3 --retry-delay 10 --retry-all-errors -o downloaded.fasta "$FASTA_URL"
+
+          if gzip -t downloaded.fasta >/dev/null 2>&1; then
+            gunzip -c downloaded.fasta > genome.fa
+            rm -f downloaded.fasta
+          else
+            mv downloaded.fasta genome.fa
+          fi
+
+          if ! grep -q "^>" genome.fa; then
+            echo "ERROR: downloaded file does not look like FASTA"
+            exit 1
+          fi
+
+          ls -lh genome.fa
+          END=$(date +%s)
+          FASTA_SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
+          python3 scripts/record_metric.py timings_sec.fasta_download $((END - START))
+          python3 scripts/record_metric.py fasta_size_bytes $FASTA_SIZE
+          python3 scripts/record_metric.py fasta_source url
           python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Download uploaded FASTA
@@ -352,10 +387,10 @@ jobs:
           fi
           echo "tarball_size=$SIZE" >> $GITHUB_OUTPUT
 
-      - name: Reject oversized uploaded FASTA package
-        if: steps.storage.outputs.backend == 'zenodo' && steps.params.outputs.fasta_source == 'upload'
+      - name: Reject oversized user-supplied FASTA package
+        if: steps.storage.outputs.backend == 'zenodo' && (steps.params.outputs.fasta_source == 'upload' || steps.params.outputs.fasta_source == 'url')
         run: |
-          echo "ERROR: uploaded FASTA build produced a tarball larger than the GitHub Releases asset limit. Public Zenodo archival is disabled for uploaded FASTA builds."
+          echo "ERROR: user-supplied FASTA build produced a tarball larger than the GitHub Releases asset limit. Public Zenodo archival is disabled for user-supplied FASTA builds."
           exit 1
 
       - name: Create GitHub Release
@@ -387,7 +422,7 @@ jobs:
           > This release will be automatically cleaned up after 14 days."
 
       - name: Publish to permanent repository
-        if: steps.storage.outputs.backend == 'github' && steps.params.outputs.fasta_source != 'upload'
+        if: steps.storage.outputs.backend == 'github' && (steps.params.outputs.fasta_source == 'ncbi' || steps.params.outputs.fasta_source == 'ensembl')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -520,7 +555,7 @@ jobs:
             -f "client_payload[storage_info]=${STORAGE_INFO}"
 
       - name: Publish oversized tarball to Zenodo
-        if: steps.storage.outputs.backend == 'zenodo' && steps.params.outputs.fasta_source != 'upload'
+        if: steps.storage.outputs.backend == 'zenodo' && (steps.params.outputs.fasta_source == 'ncbi' || steps.params.outputs.fasta_source == 'ensembl')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
