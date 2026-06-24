@@ -15745,3 +15745,15 @@ NeedsCompilation: no
 Package: BSgenome.Kpneumoniae.NCBI.ASM24018v2
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Hsediminicola.NCBI.ASM75524v1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Naltunense.NCBI.ASM73198v1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Uvaginalis.NCBI.ASM5216175v1
+Version: 1.0.0
+NeedsCompilation: no
