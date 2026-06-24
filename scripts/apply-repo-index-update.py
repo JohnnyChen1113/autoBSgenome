@@ -168,6 +168,7 @@ def main() -> None:
     external_url = storage_info.get("download_url", "")
     doi = storage_info.get("doi", "")
     incoming_source_url = (storage_info.get("source_url", "") or "").strip()
+    license_name = (storage_info.get("license", "") or "").strip()
     release_date = (storage_info.get("release_date", "") or "").strip()
 
     taxonomy, group, common_name = taxonomy_for_organism(organism)
@@ -199,6 +200,8 @@ def main() -> None:
         "storage": storage,
         "download_url": external_url or default_url,
     }
+    if license_name:
+        new_entry["license"] = license_name
     if release_date:
         new_entry["release_date"] = release_date
         new_entry["published"] = release_date

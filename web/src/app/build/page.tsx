@@ -86,15 +86,28 @@ interface BuildRecord {
 
 interface UploadSession {
   upload_id: string;
+  r2_upload_id: string;
   file_name: string;
   file_size: number;
-  upload_url: string;
+  part_size: number;
+  part_url_template: string;
+  complete_url: string;
   download_url: string;
+  delete_url: string;
   max_upload_bytes: number;
 }
 
-const MAX_FASTA_UPLOAD_BYTES = 100 * 1024 * 1024;
+interface UploadPartResult {
+  part_number: number;
+  etag: string;
+}
+
+const MAX_FASTA_UPLOAD_BYTES = 4 * 1024 * 1024 * 1024;
+const FASTA_PREVIEW_BYTES = 1024 * 1024;
 const FASTA_FILE_RE = /\.(fa|fasta|fna|fas)(\.gz)?$/i;
+const PROTEIN_FASTA_FILE_RE = /\.(faa|pep|aa)(\.gz)?$/i;
+const NUCLEOTIDE_CHARS = new Set("ACGTUNRYSWKMBDHVacgtunryswkmbdhv.-");
+const PROTEIN_ONLY_CHARS = new Set("EFILPQZJXO*efilpqzjxo*");
 
 function formatBytes(bytes: number) {
   if (!Number.isFinite(bytes) || bytes <= 0) return "0 B";
@@ -132,6 +145,94 @@ function loadBuildHistory(): BuildRecord[] {
 
 function replaceBuildHistory(history: BuildRecord[]) {
   localStorage.setItem("autobsgenome_history", JSON.stringify(history.slice(0, 20)));
+}
+
+async function readFastaPreview(file: File): Promise<string> {
+  const lowerName = file.name.toLowerCase();
+  if (!lowerName.endsWith(".gz")) {
+    const buffer = await file.slice(0, FASTA_PREVIEW_BYTES).arrayBuffer();
+    return new TextDecoder("utf-8", { fatal: false }).decode(buffer);
+  }
+
+  if (typeof DecompressionStream === "undefined") {
+    throw new Error("This browser cannot pre-check gzip FASTA files. Use an uncompressed FASTA or a current Chrome/Edge/Safari/Firefox release.");
+  }
+
+  const reader = file.stream().pipeThrough(new DecompressionStream("gzip")).getReader();
+  const chunks: Uint8Array[] = [];
+  let total = 0;
+  try {
+    while (total < FASTA_PREVIEW_BYTES) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      chunks.push(value);
+      total += value.byteLength;
+    }
+  } finally {
+    await reader.cancel().catch(() => undefined);
+  }
+
+  const merged = new Uint8Array(Math.min(total, FASTA_PREVIEW_BYTES));
+  let offset = 0;
+  for (const chunk of chunks) {
+    const slice = chunk.subarray(0, Math.min(chunk.byteLength, merged.byteLength - offset));
+    merged.set(slice, offset);
+    offset += slice.byteLength;
+    if (offset >= merged.byteLength) break;
+  }
+  return new TextDecoder("utf-8", { fatal: false }).decode(merged);
+}
+
+function validateNucleotideFastaPreview(text: string) {
+  const normalized = text.replace(/^\uFEFF/, "");
+  const first = normalized.trimStart()[0];
+  if (!first) {
+    throw new Error("The selected file appears to be empty after decompression.");
+  }
+  if (first === "@") {
+    throw new Error("This looks like FASTQ, not FASTA. Upload a nucleotide FASTA file.");
+  }
+  if (first !== ">") {
+    throw new Error("FASTA files must start with a > header line.");
+  }
+
+  let headerCount = 0;
+  let sequenceChars = 0;
+  const invalidChars = new Set<string>();
+  const proteinChars = new Set<string>();
+
+  for (const rawLine of normalized.split(/\r?\n/)) {
+    const line = rawLine.trim();
+    if (!line) continue;
+    if (line.startsWith(">")) {
+      headerCount += 1;
+      continue;
+    }
+    if (headerCount === 0) {
+      throw new Error("Sequence data appears before the first FASTA header.");
+    }
+
+    for (const char of line.replace(/\s+/g, "")) {
+      if (!NUCLEOTIDE_CHARS.has(char)) {
+        invalidChars.add(char);
+      }
+      if (PROTEIN_ONLY_CHARS.has(char)) {
+        proteinChars.add(char);
+      }
+      sequenceChars += 1;
+    }
+  }
+
+  if (headerCount === 0 || sequenceChars === 0) {
+    throw new Error("No FASTA sequence data was found in the selected file.");
+  }
+  if (invalidChars.size > 0) {
+    const chars = [...invalidChars].slice(0, 12).join(" ");
+    if (proteinChars.size > 0) {
+      throw new Error(`This looks like a protein FASTA, not a nucleotide FASTA. Invalid nucleotide characters: ${chars}`);
+    }
+    throw new Error(`Invalid nucleotide FASTA characters detected: ${chars}`);
+  }
 }
 
 export default function Home() {
@@ -324,6 +425,12 @@ export default function Home() {
   const [buildStartTime, setBuildStartTime] = useState(0);
   const [isPublished, setIsPublished] = useState(false);
   const [publishing, setPublishing] = useState(false);
+  const [publishError, setPublishError] = useState("");
+  const [publicOptIn, setPublicOptIn] = useState(false);
+  const [publicRightsConfirmed, setPublicRightsConfirmed] = useState(false);
+  const [publicReleaseConfirmed, setPublicReleaseConfirmed] = useState(false);
+  const [publicLicense, setPublicLicense] = useState("CC0-1.0");
+  const [publicSourceUrl, setPublicSourceUrl] = useState("");
   const [queueInfo, setQueueInfo] = useState<{
     running: number;
     queued: number;
@@ -333,7 +440,8 @@ export default function Home() {
   const [buildTotalTime, setBuildTotalTime] = useState(0);
   const [uploadedFasta, setUploadedFasta] = useState<File | null>(null);
   const [uploadError, setUploadError] = useState("");
-  const [uploadState, setUploadState] = useState<"idle" | "uploading" | "uploaded">("idle");
+  const [uploadState, setUploadState] = useState<"idle" | "validating" | "uploading" | "uploaded">("idle");
+  const [uploadProgress, setUploadProgress] = useState(0);
   const [isDragActive, setIsDragActive] = useState(false);
 
   const WORKER_API = "https://api.autobsgenome.org";
@@ -342,11 +450,18 @@ export default function Home() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   formRef.current = form;
 
-  const selectFastaFile = useCallback((file?: File) => {
+  const selectFastaFile = useCallback(async (file?: File) => {
     setUploadError("");
     setUploadState("idle");
+    setUploadProgress(0);
 
     if (!file) return;
+    setUploadedFasta(file);
+    if (PROTEIN_FASTA_FILE_RE.test(file.name)) {
+      setUploadedFasta(null);
+      setUploadError("Protein FASTA files are not supported. Choose a nucleotide genome FASTA file.");
+      return;
+    }
     if (!FASTA_FILE_RE.test(file.name)) {
       setUploadedFasta(null);
       setUploadError("Choose a FASTA file ending in .fa, .fasta, .fna, .fas, optionally .gz.");
@@ -363,7 +478,16 @@ export default function Home() {
       return;
     }
 
-    setUploadedFasta(file);
+    setUploadState("validating");
+    try {
+      const preview = await readFastaPreview(file);
+      validateNucleotideFastaPreview(preview);
+      setUploadState("idle");
+    } catch (e) {
+      setUploadedFasta(null);
+      setUploadState("idle");
+      setUploadError(e instanceof Error ? e.message : "Failed to pre-check FASTA file.");
+    }
   }, []);
 
   // Restore build state or pre-fill accession from URL on page load
@@ -471,11 +595,66 @@ export default function Home() {
     return () => clearInterval(tick);
   }, [step, buildStartTime]);
 
+  const uploadFastaFile = async (file: File) => {
+    setUploadState("uploading");
+    setUploadProgress(0);
+    const sessionRes = await fetch(`${WORKER_API}/api/uploads`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        file_name: file.name,
+        file_size: file.size,
+        content_type: file.type || "application/octet-stream",
+      }),
+    });
+    const session = await sessionRes.json() as UploadSession & { error?: string };
+    if (!sessionRes.ok || !session.part_url_template || !session.complete_url || !session.download_url) {
+      throw new Error(session.error ?? "Failed to create FASTA upload session");
+    }
+
+    const partSize = session.part_size || 64 * 1024 * 1024;
+    const totalParts = Math.ceil(file.size / partSize);
+    const parts: UploadPartResult[] = [];
+
+    for (let index = 0; index < totalParts; index += 1) {
+      const partNumber = index + 1;
+      const start = index * partSize;
+      const end = Math.min(file.size, start + partSize);
+      const partUrl = session.part_url_template.replace("{part_number}", String(partNumber));
+      const partRes = await fetch(partUrl, {
+        method: "PUT",
+        headers: { "Content-Type": "application/octet-stream" },
+        body: file.slice(start, end),
+      });
+      const part = await partRes.json().catch(() => null) as (UploadPartResult & { error?: string }) | null;
+      if (!partRes.ok || !part?.etag) {
+        throw new Error(part?.error ?? `FASTA upload failed at part ${partNumber}`);
+      }
+      parts.push({ part_number: partNumber, etag: part.etag });
+      setUploadProgress(Math.round((partNumber / totalParts) * 100));
+    }
+
+    const completeRes = await fetch(session.complete_url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ parts }),
+    });
+    const complete = await completeRes.json().catch(() => null) as { error?: string } | null;
+    if (!completeRes.ok) {
+      throw new Error(complete?.error ?? "Failed to finish FASTA upload");
+    }
+
+    setUploadState("uploaded");
+    setUploadProgress(100);
+    return session;
+  };
+
   const handleBuild = async () => {
     setBuildError("");
     setDeleteError("");
     setDeleteToken("");
     setBuildDeleted(false);
+    setPublishError("");
     setUploadError("");
 
     if (form.fastaSource === "url") {
@@ -508,34 +687,7 @@ export default function Home() {
       let uploadPayload: Record<string, string> = {};
 
       if (form.fastaSource === "upload" && uploadedFasta) {
-        setUploadState("uploading");
-        const sessionRes = await fetch(`${WORKER_API}/api/uploads`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            file_name: uploadedFasta.name,
-            file_size: uploadedFasta.size,
-            content_type: uploadedFasta.type || "application/octet-stream",
-          }),
-        });
-        const session = await sessionRes.json() as UploadSession & { error?: string };
-        if (!sessionRes.ok || !session.upload_url || !session.download_url) {
-          throw new Error(session.error ?? "Failed to create FASTA upload session");
-        }
-
-        const uploadRes = await fetch(session.upload_url, {
-          method: "PUT",
-          headers: {
-            "Content-Type": uploadedFasta.type || "application/octet-stream",
-          },
-          body: uploadedFasta,
-        });
-        const uploadResult = await uploadRes.json().catch(() => null) as { error?: string } | null;
-        if (!uploadRes.ok) {
-          throw new Error(uploadResult?.error ?? "FASTA upload failed");
-        }
-
-        setUploadState("uploaded");
+        const session = await uploadFastaFile(uploadedFasta);
         uploadPayload = {
           fasta_upload_url: session.download_url,
           fasta_file_name: session.file_name,
@@ -592,6 +744,7 @@ export default function Home() {
     } catch (e) {
       setBuildError(e instanceof Error ? e.message : "Build request failed");
       setUploadState("idle");
+      setUploadProgress(0);
       setStep("review");
     }
   };
@@ -660,6 +813,47 @@ export default function Home() {
       window.alert(e instanceof Error ? e.message : "Failed to delete temporary package");
     } finally {
       setDeletingHistoryJobId("");
+    }
+  };
+
+  const publishCurrentBuild = async () => {
+    const userSuppliedFasta = form.fastaSource === "upload" || form.fastaSource === "url";
+    setPublishing(true);
+    setPublishError("");
+    try {
+      const sourceUrl =
+        publicSourceUrl.trim() ||
+        form.sourceUrl.trim() ||
+        (form.fastaSource === "url" ? form.fastaUrl.trim() : "");
+      const res = await fetch(`${WORKER_API}/api/publish`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          job_id: jobId,
+          metadata: {
+            organism: form.organism,
+            assembly: form.assembly,
+            provider: form.provider,
+            version: form.version,
+            accession: accessionInput,
+            source_url: sourceUrl,
+            fasta_source: form.fastaSource,
+            public_opt_in: userSuppliedFasta && publicOptIn ? "true" : "false",
+            public_rights_confirmed: userSuppliedFasta && publicRightsConfirmed ? "true" : "false",
+            public_release_confirmed: userSuppliedFasta && publicReleaseConfirmed ? "true" : "false",
+            license: userSuppliedFasta ? publicLicense : "",
+          },
+        }),
+      });
+      const data = await res.json().catch(() => null) as { error?: string } | null;
+      if (!res.ok) {
+        throw new Error(data?.error ?? "Publishing failed");
+      }
+      setIsPublished(true);
+    } catch (e) {
+      setPublishError(e instanceof Error ? e.message : "Publishing failed");
+    } finally {
+      setPublishing(false);
     }
   };
 
@@ -746,15 +940,21 @@ export default function Home() {
 
   const needsUploadedFasta = form.fastaSource === "upload" && !uploadedFasta;
   const needsFastaUrl = form.fastaSource === "url" && !form.fastaUrl.trim();
+  const uploadBusy = uploadState === "validating" || uploadState === "uploading";
   const buildButtonDisabled =
     !form.packageName ||
     !form.organism ||
     packageValidation.status !== "valid" ||
     needsUploadedFasta ||
-    needsFastaUrl;
+    needsFastaUrl ||
+    uploadBusy;
   const buildButtonText =
     packageValidation.status !== "valid"
       ? "Validate Package Name First"
+      : uploadState === "validating"
+      ? "Checking FASTA File..."
+      : uploadState === "uploading"
+      ? `Uploading FASTA... ${uploadProgress}%`
       : needsFastaUrl
       ? "Enter a FASTA URL First"
       : needsUploadedFasta
@@ -1418,8 +1618,18 @@ export default function Home() {
                           </p>
                           <p className="text-sm text-muted-foreground mt-1">
                             {formatBytes(uploadedFasta.size)}
+                            {uploadState === "validating" ? " · checking FASTA" : ""}
+                            {uploadState === "uploading" ? ` · uploading ${uploadProgress}%` : ""}
                             {uploadState === "uploaded" ? " · uploaded" : ""}
                           </p>
+                          {uploadState === "uploading" && (
+                            <div className="mt-3 h-2 w-full max-w-sm mx-auto rounded-full bg-secondary overflow-hidden">
+                              <div
+                                className="h-full bg-primary transition-all"
+                                style={{ width: `${uploadProgress}%` }}
+                              />
+                            </div>
+                          )}
                         </>
                       ) : (
                         <>
@@ -1437,7 +1647,7 @@ export default function Home() {
                       <p className="text-sm text-destructive">{uploadError}</p>
                     )}
                     <p className="text-sm text-muted-foreground">
-                      Browser upload currently supports files up to {formatBytes(MAX_FASTA_UPLOAD_BYTES)}. Use FASTA URL for larger files. The finished package is delivered through a temporary public GitHub Release, so do not upload private or sensitive sequence data.
+                      Upload supports nucleotide FASTA files up to {formatBytes(MAX_FASTA_UPLOAD_BYTES)}. The browser pre-checks the file before upload, and the build validates the full FASTA again. The finished package is delivered through a temporary public GitHub Release.
                     </p>
                   </div>
                 )}
@@ -1510,7 +1720,7 @@ export default function Home() {
                   onClick={handleBuild}
                   disabled={buildButtonDisabled}
                 >
-                  {uploadState === "uploading" ? "Uploading FASTA..." : buildButtonText}
+                  {buildButtonText}
                 </Button>
               </CardContent>
             </Card>
@@ -1752,8 +1962,81 @@ export default function Home() {
                     This temporary build was deleted. Publishing is no longer available for this build.
                   </div>
                 ) : form.fastaSource !== "ncbi" ? (
-                  <div className="border border-border rounded-lg p-4 text-sm text-muted-foreground">
-                    User-supplied FASTA builds are temporary public GitHub Release downloads only. They are not published to the community package repository because AutoBSgenome cannot verify a public source accession for the sequence data.
+                  <div className="border border-border rounded-lg p-4 space-y-3">
+                    <div>
+                      <h4 className="font-heading font-semibold text-foreground">Publish as Community-Submitted Package</h4>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        Make this user-supplied FASTA package permanent and public. It will be marked as community-submitted with user-asserted provenance.
+                      </p>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="publicSourceUrl">Source or provenance URL</Label>
+                      <Input
+                        id="publicSourceUrl"
+                        className="font-mono text-xs"
+                        placeholder="https://example.org/assembly-page-or-dataset"
+                        value={publicSourceUrl}
+                        onChange={(e) => setPublicSourceUrl(e.target.value)}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="publicLicense">License</Label>
+                      <select
+                        id="publicLicense"
+                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
+                        value={publicLicense}
+                        onChange={(e) => setPublicLicense(e.target.value)}
+                      >
+                        <option value="CC0-1.0">CC0-1.0</option>
+                        <option value="CC-BY-4.0">CC-BY-4.0</option>
+                        <option value="ODC-BY-1.0">ODC-BY-1.0</option>
+                        <option value="Other-public">Other public license</option>
+                      </select>
+                    </div>
+                    <label className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <input
+                        type="checkbox"
+                        className="mt-1"
+                        checked={publicOptIn}
+                        onChange={(e) => setPublicOptIn(e.target.checked)}
+                      />
+                      <span>I want this package to be permanently listed in the public AutoBSgenome repository.</span>
+                    </label>
+                    <label className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <input
+                        type="checkbox"
+                        className="mt-1"
+                        checked={publicRightsConfirmed}
+                        onChange={(e) => setPublicRightsConfirmed(e.target.checked)}
+                      />
+                      <span>I have the right to publicly share and redistribute this genome package.</span>
+                    </label>
+                    <label className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <input
+                        type="checkbox"
+                        className="mt-1"
+                        checked={publicReleaseConfirmed}
+                        onChange={(e) => setPublicReleaseConfirmed(e.target.checked)}
+                      />
+                      <span>I understand the package and metadata will be publicly downloadable.</span>
+                    </label>
+                    {publishError && (
+                      <p className="text-sm text-destructive">{publishError}</p>
+                    )}
+                    <Button
+                      className="w-full cursor-pointer"
+                      variant="outline"
+                      disabled={
+                        publishing ||
+                        !publicOptIn ||
+                        !publicRightsConfirmed ||
+                        !publicReleaseConfirmed ||
+                        !publicLicense
+                      }
+                      onClick={publishCurrentBuild}
+                    >
+                      {publishing ? "Publishing..." : "Publish Publicly"}
+                    </Button>
                   </div>
                 ) : !isPublished ? (
                   <div className="border border-border rounded-lg p-4 space-y-3">
@@ -1768,33 +2051,13 @@ export default function Home() {
                       className="w-full cursor-pointer"
                       variant="outline"
                       disabled={publishing}
-                      onClick={async () => {
-                        setPublishing(true);
-                        try {
-                          const res = await fetch(`${WORKER_API}/api/publish`, {
-                            method: "POST",
-                            headers: { "Content-Type": "application/json" },
-                            body: JSON.stringify({
-                              job_id: jobId,
-                              metadata: {
-                                organism: form.organism,
-                                assembly: form.assembly,
-                                provider: form.provider,
-                                version: form.version,
-                                fasta_source: form.fastaSource,
-                              },
-                            }),
-                          });
-                          if (res.ok) {
-                            setIsPublished(true);
-                          }
-                        } finally {
-                          setPublishing(false);
-                        }
-                      }}
+                      onClick={publishCurrentBuild}
                     >
                       {publishing ? "Publishing..." : "Publish to Repository"}
                     </Button>
+                    {publishError && (
+                      <p className="text-sm text-destructive">{publishError}</p>
+                    )}
                   </div>
                 ) : (
                   <div className="bg-[--success-foreground] border border-[--success]/20 rounded-lg p-4 text-sm" style={{ color: "#0f7b3f" }}>
@@ -1828,9 +2091,16 @@ export default function Home() {
                     setAccessionInput("");
                     setCircularSeqs([]);
                     setIsPublished(false);
+                    setPublishError("");
+                    setPublicOptIn(false);
+                    setPublicRightsConfirmed(false);
+                    setPublicReleaseConfirmed(false);
+                    setPublicLicense("CC0-1.0");
+                    setPublicSourceUrl("");
                     setUploadedFasta(null);
                     setUploadError("");
                     setUploadState("idle");
+                    setUploadProgress(0);
                     setDeleteToken("");
                     setDeleteError("");
                     setDeletingBuild(false);

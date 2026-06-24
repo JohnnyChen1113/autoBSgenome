@@ -63,13 +63,24 @@ def validate_package(
     source_url = str(package.get("source_url") or "")
     accession = str(package.get("accession") or "")
     download_url = str(package.get("download_url") or "")
+    provenance = package.get("provenance")
+    user_asserted = (
+        isinstance(provenance, dict)
+        and provenance.get("provenance_status") == "user_asserted"
+    )
 
     if not name:
         errors.append("package is missing package name")
-    if provider not in {"NCBI", "Ensembl"}:
+    if user_asserted:
+        if not provider:
+            errors.append(f"{label}: provider is empty")
+    elif provider not in {"NCBI", "Ensembl"}:
         errors.append(f"{label}: provider must be NCBI or Ensembl, got {provider!r}")
 
-    if not source_url:
+    if user_asserted:
+        if not package.get("license"):
+            errors.append(f"{label}: user-asserted package is missing license")
+    elif not source_url:
         errors.append(f"{label}: source_url is empty")
     elif BROKEN_NCBI_BASE_RE.match(source_url):
         errors.append(f"{label}: source_url is incomplete NCBI genome base URL")
@@ -98,7 +109,6 @@ def validate_package(
     if not download_url.startswith("https://"):
         errors.append(f"{label}: download_url must be an https URL")
 
-    provenance = package.get("provenance")
     if require_provenance and not isinstance(provenance, dict):
         errors.append(f"{label}: provenance is required for newly indexed package")
         return
@@ -112,7 +122,7 @@ def validate_package(
         errors.append(f"{label}: provenance.schema_version must be 1")
     if provenance.get("provider") and provenance.get("provider") != provider:
         errors.append(f"{label}: provenance.provider does not match provider")
-    if provenance.get("source_url") and provenance.get("source_url") != source_url:
+    if provenance.get("source_url") and source_url and provenance.get("source_url") != source_url:
         errors.append(f"{label}: provenance.source_url does not match source_url")
     if (
         provenance.get("source_accession")

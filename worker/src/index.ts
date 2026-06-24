@@ -49,7 +49,8 @@ async function sha256Hex(blob: Blob): Promise<string> {
 }
 
 const MAX_QUEUE_SIZE = 5;
-const MAX_FASTA_UPLOAD_BYTES = 100 * 1024 * 1024;
+const MAX_FASTA_UPLOAD_BYTES = 4 * 1024 * 1024 * 1024;
+const FASTA_UPLOAD_PART_SIZE_BYTES = 64 * 1024 * 1024;
 const UPLOAD_URL_TTL_SECONDS = 2 * 24 * 60 * 60;
 const FASTA_EXT_RE = /\.(fa|fasta|fna|fas)(\.gz)?$/i;
 
@@ -94,9 +95,11 @@ async function uploadToken(
   env: Env,
   uploadId: string,
   fileName: string,
-  expiresAt: number
+  expiresAt: number,
+  r2UploadId = ""
 ): Promise<string> {
-  return hmacHex(uploadSecret(env), `${uploadId}:${fileName}:${expiresAt}`);
+  const suffix = r2UploadId ? `:${r2UploadId}` : "";
+  return hmacHex(uploadSecret(env), `${uploadId}:${fileName}:${expiresAt}${suffix}`);
 }
 
 async function buildDeleteToken(env: Env, jobId: string): Promise<string> {
@@ -110,11 +113,14 @@ function uploadKey(uploadId: string, fileName: string): string {
 async function verifyUploadUrl(
   env: Env,
   url: URL
-): Promise<{ uploadId: string; fileName: string; key: string } | null> {
-  const match = url.pathname.match(/^\/api\/uploads\/([a-zA-Z0-9-]+)$/);
+): Promise<{ uploadId: string; fileName: string; key: string; r2UploadId: string } | null> {
+  const match = url.pathname.match(
+    /^\/api\/uploads\/([a-zA-Z0-9-]+)(?:\/(?:parts\/[0-9]+|complete))?$/
+  );
   const fileName = sanitizeFileName(url.searchParams.get("name") ?? "");
   const token = url.searchParams.get("token") ?? "";
   const expiresAt = Number(url.searchParams.get("exp") ?? "0");
+  const r2UploadId = url.searchParams.get("r2") ?? "";
 
   if (!match || !fileName || !token || !Number.isFinite(expiresAt)) {
     return null;
@@ -123,7 +129,7 @@ async function verifyUploadUrl(
     return null;
   }
 
-  const expected = await uploadToken(env, match[1], fileName, expiresAt);
+  const expected = await uploadToken(env, match[1], fileName, expiresAt, r2UploadId);
   if (!constantTimeEqual(token, expected)) {
     return null;
   }
@@ -132,6 +138,7 @@ async function verifyUploadUrl(
     uploadId: match[1],
     fileName,
     key: uploadKey(match[1], fileName),
+    r2UploadId,
   };
 }
 
@@ -167,6 +174,18 @@ export default {
     // POST /api/uploads — create a signed R2 upload URL for user FASTA files
     if (url.pathname === "/api/uploads" && request.method === "POST") {
       return handleCreateUpload(request, env, origin);
+    }
+
+    // PUT /api/uploads/:uploadId/parts/:partNumber — upload one multipart chunk
+    const partMatch = url.pathname.match(/^\/api\/uploads\/([a-zA-Z0-9-]+)\/parts\/([0-9]+)$/);
+    if (partMatch && request.method === "PUT") {
+      return handleUploadPart(request, env, origin, Number(partMatch[2]));
+    }
+
+    // POST /api/uploads/:uploadId/complete — complete multipart FASTA upload
+    const completeMatch = url.pathname.match(/^\/api\/uploads\/([a-zA-Z0-9-]+)\/complete$/);
+    if (completeMatch && request.method === "POST") {
+      return handleCompleteUpload(request, env, origin);
     }
 
     // PUT/GET/DELETE /api/uploads/:uploadId — upload, download, or delete FASTA
@@ -312,23 +331,165 @@ async function handleCreateUpload(
   }
 
   const uploadId = crypto.randomUUID();
+  const key = uploadKey(uploadId, fileName);
+  const multipart = await env.FASTA_UPLOADS.createMultipartUpload(key, {
+    httpMetadata: { contentType },
+    customMetadata: {
+      upload_id: uploadId,
+      file_name: fileName,
+      declared_size: String(fileSize),
+      created_at: new Date().toISOString(),
+    },
+  });
+  const r2UploadId = multipart.uploadId;
   const expiresAt = Math.floor(Date.now() / 1000) + UPLOAD_URL_TTL_SECONDS;
-  const token = await uploadToken(env, uploadId, fileName, expiresAt);
+  const token = await uploadToken(env, uploadId, fileName, expiresAt, r2UploadId);
   const objectUrl = new URL(`/api/uploads/${uploadId}`, request.url);
   objectUrl.searchParams.set("name", fileName);
   objectUrl.searchParams.set("exp", String(expiresAt));
+  objectUrl.searchParams.set("r2", r2UploadId);
   objectUrl.searchParams.set("token", token);
+  const partUrlTemplate = new URL(`/api/uploads/${uploadId}/parts/{part_number}`, request.url);
+  partUrlTemplate.search = objectUrl.search;
+  const completeUrl = new URL(`/api/uploads/${uploadId}/complete`, request.url);
+  completeUrl.search = objectUrl.search;
 
   return jsonResponse(
     {
       upload_id: uploadId,
+      r2_upload_id: r2UploadId,
       file_name: fileName,
       file_size: fileSize,
       content_type: contentType,
-      upload_url: objectUrl.toString(),
+      part_size: FASTA_UPLOAD_PART_SIZE_BYTES,
+      part_url_template: partUrlTemplate
+        .toString()
+        .replace("%7Bpart_number%7D", "{part_number}"),
+      complete_url: completeUrl.toString(),
       download_url: objectUrl.toString(),
+      delete_url: objectUrl.toString(),
       expires_at: new Date(expiresAt * 1000).toISOString(),
       max_upload_bytes: MAX_FASTA_UPLOAD_BYTES,
+    },
+    200,
+    origin,
+    env.ALLOWED_ORIGIN
+  );
+}
+
+async function handleUploadPart(
+  request: Request,
+  env: Env,
+  origin: string,
+  partNumber: number
+): Promise<Response> {
+  if (!env.FASTA_UPLOADS) {
+    return jsonResponse(
+      { error: "FASTA uploads are not configured on this API deployment" },
+      503,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+  if (!Number.isInteger(partNumber) || partNumber < 1 || partNumber > 10000) {
+    return jsonResponse({ error: "Invalid part number" }, 400, origin, env.ALLOWED_ORIGIN);
+  }
+
+  const url = new URL(request.url);
+  const verified = await verifyUploadUrl(env, url);
+  if (!verified || !verified.r2UploadId) {
+    return jsonResponse(
+      { error: "Invalid or expired multipart upload URL" },
+      403,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  const contentLength = Number(request.headers.get("Content-Length") ?? "0");
+  if (contentLength > FASTA_UPLOAD_PART_SIZE_BYTES) {
+    return jsonResponse(
+      {
+        error: "FASTA upload part is too large",
+        max_part_bytes: FASTA_UPLOAD_PART_SIZE_BYTES,
+      },
+      413,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+  if (!request.body) {
+    return jsonResponse({ error: "Missing upload part body" }, 400, origin, env.ALLOWED_ORIGIN);
+  }
+
+  const multipart = env.FASTA_UPLOADS.resumeMultipartUpload(
+    verified.key,
+    verified.r2UploadId
+  );
+  const uploadedPart = await multipart.uploadPart(partNumber, request.body);
+  return jsonResponse(
+    {
+      part_number: uploadedPart.partNumber,
+      etag: uploadedPart.etag,
+    },
+    200,
+    origin,
+    env.ALLOWED_ORIGIN
+  );
+}
+
+async function handleCompleteUpload(
+  request: Request,
+  env: Env,
+  origin: string
+): Promise<Response> {
+  if (!env.FASTA_UPLOADS) {
+    return jsonResponse(
+      { error: "FASTA uploads are not configured on this API deployment" },
+      503,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  const url = new URL(request.url);
+  const verified = await verifyUploadUrl(env, url);
+  if (!verified || !verified.r2UploadId) {
+    return jsonResponse(
+      { error: "Invalid or expired multipart upload URL" },
+      403,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  const body = await request.json<{
+    parts?: { part_number?: number; partNumber?: number; etag?: string }[];
+  }>().catch(() => ({}));
+  const parts = (body.parts ?? [])
+    .map((part) => ({
+      partNumber: Number(part.partNumber ?? part.part_number ?? 0),
+      etag: String(part.etag ?? ""),
+    }))
+    .filter((part) => Number.isInteger(part.partNumber) && part.partNumber > 0 && part.etag)
+    .sort((a, b) => a.partNumber - b.partNumber);
+
+  if (parts.length === 0) {
+    return jsonResponse({ error: "No upload parts supplied" }, 400, origin, env.ALLOWED_ORIGIN);
+  }
+
+  const multipart = env.FASTA_UPLOADS.resumeMultipartUpload(
+    verified.key,
+    verified.r2UploadId
+  );
+  await multipart.complete(parts);
+
+  return jsonResponse(
+    {
+      status: "uploaded",
+      upload_id: verified.uploadId,
+      file_name: verified.fileName,
+      download_url: url.origin + `/api/uploads/${verified.uploadId}` + url.search,
     },
     200,
     origin,
@@ -362,51 +523,22 @@ async function handleUploadObject(
   }
 
   if (request.method === "PUT") {
-    const contentLength = Number(request.headers.get("Content-Length") ?? "0");
-    if (contentLength > MAX_FASTA_UPLOAD_BYTES) {
-      return jsonResponse(
-        {
-          error: "FASTA upload is too large",
-          max_upload_bytes: MAX_FASTA_UPLOAD_BYTES,
-        },
-        413,
-        origin,
-        env.ALLOWED_ORIGIN
-      );
-    }
-    if (!request.body) {
-      return jsonResponse(
-        { error: "Missing upload body" },
-        400,
-        origin,
-        env.ALLOWED_ORIGIN
-      );
-    }
-
-    await env.FASTA_UPLOADS.put(verified.key, request.body, {
-      httpMetadata: {
-        contentType: request.headers.get("Content-Type") || "application/octet-stream",
-      },
-      customMetadata: {
-        upload_id: verified.uploadId,
-        file_name: verified.fileName,
-        uploaded_at: new Date().toISOString(),
-      },
-    });
-
     return jsonResponse(
-      {
-        status: "uploaded",
-        upload_id: verified.uploadId,
-        file_name: verified.fileName,
-      },
-      200,
+      { error: "Use multipart part URLs for FASTA uploads" },
+      405,
       origin,
       env.ALLOWED_ORIGIN
     );
   }
 
   if (request.method === "DELETE") {
+    if (verified.r2UploadId) {
+      const multipart = env.FASTA_UPLOADS.resumeMultipartUpload(
+        verified.key,
+        verified.r2UploadId
+      );
+      await multipart.abort().catch(() => undefined);
+    }
     await env.FASTA_UPLOADS.delete(verified.key);
     return jsonResponse(
       { status: "deleted", upload_id: verified.uploadId },
@@ -810,13 +942,30 @@ async function handlePublish(
   if (!body.job_id) {
     return jsonResponse({ error: "Missing job_id" }, 400, origin, env.ALLOWED_ORIGIN);
   }
-  if (body.metadata?.fasta_source === "upload" || body.metadata?.fasta_source === "url") {
-    return jsonResponse(
-      { error: "User-supplied FASTA builds are temporary and cannot be published to the public repository" },
-      400,
-      origin,
-      env.ALLOWED_ORIGIN
-    );
+  const meta = body.metadata ?? {};
+  const fastaSource = meta.fasta_source ?? "ncbi";
+  const userSuppliedFasta = fastaSource === "upload" || fastaSource === "url";
+  if (userSuppliedFasta) {
+    const confirmed =
+      meta.public_opt_in === "true" &&
+      meta.public_rights_confirmed === "true" &&
+      meta.public_release_confirmed === "true";
+    if (!confirmed) {
+      return jsonResponse(
+        { error: "Publishing user-supplied FASTA builds requires public sharing confirmation" },
+        400,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+    if (!meta.license) {
+      return jsonResponse(
+        { error: "Publishing user-supplied FASTA builds requires a license" },
+        400,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
   }
 
   const tempTag = `build-${body.job_id}`;
@@ -867,8 +1016,8 @@ async function handlePublish(
     );
   }
 
-  const meta = body.metadata ?? {};
   const sourceUrl = meta.source_url ?? "";
+  const license = meta.license ?? "";
   const packageSha256 = await sha256Hex(assetBlob);
   const builtAt = new Date().toISOString().replace(/\.\d{3}Z$/, "Z");
   const createRes = await fetch(
@@ -885,7 +1034,9 @@ async function handlePublish(
           `| **Organism** | ${meta.organism ?? "N/A"} |`,
           `| **Assembly** | ${meta.assembly ?? "N/A"} |`,
           `| **Provider** | ${meta.provider ?? "NCBI"} |`,
+          ...(userSuppliedFasta ? [`| **Submission** | Community-submitted, user asserted |`] : []),
           ...(sourceUrl ? [`| **Source** | [${meta.provider ?? "source"}](${sourceUrl}) |`] : []),
+          ...(license ? [`| **License** | ${license} |`] : []),
           `| **Version** | ${meta.version ?? "1.0.0"} |`,
           `| **Package** | \`${packageBaseName}\` |`,
           "",
@@ -896,7 +1047,9 @@ async function handlePublish(
           "",
           `> Browse all packages: [autobsgenome.org](https://autobsgenome.org) | [Package repository](https://johnnychen1113.github.io/autoBSgenome)`,
           "",
-          "Published via [AutoBSgenome Web](https://autobsgenome.org).",
+          userSuppliedFasta
+            ? "Published via [AutoBSgenome Web](https://autobsgenome.org) from a user-supplied nucleotide FASTA. AutoBSgenome records this source as user asserted and does not independently verify redistribution rights."
+            : "Published via [AutoBSgenome Web](https://autobsgenome.org).",
         ].join("\n"),
       }),
     }
@@ -942,11 +1095,16 @@ async function handlePublish(
           storage_info: JSON.stringify({
             storage: "github-release",
             source_url: sourceUrl,
+            license,
             provenance: {
               schema_version: 1,
               provider: meta.provider ?? "",
               source_url: sourceUrl,
               source_accession: meta.accession ?? "",
+              source_type: fastaSource,
+              provenance_status: userSuppliedFasta ? "user_asserted" : "verified_provider",
+              public_opt_in: userSuppliedFasta,
+              license,
               built_at: builtAt,
               builder_image: "cloudflare-worker-publish",
               package_sha256: packageSha256,
