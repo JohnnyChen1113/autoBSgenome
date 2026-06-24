@@ -1677,7 +1677,7 @@ export default function Home() {
                   <div className="space-y-3">
                     <div className="bg-accent border-l-[3px] border-primary rounded-r-md px-4 py-3 text-sm text-muted-foreground">
                       This package will remain available for{" "}
-                      <strong className="text-foreground">14 days</strong> at{" "}
+                      <strong className="text-foreground">2 days</strong> at{" "}
                       <a
                         href="https://github.com/JohnnyChen1113/autoBSgenome/releases"
                         target="_blank"

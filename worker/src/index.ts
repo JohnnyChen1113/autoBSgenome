@@ -50,7 +50,7 @@ async function sha256Hex(blob: Blob): Promise<string> {
 
 const MAX_QUEUE_SIZE = 5;
 const MAX_FASTA_UPLOAD_BYTES = 100 * 1024 * 1024;
-const UPLOAD_URL_TTL_SECONDS = 7 * 24 * 60 * 60;
+const UPLOAD_URL_TTL_SECONDS = 2 * 24 * 60 * 60;
 const FASTA_EXT_RE = /\.(fa|fasta|fna|fas)(\.gz)?$/i;
 
 function sanitizeFileName(name: string): string {

@@ -58,7 +58,7 @@ Trigger a BSgenome package build.
 }
 ```
 
-Keep `delete_token` private. It lets the original browser session delete the temporary GitHub Release for this build before the scheduled 14-day cleanup.
+Keep `delete_token` private. It lets the original browser session delete the temporary GitHub Release for this build before the scheduled 2-day cleanup.
 
 ### DELETE /api/build/:jobId
 
@@ -157,7 +157,7 @@ Then trigger a build with:
 ```
 
 Supported file names end in `.fa`, `.fasta`, `.fna`, or `.fas`, optionally with `.gz`.
-Browser uploads currently support files up to 100 MB because the file body passes through the Worker request. Use FASTA URL for larger files until multipart direct upload is implemented. Uploaded FASTA builds produce temporary GitHub Release downloads only; they are not added to the public package repository or `packages.json`. Do not upload private or sensitive sequence data unless the deployment's artifact storage policy is appropriate for that data.
+Browser uploads currently support files up to 100 MB because the file body passes through the Worker request. Use FASTA URL for larger files until multipart direct upload is implemented. Upload URLs expire after 2 days; successful builds delete the uploaded FASTA after GitHub Actions downloads it, and the R2 `uploads/` lifecycle rule removes abandoned uploads after 2 days. Uploaded FASTA builds produce temporary GitHub Release downloads only; they are not added to the public package repository or `packages.json`. Do not upload private or sensitive sequence data unless the deployment's artifact storage policy is appropriate for that data.
 
 ### GET /api/status/:jobId
 
@@ -218,7 +218,7 @@ done
 URL=$(echo "$STATUS" | python3 -c "import json,sys; print(json.load(sys.stdin).get('download_url',''))")
 curl -L -o package.tar.gz "$URL"
 
-# Optional: delete the temporary public release before the 14-day cleanup
+# Optional: delete the temporary public release before the 2-day cleanup
 curl -X DELETE "https://api.autobsgenome.org/api/build/$JOB_ID" \
   -H "Content-Type: application/json" \
   -d "{\"delete_token\":\"$DELETE_TOKEN\"}"
@@ -247,5 +247,5 @@ The API allows requests from:
 
 - Build triggers: limited by GitHub Actions concurrency (1 concurrent build per repo)
 - Status checks: no limit (Cloudflare Workers)
-- Temporary packages are available for **14 days** after build, then automatically cleaned up
+- Temporary packages are available for **2 days** after build, then automatically cleaned up
 - Users can delete their current temporary build earlier with `DELETE /api/build/:jobId` when they still have the `delete_token` returned by `POST /api/build`

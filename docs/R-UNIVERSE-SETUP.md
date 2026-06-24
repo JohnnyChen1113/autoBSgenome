@@ -24,7 +24,7 @@ install.packages("autoBSgenome",
 ## Note
 
 This hosts the **autoBSgenome CLI tool** as an R package, NOT the built BSgenome data packages.
-The web-built BSgenome packages are hosted on GitHub Releases (14-day TTL).
+The web-built BSgenome packages are hosted on GitHub Releases (2-day TTL).
 
 In the future, we may use R-universe to also host commonly-built BSgenome data packages
 as a community repository.

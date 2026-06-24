@@ -2,7 +2,7 @@
 
 ## Core Principles
 
-1. **Opt-in publishing** — builds are temporary (14 days) by default; users choose to publish permanently
+1. **Opt-in publishing** — builds are temporary (2 days) by default; users choose to publish permanently
 2. **GitHub Releases as storage** — unlimited total size, 2 GB per file, no Git bloat
 3. **PACKAGES index on gh-pages** — standard CRAN-like format, R's `install.packages()` works natively
 4. **Browseable frontend** — https://johnnychen1113.github.io/autoBSgenome with search and organism taxonomy
@@ -12,7 +12,7 @@
 ```
 User builds BSgenome package
   ↓
-Temporary: GitHub Release (build-{jobId}, 14-day TTL)
+Temporary: GitHub Release (build-{jobId}, 2-day TTL)
   ↓
 User clicks "Publish to Repository"
   ↓

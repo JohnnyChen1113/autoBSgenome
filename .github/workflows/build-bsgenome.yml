@@ -419,7 +419,7 @@ jobs:
           install.packages(\"https://github.com/${{ github.repository }}/releases/download/${TAG}/${TARBALL}\", repos = NULL, type = \"source\")
           \`\`\`
 
-          > This release will be automatically cleaned up after 14 days."
+          > This release will be automatically cleaned up after 2 days."
 
       - name: Publish to permanent repository
         if: steps.storage.outputs.backend == 'github' && (steps.params.outputs.fasta_source == 'ncbi' || steps.params.outputs.fasta_source == 'ensembl')
