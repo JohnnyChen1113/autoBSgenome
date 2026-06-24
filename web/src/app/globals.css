@@ -57,8 +57,8 @@
 /* AutoBSgenome — Editorial Journal theme, SLU royal blue */
 :root {
   /* Surfaces */
-  --background: #f7f2e5;          /* warm cream — clearly off-white */
-  --paper: #ece3cc;               /* deeper paper for alt sections */
+  --background: #ffffff;
+  --paper: #ffffff;
   --foreground: #14181f;          /* near-ink for body */
   --ink: #0b0e14;                 /* true ink for display headings */
   --card: #ffffff;
@@ -70,16 +70,16 @@
   --primary: #003DA5;
   --primary-foreground: #ffffff;
 
-  --secondary: #f4f1ea;
+  --secondary: #f7f8fb;
   --secondary-foreground: #14181f;
-  --muted: #f4f1ea;
+  --muted: #f7f8fb;
   --muted-foreground: #4f5260;
   --accent: #eaeef7;
   --accent-foreground: #003DA5;
   --destructive: #b1233a;
-  --border: #e6e2d6;              /* warm rule line */
+  --border: #e5e7eb;
   --rule: #1a1d24;                /* hairline editorial rule */
-  --input: #d8d3c5;
+  --input: #d1d5db;
   --ring: #003DA5;
   --success: #0f7b3f;
   --success-foreground: #ecfdf5;
@@ -92,13 +92,13 @@
 
   --radius: 0.375rem;
 
-  --sidebar: #f4f1ea;
+  --sidebar: #ffffff;
   --sidebar-foreground: #14181f;
   --sidebar-primary: #003DA5;
   --sidebar-primary-foreground: #ffffff;
   --sidebar-accent: #eaeef7;
   --sidebar-accent-foreground: #003DA5;
-  --sidebar-border: #e6e2d6;
+  --sidebar-border: #e5e7eb;
   --sidebar-ring: #003DA5;
 }
 
@@ -109,9 +109,6 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "ss01", "cv11", "ss03";
-    background-image:
-      radial-gradient(rgba(20, 24, 31, 0.035) 1px, transparent 1.2px);
-    background-size: 22px 22px;
   }
   html {
     @apply font-sans;
@@ -154,7 +151,7 @@
     line-height: 0.98;
     color: var(--ink);
   }
-  /* Subtle paper noise background for alt sections */
+  /* Alternate sections stay white; borders and spacing provide separation. */
   .bg-paper {
     background-color: var(--paper);
   }

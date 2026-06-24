@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, ArrowRight, Search, Hammer } from "lucide-react";
 import { SiteHeader } from "@/components/SiteChrome";
 import { SpeciesImage } from "@/components/SpeciesImage";
@@ -272,22 +273,42 @@ export default function HomePage() {
 
           <div className="mt-10 rule" />
 
-          <div className="mt-5 flex flex-col gap-2 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-            <p>
-              Built by{" "}
+          <div className="mt-5 flex flex-col gap-4 text-sm text-muted-foreground sm:flex-row sm:items-end sm:justify-between">
+            <div className="space-y-1">
+              <p>
+                Built by{" "}
+                <a
+                  href="https://github.com/JohnnyChen1113"
+                  className="text-foreground/80 hover:text-primary"
+                >
+                  Junhao Chen
+                </a>
+                , Saint Louis University.
+              </p>
               <a
-                href="https://github.com/JohnnyChen1113"
-                className="text-foreground/80 hover:text-primary"
+                href="https://zlinlab.org"
+                target="_blank"
+                rel="noreferrer"
+                className="link-underline"
               >
-                Junhao Chen
+                Lin Lab · zlinlab.org
               </a>
-              , Saint Louis University.
-            </p>
+            </div>
             <a
-              href="https://github.com/JohnnyChen1113/autoBSgenome"
-              className="link-underline"
+              href="https://www.slu.edu"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Saint Louis University"
+              className="inline-flex transition-opacity hover:opacity-80"
             >
-              github.com/JohnnyChen1113/autoBSgenome
+              <Image
+                src="/slu-logo.png"
+                alt="Saint Louis University"
+                width={240}
+                height={60}
+                unoptimized
+                className="h-10 w-auto max-w-[220px] sm:max-w-[260px]"
+              />
             </a>
           </div>
         </div>

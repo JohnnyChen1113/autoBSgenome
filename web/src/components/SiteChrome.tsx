@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 type NavKey = "home" | "build" | "packages" | "help" | "api" | "agents";
 
@@ -104,12 +105,22 @@ export function SiteFooter() {
               packages from NCBI and Ensembl genome assemblies.
             </p>
           </div>
-          <div className="flex flex-col items-start gap-1 text-sm sm:items-end">
+          <div className="flex flex-col items-start gap-3 text-sm sm:items-end">
             <a
-              href="https://github.com/JohnnyChen1113/autoBSgenome"
-              className="link-underline"
+              href="https://www.slu.edu"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Saint Louis University"
+              className="inline-flex transition-opacity hover:opacity-80"
             >
-              github.com/JohnnyChen1113/autoBSgenome
+              <Image
+                src="/slu-logo.png"
+                alt="Saint Louis University"
+                width={240}
+                height={60}
+                unoptimized
+                className="h-10 w-auto max-w-[220px] sm:max-w-[260px]"
+              />
             </a>
             <p className="text-xs text-muted-foreground">
               Built by{" "}
@@ -125,7 +136,14 @@ export function SiteFooter() {
         </div>
         <div className="mt-8 rule" />
         <div className="mt-4 flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-          <span>autobsgenome · open source</span>
+          <a
+            href="https://zlinlab.org"
+            target="_blank"
+            rel="noreferrer"
+            className="transition-colors hover:text-primary"
+          >
+            Lin Lab · zlinlab.org
+          </a>
           <span>build · browse · automate</span>
         </div>
       </div>
