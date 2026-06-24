@@ -2,6 +2,8 @@ interface Env {
   GITHUB_PAT: string;
   GITHUB_REPO: string;
   ALLOWED_ORIGIN: string;
+  FASTA_UPLOADS?: R2Bucket;
+  UPLOAD_TOKEN_SECRET?: string;
 }
 
 function corsHeaders(origin: string, allowedOrigin: string): HeadersInit {
@@ -19,7 +21,7 @@ function corsHeaders(origin: string, allowedOrigin: string): HeadersInit {
 
   return {
     "Access-Control-Allow-Origin": isAllowed ? origin : fallbackOrigin,
-    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
   };
 }
@@ -46,6 +48,89 @@ async function sha256Hex(blob: Blob): Promise<string> {
     .join("");
 }
 
+const MAX_QUEUE_SIZE = 5;
+const MAX_FASTA_UPLOAD_BYTES = 2 * 1024 * 1024 * 1024;
+const UPLOAD_URL_TTL_SECONDS = 7 * 24 * 60 * 60;
+const FASTA_EXT_RE = /\.(fa|fasta|fna|fas)(\.gz)?$/i;
+
+function sanitizeFileName(name: string): string {
+  const baseName = name.split(/[\\/]/).pop()?.trim() || "genome.fa";
+  const safe = baseName.replace(/[^A-Za-z0-9._-]+/g, "_").slice(0, 180);
+  return safe || "genome.fa";
+}
+
+function uploadSecret(env: Env): string {
+  return env.UPLOAD_TOKEN_SECRET || env.GITHUB_PAT;
+}
+
+async function hmacHex(secret: string, value: string): Promise<string> {
+  const key = await crypto.subtle.importKey(
+    "raw",
+    new TextEncoder().encode(secret),
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign"]
+  );
+  const signature = await crypto.subtle.sign(
+    "HMAC",
+    key,
+    new TextEncoder().encode(value)
+  );
+  return [...new Uint8Array(signature)]
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+function constantTimeEqual(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let mismatch = 0;
+  for (let i = 0; i < a.length; i += 1) {
+    mismatch |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return mismatch === 0;
+}
+
+async function uploadToken(
+  env: Env,
+  uploadId: string,
+  fileName: string,
+  expiresAt: number
+): Promise<string> {
+  return hmacHex(uploadSecret(env), `${uploadId}:${fileName}:${expiresAt}`);
+}
+
+function uploadKey(uploadId: string, fileName: string): string {
+  return `uploads/${uploadId}/${fileName}`;
+}
+
+async function verifyUploadUrl(
+  env: Env,
+  url: URL
+): Promise<{ uploadId: string; fileName: string; key: string } | null> {
+  const match = url.pathname.match(/^\/api\/uploads\/([a-zA-Z0-9-]+)$/);
+  const fileName = sanitizeFileName(url.searchParams.get("name") ?? "");
+  const token = url.searchParams.get("token") ?? "";
+  const expiresAt = Number(url.searchParams.get("exp") ?? "0");
+
+  if (!match || !fileName || !token || !Number.isFinite(expiresAt)) {
+    return null;
+  }
+  if (expiresAt < Math.floor(Date.now() / 1000)) {
+    return null;
+  }
+
+  const expected = await uploadToken(env, match[1], fileName, expiresAt);
+  if (!constantTimeEqual(token, expected)) {
+    return null;
+  }
+
+  return {
+    uploadId: match[1],
+    fileName,
+    key: uploadKey(match[1], fileName),
+  };
+}
+
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
@@ -69,6 +154,17 @@ export default {
       return handleBuild(request, env, origin);
     }
 
+    // POST /api/uploads — create a signed R2 upload URL for user FASTA files
+    if (url.pathname === "/api/uploads" && request.method === "POST") {
+      return handleCreateUpload(request, env, origin);
+    }
+
+    // PUT/GET/DELETE /api/uploads/:uploadId — upload, download, or delete FASTA
+    const uploadMatch = url.pathname.match(/^\/api\/uploads\/([a-zA-Z0-9-]+)$/);
+    if (uploadMatch && ["PUT", "GET", "DELETE"].includes(request.method)) {
+      return handleUploadObject(request, env, origin);
+    }
+
     // GET /api/status/:jobId — check build status via GitHub Release
     const statusMatch = url.pathname.match(/^\/api\/status\/([a-zA-Z0-9-]+)$/);
     if (statusMatch && request.method === "GET") {
@@ -83,8 +179,6 @@ export default {
     return jsonResponse({ error: "Not found" }, 404, origin, env.ALLOWED_ORIGIN);
   },
 };
-
-const MAX_QUEUE_SIZE = 5;
 
 async function getQueueInfo(env: Env): Promise<{
   running: number;
@@ -156,6 +250,182 @@ async function handleQueue(
   );
 }
 
+async function handleCreateUpload(
+  request: Request,
+  env: Env,
+  origin: string
+): Promise<Response> {
+  if (!env.FASTA_UPLOADS) {
+    return jsonResponse(
+      { error: "FASTA uploads are not configured on this API deployment" },
+      503,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  const body = await request.json<{
+    file_name?: string;
+    file_size?: number;
+    content_type?: string;
+  }>();
+  const fileName = sanitizeFileName(body.file_name ?? "");
+  const fileSize = Number(body.file_size ?? 0);
+  const contentType = body.content_type || "application/octet-stream";
+
+  if (!FASTA_EXT_RE.test(fileName)) {
+    return jsonResponse(
+      { error: "Upload must be a FASTA file: .fa, .fasta, .fna, .fas, optionally .gz" },
+      400,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+  if (!Number.isFinite(fileSize) || fileSize <= 0) {
+    return jsonResponse(
+      { error: "Missing or invalid file_size" },
+      400,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+  if (fileSize > MAX_FASTA_UPLOAD_BYTES) {
+    return jsonResponse(
+      {
+        error: "FASTA upload is too large",
+        max_upload_bytes: MAX_FASTA_UPLOAD_BYTES,
+      },
+      413,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  const uploadId = crypto.randomUUID();
+  const expiresAt = Math.floor(Date.now() / 1000) + UPLOAD_URL_TTL_SECONDS;
+  const token = await uploadToken(env, uploadId, fileName, expiresAt);
+  const objectUrl = new URL(`/api/uploads/${uploadId}`, request.url);
+  objectUrl.searchParams.set("name", fileName);
+  objectUrl.searchParams.set("exp", String(expiresAt));
+  objectUrl.searchParams.set("token", token);
+
+  return jsonResponse(
+    {
+      upload_id: uploadId,
+      file_name: fileName,
+      file_size: fileSize,
+      content_type: contentType,
+      upload_url: objectUrl.toString(),
+      download_url: objectUrl.toString(),
+      expires_at: new Date(expiresAt * 1000).toISOString(),
+      max_upload_bytes: MAX_FASTA_UPLOAD_BYTES,
+    },
+    200,
+    origin,
+    env.ALLOWED_ORIGIN
+  );
+}
+
+async function handleUploadObject(
+  request: Request,
+  env: Env,
+  origin: string
+): Promise<Response> {
+  if (!env.FASTA_UPLOADS) {
+    return jsonResponse(
+      { error: "FASTA uploads are not configured on this API deployment" },
+      503,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  const url = new URL(request.url);
+  const verified = await verifyUploadUrl(env, url);
+  if (!verified) {
+    return jsonResponse(
+      { error: "Invalid or expired upload URL" },
+      403,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  if (request.method === "PUT") {
+    const contentLength = Number(request.headers.get("Content-Length") ?? "0");
+    if (contentLength > MAX_FASTA_UPLOAD_BYTES) {
+      return jsonResponse(
+        {
+          error: "FASTA upload is too large",
+          max_upload_bytes: MAX_FASTA_UPLOAD_BYTES,
+        },
+        413,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+    if (!request.body) {
+      return jsonResponse(
+        { error: "Missing upload body" },
+        400,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+
+    await env.FASTA_UPLOADS.put(verified.key, request.body, {
+      httpMetadata: {
+        contentType: request.headers.get("Content-Type") || "application/octet-stream",
+      },
+      customMetadata: {
+        upload_id: verified.uploadId,
+        file_name: verified.fileName,
+        uploaded_at: new Date().toISOString(),
+      },
+    });
+
+    return jsonResponse(
+      {
+        status: "uploaded",
+        upload_id: verified.uploadId,
+        file_name: verified.fileName,
+      },
+      200,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  if (request.method === "DELETE") {
+    await env.FASTA_UPLOADS.delete(verified.key);
+    return jsonResponse(
+      { status: "deleted", upload_id: verified.uploadId },
+      200,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  const object = await env.FASTA_UPLOADS.get(verified.key);
+  if (!object) {
+    return jsonResponse(
+      { error: "Uploaded FASTA not found" },
+      404,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  return new Response(object.body, {
+    headers: {
+      "Content-Type": object.httpMetadata?.contentType || "application/octet-stream",
+      "Content-Length": String(object.size),
+      "Content-Disposition": `attachment; filename="${verified.fileName}"`,
+      ...corsHeaders(origin, env.ALLOWED_ORIGIN),
+    },
+  });
+}
+
 async function handleBuild(
   request: Request,
   env: Env,
@@ -171,6 +441,75 @@ async function handleBuild(
       origin,
       env.ALLOWED_ORIGIN
     );
+  }
+
+  const fastaSource = body.fasta_source === "upload"
+    ? "upload"
+    : body.data_source ?? "ncbi";
+  let fastaUploadUrl = "";
+  let fastaFileName = "";
+  let fastaFileSize = "";
+
+  if (fastaSource === "upload") {
+    if (!env.FASTA_UPLOADS) {
+      return jsonResponse(
+        { error: "FASTA uploads are not configured on this API deployment" },
+        503,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+    if (!body.fasta_upload_url) {
+      return jsonResponse(
+        { error: "Missing fasta_upload_url for uploaded FASTA build" },
+        400,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+
+    let uploadUrl: URL;
+    try {
+      uploadUrl = new URL(body.fasta_upload_url);
+    } catch {
+      return jsonResponse(
+        { error: "Invalid fasta_upload_url" },
+        400,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+    if (uploadUrl.origin !== new URL(request.url).origin) {
+      return jsonResponse(
+        { error: "Uploaded FASTA URL must be issued by this API" },
+        400,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+
+    const verified = await verifyUploadUrl(env, uploadUrl);
+    if (!verified) {
+      return jsonResponse(
+        { error: "Uploaded FASTA URL is invalid or expired" },
+        403,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+    const uploaded = await env.FASTA_UPLOADS.head(verified.key);
+    if (!uploaded) {
+      return jsonResponse(
+        { error: "Upload the FASTA file before starting the build" },
+        400,
+        origin,
+        env.ALLOWED_ORIGIN
+      );
+    }
+
+    fastaUploadUrl = uploadUrl.toString();
+    fastaFileName = verified.fileName;
+    fastaFileSize = String(uploaded.size || body.fasta_file_size || "");
   }
 
   // Check queue depth for user info (never reject — always accept)
@@ -205,6 +544,10 @@ async function handleBuild(
           // Pack remaining fields into JSON to stay within 10-property limit
           extra: JSON.stringify({
             data_source: body.data_source ?? "ncbi",
+            fasta_source: fastaSource,
+            fasta_upload_url: fastaUploadUrl,
+            fasta_file_name: fastaFileName,
+            fasta_file_size: fastaFileSize,
             release_date: body.release_date ?? "",
             title: body.title ?? "",
             description: body.description ?? "",
@@ -339,6 +682,14 @@ async function handlePublish(
   const body = await request.json<{ job_id: string; metadata: Record<string, string> }>();
   if (!body.job_id) {
     return jsonResponse({ error: "Missing job_id" }, 400, origin, env.ALLOWED_ORIGIN);
+  }
+  if (body.metadata?.fasta_source === "upload") {
+    return jsonResponse(
+      { error: "Uploaded FASTA builds are temporary and cannot be published to the public repository" },
+      400,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
   }
 
   const tempTag = `build-${body.job_id}`;

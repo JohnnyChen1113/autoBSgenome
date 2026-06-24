@@ -38,6 +38,10 @@ Trigger a BSgenome package build.
 | `circ_seqs` | No | Circular sequences, comma-separated (e.g. `MT`) or `character(0)` |
 | `accession` | No | NCBI accession (e.g. `GCF_000001405.40`) — used for FASTA download |
 | `data_source` | No | `ncbi` or `ensembl` (default: `ncbi`) — determines FASTA download source |
+| `fasta_source` | No | `upload` to use a user-uploaded FASTA; otherwise omitted or set by `data_source` |
+| `fasta_upload_url` | Only for uploads | Signed `download_url` returned by `POST /api/uploads` |
+| `fasta_file_name` | Only for uploads | Original uploaded FASTA filename |
+| `fasta_file_size` | Only for uploads | Uploaded FASTA byte size |
 | `release_date` | No | Assembly release date (e.g. `Feb. 2022`) |
 | `title` | No | Package title (auto-generated if omitted) |
 | `source_url` | No | URL to source data |
@@ -50,6 +54,61 @@ Trigger a BSgenome package build.
   "status": "queued"
 }
 ```
+
+### POST /api/uploads
+
+Create a signed upload URL for a user-provided FASTA file. The API stores the file in the `FASTA_UPLOADS` R2 bucket, then GitHub Actions downloads it during `/api/build`.
+
+**Request:**
+
+```json
+{
+  "file_name": "my-genome.fasta.gz",
+  "file_size": 73400320,
+  "content_type": "application/gzip"
+}
+```
+
+**Response (200):**
+
+```json
+{
+  "upload_id": "9ccfb9e2-0ab9-4a23-a9de-6f8fd4c67c0a",
+  "file_name": "my-genome.fasta.gz",
+  "file_size": 73400320,
+  "upload_url": "https://api.autobsgenome.org/api/uploads/...",
+  "download_url": "https://api.autobsgenome.org/api/uploads/...",
+  "expires_at": "2026-06-25T18:00:00.000Z",
+  "max_upload_bytes": 2147483648
+}
+```
+
+Upload the file with:
+
+```bash
+curl -X PUT --upload-file my-genome.fasta.gz "$UPLOAD_URL"
+```
+
+Then trigger a build with:
+
+```json
+{
+  "package_name": "BSgenome.Custom.Upload.MyAssembly",
+  "organism": "Custom organism",
+  "genome": "MyAssembly",
+  "provider": "Upload",
+  "version": "1.0.0",
+  "circ_seqs": "character(0)",
+  "data_source": "ncbi",
+  "fasta_source": "upload",
+  "fasta_upload_url": "<download_url from /api/uploads>",
+  "fasta_file_name": "my-genome.fasta.gz",
+  "fasta_file_size": "73400320"
+}
+```
+
+Supported file names end in `.fa`, `.fasta`, `.fna`, or `.fas`, optionally with `.gz`.
+Uploaded FASTA builds produce temporary GitHub Release downloads only; they are not added to the public package repository or `packages.json`. Do not upload private or sensitive sequence data unless the deployment's artifact storage policy is appropriate for that data.
 
 ### GET /api/status/:jobId
 

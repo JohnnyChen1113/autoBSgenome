@@ -80,6 +80,30 @@ interface BuildRecord {
   timestamp: number;
 }
 
+interface UploadSession {
+  upload_id: string;
+  file_name: string;
+  file_size: number;
+  upload_url: string;
+  download_url: string;
+  max_upload_bytes: number;
+}
+
+const MAX_FASTA_UPLOAD_BYTES = 2 * 1024 * 1024 * 1024;
+const FASTA_FILE_RE = /\.(fa|fasta|fna|fas)(\.gz)?$/i;
+
+function formatBytes(bytes: number) {
+  if (!Number.isFinite(bytes) || bytes <= 0) return "0 B";
+  const units = ["B", "KB", "MB", "GB"];
+  let size = bytes;
+  let unit = 0;
+  while (size >= 1024 && unit < units.length - 1) {
+    size /= 1024;
+    unit += 1;
+  }
+  return `${size.toFixed(unit === 0 ? 0 : 1)} ${units[unit]}`;
+}
+
 function saveBuildRecord(record: BuildRecord) {
   try {
     const history: BuildRecord[] = JSON.parse(
@@ -292,11 +316,40 @@ export default function Home() {
   } | null>(null);
   const [buildElapsed, setBuildElapsed] = useState(0);
   const [buildTotalTime, setBuildTotalTime] = useState(0);
+  const [uploadedFasta, setUploadedFasta] = useState<File | null>(null);
+  const [uploadError, setUploadError] = useState("");
+  const [uploadState, setUploadState] = useState<"idle" | "uploading" | "uploaded">("idle");
+  const [isDragActive, setIsDragActive] = useState(false);
 
   const WORKER_API = "https://api.autobsgenome.org";
   const buildStartTimeRef = useRef(0);
   const formRef = useRef(form);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   formRef.current = form;
+
+  const selectFastaFile = useCallback((file?: File) => {
+    setUploadError("");
+    setUploadState("idle");
+
+    if (!file) return;
+    if (!FASTA_FILE_RE.test(file.name)) {
+      setUploadedFasta(null);
+      setUploadError("Choose a FASTA file ending in .fa, .fasta, .fna, .fas, optionally .gz.");
+      return;
+    }
+    if (file.size <= 0) {
+      setUploadedFasta(null);
+      setUploadError("The selected FASTA file is empty.");
+      return;
+    }
+    if (file.size > MAX_FASTA_UPLOAD_BYTES) {
+      setUploadedFasta(null);
+      setUploadError(`The selected FASTA is too large. Maximum upload size is ${formatBytes(MAX_FASTA_UPLOAD_BYTES)}.`);
+      return;
+    }
+
+    setUploadedFasta(file);
+  }, []);
 
   // Restore build state or pre-fill accession from URL on page load
   useEffect(() => {
@@ -401,8 +454,15 @@ export default function Home() {
   }, [step, buildStartTime]);
 
   const handleBuild = async () => {
-    setStep("building");
     setBuildError("");
+    setUploadError("");
+
+    if (form.fastaSource === "upload" && !uploadedFasta) {
+      setUploadError("Choose a FASTA file before starting the build.");
+      return;
+    }
+
+    setStep("building");
     setBuildStep(0);
     const startTime = Date.now();
     setBuildStartTime(startTime);
@@ -411,6 +471,44 @@ export default function Home() {
     setBuildTotalTime(0);
 
     try {
+      let uploadPayload: Record<string, string> = {};
+
+      if (form.fastaSource === "upload" && uploadedFasta) {
+        setUploadState("uploading");
+        const sessionRes = await fetch(`${WORKER_API}/api/uploads`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            file_name: uploadedFasta.name,
+            file_size: uploadedFasta.size,
+            content_type: uploadedFasta.type || "application/octet-stream",
+          }),
+        });
+        const session = await sessionRes.json() as UploadSession & { error?: string };
+        if (!sessionRes.ok || !session.upload_url || !session.download_url) {
+          throw new Error(session.error ?? "Failed to create FASTA upload session");
+        }
+
+        const uploadRes = await fetch(session.upload_url, {
+          method: "PUT",
+          headers: {
+            "Content-Type": uploadedFasta.type || "application/octet-stream",
+          },
+          body: uploadedFasta,
+        });
+        const uploadResult = await uploadRes.json().catch(() => null) as { error?: string } | null;
+        if (!uploadRes.ok) {
+          throw new Error(uploadResult?.error ?? "FASTA upload failed");
+        }
+
+        setUploadState("uploaded");
+        uploadPayload = {
+          fasta_upload_url: session.download_url,
+          fasta_file_name: session.file_name,
+          fasta_file_size: String(uploadedFasta.size),
+        };
+      }
+
       // Trigger build via Worker API
       const res = await fetch(`${WORKER_API}/api/build`, {
         method: "POST",
@@ -430,6 +528,7 @@ export default function Home() {
           accession: accessionInput,
           fasta_source: form.fastaSource,
           data_source: dataSource,
+          ...uploadPayload,
         }),
       });
 
@@ -451,6 +550,7 @@ export default function Home() {
       pollBuildStatus(data.job_id);
     } catch (e) {
       setBuildError(e instanceof Error ? e.message : "Build request failed");
+      setUploadState("idle");
       setStep("review");
     }
   };
@@ -533,6 +633,35 @@ export default function Home() {
       }
     }, 5000);
   };
+
+  const needsUploadedFasta = form.fastaSource === "upload" && !uploadedFasta;
+  const buildButtonDisabled =
+    !form.packageName ||
+    !form.organism ||
+    packageValidation.status !== "valid" ||
+    needsUploadedFasta;
+  const buildButtonText =
+    packageValidation.status !== "valid"
+      ? "Validate Package Name First"
+      : needsUploadedFasta
+      ? "Choose a FASTA File First"
+      : "Build BSgenome Package";
+  const buildStepLabels =
+    form.fastaSource === "upload"
+      ? [
+          "Uploading FASTA",
+          "Queuing build on GitHub Actions",
+          "Converting to 2bit format",
+          "Building R package",
+          "Uploading package release",
+        ]
+      : [
+          "Queuing build on GitHub Actions",
+          "Downloading FASTA",
+          "Converting to 2bit format",
+          "Building R package",
+          "Uploading package release",
+        ];
 
   return (
     <div className="flex flex-col flex-1 bg-background">
@@ -1079,26 +1208,80 @@ export default function Home() {
 
                 {/* Upload area (shown when "upload" selected) */}
                 {form.fastaSource === "upload" && (
-                  <div className="border-2 border-dashed border-border rounded-lg p-8 text-center cursor-pointer hover:border-primary/40 transition-colors">
-                    <svg
-                      className="mx-auto mb-2"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
+                  <div className="space-y-2">
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept=".fa,.fasta,.fna,.fas,.fa.gz,.fasta.gz,.fna.gz,.fas.gz"
+                      className="hidden"
+                      onChange={(e) => selectFastaFile(e.target.files?.[0])}
+                    />
+                    <div
+                      role="button"
+                      tabIndex={0}
+                      className={`border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors ${
+                        isDragActive
+                          ? "border-primary bg-accent"
+                          : "border-border hover:border-primary/40"
+                      }`}
+                      onClick={() => fileInputRef.current?.click()}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          fileInputRef.current?.click();
+                        }
+                      }}
+                      onDragOver={(e) => {
+                        e.preventDefault();
+                        setIsDragActive(true);
+                      }}
+                      onDragLeave={() => setIsDragActive(false)}
+                      onDrop={(e) => {
+                        e.preventDefault();
+                        setIsDragActive(false);
+                        selectFastaFile(e.dataTransfer.files?.[0]);
+                      }}
                     >
-                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                      <polyline points="17 8 12 3 7 8" />
-                      <line x1="12" y1="3" x2="12" y2="15" />
-                    </svg>
+                      <svg
+                        className="mx-auto mb-2"
+                        width="28"
+                        height="28"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                      >
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="17 8 12 3 7 8" />
+                        <line x1="12" y1="3" x2="12" y2="15" />
+                      </svg>
+                      {uploadedFasta ? (
+                        <>
+                          <p className="text-sm font-medium text-foreground">
+                            {uploadedFasta.name}
+                          </p>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            {formatBytes(uploadedFasta.size)}
+                            {uploadState === "uploaded" ? " · uploaded" : ""}
+                          </p>
+                        </>
+                      ) : (
+                        <>
+                          <p className="text-sm text-muted-foreground">
+                            Drop FASTA file here or{" "}
+                            <span className="text-primary underline">browse</span>
+                          </p>
+                          <p className="text-sm text-muted-foreground mt-1">
+                            .fa, .fasta, .fna, .fas, or gzip-compressed FASTA
+                          </p>
+                        </>
+                      )}
+                    </div>
+                    {uploadError && (
+                      <p className="text-sm text-destructive">{uploadError}</p>
+                    )}
                     <p className="text-sm text-muted-foreground">
-                      Drop FASTA file here or{" "}
-                      <span className="text-primary underline">browse</span>
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      .fa, .fasta, .fna, .fas
+                      Uploaded FASTA builds create a temporary GitHub Release for download; they are not added to the public package repository. Do not upload private or sensitive sequence data.
                     </p>
                   </div>
                 )}
@@ -1169,15 +1352,9 @@ export default function Home() {
                   size="lg"
                   className="w-full text-base cursor-pointer"
                   onClick={handleBuild}
-                  disabled={
-                    !form.packageName ||
-                    !form.organism ||
-                    packageValidation.status !== "valid"
-                  }
+                  disabled={buildButtonDisabled}
                 >
-                  {packageValidation.status !== "valid"
-                    ? "Validate Package Name First"
-                    : "Build BSgenome Package"}
+                  {uploadState === "uploading" ? "Uploading FASTA..." : buildButtonText}
                 </Button>
               </CardContent>
             </Card>
@@ -1194,13 +1371,7 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-6 py-8">
                 <div className="space-y-4">
-                  {[
-                    "Queuing build on GitHub Actions",
-                    "Downloading FASTA",
-                    "Converting to 2bit format",
-                    "Building R package",
-                    "Uploading to repository",
-                  ].map((label, i) => {
+                  {buildStepLabels.map((label, i) => {
                     const done = i < buildStep;
                     const active = i === buildStep;
                     return (
@@ -1384,7 +1555,11 @@ export default function Home() {
                 </Accordion>
 
                 {/* Publish to permanent repo */}
-                {!isPublished ? (
+                {form.fastaSource === "upload" ? (
+                  <div className="border border-border rounded-lg p-4 text-sm text-muted-foreground">
+                    Uploaded FASTA builds are temporary GitHub Release downloads only. They are not published to the public package repository because AutoBSgenome cannot verify a public source accession for user-supplied sequence data.
+                  </div>
+                ) : !isPublished ? (
                   <div className="border border-border rounded-lg p-4 space-y-3">
                     <div>
                       <h4 className="font-heading font-semibold text-foreground">Publish to Community Repository</h4>
@@ -1410,6 +1585,7 @@ export default function Home() {
                                 assembly: form.assembly,
                                 provider: form.provider,
                                 version: form.version,
+                                fasta_source: form.fastaSource,
                               },
                             }),
                           });
@@ -1456,6 +1632,9 @@ export default function Home() {
                     setAccessionInput("");
                     setCircularSeqs([]);
                     setIsPublished(false);
+                    setUploadedFasta(null);
+                    setUploadError("");
+                    setUploadState("idle");
                   }}
                 >
                   Build Another Package
