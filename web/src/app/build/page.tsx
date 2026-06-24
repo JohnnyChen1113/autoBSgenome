@@ -78,6 +78,8 @@ interface BuildRecord {
   packageName: string;
   organism: string;
   downloadUrl: string;
+  deleteToken?: string;
+  deleted?: boolean;
   buildTime: number;
   timestamp: number;
 }
@@ -126,6 +128,10 @@ function loadBuildHistory(): BuildRecord[] {
   } catch {
     return [];
   }
+}
+
+function replaceBuildHistory(history: BuildRecord[]) {
+  localStorage.setItem("autobsgenome_history", JSON.stringify(history.slice(0, 20)));
 }
 
 export default function Home() {
@@ -309,6 +315,7 @@ export default function Home() {
   const [deleteToken, setDeleteToken] = useState("");
   const [deleteError, setDeleteError] = useState("");
   const [deletingBuild, setDeletingBuild] = useState(false);
+  const [deletingHistoryJobId, setDeletingHistoryJobId] = useState("");
   const [buildDeleted, setBuildDeleted] = useState(false);
   const [downloadUrl, setDownloadUrl] = useState("");
   const [fileName, setFileName] = useState("");
@@ -581,12 +588,34 @@ export default function Home() {
       window.history.replaceState(null, "", `?job=${data.job_id}`);
 
       // Poll for status
-      pollBuildStatus(data.job_id);
+      pollBuildStatus(data.job_id, data.delete_token ?? "");
     } catch (e) {
       setBuildError(e instanceof Error ? e.message : "Build request failed");
       setUploadState("idle");
       setStep("review");
     }
+  };
+
+  const deleteTemporaryBuild = async (targetJobId: string, targetDeleteToken: string) => {
+    const res = await fetch(`${WORKER_API}/api/build/${targetJobId}`, {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ delete_token: targetDeleteToken }),
+    });
+    const data = await res.json().catch(() => null) as { error?: string } | null;
+    if (!res.ok) {
+      throw new Error(data?.error ?? "Failed to delete temporary package");
+    }
+  };
+
+  const markHistoryDeleted = (targetJobId: string) => {
+    const nextHistory = loadBuildHistory().map((record) =>
+      record.jobId === targetJobId
+        ? { ...record, downloadUrl: "", deleteToken: "", deleted: true }
+        : record
+    );
+    replaceBuildHistory(nextHistory);
+    setBuildHistory(nextHistory);
   };
 
   const handleDeleteBuild = async () => {
@@ -599,18 +628,11 @@ export default function Home() {
     setDeletingBuild(true);
     setDeleteError("");
     try {
-      const res = await fetch(`${WORKER_API}/api/build/${jobId}`, {
-        method: "DELETE",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ delete_token: deleteToken }),
-      });
-      const data = await res.json().catch(() => null) as { error?: string } | null;
-      if (!res.ok) {
-        throw new Error(data?.error ?? "Failed to delete temporary package");
-      }
+      await deleteTemporaryBuild(jobId, deleteToken);
       setBuildDeleted(true);
       setDownloadUrl("");
       setDeleteToken("");
+      markHistoryDeleted(jobId);
     } catch (e) {
       setDeleteError(e instanceof Error ? e.message : "Failed to delete temporary package");
     } finally {
@@ -618,7 +640,30 @@ export default function Home() {
     }
   };
 
-  const pollBuildStatus = (id: string) => {
+  const handleDeleteHistoryBuild = async (record: BuildRecord) => {
+    if (!record.deleteToken || record.deleted || deletingHistoryJobId) return;
+    const confirmed = window.confirm(
+      `Delete the temporary GitHub Release for ${record.packageName}? This removes the download link and cannot be undone.`
+    );
+    if (!confirmed) return;
+
+    setDeletingHistoryJobId(record.jobId);
+    try {
+      await deleteTemporaryBuild(record.jobId, record.deleteToken);
+      markHistoryDeleted(record.jobId);
+      if (record.jobId === jobId) {
+        setBuildDeleted(true);
+        setDownloadUrl("");
+        setDeleteToken("");
+      }
+    } catch (e) {
+      window.alert(e instanceof Error ? e.message : "Failed to delete temporary package");
+    } finally {
+      setDeletingHistoryJobId("");
+    }
+  };
+
+  const pollBuildStatus = (id: string, currentDeleteToken = "") => {
     let errorCount = 0;
     let pollCount = 0;
     const interval = setInterval(async () => {
@@ -653,6 +698,8 @@ export default function Home() {
             packageName: formRef.current.packageName,
             organism: formRef.current.organism,
             downloadUrl: data.download_url ?? "",
+            deleteToken: currentDeleteToken,
+            deleted: false,
             buildTime: totalTime,
             timestamp: Date.now(),
           };
@@ -1787,6 +1834,7 @@ export default function Home() {
                     setDeleteToken("");
                     setDeleteError("");
                     setDeletingBuild(false);
+                    setDeletingHistoryJobId("");
                     setBuildDeleted(false);
                   }}
                 >
@@ -1875,15 +1923,35 @@ export default function Home() {
                           {new Date(record.timestamp).toLocaleDateString()}
                         </p>
                       </div>
-                      {record.downloadUrl && (
-                        <a
-                          href={record.downloadUrl}
-                          className="shrink-0 inline-flex items-center gap-1 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
-                        >
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                          Download
-                        </a>
-                      )}
+                      <div className="shrink-0 flex items-center gap-2">
+                        {record.deleted ? (
+                          <Badge variant="outline" className="text-xs">Deleted</Badge>
+                        ) : (
+                          <>
+                            {record.downloadUrl && (
+                              <a
+                                href={record.downloadUrl}
+                                className="inline-flex items-center gap-1 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+                              >
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                Download
+                              </a>
+                            )}
+                            {record.deleteToken && (
+                              <Button
+                                type="button"
+                                size="sm"
+                                variant="outline"
+                                className="border-destructive/40 text-destructive hover:bg-destructive/10"
+                                disabled={deletingHistoryJobId === record.jobId}
+                                onClick={() => handleDeleteHistoryBuild(record)}
+                              >
+                                {deletingHistoryJobId === record.jobId ? "Deleting..." : "Delete"}
+                              </Button>
+                            )}
+                          </>
+                        )}
+                      </div>
                     </div>
                   ))}
                 </div>
