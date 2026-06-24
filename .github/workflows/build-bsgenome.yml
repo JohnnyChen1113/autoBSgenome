@@ -168,11 +168,6 @@ jobs:
             mv downloaded.fasta genome.fa
           fi
 
-          if ! grep -q "^>" genome.fa; then
-            echo "ERROR: downloaded file does not look like FASTA"
-            exit 1
-          fi
-
           ls -lh genome.fa
           END=$(date +%s)
           FASTA_SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
@@ -206,11 +201,6 @@ jobs:
             mv uploaded.fasta genome.fa
           fi
 
-          if ! grep -q "^>" genome.fa; then
-            echo "ERROR: uploaded file does not look like FASTA"
-            exit 1
-          fi
-
           ls -lh genome.fa
           END=$(date +%s)
           FASTA_SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
@@ -220,6 +210,10 @@ jobs:
           python3 scripts/record_metric.py fasta_source upload
           python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
           curl -fsS -X DELETE "$FASTA_UPLOAD_URL" >/dev/null || true
+
+      - name: Validate nucleotide FASTA
+        run: |
+          python3 scripts/validate_fasta.py genome.fa --json /tmp/fasta_validation.json
 
       - name: Extract FASTA headers and stats
         id: fasta_info

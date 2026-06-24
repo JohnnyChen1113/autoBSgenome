@@ -106,7 +106,7 @@ The build workflow downloads `fasta_url` directly in GitHub Actions and does not
 
 ### POST /api/uploads
 
-Create a signed upload URL for a user-provided FASTA file. The API stores the file in the `FASTA_UPLOADS` R2 bucket, then GitHub Actions downloads it during `/api/build`.
+Create a multipart upload session for a user-provided nucleotide FASTA file. The API stores the file in the private `FASTA_UPLOADS` R2 bucket, then GitHub Actions downloads it during `/api/build`.
 
 **Request:**
 
@@ -123,19 +123,31 @@ Create a signed upload URL for a user-provided FASTA file. The API stores the fi
 ```json
 {
   "upload_id": "9ccfb9e2-0ab9-4a23-a9de-6f8fd4c67c0a",
+  "r2_upload_id": "r2-multipart-id",
   "file_name": "my-genome.fasta.gz",
   "file_size": 73400320,
-  "upload_url": "https://api.autobsgenome.org/api/uploads/...",
+  "part_size": 67108864,
+  "part_url_template": "https://api.autobsgenome.org/api/uploads/.../parts/{part_number}?...",
+  "complete_url": "https://api.autobsgenome.org/api/uploads/.../complete?...",
   "download_url": "https://api.autobsgenome.org/api/uploads/...",
+  "delete_url": "https://api.autobsgenome.org/api/uploads/...",
   "expires_at": "2026-06-25T18:00:00.000Z",
-  "max_upload_bytes": 104857600
+  "max_upload_bytes": 4294967296
 }
 ```
 
-Upload the file with:
+Upload each chunk with:
 
 ```bash
-curl -X PUT --upload-file my-genome.fasta.gz "$UPLOAD_URL"
+curl -X PUT --upload-file part-1.bin "${PART_URL_TEMPLATE/\{part_number\}/1}"
+```
+
+Then complete the upload with the uploaded part ETags:
+
+```bash
+curl -X POST "$COMPLETE_URL" \
+  -H "Content-Type: application/json" \
+  -d '{"parts":[{"part_number":1,"etag":"..."}]}'
 ```
 
 Then trigger a build with:
@@ -156,8 +168,33 @@ Then trigger a build with:
 }
 ```
 
-Supported file names end in `.fa`, `.fasta`, `.fna`, or `.fas`, optionally with `.gz`.
-Browser uploads currently support files up to 100 MB because the file body passes through the Worker request. Use FASTA URL for larger files until multipart direct upload is implemented. Upload URLs expire after 2 days; successful builds delete the uploaded FASTA after GitHub Actions downloads it, and the R2 `uploads/` lifecycle rule removes abandoned uploads after 2 days. Uploaded FASTA builds produce temporary GitHub Release downloads only; they are not added to the public package repository or `packages.json`. Do not upload private or sensitive sequence data unless the deployment's artifact storage policy is appropriate for that data.
+Supported file names end in `.fa`, `.fasta`, `.fna`, or `.fas`, optionally with `.gz`. Protein FASTA names such as `.faa`, `.pep`, and `.aa` are rejected. Browser uploads support files up to 4 GB through multipart uploads. Upload URLs expire after 2 days; successful builds delete the uploaded FASTA after GitHub Actions downloads it, and the R2 `uploads/` lifecycle rule removes abandoned uploads after 2 days.
+
+Uploaded FASTA builds produce temporary GitHub Release downloads by default. Users can opt in to permanent public repository publishing only after confirming redistribution rights and providing a public license. User-supplied packages are indexed with `provenance_status: "user_asserted"` rather than provider-verified provenance.
+
+### POST /api/publish
+
+Publish a completed temporary build to the permanent package repository.
+
+NCBI and Ensembl builds can be published with normal metadata. User-supplied FASTA or FASTA URL builds require explicit public-sharing confirmation:
+
+```json
+{
+  "job_id": "4c1e14f7",
+  "metadata": {
+    "organism": "Custom organism",
+    "assembly": "MyAssembly",
+    "provider": "LabName",
+    "version": "1.0.0",
+    "source_url": "https://example.org/assembly-page",
+    "fasta_source": "upload",
+    "public_opt_in": "true",
+    "public_rights_confirmed": "true",
+    "public_release_confirmed": "true",
+    "license": "CC0-1.0"
+  }
+}
+```
 
 ### GET /api/status/:jobId
 
