@@ -3,19 +3,26 @@
 import { useState } from "react";
 
 type Fit = "contain" | "cover";
+type Fallback = "placeholder" | "hidden";
 
 export function SpeciesImage({
   src,
   alt,
   fit = "contain",
+  fallback = "placeholder",
+  className = "",
 }: {
   src: string;
   alt: string;
   fit?: Fit;
+  fallback?: Fallback;
+  className?: string;
 }) {
   const [failed, setFailed] = useState(false);
 
   if (failed) {
+    if (fallback === "hidden") return null;
+
     // Soft fallback: a neutral placeholder square so the row layout
     // stays intact when Ensembl/Wikipedia rejects the request.
     return (
@@ -39,11 +46,13 @@ export function SpeciesImage({
       alt={alt}
       loading="lazy"
       onError={() => setFailed(true)}
-      className={
-        fit === "cover"
-          ? "h-full w-full object-cover"
-          : "h-full w-full object-contain"
-      }
+      className={[
+        className ? "" : "h-full w-full",
+        fit === "cover" ? "object-cover" : "object-contain",
+        className,
+      ]
+        .filter(Boolean)
+        .join(" ")}
     />
   );
 }

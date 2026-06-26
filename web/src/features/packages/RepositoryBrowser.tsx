@@ -14,6 +14,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { SpeciesImage } from "@/components/SpeciesImage";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { siteConfig } from "@/config";
@@ -30,7 +31,7 @@ type Taxonomy = Partial<
 type CatalogAccession = {
   accession: string;
   assembly: string;
-  source: string;
+  source?: string;
   size_mb?: number;
 };
 
@@ -193,6 +194,61 @@ function sourceUrl(build: BuildPackage): string {
   return "";
 }
 
+function catalogAccessionSourceLink(
+  accession: CatalogAccession,
+  speciesQuery: string,
+  group: string | undefined
+): { label: string; url: string } | null {
+  const source = (accession.source ?? "").toLowerCase();
+
+  if (
+    source.includes("ensembl") ||
+    (source === "ensembl" && accession.accession.startsWith("GCA_"))
+  ) {
+    const subdomain = ensemblSubdomain(group);
+    const slug = ensemblSlug(speciesQuery, group, accession.accession);
+    return {
+      label: "Ensembl",
+      url: `https://${subdomain}/${slug}/Info/Index`,
+    };
+  }
+
+  if (
+    source.includes("ncbi") ||
+    source.includes("refseq") ||
+    source.includes("genbank") ||
+    accession.accession.startsWith("GC")
+  ) {
+    return {
+      label: "NCBI",
+      url: `https://www.ncbi.nlm.nih.gov/datasets/genome/${accession.accession}/`,
+    };
+  }
+
+  return null;
+}
+
+function speciesImageUrl(org: OrganismEntry): string | null {
+  if (isProkaryote(org.group) || org.group === "viral") return null;
+
+  const baseName = speciesName(org.canonical_name ?? org.organism);
+  const parts = stripGenusBrackets(baseName).split(/\s+/).filter(Boolean);
+  if (parts.length < 2) return null;
+
+  const slug = parts
+    .slice(0, 2)
+    .map((part, index) => {
+      const cleaned = part.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+      return index === 0
+        ? cleaned.charAt(0).toUpperCase() + cleaned.slice(1).toLowerCase()
+        : cleaned.toLowerCase();
+    })
+    .join("_");
+
+  if (!slug.includes("_")) return null;
+  return `https://www.ensembl.org/i/species/${slug}.png`;
+}
+
 // Pick the right Ensembl subdomain by taxonomic kingdom. Vertebrates live
 // on the main site; everything else has its own EnsemblGenomes sister.
 function ensemblSubdomain(group?: string): string {
@@ -337,7 +393,7 @@ function matchesAvailability(
 }
 
 function catalogAccessionSource(accession: CatalogAccession): DataSourceFilter | "" {
-  const raw = accession.source.toLowerCase();
+  const raw = (accession.source ?? "").toLowerCase();
   if (raw.includes("ensembl")) return "ensembl";
   if (
     raw.includes("ncbi") ||
@@ -932,17 +988,34 @@ export function RepositoryBrowser() {
             const catalogOnly = builds.length === 0 && accessions.length > 0;
             const crumbs = taxonomyBreadcrumb(org.taxonomy);
             const visibleBuilds = isOpen ? builds : builds.slice(0, 1);
+            const displayName = org.canonical_name ?? org.organism;
+            const catalogSource = firstAccession
+              ? catalogAccessionSourceLink(
+                  firstAccession,
+                  speciesName(displayName),
+                  org.group
+                )
+              : null;
+            const imageUrl = speciesImageUrl(org);
 
             return (
               <Card key={key} className="rounded-lg py-0">
                 <CardContent className="px-0">
                   <div className="flex flex-col gap-4 p-4 md:flex-row md:items-start md:justify-between">
+                    {imageUrl && (
+                      <SpeciesImage
+                        src={imageUrl}
+                        alt={`${speciesName(displayName)} reference image`}
+                        fit="contain"
+                        fallback="hidden"
+                        className="hidden h-16 w-16 shrink-0 rounded-md border border-border bg-background p-1 md:block"
+                      />
+                    )}
                     <div className="min-w-0 flex-1">
                       {(() => {
                         // Prefer the offline-enriched canonical name when
                         // present, otherwise fall back to the raw NCBI
                         // assembly metadata string.
-                        const displayName = org.canonical_name ?? org.organism;
                         const synonyms = (org.synonyms ?? []).filter(
                           (s) =>
                             stripGenusBrackets(s).trim() !==
@@ -1010,6 +1083,59 @@ export function RepositoryBrowser() {
                               {crumb}
                             </span>
                           ))}
+                        </div>
+                      )}
+                      {catalogOnly && firstAccession && (
+                        <div className="mt-3 grid gap-x-4 gap-y-1 text-sm text-muted-foreground sm:grid-cols-2 lg:grid-cols-4">
+                          {catalogSource && (
+                            <span>
+                              Source:{" "}
+                              <a
+                                href={catalogSource.url}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-flex items-center gap-1 text-primary hover:underline"
+                              >
+                                {catalogSource.label}
+                                <ExternalLink className="size-3" />
+                              </a>
+                            </span>
+                          )}
+                          {firstAccession.assembly && (
+                            <span>
+                              Assembly:{" "}
+                              <span className="text-foreground">
+                                {firstAccession.assembly}
+                              </span>
+                            </span>
+                          )}
+                          {firstAccession.accession && (
+                            <span className="min-w-0">
+                              Accession:{" "}
+                              {catalogSource ? (
+                                <a
+                                  href={catalogSource.url}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="text-primary hover:underline"
+                                >
+                                  {firstAccession.accession}
+                                </a>
+                              ) : (
+                                <span className="text-foreground">
+                                  {firstAccession.accession}
+                                </span>
+                              )}
+                            </span>
+                          )}
+                          {firstAccession.size_mb && (
+                            <span>
+                              Genome size:{" "}
+                              <span className="text-foreground">
+                                {firstAccession.size_mb.toLocaleString()} Mb
+                              </span>
+                            </span>
+                          )}
                         </div>
                       )}
                     </div>
