@@ -30,9 +30,9 @@ python3 scripts/generate-species-metadata.py \
   --assembly-summary /tmp/assembly_summary_genbank.txt \
   --taxonomy-cache species-metadata/taxonomy-cache.json \
   --fetch-taxonomy \
-  --fetch-limit 2000 \
+  --fetch-limit 1000 \
   --probe-images \
-  --image-probe-limit 500 \
+  --image-probe-limit 100 \
   --out-dir species-metadata
 ```
 

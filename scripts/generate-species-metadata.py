@@ -180,7 +180,7 @@ def fetch_taxonomy(taxon: str, delay: float) -> dict[str, Any] | None:
             time.sleep(delay)
 
 
-def probe_image(url: str, timeout: float = 8.0) -> bool:
+def probe_image(url: str, timeout: float = 2.0) -> bool:
     if not url:
         return False
     req = urllib.request.Request(url, method="HEAD")
