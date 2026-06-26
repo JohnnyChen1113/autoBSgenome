@@ -80,6 +80,40 @@ type OrganismEntry = {
   synonyms?: string[];
 };
 
+type SpeciesMetadata = {
+  organism: string;
+  canonical_name?: string;
+  scientific_name?: string;
+  common_name?: string;
+  group?: string;
+  rank?: string;
+  taxid?: number;
+  species_taxid?: number;
+  assembly_level?: string;
+  release_date?: string;
+  image_url?: string;
+  sources?: string[];
+  taxonomy?: Taxonomy;
+  aliases?: string[];
+};
+
+type SpeciesMetadataIndex = {
+  version: number;
+  total: number;
+  shards: { key: string; path: string; count: number }[];
+};
+
+type SpeciesMetadataShard = {
+  version: number;
+  key: string;
+  entries: Record<string, SpeciesMetadata>;
+};
+
+type SpeciesMetadataShardState =
+  | SpeciesMetadataShard
+  | "loading"
+  | "missing";
+
 type RepositoryData = {
   organisms: OrganismEntry[];
   flat: BuildPackage[];
@@ -123,6 +157,42 @@ function strainInfo(name: string): string {
   const cleaned = stripGenusBrackets(name).trim();
   const parts = cleaned.split(/\s+/);
   return parts.length > 2 ? parts.slice(2).join(" ") : "";
+}
+
+function metadataLookupKey(name: string): string {
+  return stripGenusBrackets(name).trim().replace(/\s+/g, " ").toLowerCase();
+}
+
+function metadataShardKey(name: string): string {
+  const first = speciesName(name)[0]?.toUpperCase();
+  return first && first >= "A" && first <= "Z" ? first : "_";
+}
+
+function mergeTaxonomy(
+  primary?: Taxonomy,
+  fallback?: Taxonomy
+): Taxonomy | undefined {
+  const merged = { ...(fallback ?? {}), ...(primary ?? {}) };
+  return Object.keys(merged).length > 0 ? merged : undefined;
+}
+
+function metadataForOrganism(
+  org: OrganismEntry,
+  metadata: Map<string, SpeciesMetadata>
+): SpeciesMetadata | undefined {
+  const candidates = [
+    org.organism,
+    org.canonical_name ?? "",
+    speciesName(org.organism),
+  ]
+    .filter(Boolean)
+    .map(metadataLookupKey);
+
+  for (const candidate of candidates) {
+    const found = metadata.get(candidate);
+    if (found) return found;
+  }
+  return undefined;
 }
 
 function isAnimal(group?: string): boolean {
@@ -597,6 +667,10 @@ export function RepositoryBrowser() {
   const [organisms, setOrganisms] = useState<OrganismEntry[]>([]);
   const [flatCount, setFlatCount] = useState(0);
   const [biocCount, setBiocCount] = useState(0);
+  const [metadataIndex, setMetadataIndex] = useState<SpeciesMetadataIndex | null>(null);
+  const [metadataShards, setMetadataShards] = useState<
+    Record<string, SpeciesMetadataShardState>
+  >({});
   const [progress, setProgress] = useState<ProgressData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -619,11 +693,13 @@ export function RepositoryBrowser() {
       setLoading(true);
       setError("");
 
-      const [community, biocPackages, catalog, queue] = await Promise.all([
+      const [community, biocPackages, catalog, queue, speciesMetadataIndex] =
+        await Promise.all([
         fetchRepositoryJson<RepositoryData | BuildPackage[]>("packages.json"),
         fetchRepositoryJson<BuildPackage[]>("bioc-packages.json"),
         fetchRepositoryJson<CatalogRow[]>("catalog.json"),
         fetchRepositoryJson<{ status: string }[]>("build-queue.json"),
+        fetchRepositoryJson<SpeciesMetadataIndex>("species-metadata/index.json"),
       ]);
 
       if (cancelled) return;
@@ -637,6 +713,7 @@ export function RepositoryBrowser() {
       setOrganisms(merged.organisms);
       setFlatCount(merged.flat.length);
       setBiocCount(merged.biocCount);
+      setMetadataIndex(speciesMetadataIndex);
 
       if (queue) {
         const eukaryotes = queue.filter(
@@ -734,6 +811,78 @@ export function RepositoryBrowser() {
   const displayed = filtered.slice(0, visibleCount);
   const progressPercent =
     progress && progress.total > 0 ? (progress.done / progress.total) * 100 : 0;
+  const metadataEntries = useMemo(() => {
+    const entries = new Map<string, SpeciesMetadata>();
+    for (const shard of Object.values(metadataShards)) {
+      if (!shard || shard === "loading" || shard === "missing") continue;
+      for (const [key, value] of Object.entries(shard.entries ?? {})) {
+        entries.set(key, value);
+      }
+    }
+    return entries;
+  }, [metadataShards]);
+
+  const metadataShardPaths = useMemo(() => {
+    const paths = new Map<string, string>();
+    for (const shard of metadataIndex?.shards ?? []) {
+      paths.set(shard.key, shard.path);
+    }
+    return paths;
+  }, [metadataIndex]);
+
+  const missingMetadataShardKeys = useMemo(() => {
+    if (!metadataIndex) return [];
+    const keys = new Set<string>();
+    for (const org of displayed) {
+      const key = metadataShardKey(org.canonical_name ?? org.organism);
+      if (!metadataShardPaths.has(key)) continue;
+      if (Object.prototype.hasOwnProperty.call(metadataShards, key)) continue;
+      keys.add(key);
+    }
+    return [...keys];
+  }, [displayed, metadataIndex, metadataShardPaths, metadataShards]);
+  const missingMetadataShardKey = missingMetadataShardKeys.join("|");
+
+  useEffect(() => {
+    if (missingMetadataShardKeys.length === 0) return;
+    let cancelled = false;
+
+    setMetadataShards((previous) => {
+      const next = { ...previous };
+      for (const key of missingMetadataShardKeys) {
+        next[key] = "loading";
+      }
+      return next;
+    });
+
+    async function loadShards() {
+      const results = await Promise.all(
+        missingMetadataShardKeys.map(async (key) => {
+          const path = metadataShardPaths.get(key);
+          if (!path) return [key, null] as const;
+          const shard = await fetchRepositoryJson<SpeciesMetadataShard>(
+            `species-metadata/${path}`
+          );
+          return [key, shard] as const;
+        })
+      );
+
+      if (cancelled) return;
+      setMetadataShards((previous) => {
+        const next = { ...previous };
+        for (const [key, shard] of results) {
+          next[key] = shard ?? "missing";
+        }
+        return next;
+      });
+    }
+
+    void loadShards();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [missingMetadataShardKey, missingMetadataShardKeys, metadataShardPaths]);
 
   function toggleExpanded(key: string) {
     setExpanded((previous) => {
@@ -986,17 +1135,32 @@ export function RepositoryBrowser() {
             const isOpen = expanded.has(key);
             const firstAccession = accessions[0];
             const catalogOnly = builds.length === 0 && accessions.length > 0;
-            const crumbs = taxonomyBreadcrumb(org.taxonomy);
             const visibleBuilds = isOpen ? builds : builds.slice(0, 1);
-            const displayName = org.canonical_name ?? org.organism;
+            const metadata = metadataForOrganism(org, metadataEntries);
+            const displayName =
+              metadata?.canonical_name ??
+              metadata?.scientific_name ??
+              org.canonical_name ??
+              org.organism;
+            const commonName = org.common_name || metadata?.common_name;
+            const displayGroup = org.group || metadata?.group;
+            const displayTaxonomy = mergeTaxonomy(org.taxonomy, metadata?.taxonomy);
+            const crumbs = taxonomyBreadcrumb(displayTaxonomy);
             const catalogSource = firstAccession
               ? catalogAccessionSourceLink(
                   firstAccession,
                   speciesName(displayName),
-                  org.group
+                  displayGroup
                 )
               : null;
-            const imageUrl = speciesImageUrl(org);
+            const imageUrl =
+              metadata?.image_url ??
+              speciesImageUrl({
+                ...org,
+                organism: displayName,
+                canonical_name: displayName,
+                group: displayGroup,
+              });
 
             return (
               <Card key={key} className="rounded-lg py-0">
@@ -1032,9 +1196,9 @@ export function RepositoryBrowser() {
                                   </span>
                                 )}
                               </h2>
-                              {org.common_name && (
+                              {commonName && (
                                 <span className="text-sm text-muted-foreground">
-                                  {org.common_name}
+                                  {commonName}
                                 </span>
                               )}
                             </div>
@@ -1052,7 +1216,7 @@ export function RepositoryBrowser() {
                         );
                       })()}
                       <div className="mt-2 flex flex-wrap gap-1.5">
-                        <Badge variant="outline">{groupLabel(org.group)}</Badge>
+                        <Badge variant="outline">{groupLabel(displayGroup)}</Badge>
                         {builds.length > 0 && (
                           <Badge variant="secondary">
                             <Package className="size-3" />
@@ -1083,6 +1247,40 @@ export function RepositoryBrowser() {
                               {crumb}
                             </span>
                           ))}
+                        </div>
+                      )}
+                      {metadata && (
+                        <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted-foreground">
+                          {metadata.taxid && (
+                            <a
+                              href={`https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${metadata.taxid}`}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-primary hover:underline"
+                            >
+                              TaxID: {metadata.taxid}
+                            </a>
+                          )}
+                          {metadata.species_taxid &&
+                            metadata.species_taxid !== metadata.taxid && (
+                              <a
+                                href={`https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${metadata.species_taxid}`}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-primary hover:underline"
+                              >
+                                Species TaxID: {metadata.species_taxid}
+                              </a>
+                            )}
+                          {metadata.assembly_level && (
+                            <span>Assembly level: {metadata.assembly_level}</span>
+                          )}
+                          {metadata.release_date && (
+                            <span>
+                              Genome release:{" "}
+                              {formatMetadataDate(metadata.release_date)}
+                            </span>
+                          )}
                         </div>
                       )}
                       {catalogOnly && firstAccession && (
@@ -1191,8 +1389,8 @@ export function RepositoryBrowser() {
                                 {(() => {
                                   const src = buildSourceLink(
                                     build,
-                                    speciesName(org.canonical_name ?? org.organism),
-                                    org.group
+                                    speciesName(displayName),
+                                    displayGroup
                                   );
                                   if (!src) return null;
                                   return (

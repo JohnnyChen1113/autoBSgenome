@@ -1,0 +1,80 @@
+name: Generate Species Metadata
+
+on:
+  workflow_dispatch:
+    inputs:
+      fetch_limit:
+        description: "NCBI Taxonomy records to fetch this run"
+        required: false
+        default: "2000"
+      image_probe_limit:
+        description: "Ensembl species image URLs to probe this run"
+        required: false
+        default: "500"
+  schedule:
+    # Weekly on Mondays at 7:00 AM UTC. The taxonomy cache makes this
+    # incremental, so the public metadata gets richer without one huge run.
+    - cron: "0 7 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Checkout metadata generator
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: _main
+          sparse-checkout: scripts/generate-species-metadata.py
+          sparse-checkout-cone-mode: false
+
+      - name: Download NCBI assembly summaries
+        run: |
+          curl -fsSL --retry 3 --retry-delay 10 \
+            https://ftp.ncbi.nlm.nih.gov/genomes/refseq/assembly_summary_refseq.txt \
+            -o /tmp/assembly_summary_refseq.txt
+          curl -fsSL --retry 3 --retry-delay 10 \
+            https://ftp.ncbi.nlm.nih.gov/genomes/genbank/assembly_summary_genbank.txt \
+            -o /tmp/assembly_summary_genbank.txt
+
+      - name: Generate metadata shards
+        env:
+          FETCH_LIMIT: ${{ github.event.inputs.fetch_limit || '2000' }}
+          IMAGE_PROBE_LIMIT: ${{ github.event.inputs.image_probe_limit || '500' }}
+        run: |
+          python3 _main/scripts/generate-species-metadata.py \
+            --packages packages.json \
+            --bioc-packages bioc-packages.json \
+            --catalog catalog.json \
+            --assembly-summary /tmp/assembly_summary_refseq.txt \
+            --assembly-summary /tmp/assembly_summary_genbank.txt \
+            --taxonomy-cache species-metadata/taxonomy-cache.json \
+            --fetch-taxonomy \
+            --fetch-limit "${FETCH_LIMIT}" \
+            --probe-images \
+            --image-probe-limit "${IMAGE_PROBE_LIMIT}" \
+            --out-dir species-metadata
+          rm -rf _main
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add species-metadata
+          git diff --cached --quiet || {
+            git commit -m "chore: Generate species metadata shards"
+            git push
+          }
