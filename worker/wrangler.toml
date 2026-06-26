@@ -8,7 +8,7 @@ routes = [
 
 [vars]
 GITHUB_REPO = "JohnnyChen1113/autoBSgenome"
-ALLOWED_ORIGIN = "https://autobsgenome.org,https://www.autobsgenome.org,https://autobsgenome.pages.dev"
+ALLOWED_ORIGIN = "https://autobsgenome.org,https://www.autobsgenome.org,https://autobsgenome.pages.dev,https://autobsgenome.bioinfoark.workers.dev"
 
 [[r2_buckets]]
 binding = "FASTA_UPLOADS"

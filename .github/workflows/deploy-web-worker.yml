@@ -46,3 +46,8 @@ jobs:
         if: env.CLOUDFLARE_ACCOUNT_ID != '' && env.CLOUDFLARE_API_TOKEN != ''
         working-directory: web
         run: ./node_modules/.bin/wrangler deploy --config wrangler.production.jsonc
+
+      - name: Deploy workers.dev fallback
+        if: env.CLOUDFLARE_ACCOUNT_ID != '' && env.CLOUDFLARE_API_TOKEN != ''
+        working-directory: web
+        run: ./node_modules/.bin/wrangler deploy --config wrangler.fallback.jsonc

@@ -17,6 +17,7 @@ function corsHeaders(origin: string, allowedOrigin: string): HeadersInit {
   const isAllowed =
     allowedOrigins.includes(origin) ||
     origin.endsWith(".autobsgenome.pages.dev") ||
+    origin === "https://autobsgenome.bioinfoark.workers.dev" ||
     /^https:\/\/autobsgenome-web-staging\.[a-z0-9-]+\.workers\.dev$/i.test(origin) ||
     origin.startsWith("http://localhost:");
 
