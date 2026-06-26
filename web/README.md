@@ -36,7 +36,24 @@ for Cloudflare Workers using `NITRO_PRESET=cloudflare_module`.
 
 ## Deploy
 
-Deployment uses `wrangler deploy` with `wrangler.jsonc`. Static assets are served
-from `.output/public`, and the Worker server entry is `.output/server/index.mjs`.
-The current Worker name is `autobsgenome-web-staging`; production cutover for
-`autobsgenome.org` should be done separately after the staging build is reviewed.
+Deployment uses `wrangler deploy`. Static assets are served from `.output/public`,
+and the Worker server entry is `.output/server/index.mjs`.
+
+Staging:
+
+```bash
+npm run cf:build
+./node_modules/.bin/wrangler deploy
+```
+
+Production:
+
+```bash
+npm run cf:build
+./node_modules/.bin/wrangler deploy --config wrangler.production.jsonc
+```
+
+The default `wrangler.jsonc` deploys the staging Worker
+`autobsgenome-web-staging`. The production config deploys `autobsgenome-web` and
+routes `autobsgenome.org/*` plus `www.autobsgenome.org/*` to that Worker. The
+GitHub workflow deploys production on pushes to `main`.

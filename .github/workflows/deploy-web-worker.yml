@@ -1,4 +1,4 @@
-name: Deploy Web to Cloudflare Worker
+name: Deploy Web to Production Worker
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 concurrency:
-  group: deploy-web-worker-${{ github.ref }}
+  group: deploy-web-production-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -51,4 +51,4 @@ jobs:
       - name: Deploy to Cloudflare Worker
         if: env.CLOUDFLARE_ACCOUNT_ID != '' && env.CLOUDFLARE_API_TOKEN != ''
         working-directory: web
-        run: ./node_modules/.bin/wrangler deploy
+        run: ./node_modules/.bin/wrangler deploy --config wrangler.production.jsonc
