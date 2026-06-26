@@ -40,6 +40,7 @@ python3 scripts/generate-species-metadata.py \
   --image-dir species-images \
   --image-base-url https://johnnychen1113.github.io/autoBSgenome/species-images \
   --image-download-limit 1000 \
+  --image-workers 8 \
   --out-dir species-metadata
 ```
 
@@ -63,4 +64,6 @@ Image caching is intentionally incremental. Many catalog organisms, especially
 bacteria and viruses, do not have stable upstream images. Caching only confirmed
 images avoids broken cards and keeps the public repository from growing
 unnecessarily. The generator probes common model organisms first, then built
-animal/plant/fungal entries, then the wider catalog.
+animal/plant/fungal entries, then the wider catalog. Image probing and
+downloads use a small worker pool so high-volume cache runs can finish without
+requiring thousands of serial network timeouts.

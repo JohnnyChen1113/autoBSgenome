@@ -23,6 +23,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -366,12 +367,12 @@ def build_entries(
     image_base_url: str,
     image_download_limit: int,
     max_image_bytes: int,
+    image_workers: int,
 ) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]], dict[str, int]]:
     entries: dict[str, dict[str, Any]] = {}
     stats = defaultdict(int)
     fetched = 0
     probed_images = 0
-    downloaded_images = 0
 
     def ensure(organism: str) -> dict[str, Any]:
         clean = clean_name(organism) or "Unknown"
@@ -462,6 +463,7 @@ def build_entries(
 
         entry["group"] = compute_group(entry.get("taxonomy") or {}, entry.get("group") or "")
 
+    image_candidates: list[tuple[int, dict[str, Any], str, Path | None]] = []
     for entry in sorted(entries.values(), key=image_probe_priority):
         candidate = image_candidate(entry.get("scientific_name") or entry["canonical_name"], entry["group"])
         image_path = (
@@ -476,24 +478,69 @@ def build_entries(
 
         if probe_images and candidate and probed_images < image_probe_limit:
             probed_images += 1
-            stats["image_probe_attempted"] += 1
-            if probe_image(candidate):
-                if (
-                    download_images
-                    and image_path
-                    and image_base_url
-                    and downloaded_images < image_download_limit
-                ):
-                    if download_image(candidate, image_path, max_image_bytes):
+            image_candidates.append((len(image_candidates), entry, candidate, image_path))
+
+    stats["image_probe_attempted"] += len(image_candidates)
+    successful_images: list[tuple[int, dict[str, Any], str, Path | None]] = []
+    if image_candidates:
+        workers = max(1, min(image_workers, len(image_candidates)))
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = {
+                executor.submit(probe_image, candidate): (index, entry, candidate, image_path)
+                for index, entry, candidate, image_path in image_candidates
+            }
+            for future in as_completed(futures):
+                item = futures[future]
+                try:
+                    ok = future.result()
+                except Exception:
+                    ok = False
+                if ok:
+                    successful_images.append(item)
+                    stats["image_probe_succeeded"] += 1
+
+    successful_images.sort(key=lambda item: item[0])
+    if successful_images and not download_images:
+        for _, entry, candidate, _ in successful_images:
+            entry["image_url"] = candidate
+    elif successful_images:
+        downloadable = [
+            item
+            for item in successful_images
+            if item[3] is not None and image_base_url
+        ]
+        for _, entry, candidate, image_path in successful_images:
+            if image_path is None or not image_base_url:
+                entry["image_url"] = candidate
+
+        for _, entry, candidate, _ in downloadable[image_download_limit:]:
+            entry["image_url"] = candidate
+
+        to_download = downloadable[:image_download_limit]
+        if to_download:
+            workers = max(1, min(image_workers, len(to_download)))
+            with ThreadPoolExecutor(max_workers=workers) as executor:
+                futures = {
+                    executor.submit(download_image, candidate, image_path, max_image_bytes): (
+                        entry,
+                        candidate,
+                        image_path,
+                    )
+                    for _, entry, candidate, image_path in to_download
+                    if image_path is not None
+                }
+                for future in as_completed(futures):
+                    entry, candidate, image_path = futures[future]
+                    try:
+                        ok = future.result()
+                    except Exception:
+                        ok = False
+                    if ok:
                         entry["image_url"] = image_public_url(image_base_url, image_dir, image_path)
-                        downloaded_images += 1
                         stats["image_downloaded"] += 1
                     else:
                         entry["image_url"] = candidate
                         stats["image_download_failed"] += 1
-                else:
-                    entry["image_url"] = candidate
-                stats["image_probe_succeeded"] += 1
 
     stats["taxonomy_cache_entries"] = len(taxonomy_cache)
     stats["species_entries"] = len(entries)
@@ -593,6 +640,7 @@ def main() -> None:
     parser.add_argument("--image-base-url", default="")
     parser.add_argument("--image-download-limit", type=int, default=0)
     parser.add_argument("--max-image-bytes", type=int, default=1_500_000)
+    parser.add_argument("--image-workers", type=int, default=8)
     args = parser.parse_args()
 
     packages = load_packages(args.packages)
@@ -617,6 +665,7 @@ def main() -> None:
         image_base_url=args.image_base_url,
         image_download_limit=max(args.image_download_limit, 0),
         max_image_bytes=max(args.max_image_bytes, 1),
+        image_workers=max(args.image_workers, 1),
     )
 
     write_shards(entries, args.out_dir, stats)

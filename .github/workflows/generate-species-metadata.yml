@@ -15,6 +15,10 @@ on:
         description: "Confirmed species images to cache into gh-pages this run"
         required: false
         default: "1000"
+      image_workers:
+        description: "Concurrent species image probe/download workers"
+        required: false
+        default: "8"
   schedule:
     # Weekly on Mondays at 7:00 AM UTC. The taxonomy cache makes this
     # incremental, so the public metadata gets richer without one huge run.
@@ -59,6 +63,7 @@ jobs:
           FETCH_LIMIT: ${{ github.event.inputs.fetch_limit || '1000' }}
           IMAGE_PROBE_LIMIT: ${{ github.event.inputs.image_probe_limit || '1000' }}
           IMAGE_DOWNLOAD_LIMIT: ${{ github.event.inputs.image_download_limit || '1000' }}
+          IMAGE_WORKERS: ${{ github.event.inputs.image_workers || '8' }}
         run: |
           python3 _main/scripts/generate-species-metadata.py \
             --packages packages.json \
@@ -75,6 +80,7 @@ jobs:
             --image-dir species-images \
             --image-base-url https://johnnychen1113.github.io/autoBSgenome/species-images \
             --image-download-limit "${IMAGE_DOWNLOAD_LIMIT}" \
+            --image-workers "${IMAGE_WORKERS}" \
             --out-dir species-metadata
           rm -rf _main
 
