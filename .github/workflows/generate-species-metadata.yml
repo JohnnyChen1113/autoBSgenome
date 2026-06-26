@@ -11,6 +11,10 @@ on:
         description: "Ensembl species image URLs to probe this run"
         required: false
         default: "100"
+      image_download_limit:
+        description: "Confirmed species images to cache into gh-pages this run"
+        required: false
+        default: "100"
   schedule:
     # Weekly on Mondays at 7:00 AM UTC. The taxonomy cache makes this
     # incremental, so the public metadata gets richer without one huge run.
@@ -54,6 +58,7 @@ jobs:
         env:
           FETCH_LIMIT: ${{ github.event.inputs.fetch_limit || '1000' }}
           IMAGE_PROBE_LIMIT: ${{ github.event.inputs.image_probe_limit || '100' }}
+          IMAGE_DOWNLOAD_LIMIT: ${{ github.event.inputs.image_download_limit || '100' }}
         run: |
           python3 _main/scripts/generate-species-metadata.py \
             --packages packages.json \
@@ -66,6 +71,10 @@ jobs:
             --fetch-limit "${FETCH_LIMIT}" \
             --probe-images \
             --image-probe-limit "${IMAGE_PROBE_LIMIT}" \
+            --download-images \
+            --image-dir species-images \
+            --image-base-url https://johnnychen1113.github.io/autoBSgenome/species-images \
+            --image-download-limit "${IMAGE_DOWNLOAD_LIMIT}" \
             --out-dir species-metadata
           rm -rf _main
 
@@ -73,7 +82,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add species-metadata
+          git add species-metadata species-images
           git diff --cached --quiet || {
             git commit -m "chore: Generate species metadata shards"
             git push

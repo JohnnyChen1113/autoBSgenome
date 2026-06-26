@@ -298,27 +298,6 @@ function catalogAccessionSourceLink(
   return null;
 }
 
-function speciesImageUrl(org: OrganismEntry): string | null {
-  if (isProkaryote(org.group) || org.group === "viral") return null;
-
-  const baseName = speciesName(org.canonical_name ?? org.organism);
-  const parts = stripGenusBrackets(baseName).split(/\s+/).filter(Boolean);
-  if (parts.length < 2) return null;
-
-  const slug = parts
-    .slice(0, 2)
-    .map((part, index) => {
-      const cleaned = part.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
-      return index === 0
-        ? cleaned.charAt(0).toUpperCase() + cleaned.slice(1).toLowerCase()
-        : cleaned.toLowerCase();
-    })
-    .join("_");
-
-  if (!slug.includes("_")) return null;
-  return `https://www.ensembl.org/i/species/${slug}.png`;
-}
-
 // Pick the right Ensembl subdomain by taxonomic kingdom. Vertebrates live
 // on the main site; everything else has its own EnsemblGenomes sister.
 function ensemblSubdomain(group?: string): string {
@@ -1153,14 +1132,7 @@ export function RepositoryBrowser() {
                   displayGroup
                 )
               : null;
-            const imageUrl =
-              metadata?.image_url ??
-              speciesImageUrl({
-                ...org,
-                organism: displayName,
-                canonical_name: displayName,
-                group: displayGroup,
-              });
+            const imageUrl = metadata?.image_url ?? null;
 
             return (
               <Card key={key} className="rounded-lg py-0">

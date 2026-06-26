@@ -95,6 +95,21 @@ def image_candidate(value: str, group: str) -> str:
     return f"{IMAGE_HOST}/{slug}.png" if slug else ""
 
 
+def cached_image_path(image_dir: Path, entry: dict[str, Any], candidate_url: str) -> Path:
+    slug = image_slug(entry.get("scientific_name") or entry.get("canonical_name") or entry["organism"])
+    if not slug:
+        slug = image_slug(Path(urllib.parse.urlparse(candidate_url).path).stem)
+    taxid = entry.get("species_taxid") or entry.get("taxid")
+    stem = f"{slug}-{taxid}" if taxid else slug
+    shard = shard_key(slug or entry["organism"])
+    return image_dir / shard / f"{stem}.png"
+
+
+def image_public_url(image_base_url: str, image_dir: Path, path: Path) -> str:
+    rel = path.relative_to(image_dir).as_posix()
+    return f"{image_base_url.rstrip('/')}/{rel}"
+
+
 def load_packages(path: Path) -> list[dict[str, Any]]:
     data = load_json(path, [])
     if isinstance(data, dict):
@@ -192,6 +207,33 @@ def probe_image(url: str, timeout: float = 2.0) -> bool:
         return False
 
 
+def download_image(url: str, path: Path, max_bytes: int, timeout: float = 10.0) -> bool:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    req = urllib.request.Request(url, headers={"Accept": "image/*"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            content_type = response.headers.get("content-type", "")
+            if not content_type.startswith("image/"):
+                return False
+
+            tmp_path = path.with_suffix(path.suffix + ".tmp")
+            total = 0
+            with tmp_path.open("wb") as handle:
+                while True:
+                    chunk = response.read(64 * 1024)
+                    if not chunk:
+                        break
+                    total += len(chunk)
+                    if total > max_bytes:
+                        tmp_path.unlink(missing_ok=True)
+                        return False
+                    handle.write(chunk)
+            tmp_path.replace(path)
+            return True
+    except Exception:
+        return False
+
+
 def merge_taxonomy(existing: dict[str, str], incoming: dict[str, str]) -> dict[str, str]:
     merged = dict(incoming or {})
     merged.update(existing or {})
@@ -239,11 +281,17 @@ def build_entries(
     fetch_delay: float,
     probe_images: bool,
     image_probe_limit: int,
+    download_images: bool,
+    image_dir: Path | None,
+    image_base_url: str,
+    image_download_limit: int,
+    max_image_bytes: int,
 ) -> tuple[dict[str, dict[str, Any]], dict[str, dict[str, Any]], dict[str, int]]:
     entries: dict[str, dict[str, Any]] = {}
     stats = defaultdict(int)
     fetched = 0
     probed_images = 0
+    downloaded_images = 0
 
     def ensure(organism: str) -> dict[str, Any]:
         clean = clean_name(organism) or "Unknown"
@@ -335,11 +383,35 @@ def build_entries(
         entry["group"] = compute_group(entry.get("taxonomy") or {}, entry.get("group") or "")
 
         candidate = image_candidate(entry.get("scientific_name") or entry["canonical_name"], entry["group"])
+        image_path = (
+            cached_image_path(image_dir, entry, candidate)
+            if download_images and image_dir and candidate
+            else None
+        )
+        if image_path and image_path.exists() and image_base_url:
+            entry["image_url"] = image_public_url(image_base_url, image_dir, image_path)
+            stats["image_cache_hits"] += 1
+            continue
+
         if probe_images and candidate and probed_images < image_probe_limit:
             probed_images += 1
             stats["image_probe_attempted"] += 1
             if probe_image(candidate):
-                entry["image_url"] = candidate
+                if (
+                    download_images
+                    and image_path
+                    and image_base_url
+                    and downloaded_images < image_download_limit
+                ):
+                    if download_image(candidate, image_path, max_image_bytes):
+                        entry["image_url"] = image_public_url(image_base_url, image_dir, image_path)
+                        downloaded_images += 1
+                        stats["image_downloaded"] += 1
+                    else:
+                        entry["image_url"] = candidate
+                        stats["image_download_failed"] += 1
+                else:
+                    entry["image_url"] = candidate
                 stats["image_probe_succeeded"] += 1
 
     stats["taxonomy_cache_entries"] = len(taxonomy_cache)
@@ -435,6 +507,11 @@ def main() -> None:
     parser.add_argument("--fetch-delay", type=float, default=0.12)
     parser.add_argument("--probe-images", action="store_true")
     parser.add_argument("--image-probe-limit", type=int, default=0)
+    parser.add_argument("--download-images", action="store_true")
+    parser.add_argument("--image-dir", type=Path)
+    parser.add_argument("--image-base-url", default="")
+    parser.add_argument("--image-download-limit", type=int, default=0)
+    parser.add_argument("--max-image-bytes", type=int, default=1_500_000)
     args = parser.parse_args()
 
     packages = load_packages(args.packages)
@@ -454,6 +531,11 @@ def main() -> None:
         fetch_delay=args.fetch_delay,
         probe_images=args.probe_images,
         image_probe_limit=max(args.image_probe_limit, 0),
+        download_images=args.download_images,
+        image_dir=args.image_dir,
+        image_base_url=args.image_base_url,
+        image_download_limit=max(args.image_download_limit, 0),
+        max_image_bytes=max(args.max_image_bytes, 1),
     )
 
     write_shards(entries, args.out_dir, stats)

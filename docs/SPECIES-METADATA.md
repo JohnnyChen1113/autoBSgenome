@@ -12,6 +12,9 @@ metadata is optional and lives in `species-metadata/` on the `gh-pages` branch.
 - `species-metadata/_.json`: non-alphabetic fallback shard.
 - `species-metadata/taxonomy-cache.json`: incremental NCBI Taxonomy API cache
   used by the generator workflow.
+- `species-images/`: locally cached species images. Only URLs that pass a
+  probe are downloaded, and the metadata points at these local copies instead
+  of hotlinking upstream images.
 
 The frontend first loads `index.json`, then fetches only the shard needed for
 the currently visible package results. This keeps the `/packages` first load
@@ -33,6 +36,10 @@ python3 scripts/generate-species-metadata.py \
   --fetch-limit 1000 \
   --probe-images \
   --image-probe-limit 100 \
+  --download-images \
+  --image-dir species-images \
+  --image-base-url https://johnnychen1113.github.io/autoBSgenome/species-images \
+  --image-download-limit 100 \
   --out-dir species-metadata
 ```
 
@@ -48,6 +55,11 @@ runs the same command weekly and can also be started manually.
   entries.
 - NCBI Datasets Taxonomy API fills taxonomy and common-name fields
   incrementally, bounded by `fetch_limit`.
-- Ensembl species images are written only after a successful image URL probe.
-  The browser also hides failed images, so missing upstream images do not create
-  broken cards.
+- Ensembl species images are cached locally only after a successful image URL
+  probe. Missing upstream images are not guessed client-side, so package cards
+  do not flash a placeholder and then disappear.
+
+Image caching is intentionally incremental. Many catalog organisms, especially
+bacteria and viruses, do not have stable upstream images. Caching only confirmed
+images avoids broken cards and keeps the public repository from growing
+unnecessarily.
