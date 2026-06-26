@@ -34,7 +34,19 @@ import {
   fetchEnsemblAssemblyInfo,
   detectCircularFromKaryotype,
 } from "@/lib/ensembl";
-import BatchMode from "@/components/BatchMode";
+import {
+  completeUploadSession,
+  createUploadSession,
+  deleteBuild,
+  fetchBuildStatus,
+  fetchQueueStatus,
+  publishBuild,
+  startBuild,
+  uploadPart,
+  type UploadPartResult,
+} from "@/lib/autobsgenome-api";
+import { siteConfig } from "@/config";
+import BatchMode from "@/features/build/BatchMode";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 
 type DataSource = "ncbi" | "ensembl";
@@ -84,24 +96,6 @@ interface BuildRecord {
   timestamp: number;
 }
 
-interface UploadSession {
-  upload_id: string;
-  r2_upload_id: string;
-  file_name: string;
-  file_size: number;
-  part_size: number;
-  part_url_template: string;
-  complete_url: string;
-  download_url: string;
-  delete_url: string;
-  max_upload_bytes: number;
-}
-
-interface UploadPartResult {
-  part_number: number;
-  etag: string;
-}
-
 const MAX_FASTA_UPLOAD_BYTES = 4 * 1024 * 1024 * 1024;
 const FASTA_PREVIEW_BYTES = 1024 * 1024;
 const FASTA_FILE_RE = /\.(fa|fasta|fna|fas)(\.gz)?$/i;
@@ -132,7 +126,9 @@ function saveBuildRecord(record: BuildRecord) {
       "autobsgenome_history",
       JSON.stringify(history.slice(0, 20))
     );
-  } catch {}
+  } catch (error) {
+    console.warn("Failed to save build history", error);
+  }
 }
 
 function loadBuildHistory(): BuildRecord[] {
@@ -444,7 +440,6 @@ export default function Home() {
   const [uploadProgress, setUploadProgress] = useState(0);
   const [isDragActive, setIsDragActive] = useState(false);
 
-  const WORKER_API = "https://api.autobsgenome.org";
   const buildStartTimeRef = useRef(0);
   const formRef = useRef(form);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -527,15 +522,13 @@ export default function Home() {
         if (fetchBtn) fetchBtn.click();
       }, 300);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Fetch queue status on input and review steps
   useEffect(() => {
     if (step !== "input" && step !== "review") return;
-    fetch(`${WORKER_API}/api/queue`)
-      .then(r => r.json())
-      .then((data: { running: number; queued: number; runs: { id: number; status: string; name: string; created_at: string }[] }) => setQueueInfo(data))
+    fetchQueueStatus()
+      .then((data) => setQueueInfo(data))
       .catch(() => setQueueInfo(null));
   }, [step]);
 
@@ -557,7 +550,9 @@ export default function Home() {
         osc.start(ctx.currentTime + i * 0.15);
         osc.stop(ctx.currentTime + i * 0.15 + 0.8);
       });
-    } catch {}
+    } catch (error) {
+      console.warn("Failed to play notification chime", error);
+    }
   }
 
   // Celebration confetti + sound on build success
@@ -598,19 +593,11 @@ export default function Home() {
   const uploadFastaFile = async (file: File) => {
     setUploadState("uploading");
     setUploadProgress(0);
-    const sessionRes = await fetch(`${WORKER_API}/api/uploads`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        file_name: file.name,
-        file_size: file.size,
-        content_type: file.type || "application/octet-stream",
-      }),
+    const session = await createUploadSession({
+      file_name: file.name,
+      file_size: file.size,
+      content_type: file.type || "application/octet-stream",
     });
-    const session = await sessionRes.json() as UploadSession & { error?: string };
-    if (!sessionRes.ok || !session.part_url_template || !session.complete_url || !session.download_url) {
-      throw new Error(session.error ?? "Failed to create FASTA upload session");
-    }
 
     const partSize = session.part_size || 64 * 1024 * 1024;
     const totalParts = Math.ceil(file.size / partSize);
@@ -621,28 +608,12 @@ export default function Home() {
       const start = index * partSize;
       const end = Math.min(file.size, start + partSize);
       const partUrl = session.part_url_template.replace("{part_number}", String(partNumber));
-      const partRes = await fetch(partUrl, {
-        method: "PUT",
-        headers: { "Content-Type": "application/octet-stream" },
-        body: file.slice(start, end),
-      });
-      const part = await partRes.json().catch(() => null) as (UploadPartResult & { error?: string }) | null;
-      if (!partRes.ok || !part?.etag) {
-        throw new Error(part?.error ?? `FASTA upload failed at part ${partNumber}`);
-      }
+      const part = await uploadPart(partUrl, file.slice(start, end));
       parts.push({ part_number: partNumber, etag: part.etag });
       setUploadProgress(Math.round((partNumber / totalParts) * 100));
     }
 
-    const completeRes = await fetch(session.complete_url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ parts }),
-    });
-    const complete = await completeRes.json().catch(() => null) as { error?: string } | null;
-    if (!completeRes.ok) {
-      throw new Error(complete?.error ?? "Failed to finish FASTA upload");
-    }
+    await completeUploadSession(session.complete_url, parts);
 
     setUploadState("uploaded");
     setUploadProgress(100);
@@ -695,39 +666,24 @@ export default function Home() {
         };
       }
 
-      // Trigger build via Worker API
-      const res = await fetch(`${WORKER_API}/api/build`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          package_name: form.packageName,
-          organism: form.organism,
-          common_name: form.commonName,
-          genome: form.assembly,
-          provider: form.provider,
-          release_date: form.releaseDate,
-          version: form.version,
-          circ_seqs: form.circSeqs,
-          title: form.title,
-          description: form.description,
-          source_url: form.sourceUrl,
-          accession: accessionInput,
-          fasta_source: form.fastaSource,
-          fasta_url: form.fastaUrl.trim(),
-          data_source: dataSource,
-          ...uploadPayload,
-        }),
+      const data = await startBuild({
+        package_name: form.packageName,
+        organism: form.organism,
+        common_name: form.commonName,
+        genome: form.assembly,
+        provider: form.provider,
+        release_date: form.releaseDate,
+        version: form.version,
+        circ_seqs: form.circSeqs,
+        title: form.title,
+        description: form.description,
+        source_url: form.sourceUrl,
+        accession: accessionInput,
+        fasta_source: form.fastaSource,
+        fasta_url: form.fastaUrl.trim(),
+        data_source: dataSource,
+        ...uploadPayload,
       });
-
-      const data = await res.json() as {
-        job_id?: string;
-        delete_token?: string;
-        error?: string;
-        queue_position?: number;
-      };
-      if (!res.ok || !data.job_id) {
-        throw new Error(data.error ?? "Failed to start build");
-      }
 
       setJobId(data.job_id);
       setDeleteToken(data.delete_token ?? "");
@@ -750,15 +706,7 @@ export default function Home() {
   };
 
   const deleteTemporaryBuild = async (targetJobId: string, targetDeleteToken: string) => {
-    const res = await fetch(`${WORKER_API}/api/build/${targetJobId}`, {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ delete_token: targetDeleteToken }),
-    });
-    const data = await res.json().catch(() => null) as { error?: string } | null;
-    if (!res.ok) {
-      throw new Error(data?.error ?? "Failed to delete temporary package");
-    }
+    await deleteBuild(targetJobId, targetDeleteToken);
   };
 
   const markHistoryDeleted = (targetJobId: string) => {
@@ -825,30 +773,22 @@ export default function Home() {
         publicSourceUrl.trim() ||
         form.sourceUrl.trim() ||
         (form.fastaSource === "url" ? form.fastaUrl.trim() : "");
-      const res = await fetch(`${WORKER_API}/api/publish`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          job_id: jobId,
-          metadata: {
-            organism: form.organism,
-            assembly: form.assembly,
-            provider: form.provider,
-            version: form.version,
-            accession: accessionInput,
-            source_url: sourceUrl,
-            fasta_source: form.fastaSource,
-            public_opt_in: userSuppliedFasta && publicOptIn ? "true" : "false",
-            public_rights_confirmed: userSuppliedFasta && publicRightsConfirmed ? "true" : "false",
-            public_release_confirmed: userSuppliedFasta && publicReleaseConfirmed ? "true" : "false",
-            license: userSuppliedFasta ? publicLicense : "",
-          },
-        }),
+      await publishBuild({
+        job_id: jobId,
+        metadata: {
+          organism: form.organism,
+          assembly: form.assembly,
+          provider: form.provider,
+          version: form.version,
+          accession: accessionInput,
+          source_url: sourceUrl,
+          fasta_source: form.fastaSource,
+          public_opt_in: userSuppliedFasta && publicOptIn ? "true" : "false",
+          public_rights_confirmed: userSuppliedFasta && publicRightsConfirmed ? "true" : "false",
+          public_release_confirmed: userSuppliedFasta && publicReleaseConfirmed ? "true" : "false",
+          license: userSuppliedFasta ? publicLicense : "",
+        },
       });
-      const data = await res.json().catch(() => null) as { error?: string } | null;
-      if (!res.ok) {
-        throw new Error(data?.error ?? "Publishing failed");
-      }
       setIsPublished(true);
     } catch (e) {
       setPublishError(e instanceof Error ? e.message : "Publishing failed");
@@ -859,9 +799,7 @@ export default function Home() {
 
   const pollBuildStatus = (id: string, currentDeleteToken = "") => {
     let errorCount = 0;
-    let pollCount = 0;
     const interval = setInterval(async () => {
-      pollCount++;
       const elapsedSec = Math.floor((Date.now() - buildStartTimeRef.current) / 1000);
 
       // Animate build steps based on elapsed time
@@ -870,14 +808,7 @@ export default function Home() {
       if (elapsedSec > 30) setBuildStep(3);
 
       try {
-        const res = await fetch(`${WORKER_API}/api/status/${id}`);
-        const data = await res.json() as {
-          status: string;
-          download_url?: string;
-          file_name?: string;
-          file_size?: number;
-          message?: string;
-        };
+        const data = await fetchBuildStatus(id);
 
         if (data.status === "complete") {
           clearInterval(interval);
@@ -914,7 +845,7 @@ export default function Home() {
             setBuildError(
               `Status check temporarily unavailable (${data.message ?? "API error"}). ` +
               `Your build is likely still running. You can check GitHub Actions directly: ` +
-              `https://github.com/JohnnyChen1113/autoBSgenome/actions`
+              `${siteConfig.githubUrl}/actions`
             );
           }
         } else {
@@ -931,7 +862,7 @@ export default function Home() {
         clearInterval(interval);
         setBuildError(
           "Status polling timed out after 10 minutes. Your build may still be running — " +
-          "check https://github.com/JohnnyChen1113/autoBSgenome/releases for your package."
+          `check ${siteConfig.githubUrl}/releases for your package.`
         );
         setStep("review");
       }
@@ -1244,7 +1175,7 @@ export default function Home() {
                       <strong>Build failed:</strong> {buildError}
                     </p>
                     <a
-                      href={`https://github.com/JohnnyChen1113/autoBSgenome/issues/new?${new URLSearchParams({
+                      href={`${siteConfig.githubUrl}/issues/new?${new URLSearchParams({
                         title: `Build failed: ${form.packageName}`,
                         body: [
                           "## Build Failure Report",
@@ -1268,8 +1199,8 @@ export default function Home() {
                           "```",
                           "",
                           "## Debug Links",
-                          "- [GitHub Actions Runs](https://github.com/JohnnyChen1113/autoBSgenome/actions/workflows/build-bsgenome.yml)",
-                          jobId ? "- [GitHub Release (if created)](https://github.com/JohnnyChen1113/autoBSgenome/releases/tag/build-" + jobId + ")" : "",
+                          `- [GitHub Actions Runs](${siteConfig.githubUrl}/actions/workflows/build-bsgenome.yml)`,
+                          jobId ? `- [GitHub Release (if created)](${siteConfig.githubUrl}/releases/tag/build-${jobId})` : "",
                           "",
                           "## Additional Context",
                           "_Please describe what you were trying to do and any additional context._",
@@ -1889,7 +1820,7 @@ export default function Home() {
                       This package will remain available for{" "}
                       <strong className="text-foreground">2 days</strong> at{" "}
                       <a
-                        href="https://github.com/JohnnyChen1113/autoBSgenome/releases"
+                        href={`${siteConfig.githubUrl}/releases`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-primary hover:underline"
@@ -1937,13 +1868,13 @@ export default function Home() {
                         <div className="relative">
                           <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
                             Help me install this BSgenome R package:{" "}
-                            {downloadUrl || `https://github.com/JohnnyChen1113/autoBSgenome/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}
+                            {downloadUrl || `${siteConfig.githubUrl}/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}
                           </div>
                           <button
                             type="button"
                             className="absolute top-2 right-2 p-1.5 rounded bg-background border border-border text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
                             onClick={() => {
-                              const prompt = `Help me install this BSgenome R package: ${downloadUrl || `https://github.com/JohnnyChen1113/autoBSgenome/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}`;
+                              const prompt = `Help me install this BSgenome R package: ${downloadUrl || `${siteConfig.githubUrl}/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}`;
                               navigator.clipboard.writeText(prompt);
                             }}
                             title="Copy to clipboard"
@@ -2069,7 +2000,7 @@ export default function Home() {
                       Anyone can now install with:
                     </p>
                     <code className="block mt-1 font-mono text-xs text-foreground bg-white/60 rounded p-2 overflow-x-auto">
-                      install.packages(&quot;{form.packageName}&quot;, repos = &quot;https://johnnychen1113.github.io/autoBSgenome&quot;)
+                      install.packages(&quot;{form.packageName}&quot;, repos = &quot;{siteConfig.repositoryBase}&quot;)
                     </code>
                     <p className="mt-2">
                       <a

@@ -9,8 +9,8 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
-!web/src/app/build/
-!web/src/app/build/page.tsx
+!web/src/features/build/
+!web/src/features/build/BuildPage.tsx
 develop-eggs/
 dist/
 downloads/

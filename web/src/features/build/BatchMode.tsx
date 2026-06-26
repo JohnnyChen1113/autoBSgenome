@@ -4,7 +4,6 @@ import { useState, useRef, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
   extractAccession,
@@ -16,8 +15,12 @@ import {
   fetchEnsemblAssemblyInfo,
   detectCircularFromKaryotype,
 } from "@/lib/ensembl";
-
-const WORKER_API = "https://api.autobsgenome.org";
+import {
+  fetchBuildStatus,
+  publishBuild,
+  startBuild,
+} from "@/lib/autobsgenome-api";
+import { siteConfig } from "@/config";
 
 type BatchStatus = "pending" | "fetching" | "ready" | "ambiguous" | "error" | "building" | "done" | "failed";
 type Source = "ncbi" | "ensembl";
@@ -222,31 +225,22 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
   const buildItem = async (item: BatchItem) => {
     updateItem(item.id, { status: "building" });
     try {
-      const res = await fetch(`${WORKER_API}/api/build`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          package_name: item.packageName,
-          organism: item.organism,
-          common_name: item.commonName,
-          genome: item.assembly,
-          provider: item.provider,
-          release_date: "",
-          version: item.version,
-          circ_seqs: item.circSeqs,
-          title: item.title,
-          description: item.description,
-          source_url: item.sourceUrl,
-          accession: item.accession,
-          fasta_source: item.fastaSource,
-          data_source: item.selectedSource,
-        }),
+      const data = await startBuild({
+        package_name: item.packageName,
+        organism: item.organism,
+        common_name: item.commonName,
+        genome: item.assembly,
+        provider: item.provider,
+        release_date: "",
+        version: item.version,
+        circ_seqs: item.circSeqs,
+        title: item.title,
+        description: item.description,
+        source_url: item.sourceUrl,
+        accession: item.accession,
+        fasta_source: item.fastaSource,
+        data_source: item.selectedSource,
       });
-
-      const data = await res.json() as { job_id?: string; error?: string };
-      if (!res.ok || !data.job_id) {
-        throw new Error(data.error ?? "Failed to start build");
-      }
 
       updateItem(item.id, { jobId: data.job_id });
       startPolling(item.id, data.job_id);
@@ -263,10 +257,9 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
     const startTime = Date.now();
     const interval = setInterval(async () => {
       try {
-        const res = await fetch(`${WORKER_API}/api/status/${jobId}`);
-        const data = await res.json() as { status: string; download_url?: string; file_name?: string; error?: string };
+        const data = await fetchBuildStatus(jobId);
 
-        if (data.status === "completed" && data.download_url) {
+        if ((data.status === "complete" || data.status === "completed") && data.download_url) {
           clearInterval(interval);
           delete pollIntervals.current[itemId];
           updateItem(itemId, {
@@ -305,16 +298,14 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
     const toPublish = items.filter(i => i.status === "done" && i.publishChecked);
     for (const item of toPublish) {
       try {
-        await fetch(`${WORKER_API}/api/publish`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            package_name: item.packageName,
-            organism: item.organism,
-            accession: item.accession,
-          }),
+        await publishBuild({
+          package_name: item.packageName,
+          organism: item.organism,
+          accession: item.accession,
         });
-      } catch {}
+      } catch (error) {
+        console.warn("Failed to publish batch item", error);
+      }
     }
   };
 
@@ -507,7 +498,7 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
                     <div className="space-y-2 pt-2 border-t">
                       <div className="bg-background rounded p-2 flex items-center justify-between gap-2">
                         <code className="font-mono text-xs truncate">
-                          install.packages(&quot;{item.packageName}&quot;, repos=&quot;https://johnnychen1113.github.io/autoBSgenome&quot;)
+                          install.packages(&quot;{item.packageName}&quot;, repos=&quot;{siteConfig.repositoryBase}&quot;)
                         </code>
                         <Button
                           variant="outline"
@@ -516,7 +507,7 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
                           onClick={(e) => {
                             e.stopPropagation();
                             navigator.clipboard.writeText(
-                              `install.packages("${item.packageName}", repos="https://johnnychen1113.github.io/autoBSgenome")`
+                              `install.packages("${item.packageName}", repos="${siteConfig.repositoryBase}")`
                             );
                           }}
                         >

@@ -1,5 +1,9 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# Web Frontend Notes
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+This frontend uses TanStack Start, Vite, Nitro, React, and Tailwind CSS.
+
+- Routes live in `src/routes`.
+- Page implementations live in `src/features`.
+- Do not add new Next.js APIs or `src/app` files.
+- Keep the existing `worker/` API as the backend boundary unless a task
+  explicitly asks to merge it.

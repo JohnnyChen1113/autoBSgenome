@@ -1,4 +1,4 @@
-name: Deploy Web to Cloudflare Pages
+name: Deploy Web to Cloudflare Worker
 
 on:
   workflow_dispatch:
@@ -7,9 +7,7 @@ on:
       - main
     paths:
       - "web/**"
-      - "worker/package.json"
-      - "worker/package-lock.json"
-      - ".github/workflows/deploy-web-pages.yml"
+      - ".github/workflows/deploy-web-worker.yml"
 
 permissions:
   contents: read
@@ -18,7 +16,7 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 concurrency:
-  group: deploy-web-pages-${{ github.ref }}
+  group: deploy-web-worker-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -36,9 +34,7 @@ jobs:
         with:
           node-version: "22"
           cache: npm
-          cache-dependency-path: |
-            web/package-lock.json
-            worker/package-lock.json
+          cache-dependency-path: web/package-lock.json
 
       - name: Install web dependencies
         working-directory: web
@@ -46,18 +42,13 @@ jobs:
 
       - name: Build web
         working-directory: web
-        run: npm run build
-
-      - name: Install Wrangler
-        working-directory: worker
-        run: npm ci
+        run: npm run cf:build
 
       - name: Skip deploy when Cloudflare secrets are missing
         if: env.CLOUDFLARE_ACCOUNT_ID == '' || env.CLOUDFLARE_API_TOKEN == ''
-        run: |
-          echo "::warning title=Cloudflare Pages deploy skipped::Set CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN repository secrets, then re-run this workflow."
+        run: echo "::warning title=Cloudflare Worker deploy skipped::Set CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN repository secrets, then re-run this workflow."
 
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Worker
         if: env.CLOUDFLARE_ACCOUNT_ID != '' && env.CLOUDFLARE_API_TOKEN != ''
         working-directory: web
-        run: ../worker/node_modules/.bin/wrangler pages deploy out --project-name autobsgenome --branch main
+        run: ./node_modules/.bin/wrangler deploy

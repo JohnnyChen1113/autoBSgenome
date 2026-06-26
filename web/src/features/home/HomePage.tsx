@@ -1,15 +1,7 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
 import { ArrowUpRight, ArrowRight, Search, Hammer } from "lucide-react";
 import { SiteHeader } from "@/components/SiteChrome";
 import { SpeciesImage } from "@/components/SpeciesImage";
-
-export const metadata: Metadata = {
-  title: "AutoBSgenome - BSgenome Packages and Builder",
-  description:
-    "Find existing BSgenome packages or build new ones from NCBI and Ensembl assemblies, for every species and every assembly version.",
-};
+import { siteConfig } from "@/config";
 
 const commonPackages = [
   {
@@ -75,7 +67,7 @@ export default function HomePage() {
         <section className="border-b border-[color:var(--rule)]/15">
           <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 sm:pt-20 sm:pb-24">
             <h1 className="display text-5xl sm:text-6xl lg:text-[5rem]">
-              Build <span className="text-primary">BSgenomes</span> for
+              Build <span className="text-primary">BSgenome</span> packages for
               <br />
               any species, any assembly,
               <br />
@@ -111,7 +103,7 @@ export default function HomePage() {
 
             <div className="mt-10 grid gap-px bg-[color:var(--rule)]/15 sm:grid-cols-2 sm:overflow-hidden sm:rounded-md sm:border sm:border-[color:var(--rule)]/15">
               {/* A · Search existing */}
-              <Link
+              <a
                 href="/packages"
                 className="group flex flex-col bg-background p-8 transition-colors hover:bg-paper sm:p-10"
               >
@@ -135,10 +127,10 @@ export default function HomePage() {
                   Open package browser
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                 </span>
-              </Link>
+              </a>
 
               {/* B · Build new */}
-              <Link
+              <a
                 href="/build"
                 className="group flex flex-col bg-background p-8 transition-colors hover:bg-paper sm:p-10"
               >
@@ -162,14 +154,14 @@ export default function HomePage() {
                   Open builder
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                 </span>
-              </Link>
+              </a>
             </div>
 
             <p className="mt-6 text-sm text-foreground/60">
               New here?{" "}
-              <Link href="/help" className="link-underline">
+              <a href="/help" className="link-underline">
                 Read the workflow guide
-              </Link>{" "}
+              </a>{" "}
               for a 3-step walk-through with example inputs and install
               snippets.
             </p>
@@ -190,19 +182,19 @@ export default function HomePage() {
                   applied. If the exact assembly version is missing, the
                   builder is one click away.
                 </p>
-                <Link
+                <a
                   href="/packages"
                   className="mt-6 inline-flex h-10 items-center gap-2 rounded-md border border-primary/30 bg-background px-4 text-sm font-medium text-primary transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-sm"
                 >
                   View all packages
                   <ArrowRight className="size-4" />
-                </Link>
+                </a>
               </div>
 
               <ul className="divide-y divide-[color:var(--rule)]/15 border-y border-[color:var(--rule)]/15">
                 {commonPackages.map((item) => (
                   <li key={item.packageName}>
-                    <Link
+                    <a
                       href={`/packages?q=${encodeURIComponent(item.query)}`}
                       className="group grid grid-cols-[auto_1fr_auto] items-center gap-x-6 gap-y-1 py-5 transition-colors hover:bg-background sm:grid-cols-[auto_minmax(0,1fr)_auto_auto]"
                     >
@@ -232,7 +224,7 @@ export default function HomePage() {
                         {item.assembly}
                       </div>
                       <ArrowUpRight className="size-5 shrink-0 text-foreground/30 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" />
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -252,15 +244,15 @@ export default function HomePage() {
               service. Anyone, any genome, install-ready in minutes.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link
+              <a
                 href="/build"
                 className="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-md"
               >
                 Start a build
                 <ArrowRight className="size-4" />
-              </Link>
+              </a>
               <a
-                href="https://github.com/JohnnyChen1113/autoBSgenome"
+                href={siteConfig.githubUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex h-11 items-center gap-2 rounded-md border border-foreground/15 px-5 text-sm font-medium text-foreground hover:border-foreground/40 hover:bg-paper"
@@ -278,7 +270,7 @@ export default function HomePage() {
               <p>
                 Built by{" "}
                 <a
-                  href="https://github.com/JohnnyChen1113"
+                  href={siteConfig.authorUrl}
                   className="text-foreground/80 hover:text-primary"
                 >
                   Junhao Chen
@@ -286,7 +278,7 @@ export default function HomePage() {
                 , Saint Louis University.
               </p>
               <a
-                href="https://zlinlab.org"
+                href={siteConfig.linLabUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="link-underline"
@@ -295,18 +287,17 @@ export default function HomePage() {
               </a>
             </div>
             <a
-              href="https://www.slu.edu"
+              href={siteConfig.sluUrl}
               target="_blank"
               rel="noreferrer"
               aria-label="Saint Louis University"
               className="inline-flex transition-opacity hover:opacity-80"
             >
-              <Image
+              <img
                 src="/slu-logo.png"
                 alt="Saint Louis University"
                 width={240}
                 height={60}
-                unoptimized
                 className="h-10 w-auto max-w-[220px] sm:max-w-[260px]"
               />
             </a>

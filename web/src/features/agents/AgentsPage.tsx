@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -8,13 +7,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { siteConfig } from "@/config";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
-
-export const metadata: Metadata = {
-  title: "Agents - AutoBSgenome",
-  description:
-    "Use AutoBSgenome from agent skills and API workflows for BSgenome package construction.",
-};
 
 export default function AgentsPage() {
   return (
@@ -98,7 +92,7 @@ export default function AgentsPage() {
               Trigger a build
             </div>
             <pre className="mt-2 overflow-x-auto rounded-md bg-background p-3 font-mono text-xs text-foreground">
-{`curl -s -X POST https://api.autobsgenome.org/api/build \\
+{`curl -s -X POST ${siteConfig.apiBase}/api/build \\
   -H "Content-Type: application/json" \\
   -d '{
     "package_name": "BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308",
@@ -116,7 +110,7 @@ export default function AgentsPage() {
               Poll build status
             </div>
             <pre className="mt-2 overflow-x-auto rounded-md bg-background p-3 font-mono text-xs text-foreground">
-{`curl -s https://api.autobsgenome.org/api/status/JOB_ID`}
+{`curl -s ${siteConfig.apiBase}/api/status/JOB_ID`}
             </pre>
           </div>
 
@@ -126,7 +120,7 @@ export default function AgentsPage() {
             </div>
             <pre className="mt-2 overflow-x-auto rounded-md bg-background p-3 font-mono text-xs text-foreground">
 {`install.packages("PACKAGE_NAME",
-  repos = "https://johnnychen1113.github.io/autoBSgenome")`}
+  repos = "${siteConfig.repositoryBase}")`}
             </pre>
           </div>
         </section>

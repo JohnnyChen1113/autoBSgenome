@@ -16,11 +16,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
+import { siteConfig } from "@/config";
 import { cn } from "@/lib/utils";
+import { fetchRepositoryJson } from "@/features/packages/repository-api";
 
-const REPO_BASE =
-  process.env.NEXT_PUBLIC_REPOSITORY_BASE_URL ??
-  "https://johnnychen1113.github.io/autoBSgenome";
 const INITIAL_LIMIT = 160;
 const PAGE_SIZE = 160;
 
@@ -104,16 +103,6 @@ type ProgressData = {
 type Kingdom = "all" | "animal" | "plant" | "fungi" | "prokaryote";
 type AvailabilityFilter = "built" | "unbuilt" | "catalog";
 type DataSourceFilter = "all" | "ncbi" | "ensembl" | "bioconductor";
-
-async function fetchJson<T>(path: string): Promise<T | null> {
-  try {
-    const res = await fetch(`${REPO_BASE}/${path}?t=${Date.now()}`);
-    if (!res.ok) return null;
-    return (await res.json()) as T;
-  } catch {
-    return null;
-  }
-}
 
 // NCBI assembly metadata uses bracket notation like "[Candida] arabinofermentans"
 // to mark a historically classified but now-disputed genus. We strip the
@@ -575,10 +564,10 @@ export function RepositoryBrowser() {
       setError("");
 
       const [community, biocPackages, catalog, queue] = await Promise.all([
-        fetchJson<RepositoryData | BuildPackage[]>("packages.json"),
-        fetchJson<BuildPackage[]>("bioc-packages.json"),
-        fetchJson<CatalogRow[]>("catalog.json"),
-        fetchJson<{ status: string }[]>("build-queue.json"),
+        fetchRepositoryJson<RepositoryData | BuildPackage[]>("packages.json"),
+        fetchRepositoryJson<BuildPackage[]>("bioc-packages.json"),
+        fetchRepositoryJson<CatalogRow[]>("catalog.json"),
+        fetchRepositoryJson<{ status: string }[]>("build-queue.json"),
       ]);
 
       if (cancelled) return;
@@ -789,7 +778,7 @@ export function RepositoryBrowser() {
                 </code>
               </div>
               <a
-                href="https://github.com/JohnnyChen1113/autoBSgenome/releases"
+                href={`${siteConfig.githubUrl}/releases`}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex h-8 shrink-0 items-center justify-center gap-1.5 rounded-lg border border-border px-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"

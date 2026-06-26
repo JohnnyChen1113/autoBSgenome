@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -10,13 +8,8 @@ import {
   FileSearch,
   Hammer,
 } from "lucide-react";
+import { siteConfig } from "@/config";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
-
-export const metadata: Metadata = {
-  title: "Help - AutoBSgenome",
-  description:
-    "Step-by-step workflows for finding, downloading, and building BSgenome packages.",
-};
 
 const workflows = [
   {
@@ -85,7 +78,7 @@ const installSnippets = [
     note: "Use this after you find an existing AutoBSgenome-hosted package.",
     code: `install.packages(
   "PACKAGE_NAME",
-  repos = "https://johnnychen1113.github.io/autoBSgenome"
+  repos = "${siteConfig.repositoryBase}"
 )`,
   },
   {
@@ -158,13 +151,13 @@ export default function HelpPage() {
                         </li>
                       ))}
                     </ol>
-                    <Link
+                    <a
                       href={wf.href}
                       className="mt-7 inline-flex h-10 w-fit items-center gap-2 self-start rounded-md border border-primary/30 bg-background px-4 text-sm font-medium text-primary transition-all hover:border-primary hover:bg-primary hover:text-primary-foreground hover:shadow-sm"
                     >
                       Open {wf.title.toLowerCase()}
                       <ArrowRight className="size-4" />
-                    </Link>
+                    </a>
                   </div>
                 );
               })}
@@ -263,13 +256,13 @@ export default function HelpPage() {
                   install the snippet shown by the browser or build result.
                 </p>
               </div>
-              <Link
+              <a
                 href="/packages"
                 className="inline-flex h-10 items-center gap-2 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
                 Start searching
                 <ArrowUpRight className="size-4" />
-              </Link>
+              </a>
             </div>
           </div>
         </section>

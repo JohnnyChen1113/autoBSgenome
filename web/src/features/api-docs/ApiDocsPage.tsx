@@ -1,9 +1,10 @@
 import { Badge } from "@/components/ui/badge";
+import { siteConfig } from "@/config";
 import { Separator } from "@/components/ui/separator";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 
 export default function ApiDocs() {
-  const WORKER = "https://api.autobsgenome.org";
+  const WORKER = siteConfig.apiBase;
 
   return (
     <div className="flex flex-col flex-1 bg-background">
@@ -149,7 +150,7 @@ Rscript -e "install.packages('$URL', repos=NULL, type='source')"
             <div className="bg-secondary border border-border rounded-lg p-4 font-mono text-sm overflow-x-auto">
               <pre>{`# Install from community repository (if already built)
 install.packages("BSgenome.Scerevisiae.NCBI.R64",
-  repos = "https://johnnychen1113.github.io/autoBSgenome")
+  repos = "${siteConfig.repositoryBase}")
 
 # Or install from direct URL
 install.packages(

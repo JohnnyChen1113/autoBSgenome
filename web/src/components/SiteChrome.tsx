@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+
+import { siteConfig } from "@/config";
 
 type NavKey = "home" | "build" | "packages" | "help" | "api" | "agents";
 
@@ -44,7 +44,7 @@ export function SiteHeader({ active }: { active?: NavKey }) {
   return (
     <header className="sticky top-0 z-40 border-b border-[color:var(--rule)]/10 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="mx-auto flex max-w-6xl items-stretch gap-8 px-6">
-        <Link
+        <a
           href="/"
           className="flex shrink-0 items-center gap-3 py-3 group"
         >
@@ -56,22 +56,22 @@ export function SiteHeader({ active }: { active?: NavKey }) {
           <span className="font-heading text-[1.18rem] font-semibold tracking-tight text-ink group-hover:text-primary transition-colors">
             AutoBSgenome
           </span>
-        </Link>
+        </a>
 
         <nav className="flex flex-wrap items-stretch gap-x-7">
           {navItems.map((item) => (
-            <Link
+            <a
               key={item.href}
               href={item.href}
               className={navLinkClass(item.key === active)}
             >
               {item.label}
-            </Link>
+            </a>
           ))}
         </nav>
 
         <a
-          href="https://github.com/JohnnyChen1113/autoBSgenome"
+          href={siteConfig.githubUrl}
           target="_blank"
           rel="noreferrer"
           aria-label="View source on GitHub"
@@ -107,25 +107,24 @@ export function SiteFooter() {
           </div>
           <div className="flex flex-col items-start gap-3 text-sm sm:items-end">
             <a
-              href="https://www.slu.edu"
+              href={siteConfig.sluUrl}
               target="_blank"
               rel="noreferrer"
               aria-label="Saint Louis University"
               className="inline-flex transition-opacity hover:opacity-80"
             >
-              <Image
+              <img
                 src="/slu-logo.png"
                 alt="Saint Louis University"
                 width={240}
                 height={60}
-                unoptimized
                 className="h-10 w-auto max-w-[220px] sm:max-w-[260px]"
               />
             </a>
             <p className="text-xs text-muted-foreground">
               Built by{" "}
               <a
-                href="https://github.com/JohnnyChen1113"
+                href={siteConfig.authorUrl}
                 className="text-foreground/80 hover:text-primary"
               >
                 Junhao Chen
@@ -137,7 +136,7 @@ export function SiteFooter() {
         <div className="mt-8 rule" />
         <div className="mt-4 flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
           <a
-            href="https://zlinlab.org"
+            href={siteConfig.linLabUrl}
             target="_blank"
             rel="noreferrer"
             className="transition-colors hover:text-primary"
