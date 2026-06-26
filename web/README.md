@@ -55,5 +55,9 @@ npm run cf:build
 
 The default `wrangler.jsonc` deploys the staging Worker
 `autobsgenome-web-staging`. The production config deploys `autobsgenome-web` and
-routes `autobsgenome.org/*` plus `www.autobsgenome.org/*` to that Worker. The
-GitHub workflow deploys production on pushes to `main`.
+routes `autobsgenome.org/*` plus `www.autobsgenome.org/*` to that Worker.
+
+The GitHub workflow can deploy production manually, but the repository
+`CLOUDFLARE_API_TOKEN` secret must have permission to edit the production Worker
+`autobsgenome-web` and its zone routes. Local production deployment can also be
+done with a Wrangler login that has those permissions.

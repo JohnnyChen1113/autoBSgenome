@@ -2,12 +2,6 @@ name: Deploy Web to Production Worker
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - "web/**"
-      - ".github/workflows/deploy-web-worker.yml"
 
 permissions:
   contents: read

@@ -58,7 +58,7 @@ The genome FASTA is converted to UCSC 2bit format with faToTwoBit. For large inp
 
 ### Artifact storage and repository indexing
 
-Build artifacts below the GitHub Releases single-asset safety threshold are stored as GitHub Release assets. Larger public-source packages are routed to Zenodo records and linked from the package index. On-demand user-supplied builds are also delivered through temporary GitHub Release assets, but they are not treated as permanent repository records unless the user completes the public-release opt-in flow. Temporary build releases can be deleted from the web interface and are also removed by scheduled cleanup after two days. The repository index is maintained in CRAN-like form through `src/contrib/PACKAGES`, with richer metadata stored in `packages.json`. The cleanup state reported here treats `packages.json` as the canonical source of truth for the public repository. As of June 24, 2026, this file contains 3,940 autoBSgenome packages covering 3,100 organisms.
+Build artifacts below the GitHub Releases single-asset safety threshold are stored as GitHub Release assets. Larger public-source packages are routed to Zenodo records and linked from the package index. On-demand user-supplied builds are also delivered through temporary GitHub Release assets, but they are not treated as permanent repository records unless the user completes the public-release opt-in flow. Temporary build releases can be deleted from the web interface and are also removed by scheduled cleanup after two days. The repository index is maintained in CRAN-like form through `src/contrib/PACKAGES`, with richer metadata stored in `packages.json`. The cleanup state reported here treats `packages.json` as the canonical source of truth for the public repository. As of June 26, 2026, this file contains 3,940 autoBSgenome packages covering 3,100 organisms.
 
 Each permanent public package record includes package name, version, organism, assembly, provider, accession when available, file name, file size, source URL and selected build provenance. Provenance fields include build time, workflow run identifiers, builder image, package checksum and DESCRIPTION checksum when available. Community-submitted records additionally store source type, submitted source URL when applicable, license metadata, public opt-in state and `provenance_status = "user_asserted"` to distinguish user-declared provenance from provider-derived NCBI or Ensembl metadata.
 
@@ -135,7 +135,7 @@ Several limitations remain. First, user-uploaded FASTA inputs are staged private
 
 The same per-organism packaging barrier exists in other Bioconductor data-package families, including TxDb, EnsDb, organism annotation databases, SNPlocs and MafDb. autoBSgenome does not claim to solve those families, but it demonstrates an accession-driven build pattern for the largest per-organism sequence-data family. Extending similar automation to transcript annotation and organism annotation packages is a natural next step.
 
-## Figures and tables to prepare
+## Figure legends
 
 **Figure 1. autoBSgenome workflow.** Accession, FASTA URL or local FASTA input, metadata retrieval, circular-sequence detection, FASTA acquisition and validation, 2bit conversion, seed-file generation, package forging, R CMD build, temporary package delivery, user-triggered deletion and optional public repository promotion.
 
@@ -149,7 +149,7 @@ The same per-organism packaging barrier exists in other Bioconductor data-packag
 
 ## Data availability
 
-The autoBSgenome web service is available at https://autobsgenome.org. The public package repository is available at https://johnnychen1113.github.io/autoBSgenome, with machine-readable metadata in `packages.json` and R installation metadata in `src/contrib/PACKAGES`. Source code, workflows, Docker build files and documentation are available at https://github.com/JohnnyChen1113/autoBSgenome. The v4 resource counts in this manuscript are based on the cleaned `packages.json` index as of June 24, 2026.
+The autoBSgenome web service is available at https://autobsgenome.org. The public package repository is available at https://johnnychen1113.github.io/autoBSgenome, with machine-readable metadata in `packages.json` and R installation metadata in `src/contrib/PACKAGES`. Source code, workflows, Docker build files and documentation are available at https://github.com/JohnnyChen1113/autoBSgenome. The v4 resource counts in this manuscript are based on the cleaned `packages.json` index as of June 26, 2026.
 
 ## Funding
 

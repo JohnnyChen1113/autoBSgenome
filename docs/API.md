@@ -278,6 +278,7 @@ The API allows requests from:
 - `https://www.autobsgenome.org`
 - `https://autobsgenome.pages.dev`
 - `*.autobsgenome.pages.dev` (preview deployments)
+- `https://autobsgenome-web-staging.*.workers.dev` (staging Worker deployments)
 - `http://localhost:*` (development)
 
 ## Rate Limits
