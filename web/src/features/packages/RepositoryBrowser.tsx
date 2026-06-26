@@ -298,6 +298,28 @@ function catalogAccessionSourceLink(
   return null;
 }
 
+function catalogAccessionSourceLinks(
+  accessions: CatalogAccession[],
+  speciesQuery: string,
+  group: string | undefined
+): { label: string; url: string }[] {
+  const links = new Map<string, { label: string; url: string }>();
+
+  for (const accession of accessions) {
+    const link = catalogAccessionSourceLink(accession, speciesQuery, group);
+    if (link && !links.has(link.label)) {
+      links.set(link.label, link);
+    }
+  }
+
+  const order: Record<string, number> = { NCBI: 0, Ensembl: 1 };
+  return [...links.values()].sort(
+    (a, b) =>
+      (order[a.label] ?? 99) - (order[b.label] ?? 99) ||
+      a.label.localeCompare(b.label)
+  );
+}
+
 // Pick the right Ensembl subdomain by taxonomic kingdom. Vertebrates live
 // on the main site; everything else has its own EnsemblGenomes sister.
 function ensemblSubdomain(group?: string): string {
@@ -1132,6 +1154,13 @@ export function RepositoryBrowser() {
                   displayGroup
                 )
               : null;
+            const catalogSources = catalogOnly
+              ? catalogAccessionSourceLinks(
+                  accessions,
+                  speciesName(displayName),
+                  displayGroup
+                )
+              : [];
             const imageUrl = metadata?.image_url ?? null;
 
             return (
@@ -1208,6 +1237,19 @@ export function RepositoryBrowser() {
                             Build on click
                           </Badge>
                         )}
+                        {catalogSources.map((source) => (
+                          <a
+                            key={source.label}
+                            href={source.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            title={`View this reference on ${source.label}`}
+                            className="inline-flex h-6 items-center gap-1 rounded border border-border bg-background px-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                          >
+                            {source.label}
+                            <ExternalLink className="size-3" />
+                          </a>
+                        ))}
                       </div>
                       {crumbs.length > 0 && (
                         <div className="mt-2 flex flex-wrap gap-1 text-xs text-muted-foreground">
@@ -1256,21 +1298,7 @@ export function RepositoryBrowser() {
                         </div>
                       )}
                       {catalogOnly && firstAccession && (
-                        <div className="mt-3 grid gap-x-4 gap-y-1 text-sm text-muted-foreground sm:grid-cols-2 lg:grid-cols-4">
-                          {catalogSource && (
-                            <span>
-                              Source:{" "}
-                              <a
-                                href={catalogSource.url}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="inline-flex items-center gap-1 text-primary hover:underline"
-                              >
-                                {catalogSource.label}
-                                <ExternalLink className="size-3" />
-                              </a>
-                            </span>
-                          )}
+                        <div className="mt-3 grid gap-x-4 gap-y-1 text-sm text-muted-foreground sm:grid-cols-2 lg:grid-cols-3">
                           {firstAccession.assembly && (
                             <span>
                               Assembly:{" "}

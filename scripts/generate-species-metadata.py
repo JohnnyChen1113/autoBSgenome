@@ -67,6 +67,67 @@ def lookup_key(value: str) -> str:
     return clean_name(value).lower()
 
 
+COMMON_IMAGE_SPECIES = (
+    "Homo sapiens",
+    "Mus musculus",
+    "Rattus norvegicus",
+    "Danio rerio",
+    "Drosophila melanogaster",
+    "Caenorhabditis elegans",
+    "Arabidopsis thaliana",
+    "Saccharomyces cerevisiae",
+    "Schizosaccharomyces pombe",
+    "Oryza sativa",
+    "Zea mays",
+    "Triticum aestivum",
+    "Glycine max",
+    "Solanum lycopersicum",
+    "Solanum tuberosum",
+    "Vitis vinifera",
+    "Hordeum vulgare",
+    "Sorghum bicolor",
+    "Brassica rapa",
+    "Brachypodium distachyon",
+    "Populus trichocarpa",
+    "Gossypium hirsutum",
+    "Medicago truncatula",
+    "Bos taurus",
+    "Sus scrofa",
+    "Gallus gallus",
+    "Canis lupus",
+    "Felis catus",
+    "Macaca mulatta",
+    "Pan troglodytes",
+    "Gorilla gorilla",
+    "Ovis aries",
+    "Capra hircus",
+    "Equus caballus",
+    "Oryctolagus cuniculus",
+    "Xenopus tropicalis",
+    "Xenopus laevis",
+    "Takifugu rubripes",
+    "Oryzias latipes",
+    "Gasterosteus aculeatus",
+    "Anopheles gambiae",
+    "Aedes aegypti",
+    "Apis mellifera",
+    "Tribolium castaneum",
+    "Bombyx mori",
+    "Ciona intestinalis",
+    "Candida albicans",
+    "Neurospora crassa",
+    "Aspergillus nidulans",
+    "Cryptococcus neoformans",
+    "Escherichia coli",
+    "Bacillus subtilis",
+    "Staphylococcus aureus",
+    "Pseudomonas aeruginosa",
+)
+COMMON_IMAGE_PRIORITY = {
+    lookup_key(name): index for index, name in enumerate(COMMON_IMAGE_SPECIES)
+}
+
+
 def shard_key(value: str) -> str:
     first = species_name(value)[:1].upper()
     return first if "A" <= first <= "Z" else "_"
@@ -93,6 +154,25 @@ def image_candidate(value: str, group: str) -> str:
         return ""
     slug = image_slug(value)
     return f"{IMAGE_HOST}/{slug}.png" if slug else ""
+
+
+def image_probe_priority(entry: dict[str, Any]) -> tuple[int, int, int, int, str]:
+    name = str(entry.get("scientific_name") or entry.get("canonical_name") or entry["organism"])
+    key = lookup_key(species_name(name))
+    common_rank = COMMON_IMAGE_PRIORITY.get(key, len(COMMON_IMAGE_PRIORITY) + 1000)
+    built_rank = 0 if entry.get("has_build") else 1
+    group = str(entry.get("group") or "")
+    image_friendly_group_rank = 0 if group in {
+        "vertebrate_mammalian",
+        "vertebrate_other",
+        "invertebrate",
+        "metazoa",
+        "plant",
+        "plants",
+        "fungi",
+    } else 1
+    common_name_rank = 0 if entry.get("common_name") else 1
+    return (common_rank, built_rank, image_friendly_group_rank, common_name_rank, key)
 
 
 def cached_image_path(image_dir: Path, entry: dict[str, Any], candidate_url: str) -> Path:
@@ -382,6 +462,7 @@ def build_entries(
 
         entry["group"] = compute_group(entry.get("taxonomy") or {}, entry.get("group") or "")
 
+    for entry in sorted(entries.values(), key=image_probe_priority):
         candidate = image_candidate(entry.get("scientific_name") or entry["canonical_name"], entry["group"])
         image_path = (
             cached_image_path(image_dir, entry, candidate)
