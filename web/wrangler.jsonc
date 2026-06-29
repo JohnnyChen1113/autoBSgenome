@@ -13,7 +13,7 @@
     "VITE_APP_URL": "https://autobsgenome.org",
     "VITE_APP_NAME": "AutoBSgenome",
     "VITE_APP_DESCRIPTION": "Build, browse, and automate BSgenome R packages from NCBI and Ensembl assemblies.",
-    "VITE_AUTOBSGENOME_API_BASE": "https://api.autobsgenome.org",
+    "VITE_AUTOBSGENOME_API_BASE": "https://autobsgenome-api.bioinfoark.workers.dev",
     "VITE_REPOSITORY_BASE_URL": "https://johnnychen1113.github.io/autoBSgenome"
   }
 }

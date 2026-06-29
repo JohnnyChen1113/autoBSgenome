@@ -46,14 +46,14 @@ export function SiteHeader({ active }: { active?: NavKey }) {
       <div className="mx-auto flex max-w-6xl items-stretch gap-8 px-6">
         <a
           href="/"
-          className="flex shrink-0 items-center gap-3 py-3 group"
+          className="flex shrink-0 items-center gap-3 py-3"
         >
           <img
             src="/brand-icon.svg"
             alt=""
-            className="h-14 w-14 transition-transform group-hover:rotate-3"
+            className="h-14 w-14"
           />
-          <span className="font-heading text-[1.18rem] font-semibold tracking-tight text-ink group-hover:text-primary transition-colors">
+          <span className="font-heading text-[1.18rem] font-semibold tracking-tight text-ink transition-colors hover:text-primary">
             AutoBSgenome
           </span>
         </a>

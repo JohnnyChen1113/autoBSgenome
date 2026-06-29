@@ -734,7 +734,14 @@ async function handleBuild(
   if (!ghResponse.ok) {
     const errText = await ghResponse.text();
     return jsonResponse(
-      { error: "Failed to trigger build", details: errText },
+      {
+        error: "Failed to trigger build",
+        details: {
+          status: ghResponse.status,
+          statusText: ghResponse.statusText,
+          body: errText,
+        },
+      },
       500,
       origin,
       env.ALLOWED_ORIGIN

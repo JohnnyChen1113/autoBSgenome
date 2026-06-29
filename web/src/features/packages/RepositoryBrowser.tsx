@@ -10,13 +10,13 @@ import {
   Loader2,
   Package,
   Search,
+  X,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SpeciesImage } from "@/components/SpeciesImage";
 import { Input } from "@/components/ui/input";
-import { Progress } from "@/components/ui/progress";
 import { siteConfig } from "@/config";
 import { cn } from "@/lib/utils";
 import { fetchRepositoryJson } from "@/features/packages/repository-api";
@@ -128,16 +128,10 @@ type CatalogRow = {
   z?: number;
 };
 
-type ProgressData = {
-  total: number;
-  done: number;
-  building: number;
-  pending: number;
-};
-
 type Kingdom = "all" | "animal" | "plant" | "fungi" | "prokaryote";
 type AvailabilityFilter = "built" | "unbuilt" | "catalog";
 type DataSourceFilter = "all" | "ncbi" | "ensembl" | "bioconductor";
+type PackageDataSource = Exclude<DataSourceFilter, "all">;
 
 // NCBI assembly metadata uses bracket notation like "[Candida] arabinofermentans"
 // to mark a historically classified but now-disputed genus. We strip the
@@ -256,6 +250,32 @@ function formatMetadataDate(value?: string): string {
   return date.toLocaleDateString();
 }
 
+function sanitizePackageToken(value?: string): string {
+  if (!value) return "";
+  return value
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^A-Za-z0-9]/g, "");
+}
+
+function packageAssemblyToken(packageName: string): string {
+  const parts = packageName.split(".");
+  return parts.length === 4 ? parts[3] : "";
+}
+
+function assemblyNameNote(build: BuildPackage): string {
+  const assembly = build.assembly?.trim();
+  if (!assembly) return "";
+
+  const normalized = sanitizePackageToken(assembly);
+  const token = packageAssemblyToken(build.package);
+  if (!normalized || !token || normalized === assembly || normalized !== token) {
+    return "";
+  }
+
+  return `Package name uses ${token} because BSgenome package names must have exactly four dot-separated parts; the original assembly name is ${assembly}.`;
+}
+
 function sourceUrl(build: BuildPackage): string {
   if (build.source_url) return build.source_url;
   if (build.accession?.startsWith("GC")) {
@@ -331,6 +351,27 @@ function ensemblSubdomain(group?: string): string {
   return "www.ensembl.org";
 }
 
+function normalizedEnsemblUrl(url: string, group?: string): string {
+  const expectedHost = ensemblSubdomain(group);
+  try {
+    const parsed = new URL(url);
+    const isEnsemblHost =
+      parsed.hostname === "www.ensembl.org" ||
+      parsed.hostname === "useast.ensembl.org" ||
+      parsed.hostname === "uswest.ensembl.org" ||
+      parsed.hostname.endsWith(".ensembl.org");
+
+    if (isEnsemblHost && expectedHost !== "www.ensembl.org") {
+      parsed.hostname = expectedHost;
+      return parsed.toString();
+    }
+  } catch {
+    return url;
+  }
+
+  return url;
+}
+
 // Construct an Ensembl species-page slug. EnsemblGenomes (Plants/Fungi/etc.)
 // uses two URL conventions and we have to pick one:
 //   - Multi-assembly species: /_genus_species_gca_NNNNNNNNN/Info/Index
@@ -386,7 +427,7 @@ function buildSourceLink(
 
   if (provider === "ensembl") {
     if (build.source_url && /\bensembl\.org\b/i.test(build.source_url)) {
-      return { label: "Ensembl", url: build.source_url };
+      return { label: "Ensembl", url: normalizedEnsemblUrl(build.source_url, group) };
     }
     // The backfill script already verified this species isn't on any
     // Ensembl subdomain. Don't offer a chip that will lead to a 404.
@@ -483,6 +524,34 @@ function buildDataSource(build: BuildPackage): DataSourceFilter | "" {
   if (provider === "ensembl") return "ensembl";
   if (provider === "ncbi" || build.accession?.startsWith("GC")) return "ncbi";
   return "";
+}
+
+const packageSourceOrder: PackageDataSource[] = [
+  "bioconductor",
+  "ncbi",
+  "ensembl",
+];
+
+function packageSourceLabel(source: PackageDataSource): string {
+  switch (source) {
+    case "bioconductor":
+      return "Bioconductor";
+    case "ncbi":
+      return "NCBI";
+    case "ensembl":
+      return "Ensembl";
+  }
+}
+
+function packageSourceBadges(builds: BuildPackage[]): PackageDataSource[] {
+  const sources = new Set<PackageDataSource>();
+  for (const build of builds) {
+    const source = buildDataSource(build);
+    if (source && source !== "all") {
+      sources.add(source);
+    }
+  }
+  return packageSourceOrder.filter((source) => sources.has(source));
 }
 
 function matchesDataSource(
@@ -648,14 +717,91 @@ function taxonomyBreadcrumb(taxonomy?: Taxonomy): string[] {
     .filter(Boolean) as string[];
 }
 
+type ProviderToneKey = "bioconductor" | "ensembl" | "ncbi" | "ucsc" | "default";
+
+function providerToneKey(provider?: string): ProviderToneKey {
+  const normalized = provider?.toLowerCase() ?? "";
+  if (normalized.includes("bioconductor") || normalized === "bioc") {
+    return "bioconductor";
+  }
+  if (normalized.includes("ensembl")) return "ensembl";
+  if (normalized.includes("ucsc")) return "ucsc";
+  if (
+    !normalized ||
+    normalized.includes("ncbi") ||
+    normalized.includes("refseq") ||
+    normalized.includes("genbank")
+  ) {
+    return "ncbi";
+  }
+  return "default";
+}
+
 function providerTone(provider?: string): string {
-  if (provider?.toLowerCase() === "ensembl") {
-    return "border-amber-200 bg-amber-50 text-amber-800";
+  switch (providerToneKey(provider)) {
+    case "bioconductor":
+      return "border-emerald-200 bg-emerald-50 text-emerald-800";
+    case "ensembl":
+      return "border-amber-200 bg-amber-50 text-amber-800";
+    case "ucsc":
+      return "border-violet-200 bg-violet-50 text-violet-800";
+    case "ncbi":
+      return "border-blue-200 bg-blue-50 text-blue-800";
+    default:
+      return "border-slate-200 bg-slate-50 text-slate-700";
   }
-  if (provider?.toLowerCase() === "ucsc") {
-    return "border-violet-200 bg-violet-50 text-violet-800";
+}
+
+function sourceChipTone(label?: string): string {
+  switch (providerToneKey(label)) {
+    case "bioconductor":
+      return "border-emerald-300 bg-emerald-50 text-emerald-700 hover:border-emerald-500 hover:bg-emerald-100 hover:text-emerald-800";
+    case "ensembl":
+      return "border-amber-200 bg-amber-50 text-amber-700 hover:border-amber-300 hover:bg-amber-100 hover:text-amber-800";
+    case "ucsc":
+      return "border-violet-300 bg-violet-50 text-violet-700 hover:border-violet-500 hover:bg-violet-100 hover:text-violet-800";
+    case "ncbi":
+      return "border-blue-300 bg-blue-50 text-blue-700 hover:border-blue-500 hover:bg-blue-100 hover:text-blue-800";
+    default:
+      return "border-border bg-background text-muted-foreground hover:border-primary hover:text-primary";
   }
-  return "border-blue-200 bg-blue-50 text-blue-800";
+}
+
+function sourcePillTone(label?: string): string {
+  switch (providerToneKey(label)) {
+    case "bioconductor":
+      return "border-emerald-200 bg-emerald-50 text-emerald-700";
+    case "ensembl":
+      return "border-amber-200 bg-amber-50 text-amber-700";
+    case "ucsc":
+      return "border-violet-200 bg-violet-50 text-violet-700";
+    case "ncbi":
+      return "border-blue-200 bg-blue-50 text-blue-700";
+    default:
+      return "border-border bg-secondary text-muted-foreground";
+  }
+}
+
+function neutralPillTone(kind: "group" | "count"): string {
+  if (kind === "count") {
+    return "border-slate-200 bg-slate-100 text-slate-800";
+  }
+  return "border-border bg-background text-foreground";
+}
+
+function downloadButtonTone(provider?: string): string {
+  switch (providerToneKey(provider)) {
+    case "bioconductor":
+      return "border-emerald-700 bg-emerald-600 text-white shadow-emerald-100 hover:border-emerald-800 hover:bg-emerald-700 focus-visible:ring-emerald-600";
+    case "ensembl":
+      return "border-amber-300 bg-amber-50 text-amber-900 shadow-amber-100 hover:border-amber-400 hover:bg-amber-100 focus-visible:ring-amber-300";
+    case "ucsc":
+      return "border-violet-700 bg-violet-600 text-white shadow-violet-100 hover:border-violet-800 hover:bg-violet-700 focus-visible:ring-violet-600";
+    case "ncbi":
+      return "border-blue-800 bg-blue-700 text-white shadow-blue-100 hover:border-blue-900 hover:bg-blue-800 focus-visible:ring-blue-700";
+    default:
+      return "border-primary bg-primary text-primary-foreground shadow-primary/20 hover:bg-primary/90 focus-visible:ring-primary";
+  }
 }
 
 function initialSearchQuery(): string {
@@ -672,7 +818,6 @@ export function RepositoryBrowser() {
   const [metadataShards, setMetadataShards] = useState<
     Record<string, SpeciesMetadataShardState>
   >({});
-  const [progress, setProgress] = useState<ProgressData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [query, setQuery] = useState(initialSearchQuery);
@@ -694,12 +839,11 @@ export function RepositoryBrowser() {
       setLoading(true);
       setError("");
 
-      const [community, biocPackages, catalog, queue, speciesMetadataIndex] =
+      const [community, biocPackages, catalog, speciesMetadataIndex] =
         await Promise.all([
         fetchRepositoryJson<RepositoryData | BuildPackage[]>("packages.json"),
         fetchRepositoryJson<BuildPackage[]>("bioc-packages.json"),
         fetchRepositoryJson<CatalogRow[]>("catalog.json"),
-        fetchRepositoryJson<{ status: string }[]>("build-queue.json"),
         fetchRepositoryJson<SpeciesMetadataIndex>("species-metadata/index.json"),
       ]);
 
@@ -715,18 +859,6 @@ export function RepositoryBrowser() {
       setFlatCount(merged.flat.length);
       setBiocCount(merged.biocCount);
       setMetadataIndex(speciesMetadataIndex);
-
-      if (queue) {
-        const eukaryotes = queue.filter(
-          (item) => !item.status?.startsWith("skip_")
-        );
-        setProgress({
-          total: eukaryotes.length,
-          done: eukaryotes.filter((item) => item.status === "done").length,
-          building: eukaryotes.filter((item) => item.status === "building").length,
-          pending: eukaryotes.filter((item) => item.status === "pending").length,
-        });
-      }
 
       setLoading(false);
     }
@@ -810,8 +942,6 @@ export function RepositoryBrowser() {
   const visibleCount =
     visibleLimit.filterKey === filterKey ? visibleLimit.count : INITIAL_LIMIT;
   const displayed = filtered.slice(0, visibleCount);
-  const progressPercent =
-    progress && progress.total > 0 ? (progress.done / progress.total) * 100 : 0;
   const metadataEntries = useMemo(() => {
     const entries = new Map<string, SpeciesMetadata>();
     for (const shard of Object.values(metadataShards)) {
@@ -969,19 +1099,34 @@ export function RepositoryBrowser() {
           </div>
 
           <div className="mt-6 rounded-lg border border-border bg-background p-4">
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div className="min-w-0 flex-1">
                 <div className="text-sm font-medium text-foreground">
                   How to install
                 </div>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  Each package card below shows a ready-to-copy one-line R
-                  command. Or click Download to grab the tarball and install
-                  offline.
-                </p>
-                <code className="mt-2 block overflow-x-auto rounded-md bg-secondary px-3 py-2 font-mono text-xs text-foreground">
-                  install.packages(&quot;TARBALL_URL&quot;, repos = NULL, type = &quot;source&quot;)
-                </code>
+                <div className="mt-3 grid gap-3 lg:grid-cols-2">
+                  <div className="flex min-w-0 gap-3">
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary font-mono text-xs font-semibold text-primary-foreground">
+                      1
+                    </span>
+                    <div className="min-w-0">
+                      <p className="text-sm text-foreground">
+                        Each package card below shows a ready-to-copy one-line R command.
+                      </p>
+                      <code className="mt-2 block overflow-x-auto rounded-md bg-secondary px-3 py-2 font-mono text-xs text-foreground">
+                        install.packages(&quot;TARBALL_URL&quot;, repos = NULL, type = &quot;source&quot;)
+                      </code>
+                    </div>
+                  </div>
+                  <div className="flex min-w-0 gap-3">
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary font-mono text-xs font-semibold text-primary-foreground">
+                      2
+                    </span>
+                    <p className="text-sm leading-6 text-foreground">
+                      You can also click Download to grab the tarball and install offline.
+                    </p>
+                  </div>
+                </div>
               </div>
               <a
                 href={`${siteConfig.githubUrl}/releases`}
@@ -995,25 +1140,6 @@ export function RepositoryBrowser() {
             </div>
           </div>
 
-          {progress && progress.total > 0 && (
-            <div className="mt-4 rounded-lg border border-border bg-background p-4">
-              <div className="flex items-center justify-between gap-4">
-                <div>
-                  <div className="text-sm font-medium text-foreground">
-                    Eukaryotic reference genome coverage
-                  </div>
-                  <div className="mt-1 text-xs text-muted-foreground">
-                    {progress.done.toLocaleString()} built, {progress.building}{" "}
-                    building, {progress.pending.toLocaleString()} pending
-                  </div>
-                </div>
-                <div className="font-mono text-sm font-semibold text-primary">
-                  {progressPercent.toFixed(1)}%
-                </div>
-              </div>
-              <Progress value={progressPercent} className="mt-3" />
-            </div>
-          )}
         </div>
       </section>
 
@@ -1024,8 +1150,18 @@ export function RepositoryBrowser() {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search organism, package, accession, assembly..."
-            className="pl-9"
+            className="pl-9 pr-10"
           />
+          {query && (
+            <button
+              type="button"
+              aria-label="Clear search"
+              className="absolute right-2 top-1/2 inline-flex size-7 -translate-y-1/2 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              onClick={() => setQuery("")}
+            >
+              <X className="size-4" />
+            </button>
+          )}
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -1161,6 +1297,7 @@ export function RepositoryBrowser() {
                   displayGroup
                 )
               : [];
+            const packageSources = packageSourceBadges(builds);
             const imageUrl = metadata?.image_url ?? null;
 
             return (
@@ -1217,18 +1354,40 @@ export function RepositoryBrowser() {
                         );
                       })()}
                       <div className="mt-2 flex flex-wrap gap-1.5">
-                        <Badge variant="outline">{groupLabel(displayGroup)}</Badge>
+                        <span
+                          className={cn(
+                            "inline-flex h-6 items-center rounded-full border px-2.5 text-xs font-medium",
+                            neutralPillTone("group")
+                          )}
+                        >
+                          {groupLabel(displayGroup)}
+                        </span>
                         {builds.length > 0 && (
-                          <Badge variant="secondary">
+                          <span
+                            className={cn(
+                              "inline-flex h-6 items-center gap-1 rounded-full border px-2.5 text-xs font-medium",
+                              neutralPillTone("count")
+                            )}
+                          >
                             <Package className="size-3" />
                             {builds.length} build{builds.length === 1 ? "" : "s"}
-                          </Badge>
+                          </span>
                         )}
-                        {builds.some((build) => build._bioc) && (
-                          <Badge className="border-green-200 bg-green-50 text-green-800">
-                            Bioconductor
-                          </Badge>
-                        )}
+                        {packageSources.map((source) => {
+                          const label = packageSourceLabel(source);
+                          return (
+                            <span
+                              key={source}
+                              title={`${label} package source available`}
+                              className={cn(
+                                "inline-flex h-6 cursor-text items-center rounded-full border px-2.5 text-xs font-medium",
+                                sourcePillTone(label)
+                              )}
+                            >
+                              {label}
+                            </span>
+                          );
+                        })}
                         {catalogOnly && (
                           <Badge
                             className="border-primary/30 bg-primary/10 text-primary"
@@ -1244,7 +1403,10 @@ export function RepositoryBrowser() {
                             target="_blank"
                             rel="noreferrer"
                             title={`View this reference on ${source.label}`}
-                            className="inline-flex h-6 items-center gap-1 rounded border border-border bg-background px-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                            className={cn(
+                              "inline-flex h-6 items-center gap-1 rounded border px-2 font-mono text-[10px] uppercase tracking-[0.1em] transition-colors",
+                              sourceChipTone(source.label)
+                            )}
                           >
                             {source.label}
                             <ExternalLink className="size-3" />
@@ -1399,7 +1561,10 @@ export function RepositoryBrowser() {
                                       target="_blank"
                                       rel="noreferrer"
                                       title={`View this build's reference on ${src.label}`}
-                                      className="inline-flex h-6 items-center gap-1 rounded border border-border bg-background px-2 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground transition-colors hover:border-primary hover:text-primary"
+                                      className={cn(
+                                        "inline-flex h-6 items-center gap-1 rounded border px-2 font-mono text-[10px] uppercase tracking-[0.1em] transition-colors",
+                                        sourceChipTone(src.label)
+                                      )}
                                     >
                                       {src.label}
                                       <ExternalLink className="size-3" />
@@ -1481,6 +1646,15 @@ export function RepositoryBrowser() {
                                 )}
                               </div>
                               {(() => {
+                                const note = assemblyNameNote(build);
+                                if (!note) return null;
+                                return (
+                                  <div className="mt-2 rounded-md border border-primary/20 bg-primary/5 px-3 py-2 text-xs leading-5 text-muted-foreground">
+                                    {note}
+                                  </div>
+                                );
+                              })()}
+                              {(() => {
                                 const cmd = installCommand(build);
 
                                 // Bioconductor: only the BiocManager command,
@@ -1488,18 +1662,15 @@ export function RepositoryBrowser() {
                                 if (build._bioc) {
                                   return (
                                     <div className="mt-4 space-y-2">
-                                      <div className="text-xs font-medium uppercase tracking-wide text-foreground/60">
+                                      <div className="text-right text-xs font-medium uppercase tracking-wide text-foreground/60">
                                         Install from Bioconductor
                                       </div>
-                                      <div className="relative rounded-md bg-secondary p-3 pr-20">
-                                        <pre className="m-0 min-w-0 overflow-hidden whitespace-pre-wrap break-all font-mono text-xs leading-5 text-foreground">
-                                          {cmd ?? `BiocManager::install("${build.package}")`}
-                                        </pre>
+                                      <div className="flex justify-end">
                                         <Button
                                           type="button"
                                           size="sm"
                                           variant="outline"
-                                          className="absolute right-2 top-2 bg-background"
+                                          className="bg-background"
                                           onClick={() =>
                                             copyCommand(
                                               cmd ?? `BiocManager::install("${build.package}")`,
@@ -1511,17 +1682,11 @@ export function RepositoryBrowser() {
                                           {copied === copyKey ? "Copied" : "Copy"}
                                         </Button>
                                       </div>
-                                      {build.bioc_url && (
-                                        <a
-                                          href={build.bioc_url}
-                                          target="_blank"
-                                          rel="noreferrer"
-                                          className="inline-flex h-8 items-center gap-1.5 text-xs font-medium text-primary link-underline"
-                                        >
-                                          View on Bioconductor
-                                          <ExternalLink className="size-3.5" />
-                                        </a>
-                                      )}
+                                      <div className="rounded-md bg-secondary p-3">
+                                        <pre className="m-0 min-w-0 overflow-hidden whitespace-pre-wrap break-all font-mono text-xs leading-5 text-foreground">
+                                          {cmd ?? `BiocManager::install("${build.package}")`}
+                                        </pre>
+                                      </div>
                                     </div>
                                   );
                                 }
@@ -1539,45 +1704,57 @@ export function RepositoryBrowser() {
                                   );
                                 }
 
-                                // Two methods side by side. Left column is
-                                // the install snippet (takes remaining width).
-                                // Right column is a compact download card
-                                // (auto-width, top-aligned, not stretched).
+                                // Keep the install snippet full width, with
+                                // offline download as a secondary compact
+                                // action below it.
                                 return (
-                                  <div className="mt-4 grid items-center gap-3 md:grid-cols-[1fr_minmax(11rem,auto)]">
+                                  <div className="mt-4 space-y-3">
                                     {/* Method 1 — install in R online */}
                                     <div className="min-w-0 space-y-2">
-                                      <div className="text-xs font-medium uppercase tracking-wide text-foreground/60">
+                                      <div className="text-right text-xs font-medium uppercase tracking-wide text-foreground/60">
                                         Install in R (online)
                                       </div>
-                                      <div className="relative rounded-md bg-secondary p-3 pr-20">
-                                        <pre className="m-0 min-w-0 overflow-hidden whitespace-pre-wrap break-all font-mono text-xs leading-5 text-foreground">
-                                          {cmd}
-                                        </pre>
+                                      <div className="flex justify-end">
                                         <Button
                                           type="button"
                                           size="sm"
                                           variant="outline"
-                                          className="absolute right-2 top-2 bg-background"
+                                          className="bg-background"
                                           onClick={() => copyCommand(cmd, copyKey)}
                                         >
                                           <Copy className="size-3.5" />
                                           {copied === copyKey ? "Copied" : "Copy"}
                                         </Button>
                                       </div>
+                                      <div className="rounded-md bg-secondary p-3">
+                                        <pre className="m-0 min-w-0 overflow-hidden whitespace-pre-wrap break-all font-mono text-xs leading-5 text-foreground">
+                                          {cmd}
+                                        </pre>
+                                      </div>
                                     </div>
 
                                     {/* Method 2 — download tarball (compact) */}
-                                    <div className="space-y-2">
-                                      <div className="text-xs font-medium uppercase tracking-wide text-foreground/60">
+                                    <div className="flex flex-col items-end gap-2">
+                                      <div className="text-right text-xs font-medium uppercase tracking-wide text-foreground/60">
                                         Or download (offline)
                                       </div>
                                       <a
                                         href={build.download_url}
-                                        className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-sm"
+                                        title={`Download ${build.package}`}
+                                        className={cn(
+                                          "inline-flex min-h-12 w-fit max-w-full items-center justify-start gap-2 rounded-md border px-3.5 py-2 text-sm font-semibold shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 active:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 sm:max-w-lg",
+                                          downloadButtonTone(build.provider)
+                                        )}
                                       >
-                                        <Download className="size-4" />
-                                        {build.size ? formatBytes(build.size) : ".tar.gz"}
+                                        <Download className="size-4 shrink-0" />
+                                        <span className="flex min-w-0 flex-col items-start">
+                                          <span className="block max-w-full truncate font-mono text-[11px] leading-4">
+                                            {build.package}
+                                          </span>
+                                          <span className="text-xs font-semibold leading-4 opacity-80">
+                                            {build.size ? formatBytes(build.size) : ".tar.gz"}
+                                          </span>
+                                        </span>
                                       </a>
                                     </div>
                                   </div>

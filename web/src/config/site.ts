@@ -20,7 +20,7 @@ function apiBase(): string {
     return productionWorkersDevApiBase;
   }
 
-  return publicEnv("VITE_AUTOBSGENOME_API_BASE") ?? "https://api.autobsgenome.org";
+  return publicEnv("VITE_AUTOBSGENOME_API_BASE") ?? productionWorkersDevApiBase;
 }
 
 export const siteConfig = {

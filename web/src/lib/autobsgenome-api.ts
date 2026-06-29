@@ -41,15 +41,32 @@ export type BuildStatusResponse = {
   error?: string;
 };
 
-async function readJson<T>(res: Response): Promise<T & { error?: string }> {
-  return (await res.json().catch(() => ({}))) as T & { error?: string };
+async function readJson<T>(
+  res: Response
+): Promise<T & { error?: string; details?: unknown }> {
+  return (await res.json().catch(() => ({}))) as T & {
+    error?: string;
+    details?: unknown;
+  };
+}
+
+function formatApiError(data: { error?: string; details?: unknown }, fallback: string) {
+  const base = data.error ?? fallback;
+  if (!data.details) return base;
+  const details =
+    typeof data.details === "string"
+      ? data.details
+      : JSON.stringify(data.details, null, 2);
+  return `${base}: ${details}`;
 }
 
 async function apiJson<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${siteConfig.apiBase}${path}`, init);
   const data = await readJson<T>(res);
   if (!res.ok) {
-    throw new Error(data.error ?? `AutoBSgenome API request failed: ${path}`);
+    throw new Error(
+      formatApiError(data, `AutoBSgenome API request failed: ${path}`)
+    );
   }
   return data;
 }

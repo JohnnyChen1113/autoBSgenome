@@ -933,9 +933,10 @@ export default function Home() {
           <p className="mt-3">
             <a
               href="/packages"
-              className="text-primary hover:underline font-medium"
+              className="inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-primary px-4 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
             >
-              Browse all available packages &rarr;
+              Browse all available packages
+              <span aria-hidden="true">&rarr;</span>
             </a>
           </p>
         </section>
@@ -2005,9 +2006,10 @@ export default function Home() {
                     <p className="mt-2">
                       <a
                         href="/packages"
-                        className="text-[#0f7b3f] underline font-medium"
+                        className="inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-[#0f7b3f] px-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#0c6534]"
                       >
-                        Browse all available packages &rarr;
+                        Browse all available packages
+                        <span aria-hidden="true">&rarr;</span>
                       </a>
                     </p>
                   </div>
