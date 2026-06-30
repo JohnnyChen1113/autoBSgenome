@@ -43,6 +43,8 @@ import {
   publishBuild,
   startBuild,
   uploadPart,
+  type BuildProgressStep,
+  type BuildStatusResponse,
   type UploadPartResult,
 } from "@/lib/autobsgenome-api";
 import {
@@ -118,6 +120,14 @@ function formatBytes(bytes: number) {
     unit += 1;
   }
   return `${size.toFixed(unit === 0 ? 0 : 1)} ${units[unit]}`;
+}
+
+function formatDuration(seconds?: number) {
+  if (seconds === undefined || !Number.isFinite(seconds) || seconds < 0) return "";
+  if (seconds < 60) return `${Math.round(seconds)}s`;
+  const minutes = Math.floor(seconds / 60);
+  const rest = Math.round(seconds % 60);
+  return rest === 0 ? `${minutes}m` : `${minutes}m ${String(rest).padStart(2, "0")}s`;
 }
 
 function saveBuildRecord(record: BuildRecord) {
@@ -403,6 +413,8 @@ export default function Home() {
   const [fileSize, setFileSize] = useState(0);
   const [buildStep, setBuildStep] = useState(0);
   const [buildStartTime, setBuildStartTime] = useState(0);
+  const [buildProgressSteps, setBuildProgressSteps] = useState<BuildProgressStep[]>([]);
+  const [workflowRunUrl, setWorkflowRunUrl] = useState("");
   const [isPublished, setIsPublished] = useState(false);
   const [publishing, setPublishing] = useState(false);
   const [publishError, setPublishError] = useState("");
@@ -422,6 +434,7 @@ export default function Home() {
   const [uploadError, setUploadError] = useState("");
   const [uploadState, setUploadState] = useState<"idle" | "validating" | "uploading" | "uploaded">("idle");
   const [uploadProgress, setUploadProgress] = useState(0);
+  const [uploadStepSeconds, setUploadStepSeconds] = useState(0);
   const [isDragActive, setIsDragActive] = useState(false);
 
   const buildStartTimeRef = useRef(0);
@@ -478,6 +491,8 @@ export default function Home() {
       setDeleteToken("");
       setBuildDeleted(false);
       setDeleteError("");
+      setBuildProgressSteps([]);
+      setWorkflowRunUrl("");
       const now = Date.now();
       setBuildStartTime(now);
       buildStartTimeRef.current = now;
@@ -577,6 +592,7 @@ export default function Home() {
   const uploadFastaFile = async (file: File) => {
     setUploadState("uploading");
     setUploadProgress(0);
+    const startedAt = Date.now();
     const session = await createUploadSession({
       file_name: file.name,
       file_size: file.size,
@@ -601,6 +617,7 @@ export default function Home() {
 
     setUploadState("uploaded");
     setUploadProgress(100);
+    setUploadStepSeconds(Math.max(1, Math.round((Date.now() - startedAt) / 1000)));
     return session;
   };
 
@@ -632,6 +649,9 @@ export default function Home() {
 
     setStep("building");
     setBuildStep(0);
+    setBuildProgressSteps([]);
+    setWorkflowRunUrl("");
+    setUploadStepSeconds(0);
     const startTime = Date.now();
     setBuildStartTime(startTime);
     buildStartTimeRef.current = startTime;
@@ -781,23 +801,37 @@ export default function Home() {
     }
   };
 
+  const applyBuildProgress = (data: BuildStatusResponse) => {
+    if (data.build_steps && data.build_steps.length > 0) {
+      setBuildProgressSteps(data.build_steps);
+    }
+    if (data.workflow_run_url) {
+      setWorkflowRunUrl(data.workflow_run_url);
+    }
+  };
+
   const pollBuildStatus = (id: string, currentDeleteToken = "") => {
     let errorCount = 0;
-    const interval = setInterval(async () => {
+    const checkStatus = async () => {
       const elapsedSec = Math.floor((Date.now() - buildStartTimeRef.current) / 1000);
 
       // Animate build steps based on elapsed time
-      if (elapsedSec > 5) setBuildStep(1);
-      if (elapsedSec > 15) setBuildStep(2);
-      if (elapsedSec > 30) setBuildStep(3);
+      if (buildProgressSteps.length === 0) {
+        if (elapsedSec > 5) setBuildStep(1);
+        if (elapsedSec > 15) setBuildStep(2);
+        if (elapsedSec > 30) setBuildStep(3);
+      }
 
       try {
         const data = await fetchBuildStatus(id);
+        applyBuildProgress(data);
 
         if (data.status === "complete") {
           clearInterval(interval);
           setBuildStep(4);
-          const totalTime = Math.floor((Date.now() - buildStartTimeRef.current) / 1000);
+          const totalTime =
+            data.total_seconds ??
+            Math.floor((Date.now() - buildStartTimeRef.current) / 1000);
           setBuildTotalTime(totalTime);
           setDownloadUrl(data.download_url ?? "");
           setFileName(data.file_name ?? "");
@@ -841,16 +875,18 @@ export default function Home() {
         errorCount++;
       }
 
-      // Timeout after 10 minutes
-      if (elapsedSec > 600) {
+      // Timeout slightly after the GitHub Actions workflow's 60-minute limit.
+      if (elapsedSec > 3900) {
         clearInterval(interval);
         setBuildError(
-          "Status polling timed out after 10 minutes. Your build may still be running — " +
+          "Status polling timed out after 65 minutes. Your build may still be running — " +
           `check ${siteConfig.githubUrl}/releases for your package.`
         );
         setStep("review");
       }
-    }, 5000);
+    };
+    void checkStatus();
+    const interval = setInterval(() => void checkStatus(), 5000);
   };
 
   const needsUploadedFasta = form.fastaSource === "upload" && !uploadedFasta;
@@ -899,6 +935,39 @@ export default function Home() {
           "Building R package",
           "Uploading package release",
         ];
+  const normalizedProgressSteps =
+    buildProgressSteps.length > 0
+      ? buildProgressSteps.map((progressStep) =>
+          progressStep.key === "download" && form.fastaSource === "url"
+            ? { ...progressStep, label: "Downloading FASTA URL" }
+            : progressStep
+        )
+      : [];
+  const visibleBuildSteps: BuildProgressStep[] =
+    normalizedProgressSteps.length > 0
+      ? [
+          ...(form.fastaSource === "upload"
+            ? [
+                {
+                  key: "upload",
+                  label: "Uploading FASTA",
+                  status: "complete" as const,
+                  seconds: uploadStepSeconds || undefined,
+                },
+              ]
+            : []),
+          ...normalizedProgressSteps,
+        ]
+      : buildStepLabels.map((label, index) => ({
+          key: `fallback-${index}`,
+          label,
+          status:
+            index < buildStep
+              ? "complete"
+              : index === buildStep
+              ? "running"
+              : "pending",
+        }));
 
   return (
     <div className="flex flex-col flex-1 bg-background">
@@ -1648,38 +1717,53 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Building Package...</CardTitle>
                 <CardDescription>
-                  Build time depends on genome size: &lt;100 MB: ~45s &middot; 100–500 MB: ~1–2 min &middot; &gt;1 GB: ~3–5 min
+                  Build time depends on FASTA size: small genomes usually finish in ~1 min; mammalian-size genomes take ~3–6 min; very large plant genomes can take 10–30+ min.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 py-8">
                 <div className="space-y-4">
-                  {buildStepLabels.map((label, i) => {
-                    const done = i < buildStep;
-                    const active = i === buildStep;
+                  {visibleBuildSteps.map((progressStep, i) => {
+                    const done =
+                      progressStep.status === "complete" ||
+                      progressStep.status === "skipped";
+                    const active = progressStep.status === "running";
+                    const failed = progressStep.status === "failed";
+                    const duration = formatDuration(progressStep.seconds);
                     return (
-                      <div key={i} className="flex items-center gap-3">
+                      <div key={progressStep.key} className="flex items-center gap-3">
                         <div
                           className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                            done
+                            failed
+                              ? "bg-destructive text-destructive-foreground"
+                              : done
                               ? "bg-primary text-primary-foreground"
                               : active
                               ? "bg-primary text-primary-foreground animate-pulse"
                               : "bg-secondary text-muted-foreground"
                           }`}
                         >
-                          {done ? "✓" : i + 1}
+                          {failed ? "!" : done ? "✓" : i + 1}
                         </div>
-                        <span
-                          className={
-                            done
-                              ? "text-foreground"
-                              : active
-                              ? "text-foreground font-medium"
-                              : "text-muted-foreground"
-                          }
-                        >
-                          {label}
-                        </span>
+                        <div className="min-w-0 flex-1 sm:flex sm:items-baseline sm:justify-between sm:gap-3">
+                          <span
+                            className={
+                              failed
+                                ? "text-destructive font-medium"
+                                : done
+                                ? "text-foreground"
+                                : active
+                                ? "text-foreground font-medium"
+                                : "text-muted-foreground"
+                            }
+                          >
+                            {progressStep.label}
+                          </span>
+                          {duration && (
+                            <span className="block text-xs font-mono text-muted-foreground sm:text-right">
+                              {active ? `running ${duration}` : duration}
+                            </span>
+                          )}
+                        </div>
                       </div>
                     );
                   })}
@@ -1692,6 +1776,18 @@ export default function Home() {
                   {jobId && (
                     <p className="text-sm text-muted-foreground">
                       Job ID: <code className="font-mono">{jobId}</code>
+                    </p>
+                  )}
+                  {workflowRunUrl && (
+                    <p className="text-sm">
+                      <a
+                        href={workflowRunUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:underline"
+                      >
+                        View GitHub Actions run
+                      </a>
                     </p>
                   )}
                 </div>
@@ -1734,7 +1830,7 @@ export default function Home() {
                 <CardDescription>
                   {fileName || `${form.packageName}_${form.version}.tar.gz`}
                   {fileSize > 0 && ` · ${(fileSize / 1024 / 1024).toFixed(1)} MB`}
-                  {buildTotalTime > 0 && ` · Built in ${buildTotalTime}s`}
+                  {buildTotalTime > 0 && ` · Built in ${formatDuration(buildTotalTime)}`}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-5">
@@ -1742,9 +1838,41 @@ export default function Home() {
                 {buildTotalTime > 0 && (
                   <div className="text-center py-2">
                     <p className="text-4xl font-mono font-bold text-primary">
-                      {buildTotalTime}s
+                      {formatDuration(buildTotalTime)}
                     </p>
                     <p className="text-sm text-muted-foreground mt-1">Total build time</p>
+                    {workflowRunUrl && (
+                      <a
+                        href={workflowRunUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-1 inline-block text-sm text-primary hover:underline"
+                      >
+                        View GitHub Actions run
+                      </a>
+                    )}
+                  </div>
+                )}
+
+                {buildProgressSteps.length > 0 && (
+                  <div className="border border-border rounded-lg p-4 space-y-3">
+                    <h4 className="font-heading font-semibold text-foreground">Build step timings</h4>
+                    <div className="space-y-2">
+                      {visibleBuildSteps.map((progressStep) => {
+                        const duration = formatDuration(progressStep.seconds);
+                        return (
+                          <div
+                            key={progressStep.key}
+                            className="flex items-center justify-between gap-3 text-sm"
+                          >
+                            <span className="text-muted-foreground">{progressStep.label}</span>
+                            <span className="font-mono text-foreground">
+                              {duration || progressStep.status}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 )}
 

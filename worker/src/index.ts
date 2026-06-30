@@ -88,6 +88,63 @@ const FASTA_UPLOAD_PART_SIZE_BYTES = 64 * 1024 * 1024;
 const UPLOAD_URL_TTL_SECONDS = 2 * 24 * 60 * 60;
 const FASTA_EXT_RE = /\.(fa|fasta|fna|fas)(\.gz)?$/i;
 
+type GitHubWorkflowRun = {
+  id: number;
+  status: string;
+  conclusion: string | null;
+  created_at: string;
+  run_started_at?: string | null;
+  updated_at: string;
+  display_title?: string;
+  html_url?: string;
+};
+
+type GitHubWorkflowStep = {
+  name: string;
+  status: string;
+  conclusion: string | null;
+  started_at?: string | null;
+  completed_at?: string | null;
+};
+
+type GitHubWorkflowJob = {
+  id: number;
+  name: string;
+  status: string;
+  conclusion: string | null;
+  started_at?: string | null;
+  completed_at?: string | null;
+  html_url?: string;
+  steps?: GitHubWorkflowStep[];
+};
+
+type BuildProgressStep = {
+  key: string;
+  label: string;
+  status: "pending" | "running" | "complete" | "failed" | "skipped";
+  seconds?: number;
+  started_at?: string;
+  completed_at?: string;
+};
+
+type BuildProgress = {
+  build_steps: BuildProgressStep[];
+  workflow_run_id?: number;
+  workflow_run_url?: string;
+  workflow_status?: string;
+  workflow_conclusion?: string | null;
+  total_seconds?: number;
+};
+
+function githubHeaders(env: Env): HeadersInit {
+  return {
+    Authorization: `Bearer ${env.GITHUB_PAT}`,
+    Accept: "application/vnd.github+json",
+    "User-Agent": "AutoBSgenome-Worker",
+    "X-GitHub-Api-Version": "2022-11-28",
+  };
+}
+
 function sanitizeFileName(name: string): string {
   const baseName = name.split(/[\\/]/).pop()?.trim() || "genome.fa";
   const safe = baseName.replace(/[^A-Za-z0-9._-]+/g, "_").slice(0, 180);
@@ -893,30 +950,249 @@ async function handleDeleteBuild(
   );
 }
 
+function parseGitHubTime(value?: string | null): number | null {
+  if (!value) return null;
+  const timestamp = Date.parse(value);
+  return Number.isFinite(timestamp) ? timestamp : null;
+}
+
+function elapsedSeconds(start?: string | null, end?: string | null): number | undefined {
+  const startMs = parseGitHubTime(start);
+  if (startMs === null) return undefined;
+  const endMs = parseGitHubTime(end) ?? Date.now();
+  return Math.max(0, Math.round((endMs - startMs) / 1000));
+}
+
+function actionStepState(step?: GitHubWorkflowStep): BuildProgressStep["status"] {
+  if (!step) return "pending";
+  if (step.status !== "completed") return "running";
+  if (step.conclusion === "success") return "complete";
+  if (step.conclusion === "skipped") return "skipped";
+  return "failed";
+}
+
+function actionStepSummary(
+  key: string,
+  label: string,
+  step?: GitHubWorkflowStep
+): BuildProgressStep {
+  const status = actionStepState(step);
+  return {
+    key,
+    label,
+    status,
+    seconds: step ? elapsedSeconds(step.started_at, step.completed_at) : undefined,
+    started_at: step?.started_at ?? undefined,
+    completed_at: step?.completed_at ?? undefined,
+  };
+}
+
+function findActionStep(
+  job: GitHubWorkflowJob | null,
+  names: string[]
+): GitHubWorkflowStep | undefined {
+  const nameSet = new Set(names);
+  return job?.steps?.find((step) => nameSet.has(step.name));
+}
+
+function summarizeStepGroup(
+  key: string,
+  label: string,
+  job: GitHubWorkflowJob | null,
+  names: string[],
+  completeWhenAnyLaterStepStarted = false,
+  laterNames: string[] = []
+): BuildProgressStep {
+  const matching = job?.steps?.filter((step) => names.includes(step.name)) ?? [];
+  const laterStarted = completeWhenAnyLaterStepStarted
+    ? job?.steps?.some(
+        (step) =>
+          laterNames.includes(step.name) &&
+          (step.started_at || step.status === "completed")
+      )
+    : false;
+
+  if (matching.some((step) => step.status === "completed" && step.conclusion && !["success", "skipped"].includes(step.conclusion))) {
+    const failed = matching.find((step) => step.status === "completed" && step.conclusion && !["success", "skipped"].includes(step.conclusion));
+    return {
+      key,
+      label,
+      status: "failed",
+      seconds: failed ? elapsedSeconds(failed.started_at, failed.completed_at) : undefined,
+      started_at: failed?.started_at ?? undefined,
+      completed_at: failed?.completed_at ?? undefined,
+    };
+  }
+
+  const started = matching.filter((step) => step.started_at || step.status === "completed");
+  const running = matching.find((step) => step.status !== "completed" && step.started_at);
+  const completed = matching.filter((step) => step.status === "completed" && step.conclusion === "success");
+  const final = matching[matching.length - 1];
+  const finalComplete =
+    Boolean(final && final.status === "completed" && final.conclusion === "success") ||
+    Boolean(laterStarted);
+
+  const seconds =
+    started.length > 0
+      ? Math.round(
+          started.reduce(
+            (total, step) => total + (elapsedSeconds(step.started_at, step.completed_at) ?? 0),
+            0
+          )
+        )
+      : undefined;
+
+  if (finalComplete) {
+    return {
+      key,
+      label,
+      status: "complete",
+      seconds,
+      started_at: started[0]?.started_at ?? undefined,
+      completed_at:
+        final?.completed_at ??
+        completed[completed.length - 1]?.completed_at ??
+        undefined,
+    };
+  }
+
+  if (running || started.length > 0) {
+    return {
+      key,
+      label,
+      status: "running",
+      seconds,
+      started_at: started[0]?.started_at ?? running?.started_at ?? undefined,
+      completed_at: undefined,
+    };
+  }
+
+  return { key, label, status: "pending" };
+}
+
+async function findWorkflowRunForJob(
+  jobId: string,
+  env: Env
+): Promise<GitHubWorkflowRun | null> {
+  const headers = githubHeaders(env);
+  for (let page = 1; page <= 3; page += 1) {
+    const res = await fetch(
+      `https://api.github.com/repos/${env.GITHUB_REPO}/actions/workflows/build-bsgenome.yml/runs?event=repository_dispatch&per_page=100&page=${page}`,
+      { headers }
+    );
+    if (!res.ok) return null;
+    const data = await res.json<{ workflow_runs?: GitHubWorkflowRun[] }>();
+    const run = data.workflow_runs?.find((candidate) =>
+      (candidate.display_title ?? "").includes(`[job ${jobId}]`)
+    );
+    if (run) return run;
+    if (!data.workflow_runs || data.workflow_runs.length < 100) break;
+  }
+  return null;
+}
+
+async function getWorkflowJob(
+  runId: number,
+  env: Env
+): Promise<GitHubWorkflowJob | null> {
+  const res = await fetch(
+    `https://api.github.com/repos/${env.GITHUB_REPO}/actions/runs/${runId}/jobs?per_page=100`,
+    { headers: githubHeaders(env) }
+  );
+  if (!res.ok) return null;
+  const data = await res.json<{ jobs?: GitHubWorkflowJob[] }>();
+  return data.jobs?.find((job) => job.name === "build") ?? data.jobs?.[0] ?? null;
+}
+
+async function getBuildProgress(
+  jobId: string,
+  env: Env,
+  releaseExists: boolean
+): Promise<BuildProgress | null> {
+  const run = await findWorkflowRunForJob(jobId, env);
+  if (!run) return null;
+  const job = await getWorkflowJob(run.id, env);
+  const downloadStep = findActionStep(job, [
+    "Download FASTA from NCBI",
+    "Download FASTA from Ensembl",
+    "Download FASTA from URL",
+    "Download uploaded FASTA",
+  ]);
+  const convertStep = findActionStep(job, ["Convert FASTA to 2bit"]);
+  const releaseStep = findActionStep(job, [
+    "Create GitHub Release",
+    "Publish oversized tarball to Zenodo",
+  ]);
+  const releaseStatus = releaseExists
+    ? "complete"
+    : actionStepState(releaseStep);
+  const queueSeconds = elapsedSeconds(
+    run.created_at,
+    job?.started_at ?? run.run_started_at ?? null
+  );
+  const queueComplete = Boolean(job?.started_at || run.run_started_at);
+  const buildSteps: BuildProgressStep[] = [
+    {
+      key: "queue",
+      label: "Queuing build on GitHub Actions",
+      status: queueComplete ? "complete" : "running",
+      seconds: queueSeconds,
+      started_at: run.created_at,
+      completed_at: queueComplete ? job?.started_at ?? run.run_started_at ?? undefined : undefined,
+    },
+    actionStepSummary("download", "Downloading FASTA", downloadStep),
+    actionStepSummary("twobit", "Converting to 2bit format", convertStep),
+    summarizeStepGroup(
+      "package",
+      "Building R package",
+      job,
+      ["Generate seed file", "Forge BSgenome package", "R CMD build (assemble tarball)"],
+      true,
+      ["Determine storage backend", "Create GitHub Release", "Publish oversized tarball to Zenodo"]
+    ),
+    {
+      ...actionStepSummary("release", "Uploading package release", releaseStep),
+      status: releaseStatus,
+      seconds:
+        releaseStep ? elapsedSeconds(releaseStep.started_at, releaseStep.completed_at) : undefined,
+      completed_at: releaseExists
+        ? releaseStep?.completed_at ?? releaseStep?.started_at ?? undefined
+        : releaseStep?.completed_at ?? undefined,
+    },
+  ];
+  const totalSeconds = elapsedSeconds(
+    run.run_started_at ?? run.created_at,
+    run.status === "completed" ? run.updated_at : null
+  );
+  return {
+    build_steps: buildSteps,
+    workflow_run_id: run.id,
+    workflow_run_url: run.html_url,
+    workflow_status: run.status,
+    workflow_conclusion: run.conclusion,
+    total_seconds: totalSeconds,
+  };
+}
+
 async function handleStatus(
   jobId: string,
   env: Env,
   origin: string
 ): Promise<Response> {
   const tag = `build-${jobId}`;
+  const headers = githubHeaders(env);
 
   // Check if a release with this tag exists
   const ghResponse = await fetch(
     `https://api.github.com/repos/${env.GITHUB_REPO}/releases/tags/${tag}`,
-    {
-      headers: {
-        Authorization: `Bearer ${env.GITHUB_PAT}`,
-        Accept: "application/vnd.github+json",
-        "User-Agent": "AutoBSgenome-Worker",
-        "X-GitHub-Api-Version": "2022-11-28",
-      },
-    }
+    { headers }
   );
 
   if (ghResponse.status === 404) {
     // Release doesn't exist yet — still building
+    const progress = await getBuildProgress(jobId, env, false).catch(() => null);
     return jsonResponse(
-      { job_id: jobId, status: "building" },
+      { job_id: jobId, status: "building", ...(progress ?? {}) },
       200,
       origin,
       env.ALLOWED_ORIGIN
@@ -946,8 +1222,9 @@ async function handleStatus(
 
   // Check if it's a failure marker
   if (release.body?.startsWith("BUILD_FAILED")) {
+    const progress = await getBuildProgress(jobId, env, true).catch(() => null);
     return jsonResponse(
-      { job_id: jobId, status: "failed", message: release.body },
+      { job_id: jobId, status: "failed", message: release.body, ...(progress ?? {}) },
       200,
       origin,
       env.ALLOWED_ORIGIN
@@ -961,15 +1238,10 @@ async function handleStatus(
   const permTag = `pkg-${asset?.name?.replace(/_\d+\.\d+\.\d+\.tar\.gz$/, "") ?? ""}`;
   const permCheck = await fetch(
     `https://api.github.com/repos/${env.GITHUB_REPO}/releases/tags/${permTag}`,
-    {
-      headers: {
-        Authorization: `Bearer ${env.GITHUB_PAT}`,
-        Accept: "application/vnd.github+json",
-        "User-Agent": "AutoBSgenome-Worker",
-      },
-    }
+    { headers }
   );
   const published = permCheck.status === 200;
+  const progress = await getBuildProgress(jobId, env, true).catch(() => null);
 
   return jsonResponse(
     {
@@ -980,6 +1252,7 @@ async function handleStatus(
       file_name: asset?.name ?? "",
       file_size: asset?.size ?? 0,
       published,
+      ...(progress ?? {}),
     },
     200,
     origin,

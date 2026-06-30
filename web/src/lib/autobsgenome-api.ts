@@ -32,6 +32,15 @@ export type BuildStartResponse = {
   queue_position?: number;
 };
 
+export type BuildProgressStep = {
+  key: string;
+  label: string;
+  status: "pending" | "running" | "complete" | "failed" | "skipped";
+  seconds?: number;
+  started_at?: string;
+  completed_at?: string;
+};
+
 export type BuildStatusResponse = {
   status: string;
   download_url?: string;
@@ -39,6 +48,12 @@ export type BuildStatusResponse = {
   file_size?: number;
   message?: string;
   error?: string;
+  build_steps?: BuildProgressStep[];
+  workflow_run_id?: number;
+  workflow_run_url?: string;
+  workflow_status?: string;
+  workflow_conclusion?: string | null;
+  total_seconds?: number;
 };
 
 async function readJson<T>(
