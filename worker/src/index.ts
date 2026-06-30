@@ -75,6 +75,11 @@ function validatePackageName(name: string): string[] {
   return errors;
 }
 
+function normalizeAssemblyAccession(input: string): string {
+  const trimmed = input.trim();
+  return trimmed.match(/(GC[AF]_\d{9}\.\d+)/)?.[1] ?? trimmed;
+}
+
 async function sha256Hex(blob: Blob): Promise<string> {
   const digest = await crypto.subtle.digest("SHA-256", await blob.arrayBuffer());
   return [...new Uint8Array(digest)]
@@ -694,6 +699,19 @@ async function handleBuild(
     : body.fasta_source === "url"
     ? "url"
     : body.data_source ?? "ncbi";
+  const submittedAccession = normalizeAssemblyAccession(body.accession ?? "");
+  if (
+    (body.data_source ?? "ncbi") === "ncbi" &&
+    /^https?:\/\//i.test((body.accession ?? "").trim()) &&
+    submittedAccession === (body.accession ?? "").trim()
+  ) {
+    return jsonResponse(
+      { error: "NCBI accession URL must contain a GCA_ or GCF_ assembly accession" },
+      400,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
   let fastaUploadUrl = "";
   let fastaUrl = "";
   let fastaFileName = "";
@@ -814,7 +832,7 @@ async function handleBuild(
           provider: body.provider ?? "",
           version: body.version ?? "1.0.0",
           circ_seqs: body.circ_seqs ?? "character(0)",
-          accession: body.accession ?? "",
+          accession: submittedAccession,
           // Pack remaining fields into JSON to stay within 10-property limit
           extra: JSON.stringify({
             data_source: body.data_source ?? "ncbi",
@@ -1223,8 +1241,12 @@ async function handleStatus(
   // Check if it's a failure marker
   if (release.body?.startsWith("BUILD_FAILED")) {
     const progress = await getBuildProgress(jobId, env, true).catch(() => null);
+    const failedStep = progress?.build_steps.find((step) => step.status === "failed");
+    const message = failedStep
+      ? `BUILD_FAILED: ${failedStep.label} failed. Check the linked GitHub Actions run for detailed logs.`
+      : release.body;
     return jsonResponse(
-      { job_id: jobId, status: "failed", message: release.body, ...(progress ?? {}) },
+      { job_id: jobId, status: "failed", message, ...(progress ?? {}) },
       200,
       origin,
       env.ALLOWED_ORIGIN

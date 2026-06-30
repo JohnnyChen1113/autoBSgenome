@@ -130,6 +130,11 @@ function formatDuration(seconds?: number) {
   return rest === 0 ? `${minutes}m` : `${minutes}m ${String(rest).padStart(2, "0")}s`;
 }
 
+function normalizeSubmittedAccession(input: string, source: DataSource) {
+  const trimmed = input.trim();
+  return source === "ncbi" ? extractAccession(trimmed) ?? trimmed : trimmed;
+}
+
 function saveBuildRecord(record: BuildRecord) {
   try {
     const history: BuildRecord[] = JSON.parse(
@@ -660,6 +665,7 @@ export default function Home() {
 
     try {
       let uploadPayload: Record<string, string> = {};
+      const submittedAccession = normalizeSubmittedAccession(accessionInput, dataSource);
 
       if (form.fastaSource === "upload" && uploadedFasta) {
         const session = await uploadFastaFile(uploadedFasta);
@@ -682,7 +688,7 @@ export default function Home() {
         title: form.title,
         description: form.description,
         source_url: form.sourceUrl,
-        accession: accessionInput,
+        accession: submittedAccession,
         fasta_source: form.fastaSource,
         fasta_url: form.fastaUrl.trim(),
         data_source: dataSource,
@@ -784,7 +790,7 @@ export default function Home() {
           assembly: form.assembly,
           provider: form.provider,
           version: form.version,
-          accession: accessionInput,
+          accession: normalizeSubmittedAccession(accessionInput, dataSource),
           source_url: sourceUrl,
           fasta_source: form.fastaSource,
           public_opt_in: userSuppliedFasta && publicOptIn ? "true" : "false",
@@ -968,6 +974,8 @@ export default function Home() {
               ? "running"
               : "pending",
         }));
+  const submittedAccession = normalizeSubmittedAccession(accessionInput, dataSource);
+  const failedProgressStep = buildProgressSteps.find((progressStep) => progressStep.status === "failed");
 
   return (
     <div className="flex flex-col flex-1 bg-background">
@@ -1241,11 +1249,13 @@ export default function Home() {
                           "| **Common Name** | " + form.commonName + " |",
                           "| **Assembly** | " + form.assembly + " |",
                           "| **Provider** | " + form.provider + " |",
-                          "| **Accession** | `" + accessionInput + "` |",
+                          "| **Accession** | `" + submittedAccession + "` |",
+                          "| **Original Input** | `" + accessionInput.trim() + "` |",
                           "| **Data Source** | " + dataSource + " |",
                           "| **Circular Seqs** | `" + form.circSeqs + "` |",
                           "| **Version** | " + form.version + " |",
                           "| **Job ID** | `" + (jobId || "N/A") + "` |",
+                          "| **Failed Step** | " + (failedProgressStep?.label ?? "N/A") + " |",
                           "",
                           "## Error Message",
                           "```",
@@ -1254,6 +1264,7 @@ export default function Home() {
                           "",
                           "## Debug Links",
                           `- [GitHub Actions Runs](${siteConfig.githubUrl}/actions/workflows/build-bsgenome.yml)`,
+                          workflowRunUrl ? `- [This GitHub Actions Run](${workflowRunUrl})` : "",
                           jobId ? `- [GitHub Release (if created)](${siteConfig.githubUrl}/releases/tag/build-${jobId})` : "",
                           "",
                           "## Additional Context",
