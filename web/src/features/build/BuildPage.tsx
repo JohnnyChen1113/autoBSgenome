@@ -45,6 +45,11 @@ import {
   uploadPart,
   type UploadPartResult,
 } from "@/lib/autobsgenome-api";
+import {
+  buildBSgenomePackageName,
+  cleanOrganismName,
+  validateBSgenomePackageName,
+} from "@/lib/package-name";
 import { siteConfig } from "@/config";
 import BatchMode from "@/features/build/BatchMode";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
@@ -253,29 +258,7 @@ export default function Home() {
   }>({ status: "idle", errors: [] });
 
   const validatePackageName = useCallback((name: string) => {
-    const errors: string[] = [];
-    const parts = name.split(".");
-
-    if (parts.length !== 4) {
-      errors.push("Must have exactly 4 parts separated by dots.");
-    } else {
-      if (parts[0] !== "BSgenome") {
-        errors.push('Part 1 must be "BSgenome".');
-      }
-      if (!/^[A-Z][a-z]+$/.test(parts[1])) {
-        errors.push(
-          "Part 2 (organism) must start with uppercase followed by lowercase (e.g. Hsapiens)."
-        );
-      }
-      if (!/^[A-Za-z]+$/.test(parts[2])) {
-        errors.push("Part 3 (provider) must be letters only (e.g. NCBI, UCSC).");
-      }
-      if (!/^[A-Za-z0-9]+$/.test(parts[3])) {
-        errors.push(
-          "Part 4 (assembly) must be alphanumeric only (e.g. GRCh38, hg38)."
-        );
-      }
-    }
+    const errors = validateBSgenomePackageName(name);
 
     if (errors.length === 0) {
       setPackageValidation({ status: "valid", errors: [] });
@@ -316,18 +299,19 @@ export default function Home() {
 
         const ensInfo = await fetchEnsemblAssemblyInfo(species);
         const circNames = detectCircularFromKaryotype(ensInfo.karyotype);
-
-        // Build abbreviation from organism
-        const orgParts = ensInfo.organism.trim().split(/\s+/);
-        const abbrev =
-          orgParts.length >= 2
-            ? orgParts[0][0].toUpperCase() + orgParts[1].toLowerCase()
-            : orgParts[0];
-        const assembly = ensInfo.assemblyName.replace(/\./g, "").replace(/[^a-zA-Z0-9]/g, "");
+        const organism = cleanOrganismName(ensInfo.organism);
+        const packageName = buildBSgenomePackageName(
+          organism,
+          "Ensembl",
+          ensInfo.assemblyName
+        );
+        if (!packageName.name) {
+          throw new Error(`Could not generate a valid package name: ${packageName.reason}`);
+        }
 
         newForm = {
-          packageName: `BSgenome.${abbrev}.Ensembl.${assembly}`,
-          organism: ensInfo.organism,
+          packageName: packageName.name,
+          organism,
           commonName: ensInfo.commonName,
           assembly: ensInfo.assemblyName,
           provider: "Ensembl",

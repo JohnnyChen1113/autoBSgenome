@@ -18,6 +18,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { SpeciesImage } from "@/components/SpeciesImage";
 import { Input } from "@/components/ui/input";
 import { siteConfig } from "@/config";
+import { cleanOrganismName } from "@/lib/package-name";
 import { cn } from "@/lib/utils";
 import { fetchRepositoryJson } from "@/features/packages/repository-api";
 
@@ -133,14 +134,8 @@ type AvailabilityFilter = "built" | "unbuilt" | "catalog";
 type DataSourceFilter = "all" | "ncbi" | "ensembl" | "bioconductor";
 type PackageDataSource = Exclude<DataSourceFilter, "all">;
 
-// NCBI assembly metadata can use notation like "[Candida] arabinofermentans"
-// or "'Nostoc azollae' 0708" to mark historically classified or provisional
-// names. The markers are useful in source metadata but noisy in this browser,
-// so remove them for display, filtering, and external URL construction.
 function stripGenusBrackets(name: string): string {
-  return name
-    .replace(/\[([^\]]+)\]/g, "$1")
-    .replace(/['"“”‘’]/g, "");
+  return cleanOrganismName(name);
 }
 
 function speciesName(name: string): string {
@@ -582,7 +577,7 @@ function mergeRepositoryData(
     const byOrg = new Map<string, OrganismEntry>();
     for (const build of flat) {
       const organism = build.organism || "Unknown";
-      const key = organism.toLowerCase();
+      const key = metadataLookupKey(organism);
       const existing =
         byOrg.get(key) ??
         ({
@@ -604,7 +599,7 @@ function mergeRepositoryData(
 
   const merged = new Map<string, OrganismEntry>();
   for (const org of communityOrganisms) {
-    merged.set(org.organism.toLowerCase(), {
+    merged.set(metadataLookupKey(org.organism), {
       ...org,
       builds: org.builds ?? [],
       _source: "community",
@@ -614,7 +609,7 @@ function mergeRepositoryData(
   let biocCount = 0;
   for (const build of biocPackages ?? []) {
     const organism = build.organism || "Unknown";
-    const key = organism.toLowerCase();
+    const key = metadataLookupKey(organism);
     const current = merged.get(key);
     const biocBuild: BuildPackage = { ...build, _bioc: true };
     biocCount += 1;
@@ -639,7 +634,7 @@ function mergeRepositoryData(
 
   for (const row of catalog ?? []) {
     if (!row.o) continue;
-    const key = row.o.toLowerCase();
+    const key = metadataLookupKey(row.o);
     const accession = {
       accession: row.a ?? "",
       assembly: row.m ?? "",
@@ -663,7 +658,7 @@ function mergeRepositoryData(
 
   return {
     organisms: [...merged.values()].sort((a, b) =>
-      a.organism.localeCompare(b.organism)
+      cleanOrganismName(a.organism).localeCompare(cleanOrganismName(b.organism))
     ),
     flat,
     biocCount,
@@ -692,6 +687,7 @@ function filterOrganisms(
       const builds = org.builds ?? [];
       const haystack = [
         org.organism,
+        cleanOrganismName(org.organism),
         org.common_name ?? "",
         org.group ?? "",
         ...(org._accessions ?? []).map(

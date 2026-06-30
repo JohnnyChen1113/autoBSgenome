@@ -1,3 +1,5 @@
+import { buildBSgenomePackageName, cleanOrganismName } from "@/lib/package-name";
+
 const DATASETS_BASE = "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession";
 
 export interface NCBIAssemblyInfo {
@@ -22,12 +24,6 @@ export function extractAccession(input: string): string | null {
   return match ? match[1] : null;
 }
 
-function abbreviateOrganism(scientificName: string): string {
-  const parts = scientificName.trim().split(/\s+/);
-  if (parts.length < 2) return parts[0];
-  return parts[0][0].toUpperCase() + parts[1].toLowerCase();
-}
-
 function formatReleaseDate(isoDate: string): string {
   const date = new Date(isoDate);
   const months = [
@@ -38,9 +34,15 @@ function formatReleaseDate(isoDate: string): string {
 }
 
 export function generatePackageName(info: NCBIAssemblyInfo): string {
-  const abbrev = abbreviateOrganism(info.organism);
-  const assembly = info.assemblyName.replace(/\./g, "").replace(/[^a-zA-Z0-9]/g, "");
-  return `BSgenome.${abbrev}.${info.provider}.${assembly}`;
+  const result = buildBSgenomePackageName(
+    info.organism,
+    info.provider,
+    info.assemblyName
+  );
+  if (!result.name) {
+    throw new Error(`Could not generate a valid package name: ${result.reason}`);
+  }
+  return result.name;
 }
 
 export function generateTitle(info: NCBIAssemblyInfo): string {
@@ -70,7 +72,7 @@ export async function fetchAssemblyInfo(
   return {
     accession,
     pairedAccession: report.paired_accession ?? null,
-    organism: report.organism?.organism_name ?? "",
+    organism: cleanOrganismName(report.organism?.organism_name ?? ""),
     commonName: report.organism?.common_name ?? "",
     assemblyName: report.assembly_info?.assembly_name ?? "",
     provider: "NCBI",

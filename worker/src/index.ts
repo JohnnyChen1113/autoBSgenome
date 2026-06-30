@@ -43,6 +43,38 @@ function jsonResponse(
   });
 }
 
+function validatePackageName(name: string): string[] {
+  const errors: string[] = [];
+  const parts = name.split(".");
+
+  if (parts.length !== 4) {
+    errors.push("Must have exactly 4 parts separated by dots.");
+    return errors;
+  }
+
+  if (parts[0] !== "BSgenome") {
+    errors.push('Part 1 must be "BSgenome".');
+  }
+  if (!/^[A-Z][a-z]+$/.test(parts[1])) {
+    errors.push(
+      "Part 2 (organism) must start with uppercase followed by lowercase (e.g. Hsapiens)."
+    );
+  }
+  if (!/^[A-Za-z]+$/.test(parts[2])) {
+    errors.push("Part 3 (provider) must be letters only (e.g. NCBI, UCSC).");
+  }
+  if (!/^[A-Za-z0-9]+$/.test(parts[3])) {
+    errors.push(
+      "Part 4 (assembly) must be alphanumeric only (e.g. GRCh38, hg38)."
+    );
+  }
+  if (!/^[A-Za-z][A-Za-z0-9.]*[A-Za-z0-9]$/.test(name) || name.includes("..")) {
+    errors.push("Package name must contain only letters, numbers, and dots.");
+  }
+
+  return errors;
+}
+
 async function sha256Hex(blob: Blob): Promise<string> {
   const digest = await crypto.subtle.digest("SHA-256", await blob.arrayBuffer());
   return [...new Uint8Array(digest)]
@@ -581,6 +613,19 @@ async function handleBuild(
   if (!body.package_name || !body.organism) {
     return jsonResponse(
       { error: "Missing required fields: package_name, organism" },
+      400,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+
+  const packageNameErrors = validatePackageName(body.package_name);
+  if (packageNameErrors.length > 0) {
+    return jsonResponse(
+      {
+        error: "Invalid package_name",
+        details: packageNameErrors,
+      },
       400,
       origin,
       env.ALLOWED_ORIGIN

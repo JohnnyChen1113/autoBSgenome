@@ -39,6 +39,13 @@ def _alpha_only(s: str) -> str:
     return re.sub(r'[^A-Za-z]', '', _strip_accents(s))
 
 
+def clean_organism_name(s: str) -> str:
+    """Remove NCBI provisional-name markers before abbreviation."""
+    s = re.sub(r"\[([^\]]+)\]", r"\1", s)
+    s = re.sub(r"['\"\u2018\u2019\u201c\u201d]", "", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
 def _pick_species_epithet(parts: list[str]) -> str:
     """Pick a species epithet for the abbreviation.
 
@@ -72,7 +79,7 @@ def build_abbrev(organism: str) -> str:
     Always returns ASCII, alphabetic-only — safe to embed in an R package name.
     Empty string if the organism string is unusable.
     """
-    parts = organism.strip().split()
+    parts = clean_organism_name(organism).split()
     if not parts:
         return ""
     genus_first = _alpha_only(parts[0])[:1].upper()
