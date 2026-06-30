@@ -133,12 +133,14 @@ type AvailabilityFilter = "built" | "unbuilt" | "catalog";
 type DataSourceFilter = "all" | "ncbi" | "ensembl" | "bioconductor";
 type PackageDataSource = Exclude<DataSourceFilter, "all">;
 
-// NCBI assembly metadata uses bracket notation like "[Candida] arabinofermentans"
-// to mark a historically classified but now-disputed genus. We strip the
-// brackets for both display and URL construction; the bracket itself isn't a
-// taxonomically meaningful character that any external service understands.
+// NCBI assembly metadata can use notation like "[Candida] arabinofermentans"
+// or "'Nostoc azollae' 0708" to mark historically classified or provisional
+// names. The markers are useful in source metadata but noisy in this browser,
+// so remove them for display, filtering, and external URL construction.
 function stripGenusBrackets(name: string): string {
-  return name.replace(/\[([^\]]+)\]/g, "$1");
+  return name
+    .replace(/\[([^\]]+)\]/g, "$1")
+    .replace(/['"“”‘’]/g, "");
 }
 
 function speciesName(name: string): string {
