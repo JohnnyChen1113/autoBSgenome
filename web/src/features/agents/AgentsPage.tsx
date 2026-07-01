@@ -56,7 +56,7 @@ const workflow = [
 
 const safeguards = [
   "Keep delete_token private. It can delete a user's temporary build release.",
-  "Do not publish user-supplied FASTA builds unless the user explicitly confirms public sharing and provides a license.",
+  "Do not publish builds to the permanent package repository. Public index inclusion is maintainer-curated.",
   "Report build failures with job_id, workflow_run_url, package metadata, and the exact API message.",
   "Use the package browser for lookup; use /api-docs as the source of truth for endpoint details.",
 ];
@@ -79,7 +79,7 @@ Rules:
 4. Poll status until complete or failed.
 5. Return the final R command:
    install.packages("DOWNLOAD_URL", repos = NULL, type = "source")
-6. Do not publish permanently unless I explicitly confirm public sharing and provide a license.
+6. Do not publish this build to the permanent package repository. Permanent index inclusion is curated by AutoBSgenome maintainers.
 7. Keep delete_token private. Only explain deletion if I ask.`;
 
 export default function AgentsPage() {
@@ -245,8 +245,8 @@ export default function AgentsPage() {
                 </code>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Keep this file aligned with the HTTP API docs. It should tell
-                  agents to use direct tarball installs and to treat publishing
-                  as an explicit user decision.
+                  agents to use direct tarball installs and treat permanent
+                  repository inclusion as maintainer-curated.
                 </p>
               </div>
             </CardContent>
@@ -266,7 +266,7 @@ export default function AgentsPage() {
               <p>
                 A future MCP server can wrap package lookup, upload session
                 creation, build submission, status polling, deletion, and
-                publish.
+                install-command generation.
               </p>
               <p>
                 For now, agents should call the HTTP API directly and link users

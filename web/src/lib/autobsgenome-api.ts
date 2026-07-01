@@ -157,14 +157,6 @@ export function deleteBuild(jobId: string, deleteToken: string): Promise<void> {
   });
 }
 
-export function publishBuild(payload: JsonObject): Promise<JsonObject> {
-  return apiJson<JsonObject>("/api/publish", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  });
-}
-
 export function fetchBuildStatus(jobId: string): Promise<BuildStatusResponse> {
   return apiJson<BuildStatusResponse>(`/api/status/${jobId}`);
 }

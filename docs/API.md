@@ -62,7 +62,7 @@ Keep `delete_token` private. It lets the original browser session delete the tem
 
 ### DELETE /api/build/:jobId
 
-Delete a temporary build release and its Git tag. This only applies to temporary `build-<jobId>` GitHub Releases; it does not delete packages already published to the permanent package repository.
+Delete a temporary build release and its Git tag. This only applies to temporary `build-<jobId>` GitHub Releases.
 
 **Request:**
 
@@ -170,29 +170,23 @@ Then trigger a build with:
 
 Supported file names end in `.fa`, `.fasta`, `.fna`, or `.fas`, optionally with `.gz`. Protein FASTA names such as `.faa`, `.pep`, and `.aa` are rejected. Browser uploads support files up to 4 GB through multipart uploads. Upload URLs expire after 2 days; successful builds delete the uploaded FASTA after GitHub Actions downloads it, and the R2 `uploads/` lifecycle rule removes abandoned uploads after 2 days.
 
-Uploaded FASTA builds produce temporary GitHub Release downloads by default. Users can opt in to permanent public repository publishing only after confirming redistribution rights and providing a public license. User-supplied packages are indexed with `provenance_status: "user_asserted"` rather than provider-verified provenance.
+Uploaded FASTA builds produce temporary GitHub Release downloads by default.
+The public API does not publish user-triggered builds to the permanent package
+repository. Permanent package index inclusion is curated by maintainers to avoid
+incorrect metadata or user-supplied packages being mistaken for verified
+reference packages.
 
 ### POST /api/publish
 
-Publish a completed temporary build to the permanent package repository.
+Disabled for public API users.
 
-NCBI and Ensembl builds can be published with normal metadata. User-supplied FASTA or FASTA URL builds require explicit public-sharing confirmation:
+**Response (410):**
 
 ```json
 {
-  "job_id": "4c1e14f7",
-  "metadata": {
-    "organism": "Custom organism",
-    "assembly": "MyAssembly",
-    "provider": "LabName",
-    "version": "1.0.0",
-    "source_url": "https://example.org/assembly-page",
-    "fasta_source": "upload",
-    "public_opt_in": "true",
-    "public_rights_confirmed": "true",
-    "public_release_confirmed": "true",
-    "license": "CC0-1.0"
-  }
+  "error": "Permanent repository publishing is disabled for public API users",
+  "message": "Download the temporary tarball for local use. Permanent package index inclusion is curated by the AutoBSgenome maintainers.",
+  "code": "PUBLIC_PUBLISH_DISABLED"
 }
 ```
 

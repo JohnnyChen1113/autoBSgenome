@@ -40,7 +40,6 @@ import {
   deleteBuild,
   fetchBuildStatus,
   fetchQueueStatus,
-  publishBuild,
   startBuild,
   uploadPart,
   type BuildProgressStep,
@@ -421,14 +420,6 @@ export default function Home() {
   const [buildProgressSteps, setBuildProgressSteps] = useState<BuildProgressStep[]>([]);
   const [workflowRunUrl, setWorkflowRunUrl] = useState("");
   const [resumingJob, setResumingJob] = useState(false);
-  const [isPublished, setIsPublished] = useState(false);
-  const [publishing, setPublishing] = useState(false);
-  const [publishError, setPublishError] = useState("");
-  const [publicOptIn, setPublicOptIn] = useState(false);
-  const [publicRightsConfirmed, setPublicRightsConfirmed] = useState(false);
-  const [publicReleaseConfirmed, setPublicReleaseConfirmed] = useState(false);
-  const [publicLicense, setPublicLicense] = useState("CC0-1.0");
-  const [publicSourceUrl, setPublicSourceUrl] = useState("");
   const [queueInfo, setQueueInfo] = useState<{
     running: number;
     queued: number;
@@ -649,7 +640,6 @@ export default function Home() {
     setDeleteError("");
     setDeleteToken("");
     setBuildDeleted(false);
-    setPublishError("");
     setUploadError("");
 
     if (form.fastaSource === "url") {
@@ -789,39 +779,6 @@ export default function Home() {
       window.alert(e instanceof Error ? e.message : "Failed to delete temporary package");
     } finally {
       setDeletingHistoryJobId("");
-    }
-  };
-
-  const publishCurrentBuild = async () => {
-    const userSuppliedFasta = form.fastaSource === "upload" || form.fastaSource === "url";
-    setPublishing(true);
-    setPublishError("");
-    try {
-      const sourceUrl =
-        publicSourceUrl.trim() ||
-        form.sourceUrl.trim() ||
-        (form.fastaSource === "url" ? form.fastaUrl.trim() : "");
-      await publishBuild({
-        job_id: jobId,
-        metadata: {
-          organism: form.organism,
-          assembly: form.assembly,
-          provider: form.provider,
-          version: form.version,
-          accession: normalizeSubmittedAccession(accessionInput, dataSource),
-          source_url: sourceUrl,
-          fasta_source: form.fastaSource,
-          public_opt_in: userSuppliedFasta && publicOptIn ? "true" : "false",
-          public_rights_confirmed: userSuppliedFasta && publicRightsConfirmed ? "true" : "false",
-          public_release_confirmed: userSuppliedFasta && publicReleaseConfirmed ? "true" : "false",
-          license: userSuppliedFasta ? publicLicense : "",
-        },
-      });
-      setIsPublished(true);
-    } catch (e) {
-      setPublishError(e instanceof Error ? e.message : "Publishing failed");
-    } finally {
-      setPublishing(false);
     }
   };
 
@@ -2153,133 +2110,6 @@ export default function Home() {
                   </Accordion>
                 )}
 
-                {/* Publish to permanent repo */}
-                {buildDeleted && !isPublished ? (
-                  <div className="border border-border rounded-lg p-4 text-sm text-muted-foreground">
-                    This temporary build was deleted. Publishing is no longer available for this build.
-                  </div>
-                ) : form.fastaSource !== "ncbi" ? (
-                  <div className="border border-border rounded-lg p-4 space-y-3">
-                    <div>
-                      <h4 className="font-heading font-semibold text-foreground">Publish as Community-Submitted Package</h4>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        Make this user-supplied FASTA package permanent and public. It will be marked as community-submitted with user-asserted provenance.
-                      </p>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="publicSourceUrl">Source or provenance URL</Label>
-                      <Input
-                        id="publicSourceUrl"
-                        className="font-mono text-xs"
-                        placeholder="https://example.org/assembly-page-or-dataset"
-                        value={publicSourceUrl}
-                        onChange={(e) => setPublicSourceUrl(e.target.value)}
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="publicLicense">License</Label>
-                      <select
-                        id="publicLicense"
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
-                        value={publicLicense}
-                        onChange={(e) => setPublicLicense(e.target.value)}
-                      >
-                        <option value="CC0-1.0">CC0-1.0</option>
-                        <option value="CC-BY-4.0">CC-BY-4.0</option>
-                        <option value="ODC-BY-1.0">ODC-BY-1.0</option>
-                        <option value="Other-public">Other public license</option>
-                      </select>
-                    </div>
-                    <label className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <input
-                        type="checkbox"
-                        className="mt-1"
-                        checked={publicOptIn}
-                        onChange={(e) => setPublicOptIn(e.target.checked)}
-                      />
-                      <span>I want this package to be permanently listed in the public AutoBSgenome repository.</span>
-                    </label>
-                    <label className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <input
-                        type="checkbox"
-                        className="mt-1"
-                        checked={publicRightsConfirmed}
-                        onChange={(e) => setPublicRightsConfirmed(e.target.checked)}
-                      />
-                      <span>I have the right to publicly share and redistribute this genome package.</span>
-                    </label>
-                    <label className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <input
-                        type="checkbox"
-                        className="mt-1"
-                        checked={publicReleaseConfirmed}
-                        onChange={(e) => setPublicReleaseConfirmed(e.target.checked)}
-                      />
-                      <span>I understand the package and metadata will be publicly downloadable.</span>
-                    </label>
-                    {publishError && (
-                      <p className="text-sm text-destructive">{publishError}</p>
-                    )}
-                    <Button
-                      className="w-full cursor-pointer"
-                      variant="outline"
-                      disabled={
-                        publishing ||
-                        !publicOptIn ||
-                        !publicRightsConfirmed ||
-                        !publicReleaseConfirmed ||
-                        !publicLicense
-                      }
-                      onClick={publishCurrentBuild}
-                    >
-                      {publishing ? "Publishing..." : "Publish Publicly"}
-                    </Button>
-                  </div>
-                ) : !isPublished ? (
-                  <div className="border border-border rounded-lg p-4 space-y-3">
-                    <div>
-                      <h4 className="font-heading font-semibold text-foreground">Publish to Community Repository</h4>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        Make this package permanently available so anyone can install it with a single R command.
-                        It will appear on the <a href="/packages" className="text-primary hover:underline">package browse page</a>.
-                      </p>
-                    </div>
-                    <Button
-                      className="w-full cursor-pointer"
-                      variant="outline"
-                      disabled={publishing}
-                      onClick={publishCurrentBuild}
-                    >
-                      {publishing ? "Publishing..." : "Publish to Repository"}
-                    </Button>
-                    {publishError && (
-                      <p className="text-sm text-destructive">{publishError}</p>
-                    )}
-                  </div>
-                ) : (
-                  <div className="bg-[--success-foreground] border border-[--success]/20 rounded-lg p-4 text-sm" style={{ color: "#0f7b3f" }}>
-                    <p className="font-medium flex items-center gap-1.5">
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f7b3f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                      Published to Community Repository
-                    </p>
-                    <p className="mt-2 text-muted-foreground">
-                      Anyone can now install with:
-                    </p>
-                    <code className="block mt-1 font-mono text-xs text-foreground bg-white/60 rounded p-2 overflow-x-auto">
-                      install.packages(&quot;{form.packageName}&quot;, repos = &quot;{siteConfig.repositoryBase}&quot;)
-                    </code>
-                    <p className="mt-2">
-                      <a
-                        href="/packages"
-                        className="inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-[#0f7b3f] px-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-[#0c6534]"
-                      >
-                        Browse all available packages
-                        <span aria-hidden="true">&rarr;</span>
-                      </a>
-                    </p>
-                  </div>
-                )}
-
                 <Button
                   variant="outline"
                   className="w-full"
@@ -2288,13 +2118,6 @@ export default function Home() {
                     setForm(EMPTY_FORM);
                     setAccessionInput("");
                     setCircularSeqs([]);
-                    setIsPublished(false);
-                    setPublishError("");
-                    setPublicOptIn(false);
-                    setPublicRightsConfirmed(false);
-                    setPublicReleaseConfirmed(false);
-                    setPublicLicense("CC0-1.0");
-                    setPublicSourceUrl("");
                     setUploadedFasta(null);
                     setUploadError("");
                     setUploadState("idle");

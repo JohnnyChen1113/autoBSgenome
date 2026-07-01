@@ -34,7 +34,7 @@ const workflows = [
     steps: [
       "Open Build and paste an NCBI accession such as GCF_000001405.40, or an Ensembl species URL.",
       "Fetch metadata, check the generated package name and organism information, then submit the build.",
-      "Wait for the job to finish, then download the tarball or publish it to the repository.",
+      "Wait for the job to finish, then download the temporary tarball or copy the direct install command.",
     ],
   },
   {

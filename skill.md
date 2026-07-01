@@ -97,9 +97,13 @@ curl -s -X DELETE https://autobsgenome-api.bioinfoark.workers.dev/api/build/JOB_
   -d '{"delete_token":"DELETE_TOKEN_FROM_BUILD_RESPONSE"}'
 ```
 
-### Optional: Publish a Build
+### Permanent Repository Inclusion
 
-Publishing makes the package permanent in the community repository. For user-supplied FASTA or FASTA URL builds, ask the user to explicitly confirm public sharing and provide a license before calling publish.
+Do not publish user-triggered builds to the permanent community repository.
+The public AutoBSgenome package index is maintainer-curated to avoid incorrect
+metadata or user-supplied packages being mistaken for verified reference
+packages. Return the temporary tarball download URL and direct R install command
+instead.
 
 ## Example: Build BSgenome for Aspergillus luchuensis
 
@@ -146,7 +150,9 @@ The web/API supports user-provided nucleotide FASTA sources:
 - Protein FASTA extensions such as `.faa`, `.pep`, and `.aa` are rejected.
 - Browser upload limit is 4 GB.
 
-Do not publish user-supplied FASTA builds unless the user explicitly wants the package public and provides a license.
+Do not publish user-supplied FASTA builds. Return the temporary tarball
+download URL and tell the user to contact the AutoBSgenome maintainers if they
+want a package reviewed for permanent index inclusion.
 
 ## Web Interface
 
@@ -154,4 +160,4 @@ Users can also build packages at: https://autobsgenome.org
 - Paste NCBI accession or Ensembl URL
 - Auto-fills all metadata
 - Or provide a FASTA URL / local nucleotide FASTA upload
-- Download the temporary `.tar.gz`, delete it early, or explicitly publish it
+- Download the temporary `.tar.gz` or delete it early

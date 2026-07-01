@@ -17,10 +17,8 @@ import {
 } from "@/lib/ensembl";
 import {
   fetchBuildStatus,
-  publishBuild,
   startBuild,
 } from "@/lib/autobsgenome-api";
-import { siteConfig } from "@/config";
 
 type BatchStatus = "pending" | "fetching" | "ready" | "ambiguous" | "error" | "building" | "done" | "failed";
 type Source = "ncbi" | "ensembl";
@@ -46,7 +44,6 @@ interface BatchItem {
   error: string;
   jobId: string;
   downloadUrl: string;
-  publishChecked: boolean;
   buildTime: number;
 }
 
@@ -115,7 +112,6 @@ function createBatchItem(rawInput: string, index: number): BatchItem {
     error: type === "invalid" ? "Could not detect a valid accession or species name" : "",
     jobId: "",
     downloadUrl: "",
-    publishChecked: false,
     buildTime: 0,
   };
 }
@@ -290,22 +286,6 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
       await buildItem(item);
       // 10s delay between dispatches
       await new Promise(r => setTimeout(r, 10000));
-    }
-  };
-
-  // Publish selected
-  const publishSelected = async () => {
-    const toPublish = items.filter(i => i.status === "done" && i.publishChecked);
-    for (const item of toPublish) {
-      try {
-        await publishBuild({
-          package_name: item.packageName,
-          organism: item.organism,
-          accession: item.accession,
-        });
-      } catch (error) {
-        console.warn("Failed to publish batch item", error);
-      }
     }
   };
 
@@ -493,12 +473,12 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
                     </div>
                   )}
 
-                  {/* Done: install command + publish checkbox */}
+                  {/* Done: install command */}
                   {item.status === "done" && (
                     <div className="space-y-2 pt-2 border-t">
                       <div className="bg-background rounded p-2 flex items-center justify-between gap-2">
                         <code className="font-mono text-xs truncate">
-                          install.packages(&quot;{item.packageName}&quot;, repos=&quot;{siteConfig.repositoryBase}&quot;)
+                          install.packages(&quot;{item.downloadUrl}&quot;, repos = NULL, type = &quot;source&quot;)
                         </code>
                         <Button
                           variant="outline"
@@ -507,24 +487,13 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
                           onClick={(e) => {
                             e.stopPropagation();
                             navigator.clipboard.writeText(
-                              `install.packages("${item.packageName}", repos="${siteConfig.repositoryBase}")`
+                              `install.packages("${item.downloadUrl}", repos = NULL, type = "source")`
                             );
                           }}
                         >
                           Copy
                         </Button>
                       </div>
-                      <label className="flex items-center gap-2 text-sm cursor-pointer">
-                        <input
-                          type="checkbox"
-                          checked={item.publishChecked}
-                          onChange={(e) => {
-                            e.stopPropagation();
-                            updateItem(item.id, { publishChecked: !item.publishChecked });
-                          }}
-                        />
-                        Publish to community repository
-                      </label>
                       {item.buildTime > 0 && (
                         <p className="text-xs text-muted-foreground">Built in {item.buildTime}s</p>
                       )}
@@ -540,12 +509,6 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
         {phase === "results" && (
           <div className="flex justify-between items-center mt-4 pt-4 border-t">
             <Button variant="outline" onClick={onExit}>Start New Batch</Button>
-            <Button
-              onClick={publishSelected}
-              disabled={items.filter(i => i.publishChecked).length === 0}
-            >
-              Publish Selected ({items.filter(i => i.publishChecked).length})
-            </Button>
           </div>
         )}
       </CardContent>

@@ -44,8 +44,8 @@ export default function ApiDocs() {
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">API Reference</h1>
         <p className="mt-3 text-lg text-muted-foreground">
           Build BSgenome packages programmatically. The public API does not
-          require user authentication; build artifacts are temporary unless
-          explicitly published.
+          require user authentication; user-triggered build artifacts are
+          temporary and permanent repository inclusion is maintainer-curated.
         </p>
         <p className="mt-2 text-sm text-muted-foreground">
           Base URL:{" "}
@@ -175,8 +175,7 @@ export default function ApiDocs() {
         <Endpoint method="DELETE" path="/api/build/:jobId" tone="bg-red-600">
           <p className="text-muted-foreground">
             Delete a temporary <code>build-&lt;jobId&gt;</code> release and tag.
-            This does not delete packages already published to the permanent
-            package repository.
+            This only applies to temporary build downloads.
           </p>
           <CodeBlock>{`{
   "delete_token": "hmac-token-from-post-build"
@@ -218,32 +217,6 @@ export default function ApiDocs() {
             <code>.faa</code>, <code>.pep</code>, and <code>.aa</code> are
             rejected. Maximum browser upload size is 4 GB.
           </p>
-        </Endpoint>
-
-        <Separator className="my-8" />
-
-        <Endpoint method="POST" path="/api/publish" tone="bg-green-600">
-          <p className="text-muted-foreground">
-            Publish a completed temporary build to the permanent package index.
-            User-supplied FASTA and FASTA URL builds require explicit public
-            sharing confirmation and a license.
-          </p>
-          <CodeBlock>{`{
-  "job_id": "4c1e14f7",
-  "metadata": {
-    "organism": "Homo sapiens",
-    "assembly": "GRCh38",
-    "provider": "NCBI",
-    "version": "1.0.0",
-    "accession": "GCF_000001405.40",
-    "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000001405.40/"
-  }
-}`}</CodeBlock>
-          <CodeBlock>{`{
-  "status": "published",
-  "tag": "pkg-BSgenome.Hsapiens.NCBI.GRCh38",
-  "package_name": "BSgenome.Hsapiens.NCBI.GRCh38"
-}`}</CodeBlock>
         </Endpoint>
 
         <Separator className="my-8" />
@@ -302,7 +275,7 @@ curl -X DELETE "${WORKER}/api/build/$JOB_ID" \\
             <li>Status responses include live step timings when GitHub run metadata is available.</li>
             <li>Temporary build releases are automatically cleaned up after two days.</li>
             <li>Users can delete their current temporary build earlier with the returned <code>delete_token</code>.</li>
-            <li>Permanent repository publishing is explicit; user-supplied FASTA builds require public-sharing confirmation and a license.</li>
+            <li>Permanent package repository inclusion is curated by maintainers and is not available through the public API.</li>
             <li>CORS is enabled for the AutoBSgenome site, staging Workers, preview deployments, and localhost development.</li>
           </ul>
         </section>
