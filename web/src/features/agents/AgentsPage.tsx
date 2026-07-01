@@ -1,9 +1,14 @@
+import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Bot,
+  Check,
   CheckCircle2,
   Clock3,
+  Copy,
   Download,
+  ExternalLink,
   FileText,
   Hammer,
   Search,
@@ -56,8 +61,42 @@ const safeguards = [
   "Use the package browser for lookup; use /api-docs as the source of truth for endpoint details.",
 ];
 
+const starterPrompt = `Use AutoBSgenome to build or find a BSgenome package.
+
+Target organism/accession:
+[REPLACE_WITH_ORGANISM_NAME_OR_ACCESSION]
+
+Follow the AutoBSgenome agent guide:
+https://autobsgenome.org/agents
+
+Follow the full skill file:
+https://autobsgenome.org/skill.md
+
+Rules:
+1. Search https://autobsgenome.org/packages first. If an exact package already exists, return the install command instead of rebuilding.
+2. If no matching package exists, find the correct NCBI or Ensembl accession/page for the target.
+3. Trigger a build through the public AutoBSgenome API.
+4. Poll status until complete or failed.
+5. Return the final R command:
+   install.packages("DOWNLOAD_URL", repos = NULL, type = "source")
+6. Do not publish permanently unless I explicitly confirm public sharing and provide a license.
+7. Keep delete_token private. Only explain deletion if I ask.`;
+
 export default function AgentsPage() {
   const WORKER = siteConfig.apiBase;
+  const [copied, setCopied] = useState<"prompt" | "skill" | null>(null);
+
+  async function copyToClipboard(text: string, kind: "prompt" | "skill") {
+    await navigator.clipboard.writeText(text);
+    setCopied(kind);
+    window.setTimeout(() => setCopied(null), 1800);
+  }
+
+  async function copyHostedSkill() {
+    const response = await fetch("/skill.md");
+    const text = response.ok ? await response.text() : starterPrompt;
+    await copyToClipboard(text, "skill");
+  }
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -81,6 +120,69 @@ export default function AgentsPage() {
             for the web product to work.
           </p>
         </div>
+
+        <Separator className="my-8" />
+
+        <section className="rounded-lg border border-border bg-secondary p-5">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <h2 className="font-heading text-2xl font-semibold text-foreground">
+                Copy Into Your AI Tool
+              </h2>
+              <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">
+                Paste this into Codex, Claude Code, Cursor, or another agent that
+                can browse the web or run HTTP requests. Replace the target line
+                with the organism, assembly, or accession you need.
+              </p>
+            </div>
+            <div className="flex shrink-0 flex-wrap gap-2">
+              <Button
+                onClick={() => copyToClipboard(starterPrompt, "prompt")}
+                className="gap-2"
+              >
+                {copied === "prompt" ? (
+                  <Check className="size-4" />
+                ) : (
+                  <Copy className="size-4" />
+                )}
+                {copied === "prompt" ? "Copied" : "Copy Prompt"}
+              </Button>
+              <Button
+                variant="outline"
+                onClick={copyHostedSkill}
+                className="gap-2"
+              >
+                {copied === "skill" ? (
+                  <Check className="size-4" />
+                ) : (
+                  <Copy className="size-4" />
+                )}
+                {copied === "skill" ? "Copied" : "Copy Full Skill"}
+              </Button>
+            </div>
+          </div>
+
+          <pre className="mt-5 max-h-[340px] overflow-auto rounded-md border border-border bg-background p-4 font-mono text-xs leading-6 text-foreground">
+{starterPrompt}
+          </pre>
+
+          <div className="mt-4 flex flex-wrap gap-3 text-sm">
+            <a
+              href="/skill.md"
+              className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline"
+            >
+              View hosted skill.md
+              <ExternalLink className="size-3.5" />
+            </a>
+            <a
+              href="/api-docs"
+              className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline"
+            >
+              API reference
+              <ExternalLink className="size-3.5" />
+            </a>
+          </div>
+        </section>
 
         <Separator className="my-8" />
 
