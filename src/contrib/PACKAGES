@@ -12606,10 +12606,6 @@ Package: BSgenome.Lplaneri.NCBI.kcLamPlan12h2
 Version: 1.0.0
 NeedsCompilation: no
 
-Package: BSgenome.Athaliana.NCBI.TAIR101
-Version: 1.0.0
-NeedsCompilation: no
-
 Package: BSgenome.Mzebra.NCBI.MzebraGT3a
 Version: 1.0.0
 NeedsCompilation: no
@@ -15763,5 +15759,9 @@ Version: 1.0.0
 NeedsCompilation: no
 
 Package: BSgenome.Agrisella.NCBI.CSIROAGIAgrisv1
+Version: 1.0.0
+NeedsCompilation: no
+
+Package: BSgenome.Athaliana.NCBI.TAIR101
 Version: 1.0.0
 NeedsCompilation: no
