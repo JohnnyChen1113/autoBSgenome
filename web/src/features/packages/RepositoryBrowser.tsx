@@ -427,6 +427,10 @@ function catalogAccessionSourceLink(
 ): { label: string; url: string } | null {
   const source = (accession.source ?? "").toLowerCase();
 
+  // The compact catalog usually stores only an accession, not a verified
+  // Ensembl species URL. For INSDC assembly accessions, NCBI Datasets is the
+  // stable canonical page; generated EnsemblGenomes URLs often 403/500 for
+  // multi-assembly and "sp." entries.
   if (preferNcbiForAccession(accession)) {
     return ncbiAccessionLink(accession.accession);
   }
@@ -458,21 +462,6 @@ function catalogAccessionSourceLinks(
   const links = new Map<string, { label: string; url: string }>();
 
   for (const accession of accessions) {
-    const source = (accession.source ?? "").toLowerCase();
-    if (source.includes("ensembl")) {
-      const link = ensemblAccessionLink(accession, speciesQuery, group);
-      if (!links.has(link.label)) {
-        links.set(link.label, link);
-      }
-    }
-
-    if (preferNcbiForAccession(accession)) {
-      const link = ncbiAccessionLink(accession.accession);
-      if (!links.has(link.label)) {
-        links.set(link.label, link);
-      }
-    }
-
     const link = catalogAccessionSourceLink(accession, speciesQuery, group);
     if (link && !links.has(link.label)) {
       links.set(link.label, link);
