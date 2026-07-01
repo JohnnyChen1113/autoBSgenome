@@ -255,10 +255,10 @@ function normalizeComparable(value?: string): string {
   return (value ?? "").trim().toLowerCase();
 }
 
-function genomeSizeMbForBuild(
+function genomeSizeForBuild(
   build: BuildPackage,
   accessions: CatalogAccession[]
-): number | undefined {
+): { sizeMb: number; approximate: boolean } | undefined {
   const candidates = accessions.filter(
     (accession) => typeof accession.size_mb === "number" && accession.size_mb > 0
   );
@@ -268,10 +268,17 @@ function genomeSizeMbForBuild(
   const exactAccession = candidates.find(
     (accession) => normalizeComparable(accession.accession) === buildAccession
   );
-  if (exactAccession) return exactAccession.size_mb;
+  if (exactAccession?.size_mb) {
+    return { sizeMb: exactAccession.size_mb, approximate: false };
+  }
 
   const buildAssembly = normalizeComparable(build.assembly);
-  if (!buildAssembly) return undefined;
+  if (!buildAssembly) {
+    const onlyCandidate = candidates.length === 1 ? candidates[0] : undefined;
+    return onlyCandidate?.size_mb
+      ? { sizeMb: onlyCandidate.size_mb, approximate: true }
+      : undefined;
+  }
 
   const buildSource = buildDataSource(build);
   const sameSourceAssembly = candidates.find(
@@ -279,21 +286,36 @@ function genomeSizeMbForBuild(
       normalizeComparable(accession.assembly) === buildAssembly &&
       catalogAccessionSource(accession) === buildSource
   );
-  if (sameSourceAssembly) return sameSourceAssembly.size_mb;
+  if (sameSourceAssembly?.size_mb) {
+    return { sizeMb: sameSourceAssembly.size_mb, approximate: false };
+  }
 
-  return candidates.find(
+  const assemblyMatch = candidates.find(
     (accession) => normalizeComparable(accession.assembly) === buildAssembly
-  )?.size_mb;
+  );
+  if (assemblyMatch?.size_mb) {
+    return { sizeMb: assemblyMatch.size_mb, approximate: false };
+  }
+
+  const onlyCandidate = candidates.length === 1 ? candidates[0] : undefined;
+  return onlyCandidate?.size_mb
+    ? { sizeMb: onlyCandidate.size_mb, approximate: true }
+    : undefined;
 }
 
 function genomeSizeLabelForBuild(
   build: BuildPackage,
   accessions: CatalogAccession[]
 ): { label: string; value: string } | null {
-  const genomeSizeMb = genomeSizeMbForBuild(build, accessions);
-  const genomeSize = formatMegabases(genomeSizeMb);
+  const genomeSizeForPackage = genomeSizeForBuild(build, accessions);
+  const genomeSize = formatMegabases(genomeSizeForPackage?.sizeMb);
   if (genomeSize) {
-    return { label: "Genome size", value: genomeSize };
+    return {
+      label: genomeSizeForPackage?.approximate
+        ? "Approx. genome size"
+        : "Genome size",
+      value: genomeSize,
+    };
   }
 
   const fastaSize = formatBytes(build.metrics?.fasta_size_bytes);
