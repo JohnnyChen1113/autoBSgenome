@@ -46,6 +46,11 @@ type BuildPackage = {
   source_url?: string;
   file_name?: string;
   size?: number;
+  metrics?: {
+    fasta_size_bytes?: number;
+    tarball_size_bytes?: number;
+    timings_sec?: Record<string, number>;
+  };
   seq_ids?: string[];
   seq_count?: number;
   group?: string;
@@ -237,6 +242,66 @@ function formatBytes(bytes?: number): string {
     unit += 1;
   }
   return `${value.toFixed(unit < 2 ? 0 : 1)} ${units[unit]}`;
+}
+
+function formatMegabases(sizeMb?: number): string {
+  if (!sizeMb || sizeMb <= 0) return "";
+  return `${sizeMb.toLocaleString(undefined, {
+    maximumFractionDigits: 1,
+  })} Mb`;
+}
+
+function normalizeComparable(value?: string): string {
+  return (value ?? "").trim().toLowerCase();
+}
+
+function genomeSizeMbForBuild(
+  build: BuildPackage,
+  accessions: CatalogAccession[]
+): number | undefined {
+  const candidates = accessions.filter(
+    (accession) => typeof accession.size_mb === "number" && accession.size_mb > 0
+  );
+  if (candidates.length === 0) return undefined;
+
+  const buildAccession = normalizeComparable(build.accession);
+  const exactAccession = candidates.find(
+    (accession) => normalizeComparable(accession.accession) === buildAccession
+  );
+  if (exactAccession) return exactAccession.size_mb;
+
+  const buildAssembly = normalizeComparable(build.assembly);
+  if (!buildAssembly) return undefined;
+
+  const buildSource = buildDataSource(build);
+  const sameSourceAssembly = candidates.find(
+    (accession) =>
+      normalizeComparable(accession.assembly) === buildAssembly &&
+      catalogAccessionSource(accession) === buildSource
+  );
+  if (sameSourceAssembly) return sameSourceAssembly.size_mb;
+
+  return candidates.find(
+    (accession) => normalizeComparable(accession.assembly) === buildAssembly
+  )?.size_mb;
+}
+
+function genomeSizeLabelForBuild(
+  build: BuildPackage,
+  accessions: CatalogAccession[]
+): { label: string; value: string } | null {
+  const genomeSizeMb = genomeSizeMbForBuild(build, accessions);
+  const genomeSize = formatMegabases(genomeSizeMb);
+  if (genomeSize) {
+    return { label: "Genome size", value: genomeSize };
+  }
+
+  const fastaSize = formatBytes(build.metrics?.fasta_size_bytes);
+  if (fastaSize) {
+    return { label: "FASTA size", value: fastaSize };
+  }
+
+  return null;
 }
 
 function formatMetadataDate(value?: string): string {
@@ -1536,6 +1601,10 @@ export function RepositoryBrowser() {
                     <div className="border-t border-border">
                       {visibleBuilds.map((build) => {
                         const copyKey = `${org.organism}-${build.package}`;
+                        const genomeSizeLabel = genomeSizeLabelForBuild(
+                          build,
+                          accessions
+                        );
                         return (
                           <div
                             key={copyKey}
@@ -1592,9 +1661,17 @@ export function RepositoryBrowser() {
                                     {build.version || "1.0.0"}
                                   </span>
                                 </span>
+                                {genomeSizeLabel && (
+                                  <span>
+                                    {genomeSizeLabel.label}:{" "}
+                                    <span className="text-foreground">
+                                      {genomeSizeLabel.value}
+                                    </span>
+                                  </span>
+                                )}
                                 {build.size && (
                                   <span>
-                                    Size:{" "}
+                                    Package size:{" "}
                                     <span className="text-foreground">
                                       {formatBytes(build.size)}
                                     </span>
@@ -1750,7 +1827,9 @@ export function RepositoryBrowser() {
                                             {build.package}
                                           </span>
                                           <span className="text-xs font-semibold leading-4 opacity-80">
-                                            {build.size ? formatBytes(build.size) : ".tar.gz"}
+                                            {build.size
+                                              ? `Package: ${formatBytes(build.size)}`
+                                              : ".tar.gz package"}
                                           </span>
                                         </span>
                                       </a>
