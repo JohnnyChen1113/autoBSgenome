@@ -8,7 +8,6 @@ import {
   FileSearch,
   Hammer,
 } from "lucide-react";
-import { siteConfig } from "@/config";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 
 const workflows = [
@@ -22,7 +21,7 @@ const workflows = [
     steps: [
       "Open Packages and search by species, assembly, accession, or package name.",
       "Choose a matching package and inspect provider, assembly, source, and storage.",
-      "Install from Bioconductor when available, or use the AutoBSgenome repository / download link.",
+      "Install from Bioconductor when available, or copy the AutoBSgenome direct tarball command.",
     ],
   },
   {
@@ -74,21 +73,20 @@ const examples = [
 const installSnippets = [
   {
     icon: Download,
-    title: "Install from the package browser",
-    note: "Use this after you find an existing AutoBSgenome-hosted package.",
+    title: "Install an AutoBSgenome-hosted package",
+    note: "Use the Copy button on a package card; it provides the real tarball URL.",
     code: `install.packages(
-  "PACKAGE_NAME",
-  repos = "${siteConfig.repositoryBase}"
+  "TARBALL_URL",
+  repos = NULL,
+  type = "source"
 )`,
   },
   {
     icon: Hammer,
-    title: "Install a direct tarball",
-    note: "Use this after a build completes and you have a tar.gz URL.",
-    code: `install.packages(
-  "https://example.org/BSgenome.Name_1.0.0.tar.gz",
-  repos = NULL,
-  type = "source"
+    title: "Install a Bioconductor-hosted package",
+    note: "Use this only for package cards labeled Bioconductor.",
+    code: `BiocManager::install(
+  "BSgenome.Hsapiens.UCSC.hg38"
 )`,
   },
 ];
@@ -209,7 +207,7 @@ export default function HelpPage() {
           <div className="mx-auto max-w-6xl px-6 py-16">
             <span className="eyebrow">Install in R</span>
             <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              From repository or tarball.
+              From a package card.
             </h2>
 
             <div className="mt-10 grid gap-6 lg:grid-cols-2">
