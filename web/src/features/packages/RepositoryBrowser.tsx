@@ -326,6 +326,38 @@ function genomeSizeLabelForBuild(
   return null;
 }
 
+function genomeSizeLabelForCatalog(
+  accessions: CatalogAccession[]
+): { label: string; value: string } | null {
+  const exact = accessions.find(
+    (accession) => typeof accession.size_mb === "number" && accession.size_mb > 0
+  );
+  const genomeSize = formatMegabases(exact?.size_mb);
+  return genomeSize ? { label: "Genome size", value: genomeSize } : null;
+}
+
+function preferNcbiForAccession(accession: CatalogAccession): boolean {
+  return accession.accession.startsWith("GC");
+}
+
+function preferredCatalogAccession(
+  accessions: CatalogAccession[]
+): CatalogAccession | undefined {
+  return (
+    accessions.find(
+      (accession) =>
+        preferNcbiForAccession(accession) &&
+        typeof accession.size_mb === "number" &&
+        accession.size_mb > 0
+    ) ??
+    accessions.find((accession) => preferNcbiForAccession(accession)) ??
+    accessions.find(
+      (accession) => typeof accession.size_mb === "number" && accession.size_mb > 0
+    ) ??
+    accessions[0]
+  );
+}
+
 function formatMetadataDate(value?: string): string {
   if (!value) return "";
   const normalized = value.replace(/\//g, "-");
@@ -368,6 +400,26 @@ function sourceUrl(build: BuildPackage): string {
   return "";
 }
 
+function ncbiAccessionLink(accession: string): { label: string; url: string } {
+  return {
+    label: "NCBI",
+    url: `https://www.ncbi.nlm.nih.gov/datasets/genome/${accession}/`,
+  };
+}
+
+function ensemblAccessionLink(
+  accession: CatalogAccession,
+  speciesQuery: string,
+  group: string | undefined
+): { label: string; url: string } {
+  const subdomain = ensemblSubdomain(group);
+  const slug = ensemblSlug(speciesQuery, group, accession.accession);
+  return {
+    label: "Ensembl",
+    url: `https://${subdomain}/${slug}/Info/Index`,
+  };
+}
+
 function catalogAccessionSourceLink(
   accession: CatalogAccession,
   speciesQuery: string,
@@ -375,16 +427,15 @@ function catalogAccessionSourceLink(
 ): { label: string; url: string } | null {
   const source = (accession.source ?? "").toLowerCase();
 
+  if (preferNcbiForAccession(accession)) {
+    return ncbiAccessionLink(accession.accession);
+  }
+
   if (
     source.includes("ensembl") ||
     (source === "ensembl" && accession.accession.startsWith("GCA_"))
   ) {
-    const subdomain = ensemblSubdomain(group);
-    const slug = ensemblSlug(speciesQuery, group, accession.accession);
-    return {
-      label: "Ensembl",
-      url: `https://${subdomain}/${slug}/Info/Index`,
-    };
+    return ensemblAccessionLink(accession, speciesQuery, group);
   }
 
   if (
@@ -393,10 +444,7 @@ function catalogAccessionSourceLink(
     source.includes("genbank") ||
     accession.accession.startsWith("GC")
   ) {
-    return {
-      label: "NCBI",
-      url: `https://www.ncbi.nlm.nih.gov/datasets/genome/${accession.accession}/`,
-    };
+    return ncbiAccessionLink(accession.accession);
   }
 
   return null;
@@ -410,6 +458,21 @@ function catalogAccessionSourceLinks(
   const links = new Map<string, { label: string; url: string }>();
 
   for (const accession of accessions) {
+    const source = (accession.source ?? "").toLowerCase();
+    if (source.includes("ensembl")) {
+      const link = ensemblAccessionLink(accession, speciesQuery, group);
+      if (!links.has(link.label)) {
+        links.set(link.label, link);
+      }
+    }
+
+    if (preferNcbiForAccession(accession)) {
+      const link = ncbiAccessionLink(accession.accession);
+      if (!links.has(link.label)) {
+        links.set(link.label, link);
+      }
+    }
+
     const link = catalogAccessionSourceLink(accession, speciesQuery, group);
     if (link && !links.has(link.label)) {
       links.set(link.label, link);
@@ -1355,7 +1418,7 @@ export function RepositoryBrowser() {
             const builds = org.builds ?? [];
             const accessions = org._accessions ?? [];
             const isOpen = expanded.has(key);
-            const firstAccession = accessions[0];
+            const firstAccession = preferredCatalogAccession(accessions);
             const catalogOnly = builds.length === 0 && accessions.length > 0;
             const visibleBuilds = isOpen ? builds : builds.slice(0, 1);
             const metadata = metadataForOrganism(org, metadataEntries);
@@ -1382,6 +1445,9 @@ export function RepositoryBrowser() {
                   displayGroup
                 )
               : [];
+            const catalogGenomeSize = catalogOnly
+              ? genomeSizeLabelForCatalog(accessions)
+              : null;
             const packageSources = packageSourceBadges(builds);
             const imageUrl = metadata?.image_url ?? null;
 
@@ -1573,11 +1639,11 @@ export function RepositoryBrowser() {
                               )}
                             </span>
                           )}
-                          {firstAccession.size_mb && (
+                          {catalogGenomeSize && (
                             <span>
-                              Genome size:{" "}
+                              {catalogGenomeSize.label}:{" "}
                               <span className="text-foreground">
-                                {firstAccession.size_mb.toLocaleString()} Mb
+                                {catalogGenomeSize.value}
                               </span>
                             </span>
                           )}
@@ -1591,7 +1657,8 @@ export function RepositoryBrowser() {
                           href={`/build?accession=${encodeURIComponent(
                             firstAccession.accession
                           )}${
-                            firstAccession.source === "ensembl"
+                            firstAccession.source === "ensembl" &&
+                            !preferNcbiForAccession(firstAccession)
                               ? "&source=ensembl"
                               : ""
                           }`}
