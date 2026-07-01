@@ -89,16 +89,13 @@ export default function HomePage() {
         {/* QUICK START · two large option cards */}
         <section id="quick-start" className="border-b border-[color:var(--rule)]/15">
           <div className="mx-auto max-w-6xl px-6 pt-16 pb-16">
-            <div className="flex items-baseline justify-between gap-6">
+            <div>
               <div>
-                <span className="eyebrow-accent">Quick start</span>
+                <span className="eyebrow-accent text-sm">Quick start</span>
                 <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
                   Pick one of two paths.
                 </h2>
               </div>
-              <span className="hidden font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground sm:inline">
-                A · B
-              </span>
             </div>
 
             <div className="mt-10 grid gap-px bg-[color:var(--rule)]/15 sm:grid-cols-2 sm:overflow-hidden sm:rounded-md sm:border sm:border-[color:var(--rule)]/15">
@@ -108,7 +105,7 @@ export default function HomePage() {
                 className="group flex flex-col bg-background p-8 transition-colors hover:bg-paper sm:p-10"
               >
                 <div className="flex items-start justify-between">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+                  <span className="font-mono text-sm uppercase tracking-[0.18em] text-muted-foreground">
                     Path A
                   </span>
                   <span className="flex size-10 items-center justify-center rounded-md border border-[color:var(--rule)]/20 bg-paper text-primary">
@@ -135,7 +132,7 @@ export default function HomePage() {
                 className="group flex flex-col bg-background p-8 transition-colors hover:bg-paper sm:p-10"
               >
                 <div className="flex items-start justify-between">
-                  <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+                  <span className="font-mono text-sm uppercase tracking-[0.18em] text-muted-foreground">
                     Path B
                   </span>
                   <span className="flex size-10 items-center justify-center rounded-md border border-[color:var(--rule)]/20 bg-paper text-primary">
