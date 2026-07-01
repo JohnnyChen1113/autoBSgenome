@@ -90,7 +90,7 @@ const EMPTY_FORM: FormData = {
   fastaUrl: "",
 };
 
-type Step = "input" | "review" | "building" | "result";
+type Step = "input" | "review" | "building" | "failed" | "result";
 
 interface BuildRecord {
   jobId: string;
@@ -420,6 +420,7 @@ export default function Home() {
   const [buildStartTime, setBuildStartTime] = useState(0);
   const [buildProgressSteps, setBuildProgressSteps] = useState<BuildProgressStep[]>([]);
   const [workflowRunUrl, setWorkflowRunUrl] = useState("");
+  const [resumingJob, setResumingJob] = useState(false);
   const [isPublished, setIsPublished] = useState(false);
   const [publishing, setPublishing] = useState(false);
   const [publishError, setPublishError] = useState("");
@@ -443,9 +444,19 @@ export default function Home() {
   const [isDragActive, setIsDragActive] = useState(false);
 
   const buildStartTimeRef = useRef(0);
+  const pollIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const formRef = useRef(form);
   const fileInputRef = useRef<HTMLInputElement>(null);
   formRef.current = form;
+
+  useEffect(() => {
+    return () => {
+      if (pollIntervalRef.current) {
+        clearInterval(pollIntervalRef.current);
+        pollIntervalRef.current = null;
+      }
+    };
+  }, []);
 
   const selectFastaFile = useCallback(async (file?: File) => {
     setUploadError("");
@@ -495,15 +506,21 @@ export default function Home() {
       setJobId(resumeJob);
       setDeleteToken("");
       setBuildDeleted(false);
+      setBuildError("");
       setDeleteError("");
       setBuildProgressSteps([]);
       setWorkflowRunUrl("");
+      setDownloadUrl("");
+      setFileName("");
+      setFileSize(0);
+      setBuildElapsed(0);
+      setBuildTotalTime(0);
+      setResumingJob(true);
       const now = Date.now();
       setBuildStartTime(now);
       buildStartTimeRef.current = now;
       setStep("building");
-      pollBuildStatus(resumeJob);
-      return;
+      return pollBuildStatus(resumeJob, "", { resumed: true });
     }
     // Batch mode from URL
     if (params.get("batch") === "true") {
@@ -628,6 +645,7 @@ export default function Home() {
 
   const handleBuild = async () => {
     setBuildError("");
+    setResumingJob(false);
     setDeleteError("");
     setDeleteToken("");
     setBuildDeleted(false);
@@ -816,13 +834,31 @@ export default function Home() {
     }
   };
 
-  const pollBuildStatus = (id: string, currentDeleteToken = "") => {
+  const pollBuildStatus = (
+    id: string,
+    currentDeleteToken = "",
+    options: { resumed?: boolean } = {}
+  ) => {
+    if (pollIntervalRef.current) {
+      clearInterval(pollIntervalRef.current);
+      pollIntervalRef.current = null;
+    }
+
+    let interval: ReturnType<typeof setInterval> | null = null;
+    const stopPolling = () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+      if (pollIntervalRef.current === interval) {
+        pollIntervalRef.current = null;
+      }
+    };
     let errorCount = 0;
     const checkStatus = async () => {
       const elapsedSec = Math.floor((Date.now() - buildStartTimeRef.current) / 1000);
 
       // Animate build steps based on elapsed time
-      if (buildProgressSteps.length === 0) {
+      if (!options.resumed && buildProgressSteps.length === 0) {
         if (elapsedSec > 5) setBuildStep(1);
         if (elapsedSec > 15) setBuildStep(2);
         if (elapsedSec > 30) setBuildStep(3);
@@ -833,7 +869,8 @@ export default function Home() {
         applyBuildProgress(data);
 
         if (data.status === "complete") {
-          clearInterval(interval);
+          stopPolling();
+          setResumingJob(false);
           setBuildStep(4);
           const totalTime =
             data.total_seconds ??
@@ -858,9 +895,10 @@ export default function Home() {
           setStep("result");
           return;
         } else if (data.status === "failed") {
-          clearInterval(interval);
+          stopPolling();
+          setResumingJob(false);
           setBuildError(data.message ?? "Build failed");
-          setStep("review");
+          setStep(options.resumed ? "failed" : "review");
           return;
         } else if (data.status === "error") {
           errorCount++;
@@ -883,16 +921,19 @@ export default function Home() {
 
       // Timeout slightly after the GitHub Actions workflow's 60-minute limit.
       if (elapsedSec > 3900) {
-        clearInterval(interval);
+        stopPolling();
+        setResumingJob(false);
         setBuildError(
           "Status polling timed out after 65 minutes. Your build may still be running — " +
           `check ${siteConfig.githubUrl}/releases for your package.`
         );
-        setStep("review");
+        setStep(options.resumed ? "failed" : "review");
       }
     };
     void checkStatus();
-    const interval = setInterval(() => void checkStatus(), 5000);
+    interval = setInterval(() => void checkStatus(), 5000);
+    pollIntervalRef.current = interval;
+    return stopPolling;
   };
 
   const needsUploadedFasta = form.fastaSource === "upload" && !uploadedFasta;
@@ -941,6 +982,7 @@ export default function Home() {
           "Building R package",
           "Uploading package release",
         ];
+  const showFallbackBuildSteps = !resumingJob;
   const normalizedProgressSteps =
     buildProgressSteps.length > 0
       ? buildProgressSteps.map((progressStep) =>
@@ -964,7 +1006,8 @@ export default function Home() {
             : []),
           ...normalizedProgressSteps,
         ]
-      : buildStepLabels.map((label, index) => ({
+      : showFallbackBuildSteps
+      ? buildStepLabels.map((label, index) => ({
           key: `fallback-${index}`,
           label,
           status:
@@ -973,7 +1016,8 @@ export default function Home() {
               : index === buildStep
               ? "running"
               : "pending",
-        }));
+        }))
+      : [];
   const submittedAccession = normalizeSubmittedAccession(accessionInput, dataSource);
   const failedProgressStep = buildProgressSteps.find((progressStep) => progressStep.status === "failed");
 
@@ -1726,64 +1770,87 @@ export default function Home() {
           {step === "building" && (
             <Card>
               <CardHeader>
-                <CardTitle>Building Package...</CardTitle>
+                <CardTitle>
+                  {resumingJob ? "Checking Existing Build Status..." : "Building Package..."}
+                </CardTitle>
                 <CardDescription>
-                  Build time depends on FASTA size: small genomes usually finish in ~1 min; mammalian-size genomes take ~3–6 min; very large plant genomes can take 10–30+ min.
+                  {resumingJob
+                    ? `Polling job ${jobId}. Refreshing this page does not start a new GitHub Actions run.`
+                    : "Build time depends on FASTA size: small genomes usually finish in ~1 min; mammalian-size genomes take ~3–6 min; very large plant genomes can take 10–30+ min."}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 py-8">
-                <div className="space-y-4">
-                  {visibleBuildSteps.map((progressStep, i) => {
-                    const done =
-                      progressStep.status === "complete" ||
-                      progressStep.status === "skipped";
-                    const active = progressStep.status === "running";
-                    const failed = progressStep.status === "failed";
-                    const duration = formatDuration(progressStep.seconds);
-                    return (
-                      <div key={progressStep.key} className="flex items-center gap-3">
-                        <div
-                          className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                            failed
-                              ? "bg-destructive text-destructive-foreground"
-                              : done
-                              ? "bg-primary text-primary-foreground"
-                              : active
-                              ? "bg-primary text-primary-foreground animate-pulse"
-                              : "bg-secondary text-muted-foreground"
-                          }`}
-                        >
-                          {failed ? "!" : done ? "✓" : i + 1}
-                        </div>
-                        <div className="min-w-0 flex-1 sm:flex sm:items-baseline sm:justify-between sm:gap-3">
-                          <span
-                            className={
+                {visibleBuildSteps.length > 0 ? (
+                  <div className="space-y-4">
+                    {visibleBuildSteps.map((progressStep, i) => {
+                      const done =
+                        progressStep.status === "complete" ||
+                        progressStep.status === "skipped";
+                      const active = progressStep.status === "running";
+                      const failed = progressStep.status === "failed";
+                      const duration = formatDuration(progressStep.seconds);
+                      return (
+                        <div key={progressStep.key} className="flex items-center gap-3">
+                          <div
+                            className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
                               failed
-                                ? "text-destructive font-medium"
+                                ? "bg-destructive text-destructive-foreground"
                                 : done
-                                ? "text-foreground"
+                                ? "bg-primary text-primary-foreground"
                                 : active
-                                ? "text-foreground font-medium"
-                                : "text-muted-foreground"
-                            }
+                                ? "bg-primary text-primary-foreground animate-pulse"
+                                : "bg-secondary text-muted-foreground"
+                            }`}
                           >
-                            {progressStep.label}
-                          </span>
-                          {duration && (
-                            <span className="block text-xs font-mono text-muted-foreground sm:text-right">
-                              {active ? `running ${duration}` : duration}
+                            {failed ? "!" : done ? "✓" : i + 1}
+                          </div>
+                          <div className="min-w-0 flex-1 sm:flex sm:items-baseline sm:justify-between sm:gap-3">
+                            <span
+                              className={
+                                failed
+                                  ? "text-destructive font-medium"
+                                  : done
+                                  ? "text-foreground"
+                                  : active
+                                  ? "text-foreground font-medium"
+                                  : "text-muted-foreground"
+                              }
+                            >
+                              {progressStep.label}
                             </span>
-                          )}
+                            {duration && (
+                              <span className="block text-xs font-mono text-muted-foreground sm:text-right">
+                                {active ? `running ${duration}` : duration}
+                              </span>
+                            )}
+                          </div>
                         </div>
-                      </div>
-                    );
-                  })}
-                </div>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <div className="rounded-md border border-border bg-secondary/40 px-4 py-4 text-sm text-muted-foreground">
+                    Checking GitHub Actions and release status for this existing job.
+                  </div>
+                )}
                 <div className="text-center space-y-1">
-                  <p className="text-2xl font-mono font-semibold text-foreground">
-                    {Math.floor(buildElapsed / 60)}:{String(buildElapsed % 60).padStart(2, "0")}
-                  </p>
-                  <p className="text-sm text-muted-foreground">Elapsed time</p>
+                  {resumingJob ? (
+                    <>
+                      <p className="text-base font-medium text-foreground">
+                        Existing build lookup
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        No new build request has been sent.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-2xl font-mono font-semibold text-foreground">
+                        {Math.floor(buildElapsed / 60)}:{String(buildElapsed % 60).padStart(2, "0")}
+                      </p>
+                      <p className="text-sm text-muted-foreground">Elapsed time</p>
+                    </>
+                  )}
                   {jobId && (
                     <p className="text-sm text-muted-foreground">
                       Job ID: <code className="font-mono">{jobId}</code>
@@ -1824,6 +1891,81 @@ export default function Home() {
                     {buildError}
                   </div>
                 )}
+              </CardContent>
+            </Card>
+          )}
+
+          {/* ─── Existing Job Failed ─── */}
+          {step === "failed" && (
+            <Card>
+              <CardHeader className="text-center pb-2">
+                <div className="mx-auto w-14 h-14 rounded-full bg-destructive text-destructive-foreground flex items-center justify-center text-2xl font-bold mb-3">
+                  !
+                </div>
+                <CardTitle className="text-xl">Build Failed</CardTitle>
+                <CardDescription>
+                  This is the saved status for job <code className="font-mono">{jobId}</code>.
+                  Refreshing this page did not start a new build.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-5">
+                <div className="rounded-md border border-destructive/20 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+                  {buildError || "The BSgenome package build failed."}
+                </div>
+
+                {buildProgressSteps.length > 0 && (
+                  <div className="border border-border rounded-lg p-4 space-y-3">
+                    <h4 className="font-heading font-semibold text-foreground">Build step status</h4>
+                    <div className="space-y-2">
+                      {visibleBuildSteps.map((progressStep) => {
+                        const duration = formatDuration(progressStep.seconds);
+                        return (
+                          <div
+                            key={progressStep.key}
+                            className="flex items-center justify-between gap-3 text-sm"
+                          >
+                            <span
+                              className={
+                                progressStep.status === "failed"
+                                  ? "text-destructive font-medium"
+                                  : "text-muted-foreground"
+                              }
+                            >
+                              {progressStep.label}
+                            </span>
+                            <span className="font-mono text-foreground">
+                              {duration || progressStep.status}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                )}
+
+                <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
+                  <a
+                    href={workflowRunUrl || `${siteConfig.githubUrl}/actions/workflows/build-bsgenome.yml`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex h-10 items-center justify-center rounded-md border border-border px-4 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+                  >
+                    View GitHub Actions
+                  </a>
+                  <Button
+                    type="button"
+                    onClick={() => {
+                      window.history.replaceState(null, "", window.location.pathname);
+                      setJobId("");
+                      setBuildError("");
+                      setBuildProgressSteps([]);
+                      setWorkflowRunUrl("");
+                      setStep("input");
+                    }}
+                  >
+                    Build Another Package
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           )}
