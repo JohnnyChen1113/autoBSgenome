@@ -21,7 +21,7 @@ const workflows = [
     steps: [
       "Open Packages and search by species, assembly, accession, or package name.",
       "Choose a matching package and inspect provider, assembly, source, and storage.",
-      "Install from Bioconductor when available, or copy the AutoBSgenome direct tarball command.",
+      "Install from Bioconductor when available, or copy the AutoBSgenome one-line local install command.",
     ],
   },
   {
@@ -34,7 +34,7 @@ const workflows = [
     steps: [
       "Open Build and paste an NCBI accession such as GCF_000001405.40, or an Ensembl species URL.",
       "Fetch metadata, check the generated package name and organism information, then submit the build.",
-      "Wait for the job to finish, then download the temporary tarball or copy the direct install command.",
+      "Wait for the job to finish, then download the temporary tarball or copy the one-line local install command.",
     ],
   },
   {
@@ -75,11 +75,7 @@ const installSnippets = [
     icon: Download,
     title: "Install an AutoBSgenome-hosted package",
     note: "Use the Copy button on a package card; it downloads the tarball first, then installs from a local temporary file.",
-    code: `url <- "TARBALL_URL"
-pkg <- tempfile(fileext = ".tar.gz")
-download.file(url, pkg, mode = "wb", method = "libcurl")
-install.packages(pkg, repos = NULL, type = "source")
-unlink(pkg)`,
+    code: `local({url <- "TARBALL_URL"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})`,
   },
   {
     icon: Hammer,

@@ -50,7 +50,7 @@ const workflow = [
     icon: Download,
     title: "Install downloaded tarballs",
     description:
-      "Download download_url to a local temporary .tar.gz first, then call install.packages(pkg, repos = NULL, type = \"source\"). Do not pass remote URLs directly to install.packages.",
+      "Return the one-line local install command: download_url goes into local({url <- ...}), then R downloads the tarball to a temporary file and installs it. Do not pass remote URLs directly to install.packages.",
   },
 ];
 
@@ -78,11 +78,7 @@ Rules:
 3. Trigger a build through the public AutoBSgenome API.
 4. Poll status until complete or failed.
 5. Return the final R command:
-   url <- "DOWNLOAD_URL"
-   pkg <- tempfile(fileext = ".tar.gz")
-   download.file(url, pkg, mode = "wb", method = "libcurl")
-   install.packages(pkg, repos = NULL, type = "source")
-   unlink(pkg)
+   local({url <- "DOWNLOAD_URL"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})
 6. Do not publish this build to the permanent package repository. Permanent index inclusion is curated by AutoBSgenome maintainers.
 7. Keep delete_token private. Only explain deletion if I ask.`;
 
@@ -249,7 +245,7 @@ export default function AgentsPage() {
                 </code>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Keep this file aligned with the HTTP API docs. It should tell
-                  agents to use direct tarball installs and treat permanent
+                  agents to use one-line local tarball installs and treat permanent
                   repository inclusion as maintainer-curated.
                 </p>
               </div>
@@ -316,11 +312,7 @@ export default function AgentsPage() {
               Install the completed tarball
             </div>
             <pre className="mt-2 overflow-x-auto rounded-md bg-background p-3 font-mono text-xs text-foreground">
-{`url <- "TARBALL_URL_FROM_STATUS_OR_PACKAGE_CARD"
-pkg <- tempfile(fileext = ".tar.gz")
-download.file(url, pkg, mode = "wb", method = "libcurl")
-install.packages(pkg, repos = NULL, type = "source")
-unlink(pkg)`}
+{`local({url <- "TARBALL_URL_FROM_STATUS_OR_PACKAGE_CARD"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})`}
             </pre>
           </div>
 

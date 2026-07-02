@@ -245,7 +245,7 @@ done
 
 # 3. Install in R when complete
 URL=$(echo "$STATUS" | python3 -c "import json,sys; print(json.load(sys.stdin).get('download_url',''))")
-Rscript -e "url <- '$URL'; pkg <- tempfile(fileext = '.tar.gz'); download.file(url, pkg, mode = 'wb', method = 'libcurl'); install.packages(pkg, repos = NULL, type = 'source'); unlink(pkg)"
+Rscript -e "local({url <- '$URL'; tarball <- tempfile(fileext = '.tar.gz'); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = 'wb', method = 'libcurl'); install.packages(tarball, repos = NULL, type = 'source')})"
 
 # Optional: delete the temporary public release early
 curl -X DELETE "${WORKER}/api/build/$JOB_ID" \\
@@ -258,11 +258,7 @@ curl -X DELETE "${WORKER}/api/build/$JOB_ID" \\
             <h3 className="mb-2 font-heading font-semibold text-foreground">
               R install command
             </h3>
-            <CodeBlock>{`url <- "TARBALL_URL_FROM_STATUS_OR_PACKAGE_CARD"
-pkg <- tempfile(fileext = ".tar.gz")
-download.file(url, pkg, mode = "wb", method = "libcurl")
-install.packages(pkg, repos = NULL, type = "source")
-unlink(pkg)`}</CodeBlock>
+            <CodeBlock>{`local({url <- "TARBALL_URL_FROM_STATUS_OR_PACKAGE_CARD"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})`}</CodeBlock>
           </div>
         </section>
 

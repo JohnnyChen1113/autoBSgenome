@@ -16,11 +16,5 @@ export function publicPackageDownloadUrl(downloadUrl: string): string {
 
 export function warningFreeInstallCommand(downloadUrl: string): string {
   const url = escapeRString(publicPackageDownloadUrl(downloadUrl));
-  return [
-    `url <- "${url}"`,
-    `pkg <- tempfile(fileext = ".tar.gz")`,
-    `download.file(url, pkg, mode = "wb", method = "libcurl")`,
-    `install.packages(pkg, repos = NULL, type = "source")`,
-    `unlink(pkg)`,
-  ].join("\n");
+  return `local({url <- "${url}"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})`;
 }

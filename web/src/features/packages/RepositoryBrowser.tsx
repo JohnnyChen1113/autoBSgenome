@@ -1257,11 +1257,7 @@ export function RepositoryBrowser() {
                         local temporary file.
                       </p>
                       <code className="mt-2 block overflow-x-auto rounded-md bg-secondary px-3 py-2 font-mono text-xs text-foreground">
-                        url &lt;- &quot;TARBALL_URL&quot;<br />
-                        pkg &lt;- tempfile(fileext = &quot;.tar.gz&quot;)<br />
-                        download.file(url, pkg, mode = &quot;wb&quot;, method = &quot;libcurl&quot;)<br />
-                        install.packages(pkg, repos = NULL, type = &quot;source&quot;)<br />
-                        unlink(pkg)
+                        local(&#123;url &lt;- &quot;TARBALL_URL&quot;; tarball &lt;- tempfile(fileext = &quot;.tar.gz&quot;); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = &quot;wb&quot;, method = &quot;libcurl&quot;); install.packages(tarball, repos = NULL, type = &quot;source&quot;)&#125;)
                       </code>
                     </div>
                   </div>

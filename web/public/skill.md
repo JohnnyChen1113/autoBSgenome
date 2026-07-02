@@ -82,11 +82,7 @@ Poll every 5-10 seconds. Status responses may include `build_steps` with live st
 ### Step 3: Install in R
 
 ```r
-url <- "DOWNLOAD_URL"
-pkg <- tempfile(fileext = ".tar.gz")
-download.file(url, pkg, mode = "wb", method = "libcurl")
-install.packages(pkg, repos = NULL, type = "source")
-unlink(pkg)
+local({url <- "DOWNLOAD_URL"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})
 ```
 
 Download AutoBSgenome tarballs to a local temporary file before calling
@@ -135,11 +131,7 @@ URL=$(echo $STATUS | python3 -c "import json,sys;print(json.load(sys.stdin).get(
 
 Then in R:
 ```r
-url <- "URL_FROM_ABOVE"
-pkg <- tempfile(fileext = ".tar.gz")
-download.file(url, pkg, mode = "wb", method = "libcurl")
-install.packages(pkg, repos = NULL, type = "source")
-unlink(pkg)
+local({url <- "URL_FROM_ABOVE"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})
 library(BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308)
 ```
 
