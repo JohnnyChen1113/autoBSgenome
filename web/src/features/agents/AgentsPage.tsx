@@ -48,9 +48,9 @@ const workflow = [
   },
   {
     icon: Download,
-    title: "Install direct tarballs",
+    title: "Install downloaded tarballs",
     description:
-      "Use install.packages(download_url, repos = NULL, type = \"source\"). Do not use the old CRAN-like repository install snippet.",
+      "Download download_url to a local temporary .tar.gz first, then call install.packages(pkg, repos = NULL, type = \"source\"). Do not pass remote URLs directly to install.packages.",
   },
 ];
 
@@ -78,7 +78,11 @@ Rules:
 3. Trigger a build through the public AutoBSgenome API.
 4. Poll status until complete or failed.
 5. Return the final R command:
-   install.packages("DOWNLOAD_URL", repos = NULL, type = "source")
+   url <- "DOWNLOAD_URL"
+   pkg <- tempfile(fileext = ".tar.gz")
+   download.file(url, pkg, mode = "wb", method = "libcurl")
+   install.packages(pkg, repos = NULL, type = "source")
+   unlink(pkg)
 6. Do not publish this build to the permanent package repository. Permanent index inclusion is curated by AutoBSgenome maintainers.
 7. Keep delete_token private. Only explain deletion if I ask.`;
 
@@ -312,11 +316,11 @@ export default function AgentsPage() {
               Install the completed tarball
             </div>
             <pre className="mt-2 overflow-x-auto rounded-md bg-background p-3 font-mono text-xs text-foreground">
-{`install.packages(
-  "TARBALL_URL_FROM_STATUS_OR_PACKAGE_CARD",
-  repos = NULL,
-  type = "source"
-)`}
+{`url <- "TARBALL_URL_FROM_STATUS_OR_PACKAGE_CARD"
+pkg <- tempfile(fileext = ".tar.gz")
+download.file(url, pkg, mode = "wb", method = "libcurl")
+install.packages(pkg, repos = NULL, type = "source")
+unlink(pkg)`}
             </pre>
           </div>
 

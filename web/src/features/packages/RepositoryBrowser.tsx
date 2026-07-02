@@ -18,6 +18,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { SpeciesImage } from "@/components/SpeciesImage";
 import { Input } from "@/components/ui/input";
 import { siteConfig } from "@/config";
+import {
+  publicPackageDownloadUrl,
+  warningFreeInstallCommand,
+} from "@/lib/install-command";
 import { cleanOrganismName } from "@/lib/package-name";
 import { cn } from "@/lib/utils";
 import { fetchRepositoryJson } from "@/features/packages/repository-api";
@@ -606,7 +610,7 @@ function installCommand(build: BuildPackage): string | null {
   // is not reliably populated, so falling back to it would hand the user a
   // command that 404s.
   if (!build.download_url) return null;
-  return `install.packages(\n  "${build.download_url}",\n  repos = NULL, type = "source"\n)`;
+  return warningFreeInstallCommand(build.download_url);
 }
 
 function matchesKingdom(group: string | undefined, kingdom: Kingdom): boolean {
@@ -1248,10 +1252,16 @@ export function RepositoryBrowser() {
                     </span>
                     <div className="min-w-0">
                       <p className="text-sm text-foreground">
-                        Each package card below shows a ready-to-copy one-line R command.
+                        Each package card below shows a ready-to-copy R command
+                        that downloads the tarball first, then installs it from a
+                        local temporary file.
                       </p>
                       <code className="mt-2 block overflow-x-auto rounded-md bg-secondary px-3 py-2 font-mono text-xs text-foreground">
-                        install.packages(&quot;TARBALL_URL&quot;, repos = NULL, type = &quot;source&quot;)
+                        url &lt;- &quot;TARBALL_URL&quot;<br />
+                        pkg &lt;- tempfile(fileext = &quot;.tar.gz&quot;)<br />
+                        download.file(url, pkg, mode = &quot;wb&quot;, method = &quot;libcurl&quot;)<br />
+                        install.packages(pkg, repos = NULL, type = &quot;source&quot;)<br />
+                        unlink(pkg)
                       </code>
                     </div>
                   </div>
@@ -1892,7 +1902,7 @@ export function RepositoryBrowser() {
                                         Or download (offline)
                                       </div>
                                       <a
-                                        href={build.download_url}
+                                        href={publicPackageDownloadUrl(build.download_url)}
                                         title={`Download ${build.package}`}
                                         className={cn(
                                           "inline-flex min-h-12 w-fit max-w-full items-center justify-start gap-2 rounded-md border px-3.5 py-2 text-sm font-semibold shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 active:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 sm:max-w-lg",

@@ -6,6 +6,23 @@ interface Env {
   UPLOAD_TOKEN_SECRET?: string;
 }
 
+const PACKAGE_DOWNLOAD_ORIGIN = "https://packages.autobsgenome.org";
+
+function publicPackageDownloadUrl(downloadUrl: string, githubRepo: string): string {
+  try {
+    const url = new URL(downloadUrl);
+    const githubReleasePrefix = `/${githubRepo}/releases/download/`;
+    if (url.hostname !== "github.com" || !url.pathname.startsWith(githubReleasePrefix)) {
+      return downloadUrl;
+    }
+
+    const releasePath = url.pathname.slice(githubReleasePrefix.length);
+    return `${PACKAGE_DOWNLOAD_ORIGIN}/${releasePath}${url.search}${url.hash}`;
+  } catch {
+    return downloadUrl;
+  }
+}
+
 function corsHeaders(origin: string, allowedOrigin: string): HeadersInit {
   const allowedOrigins = allowedOrigin
     .split(",")
@@ -1273,7 +1290,9 @@ async function handleStatus(
       job_id: jobId,
       status: "complete",
       package_name: release.name,
-      download_url: asset?.browser_download_url ?? "",
+      download_url: asset?.browser_download_url
+        ? publicPackageDownloadUrl(asset.browser_download_url, env.GITHUB_REPO)
+        : "",
       file_name: asset?.name ?? "",
       file_size: asset?.size ?? 0,
       published,

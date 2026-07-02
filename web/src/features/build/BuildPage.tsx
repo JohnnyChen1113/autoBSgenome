@@ -47,6 +47,10 @@ import {
   type UploadPartResult,
 } from "@/lib/autobsgenome-api";
 import {
+  publicPackageDownloadUrl,
+  warningFreeInstallCommand,
+} from "@/lib/install-command";
+import {
   buildBSgenomePackageName,
   cleanOrganismName,
   validateBSgenomePackageName,
@@ -438,6 +442,18 @@ export default function Home() {
   const pollIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const formRef = useRef(form);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const displayDownloadUrl = downloadUrl
+    ? publicPackageDownloadUrl(downloadUrl)
+    : "";
+  const installCommand = displayDownloadUrl
+    ? warningFreeInstallCommand(displayDownloadUrl)
+    : "";
+  const fallbackDownloadUrl = jobId
+    ? publicPackageDownloadUrl(
+        `${siteConfig.githubUrl}/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`
+      )
+    : "";
   formRef.current = form;
 
   useEffect(() => {
@@ -1989,7 +2005,7 @@ export default function Home() {
                 <div className="flex gap-3 justify-center">
                   {downloadUrl && !buildDeleted ? (
                     <a
-                      href={downloadUrl}
+                      href={displayDownloadUrl}
                       download
                       className="inline-flex items-center justify-center rounded-md bg-primary h-11 px-8 text-base font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
                     >
@@ -2003,9 +2019,8 @@ export default function Home() {
                     className="h-11 px-8 text-base"
                     disabled={!downloadUrl || buildDeleted}
                     onClick={() => {
-                      if (!downloadUrl || buildDeleted) return;
-                      const cmd = `install.packages("${downloadUrl}", repos = NULL, type = "source")`;
-                      navigator.clipboard.writeText(cmd);
+                      if (!installCommand || buildDeleted) return;
+                      navigator.clipboard.writeText(installCommand);
                     }}
                   >
                     Copy Install Command
@@ -2022,17 +2037,9 @@ export default function Home() {
                   <div className="space-y-2">
                     <Label>Install directly in R:</Label>
                     <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
-                      install.packages(
-                      <br />
-                      &nbsp;&nbsp;
-                      <span className="text-primary">
-                        &quot;{downloadUrl || "loading..."}&quot;
-                      </span>
-                      ,
-                      <br />
-                      &nbsp;&nbsp;repos = NULL, type ={" "}
-                      <span className="text-primary">&quot;source&quot;</span>
-                      <br />)
+                      <pre className="m-0 whitespace-pre-wrap break-all">
+                        {installCommand || "loading..."}
+                      </pre>
                     </div>
                   </div>
                 )}
@@ -2091,13 +2098,13 @@ export default function Home() {
                         <div className="relative">
                           <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
                             Help me install this BSgenome R package:{" "}
-                            {downloadUrl || `${siteConfig.githubUrl}/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}
+                            {displayDownloadUrl || fallbackDownloadUrl}
                           </div>
                           <button
                             type="button"
                             className="absolute top-2 right-2 p-1.5 rounded bg-background border border-border text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
                             onClick={() => {
-                              const prompt = `Help me install this BSgenome R package: ${downloadUrl || `${siteConfig.githubUrl}/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`}`;
+                              const prompt = `Help me install this BSgenome R package: ${displayDownloadUrl || fallbackDownloadUrl}`;
                               navigator.clipboard.writeText(prompt);
                             }}
                             title="Copy to clipboard"
@@ -2221,7 +2228,7 @@ export default function Home() {
                           <>
                             {record.downloadUrl && (
                               <a
-                                href={record.downloadUrl}
+                                href={publicPackageDownloadUrl(record.downloadUrl)}
                                 className="inline-flex items-center gap-1 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
                               >
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>

@@ -245,7 +245,7 @@ done
 
 # 3. Install in R when complete
 URL=$(echo "$STATUS" | python3 -c "import json,sys; print(json.load(sys.stdin).get('download_url',''))")
-Rscript -e "install.packages('$URL', repos = NULL, type = 'source')"
+Rscript -e "url <- '$URL'; pkg <- tempfile(fileext = '.tar.gz'); download.file(url, pkg, mode = 'wb', method = 'libcurl'); install.packages(pkg, repos = NULL, type = 'source'); unlink(pkg)"
 
 # Optional: delete the temporary public release early
 curl -X DELETE "${WORKER}/api/build/$JOB_ID" \\
@@ -258,11 +258,11 @@ curl -X DELETE "${WORKER}/api/build/$JOB_ID" \\
             <h3 className="mb-2 font-heading font-semibold text-foreground">
               R install command
             </h3>
-            <CodeBlock>{`install.packages(
-  "TARBALL_URL_FROM_STATUS_OR_PACKAGE_CARD",
-  repos = NULL,
-  type = "source"
-)`}</CodeBlock>
+            <CodeBlock>{`url <- "TARBALL_URL_FROM_STATUS_OR_PACKAGE_CARD"
+pkg <- tempfile(fileext = ".tar.gz")
+download.file(url, pkg, mode = "wb", method = "libcurl")
+install.packages(pkg, repos = NULL, type = "source")
+unlink(pkg)`}</CodeBlock>
           </div>
         </section>
 

@@ -74,12 +74,12 @@ const installSnippets = [
   {
     icon: Download,
     title: "Install an AutoBSgenome-hosted package",
-    note: "Use the Copy button on a package card; it provides the real tarball URL.",
-    code: `install.packages(
-  "TARBALL_URL",
-  repos = NULL,
-  type = "source"
-)`,
+    note: "Use the Copy button on a package card; it downloads the tarball first, then installs from a local temporary file.",
+    code: `url <- "TARBALL_URL"
+pkg <- tempfile(fileext = ".tar.gz")
+download.file(url, pkg, mode = "wb", method = "libcurl")
+install.packages(pkg, repos = NULL, type = "source")
+unlink(pkg)`,
   },
   {
     icon: Hammer,

@@ -1,0 +1,10 @@
+name = "autobsgenome-packages"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+workers_dev = true
+routes = [
+  { pattern = "packages.autobsgenome.org", custom_domain = true, zone_name = "autobsgenome.org" },
+]
+
+[vars]
+GITHUB_REPO = "JohnnyChen1113/autoBSgenome"

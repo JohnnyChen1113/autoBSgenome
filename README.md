@@ -12,7 +12,7 @@ Build BSgenome packages directly in your browser. No local R, Python, or command
 2. Or provide a FASTA download URL / local nucleotide FASTA upload
 3. Review the auto-filled metadata
 4. Click Build, then download the temporary `.tar.gz`
-5. Install in R with `install.packages(..., repos = NULL, type = "source")`
+5. Copy the R install command, which downloads the tarball to a temporary local file and installs it with `install.packages(pkg, repos = NULL, type = "source")`
 
 The web tool supports NCBI, Ensembl, user-provided FASTA URLs, and local FASTA uploads. It auto-detects circular sequences when public assembly metadata is available, validates nucleotide FASTA inputs, generates Title/Description fields following BSgenome conventions, and lets users delete temporary build releases before scheduled cleanup.
 

@@ -19,6 +19,10 @@ import {
   fetchBuildStatus,
   startBuild,
 } from "@/lib/autobsgenome-api";
+import {
+  publicPackageDownloadUrl,
+  warningFreeInstallCommand,
+} from "@/lib/install-command";
 
 type BatchStatus = "pending" | "fetching" | "ready" | "ambiguous" | "error" | "building" | "done" | "failed";
 type Source = "ncbi" | "ensembl";
@@ -414,7 +418,7 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
                   </Badge>
                   {item.status === "done" && item.downloadUrl && (
                     <a
-                      href={item.downloadUrl}
+                      href={publicPackageDownloadUrl(item.downloadUrl)}
                       className="text-xs bg-primary text-primary-foreground px-2 py-1 rounded"
                       onClick={(e) => e.stopPropagation()}
                     >
@@ -477,18 +481,16 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
                   {item.status === "done" && (
                     <div className="space-y-2 pt-2 border-t">
                       <div className="bg-background rounded p-2 flex items-center justify-between gap-2">
-                        <code className="font-mono text-xs truncate">
-                          install.packages(&quot;{item.downloadUrl}&quot;, repos = NULL, type = &quot;source&quot;)
-                        </code>
+                        <pre className="m-0 min-w-0 whitespace-pre-wrap break-all font-mono text-xs">
+                          {warningFreeInstallCommand(item.downloadUrl)}
+                        </pre>
                         <Button
                           variant="outline"
                           size="sm"
                           className="text-xs flex-shrink-0"
                           onClick={(e) => {
                             e.stopPropagation();
-                            navigator.clipboard.writeText(
-                              `install.packages("${item.downloadUrl}", repos = NULL, type = "source")`
-                            );
+                            navigator.clipboard.writeText(warningFreeInstallCommand(item.downloadUrl));
                           }}
                         >
                           Copy

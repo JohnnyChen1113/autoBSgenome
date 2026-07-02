@@ -82,10 +82,16 @@ Poll every 5-10 seconds. Status responses may include `build_steps` with live st
 ### Step 3: Install in R
 
 ```r
-install.packages("DOWNLOAD_URL", repos = NULL, type = "source")
+url <- "DOWNLOAD_URL"
+pkg <- tempfile(fileext = ".tar.gz")
+download.file(url, pkg, mode = "wb", method = "libcurl")
+install.packages(pkg, repos = NULL, type = "source")
+unlink(pkg)
 ```
 
-Use direct tarball installation for AutoBSgenome packages. Do not use old CRAN-like repository install snippets.
+Download AutoBSgenome tarballs to a local temporary file before calling
+`install.packages()`. Do not pass remote URLs directly to `install.packages()`,
+and do not use old CRAN-like repository install snippets.
 
 ### Optional: Delete a Temporary Build
 
@@ -129,7 +135,11 @@ URL=$(echo $STATUS | python3 -c "import json,sys;print(json.load(sys.stdin).get(
 
 Then in R:
 ```r
-install.packages("URL_FROM_ABOVE", repos = NULL, type = "source")
+url <- "URL_FROM_ABOVE"
+pkg <- tempfile(fileext = ".tar.gz")
+download.file(url, pkg, mode = "wb", method = "libcurl")
+install.packages(pkg, repos = NULL, type = "source")
+unlink(pkg)
 library(BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308)
 ```
 

@@ -210,7 +210,7 @@ Check build status.
   "job_id": "4c1e14f7",
   "status": "complete",
   "package_name": "BSgenome.Hsapiens.NCBI.GRCh38 1.0.0",
-  "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/build-4c1e14f7/BSgenome.Hsapiens.NCBI.GRCh38_1.0.0.tar.gz",
+  "download_url": "https://packages.autobsgenome.org/build-4c1e14f7/BSgenome.Hsapiens.NCBI.GRCh38_1.0.0.tar.gz",
   "file_name": "BSgenome.Hsapiens.NCBI.GRCh38_1.0.0.tar.gz",
   "file_size": 782000000
 }
@@ -258,11 +258,13 @@ curl -X DELETE "https://api.autobsgenome.org/api/build/$JOB_ID" \
 ## Usage Example (R)
 
 ```r
-# After building via the web UI or API, install directly:
-install.packages(
-  "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/build-XXXX/BSgenome.Organism.Provider.Assembly_1.0.0.tar.gz",
-  repos = NULL, type = "source"
-)
+# After building via the web UI or API, download the tarball first and install
+# from the local temporary file. This avoids platform-specific tar warnings.
+url <- "https://packages.autobsgenome.org/build-XXXX/BSgenome.Organism.Provider.Assembly_1.0.0.tar.gz"
+pkg <- tempfile(fileext = ".tar.gz")
+download.file(url, pkg, mode = "wb", method = "libcurl")
+install.packages(pkg, repos = NULL, type = "source")
+unlink(pkg)
 ```
 
 ## CORS
