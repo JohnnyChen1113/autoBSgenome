@@ -8,6 +8,7 @@ import {
 import type { ReactNode } from "react";
 
 import { siteConfig } from "@/config";
+import { absoluteSiteUrl } from "@/lib/seo";
 
 import "@fontsource-variable/inter";
 import "@fontsource/crimson-pro/400.css";
@@ -21,33 +22,24 @@ import "@/styles/globals.css";
 
 export const Route = createRootRoute({
   head: () => {
-    const appUrl = siteConfig.url.replace(/\/$/, "");
     return {
       meta: [
         { charSet: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { title: `${siteConfig.name} - BSgenome Packages and Builder` },
-        { name: "description", content: siteConfig.description },
         {
           name: "keywords",
           content:
             "BSgenome,Bioconductor,R package,genome,NCBI,Ensembl,bioinformatics,genomics,BSgenomeForge,reference genome",
         },
         { name: "author", content: "Junhao Chen" },
-        { property: "og:title", content: `${siteConfig.name} - BSgenome Packages and Builder` },
-        { property: "og:description", content: siteConfig.description },
-        { property: "og:url", content: appUrl },
-        { property: "og:site_name", content: siteConfig.name },
-        { property: "og:type", content: "website" },
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: `${siteConfig.name} - BSgenome Packages and Builder` },
-        { name: "twitter:description", content: siteConfig.description },
+        { name: "theme-color", content: "#0f47b5" },
+        { name: "robots", content: "index, follow" },
+        { name: "googlebot", content: "index, follow" },
       ],
       links: [
         { rel: "icon", href: siteConfig.favicon, sizes: "any" },
         { rel: "icon", href: "/brand-icon.svg", type: "image/svg+xml" },
         { rel: "apple-touch-icon", href: "/icon-256.png" },
-        { rel: "canonical", href: `${appUrl}/` },
       ],
     };
   },
@@ -61,10 +53,29 @@ function RootComponent() {
 }
 
 function RootDocument({ children }: { children: ReactNode }) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "AutoBSgenome",
+    applicationCategory: "Bioinformatics software",
+    operatingSystem: "Web",
+    url: absoluteSiteUrl("/"),
+    description:
+      "AutoBSgenome builds and hosts installable BSgenome R packages from NCBI, Ensembl, FASTA URLs, and local nucleotide FASTA uploads.",
+    softwareHelp: absoluteSiteUrl("/help"),
+    programmingLanguage: ["R", "TypeScript"],
+    keywords:
+      "BSgenome, Bioconductor, R package, NCBI, Ensembl, reference genome, bioinformatics",
+  };
+
   return (
     <html lang="en" className="h-full antialiased">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
       <body className="min-h-full font-sans">
         {children}

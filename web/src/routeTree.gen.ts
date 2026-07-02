@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as PackagesRouteImport } from './routes/packages'
+import { Route as LlmsDottxtRouteImport } from './routes/llms[.]txt'
 import { Route as HelpRouteImport } from './routes/help'
 import { Route as BuildRouteImport } from './routes/build'
 import { Route as ApiDocsRouteImport } from './routes/api-docs'
@@ -31,6 +32,11 @@ const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
 const PackagesRoute = PackagesRouteImport.update({
   id: '/packages',
   path: '/packages',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LlmsDottxtRoute = LlmsDottxtRouteImport.update({
+  id: '/llms.txt',
+  path: '/llms.txt',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HelpRoute = HelpRouteImport.update({
@@ -65,6 +71,7 @@ export interface FileRoutesByFullPath {
   '/api-docs': typeof ApiDocsRoute
   '/build': typeof BuildRoute
   '/help': typeof HelpRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/packages': typeof PackagesRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -75,6 +82,7 @@ export interface FileRoutesByTo {
   '/api-docs': typeof ApiDocsRoute
   '/build': typeof BuildRoute
   '/help': typeof HelpRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/packages': typeof PackagesRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -86,6 +94,7 @@ export interface FileRoutesById {
   '/api-docs': typeof ApiDocsRoute
   '/build': typeof BuildRoute
   '/help': typeof HelpRoute
+  '/llms.txt': typeof LlmsDottxtRoute
   '/packages': typeof PackagesRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
     | '/api-docs'
     | '/build'
     | '/help'
+    | '/llms.txt'
     | '/packages'
     | '/robots.txt'
     | '/sitemap.xml'
@@ -108,6 +118,7 @@ export interface FileRouteTypes {
     | '/api-docs'
     | '/build'
     | '/help'
+    | '/llms.txt'
     | '/packages'
     | '/robots.txt'
     | '/sitemap.xml'
@@ -118,6 +129,7 @@ export interface FileRouteTypes {
     | '/api-docs'
     | '/build'
     | '/help'
+    | '/llms.txt'
     | '/packages'
     | '/robots.txt'
     | '/sitemap.xml'
@@ -129,6 +141,7 @@ export interface RootRouteChildren {
   ApiDocsRoute: typeof ApiDocsRoute
   BuildRoute: typeof BuildRoute
   HelpRoute: typeof HelpRoute
+  LlmsDottxtRoute: typeof LlmsDottxtRoute
   PackagesRoute: typeof PackagesRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -155,6 +168,13 @@ declare module '@tanstack/react-router' {
       path: '/packages'
       fullPath: '/packages'
       preLoaderRoute: typeof PackagesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/llms.txt': {
+      id: '/llms.txt'
+      path: '/llms.txt'
+      fullPath: '/llms.txt'
+      preLoaderRoute: typeof LlmsDottxtRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/help': {
@@ -201,6 +221,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiDocsRoute: ApiDocsRoute,
   BuildRoute: BuildRoute,
   HelpRoute: HelpRoute,
+  LlmsDottxtRoute: LlmsDottxtRoute,
   PackagesRoute: PackagesRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,

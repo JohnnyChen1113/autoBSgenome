@@ -7,11 +7,14 @@ export const Route = createFileRoute("/robots.txt")({
     handlers: {
       GET: async () => {
         const origin = siteConfig.url.replace(/\/$/, "");
-        return new Response(`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`, {
-          headers: {
-            "content-type": "text/plain; charset=utf-8",
-          },
-        });
+        return new Response(
+          `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\nHost: ${origin.replace(/^https?:\/\//, "")}\n`,
+          {
+            headers: {
+              "content-type": "text/plain; charset=utf-8",
+            },
+          }
+        );
       },
     },
   },

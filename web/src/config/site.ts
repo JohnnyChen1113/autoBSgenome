@@ -41,4 +41,4 @@ export const siteConfig = {
   favicon: "/favicon.ico",
 };
 
-export const sitePaths = ["/", "/build", "/packages", "/help", "/api-docs", "/agents"];
+export const sitePaths = ["/", "/packages", "/build", "/help", "/api-docs", "/agents"];
