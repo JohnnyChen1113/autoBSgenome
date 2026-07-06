@@ -1804,7 +1804,7 @@ export function RepositoryBrowser() {
                                 )}
                                 {build.seq_count && (
                                   <span>
-                                    Sequences:{" "}
+                                    Number of sequences:{" "}
                                     <span className="text-foreground">
                                       {build.seq_count.toLocaleString()}
                                     </span>
