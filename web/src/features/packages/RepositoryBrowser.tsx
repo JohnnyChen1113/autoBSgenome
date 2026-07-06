@@ -38,6 +38,7 @@ type CatalogAccession = {
   assembly: string;
   source?: string;
   size_mb?: number;
+  group?: string;
 };
 
 type BuildPackage = {
@@ -193,6 +194,13 @@ function metadataForOrganism(
     if (found) return found;
   }
   return undefined;
+}
+
+function effectiveGroup(org: OrganismEntry): string | undefined {
+  if (org.group && org.group !== "other") return org.group;
+  return org._accessions?.find(
+    (accession) => accession.group && accession.group !== "other"
+  )?.group ?? org.group;
 }
 
 function isAnimal(group?: string): boolean {
@@ -790,6 +798,7 @@ function mergeRepositoryData(
       assembly: row.m ?? "",
       source: row.s ?? "",
       size_mb: row.z,
+      group: row.g,
     };
     const current = merged.get(key);
     if (current) {
@@ -825,7 +834,7 @@ function filterOrganisms(
 ): OrganismEntry[] {
   const normalized = query.trim().toLowerCase();
   return organisms.filter((org) => {
-    if (!matchesKingdom(org.group, kingdom)) return false;
+    if (!matchesKingdom(effectiveGroup(org), kingdom)) return false;
     if (!matchesAvailability(org, availability)) return false;
     if (!matchesDataSource(org, dataSource)) return false;
 
@@ -970,7 +979,7 @@ export function RepositoryBrowser() {
   const [error, setError] = useState("");
   const [query, setQuery] = useState(initialSearchQuery);
   const [kingdom, setKingdom] = useState<Kingdom>("all");
-  const [availability, setAvailability] = useState<AvailabilityFilter>("built");
+  const [availability, setAvailability] = useState<AvailabilityFilter>("catalog");
   const [dataSource, setDataSource] = useState<DataSourceFilter>("all");
   const [letter, setLetter] = useState("");
   const [visibleLimit, setVisibleLimit] = useState({
@@ -1046,11 +1055,12 @@ export function RepositoryBrowser() {
       if (!matchesAvailability(org, availability)) continue;
       if (!matchesDataSource(org, dataSource)) continue;
       c.all += 1;
-      if (isAnimal(org.group)) c.animal += 1;
-      if (isPlant(org.group)) c.plant += 1;
-      if (isFungi(org.group)) c.fungi += 1;
-      if (isProtist(org.group)) c.protist += 1;
-      if (isProkaryote(org.group)) c.prokaryote += 1;
+      const group = effectiveGroup(org);
+      if (isAnimal(group)) c.animal += 1;
+      if (isPlant(group)) c.plant += 1;
+      if (isFungi(group)) c.fungi += 1;
+      if (isProtist(group)) c.protist += 1;
+      if (isProkaryote(group)) c.prokaryote += 1;
     }
     return c;
   }, [organisms, availability, dataSource]);
@@ -1058,7 +1068,7 @@ export function RepositoryBrowser() {
   const availabilityCounts = useMemo(() => {
     const c = { built: 0, unbuilt: 0, catalog: 0 };
     for (const org of organisms) {
-      if (!matchesKingdom(org.group, kingdom)) continue;
+      if (!matchesKingdom(effectiveGroup(org), kingdom)) continue;
       if (!matchesDataSource(org, dataSource)) continue;
       if (matchesAvailability(org, "built")) c.built += 1;
       if (matchesAvailability(org, "unbuilt")) c.unbuilt += 1;
@@ -1070,7 +1080,7 @@ export function RepositoryBrowser() {
   const dataSourceCounts = useMemo(() => {
     const c = { all: 0, ncbi: 0, ensembl: 0, bioconductor: 0 };
     for (const org of organisms) {
-      if (!matchesKingdom(org.group, kingdom)) continue;
+      if (!matchesKingdom(effectiveGroup(org), kingdom)) continue;
       if (!matchesAvailability(org, availability)) continue;
       c.all += 1;
       if (matchesDataSource(org, "ncbi")) c.ncbi += 1;
@@ -1203,9 +1213,9 @@ export function RepositoryBrowser() {
     label: string;
     count: number;
   }[] = [
+    { key: "catalog", label: "Full catalog", count: availabilityCounts.catalog },
     { key: "built", label: "Already built", count: availabilityCounts.built },
     { key: "unbuilt", label: "Not built yet", count: availabilityCounts.unbuilt },
-    { key: "catalog", label: "Full catalog", count: availabilityCounts.catalog },
   ];
 
   const dataSourceOptions: {
@@ -1439,7 +1449,9 @@ export function RepositoryBrowser() {
               org.canonical_name ??
               org.organism;
             const commonName = org.common_name || metadata?.common_name;
-            const displayGroup = org.group || metadata?.group;
+            const metadataGroup =
+              metadata?.group && metadata.group !== "other" ? metadata.group : undefined;
+            const displayGroup = metadataGroup ?? effectiveGroup(org);
             const displayTaxonomy = mergeTaxonomy(org.taxonomy, metadata?.taxonomy);
             const crumbs = taxonomyBreadcrumb(displayTaxonomy);
             const catalogSource = firstAccession

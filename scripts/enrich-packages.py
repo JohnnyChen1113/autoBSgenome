@@ -104,6 +104,8 @@ def compute_group(taxonomy):
         return "vertebrate_other"
     if kingdom == "Metazoa":
         return "invertebrate"
+    if domain == "Eukaryota":
+        return "protozoa"
 
     return "other"
 
