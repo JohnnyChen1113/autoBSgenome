@@ -138,7 +138,7 @@ type CatalogRow = {
   z?: number;
 };
 
-type Kingdom = "all" | "animal" | "plant" | "fungi" | "prokaryote";
+type Kingdom = "all" | "animal" | "plant" | "fungi" | "protist" | "prokaryote";
 type AvailabilityFilter = "built" | "unbuilt" | "catalog";
 type DataSourceFilter = "all" | "ncbi" | "ensembl" | "bioconductor";
 type PackageDataSource = Exclude<DataSourceFilter, "all">;
@@ -212,6 +212,10 @@ function isFungi(group?: string): boolean {
   return group === "fungi";
 }
 
+function isProtist(group?: string): boolean {
+  return ["protozoa", "protist", "protists"].includes(group ?? "");
+}
+
 // Strict prokaryotes: bacteria + archaea only. Viruses are not life;
 // protozoa/protists are eukaryotes. Neither belongs here.
 function isProkaryote(group?: string): boolean {
@@ -231,6 +235,7 @@ function groupLabel(group?: string): string {
     archaea: "Archaea",
     viral: "Virus",
     protozoa: "Protozoa",
+    protist: "Protist",
     protists: "Protist",
   };
   return labels[group ?? ""] ?? "Other";
@@ -623,6 +628,8 @@ function matchesKingdom(group: string | undefined, kingdom: Kingdom): boolean {
       return isPlant(group);
     case "fungi":
       return isFungi(group);
+    case "protist":
+      return isProtist(group);
     case "prokaryote":
       return isProkaryote(group);
   }
@@ -1027,7 +1034,14 @@ export function RepositoryBrowser() {
   // This is what users actually want when comparing chips, instead of raw
   // population numbers that don't intersect.
   const kingdomCounts = useMemo(() => {
-    const c = { all: 0, animal: 0, plant: 0, fungi: 0, prokaryote: 0 };
+    const c = {
+      all: 0,
+      animal: 0,
+      plant: 0,
+      fungi: 0,
+      protist: 0,
+      prokaryote: 0,
+    };
     for (const org of organisms) {
       if (!matchesAvailability(org, availability)) continue;
       if (!matchesDataSource(org, dataSource)) continue;
@@ -1035,6 +1049,7 @@ export function RepositoryBrowser() {
       if (isAnimal(org.group)) c.animal += 1;
       if (isPlant(org.group)) c.plant += 1;
       if (isFungi(org.group)) c.fungi += 1;
+      if (isProtist(org.group)) c.protist += 1;
       if (isProkaryote(org.group)) c.prokaryote += 1;
     }
     return c;
@@ -1179,6 +1194,7 @@ export function RepositoryBrowser() {
     { key: "animal", label: "Animals", count: kingdomCounts.animal },
     { key: "plant", label: "Plants", count: kingdomCounts.plant },
     { key: "fungi", label: "Fungi", count: kingdomCounts.fungi },
+    { key: "protist", label: "Protists", count: kingdomCounts.protist },
     { key: "prokaryote", label: "Prokaryotes", count: kingdomCounts.prokaryote },
   ];
 
