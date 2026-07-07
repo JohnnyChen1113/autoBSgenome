@@ -172,6 +172,13 @@ cython_debug/
 .superpowers/
 .DS_Store
 .nezha/
+.codex/
+.claude/
+
+# Local manuscript drafts and generated figure/document artifacts
+/paper/
+**/~$*.docx
+
 web/node_modules/
 web/.next/
 worker/node_modules/

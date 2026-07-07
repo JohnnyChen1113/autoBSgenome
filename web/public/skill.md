@@ -82,10 +82,10 @@ Poll every 5-10 seconds. Status responses may include `build_steps` with live st
 ### Step 3: Install in R
 
 ```r
-local({url <- "DOWNLOAD_URL"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})
+local({options(timeout = 7200); url <- "DOWNLOAD_URL"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})
 ```
 
-Download AutoBSgenome tarballs to a local temporary file before calling
+Download AutoBSgenome tarballs to a local file before calling
 `install.packages()`. Do not pass remote URLs directly to `install.packages()`,
 and do not use old CRAN-like repository install snippets.
 
@@ -131,7 +131,7 @@ URL=$(echo $STATUS | python3 -c "import json,sys;print(json.load(sys.stdin).get(
 
 Then in R:
 ```r
-local({url <- "URL_FROM_ABOVE"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})
+local({options(timeout = 7200); url <- "URL_FROM_ABOVE"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})
 library(BSgenome.Aluchuensis.NCBI.AkawachiiIFO4308)
 ```
 

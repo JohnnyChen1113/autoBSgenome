@@ -259,8 +259,8 @@ curl -X DELETE "https://api.autobsgenome.org/api/build/$JOB_ID" \
 
 ```r
 # After building via the web UI or API, download the tarball first and install
-# from the local temporary file. This avoids platform-specific tar warnings.
-local({url <- "https://packages.autobsgenome.org/build-XXXX/BSgenome.Organism.Provider.Assembly_1.0.0.tar.gz"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})
+# from the local file. This avoids platform-specific tar warnings.
+local({options(timeout = 7200); url <- "https://packages.autobsgenome.org/build-XXXX/BSgenome.Organism.Provider.Assembly_1.0.0.tar.gz"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})
 ```
 
 ## CORS

@@ -623,7 +623,11 @@ function installCommand(build: BuildPackage): string | null {
   // is not reliably populated, so falling back to it would hand the user a
   // command that 404s.
   if (!build.download_url) return null;
-  return warningFreeInstallCommand(build.download_url);
+  return warningFreeInstallCommand(build.download_url, {
+    fileName: build.file_name,
+    size: build.size ?? build.metrics?.tarball_size_bytes,
+    storage: build.storage,
+  });
 }
 
 function matchesKingdom(group: string | undefined, kingdom: Kingdom): boolean {
@@ -1280,10 +1284,10 @@ export function RepositoryBrowser() {
                       <p className="text-sm text-foreground">
                         Each package card below shows a ready-to-copy R command
                         that downloads the tarball first, then installs it from a
-                        local temporary file.
+                        local file.
                       </p>
                       <code className="mt-2 block overflow-x-auto rounded-md bg-secondary px-3 py-2 font-mono text-xs text-foreground">
-                        local(&#123;url &lt;- &quot;TARBALL_URL&quot;; tarball &lt;- tempfile(fileext = &quot;.tar.gz&quot;); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = &quot;wb&quot;, method = &quot;libcurl&quot;); install.packages(tarball, repos = NULL, type = &quot;source&quot;)&#125;)
+                        local(&#123;options(timeout = 7200); url &lt;- &quot;TARBALL_URL&quot;; tarball &lt;- tempfile(fileext = &quot;.tar.gz&quot;); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = &quot;wb&quot;, method = &quot;libcurl&quot;); install.packages(tarball, repos = NULL, type = &quot;source&quot;)&#125;)
                       </code>
                     </div>
                   </div>

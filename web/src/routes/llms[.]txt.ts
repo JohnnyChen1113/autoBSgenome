@@ -24,7 +24,7 @@ AutoBSgenome is a web service and API for building, browsing, and installing BSg
 - Builds BSgenome source packages from NCBI assembly accessions, Ensembl species URLs, FASTA download URLs, and local nucleotide FASTA uploads.
 - Provides a searchable BSgenome package repository with package metadata, accession links, taxonomy, install commands, and tarball downloads.
 - Runs builds through GitHub Actions and returns temporary package tarballs.
-- Uses warning-free R install commands that first download a tarball to a local temporary file, then run install.packages() on that file.
+- Uses warning-free R install commands that first download a tarball to a local file, then run install.packages() on that file.
 
 ## Recommended Agent Behavior
 1. Search ${origin}/packages first.

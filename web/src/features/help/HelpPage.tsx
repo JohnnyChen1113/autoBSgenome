@@ -74,8 +74,8 @@ const installSnippets = [
   {
     icon: Download,
     title: "Install an AutoBSgenome-hosted package",
-    note: "Use the Copy button on a package card; it downloads the tarball first, then installs from a local temporary file.",
-    code: `local({url <- "TARBALL_URL"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})`,
+    note: "Use the Copy button on a package card; it downloads the tarball first, then installs from a local file.",
+    code: `local({options(timeout = 7200); url <- "TARBALL_URL"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})`,
   },
   {
     icon: Hammer,
