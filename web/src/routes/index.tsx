@@ -8,7 +8,7 @@ export const Route = createFileRoute("/")({
     seoHead({
       title: "AutoBSgenome - Build and Browse BSgenome R Packages",
       description:
-        "Build BSgenome R packages online from NCBI, Ensembl, FASTA URLs, or local nucleotide FASTA files, and browse installable AutoBSgenome packages for R and Bioconductor workflows.",
+        "Build BSgenome R packages online from NCBI, Ensembl, FASTA URLs, and local FASTA uploads. Search packages and install them in R genomics workflows.",
       path: "/",
       keywords:
         "AutoBSgenome, BSgenome, build BSgenome package, Bioconductor BSgenome, R genomics, NCBI genome, Ensembl genome",

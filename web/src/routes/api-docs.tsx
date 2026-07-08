@@ -8,7 +8,7 @@ export const Route = createFileRoute("/api-docs")({
     seoHead({
       title: "AutoBSgenome API Documentation",
       description:
-        "Programmatic API documentation for triggering BSgenome builds, uploading nucleotide FASTA files, polling GitHub Actions build status, and deleting temporary build releases.",
+        "Use the AutoBSgenome API to trigger BSgenome builds, upload nucleotide FASTA files, poll GitHub Actions status, and delete temporary releases.",
       path: "/api-docs",
       keywords:
         "AutoBSgenome API, BSgenome build API, FASTA upload API, GitHub Actions genome package build",

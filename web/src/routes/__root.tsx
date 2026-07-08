@@ -61,7 +61,7 @@ function RootDocument({ children }: { children: ReactNode }) {
     operatingSystem: "Web",
     url: absoluteSiteUrl("/"),
     description:
-      "AutoBSgenome builds and hosts installable BSgenome R packages from NCBI, Ensembl, FASTA URLs, and local nucleotide FASTA uploads.",
+      "AutoBSgenome builds and hosts installable BSgenome R packages from NCBI, Ensembl, FASTA URLs, and local FASTA uploads for R genomics workflows.",
     softwareHelp: absoluteSiteUrl("/help"),
     programmingLanguage: ["R", "TypeScript"],
     keywords:

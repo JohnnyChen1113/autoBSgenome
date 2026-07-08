@@ -1272,16 +1272,19 @@ export function RepositoryBrowser() {
           <div className="mt-6 rounded-lg border border-border bg-background p-4">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div className="min-w-0 flex-1">
-                <div className="text-sm font-medium text-foreground">
+                <h2 className="text-sm font-medium text-foreground">
                   How to install
-                </div>
+                </h2>
                 <div className="mt-3 grid gap-3 lg:grid-cols-2">
                   <div className="flex min-w-0 gap-3">
                     <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary font-mono text-xs font-semibold text-primary-foreground">
                       1
                     </span>
                     <div className="min-w-0">
-                      <p className="text-sm text-foreground">
+                      <h3 className="text-sm font-medium text-foreground">
+                        Copy the R install command
+                      </h3>
+                      <p className="mt-1 text-sm text-foreground">
                         Each package card below shows a ready-to-copy R command
                         that downloads the tarball first, then installs it from a
                         local file.
@@ -1295,9 +1298,14 @@ export function RepositoryBrowser() {
                     <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary font-mono text-xs font-semibold text-primary-foreground">
                       2
                     </span>
-                    <p className="text-sm leading-6 text-foreground">
-                      You can also click Download to grab the tarball and install offline.
-                    </p>
+                    <div className="min-w-0">
+                      <h3 className="text-sm font-medium text-foreground">
+                        Download the tarball
+                      </h3>
+                      <p className="mt-1 text-sm leading-6 text-foreground">
+                        You can also click Download to grab the tarball and install offline.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1728,9 +1736,9 @@ export function RepositoryBrowser() {
                           >
                             <div className="min-w-0">
                               <div className="flex flex-wrap items-center gap-2">
-                                <div className="break-words font-mono text-sm font-medium text-foreground">
+                                <h3 className="break-words font-mono text-sm font-medium text-foreground">
                                   {build.package}
-                                </div>
+                                </h3>
                                 {(() => {
                                   const src = buildSourceLink(
                                     build,

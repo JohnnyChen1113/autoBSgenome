@@ -8,7 +8,7 @@ export const Route = createFileRoute("/packages")({
     seoHead({
       title: "BSgenome Package Repository - AutoBSgenome",
       description:
-        "Search installable BSgenome R packages by organism, assembly, accession, provider, and taxonomy. Copy warning-free R install commands for AutoBSgenome and Bioconductor packages.",
+        "Search BSgenome R packages by organism, assembly, accession, provider, and taxonomy. Copy warning-free R install commands for each package directly.",
       path: "/packages",
       keywords:
         "BSgenome package repository, install BSgenome, BSgenome packages, Bioconductor genome package, NCBI BSgenome, Ensembl BSgenome",

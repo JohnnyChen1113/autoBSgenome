@@ -198,7 +198,7 @@ export default function HomePage() {
                       <span className="block size-16 overflow-hidden">
                         <SpeciesImage
                           src={item.image}
-                          alt=""
+                          alt={`${item.organism} reference image`}
                           fit={item.imageFit}
                         />
                       </span>

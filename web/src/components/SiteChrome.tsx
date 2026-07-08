@@ -50,7 +50,7 @@ export function SiteHeader({ active }: { active?: NavKey }) {
         >
           <img
             src="/brand-icon.svg"
-            alt=""
+            alt="AutoBSgenome logo"
             className="h-14 w-14"
           />
           <span className="font-heading text-[1.18rem] font-semibold tracking-tight text-ink transition-colors hover:text-primary">
@@ -93,7 +93,7 @@ export function SiteFooter() {
             <div className="flex items-center gap-2.5">
               <img
                 src="/brand-icon.svg"
-                alt=""
+                alt="AutoBSgenome logo"
                 className="h-8 w-8"
               />
               <span className="font-heading text-base font-semibold tracking-tight text-ink">

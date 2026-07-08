@@ -27,7 +27,7 @@ export const siteConfig = {
   name: publicEnv("VITE_APP_NAME") ?? "AutoBSgenome",
   description:
     publicEnv("VITE_APP_DESCRIPTION") ??
-    "Build, browse, and automate BSgenome R packages from NCBI and Ensembl assemblies.",
+    "Build, browse, and automate BSgenome R packages from NCBI, Ensembl, FASTA URLs, and local nucleotide FASTA uploads for R genomics workflows.",
   url: publicEnv("VITE_APP_URL") ?? "https://autobsgenome.org",
   apiBase: apiBase(),
   repositoryBase:
