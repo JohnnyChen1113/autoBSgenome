@@ -19,7 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     container:
-      image: ghcr.io/johnnychen1113/autobsgenome-builder:latest
+      # Builder release v1.0.0. The digest keeps every build on the same image.
+      image: ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d
 
     steps:
       - name: Checkout repository

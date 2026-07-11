@@ -73,6 +73,16 @@ Cloudflare Workers (frontend) → Cloudflare Workers (API) → GitHub Actions (R
 
 The public package repository is indexed by `packages.json` and the R-facing `src/contrib/PACKAGES` file on the `gh-pages` branch.
 
+## Reproducibility
+
+The package build workflow uses a public builder image pinned by an immutable digest. A complete reference build can be run from the repository root with one command.
+
+```bash
+./scripts/reproduce-test-build.sh
+```
+
+The command rebuilds the included *Akawachii luchuensis* test package and verifies sequence retrieval from the installed BSgenome object. The fixed image identity, exact software versions and output files are described in [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
+
 ## License
 
 GPL-3.0

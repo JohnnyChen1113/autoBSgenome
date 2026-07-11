@@ -1,0 +1,20 @@
+autoBSgenome builder release v1.0.0
+Inspection date: 2026-07-11
+Platform: linux/amd64
+Image: ghcr.io/johnnychen1113/autobsgenome-builder
+Image digest: sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d
+
+R: 4.4.0 (2024-04-24)
+Bioconductor: 3.20
+BSgenome: 1.74.0
+BSgenomeForge: 1.6.0
+NCBI Datasets: 18.22.1
+NCBI Datasets binary SHA256: 5d69784b20a518097c622879c6a2f2d1ff712b8c2178a439c5ff9fb02cca80c4
+
+UCSC faToTwoBit does not expose a software version option.
+faToTwoBit binary SHA256: 01f8c5a6900c88febf33e3b4cb4a8ee56bf3446e76784fce5ba00a1abd1d42a6
+faToTwoBit ELF Build ID: efb70148756b3b739afde6f068bf3b8cbe6d8e27
+faToTwoBit binary size: 7968192 bytes
+faToTwoBit source URL: https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit
+
+GitHub CLI: 2.89.0
