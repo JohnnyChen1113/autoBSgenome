@@ -124,6 +124,11 @@ celerybeat.pid
 
 # Environments
 .env
+.env.*
+!.env.example
+!.env.*.example
+.dev.vars
+.dev.vars.*
 .venv
 env/
 venv/
@@ -178,6 +183,8 @@ cython_debug/
 
 # Local manuscript drafts and generated figure/document artifacts
 /paper/
+/output/
+/scripts/format_manuscript_docx.py
 **/~$*.docx
 
 web/node_modules/
