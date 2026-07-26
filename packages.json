@@ -249633,6 +249633,92 @@
       ]
     },
     {
+      "organism": "aalivirus A1",
+      "common_name": "",
+      "group": "other",
+      "taxonomy": {
+        "kingdom": "Orthornavirae",
+        "phylum": "Pisuviricota",
+        "class": "Pisoniviricetes",
+        "order": "Picornavirales",
+        "family": "Picornaviridae",
+        "genus": "Aalivirus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aa.NCBI.ViralProj244477",
+          "version": "1.0.0",
+          "organism": "aalivirus A1",
+          "assembly": "ViralProj244477",
+          "provider": "NCBI",
+          "accession": "GCF_000919155.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000919155.1/",
+          "file_name": "BSgenome.Aa.NCBI.ViralProj244477_1.0.0.tar.gz",
+          "size": 4450,
+          "seq_ids": [
+            "NC_023985.1"
+          ],
+          "seq_count": 1,
+          "group": "other",
+          "taxonomy": {
+            "kingdom": "Orthornavirae",
+            "phylum": "Pisuviricota",
+            "class": "Pisoniviricetes",
+            "order": "Picornavirales",
+            "family": "Picornaviridae",
+            "genus": "Aalivirus"
+          },
+          "common_name": "",
+          "indexed_at": "2026-07-26T23:21:41Z",
+          "storage": "github-release",
+          "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aa.NCBI.ViralProj244477/BSgenome.Aa.NCBI.ViralProj244477_1.0.0.tar.gz",
+          "release_date": "Apr. 2014",
+          "published": "Apr. 2014",
+          "metrics": {
+            "schema_version": 1,
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 85.76,
+              "cpu_count": 4
+            },
+            "timings_sec": {
+              "fasta_download": 0,
+              "fasta_to_2bit": 1,
+              "forge": 6,
+              "rcmd_build": 0
+            },
+            "fasta_size_bytes": 9143,
+            "peak_disk_gb": {
+              "after_fasta_download": 58.48,
+              "after_2bit": 58.48,
+              "after_forge": 58.48,
+              "after_rcmd_build": 58.48
+            },
+            "twobit_size_bytes": 2292,
+            "used_long_2bit": false,
+            "peak_mem_mb": {
+              "forge": 709
+            },
+            "tarball_size_bytes": 4450,
+            "seq_count": 1
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000919155.1/",
+            "source_accession": "GCF_000919155.1",
+            "built_at": "2026-07-26T23:21:26Z",
+            "workflow_run_id": "30225047430",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/30225047430",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder:latest",
+            "package_sha256": "15fb518c5d7a039bebe7abc99226611e87e449f6950d06a109345c03bc06768c",
+            "description_sha256": "6277316d403a1de103a2cf62fdc57b57cc594b3b43489be836e305a55f222931"
+          }
+        }
+      ]
+    },
+    {
       "organism": "endosymbiont of Rhynchophorus ferrugineus",
       "common_name": "",
       "group": "bacteria",
@@ -453622,6 +453708,77 @@
         "built_at": "2026-07-01T20:16:24Z",
         "builder_image": "cloudflare-worker-publish",
         "package_sha256": "c7efb14644475c893783417d82a7a770fc3a023b5a0e18315319b06a8df98919"
+      }
+    },
+    {
+      "package": "BSgenome.Aa.NCBI.ViralProj244477",
+      "version": "1.0.0",
+      "organism": "aalivirus A1",
+      "assembly": "ViralProj244477",
+      "provider": "NCBI",
+      "accession": "GCF_000919155.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000919155.1/",
+      "file_name": "BSgenome.Aa.NCBI.ViralProj244477_1.0.0.tar.gz",
+      "size": 4450,
+      "seq_ids": [
+        "NC_023985.1"
+      ],
+      "seq_count": 1,
+      "group": "other",
+      "taxonomy": {
+        "kingdom": "Orthornavirae",
+        "phylum": "Pisuviricota",
+        "class": "Pisoniviricetes",
+        "order": "Picornavirales",
+        "family": "Picornaviridae",
+        "genus": "Aalivirus"
+      },
+      "common_name": "",
+      "indexed_at": "2026-07-26T23:21:41Z",
+      "storage": "github-release",
+      "download_url": "https://github.com/JohnnyChen1113/autoBSgenome/releases/download/pkg-BSgenome.Aa.NCBI.ViralProj244477/BSgenome.Aa.NCBI.ViralProj244477_1.0.0.tar.gz",
+      "release_date": "Apr. 2014",
+      "published": "Apr. 2014",
+      "metrics": {
+        "schema_version": 1,
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 85.76,
+          "cpu_count": 4
+        },
+        "timings_sec": {
+          "fasta_download": 0,
+          "fasta_to_2bit": 1,
+          "forge": 6,
+          "rcmd_build": 0
+        },
+        "fasta_size_bytes": 9143,
+        "peak_disk_gb": {
+          "after_fasta_download": 58.48,
+          "after_2bit": 58.48,
+          "after_forge": 58.48,
+          "after_rcmd_build": 58.48
+        },
+        "twobit_size_bytes": 2292,
+        "used_long_2bit": false,
+        "peak_mem_mb": {
+          "forge": 709
+        },
+        "tarball_size_bytes": 4450,
+        "seq_count": 1
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000919155.1/",
+        "source_accession": "GCF_000919155.1",
+        "built_at": "2026-07-26T23:21:26Z",
+        "workflow_run_id": "30225047430",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/30225047430",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder:latest",
+        "package_sha256": "15fb518c5d7a039bebe7abc99226611e87e449f6950d06a109345c03bc06768c",
+        "description_sha256": "6277316d403a1de103a2cf62fdc57b57cc594b3b43489be836e305a55f222931"
       }
     }
   ]
