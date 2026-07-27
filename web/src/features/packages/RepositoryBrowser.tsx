@@ -2060,10 +2060,6 @@ export function RepositoryBrowser() {
                           >
                             <div className="min-w-0">
                               <div className="flex flex-wrap items-center gap-2">
-                                <span className="text-sm font-medium text-foreground">
-                                  {sourceLabel} reference available
-                                </span>
-                                <Badge variant="outline">Not built yet</Badge>
                                 {source && (
                                   <a
                                     href={source.url}
@@ -2079,6 +2075,10 @@ export function RepositoryBrowser() {
                                     <ExternalLink className="size-3" />
                                   </a>
                                 )}
+                                {!source && (
+                                  <Badge variant="outline">{sourceLabel}</Badge>
+                                )}
+                                <Badge variant="outline">Not built yet</Badge>
                               </div>
                               <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted-foreground">
                                 {accession.assembly && (
