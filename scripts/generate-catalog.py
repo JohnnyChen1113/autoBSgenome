@@ -4,7 +4,11 @@
 The public package browser keeps catalog rows intentionally small:
 
   { "a": accession, "o": organism, "m": assembly, "g": group,
-    "s": source, "z": genome_size_mb }
+    "s": source, "z": genome_size_mb, "p": collision-safe package name }
+
+``p`` is omitted for ordinary rows and is present only when the normal
+organism/provider/assembly name would collide (or when preserving a prior
+collision assignment for identity stability).
 
 This script composes current NCBI RefSeq rows with a validated Ensembl snapshot
 and preserves any catalog sources not owned by either importer.
@@ -16,8 +20,12 @@ import argparse
 import csv
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Iterable
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from normalize_package_name import build_package_name, disambiguate_package_name
 
 
 def clean_organism(value: str) -> str:
@@ -115,6 +123,56 @@ def sort_key(row: dict[str, object]) -> tuple[str, str, str, str]:
     )
 
 
+def assign_collision_safe_package_names(
+    catalog: list[dict[str, object]],
+    previous_names: dict[tuple[str, str], str],
+) -> None:
+    """Store ``p`` only where the human-readable base name is ambiguous.
+
+    Existing assignments are retained even after an upstream row disappears,
+    so a package name never changes merely because its former collision mate
+    left the catalog.
+    """
+    groups: dict[str, list[dict[str, object]]] = {}
+    for row in catalog:
+        provider = "Ensembl" if str(row.get("s") or "").lower() == "ensembl" else "NCBI"
+        base, reason = build_package_name(
+            str(row.get("o") or ""), provider, str(row.get("m") or "")
+        )
+        if not base:
+            raise ValueError(f"cannot name catalog row {row_key(row)}: {reason}")
+        groups.setdefault(base, []).append(row)
+
+    for rows in groups.values():
+        if len(rows) < 2:
+            row = rows[0]
+            previous = previous_names.get(row_key(row), "")
+            if previous:
+                row["p"] = previous
+            else:
+                row.pop("p", None)
+            continue
+
+        for row in rows:
+            previous = previous_names.get(row_key(row), "")
+            if previous:
+                row["p"] = previous
+                continue
+            provider = "Ensembl" if str(row.get("s") or "").lower() == "ensembl" else "NCBI"
+            base, _ = build_package_name(
+                str(row.get("o") or ""), provider, str(row.get("m") or "")
+            )
+            identity = "|".join(
+                str(row.get(key) or "") for key in ("s", "e", "o", "m")
+            )
+            package_name, reason = disambiguate_package_name(
+                base or "", str(row.get("a") or ""), identity
+            )
+            if not package_name:
+                raise ValueError(f"cannot disambiguate catalog row {row_key(row)}: {reason}")
+            row["p"] = package_name
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--existing-catalog", type=Path)
@@ -123,9 +181,15 @@ def main() -> None:
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
 
+    existing_rows = load_existing(args.existing_catalog)
+    previous_names = {
+        row_key(row): str(row.get("p") or "")
+        for row in existing_rows
+        if row.get("p")
+    }
     by_key: dict[tuple[str, str], dict[str, object]] = {}
 
-    for row in load_existing(args.existing_catalog):
+    for row in existing_rows:
         # NCBI and Ensembl are regenerated from source snapshots below. Preserve
         # any future manually curated source that is owned by neither importer.
         if str(row.get("s") or "").lower() in {"ncbi", "ensembl"}:
@@ -144,6 +208,7 @@ def main() -> None:
         by_key[row_key(row)] = row
 
     catalog = sorted(by_key.values(), key=sort_key)
+    assign_collision_safe_package_names(catalog, previous_names)
     args.output.write_text(json.dumps(catalog, separators=(",", ":")) + "\n")
 
     groups: dict[str, int] = {}

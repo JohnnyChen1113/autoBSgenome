@@ -48,7 +48,7 @@ jobs:
           python3 <<'PYEOF' || true
           import json, subprocess, sys
           sys.path.insert(0, 'main-repo/scripts')
-          from normalize_package_name import build_package_name
+          from normalize_package_name import build_package_name, validate
 
           with open('build-queue.json') as f:
               queue = json.load(f)
@@ -68,7 +68,10 @@ jobs:
               if item['status'] not in ('building', 'pending'):
                   continue
               provider = 'Ensembl' if item.get('data_source') == 'ensembl' else 'NCBI'
-              name, _ = build_package_name(item.get('organism',''), provider, item.get('assembly',''))
+              name = item.get('package_name') or ''
+              valid, _ = validate(name)
+              if not valid or len(name.split('.')) != 4:
+                  name, _ = build_package_name(item.get('organism',''), provider, item.get('assembly',''))
               if name and f'pkg-{name}' in existing_tags:
                   item['status'] = 'done'
                   updated += 1
@@ -83,7 +86,7 @@ jobs:
           BATCH_SIZE=$BATCH_SIZE python3 <<'PYEOF' > /tmp/queue_check.txt
           import json, os, sys
           sys.path.insert(0, 'main-repo/scripts')
-          from normalize_package_name import build_package_name
+          from normalize_package_name import build_package_name, validate
 
           batch_size = int(os.environ['BATCH_SIZE'])
           with open('build-queue.json') as f:
@@ -100,7 +103,12 @@ jobs:
               if not is_ensembl and not item.get('accession'): continue
               if is_ensembl and not item.get('species_url'): continue
               provider = 'Ensembl' if is_ensembl else 'NCBI'
-              name, reason = build_package_name(item['organism'], provider, item['assembly'])
+              name = item.get('package_name') or ''
+              valid, validation_reason = validate(name)
+              if not valid or len(name.split('.')) != 4:
+                  name, reason = build_package_name(item['organism'], provider, item['assembly'])
+              else:
+                  reason = ''
               if not name:
                   print(f'  [skip-malformed] {item.get("accession") or item.get("species_url")} {item["organism"]}: {reason}')
                   continue
@@ -173,7 +181,7 @@ jobs:
           python3 <<'PYEOF'
           import json, os, sys, time, urllib.request
           sys.path.insert(0, 'main-repo/scripts')
-          from normalize_package_name import build_package_name
+          from normalize_package_name import build_package_name, validate
 
           with open('batch.json') as f:
               batch = json.load(f)
@@ -187,7 +195,12 @@ jobs:
               is_ensembl = item.get('data_source') == 'ensembl'
               provider = 'Ensembl' if is_ensembl else 'NCBI'
 
-              package_name, reason = build_package_name(organism, provider, assembly_raw)
+              package_name = item.get('package_name') or ''
+              valid, validation_reason = validate(package_name)
+              if not valid or len(package_name.split('.')) != 4:
+                  package_name, reason = build_package_name(organism, provider, assembly_raw)
+              else:
+                  reason = ''
               if not package_name:
                   print(f'Skipped (malformed): {accession or item.get("species_url")} {organism}: {reason}')
                   continue
@@ -223,7 +236,8 @@ jobs:
                       'genome': assembly_raw,
                       'provider': provider,
                       'version': '1.0.0',
-                      'circ_seqs': 'character(0)',
+                      # Official-source builds derive topology after FASTA download.
+                      'circ_seqs': item.get('circ_seqs', ''),
                       'accession': accession,
                       'extra': json.dumps(extra_fields),
                   },

@@ -19,6 +19,7 @@ Usage as CLI (smoke test):
 import re
 import sys
 import unicodedata
+import hashlib
 
 R_PACKAGE_RE = re.compile(r'^[A-Za-z][A-Za-z0-9.]*[A-Za-z0-9]$')
 
@@ -126,6 +127,38 @@ def build_package_name(organism: str, provider: str, assembly: str):
     ok, vreason = validate(name)
     if not ok:
         return None, f"constructed name {name!r} failed validation: {vreason}"
+    return name, ""
+
+
+def disambiguate_package_name(
+    base_name: str,
+    accession: str = "",
+    fallback_identity: str = "",
+):
+    """Return a stable four-part package name for a colliding catalog row.
+
+    The accession is appended to the fourth component (rather than added as a
+    fifth dot-separated component), preserving Bioconductor's four-part
+    BSgenome naming convention.  A short digest is only used for legacy
+    Ensembl rows that have no assembly accession.
+    """
+    ok, reason = validate(base_name)
+    if not ok or len(base_name.split(".")) != 4:
+        return None, f"invalid base package name {base_name!r}: {reason}"
+
+    token = sanitize_assembly(accession)
+    if not token:
+        identity = fallback_identity.strip()
+        if not identity:
+            return None, "missing accession and fallback identity"
+        token = "Id" + hashlib.sha256(identity.encode("utf-8")).hexdigest()[:12]
+
+    parts = base_name.split(".")
+    parts[3] = f"{parts[3]}Acc{token}"
+    name = ".".join(parts)
+    ok, reason = validate(name)
+    if not ok:
+        return None, f"disambiguated name {name!r} failed validation: {reason}"
     return name, ""
 
 

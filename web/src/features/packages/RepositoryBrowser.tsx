@@ -42,6 +42,7 @@ type CatalogAccession = {
   ensembl_species?: string;
   ensembl_division?: string;
   ensembl_release?: number;
+  package_name?: string;
 };
 
 type BuildPackage = {
@@ -143,6 +144,7 @@ type CatalogRow = {
   e?: string;
   d?: string;
   r?: number;
+  p?: string;
 };
 
 type Kingdom = "all" | "animal" | "plant" | "fungi" | "protist" | "prokaryote";
@@ -384,6 +386,9 @@ function preferredCatalogAccession(
 function catalogBuildHref(accession: CatalogAccession): string {
   const source = catalogAccessionSource(accession);
   const params = new URLSearchParams({ accession: accession.accession });
+  if (accession.package_name) {
+    params.set("package", accession.package_name);
+  }
   if (source === "ensembl") {
     params.set("source", "ensembl");
     if (accession.ensembl_species) {
@@ -855,6 +860,7 @@ function mergeRepositoryData(
       ensembl_species: row.e,
       ensembl_division: row.d,
       ensembl_release: row.r,
+      package_name: row.p,
     };
     const current = merged.get(key);
     if (current) {
@@ -1621,7 +1627,7 @@ export function RepositoryBrowser() {
                             )}
                           >
                             <Package className="size-3" />
-                            {builds.length} build{builds.length === 1 ? "" : "s"}
+                            {builds.length} package{builds.length === 1 ? "" : "s"}
                           </span>
                         )}
                         {packageSources.map((source) => {
@@ -1639,14 +1645,6 @@ export function RepositoryBrowser() {
                             </span>
                           );
                         })}
-                        {catalogOnly && (
-                          <Badge
-                            className="border-primary/30 bg-primary/10 text-primary"
-                            title="No BSgenome package built yet. Click Build to start one."
-                          >
-                            Build on click
-                          </Badge>
-                        )}
                         {catalogSources.map((source) => (
                           <a
                             key={source.label}
@@ -1669,7 +1667,7 @@ export function RepositoryBrowser() {
                           {crumbs.map((crumb) => (
                             <span
                               key={crumb}
-                              className="rounded bg-secondary px-1.5 py-0.5"
+                              className="rounded bg-secondary/50 px-1.5 py-0.5 text-muted-foreground/75"
                             >
                               {crumb}
                             </span>
@@ -2058,8 +2056,21 @@ export function RepositoryBrowser() {
                             key={`${accession.source}-${accession.accession}`}
                             className="flex flex-col gap-3 border-b border-border px-4 py-4 last:border-b-0 sm:flex-row sm:items-center sm:justify-between"
                           >
-                            <div className="min-w-0">
+                            <div className="min-w-0 flex-1">
                               <div className="flex flex-wrap items-center gap-2">
+                                <span className="inline-flex h-6 items-center rounded-full border border-border bg-background px-2.5 text-xs font-medium text-foreground">
+                                  Not built yet
+                                </span>
+                                {!source && (
+                                  <span
+                                    className={cn(
+                                      "inline-flex h-6 items-center rounded-full border px-2.5 text-xs font-medium",
+                                      sourcePillTone(sourceLabel)
+                                    )}
+                                  >
+                                    {sourceLabel}
+                                  </span>
+                                )}
                                 {source && (
                                   <a
                                     href={source.url}
@@ -2075,12 +2086,8 @@ export function RepositoryBrowser() {
                                     <ExternalLink className="size-3" />
                                   </a>
                                 )}
-                                {!source && (
-                                  <Badge variant="outline">{sourceLabel}</Badge>
-                                )}
-                                <Badge variant="outline">Not built yet</Badge>
                               </div>
-                              <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted-foreground">
+                              <div className="mt-2 grid gap-x-4 gap-y-1 text-sm text-muted-foreground sm:grid-cols-2 lg:grid-cols-4">
                                 {accession.assembly && (
                                   <span>
                                     Assembly: {" "}
@@ -2090,11 +2097,22 @@ export function RepositoryBrowser() {
                                   </span>
                                 )}
                                 {accession.accession && (
-                                  <span>
+                                  <span className="min-w-0">
                                     Accession: {" "}
-                                    <span className="text-foreground">
-                                      {accession.accession}
-                                    </span>
+                                    {source ? (
+                                      <a
+                                        href={source.url}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="text-primary hover:underline"
+                                      >
+                                        {accession.accession}
+                                      </a>
+                                    ) : (
+                                      <span className="text-foreground">
+                                        {accession.accession}
+                                      </span>
+                                    )}
                                   </span>
                                 )}
                                 {genomeSize && (

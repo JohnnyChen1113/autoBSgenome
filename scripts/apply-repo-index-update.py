@@ -36,6 +36,24 @@ def load_flat_packages(path: Path) -> list[dict]:
     return []
 
 
+def ensure_package_identity(
+    flat: list[dict], package: str, accession: str
+) -> None:
+    """Prevent one package name from being reassigned to another assembly."""
+    if not package or not accession:
+        return
+    for existing in flat:
+        if existing.get("package") != package:
+            continue
+        existing_accession = str(existing.get("accession") or "")
+        if existing_accession and existing_accession != accession:
+            raise SystemExit(
+                "ERROR: package-name collision: "
+                f"{package} is already indexed for {existing_accession}, "
+                f"not {accession}"
+            )
+
+
 def rebuild_organisms(flat: list[dict]) -> dict:
     organisms: dict[str, dict] = {}
     for pkg in flat:
@@ -215,7 +233,9 @@ def main() -> None:
         provenance.setdefault("source_accession", accession)
         new_entry["provenance"] = provenance
 
-    flat = [pkg for pkg in load_flat_packages(args.packages) if pkg.get("package") != package]
+    current_flat = load_flat_packages(args.packages)
+    ensure_package_identity(current_flat, package, accession)
+    flat = [pkg for pkg in current_flat if pkg.get("package") != package]
     flat.append(new_entry)
     args.packages.write_text(json.dumps(rebuild_organisms(flat), indent=2))
 

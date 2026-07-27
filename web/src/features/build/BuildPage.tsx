@@ -124,6 +124,11 @@ interface EntryDraft {
   ensemblAssemblyAccession: string;
 }
 
+type CatalogPackagePrefill = {
+  accession: string;
+  packageName: string;
+};
+
 interface BuildRecord {
   jobId: string;
   packageName: string;
@@ -376,6 +381,7 @@ export default function Home() {
   });
   const importDraftRef = useRef<EntryDraft | null>(null);
   const manualDraftRef = useRef<EntryDraft | null>(null);
+  const catalogPackagePrefillRef = useRef<CatalogPackagePrefill | null>(null);
 
   const clearEnsemblContext = () => {
     setEnsemblSpecies("");
@@ -538,8 +544,13 @@ export default function Home() {
           throw new Error(`Could not generate a valid package name: ${packageName.reason}`);
         }
 
+        const catalogPackageName = catalogPackagePrefillRef.current;
         newForm = {
-          packageName: packageName.name,
+          packageName:
+            catalogPackageName &&
+            catalogPackageName.accession === assemblyAccession
+              ? catalogPackageName.packageName
+              : packageName.name,
           organism,
           commonName,
           assembly: assemblyName,
@@ -579,8 +590,12 @@ export default function Home() {
             ? circs.map((c) => c.name).join(", ")
             : "character(0)";
 
+        const catalogPackageName = catalogPackagePrefillRef.current;
         newForm = {
-          packageName: generatePackageName(info),
+          packageName:
+            catalogPackageName && catalogPackageName.accession === accession
+              ? catalogPackageName.packageName
+              : generatePackageName(info),
           organism: info.organism,
           commonName: info.commonName,
           assembly: info.assemblyName,
@@ -611,6 +626,7 @@ export default function Home() {
       setForm(newForm);
       validatePackageName(newForm.packageName);
       setStep("review");
+      catalogPackagePrefillRef.current = null;
     } catch (e) {
       setError(
         e instanceof Error
@@ -753,6 +769,17 @@ export default function Home() {
     const prefillAccession = params.get("accession");
     const prefillSpecies = params.get("species");
     const prefillSource = params.get("source");
+    const prefillPackage = params.get("package");
+    if (
+      prefillAccession &&
+      prefillPackage &&
+      validateBSgenomePackageName(prefillPackage).length === 0
+    ) {
+      catalogPackagePrefillRef.current = {
+        accession: prefillAccession,
+        packageName: prefillPackage,
+      };
+    }
     if (prefillAccession || prefillSpecies) {
       setEntryMode("import");
       if (prefillSource === "ensembl") {

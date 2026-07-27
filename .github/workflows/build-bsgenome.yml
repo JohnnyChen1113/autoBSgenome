@@ -212,6 +212,31 @@ jobs:
           python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
           curl -fsS -X DELETE "$FASTA_UPLOAD_URL" >/dev/null || true
 
+      - name: Detect circular sequences from assembly topology
+        id: circular
+        if: steps.params.outputs.fasta_source == 'ncbi' || steps.params.outputs.fasta_source == 'ensembl'
+        env:
+          ACCESSION: ${{ steps.params.outputs.accession }}
+          FASTA_SOURCE: ${{ steps.params.outputs.fasta_source }}
+          PAYLOAD_CIRC_SEQS: ${{ steps.params.outputs.circ_seqs }}
+        run: |
+          if [[ "$ACCESSION" =~ ^GC[AF]_[0-9]+\.[0-9]+$ ]]; then
+            CIRC_SEQS=$(python3 scripts/detect_circular_sequences.py \
+              --accession "$ACCESSION" \
+              --fasta genome.fa \
+              --source "$FASTA_SOURCE" \
+              --report-json /tmp/circular_sequences.json)
+            METHOD="ncbi-sequence-report+nuccore-topology"
+          else
+            CIRC_SEQS="${PAYLOAD_CIRC_SEQS:-character(0)}"
+            METHOD="payload-no-assembly-accession"
+            echo "No NCBI assembly accession is available; retaining the submitted circular-sequence metadata."
+          fi
+          echo "circ_seqs=$CIRC_SEQS" >> "$GITHUB_OUTPUT"
+          python3 scripts/record_metric.py circular_sequences.method "$METHOD"
+          python3 scripts/record_metric.py circular_sequences.value "$CIRC_SEQS"
+          echo "Circular sequences: $CIRC_SEQS ($METHOD)"
+
       - name: Validate nucleotide FASTA
         run: |
           python3 scripts/validate_fasta.py genome.fa --json /tmp/fasta_validation.json
@@ -265,7 +290,7 @@ jobs:
           PROVIDER="${{ steps.params.outputs.provider }}"
           RELEASE_DATE="${{ steps.params.outputs.release_date }}"
           VERSION="${{ steps.params.outputs.version }}"
-          CIRC="${{ steps.params.outputs.circ_seqs }}"
+          CIRC="${{ steps.circular.outputs.circ_seqs || steps.params.outputs.circ_seqs }}"
           SOURCE_URL="${{ steps.params.outputs.source_url }}"
           OBJNAME=$(echo "$PACKAGE" | cut -d. -f2)
 
@@ -465,9 +490,20 @@ jobs:
           # interrupted — delete so we can retry cleanly. A non-draft release
           # with the same asset size is already good; skip the re-upload to
           # save ~500 MB-2 GB of redundant bandwidth on large genomes.
-          EXISTING=$(gh release view "${PERM_TAG}" --json isDraft,assets 2>/dev/null || echo '{}')
+          EXISTING=$(gh release view "${PERM_TAG}" --json isDraft,assets,body 2>/dev/null || echo '{}')
           IS_DRAFT=$(echo "$EXISTING" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('isDraft', 'missing'))")
           EXISTING_SIZE=$(echo "$EXISTING" | python3 -c "import json,sys; d=json.load(sys.stdin); a=d.get('assets',[]); print(a[0].get('size',0) if a else 0)")
+          EXISTING_ACCESSION=$(echo "$EXISTING" | python3 -c "import json,re,sys; d=json.load(sys.stdin); m=re.search(r'GC[AF]_[0-9]+\.[0-9]+', d.get('body','')); print(m.group(0) if m else '')")
+
+          if [ "$IS_DRAFT" = "False" ] && [ -z "$EXISTING_ACCESSION" ]; then
+            echo "ERROR: ${PERM_TAG} already exists but its source accession cannot be verified; refusing to overwrite it."
+            exit 1
+          fi
+          if [ "$IS_DRAFT" = "False" ] && [ "$EXISTING_ACCESSION" != "$ACCESSION" ]; then
+            echo "ERROR: package-name collision: ${PERM_TAG} belongs to ${EXISTING_ACCESSION}, not ${ACCESSION}."
+            echo "Use the collision-safe package name supplied by catalog.json."
+            exit 1
+          fi
 
           if [ "$IS_DRAFT" = "True" ]; then
             echo "Existing release is a draft (orphan from interrupted upload); deleting and re-uploading"
