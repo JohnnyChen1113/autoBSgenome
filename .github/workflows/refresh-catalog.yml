@@ -2,6 +2,12 @@ name: Refresh Package Catalog
 
 on:
   workflow_dispatch:
+    inputs:
+      allow_large_ensembl_drop:
+        description: "Allow a verified Ensembl division to shrink by more than 10%"
+        required: false
+        type: boolean
+        default: false
   schedule:
     # Daily at 8:30 AM UTC. This updates the browsable one-click build catalog;
     # it does not trigger package builds.
@@ -9,6 +15,10 @@ on:
 
 permissions:
   contents: write
+
+concurrency:
+  group: refresh-package-catalog
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -29,19 +39,113 @@ jobs:
         with:
           ref: main
           path: _main
-          sparse-checkout: scripts/generate-catalog.py
+          sparse-checkout: |
+            scripts/generate-catalog.py
+            scripts/generate-ensembl-catalog.py
           sparse-checkout-cone-mode: false
 
-      - name: Download NCBI RefSeq assembly summary
+      - name: Download NCBI assembly summaries
         run: |
           curl -fsSL --retry 3 --retry-delay 10 \
             https://ftp.ncbi.nlm.nih.gov/genomes/refseq/assembly_summary_refseq.txt \
             -o /tmp/assembly_summary_refseq.txt
+          curl -fsSL --retry 3 --retry-delay 10 \
+            -H 'Accept-Encoding: gzip' \
+            https://ftp.ncbi.nlm.nih.gov/genomes/genbank/assembly_summary_genbank.txt \
+            -o /tmp/assembly_summary_genbank.txt.gz
+          gzip -t /tmp/assembly_summary_genbank.txt.gz
+
+      - name: Refresh Ensembl and Ensembl Genomes snapshot
+        id: ensembl
+        shell: bash
+        run: |
+          set +e
+          (
+            set -euo pipefail
+            mkdir -p /tmp/ensembl
+
+            MAIN_RELEASE=$(curl -fsSL --retry 3 --retry-delay 10 \
+              'https://rest.ensembl.org/info/data/?content-type=application/json' | \
+              python3 -c 'import json,sys; print(json.load(sys.stdin)["releases"][0])')
+            EG_RELEASE=$(curl -fsSL --retry 3 --retry-delay 10 \
+              https://ftp.ensemblgenomes.ebi.ac.uk/pub/ | \
+              python3 -c 'import re,sys; releases=[int(x) for x in re.findall(r"release-(\d+)/", sys.stdin.read())]; print(max(releases))')
+
+            curl -fsSL --retry 3 --retry-delay 10 \
+              "https://ftp.ensembl.org/pub/release-${MAIN_RELEASE}/species_EnsemblVertebrates.txt" \
+              -o /tmp/ensembl/vertebrates.tsv
+
+            for spec in \
+              bacteria:EnsemblBacteria \
+              fungi:EnsemblFungi \
+              metazoa:EnsemblMetazoa \
+              plants:EnsemblPlants \
+              protists:EnsemblProtists
+            do
+              division=${spec%%:*}
+              file=${spec##*:}
+              curl -fsSL --retry 3 --retry-delay 10 \
+                "https://ftp.ensemblgenomes.ebi.ac.uk/pub/release-${EG_RELEASE}/${division}/species_${file}.txt" \
+                -o "/tmp/ensembl/${division}.tsv"
+            done
+
+            if [ -s catalog-sources/ensembl.json ]; then
+              cp catalog-sources/ensembl.json /tmp/previous-ensembl.json
+            else
+              python3 -c 'import json,sys; rows=json.load(open(sys.argv[1])); json.dump([r for r in rows if r.get("s") == "ensembl"], open(sys.argv[2], "w"), separators=(",", ":"))' \
+                catalog.json /tmp/previous-ensembl.json
+            fi
+
+            STATE_ARGS=()
+            if [ -s catalog-sources/ensembl-state.json ]; then
+              STATE_ARGS=(--state catalog-sources/ensembl-state.json)
+            fi
+            DROP_ARGS=()
+            if [ "${{ github.event.inputs.allow_large_ensembl_drop || 'false' }}" = "true" ]; then
+              DROP_ARGS=(--allow-large-drop)
+            fi
+
+            python3 _main/scripts/generate-ensembl-catalog.py \
+              --source "vertebrates=/tmp/ensembl/vertebrates.tsv" \
+              --source "bacteria=/tmp/ensembl/bacteria.tsv" \
+              --source "fungi=/tmp/ensembl/fungi.tsv" \
+              --source "metazoa=/tmp/ensembl/metazoa.tsv" \
+              --source "plants=/tmp/ensembl/plants.tsv" \
+              --source "protists=/tmp/ensembl/protists.tsv" \
+              --assembly-summary /tmp/assembly_summary_refseq.txt \
+              --assembly-summary /tmp/assembly_summary_genbank.txt.gz \
+              --release-main "${MAIN_RELEASE}" \
+              --release-genomes "${EG_RELEASE}" \
+              --previous /tmp/previous-ensembl.json \
+              "${STATE_ARGS[@]}" \
+              "${DROP_ARGS[@]}" \
+              --output /tmp/ensembl-catalog.json \
+              --state-output /tmp/ensembl-state.json
+          )
+          status=$?
+          set -e
+
+          if [ "$status" -eq 0 ]; then
+            mkdir -p catalog-sources
+            cp /tmp/ensembl-catalog.json catalog-sources/ensembl.json
+            cp /tmp/ensembl-state.json catalog-sources/ensembl-state.json
+            echo "used_fallback=false" >> "$GITHUB_OUTPUT"
+          elif [ -s catalog-sources/ensembl.json ]; then
+            cp catalog-sources/ensembl.json /tmp/ensembl-catalog.json
+            echo "used_fallback=true" >> "$GITHUB_OUTPUT"
+            echo "::warning::Ensembl refresh failed; retaining the last-known-good snapshot"
+            echo "### Ensembl refresh warning" >> "$GITHUB_STEP_SUMMARY"
+            echo "The upstream refresh failed, so catalog.json retained the last-known-good Ensembl snapshot." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::error::Ensembl refresh failed and no last-known-good snapshot exists"
+            exit "$status"
+          fi
 
       - name: Refresh catalog
         run: |
           python3 _main/scripts/generate-catalog.py \
             --existing-catalog catalog.json \
+            --ensembl-catalog /tmp/ensembl-catalog.json \
             --refseq-summary /tmp/assembly_summary_refseq.txt \
             --output catalog.json
           rm -rf _main
@@ -50,8 +154,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog.json
+          git add catalog.json catalog-sources
           git diff --cached --quiet || {
             git commit -m "chore: Refresh package catalog"
             git push
           }
+
+      - name: Report Ensembl fallback as a failed refresh
+        if: steps.ensembl.outputs.used_fallback == 'true'
+        run: |
+          echo "The catalog kept the last-known-good Ensembl snapshot; investigate the warning above."
+          exit 1

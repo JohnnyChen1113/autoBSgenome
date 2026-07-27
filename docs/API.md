@@ -38,6 +38,8 @@ Trigger a BSgenome package build.
 | `circ_seqs` | No | Circular sequences, comma-separated (e.g. `MT`) or `character(0)` |
 | `accession` | No | NCBI accession (e.g. `GCF_000001405.40`) — used for FASTA download |
 | `data_source` | No | `ncbi` or `ensembl` (default: `ncbi`) — determines FASTA download source |
+| `species_url` | Ensembl builds | Ensembl species slug, such as `aaosphaeria_arxii_cbs_175_79_gca_010015735` |
+| `ensembl_group` | Ensembl builds | `vertebrates`, `bacteria`, `fungi`, `metazoa`, `plants`, or `protists` |
 | `fasta_source` | No | `url` to download a user-provided FASTA URL, `upload` to use a browser-uploaded FASTA; otherwise omitted or set by `data_source` |
 | `fasta_url` | Only for URL builds | HTTP(S) URL for a `.fa`, `.fasta`, `.fna`, `.fas`, or gzip-compressed FASTA file |
 | `fasta_upload_url` | Only for uploads | Signed `download_url` returned by `POST /api/uploads` |

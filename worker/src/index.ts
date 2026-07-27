@@ -720,6 +720,36 @@ async function handleBuild(
     ? "url"
     : body.data_source ?? "ncbi";
   const submittedAccession = normalizeAssemblyAccession(body.accession ?? "");
+  const requestedEnsemblSpecies = (body.species_url ?? "").trim();
+  const ensemblSpeciesUrl =
+    requestedEnsemblSpecies ||
+    (fastaSource === "ensembl" && !/^GC[AF]_\d+\.\d+$/i.test(submittedAccession)
+      ? submittedAccession
+      : "");
+  const ensemblGroup =
+    (body.ensembl_group ?? "").trim() ||
+    (fastaSource === "ensembl" ? "vertebrates" : "");
+  if (fastaSource === "ensembl" && !ensemblSpeciesUrl) {
+    return jsonResponse(
+      { error: "Missing species_url for Ensembl build" },
+      400,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
+  if (
+    fastaSource === "ensembl" &&
+    !["vertebrates", "bacteria", "fungi", "metazoa", "plants", "protists"].includes(
+      ensemblGroup
+    )
+  ) {
+    return jsonResponse(
+      { error: "Invalid ensembl_group" },
+      400,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
   if (
     (body.data_source ?? "ncbi") === "ncbi" &&
     /^https?:\/\//i.test((body.accession ?? "").trim()) &&
@@ -865,6 +895,8 @@ async function handleBuild(
             title: body.title ?? "",
             description: body.description ?? "",
             source_url: body.source_url ?? "",
+            species_url: ensemblSpeciesUrl,
+            ensembl_group: ensemblGroup,
           }),
         },
       }),

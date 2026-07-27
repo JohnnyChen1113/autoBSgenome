@@ -6,9 +6,8 @@ The public package browser keeps catalog rows intentionally small:
   { "a": accession, "o": organism, "m": assembly, "g": group,
     "s": source, "z": genome_size_mb }
 
-This script refreshes NCBI RefSeq rows from current assembly_summary files and
-preserves non-NCBI rows from the existing catalog, such as curated Ensembl
-entries.
+This script composes current NCBI RefSeq rows with a validated Ensembl snapshot
+and preserves any catalog sources not owned by either importer.
 """
 
 from __future__ import annotations
@@ -88,11 +87,12 @@ def catalog_row(row: dict[str, str], source: str) -> dict[str, object] | None:
 
 
 def row_key(row: dict[str, object]) -> tuple[str, str]:
+    source = str(row.get("s") or "")
     accession = str(row.get("a") or "")
     if accession:
-        return ("accession", accession)
+        return (source, accession)
     return (
-        "fallback",
+        source,
         "|".join(str(row.get(key) or "") for key in ("o", "m", "s")),
     )
 
@@ -118,6 +118,7 @@ def sort_key(row: dict[str, object]) -> tuple[str, str, str, str]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--existing-catalog", type=Path)
+    parser.add_argument("--ensembl-catalog", type=Path)
     parser.add_argument("--refseq-summary", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
@@ -125,10 +126,15 @@ def main() -> None:
     by_key: dict[tuple[str, str], dict[str, object]] = {}
 
     for row in load_existing(args.existing_catalog):
-        # Preserve curated non-NCBI rows. NCBI rows are regenerated below from
-        # current assembly_summary files so accession versions and sizes stay fresh.
-        if str(row.get("s") or "").lower() == "ncbi":
+        # NCBI and Ensembl are regenerated from source snapshots below. Preserve
+        # any future manually curated source that is owned by neither importer.
+        if str(row.get("s") or "").lower() in {"ncbi", "ensembl"}:
             continue
+        by_key[row_key(row)] = row
+
+    for row in load_existing(args.ensembl_catalog):
+        if str(row.get("s") or "").lower() != "ensembl":
+            raise ValueError("Ensembl snapshot contains a non-Ensembl row")
         by_key[row_key(row)] = row
 
     for summary_row in iter_summary(args.refseq_summary):

@@ -39,6 +39,9 @@ type CatalogAccession = {
   source?: string;
   size_mb?: number;
   group?: string;
+  ensembl_species?: string;
+  ensembl_division?: string;
+  ensembl_release?: number;
 };
 
 type BuildPackage = {
@@ -137,6 +140,9 @@ type CatalogRow = {
   g?: string;
   s?: string;
   z?: number;
+  e?: string;
+  d?: string;
+  r?: number;
 };
 
 type Kingdom = "all" | "animal" | "plant" | "fungi" | "protist" | "prokaryote";
@@ -375,6 +381,49 @@ function preferredCatalogAccession(
   );
 }
 
+function catalogBuildHref(accession: CatalogAccession): string {
+  const source = catalogAccessionSource(accession);
+  const params = new URLSearchParams({ accession: accession.accession });
+  if (source === "ensembl") {
+    params.set("source", "ensembl");
+    if (accession.ensembl_species) {
+      params.set("species", accession.ensembl_species);
+    }
+    params.set(
+      "division",
+      accession.ensembl_division ??
+        (accession.group?.startsWith("vertebrate_")
+          ? "vertebrates"
+          : accession.group ?? "vertebrates")
+    );
+  }
+  return `/build?${params.toString()}`;
+}
+
+function catalogAccessionHasBuild(
+  accession: CatalogAccession,
+  builds: BuildPackage[]
+): boolean {
+  const accessionKey = normalizeComparable(accession.accession);
+  const assemblyKey = normalizeComparable(accession.assembly);
+  const source = catalogAccessionSource(accession);
+
+  return builds.some((build) => {
+    if (
+      accessionKey &&
+      normalizeComparable(build.accession) === accessionKey
+    ) {
+      return true;
+    }
+
+    return Boolean(
+      assemblyKey &&
+        normalizeComparable(build.assembly) === assemblyKey &&
+        buildDataSource(build) === source
+    );
+  });
+}
+
 function formatMetadataDate(value?: string): string {
   if (!value) return "";
   const normalized = value.replace(/\//g, "-");
@@ -430,10 +479,14 @@ function ensemblAccessionLink(
   group: string | undefined
 ): { label: string; url: string } {
   const subdomain = ensemblSubdomain(group);
-  const slug = ensemblSlug(speciesQuery, group, accession.accession);
+  const slug =
+    accession.ensembl_species ??
+    ensemblSlug(speciesQuery, group, accession.accession);
   return {
     label: "Ensembl",
-    url: `https://${subdomain}/${slug}/Info/Index`,
+    url: `https://${subdomain}/${
+      slug.charAt(0).toUpperCase() + slug.slice(1)
+    }/Info/Index`,
   };
 }
 
@@ -444,19 +497,15 @@ function catalogAccessionSourceLink(
 ): { label: string; url: string } | null {
   const source = (accession.source ?? "").toLowerCase();
 
-  // The compact catalog usually stores only an accession, not a verified
-  // Ensembl species URL. For INSDC assembly accessions, NCBI Datasets is the
-  // stable canonical page; generated EnsemblGenomes URLs often 403/500 for
-  // multi-assembly and "sp." entries.
-  if (preferNcbiForAccession(accession)) {
-    return ncbiAccessionLink(accession.accession);
+  // Synced Ensembl rows include the exact upstream species slug and division,
+  // so their source chip can link to Ensembl even when the assembly accession
+  // itself is an INSDC GCA_.
+  if (source.includes("ensembl")) {
+    return ensemblAccessionLink(accession, speciesQuery, group);
   }
 
-  if (
-    source.includes("ensembl") ||
-    (source === "ensembl" && accession.accession.startsWith("GCA_"))
-  ) {
-    return ensemblAccessionLink(accession, speciesQuery, group);
+  if (preferNcbiForAccession(accession)) {
+    return ncbiAccessionLink(accession.accession);
   }
 
   if (
@@ -803,6 +852,9 @@ function mergeRepositoryData(
       source: row.s ?? "",
       size_mb: row.z,
       group: row.g,
+      ensembl_species: row.e,
+      ensembl_division: row.d,
+      ensembl_release: row.r,
     };
     const current = merged.get(key);
     if (current) {
@@ -1453,6 +1505,19 @@ export function RepositoryBrowser() {
             const isOpen = expanded.has(key);
             const firstAccession = preferredCatalogAccession(accessions);
             const catalogOnly = builds.length === 0 && accessions.length > 0;
+            const compactCatalogOnly = catalogOnly && accessions.length === 1;
+            const unbuiltAccessions = builds.length > 0 || accessions.length > 1
+              ? accessions.filter(
+                  (accession) => !catalogAccessionHasBuild(accession, builds)
+                ).sort((a, b) => {
+                  const order: Record<string, number> = { ncbi: 0, ensembl: 1 };
+                  return (
+                    (order[catalogAccessionSource(a)] ?? 99) -
+                      (order[catalogAccessionSource(b)] ?? 99) ||
+                    a.accession.localeCompare(b.accession)
+                  );
+                })
+              : [];
             const visibleBuilds = isOpen ? builds : builds.slice(0, 1);
             const metadata = metadataForOrganism(org, metadataEntries);
             const displayName =
@@ -1480,7 +1545,7 @@ export function RepositoryBrowser() {
                   displayGroup
                 )
               : [];
-            const catalogGenomeSize = catalogOnly
+            const catalogGenomeSize = compactCatalogOnly
               ? genomeSizeLabelForCatalog(accessions)
               : null;
             const packageSources = packageSourceBadges(builds);
@@ -1645,7 +1710,7 @@ export function RepositoryBrowser() {
                           )}
                         </div>
                       )}
-                      {catalogOnly && firstAccession && (
+                      {compactCatalogOnly && firstAccession && (
                         <div className="mt-3 grid gap-x-4 gap-y-1 text-sm text-muted-foreground sm:grid-cols-2 lg:grid-cols-3">
                           {firstAccession.assembly && (
                             <span>
@@ -1687,16 +1752,9 @@ export function RepositoryBrowser() {
                     </div>
 
                     <div className="flex shrink-0 items-center gap-2">
-                      {catalogOnly && firstAccession ? (
+                      {compactCatalogOnly && firstAccession ? (
                         <a
-                          href={`/build?accession=${encodeURIComponent(
-                            firstAccession.accession
-                          )}${
-                            firstAccession.source === "ensembl" &&
-                            !preferNcbiForAccession(firstAccession)
-                              ? "&source=ensembl"
-                              : ""
-                          }`}
+                          href={catalogBuildHref(firstAccession)}
                           className="inline-flex h-8 items-center justify-center rounded-lg bg-primary px-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
                         >
                           Build
@@ -1978,6 +2036,94 @@ export function RepositoryBrowser() {
                           </button>
                         </div>
                       )}
+                    </div>
+                  )}
+
+                  {unbuiltAccessions.length > 0 && (
+                    <div className="border-t border-border">
+                      {unbuiltAccessions.map((accession) => {
+                        const source = catalogAccessionSourceLink(
+                          accession,
+                          speciesName(displayName),
+                          displayGroup
+                        );
+                        const genomeSize = formatMegabases(accession.size_mb);
+                        const sourceLabel =
+                          catalogAccessionSource(accession) === "ensembl"
+                            ? "Ensembl"
+                            : "NCBI";
+
+                        return (
+                          <div
+                            key={`${accession.source}-${accession.accession}`}
+                            className="flex flex-col gap-3 border-b border-border px-4 py-4 last:border-b-0 sm:flex-row sm:items-center sm:justify-between"
+                          >
+                            <div className="min-w-0">
+                              <div className="flex flex-wrap items-center gap-2">
+                                <span className="text-sm font-medium text-foreground">
+                                  {sourceLabel} reference available
+                                </span>
+                                <Badge variant="outline">Not built yet</Badge>
+                                {source && (
+                                  <a
+                                    href={source.url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    title={`View this reference on ${source.label}`}
+                                    className={cn(
+                                      "inline-flex h-6 items-center gap-1 rounded border px-2 font-mono text-[10px] uppercase tracking-[0.1em] transition-colors",
+                                      sourceChipTone(source.label)
+                                    )}
+                                  >
+                                    {source.label}
+                                    <ExternalLink className="size-3" />
+                                  </a>
+                                )}
+                              </div>
+                              <div className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted-foreground">
+                                {accession.assembly && (
+                                  <span>
+                                    Assembly: {" "}
+                                    <span className="text-foreground">
+                                      {accession.assembly}
+                                    </span>
+                                  </span>
+                                )}
+                                {accession.accession && (
+                                  <span>
+                                    Accession: {" "}
+                                    <span className="text-foreground">
+                                      {accession.accession}
+                                    </span>
+                                  </span>
+                                )}
+                                {genomeSize && (
+                                  <span>
+                                    Genome size: {" "}
+                                    <span className="text-foreground">
+                                      {genomeSize}
+                                    </span>
+                                  </span>
+                                )}
+                                {accession.ensembl_release && (
+                                  <span>
+                                    Ensembl release: {" "}
+                                    <span className="text-foreground">
+                                      {accession.ensembl_release}
+                                    </span>
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+                            <a
+                              href={catalogBuildHref(accession)}
+                              className="inline-flex h-8 shrink-0 items-center justify-center rounded-lg bg-primary px-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                            >
+                              Build
+                            </a>
+                          </div>
+                        );
+                      })}
                     </div>
                   )}
                 </CardContent>

@@ -1,6 +1,12 @@
 "use client";
 
-import { useState, useCallback, useEffect, useRef } from "react";
+import {
+  useState,
+  useCallback,
+  useEffect,
+  useRef,
+  type FocusEvent,
+} from "react";
 import confetti from "canvas-confetti";
 import { Button } from "@/components/ui/button";
 import {
@@ -60,6 +66,7 @@ import BatchMode from "@/features/build/BatchMode";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 
 type DataSource = "ncbi" | "ensembl";
+type EntryMode = "import" | "manual";
 
 interface FormData {
   packageName: string;
@@ -93,7 +100,29 @@ const EMPTY_FORM: FormData = {
   fastaUrl: "",
 };
 
+const MANUAL_EMPTY_FORM: FormData = {
+  ...EMPTY_FORM,
+  version: "",
+};
+
 type Step = "input" | "review" | "building" | "failed" | "result";
+
+type PackageValidation = {
+  status: "idle" | "valid" | "invalid";
+  errors: string[];
+};
+
+interface EntryDraft {
+  form: FormData;
+  accessionInput: string;
+  dataSource: DataSource;
+  circularSeqs: CircularSequence[];
+  gcfSuggestion: string | null;
+  packageValidation: PackageValidation;
+  ensemblSpecies: string;
+  ensemblGroup: string;
+  ensemblAssemblyAccession: string;
+}
 
 interface BuildRecord {
   jobId: string;
@@ -136,6 +165,51 @@ function formatDuration(seconds?: number) {
 function normalizeSubmittedAccession(input: string, source: DataSource) {
   const trimmed = input.trim();
   return source === "ncbi" ? extractAccession(trimmed) ?? trimmed : trimmed;
+}
+
+function normalizeEnsemblGroup(value?: string | null): string {
+  const normalized = (value ?? "").toLowerCase();
+  if (["bacteria", "fungi", "metazoa", "plants", "protists"].includes(normalized)) {
+    return normalized;
+  }
+  return "vertebrates";
+}
+
+function ensemblSourceUrl(species: string, group: string): string {
+  const hosts: Record<string, string> = {
+    bacteria: "bacteria.ensembl.org",
+    fungi: "fungi.ensembl.org",
+    metazoa: "metazoa.ensembl.org",
+    plants: "plants.ensembl.org",
+    protists: "protists.ensembl.org",
+    vertebrates: "www.ensembl.org",
+  };
+  const host = hosts[normalizeEnsemblGroup(group)] ?? hosts.vertebrates;
+  const path = species.charAt(0).toUpperCase() + species.slice(1);
+  return `https://${host}/${path}/Info/Index`;
+}
+
+function inferEnsemblGroup(input: string): string {
+  const match = input.match(
+    /https?:\/\/(bacteria|fungi|metazoa|plants|protists)\.ensembl\.org/i
+  );
+  return match ? normalizeEnsemblGroup(match[1]) : "vertebrates";
+}
+
+function deriveEnsemblSpecies(
+  organism: string,
+  group: string,
+  accession: string
+): string {
+  const normalized = cleanOrganismName(organism)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "");
+  if (normalizeEnsemblGroup(group) === "vertebrates") return normalized;
+  const accessionDigits = accession.match(/^GCA_(\d+)/)?.[1];
+  return accessionDigits
+    ? `${normalized.replace(/_gca_\d+$/, "")}_gca_${accessionDigits}`
+    : normalized;
 }
 
 function saveBuildRecord(record: BuildRecord) {
@@ -254,6 +328,28 @@ function validateNucleotideFastaPreview(text: string) {
   }
 }
 
+function hideExamplePlaceholder(event: FocusEvent<HTMLDivElement>) {
+  const field = event.target;
+  if (!(field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement)) {
+    return;
+  }
+  if (field.placeholder) {
+    field.dataset.examplePlaceholder = field.placeholder;
+    field.placeholder = "";
+  }
+}
+
+function restoreExamplePlaceholder(event: FocusEvent<HTMLDivElement>) {
+  const field = event.target;
+  if (!(field instanceof HTMLInputElement || field instanceof HTMLTextAreaElement)) {
+    return;
+  }
+  if (field.dataset.examplePlaceholder !== undefined) {
+    field.placeholder = field.dataset.examplePlaceholder;
+    delete field.dataset.examplePlaceholder;
+  }
+}
+
 export default function Home() {
   const [step, setStep] = useState<Step>("input");
   const [batchMode, setBatchMode] = useState(false);
@@ -263,17 +359,34 @@ export default function Home() {
   useEffect(() => {
     setBuildHistory(loadBuildHistory());
   }, []);
+  const [entryMode, setEntryMode] = useState<EntryMode>("import");
   const [dataSource, setDataSource] = useState<DataSource>("ncbi");
   const [accessionInput, setAccessionInput] = useState("");
+  const [ensemblSpecies, setEnsemblSpecies] = useState("");
+  const [ensemblGroup, setEnsemblGroup] = useState("vertebrates");
+  const [ensemblAssemblyAccession, setEnsemblAssemblyAccession] = useState("");
   const [form, setForm] = useState<FormData>(EMPTY_FORM);
   const [circularSeqs, setCircularSeqs] = useState<CircularSequence[]>([]);
   const [fetching, setFetching] = useState(false);
   const [error, setError] = useState("");
   const [gcfSuggestion, setGcfSuggestion] = useState<string | null>(null);
-  const [packageValidation, setPackageValidation] = useState<{
-    status: "idle" | "valid" | "invalid";
-    errors: string[];
-  }>({ status: "idle", errors: [] });
+  const [packageValidation, setPackageValidation] = useState<PackageValidation>({
+    status: "idle",
+    errors: [],
+  });
+  const importDraftRef = useRef<EntryDraft | null>(null);
+  const manualDraftRef = useRef<EntryDraft | null>(null);
+
+  const clearEnsemblContext = () => {
+    setEnsemblSpecies("");
+    setEnsemblGroup("vertebrates");
+    setEnsemblAssemblyAccession("");
+  };
+
+  const changeAccessionInput = (value: string) => {
+    setAccessionInput(value);
+    if (dataSource === "ensembl") clearEnsemblContext();
+  };
 
   const validatePackageName = useCallback((name: string) => {
     const errors = validateBSgenomePackageName(name);
@@ -296,6 +409,70 @@ export default function Home() {
     []
   );
 
+  const startManualEntry = () => {
+    if (entryMode === "manual") return;
+
+    importDraftRef.current = {
+      form,
+      accessionInput,
+      dataSource,
+      circularSeqs,
+      gcfSuggestion,
+      packageValidation,
+      ensemblSpecies,
+      ensemblGroup,
+      ensemblAssemblyAccession,
+    };
+
+    const draft = manualDraftRef.current;
+    setEntryMode("manual");
+    setForm(draft?.form ?? MANUAL_EMPTY_FORM);
+    setAccessionInput(draft?.accessionInput ?? "");
+    setDataSource(draft?.dataSource ?? "ncbi");
+    setCircularSeqs(draft?.circularSeqs ?? []);
+    setGcfSuggestion(draft?.gcfSuggestion ?? null);
+    setEnsemblSpecies(draft?.ensemblSpecies ?? "");
+    setEnsemblGroup(draft?.ensemblGroup ?? "vertebrates");
+    setEnsemblAssemblyAccession(draft?.ensemblAssemblyAccession ?? "");
+    setPackageValidation(
+      draft?.packageValidation ?? { status: "idle", errors: [] }
+    );
+    setError("");
+    setStep("review");
+  };
+
+  const showImportEntry = () => {
+    if (entryMode === "import") return;
+
+    manualDraftRef.current = {
+      form,
+      accessionInput,
+      dataSource,
+      circularSeqs,
+      gcfSuggestion,
+      packageValidation,
+      ensemblSpecies,
+      ensemblGroup,
+      ensemblAssemblyAccession,
+    };
+
+    const draft = importDraftRef.current;
+    setEntryMode("import");
+    setForm(draft?.form ?? EMPTY_FORM);
+    setAccessionInput(draft?.accessionInput ?? "");
+    setDataSource(draft?.dataSource ?? "ncbi");
+    setCircularSeqs(draft?.circularSeqs ?? []);
+    setGcfSuggestion(draft?.gcfSuggestion ?? null);
+    setEnsemblSpecies(draft?.ensemblSpecies ?? "");
+    setEnsemblGroup(draft?.ensemblGroup ?? "vertebrates");
+    setEnsemblAssemblyAccession(draft?.ensemblAssemblyAccession ?? "");
+    setPackageValidation(
+      draft?.packageValidation ?? { status: "idle", errors: [] }
+    );
+    setError("");
+    setStep(draft?.form.packageName ? "review" : "input");
+  };
+
   const handleFetch = async () => {
     setError("");
     setFetching(true);
@@ -306,8 +483,10 @@ export default function Home() {
 
       if (dataSource === "ensembl") {
         // ── Ensembl path ──
-        const species = extractEnsemblSpecies(accessionInput.trim());
-        if (!species) {
+        let species =
+          ensemblSpecies || extractEnsemblSpecies(accessionInput.trim()) || "";
+        const catalogAccession = extractAccession(ensemblAssemblyAccession);
+        if (!species && !catalogAccession) {
           setError(
             "Could not detect species. Paste an Ensembl URL (e.g. https://www.ensembl.org/Danio_rerio/Info/Index) or enter a species name (e.g. danio_rerio)."
           );
@@ -315,13 +494,45 @@ export default function Home() {
           return;
         }
 
-        const ensInfo = await fetchEnsemblAssemblyInfo(species);
-        const circNames = detectCircularFromKaryotype(ensInfo.karyotype);
-        const organism = cleanOrganismName(ensInfo.organism);
+        let organism = "";
+        let commonName = "";
+        let assemblyName = "";
+        let assemblyAccession = "";
+        let releaseDate = "";
+        let circNames: string[] = [];
+
+        if (catalogAccession) {
+          const [ncbiInfo, ncbiCircs] = await Promise.all([
+            fetchAssemblyInfo(catalogAccession),
+            fetchCircularSequences(catalogAccession),
+          ]);
+          circs = ncbiCircs;
+          organism = cleanOrganismName(ncbiInfo.organism);
+          commonName = ncbiInfo.commonName;
+          assemblyName = ncbiInfo.assemblyName;
+          assemblyAccession = catalogAccession;
+          releaseDate = ncbiInfo.releaseDate;
+          circNames = ncbiCircs.map((sequence) => sequence.name);
+          if (!species) {
+            species = deriveEnsemblSpecies(
+              organism,
+              ensemblGroup,
+              catalogAccession
+            );
+          }
+        } else {
+          const ensInfo = await fetchEnsemblAssemblyInfo(species);
+          organism = cleanOrganismName(ensInfo.organism);
+          commonName = ensInfo.commonName;
+          assemblyName = ensInfo.assemblyName;
+          assemblyAccession = ensInfo.assemblyAccession;
+          circNames = detectCircularFromKaryotype(ensInfo.karyotype);
+        }
+
         const packageName = buildBSgenomePackageName(
           organism,
           "Ensembl",
-          ensInfo.assemblyName
+          assemblyName
         );
         if (!packageName.name) {
           throw new Error(`Could not generate a valid package name: ${packageName.reason}`);
@@ -330,19 +541,21 @@ export default function Home() {
         newForm = {
           packageName: packageName.name,
           organism,
-          commonName: ensInfo.commonName,
-          assembly: ensInfo.assemblyName,
+          commonName,
+          assembly: assemblyName,
           provider: "Ensembl",
-          releaseDate: "",
+          releaseDate,
           version: "1.0.0",
           circSeqs: circNames.length > 0 ? circNames.join(", ") : "character(0)",
-          title: `Full genome sequences for ${ensInfo.organism} (Ensembl version ${ensInfo.assemblyName})`,
-          description: `Full genome sequences for ${ensInfo.organism} (${ensInfo.commonName}) as provided by Ensembl (${ensInfo.assemblyName}) and stored in Biostrings objects.`,
-          sourceUrl: `https://www.ensembl.org/${species.charAt(0).toUpperCase() + species.slice(1)}/Info/Index`,
+          title: `Full genome sequences for ${organism} (Ensembl version ${assemblyName})`,
+          description: `Full genome sequences for ${organism}${commonName ? ` (${commonName})` : ""} as provided by Ensembl (${assemblyName}) and stored in Biostrings objects.`,
+          sourceUrl: ensemblSourceUrl(species, ensemblGroup),
           fastaSource: "ncbi",
           fastaUrl: "",
         };
 
+        setEnsemblSpecies(species);
+        setEnsemblAssemblyAccession(assemblyAccession);
         setGcfSuggestion(null);
       } else {
         // ── NCBI path ──
@@ -446,12 +659,13 @@ export default function Home() {
   const displayDownloadUrl = downloadUrl
     ? publicPackageDownloadUrl(downloadUrl)
     : "";
+  const effectiveVersion = form.version.trim() || "1.0.0";
   const installCommand = displayDownloadUrl
     ? warningFreeInstallCommand(displayDownloadUrl)
     : "";
   const fallbackDownloadUrl = jobId
-    ? publicPackageDownloadUrl(
-        `${siteConfig.githubUrl}/releases/download/build-${jobId}/${form.packageName}_${form.version}.tar.gz`
+      ? publicPackageDownloadUrl(
+        `${siteConfig.githubUrl}/releases/download/build-${jobId}/${form.packageName}_${effectiveVersion}.tar.gz`
       )
     : "";
   formRef.current = form;
@@ -537,12 +751,17 @@ export default function Home() {
     // Pre-fill accession from URL and auto-fetch metadata
     // e.g., ?accession=GCF_000001215.4 or ?accession=danio_rerio&source=ensembl
     const prefillAccession = params.get("accession");
+    const prefillSpecies = params.get("species");
     const prefillSource = params.get("source");
-    if (prefillAccession) {
+    if (prefillAccession || prefillSpecies) {
+      setEntryMode("import");
       if (prefillSource === "ensembl") {
         setDataSource("ensembl");
+        setEnsemblSpecies(prefillSpecies ?? "");
+        setEnsemblAssemblyAccession(prefillAccession ?? "");
+        setEnsemblGroup(normalizeEnsemblGroup(params.get("division")));
       }
-      setAccessionInput(prefillAccession);
+      setAccessionInput(prefillSpecies ?? prefillAccession ?? "");
       // Auto-trigger fetch after a short delay for React to commit state.
       // We click the Fetch button directly to avoid stale closure issues.
       setTimeout(() => {
@@ -689,7 +908,10 @@ export default function Home() {
 
     try {
       let uploadPayload: Record<string, string> = {};
-      const submittedAccession = normalizeSubmittedAccession(accessionInput, dataSource);
+      const submittedAccession =
+        dataSource === "ensembl" && ensemblAssemblyAccession
+          ? ensemblAssemblyAccession
+          : normalizeSubmittedAccession(accessionInput, dataSource);
 
       if (form.fastaSource === "upload" && uploadedFasta) {
         const session = await uploadFastaFile(uploadedFasta);
@@ -707,7 +929,7 @@ export default function Home() {
         genome: form.assembly,
         provider: form.provider,
         release_date: form.releaseDate,
-        version: form.version,
+        version: effectiveVersion,
         circ_seqs: form.circSeqs,
         title: form.title,
         description: form.description,
@@ -716,6 +938,16 @@ export default function Home() {
         fasta_source: form.fastaSource,
         fasta_url: form.fastaUrl.trim(),
         data_source: dataSource,
+        species_url:
+          dataSource === "ensembl"
+            ? ensemblSpecies || extractEnsemblSpecies(accessionInput.trim()) || ""
+            : "",
+        ensembl_group:
+          dataSource === "ensembl"
+            ? ensemblSpecies
+              ? ensemblGroup
+              : inferEnsemblGroup(accessionInput.trim())
+            : "",
         ...uploadPayload,
       });
 
@@ -911,11 +1143,16 @@ export default function Home() {
 
   const needsUploadedFasta = form.fastaSource === "upload" && !uploadedFasta;
   const needsFastaUrl = form.fastaSource === "url" && !form.fastaUrl.trim();
+  const needsOfficialIdentifier =
+    entryMode === "manual" &&
+    form.fastaSource === "ncbi" &&
+    !accessionInput.trim();
   const uploadBusy = uploadState === "validating" || uploadState === "uploading";
   const buildButtonDisabled =
     !form.packageName ||
     !form.organism ||
     packageValidation.status !== "valid" ||
+    needsOfficialIdentifier ||
     needsUploadedFasta ||
     needsFastaUrl ||
     uploadBusy;
@@ -926,6 +1163,10 @@ export default function Home() {
       ? "Checking FASTA File..."
       : uploadState === "uploading"
       ? `Uploading FASTA... ${uploadProgress}%`
+      : needsOfficialIdentifier
+      ? dataSource === "ensembl"
+        ? "Enter an Ensembl Species First"
+        : "Enter an NCBI Accession First"
       : needsFastaUrl
       ? "Enter a FASTA URL First"
       : needsUploadedFasta
@@ -993,6 +1234,43 @@ export default function Home() {
       : [];
   const submittedAccession = normalizeSubmittedAccession(accessionInput, dataSource);
   const failedProgressStep = buildProgressSteps.find((progressStep) => progressStep.status === "failed");
+  const entryModeTabs = (
+    <div className="space-y-2">
+      <Label>Metadata Entry</Label>
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        <button
+          type="button"
+          className={`rounded-md border border-primary bg-primary px-4 py-4 text-left text-primary-foreground transition-all cursor-pointer hover:bg-primary/90 ${
+            entryMode === "import"
+              ? "ring-2 ring-primary ring-offset-2"
+              : "opacity-80 hover:opacity-100"
+          }`}
+          onClick={showImportEntry}
+        >
+          <span className="block text-sm font-semibold">
+            Import from NCBI / Ensembl
+          </span>
+          <span className="mt-1 block text-xs font-normal text-primary-foreground/80">
+            Fetch and auto-fill package metadata
+          </span>
+        </button>
+        <button
+          type="button"
+          className={`rounded-md border border-primary bg-primary px-4 py-4 text-left text-primary-foreground transition-all cursor-pointer hover:bg-primary/90 ${
+            entryMode === "manual"
+              ? "ring-2 ring-primary ring-offset-2"
+              : "opacity-80 hover:opacity-100"
+          }`}
+          onClick={startManualEntry}
+        >
+          <span className="block text-sm font-semibold">Enter Manually</span>
+          <span className="mt-1 block text-xs font-normal text-primary-foreground/80">
+            Fill in all package metadata yourself
+          </span>
+        </button>
+      </div>
+    </div>
+  );
 
   return (
     <div className="flex flex-col flex-1 bg-background">
@@ -1005,8 +1283,8 @@ export default function Home() {
             Build BSgenome R Packages Online
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Paste an NCBI accession or Ensembl URL, review auto-filled metadata,
-            and download a ready-to-install BSgenome package. No local R setup required.
+            Import metadata from NCBI or Ensembl, or enter it manually, then
+            download a ready-to-install BSgenome package. No local R setup required.
           </p>
           <p className="mt-3">
             <a
@@ -1018,44 +1296,6 @@ export default function Home() {
             </a>
           </p>
         </section>
-
-        {/* How it works */}
-        {step === "input" && (
-          <section className="mx-auto max-w-4xl px-6 pb-8">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-              {[
-                {
-                  num: "1",
-                  title: "Paste Accession",
-                  desc: "Enter an NCBI or Ensembl accession — metadata fills automatically",
-                },
-                {
-                  num: "2",
-                  title: "Review & Build",
-                  desc: "Check the auto-filled fields, then click Build",
-                },
-                {
-                  num: "3",
-                  title: "Download Package",
-                  desc: "Get your .tar.gz in under a minute — install with R CMD INSTALL",
-                },
-              ].map((s) => (
-                <div
-                  key={s.num}
-                  className="flex flex-col items-center gap-2 p-4 rounded-lg bg-secondary/50"
-                >
-                  <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
-                    {s.num}
-                  </div>
-                  <h3 className="font-heading font-semibold text-foreground">
-                    {s.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">{s.desc}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
 
         <div className="mx-auto max-w-4xl px-6 pb-20">
           {/* ─── Batch Mode ─── */}
@@ -1069,9 +1309,9 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <div>
-                    <CardTitle>Enter Genome Information</CardTitle>
+                    <CardTitle>Start a New Build</CardTitle>
                     <CardDescription>
-                      Choose a data source and provide an accession or URL to auto-fill all metadata.
+                      Choose whether to import metadata or enter it yourself.
                     </CardDescription>
                   </div>
                   <Button variant="outline" size="sm" onClick={() => setBatchMode(true)}>
@@ -1080,9 +1320,13 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
+                {entryModeTabs}
+
+                <Separator />
+
                 {/* Data source toggle */}
                 <div className="space-y-2">
-                  <Label>Data Source</Label>
+                  <Label>Import Source</Label>
                   <div className="grid grid-cols-2 gap-2">
                     <button
                       type="button"
@@ -1094,6 +1338,7 @@ export default function Home() {
                       onClick={() => {
                         setDataSource("ncbi");
                         setAccessionInput("");
+                        clearEnsemblContext();
                         setError("");
                       }}
                     >
@@ -1109,12 +1354,53 @@ export default function Home() {
                       onClick={() => {
                         setDataSource("ensembl");
                         setAccessionInput("");
+                        clearEnsemblContext();
                         setError("");
                       }}
                     >
                       Ensembl
                     </button>
                   </div>
+                </div>
+
+                <div className="rounded-md border border-border bg-secondary/40 px-4 py-3 text-sm text-muted-foreground">
+                  {dataSource === "ncbi" ? (
+                    <p>
+                      Find an assembly in{" "}
+                      <a
+                        href="https://www.ncbi.nlm.nih.gov/datasets/genome/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-primary hover:underline"
+                      >
+                        NCBI Datasets Genome ↗
+                      </a>
+                    </p>
+                  ) : (
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                      <span>Browse Ensembl genomes:</span>
+                      {[
+                        ["Main / vertebrates", "https://www.ensembl.org/"],
+                        ["Plants", "https://plants.ensembl.org/"],
+                        ["Fungi", "https://fungi.ensembl.org/"],
+                        ["Metazoa", "https://metazoa.ensembl.org/"],
+                        ["Protists", "https://protists.ensembl.org/"],
+                        ["Bacteria", "https://bacteria.ensembl.org/"],
+                      ].map(([label, url], index) => (
+                        <span key={url}>
+                          {index > 0 && <span className="mr-2 text-border">·</span>}
+                          <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium text-primary hover:underline"
+                          >
+                            {label} ↗
+                          </a>
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 <div className="space-y-2">
@@ -1133,7 +1419,7 @@ export default function Home() {
                       }
                       className="font-mono flex-1"
                       value={accessionInput}
-                      onChange={(e) => setAccessionInput(e.target.value)}
+                      onChange={(e) => changeAccessionInput(e.target.value)}
                       onKeyDown={(e) => e.key === "Enter" && handleFetch()}
                     />
                     <Button onClick={handleFetch} disabled={fetching} className="min-w-[90px]" data-auto-fetch>
@@ -1205,20 +1491,6 @@ export default function Home() {
                   </div>
                 )}
 
-                <div className="relative py-2">
-                  <Separator />
-                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-card px-3 text-sm text-muted-foreground">
-                    or fill in manually
-                  </span>
-                </div>
-
-                <Button
-                  variant="outline"
-                  className="w-full"
-                  onClick={() => setStep("review")}
-                >
-                  Skip to manual entry
-                </Button>
               </CardContent>
             </Card>
           )}
@@ -1229,24 +1501,37 @@ export default function Home() {
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <div>
-                    <CardTitle>Review Metadata</CardTitle>
+                    <CardTitle>Start a New Build</CardTitle>
                     <CardDescription>
-                      Auto-filled from {dataSource === "ensembl" ? "Ensembl" : "NCBI"}. All fields are editable.
+                      Choose whether to import metadata or enter it yourself.
                     </CardDescription>
                   </div>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => {
-                      setStep("input");
-                      setError("");
-                    }}
-                  >
-                    &larr; Back
-                  </Button>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-5">
+              <CardContent
+                className="space-y-5"
+                onFocusCapture={
+                  entryMode === "manual" ? hideExamplePlaceholder : undefined
+                }
+                onBlurCapture={
+                  entryMode === "manual" ? restoreExamplePlaceholder : undefined
+                }
+              >
+                {entryModeTabs}
+
+                <Separator />
+
+                <div>
+                  <h2 className="font-heading text-lg font-semibold text-foreground">
+                    {entryMode === "manual" ? "Enter Package Metadata" : "Review Metadata"}
+                  </h2>
+                  <p className="text-sm text-muted-foreground">
+                    {entryMode === "manual"
+                      ? "Fill in the package details below. All fields remain editable."
+                      : `Auto-filled from ${dataSource === "ensembl" ? "Ensembl" : "NCBI"}. All fields are editable.`}
+                  </p>
+                </div>
+
                 {/* Build error */}
                 {buildError && (
                   <div className="bg-destructive/10 border border-destructive/20 rounded-md px-4 py-3 text-sm space-y-3">
@@ -1270,7 +1555,7 @@ export default function Home() {
                           "| **Original Input** | `" + accessionInput.trim() + "` |",
                           "| **Data Source** | " + dataSource + " |",
                           "| **Circular Seqs** | `" + form.circSeqs + "` |",
-                          "| **Version** | " + form.version + " |",
+                          "| **Version** | " + effectiveVersion + " |",
                           "| **Job ID** | `" + (jobId || "N/A") + "` |",
                           "| **Failed Step** | " + (failedProgressStep?.label ?? "N/A") + " |",
                           "",
@@ -1551,6 +1836,68 @@ export default function Home() {
                     </button>
                   </div>
                 </div>
+
+                {/* Official FASTA lookup for manually entered metadata */}
+                {entryMode === "manual" && form.fastaSource === "ncbi" && (
+                  <div className="space-y-3 rounded-md border border-border bg-secondary/30 p-4">
+                    <div className="space-y-2">
+                      <Label>Official Genome Source</Label>
+                      <div className="grid grid-cols-2 gap-2">
+                        <button
+                          type="button"
+                          className={`rounded-md border px-4 py-2.5 text-sm font-medium transition-colors cursor-pointer ${
+                            dataSource === "ncbi"
+                              ? "bg-accent border-primary text-primary"
+                              : "bg-background border-border text-muted-foreground hover:bg-secondary"
+                          }`}
+                          onClick={() => {
+                            setDataSource("ncbi");
+                            setAccessionInput("");
+                            clearEnsemblContext();
+                          }}
+                        >
+                          NCBI
+                        </button>
+                        <button
+                          type="button"
+                          className={`rounded-md border px-4 py-2.5 text-sm font-medium transition-colors cursor-pointer ${
+                            dataSource === "ensembl"
+                              ? "bg-accent border-primary text-primary"
+                              : "bg-background border-border text-muted-foreground hover:bg-secondary"
+                          }`}
+                          onClick={() => {
+                            setDataSource("ensembl");
+                            setAccessionInput("");
+                            clearEnsemblContext();
+                          }}
+                        >
+                          Ensembl
+                        </button>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="manualOfficialIdentifier">
+                        {dataSource === "ncbi"
+                          ? "NCBI Assembly Accession or URL"
+                          : "Ensembl Species URL or Name"}
+                      </Label>
+                      <Input
+                        id="manualOfficialIdentifier"
+                        className="font-mono"
+                        placeholder={
+                          dataSource === "ncbi"
+                            ? "e.g. GCF_000001405.40"
+                            : "e.g. danio_rerio"
+                        }
+                        value={accessionInput}
+                        onChange={(e) => changeAccessionInput(e.target.value)}
+                      />
+                      <p className="text-sm text-muted-foreground">
+                        Used only to locate the official genome FASTA. Metadata above will not be overwritten.
+                      </p>
+                    </div>
+                  </div>
+                )}
 
                 {/* FASTA URL area */}
                 {form.fastaSource === "url" && (
@@ -1954,7 +2301,7 @@ export default function Home() {
                   Package Built Successfully
                 </CardTitle>
                 <CardDescription>
-                  {fileName || `${form.packageName}_${form.version}.tar.gz`}
+                  {fileName || `${form.packageName}_${effectiveVersion}.tar.gz`}
                   {fileSize > 0 && ` · ${(fileSize / 1024 / 1024).toFixed(1)} MB`}
                   {buildTotalTime > 0 && ` · Built in ${formatDuration(buildTotalTime)}`}
                 </CardDescription>
@@ -2122,8 +2469,12 @@ export default function Home() {
                   className="w-full"
                   onClick={() => {
                     setStep("input");
+                    setEntryMode("import");
+                    importDraftRef.current = null;
+                    manualDraftRef.current = null;
                     setForm(EMPTY_FORM);
                     setAccessionInput("");
+                    clearEnsemblContext();
                     setCircularSeqs([]);
                     setUploadedFasta(null);
                     setUploadError("");

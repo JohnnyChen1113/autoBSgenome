@@ -80,6 +80,11 @@ export default function ApiDocs() {
 }`}</CodeBlock>
           </div>
           <p className="text-sm leading-6 text-muted-foreground">
+            For Ensembl builds, set <code>data_source</code> to{" "}
+            <code>ensembl</code> and include <code>species_url</code> (the
+            Ensembl species slug) plus <code>ensembl_group</code> ({" "}
+            <code>vertebrates</code>, <code>bacteria</code>, <code>fungi</code>,{" "}
+            <code>metazoa</code>, <code>plants</code>, or <code>protists</code>).{" "}
             For FASTA URL builds, set <code>fasta_source</code> to{" "}
             <code>url</code> and include <code>fasta_url</code>. For browser
             uploads, set <code>fasta_source</code> to <code>upload</code> and

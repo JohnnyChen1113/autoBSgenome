@@ -3,7 +3,7 @@
 
 Used by .github/workflows/build-bsgenome.yml. Handles three families:
   - main Ensembl vertebrates (ftp.ensembl.org)
-  - EnsemblGenomes (fungi/plants/metazoa/protists/bacteria) on ftp.ensemblgenomes.org
+  - EnsemblGenomes (fungi/plants/metazoa/protists/bacteria) on the EBI FTP mirror
   - Collection-style species (e.g. fungi_ascomycota4_collection/)
 
 Inputs come from the build queue: species_url, group, accession.
@@ -19,6 +19,7 @@ import urllib.request
 import urllib.error
 
 EG_DIVISIONS = {"fungi", "plants", "metazoa", "protists", "bacteria"}
+EG_FTP_BASE = "https://ftp.ensemblgenomes.ebi.ac.uk/pub"
 
 USER_AGENT = "autoBSgenome/1.0 (+https://github.com/JohnnyChen1113/autoBSgenome)"
 TIMEOUT = 30
@@ -46,7 +47,7 @@ def get_main_ensembl_release():
 
 
 def find_eg_release(division):
-    s, body = http_get(f"http://ftp.ensemblgenomes.org/pub/{division}/")
+    s, body = http_get(f"{EG_FTP_BASE}/{division}/")
     if s != 200:
         return None
     rels = re.findall(r'href="release-(\d+)/?"', body)
@@ -137,7 +138,7 @@ def try_directories(base_template, names):
 
 def scan_collections(division, release, species_norm, accession):
     """Walk *_collection/ subdirs. Returns the final FASTA URL (not just the dir) or None."""
-    base = f"http://ftp.ensemblgenomes.org/pub/{division}/release-{release}/fasta/"
+    base = f"{EG_FTP_BASE}/{division}/release-{release}/fasta/"
     s, body = http_get(base)
     if s != 200:
         return None
@@ -210,7 +211,7 @@ def resolve(species_url, group, accession):
     # EnsemblGenomes occasionally drops species from the latest release after
     # a taxonomy re-shuffle; fall back one release if current misses.
     for release in (eg_release, eg_release - 1):
-        template = f"http://ftp.ensemblgenomes.org/pub/{group}/release-{release}/fasta/{{name}}/dna/"
+        template = f"{EG_FTP_BASE}/{group}/release-{release}/fasta/{{name}}/dna/"
         url = try_directories(template, names)
         if url:
             return url

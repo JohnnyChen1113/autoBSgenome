@@ -56,6 +56,9 @@ Replace:
 - `PROVIDER`: `NCBI` or `Ensembl`
 - `ASSEMBLY`: assembly name without dots (e.g., `GRCh38`)
 - `accession`: NCBI GCF_/GCA_ accession
+- For Ensembl builds, also provide `species_url` (the Ensembl species slug) and
+  `ensembl_group` (`vertebrates`, `bacteria`, `fungi`, `metazoa`, `plants`, or
+  `protists`).
 - `circ_seqs`: circular sequences (e.g., `MT`, `character(0)` if none)
 
 Response includes `job_id`, queue status, and `delete_token`. Keep `delete_token` private.
