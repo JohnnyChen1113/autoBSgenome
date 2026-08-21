@@ -145,7 +145,7 @@ jobs:
             sleep $((attempt * 30))
           done
           unzip -o genome.zip
-          FASTA=$(find ncbi_dataset/data -name "*.fna" | head -1)
+          FASTA=$(find ncbi_dataset/data -name "*.fna" -print -quit)
           if [ -z "$FASTA" ]; then
             echo "ERROR: No FASTA file found in download"
             exit 1
@@ -312,7 +312,7 @@ jobs:
           start_resource_sampler fasta_statistics
           trap stop_resource_sampler EXIT
           # Get first 5 sequence IDs
-          SEQ_IDS=$(grep "^>" genome.fa | head -5 | sed 's/^>//' | cut -d' ' -f1 | tr '\n' ',' | sed 's/,$//')
+          SEQ_IDS=$(grep -m 5 "^>" genome.fa | sed 's/^>//' | cut -d' ' -f1 | tr '\n' ',' | sed 's/,$//')
           echo "seq_ids=${SEQ_IDS}" >> $GITHUB_OUTPUT
           # Get total sequence count
           SEQ_COUNT=$(grep -c "^>" genome.fa)
@@ -463,7 +463,7 @@ jobs:
             MAX_KB=$(grep "Maximum resident set size" /tmp/rbuild_time.log | awk '{print $NF}')
             [ -n "$MAX_KB" ] && python3 scripts/record_metric.py peak_mem_mb.rcmd_build $((MAX_KB / 1024)) || true
           fi
-          TARBALL=$(ls ${PACKAGE}_*.tar.gz | head -1)
+          TARBALL=$(find . -maxdepth 1 -type f -name "${PACKAGE}_*.tar.gz" -print -quit)
           TB_SIZE=$(stat -c%s "$TARBALL" 2>/dev/null || stat -f%z "$TARBALL" 2>/dev/null || echo 0)
           ARCHIVE_COMPLETED=$(date +%s)
           python3 scripts/record_metric.py timings_epoch.archive_completed "$ARCHIVE_COMPLETED"
@@ -478,7 +478,7 @@ jobs:
           trap stop_resource_sampler EXIT
           PACKAGE="${{ steps.params.outputs.package_name }}"
           START=$(date +%s)
-          TARBALL=$(ls "${PACKAGE}"_*.tar.gz | head -1)
+          TARBALL=$(find . -maxdepth 1 -type f -name "${PACKAGE}_*.tar.gz" -print -quit)
           tar -tzf "$TARBALL" > /tmp/archive_contents.txt
           grep -Fxq "${PACKAGE}/DESCRIPTION" /tmp/archive_contents.txt
           grep -Fxq "${PACKAGE}/inst/extdata/single_sequences.2bit" /tmp/archive_contents.txt
