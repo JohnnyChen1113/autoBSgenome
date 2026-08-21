@@ -269,5 +269,18 @@ class ManifestTests(unittest.TestCase):
             self.assertIn("8 min 20 s", markdown)
 
 
+class WorkflowRuntimeContractTests(unittest.TestCase):
+    def test_builder_steps_run_under_bash(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+        build_job_header = workflow.split("\n    steps:", 1)[0]
+
+        self.assertIn(
+            "    defaults:\n      run:\n        shell: bash\n",
+            build_job_header,
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
