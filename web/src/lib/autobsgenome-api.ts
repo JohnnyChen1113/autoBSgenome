@@ -28,8 +28,8 @@ export type UploadPartResult = {
 
 export type BuildStartResponse = {
   job_id: string;
-  delete_token?: string;
   queue_position?: number;
+  retention_days?: number;
 };
 
 export type BuildProgressStep = {
@@ -46,6 +46,8 @@ export type BuildStatusResponse = {
   download_url?: string;
   file_name?: string;
   file_size?: number;
+  retention_days?: number;
+  scheduled_cleanup_after?: string;
   message?: string;
   error?: string;
   build_steps?: BuildProgressStep[];
@@ -147,14 +149,6 @@ export async function startBuild(payload: JsonObject): Promise<BuildStartRespons
     throw new Error("Failed to start build");
   }
   return data;
-}
-
-export function deleteBuild(jobId: string, deleteToken: string): Promise<void> {
-  return apiJson<void>(`/api/build/${jobId}`, {
-    method: "DELETE",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ delete_token: deleteToken }),
-  });
 }
 
 export function fetchBuildStatus(jobId: string): Promise<BuildStatusResponse> {

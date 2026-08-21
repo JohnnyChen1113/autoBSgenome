@@ -13,7 +13,6 @@ import {
   Hammer,
   Search,
   ShieldCheck,
-  Trash2,
   Upload,
 } from "lucide-react";
 import {
@@ -55,10 +54,9 @@ const workflow = [
 ];
 
 const safeguards = [
-  "Keep delete_token private. It can delete a user's temporary build release.",
-  "Do not publish builds to the permanent package repository. Public index inclusion is maintainer-curated.",
   "Report build failures with job_id, workflow_run_url, package metadata, and the exact API message.",
   "Use the package browser for lookup; use /api-docs as the source of truth for endpoint details.",
+  "Tell users that the public, server-hosted tarball is scheduled for cleanup approximately two days after build completion, and advise them to save a local copy.",
 ];
 
 const starterPrompt = `Use AutoBSgenome to build or find a BSgenome package.
@@ -79,8 +77,7 @@ Rules:
 4. Poll status until complete or failed.
 5. Return the final R command:
    local({options(timeout = 7200); url <- "DOWNLOAD_URL"; tarball <- tempfile(fileext = ".tar.gz"); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = "wb", method = "libcurl"); install.packages(tarball, repos = NULL, type = "source")})
-6. Do not publish this build to the permanent package repository. Permanent index inclusion is curated by AutoBSgenome maintainers.
-7. Keep delete_token private. Only explain deletion if I ask.`;
+6. Report scheduled_cleanup_after and tell me to save a local copy because the public server download is cleaned up approximately two days after completion.`;
 
 export default function AgentsPage() {
   const WORKER = siteConfig.apiBase;
@@ -107,7 +104,6 @@ export default function AgentsPage() {
           <div className="flex flex-wrap gap-2">
             <Badge>Agent Skill</Badge>
             <Badge variant="outline">HTTP API live</Badge>
-            <Badge variant="outline">MCP optional later</Badge>
           </div>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             AutoBSgenome for Agents
@@ -115,9 +111,8 @@ export default function AgentsPage() {
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
             AutoBSgenome can be used by coding agents and research assistants to
             check existing BSgenome packages, trigger builds, poll status, and
-            return direct R installation commands. The current integration
-            surface is the public HTTP API; a native MCP wrapper is not required
-            for the web product to work.
+            return direct R installation commands. The hosted Agent Skill defines
+            the workflow, while the public HTTP API provides the execution layer.
           </p>
         </div>
 
@@ -172,6 +167,15 @@ export default function AgentsPage() {
               className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline"
             >
               View hosted skill.md
+              <ExternalLink className="size-3.5" />
+            </a>
+            <a
+              href={`${siteConfig.githubUrl}/tree/main/skills/autobsgenome`}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 text-primary underline-offset-4 hover:underline"
+            >
+              Installable skill on GitHub
               <ExternalLink className="size-3.5" />
             </a>
             <a
@@ -241,12 +245,12 @@ export default function AgentsPage() {
                   Skill file
                 </div>
                 <code className="mt-1 block rounded-md bg-secondary px-3 py-2 font-mono text-xs text-foreground">
-                  skill.md
+                  skills/autobsgenome/SKILL.md
                 </code>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Keep this file aligned with the HTTP API docs. It should tell
-                  agents to use one-line local tarball installs and treat permanent
-                  repository inclusion as maintainer-curated.
+                  The GitHub folder is the canonical installable skill. The
+                  hosted <code>/skill.md</code> endpoint serves the same source
+                  for agents that consume instructions over HTTP.
                 </p>
               </div>
             </CardContent>
@@ -256,21 +260,20 @@ export default function AgentsPage() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <FileText className="size-5 text-primary" />
-                MCP status
+                Integration path
               </CardTitle>
               <CardDescription>
-                Useful later, but not the current source of truth.
+                A portable workflow backed by the public HTTP API.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-3 text-sm text-muted-foreground">
               <p>
-                A future MCP server can wrap package lookup, upload session
-                creation, build submission, status polling, deletion, and
-                install-command generation.
+                Use the hosted skill for search-first behavior, build safeguards,
+                status polling, and installation-command generation.
               </p>
               <p>
-                For now, agents should call the HTTP API directly and link users
-                to the package browser or API docs when they need human review.
+                Agents call the HTTP API directly and link users to the package
+                browser or API docs when human review is useful.
               </p>
             </CardContent>
           </Card>
@@ -316,30 +319,16 @@ export default function AgentsPage() {
             </pre>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2">
-            <div className="rounded-lg border border-border bg-secondary p-4">
-              <div className="flex items-center gap-2 text-sm font-medium text-foreground">
-                <Trash2 className="size-4 text-primary" />
-                Delete a temporary build
-              </div>
-              <pre className="mt-2 overflow-x-auto rounded-md bg-background p-3 font-mono text-xs text-foreground">
-{`curl -s -X DELETE ${WORKER}/api/build/JOB_ID \\
-  -H "Content-Type: application/json" \\
-  -d '{"delete_token":"DELETE_TOKEN"}'`}
-              </pre>
+          <div className="rounded-lg border border-border bg-secondary p-4">
+            <div className="flex items-center gap-2 text-sm font-medium text-foreground">
+              <Upload className="size-4 text-primary" />
+              Upload a local FASTA
             </div>
-
-            <div className="rounded-lg border border-border bg-secondary p-4">
-              <div className="flex items-center gap-2 text-sm font-medium text-foreground">
-                <Upload className="size-4 text-primary" />
-                Upload a local FASTA
-              </div>
-              <pre className="mt-2 overflow-x-auto rounded-md bg-background p-3 font-mono text-xs text-foreground">
+            <pre className="mt-2 overflow-x-auto rounded-md bg-background p-3 font-mono text-xs text-foreground">
 {`curl -s -X POST ${WORKER}/api/uploads \\
   -H "Content-Type: application/json" \\
   -d '{"file_name":"genome.fa","file_size":123456}'`}
-              </pre>
-            </div>
+            </pre>
           </div>
         </section>
 

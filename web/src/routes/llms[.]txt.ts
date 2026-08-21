@@ -32,8 +32,7 @@ AutoBSgenome is a web service and API for building, browsing, and installing BSg
 3. If no exact package exists, use ${origin}/api-docs to trigger a build through the public API.
 4. Poll build status until complete or failed.
 5. Return the final one-line R install command.
-6. Do not publish user-triggered builds to the permanent repository. Permanent package index inclusion is maintainer-curated.
-
+6. Tell the user that the public, server-hosted tarball is scheduled for cleanup approximately two days after completion and should be saved locally if needed later.
 ## Keywords
 BSgenome, Bioconductor, R package, reference genome, NCBI, Ensembl, FASTA, genome package builder, bioinformatics, genomics
 `;

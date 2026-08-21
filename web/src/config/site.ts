@@ -9,18 +9,10 @@ function publicEnv(key: string): string | undefined {
   return metaEnv[key] ?? procEnv[key];
 }
 
-const productionWorkersDevHost = "autobsgenome.bioinfoark.workers.dev";
-const productionWorkersDevApiBase = "https://autobsgenome-api.bioinfoark.workers.dev";
+const productionApiBase = "https://api.autobsgenome.org";
 
 function apiBase(): string {
-  if (
-    typeof window !== "undefined" &&
-    window.location.hostname === productionWorkersDevHost
-  ) {
-    return productionWorkersDevApiBase;
-  }
-
-  return publicEnv("VITE_AUTOBSGENOME_API_BASE") ?? productionWorkersDevApiBase;
+  return publicEnv("VITE_AUTOBSGENOME_API_BASE") ?? productionApiBase;
 }
 
 export const siteConfig = {

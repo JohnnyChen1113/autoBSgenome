@@ -98,6 +98,7 @@ function normalizeAssemblyAccession(input: string): string {
 }
 
 const MAX_QUEUE_SIZE = 5;
+const BUILD_RETENTION_DAYS = 2;
 const MAX_FASTA_UPLOAD_BYTES = 4 * 1024 * 1024 * 1024;
 const FASTA_UPLOAD_PART_SIZE_BYTES = 64 * 1024 * 1024;
 const UPLOAD_URL_TTL_SECONDS = 2 * 24 * 60 * 60;
@@ -208,10 +209,6 @@ async function uploadToken(
   return hmacHex(uploadSecret(env), `${uploadId}:${fileName}:${expiresAt}${suffix}`);
 }
 
-async function buildDeleteToken(env: Env, jobId: string): Promise<string> {
-  return hmacHex(uploadSecret(env), `build-delete:${jobId}`);
-}
-
 function uploadKey(uploadId: string, fileName: string): string {
   return `uploads/${uploadId}/${fileName}`;
 }
@@ -271,12 +268,6 @@ export default {
       return handleBuild(request, env, origin);
     }
 
-    // DELETE /api/build/:jobId — delete a temporary build release
-    const deleteBuildMatch = url.pathname.match(/^\/api\/build\/([a-zA-Z0-9-]+)$/);
-    if (deleteBuildMatch && request.method === "DELETE") {
-      return handleDeleteBuild(deleteBuildMatch[1], request, env, origin);
-    }
-
     // POST /api/uploads — create a signed R2 upload URL for user FASTA files
     if (url.pathname === "/api/uploads" && request.method === "POST") {
       return handleCreateUpload(request, env, origin);
@@ -304,21 +295,6 @@ export default {
     const statusMatch = url.pathname.match(/^\/api\/status\/([a-zA-Z0-9-]+)$/);
     if (statusMatch && request.method === "GET") {
       return handleStatus(statusMatch[1], env, origin);
-    }
-
-    // POST /api/publish — public publishing is disabled; permanent index updates are curated.
-    if (url.pathname === "/api/publish" && request.method === "POST") {
-      return jsonResponse(
-        {
-          error: "Permanent repository publishing is disabled for public API users",
-          message:
-            "Download the temporary tarball for local use. Permanent package index inclusion is curated by the AutoBSgenome maintainers.",
-          code: "PUBLIC_PUBLISH_DISABLED",
-        },
-        410,
-        origin,
-        env.ALLOWED_ORIGIN
-      );
     }
 
     return jsonResponse({ error: "Not found" }, 404, origin, env.ALLOWED_ORIGIN);
@@ -925,94 +901,7 @@ async function handleBuild(
       job_id: jobId,
       status: "queued",
       queue_position: queue.running + queue.queued,
-      delete_token: await buildDeleteToken(env, jobId),
-    },
-    200,
-    origin,
-    env.ALLOWED_ORIGIN
-  );
-}
-
-async function handleDeleteBuild(
-  jobId: string,
-  request: Request,
-  env: Env,
-  origin: string
-): Promise<Response> {
-  const body = await request.json<{ delete_token?: string }>().catch(() => ({}));
-  const token = body.delete_token ?? "";
-  const expected = await buildDeleteToken(env, jobId);
-  if (!constantTimeEqual(token, expected)) {
-    return jsonResponse(
-      { error: "Invalid delete token" },
-      403,
-      origin,
-      env.ALLOWED_ORIGIN
-    );
-  }
-
-  const ghHeaders = {
-    Authorization: `Bearer ${env.GITHUB_PAT}`,
-    Accept: "application/vnd.github+json",
-    "User-Agent": "AutoBSgenome-Worker",
-    "X-GitHub-Api-Version": "2022-11-28",
-  };
-  const tag = `build-${jobId}`;
-
-  let releaseDeleted = false;
-  const releaseRes = await fetch(
-    `https://api.github.com/repos/${env.GITHUB_REPO}/releases/tags/${tag}`,
-    { headers: ghHeaders }
-  );
-  if (releaseRes.ok) {
-    const release = await releaseRes.json<{ id: number }>();
-    const deleteReleaseRes = await fetch(
-      `https://api.github.com/repos/${env.GITHUB_REPO}/releases/${release.id}`,
-      { method: "DELETE", headers: ghHeaders }
-    );
-    if (!deleteReleaseRes.ok) {
-      const details = await deleteReleaseRes.text();
-      return jsonResponse(
-        { error: "Failed to delete temporary release", details },
-        500,
-        origin,
-        env.ALLOWED_ORIGIN
-      );
-    }
-    releaseDeleted = true;
-  } else if (releaseRes.status !== 404) {
-    const details = await releaseRes.text();
-    return jsonResponse(
-      { error: "Failed to look up temporary release", details },
-      500,
-      origin,
-      env.ALLOWED_ORIGIN
-    );
-  }
-
-  let tagDeleted = false;
-  const deleteTagRes = await fetch(
-    `https://api.github.com/repos/${env.GITHUB_REPO}/git/refs/tags/${tag}`,
-    { method: "DELETE", headers: ghHeaders }
-  );
-  if (deleteTagRes.status === 204) {
-    tagDeleted = true;
-  } else if (deleteTagRes.status !== 404) {
-    const details = await deleteTagRes.text();
-    return jsonResponse(
-      { error: "Temporary release was deleted, but deleting its tag failed", details },
-      500,
-      origin,
-      env.ALLOWED_ORIGIN
-    );
-  }
-
-  return jsonResponse(
-    {
-      status: "deleted",
-      job_id: jobId,
-      release_deleted: releaseDeleted,
-      tag_deleted: tagDeleted,
+      retention_days: BUILD_RETENTION_DAYS,
     },
     200,
     origin,
@@ -1031,6 +920,13 @@ function elapsedSeconds(start?: string | null, end?: string | null): number | un
   if (startMs === null) return undefined;
   const endMs = parseGitHubTime(end) ?? Date.now();
   return Math.max(0, Math.round((endMs - startMs) / 1000));
+}
+
+function scheduledCleanupAfter(createdAt: string): string {
+  const createdAtMs = Date.parse(createdAt);
+  return new Date(
+    createdAtMs + BUILD_RETENTION_DAYS * 24 * 60 * 60 * 1000
+  ).toISOString();
 }
 
 function actionStepState(step?: GitHubWorkflowStep): BuildProgressStep["status"] {
@@ -1287,6 +1183,7 @@ async function handleStatus(
   const release = await ghResponse.json<{
     name: string;
     body: string;
+    created_at: string;
     assets: { name: string; browser_download_url: string; size: number }[];
   }>();
 
@@ -1308,13 +1205,6 @@ async function handleStatus(
   // Success — return download info
   const asset = release.assets?.[0];
 
-  // Check if this package is already published to the permanent repo
-  const permTag = `pkg-${asset?.name?.replace(/_\d+\.\d+\.\d+\.tar\.gz$/, "") ?? ""}`;
-  const permCheck = await fetch(
-    `https://api.github.com/repos/${env.GITHUB_REPO}/releases/tags/${permTag}`,
-    { headers }
-  );
-  const published = permCheck.status === 200;
   const progress = await getBuildProgress(jobId, env, true).catch(() => null);
 
   return jsonResponse(
@@ -1327,7 +1217,8 @@ async function handleStatus(
         : "",
       file_name: asset?.name ?? "",
       file_size: asset?.size ?? 0,
-      published,
+      retention_days: BUILD_RETENTION_DAYS,
+      scheduled_cleanup_after: scheduledCleanupAfter(release.created_at),
       ...(progress ?? {}),
     },
     200,

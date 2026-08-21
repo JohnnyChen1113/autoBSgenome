@@ -14,9 +14,13 @@ Build BSgenome packages directly in your browser. No local R, Python, or command
 4. Click Build, then download the temporary `.tar.gz`
 5. Copy the one-line R install command, which downloads the tarball to a temporary local file and installs it without remote-URL tar warnings
 
-The web tool supports NCBI, Ensembl, user-provided FASTA URLs, and local FASTA uploads. It auto-detects circular sequences when public assembly metadata is available, validates nucleotide FASTA inputs, generates Title/Description fields following BSgenome conventions, and lets users delete temporary build releases before scheduled cleanup.
+The web tool supports NCBI, Ensembl, user-provided FASTA URLs, and local FASTA uploads. It auto-detects circular sequences when public assembly metadata is available, validates nucleotide FASTA inputs, and generates Title/Description fields following BSgenome conventions. The public, server-hosted `.tar.gz` download is cleaned up automatically after approximately two days, so users should save a local copy when they need it later.
 
 **API available** — see [docs/API.md](docs/API.md) for programmatic access.
+
+**Agent Skill available** — use the installable
+[`skills/autobsgenome`](skills/autobsgenome) folder, or fetch the same canonical
+instructions from <https://autobsgenome.org/skill.md>.
 
 ---
 

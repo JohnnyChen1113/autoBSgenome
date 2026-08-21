@@ -45,7 +45,7 @@ export default function ApiDocs() {
         <p className="mt-3 text-lg text-muted-foreground">
           Build BSgenome packages programmatically. The public API does not
           require user authentication; user-triggered build artifacts are
-          temporary and permanent repository inclusion is maintainer-curated.
+          temporary and are automatically cleaned up after two days.
         </p>
         <p className="mt-2 text-sm text-muted-foreground">
           Base URL:{" "}
@@ -99,12 +99,13 @@ export default function ApiDocs() {
   "job_id": "4c1e14f7",
   "status": "queued",
   "queue_position": 0,
-  "delete_token": "hmac-token-for-this-job"
+  "retention_days": 2
 }`}</CodeBlock>
           </div>
           <p className="text-sm leading-6 text-muted-foreground">
-            Keep <code>delete_token</code> private. It can delete the temporary
-            GitHub Release for this job before the scheduled two-day cleanup.
+            The completed server-hosted <code>.tar.gz</code> download is public
+            and scheduled for automatic cleanup approximately two days after
+            build completion. Save a local copy if the package is needed later.
           </p>
         </Endpoint>
 
@@ -141,7 +142,8 @@ export default function ApiDocs() {
   "download_url": "https://github.com/.../BSgenome.Hsapiens.NCBI.GRCh38_1.0.0.tar.gz",
   "file_name": "BSgenome.Hsapiens.NCBI.GRCh38_1.0.0.tar.gz",
   "file_size": 782000000,
-  "published": false,
+  "retention_days": 2,
+  "scheduled_cleanup_after": "2026-08-23T12:00:00.000Z",
   "total_seconds": 226
 }`}</CodeBlock>
           </div>
@@ -172,24 +174,6 @@ export default function ApiDocs() {
   "runs": [
     { "id": 123, "status": "running", "name": "Build BSgenome.Xxx (...)", "created_at": "2026-07-01T12:00:00Z" }
   ]
-}`}</CodeBlock>
-        </Endpoint>
-
-        <Separator className="my-8" />
-
-        <Endpoint method="DELETE" path="/api/build/:jobId" tone="bg-red-600">
-          <p className="text-muted-foreground">
-            Delete a temporary <code>build-&lt;jobId&gt;</code> release and tag.
-            This only applies to temporary build downloads.
-          </p>
-          <CodeBlock>{`{
-  "delete_token": "hmac-token-from-post-build"
-}`}</CodeBlock>
-          <CodeBlock>{`{
-  "status": "deleted",
-  "job_id": "4c1e14f7",
-  "release_deleted": true,
-  "tag_deleted": true
 }`}</CodeBlock>
         </Endpoint>
 
@@ -238,7 +222,6 @@ JOB=$(curl -s -X POST ${WORKER}/api/build \\
   -H "Content-Type: application/json" \\
   -d '{"package_name":"BSgenome.Scerevisiae.NCBI.R64","organism":"Saccharomyces cerevisiae","genome":"R64","provider":"NCBI","version":"1.0.0","accession":"GCF_000146045.2","data_source":"ncbi","circ_seqs":"MT"}')
 JOB_ID=$(echo "$JOB" | python3 -c "import json,sys; print(json.load(sys.stdin)['job_id'])")
-DELETE_TOKEN=$(echo "$JOB" | python3 -c "import json,sys; print(json.load(sys.stdin)['delete_token'])")
 
 # 2. Poll for completion
 while true; do
@@ -251,11 +234,6 @@ done
 # 3. Install in R when complete
 URL=$(echo "$STATUS" | python3 -c "import json,sys; print(json.load(sys.stdin).get('download_url',''))")
 Rscript -e "local({options(timeout = 7200); url <- '$URL'; tarball <- tempfile(fileext = '.tar.gz'); on.exit(unlink(tarball), add = TRUE); download.file(url, tarball, mode = 'wb', method = 'libcurl'); install.packages(tarball, repos = NULL, type = 'source')})"
-
-# Optional: delete the temporary public release early
-curl -X DELETE "${WORKER}/api/build/$JOB_ID" \\
-  -H "Content-Type: application/json" \\
-  -d "{\\"delete_token\\":\\"$DELETE_TOKEN\\"}"
 `}</CodeBlock>
           </div>
 
@@ -275,8 +253,6 @@ curl -X DELETE "${WORKER}/api/build/$JOB_ID" \\
             <li>Build requests are queued through GitHub Actions.</li>
             <li>Status responses include live step timings when GitHub run metadata is available.</li>
             <li>Temporary build releases are automatically cleaned up after two days.</li>
-            <li>Users can delete their current temporary build earlier with the returned <code>delete_token</code>.</li>
-            <li>Permanent package repository inclusion is curated by maintainers and is not available through the public API.</li>
             <li>CORS is enabled for the AutoBSgenome site, staging Workers, preview deployments, and localhost development.</li>
           </ul>
         </section>

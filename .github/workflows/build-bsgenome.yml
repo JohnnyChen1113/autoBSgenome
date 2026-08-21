@@ -73,6 +73,7 @@ jobs:
               'source_url': extra.get('source_url', ''),
               'species_url': extra.get('species_url', ''),
               'ensembl_group': extra.get('ensembl_group', ''),
+              'publish_to_index': str(extra.get('publish_to_index', False)).lower(),
           }
           for k, v in fields.items():
               v = '' if v is None else str(v)
@@ -407,10 +408,10 @@ jobs:
           fi
           echo "tarball_size=$SIZE" >> $GITHUB_OUTPUT
 
-      - name: Reject oversized user-supplied FASTA package
-        if: steps.storage.outputs.backend == 'zenodo' && (steps.params.outputs.fasta_source == 'upload' || steps.params.outputs.fasta_source == 'url')
+      - name: Reject oversized temporary package
+        if: steps.storage.outputs.backend == 'zenodo' && steps.params.outputs.publish_to_index != 'true'
         run: |
-          echo "ERROR: user-supplied FASTA build produced a tarball larger than the GitHub Releases asset limit. Public Zenodo archival is disabled for user-supplied FASTA builds."
+          echo "ERROR: temporary build produced a tarball larger than the GitHub Releases asset limit. Zenodo is reserved for curator-approved index builds."
           exit 1
 
       - name: Create GitHub Release
@@ -442,7 +443,7 @@ jobs:
           > This release will be automatically cleaned up after 2 days."
 
       - name: Publish to permanent repository
-        if: steps.storage.outputs.backend == 'github' && (steps.params.outputs.fasta_source == 'ncbi' || steps.params.outputs.fasta_source == 'ensembl')
+        if: steps.storage.outputs.backend == 'github' && steps.params.outputs.publish_to_index == 'true' && (steps.params.outputs.fasta_source == 'ncbi' || steps.params.outputs.fasta_source == 'ensembl')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -586,7 +587,7 @@ jobs:
             -f "client_payload[storage_info]=${STORAGE_INFO}"
 
       - name: Publish oversized tarball to Zenodo
-        if: steps.storage.outputs.backend == 'zenodo' && (steps.params.outputs.fasta_source == 'ncbi' || steps.params.outputs.fasta_source == 'ensembl')
+        if: steps.storage.outputs.backend == 'zenodo' && steps.params.outputs.publish_to_index == 'true' && (steps.params.outputs.fasta_source == 'ncbi' || steps.params.outputs.fasta_source == 'ensembl')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}

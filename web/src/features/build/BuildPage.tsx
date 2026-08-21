@@ -43,7 +43,6 @@ import {
 import {
   completeUploadSession,
   createUploadSession,
-  deleteBuild,
   fetchBuildStatus,
   fetchQueueStatus,
   startBuild,
@@ -56,6 +55,11 @@ import {
   publicPackageDownloadUrl,
   warningFreeInstallCommand,
 } from "@/lib/install-command";
+import {
+  buildRetentionMessage,
+  DEFAULT_BUILD_RETENTION_DAYS,
+  formatScheduledCleanupAfter,
+} from "@/lib/build-retention";
 import {
   buildBSgenomePackageName,
   cleanOrganismName,
@@ -134,8 +138,7 @@ interface BuildRecord {
   packageName: string;
   organism: string;
   downloadUrl: string;
-  deleteToken?: string;
-  deleted?: boolean;
+  scheduledCleanupAfter?: string;
   buildTime: number;
   timestamp: number;
 }
@@ -239,10 +242,6 @@ function loadBuildHistory(): BuildRecord[] {
   } catch {
     return [];
   }
-}
-
-function replaceBuildHistory(history: BuildRecord[]) {
-  localStorage.setItem("autobsgenome_history", JSON.stringify(history.slice(0, 20)));
 }
 
 async function readFastaPreview(file: File): Promise<string> {
@@ -640,14 +639,13 @@ export default function Home() {
 
   const [jobId, setJobId] = useState("");
   const [buildError, setBuildError] = useState("");
-  const [deleteToken, setDeleteToken] = useState("");
-  const [deleteError, setDeleteError] = useState("");
-  const [deletingBuild, setDeletingBuild] = useState(false);
-  const [deletingHistoryJobId, setDeletingHistoryJobId] = useState("");
-  const [buildDeleted, setBuildDeleted] = useState(false);
   const [downloadUrl, setDownloadUrl] = useState("");
   const [fileName, setFileName] = useState("");
   const [fileSize, setFileSize] = useState(0);
+  const [retentionDays, setRetentionDays] = useState(
+    DEFAULT_BUILD_RETENTION_DAYS
+  );
+  const [scheduledCleanupAfter, setScheduledCleanupAfter] = useState("");
   const [buildStep, setBuildStep] = useState(0);
   const [buildStartTime, setBuildStartTime] = useState(0);
   const [buildProgressSteps, setBuildProgressSteps] = useState<BuildProgressStep[]>([]);
@@ -679,6 +677,9 @@ export default function Home() {
   const installCommand = displayDownloadUrl
     ? warningFreeInstallCommand(displayDownloadUrl)
     : "";
+  const scheduledCleanupLabel = formatScheduledCleanupAfter(
+    scheduledCleanupAfter
+  );
   const fallbackDownloadUrl = jobId
       ? publicPackageDownloadUrl(
         `${siteConfig.githubUrl}/releases/download/build-${jobId}/${form.packageName}_${effectiveVersion}.tar.gz`
@@ -741,15 +742,14 @@ export default function Home() {
     const resumeJob = params.get("job");
     if (resumeJob) {
       setJobId(resumeJob);
-      setDeleteToken("");
-      setBuildDeleted(false);
       setBuildError("");
-      setDeleteError("");
       setBuildProgressSteps([]);
       setWorkflowRunUrl("");
       setDownloadUrl("");
       setFileName("");
       setFileSize(0);
+      setRetentionDays(DEFAULT_BUILD_RETENTION_DAYS);
+      setScheduledCleanupAfter("");
       setBuildElapsed(0);
       setBuildTotalTime(0);
       setResumingJob(true);
@@ -757,7 +757,7 @@ export default function Home() {
       setBuildStartTime(now);
       buildStartTimeRef.current = now;
       setStep("building");
-      return pollBuildStatus(resumeJob, "", { resumed: true });
+      return pollBuildStatus(resumeJob, { resumed: true });
     }
     // Batch mode from URL
     if (params.get("batch") === "true") {
@@ -899,9 +899,6 @@ export default function Home() {
   const handleBuild = async () => {
     setBuildError("");
     setResumingJob(false);
-    setDeleteError("");
-    setDeleteToken("");
-    setBuildDeleted(false);
     setUploadError("");
 
     if (form.fastaSource === "url") {
@@ -979,7 +976,8 @@ export default function Home() {
       });
 
       setJobId(data.job_id);
-      setDeleteToken(data.delete_token ?? "");
+      setRetentionDays(data.retention_days ?? DEFAULT_BUILD_RETENTION_DAYS);
+      setScheduledCleanupAfter("");
       setBuildStep(1);
       if (data.queue_position && data.queue_position > 0) {
         setBuildError(`Your build is #${data.queue_position + 1} in queue. It will start automatically.`);
@@ -989,71 +987,12 @@ export default function Home() {
       window.history.replaceState(null, "", `?job=${data.job_id}`);
 
       // Poll for status
-      pollBuildStatus(data.job_id, data.delete_token ?? "");
+      pollBuildStatus(data.job_id);
     } catch (e) {
       setBuildError(e instanceof Error ? e.message : "Build request failed");
       setUploadState("idle");
       setUploadProgress(0);
       setStep("review");
-    }
-  };
-
-  const deleteTemporaryBuild = async (targetJobId: string, targetDeleteToken: string) => {
-    await deleteBuild(targetJobId, targetDeleteToken);
-  };
-
-  const markHistoryDeleted = (targetJobId: string) => {
-    const nextHistory = loadBuildHistory().map((record) =>
-      record.jobId === targetJobId
-        ? { ...record, downloadUrl: "", deleteToken: "", deleted: true }
-        : record
-    );
-    replaceBuildHistory(nextHistory);
-    setBuildHistory(nextHistory);
-  };
-
-  const handleDeleteBuild = async () => {
-    if (!jobId || !deleteToken || deletingBuild) return;
-    const confirmed = window.confirm(
-      "Delete this temporary GitHub Release now? This removes the download link and cannot be undone."
-    );
-    if (!confirmed) return;
-
-    setDeletingBuild(true);
-    setDeleteError("");
-    try {
-      await deleteTemporaryBuild(jobId, deleteToken);
-      setBuildDeleted(true);
-      setDownloadUrl("");
-      setDeleteToken("");
-      markHistoryDeleted(jobId);
-    } catch (e) {
-      setDeleteError(e instanceof Error ? e.message : "Failed to delete temporary package");
-    } finally {
-      setDeletingBuild(false);
-    }
-  };
-
-  const handleDeleteHistoryBuild = async (record: BuildRecord) => {
-    if (!record.deleteToken || record.deleted || deletingHistoryJobId) return;
-    const confirmed = window.confirm(
-      `Delete the temporary GitHub Release for ${record.packageName}? This removes the download link and cannot be undone.`
-    );
-    if (!confirmed) return;
-
-    setDeletingHistoryJobId(record.jobId);
-    try {
-      await deleteTemporaryBuild(record.jobId, record.deleteToken);
-      markHistoryDeleted(record.jobId);
-      if (record.jobId === jobId) {
-        setBuildDeleted(true);
-        setDownloadUrl("");
-        setDeleteToken("");
-      }
-    } catch (e) {
-      window.alert(e instanceof Error ? e.message : "Failed to delete temporary package");
-    } finally {
-      setDeletingHistoryJobId("");
     }
   };
 
@@ -1068,7 +1007,6 @@ export default function Home() {
 
   const pollBuildStatus = (
     id: string,
-    currentDeleteToken = "",
     options: { resumed?: boolean } = {}
   ) => {
     if (pollIntervalRef.current) {
@@ -1111,13 +1049,16 @@ export default function Home() {
           setDownloadUrl(data.download_url ?? "");
           setFileName(data.file_name ?? "");
           setFileSize(data.file_size ?? 0);
+          setRetentionDays(
+            data.retention_days ?? DEFAULT_BUILD_RETENTION_DAYS
+          );
+          setScheduledCleanupAfter(data.scheduled_cleanup_after ?? "");
           const record: BuildRecord = {
             jobId: id,
             packageName: formRef.current.packageName,
             organism: formRef.current.organism,
             downloadUrl: data.download_url ?? "",
-            deleteToken: currentDeleteToken,
-            deleted: false,
+            scheduledCleanupAfter: data.scheduled_cleanup_after,
             buildTime: totalTime,
             timestamp: Date.now(),
           };
@@ -2101,6 +2042,10 @@ export default function Home() {
                   </div>
                 )}
 
+                <div className="rounded-md border border-primary/20 bg-accent px-4 py-3 text-sm leading-6 text-muted-foreground">
+                  {buildRetentionMessage(DEFAULT_BUILD_RETENTION_DAYS)}
+                </div>
+
                 <Button
                   size="lg"
                   className="w-full text-base cursor-pointer"
@@ -2377,7 +2322,7 @@ export default function Home() {
                 )}
 
                 <div className="flex gap-3 justify-center">
-                  {downloadUrl && !buildDeleted ? (
+                  {downloadUrl ? (
                     <a
                       href={displayDownloadUrl}
                       download
@@ -2391,9 +2336,9 @@ export default function Home() {
                   <Button
                     variant="outline"
                     className="h-11 px-8 text-base"
-                    disabled={!downloadUrl || buildDeleted}
+                    disabled={!downloadUrl}
                     onClick={() => {
-                      if (!installCommand || buildDeleted) return;
+                      if (!installCommand) return;
                       navigator.clipboard.writeText(installCommand);
                     }}
                   >
@@ -2403,93 +2348,54 @@ export default function Home() {
 
                 <Separator />
 
-                {buildDeleted ? (
-                  <div className="bg-[--success-foreground] border border-[--success]/20 rounded-md px-4 py-3 text-sm" style={{ color: "#0f7b3f" }}>
-                    Temporary GitHub Release deleted. The package download link is no longer available.
+                <div className="space-y-2">
+                  <Label>Install directly in R:</Label>
+                  <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
+                    <pre className="m-0 whitespace-pre-wrap break-all">
+                      {installCommand || "loading..."}
+                    </pre>
                   </div>
-                ) : (
-                  <div className="space-y-2">
-                    <Label>Install directly in R:</Label>
-                    <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
-                      <pre className="m-0 whitespace-pre-wrap break-all">
-                        {installCommand || "loading..."}
-                      </pre>
-                    </div>
-                  </div>
-                )}
+                </div>
 
-                {!buildDeleted && (
-                  <div className="space-y-3">
-                    <div className="bg-accent border-l-[3px] border-primary rounded-r-md px-4 py-3 text-sm text-muted-foreground">
-                      This package will remain available for{" "}
-                      <strong className="text-foreground">2 days</strong> at{" "}
-                      <a
-                        href={`${siteConfig.githubUrl}/releases`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary hover:underline"
-                      >
-                        GitHub Releases
-                      </a>
-                      . Download a local copy for permanent use.
-                    </div>
-                    {deleteToken && (
-                      <div className="border border-border rounded-lg p-4 space-y-3 text-sm">
-                        <div>
-                          <h4 className="font-heading font-semibold text-foreground">Remove temporary download</h4>
-                          <p className="text-muted-foreground mt-1">
-                            Delete this build&apos;s temporary GitHub Release now instead of waiting for cleanup.
-                          </p>
-                        </div>
-                        {deleteError && (
-                          <p className="text-sm text-destructive">{deleteError}</p>
-                        )}
-                        <Button
-                          type="button"
-                          variant="outline"
-                          className="w-full border-destructive/40 text-destructive hover:bg-destructive/10"
-                          disabled={deletingBuild}
-                          onClick={handleDeleteBuild}
-                        >
-                          {deletingBuild ? "Deleting..." : "Delete temporary package"}
-                        </Button>
-                      </div>
-                    )}
-                  </div>
-                )}
+                <div className="bg-accent border-l-[3px] border-primary rounded-r-md px-4 py-3 text-sm text-muted-foreground">
+                  <p>{buildRetentionMessage(retentionDays)}</p>
+                  {scheduledCleanupLabel && (
+                    <p className="mt-1 font-medium text-foreground">
+                      Scheduled cleanup after {scheduledCleanupLabel}.
+                    </p>
+                  )}
+                </div>
 
                 {/* AI tool prompt */}
-                {!buildDeleted && (
-                  <Accordion>
-                    <AccordionItem value="ai-prompt">
-                      <AccordionTrigger className="text-sm">
-                        Use with AI coding tools (Claude Code, Claw, Cursor...)
-                      </AccordionTrigger>
-                      <AccordionContent>
-                        <p className="text-sm text-muted-foreground mb-2">
-                          Copy this prompt and paste it into your AI coding assistant:
-                        </p>
-                        <div className="relative">
-                          <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
-                            Help me install this BSgenome R package:{" "}
-                            {displayDownloadUrl || fallbackDownloadUrl}
-                          </div>
-                          <button
-                            type="button"
-                            className="absolute top-2 right-2 p-1.5 rounded bg-background border border-border text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-                            onClick={() => {
-                              const prompt = `Help me install this BSgenome R package: ${displayDownloadUrl || fallbackDownloadUrl}`;
-                              navigator.clipboard.writeText(prompt);
-                            }}
-                            title="Copy to clipboard"
-                          >
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                          </button>
+                <Accordion>
+                  <AccordionItem value="ai-prompt">
+                    <AccordionTrigger className="text-sm">
+                      Use with AI coding tools (Claude Code, Claw, Cursor...)
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <p className="text-sm text-muted-foreground mb-2">
+                        Copy this prompt and paste it into your AI coding assistant:
+                      </p>
+                      <div className="relative">
+                        <div className="bg-secondary border border-border rounded-md p-3 font-mono text-sm leading-relaxed overflow-x-auto">
+                          Help me install this BSgenome R package:{" "}
+                          {displayDownloadUrl || fallbackDownloadUrl}
                         </div>
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                )}
+                        <button
+                          type="button"
+                          className="absolute top-2 right-2 p-1.5 rounded bg-background border border-border text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                          onClick={() => {
+                            const prompt = `Help me install this BSgenome R package: ${displayDownloadUrl || fallbackDownloadUrl}`;
+                            navigator.clipboard.writeText(prompt);
+                          }}
+                          title="Copy to clipboard"
+                        >
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                        </button>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
 
                 <Button
                   variant="outline"
@@ -2507,11 +2413,6 @@ export default function Home() {
                     setUploadError("");
                     setUploadState("idle");
                     setUploadProgress(0);
-                    setDeleteToken("");
-                    setDeleteError("");
-                    setDeletingBuild(false);
-                    setDeletingHistoryJobId("");
-                    setBuildDeleted(false);
                   }}
                 >
                   Build Another Package
@@ -2598,36 +2499,22 @@ export default function Home() {
                           {record.organism} &middot; {record.buildTime}s &middot;{" "}
                           {new Date(record.timestamp).toLocaleDateString()}
                         </p>
-                      </div>
-                      <div className="shrink-0 flex items-center gap-2">
-                        {record.deleted ? (
-                          <Badge variant="outline" className="text-xs">Deleted</Badge>
-                        ) : (
-                          <>
-                            {record.downloadUrl && (
-                              <a
-                                href={publicPackageDownloadUrl(record.downloadUrl)}
-                                className="inline-flex items-center gap-1 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
-                              >
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                                Download
-                              </a>
-                            )}
-                            {record.deleteToken && (
-                              <Button
-                                type="button"
-                                size="sm"
-                                variant="outline"
-                                className="border-destructive/40 text-destructive hover:bg-destructive/10"
-                                disabled={deletingHistoryJobId === record.jobId}
-                                onClick={() => handleDeleteHistoryBuild(record)}
-                              >
-                                {deletingHistoryJobId === record.jobId ? "Deleting..." : "Delete"}
-                              </Button>
-                            )}
-                          </>
+                        {record.scheduledCleanupAfter && (
+                          <p className="text-xs text-muted-foreground">
+                            Server download scheduled for cleanup after{" "}
+                            {formatScheduledCleanupAfter(record.scheduledCleanupAfter)}
+                          </p>
                         )}
                       </div>
+                      {record.downloadUrl && (
+                        <a
+                          href={publicPackageDownloadUrl(record.downloadUrl)}
+                          className="shrink-0 inline-flex items-center gap-1 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+                        >
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                          Download
+                        </a>
+                      )}
                     </div>
                   ))}
                 </div>

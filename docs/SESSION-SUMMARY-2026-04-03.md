@@ -18,7 +18,7 @@ Cloudflare Pages (frontend) → Cloudflare Workers (API proxy) → GitHub Action
 ```
 
 - **Frontend**: Next.js + Tailwind CSS 4 + shadcn/ui, SLU academic design
-- **Worker**: ~100 lines TypeScript, endpoints: /api/build, /api/status/:id, /api/queue, /api/publish
+- **Worker**: Cloudflare API proxy for build submission, status polling, and queue status
 - **Build pipeline**: Docker image (rocker/r-ver:4.4.0 + BSgenome + faToTwoBit), ~45s per small genome
 - **Storage**: GitHub Releases (permanent pkg- tags), GitHub Pages (CRAN-like PACKAGES index)
 
@@ -31,7 +31,6 @@ Cloudflare Pages (frontend) → Cloudflare Workers (API proxy) → GitHub Action
 - Build history (localStorage)
 - Build status with live timer
 - Fail → auto-create GitHub issue
-- "Publish to Repository" opt-in
 - Active build queue display
 - Community CRAN-like repository with taxonomy tree browse
 
@@ -63,7 +62,7 @@ Cloudflare Pages (frontend) → Cloudflare Workers (API proxy) → GitHub Action
 | `.github/docker/Dockerfile` | Build environment image |
 | `scripts/generate-build-queue.py` | Queue generator from NCBI assembly summary |
 | `scripts/enrich-packages.py` | Metadata enrichment from NCBI API |
-| `skill.md` | Claude Code skill for API usage |
+| `skills/autobsgenome/SKILL.md` | Installable Agent Skill for API usage |
 | `docs/API.md` | API documentation |
 | `docs/BATCH-BUILD-PLAN.md` | Batch build strategy |
 | `docs/ROADMAP-REPOSITORY.md` | Community repo roadmap |

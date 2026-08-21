@@ -1,0 +1,4 @@
+interface:
+  display_name: "AutoBSgenome"
+  short_description: "Find, build, and install BSgenome packages"
+  default_prompt: "Use $autobsgenome to find or build the exact BSgenome package I need and return a safe R installation command."

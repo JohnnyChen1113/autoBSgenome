@@ -1,7 +1,6 @@
 
 import { siteConfig } from "@/config";
-
-type NavKey = "home" | "build" | "packages" | "help" | "api" | "agents";
+import { SITE_NAV_ITEMS, type NavKey } from "@/components/site-navigation";
 
 function GithubMark({ className }: { className?: string }) {
   return (
@@ -29,18 +28,6 @@ function navLinkClass(active: boolean): string {
 }
 
 export function SiteHeader({ active }: { active?: NavKey }) {
-  const navItems: Array<{
-    href: string;
-    label: string;
-    key?: NavKey;
-  }> = [
-    { href: "/packages", label: "Browse", key: "packages" },
-    { href: "/build", label: "Build", key: "build" },
-    { href: "/help", label: "Help", key: "help" },
-    { href: "/api-docs", label: "API", key: "api" },
-    { href: "/agents", label: "Agents", key: "agents" },
-  ];
-
   return (
     <header className="sticky top-0 z-40 border-b border-[color:var(--rule)]/10 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="mx-auto flex max-w-6xl items-stretch gap-8 px-6">
@@ -59,7 +46,7 @@ export function SiteHeader({ active }: { active?: NavKey }) {
         </a>
 
         <nav className="flex flex-wrap items-stretch gap-x-7">
-          {navItems.map((item) => (
+          {SITE_NAV_ITEMS.map((item) => (
             <a
               key={item.href}
               href={item.href}

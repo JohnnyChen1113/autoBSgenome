@@ -1,34 +1,31 @@
-# BSgenome Community Repository — Roadmap
+# Curated BSgenome Catalog — Roadmap
 
 ## Core Principles
 
-1. **Opt-in publishing** — builds are temporary (2 days) by default; users choose to publish permanently
-2. **GitHub Releases as storage** — unlimited total size, 2 GB per file, no Git bloat
-3. **PACKAGES index on gh-pages** — standard CRAN-like format, R's `install.packages()` works natively
-4. **Browseable frontend** — https://johnnychen1113.github.io/autoBSgenome with search and organism taxonomy
+1. **Temporary public builds** — website and public API builds expire after 2 days
+2. **Maintainer-curated catalog** — only the scheduled maintainer workflow can add reviewed official-source packages
+3. **GitHub Releases and Zenodo storage** — storage is selected by artifact size without Git bloat
+4. **PACKAGES index on gh-pages** — standard CRAN-like format for curated packages
+5. **Browseable frontend** — https://autobsgenome.org/packages with search and organism taxonomy
 
 ## Architecture
 
 ```
-User builds BSgenome package
-  ↓
-Temporary: GitHub Release (build-{jobId}, 2-day TTL)
-  ↓
-User clicks "Publish to Repository"
-  ↓
-Permanent: GitHub Release (pkg-{packageName}, no TTL)
-  + packages.json updated on gh-pages
-  + PACKAGES index regenerated
-  + Browseable on the repo frontend page
+Website/API request → temporary GitHub Release (build-{jobId}, 2-day TTL)
+
+Maintainer batch selection → build with internal publish_to_index flag
+  → curated GitHub Release or Zenodo record
+  → packages.json and PACKAGES regenerated on gh-pages
+  → package appears in the public catalog
 ```
 
-## Phase 1: User-Initiated Publishing (Current Priority)
+## Phase 1: Curated Catalog Pipeline
 
-- [ ] Add "Publish to Repository" button on result page
-- [ ] Worker endpoint: `POST /api/publish` — copies temp release to permanent release
-- [ ] GitHub Action or Worker: update `packages.json` and `PACKAGES` on gh-pages
-- [ ] Frontend repo page reads `packages.json` and renders package list
-- [ ] Include existing Bioconductor BSgenome packages as "external links" (not hosted, just discoverable)
+- [x] Restrict permanent index updates to the maintainer batch workflow
+- [x] Keep website and public API builds temporary
+- [x] Update `packages.json` and `PACKAGES` from curated build events
+- [x] Render the catalog from `packages.json`
+- [ ] Include existing Bioconductor BSgenome packages as external links
 
 ## Phase 2: Bioconductor BSgenome Directory
 

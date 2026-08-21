@@ -56,34 +56,13 @@ Trigger a BSgenome package build.
   "job_id": "4c1e14f7",
   "status": "queued",
   "queue_position": 0,
-  "delete_token": "hmac-token-for-this-job"
+  "retention_days": 2
 }
 ```
 
-Keep `delete_token` private. It lets the original browser session delete the temporary GitHub Release for this build before the scheduled 2-day cleanup.
-
-### DELETE /api/build/:jobId
-
-Delete a temporary build release and its Git tag. This only applies to temporary `build-<jobId>` GitHub Releases.
-
-**Request:**
-
-```json
-{
-  "delete_token": "hmac-token-from-post-build"
-}
-```
-
-**Response (200):**
-
-```json
-{
-  "status": "deleted",
-  "job_id": "4c1e14f7",
-  "release_deleted": true,
-  "tag_deleted": true
-}
-```
+The completed server-hosted `.tar.gz` download is public and scheduled for
+automatic cleanup approximately two days after build completion. Save a local
+copy if the package is needed later.
 
 ### FASTA URL builds
 
@@ -172,25 +151,7 @@ Then trigger a build with:
 
 Supported file names end in `.fa`, `.fasta`, `.fna`, or `.fas`, optionally with `.gz`. Protein FASTA names such as `.faa`, `.pep`, and `.aa` are rejected. Browser uploads support files up to 4 GB through multipart uploads. Upload URLs expire after 2 days; successful builds delete the uploaded FASTA after GitHub Actions downloads it, and the R2 `uploads/` lifecycle rule removes abandoned uploads after 2 days.
 
-Uploaded FASTA builds produce temporary GitHub Release downloads by default.
-The public API does not publish user-triggered builds to the permanent package
-repository. Permanent package index inclusion is curated by maintainers to avoid
-incorrect metadata or user-supplied packages being mistaken for verified
-reference packages.
-
-### POST /api/publish
-
-Disabled for public API users.
-
-**Response (410):**
-
-```json
-{
-  "error": "Permanent repository publishing is disabled for public API users",
-  "message": "Download the temporary tarball for local use. Permanent package index inclusion is curated by the AutoBSgenome maintainers.",
-  "code": "PUBLIC_PUBLISH_DISABLED"
-}
-```
+Uploaded FASTA builds produce temporary GitHub Release downloads.
 
 ### GET /api/status/:jobId
 
@@ -214,7 +175,9 @@ Check build status.
   "package_name": "BSgenome.Hsapiens.NCBI.GRCh38 1.0.0",
   "download_url": "https://packages.autobsgenome.org/build-4c1e14f7/BSgenome.Hsapiens.NCBI.GRCh38_1.0.0.tar.gz",
   "file_name": "BSgenome.Hsapiens.NCBI.GRCh38_1.0.0.tar.gz",
-  "file_size": 782000000
+  "file_size": 782000000,
+  "retention_days": 2,
+  "scheduled_cleanup_after": "2026-08-23T12:00:00.000Z"
 }
 ```
 
@@ -236,7 +199,6 @@ JOB=$(curl -s -X POST https://api.autobsgenome.org/api/build \
   -H "Content-Type: application/json" \
   -d '{"package_name":"BSgenome.Drerio.NCBI.GRCz11","organism":"Danio rerio","accession":"GCF_000002035.6","data_source":"ncbi","version":"1.0.0","circ_seqs":"MT"}')
 JOB_ID=$(echo $JOB | python3 -c "import json,sys; print(json.load(sys.stdin)['job_id'])")
-DELETE_TOKEN=$(echo $JOB | python3 -c "import json,sys; print(json.load(sys.stdin)['delete_token'])")
 echo "Job ID: $JOB_ID"
 
 # 2. Poll for completion
@@ -250,11 +212,6 @@ done
 # 3. Download
 URL=$(echo "$STATUS" | python3 -c "import json,sys; print(json.load(sys.stdin).get('download_url',''))")
 curl -L -o package.tar.gz "$URL"
-
-# Optional: delete the temporary public release before the 2-day cleanup
-curl -X DELETE "https://api.autobsgenome.org/api/build/$JOB_ID" \
-  -H "Content-Type: application/json" \
-  -d "{\"delete_token\":\"$DELETE_TOKEN\"}"
 ```
 
 ## Usage Example (R)
@@ -280,4 +237,3 @@ The API allows requests from:
 - Build triggers: limited by GitHub Actions concurrency (1 concurrent build per repo)
 - Status checks: no limit (Cloudflare Workers)
 - Temporary packages are available for **2 days** after build, then automatically cleaned up
-- Users can delete their current temporary build earlier with `DELETE /api/build/:jobId` when they still have the `delete_token` returned by `POST /api/build`

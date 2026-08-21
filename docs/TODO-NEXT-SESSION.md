@@ -15,17 +15,16 @@
 ### High Priority
 1. **Alphabet quick filter** — A-Z bar at top of browse page for genus first letter
 2. **Update paper v2 with corrected references** — Fix the 4 errors in draft-v2.md
-3. **Claude Code Skill** — Skill file for AI tools to build/install BSgenome
-4. **MCP Server** — Native Claude Code integration
+3. **Agent integration hardening** — Add a generated OpenAPI contract and a dedicated structured search endpoint; the standards-compliant installable Agent Skill now lives at `skills/autobsgenome/`
 
 ### Medium Priority
-5. **Interactive D3.js taxonomy tree** — Separate /tree page, full visualization
-6. **Ensembl batch builds** — After NCBI RefSeq is done
-7. **Build progress dashboard** — Show X/10177 done, ETA
-8. **Batch build: mark done after completion** — Currently marks building but not done
+4. **Interactive D3.js taxonomy tree** — Separate /tree page, full visualization
+5. **Ensembl batch builds** — After NCBI RefSeq is done
+6. **Build progress dashboard** — Show X/10177 done, ETA
+7. **Batch build: mark done after completion** — Currently marks building but not done
 
 ### Lower Priority
-9. **Public API docs page** — Interactive API docs on the web
-10. **Copy-to-clipboard for all code blocks** — R commands on browse page
-11. **CF Pages unification** — Move browse page from GitHub Pages to CF Pages
-12. **Zenodo integration** — For genomes >2 GB
+8. **OpenAPI-driven API docs** — Replace hand-maintained examples with a schema-generated reference
+9. **Copy-to-clipboard for all code blocks** — R commands on browse page
+10. **CF Pages unification** — Move browse page from GitHub Pages to CF Pages
+11. **Zenodo integration** — For genomes >2 GB

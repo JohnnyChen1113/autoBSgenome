@@ -16,7 +16,7 @@ Allow users to build multiple BSgenome packages in one session. Input multiple a
 │                │   │   ○ NCBI ● Ensembl  │   │ ⏳ Homo sapiens     │   │ ✅ Homo sapiens     │
 │ [Fetch All]    │   │ ▼ Homo sapiens      │   │   Queued (3/3)      │   │   [Download] ☑      │
 │                │   │   NCBI (auto)       │   │                     │   │                     │
-│                │   │ [Build All Valid]    │   │                     │   │ [Publish Selected]  │
+│                │   │ [Build All Valid]    │   │                     │   │                     │
 └────────────────┘   └─────────────────────┘   └─────────────────────┘   └─────────────────────┘
 ```
 
@@ -71,9 +71,6 @@ When a GCA_ accession is entered:
 - Each completed item shows:
   - Download button (direct .tar.gz link)
   - Install command (inline code block with copy button)
-  - Checkbox: "Publish to community repository" (default unchecked)
-- Bottom: "Publish Selected to Repository" button
-  - Triggers `/api/publish` for each checked item
 - Failed items show retry button
 
 ## Data Structure
@@ -91,7 +88,6 @@ interface BatchItem {
   error?: string;
   jobId?: string;
   downloadUrl?: string;
-  publishChecked: boolean;
 }
 ```
 
@@ -113,8 +109,7 @@ interface BatchItem {
 - Progress bar
 
 ### BatchResults
-- Checkboxes for publish selection
-- Bulk "Publish Selected" action
+- Download and install actions for each completed package
 
 ## Technical Notes
 
@@ -122,7 +117,7 @@ interface BatchItem {
 - **URL param**: `?batch=true` to open directly in batch mode (for future API integration)
 - **Concurrency**: GitHub Actions free tier allows ~20 concurrent jobs. We dispatch with 10s delay but jobs run in parallel.
 - **Error handling**: Individual item failures don't block other items. Each item is independent.
-- **No backend changes needed**: Each batch item uses the same `/api/build`, `/api/status/:id`, `/api/publish` endpoints as single builds.
+- **No backend changes needed**: Each batch item uses the same `/api/build` and `/api/status/:id` endpoints as single builds.
 
 ## Entry Points
 
