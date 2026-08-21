@@ -281,6 +281,19 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
             build_job_header,
         )
 
+    def test_bash_workflows_do_not_truncate_pipelines_with_head(self):
+        workflow_paths = [
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml",
+            ROOT
+            / ".github"
+            / "workflows"
+            / "run-large-genome-benchmark-item.yml",
+        ]
+
+        for path in workflow_paths:
+            with self.subTest(workflow=path.name):
+                self.assertNotRegex(path.read_text(), r"\|\s*head(?:\s|$)")
+
 
 if __name__ == "__main__":
     unittest.main()

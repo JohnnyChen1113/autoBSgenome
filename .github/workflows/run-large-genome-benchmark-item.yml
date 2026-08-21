@@ -70,8 +70,7 @@ jobs:
               --event repository_dispatch \
               --limit 100 \
               --json databaseId,displayTitle \
-              --jq ".[] | select(.displayTitle | startswith(\"[job ${JOB_ID}]\")) | .databaseId" \
-              | head -1)
+              --jq "map(select(.displayTitle | startswith(\"[job ${JOB_ID}]\")))[0].databaseId // empty")
             if [ -n "$RUN_ID" ]; then
               break
             fi
