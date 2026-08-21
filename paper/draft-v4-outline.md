@@ -195,24 +195,15 @@ The right peer comparison for BSgenome is not universal-infrastructure cornersto
 - Out of N attempted builds, M succeeded on first try; failures concentrated in (a) Ensembl filename irregularities (handled by resolver fallback), (b) genomes whose assembly characteristics exceed free-tier runner capacity (see R4).
 - Document the failure rate honestly. This is "the tool works at scale."
 
-**R4. The contiguity ceiling — assembly fragmentation, not genome size, sets the practical build limit (350 w) — NEW SECTION**
+**R4. Controlled large-genome operating-range benchmark (350 w) — DATA COLLECTION IN PROGRESS**
 
-- The intuitive expectation is that BSgenome construction scales with raw base count. Empirically, the binding constraint on free-tier GitHub Actions runners (16 GB RAM, ~88 GB usable disk) is per-sequence overhead in R during `forgeBSgenomeDataPkg` and `R CMD build`, not nucleotide volume.
-- Same-infrastructure, same-step comparison across four large-genome stress tests:
-
-  | Organism | Assembly | Raw size | Sequence records | Outcome | Wall-clock | Forge peak RSS |
-  |---|---|---|---|---|---|---|
-  | *Triticum aestivum* | IWGSC RefSeq v2.1 | 14.57 GB | ~21 scaffolds | ✅ | 12:05 | — |
-  | *Pinus taeda* | Ptaeda2.0 | 22.10 GB | several thousand scaffolds | ✅ | 34:18 | — |
-  | *Ambystoma mexicanum* | AmbMex60DD | 28.21 GB | **27,157 contigs** | ❌ OOM at R forge | — | exceeded 16 GB |
-  | *Neoceratodus forsteri* | neoFor_v3.1 | **34.56 GB** | **46 chromosome-level seqs** | ✅ | 35:20 | **708 MB** |
-
-- **Decisive contrast:** lungfish is 23% *larger* in base count than axolotl, yet uses ≳20× *less* peak R memory during forge, because its sequence count is 591× lower. This isolates assembly contiguity as the binding axis.
-- Mechanistic interpretation: `forgeBSgenomeDataPkg` allocates per-record R objects; total in-memory footprint scales with sequence count × per-record overhead, not with cumulative sequence length. The same axis compounds at the 2bit storage layer — chromosome-level assemblies carry fewer block-index entries for `N` runs, approaching the theoretical 2-bit-per-base floor on disk.
-- **Implication for the tool's audience:** chromosome-level reference assemblies — exactly the targets for which BSgenome packages are most useful in downstream analysis — build reliably on free-tier infrastructure well beyond previously conservative estimates. Highly fragmented draft assemblies (≳30,000 contigs) hit the ceiling earlier, regardless of base count.
-- Practical guidance for users with fragmented drafts: optional `min_contig_length` filter at submission time (planned feature) recovers buildability by dropping short unplaced scaffolds.
-
-(Section is independently citable as an empirical finding about Bioconductor's BSgenomeForge scaling behavior, even if a reader ignores the rest of the paper.)
+- Report one observation for each of the 16 NCBI assemblies in the versioned campaign manifest.
+- Use one workflow commit and one pinned builder-image digest for all rows.
+- Report NCBI total sequence length, scaffold count and scaffold N50 alongside the actual downloaded FASTA record count.
+- Separate time to tarball completion from archive validation, publication and indexing.
+- Report the observed peak disk use, process RSS, completion state and direct error for each run.
+- Treat the historical axolotl result as runner disk exhaustion in an older workflow revision. Do not use it as evidence of an OOM or contiguity ceiling.
+- Do not add a causal size or contiguity claim until all first-run results are available.
 
 ---
 
@@ -244,7 +235,7 @@ The right peer comparison for BSgenome is not universal-infrastructure cornersto
 **F1. autoBSgenome workflow** — accession-in → tarball-out, one panel per pipeline stage.
 **F2. The accessibility gap** — 113 Bioconductor packages vs autoBSgenome coverage, by taxonomic division.
 **F3. Build-time benchmark** — scatter, time vs genome size, with size-class medians.
-**F4. The contiguity ceiling** — bar / scatter comparing the four large-genome stress tests (R4); contig-count axis vs forge-stage success / peak RSS. Visually disambiguates "raw size" from "sequence count" as the true scaling axis.
+**F4. Controlled large-genome benchmark** — plot the 16 first-run observations against total sequence length and scaffold count. Show outcomes and measured peak resource use without assigning a causal scaling axis before analysis.
 **F5. Repository browse interface** — screenshot of taxonomy tree + per-package landing page.
 **T1. 196 Bioconductor packages depending on BSgenome** (kept from v2).
 **T2. 33-genome benchmark** (kept from v2).

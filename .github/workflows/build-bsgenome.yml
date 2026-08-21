@@ -17,7 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # Core-build SLA remains 60 minutes. The larger hard timeout allows archive
+    # validation and permanent publication to finish without changing that SLA.
+    timeout-minutes: 180
     container:
       # Builder release v1.0.0. The digest keeps every build on the same image.
       image: ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d
@@ -28,7 +30,10 @@ jobs:
 
       - name: Initialize build metrics
         run: |
-          echo '{"schema_version":1}' > /tmp/build_metrics.json
+          STARTED_AT=$(date +%s)
+          echo '{"schema_version":2}' > /tmp/build_metrics.json
+          python3 scripts/record_metric.py timings_epoch.workflow_started "$STARTED_AT"
+          python3 scripts/record_metric.py current_stage initialize
           # Capture runner hardware profile once for context (RAM, disk, CPU)
           TOTAL_MEM_KB=$(awk '/MemTotal/ {print $2}' /proc/meminfo)
           DISK_TOTAL_KB=$(df -Pk . | awk 'NR==2 {print $2}')
@@ -74,6 +79,16 @@ jobs:
               'species_url': extra.get('species_url', ''),
               'ensembl_group': extra.get('ensembl_group', ''),
               'publish_to_index': str(extra.get('publish_to_index', False)).lower(),
+              'benchmark_mode': str(extra.get('benchmark_mode', False)).lower(),
+              'benchmark_campaign': extra.get('benchmark_campaign', ''),
+              'benchmark_order': extra.get('benchmark_order', ''),
+              'metadata_snapshot_date': extra.get('metadata_snapshot_date', ''),
+              'build_sla_seconds': extra.get('build_sla_seconds', 3600),
+              'ncbi_assembly_level': (extra.get('ncbi_assembly_stats') or {}).get('assembly_level', ''),
+              'ncbi_total_sequence_length': (extra.get('ncbi_assembly_stats') or {}).get('total_sequence_length', ''),
+              'ncbi_total_ungapped_length': (extra.get('ncbi_assembly_stats') or {}).get('total_ungapped_length', ''),
+              'ncbi_number_of_scaffolds': (extra.get('ncbi_assembly_stats') or {}).get('number_of_scaffolds', ''),
+              'ncbi_scaffold_n50': (extra.get('ncbi_assembly_stats') or {}).get('scaffold_n50', ''),
           }
           for k, v in fields.items():
               v = '' if v is None else str(v)
@@ -85,9 +100,33 @@ jobs:
                   print(f'{k}={v}')
           PYEOF
 
+      - name: Record benchmark definition
+        if: steps.params.outputs.benchmark_mode == 'true'
+        run: |
+          python3 scripts/record_metric.py current_stage benchmark_definition
+          python3 scripts/record_metric.py benchmark.campaign "${{ steps.params.outputs.benchmark_campaign }}"
+          python3 scripts/record_metric.py benchmark.order "${{ steps.params.outputs.benchmark_order }}"
+          python3 scripts/record_metric.py benchmark.accession "${{ steps.params.outputs.accession }}"
+          python3 scripts/record_metric.py benchmark.organism "${{ steps.params.outputs.organism }}"
+          python3 scripts/record_metric.py benchmark.assembly "${{ steps.params.outputs.genome }}"
+          python3 scripts/record_metric.py benchmark.provider "${{ steps.params.outputs.provider }}"
+          python3 scripts/record_metric.py benchmark.package_name "${{ steps.params.outputs.package_name }}"
+          python3 scripts/record_metric.py benchmark.metadata_snapshot_date "${{ steps.params.outputs.metadata_snapshot_date }}"
+          python3 scripts/record_metric.py benchmark.build_sla_seconds "${{ steps.params.outputs.build_sla_seconds }}"
+          python3 scripts/record_metric.py benchmark.publication_action "${{ steps.params.outputs.publish_to_index == 'true' && 'publish' || 'skip-existing' }}"
+          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.assembly_level "${{ steps.params.outputs.ncbi_assembly_level }}"
+          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.total_sequence_length "${{ steps.params.outputs.ncbi_total_sequence_length }}"
+          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.total_ungapped_length "${{ steps.params.outputs.ncbi_total_ungapped_length }}"
+          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.number_of_scaffolds "${{ steps.params.outputs.ncbi_number_of_scaffolds }}"
+          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.scaffold_n50 "${{ steps.params.outputs.ncbi_scaffold_n50 }}"
+
       - name: Download FASTA from NCBI
         if: steps.params.outputs.fasta_source == 'ncbi'
         run: |
+          python3 scripts/record_metric.py current_stage fasta_download_ncbi
+          source scripts/resource_sampler.sh
+          start_resource_sampler fasta_download
+          trap stop_resource_sampler EXIT
           START=$(date +%s)
           ACCESSION="${{ steps.params.outputs.accession }}"
           echo "Downloading FASTA for ${ACCESSION} from NCBI..."
@@ -118,11 +157,15 @@ jobs:
           DISK_AVAIL_KB=$(df -Pk . | awk 'NR==2 {print $4}')
           python3 scripts/record_metric.py timings_sec.fasta_download $((END - START))
           python3 scripts/record_metric.py fasta_size_bytes $FASTA_SIZE
-          python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+          python3 scripts/record_metric.py disk_used_checkpoint_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Download FASTA from Ensembl
         if: steps.params.outputs.fasta_source == 'ensembl'
         run: |
+          python3 scripts/record_metric.py current_stage fasta_download_ensembl
+          source scripts/resource_sampler.sh
+          start_resource_sampler fasta_download
+          trap stop_resource_sampler EXIT
           SPECIES_URL="${{ steps.params.outputs.species_url }}"
           GROUP="${{ steps.params.outputs.ensembl_group }}"
           ACCESSION="${{ steps.params.outputs.accession }}"
@@ -147,13 +190,17 @@ jobs:
           FASTA_SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
           python3 scripts/record_metric.py timings_sec.fasta_download $((END - START))
           python3 scripts/record_metric.py fasta_size_bytes $FASTA_SIZE
-          python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+          python3 scripts/record_metric.py disk_used_checkpoint_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Download FASTA from URL
         if: steps.params.outputs.fasta_source == 'url'
         env:
           FASTA_URL: ${{ steps.params.outputs.fasta_url }}
         run: |
+          python3 scripts/record_metric.py current_stage fasta_download_url
+          source scripts/resource_sampler.sh
+          start_resource_sampler fasta_download
+          trap stop_resource_sampler EXIT
           START=$(date +%s)
           if [ -z "$FASTA_URL" ]; then
             echo "ERROR: missing FASTA URL"
@@ -176,7 +223,7 @@ jobs:
           python3 scripts/record_metric.py timings_sec.fasta_download $((END - START))
           python3 scripts/record_metric.py fasta_size_bytes $FASTA_SIZE
           python3 scripts/record_metric.py fasta_source url
-          python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+          python3 scripts/record_metric.py disk_used_checkpoint_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Download uploaded FASTA
         if: steps.params.outputs.fasta_source == 'upload'
@@ -185,6 +232,10 @@ jobs:
           FASTA_FILE_NAME: ${{ steps.params.outputs.fasta_file_name }}
           FASTA_FILE_SIZE: ${{ steps.params.outputs.fasta_file_size }}
         run: |
+          python3 scripts/record_metric.py current_stage fasta_download_upload
+          source scripts/resource_sampler.sh
+          start_resource_sampler fasta_download
+          trap stop_resource_sampler EXIT
           START=$(date +%s)
           if [ -z "$FASTA_UPLOAD_URL" ]; then
             echo "ERROR: missing signed FASTA upload URL"
@@ -210,7 +261,7 @@ jobs:
           python3 scripts/record_metric.py fasta_size_bytes $FASTA_SIZE
           [ -n "$FASTA_FILE_SIZE" ] && python3 scripts/record_metric.py upload_file_size_bytes "$FASTA_FILE_SIZE" || true
           python3 scripts/record_metric.py fasta_source upload
-          python3 scripts/record_metric.py peak_disk_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+          python3 scripts/record_metric.py disk_used_checkpoint_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
           curl -fsS -X DELETE "$FASTA_UPLOAD_URL" >/dev/null || true
 
       - name: Detect circular sequences from assembly topology
@@ -221,6 +272,10 @@ jobs:
           FASTA_SOURCE: ${{ steps.params.outputs.fasta_source }}
           PAYLOAD_CIRC_SEQS: ${{ steps.params.outputs.circ_seqs }}
         run: |
+          python3 scripts/record_metric.py current_stage circular_sequence_detection
+          source scripts/resource_sampler.sh
+          start_resource_sampler circular_sequence_detection
+          trap stop_resource_sampler EXIT
           if [[ "$ACCESSION" =~ ^GC[AF]_[0-9]+\.[0-9]+$ ]]; then
             CIRC_SEQS=$(python3 scripts/detect_circular_sequences.py \
               --accession "$ACCESSION" \
@@ -240,11 +295,19 @@ jobs:
 
       - name: Validate nucleotide FASTA
         run: |
+          python3 scripts/record_metric.py current_stage fasta_validation
+          source scripts/resource_sampler.sh
+          start_resource_sampler fasta_validation
+          trap stop_resource_sampler EXIT
           python3 scripts/validate_fasta.py genome.fa --json /tmp/fasta_validation.json
 
       - name: Extract FASTA headers and stats
         id: fasta_info
         run: |
+          python3 scripts/record_metric.py current_stage fasta_statistics
+          source scripts/resource_sampler.sh
+          start_resource_sampler fasta_statistics
+          trap stop_resource_sampler EXIT
           # Get first 5 sequence IDs
           SEQ_IDS=$(grep "^>" genome.fa | head -5 | sed 's/^>//' | cut -d' ' -f1 | tr '\n' ',' | sed 's/,$//')
           echo "seq_ids=${SEQ_IDS}" >> $GITHUB_OUTPUT
@@ -258,6 +321,10 @@ jobs:
 
       - name: Convert FASTA to 2bit
         run: |
+          python3 scripts/record_metric.py current_stage fasta_to_2bit
+          source scripts/resource_sampler.sh
+          start_resource_sampler fasta_to_2bit
+          trap stop_resource_sampler EXIT
           # -long for FASTA > 12 GB (2bit default 4 GB cap; -long = 64-bit index)
           START=$(date +%s)
           SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
@@ -279,10 +346,11 @@ jobs:
           python3 scripts/record_metric.py timings_sec.fasta_to_2bit $((END - START))
           python3 scripts/record_metric.py twobit_size_bytes $TWOBIT_SIZE
           python3 scripts/record_metric.py used_long_2bit $USED_LONG
-          python3 scripts/record_metric.py peak_disk_gb.after_2bit $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+          python3 scripts/record_metric.py disk_used_checkpoint_gb.after_2bit $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Generate seed file
         run: |
+          python3 scripts/record_metric.py current_stage seed_generation
           PACKAGE="${{ steps.params.outputs.package_name }}"
           TITLE="${{ steps.params.outputs.title }}"
           ORGANISM="${{ steps.params.outputs.organism }}"
@@ -323,6 +391,10 @@ jobs:
 
       - name: Forge BSgenome data package (R)
         run: |
+          python3 scripts/record_metric.py current_stage forge
+          source scripts/resource_sampler.sh
+          start_resource_sampler forge
+          trap stop_resource_sampler EXIT
           PACKAGE="${{ steps.params.outputs.package_name }}"
           START=$(date +%s)
           Rscript -e "
@@ -354,7 +426,7 @@ jobs:
           HWM_KB=$(grep '^METRIC_FORGE_HWM_KB=' /tmp/forge.log | tail -1 | sed 's/.*=//')
           python3 scripts/record_metric.py timings_sec.forge $((END - START))
           [ -n "$HWM_KB" ] && python3 scripts/record_metric.py peak_mem_mb.forge $((HWM_KB / 1024)) || true
-          python3 scripts/record_metric.py peak_disk_gb.after_forge $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+          python3 scripts/record_metric.py disk_used_checkpoint_gb.after_forge $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: R CMD build (assemble tarball)
         env:
@@ -363,6 +435,10 @@ jobs:
           # Neoceratodus forsteri 34.56 GB (2bit ~8.6 GB, tarball ~8 GB).
           R_BUILD_TAR: tar
         run: |
+          python3 scripts/record_metric.py current_stage rcmd_build
+          source scripts/resource_sampler.sh
+          start_resource_sampler rcmd_build
+          trap stop_resource_sampler EXIT
           PACKAGE="${{ steps.params.outputs.package_name }}"
           START=$(date +%s)
           # Wrap with GNU time if available, so we capture Max RSS across the
@@ -386,12 +462,34 @@ jobs:
           fi
           TARBALL=$(ls ${PACKAGE}_*.tar.gz | head -1)
           TB_SIZE=$(stat -c%s "$TARBALL" 2>/dev/null || stat -f%z "$TARBALL" 2>/dev/null || echo 0)
+          ARCHIVE_COMPLETED=$(date +%s)
+          python3 scripts/record_metric.py timings_epoch.archive_completed "$ARCHIVE_COMPLETED"
           python3 scripts/record_metric.py tarball_size_bytes $TB_SIZE
-          python3 scripts/record_metric.py peak_disk_gb.after_rcmd_build $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+          python3 scripts/record_metric.py disk_used_checkpoint_gb.after_rcmd_build $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+
+      - name: Validate package archive
+        run: |
+          python3 scripts/record_metric.py current_stage archive_validation
+          source scripts/resource_sampler.sh
+          start_resource_sampler archive_validation
+          trap stop_resource_sampler EXIT
+          PACKAGE="${{ steps.params.outputs.package_name }}"
+          START=$(date +%s)
+          TARBALL=$(ls "${PACKAGE}"_*.tar.gz | head -1)
+          tar -tzf "$TARBALL" > /tmp/archive_contents.txt
+          grep -Fxq "${PACKAGE}/DESCRIPTION" /tmp/archive_contents.txt
+          grep -Fxq "${PACKAGE}/inst/extdata/single_sequences.2bit" /tmp/archive_contents.txt
+          PACKAGE_SHA256=$(sha256sum "$TARBALL" | awk '{print $1}')
+          END=$(date +%s)
+          python3 scripts/record_metric.py timings_sec.archive_validation $((END - START))
+          python3 scripts/record_metric.py package_sha256 "$PACKAGE_SHA256"
+          python3 scripts/record_metric.py archive_valid true
+          rm -f /tmp/archive_contents.txt
 
       - name: Determine storage backend
         id: storage
         run: |
+          python3 scripts/record_metric.py current_stage storage_selection
           PACKAGE="${{ steps.params.outputs.package_name }}"
           VERSION="${{ steps.params.outputs.version }}"
           TARBALL="${PACKAGE}_${VERSION}.tar.gz"
@@ -409,13 +507,13 @@ jobs:
           echo "tarball_size=$SIZE" >> $GITHUB_OUTPUT
 
       - name: Reject oversized temporary package
-        if: steps.storage.outputs.backend == 'zenodo' && steps.params.outputs.publish_to_index != 'true'
+        if: steps.storage.outputs.backend == 'zenodo' && steps.params.outputs.publish_to_index != 'true' && steps.params.outputs.benchmark_mode != 'true'
         run: |
           echo "ERROR: temporary build produced a tarball larger than the GitHub Releases asset limit. Zenodo is reserved for curator-approved index builds."
           exit 1
 
       - name: Create GitHub Release
-        if: steps.storage.outputs.backend == 'github'
+        if: steps.storage.outputs.backend == 'github' && steps.params.outputs.publish_to_index != 'true' && steps.params.outputs.benchmark_mode != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -447,6 +545,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          python3 scripts/record_metric.py current_stage publication_github
+          source scripts/resource_sampler.sh
+          start_resource_sampler publication_github
+          trap stop_resource_sampler EXIT
+          PUBLISH_START=$(date +%s)
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           PACKAGE="${{ steps.params.outputs.package_name }}"
           VERSION="${{ steps.params.outputs.version }}"
@@ -467,7 +570,7 @@ jobs:
           fi
           BUILT_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           WORKFLOW_RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder:latest"
+          BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d"
           PACKAGE_SHA256=$(sha256sum "${TARBALL}" | awk '{print $1}')
           DESCRIPTION_SHA256=$(PACKAGE="$PACKAGE" TARBALL="$TARBALL" python3 <<'PYEOF'
           import hashlib
@@ -540,6 +643,9 @@ jobs:
           Published via [AutoBSgenome](https://autobsgenome.org)."
           fi  # end: if SKIP_UPLOAD != 1
 
+          PUBLISH_END=$(date +%s)
+          python3 scripts/record_metric.py timings_sec.package_publication $((PUBLISH_END - PUBLISH_START))
+
           # Trigger index update on gh-pages. Pack seq_ids + metrics into
           # storage_info to stay under the 10-property client_payload cap.
           FILESIZE=$(stat -c%s "${TARBALL}" 2>/dev/null || stat -f%z "${TARBALL}" 2>/dev/null || echo "0")
@@ -592,6 +698,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
         run: |
+          python3 scripts/record_metric.py current_stage publication_zenodo
+          source scripts/resource_sampler.sh
+          start_resource_sampler publication_zenodo
+          trap stop_resource_sampler EXIT
+          PUBLISH_START=$(date +%s)
           PACKAGE="${{ steps.params.outputs.package_name }}"
           VERSION="${{ steps.params.outputs.version }}"
           ORGANISM="${{ steps.params.outputs.organism }}"
@@ -614,7 +725,7 @@ jobs:
           fi
           BUILT_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           WORKFLOW_RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder:latest"
+          BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d"
           PACKAGE_SHA256=$(sha256sum "${TARBALL}" | awk '{print $1}')
           DESCRIPTION_SHA256=$(PACKAGE="$PACKAGE" TARBALL="$TARBALL" python3 <<'PYEOF'
           import hashlib
@@ -654,6 +765,8 @@ jobs:
 
           echo "Zenodo DOI: $DOI"
           echo "Zenodo URL: $URL"
+          PUBLISH_END=$(date +%s)
+          python3 scripts/record_metric.py timings_sec.package_publication $((PUBLISH_END - PUBLISH_START))
 
           # Pack storage + seq_ids + metrics into one JSON field so we stay
           # under the 10-property client_payload cap.
@@ -700,8 +813,41 @@ jobs:
             -f "client_payload[seq_count]=${SEQ_COUNT}" \
             -f "client_payload[storage_info]=${STORAGE_INFO}"
 
+      - name: Finalize benchmark report
+        if: always() && steps.params.outputs.benchmark_mode == 'true'
+        env:
+          WORKFLOW_STATUS: ${{ job.status }}
+          PUBLISH_TO_INDEX: ${{ steps.params.outputs.publish_to_index }}
+        run: |
+          mkdir -p benchmark-report
+          if [ "$PUBLISH_TO_INDEX" = "true" ]; then
+            PUBLICATION_ACTION=publish
+          else
+            PUBLICATION_ACTION=skip-existing
+          fi
+          python3 scripts/finalize_build_report.py \
+            --metrics-file /tmp/build_metrics.json \
+            --output benchmark-report/build-report.json \
+            --workflow-status "$WORKFLOW_STATUS" \
+            --publication-action "$PUBLICATION_ACTION"
+          cp /tmp/build_metrics.json benchmark-report/raw-metrics.json 2>/dev/null || true
+          cp /tmp/fasta_validation.json benchmark-report/fasta-validation.json 2>/dev/null || true
+          cp /tmp/circular_sequences.json benchmark-report/circular-sequences.json 2>/dev/null || true
+          cp /tmp/forge.log benchmark-report/forge.log 2>/dev/null || true
+          cp /tmp/rbuild_time.log benchmark-report/rbuild-time.log 2>/dev/null || true
+          cat benchmark-report/build-report.json
+
+      - name: Upload benchmark report
+        if: always() && steps.params.outputs.benchmark_mode == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-report-${{ steps.params.outputs.job_id }}
+          path: benchmark-report/
+          retention-days: 90
+          if-no-files-found: error
+
       - name: Report failure
-        if: failure()
+        if: failure() && steps.params.outputs.benchmark_mode != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

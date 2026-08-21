@@ -1,0 +1,121 @@
+name: Run one large-genome benchmark item
+
+on:
+  workflow_call:
+    inputs:
+      accession:
+        required: true
+        type: string
+      campaign_run_token:
+        required: true
+        type: string
+    outputs:
+      build_run_id:
+        description: GitHub Actions run id for the dispatched build
+        value: ${{ jobs.dispatch-and-watch.outputs.build_run_id }}
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  dispatch-and-watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 195
+    outputs:
+      build_run_id: ${{ steps.build_run.outputs.run_id }}
+    steps:
+      - name: Checkout benchmark code
+        uses: actions/checkout@v4
+
+      - name: Checkout live package index
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: catalog-site
+
+      - name: Prepare dispatch request
+        id: request
+        run: |
+          python3 scripts/large_genome_benchmark.py payload \
+            --manifest .github/benchmarks/large-genomes-2026.json \
+            --catalog catalog-site/packages.json \
+            --accession "${{ inputs.accession }}" \
+            --run-token "${{ inputs.campaign_run_token }}" \
+            > /tmp/benchmark-dispatch.json
+          JOB_ID=$(jq -r '.client_payload.job_id' /tmp/benchmark-dispatch.json)
+          PUBLICATION=$(jq -r '.client_payload.extra.publish_to_index' /tmp/benchmark-dispatch.json)
+          echo "job_id=$JOB_ID" >> "$GITHUB_OUTPUT"
+          echo "Prepared $JOB_ID (publish_to_index=$PUBLICATION)"
+
+      - name: Dispatch build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/${GITHUB_REPOSITORY}/dispatches" \
+            --method POST \
+            --input /tmp/benchmark-dispatch.json
+
+      - name: Find dispatched run
+        id: build_run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          JOB_ID: ${{ steps.request.outputs.job_id }}
+        run: |
+          RUN_ID=""
+          for attempt in $(seq 1 60); do
+            RUN_ID=$(gh run list \
+              --repo "$GITHUB_REPOSITORY" \
+              --workflow build-bsgenome.yml \
+              --event repository_dispatch \
+              --limit 100 \
+              --json databaseId,displayTitle \
+              --jq ".[] | select(.displayTitle | startswith(\"[job ${JOB_ID}]\")) | .databaseId" \
+              | head -1)
+            if [ -n "$RUN_ID" ]; then
+              break
+            fi
+            sleep 5
+          done
+          if [ -z "$RUN_ID" ]; then
+            echo "No build run registered for $JOB_ID within five minutes" >&2
+            exit 1
+          fi
+          echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+          echo "run_url=https://github.com/${GITHUB_REPOSITORY}/actions/runs/${RUN_ID}" >> "$GITHUB_OUTPUT"
+          echo "Watching build run $RUN_ID"
+
+      - name: Watch build to completion
+        id: watch
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run watch "${{ steps.build_run.outputs.run_id }}" \
+            --repo "$GITHUB_REPOSITORY" \
+            --exit-status \
+            --interval 30
+
+      - name: Summarize item
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ steps.build_run.outputs.run_id }}
+          RUN_URL: ${{ steps.build_run.outputs.run_url }}
+          ACCESSION: ${{ inputs.accession }}
+        run: |
+          if [ -n "$RUN_ID" ]; then
+            CONCLUSION=$(gh run view "$RUN_ID" --repo "$GITHUB_REPOSITORY" --json conclusion --jq .conclusion 2>/dev/null || echo unknown)
+          else
+            CONCLUSION=not-registered
+          fi
+          {
+            echo "### ${ACCESSION}"
+            echo
+            echo "- Build run: ${RUN_URL:-unavailable}"
+            echo "- Conclusion: ${CONCLUSION}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Propagate build failure
+        if: steps.watch.outcome != 'success'
+        run: exit 1

@@ -1,0 +1,215 @@
+name: Large Genome Benchmark 2026
+
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  genome-01:
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_963921465.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-02:
+    needs: genome-01
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_002915635.3
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-03:
+    needs: genome-02
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_019776745.2
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-04:
+    needs: genome-03
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_900067695.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-05:
+    needs: genome-04
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_004151065.3
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-06:
+    needs: genome-05
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_018294505.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-07:
+    needs: genome-06
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_030765085.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-08:
+    needs: genome-07
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_031143425.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-09:
+    needs: genome-08
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_000404065.3
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-10:
+    needs: genome-09
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_031772625.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-11:
+    needs: genome-10
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_007258455.2
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-12:
+    needs: genome-11
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_000966675.3
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-13:
+    needs: genome-12
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_001447015.2
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-14:
+    needs: genome-13
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_016271365.2
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-15:
+    needs: genome-14
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_019279795.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-16:
+    needs: genome-15
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_060040675.1
+      campaign_run_token: ${{ github.run_id }}
+
+  collect-results:
+    needs:
+      - genome-01
+      - genome-02
+      - genome-03
+      - genome-04
+      - genome-05
+      - genome-06
+      - genome-07
+      - genome-08
+      - genome-09
+      - genome-10
+      - genome-11
+      - genome-12
+      - genome-13
+      - genome-14
+      - genome-15
+      - genome-16
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout benchmark code
+        uses: actions/checkout@v4
+
+      - name: Download per-build reports
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_01: ${{ needs.genome-01.outputs.build_run_id }}
+          RUN_02: ${{ needs.genome-02.outputs.build_run_id }}
+          RUN_03: ${{ needs.genome-03.outputs.build_run_id }}
+          RUN_04: ${{ needs.genome-04.outputs.build_run_id }}
+          RUN_05: ${{ needs.genome-05.outputs.build_run_id }}
+          RUN_06: ${{ needs.genome-06.outputs.build_run_id }}
+          RUN_07: ${{ needs.genome-07.outputs.build_run_id }}
+          RUN_08: ${{ needs.genome-08.outputs.build_run_id }}
+          RUN_09: ${{ needs.genome-09.outputs.build_run_id }}
+          RUN_10: ${{ needs.genome-10.outputs.build_run_id }}
+          RUN_11: ${{ needs.genome-11.outputs.build_run_id }}
+          RUN_12: ${{ needs.genome-12.outputs.build_run_id }}
+          RUN_13: ${{ needs.genome-13.outputs.build_run_id }}
+          RUN_14: ${{ needs.genome-14.outputs.build_run_id }}
+          RUN_15: ${{ needs.genome-15.outputs.build_run_id }}
+          RUN_16: ${{ needs.genome-16.outputs.build_run_id }}
+        run: |
+          mkdir -p campaign-reports
+          for order in $(seq -w 1 16); do
+            variable="RUN_${order}"
+            run_id="${!variable}"
+            if [ -z "$run_id" ]; then
+              echo "No dispatched run id recorded for item ${order}"
+              continue
+            fi
+            job_id="large-genomes-2026-${order}-${{ github.run_id }}"
+            destination="campaign-reports/${order}"
+            mkdir -p "$destination"
+            gh run download "$run_id" \
+              --repo "$GITHUB_REPOSITORY" \
+              --name "benchmark-report-${job_id}" \
+              --dir "$destination" \
+              || echo "Report artifact unavailable for item ${order} (run ${run_id})"
+          done
+
+      - name: Build campaign tables
+        run: |
+          python3 scripts/large_genome_benchmark.py summarize \
+            --manifest .github/benchmarks/large-genomes-2026.json \
+            --reports-dir campaign-reports \
+            --output-dir campaign-summary
+          cat campaign-summary/results.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload campaign results
+        uses: actions/upload-artifact@v4
+        with:
+          name: large-genome-benchmark-results-${{ github.run_id }}
+          path: |
+            campaign-summary/
+            campaign-reports/
+          retention-days: 90
