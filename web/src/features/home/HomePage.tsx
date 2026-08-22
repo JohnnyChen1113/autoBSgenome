@@ -1,7 +1,7 @@
 import { ArrowUpRight, ArrowRight, Search, Hammer } from "lucide-react";
-import { SiteHeader } from "@/components/SiteChrome";
+import { HOME_QUOTE } from "@/components/home-quote";
+import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 import { SpeciesImage } from "@/components/SpeciesImage";
-import { siteConfig } from "@/config";
 
 const commonPackages = [
   {
@@ -229,78 +229,26 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section
+          aria-label="Why AutoBSgenome"
+          className="border-y border-[color:var(--rule)]/15 bg-background"
+        >
+          <div className="mx-auto max-w-5xl px-6 py-20 text-center sm:py-24">
+            <span
+              aria-hidden="true"
+              className="block font-heading text-7xl leading-none text-primary/35"
+            >
+              “
+            </span>
+            <blockquote className="mx-auto -mt-3 max-w-4xl font-heading text-2xl font-medium leading-snug tracking-tight text-ink sm:text-3xl lg:text-4xl">
+              {HOME_QUOTE}
+            </blockquote>
+          </div>
+        </section>
+
       </main>
 
-      {/* CLOSING SECTION AS FOOTER */}
-      <footer className="border-t border-[color:var(--rule)]/15">
-        <div className="mx-auto max-w-6xl px-6 pt-16 pb-10">
-          <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
-            <p className="max-w-3xl font-heading text-2xl font-medium leading-snug tracking-tight text-ink sm:text-3xl">
-              Every BSgenome on Bioconductor took an expert and an afternoon
-              to assemble. AutoBSgenome turns that into a paste-and-wait web
-              service. Anyone, any genome, install-ready in minutes.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <a
-                href="/build"
-                className="inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-md"
-              >
-                Start a build
-                <ArrowRight className="size-4" />
-              </a>
-              <a
-                href={siteConfig.githubUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex h-11 items-center gap-2 rounded-md border border-foreground/15 px-5 text-sm font-medium text-foreground hover:border-foreground/40 hover:bg-paper"
-              >
-                GitHub
-                <ArrowUpRight className="size-4" />
-              </a>
-            </div>
-          </div>
-
-          <div className="mt-10 rule" />
-
-          <div className="mt-5 flex flex-col gap-4 text-sm text-muted-foreground sm:flex-row sm:items-end sm:justify-between">
-            <div className="space-y-1">
-              <p>
-                Built by{" "}
-                <a
-                  href={siteConfig.authorUrl}
-                  className="text-foreground/80 hover:text-primary"
-                >
-                  Junhao Chen
-                </a>
-                , Saint Louis University.
-              </p>
-              <a
-                href={siteConfig.linLabUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="link-underline"
-              >
-                Lin Lab · zlinlab.org
-              </a>
-            </div>
-            <a
-              href={siteConfig.sluUrl}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Saint Louis University"
-              className="inline-flex transition-opacity hover:opacity-80"
-            >
-              <img
-                src="/slu-logo.png"
-                alt="Saint Louis University"
-                width={240}
-                height={60}
-                className="h-10 w-auto max-w-[220px] sm:max-w-[260px]"
-              />
-            </a>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 
 import { siteConfig } from "@/config";
+import { SITE_FOOTER_CONTENT } from "@/components/site-footer";
 import { SITE_NAV_ITEMS, type NavKey } from "@/components/site-navigation";
 
 function GithubMark({ className }: { className?: string }) {
@@ -74,64 +75,47 @@ export function SiteHeader({ active }: { active?: NavKey }) {
 export function SiteFooter() {
   return (
     <footer className="mt-16 border-t border-[color:var(--rule)]/15 bg-paper">
-      <div className="mx-auto max-w-6xl px-6 py-10">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <div className="flex items-center gap-2.5">
-              <img
-                src="/brand-icon.svg"
-                alt="AutoBSgenome logo"
-                className="h-8 w-8"
-              />
-              <span className="font-heading text-base font-semibold tracking-tight text-ink">
-                AutoBSgenome
-              </span>
-            </div>
-            <p className="mt-3 max-w-md text-sm leading-6 text-muted-foreground">
-              An open infrastructure for finding and building BSgenome R
-              packages from NCBI and Ensembl genome assemblies.
-            </p>
-          </div>
-          <div className="flex flex-col items-start gap-3 text-sm sm:items-end">
+      <div className="mx-auto flex max-w-6xl flex-col gap-5 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-2 text-sm text-muted-foreground sm:flex-row sm:items-center sm:gap-4">
+          <p>
+            {SITE_FOOTER_CONTENT.copyright.prefix}
             <a
-              href={siteConfig.sluUrl}
+              href={SITE_FOOTER_CONTENT.copyright.lab.href}
               target="_blank"
               rel="noreferrer"
-              aria-label="Saint Louis University"
-              className="inline-flex transition-opacity hover:opacity-80"
+              className="text-foreground/80 underline decoration-foreground/25 underline-offset-4 transition-colors hover:text-primary"
             >
-              <img
-                src="/slu-logo.png"
-                alt="Saint Louis University"
-                width={240}
-                height={60}
-                className="h-10 w-auto max-w-[220px] sm:max-w-[260px]"
-              />
+              {SITE_FOOTER_CONTENT.copyright.lab.label}
             </a>
-            <p className="text-xs text-muted-foreground">
-              Built by{" "}
-              <a
-                href={siteConfig.authorUrl}
-                className="text-foreground/80 hover:text-primary"
-              >
-                Junhao Chen
-              </a>{" "}
-              · Saint Louis University
-            </p>
-          </div>
-        </div>
-        <div className="mt-8 rule" />
-        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+            {SITE_FOOTER_CONTENT.copyright.suffix}
+          </p>
+          <span aria-hidden="true" className="hidden text-foreground/25 sm:inline">
+            ·
+          </span>
           <a
-            href={siteConfig.linLabUrl}
+            href={SITE_FOOTER_CONTENT.reportIssue.href}
             target="_blank"
             rel="noreferrer"
-            className="transition-colors hover:text-primary"
+            className="w-fit text-foreground/80 underline decoration-foreground/25 underline-offset-4 transition-colors hover:text-primary"
           >
-            Lin Lab · zlinlab.org
+            {SITE_FOOTER_CONTENT.reportIssue.label}
           </a>
-          <span>build · browse · automate</span>
         </div>
+        <a
+          href={SITE_FOOTER_CONTENT.university.href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={SITE_FOOTER_CONTENT.university.imageAlt}
+          className="inline-flex w-fit transition-opacity hover:opacity-80"
+        >
+          <img
+            src={SITE_FOOTER_CONTENT.university.imageSrc}
+            alt={SITE_FOOTER_CONTENT.university.imageAlt}
+            width={240}
+            height={60}
+            className="h-10 w-auto max-w-[220px] sm:max-w-[260px]"
+          />
+        </a>
       </div>
     </footer>
   );
