@@ -304,6 +304,22 @@ class ManifestTests(unittest.TestCase):
 
 
 class WorkflowRuntimeContractTests(unittest.TestCase):
+    def test_ncbi_build_streams_official_gzip_to_2bit_with_fallback(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+
+        self.assertIn("- name: Stream NCBI FASTA to 2bit", workflow)
+        self.assertIn("scripts/resolve_ncbi_fasta.py", workflow)
+        self.assertIn("scripts/stream_fasta_to_2bit.py", workflow)
+        self.assertIn("ncbi-ftp-stream", workflow)
+        self.assertIn("ncbi-datasets-fallback", workflow)
+        self.assertIn("datasets download genome accession", workflow)
+        self.assertIn(
+            "if: steps.params.outputs.fasta_source != 'ncbi'",
+            workflow,
+        )
+
     def test_builder_uses_one_source_aware_fasta_inspection_stage(self):
         workflow = (
             ROOT / ".github" / "workflows" / "build-bsgenome.yml"

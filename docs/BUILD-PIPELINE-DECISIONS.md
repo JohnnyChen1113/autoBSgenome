@@ -137,16 +137,24 @@ Open improvements:
 
 ### NCBI
 
-The NCBI Datasets CLI downloads the genome ZIP with up to three attempts. The
-workflow extracts the first `.fna`, renames it to `genome.fa`, and removes the
-ZIP and remaining dataset metadata.
+The primary path resolves the versioned accession to the official NCBI Genomes
+FTP `*_genomic.fna.gz`, its MD5, and assembly statistics. The compressed HTTPS
+response is hashed and decompressed while the same FASTA byte stream is
+inspected and fed to `faToTwoBit stdin`. This path never materializes a ZIP or
+an uncompressed FASTA. Each network retry restarts the complete stream so a
+partial response cannot be concatenated with a later attempt.
+
+If FTP resolution or all three streaming attempts fail, the workflow retains
+the previous NCBI Datasets ZIP path as a compatibility fallback. The fallback
+materializes `genome.fa`, performs the same inspection, converts it, and then
+removes the FASTA.
 
 Potential improvements:
 
-- verify upstream checksums where available;
-- preflight disk demand because ZIP and uncompressed FASTA coexist during
-  extraction;
-- capture retry and transfer-rate metrics separately from extraction time.
+- compare streaming throughput across multiple GitHub runner regions;
+- expose retry/fallback reasons in the public status response;
+- capture resolver, network, decompression, inspection, and converter timing
+  separately without serializing stages that intentionally overlap.
 
 ### Ensembl
 
@@ -211,9 +219,10 @@ Open decisions:
 
 ## 7. FASTA to 2bit conversion
 
-`faToTwoBit` converts `genome.fa` to `genome.2bit`; input files larger than
-12 GB use the tool's `-long` format. The FASTA is deleted immediately after a
-successful conversion.
+`faToTwoBit` converts sequence input to `genome.2bit`; assemblies above the
+existing size threshold use the tool's `-long` format. NCBI input arrives on
+stdin from the streaming pipeline. Other sources currently use `genome.fa`,
+which is deleted immediately after a successful conversion.
 
 Purpose:
 

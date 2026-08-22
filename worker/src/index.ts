@@ -1077,6 +1077,7 @@ async function getBuildProgress(
   const run = await findWorkflowRunForJob(jobId, env);
   if (!run) return null;
   const job = await getWorkflowJob(run.id, env);
+  const streamStep = findActionStep(job, ["Stream NCBI FASTA to 2bit"]);
   const downloadStep = findActionStep(job, [
     "Download FASTA from NCBI",
     "Download FASTA from Ensembl",
@@ -1096,6 +1097,12 @@ async function getBuildProgress(
     job?.started_at ?? run.run_started_at ?? null
   );
   const queueComplete = Boolean(job?.started_at || run.run_started_at);
+  const sequenceSteps: BuildProgressStep[] = streamStep?.conclusion !== "skipped" && streamStep
+    ? [actionStepSummary("twobit", "Streaming FASTA to 2bit", streamStep)]
+    : [
+        actionStepSummary("download", "Downloading FASTA", downloadStep),
+        actionStepSummary("twobit", "Converting to 2bit format", convertStep),
+      ];
   const buildSteps: BuildProgressStep[] = [
     {
       key: "queue",
@@ -1105,13 +1112,12 @@ async function getBuildProgress(
       started_at: run.created_at,
       completed_at: queueComplete ? job?.started_at ?? run.run_started_at ?? undefined : undefined,
     },
-    actionStepSummary("download", "Downloading FASTA", downloadStep),
-    actionStepSummary("twobit", "Converting to 2bit format", convertStep),
+    ...sequenceSteps,
     summarizeStepGroup(
       "package",
       "Building R package",
       job,
-      ["Generate seed file", "Forge BSgenome package", "R CMD build (assemble tarball)"],
+      ["Generate seed file", "Forge BSgenome data package (R)", "R CMD build (assemble tarball)"],
       true,
       ["Determine storage backend", "Create GitHub Release", "Publish oversized tarball to Zenodo"]
     ),
