@@ -1,0 +1,414 @@
+# AutoBSgenome build pipeline and decision log
+
+Last updated: 2026-08-22
+
+This document describes the production build path from a browser request to an
+installable BSgenome source package. It separates required package-building
+work from validation, observability, storage, and publication policy so that
+future changes can be made deliberately.
+
+## Executive summary
+
+The irreducible package-building path is:
+
+```text
+obtain FASTA
+  -> convert FASTA to 2bit
+  -> generate the BSgenome seed and package directory
+  -> build a source tarball
+  -> verify the archive
+  -> retain it temporarily, publish it through a curated path, or delete it
+```
+
+Everything else exists to improve metadata quality, reject bad input, expose
+progress, collect benchmark evidence, or enforce storage policy.
+
+## End-to-end flow
+
+```text
+Web form / API client
+  -> metadata review and package-name validation
+  -> optional multipart FASTA upload to Cloudflare R2
+  -> Cloudflare API Worker (`POST /api/build`)
+  -> GitHub `repository_dispatch`
+  -> pinned builder container on GitHub Actions
+  -> one of four FASTA acquisition paths
+       NCBI | Ensembl | URL | uploaded file
+  -> fast FASTA inspection
+       all sources: sequence count, first sequence IDs, file size
+       URL/upload only: prefix-sampled format and nucleotide check
+  -> `faToTwoBit`
+  -> BSgenome seed (`circ_seqs: character(0)`)
+  -> `forgeBSgenomeDataPkg()`
+  -> `R CMD build`
+  -> tar/gzip structure validation and SHA-256
+  -> storage-policy branch
+       temporary build | curated permanent build | benchmark
+  -> status reporting and eventual cleanup
+```
+
+## 1. Browser and metadata preparation
+
+The Web UI accepts an NCBI accession, an Ensembl species page, a user-hosted
+FASTA URL, or a local FASTA upload. It prefills package name, organism, common
+name, assembly, provider, release date, version, title, description, source URL,
+and the FASTA source. Circular-sequence detection and user-editable circular
+metadata have been removed; generated seeds use `circ_seqs: character(0)`.
+
+Purpose:
+
+- reduce manual metadata entry;
+- enforce the four-part BSgenome package-name convention;
+- make the FASTA source explicit before a build consumes runner resources.
+
+Open improvements:
+
+- move upstream metadata lookup behind the API Worker to reduce browser CORS
+  and rate-limit failures;
+- share one package-name and request schema between Web and Worker;
+- revalidate authoritative metadata server-side instead of trusting every
+  browser-supplied descriptive field.
+
+## 2. User FASTA upload staging
+
+Local files are uploaded in multipart chunks to a temporary Cloudflare R2
+object. The API signs the upload/download URLs and verifies that the object
+exists before dispatching a build. The build deletes the R2 object after a
+successful download on a best-effort basis.
+
+Purpose:
+
+- bridge a browser-local file into GitHub Actions without exposing the R2
+  bucket directly.
+
+Open improvements:
+
+- enforce an R2 lifecycle rule so abandoned uploads are removed even when a
+  workflow fails before its DELETE request;
+- detect gzip by magic bytes instead of filename extension;
+- make maximum accepted size and expiry visible before upload begins.
+
+## 3. API request validation and queue reporting
+
+`POST /api/build` currently validates the required package and organism fields,
+the package-name shape, NCBI accession URLs, Ensembl group values, URL schemes,
+and signed upload URLs. It queries queued/running GitHub Actions jobs, generates
+an eight-character job ID, and sends a `repository_dispatch` payload.
+
+Purpose:
+
+- reject obvious requests before allocating a build runner;
+- provide a stable job ID for polling;
+- isolate the public API from the R/Bioconductor build environment.
+
+Open improvements:
+
+- `MAX_QUEUE_SIZE=5` is currently informational; the Worker always accepts the
+  request. Either enforce admission control or remove the misleading limit;
+- use a longer job identifier to reduce collision risk;
+- add rate limits or abuse controls for the unauthenticated public endpoint;
+- restrict URL builds against private/loopback destinations, unsafe redirects,
+  excessive response sizes, and unbounded downloads;
+- replace GitHub Actions polling as the queue database with KV, D1, a Durable
+  Object, or an event-driven status record.
+
+## 4. Reproducible runner initialization
+
+The build runs in a builder container pinned by digest on an Ubuntu GitHub
+runner. The job hard timeout is 180 minutes. Benchmark payloads record a
+60-minute core-build SLA, assembly metadata, runner hardware, stage timings,
+memory, process RSS, and disk usage.
+
+Purpose:
+
+- keep R, BSgenome, NCBI Datasets, and UCSC tool versions reproducible;
+- distinguish workflow failures from resource limits;
+- make benchmark results auditable.
+
+Open improvements:
+
+- the 60-minute SLA is reported but not enforced as a separate timeout;
+- sample resources less frequently, or only in benchmark mode, for ordinary
+  builds;
+- update JavaScript actions that still emit Node.js 20 deprecation warnings;
+- estimate peak disk demand before downloading a very large assembly.
+
+## 5. FASTA acquisition
+
+### NCBI
+
+The NCBI Datasets CLI downloads the genome ZIP with up to three attempts. The
+workflow extracts the first `.fna`, renames it to `genome.fa`, and removes the
+ZIP and remaining dataset metadata.
+
+Potential improvements:
+
+- verify upstream checksums where available;
+- preflight disk demand because ZIP and uncompressed FASTA coexist during
+  extraction;
+- capture retry and transfer-rate metrics separately from extraction time.
+
+### Ensembl
+
+The workflow resolves the official FASTA URL from species/group information,
+downloads it with retry handling, and decompresses it to `genome.fa`.
+
+Potential improvements:
+
+- use parallel decompression when it materially helps;
+- cache resolver results;
+- record and verify upstream checksum metadata.
+
+### User URL
+
+The workflow downloads an HTTP/HTTPS resource and normalizes compressed or
+plain input to `genome.fa`.
+
+Decision adopted in this revision:
+
+- stop using `gzip -t` as format detection because it fully scans the archive
+  before decompression and therefore reads compressed input twice;
+- detect gzip from its magic bytes and decompress once.
+
+### Uploaded file
+
+The workflow downloads the signed R2 object and normalizes it to `genome.fa`.
+The source R2 object is then deleted best-effort.
+
+Decision adopted in this revision:
+
+- use gzip magic bytes instead of trusting the filename suffix.
+
+## 6. FASTA inspection
+
+The former validator read every sequence character in Python, tested membership
+in a nucleotide-character set, and then a second workflow step scanned the file
+again for headers and sequence count. On the 9.35-Gbp *Triticum timopheevii*
+assembly, validation alone took 13 minutes 13 seconds.
+
+Decisions adopted in this revision:
+
+- remove exhaustive per-character validation from every source;
+- trust NCBI and Ensembl official FASTA enough to skip sampled character
+  validation;
+- for URL/upload inputs only, inspect a bounded prefix to reject obvious FASTQ,
+  empty input, and protein/non-nucleotide input with a useful error;
+- combine that lightweight check with sequence-ID/count/file-size collection;
+- perform at most one full-file scan, using large binary chunks rather than a
+  Python loop over every line or base.
+
+The lightweight check is deliberately not a biological correctness audit. It
+does not prove that an assembly matches its accession, detect duplicated
+records, reproduce N50, or validate every byte of a user file. Successful
+`faToTwoBit`, package construction, and archive verification remain downstream
+compatibility gates.
+
+Open decisions:
+
+- whether custom URL/upload input needs a future compiled full validator;
+- whether official-source sequence counts should be compared with NCBI/Ensembl
+  metadata and how to handle organelle/unplaced-record differences.
+
+## 7. FASTA to 2bit conversion
+
+`faToTwoBit` converts `genome.fa` to `genome.2bit`; input files larger than
+12 GB use the tool's `-long` format. The FASTA is deleted immediately after a
+successful conversion.
+
+Purpose:
+
+- produce the compact indexed sequence representation consumed by BSgenome.
+
+Potential improvements:
+
+- validate the 12-GB heuristic against the actual 2bit addressing constraint;
+- consider always selecting `-long` above a conservative assembly-size cutoff;
+- expose converter errors directly in public build status.
+
+## 8. Seed generation
+
+The workflow writes package metadata and the 2bit location to a BSgenome seed.
+Circular metadata is fixed to `character(0)`.
+
+Purpose:
+
+- describe the R package that BSgenomeForge must create.
+
+Known correctness and security work:
+
+- the submitted Description is currently not parsed by the workflow and is
+  replaced with a generated description;
+- several parsed values are interpolated back into shell code and a heredoc.
+  Generate the seed with Python/R from environment variables to escape quotes,
+  newlines, colons, and shell metacharacters safely.
+
+## 9. Forge the package directory
+
+The workflow invokes `forgeBSgenomeDataPkg()` and places the 2bit file under
+`inst/extdata/single_sequences.2bit`.
+
+Purpose:
+
+- create DESCRIPTION, NAMESPACE, R code, and the standard BSgenome package
+  layout.
+
+Open improvements:
+
+- call `BSgenomeForge::forgeBSgenomeDataPkg()` directly; the current namespace
+  emits a deprecation warning;
+- narrow the catch-all fallback so real metadata/forge errors are not masked as
+  large-file copy failures;
+- investigate move/hardlink behavior to reduce the transient second copy of a
+  multi-gigabyte 2bit file.
+
+## 10. Build the source tarball
+
+`R CMD build` creates `Package_version.tar.gz`. The workflow forces external
+GNU tar because R's built-in tar path cannot handle the largest 2bit members.
+The unpacked package directory is removed after a successful build.
+
+Purpose:
+
+- produce the source package consumed by `install.packages(..., type="source")`.
+
+Potential improvements:
+
+- evaluate parallel gzip only if compression becomes a significant fraction of
+  runtime;
+- retain the current external-tar behavior for packages with members above the
+  built-in tar limit.
+
+## 11. Archive validation
+
+The workflow lists the gzip/tar archive, requires DESCRIPTION and the 2bit
+member, and computes SHA-256.
+
+Purpose:
+
+- reject truncated archives and packages missing their essential data file;
+- attach a reproducible integrity identifier.
+
+This is a useful low-cost gate and should remain. It does not prove that R can
+install and load the package. Curated permanent publication may eventually add
+an install/load smoke test.
+
+## 12. Storage-policy branches
+
+Tarballs below 1.9 GiB use GitHub Releases; larger tarballs select the Zenodo
+backend because GitHub enforces a 2-GiB asset limit.
+
+### Ordinary temporary build
+
+The public API can create a `build-JOB_ID` GitHub Release only when the tarball
+is below 1.9 GiB. A scheduled workflow runs every six hours and deletes
+`build-*` releases older than two days, so effective retention is roughly
+48--54 hours.
+
+Important current limitation:
+
+- a public temporary build above 1.9 GiB completes all expensive package work
+  and then fails because Zenodo is not allowed for temporary output;
+- the 9.35-Gbp benchmark produced a 2.31-GB tarball, so the same assembly would
+  currently fail as an ordinary Web build.
+
+Open decision:
+
+- reject likely-oversized temporary packages before download, or introduce an
+  R2-backed two-day large-package store. Do not silently turn a user build into
+  permanent publication.
+
+### Curated permanent build
+
+This path is internal; the public Worker does not forward `publish_to_index`.
+Small packages use permanent GitHub Releases, large packages use Zenodo, and a
+second dispatch updates the gh-pages package index with storage metadata and
+provenance.
+
+Open improvements:
+
+- reconcile cases where storage succeeds but index update fails;
+- compare accession, SHA-256, and size when deciding whether an existing
+  release can be reused.
+
+### Benchmark build
+
+A no-publish benchmark runs the complete build and archive-validation path,
+then deletes the tarball and uploads only a small report artifact. Benchmark
+reports are retained for 90 days.
+
+Open improvements:
+
+- add an explicit campaign pause flag checked before every dispatch; cancelling
+  a serial matrix currently has a race at job boundaries;
+- set the final metrics stage to `complete` or `cleanup`;
+- record every measured stage directly instead of reconstructing validation
+  time from GitHub timestamps.
+
+## 13. Status and progress reporting
+
+`GET /api/status/JOB_ID` first checks for a temporary GitHub Release. Until one
+exists, the Worker searches recent repository-dispatch runs and fetches job
+steps to reconstruct queue, download, conversion, package, and release status.
+
+Purpose:
+
+- give users a stable project-domain endpoint rather than exposing GitHub API
+  details or a workers.dev URL.
+
+Known improvements:
+
+- persist `job_id -> run_id/status` rather than scanning up to 300 workflow runs
+  on every poll;
+- treat completed failure/cancelled/timed-out workflows as terminal even when a
+  failure-marker Release could not be created;
+- keep step names synchronized with workflow names so forge time is not omitted;
+- expose every genuinely long stage. Removing exhaustive FASTA validation
+  removes the largest previously invisible interval.
+
+## Benchmark baseline before fast inspection
+
+The controlled no-publish rerun for `GCA_963921465.1` used workflow run
+`32555275665` and produced the following baseline:
+
+| Stage | Elapsed |
+|---|---:|
+| NCBI download | 5 min 24 s |
+| Exhaustive FASTA validation | 13 min 13 s |
+| Header/statistics scan | 2 s |
+| FASTA to 2bit | 1 min 00 s |
+| Forge | 14 s |
+| R CMD build | 1 min 48 s |
+| Archive validation | 29 s |
+| Workflow start to tarball | 21 min 41 s |
+| Complete GitHub job | 22 min 52 s |
+
+The tarball was 2,309,565,536 bytes, was not published to GitHub Releases,
+Zenodo, or the permanent index, and was deleted after its benchmark report was
+finalized.
+
+## Decision backlog
+
+### Adopted
+
+- Remove circular-sequence detection and fix seeds to `character(0)`.
+- Remove exhaustive Python FASTA validation.
+- Use prefix-sampled validation only for URL/upload input.
+- Merge FASTA inspection and statistics into one workflow stage.
+- Keep archive validation.
+- Keep approximately two-day cleanup for ordinary temporary downloads.
+- Never silently publish a user build to the permanent index.
+
+### Needs a product decision
+
+- Support >1.9-GiB temporary packages in R2, or reject them before building.
+- Decide how strict custom FASTA validation must be.
+- Decide whether public builds need authentication, quotas, or challenge-based
+  abuse protection.
+
+### Engineering work without a product-policy decision
+
+- Safe seed generation and Description propagation.
+- Durable status storage and terminal failure reporting.
+- Narrow forge fallback and update the BSgenomeForge call.
+- Preflight disk estimation and upstream checksum handling.
+- Explicit benchmark pause control and improved metrics completeness.

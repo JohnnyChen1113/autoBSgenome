@@ -16,7 +16,7 @@ class FinalBuildReportTests(unittest.TestCase):
         metrics = {
             "schema_version": 2,
             "timings_epoch": {"workflow_started": 1000},
-            "current_stage": "fasta_validation",
+            "current_stage": "fasta_inspection",
         }
 
         report = finalizer.finalize_report(
@@ -27,7 +27,7 @@ class FinalBuildReportTests(unittest.TestCase):
 
         self.assertFalse(report["outcome"]["build_complete"])
         self.assertEqual(report["outcome"]["publication"], "not-reached")
-        self.assertEqual(report["outcome"]["failure_stage"], "fasta_validation")
+        self.assertEqual(report["outcome"]["failure_stage"], "fasta_inspection")
 
     def test_archive_completion_is_separate_from_skipped_publication(self):
         metrics = {
