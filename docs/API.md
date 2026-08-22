@@ -18,7 +18,6 @@ Trigger a BSgenome package build.
   "genome": "GRCh38",
   "provider": "NCBI",
   "version": "1.0.0",
-  "circ_seqs": "MT",
   "accession": "GCF_000001405.40",
   "data_source": "ncbi",
   "release_date": "Feb. 2022",
@@ -35,7 +34,6 @@ Trigger a BSgenome package build.
 | `genome` | No | Assembly name (e.g. `GRCh38`) |
 | `provider` | No | Data provider (e.g. `NCBI`, `Ensembl`) |
 | `version` | No | Package version (default: `1.0.0`) |
-| `circ_seqs` | No | Circular sequences, comma-separated (e.g. `MT`) or `character(0)` |
 | `accession` | No | NCBI accession (e.g. `GCF_000001405.40`) — used for FASTA download |
 | `data_source` | No | `ncbi` or `ensembl` (default: `ncbi`) — determines FASTA download source |
 | `species_url` | Ensembl builds | Ensembl species slug, such as `aaosphaeria_arxii_cbs_175_79_gca_010015735` |
@@ -75,7 +73,6 @@ Use `fasta_source: "url"` when the FASTA file is hosted outside NCBI or Ensembl,
   "genome": "MyAssembly",
   "provider": "URL",
   "version": "1.0.0",
-  "circ_seqs": "character(0)",
   "data_source": "ncbi",
   "fasta_source": "url",
   "fasta_url": "https://example.org/path/genome.fa.gz",
@@ -140,7 +137,6 @@ Then trigger a build with:
   "genome": "MyAssembly",
   "provider": "Upload",
   "version": "1.0.0",
-  "circ_seqs": "character(0)",
   "data_source": "ncbi",
   "fasta_source": "upload",
   "fasta_upload_url": "<download_url from /api/uploads>",
@@ -197,7 +193,7 @@ Check build status.
 # 1. Trigger build
 JOB=$(curl -s -X POST https://api.autobsgenome.org/api/build \
   -H "Content-Type: application/json" \
-  -d '{"package_name":"BSgenome.Drerio.NCBI.GRCz11","organism":"Danio rerio","accession":"GCF_000002035.6","data_source":"ncbi","version":"1.0.0","circ_seqs":"MT"}')
+  -d '{"package_name":"BSgenome.Drerio.NCBI.GRCz11","organism":"Danio rerio","accession":"GCF_000002035.6","data_source":"ncbi","version":"1.0.0"}')
 JOB_ID=$(echo $JOB | python3 -c "import json,sys; print(json.load(sys.stdin)['job_id'])")
 echo "Job ID: $JOB_ID"
 

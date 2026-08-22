@@ -55,7 +55,6 @@ def build_dispatch_payload(campaign, genome, publication, run_token=""):
         "genome": genome["assembly"],
         "provider": genome["provider"],
         "version": genome.get("version", "1.0.0"),
-        "circ_seqs": "",
         "accession": genome["accession"],
         "extra": {
             "data_source": "ncbi",
@@ -193,6 +192,7 @@ def main(argv=None):
     payload_parser.add_argument("--catalog", required=True)
     payload_parser.add_argument("--accession", required=True)
     payload_parser.add_argument("--run-token", default="")
+    payload_parser.add_argument("--no-publish", action="store_true")
     matrix_parser = subparsers.add_parser("matrix")
     matrix_parser.add_argument("--manifest", required=True)
     summarize_parser = subparsers.add_parser("summarize")
@@ -232,7 +232,7 @@ def main(argv=None):
     payload = build_dispatch_payload(
         campaign,
         genome,
-        publication=genome["publication"],
+        publication="skip-existing" if args.no_publish else genome["publication"],
         run_token=args.run_token,
     )
     print(json.dumps({"event_type": "build_bsgenome", "client_payload": payload}))

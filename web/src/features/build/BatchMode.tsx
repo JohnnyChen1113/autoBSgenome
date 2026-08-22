@@ -8,12 +8,10 @@ import { Label } from "@/components/ui/label";
 import {
   extractAccession,
   fetchAssemblyInfo,
-  fetchCircularSequences,
 } from "@/lib/ncbi";
 import {
   extractEnsemblSpecies,
   fetchEnsemblAssemblyInfo,
-  detectCircularFromKaryotype,
 } from "@/lib/ensembl";
 import {
   fetchBuildStatus,
@@ -40,7 +38,6 @@ interface BatchItem {
   provider: string;
   packageName: string;
   version: string;
-  circSeqs: string;
   title: string;
   description: string;
   sourceUrl: string;
@@ -108,7 +105,6 @@ function createBatchItem(rawInput: string, index: number): BatchItem {
     provider: "",
     packageName: "",
     version: "1.0.0",
-    circSeqs: "",
     title: "",
     description: "",
     sourceUrl: "",
@@ -158,7 +154,6 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
         }
 
         const info = await fetchEnsemblAssemblyInfo(species);
-        const circNames = detectCircularFromKaryotype(info.karyotype);
         const orgParts = info.organism.trim().split(/\s+/);
         const abbrev = orgParts.length >= 2 ? orgParts[0][0].toUpperCase() + orgParts[1].toLowerCase() : orgParts[0];
         const assembly = info.assemblyName.replace(/\./g, "").replace(/[^a-zA-Z0-9]/g, "");
@@ -170,7 +165,6 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
           assembly: info.assemblyName,
           provider: "Ensembl",
           packageName: `BSgenome.${abbrev}.Ensembl.${assembly}`,
-          circSeqs: circNames.length > 0 ? circNames.join(", ") : "character(0)",
           title: `Full genome sequences for ${info.organism} (Ensembl version ${info.assemblyName})`,
           description: `Full genome sequences for ${info.organism} (${info.commonName}) as provided by Ensembl (${info.assemblyName}) and stored in Biostrings objects.`,
           sourceUrl: `https://www.ensembl.org/${species.charAt(0).toUpperCase() + species.slice(1)}/Info/Index`,
@@ -179,7 +173,6 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
       } else {
         // NCBI path
         const info = await fetchAssemblyInfo(item.accession);
-        const circs = await fetchCircularSequences(item.accession);
         const orgParts = info.organism.trim().split(/\s+/);
         const abbrev = orgParts.length >= 2 ? orgParts[0][0].toUpperCase() + orgParts[1].toLowerCase() : orgParts[0];
         const assembly = info.assemblyName.replace(/\./g, "").replace(/[^a-zA-Z0-9]/g, "");
@@ -191,7 +184,6 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
           assembly: info.assemblyName,
           provider: info.provider || "NCBI",
           packageName: `BSgenome.${abbrev}.${info.provider || "NCBI"}.${assembly}`,
-          circSeqs: circs.length > 0 ? circs.map(c => c.name).join(", ") : "character(0)",
           title: `Full genome sequences for ${info.organism} (${info.provider} version ${info.assemblyName})`,
           description: `Full genome sequences for ${info.organism} (${info.commonName}) as provided by ${info.provider} (${info.assemblyName}) and stored in Biostrings objects.`,
           sourceUrl: `https://www.ncbi.nlm.nih.gov/datasets/genome/${item.accession}/`,
@@ -233,7 +225,6 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
         provider: item.provider,
         release_date: "",
         version: item.version,
-        circ_seqs: item.circSeqs,
         title: item.title,
         description: item.description,
         source_url: item.sourceUrl,
@@ -472,7 +463,6 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
                       <div><span className="text-muted-foreground">Assembly:</span> {item.assembly}</div>
                       <div><span className="text-muted-foreground">Organism:</span> <em>{item.organism}</em></div>
                       <div><span className="text-muted-foreground">Provider:</span> {item.provider}</div>
-                      <div><span className="text-muted-foreground">Circular:</span> {item.circSeqs || "none"}</div>
                       <div><span className="text-muted-foreground">Version:</span> {item.version}</div>
                     </div>
                   )}

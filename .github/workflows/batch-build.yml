@@ -237,8 +237,6 @@ jobs:
                       'genome': assembly_raw,
                       'provider': provider,
                       'version': '1.0.0',
-                      # Official-source builds derive topology after FASTA download.
-                      'circ_seqs': item.get('circ_seqs', ''),
                       'accession': accession,
                       'extra': json.dumps(extra_fields),
                   },

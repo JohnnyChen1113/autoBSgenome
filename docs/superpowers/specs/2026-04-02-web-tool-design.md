@@ -23,7 +23,6 @@ All free-tier. No paid services.
 - Auto-filled form from NCBI API response:
   - Package name: `BSgenome.{AbbrevOrganism}.{Provider}.{Assembly}`
   - Organism, Common name, Assembly, Provider, Release date, Version (1.0.0)
-  - circ_seqs: auto-detected from NCBI sequence_reports API (`assigned_molecule_location_type`)
   - Title/Description: auto-generated from BSgenome convention (in Advanced accordion)
 - FASTA source toggle: "Use official from NCBI" (default) / "Upload my own"
 - All fields editable

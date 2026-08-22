@@ -12,6 +12,23 @@ SPEC.loader.exec_module(finalizer)
 
 
 class FinalBuildReportTests(unittest.TestCase):
+    def test_failed_build_does_not_claim_that_publication_was_skipped(self):
+        metrics = {
+            "schema_version": 2,
+            "timings_epoch": {"workflow_started": 1000},
+            "current_stage": "fasta_validation",
+        }
+
+        report = finalizer.finalize_report(
+            metrics,
+            workflow_status="failure",
+            publication_action="skip-existing",
+        )
+
+        self.assertFalse(report["outcome"]["build_complete"])
+        self.assertEqual(report["outcome"]["publication"], "not-reached")
+        self.assertEqual(report["outcome"]["failure_stage"], "fasta_validation")
+
     def test_archive_completion_is_separate_from_skipped_publication(self):
         metrics = {
             "schema_version": 2,
@@ -34,7 +51,6 @@ class FinalBuildReportTests(unittest.TestCase):
         self.assertTrue(report["outcome"]["build_sla_exceeded"])
         self.assertEqual(report["outcome"]["publication"], "skipped-existing")
         self.assertTrue(report["outcome"]["workflow_complete"])
-
 
 if __name__ == "__main__":
     unittest.main()

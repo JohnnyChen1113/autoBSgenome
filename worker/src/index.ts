@@ -857,7 +857,6 @@ async function handleBuild(
           genome: body.genome ?? "",
           provider: body.provider ?? "",
           version: body.version ?? "1.0.0",
-          circ_seqs: body.circ_seqs ?? "character(0)",
           accession: submittedAccession,
           // Pack remaining fields into JSON to stay within 10-property limit
           extra: JSON.stringify({
