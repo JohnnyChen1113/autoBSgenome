@@ -6,7 +6,6 @@ export interface EnsemblAssemblyInfo {
   commonName: string;
   assemblyName: string;
   assemblyAccession: string;
-  karyotype: string[];
 }
 
 export function extractEnsemblSpecies(input: string): string | null {
@@ -60,24 +59,5 @@ export async function fetchEnsemblAssemblyInfo(
     commonName,
     assemblyName: data.assembly_name ?? "",
     assemblyAccession: data.assembly_accession ?? "",
-    karyotype: data.karyotype ?? [],
   };
-}
-
-export function detectCircularFromKaryotype(
-  karyotype: string[]
-): string[] {
-  const circularNames: string[] = [];
-  for (const name of karyotype) {
-    const lower = name.toLowerCase();
-    if (
-      lower === "mt" ||
-      lower === "chrm" ||
-      lower === "pt" ||
-      lower === "pltd"
-    ) {
-      circularNames.push(name);
-    }
-  }
-  return circularNames;
 }

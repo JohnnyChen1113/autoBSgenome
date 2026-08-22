@@ -168,6 +168,40 @@ class ManifestTests(unittest.TestCase):
         self.assertEqual(payload["job_id"], "large-genomes-2026-09-12345")
         self.assertFalse(payload["extra"]["publish_to_index"])
 
+    def test_payload_cli_can_force_a_benchmark_only_nonpublishing_run(self):
+        catalog = {"flat": []}
+        with tempfile.NamedTemporaryFile("w", suffix=".json") as handle:
+            json.dump(catalog, handle)
+            handle.flush()
+            result = subprocess.run(
+                [
+                    "python3",
+                    str(ROOT / "scripts" / "large_genome_benchmark.py"),
+                    "payload",
+                    "--manifest",
+                    str(
+                        ROOT
+                        / ".github"
+                        / "benchmarks"
+                        / "large-genomes-2026.json"
+                    ),
+                    "--catalog",
+                    handle.name,
+                    "--accession",
+                    "GCA_963921465.1",
+                    "--run-token",
+                    "rerun",
+                    "--no-publish",
+                ],
+                capture_output=True,
+                text=True,
+            )
+
+        self.assertEqual(result.returncode, 0, result.stderr)
+        payload = json.loads(result.stdout)["client_payload"]
+        self.assertFalse(payload["extra"]["publish_to_index"])
+        self.assertEqual(payload["job_id"], "large-genomes-2026-01-rerun")
+
     def test_matrix_cli_emits_all_rows_in_campaign_order(self):
         result = subprocess.run(
             [
@@ -270,6 +304,58 @@ class ManifestTests(unittest.TestCase):
 
 
 class WorkflowRuntimeContractTests(unittest.TestCase):
+    def test_builder_has_no_circular_detection_network_stage(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+
+        self.assertNotIn("Detect circular sequences", workflow)
+        self.assertNotIn("detect_circular_sequences.py", workflow)
+        self.assertNotIn("sequence_report.jsonl", workflow)
+        self.assertNotIn("nuccore", workflow.lower())
+        self.assertIn("circ_seqs: character(0)", workflow)
+
+    def test_web_build_forms_do_not_request_or_display_circular_metadata(self):
+        paths = [
+            ROOT / "web" / "src" / "features" / "build" / "BuildPage.tsx",
+            ROOT / "web" / "src" / "features" / "build" / "BatchMode.tsx",
+            ROOT / "web" / "src" / "lib" / "ncbi.ts",
+            ROOT / "web" / "src" / "lib" / "ensembl.ts",
+        ]
+
+        for path in paths:
+            with self.subTest(path=path.name):
+                contents = path.read_text()
+                self.assertNotIn("circSeqs", contents)
+                self.assertNotIn("circ_seqs", contents)
+                self.assertNotIn("fetchCircularSequences", contents)
+                self.assertNotIn("detectCircularFromKaryotype", contents)
+
+    def test_api_and_dispatch_payloads_do_not_forward_circular_metadata(self):
+        paths = [
+            ROOT / "worker" / "src" / "index.ts",
+            ROOT / ".github" / "workflows" / "batch-build.yml",
+            ROOT / "scripts" / "large_genome_benchmark.py",
+        ]
+
+        for path in paths:
+            with self.subTest(path=path.name):
+                self.assertNotIn("circ_seqs", path.read_text())
+
+    def test_benchmark_tarball_is_deleted_after_the_report_is_finalized(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+
+        report_position = workflow.index("- name: Finalize benchmark report")
+        cleanup_position = workflow.index("- name: Remove benchmark package artifact")
+        upload_position = workflow.index("- name: Upload benchmark report")
+        self.assertLess(report_position, cleanup_position)
+        self.assertLess(cleanup_position, upload_position)
+        cleanup = workflow[cleanup_position:upload_position]
+        self.assertIn("steps.params.outputs.benchmark_mode == 'true'", cleanup)
+        self.assertIn('rm -f -- "$TARBALL"', cleanup)
+
     def test_builder_steps_run_under_bash(self):
         workflow = (
             ROOT / ".github" / "workflows" / "build-bsgenome.yml"

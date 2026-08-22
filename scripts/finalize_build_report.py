@@ -21,12 +21,14 @@ def finalize_report(metrics, *, workflow_status, publication_action):
 
     sla = int(report.get("benchmark", {}).get("build_sla_seconds", 3600))
     workflow_complete = workflow_status == "success"
-    if publication_action == "skip-existing":
+    if not build_complete:
+        publication = "not-reached"
+    elif publication_action == "skip-existing":
         publication = "skipped-existing"
     elif workflow_complete:
         publication = "complete"
     else:
-        publication = "failed-or-not-reached"
+        publication = "failed"
 
     report["outcome"] = {
         "build_complete": build_complete,

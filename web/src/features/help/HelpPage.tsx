@@ -46,7 +46,7 @@ const workflows = [
     href: "/build",
     steps: [
       "After metadata fetch, review package name, organism, common name, assembly, provider, and version.",
-      "Check circular sequences, title, description, and source URL before starting the build.",
+      "Check the title, description, source URL, and FASTA source before starting the build.",
       "Use the generated result as the final installable source package for downstream R analysis.",
     ],
   },

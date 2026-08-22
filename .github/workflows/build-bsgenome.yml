@@ -68,7 +68,6 @@ jobs:
               'genome': p.get('genome', ''),
               'provider': p.get('provider', ''),
               'version': p.get('version', ''),
-              'circ_seqs': p.get('circ_seqs', ''),
               'accession': p.get('accession', ''),
               'data_source': extra.get('data_source', 'ncbi'),
               'fasta_source': extra.get('fasta_source', extra.get('data_source', 'ncbi')),
@@ -267,35 +266,6 @@ jobs:
           python3 scripts/record_metric.py disk_used_checkpoint_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
           curl -fsS -X DELETE "$FASTA_UPLOAD_URL" >/dev/null || true
 
-      - name: Detect circular sequences from assembly topology
-        id: circular
-        if: steps.params.outputs.fasta_source == 'ncbi' || steps.params.outputs.fasta_source == 'ensembl'
-        env:
-          ACCESSION: ${{ steps.params.outputs.accession }}
-          FASTA_SOURCE: ${{ steps.params.outputs.fasta_source }}
-          PAYLOAD_CIRC_SEQS: ${{ steps.params.outputs.circ_seqs }}
-        run: |
-          python3 scripts/record_metric.py current_stage circular_sequence_detection
-          source scripts/resource_sampler.sh
-          start_resource_sampler circular_sequence_detection
-          trap stop_resource_sampler EXIT
-          if [[ "$ACCESSION" =~ ^GC[AF]_[0-9]+\.[0-9]+$ ]]; then
-            CIRC_SEQS=$(python3 scripts/detect_circular_sequences.py \
-              --accession "$ACCESSION" \
-              --fasta genome.fa \
-              --source "$FASTA_SOURCE" \
-              --report-json /tmp/circular_sequences.json)
-            METHOD="ncbi-sequence-report+nuccore-topology"
-          else
-            CIRC_SEQS="${PAYLOAD_CIRC_SEQS:-character(0)}"
-            METHOD="payload-no-assembly-accession"
-            echo "No NCBI assembly accession is available; retaining the submitted circular-sequence metadata."
-          fi
-          echo "circ_seqs=$CIRC_SEQS" >> "$GITHUB_OUTPUT"
-          python3 scripts/record_metric.py circular_sequences.method "$METHOD"
-          python3 scripts/record_metric.py circular_sequences.value "$CIRC_SEQS"
-          echo "Circular sequences: $CIRC_SEQS ($METHOD)"
-
       - name: Validate nucleotide FASTA
         run: |
           python3 scripts/record_metric.py current_stage fasta_validation
@@ -362,15 +332,8 @@ jobs:
           PROVIDER="${{ steps.params.outputs.provider }}"
           RELEASE_DATE="${{ steps.params.outputs.release_date }}"
           VERSION="${{ steps.params.outputs.version }}"
-          CIRC="${{ steps.circular.outputs.circ_seqs || steps.params.outputs.circ_seqs }}"
           SOURCE_URL="${{ steps.params.outputs.source_url }}"
           OBJNAME=$(echo "$PACKAGE" | cut -d. -f2)
-
-          if [ "$CIRC" = "character(0)" ] || [ -z "$CIRC" ]; then
-            CIRC_R="character(0)"
-          else
-            CIRC_R="c($(echo "$CIRC" | sed 's/[[:space:]]*,[[:space:]]*/", "/g' | sed 's/^/"/' | sed 's/$/"/'))"
-          fi
 
           cat > "${PACKAGE}.seed" <<SEED
           Package: ${PACKAGE}
@@ -385,7 +348,7 @@ jobs:
           source_url: ${SOURCE_URL}
           organism_biocview: $(echo "${ORGANISM}" | tr ' ' '_')
           BSgenomeObjname: ${OBJNAME}
-          circ_seqs: ${CIRC_R}
+          circ_seqs: character(0)
           seqs_srcdir: $(pwd)
           seqfile_name: genome.2bit
           SEED
@@ -835,10 +798,21 @@ jobs:
             --publication-action "$PUBLICATION_ACTION"
           cp /tmp/build_metrics.json benchmark-report/raw-metrics.json 2>/dev/null || true
           cp /tmp/fasta_validation.json benchmark-report/fasta-validation.json 2>/dev/null || true
-          cp /tmp/circular_sequences.json benchmark-report/circular-sequences.json 2>/dev/null || true
           cp /tmp/forge.log benchmark-report/forge.log 2>/dev/null || true
           cp /tmp/rbuild_time.log benchmark-report/rbuild-time.log 2>/dev/null || true
           cat benchmark-report/build-report.json
+
+      - name: Remove benchmark package artifact
+        if: always() && steps.params.outputs.benchmark_mode == 'true'
+        run: |
+          PACKAGE="${{ steps.params.outputs.package_name }}"
+          TARBALL=$(find . -maxdepth 1 -type f -name "${PACKAGE}_*.tar.gz" -print -quit)
+          if [ -n "$TARBALL" ]; then
+            rm -f -- "$TARBALL"
+            echo "Removed ephemeral benchmark package: $TARBALL"
+          else
+            echo "No benchmark package tarball remained to remove."
+          fi
 
       - name: Upload benchmark report
         if: always() && steps.params.outputs.benchmark_mode == 'true'

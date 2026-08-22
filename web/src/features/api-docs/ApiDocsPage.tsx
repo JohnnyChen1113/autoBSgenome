@@ -72,7 +72,6 @@ export default function ApiDocs() {
   "genome": "GRCh38",
   "provider": "NCBI",
   "version": "1.0.0",
-  "circ_seqs": "MT",
   "accession": "GCF_000001405.40",
   "data_source": "ncbi",
   "release_date": "2022-02-03",
@@ -220,7 +219,7 @@ export default function ApiDocs() {
             <CodeBlock>{`# 1. Trigger build
 JOB=$(curl -s -X POST ${WORKER}/api/build \\
   -H "Content-Type: application/json" \\
-  -d '{"package_name":"BSgenome.Scerevisiae.NCBI.R64","organism":"Saccharomyces cerevisiae","genome":"R64","provider":"NCBI","version":"1.0.0","accession":"GCF_000146045.2","data_source":"ncbi","circ_seqs":"MT"}')
+  -d '{"package_name":"BSgenome.Scerevisiae.NCBI.R64","organism":"Saccharomyces cerevisiae","genome":"R64","provider":"NCBI","version":"1.0.0","accession":"GCF_000146045.2","data_source":"ncbi"}')
 JOB_ID=$(echo "$JOB" | python3 -c "import json,sys; print(json.load(sys.stdin)['job_id'])")
 
 # 2. Poll for completion

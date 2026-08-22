@@ -4,19 +4,12 @@ const DATASETS_BASE = "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession
 
 export interface NCBIAssemblyInfo {
   accession: string;
-  pairedAccession: string | null;
   organism: string;
   commonName: string;
   assemblyName: string;
   provider: string;
   releaseDate: string;
   sourceUrl: string;
-}
-
-export interface CircularSequence {
-  name: string;
-  type: string;
-  length: number;
 }
 
 export function extractAccession(input: string): string | null {
@@ -71,7 +64,6 @@ export async function fetchAssemblyInfo(
 
   return {
     accession,
-    pairedAccession: report.paired_accession ?? null,
     organism: cleanOrganismName(report.organism?.organism_name ?? ""),
     commonName: report.organism?.common_name ?? "",
     assemblyName: report.assembly_info?.assembly_name ?? "",
@@ -81,36 +73,4 @@ export async function fetchAssemblyInfo(
       : "",
     sourceUrl: `https://www.ncbi.nlm.nih.gov/datasets/genome/${accession}/`,
   };
-}
-
-export async function fetchCircularSequences(
-  accession: string
-): Promise<CircularSequence[]> {
-  const res = await fetch(
-    `${DATASETS_BASE}/${accession}/sequence_reports`,
-    { headers: { Accept: "application/json" } }
-  );
-  if (!res.ok) return [];
-  const data = await res.json();
-
-  const circular: CircularSequence[] = [];
-  const circularTypes = new Set([
-    "Mitochondrion",
-    "Chloroplast",
-    "Plasmid",
-    "Apicoplast",
-    "Kinetoplast",
-  ]);
-
-  for (const seq of data.reports ?? []) {
-    const locType = seq.assigned_molecule_location_type;
-    if (locType && circularTypes.has(locType)) {
-      circular.push({
-        name: seq.chr_name ?? seq.genbank_accession ?? "unknown",
-        type: locType,
-        length: seq.length ?? 0,
-      });
-    }
-  }
-  return circular;
 }

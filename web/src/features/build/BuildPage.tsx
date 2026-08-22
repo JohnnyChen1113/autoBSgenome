@@ -29,16 +29,13 @@ import {
 import {
   extractAccession,
   fetchAssemblyInfo,
-  fetchCircularSequences,
   generatePackageName,
   generateTitle,
   generateDescription,
-  type CircularSequence,
 } from "@/lib/ncbi";
 import {
   extractEnsemblSpecies,
   fetchEnsemblAssemblyInfo,
-  detectCircularFromKaryotype,
 } from "@/lib/ensembl";
 import {
   completeUploadSession,
@@ -80,7 +77,6 @@ interface FormData {
   provider: string;
   releaseDate: string;
   version: string;
-  circSeqs: string;
   title: string;
   description: string;
   sourceUrl: string;
@@ -96,7 +92,6 @@ const EMPTY_FORM: FormData = {
   provider: "",
   releaseDate: "",
   version: "1.0.0",
-  circSeqs: "",
   title: "",
   description: "",
   sourceUrl: "",
@@ -120,8 +115,6 @@ interface EntryDraft {
   form: FormData;
   accessionInput: string;
   dataSource: DataSource;
-  circularSeqs: CircularSequence[];
-  gcfSuggestion: string | null;
   packageValidation: PackageValidation;
   ensemblSpecies: string;
   ensemblGroup: string;
@@ -370,10 +363,8 @@ export default function Home() {
   const [ensemblGroup, setEnsemblGroup] = useState("vertebrates");
   const [ensemblAssemblyAccession, setEnsemblAssemblyAccession] = useState("");
   const [form, setForm] = useState<FormData>(EMPTY_FORM);
-  const [circularSeqs, setCircularSeqs] = useState<CircularSequence[]>([]);
   const [fetching, setFetching] = useState(false);
   const [error, setError] = useState("");
-  const [gcfSuggestion, setGcfSuggestion] = useState<string | null>(null);
   const [packageValidation, setPackageValidation] = useState<PackageValidation>({
     status: "idle",
     errors: [],
@@ -421,8 +412,6 @@ export default function Home() {
       form,
       accessionInput,
       dataSource,
-      circularSeqs,
-      gcfSuggestion,
       packageValidation,
       ensemblSpecies,
       ensemblGroup,
@@ -434,8 +423,6 @@ export default function Home() {
     setForm(draft?.form ?? MANUAL_EMPTY_FORM);
     setAccessionInput(draft?.accessionInput ?? "");
     setDataSource(draft?.dataSource ?? "ncbi");
-    setCircularSeqs(draft?.circularSeqs ?? []);
-    setGcfSuggestion(draft?.gcfSuggestion ?? null);
     setEnsemblSpecies(draft?.ensemblSpecies ?? "");
     setEnsemblGroup(draft?.ensemblGroup ?? "vertebrates");
     setEnsemblAssemblyAccession(draft?.ensemblAssemblyAccession ?? "");
@@ -453,8 +440,6 @@ export default function Home() {
       form,
       accessionInput,
       dataSource,
-      circularSeqs,
-      gcfSuggestion,
       packageValidation,
       ensemblSpecies,
       ensemblGroup,
@@ -466,8 +451,6 @@ export default function Home() {
     setForm(draft?.form ?? EMPTY_FORM);
     setAccessionInput(draft?.accessionInput ?? "");
     setDataSource(draft?.dataSource ?? "ncbi");
-    setCircularSeqs(draft?.circularSeqs ?? []);
-    setGcfSuggestion(draft?.gcfSuggestion ?? null);
     setEnsemblSpecies(draft?.ensemblSpecies ?? "");
     setEnsemblGroup(draft?.ensemblGroup ?? "vertebrates");
     setEnsemblAssemblyAccession(draft?.ensemblAssemblyAccession ?? "");
@@ -484,7 +467,6 @@ export default function Home() {
 
     try {
       let newForm: FormData;
-      let circs: CircularSequence[] = [];
 
       if (dataSource === "ensembl") {
         // ── Ensembl path ──
@@ -504,20 +486,14 @@ export default function Home() {
         let assemblyName = "";
         let assemblyAccession = "";
         let releaseDate = "";
-        let circNames: string[] = [];
 
         if (catalogAccession) {
-          const [ncbiInfo, ncbiCircs] = await Promise.all([
-            fetchAssemblyInfo(catalogAccession),
-            fetchCircularSequences(catalogAccession),
-          ]);
-          circs = ncbiCircs;
+          const ncbiInfo = await fetchAssemblyInfo(catalogAccession);
           organism = cleanOrganismName(ncbiInfo.organism);
           commonName = ncbiInfo.commonName;
           assemblyName = ncbiInfo.assemblyName;
           assemblyAccession = catalogAccession;
           releaseDate = ncbiInfo.releaseDate;
-          circNames = ncbiCircs.map((sequence) => sequence.name);
           if (!species) {
             species = deriveEnsemblSpecies(
               organism,
@@ -531,7 +507,6 @@ export default function Home() {
           commonName = ensInfo.commonName;
           assemblyName = ensInfo.assemblyName;
           assemblyAccession = ensInfo.assemblyAccession;
-          circNames = detectCircularFromKaryotype(ensInfo.karyotype);
         }
 
         const packageName = buildBSgenomePackageName(
@@ -556,7 +531,6 @@ export default function Home() {
           provider: "Ensembl",
           releaseDate,
           version: "1.0.0",
-          circSeqs: circNames.length > 0 ? circNames.join(", ") : "character(0)",
           title: `Full genome sequences for ${organism} (Ensembl version ${assemblyName})`,
           description: `Full genome sequences for ${organism}${commonName ? ` (${commonName})` : ""} as provided by Ensembl (${assemblyName}) and stored in Biostrings objects.`,
           sourceUrl: ensemblSourceUrl(species, ensemblGroup),
@@ -566,7 +540,6 @@ export default function Home() {
 
         setEnsemblSpecies(species);
         setEnsemblAssemblyAccession(assemblyAccession);
-        setGcfSuggestion(null);
       } else {
         // ── NCBI path ──
         const accession = extractAccession(accessionInput.trim());
@@ -578,16 +551,7 @@ export default function Home() {
           return;
         }
 
-        const [info, ncbiCircs] = await Promise.all([
-          fetchAssemblyInfo(accession),
-          fetchCircularSequences(accession),
-        ]);
-        circs = ncbiCircs;
-
-        const circSeqsStr =
-          circs.length > 0
-            ? circs.map((c) => c.name).join(", ")
-            : "character(0)";
+        const info = await fetchAssemblyInfo(accession);
 
         const catalogPackageName = catalogPackagePrefillRef.current;
         newForm = {
@@ -601,7 +565,6 @@ export default function Home() {
           provider: info.provider,
           releaseDate: info.releaseDate,
           version: "1.0.0",
-          circSeqs: circSeqsStr,
           title: generateTitle(info),
           description: generateDescription(info, info.commonName),
           sourceUrl: info.sourceUrl,
@@ -609,19 +572,8 @@ export default function Home() {
           fastaUrl: "",
         };
 
-        // If GCA_ has no circular seqs but has a paired GCF_, suggest switching
-        if (
-          accession.startsWith("GCA_") &&
-          circs.length === 0 &&
-          info.pairedAccession
-        ) {
-          setGcfSuggestion(info.pairedAccession);
-        } else {
-          setGcfSuggestion(null);
-        }
       }
 
-      setCircularSeqs(circs);
       setForm(newForm);
       validatePackageName(newForm.packageName);
       setStep("review");
@@ -954,7 +906,6 @@ export default function Home() {
         provider: form.provider,
         release_date: form.releaseDate,
         version: effectiveVersion,
-        circ_seqs: form.circSeqs,
         title: form.title,
         description: form.description,
         source_url: form.sourceUrl,
@@ -1522,7 +1473,6 @@ export default function Home() {
                           "| **Accession** | `" + submittedAccession + "` |",
                           "| **Original Input** | `" + accessionInput.trim() + "` |",
                           "| **Data Source** | " + dataSource + " |",
-                          "| **Circular Seqs** | `" + form.circSeqs + "` |",
                           "| **Version** | " + effectiveVersion + " |",
                           "| **Job ID** | `" + (jobId || "N/A") + "` |",
                           "| **Failed Step** | " + (failedProgressStep?.label ?? "N/A") + " |",
@@ -1552,39 +1502,6 @@ export default function Home() {
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                       Report this issue on GitHub
                     </a>
-                  </div>
-                )}
-
-                {/* GCA → GCF suggestion */}
-                {gcfSuggestion && (
-                  <div className="bg-amber-50 border border-amber-200 rounded-md px-4 py-3 text-sm">
-                    <p className="text-amber-800">
-                      <strong>Note:</strong> You used a GenBank accession (GCA_), which may not include
-                      organelle sequences like mitochondria. A paired RefSeq version is available:{" "}
-                      <code className="font-mono text-amber-900 font-medium">{gcfSuggestion}</code>
-                    </p>
-                    <div className="mt-2 flex gap-2">
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="text-amber-800 border-amber-300 hover:bg-amber-100 cursor-pointer"
-                        onClick={() => {
-                          setAccessionInput(gcfSuggestion);
-                          setGcfSuggestion(null);
-                          setStep("input");
-                        }}
-                      >
-                        Switch to {gcfSuggestion}
-                      </Button>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        className="text-amber-600 cursor-pointer"
-                        onClick={() => setGcfSuggestion(null)}
-                      >
-                        Keep current (GCA_)
-                      </Button>
-                    </div>
                   </div>
                 )}
 
@@ -1724,45 +1641,6 @@ export default function Home() {
                       }
                     />
                   </div>
-                </div>
-
-                {/* Circular Sequences */}
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Label htmlFor="circSeqs">Circular Sequences</Label>
-                    {circularSeqs.length > 0 && (
-                      <Badge
-                        variant="outline"
-                        className="text-[--success] border-[--success]/30 text-[10px]"
-                      >
-                        Auto-detected
-                      </Badge>
-                    )}
-                  </div>
-                  <Input
-                    id="circSeqs"
-                    className="font-mono"
-                    placeholder='character(0)'
-                    value={form.circSeqs}
-                    onChange={(e) =>
-                      updateField("circSeqs", e.target.value)
-                    }
-                  />
-                  {circularSeqs.length > 0 ? (
-                    <p className="text-sm text-muted-foreground">
-                      Detected:{" "}
-                      {circularSeqs
-                        .map((c) => `${c.name} (${c.type})`)
-                        .join(", ")}
-                    </p>
-                  ) : (
-                    <p className="text-sm text-muted-foreground">
-                      Enter circular sequence names (e.g. MT, chrM) separated by
-                      commas. Use{" "}
-                      <code className="font-mono text-[11px]">character(0)</code>{" "}
-                      only if the genome has no circular sequences.
-                    </p>
-                  )}
                 </div>
 
                 {/* FASTA Source */}
@@ -2408,7 +2286,6 @@ export default function Home() {
                     setForm(EMPTY_FORM);
                     setAccessionInput("");
                     clearEnsemblContext();
-                    setCircularSeqs([]);
                     setUploadedFasta(null);
                     setUploadError("");
                     setUploadState("idle");

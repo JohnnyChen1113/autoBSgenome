@@ -84,7 +84,6 @@ interface BatchItem {
   status: 'pending' | 'fetching' | 'ready' | 'ambiguous' | 'error' | 'building' | 'done' | 'failed';
   accession: string;                  // extracted accession
   form?: FormData;                    // reuse existing FormData type
-  circularSeqs?: CircularSequence[];
   error?: string;
   jobId?: string;
   downloadUrl?: string;

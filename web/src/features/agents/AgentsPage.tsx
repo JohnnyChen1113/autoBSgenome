@@ -295,8 +295,7 @@ export default function AgentsPage() {
     "organism": "Aspergillus luchuensis",
     "accession": "GCF_016861625.1",
     "data_source": "ncbi",
-    "version": "1.0.0",
-    "circ_seqs": "character(0)"
+    "version": "1.0.0"
   }'`}
             </pre>
           </div>
