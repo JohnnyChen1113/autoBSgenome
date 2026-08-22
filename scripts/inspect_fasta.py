@@ -19,11 +19,8 @@ NUCLEOTIDE_BYTES = set(b"ACGTUNRYSWKMBDHVacgtunryswkmbdhv.-")
 PROTEIN_ONLY_BYTES = set(b"EFILPQZJXO*efilpqzjxo*")
 
 
-def inspect_prefix(path: Path, validate_bases: bool) -> int:
+def inspect_prefix(prefix: bytes, validate_bases: bool) -> int:
     """Check basic structure and optionally sample custom-input characters."""
-    with path.open("rb") as handle:
-        prefix = handle.read(PREFIX_SCAN_BYTES)
-
     if not prefix:
         raise ValueError("file is empty")
 
@@ -96,80 +93,97 @@ def _finish_header(fragment: bytes) -> tuple[bytes, bool]:
     return fragment, False
 
 
-def scan_metadata(path: Path) -> tuple[int, list[str]]:
-    """Count records and capture the first five IDs in one chunked full scan."""
-    seq_count = 0
-    seq_ids: list[str] = []
-    previous_byte: bytes | None = None
-    first_chunk = True
-    pending_header: bytes | None = None
+class FastaStreamInspector:
+    """Incrementally inspect FASTA bytes without retaining the full assembly."""
 
-    with path.open("rb") as handle:
-        while chunk := handle.read(CHUNK_SIZE):
-            if first_chunk and chunk.startswith(b">"):
-                seq_count += 1
-            elif previous_byte == b"\n" and chunk.startswith(b">"):
-                seq_count += 1
-            seq_count += chunk.count(b"\n>")
+    def __init__(self, source: str) -> None:
+        self.source = source
+        self.fasta_size = 0
+        self.seq_count = 0
+        self.seq_ids: list[str] = []
+        self.previous_byte: bytes | None = None
+        self.first_chunk = True
+        self.pending_header: bytes | None = None
+        self.prefix = bytearray()
 
-            if len(seq_ids) < 5:
-                if pending_header is not None:
-                    continuation, complete = _finish_header(chunk)
-                    pending_header += continuation
-                    if complete:
-                        if not pending_header:
-                            raise ValueError("a FASTA header has no sequence ID")
-                        seq_ids.append(pending_header.decode("utf-8", errors="replace"))
-                        pending_header = None
+    def feed(self, chunk: bytes) -> None:
+        self.fasta_size += len(chunk)
+        if len(self.prefix) < PREFIX_SCAN_BYTES:
+            remaining = PREFIX_SCAN_BYTES - len(self.prefix)
+            self.prefix.extend(chunk[:remaining])
 
-                prefix = b"\n" if (first_chunk or previous_byte == b"\n") else b""
-                probe = prefix + chunk
-                position = 0
-                while len(seq_ids) < 5:
-                    marker = probe.find(b"\n>", position)
-                    if marker < 0:
-                        break
-                    header_start = marker + 2
-                    fragment, complete = _finish_header(probe[header_start:])
-                    if complete:
-                        if not fragment:
-                            raise ValueError("a FASTA header has no sequence ID")
-                        seq_ids.append(fragment.decode("utf-8", errors="replace"))
-                    else:
-                        pending_header = fragment
-                    position = header_start + max(len(fragment), 1)
+        if self.first_chunk and chunk.startswith(b">"):
+            self.seq_count += 1
+        elif self.previous_byte == b"\n" and chunk.startswith(b">"):
+            self.seq_count += 1
+        self.seq_count += chunk.count(b"\n>")
 
-            previous_byte = chunk[-1:]
-            first_chunk = False
+        if len(self.seq_ids) < 5:
+            if self.pending_header is not None:
+                continuation, complete = _finish_header(chunk)
+                self.pending_header += continuation
+                if complete:
+                    self._append_header(self.pending_header)
+                    self.pending_header = None
 
-    if pending_header is not None and len(seq_ids) < 5:
-        if not pending_header:
+            prefix = b"\n" if (self.first_chunk or self.previous_byte == b"\n") else b""
+            probe = prefix + chunk
+            position = 0
+            while len(self.seq_ids) < 5:
+                marker = probe.find(b"\n>", position)
+                if marker < 0:
+                    break
+                header_start = marker + 2
+                fragment, complete = _finish_header(probe[header_start:])
+                if complete:
+                    self._append_header(fragment)
+                else:
+                    self.pending_header = fragment
+                position = header_start + max(len(fragment), 1)
+
+        self.previous_byte = chunk[-1:]
+        self.first_chunk = False
+
+    def _append_header(self, header: bytes) -> None:
+        if not header:
             raise ValueError("a FASTA header has no sequence ID")
-        seq_ids.append(pending_header.decode("utf-8", errors="replace"))
-    if seq_count == 0:
-        raise ValueError("no FASTA headers were found")
-    if not seq_ids:
-        raise ValueError("no FASTA sequence IDs were found")
-    return seq_count, seq_ids
+        self.seq_ids.append(header.decode("utf-8", errors="replace"))
+
+    def finish(self) -> dict:
+        if self.pending_header is not None and len(self.seq_ids) < 5:
+            self._append_header(self.pending_header)
+        sampled_bases = inspect_prefix(
+            bytes(self.prefix), validate_bases=self.source in CUSTOM_SOURCES
+        )
+        if self.seq_count == 0:
+            raise ValueError("no FASTA headers were found")
+        if not self.seq_ids:
+            raise ValueError("no FASTA sequence IDs were found")
+        return {
+            "source": self.source,
+            "inspection_mode": (
+                "prefix-sampled" if self.source in CUSTOM_SOURCES else "metadata-only"
+            ),
+            "exhaustive_validation": False,
+            "sample_limit_bases": (
+                SAMPLE_LIMIT_BASES if self.source in CUSTOM_SOURCES else 0
+            ),
+            "sampled_bases": sampled_bases,
+            "seq_count": self.seq_count,
+            "seq_ids": self.seq_ids,
+            "fasta_size_bytes": self.fasta_size,
+        }
 
 
 def inspect(path: Path, source: str) -> dict:
     if not path.is_file():
         raise ValueError(f"file does not exist: {path}")
 
-    validate_bases = source in CUSTOM_SOURCES
-    sampled_bases = inspect_prefix(path, validate_bases=validate_bases)
-    seq_count, seq_ids = scan_metadata(path)
-    return {
-        "source": source,
-        "inspection_mode": "prefix-sampled" if validate_bases else "metadata-only",
-        "exhaustive_validation": False,
-        "sample_limit_bases": SAMPLE_LIMIT_BASES if validate_bases else 0,
-        "sampled_bases": sampled_bases,
-        "seq_count": seq_count,
-        "seq_ids": seq_ids,
-        "fasta_size_bytes": path.stat().st_size,
-    }
+    inspector = FastaStreamInspector(source)
+    with path.open("rb") as handle:
+        while chunk := handle.read(CHUNK_SIZE):
+            inspector.feed(chunk)
+    return inspector.finish()
 
 
 def main() -> int:

@@ -122,44 +122,130 @@ jobs:
           python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.number_of_scaffolds "${{ steps.params.outputs.ncbi_number_of_scaffolds }}"
           python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.scaffold_n50 "${{ steps.params.outputs.ncbi_scaffold_n50 }}"
 
-      - name: Download FASTA from NCBI
+      - name: Stream NCBI FASTA to 2bit
+        id: ncbi_fasta_info
         if: steps.params.outputs.fasta_source == 'ncbi'
+        env:
+          ACCESSION: ${{ steps.params.outputs.accession }}
+          TOTAL_SEQUENCE_LENGTH: ${{ steps.params.outputs.ncbi_total_sequence_length }}
         run: |
-          python3 scripts/record_metric.py current_stage fasta_download_ncbi
+          set -o pipefail
+          python3 scripts/record_metric.py current_stage ncbi_stream_to_2bit
           source scripts/resource_sampler.sh
-          start_resource_sampler fasta_download
+          start_resource_sampler ncbi_stream_to_2bit
           trap stop_resource_sampler EXIT
           START=$(date +%s)
-          ACCESSION="${{ steps.params.outputs.accession }}"
-          echo "Downloading FASTA for ${ACCESSION} from NCBI..."
-          for attempt in 1 2 3; do
-            rm -f genome.zip
-            if datasets download genome accession "${ACCESSION}" --include genome --filename genome.zip; then
-              break
+
+          THRESHOLD=$((12 * 1024 * 1024 * 1024))
+          USED_LONG=false
+          LONG_ARG=()
+          if [[ "$TOTAL_SEQUENCE_LENGTH" =~ ^[0-9]+$ ]] && [ "$TOTAL_SEQUENCE_LENGTH" -gt "$THRESHOLD" ]; then
+            echo "Large assembly (${TOTAL_SEQUENCE_LENGTH} bases); using -long 2bit format"
+            LONG_ARG=(--long)
+            USED_LONG=true
+          fi
+
+          STREAMED=false
+          ACQUISITION_MODE=ncbi-ftp-stream
+          rm -f genome.2bit /tmp/fasta_inspection.json /tmp/ncbi_fasta_resolution.json
+          if python3 scripts/resolve_ncbi_fasta.py "$ACCESSION" --json /tmp/ncbi_fasta_resolution.json; then
+            FASTA_URL=$(python3 -c "import json; print(json.load(open('/tmp/ncbi_fasta_resolution.json'))['fasta_url'])")
+            EXPECTED_MD5=$(python3 -c "import json; print(json.load(open('/tmp/ncbi_fasta_resolution.json'))['expected_md5'])")
+            RESOLVED_TOTAL_LENGTH=$(python3 -c "import json; print(json.load(open('/tmp/ncbi_fasta_resolution.json'))['total_sequence_length'])")
+            if [ "$RESOLVED_TOTAL_LENGTH" -gt "$THRESHOLD" ]; then
+              LONG_ARG=(--long)
+              USED_LONG=true
             fi
-            if [ "$attempt" = "3" ]; then
-              echo "ERROR: NCBI FASTA download failed after ${attempt} attempts"
+            echo "Streaming official NCBI genomic FASTA: ${FASTA_URL}"
+            for attempt in 1 2 3; do
+              rm -f genome.2bit /tmp/fasta_inspection.json
+              echo "NCBI FTP streaming attempt ${attempt}/3"
+              if curl -fL --silent --show-error \
+                  --connect-timeout 30 --speed-time 120 --speed-limit 1024 \
+                  "$FASTA_URL" \
+                | python3 scripts/stream_fasta_to_2bit.py \
+                    --source ncbi \
+                    --output genome.2bit \
+                    --expected-md5 "$EXPECTED_MD5" \
+                    --json /tmp/fasta_inspection.json \
+                    "${LONG_ARG[@]}"; then
+                STREAMED=true
+                break
+              fi
+              echo "WARNING: NCBI FTP streaming attempt ${attempt} failed"
+              if [ "$attempt" != "3" ]; then
+                sleep $((attempt * 30))
+              fi
+            done
+          else
+            echo "WARNING: NCBI FTP resolution failed; using Datasets fallback"
+          fi
+
+          if [ "$STREAMED" != "true" ]; then
+            ACQUISITION_MODE=ncbi-datasets-fallback
+            echo "Falling back to the NCBI Datasets ZIP workflow for ${ACCESSION}"
+            rm -f genome.2bit genome.fa genome.zip /tmp/fasta_inspection.json
+            rm -rf ncbi_dataset README.md md5sum.txt
+            for attempt in 1 2 3; do
+              rm -f genome.zip
+              if datasets download genome accession "${ACCESSION}" --include genome --filename genome.zip; then
+                break
+              fi
+              if [ "$attempt" = "3" ]; then
+                echo "ERROR: NCBI FASTA fallback download failed after ${attempt} attempts"
+                exit 1
+              fi
+              sleep $((attempt * 30))
+            done
+            unzip -o genome.zip
+            FASTA=$(find ncbi_dataset/data -name "*.fna" -print -quit)
+            if [ -z "$FASTA" ]; then
+              echo "ERROR: No FASTA file found in NCBI Datasets fallback"
               exit 1
             fi
-            sleep $((attempt * 30))
-          done
-          unzip -o genome.zip
-          FASTA=$(find ncbi_dataset/data -name "*.fna" -print -quit)
-          if [ -z "$FASTA" ]; then
-            echo "ERROR: No FASTA file found in download"
-            exit 1
-          fi
-          mv "$FASTA" genome.fa
-          rm -f genome.zip
-          rm -rf ncbi_dataset README.md md5sum.txt
-          ls -lh genome.fa
+            mv "$FASTA" genome.fa
+            rm -f genome.zip
+            rm -rf ncbi_dataset README.md md5sum.txt
 
+            python3 scripts/inspect_fasta.py genome.fa \
+              --source ncbi \
+              --json /tmp/fasta_inspection.json
+            FALLBACK_FASTA_SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
+            if [ "$FALLBACK_FASTA_SIZE" -gt "$THRESHOLD" ]; then
+              USED_LONG=true
+            fi
+            if [ "$USED_LONG" = "true" ]; then
+              faToTwoBit -long genome.fa genome.2bit
+            else
+              faToTwoBit genome.fa genome.2bit
+            fi
+            rm -f genome.fa
+          fi
+
+          test -s genome.2bit
+          ls -lh genome.2bit
           END=$(date +%s)
-          FASTA_SIZE=$(stat -c%s genome.fa 2>/dev/null || stat -f%z genome.fa 2>/dev/null || echo 0)
-          DISK_AVAIL_KB=$(df -Pk . | awk 'NR==2 {print $4}')
-          python3 scripts/record_metric.py timings_sec.fasta_download $((END - START))
-          python3 scripts/record_metric.py fasta_size_bytes $FASTA_SIZE
-          python3 scripts/record_metric.py disk_used_checkpoint_gb.after_fasta_download $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+          FASTA_SIZE=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json'))['fasta_size_bytes'])")
+          SEQ_COUNT=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json'))['seq_count'])")
+          SEQ_IDS=$(python3 -c "import json; print(','.join(json.load(open('/tmp/fasta_inspection.json'))['seq_ids']))")
+          SAMPLED_BASES=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json'))['sampled_bases'])")
+          COMPRESSED_SIZE=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json')).get('compressed_size_bytes', 0))")
+          COMPRESSED_MD5=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json')).get('compressed_md5', ''))")
+          TWOBIT_SIZE=$(stat -c%s genome.2bit 2>/dev/null || stat -f%z genome.2bit 2>/dev/null || echo 0)
+          python3 scripts/record_metric.py timings_sec.ncbi_acquisition_to_2bit $((END - START))
+          python3 scripts/record_metric.py ncbi_acquisition_mode "$ACQUISITION_MODE"
+          python3 scripts/record_metric.py fasta_size_bytes "$FASTA_SIZE"
+          python3 scripts/record_metric.py seq_count "$SEQ_COUNT"
+          python3 scripts/record_metric.py fasta_inspection.sampled_bases "$SAMPLED_BASES"
+          python3 scripts/record_metric.py fasta_inspection.exhaustive_validation false
+          python3 scripts/record_metric.py twobit_size_bytes "$TWOBIT_SIZE"
+          python3 scripts/record_metric.py used_long_2bit "$USED_LONG"
+          [ "$COMPRESSED_SIZE" -gt 0 ] && python3 scripts/record_metric.py ncbi_stream.compressed_size_bytes "$COMPRESSED_SIZE" || true
+          [ -n "$COMPRESSED_MD5" ] && python3 scripts/record_metric.py ncbi_stream.compressed_md5 "$COMPRESSED_MD5" || true
+          python3 scripts/record_metric.py disk_used_checkpoint_gb.after_2bit $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+          echo "seq_ids=${SEQ_IDS}" >> "$GITHUB_OUTPUT"
+          echo "seq_count=${SEQ_COUNT}" >> "$GITHUB_OUTPUT"
+          echo "fasta_size=${FASTA_SIZE}" >> "$GITHUB_OUTPUT"
 
       - name: Download FASTA from Ensembl
         if: steps.params.outputs.fasta_source == 'ensembl'
@@ -268,7 +354,8 @@ jobs:
           curl -fsS -X DELETE "$FASTA_UPLOAD_URL" >/dev/null || true
 
       - name: Inspect FASTA and collect stats
-        id: fasta_info
+        id: file_fasta_info
+        if: steps.params.outputs.fasta_source != 'ncbi'
         env:
           FASTA_SOURCE: ${{ steps.params.outputs.fasta_source }}
         run: |
@@ -290,6 +377,7 @@ jobs:
           python3 scripts/record_metric.py fasta_inspection.exhaustive_validation false
 
       - name: Convert FASTA to 2bit
+        if: steps.params.outputs.fasta_source != 'ncbi'
         run: |
           python3 scripts/record_metric.py current_stage fasta_to_2bit
           source scripts/resource_sampler.sh
@@ -317,6 +405,27 @@ jobs:
           python3 scripts/record_metric.py twobit_size_bytes $TWOBIT_SIZE
           python3 scripts/record_metric.py used_long_2bit $USED_LONG
           python3 scripts/record_metric.py disk_used_checkpoint_gb.after_2bit $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
+
+      - name: Expose FASTA metadata
+        id: fasta_info
+        env:
+          NCBI_SEQ_IDS: ${{ steps.ncbi_fasta_info.outputs.seq_ids }}
+          NCBI_SEQ_COUNT: ${{ steps.ncbi_fasta_info.outputs.seq_count }}
+          NCBI_FASTA_SIZE: ${{ steps.ncbi_fasta_info.outputs.fasta_size }}
+          FILE_SEQ_IDS: ${{ steps.file_fasta_info.outputs.seq_ids }}
+          FILE_SEQ_COUNT: ${{ steps.file_fasta_info.outputs.seq_count }}
+          FILE_FASTA_SIZE: ${{ steps.file_fasta_info.outputs.fasta_size }}
+        run: |
+          SEQ_IDS="${NCBI_SEQ_IDS:-$FILE_SEQ_IDS}"
+          SEQ_COUNT="${NCBI_SEQ_COUNT:-$FILE_SEQ_COUNT}"
+          FASTA_SIZE="${NCBI_FASTA_SIZE:-$FILE_FASTA_SIZE}"
+          if [ -z "$SEQ_IDS" ] || [ -z "$SEQ_COUNT" ] || [ -z "$FASTA_SIZE" ]; then
+            echo "ERROR: FASTA metadata was not produced"
+            exit 1
+          fi
+          echo "seq_ids=${SEQ_IDS}" >> "$GITHUB_OUTPUT"
+          echo "seq_count=${SEQ_COUNT}" >> "$GITHUB_OUTPUT"
+          echo "fasta_size=${FASTA_SIZE}" >> "$GITHUB_OUTPUT"
 
       - name: Generate seed file
         run: |
