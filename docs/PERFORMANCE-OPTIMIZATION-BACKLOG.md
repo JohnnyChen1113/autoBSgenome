@@ -32,10 +32,10 @@ run `32561399985`:
 Download/extraction, 2bit conversion, and package assembly therefore dominate
 the remaining critical path.
 
-## Implement now: NCBI FASTA streaming to 2bit
+## Implemented and measured: NCBI FASTA streaming to 2bit
 
-The NCBI fast path should resolve the accession's official Genomes FTP
-`*_genomic.fna.gz` file and its published MD5, then process one data stream:
+The NCBI fast path resolves the accession's official Genomes FTP
+`*_genomic.fna.gz` file and its published MD5, then processes one data stream:
 
 ```text
 NCBI HTTPS response (gzip)
@@ -62,8 +62,28 @@ Acceptance criteria:
   compressed bytes, uncompressed FASTA bytes, total stream time, and 2bit size;
 - benchmark mode still skips every publication path and deletes the tarball.
 
-The first production comparison should reuse `GCA_963921465.1` with
-`publish_to_index=false`.
+Production validation used two no-publish builds. The 12-Mbp
+`GCF_000146045.2` integration run
+[`32586450061`](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32586450061)
+completed the FTP stream, package forge, archive validation, and benchmark
+cleanup in 48 seconds. The 9.35-Gbp comparison run
+[`32586564995`](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32586564995)
+completed successfully without entering the Datasets fallback:
+
+| Metric | Previous run `32561399985` | Streaming run `32586564995` | Change |
+|---|---:|---:|---:|
+| NCBI acquisition + inspection + 2bit | 356 s | 110 s | -69% |
+| Forge | 11 s | 13 s | +2 s |
+| R CMD build | 94 s | 79 s | -16% |
+| Archive validation | 26 s | 21 s | -19% |
+| Workflow start to tarball | 462 s | 207 s | -55% |
+| Complete GitHub job | 524 s | 263 s | -50% |
+
+The large streaming run verified NCBI compressed MD5
+`e411fb3288a0b67cf328be438fe884c7`, read 2,801,159,935 compressed bytes and
+9,468,495,736 FASTA bytes, counted 1,672 sequences, and produced a
+2,543,657,067-byte 2bit file. Archive validation passed. All publication steps
+were skipped and the ephemeral benchmark tarball was removed.
 
 ## Deferred: parallel package compression
 
