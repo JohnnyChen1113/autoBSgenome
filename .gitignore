@@ -184,8 +184,13 @@ cython_debug/
 # Local manuscript drafts and generated figure/document artifacts
 /paper/
 /output/
+/outputs/
+/uploads/
 /scripts/format_manuscript_docx.py
 **/~$*.docx
+
+# Local Wisp project metadata
+/.wisp/
 
 web/node_modules/
 web/.next/
