@@ -122,12 +122,44 @@ jobs:
           python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.number_of_scaffolds "${{ steps.params.outputs.ncbi_number_of_scaffolds }}"
           python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.scaffold_n50 "${{ steps.params.outputs.ncbi_scaffold_n50 }}"
 
+      - name: Resolve NCBI source
+        id: ncbi_source
+        if: steps.params.outputs.fasta_source == 'ncbi'
+        env:
+          ACCESSION: ${{ steps.params.outputs.accession }}
+        run: |
+          python3 scripts/record_metric.py current_stage ncbi_resolve
+          START=$(date +%s)
+          RESOLVED=false
+          rm -f /tmp/ncbi_fasta_resolution.json
+          if python3 scripts/resolve_ncbi_fasta.py "$ACCESSION" --json /tmp/ncbi_fasta_resolution.json; then
+            FASTA_URL=$(python3 -c "import json; print(json.load(open('/tmp/ncbi_fasta_resolution.json'))['fasta_url'])")
+            EXPECTED_MD5=$(python3 -c "import json; print(json.load(open('/tmp/ncbi_fasta_resolution.json'))['expected_md5'])")
+            RESOLVED_TOTAL_LENGTH=$(python3 -c "import json; print(json.load(open('/tmp/ncbi_fasta_resolution.json'))['total_sequence_length'])")
+            echo "fasta_url=${FASTA_URL}" >> "$GITHUB_OUTPUT"
+            echo "expected_md5=${EXPECTED_MD5}" >> "$GITHUB_OUTPUT"
+            echo "total_sequence_length=${RESOLVED_TOTAL_LENGTH}" >> "$GITHUB_OUTPUT"
+            RESOLVED=true
+          else
+            echo "WARNING: NCBI FTP resolution failed; the build will use the Datasets fallback"
+          fi
+          END=$(date +%s)
+          ELAPSED=$((END - START))
+          python3 scripts/record_metric.py timings_sec.ncbi_resolve "$ELAPSED"
+          echo "resolved=${RESOLVED}" >> "$GITHUB_OUTPUT"
+          echo "elapsed_seconds=${ELAPSED}" >> "$GITHUB_OUTPUT"
+
       - name: Stream NCBI FASTA to 2bit
         id: ncbi_fasta_info
         if: steps.params.outputs.fasta_source == 'ncbi'
         env:
           ACCESSION: ${{ steps.params.outputs.accession }}
           TOTAL_SEQUENCE_LENGTH: ${{ steps.params.outputs.ncbi_total_sequence_length }}
+          RESOLVED: ${{ steps.ncbi_source.outputs.resolved }}
+          FASTA_URL: ${{ steps.ncbi_source.outputs.fasta_url }}
+          EXPECTED_MD5: ${{ steps.ncbi_source.outputs.expected_md5 }}
+          RESOLVED_TOTAL_LENGTH: ${{ steps.ncbi_source.outputs.total_sequence_length }}
+          RESOLVE_SECONDS: ${{ steps.ncbi_source.outputs.elapsed_seconds }}
         run: |
           set -o pipefail
           python3 scripts/record_metric.py current_stage ncbi_stream_to_2bit
@@ -146,18 +178,17 @@ jobs:
           fi
 
           STREAMED=false
+          ATTEMPT_COUNT=0
           ACQUISITION_MODE=ncbi-ftp-stream
-          rm -f genome.2bit /tmp/fasta_inspection.json /tmp/ncbi_fasta_resolution.json
-          if python3 scripts/resolve_ncbi_fasta.py "$ACCESSION" --json /tmp/ncbi_fasta_resolution.json; then
-            FASTA_URL=$(python3 -c "import json; print(json.load(open('/tmp/ncbi_fasta_resolution.json'))['fasta_url'])")
-            EXPECTED_MD5=$(python3 -c "import json; print(json.load(open('/tmp/ncbi_fasta_resolution.json'))['expected_md5'])")
-            RESOLVED_TOTAL_LENGTH=$(python3 -c "import json; print(json.load(open('/tmp/ncbi_fasta_resolution.json'))['total_sequence_length'])")
-            if [ "$RESOLVED_TOTAL_LENGTH" -gt "$THRESHOLD" ]; then
+          rm -f genome.2bit /tmp/fasta_inspection.json
+          if [ "$RESOLVED" = "true" ]; then
+            if [[ "$RESOLVED_TOTAL_LENGTH" =~ ^[0-9]+$ ]] && [ "$RESOLVED_TOTAL_LENGTH" -gt "$THRESHOLD" ]; then
               LONG_ARG=(--long)
               USED_LONG=true
             fi
             echo "Streaming official NCBI genomic FASTA: ${FASTA_URL}"
             for attempt in 1 2 3; do
+              ATTEMPT_COUNT=$attempt
               rm -f genome.2bit /tmp/fasta_inspection.json
               echo "NCBI FTP streaming attempt ${attempt}/3"
               if curl -fL --silent --show-error \
@@ -177,8 +208,6 @@ jobs:
                 sleep $((attempt * 30))
               fi
             done
-          else
-            echo "WARNING: NCBI FTP resolution failed; using Datasets fallback"
           fi
 
           if [ "$STREAMED" != "true" ]; then
@@ -231,9 +260,15 @@ jobs:
           SAMPLED_BASES=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json'))['sampled_bases'])")
           COMPRESSED_SIZE=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json')).get('compressed_size_bytes', 0))")
           COMPRESSED_MD5=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json')).get('compressed_md5', ''))")
+          PIPELINE_WALL=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json')).get('timings_sec', {}).get('pipeline_wall', ''))")
+          PYTHON_CPU=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json')).get('timings_sec', {}).get('python_cpu', ''))")
+          CONVERTER_CPU=$(python3 -c "import json; print(json.load(open('/tmp/fasta_inspection.json')).get('timings_sec', {}).get('converter_cpu', ''))")
           TWOBIT_SIZE=$(stat -c%s genome.2bit 2>/dev/null || stat -f%z genome.2bit 2>/dev/null || echo 0)
-          python3 scripts/record_metric.py timings_sec.ncbi_acquisition_to_2bit $((END - START))
+          STREAM_SECONDS=$((END - START))
+          python3 scripts/record_metric.py timings_sec.ncbi_acquisition_to_2bit $((STREAM_SECONDS + ${RESOLVE_SECONDS:-0}))
+          python3 scripts/record_metric.py timings_sec.ncbi_stream_to_2bit "$STREAM_SECONDS"
           python3 scripts/record_metric.py ncbi_acquisition_mode "$ACQUISITION_MODE"
+          python3 scripts/record_metric.py ncbi_stream.attempt_count "$ATTEMPT_COUNT"
           python3 scripts/record_metric.py fasta_size_bytes "$FASTA_SIZE"
           python3 scripts/record_metric.py seq_count "$SEQ_COUNT"
           python3 scripts/record_metric.py fasta_inspection.sampled_bases "$SAMPLED_BASES"
@@ -242,6 +277,9 @@ jobs:
           python3 scripts/record_metric.py used_long_2bit "$USED_LONG"
           [ "$COMPRESSED_SIZE" -gt 0 ] && python3 scripts/record_metric.py ncbi_stream.compressed_size_bytes "$COMPRESSED_SIZE" || true
           [ -n "$COMPRESSED_MD5" ] && python3 scripts/record_metric.py ncbi_stream.compressed_md5 "$COMPRESSED_MD5" || true
+          [ -n "$PIPELINE_WALL" ] && python3 scripts/record_metric.py ncbi_stream.pipeline_wall_seconds "$PIPELINE_WALL" || true
+          [ -n "$PYTHON_CPU" ] && python3 scripts/record_metric.py timings_cpu_sec.ncbi_stream_python "$PYTHON_CPU" || true
+          [ -n "$CONVERTER_CPU" ] && python3 scripts/record_metric.py timings_cpu_sec.ncbi_stream_converter "$CONVERTER_CPU" || true
           python3 scripts/record_metric.py disk_used_checkpoint_gb.after_2bit $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
           echo "seq_ids=${SEQ_IDS}" >> "$GITHUB_OUTPUT"
           echo "seq_count=${SEQ_COUNT}" >> "$GITHUB_OUTPUT"
@@ -430,6 +468,7 @@ jobs:
       - name: Generate seed file
         run: |
           python3 scripts/record_metric.py current_stage seed_generation
+          START=$(date +%s)
           PACKAGE="${{ steps.params.outputs.package_name }}"
           TITLE="${{ steps.params.outputs.title }}"
           ORGANISM="${{ steps.params.outputs.organism }}"
@@ -460,6 +499,8 @@ jobs:
           SEED
           sed -i 's/^          //' "${PACKAGE}.seed"
           echo "=== Seed file ===" && cat "${PACKAGE}.seed"
+          END=$(date +%s)
+          python3 scripts/record_metric.py timings_sec.seed_generation $((END - START))
 
       - name: Forge BSgenome data package (R)
         run: |
@@ -527,7 +568,9 @@ jobs:
           df -h . | tail -2
 
           END=$(date +%s)
-          python3 scripts/record_metric.py timings_sec.rcmd_build $((END - START))
+          BUILD_SECONDS=$((END - START))
+          python3 scripts/record_metric.py timings_sec.rcmd_build "$BUILD_SECONDS"
+          python3 scripts/record_metric.py timings_sec.package_compression "$BUILD_SECONDS"
           if [ -f /tmp/rbuild_time.log ]; then
             MAX_KB=$(grep "Maximum resident set size" /tmp/rbuild_time.log | awk '{print $NF}')
             [ -n "$MAX_KB" ] && python3 scripts/record_metric.py peak_mem_mb.rcmd_build $((MAX_KB / 1024)) || true
@@ -540,6 +583,7 @@ jobs:
           python3 scripts/record_metric.py disk_used_checkpoint_gb.after_rcmd_build $(awk "BEGIN{printf \"%.2f\", ($(df -Pk . | awk 'NR==2 {print $3}')) / 1024 / 1024}")
 
       - name: Validate package archive
+        id: archive_validation
         run: |
           python3 scripts/record_metric.py current_stage archive_validation
           source scripts/resource_sampler.sh
@@ -548,20 +592,18 @@ jobs:
           PACKAGE="${{ steps.params.outputs.package_name }}"
           START=$(date +%s)
           TARBALL=$(find . -maxdepth 1 -type f -name "${PACKAGE}_*.tar.gz" -print -quit)
-          tar -tzf "$TARBALL" > /tmp/archive_contents.txt
-          grep -Fxq "${PACKAGE}/DESCRIPTION" /tmp/archive_contents.txt
-          grep -Fxq "${PACKAGE}/inst/extdata/single_sequences.2bit" /tmp/archive_contents.txt
-          PACKAGE_SHA256=$(sha256sum "$TARBALL" | awk '{print $1}')
+          PACKAGE_SHA256=$(bash scripts/validate_package_archive.sh "$TARBALL" "$PACKAGE")
           END=$(date +%s)
           python3 scripts/record_metric.py timings_sec.archive_validation $((END - START))
           python3 scripts/record_metric.py package_sha256 "$PACKAGE_SHA256"
           python3 scripts/record_metric.py archive_valid true
-          rm -f /tmp/archive_contents.txt
+          echo "package_sha256=${PACKAGE_SHA256}" >> "$GITHUB_OUTPUT"
 
       - name: Determine storage backend
         id: storage
         run: |
           python3 scripts/record_metric.py current_stage storage_selection
+          START=$(date +%s)
           PACKAGE="${{ steps.params.outputs.package_name }}"
           VERSION="${{ steps.params.outputs.version }}"
           TARBALL="${PACKAGE}_${VERSION}.tar.gz"
@@ -577,6 +619,8 @@ jobs:
             echo "Standard tarball ($SIZE bytes); using GitHub Releases"
           fi
           echo "tarball_size=$SIZE" >> $GITHUB_OUTPUT
+          END=$(date +%s)
+          python3 scripts/record_metric.py timings_sec.storage_selection $((END - START))
 
       - name: Reject oversized temporary package
         if: steps.storage.outputs.backend == 'zenodo' && steps.params.outputs.publish_to_index != 'true' && steps.params.outputs.benchmark_mode != 'true'
@@ -643,7 +687,7 @@ jobs:
           BUILT_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           WORKFLOW_RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d"
-          PACKAGE_SHA256=$(sha256sum "${TARBALL}" | awk '{print $1}')
+          PACKAGE_SHA256="${{ steps.archive_validation.outputs.package_sha256 }}"
           DESCRIPTION_SHA256=$(PACKAGE="$PACKAGE" TARBALL="$TARBALL" python3 <<'PYEOF'
           import hashlib
           import os
@@ -798,7 +842,7 @@ jobs:
           BUILT_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           WORKFLOW_RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d"
-          PACKAGE_SHA256=$(sha256sum "${TARBALL}" | awk '{print $1}')
+          PACKAGE_SHA256="${{ steps.archive_validation.outputs.package_sha256 }}"
           DESCRIPTION_SHA256=$(PACKAGE="$PACKAGE" TARBALL="$TARBALL" python3 <<'PYEOF'
           import hashlib
           import os

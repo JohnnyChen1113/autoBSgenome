@@ -124,8 +124,13 @@ export default function ApiDocs() {
   "status": "building",
   "build_steps": [
     { "key": "queue", "label": "Queuing build on GitHub Actions", "status": "complete", "seconds": 4 },
-    { "key": "download", "label": "Downloading FASTA", "status": "running", "seconds": 18 },
-    { "key": "twobit", "label": "Converting to 2bit format", "status": "pending" }
+    { "key": "resolve", "label": "Resolving NCBI source", "status": "complete", "seconds": 2 },
+    { "key": "twobit", "label": "Streaming FASTA to 2bit", "status": "complete", "seconds": 110 },
+    { "key": "seed", "label": "Generating package metadata", "status": "complete", "seconds": 1 },
+    { "key": "forge", "label": "Forging BSgenome package", "status": "complete", "seconds": 13 },
+    { "key": "compress", "label": "Compressing package archive", "status": "running", "seconds": 42 },
+    { "key": "validate", "label": "Validating package archive", "status": "pending" },
+    { "key": "release", "label": "Uploading package release", "status": "pending" }
   ],
   "workflow_run_url": "https://github.com/.../actions/runs/123456789"
 }`}</CodeBlock>

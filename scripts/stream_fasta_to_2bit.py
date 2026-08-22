@@ -7,8 +7,10 @@ import argparse
 import gzip
 import hashlib
 import json
+import resource
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 from inspect_fasta import CHUNK_SIZE, FastaStreamInspector
@@ -60,6 +62,9 @@ def main() -> int:
     command.extend(["stdin", str(output)])
 
     process: subprocess.Popen | None = None
+    wall_started = time.monotonic()
+    python_cpu_started = time.process_time()
+    child_usage_started = resource.getrusage(resource.RUSAGE_CHILDREN)
     try:
         hashing_reader = HashingReader(sys.stdin.buffer)
         inspector = FastaStreamInspector(args.source)
@@ -84,6 +89,20 @@ def main() -> int:
         report["compressed_size_bytes"] = hashing_reader.byte_count
         report["compressed_md5"] = actual_md5
         report["twobit_size_bytes"] = output.stat().st_size
+        child_usage = resource.getrusage(resource.RUSAGE_CHILDREN)
+        converter_user_cpu = max(
+            0.0, child_usage.ru_utime - child_usage_started.ru_utime
+        )
+        converter_system_cpu = max(
+            0.0, child_usage.ru_stime - child_usage_started.ru_stime
+        )
+        report["timings_sec"] = {
+            "pipeline_wall": round(max(0.0, time.monotonic() - wall_started), 3),
+            "python_cpu": round(max(0.0, time.process_time() - python_cpu_started), 3),
+            "converter_cpu": round(converter_user_cpu + converter_system_cpu, 3),
+            "converter_user_cpu": round(converter_user_cpu, 3),
+            "converter_system_cpu": round(converter_system_cpu, 3),
+        }
         write_outputs(report, args.json, args.github_output)
         return 0
     except Exception as exc:

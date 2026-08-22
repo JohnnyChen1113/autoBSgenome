@@ -149,12 +149,17 @@ the previous NCBI Datasets ZIP path as a compatibility fallback. The fallback
 materializes `genome.fa`, performs the same inspection, converts it, and then
 removes the FASTA.
 
+Resolution is a separate observable workflow step. Metrics distinguish
+resolver wall time, total stream wall time, Python decompression/inspection
+CPU, `faToTwoBit` CPU, attempt count, and fallback mode without splitting the
+overlapping streaming pipeline into serial stages.
+
 Potential improvements:
 
 - compare streaming throughput across multiple GitHub runner regions;
 - expose retry/fallback reasons in the public status response;
-- capture resolver, network, decompression, inspection, and converter timing
-  separately without serializing stages that intentionally overlap.
+- add transfer-rate telemetry that remains meaningful under downstream
+  backpressure.
 
 ### Ensembl
 
@@ -282,15 +287,19 @@ Purpose:
 
 Potential improvements:
 
-- evaluate parallel gzip only if compression becomes a significant fraction of
-  runtime;
 - retain the current external-tar behavior for packages with members above the
   built-in tar limit.
 
+Decision adopted:
+
+- do not trade compression ratio for speed. Package size remains important,
+  especially near GitHub's 2-GiB release-asset limit.
+
 ## 11. Archive validation
 
-The workflow lists the gzip/tar archive, requires DESCRIPTION and the 2bit
-member, and computes SHA-256.
+The workflow reads the gzip/tar archive once. `tee` sends the compressed stream
+to SHA-256 and `tar -tzf -`; validation requires DESCRIPTION and the 2bit
+member.
 
 Purpose:
 
@@ -320,11 +329,11 @@ Important current limitation:
 - the 9.35-Gbp benchmark produced a 2.31-GB tarball, so the same assembly would
   currently fail as an ordinary Web build.
 
-Open decision:
+Current scope decision:
 
-- reject likely-oversized temporary packages before download, or introduce an
-  R2-backed two-day large-package store. Do not silently turn a user build into
-  permanent publication.
+- no pre-build rejection heuristic and no R2-backed large temporary-package
+  store are planned in this round. The existing limitation remains explicit;
+  a user build is never silently converted into permanent publication.
 
 ### Curated permanent build
 
@@ -357,7 +366,9 @@ Open improvements:
 
 `GET /api/status/JOB_ID` first checks for a temporary GitHub Release. Until one
 exists, the Worker searches recent repository-dispatch runs and fetches job
-steps to reconstruct queue, download, conversion, package, and release status.
+steps to reconstruct queue, source resolution/download, FASTA inspection or
+streaming conversion, metadata generation, forge, archive compression,
+archive validation, and release status.
 
 Purpose:
 
@@ -370,9 +381,8 @@ Known improvements:
   on every poll;
 - treat completed failure/cancelled/timed-out workflows as terminal even when a
   failure-marker Release could not be created;
-- keep step names synchronized with workflow names so forge time is not omitted;
-- expose every genuinely long stage. Removing exhaustive FASTA validation
-  removes the largest previously invisible interval.
+- return recorded CPU/transfer diagnostics through a durable status store if
+  users eventually need completed-run telemetry beyond GitHub step wall time.
 
 ## Benchmark baseline before fast inspection
 
@@ -427,12 +437,15 @@ only retained artifact was the 3,188-byte benchmark report.
 - Use prefix-sampled validation only for URL/upload input.
 - Merge FASTA inspection and statistics into one workflow stage.
 - Keep archive validation.
+- Read each package archive once while hashing and validating it through `tee`.
+- Preserve package compression ratio rather than trading package size for speed.
+- Expose resolver, conversion, forge, compression, validation, and release as
+  separate user-visible progress stages.
 - Keep approximately two-day cleanup for ordinary temporary downloads.
 - Never silently publish a user build to the permanent index.
 
 ### Needs a product decision
 
-- Support >1.9-GiB temporary packages in R2, or reject them before building.
 - Decide how strict custom FASTA validation must be.
 - Decide whether public builds need authentication, quotas, or challenge-based
   abuse protection.

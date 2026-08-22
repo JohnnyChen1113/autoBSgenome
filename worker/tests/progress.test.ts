@@ -36,10 +36,52 @@ test("NCBI streaming is reported as one combined download-to-2bit step", async (
             started_at: "2026-08-22T12:00:02Z",
             steps: [
               {
+                name: "Resolve NCBI source",
+                status: "completed",
+                conclusion: "success",
+                started_at: "2026-08-22T12:00:03Z",
+                completed_at: "2026-08-22T12:00:05Z",
+              },
+              {
                 name: "Stream NCBI FASTA to 2bit",
+                status: "completed",
+                conclusion: "success",
+                started_at: "2026-08-22T12:00:05Z",
+                completed_at: "2026-08-22T12:00:10Z",
+              },
+              {
+                name: "Generate seed file",
+                status: "completed",
+                conclusion: "success",
+                started_at: "2026-08-22T12:00:10Z",
+                completed_at: "2026-08-22T12:00:11Z",
+              },
+              {
+                name: "Forge BSgenome data package (R)",
+                status: "completed",
+                conclusion: "success",
+                started_at: "2026-08-22T12:00:11Z",
+                completed_at: "2026-08-22T12:00:13Z",
+              },
+              {
+                name: "R CMD build (assemble tarball)",
                 status: "in_progress",
                 conclusion: null,
-                started_at: "2026-08-22T12:00:05Z",
+                started_at: "2026-08-22T12:00:13Z",
+                completed_at: null,
+              },
+              {
+                name: "Validate package archive",
+                status: "queued",
+                conclusion: null,
+                started_at: null,
+                completed_at: null,
+              },
+              {
+                name: "Create GitHub Release",
+                status: "queued",
+                conclusion: null,
+                started_at: null,
                 completed_at: null,
               },
             ],
@@ -63,15 +105,15 @@ test("NCBI streaming is reported as one combined download-to-2bit step", async (
       build_steps: Array<{ key: string; label: string; status: string }>;
     };
 
-    const sequenceSteps = body.build_steps
-      .filter((step) => ["download", "twobit"].includes(step.key))
-      .map(({ key, label, status }) => ({ key, label, status }));
-    assert.deepEqual(sequenceSteps, [
-      {
-        key: "twobit",
-        label: "Streaming FASTA to 2bit",
-        status: "running",
-      },
+    assert.deepEqual(body.build_steps.map(({ key, label, status }) => ({ key, label, status })), [
+      { key: "queue", label: "Queuing build on GitHub Actions", status: "complete" },
+      { key: "resolve", label: "Resolving NCBI source", status: "complete" },
+      { key: "twobit", label: "Streaming FASTA to 2bit", status: "complete" },
+      { key: "seed", label: "Generating package metadata", status: "complete" },
+      { key: "forge", label: "Forging BSgenome package", status: "complete" },
+      { key: "compress", label: "Compressing package archive", status: "running" },
+      { key: "validate", label: "Validating package archive", status: "pending" },
+      { key: "release", label: "Uploading package release", status: "pending" },
     ]);
   } finally {
     globalThis.fetch = originalFetch;
@@ -124,6 +166,13 @@ test("a skipped NCBI stream keeps separate download and conversion steps", async
                 completed_at: "2026-08-22T12:00:08Z",
               },
               {
+                name: "Inspect FASTA and collect stats",
+                status: "completed",
+                conclusion: "success",
+                started_at: "2026-08-22T12:00:08Z",
+                completed_at: "2026-08-22T12:00:09Z",
+              },
+              {
                 name: "Convert FASTA to 2bit",
                 status: "in_progress",
                 conclusion: null,
@@ -152,10 +201,11 @@ test("a skipped NCBI stream keeps separate download and conversion steps", async
     };
 
     const sequenceSteps = body.build_steps
-      .filter((step) => ["download", "twobit"].includes(step.key))
+      .filter((step) => ["download", "inspect", "twobit"].includes(step.key))
       .map(({ key, label, status }) => ({ key, label, status }));
     assert.deepEqual(sequenceSteps, [
       { key: "download", label: "Downloading FASTA", status: "complete" },
+      { key: "inspect", label: "Inspecting FASTA metadata", status: "complete" },
       { key: "twobit", label: "Converting to 2bit format", status: "running" },
     ]);
   } finally {
