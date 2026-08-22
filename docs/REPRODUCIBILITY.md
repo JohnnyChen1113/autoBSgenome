@@ -10,12 +10,12 @@ From the repository root, run the following command.
 ./scripts/reproduce-test-build.sh
 ```
 
-The script pulls the fixed `linux/amd64` builder image, validates the included *Akawachii luchuensis* FASTA file, converts it to UCSC 2bit, forges the BSgenome package, runs `R CMD build`, installs the source package and retrieves sequence from the installed BSgenome object.
+The script pulls the fixed `linux/amd64` builder image, performs the bounded custom-input inspection on the included *Akawachii luchuensis* FASTA file, converts it to UCSC 2bit, forges the BSgenome package, runs `R CMD build`, installs the source package and retrieves sequence from the installed BSgenome object.
 
 Outputs are written to `reproduced/`.
 
 - `BSgenome.Aluchuensis.NCBI.IFO4308_1.0.0.tar.gz`
-- `fasta-validation.json`
+- `fasta-inspection.json`
 - `sequence-check.txt`
 - `build-manifest.txt`
 

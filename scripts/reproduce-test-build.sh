@@ -51,7 +51,9 @@ trap 'rm -rf "$WORK_DIR"' EXIT
 cp "$INPUT_FASTA" "${WORK_DIR}/genome.fa"
 cd "$WORK_DIR"
 
-python3 /workspace/scripts/validate_fasta.py genome.fa --json fasta-validation.json
+python3 /workspace/scripts/inspect_fasta.py genome.fa \
+  --source upload \
+  --json fasta-inspection.json
 faToTwoBit genome.fa genome.2bit
 
 cat > "${PACKAGE}.seed" <<SEED
@@ -100,7 +102,7 @@ R_LIBS_USER="${WORK_DIR}/library" Rscript -e "
 
 mkdir -p "$REPRO_OUTPUT_DIR"
 cp "$TARBALL" "$REPRO_OUTPUT_DIR/"
-cp fasta-validation.json sequence-check.txt "$REPRO_OUTPUT_DIR/"
+cp fasta-inspection.json sequence-check.txt "$REPRO_OUTPUT_DIR/"
 
 OUTPUT_TARBALL="${REPRO_OUTPUT_DIR}/$(basename "$TARBALL")"
 {

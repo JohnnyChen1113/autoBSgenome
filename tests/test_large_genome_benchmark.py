@@ -304,6 +304,21 @@ class ManifestTests(unittest.TestCase):
 
 
 class WorkflowRuntimeContractTests(unittest.TestCase):
+    def test_builder_uses_one_source_aware_fasta_inspection_stage(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+
+        self.assertIn("- name: Inspect FASTA and collect stats", workflow)
+        self.assertIn("scripts/inspect_fasta.py", workflow)
+        self.assertIn('--source "$FASTA_SOURCE"', workflow)
+        self.assertIn("timings_sec.fasta_inspection", workflow)
+        self.assertIn("benchmark-report/fasta-inspection.json", workflow)
+        self.assertNotIn("Validate nucleotide FASTA", workflow)
+        self.assertNotIn("Extract FASTA headers and stats", workflow)
+        self.assertNotIn("scripts/validate_fasta.py", workflow)
+        self.assertNotIn("gzip -t downloaded.fasta", workflow)
+
     def test_builder_has_no_circular_detection_network_stage(self):
         workflow = (
             ROOT / ".github" / "workflows" / "build-bsgenome.yml"
