@@ -234792,6 +234792,170 @@
           "doi": "10.5281/zenodo.19653884",
           "indexed_at": "2026-04-19T17:19:36Z",
           "release_date": "2024-01-13"
+        },
+        {
+          "package": "BSgenome.Ttimopheevii.NCBI.WRCtimopheeviigenomewithorganelles",
+          "version": "1.0.0",
+          "organism": "Triticum timopheevii",
+          "assembly": "WRC_timopheevii_genome_with_organelles",
+          "provider": "NCBI",
+          "accession": "GCA_963921465.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963921465.1/",
+          "file_name": "BSgenome.Ttimopheevii.NCBI.WRCtimopheeviigenomewithorganelles_1.0.0.tar.gz",
+          "size": 2309566437,
+          "seq_ids": [
+            "OY997261.1",
+            "OY997262.1",
+            "OY997263.1",
+            "OY997264.1",
+            "OY997265.1"
+          ],
+          "seq_count": 1672,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Magnoliopsida",
+            "order": "Poales",
+            "family": "Poaceae",
+            "genus": "Triticum"
+          },
+          "common_name": "",
+          "indexed_at": "2026-08-22T00:13:21Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22051654/files/BSgenome.Ttimopheevii.NCBI.WRCtimopheeviigenomewithorganelles_1.0.0.tar.gz",
+          "release_date": "2024-01-13",
+          "published": "2024-01-13",
+          "doi": "10.5281/zenodo.22051654",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787355863,
+              "archive_completed": 1787357414
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.77,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 1,
+              "accession": "GCA_963921465.1",
+              "organism": "Triticum timopheevii",
+              "assembly": "WRC_timopheevii_genome_with_organelles",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Ttimopheevii.NCBI.WRCtimopheeviigenomewithorganelles",
+              "metadata_snapshot_date": "2026-08-21",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Chromosome",
+                "total_sequence_length": 9350839849,
+                "total_ungapped_length": 9350587949,
+                "number_of_scaffolds": 1670,
+                "scaffold_n50": 671191297
+              }
+            },
+            "timings_sec": {
+              "fasta_download": 259,
+              "fasta_to_2bit": 64,
+              "forge": 11,
+              "rcmd_build": 106,
+              "archive_validation": 28,
+              "package_publication": 144
+            },
+            "fasta_size_bytes": 9468495736,
+            "disk_used_checkpoint_gb": {
+              "after_fasta_download": 68.3,
+              "after_2bit": 61.85,
+              "after_forge": 61.85,
+              "after_rcmd_build": 61.63
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 76034998272,
+              "memory_used_bytes": 13486108672,
+              "process_rss_bytes": 3343724544,
+              "stages": {
+                "fasta_download": {
+                  "disk_used_bytes": 76034998272,
+                  "memory_used_bytes": 11780292608,
+                  "process_rss_bytes": 40136704,
+                  "samples": 260
+                },
+                "circular_sequence_detection": {
+                  "disk_used_bytes": 73340776448,
+                  "memory_used_bytes": 9772187648,
+                  "process_rss_bytes": 43737088,
+                  "samples": 125
+                },
+                "fasta_validation": {
+                  "disk_used_bytes": 73335341056,
+                  "memory_used_bytes": 9764515840,
+                  "process_rss_bytes": 30715904,
+                  "samples": 979
+                },
+                "fasta_statistics": {
+                  "disk_used_bytes": 73335369728,
+                  "memory_used_bytes": 9760247808,
+                  "process_rss_bytes": 31973376,
+                  "samples": 3
+                },
+                "fasta_to_2bit": {
+                  "disk_used_bytes": 75879043072,
+                  "memory_used_bytes": 13486108672,
+                  "process_rss_bytes": 3343724544,
+                  "samples": 66
+                },
+                "forge": {
+                  "disk_used_bytes": 68954312704,
+                  "memory_used_bytes": 5738065920,
+                  "process_rss_bytes": 764321792,
+                  "samples": 14
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 71248670720,
+                  "memory_used_bytes": 7666323456,
+                  "process_rss_bytes": 142049280,
+                  "samples": 108
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 66176565248,
+                  "memory_used_bytes": 2386497536,
+                  "process_rss_bytes": 24870912,
+                  "samples": 29
+                }
+              }
+            },
+            "circular_sequences": {
+              "method": "ncbi-sequence-report+nuccore-topology",
+              "value": "OY997404.1, OY997405.1"
+            },
+            "twobit_size_bytes": 2543657067,
+            "used_long_2bit": false,
+            "peak_mem_mb": {
+              "forge": 709
+            },
+            "tarball_size_bytes": 2309566437,
+            "package_sha256": "b8910d30c333c01a07122961f25958d77bbb21ce8e6c8b4fa11419f7388e6e34",
+            "archive_valid": true,
+            "seq_count": 1672
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963921465.1/",
+            "source_accession": "GCA_963921465.1",
+            "built_at": "2026-08-22T00:10:44Z",
+            "workflow_run_id": "32537920730",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32537920730",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "b8910d30c333c01a07122961f25958d77bbb21ce8e6c8b4fa11419f7388e6e34",
+            "description_sha256": "2972bb715539df0b68832273dfa8c9d121cf78cc8f9fa57c77c4faa551aff75a"
+          }
         }
       ]
     },
@@ -453779,6 +453943,170 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder:latest",
         "package_sha256": "15fb518c5d7a039bebe7abc99226611e87e449f6950d06a109345c03bc06768c",
         "description_sha256": "6277316d403a1de103a2cf62fdc57b57cc594b3b43489be836e305a55f222931"
+      }
+    },
+    {
+      "package": "BSgenome.Ttimopheevii.NCBI.WRCtimopheeviigenomewithorganelles",
+      "version": "1.0.0",
+      "organism": "Triticum timopheevii",
+      "assembly": "WRC_timopheevii_genome_with_organelles",
+      "provider": "NCBI",
+      "accession": "GCA_963921465.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963921465.1/",
+      "file_name": "BSgenome.Ttimopheevii.NCBI.WRCtimopheeviigenomewithorganelles_1.0.0.tar.gz",
+      "size": 2309566437,
+      "seq_ids": [
+        "OY997261.1",
+        "OY997262.1",
+        "OY997263.1",
+        "OY997264.1",
+        "OY997265.1"
+      ],
+      "seq_count": 1672,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Magnoliopsida",
+        "order": "Poales",
+        "family": "Poaceae",
+        "genus": "Triticum"
+      },
+      "common_name": "",
+      "indexed_at": "2026-08-22T00:13:21Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22051654/files/BSgenome.Ttimopheevii.NCBI.WRCtimopheeviigenomewithorganelles_1.0.0.tar.gz",
+      "release_date": "2024-01-13",
+      "published": "2024-01-13",
+      "doi": "10.5281/zenodo.22051654",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787355863,
+          "archive_completed": 1787357414
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.77,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 1,
+          "accession": "GCA_963921465.1",
+          "organism": "Triticum timopheevii",
+          "assembly": "WRC_timopheevii_genome_with_organelles",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Ttimopheevii.NCBI.WRCtimopheeviigenomewithorganelles",
+          "metadata_snapshot_date": "2026-08-21",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Chromosome",
+            "total_sequence_length": 9350839849,
+            "total_ungapped_length": 9350587949,
+            "number_of_scaffolds": 1670,
+            "scaffold_n50": 671191297
+          }
+        },
+        "timings_sec": {
+          "fasta_download": 259,
+          "fasta_to_2bit": 64,
+          "forge": 11,
+          "rcmd_build": 106,
+          "archive_validation": 28,
+          "package_publication": 144
+        },
+        "fasta_size_bytes": 9468495736,
+        "disk_used_checkpoint_gb": {
+          "after_fasta_download": 68.3,
+          "after_2bit": 61.85,
+          "after_forge": 61.85,
+          "after_rcmd_build": 61.63
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 76034998272,
+          "memory_used_bytes": 13486108672,
+          "process_rss_bytes": 3343724544,
+          "stages": {
+            "fasta_download": {
+              "disk_used_bytes": 76034998272,
+              "memory_used_bytes": 11780292608,
+              "process_rss_bytes": 40136704,
+              "samples": 260
+            },
+            "circular_sequence_detection": {
+              "disk_used_bytes": 73340776448,
+              "memory_used_bytes": 9772187648,
+              "process_rss_bytes": 43737088,
+              "samples": 125
+            },
+            "fasta_validation": {
+              "disk_used_bytes": 73335341056,
+              "memory_used_bytes": 9764515840,
+              "process_rss_bytes": 30715904,
+              "samples": 979
+            },
+            "fasta_statistics": {
+              "disk_used_bytes": 73335369728,
+              "memory_used_bytes": 9760247808,
+              "process_rss_bytes": 31973376,
+              "samples": 3
+            },
+            "fasta_to_2bit": {
+              "disk_used_bytes": 75879043072,
+              "memory_used_bytes": 13486108672,
+              "process_rss_bytes": 3343724544,
+              "samples": 66
+            },
+            "forge": {
+              "disk_used_bytes": 68954312704,
+              "memory_used_bytes": 5738065920,
+              "process_rss_bytes": 764321792,
+              "samples": 14
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 71248670720,
+              "memory_used_bytes": 7666323456,
+              "process_rss_bytes": 142049280,
+              "samples": 108
+            },
+            "archive_validation": {
+              "disk_used_bytes": 66176565248,
+              "memory_used_bytes": 2386497536,
+              "process_rss_bytes": 24870912,
+              "samples": 29
+            }
+          }
+        },
+        "circular_sequences": {
+          "method": "ncbi-sequence-report+nuccore-topology",
+          "value": "OY997404.1, OY997405.1"
+        },
+        "twobit_size_bytes": 2543657067,
+        "used_long_2bit": false,
+        "peak_mem_mb": {
+          "forge": 709
+        },
+        "tarball_size_bytes": 2309566437,
+        "package_sha256": "b8910d30c333c01a07122961f25958d77bbb21ce8e6c8b4fa11419f7388e6e34",
+        "archive_valid": true,
+        "seq_count": 1672
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963921465.1/",
+        "source_accession": "GCA_963921465.1",
+        "built_at": "2026-08-22T00:10:44Z",
+        "workflow_run_id": "32537920730",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32537920730",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "b8910d30c333c01a07122961f25958d77bbb21ce8e6c8b4fa11419f7388e6e34",
+        "description_sha256": "2972bb715539df0b68832273dfa8c9d121cf78cc8f9fa57c77c4faa551aff75a"
       }
     }
   ]

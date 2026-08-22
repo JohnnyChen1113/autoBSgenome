@@ -15769,3 +15769,7 @@ NeedsCompilation: no
 Package: BSgenome.Aa.NCBI.ViralProj244477
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Ttimopheevii.NCBI.WRCtimopheeviigenomewithorganelles
+Version: 1.0.0
+NeedsCompilation: no
