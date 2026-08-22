@@ -386,6 +386,29 @@ The tarball was 2,309,565,536 bytes, was not published to GitHub Releases,
 Zenodo, or the permanent index, and was deleted after its benchmark report was
 finalized.
 
+## Benchmark result after fast inspection
+
+The controlled no-publish rerun used the same accession and merged production
+workflow (`80a3333`, run `32561399985`). It completed successfully:
+
+| Stage | Before | After | Change |
+|---|---:|---:|---:|
+| NCBI download | 5 min 24 s | 4 min 48 s | -36 s |
+| FASTA validation and statistics | 13 min 15 s | 4 s | -13 min 11 s |
+| FASTA to 2bit | 1 min 00 s | 1 min 04 s | +4 s |
+| Forge | 14 s | 11 s | -3 s |
+| R CMD build | 1 min 48 s | 1 min 34 s | -14 s |
+| Archive validation | 29 s | 26 s | -3 s |
+| Workflow start to tarball | 21 min 41 s | 7 min 42 s | -13 min 59 s |
+| Complete GitHub job | 22 min 52 s | 8 min 44 s | -14 min 08 s |
+
+The core-build time fell by 64.5% and the complete job time by 61.8%. FASTA
+inspection reported 1,672 records in a 9,468,495,736-byte uncompressed FASTA
+and explicitly recorded that exhaustive validation was disabled. The
+2,309,565,046-byte tarball passed archive validation and was then deleted. All
+GitHub Release, Zenodo, and permanent-index publication steps were skipped; the
+only retained artifact was the 3,188-byte benchmark report.
+
 ## Decision backlog
 
 ### Adopted
