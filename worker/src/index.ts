@@ -930,7 +930,9 @@ function scheduledCleanupAfter(createdAt: string): string {
 
 function actionStepState(step?: GitHubWorkflowStep): BuildProgressStep["status"] {
   if (!step) return "pending";
-  if (step.status !== "completed") return "running";
+  if (step.status !== "completed") {
+    return step.status === "in_progress" || step.started_at ? "running" : "pending";
+  }
   if (step.conclusion === "success") return "complete";
   if (step.conclusion === "skipped") return "skipped";
   return "failed";
@@ -958,81 +960,6 @@ function findActionStep(
 ): GitHubWorkflowStep | undefined {
   const nameSet = new Set(names);
   return job?.steps?.find((step) => nameSet.has(step.name));
-}
-
-function summarizeStepGroup(
-  key: string,
-  label: string,
-  job: GitHubWorkflowJob | null,
-  names: string[],
-  completeWhenAnyLaterStepStarted = false,
-  laterNames: string[] = []
-): BuildProgressStep {
-  const matching = job?.steps?.filter((step) => names.includes(step.name)) ?? [];
-  const laterStarted = completeWhenAnyLaterStepStarted
-    ? job?.steps?.some(
-        (step) =>
-          laterNames.includes(step.name) &&
-          (step.started_at || step.status === "completed")
-      )
-    : false;
-
-  if (matching.some((step) => step.status === "completed" && step.conclusion && !["success", "skipped"].includes(step.conclusion))) {
-    const failed = matching.find((step) => step.status === "completed" && step.conclusion && !["success", "skipped"].includes(step.conclusion));
-    return {
-      key,
-      label,
-      status: "failed",
-      seconds: failed ? elapsedSeconds(failed.started_at, failed.completed_at) : undefined,
-      started_at: failed?.started_at ?? undefined,
-      completed_at: failed?.completed_at ?? undefined,
-    };
-  }
-
-  const started = matching.filter((step) => step.started_at || step.status === "completed");
-  const running = matching.find((step) => step.status !== "completed" && step.started_at);
-  const completed = matching.filter((step) => step.status === "completed" && step.conclusion === "success");
-  const final = matching[matching.length - 1];
-  const finalComplete =
-    Boolean(final && final.status === "completed" && final.conclusion === "success") ||
-    Boolean(laterStarted);
-
-  const seconds =
-    started.length > 0
-      ? Math.round(
-          started.reduce(
-            (total, step) => total + (elapsedSeconds(step.started_at, step.completed_at) ?? 0),
-            0
-          )
-        )
-      : undefined;
-
-  if (finalComplete) {
-    return {
-      key,
-      label,
-      status: "complete",
-      seconds,
-      started_at: started[0]?.started_at ?? undefined,
-      completed_at:
-        final?.completed_at ??
-        completed[completed.length - 1]?.completed_at ??
-        undefined,
-    };
-  }
-
-  if (running || started.length > 0) {
-    return {
-      key,
-      label,
-      status: "running",
-      seconds,
-      started_at: started[0]?.started_at ?? running?.started_at ?? undefined,
-      completed_at: undefined,
-    };
-  }
-
-  return { key, label, status: "pending" };
 }
 
 async function findWorkflowRunForJob(
@@ -1077,6 +1004,7 @@ async function getBuildProgress(
   const run = await findWorkflowRunForJob(jobId, env);
   if (!run) return null;
   const job = await getWorkflowJob(run.id, env);
+  const resolveStep = findActionStep(job, ["Resolve NCBI source"]);
   const streamStep = findActionStep(job, ["Stream NCBI FASTA to 2bit"]);
   const downloadStep = findActionStep(job, [
     "Download FASTA from NCBI",
@@ -1084,7 +1012,12 @@ async function getBuildProgress(
     "Download FASTA from URL",
     "Download uploaded FASTA",
   ]);
+  const inspectStep = findActionStep(job, ["Inspect FASTA and collect stats"]);
   const convertStep = findActionStep(job, ["Convert FASTA to 2bit"]);
+  const seedStep = findActionStep(job, ["Generate seed file"]);
+  const forgeStep = findActionStep(job, ["Forge BSgenome data package (R)"]);
+  const compressStep = findActionStep(job, ["R CMD build (assemble tarball)"]);
+  const validateStep = findActionStep(job, ["Validate package archive"]);
   const releaseStep = findActionStep(job, [
     "Create GitHub Release",
     "Publish oversized tarball to Zenodo",
@@ -1098,9 +1031,15 @@ async function getBuildProgress(
   );
   const queueComplete = Boolean(job?.started_at || run.run_started_at);
   const sequenceSteps: BuildProgressStep[] = streamStep?.conclusion !== "skipped" && streamStep
-    ? [actionStepSummary("twobit", "Streaming FASTA to 2bit", streamStep)]
+    ? [
+        ...(resolveStep?.conclusion !== "skipped" && resolveStep
+          ? [actionStepSummary("resolve", "Resolving NCBI source", resolveStep)]
+          : []),
+        actionStepSummary("twobit", "Streaming FASTA to 2bit", streamStep),
+      ]
     : [
         actionStepSummary("download", "Downloading FASTA", downloadStep),
+        actionStepSummary("inspect", "Inspecting FASTA metadata", inspectStep),
         actionStepSummary("twobit", "Converting to 2bit format", convertStep),
       ];
   const buildSteps: BuildProgressStep[] = [
@@ -1113,14 +1052,10 @@ async function getBuildProgress(
       completed_at: queueComplete ? job?.started_at ?? run.run_started_at ?? undefined : undefined,
     },
     ...sequenceSteps,
-    summarizeStepGroup(
-      "package",
-      "Building R package",
-      job,
-      ["Generate seed file", "Forge BSgenome data package (R)", "R CMD build (assemble tarball)"],
-      true,
-      ["Determine storage backend", "Create GitHub Release", "Publish oversized tarball to Zenodo"]
-    ),
+    actionStepSummary("seed", "Generating package metadata", seedStep),
+    actionStepSummary("forge", "Forging BSgenome package", forgeStep),
+    actionStepSummary("compress", "Compressing package archive", compressStep),
+    actionStepSummary("validate", "Validating package archive", validateStep),
     {
       ...actionStepSummary("release", "Uploading package release", releaseStep),
       status: releaseStatus,

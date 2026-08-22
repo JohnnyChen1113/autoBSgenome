@@ -64,6 +64,7 @@ import {
 } from "@/lib/package-name";
 import { siteConfig } from "@/config";
 import BatchMode from "@/features/build/BatchMode";
+import { fallbackBuildStepLabels } from "@/features/build/build-progress";
 import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
 
 type DataSource = "ncbi" | "ensembl";
@@ -1091,30 +1092,7 @@ export default function Home() {
       : needsUploadedFasta
       ? "Choose a FASTA File First"
       : "Build BSgenome Package";
-  const buildStepLabels =
-    form.fastaSource === "upload"
-      ? [
-          "Uploading FASTA",
-          "Queuing build on GitHub Actions",
-          "Converting to 2bit format",
-          "Building R package",
-          "Uploading package release",
-        ]
-      : form.fastaSource === "url"
-      ? [
-          "Queuing build on GitHub Actions",
-          "Downloading FASTA URL",
-          "Converting to 2bit format",
-          "Building R package",
-          "Uploading package release",
-        ]
-      : [
-          "Queuing build on GitHub Actions",
-          "Downloading FASTA",
-          "Converting to 2bit format",
-          "Building R package",
-          "Uploading package release",
-        ];
+  const buildStepLabels = fallbackBuildStepLabels(form.fastaSource);
   const showFallbackBuildSteps = !resumingJob;
   const normalizedProgressSteps =
     buildProgressSteps.length > 0

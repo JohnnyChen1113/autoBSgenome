@@ -67,6 +67,9 @@ class StreamFastaToTwoBitCliTests(unittest.TestCase):
             self.assertEqual(report["compressed_size_bytes"], len(compressed))
             self.assertEqual(report["compressed_md5"], hashlib.md5(compressed).hexdigest())
             self.assertEqual(report["twobit_size_bytes"], len(fasta))
+            self.assertGreaterEqual(report["timings_sec"]["pipeline_wall"], 0)
+            self.assertGreaterEqual(report["timings_sec"]["python_cpu"], 0)
+            self.assertGreaterEqual(report["timings_sec"]["converter_cpu"], 0)
             self.assertIn("seq_ids=chr1,chr2\n", github_output.read_text())
 
     def test_md5_mismatch_fails_and_removes_partial_2bit(self):

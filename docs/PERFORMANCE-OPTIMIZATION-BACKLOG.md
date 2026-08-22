@@ -85,45 +85,46 @@ The large streaming run verified NCBI compressed MD5
 2,543,657,067-byte 2bit file. Archive validation passed. All publication steps
 were skipped and the ephemeral benchmark tarball was removed.
 
-## Deferred: parallel package compression
+## Not adopted: parallel package compression
 
-Add `pigz` to a future builder image and compare current `R CMD build`, parallel
-gzip at its default level, and a faster compression level. Measure build time,
-tarball size, installation, package loading, and sequence retrieval. Packages
-near the GitHub 1.9-GiB threshold may need a stronger compression policy than
-benchmark or Zenodo-bound packages.
+Package size is a product constraint, not only a storage detail. The project
+will not trade compression ratio for a shorter `R CMD build`, because keeping
+tarballs below the GitHub 2-GiB asset limit whenever possible is more valuable
+than saving compression time. The current package-building compression path is
+therefore retained.
 
 Do not replace `R CMD build` with direct tar assembly until archive contents and
 install/load behavior have been shown equivalent on both small and very large
 packages.
 
-## Deferred: checksum and archive validation in one pass
+## Implemented: checksum and archive validation in one pass
 
-The archive validation stage currently decompresses the tarball to list its
-members and then reads it again for SHA-256. A future implementation can tee a
-single compressed stream into SHA-256 and parallel decompression/member
-validation. Keep the validation gate; optimize its I/O only.
+The archive is now read once. `tee` sends the same compressed byte stream to
+SHA-256 and `tar -tzf -`; validation still requires `DESCRIPTION` and
+`inst/extdata/single_sequences.2bit`. A truncated stream or either consumer
+failing rejects the archive.
 
-## Deferred: short-lived 2bit cache
+## Not adopted: short-lived 2bit cache
 
-A cache keyed by provider, accession version, upstream checksum, `faToTwoBit`
-mode, and builder version could skip acquisition and conversion during failed
-retries or deliberate benchmark reruns. It should be limited to internal or
-curated workflows and governed by an R2 lifecycle because multi-gigabyte 2bit
-objects make an unrestricted cache expensive.
+A multi-gigabyte 2bit cache would add storage lifecycle and cache-validity
+complexity. The project will not introduce this cache. Deliberate rebuilds and
+benchmarks continue to execute the real acquisition and conversion path.
 
-This cache must not become hidden build deduplication: a requested build still
-runs the package-generation and archive stages.
+## Implemented: finer timing instrumentation and visible progress
 
-## Deferred: finer timing instrumentation
+The workflow now records NCBI resolver and streaming wall times, Python
+decompression/inspection CPU, `faToTwoBit` child-process CPU, seed generation,
+forge, package compression, archive validation, and storage selection. Existing
+coarser timing keys remain for report compatibility.
 
-Record network transfer, ZIP validation, extraction/decompression, package
-copying, and gzip compression separately. Install GNU `time` in the builder so
-the existing `R CMD build` resource capture actually produces its report.
+The status API and Build page expose observable workflow stages separately:
+source resolution/download, FASTA inspection or streaming conversion, metadata
+generation, package forge, archive compression, archive validation, and upload.
+Operations intentionally executed in one streaming pipeline remain one live
+step rather than being serialized for display.
 
 ## Not currently justified: warm self-hosted runners
 
 A warm runner could avoid roughly 30 seconds of container initialization, but
 it adds security isolation, maintenance, scaling, and reproducibility costs.
-Reconsider only after streaming and compression work is measured at campaign
-scale.
+Reconsider only if runner initialization becomes a dominant measured cost.

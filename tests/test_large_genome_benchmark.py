@@ -304,6 +304,36 @@ class ManifestTests(unittest.TestCase):
 
 
 class WorkflowRuntimeContractTests(unittest.TestCase):
+    def test_workflow_records_fine_grained_stage_timings(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+
+        self.assertIn("- name: Resolve NCBI source", workflow)
+        for metric in (
+            "timings_sec.ncbi_resolve",
+            "timings_sec.ncbi_stream_to_2bit",
+            "timings_cpu_sec.ncbi_stream_python",
+            "timings_cpu_sec.ncbi_stream_converter",
+            "timings_sec.seed_generation",
+            "timings_sec.package_compression",
+            "timings_sec.storage_selection",
+        ):
+            self.assertIn(metric, workflow)
+
+    def test_archive_validation_hashes_and_lists_one_tee_stream(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+
+        self.assertIn(
+            'scripts/validate_package_archive.sh "$TARBALL" "$PACKAGE"',
+            workflow,
+        )
+        self.assertNotIn('tar -tzf "$TARBALL"', workflow)
+        self.assertNotIn('sha256sum "$TARBALL"', workflow)
+        self.assertNotIn('sha256sum "${TARBALL}"', workflow)
+
     def test_ncbi_build_streams_official_gzip_to_2bit_with_fallback(self):
         workflow = (
             ROOT / ".github" / "workflows" / "build-bsgenome.yml"
