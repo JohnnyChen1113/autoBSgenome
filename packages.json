@@ -123250,6 +123250,176 @@
       ]
     },
     {
+      "organism": "Lissotriton vulgaris",
+      "common_name": "common newt",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Caudata",
+        "family": "Salamandridae",
+        "genus": "Lissotriton"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Lvulgaris.NCBI.aLisVul12",
+          "version": "1.0.0",
+          "organism": "Lissotriton vulgaris",
+          "assembly": "aLisVul1.2",
+          "provider": "NCBI",
+          "accession": "GCA_964263255.2",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964263255.2/",
+          "file_name": "BSgenome.Lvulgaris.NCBI.aLisVul12_1.0.0.tar.gz",
+          "size": 5901451181,
+          "seq_ids": [
+            "OZ183349.1",
+            "OZ183350.1",
+            "OZ183351.1",
+            "CAXVZQ020000001.1",
+            "OZ183352.1"
+          ],
+          "seq_count": 15249,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Amphibia",
+            "order": "Caudata",
+            "family": "Salamandridae",
+            "genus": "Lissotriton"
+          },
+          "common_name": "common newt",
+          "indexed_at": "2026-08-23T16:12:01Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22070186/files/BSgenome.Lvulgaris.NCBI.aLisVul12_1.0.0.tar.gz",
+          "release_date": "2026-04-28",
+          "published": "2026-04-28",
+          "doi": "10.5281/zenodo.22070186",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787499643,
+              "archive_completed": 1787500240
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.77,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 6,
+              "accession": "GCA_964263255.2",
+              "organism": "Lissotriton vulgaris",
+              "assembly": "aLisVul1.2",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Lvulgaris.NCBI.aLisVul12",
+              "metadata_snapshot_date": "2026-08-23",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Chromosome",
+                "total_sequence_length": 24225523036,
+                "total_ungapped_length": 24224717211,
+                "number_of_scaffolds": 15248,
+                "scaffold_n50": 1925992481
+              }
+            },
+            "timings_sec": {
+              "ncbi_resolve": 0,
+              "ncbi_acquisition_to_2bit": 314,
+              "ncbi_stream_to_2bit": 314,
+              "seed_generation": 0,
+              "forge": 25,
+              "rcmd_build": 254,
+              "package_compression": 254,
+              "archive_validation": 58,
+              "storage_selection": 0,
+              "package_publication": 1209
+            },
+            "ncbi_acquisition_mode": "ncbi-ftp-stream",
+            "ncbi_stream": {
+              "attempt_count": 1,
+              "compressed_size_bytes": 7252946527,
+              "compressed_md5": "31761af4f8a1eefcb4808fe71941c345",
+              "pipeline_wall_seconds": 312.828
+            },
+            "fasta_size_bytes": 24530047290,
+            "seq_count": 15249,
+            "fasta_inspection": {
+              "sampled_bases": 0,
+              "exhaustive_validation": false
+            },
+            "twobit_size_bytes": 6837210580,
+            "used_long_2bit": true,
+            "timings_cpu_sec": {
+              "ncbi_stream_python": 133.018,
+              "ncbi_stream_converter": 165.599
+            },
+            "disk_used_checkpoint_gb": {
+              "after_2bit": 65.84,
+              "after_forge": 65.84,
+              "after_rcmd_build": 64.97
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 83431464960,
+              "memory_used_bytes": 14472278016,
+              "process_rss_bytes": 9077948416,
+              "stages": {
+                "ncbi_stream_to_2bit": {
+                  "disk_used_bytes": 70697402368,
+                  "memory_used_bytes": 13750075392,
+                  "process_rss_bytes": 9077948416,
+                  "samples": 315
+                },
+                "forge": {
+                  "disk_used_bytes": 77534699520,
+                  "memory_used_bytes": 14195736576,
+                  "process_rss_bytes": 764190720,
+                  "samples": 27
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 83431464960,
+                  "memory_used_bytes": 14472278016,
+                  "process_rss_bytes": 100257792,
+                  "samples": 255
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 69761773568,
+                  "memory_used_bytes": 6063325184,
+                  "process_rss_bytes": 32968704,
+                  "samples": 59
+                }
+              }
+            },
+            "peak_mem_mb": {
+              "forge": 708
+            },
+            "tarball_size_bytes": 5901451181,
+            "package_sha256": "80e4d623d117618beb8fab414cf6d39920cab5c5161a205aeb0a500f5a23a1e4",
+            "archive_valid": true
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964263255.2/",
+            "source_accession": "GCA_964263255.2",
+            "built_at": "2026-08-23T15:51:39Z",
+            "workflow_run_id": "32649279461",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32649279461",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "80e4d623d117618beb8fab414cf6d39920cab5c5161a205aeb0a500f5a23a1e4",
+            "description_sha256": "8653fa29905ddfcd90f917aac99b3b706f273b591f279cfeddf3c05ec17c01e8"
+          }
+        }
+      ]
+    },
+    {
       "organism": "Listeria monocytogenes EGD-e",
       "common_name": "",
       "group": "bacteria",
@@ -455747,6 +455917,160 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
         "package_sha256": "3ecbc9b53d6177393067357d979218846d19930887b6db5959b0aa3b192e1919",
         "description_sha256": "301b7cabd9243018c415a2e7edb58e608605c1e1cc0acc737f9e36695b35d3aa"
+      }
+    },
+    {
+      "package": "BSgenome.Lvulgaris.NCBI.aLisVul12",
+      "version": "1.0.0",
+      "organism": "Lissotriton vulgaris",
+      "assembly": "aLisVul1.2",
+      "provider": "NCBI",
+      "accession": "GCA_964263255.2",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964263255.2/",
+      "file_name": "BSgenome.Lvulgaris.NCBI.aLisVul12_1.0.0.tar.gz",
+      "size": 5901451181,
+      "seq_ids": [
+        "OZ183349.1",
+        "OZ183350.1",
+        "OZ183351.1",
+        "CAXVZQ020000001.1",
+        "OZ183352.1"
+      ],
+      "seq_count": 15249,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Caudata",
+        "family": "Salamandridae",
+        "genus": "Lissotriton"
+      },
+      "common_name": "common newt",
+      "indexed_at": "2026-08-23T16:12:01Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22070186/files/BSgenome.Lvulgaris.NCBI.aLisVul12_1.0.0.tar.gz",
+      "release_date": "2026-04-28",
+      "published": "2026-04-28",
+      "doi": "10.5281/zenodo.22070186",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787499643,
+          "archive_completed": 1787500240
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.77,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 6,
+          "accession": "GCA_964263255.2",
+          "organism": "Lissotriton vulgaris",
+          "assembly": "aLisVul1.2",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Lvulgaris.NCBI.aLisVul12",
+          "metadata_snapshot_date": "2026-08-23",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Chromosome",
+            "total_sequence_length": 24225523036,
+            "total_ungapped_length": 24224717211,
+            "number_of_scaffolds": 15248,
+            "scaffold_n50": 1925992481
+          }
+        },
+        "timings_sec": {
+          "ncbi_resolve": 0,
+          "ncbi_acquisition_to_2bit": 314,
+          "ncbi_stream_to_2bit": 314,
+          "seed_generation": 0,
+          "forge": 25,
+          "rcmd_build": 254,
+          "package_compression": 254,
+          "archive_validation": 58,
+          "storage_selection": 0,
+          "package_publication": 1209
+        },
+        "ncbi_acquisition_mode": "ncbi-ftp-stream",
+        "ncbi_stream": {
+          "attempt_count": 1,
+          "compressed_size_bytes": 7252946527,
+          "compressed_md5": "31761af4f8a1eefcb4808fe71941c345",
+          "pipeline_wall_seconds": 312.828
+        },
+        "fasta_size_bytes": 24530047290,
+        "seq_count": 15249,
+        "fasta_inspection": {
+          "sampled_bases": 0,
+          "exhaustive_validation": false
+        },
+        "twobit_size_bytes": 6837210580,
+        "used_long_2bit": true,
+        "timings_cpu_sec": {
+          "ncbi_stream_python": 133.018,
+          "ncbi_stream_converter": 165.599
+        },
+        "disk_used_checkpoint_gb": {
+          "after_2bit": 65.84,
+          "after_forge": 65.84,
+          "after_rcmd_build": 64.97
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 83431464960,
+          "memory_used_bytes": 14472278016,
+          "process_rss_bytes": 9077948416,
+          "stages": {
+            "ncbi_stream_to_2bit": {
+              "disk_used_bytes": 70697402368,
+              "memory_used_bytes": 13750075392,
+              "process_rss_bytes": 9077948416,
+              "samples": 315
+            },
+            "forge": {
+              "disk_used_bytes": 77534699520,
+              "memory_used_bytes": 14195736576,
+              "process_rss_bytes": 764190720,
+              "samples": 27
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 83431464960,
+              "memory_used_bytes": 14472278016,
+              "process_rss_bytes": 100257792,
+              "samples": 255
+            },
+            "archive_validation": {
+              "disk_used_bytes": 69761773568,
+              "memory_used_bytes": 6063325184,
+              "process_rss_bytes": 32968704,
+              "samples": 59
+            }
+          }
+        },
+        "peak_mem_mb": {
+          "forge": 708
+        },
+        "tarball_size_bytes": 5901451181,
+        "package_sha256": "80e4d623d117618beb8fab414cf6d39920cab5c5161a205aeb0a500f5a23a1e4",
+        "archive_valid": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_964263255.2/",
+        "source_accession": "GCA_964263255.2",
+        "built_at": "2026-08-23T15:51:39Z",
+        "workflow_run_id": "32649279461",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32649279461",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "80e4d623d117618beb8fab414cf6d39920cab5c5161a205aeb0a500f5a23a1e4",
+        "description_sha256": "8653fa29905ddfcd90f917aac99b3b706f273b591f279cfeddf3c05ec17c01e8"
       }
     }
   ]
