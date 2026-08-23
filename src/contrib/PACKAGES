@@ -15781,3 +15781,7 @@ NeedsCompilation: no
 Package: BSgenome.Pwaltl.NCBI.Pwalv10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pradiata.NCBI.ASM5066295v1
+Version: 1.0.0
+NeedsCompilation: no

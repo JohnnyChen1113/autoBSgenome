@@ -176308,6 +176308,176 @@
       ]
     },
     {
+      "organism": "Pinus radiata",
+      "common_name": "Monterey pine",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Pinopsida",
+        "order": "Pinales",
+        "family": "Pinaceae",
+        "genus": "Pinus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pradiata.NCBI.ASM5066295v1",
+          "version": "1.0.0",
+          "organism": "Pinus radiata",
+          "assembly": "ASM5066295v1",
+          "provider": "NCBI",
+          "accession": "GCA_050662955.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_050662955.1/",
+          "file_name": "BSgenome.Pradiata.NCBI.ASM5066295v1_1.0.0.tar.gz",
+          "size": 5941690242,
+          "seq_ids": [
+            "CM116228.1",
+            "CM116229.1",
+            "CM116230.1",
+            "CM116231.1",
+            "CM116232.1"
+          ],
+          "seq_count": 305167,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Pinopsida",
+            "order": "Pinales",
+            "family": "Pinaceae",
+            "genus": "Pinus"
+          },
+          "common_name": "Monterey pine",
+          "indexed_at": "2026-08-23T08:08:41Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22066355/files/BSgenome.Pradiata.NCBI.ASM5066295v1_1.0.0.tar.gz",
+          "release_date": "2025-06-02",
+          "published": "2025-06-02",
+          "doi": "10.5281/zenodo.22066355",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787471329,
+              "archive_completed": 1787471925
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.76,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 3,
+              "accession": "GCA_050662955.1",
+              "organism": "Pinus radiata",
+              "assembly": "ASM5066295v1",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Pradiata.NCBI.ASM5066295v1",
+              "metadata_snapshot_date": "2026-08-23",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Chromosome",
+                "total_sequence_length": 22408479511,
+                "total_ungapped_length": 22386133010,
+                "number_of_scaffolds": 305167,
+                "scaffold_n50": 221616
+              }
+            },
+            "timings_sec": {
+              "ncbi_resolve": 1,
+              "ncbi_acquisition_to_2bit": 292,
+              "ncbi_stream_to_2bit": 291,
+              "seed_generation": 0,
+              "forge": 23,
+              "rcmd_build": 278,
+              "package_compression": 278,
+              "archive_validation": 62,
+              "storage_selection": 0,
+              "package_publication": 520
+            },
+            "ncbi_acquisition_mode": "ncbi-ftp-stream",
+            "ncbi_stream": {
+              "attempt_count": 1,
+              "compressed_size_bytes": 7112533828,
+              "compressed_md5": "11eea88de30d29b1ab46d1d77132e791",
+              "pipeline_wall_seconds": 290.875
+            },
+            "fasta_size_bytes": 22718200504,
+            "seq_count": 305167,
+            "fasta_inspection": {
+              "sampled_bases": 0,
+              "exhaustive_validation": false
+            },
+            "twobit_size_bytes": 6624315003,
+            "used_long_2bit": true,
+            "timings_cpu_sec": {
+              "ncbi_stream_python": 126.038,
+              "ncbi_stream_converter": 153.775
+            },
+            "disk_used_checkpoint_gb": {
+              "after_2bit": 65.65,
+              "after_forge": 65.65,
+              "after_rcmd_build": 65.01
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 83056078848,
+              "memory_used_bytes": 14299889664,
+              "process_rss_bytes": 6943813632,
+              "stages": {
+                "ncbi_stream_to_2bit": {
+                  "disk_used_bytes": 70489882624,
+                  "memory_used_bytes": 12449099776,
+                  "process_rss_bytes": 6943813632,
+                  "samples": 293
+                },
+                "forge": {
+                  "disk_used_bytes": 77114290176,
+                  "memory_used_bytes": 12812255232,
+                  "process_rss_bytes": 764039168,
+                  "samples": 24
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 83056078848,
+                  "memory_used_bytes": 14299889664,
+                  "process_rss_bytes": 100163584,
+                  "samples": 279
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 69807390720,
+                  "memory_used_bytes": 6113304576,
+                  "process_rss_bytes": 32333824,
+                  "samples": 63
+                }
+              }
+            },
+            "peak_mem_mb": {
+              "forge": 708
+            },
+            "tarball_size_bytes": 5941690242,
+            "package_sha256": "f57d64e3900f5f751b761e0a6977bbe8670f9b1027c92205c2c3e177731653cd",
+            "archive_valid": true
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_050662955.1/",
+            "source_accession": "GCA_050662955.1",
+            "built_at": "2026-08-23T07:59:48Z",
+            "workflow_run_id": "32626545142",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32626545142",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "f57d64e3900f5f751b761e0a6977bbe8670f9b1027c92205c2c3e177731653cd",
+            "description_sha256": "5838f5dc7354bea92e44297bbe1591dd2c902625a85d9d4b823170b79a16da42"
+          }
+        }
+      ]
+    },
+    {
       "organism": "Pinus taeda",
       "common_name": "loblolly pine",
       "group": "plant",
@@ -454775,6 +454945,160 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
         "package_sha256": "06a293b503526ef217022d4444a236ed61640f63de2a325f9a54d8431c1ed850",
         "description_sha256": "48f659d6c3ce6f5b7483fe8ba42c6eac22531f272a9c7c569b4799cb0f3557a6"
+      }
+    },
+    {
+      "package": "BSgenome.Pradiata.NCBI.ASM5066295v1",
+      "version": "1.0.0",
+      "organism": "Pinus radiata",
+      "assembly": "ASM5066295v1",
+      "provider": "NCBI",
+      "accession": "GCA_050662955.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_050662955.1/",
+      "file_name": "BSgenome.Pradiata.NCBI.ASM5066295v1_1.0.0.tar.gz",
+      "size": 5941690242,
+      "seq_ids": [
+        "CM116228.1",
+        "CM116229.1",
+        "CM116230.1",
+        "CM116231.1",
+        "CM116232.1"
+      ],
+      "seq_count": 305167,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Pinopsida",
+        "order": "Pinales",
+        "family": "Pinaceae",
+        "genus": "Pinus"
+      },
+      "common_name": "Monterey pine",
+      "indexed_at": "2026-08-23T08:08:41Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22066355/files/BSgenome.Pradiata.NCBI.ASM5066295v1_1.0.0.tar.gz",
+      "release_date": "2025-06-02",
+      "published": "2025-06-02",
+      "doi": "10.5281/zenodo.22066355",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787471329,
+          "archive_completed": 1787471925
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.76,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 3,
+          "accession": "GCA_050662955.1",
+          "organism": "Pinus radiata",
+          "assembly": "ASM5066295v1",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Pradiata.NCBI.ASM5066295v1",
+          "metadata_snapshot_date": "2026-08-23",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Chromosome",
+            "total_sequence_length": 22408479511,
+            "total_ungapped_length": 22386133010,
+            "number_of_scaffolds": 305167,
+            "scaffold_n50": 221616
+          }
+        },
+        "timings_sec": {
+          "ncbi_resolve": 1,
+          "ncbi_acquisition_to_2bit": 292,
+          "ncbi_stream_to_2bit": 291,
+          "seed_generation": 0,
+          "forge": 23,
+          "rcmd_build": 278,
+          "package_compression": 278,
+          "archive_validation": 62,
+          "storage_selection": 0,
+          "package_publication": 520
+        },
+        "ncbi_acquisition_mode": "ncbi-ftp-stream",
+        "ncbi_stream": {
+          "attempt_count": 1,
+          "compressed_size_bytes": 7112533828,
+          "compressed_md5": "11eea88de30d29b1ab46d1d77132e791",
+          "pipeline_wall_seconds": 290.875
+        },
+        "fasta_size_bytes": 22718200504,
+        "seq_count": 305167,
+        "fasta_inspection": {
+          "sampled_bases": 0,
+          "exhaustive_validation": false
+        },
+        "twobit_size_bytes": 6624315003,
+        "used_long_2bit": true,
+        "timings_cpu_sec": {
+          "ncbi_stream_python": 126.038,
+          "ncbi_stream_converter": 153.775
+        },
+        "disk_used_checkpoint_gb": {
+          "after_2bit": 65.65,
+          "after_forge": 65.65,
+          "after_rcmd_build": 65.01
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 83056078848,
+          "memory_used_bytes": 14299889664,
+          "process_rss_bytes": 6943813632,
+          "stages": {
+            "ncbi_stream_to_2bit": {
+              "disk_used_bytes": 70489882624,
+              "memory_used_bytes": 12449099776,
+              "process_rss_bytes": 6943813632,
+              "samples": 293
+            },
+            "forge": {
+              "disk_used_bytes": 77114290176,
+              "memory_used_bytes": 12812255232,
+              "process_rss_bytes": 764039168,
+              "samples": 24
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 83056078848,
+              "memory_used_bytes": 14299889664,
+              "process_rss_bytes": 100163584,
+              "samples": 279
+            },
+            "archive_validation": {
+              "disk_used_bytes": 69807390720,
+              "memory_used_bytes": 6113304576,
+              "process_rss_bytes": 32333824,
+              "samples": 63
+            }
+          }
+        },
+        "peak_mem_mb": {
+          "forge": 708
+        },
+        "tarball_size_bytes": 5941690242,
+        "package_sha256": "f57d64e3900f5f751b761e0a6977bbe8670f9b1027c92205c2c3e177731653cd",
+        "archive_valid": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_050662955.1/",
+        "source_accession": "GCA_050662955.1",
+        "built_at": "2026-08-23T07:59:48Z",
+        "workflow_run_id": "32626545142",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32626545142",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "f57d64e3900f5f751b761e0a6977bbe8670f9b1027c92205c2c3e177731653cd",
+        "description_sha256": "5838f5dc7354bea92e44297bbe1591dd2c902625a85d9d4b823170b79a16da42"
       }
     }
   ]
