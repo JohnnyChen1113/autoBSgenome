@@ -1,6 +1,6 @@
 # AutoBSgenome build pipeline and decision log
 
-Last updated: 2026-08-22
+Last updated: 2026-08-23
 
 This document describes the production build path from a browser request to an
 installable BSgenome source package. It separates required package-building
@@ -451,6 +451,26 @@ and explicitly recorded that exhaustive validation was disabled. The
 2,309,565,046-byte tarball passed archive validation and was then deleted. All
 GitHub Release, Zenodo, and permanent-index publication steps were skipped; the
 only retained artifact was the 3,188-byte benchmark report.
+
+## Benchmark result with fine-grained metrics
+
+Run
+[`32619294902`](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32619294902)
+repeated the same 9.35-Gbp `GCA_963921465.1` no-publish build on workflow
+`2f4bba05`. It succeeded in 4 min 57 s, did not enter the NCBI Datasets
+fallback, did not publish a package, and removed its tarball after validation.
+
+The NCBI stream took 121.768 s wall time: Python decompression/inspection used
+55.044 CPU seconds and `faToTwoBit` used 63.931 CPU seconds. Package forge took
+12 s, `R CMD build` took 106 s, archive validation took 24 s, and workflow start
+to validated tarball took 244 s. The complete report records the original
+compressed MD5, all byte counts, stage resource peaks, and successful cleanup.
+
+Compared with the earlier 4 min 23 s streaming run, this run was 34 s slower;
+27 s of the difference was package compression and 13 s was acquisition plus
+conversion, partly offset by a 1-s faster forge. Identical source MD5 and byte
+counts, a 14-byte tarball-size difference, one transfer attempt, and no fallback
+support treating the difference as normal hosted-runner/transfer variation.
 
 ## Decision backlog
 

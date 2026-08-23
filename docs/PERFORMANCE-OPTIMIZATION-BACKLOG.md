@@ -1,6 +1,6 @@
 # Build performance optimization backlog
 
-Last updated: 2026-08-22
+Last updated: 2026-08-23
 
 This document records performance ideas that are intentionally separate from
 the correctness and product-policy backlog in `BUILD-PIPELINE-DECISIONS.md`.
@@ -107,6 +107,19 @@ specific UCSC 32-bit index-overflow failure requests one clean retry with
 [UCSC implementation](https://github.com/ucscGenomeBrowser/kent/blob/master/src/utils/faToTwoBit/faToTwoBit.c#L21-L22)
 documents that format as incompatible with older readers.
 
+Production validation covered every new path with no-publish builds:
+
+| Source | Run | Input mode | Complete job | Result |
+|---|---:|---|---:|---|
+| Ensembl | [`32619146651`](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32619146651) | gzip | 46 s | success |
+| URL | [`32619145392`](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32619145392) | gzip | 45 s | success |
+| Upload | [`32619944918`](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32619944918) | plain | 41 s | success |
+
+Each run used one streaming attempt, completed package forge and archive
+validation, skipped publication, and removed its benchmark tarball. The upload
+test additionally verified prefix-sampled validation and confirmed that the
+consumed R2 object returned HTTP 404 after workflow cleanup.
+
 ## Not adopted: parallel package compression
 
 Package size is a product constraint, not only a storage detail. The project
@@ -173,6 +186,38 @@ source resolution/download, FASTA inspection or streaming conversion, metadata
 generation, package forge, archive compression, archive validation, and upload.
 Operations intentionally executed in one streaming pipeline remain one live
 step rather than being serialized for display.
+
+## Measured: 9.35-Gbp rerun with fine-grained metrics
+
+The controlled no-publish rerun of `GCA_963921465.1` used merged production
+workflow `2f4bba05` and run
+[`32619294902`](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32619294902).
+It completed successfully in one NCBI FTP attempt, matched compressed MD5
+`e411fb3288a0b67cf328be438fe884c7`, passed archive validation, skipped every
+publication path, and removed the ephemeral tarball.
+
+| Metric | Earlier streaming run `32586564995` | Fine-metrics run `32619294902` | Change |
+|---|---:|---:|---:|
+| NCBI acquisition + inspection + 2bit | 110 s | 123 s | +13 s |
+| Forge | 13 s | 12 s | -1 s |
+| R CMD build | 79 s | 106 s | +27 s |
+| Archive validation | 21 s | 24 s | +3 s |
+| Workflow start to tarball | 207 s | 244 s | +37 s |
+| Complete GitHub job | 263 s | 297 s | +34 s |
+
+The stream itself took 121.768 seconds. Python decompression and inspection
+used 55.044 CPU seconds, while `faToTwoBit` used 63.931 CPU seconds. Their
+combined 118.975 CPU seconds equal 97.7% of stream wall time, showing that the
+pipeline spends substantial time in the accepted Python-plus-converter path
+rather than merely waiting on the network. This is diagnostic evidence only:
+native or parallel decompression remains rejected.
+
+The run read 2,801,159,935 compressed bytes and 9,468,495,736 FASTA bytes,
+produced a 2,543,657,067-byte 2bit file, and created a 2,309,565,522-byte
+tarball. These values and the MD5 match the earlier streaming run; the tarball
+differed by only 14 bytes. The 34-second job difference is concentrated in
+compression and stream wall time and should be treated as hosted-runner and
+transfer variability, not as evidence of an added materialization pass.
 
 ## Not currently justified: warm self-hosted runners
 
