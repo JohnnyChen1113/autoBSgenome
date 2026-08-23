@@ -23,12 +23,12 @@ jobs:
     timeout-minutes: 120
     steps:
       - name: Checkout gh-pages (for queue state)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: gh-pages
 
       - name: Checkout main (for build tools)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
           path: main-repo

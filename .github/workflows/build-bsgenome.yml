@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Initialize build metrics
         run: |
@@ -945,7 +945,7 @@ jobs:
 
       - name: Upload benchmark report
         if: always() && steps.params.outputs.benchmark_mode == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: benchmark-report-${{ steps.params.outputs.job_id }}
           path: benchmark-report/

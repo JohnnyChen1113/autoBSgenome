@@ -26,10 +26,10 @@ jobs:
       build_run_id: ${{ steps.build_run.outputs.run_id }}
     steps:
       - name: Checkout benchmark code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Checkout live package index
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: gh-pages
           path: catalog-site

@@ -200,7 +200,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Checkout benchmark code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Download per-build reports
         env:
@@ -253,7 +253,7 @@ jobs:
           cat campaign-summary/results.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload campaign results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: large-genome-benchmark-results-${{ github.run_id }}
           path: |

@@ -343,6 +343,17 @@ class ManifestTests(unittest.TestCase):
 
 
 class WorkflowRuntimeContractTests(unittest.TestCase):
+    def test_github_actions_use_node24_releases(self):
+        workflows = "\n".join(
+            path.read_text()
+            for path in sorted((ROOT / ".github" / "workflows").glob("*.yml"))
+        )
+
+        self.assertNotIn("actions/checkout@v4", workflows)
+        self.assertNotIn("actions/upload-artifact@v4", workflows)
+        self.assertIn("actions/checkout@v7", workflows)
+        self.assertIn("actions/upload-artifact@v7", workflows)
+
     def test_workflow_records_fine_grained_stage_timings(self):
         workflow = (
             ROOT / ".github" / "workflows" / "build-bsgenome.yml"
