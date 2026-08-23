@@ -164,33 +164,42 @@ Potential improvements:
 ### Ensembl
 
 The workflow resolves the official FASTA URL from species/group information,
-downloads it with retry handling, and decompresses it to `genome.fa`.
+then streams the HTTP response through gzip/plain-format detection, FASTA
+inspection, and `faToTwoBit stdin`. It does not materialize the compressed
+download or an uncompressed `genome.fa`.
 
 Potential improvements:
 
-- use parallel decompression when it materially helps;
 - cache resolver results;
 - record and verify upstream checksum metadata.
 
+Rejected performance proposal:
+
+- do not replace the Python stream reader with native or parallel
+  decompression.
+
 ### User URL
 
-The workflow downloads an HTTP/HTTPS resource and normalizes compressed or
-plain input to `genome.fa`.
+The workflow streams an HTTP/HTTPS resource directly through gzip/plain-format
+detection, prefix-sampled validation, metadata inspection, and
+`faToTwoBit stdin`.
 
 Decision adopted in this revision:
 
 - stop using `gzip -t` as format detection because it fully scans the archive
   before decompression and therefore reads compressed input twice;
-- detect gzip from its magic bytes and decompress once.
+- detect gzip from stream magic bytes and never materialize `genome.fa`.
 
 ### Uploaded file
 
-The workflow downloads the signed R2 object and normalizes it to `genome.fa`.
-The source R2 object is then deleted best-effort.
+The workflow streams the signed R2 object through gzip/plain-format detection,
+prefix-sampled validation, metadata inspection, and `faToTwoBit stdin`. The
+source R2 object is then deleted best-effort after successful consumption.
 
 Decision adopted in this revision:
 
 - use gzip magic bytes instead of trusting the filename suffix.
+- never materialize an uncompressed `genome.fa`.
 
 ## 6. FASTA inspection
 
@@ -224,10 +233,11 @@ Open decisions:
 
 ## 7. FASTA to 2bit conversion
 
-`faToTwoBit` converts sequence input to `genome.2bit`; assemblies above the
-existing size threshold use the tool's `-long` format. NCBI input arrives on
-stdin from the streaming pipeline. Other sources currently use `genome.fa`,
-which is deleted immediately after a successful conversion.
+`faToTwoBit` converts sequence input to `genome.2bit`. Every primary source
+arrives on stdin from a streaming pipeline. NCBI uses authoritative assembly
+size metadata to select `-long`. For a custom stream whose uncompressed size is
+unknown, the ordinary version-0 format is attempted first; only UCSC's specific
+index-overflow result triggers one complete retry with `-long`.
 
 Purpose:
 
@@ -271,9 +281,12 @@ Open improvements:
 - call `BSgenomeForge::forgeBSgenomeDataPkg()` directly; the current namespace
   emits a deprecation warning;
 - narrow the catch-all fallback so real metadata/forge errors are not masked as
-  large-file copy failures;
-- investigate move/hardlink behavior to reduce the transient second copy of a
-  multi-gigabyte 2bit file.
+  large-file copy failures.
+
+Rejected performance proposal:
+
+- do not replace BSgenomeForge's copy semantics with filesystem-dependent
+  hardlinks or reflinks; measured forge time is too small to justify it.
 
 ## 10. Build the source tarball
 
@@ -295,6 +308,11 @@ Decision adopted:
 - do not trade compression ratio for speed. Package size remains important,
   especially near GitHub's 2-GiB release-asset limit.
 
+Rejected performance proposal:
+
+- do not benchmark or substitute alternate gzip implementations, compression
+  levels, or packaging profiles; retain the current `R CMD build` compressor.
+
 ## 11. Archive validation
 
 The workflow reads the gzip/tar archive once. `tee` sends the compressed stream
@@ -309,6 +327,12 @@ Purpose:
 This is a useful low-cost gate and should remain. It does not prove that R can
 install and load the package. Curated permanent publication may eventually add
 an install/load smoke test.
+
+Rejected performance proposal:
+
+- do not intercept archive creation to hash/validate concurrently and do not
+  replace part of `R CMD build` with direct tar assembly. Post-build `tee`
+  validation is the accepted optimization boundary.
 
 ## 12. Storage-policy branches
 
@@ -438,11 +462,20 @@ only retained artifact was the 3,188-byte benchmark report.
 - Merge FASTA inspection and statistics into one workflow stage.
 - Keep archive validation.
 - Read each package archive once while hashing and validating it through `tee`.
+- Stream Ensembl, custom URL, and uploaded FASTA directly to inspection and
+  `faToTwoBit`, without materializing `genome.fa`.
 - Preserve package compression ratio rather than trading package size for speed.
 - Expose resolver, conversion, forge, compression, validation, and release as
   separate user-visible progress stages.
 - Keep approximately two-day cleanup for ordinary temporary downloads.
 - Never silently publish a user build to the permanent index.
+
+### Rejected performance proposals
+
+- Alternate gzip implementations, levels, or packaging profiles.
+- Native or parallel decompression in the acquisition stream.
+- Hardlink/reflink substitution for BSgenomeForge's copy behavior.
+- Hashing and validation during archive creation.
 
 ### Needs a product decision
 

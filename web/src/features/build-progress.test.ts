@@ -17,11 +17,9 @@ test("NCBI fallback progress names every observable long-running stage", () => {
   ]);
 });
 
-test("custom URL fallback progress includes inspection before conversion", () => {
-  assert.deepEqual(fallbackBuildStepLabels("url").slice(0, 4), [
+test("custom URL fallback progress presents acquisition and conversion as one stream", () => {
+  assert.deepEqual(fallbackBuildStepLabels("url").slice(0, 2), [
     "Queuing build on GitHub Actions",
-    "Downloading FASTA URL",
-    "Inspecting FASTA metadata",
-    "Converting to 2bit format",
+    "Streaming FASTA to 2bit",
   ]);
 });

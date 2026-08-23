@@ -959,7 +959,8 @@ function findActionStep(
   names: string[]
 ): GitHubWorkflowStep | undefined {
   const nameSet = new Set(names);
-  return job?.steps?.find((step) => nameSet.has(step.name));
+  const matches = job?.steps?.filter((step) => nameSet.has(step.name)) ?? [];
+  return matches.find((step) => step.conclusion !== "skipped") ?? matches[0];
 }
 
 async function findWorkflowRunForJob(
@@ -1005,7 +1006,10 @@ async function getBuildProgress(
   if (!run) return null;
   const job = await getWorkflowJob(run.id, env);
   const resolveStep = findActionStep(job, ["Resolve NCBI source"]);
-  const streamStep = findActionStep(job, ["Stream NCBI FASTA to 2bit"]);
+  const streamStep = findActionStep(job, [
+    "Stream NCBI FASTA to 2bit",
+    "Stream Ensembl, URL, or uploaded FASTA to 2bit",
+  ]);
   const downloadStep = findActionStep(job, [
     "Download FASTA from NCBI",
     "Download FASTA from Ensembl",

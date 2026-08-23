@@ -13,6 +13,56 @@ SCRIPT = ROOT / "scripts" / "stream_fasta_to_2bit.py"
 
 
 class StreamFastaToTwoBitCliTests(unittest.TestCase):
+    def test_plain_stream_is_inspected_and_forwarded_without_materializing_fasta(self):
+        fasta = b">chr1 description\nACGTN\n>chr2\nNN\n"
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = pathlib.Path(tmpdir)
+            converter = tmp / "fake-faToTwoBit"
+            converter.write_text(
+                textwrap.dedent(
+                    """\
+                    #!/usr/bin/env python3
+                    import pathlib
+                    import sys
+
+                    assert sys.argv[-2] == "stdin"
+                    pathlib.Path(sys.argv[-1]).write_bytes(sys.stdin.buffer.read())
+                    """
+                )
+            )
+            converter.chmod(0o755)
+            output = tmp / "genome.2bit"
+            report_path = tmp / "inspection.json"
+
+            result = subprocess.run(
+                [
+                    "python3",
+                    str(SCRIPT),
+                    "--source",
+                    "url",
+                    "--compression",
+                    "auto",
+                    "--output",
+                    str(output),
+                    "--json",
+                    str(report_path),
+                    "--converter",
+                    str(converter),
+                ],
+                input=fasta,
+                capture_output=True,
+            )
+
+            self.assertEqual(result.returncode, 0, result.stderr.decode())
+            self.assertEqual(output.read_bytes(), fasta)
+            report = json.loads(report_path.read_text())
+            self.assertEqual(report["source"], "url")
+            self.assertEqual(report["input_compression"], "plain")
+            self.assertEqual(report["input_size_bytes"], len(fasta))
+            self.assertEqual(report["input_md5"], hashlib.md5(fasta).hexdigest())
+            self.assertEqual(report["sampled_bases"], 7)
+
     def test_gzip_stream_is_inspected_and_forwarded_to_converter(self):
         fasta = b">chr1 description\nACGTN\n>chr2\nNN\n"
         compressed = gzip.compress(fasta, mtime=0)
@@ -71,6 +121,48 @@ class StreamFastaToTwoBitCliTests(unittest.TestCase):
             self.assertGreaterEqual(report["timings_sec"]["python_cpu"], 0)
             self.assertGreaterEqual(report["timings_sec"]["converter_cpu"], 0)
             self.assertIn("seq_ids=chr1,chr2\n", github_output.read_text())
+
+    def test_auto_detected_gzip_stream_does_not_require_an_upstream_checksum(self):
+        fasta = b">contig1\nACGT\n"
+        compressed = gzip.compress(fasta, mtime=0)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = pathlib.Path(tmpdir)
+            converter = tmp / "fake-faToTwoBit"
+            converter.write_text(
+                "#!/usr/bin/env python3\n"
+                "import pathlib, sys\n"
+                "pathlib.Path(sys.argv[-1]).write_bytes(sys.stdin.buffer.read())\n"
+            )
+            converter.chmod(0o755)
+            output = tmp / "genome.2bit"
+            report_path = tmp / "inspection.json"
+
+            result = subprocess.run(
+                [
+                    "python3",
+                    str(SCRIPT),
+                    "--source",
+                    "ensembl",
+                    "--compression",
+                    "auto",
+                    "--output",
+                    str(output),
+                    "--json",
+                    str(report_path),
+                    "--converter",
+                    str(converter),
+                ],
+                input=compressed,
+                capture_output=True,
+            )
+
+            self.assertEqual(result.returncode, 0, result.stderr.decode())
+            self.assertEqual(output.read_bytes(), fasta)
+            report = json.loads(report_path.read_text())
+            self.assertEqual(report["input_compression"], "gzip")
+            self.assertEqual(report["input_size_bytes"], len(compressed))
+            self.assertEqual(report["compressed_md5"], hashlib.md5(compressed).hexdigest())
 
     def test_md5_mismatch_fails_and_removes_partial_2bit(self):
         fasta = b">chr1\nACGT\n"
@@ -148,6 +240,44 @@ class StreamFastaToTwoBitCliTests(unittest.TestCase):
 
             self.assertEqual(result.returncode, 1)
             self.assertIn(b"faToTwoBit exited with status 7", result.stderr)
+            self.assertFalse(output.exists())
+
+    def test_index_overflow_requests_a_long_format_retry(self):
+        fasta = b">chr1\nACGT\n"
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = pathlib.Path(tmpdir)
+            converter = tmp / "overflowing-faToTwoBit"
+            converter.write_text(
+                "#!/usr/bin/env python3\n"
+                "import pathlib, sys\n"
+                "pathlib.Path(sys.argv[-1]).write_bytes(b'partial')\n"
+                "sys.stdin.buffer.read()\n"
+                "print('index overflow; please use -long option', file=sys.stderr)\n"
+                "raise SystemExit(1)\n"
+            )
+            converter.chmod(0o755)
+            output = tmp / "genome.2bit"
+
+            result = subprocess.run(
+                [
+                    "python3",
+                    str(SCRIPT),
+                    "--source",
+                    "url",
+                    "--compression",
+                    "plain",
+                    "--output",
+                    str(output),
+                    "--converter",
+                    str(converter),
+                ],
+                input=fasta,
+                capture_output=True,
+            )
+
+            self.assertEqual(result.returncode, 75)
+            self.assertIn(b"LONG_2BIT_REQUIRED", result.stderr)
             self.assertFalse(output.exists())
 
     def test_truncated_gzip_fails_and_removes_partial_output(self):
