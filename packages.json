@@ -187431,6 +187431,174 @@
       ]
     },
     {
+      "organism": "Protopterus annectens",
+      "common_name": "West African lungfish",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Ceratodontiformes",
+        "family": "Protopteridae",
+        "genus": "Protopterus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pannectens.NCBI.ASM4093952v1",
+          "version": "1.0.0",
+          "organism": "Protopterus annectens",
+          "assembly": "ASM4093952v1",
+          "provider": "NCBI",
+          "accession": "GCA_040939525.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_040939525.1/",
+          "file_name": "BSgenome.Pannectens.NCBI.ASM4093952v1_1.0.0.tar.gz",
+          "size": 10143702881,
+          "seq_ids": [
+            "CM082711.1",
+            "CM082712.1",
+            "CM082713.1",
+            "CM082714.1",
+            "CM082715.1"
+          ],
+          "seq_count": 7125,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "order": "Ceratodontiformes",
+            "family": "Protopteridae",
+            "genus": "Protopterus"
+          },
+          "common_name": "West African lungfish",
+          "indexed_at": "2026-08-23T20:51:37Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22072245/files/BSgenome.Pannectens.NCBI.ASM4093952v1_1.0.0.tar.gz",
+          "release_date": "2024-08-01",
+          "published": "2024-08-01",
+          "doi": "10.5281/zenodo.22072245",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787516252,
+              "archive_completed": 1787517388
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.76,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 17,
+              "accession": "GCA_040939525.1",
+              "organism": "Protopterus annectens",
+              "assembly": "ASM4093952v1",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Pannectens.NCBI.ASM4093952v1",
+              "metadata_snapshot_date": "2026-08-23",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Chromosome",
+                "total_sequence_length": 40524157013,
+                "total_ungapped_length": 40518291893,
+                "number_of_scaffolds": 7124,
+                "scaffold_n50": 1950821829
+              }
+            },
+            "timings_sec": {
+              "ncbi_resolve": 1,
+              "ncbi_acquisition_to_2bit": 541,
+              "ncbi_stream_to_2bit": 540,
+              "seed_generation": 0,
+              "forge": 60,
+              "rcmd_build": 533,
+              "package_compression": 533,
+              "archive_validation": 103,
+              "storage_selection": 0,
+              "package_publication": 791
+            },
+            "ncbi_acquisition_mode": "ncbi-ftp-stream",
+            "ncbi_stream": {
+              "attempt_count": 1,
+              "compressed_size_bytes": 12540047365,
+              "compressed_md5": "0e0040a57396038ecbe4f5460d953233",
+              "pipeline_wall_seconds": 539.283
+            },
+            "fasta_size_bytes": 41031535481,
+            "seq_count": 7125,
+            "fasta_inspection": {
+              "sampled_bases": 0,
+              "exhaustive_validation": false
+            },
+            "twobit_size_bytes": 11541382827,
+            "used_long_2bit": true,
+            "timings_cpu_sec": {
+              "ncbi_stream_python": 224.972,
+              "ncbi_stream_converter": 281.067
+            },
+            "disk_used_checkpoint_gb": {
+              "after_2bit": 70.23,
+              "after_forge": 70.23,
+              "after_rcmd_build": 68.92
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 97081528320,
+              "memory_used_bytes": 15412228096,
+              "process_rss_bytes": 13642153984,
+              "stages": {
+                "ncbi_stream_to_2bit": {
+                  "disk_used_bytes": 75404681216,
+                  "memory_used_bytes": 14892351488,
+                  "process_rss_bytes": 13642153984,
+                  "samples": 541
+                },
+                "forge": {
+                  "disk_used_bytes": 86842802176,
+                  "memory_used_bytes": 15412228096,
+                  "process_rss_bytes": 762736640,
+                  "samples": 61
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 97081528320,
+                  "memory_used_bytes": 15351992320,
+                  "process_rss_bytes": 98668544,
+                  "samples": 533
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 74007154688,
+                  "memory_used_bytes": 10362925056,
+                  "process_rss_bytes": 31932416,
+                  "samples": 104
+                }
+              }
+            },
+            "peak_mem_mb": {
+              "forge": 707
+            },
+            "tarball_size_bytes": 10143702881,
+            "package_sha256": "cb6e827559d0dce6d96b8abce59fc27b4934ba6488a2836e6cfc6988fa3bfe94",
+            "archive_valid": true
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_040939525.1/",
+            "source_accession": "GCA_040939525.1",
+            "built_at": "2026-08-23T20:38:12Z",
+            "workflow_run_id": "32663933032",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32663933032",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "cb6e827559d0dce6d96b8abce59fc27b4934ba6488a2836e6cfc6988fa3bfe94",
+            "description_sha256": "a00ba9b97047f83885562486c6a02758216db9699485ea33acf50e24a3a86511"
+          }
+        }
+      ]
+    },
+    {
       "organism": "Prunus avium",
       "common_name": "sweet cherry",
       "group": "plant",
@@ -458015,6 +458183,159 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
         "package_sha256": "c0c76cf1877f35387f853a55b75cebb1dc482e663e505b018d2ad2f44c0542b6",
         "description_sha256": "2991ee3b9eed06af061576752d64a56db247cadbd00f3138f18a64af1d7dffd4"
+      }
+    },
+    {
+      "package": "BSgenome.Pannectens.NCBI.ASM4093952v1",
+      "version": "1.0.0",
+      "organism": "Protopterus annectens",
+      "assembly": "ASM4093952v1",
+      "provider": "NCBI",
+      "accession": "GCA_040939525.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_040939525.1/",
+      "file_name": "BSgenome.Pannectens.NCBI.ASM4093952v1_1.0.0.tar.gz",
+      "size": 10143702881,
+      "seq_ids": [
+        "CM082711.1",
+        "CM082712.1",
+        "CM082713.1",
+        "CM082714.1",
+        "CM082715.1"
+      ],
+      "seq_count": 7125,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "order": "Ceratodontiformes",
+        "family": "Protopteridae",
+        "genus": "Protopterus"
+      },
+      "common_name": "West African lungfish",
+      "indexed_at": "2026-08-23T20:51:37Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22072245/files/BSgenome.Pannectens.NCBI.ASM4093952v1_1.0.0.tar.gz",
+      "release_date": "2024-08-01",
+      "published": "2024-08-01",
+      "doi": "10.5281/zenodo.22072245",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787516252,
+          "archive_completed": 1787517388
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.76,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 17,
+          "accession": "GCA_040939525.1",
+          "organism": "Protopterus annectens",
+          "assembly": "ASM4093952v1",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Pannectens.NCBI.ASM4093952v1",
+          "metadata_snapshot_date": "2026-08-23",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Chromosome",
+            "total_sequence_length": 40524157013,
+            "total_ungapped_length": 40518291893,
+            "number_of_scaffolds": 7124,
+            "scaffold_n50": 1950821829
+          }
+        },
+        "timings_sec": {
+          "ncbi_resolve": 1,
+          "ncbi_acquisition_to_2bit": 541,
+          "ncbi_stream_to_2bit": 540,
+          "seed_generation": 0,
+          "forge": 60,
+          "rcmd_build": 533,
+          "package_compression": 533,
+          "archive_validation": 103,
+          "storage_selection": 0,
+          "package_publication": 791
+        },
+        "ncbi_acquisition_mode": "ncbi-ftp-stream",
+        "ncbi_stream": {
+          "attempt_count": 1,
+          "compressed_size_bytes": 12540047365,
+          "compressed_md5": "0e0040a57396038ecbe4f5460d953233",
+          "pipeline_wall_seconds": 539.283
+        },
+        "fasta_size_bytes": 41031535481,
+        "seq_count": 7125,
+        "fasta_inspection": {
+          "sampled_bases": 0,
+          "exhaustive_validation": false
+        },
+        "twobit_size_bytes": 11541382827,
+        "used_long_2bit": true,
+        "timings_cpu_sec": {
+          "ncbi_stream_python": 224.972,
+          "ncbi_stream_converter": 281.067
+        },
+        "disk_used_checkpoint_gb": {
+          "after_2bit": 70.23,
+          "after_forge": 70.23,
+          "after_rcmd_build": 68.92
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 97081528320,
+          "memory_used_bytes": 15412228096,
+          "process_rss_bytes": 13642153984,
+          "stages": {
+            "ncbi_stream_to_2bit": {
+              "disk_used_bytes": 75404681216,
+              "memory_used_bytes": 14892351488,
+              "process_rss_bytes": 13642153984,
+              "samples": 541
+            },
+            "forge": {
+              "disk_used_bytes": 86842802176,
+              "memory_used_bytes": 15412228096,
+              "process_rss_bytes": 762736640,
+              "samples": 61
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 97081528320,
+              "memory_used_bytes": 15351992320,
+              "process_rss_bytes": 98668544,
+              "samples": 533
+            },
+            "archive_validation": {
+              "disk_used_bytes": 74007154688,
+              "memory_used_bytes": 10362925056,
+              "process_rss_bytes": 31932416,
+              "samples": 104
+            }
+          }
+        },
+        "peak_mem_mb": {
+          "forge": 707
+        },
+        "tarball_size_bytes": 10143702881,
+        "package_sha256": "cb6e827559d0dce6d96b8abce59fc27b4934ba6488a2836e6cfc6988fa3bfe94",
+        "archive_valid": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_040939525.1/",
+        "source_accession": "GCA_040939525.1",
+        "built_at": "2026-08-23T20:38:12Z",
+        "workflow_run_id": "32663933032",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32663933032",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "cb6e827559d0dce6d96b8abce59fc27b4934ba6488a2836e6cfc6988fa3bfe94",
+        "description_sha256": "a00ba9b97047f83885562486c6a02758216db9699485ea33acf50e24a3a86511"
       }
     }
   ]

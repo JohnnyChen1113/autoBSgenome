@@ -15821,3 +15821,7 @@ NeedsCompilation: no
 Package: BSgenome.Esuperba.NCBI.ASM5190383v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pannectens.NCBI.ASM4093952v1
+Version: 1.0.0
+NeedsCompilation: no
