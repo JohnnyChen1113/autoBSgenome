@@ -176988,6 +176988,176 @@
       ]
     },
     {
+      "organism": "Pinus albicaulis",
+      "common_name": "",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Pinopsida",
+        "order": "Pinales",
+        "family": "Pinaceae",
+        "genus": "Pinus"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Palbicaulis.NCBI.WBP10",
+          "version": "1.0.0",
+          "organism": "Pinus albicaulis",
+          "assembly": "WBP_1.0",
+          "provider": "NCBI",
+          "accession": "GCA_034641835.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_034641835.3/",
+          "file_name": "BSgenome.Palbicaulis.NCBI.WBP10_1.0.0.tar.gz",
+          "size": 7119732693,
+          "seq_ids": [
+            "CM076569.1",
+            "CM076570.1",
+            "CM076571.1",
+            "CM076572.1",
+            "CM076573.1"
+          ],
+          "seq_count": 34178,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Pinopsida",
+            "order": "Pinales",
+            "family": "Pinaceae",
+            "genus": "Pinus"
+          },
+          "common_name": "",
+          "indexed_at": "2026-08-23T18:43:49Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22071335/files/BSgenome.Palbicaulis.NCBI.WBP10_1.0.0.tar.gz",
+          "release_date": "2024-04-30",
+          "published": "2024-04-30",
+          "doi": "10.5281/zenodo.22071335",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787509173,
+              "archive_completed": 1787510034
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.77,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 12,
+              "accession": "GCA_034641835.3",
+              "organism": "Pinus albicaulis",
+              "assembly": "WBP_1.0",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Palbicaulis.NCBI.WBP10",
+              "metadata_snapshot_date": "2026-08-23",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Chromosome",
+                "total_sequence_length": 27611538162,
+                "total_ungapped_length": 27605654247,
+                "number_of_scaffolds": 34178,
+                "scaffold_n50": 1634761663
+              }
+            },
+            "timings_sec": {
+              "ncbi_resolve": 0,
+              "ncbi_acquisition_to_2bit": 413,
+              "ncbi_stream_to_2bit": 413,
+              "seed_generation": 0,
+              "forge": 45,
+              "rcmd_build": 400,
+              "package_compression": 400,
+              "archive_validation": 83,
+              "storage_selection": 0,
+              "package_publication": 498
+            },
+            "ncbi_acquisition_mode": "ncbi-ftp-stream",
+            "ncbi_stream": {
+              "attempt_count": 1,
+              "compressed_size_bytes": 8632334016,
+              "compressed_md5": "978bcf54f1cc471278f09d1fccdc398c",
+              "pipeline_wall_seconds": 412.277
+            },
+            "fasta_size_bytes": 27960530457,
+            "seq_count": 34178,
+            "fasta_inspection": {
+              "sampled_bases": 0,
+              "exhaustive_validation": false
+            },
+            "twobit_size_bytes": 8071292802,
+            "used_long_2bit": true,
+            "timings_cpu_sec": {
+              "ncbi_stream_python": 169.921,
+              "ncbi_stream_converter": 188.269
+            },
+            "disk_used_checkpoint_gb": {
+              "after_2bit": 66.99,
+              "after_forge": 66.99,
+              "after_rcmd_build": 66.11
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 87122853888,
+              "memory_used_bytes": 14109511680,
+              "process_rss_bytes": 10275627008,
+              "stages": {
+                "ncbi_stream_to_2bit": {
+                  "disk_used_bytes": 71931633664,
+                  "memory_used_bytes": 13780959232,
+                  "process_rss_bytes": 10275627008,
+                  "samples": 414
+                },
+                "forge": {
+                  "disk_used_bytes": 79966842880,
+                  "memory_used_bytes": 14109511680,
+                  "process_rss_bytes": 764002304,
+                  "samples": 46
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 87122853888,
+                  "memory_used_bytes": 14096662528,
+                  "process_rss_bytes": 100274176,
+                  "samples": 401
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 70980210688,
+                  "memory_used_bytes": 7280066560,
+                  "process_rss_bytes": 32706560,
+                  "samples": 84
+                }
+              }
+            },
+            "peak_mem_mb": {
+              "forge": 708
+            },
+            "tarball_size_bytes": 7119732693,
+            "package_sha256": "58dd620c7cb1d21ee9ad8556c98e130c0f7c4b2a94b9a47a6bd42758dee68f9a",
+            "archive_valid": true
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_034641835.3/",
+            "source_accession": "GCA_034641835.3",
+            "built_at": "2026-08-23T18:35:18Z",
+            "workflow_run_id": "32657653401",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32657653401",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "58dd620c7cb1d21ee9ad8556c98e130c0f7c4b2a94b9a47a6bd42758dee68f9a",
+            "description_sha256": "6acb89e089549ba9aa64282c350f17337f301d2588e79f83f272105d9237fb2d"
+          }
+        }
+      ]
+    },
+    {
       "organism": "Pinus radiata",
       "common_name": "Monterey pine",
       "group": "plant",
@@ -456719,6 +456889,160 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
         "package_sha256": "e089a8a90cea1eb98d098faf8721c08723422c46881255878b63c8b526a87cfb",
         "description_sha256": "1023d8da372da52a82a14a042fb7053de5096637e5e36978ab90188ba61c8f60"
+      }
+    },
+    {
+      "package": "BSgenome.Palbicaulis.NCBI.WBP10",
+      "version": "1.0.0",
+      "organism": "Pinus albicaulis",
+      "assembly": "WBP_1.0",
+      "provider": "NCBI",
+      "accession": "GCA_034641835.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_034641835.3/",
+      "file_name": "BSgenome.Palbicaulis.NCBI.WBP10_1.0.0.tar.gz",
+      "size": 7119732693,
+      "seq_ids": [
+        "CM076569.1",
+        "CM076570.1",
+        "CM076571.1",
+        "CM076572.1",
+        "CM076573.1"
+      ],
+      "seq_count": 34178,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Pinopsida",
+        "order": "Pinales",
+        "family": "Pinaceae",
+        "genus": "Pinus"
+      },
+      "common_name": "",
+      "indexed_at": "2026-08-23T18:43:49Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22071335/files/BSgenome.Palbicaulis.NCBI.WBP10_1.0.0.tar.gz",
+      "release_date": "2024-04-30",
+      "published": "2024-04-30",
+      "doi": "10.5281/zenodo.22071335",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787509173,
+          "archive_completed": 1787510034
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.77,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 12,
+          "accession": "GCA_034641835.3",
+          "organism": "Pinus albicaulis",
+          "assembly": "WBP_1.0",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Palbicaulis.NCBI.WBP10",
+          "metadata_snapshot_date": "2026-08-23",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Chromosome",
+            "total_sequence_length": 27611538162,
+            "total_ungapped_length": 27605654247,
+            "number_of_scaffolds": 34178,
+            "scaffold_n50": 1634761663
+          }
+        },
+        "timings_sec": {
+          "ncbi_resolve": 0,
+          "ncbi_acquisition_to_2bit": 413,
+          "ncbi_stream_to_2bit": 413,
+          "seed_generation": 0,
+          "forge": 45,
+          "rcmd_build": 400,
+          "package_compression": 400,
+          "archive_validation": 83,
+          "storage_selection": 0,
+          "package_publication": 498
+        },
+        "ncbi_acquisition_mode": "ncbi-ftp-stream",
+        "ncbi_stream": {
+          "attempt_count": 1,
+          "compressed_size_bytes": 8632334016,
+          "compressed_md5": "978bcf54f1cc471278f09d1fccdc398c",
+          "pipeline_wall_seconds": 412.277
+        },
+        "fasta_size_bytes": 27960530457,
+        "seq_count": 34178,
+        "fasta_inspection": {
+          "sampled_bases": 0,
+          "exhaustive_validation": false
+        },
+        "twobit_size_bytes": 8071292802,
+        "used_long_2bit": true,
+        "timings_cpu_sec": {
+          "ncbi_stream_python": 169.921,
+          "ncbi_stream_converter": 188.269
+        },
+        "disk_used_checkpoint_gb": {
+          "after_2bit": 66.99,
+          "after_forge": 66.99,
+          "after_rcmd_build": 66.11
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 87122853888,
+          "memory_used_bytes": 14109511680,
+          "process_rss_bytes": 10275627008,
+          "stages": {
+            "ncbi_stream_to_2bit": {
+              "disk_used_bytes": 71931633664,
+              "memory_used_bytes": 13780959232,
+              "process_rss_bytes": 10275627008,
+              "samples": 414
+            },
+            "forge": {
+              "disk_used_bytes": 79966842880,
+              "memory_used_bytes": 14109511680,
+              "process_rss_bytes": 764002304,
+              "samples": 46
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 87122853888,
+              "memory_used_bytes": 14096662528,
+              "process_rss_bytes": 100274176,
+              "samples": 401
+            },
+            "archive_validation": {
+              "disk_used_bytes": 70980210688,
+              "memory_used_bytes": 7280066560,
+              "process_rss_bytes": 32706560,
+              "samples": 84
+            }
+          }
+        },
+        "peak_mem_mb": {
+          "forge": 708
+        },
+        "tarball_size_bytes": 7119732693,
+        "package_sha256": "58dd620c7cb1d21ee9ad8556c98e130c0f7c4b2a94b9a47a6bd42758dee68f9a",
+        "archive_valid": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_034641835.3/",
+        "source_accession": "GCA_034641835.3",
+        "built_at": "2026-08-23T18:35:18Z",
+        "workflow_run_id": "32657653401",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32657653401",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "58dd620c7cb1d21ee9ad8556c98e130c0f7c4b2a94b9a47a6bd42758dee68f9a",
+        "description_sha256": "6acb89e089549ba9aa64282c350f17337f301d2588e79f83f272105d9237fb2d"
       }
     }
   ]
