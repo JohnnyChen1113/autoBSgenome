@@ -37878,6 +37878,176 @@
       ]
     },
     {
+      "organism": "Calotriton arnoldi",
+      "common_name": "Montseny brook newt",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Caudata",
+        "family": "Salamandridae",
+        "genus": "Calotriton"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Carnoldi.NCBI.aCalArn1",
+          "version": "1.0.0",
+          "organism": "Calotriton arnoldi",
+          "assembly": "aCalArn1",
+          "provider": "NCBI",
+          "accession": "GCA_963921515.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963921515.1/",
+          "file_name": "BSgenome.Carnoldi.NCBI.aCalArn1_1.0.0.tar.gz",
+          "size": 5724989452,
+          "seq_ids": [
+            "CAWUFW010000001.1",
+            "CAWUFW010000002.1",
+            "CAWUFW010000003.1",
+            "CAWUFW010000004.1",
+            "CAWUFW010000005.1"
+          ],
+          "seq_count": 47257,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Amphibia",
+            "order": "Caudata",
+            "family": "Salamandridae",
+            "genus": "Calotriton"
+          },
+          "common_name": "Montseny brook newt",
+          "indexed_at": "2026-08-23T15:20:39Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22069913/files/BSgenome.Carnoldi.NCBI.aCalArn1_1.0.0.tar.gz",
+          "release_date": "2024-02-07",
+          "published": "2024-02-07",
+          "doi": "10.5281/zenodo.22069913",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787497415,
+              "archive_completed": 1787498012
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.77,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 4,
+              "accession": "GCA_963921515.1",
+              "organism": "Calotriton arnoldi",
+              "assembly": "aCalArn1",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Carnoldi.NCBI.aCalArn1",
+              "metadata_snapshot_date": "2026-08-23",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Scaffold",
+                "total_sequence_length": 22893972430,
+                "total_ungapped_length": 22893899130,
+                "number_of_scaffolds": 47257,
+                "scaffold_n50": 1649920
+              }
+            },
+            "timings_sec": {
+              "ncbi_resolve": 0,
+              "ncbi_acquisition_to_2bit": 308,
+              "ncbi_stream_to_2bit": 308,
+              "seed_generation": 0,
+              "forge": 21,
+              "rcmd_build": 265,
+              "package_compression": 265,
+              "archive_validation": 63,
+              "storage_selection": 0,
+              "package_publication": 349
+            },
+            "ncbi_acquisition_mode": "ncbi-ftp-stream",
+            "ncbi_stream": {
+              "attempt_count": 1,
+              "compressed_size_bytes": 6982609698,
+              "compressed_md5": "90afcf4b296a4a9e67a5ae9ca9433756",
+              "pipeline_wall_seconds": 307.758
+            },
+            "fasta_size_bytes": 23185415871,
+            "seq_count": 47257,
+            "fasta_inspection": {
+              "sampled_bases": 0,
+              "exhaustive_validation": false
+            },
+            "twobit_size_bytes": 6401835959,
+            "used_long_2bit": true,
+            "timings_cpu_sec": {
+              "ncbi_stream_python": 136.838,
+              "ncbi_stream_converter": 138.163
+            },
+            "disk_used_checkpoint_gb": {
+              "after_2bit": 65.44,
+              "after_forge": 65.44,
+              "after_rcmd_build": 64.81
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 82389176320,
+              "memory_used_bytes": 14245081088,
+              "process_rss_bytes": 6499524608,
+              "stages": {
+                "ncbi_stream_to_2bit": {
+                  "disk_used_bytes": 70262231040,
+                  "memory_used_bytes": 12280774656,
+                  "process_rss_bytes": 6499524608,
+                  "samples": 309
+                },
+                "forge": {
+                  "disk_used_bytes": 76591603712,
+                  "memory_used_bytes": 13018185728,
+                  "process_rss_bytes": 764637184,
+                  "samples": 23
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 82389176320,
+                  "memory_used_bytes": 14245081088,
+                  "process_rss_bytes": 135569408,
+                  "samples": 266
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 69585444864,
+                  "memory_used_bytes": 5890785280,
+                  "process_rss_bytes": 32956416,
+                  "samples": 64
+                }
+              }
+            },
+            "peak_mem_mb": {
+              "forge": 709
+            },
+            "tarball_size_bytes": 5724989452,
+            "package_sha256": "929470e4e0cf83b8016c8654d3e940a23cbf8f449f30ed5980c141cf7205360e",
+            "archive_valid": true
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963921515.1/",
+            "source_accession": "GCA_963921515.1",
+            "built_at": "2026-08-23T15:14:36Z",
+            "workflow_run_id": "32647326834",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32647326834",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "929470e4e0cf83b8016c8654d3e940a23cbf8f449f30ed5980c141cf7205360e",
+            "description_sha256": "96454a7a5330c76aa8a5ad07bcccd4ee0b65914744925b82da0452a52c0aa6f7"
+          }
+        }
+      ]
+    },
+    {
       "organism": "Calypte anna",
       "common_name": "Anna's hummingbird",
       "group": "vertebrate_other",
@@ -455099,6 +455269,160 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
         "package_sha256": "f57d64e3900f5f751b761e0a6977bbe8670f9b1027c92205c2c3e177731653cd",
         "description_sha256": "5838f5dc7354bea92e44297bbe1591dd2c902625a85d9d4b823170b79a16da42"
+      }
+    },
+    {
+      "package": "BSgenome.Carnoldi.NCBI.aCalArn1",
+      "version": "1.0.0",
+      "organism": "Calotriton arnoldi",
+      "assembly": "aCalArn1",
+      "provider": "NCBI",
+      "accession": "GCA_963921515.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963921515.1/",
+      "file_name": "BSgenome.Carnoldi.NCBI.aCalArn1_1.0.0.tar.gz",
+      "size": 5724989452,
+      "seq_ids": [
+        "CAWUFW010000001.1",
+        "CAWUFW010000002.1",
+        "CAWUFW010000003.1",
+        "CAWUFW010000004.1",
+        "CAWUFW010000005.1"
+      ],
+      "seq_count": 47257,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Caudata",
+        "family": "Salamandridae",
+        "genus": "Calotriton"
+      },
+      "common_name": "Montseny brook newt",
+      "indexed_at": "2026-08-23T15:20:39Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22069913/files/BSgenome.Carnoldi.NCBI.aCalArn1_1.0.0.tar.gz",
+      "release_date": "2024-02-07",
+      "published": "2024-02-07",
+      "doi": "10.5281/zenodo.22069913",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787497415,
+          "archive_completed": 1787498012
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.77,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 4,
+          "accession": "GCA_963921515.1",
+          "organism": "Calotriton arnoldi",
+          "assembly": "aCalArn1",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Carnoldi.NCBI.aCalArn1",
+          "metadata_snapshot_date": "2026-08-23",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Scaffold",
+            "total_sequence_length": 22893972430,
+            "total_ungapped_length": 22893899130,
+            "number_of_scaffolds": 47257,
+            "scaffold_n50": 1649920
+          }
+        },
+        "timings_sec": {
+          "ncbi_resolve": 0,
+          "ncbi_acquisition_to_2bit": 308,
+          "ncbi_stream_to_2bit": 308,
+          "seed_generation": 0,
+          "forge": 21,
+          "rcmd_build": 265,
+          "package_compression": 265,
+          "archive_validation": 63,
+          "storage_selection": 0,
+          "package_publication": 349
+        },
+        "ncbi_acquisition_mode": "ncbi-ftp-stream",
+        "ncbi_stream": {
+          "attempt_count": 1,
+          "compressed_size_bytes": 6982609698,
+          "compressed_md5": "90afcf4b296a4a9e67a5ae9ca9433756",
+          "pipeline_wall_seconds": 307.758
+        },
+        "fasta_size_bytes": 23185415871,
+        "seq_count": 47257,
+        "fasta_inspection": {
+          "sampled_bases": 0,
+          "exhaustive_validation": false
+        },
+        "twobit_size_bytes": 6401835959,
+        "used_long_2bit": true,
+        "timings_cpu_sec": {
+          "ncbi_stream_python": 136.838,
+          "ncbi_stream_converter": 138.163
+        },
+        "disk_used_checkpoint_gb": {
+          "after_2bit": 65.44,
+          "after_forge": 65.44,
+          "after_rcmd_build": 64.81
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 82389176320,
+          "memory_used_bytes": 14245081088,
+          "process_rss_bytes": 6499524608,
+          "stages": {
+            "ncbi_stream_to_2bit": {
+              "disk_used_bytes": 70262231040,
+              "memory_used_bytes": 12280774656,
+              "process_rss_bytes": 6499524608,
+              "samples": 309
+            },
+            "forge": {
+              "disk_used_bytes": 76591603712,
+              "memory_used_bytes": 13018185728,
+              "process_rss_bytes": 764637184,
+              "samples": 23
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 82389176320,
+              "memory_used_bytes": 14245081088,
+              "process_rss_bytes": 135569408,
+              "samples": 266
+            },
+            "archive_validation": {
+              "disk_used_bytes": 69585444864,
+              "memory_used_bytes": 5890785280,
+              "process_rss_bytes": 32956416,
+              "samples": 64
+            }
+          }
+        },
+        "peak_mem_mb": {
+          "forge": 709
+        },
+        "tarball_size_bytes": 5724989452,
+        "package_sha256": "929470e4e0cf83b8016c8654d3e940a23cbf8f449f30ed5980c141cf7205360e",
+        "archive_valid": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_963921515.1/",
+        "source_accession": "GCA_963921515.1",
+        "built_at": "2026-08-23T15:14:36Z",
+        "workflow_run_id": "32647326834",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32647326834",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "929470e4e0cf83b8016c8654d3e940a23cbf8f449f30ed5980c141cf7205360e",
+        "description_sha256": "96454a7a5330c76aa8a5ad07bcccd4ee0b65914744925b82da0452a52c0aa6f7"
       }
     }
   ]
