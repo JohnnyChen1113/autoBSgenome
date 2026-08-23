@@ -6971,6 +6971,176 @@
       ]
     },
     {
+      "organism": "Ambystoma opacum",
+      "common_name": "marbled salamander",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Caudata",
+        "family": "Ambystomatidae",
+        "genus": "Ambystoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Aopacum.NCBI.ASM4729264v1",
+          "version": "1.0.0",
+          "organism": "Ambystoma opacum",
+          "assembly": "ASM4729264v1",
+          "provider": "NCBI",
+          "accession": "GCA_047292645.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_047292645.1/",
+          "file_name": "BSgenome.Aopacum.NCBI.ASM4729264v1_1.0.0.tar.gz",
+          "size": 4378852536,
+          "seq_ids": [
+            "JBLADG010000001.1",
+            "JBLADG010000002.1",
+            "JBLADG010000003.1",
+            "JBLADG010000004.1",
+            "JBLADG010000005.1"
+          ],
+          "seq_count": 9389658,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Amphibia",
+            "order": "Caudata",
+            "family": "Ambystomatidae",
+            "genus": "Ambystoma"
+          },
+          "common_name": "marbled salamander",
+          "indexed_at": "2026-08-23T19:25:49Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22071740/files/BSgenome.Aopacum.NCBI.ASM4729264v1_1.0.0.tar.gz",
+          "release_date": "2025-01-29",
+          "published": "2025-01-29",
+          "doi": "10.5281/zenodo.22071740",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787512126,
+              "archive_completed": 1787512701
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.77,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 14,
+              "accession": "GCA_047292645.1",
+              "organism": "Ambystoma opacum",
+              "assembly": "ASM4729264v1",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Aopacum.NCBI.ASM4729264v1",
+              "metadata_snapshot_date": "2026-08-23",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Scaffold",
+                "total_sequence_length": 29020388349,
+                "total_ungapped_length": 15793663514,
+                "number_of_scaffolds": 9389658,
+                "scaffold_n50": 55462223
+              }
+            },
+            "timings_sec": {
+              "ncbi_resolve": 2,
+              "ncbi_acquisition_to_2bit": 286,
+              "ncbi_stream_to_2bit": 284,
+              "seed_generation": 0,
+              "forge": 63,
+              "rcmd_build": 224,
+              "package_compression": 224,
+              "archive_validation": 51,
+              "storage_selection": 0,
+              "package_publication": 384
+            },
+            "ncbi_acquisition_mode": "ncbi-ftp-stream",
+            "ncbi_stream": {
+              "attempt_count": 1,
+              "compressed_size_bytes": 5577761566,
+              "compressed_md5": "40a888a0455df77dbcbd218d87d110ae",
+              "pipeline_wall_seconds": 284.541
+            },
+            "fasta_size_bytes": 30353902870,
+            "seq_count": 9389658,
+            "fasta_inspection": {
+              "sampled_bases": 0,
+              "exhaustive_validation": false
+            },
+            "twobit_size_bytes": 8243424995,
+            "used_long_2bit": true,
+            "timings_cpu_sec": {
+              "ncbi_stream_python": 100.866,
+              "ncbi_stream_converter": 150.105
+            },
+            "disk_used_checkpoint_gb": {
+              "after_2bit": 67.15,
+              "after_forge": 67.15,
+              "after_rcmd_build": 63.55
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 84713881600,
+              "memory_used_bytes": 15140614144,
+              "process_rss_bytes": 10461175808,
+              "stages": {
+                "ncbi_stream_to_2bit": {
+                  "disk_used_bytes": 72102432768,
+                  "memory_used_bytes": 14127620096,
+                  "process_rss_bytes": 10461175808,
+                  "samples": 286
+                },
+                "forge": {
+                  "disk_used_bytes": 80337657856,
+                  "memory_used_bytes": 15092412416,
+                  "process_rss_bytes": 763166720,
+                  "samples": 64
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 84713881600,
+                  "memory_used_bytes": 15140614144,
+                  "process_rss_bytes": 100589568,
+                  "samples": 225
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 68237987840,
+                  "memory_used_bytes": 4516945920,
+                  "process_rss_bytes": 33263616,
+                  "samples": 52
+                }
+              }
+            },
+            "peak_mem_mb": {
+              "forge": 707
+            },
+            "tarball_size_bytes": 4378852536,
+            "package_sha256": "5d315db1ed88ac227e8a60be323c3efc20225c4ea6012afbeee702af4db2bb3b",
+            "archive_valid": true
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_047292645.1/",
+            "source_accession": "GCA_047292645.1",
+            "built_at": "2026-08-23T19:19:12Z",
+            "workflow_run_id": "32660275598",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32660275598",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "5d315db1ed88ac227e8a60be323c3efc20225c4ea6012afbeee702af4db2bb3b",
+            "description_sha256": "22b304f70982e4ae6b3c87d676b6a1623e976a33d677edb4751ec387cd6a8f5c"
+          }
+        }
+      ]
+    },
+    {
       "organism": "Aminobacterium colombiense DSM 12261",
       "common_name": "",
       "group": "bacteria",
@@ -457367,6 +457537,160 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
         "package_sha256": "d4e9a8571eafa381f6b57bfe8b646dedca268ba9b75b00c1d4414539b378ec6f",
         "description_sha256": "337808fa45c66c1b2d8cd4cab15d639dd294cdaabc92df66c95622d240c3a8eb"
+      }
+    },
+    {
+      "package": "BSgenome.Aopacum.NCBI.ASM4729264v1",
+      "version": "1.0.0",
+      "organism": "Ambystoma opacum",
+      "assembly": "ASM4729264v1",
+      "provider": "NCBI",
+      "accession": "GCA_047292645.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_047292645.1/",
+      "file_name": "BSgenome.Aopacum.NCBI.ASM4729264v1_1.0.0.tar.gz",
+      "size": 4378852536,
+      "seq_ids": [
+        "JBLADG010000001.1",
+        "JBLADG010000002.1",
+        "JBLADG010000003.1",
+        "JBLADG010000004.1",
+        "JBLADG010000005.1"
+      ],
+      "seq_count": 9389658,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Caudata",
+        "family": "Ambystomatidae",
+        "genus": "Ambystoma"
+      },
+      "common_name": "marbled salamander",
+      "indexed_at": "2026-08-23T19:25:49Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22071740/files/BSgenome.Aopacum.NCBI.ASM4729264v1_1.0.0.tar.gz",
+      "release_date": "2025-01-29",
+      "published": "2025-01-29",
+      "doi": "10.5281/zenodo.22071740",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787512126,
+          "archive_completed": 1787512701
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.77,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 14,
+          "accession": "GCA_047292645.1",
+          "organism": "Ambystoma opacum",
+          "assembly": "ASM4729264v1",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Aopacum.NCBI.ASM4729264v1",
+          "metadata_snapshot_date": "2026-08-23",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Scaffold",
+            "total_sequence_length": 29020388349,
+            "total_ungapped_length": 15793663514,
+            "number_of_scaffolds": 9389658,
+            "scaffold_n50": 55462223
+          }
+        },
+        "timings_sec": {
+          "ncbi_resolve": 2,
+          "ncbi_acquisition_to_2bit": 286,
+          "ncbi_stream_to_2bit": 284,
+          "seed_generation": 0,
+          "forge": 63,
+          "rcmd_build": 224,
+          "package_compression": 224,
+          "archive_validation": 51,
+          "storage_selection": 0,
+          "package_publication": 384
+        },
+        "ncbi_acquisition_mode": "ncbi-ftp-stream",
+        "ncbi_stream": {
+          "attempt_count": 1,
+          "compressed_size_bytes": 5577761566,
+          "compressed_md5": "40a888a0455df77dbcbd218d87d110ae",
+          "pipeline_wall_seconds": 284.541
+        },
+        "fasta_size_bytes": 30353902870,
+        "seq_count": 9389658,
+        "fasta_inspection": {
+          "sampled_bases": 0,
+          "exhaustive_validation": false
+        },
+        "twobit_size_bytes": 8243424995,
+        "used_long_2bit": true,
+        "timings_cpu_sec": {
+          "ncbi_stream_python": 100.866,
+          "ncbi_stream_converter": 150.105
+        },
+        "disk_used_checkpoint_gb": {
+          "after_2bit": 67.15,
+          "after_forge": 67.15,
+          "after_rcmd_build": 63.55
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 84713881600,
+          "memory_used_bytes": 15140614144,
+          "process_rss_bytes": 10461175808,
+          "stages": {
+            "ncbi_stream_to_2bit": {
+              "disk_used_bytes": 72102432768,
+              "memory_used_bytes": 14127620096,
+              "process_rss_bytes": 10461175808,
+              "samples": 286
+            },
+            "forge": {
+              "disk_used_bytes": 80337657856,
+              "memory_used_bytes": 15092412416,
+              "process_rss_bytes": 763166720,
+              "samples": 64
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 84713881600,
+              "memory_used_bytes": 15140614144,
+              "process_rss_bytes": 100589568,
+              "samples": 225
+            },
+            "archive_validation": {
+              "disk_used_bytes": 68237987840,
+              "memory_used_bytes": 4516945920,
+              "process_rss_bytes": 33263616,
+              "samples": 52
+            }
+          }
+        },
+        "peak_mem_mb": {
+          "forge": 707
+        },
+        "tarball_size_bytes": 4378852536,
+        "package_sha256": "5d315db1ed88ac227e8a60be323c3efc20225c4ea6012afbeee702af4db2bb3b",
+        "archive_valid": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_047292645.1/",
+        "source_accession": "GCA_047292645.1",
+        "built_at": "2026-08-23T19:19:12Z",
+        "workflow_run_id": "32660275598",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32660275598",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "5d315db1ed88ac227e8a60be323c3efc20225c4ea6012afbeee702af4db2bb3b",
+        "description_sha256": "22b304f70982e4ae6b3c87d676b6a1623e976a33d677edb4751ec387cd6a8f5c"
       }
     }
   ]
