@@ -85,6 +85,28 @@ The large streaming run verified NCBI compressed MD5
 2,543,657,067-byte 2bit file. Archive validation passed. All publication steps
 were skipped and the ephemeral benchmark tarball was removed.
 
+## Implemented: streaming Ensembl, URL, and upload inputs to 2bit
+
+The three non-NCBI acquisition paths now use the same bounded-memory public
+interface as the NCBI fast path. The HTTP response is inspected and passed to
+`faToTwoBit stdin` as it arrives; gzip is detected from stream magic bytes and
+plain FASTA remains supported. These paths no longer materialize a compressed
+download and an uncompressed `genome.fa`, then scan and read that FASTA again.
+
+Custom URL and upload inputs retain prefix-sampled nucleotide validation.
+Ensembl input retains official-source metadata inspection. Transfer retries
+restart the complete stream, a successfully consumed upload is still deleted
+best-effort, and input bytes, MD5, compression mode, wall time, Python CPU,
+converter CPU, attempt count, FASTA size, sequence count, and 2bit size are
+recorded.
+
+Because a streamed custom source may not advertise its uncompressed size, a
+specific UCSC 32-bit index-overflow failure requests one clean retry with
+`faToTwoBit -long`. Small inputs retain the ordinary version-0 2bit format;
+`-long` is not enabled unconditionally because the
+[UCSC implementation](https://github.com/ucscGenomeBrowser/kent/blob/master/src/utils/faToTwoBit/faToTwoBit.c#L21-L22)
+documents that format as incompatible with older readers.
+
 ## Not adopted: parallel package compression
 
 Package size is a product constraint, not only a storage detail. The project
@@ -97,12 +119,41 @@ Do not replace `R CMD build` with direct tar assembly until archive contents and
 install/load behavior have been shown equivalent on both small and very large
 packages.
 
+## Rejected: alternate package compressors and compression tuning
+
+The project will not benchmark or substitute `libdeflate-gzip`, single-threaded
+`pigz`, or alternate gzip levels in the package-build path. Even a conditional
+"no size regression" compressor selection adds a second packaging profile and
+reproducibility surface. Keep the current `R CMD build` compression path.
+
+## Rejected: alternate or parallel streaming decompression
+
+The project will not replace the Python gzip implementation in the acquisition
+pipeline with native, `libdeflate`, or parallel decompression. The new CPU
+metrics remain useful for diagnosis, but decompressor substitution is not an
+accepted optimization even if a future benchmark shows available CPU headroom.
+
+## Rejected: forge hardlinks or reflinks
+
+The project will not alter BSgenomeForge's normal copy semantics with hardlinks
+or filesystem-specific reflinks. Forge was only 13 seconds in the measured
+9.35-Gbp build, so the potential wall-time saving does not justify introducing
+filesystem-dependent package assembly behavior.
+
 ## Implemented: checksum and archive validation in one pass
 
 The archive is now read once. `tee` sends the same compressed byte stream to
 SHA-256 and `tar -tzf -`; validation still requires `DESCRIPTION` and
 `inst/extdata/single_sequences.2bit`. A truncated stream or either consumer
 failing rejects the archive.
+
+## Rejected: validation during archive creation
+
+Archive hashing and validation will remain a post-build read. Intercepting the
+tar/gzip stream produced by `R CMD build`, or replacing part of `R CMD build`
+with direct archive assembly, is rejected because it couples validation to R's
+packaging internals and raises package-equivalence risk. The accepted `tee`
+implementation is the optimization boundary.
 
 ## Not adopted: short-lived 2bit cache
 

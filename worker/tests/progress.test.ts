@@ -120,7 +120,7 @@ test("NCBI streaming is reported as one combined download-to-2bit step", async (
   }
 });
 
-test("a skipped NCBI stream keeps separate download and conversion steps", async () => {
+test("a skipped NCBI stream yields to the active non-NCBI stream", async () => {
   const originalFetch = globalThis.fetch;
 
   globalThis.fetch = async (input) => {
@@ -159,24 +159,10 @@ test("a skipped NCBI stream keeps separate download and conversion steps", async
                 completed_at: "2026-08-22T12:00:03Z",
               },
               {
-                name: "Download FASTA from Ensembl",
-                status: "completed",
-                conclusion: "success",
-                started_at: "2026-08-22T12:00:03Z",
-                completed_at: "2026-08-22T12:00:08Z",
-              },
-              {
-                name: "Inspect FASTA and collect stats",
-                status: "completed",
-                conclusion: "success",
-                started_at: "2026-08-22T12:00:08Z",
-                completed_at: "2026-08-22T12:00:09Z",
-              },
-              {
-                name: "Convert FASTA to 2bit",
+                name: "Stream Ensembl, URL, or uploaded FASTA to 2bit",
                 status: "in_progress",
                 conclusion: null,
-                started_at: "2026-08-22T12:00:08Z",
+                started_at: "2026-08-22T12:00:03Z",
                 completed_at: null,
               },
             ],
@@ -204,9 +190,7 @@ test("a skipped NCBI stream keeps separate download and conversion steps", async
       .filter((step) => ["download", "inspect", "twobit"].includes(step.key))
       .map(({ key, label, status }) => ({ key, label, status }));
     assert.deepEqual(sequenceSteps, [
-      { key: "download", label: "Downloading FASTA", status: "complete" },
-      { key: "inspect", label: "Inspecting FASTA metadata", status: "complete" },
-      { key: "twobit", label: "Converting to 2bit format", status: "running" },
+      { key: "twobit", label: "Streaming FASTA to 2bit", status: "running" },
     ]);
   } finally {
     globalThis.fetch = originalFetch;

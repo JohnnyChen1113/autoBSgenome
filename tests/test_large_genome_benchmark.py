@@ -350,20 +350,38 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
             workflow,
         )
 
-    def test_builder_uses_one_source_aware_fasta_inspection_stage(self):
+    def test_builder_streams_every_non_ncbi_source_directly_to_2bit(self):
         workflow = (
             ROOT / ".github" / "workflows" / "build-bsgenome.yml"
         ).read_text()
 
-        self.assertIn("- name: Inspect FASTA and collect stats", workflow)
-        self.assertIn("scripts/inspect_fasta.py", workflow)
+        self.assertIn(
+            "- name: Stream Ensembl, URL, or uploaded FASTA to 2bit",
+            workflow,
+        )
+        self.assertEqual(workflow.count("scripts/stream_fasta_to_2bit.py"), 2)
         self.assertIn('--source "$FASTA_SOURCE"', workflow)
-        self.assertIn("timings_sec.fasta_inspection", workflow)
+        self.assertIn("--compression auto", workflow)
+        self.assertIn("timings_sec.fasta_stream_to_2bit", workflow)
+        self.assertIn('CONVERTER_STATUS" = "75', workflow)
         self.assertIn("benchmark-report/fasta-inspection.json", workflow)
+        self.assertNotIn("- name: Download FASTA from Ensembl", workflow)
+        self.assertNotIn("- name: Download FASTA from URL", workflow)
+        self.assertNotIn("- name: Download uploaded FASTA", workflow)
+        self.assertNotIn("- name: Inspect FASTA and collect stats", workflow)
+        self.assertNotIn("- name: Convert FASTA to 2bit", workflow)
         self.assertNotIn("Validate nucleotide FASTA", workflow)
         self.assertNotIn("Extract FASTA headers and stats", workflow)
         self.assertNotIn("scripts/validate_fasta.py", workflow)
         self.assertNotIn("gzip -t downloaded.fasta", workflow)
+
+        stream_start = workflow.index(
+            "- name: Stream Ensembl, URL, or uploaded FASTA to 2bit"
+        )
+        stream_end = workflow.index("- name: Expose FASTA metadata", stream_start)
+        stream_step = workflow[stream_start:stream_end]
+        self.assertNotIn("genome.fa", stream_step)
+        self.assertIn('curl -fsS -X DELETE "$FASTA_UPLOAD_URL"', stream_step)
 
     def test_builder_has_no_circular_detection_network_stage(self):
         workflow = (

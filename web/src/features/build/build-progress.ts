@@ -16,14 +16,10 @@ export function fallbackBuildStepLabels(source: string): string[] {
     ];
   }
 
-  const downloadLabel =
-    source === "url" ? "Downloading FASTA URL" : "Downloading FASTA";
   return [
     ...(source === "upload" ? ["Uploading FASTA"] : []),
     "Queuing build on GitHub Actions",
-    downloadLabel,
-    "Inspecting FASTA metadata",
-    "Converting to 2bit format",
+    "Streaming FASTA to 2bit",
     ...PACKAGE_STAGES,
   ];
 }
