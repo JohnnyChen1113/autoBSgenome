@@ -82,6 +82,10 @@ jobs:
               'ensembl_group': extra.get('ensembl_group', ''),
               'publish_to_index': str(extra.get('publish_to_index', False)).lower(),
               'benchmark_mode': str(extra.get('benchmark_mode', False)).lower(),
+              'benchmark_publication_action': extra.get(
+                  'benchmark_publication_action',
+                  'publish' if extra.get('publish_to_index', False) else 'skip-existing',
+              ),
               'benchmark_campaign': extra.get('benchmark_campaign', ''),
               'benchmark_order': extra.get('benchmark_order', ''),
               'metadata_snapshot_date': extra.get('metadata_snapshot_date', ''),
@@ -115,7 +119,7 @@ jobs:
           python3 scripts/record_metric.py benchmark.package_name "${{ steps.params.outputs.package_name }}"
           python3 scripts/record_metric.py benchmark.metadata_snapshot_date "${{ steps.params.outputs.metadata_snapshot_date }}"
           python3 scripts/record_metric.py benchmark.build_sla_seconds "${{ steps.params.outputs.build_sla_seconds }}"
-          python3 scripts/record_metric.py benchmark.publication_action "${{ steps.params.outputs.publish_to_index == 'true' && 'publish' || 'skip-existing' }}"
+          python3 scripts/record_metric.py benchmark.publication_action "${{ steps.params.outputs.benchmark_publication_action }}"
           python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.assembly_level "${{ steps.params.outputs.ncbi_assembly_level }}"
           python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.total_sequence_length "${{ steps.params.outputs.ncbi_total_sequence_length }}"
           python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.total_ungapped_length "${{ steps.params.outputs.ncbi_total_ungapped_length }}"

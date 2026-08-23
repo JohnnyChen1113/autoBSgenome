@@ -60,6 +60,7 @@ def build_dispatch_payload(campaign, genome, publication, run_token=""):
             "data_source": "ncbi",
             "fasta_source": "ncbi",
             "publish_to_index": publication == "publish",
+            "benchmark_publication_action": publication,
             "benchmark_mode": True,
             "benchmark_campaign": campaign["campaign_id"],
             "benchmark_order": order,

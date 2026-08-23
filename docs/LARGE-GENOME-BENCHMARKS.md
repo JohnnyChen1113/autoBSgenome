@@ -60,6 +60,25 @@ The campaign result artifact will contain JSON, CSV, and Markdown tables. No
 causal statement about total length or contiguity will be added until all 20
 first-run results have been collected.
 
+### Initial workflow validation (2026-08-23)
+
+The first three campaign entries completed successfully in the same sequential
+[campaign run](https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32625225234).
+Each NCBI download used one direct FTP stream into `faToTwoBit -long`, and each
+archive passed the single-stream archive validation.
+
+| Organism | Accession | FASTA records | Stream to 2bit | Compress | Validate | Core build | Tarball | Publication |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| *Pleurodeles waltl* | `GCA_054660815.1` | 2,679 | 4 min 21 s | 3 min 49 s | 53 s | 8 min 34 s | 5.26 GB | [Zenodo 22066005](https://zenodo.org/records/22066005), 9 min 31 s |
+| *Pinus taeda* | `GCA_000404065.3` | 1,760,464 | 3 min 16 s | 3 min 31 s | 41 s | 7 min 23 s | 5.53 GB | Explicitly skipped; existing record unchanged |
+| *Pinus radiata* | `GCA_050662955.1` | 305,167 | 4 min 51 s | 4 min 38 s | 1 min 02 s | 9 min 56 s | 5.94 GB | [Zenodo 22066355](https://zenodo.org/records/22066355), 8 min 40 s |
+
+`Core build` is the measured workflow start through validated package archive;
+publication is reported separately. The benchmark-only *P. taeda* tarball was
+deleted after validation and did not create a release, Zenodo record, or index
+entry. Its 7 min 23 s result replaces neither the historical observation nor
+the existing package; it is a controlled measurement of the current workflow.
+
 ## Known format and storage thresholds
 
 | Boundary | Current behavior |

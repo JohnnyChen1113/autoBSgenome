@@ -109,7 +109,7 @@ class ManifestTests(unittest.TestCase):
         )
 
         payload = benchmark.build_dispatch_payload(
-            campaign, genome, publication="skip-existing"
+            campaign, genome, publication="skip-policy"
         )
 
         self.assertLessEqual(len(payload), 10)
@@ -118,6 +118,9 @@ class ManifestTests(unittest.TestCase):
         self.assertEqual(payload["package_name"], "BSgenome.Ptaeda.NCBI.Ptaeda20")
         self.assertTrue(payload["extra"]["benchmark_mode"])
         self.assertFalse(payload["extra"]["publish_to_index"])
+        self.assertEqual(
+            payload["extra"]["benchmark_publication_action"], "skip-policy"
+        )
         self.assertEqual(
             payload["extra"]["ncbi_assembly_stats"]["scaffold_n50"], 107_038
         )
@@ -356,6 +359,17 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
             "timings_sec.storage_selection",
         ):
             self.assertIn(metric, workflow)
+
+    def test_workflow_preserves_the_benchmark_publication_reason(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+
+        self.assertIn("benchmark_publication_action", workflow)
+        self.assertIn(
+            "benchmark.publication_action \"${{ steps.params.outputs.benchmark_publication_action }}\"",
+            workflow,
+        )
 
     def test_archive_validation_hashes_and_lists_one_tee_stream(self):
         workflow = (
