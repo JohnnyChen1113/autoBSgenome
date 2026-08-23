@@ -176051,6 +176051,176 @@
       ]
     },
     {
+      "organism": "Picea engelmannii",
+      "common_name": "Engelmann spruce",
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Pinopsida",
+        "order": "Pinales",
+        "family": "Pinaceae",
+        "genus": "Picea"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pengelmannii.NCBI.Se404851v1",
+          "version": "1.0.0",
+          "organism": "Picea engelmannii",
+          "assembly": "Se404-851_v1",
+          "provider": "NCBI",
+          "accession": "GCA_009831015.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009831015.1/",
+          "file_name": "BSgenome.Pengelmannii.NCBI.Se404851v1_1.0.0.tar.gz",
+          "size": 5531570076,
+          "seq_ids": [
+            "ML776548.1",
+            "ML776549.1",
+            "ML776550.1",
+            "ML776551.1",
+            "ML776552.1"
+          ],
+          "seq_count": 946236,
+          "group": "plant",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Viridiplantae",
+            "phylum": "Streptophyta",
+            "class": "Pinopsida",
+            "order": "Pinales",
+            "family": "Pinaceae",
+            "genus": "Picea"
+          },
+          "common_name": "Engelmann spruce",
+          "indexed_at": "2026-08-23T17:26:19Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22070861/files/BSgenome.Pengelmannii.NCBI.Se404851v1_1.0.0.tar.gz",
+          "release_date": "2020-01-03",
+          "published": "2020-01-03",
+          "doi": "10.5281/zenodo.22070861",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787504518,
+              "archive_completed": 1787505128
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15993,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.76,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 8,
+              "accession": "GCA_009831015.1",
+              "organism": "Picea engelmannii",
+              "assembly": "Se404-851_v1",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Pengelmannii.NCBI.Se404851v1",
+              "metadata_snapshot_date": "2026-08-23",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Scaffold",
+                "total_sequence_length": 24943568506,
+                "total_ungapped_length": 20748779381,
+                "number_of_scaffolds": 946236,
+                "scaffold_n50": 403791
+              }
+            },
+            "timings_sec": {
+              "ncbi_resolve": 1,
+              "ncbi_acquisition_to_2bit": 317,
+              "ncbi_stream_to_2bit": 316,
+              "seed_generation": 0,
+              "forge": 26,
+              "rcmd_build": 263,
+              "package_compression": 263,
+              "archive_validation": 61,
+              "storage_selection": 0,
+              "package_publication": 776
+            },
+            "ncbi_acquisition_mode": "ncbi-ftp-stream",
+            "ncbi_stream": {
+              "attempt_count": 1,
+              "compressed_size_bytes": 6709741247,
+              "compressed_md5": "03d436980eaa4ed8a8438248619fee1e",
+              "pipeline_wall_seconds": 316.028
+            },
+            "fasta_size_bytes": 25366523952,
+            "seq_count": 946236,
+            "fasta_inspection": {
+              "sampled_bases": 0,
+              "exhaustive_validation": false
+            },
+            "twobit_size_bytes": 7225740220,
+            "used_long_2bit": true,
+            "timings_cpu_sec": {
+              "ncbi_stream_python": 125.425,
+              "ncbi_stream_converter": 177.916
+            },
+            "disk_used_checkpoint_gb": {
+              "after_2bit": 66.21,
+              "after_forge": 66.21,
+              "after_rcmd_build": 64.63
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 83846459392,
+              "memory_used_bytes": 14040584192,
+              "process_rss_bytes": 7516860416,
+              "stages": {
+                "ncbi_stream_to_2bit": {
+                  "disk_used_bytes": 71089008640,
+                  "memory_used_bytes": 12788412416,
+                  "process_rss_bytes": 7516860416,
+                  "samples": 318
+                },
+                "forge": {
+                  "disk_used_bytes": 78314795008,
+                  "memory_used_bytes": 13998981120,
+                  "process_rss_bytes": 764518400,
+                  "samples": 28
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 83846459392,
+                  "memory_used_bytes": 14040584192,
+                  "process_rss_bytes": 99004416,
+                  "samples": 264
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 69394931712,
+                  "memory_used_bytes": 5691662336,
+                  "process_rss_bytes": 32206848,
+                  "samples": 63
+                }
+              }
+            },
+            "peak_mem_mb": {
+              "forge": 708
+            },
+            "tarball_size_bytes": 5531570076,
+            "package_sha256": "e089a8a90cea1eb98d098faf8721c08723422c46881255878b63c8b526a87cfb",
+            "archive_valid": true
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009831015.1/",
+            "source_accession": "GCA_009831015.1",
+            "built_at": "2026-08-23T17:13:11Z",
+            "workflow_run_id": "32653500189",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32653500189",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "e089a8a90cea1eb98d098faf8721c08723422c46881255878b63c8b526a87cfb",
+            "description_sha256": "1023d8da372da52a82a14a042fb7053de5096637e5e36978ab90188ba61c8f60"
+          }
+        }
+      ]
+    },
+    {
       "organism": "Pichia kudriavzevii",
       "common_name": "",
       "group": "fungi",
@@ -456395,6 +456565,160 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
         "package_sha256": "bd023e01b867cd3c0f47109812a55cb488c226de3faf9221a5cae43b2731bf9f",
         "description_sha256": "e51a704ae573fd1b17deb45f4e8172e702c975e104184976073b6f75f921edbf"
+      }
+    },
+    {
+      "package": "BSgenome.Pengelmannii.NCBI.Se404851v1",
+      "version": "1.0.0",
+      "organism": "Picea engelmannii",
+      "assembly": "Se404-851_v1",
+      "provider": "NCBI",
+      "accession": "GCA_009831015.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009831015.1/",
+      "file_name": "BSgenome.Pengelmannii.NCBI.Se404851v1_1.0.0.tar.gz",
+      "size": 5531570076,
+      "seq_ids": [
+        "ML776548.1",
+        "ML776549.1",
+        "ML776550.1",
+        "ML776551.1",
+        "ML776552.1"
+      ],
+      "seq_count": 946236,
+      "group": "plant",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Viridiplantae",
+        "phylum": "Streptophyta",
+        "class": "Pinopsida",
+        "order": "Pinales",
+        "family": "Pinaceae",
+        "genus": "Picea"
+      },
+      "common_name": "Engelmann spruce",
+      "indexed_at": "2026-08-23T17:26:19Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22070861/files/BSgenome.Pengelmannii.NCBI.Se404851v1_1.0.0.tar.gz",
+      "release_date": "2020-01-03",
+      "published": "2020-01-03",
+      "doi": "10.5281/zenodo.22070861",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787504518,
+          "archive_completed": 1787505128
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15993,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.76,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 8,
+          "accession": "GCA_009831015.1",
+          "organism": "Picea engelmannii",
+          "assembly": "Se404-851_v1",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Pengelmannii.NCBI.Se404851v1",
+          "metadata_snapshot_date": "2026-08-23",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Scaffold",
+            "total_sequence_length": 24943568506,
+            "total_ungapped_length": 20748779381,
+            "number_of_scaffolds": 946236,
+            "scaffold_n50": 403791
+          }
+        },
+        "timings_sec": {
+          "ncbi_resolve": 1,
+          "ncbi_acquisition_to_2bit": 317,
+          "ncbi_stream_to_2bit": 316,
+          "seed_generation": 0,
+          "forge": 26,
+          "rcmd_build": 263,
+          "package_compression": 263,
+          "archive_validation": 61,
+          "storage_selection": 0,
+          "package_publication": 776
+        },
+        "ncbi_acquisition_mode": "ncbi-ftp-stream",
+        "ncbi_stream": {
+          "attempt_count": 1,
+          "compressed_size_bytes": 6709741247,
+          "compressed_md5": "03d436980eaa4ed8a8438248619fee1e",
+          "pipeline_wall_seconds": 316.028
+        },
+        "fasta_size_bytes": 25366523952,
+        "seq_count": 946236,
+        "fasta_inspection": {
+          "sampled_bases": 0,
+          "exhaustive_validation": false
+        },
+        "twobit_size_bytes": 7225740220,
+        "used_long_2bit": true,
+        "timings_cpu_sec": {
+          "ncbi_stream_python": 125.425,
+          "ncbi_stream_converter": 177.916
+        },
+        "disk_used_checkpoint_gb": {
+          "after_2bit": 66.21,
+          "after_forge": 66.21,
+          "after_rcmd_build": 64.63
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 83846459392,
+          "memory_used_bytes": 14040584192,
+          "process_rss_bytes": 7516860416,
+          "stages": {
+            "ncbi_stream_to_2bit": {
+              "disk_used_bytes": 71089008640,
+              "memory_used_bytes": 12788412416,
+              "process_rss_bytes": 7516860416,
+              "samples": 318
+            },
+            "forge": {
+              "disk_used_bytes": 78314795008,
+              "memory_used_bytes": 13998981120,
+              "process_rss_bytes": 764518400,
+              "samples": 28
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 83846459392,
+              "memory_used_bytes": 14040584192,
+              "process_rss_bytes": 99004416,
+              "samples": 264
+            },
+            "archive_validation": {
+              "disk_used_bytes": 69394931712,
+              "memory_used_bytes": 5691662336,
+              "process_rss_bytes": 32206848,
+              "samples": 63
+            }
+          }
+        },
+        "peak_mem_mb": {
+          "forge": 708
+        },
+        "tarball_size_bytes": 5531570076,
+        "package_sha256": "e089a8a90cea1eb98d098faf8721c08723422c46881255878b63c8b526a87cfb",
+        "archive_valid": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_009831015.1/",
+        "source_accession": "GCA_009831015.1",
+        "built_at": "2026-08-23T17:13:11Z",
+        "workflow_run_id": "32653500189",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32653500189",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "e089a8a90cea1eb98d098faf8721c08723422c46881255878b63c8b526a87cfb",
+        "description_sha256": "1023d8da372da52a82a14a042fb7053de5096637e5e36978ab90188ba61c8f60"
       }
     }
   ]

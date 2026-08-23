@@ -15801,3 +15801,7 @@ NeedsCompilation: no
 Package: BSgenome.Ptabuliformis.NCBI.CPIR1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pengelmannii.NCBI.Se404851v1
+Version: 1.0.0
+NeedsCompilation: no
