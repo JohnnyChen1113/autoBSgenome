@@ -52,5 +52,24 @@ class FinalBuildReportTests(unittest.TestCase):
         self.assertEqual(report["outcome"]["publication"], "skipped-existing")
         self.assertTrue(report["outcome"]["workflow_complete"])
 
+    def test_explicit_no_publish_policy_is_preserved_in_outcome(self):
+        metrics = {
+            "schema_version": 2,
+            "timings_epoch": {
+                "workflow_started": 1000,
+                "archive_completed": 1100,
+            },
+            "benchmark": {"build_sla_seconds": 3600},
+        }
+
+        report = finalizer.finalize_report(
+            metrics,
+            workflow_status="success",
+            publication_action="skip-policy",
+        )
+
+        self.assertEqual(report["outcome"]["publication"], "skipped-policy")
+        self.assertTrue(report["outcome"]["workflow_complete"])
+
 if __name__ == "__main__":
     unittest.main()

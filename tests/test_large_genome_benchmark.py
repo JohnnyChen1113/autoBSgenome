@@ -370,6 +370,10 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
             "benchmark.publication_action \"${{ steps.params.outputs.benchmark_publication_action }}\"",
             workflow,
         )
+        self.assertIn(
+            "PUBLICATION_ACTION: ${{ steps.params.outputs.benchmark_publication_action }}",
+            workflow,
+        )
 
     def test_archive_validation_hashes_and_lists_one_tee_stream(self):
         workflow = (
