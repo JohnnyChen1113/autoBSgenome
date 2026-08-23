@@ -89,13 +89,17 @@ class ManifestTests(unittest.TestCase):
             ROOT / ".github" / "workflows" / "large-genome-benchmark-2026.yml"
         ).read_text()
 
+        self.assertIn("from_order:", workflow)
         self.assertIn("through_order:", workflow)
+        self.assertIn('description: "Start campaign at this order"', workflow)
         self.assertIn("default: 20", workflow)
         self.assertIn(
-            "if: ${{ always() && inputs.through_order >= 3 }}", workflow
+            "if: ${{ always() && inputs.from_order <= 3 && inputs.through_order >= 3 }}",
+            workflow,
         )
         self.assertIn(
-            "if: ${{ always() && inputs.through_order >= 4 }}", workflow
+            "if: ${{ always() && inputs.from_order <= 4 && inputs.through_order >= 4 }}",
+            workflow,
         )
 
     def test_dispatch_payload_keeps_benchmark_metadata_inside_extra(self):
@@ -343,6 +347,17 @@ class ManifestTests(unittest.TestCase):
 
 
 class WorkflowRuntimeContractTests(unittest.TestCase):
+    def test_github_actions_use_node24_releases(self):
+        workflows = "\n".join(
+            path.read_text()
+            for path in sorted((ROOT / ".github" / "workflows").glob("*.yml"))
+        )
+
+        self.assertNotIn("actions/checkout@v4", workflows)
+        self.assertNotIn("actions/upload-artifact@v4", workflows)
+        self.assertIn("actions/checkout@v7", workflows)
+        self.assertIn("actions/upload-artifact@v7", workflows)
+
     def test_workflow_records_fine_grained_stage_timings(self):
         workflow = (
             ROOT / ".github" / "workflows" / "build-bsgenome.yml"

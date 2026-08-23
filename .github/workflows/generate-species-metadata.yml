@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout gh-pages
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: gh-pages
 
@@ -42,7 +42,7 @@ jobs:
           python-version: "3.12"
 
       - name: Checkout metadata generator
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
           path: _main

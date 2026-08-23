@@ -38,6 +38,8 @@ versioned source of truth is
 [`large-genomes-2026.json`](../.github/benchmarks/large-genomes-2026.json), and
 the sequential orchestrator is
 [`large-genome-benchmark-2026.yml`](../.github/workflows/large-genome-benchmark-2026.yml).
+The manual `from_order` and `through_order` inputs can run an exact contiguous
+subset without rebuilding completed campaign entries.
 
 All campaign builds:
 
