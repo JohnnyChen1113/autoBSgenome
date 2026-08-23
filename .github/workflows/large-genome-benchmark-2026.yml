@@ -2,6 +2,12 @@ name: Large Genome Benchmark 2026
 
 on:
   workflow_dispatch:
+    inputs:
+      through_order:
+        description: "Run campaign entries from order 1 through this order"
+        required: true
+        default: 20
+        type: number
 
 permissions:
   actions: read
@@ -9,6 +15,7 @@ permissions:
 
 jobs:
   genome-01:
+    if: ${{ inputs.through_order >= 1 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_054660815.1
@@ -16,7 +23,7 @@ jobs:
 
   genome-02:
     needs: genome-01
-    if: always()
+    if: ${{ always() && inputs.through_order >= 2 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_000404065.3
@@ -24,7 +31,7 @@ jobs:
 
   genome-03:
     needs: genome-02
-    if: always()
+    if: ${{ always() && inputs.through_order >= 3 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_050662955.1
@@ -32,7 +39,7 @@ jobs:
 
   genome-04:
     needs: genome-03
-    if: always()
+    if: ${{ always() && inputs.through_order >= 4 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_963921515.1
@@ -40,7 +47,7 @@ jobs:
 
   genome-05:
     needs: genome-04
-    if: always()
+    if: ${{ always() && inputs.through_order >= 5 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_964261635.2
@@ -48,7 +55,7 @@ jobs:
 
   genome-06:
     needs: genome-05
-    if: always()
+    if: ${{ always() && inputs.through_order >= 6 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_964263255.2
@@ -56,7 +63,7 @@ jobs:
 
   genome-07:
     needs: genome-06
-    if: always()
+    if: ${{ always() && inputs.through_order >= 7 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_031772625.1
@@ -64,7 +71,7 @@ jobs:
 
   genome-08:
     needs: genome-07
-    if: always()
+    if: ${{ always() && inputs.through_order >= 8 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_009831015.1
@@ -72,7 +79,7 @@ jobs:
 
   genome-09:
     needs: genome-08
-    if: always()
+    if: ${{ always() && inputs.through_order >= 9 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_007258455.2
@@ -80,7 +87,7 @@ jobs:
 
   genome-10:
     needs: genome-09
-    if: always()
+    if: ${{ always() && inputs.through_order >= 10 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_000966675.3
@@ -88,7 +95,7 @@ jobs:
 
   genome-11:
     needs: genome-10
-    if: always()
+    if: ${{ always() && inputs.through_order >= 11 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_001447015.2
@@ -96,7 +103,7 @@ jobs:
 
   genome-12:
     needs: genome-11
-    if: always()
+    if: ${{ always() && inputs.through_order >= 12 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_034641835.3
@@ -104,7 +111,7 @@ jobs:
 
   genome-13:
     needs: genome-12
-    if: always()
+    if: ${{ always() && inputs.through_order >= 13 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_002915635.3
@@ -112,7 +119,7 @@ jobs:
 
   genome-14:
     needs: genome-13
-    if: always()
+    if: ${{ always() && inputs.through_order >= 14 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_047292645.1
@@ -120,7 +127,7 @@ jobs:
 
   genome-15:
     needs: genome-14
-    if: always()
+    if: ${{ always() && inputs.through_order >= 15 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_016271365.2
@@ -128,7 +135,7 @@ jobs:
 
   genome-16:
     needs: genome-15
-    if: always()
+    if: ${{ always() && inputs.through_order >= 16 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_051903835.1
@@ -136,7 +143,7 @@ jobs:
 
   genome-17:
     needs: genome-16
-    if: always()
+    if: ${{ always() && inputs.through_order >= 17 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_040939525.1
@@ -144,7 +151,7 @@ jobs:
 
   genome-18:
     needs: genome-17
-    if: always()
+    if: ${{ always() && inputs.through_order >= 18 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_060040675.1
@@ -152,7 +159,7 @@ jobs:
 
   genome-19:
     needs: genome-18
-    if: always()
+    if: ${{ always() && inputs.through_order >= 19 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_040581445.1
@@ -160,7 +167,7 @@ jobs:
 
   genome-20:
     needs: genome-19
-    if: always()
+    if: ${{ always() && inputs.through_order >= 20 }}
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
       accession: GCA_963277665.1

@@ -41,7 +41,9 @@ The campaign includes:
 20. *Viscum album*
 
 The first three entries form the initial workflow-validation batch. The
-historical *A. mexicanum* failure remains in the full campaign at order 13.
+orchestrator is dispatched with `through_order: 3`, so orders 4–20 are skipped
+without being removed from the manifest. The historical *A. mexicanum* failure
+remains in the full campaign at order 13.
 
 ## Interpretation rules
 

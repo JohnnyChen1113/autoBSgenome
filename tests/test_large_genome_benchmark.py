@@ -84,6 +84,20 @@ class ManifestTests(unittest.TestCase):
         ]
         self.assertEqual(dispatched_accessions, expected)
 
+    def test_orchestrator_can_stop_after_the_initial_three_item_batch(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "large-genome-benchmark-2026.yml"
+        ).read_text()
+
+        self.assertIn("through_order:", workflow)
+        self.assertIn("default: 20", workflow)
+        self.assertIn(
+            "if: ${{ always() && inputs.through_order >= 3 }}", workflow
+        )
+        self.assertIn(
+            "if: ${{ always() && inputs.through_order >= 4 }}", workflow
+        )
+
     def test_dispatch_payload_keeps_benchmark_metadata_inside_extra(self):
         campaign = benchmark.load_manifest(
             ROOT / ".github" / "benchmarks" / "large-genomes-2026.json"
