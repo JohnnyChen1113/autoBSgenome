@@ -6801,6 +6801,176 @@
       ]
     },
     {
+      "organism": "Ambystoma mexicanum",
+      "common_name": "axolotl",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Caudata",
+        "family": "Ambystomatidae",
+        "genus": "Ambystoma"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Amexicanum.NCBI.AmbMex60DD",
+          "version": "1.0.0",
+          "organism": "Ambystoma mexicanum",
+          "assembly": "AmbMex60DD",
+          "provider": "NCBI",
+          "accession": "GCA_002915635.3",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002915635.3/",
+          "file_name": "BSgenome.Amexicanum.NCBI.AmbMex60DD_1.0.0.tar.gz",
+          "size": 7303947892,
+          "seq_ids": [
+            "CM010927.2",
+            "CM010928.2",
+            "CM010929.2",
+            "CM010930.2",
+            "CM010931.2"
+          ],
+          "seq_count": 27157,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Amphibia",
+            "order": "Caudata",
+            "family": "Ambystomatidae",
+            "genus": "Ambystoma"
+          },
+          "common_name": "axolotl",
+          "indexed_at": "2026-08-23T19:07:44Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22071589/files/BSgenome.Amexicanum.NCBI.AmbMex60DD_1.0.0.tar.gz",
+          "release_date": "2021-04-01",
+          "published": "2021-04-01",
+          "doi": "10.5281/zenodo.22071589",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787510698,
+              "archive_completed": 1787511437
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.77,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 13,
+              "accession": "GCA_002915635.3",
+              "organism": "Ambystoma mexicanum",
+              "assembly": "AmbMex60DD",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Amexicanum.NCBI.AmbMex60DD",
+              "metadata_snapshot_date": "2026-08-23",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Chromosome",
+                "total_sequence_length": 28206905576,
+                "total_ungapped_length": 28203219965,
+                "number_of_scaffolds": 27157,
+                "scaffold_n50": 1205706733
+              }
+            },
+            "timings_sec": {
+              "ncbi_resolve": 2,
+              "ncbi_acquisition_to_2bit": 380,
+              "ncbi_stream_to_2bit": 378,
+              "seed_generation": 0,
+              "forge": 44,
+              "rcmd_build": 312,
+              "package_compression": 312,
+              "archive_validation": 70,
+              "storage_selection": 0,
+              "package_publication": 543
+            },
+            "ncbi_acquisition_mode": "ncbi-ftp-stream",
+            "ncbi_stream": {
+              "attempt_count": 1,
+              "compressed_size_bytes": 8946044907,
+              "compressed_md5": "a1eead5b530de52ad8c88c385b302db4",
+              "pipeline_wall_seconds": 377.69
+            },
+            "fasta_size_bytes": 28561922289,
+            "seq_count": 27157,
+            "fasta_inspection": {
+              "sampled_bases": 0,
+              "exhaustive_validation": false
+            },
+            "twobit_size_bytes": 8075391310,
+            "used_long_2bit": true,
+            "timings_cpu_sec": {
+              "ncbi_stream_python": 159.818,
+              "ncbi_stream_converter": 195.968
+            },
+            "disk_used_checkpoint_gb": {
+              "after_2bit": 66.99,
+              "after_forge": 66.99,
+              "after_rcmd_build": 66.28
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 87297081344,
+              "memory_used_bytes": 14900838400,
+              "process_rss_bytes": 9786646528,
+              "stages": {
+                "ncbi_stream_to_2bit": {
+                  "disk_used_bytes": 71934427136,
+                  "memory_used_bytes": 12978503680,
+                  "process_rss_bytes": 9786646528,
+                  "samples": 380
+                },
+                "forge": {
+                  "disk_used_bytes": 79914586112,
+                  "memory_used_bytes": 14828072960,
+                  "process_rss_bytes": 763252736,
+                  "samples": 46
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 87297081344,
+                  "memory_used_bytes": 14900838400,
+                  "process_rss_bytes": 123830272,
+                  "samples": 313
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 71163117568,
+                  "memory_used_bytes": 7485239296,
+                  "process_rss_bytes": 32796672,
+                  "samples": 72
+                }
+              }
+            },
+            "peak_mem_mb": {
+              "forge": 707
+            },
+            "tarball_size_bytes": 7303947892,
+            "package_sha256": "d4e9a8571eafa381f6b57bfe8b646dedca268ba9b75b00c1d4414539b378ec6f",
+            "archive_valid": true
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002915635.3/",
+            "source_accession": "GCA_002915635.3",
+            "built_at": "2026-08-23T18:58:29Z",
+            "workflow_run_id": "32658991203",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32658991203",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "d4e9a8571eafa381f6b57bfe8b646dedca268ba9b75b00c1d4414539b378ec6f",
+            "description_sha256": "337808fa45c66c1b2d8cd4cab15d639dd294cdaabc92df66c95622d240c3a8eb"
+          }
+        }
+      ]
+    },
+    {
       "organism": "Aminobacterium colombiense DSM 12261",
       "common_name": "",
       "group": "bacteria",
@@ -457043,6 +457213,160 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
         "package_sha256": "58dd620c7cb1d21ee9ad8556c98e130c0f7c4b2a94b9a47a6bd42758dee68f9a",
         "description_sha256": "6acb89e089549ba9aa64282c350f17337f301d2588e79f83f272105d9237fb2d"
+      }
+    },
+    {
+      "package": "BSgenome.Amexicanum.NCBI.AmbMex60DD",
+      "version": "1.0.0",
+      "organism": "Ambystoma mexicanum",
+      "assembly": "AmbMex60DD",
+      "provider": "NCBI",
+      "accession": "GCA_002915635.3",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002915635.3/",
+      "file_name": "BSgenome.Amexicanum.NCBI.AmbMex60DD_1.0.0.tar.gz",
+      "size": 7303947892,
+      "seq_ids": [
+        "CM010927.2",
+        "CM010928.2",
+        "CM010929.2",
+        "CM010930.2",
+        "CM010931.2"
+      ],
+      "seq_count": 27157,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Caudata",
+        "family": "Ambystomatidae",
+        "genus": "Ambystoma"
+      },
+      "common_name": "axolotl",
+      "indexed_at": "2026-08-23T19:07:44Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22071589/files/BSgenome.Amexicanum.NCBI.AmbMex60DD_1.0.0.tar.gz",
+      "release_date": "2021-04-01",
+      "published": "2021-04-01",
+      "doi": "10.5281/zenodo.22071589",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787510698,
+          "archive_completed": 1787511437
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.77,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 13,
+          "accession": "GCA_002915635.3",
+          "organism": "Ambystoma mexicanum",
+          "assembly": "AmbMex60DD",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Amexicanum.NCBI.AmbMex60DD",
+          "metadata_snapshot_date": "2026-08-23",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Chromosome",
+            "total_sequence_length": 28206905576,
+            "total_ungapped_length": 28203219965,
+            "number_of_scaffolds": 27157,
+            "scaffold_n50": 1205706733
+          }
+        },
+        "timings_sec": {
+          "ncbi_resolve": 2,
+          "ncbi_acquisition_to_2bit": 380,
+          "ncbi_stream_to_2bit": 378,
+          "seed_generation": 0,
+          "forge": 44,
+          "rcmd_build": 312,
+          "package_compression": 312,
+          "archive_validation": 70,
+          "storage_selection": 0,
+          "package_publication": 543
+        },
+        "ncbi_acquisition_mode": "ncbi-ftp-stream",
+        "ncbi_stream": {
+          "attempt_count": 1,
+          "compressed_size_bytes": 8946044907,
+          "compressed_md5": "a1eead5b530de52ad8c88c385b302db4",
+          "pipeline_wall_seconds": 377.69
+        },
+        "fasta_size_bytes": 28561922289,
+        "seq_count": 27157,
+        "fasta_inspection": {
+          "sampled_bases": 0,
+          "exhaustive_validation": false
+        },
+        "twobit_size_bytes": 8075391310,
+        "used_long_2bit": true,
+        "timings_cpu_sec": {
+          "ncbi_stream_python": 159.818,
+          "ncbi_stream_converter": 195.968
+        },
+        "disk_used_checkpoint_gb": {
+          "after_2bit": 66.99,
+          "after_forge": 66.99,
+          "after_rcmd_build": 66.28
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 87297081344,
+          "memory_used_bytes": 14900838400,
+          "process_rss_bytes": 9786646528,
+          "stages": {
+            "ncbi_stream_to_2bit": {
+              "disk_used_bytes": 71934427136,
+              "memory_used_bytes": 12978503680,
+              "process_rss_bytes": 9786646528,
+              "samples": 380
+            },
+            "forge": {
+              "disk_used_bytes": 79914586112,
+              "memory_used_bytes": 14828072960,
+              "process_rss_bytes": 763252736,
+              "samples": 46
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 87297081344,
+              "memory_used_bytes": 14900838400,
+              "process_rss_bytes": 123830272,
+              "samples": 313
+            },
+            "archive_validation": {
+              "disk_used_bytes": 71163117568,
+              "memory_used_bytes": 7485239296,
+              "process_rss_bytes": 32796672,
+              "samples": 72
+            }
+          }
+        },
+        "peak_mem_mb": {
+          "forge": 707
+        },
+        "tarball_size_bytes": 7303947892,
+        "package_sha256": "d4e9a8571eafa381f6b57bfe8b646dedca268ba9b75b00c1d4414539b378ec6f",
+        "archive_valid": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_002915635.3/",
+        "source_accession": "GCA_002915635.3",
+        "built_at": "2026-08-23T18:58:29Z",
+        "workflow_run_id": "32658991203",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32658991203",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "d4e9a8571eafa381f6b57bfe8b646dedca268ba9b75b00c1d4414539b378ec6f",
+        "description_sha256": "337808fa45c66c1b2d8cd4cab15d639dd294cdaabc92df66c95622d240c3a8eb"
       }
     }
   ]

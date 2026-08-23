@@ -15809,3 +15809,7 @@ NeedsCompilation: no
 Package: BSgenome.Palbicaulis.NCBI.WBP10
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Amexicanum.NCBI.AmbMex60DD
+Version: 1.0.0
+NeedsCompilation: no
