@@ -89,13 +89,17 @@ class ManifestTests(unittest.TestCase):
             ROOT / ".github" / "workflows" / "large-genome-benchmark-2026.yml"
         ).read_text()
 
+        self.assertIn("from_order:", workflow)
         self.assertIn("through_order:", workflow)
+        self.assertIn('description: "Start campaign at this order"', workflow)
         self.assertIn("default: 20", workflow)
         self.assertIn(
-            "if: ${{ always() && inputs.through_order >= 3 }}", workflow
+            "if: ${{ always() && inputs.from_order <= 3 && inputs.through_order >= 3 }}",
+            workflow,
         )
         self.assertIn(
-            "if: ${{ always() && inputs.through_order >= 4 }}", workflow
+            "if: ${{ always() && inputs.from_order <= 4 && inputs.through_order >= 4 }}",
+            workflow,
         )
 
     def test_dispatch_payload_keeps_benchmark_metadata_inside_extra(self):
