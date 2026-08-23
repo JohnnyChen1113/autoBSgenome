@@ -15789,3 +15789,7 @@ NeedsCompilation: no
 Package: BSgenome.Carnoldi.NCBI.aCalArn1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Lhelveticus.NCBI.aLisHel12
+Version: 1.0.0
+NeedsCompilation: no
