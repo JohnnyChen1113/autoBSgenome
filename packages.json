@@ -80040,6 +80040,176 @@
       ]
     },
     {
+      "organism": "Euphausia superba",
+      "common_name": "Antarctic krill",
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Malacostraca",
+        "order": "Euphausiacea",
+        "family": "Euphausiidae",
+        "genus": "Euphausia"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Esuperba.NCBI.ASM5190383v1",
+          "version": "1.0.0",
+          "organism": "Euphausia superba",
+          "assembly": "ASM5190383v1",
+          "provider": "NCBI",
+          "accession": "GCA_051903835.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_051903835.1/",
+          "file_name": "BSgenome.Esuperba.NCBI.ASM5190383v1_1.0.0.tar.gz",
+          "size": 7655379895,
+          "seq_ids": [
+            "JAPMSX010000001.1",
+            "JAPMSX010000002.1",
+            "JAPMSX010000003.1",
+            "JAPMSX010000004.1",
+            "JAPMSX010000005.1"
+          ],
+          "seq_count": 1011214,
+          "group": "invertebrate",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Arthropoda",
+            "class": "Malacostraca",
+            "order": "Euphausiacea",
+            "family": "Euphausiidae",
+            "genus": "Euphausia"
+          },
+          "common_name": "Antarctic krill",
+          "indexed_at": "2026-08-23T20:16:29Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22072053/files/BSgenome.Esuperba.NCBI.ASM5190383v1_1.0.0.tar.gz",
+          "release_date": "2025-08-08",
+          "published": "2025-08-08",
+          "doi": "10.5281/zenodo.22072053",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787514363,
+              "archive_completed": 1787515461
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.76,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 16,
+              "accession": "GCA_051903835.1",
+              "organism": "Euphausia superba",
+              "assembly": "ASM5190383v1",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Esuperba.NCBI.ASM5190383v1",
+              "metadata_snapshot_date": "2026-08-23",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Contig",
+                "total_sequence_length": 38150988744,
+                "total_ungapped_length": 38150988744,
+                "number_of_scaffolds": 1011214,
+                "scaffold_n50": 48277
+              }
+            },
+            "timings_sec": {
+              "ncbi_resolve": 0,
+              "ncbi_acquisition_to_2bit": 478,
+              "ncbi_stream_to_2bit": 478,
+              "seed_generation": 0,
+              "forge": 57,
+              "rcmd_build": 561,
+              "package_compression": 561,
+              "archive_validation": 97,
+              "storage_selection": 0,
+              "package_publication": 615
+            },
+            "ncbi_acquisition_mode": "ncbi-ftp-stream",
+            "ncbi_stream": {
+              "attempt_count": 1,
+              "compressed_size_bytes": 9430713299,
+              "compressed_md5": "b678332bdce0b205d1356947b02d4761",
+              "pipeline_wall_seconds": 477.19
+            },
+            "fasta_size_bytes": 38751722265,
+            "seq_count": 1011214,
+            "fasta_inspection": {
+              "sampled_bases": 0,
+              "exhaustive_validation": false
+            },
+            "twobit_size_bytes": 10962275764,
+            "used_long_2bit": true,
+            "timings_cpu_sec": {
+              "ncbi_stream_python": 189.712,
+              "ncbi_stream_converter": 243.477
+            },
+            "disk_used_checkpoint_gb": {
+              "after_2bit": 69.69,
+              "after_forge": 69.69,
+              "after_rcmd_build": 66.61
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 93444804608,
+              "memory_used_bytes": 15359787008,
+              "process_rss_bytes": 11255914496,
+              "stages": {
+                "ncbi_stream_to_2bit": {
+                  "disk_used_bytes": 74826952704,
+                  "memory_used_bytes": 14924042240,
+                  "process_rss_bytes": 11255914496,
+                  "samples": 479
+                },
+                "forge": {
+                  "disk_used_bytes": 85672734720,
+                  "memory_used_bytes": 15359787008,
+                  "process_rss_bytes": 762564608,
+                  "samples": 58
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 93444804608,
+                  "memory_used_bytes": 15346192384,
+                  "process_rss_bytes": 136445952,
+                  "samples": 561
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 71520206848,
+                  "memory_used_bytes": 7842635776,
+                  "process_rss_bytes": 32378880,
+                  "samples": 98
+                }
+              }
+            },
+            "peak_mem_mb": {
+              "forge": 707
+            },
+            "tarball_size_bytes": 7655379895,
+            "package_sha256": "c0c76cf1877f35387f853a55b75cebb1dc482e663e505b018d2ad2f44c0542b6",
+            "archive_valid": true
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_051903835.1/",
+            "source_accession": "GCA_051903835.1",
+            "built_at": "2026-08-23T20:05:59Z",
+            "workflow_run_id": "32662260361",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32662260361",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "c0c76cf1877f35387f853a55b75cebb1dc482e663e505b018d2ad2f44c0542b6",
+            "description_sha256": "2991ee3b9eed06af061576752d64a56db247cadbd00f3138f18a64af1d7dffd4"
+          }
+        }
+      ]
+    },
+    {
       "organism": "Eurypyga helias",
       "common_name": "sunbittern",
       "group": "vertebrate_other",
@@ -457691,6 +457861,160 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
         "package_sha256": "5d315db1ed88ac227e8a60be323c3efc20225c4ea6012afbeee702af4db2bb3b",
         "description_sha256": "22b304f70982e4ae6b3c87d676b6a1623e976a33d677edb4751ec387cd6a8f5c"
+      }
+    },
+    {
+      "package": "BSgenome.Esuperba.NCBI.ASM5190383v1",
+      "version": "1.0.0",
+      "organism": "Euphausia superba",
+      "assembly": "ASM5190383v1",
+      "provider": "NCBI",
+      "accession": "GCA_051903835.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_051903835.1/",
+      "file_name": "BSgenome.Esuperba.NCBI.ASM5190383v1_1.0.0.tar.gz",
+      "size": 7655379895,
+      "seq_ids": [
+        "JAPMSX010000001.1",
+        "JAPMSX010000002.1",
+        "JAPMSX010000003.1",
+        "JAPMSX010000004.1",
+        "JAPMSX010000005.1"
+      ],
+      "seq_count": 1011214,
+      "group": "invertebrate",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Malacostraca",
+        "order": "Euphausiacea",
+        "family": "Euphausiidae",
+        "genus": "Euphausia"
+      },
+      "common_name": "Antarctic krill",
+      "indexed_at": "2026-08-23T20:16:29Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22072053/files/BSgenome.Esuperba.NCBI.ASM5190383v1_1.0.0.tar.gz",
+      "release_date": "2025-08-08",
+      "published": "2025-08-08",
+      "doi": "10.5281/zenodo.22072053",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787514363,
+          "archive_completed": 1787515461
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.76,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 16,
+          "accession": "GCA_051903835.1",
+          "organism": "Euphausia superba",
+          "assembly": "ASM5190383v1",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Esuperba.NCBI.ASM5190383v1",
+          "metadata_snapshot_date": "2026-08-23",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Contig",
+            "total_sequence_length": 38150988744,
+            "total_ungapped_length": 38150988744,
+            "number_of_scaffolds": 1011214,
+            "scaffold_n50": 48277
+          }
+        },
+        "timings_sec": {
+          "ncbi_resolve": 0,
+          "ncbi_acquisition_to_2bit": 478,
+          "ncbi_stream_to_2bit": 478,
+          "seed_generation": 0,
+          "forge": 57,
+          "rcmd_build": 561,
+          "package_compression": 561,
+          "archive_validation": 97,
+          "storage_selection": 0,
+          "package_publication": 615
+        },
+        "ncbi_acquisition_mode": "ncbi-ftp-stream",
+        "ncbi_stream": {
+          "attempt_count": 1,
+          "compressed_size_bytes": 9430713299,
+          "compressed_md5": "b678332bdce0b205d1356947b02d4761",
+          "pipeline_wall_seconds": 477.19
+        },
+        "fasta_size_bytes": 38751722265,
+        "seq_count": 1011214,
+        "fasta_inspection": {
+          "sampled_bases": 0,
+          "exhaustive_validation": false
+        },
+        "twobit_size_bytes": 10962275764,
+        "used_long_2bit": true,
+        "timings_cpu_sec": {
+          "ncbi_stream_python": 189.712,
+          "ncbi_stream_converter": 243.477
+        },
+        "disk_used_checkpoint_gb": {
+          "after_2bit": 69.69,
+          "after_forge": 69.69,
+          "after_rcmd_build": 66.61
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 93444804608,
+          "memory_used_bytes": 15359787008,
+          "process_rss_bytes": 11255914496,
+          "stages": {
+            "ncbi_stream_to_2bit": {
+              "disk_used_bytes": 74826952704,
+              "memory_used_bytes": 14924042240,
+              "process_rss_bytes": 11255914496,
+              "samples": 479
+            },
+            "forge": {
+              "disk_used_bytes": 85672734720,
+              "memory_used_bytes": 15359787008,
+              "process_rss_bytes": 762564608,
+              "samples": 58
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 93444804608,
+              "memory_used_bytes": 15346192384,
+              "process_rss_bytes": 136445952,
+              "samples": 561
+            },
+            "archive_validation": {
+              "disk_used_bytes": 71520206848,
+              "memory_used_bytes": 7842635776,
+              "process_rss_bytes": 32378880,
+              "samples": 98
+            }
+          }
+        },
+        "peak_mem_mb": {
+          "forge": 707
+        },
+        "tarball_size_bytes": 7655379895,
+        "package_sha256": "c0c76cf1877f35387f853a55b75cebb1dc482e663e505b018d2ad2f44c0542b6",
+        "archive_valid": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_051903835.1/",
+        "source_accession": "GCA_051903835.1",
+        "built_at": "2026-08-23T20:05:59Z",
+        "workflow_run_id": "32662260361",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32662260361",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "c0c76cf1877f35387f853a55b75cebb1dc482e663e505b018d2ad2f44c0542b6",
+        "description_sha256": "2991ee3b9eed06af061576752d64a56db247cadbd00f3138f18a64af1d7dffd4"
       }
     }
   ]
