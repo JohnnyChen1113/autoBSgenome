@@ -181479,6 +181479,176 @@
       ]
     },
     {
+      "organism": "Pleurodeles waltl",
+      "common_name": "Iberian ribbed newt",
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Caudata",
+        "family": "Salamandridae",
+        "genus": "Pleurodeles"
+      },
+      "builds": [
+        {
+          "package": "BSgenome.Pwaltl.NCBI.Pwalv10",
+          "version": "1.0.0",
+          "organism": "Pleurodeles waltl",
+          "assembly": "Pwal_v1.0",
+          "provider": "NCBI",
+          "accession": "GCA_054660815.1",
+          "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_054660815.1/",
+          "file_name": "BSgenome.Pwaltl.NCBI.Pwalv10_1.0.0.tar.gz",
+          "size": 5260568074,
+          "seq_ids": [
+            "BAAHWF010000001.1",
+            "BAAHWF010000002.1",
+            "BAAHWF010000003.1",
+            "BAAHWF010000004.1",
+            "BAAHWF010000005.1"
+          ],
+          "seq_count": 2679,
+          "group": "vertebrate_other",
+          "taxonomy": {
+            "domain": "Eukaryota",
+            "kingdom": "Metazoa",
+            "phylum": "Chordata",
+            "class": "Amphibia",
+            "order": "Caudata",
+            "family": "Salamandridae",
+            "genus": "Pleurodeles"
+          },
+          "common_name": "Iberian ribbed newt",
+          "indexed_at": "2026-08-23T07:38:42Z",
+          "storage": "zenodo",
+          "download_url": "https://zenodo.org/records/22066005/files/BSgenome.Pwaltl.NCBI.Pwalv10_1.0.0.tar.gz",
+          "release_date": "2025-07-25",
+          "published": "2025-07-25",
+          "doi": "10.5281/zenodo.22066005",
+          "metrics": {
+            "schema_version": 2,
+            "timings_epoch": {
+              "workflow_started": 1787469569,
+              "archive_completed": 1787470083
+            },
+            "current_stage": "publication_zenodo",
+            "runner": {
+              "total_mem_mb": 15989,
+              "disk_total_gb": 144.26,
+              "disk_avail_start_gb": 84.77,
+              "cpu_count": 4
+            },
+            "benchmark": {
+              "campaign": "large-genomes-2026",
+              "order": 1,
+              "accession": "GCA_054660815.1",
+              "organism": "Pleurodeles waltl",
+              "assembly": "Pwal_v1.0",
+              "provider": "NCBI",
+              "package_name": "BSgenome.Pwaltl.NCBI.Pwalv10",
+              "metadata_snapshot_date": "2026-08-23",
+              "build_sla_seconds": 3600,
+              "publication_action": "publish",
+              "ncbi_assembly_stats": {
+                "assembly_level": "Contig",
+                "total_sequence_length": 21934601490,
+                "total_ungapped_length": 21934601490,
+                "number_of_scaffolds": 2679,
+                "scaffold_n50": 60529522
+              }
+            },
+            "timings_sec": {
+              "ncbi_resolve": 1,
+              "ncbi_acquisition_to_2bit": 262,
+              "ncbi_stream_to_2bit": 261,
+              "seed_generation": 0,
+              "forge": 19,
+              "rcmd_build": 229,
+              "package_compression": 229,
+              "archive_validation": 53,
+              "storage_selection": 0,
+              "package_publication": 571
+            },
+            "ncbi_acquisition_mode": "ncbi-ftp-stream",
+            "ncbi_stream": {
+              "attempt_count": 1,
+              "compressed_size_bytes": 6510094798,
+              "compressed_md5": "843b4e8c3b3c67d44384ae8814c19b87",
+              "pipeline_wall_seconds": 260.322
+            },
+            "fasta_size_bytes": 22209021089,
+            "seq_count": 2679,
+            "fasta_inspection": {
+              "sampled_bases": 0,
+              "exhaustive_validation": false
+            },
+            "twobit_size_bytes": 6152998157,
+            "used_long_2bit": true,
+            "timings_cpu_sec": {
+              "ncbi_stream_python": 116.988,
+              "ncbi_stream_converter": 130.672
+            },
+            "disk_used_checkpoint_gb": {
+              "after_2bit": 65.21,
+              "after_forge": 65.21,
+              "after_rcmd_build": 64.37
+            },
+            "resource_peaks": {
+              "disk_used_bytes": 81417609216,
+              "memory_used_bytes": 14488866816,
+              "process_rss_bytes": 6590681088,
+              "stages": {
+                "ncbi_stream_to_2bit": {
+                  "disk_used_bytes": 70014070784,
+                  "memory_used_bytes": 12227280896,
+                  "process_rss_bytes": 6590681088,
+                  "samples": 263
+                },
+                "forge": {
+                  "disk_used_bytes": 76028465152,
+                  "memory_used_bytes": 13046218752,
+                  "process_rss_bytes": 763895808,
+                  "samples": 22
+                },
+                "rcmd_build": {
+                  "disk_used_bytes": 81417609216,
+                  "memory_used_bytes": 14488866816,
+                  "process_rss_bytes": 141529088,
+                  "samples": 230
+                },
+                "archive_validation": {
+                  "disk_used_bytes": 69121921024,
+                  "memory_used_bytes": 5411909632,
+                  "process_rss_bytes": 32575488,
+                  "samples": 55
+                }
+              }
+            },
+            "peak_mem_mb": {
+              "forge": 708
+            },
+            "tarball_size_bytes": 5260568074,
+            "package_sha256": "06a293b503526ef217022d4444a236ed61640f63de2a325f9a54d8431c1ed850",
+            "archive_valid": true
+          },
+          "provenance": {
+            "schema_version": 1,
+            "provider": "NCBI",
+            "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_054660815.1/",
+            "source_accession": "GCA_054660815.1",
+            "built_at": "2026-08-23T07:28:58Z",
+            "workflow_run_id": "32625235197",
+            "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32625235197",
+            "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            "package_sha256": "06a293b503526ef217022d4444a236ed61640f63de2a325f9a54d8431c1ed850",
+            "description_sha256": "48f659d6c3ce6f5b7483fe8ba42c6eac22531f272a9c7c569b4799cb0f3557a6"
+          }
+        }
+      ]
+    },
+    {
       "organism": "Pleuronectes platessa",
       "common_name": "European plaice",
       "group": "vertebrate_other",
@@ -454451,6 +454621,160 @@
         "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
         "package_sha256": "fa307526a4d3866ab959be49eb92ac3554f2d84f28c380baabecdd0169be209e",
         "description_sha256": "b56d25ae754ef7cd1ca8d2b7d0ebe91e1585810dbae14e72311a40cb2a1c59a9"
+      }
+    },
+    {
+      "package": "BSgenome.Pwaltl.NCBI.Pwalv10",
+      "version": "1.0.0",
+      "organism": "Pleurodeles waltl",
+      "assembly": "Pwal_v1.0",
+      "provider": "NCBI",
+      "accession": "GCA_054660815.1",
+      "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_054660815.1/",
+      "file_name": "BSgenome.Pwaltl.NCBI.Pwalv10_1.0.0.tar.gz",
+      "size": 5260568074,
+      "seq_ids": [
+        "BAAHWF010000001.1",
+        "BAAHWF010000002.1",
+        "BAAHWF010000003.1",
+        "BAAHWF010000004.1",
+        "BAAHWF010000005.1"
+      ],
+      "seq_count": 2679,
+      "group": "vertebrate_other",
+      "taxonomy": {
+        "domain": "Eukaryota",
+        "kingdom": "Metazoa",
+        "phylum": "Chordata",
+        "class": "Amphibia",
+        "order": "Caudata",
+        "family": "Salamandridae",
+        "genus": "Pleurodeles"
+      },
+      "common_name": "Iberian ribbed newt",
+      "indexed_at": "2026-08-23T07:38:42Z",
+      "storage": "zenodo",
+      "download_url": "https://zenodo.org/records/22066005/files/BSgenome.Pwaltl.NCBI.Pwalv10_1.0.0.tar.gz",
+      "release_date": "2025-07-25",
+      "published": "2025-07-25",
+      "doi": "10.5281/zenodo.22066005",
+      "metrics": {
+        "schema_version": 2,
+        "timings_epoch": {
+          "workflow_started": 1787469569,
+          "archive_completed": 1787470083
+        },
+        "current_stage": "publication_zenodo",
+        "runner": {
+          "total_mem_mb": 15989,
+          "disk_total_gb": 144.26,
+          "disk_avail_start_gb": 84.77,
+          "cpu_count": 4
+        },
+        "benchmark": {
+          "campaign": "large-genomes-2026",
+          "order": 1,
+          "accession": "GCA_054660815.1",
+          "organism": "Pleurodeles waltl",
+          "assembly": "Pwal_v1.0",
+          "provider": "NCBI",
+          "package_name": "BSgenome.Pwaltl.NCBI.Pwalv10",
+          "metadata_snapshot_date": "2026-08-23",
+          "build_sla_seconds": 3600,
+          "publication_action": "publish",
+          "ncbi_assembly_stats": {
+            "assembly_level": "Contig",
+            "total_sequence_length": 21934601490,
+            "total_ungapped_length": 21934601490,
+            "number_of_scaffolds": 2679,
+            "scaffold_n50": 60529522
+          }
+        },
+        "timings_sec": {
+          "ncbi_resolve": 1,
+          "ncbi_acquisition_to_2bit": 262,
+          "ncbi_stream_to_2bit": 261,
+          "seed_generation": 0,
+          "forge": 19,
+          "rcmd_build": 229,
+          "package_compression": 229,
+          "archive_validation": 53,
+          "storage_selection": 0,
+          "package_publication": 571
+        },
+        "ncbi_acquisition_mode": "ncbi-ftp-stream",
+        "ncbi_stream": {
+          "attempt_count": 1,
+          "compressed_size_bytes": 6510094798,
+          "compressed_md5": "843b4e8c3b3c67d44384ae8814c19b87",
+          "pipeline_wall_seconds": 260.322
+        },
+        "fasta_size_bytes": 22209021089,
+        "seq_count": 2679,
+        "fasta_inspection": {
+          "sampled_bases": 0,
+          "exhaustive_validation": false
+        },
+        "twobit_size_bytes": 6152998157,
+        "used_long_2bit": true,
+        "timings_cpu_sec": {
+          "ncbi_stream_python": 116.988,
+          "ncbi_stream_converter": 130.672
+        },
+        "disk_used_checkpoint_gb": {
+          "after_2bit": 65.21,
+          "after_forge": 65.21,
+          "after_rcmd_build": 64.37
+        },
+        "resource_peaks": {
+          "disk_used_bytes": 81417609216,
+          "memory_used_bytes": 14488866816,
+          "process_rss_bytes": 6590681088,
+          "stages": {
+            "ncbi_stream_to_2bit": {
+              "disk_used_bytes": 70014070784,
+              "memory_used_bytes": 12227280896,
+              "process_rss_bytes": 6590681088,
+              "samples": 263
+            },
+            "forge": {
+              "disk_used_bytes": 76028465152,
+              "memory_used_bytes": 13046218752,
+              "process_rss_bytes": 763895808,
+              "samples": 22
+            },
+            "rcmd_build": {
+              "disk_used_bytes": 81417609216,
+              "memory_used_bytes": 14488866816,
+              "process_rss_bytes": 141529088,
+              "samples": 230
+            },
+            "archive_validation": {
+              "disk_used_bytes": 69121921024,
+              "memory_used_bytes": 5411909632,
+              "process_rss_bytes": 32575488,
+              "samples": 55
+            }
+          }
+        },
+        "peak_mem_mb": {
+          "forge": 708
+        },
+        "tarball_size_bytes": 5260568074,
+        "package_sha256": "06a293b503526ef217022d4444a236ed61640f63de2a325f9a54d8431c1ed850",
+        "archive_valid": true
+      },
+      "provenance": {
+        "schema_version": 1,
+        "provider": "NCBI",
+        "source_url": "https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_054660815.1/",
+        "source_accession": "GCA_054660815.1",
+        "built_at": "2026-08-23T07:28:58Z",
+        "workflow_run_id": "32625235197",
+        "workflow_run_url": "https://github.com/JohnnyChen1113/autoBSgenome/actions/runs/32625235197",
+        "builder_image": "ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+        "package_sha256": "06a293b503526ef217022d4444a236ed61640f63de2a325f9a54d8431c1ed850",
+        "description_sha256": "48f659d6c3ce6f5b7483fe8ba42c6eac22531f272a9c7c569b4799cb0f3557a6"
       }
     }
   ]

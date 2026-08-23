@@ -15777,3 +15777,7 @@ NeedsCompilation: no
 Package: BSgenome.Acepa.NCBI.ASM3076508v1
 Version: 1.0.0
 NeedsCompilation: no
+
+Package: BSgenome.Pwaltl.NCBI.Pwalv10
+Version: 1.0.0
+NeedsCompilation: no
