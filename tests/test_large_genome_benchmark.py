@@ -504,6 +504,23 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
         self.assertIn("steps.params.outputs.benchmark_mode == 'true'", cleanup)
         self.assertIn('rm -f -- "$TARBALL"', cleanup)
 
+    def test_zenodo_publish_passes_the_stable_build_job_id(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+
+        publish_start = workflow.index("- name: Publish oversized tarball to Zenodo")
+        publish_end = workflow.index("- name: Finalize benchmark report", publish_start)
+        publish_step = workflow[publish_start:publish_end]
+        self.assertIn(
+            '--job-id "${{ steps.params.outputs.job_id }}"',
+            publish_step,
+        )
+        self.assertIn('--status-file "$ZENODO_STATUS"', publish_step)
+        self.assertIn('ZENODO_RC=$?', publish_step)
+        self.assertIn('python3 scripts/record_metric.py current_stage "$ZENODO_FAILURE_STAGE"', publish_step)
+        self.assertIn('python3 scripts/record_metric.py zenodo.deposit_id', publish_step)
+
     def test_builder_steps_run_under_bash(self):
         workflow = (
             ROOT / ".github" / "workflows" / "build-bsgenome.yml"
