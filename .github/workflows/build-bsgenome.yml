@@ -917,14 +917,9 @@ jobs:
         if: always() && steps.params.outputs.benchmark_mode == 'true'
         env:
           WORKFLOW_STATUS: ${{ job.status }}
-          PUBLISH_TO_INDEX: ${{ steps.params.outputs.publish_to_index }}
+          PUBLICATION_ACTION: ${{ steps.params.outputs.benchmark_publication_action }}
         run: |
           mkdir -p benchmark-report
-          if [ "$PUBLISH_TO_INDEX" = "true" ]; then
-            PUBLICATION_ACTION=publish
-          else
-            PUBLICATION_ACTION=skip-existing
-          fi
           python3 scripts/finalize_build_report.py \
             --metrics-file /tmp/build_metrics.json \
             --output benchmark-report/build-report.json \

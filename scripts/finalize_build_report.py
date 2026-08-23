@@ -23,8 +23,8 @@ def finalize_report(metrics, *, workflow_status, publication_action):
     workflow_complete = workflow_status == "success"
     if not build_complete:
         publication = "not-reached"
-    elif publication_action == "skip-existing":
-        publication = "skipped-existing"
+    elif publication_action in {"skip-existing", "skip-policy"}:
+        publication = publication_action.replace("skip-", "skipped-", 1)
     elif workflow_complete:
         publication = "complete"
     else:
@@ -59,7 +59,9 @@ def main():
     parser.add_argument("--output", required=True)
     parser.add_argument("--workflow-status", required=True)
     parser.add_argument(
-        "--publication-action", choices=("publish", "skip-existing"), required=True
+        "--publication-action",
+        choices=("publish", "skip-existing", "skip-policy"),
+        required=True,
     )
     args = parser.parse_args()
     metrics_path = pathlib.Path(args.metrics_file)
