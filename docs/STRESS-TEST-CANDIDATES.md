@@ -1,6 +1,6 @@
 # Large-genome stress-test roster
 
-The active roster is the 16-entry NCBI campaign defined in
+The active roster is the 20-entry NCBI campaign defined in
 [`large-genomes-2026.json`](../.github/benchmarks/large-genomes-2026.json).
 This document describes why the set was selected; the manifest is authoritative
 for accession, assembly name, release date, total length, scaffold count, N50,
@@ -10,35 +10,40 @@ version, and execution order.
 
 The roster deliberately spans both total assembly length and contiguity:
 
-- 9.35–19.77 Gbp includes highly contiguous assemblies and two assemblies with
-  more than 11 million scaffolds.
-- 22.10–28.21 Gbp includes 17-scaffold chromosome-scale input, intermediate
-  assemblies, and assemblies with 1.76–4.25 million scaffolds.
-- 34.56–48.15 Gbp extends beyond the previous largest successful observation,
-  the 34.56-Gbp Australian lungfish assembly.
+- every assembly is larger than 20 Gbp;
+- the 21.93–29.02 Gbp range spans 17 to 9.39 million scaffolds;
+- the 34.56–48.15 Gbp range includes both highly contiguous and million-record
+  inputs; and
+- the 87.22- and 94.26-Gbp assemblies test the largest current public NCBI
+  references available for this campaign.
 
 The campaign includes:
 
-1. *Triticum timopheevii*
-2. *Ambystoma mexicanum*
-3. *Taxus chinensis*
-4. *Picea abies*
-5. *Larix sibirica*
-6. *Triticum aestivum*
-7. *Allium cepa*
-8. *Pleurodeles waltl*
-9. *Pinus taeda*
-10. *Pinus tabuliformis*
-11. *Sequoia sempervirens*
-12. *Picea glauca*
-13. *Pinus lambertiana*
-14. *Neoceratodus forsteri*
-15. *Protopterus annectens*
-16. *Paris polyphylla* var. *yunnanensis*
+1. *Pleurodeles waltl*
+2. *Pinus taeda*
+3. *Pinus radiata*
+4. *Calotriton arnoldi*
+5. *Lissotriton helveticus*
+6. *Lissotriton vulgaris*
+7. *Pinus tabuliformis*
+8. *Picea engelmannii*
+9. *Sequoia sempervirens*
+10. *Picea glauca*
+11. *Pinus lambertiana*
+12. *Pinus albicaulis*
+13. *Ambystoma mexicanum*
+14. *Ambystoma opacum*
+15. *Neoceratodus forsteri*
+16. *Euphausia superba*
+17. *Protopterus annectens*
+18. *Paris polyphylla* var. *yunnanensis*
+19. *Lepidosiren paradoxa*
+20. *Viscum album*
 
-The first run validates the metrics path. The second directly retests the
-historical *A. mexicanum* failure. Remaining inputs then proceed in increasing
-size order.
+The first three entries form the initial workflow-validation batch. The
+orchestrator is dispatched with `through_order: 3`, so orders 4–20 are skipped
+without being removed from the manifest. The historical *A. mexicanum* failure
+remains in the full campaign at order 13.
 
 ## Interpretation rules
 
@@ -56,5 +61,8 @@ size order.
 
 Before each dispatch, compare the live package index using both provider and
 accession. Exact existing NCBI packages are measured but not uploaded again.
-Existing Ensembl packages do not conflict with new NCBI packages because their
+The manifest additionally pins `publication_policy: never` for *Pinus taeda*
+`GCA_000404065.3` and *Neoceratodus forsteri* `GCA_016271365.2`, so those two
+reruns cannot publish even if the live index is incomplete. Existing Ensembl
+packages do not conflict with new NCBI packages because their
 provider-qualified package identifiers differ.

@@ -60,6 +60,7 @@ def build_dispatch_payload(campaign, genome, publication, run_token=""):
             "data_source": "ncbi",
             "fasta_source": "ncbi",
             "publish_to_index": publication == "publish",
+            "benchmark_publication_action": publication,
             "benchmark_mode": True,
             "benchmark_campaign": campaign["campaign_id"],
             "benchmark_order": order,
@@ -88,9 +89,18 @@ def plan_campaign(campaign, catalog):
     plan = []
     for genome in sorted(campaign["genomes"], key=lambda row: int(row["order"])):
         row = dict(genome)
-        row["publication"] = publication_action(
-            genome["provider"], genome["accession"], existing
-        )
+        publication_policy = genome.get("publication_policy", "auto")
+        if publication_policy not in {"auto", "never"}:
+            raise ValueError(
+                "unsupported publication_policy for "
+                f'{genome["accession"]}: {publication_policy}'
+            )
+        if publication_policy == "never":
+            row["publication"] = "skip-policy"
+        else:
+            row["publication"] = publication_action(
+                genome["provider"], genome["accession"], existing
+            )
         plan.append(row)
     return plan
 
