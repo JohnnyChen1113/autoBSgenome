@@ -33,7 +33,7 @@ The current workflow must be retested before discussing the assembly's outcome.
 
 ## Controlled 2026 campaign
 
-The current campaign contains 16 NCBI assemblies from 9.35 to 48.15 Gbp. Its
+The current campaign contains 20 NCBI assemblies from 21.93 to 94.26 Gbp. Its
 versioned source of truth is
 [`large-genomes-2026.json`](../.github/benchmarks/large-genomes-2026.json), and
 the sequential orchestrator is
@@ -50,12 +50,14 @@ All campaign builds:
   archive integrity, checksum, and the exact failure stage.
 
 An exact existing `NCBI + accession` package is rebuilt for measurement but is
-not uploaded or re-indexed. A package with the same accession from Ensembl has
-a distinct provider identity and does not suppress publication of the NCBI
-package.
+not uploaded or re-indexed. The two known existing NCBI packages, *Pinus
+taeda* `GCA_000404065.3` and *Neoceratodus forsteri* `GCA_016271365.2`, also
+carry an explicit no-publication policy in the manifest. A package with the
+same accession from Ensembl has a distinct provider identity and does not
+suppress publication of the NCBI package.
 
 The campaign result artifact will contain JSON, CSV, and Markdown tables. No
-causal statement about total length or contiguity will be added until all 16
+causal statement about total length or contiguity will be added until all 20
 first-run results have been collected.
 
 ## Known format and storage thresholds

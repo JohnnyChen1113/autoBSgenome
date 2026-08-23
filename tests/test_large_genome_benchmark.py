@@ -38,25 +38,33 @@ class PublicationPolicyTests(unittest.TestCase):
 
 
 class ManifestTests(unittest.TestCase):
-    def test_curated_campaign_contains_the_16_unique_ncbi_assemblies(self):
+    def test_curated_campaign_contains_the_20_unique_ncbi_assemblies(self):
         campaign = benchmark.load_manifest(
             ROOT / ".github" / "benchmarks" / "large-genomes-2026.json"
         )
         genomes = campaign["genomes"]
 
         self.assertEqual(campaign["campaign_id"], "large-genomes-2026")
-        self.assertEqual(len(genomes), 16)
-        self.assertEqual(len({row["accession"] for row in genomes}), 16)
+        self.assertEqual(len(genomes), 20)
+        self.assertEqual(len({row["accession"] for row in genomes}), 20)
         self.assertTrue(all(row["provider"] == "NCBI" for row in genomes))
         self.assertNotIn("Hordeum vulgare", {row["organism"] for row in genomes})
 
         by_accession = {row["accession"]: row for row in genomes}
         self.assertEqual(
-            by_accession["GCA_900067695.1"]["number_of_scaffolds"], 11_340_369
+            by_accession["GCA_047292645.1"]["number_of_scaffolds"], 9_389_658
         )
         self.assertEqual(
-            by_accession["GCA_060040675.1"]["total_sequence_length"],
-            48_146_245_579,
+            by_accession["GCA_963277665.1"]["total_sequence_length"],
+            94_261_041_113,
+        )
+        self.assertNotIn("GCA_040438655.1", by_accession)
+        self.assertNotIn("GCA_963082535.1", by_accession)
+        self.assertEqual(
+            by_accession["GCA_000404065.3"]["publication_policy"], "never"
+        )
+        self.assertEqual(
+            by_accession["GCA_016271365.2"]["publication_policy"], "never"
         )
 
     def test_orchestrator_order_matches_the_manifest(self):
@@ -123,11 +131,24 @@ class ManifestTests(unittest.TestCase):
 
         plan = benchmark.plan_campaign(campaign, catalog)
 
-        self.assertEqual([row["order"] for row in plan], list(range(1, 17)))
+        self.assertEqual([row["order"] for row in plan], list(range(1, 21)))
         actions = {row["accession"]: row["publication"] for row in plan}
-        self.assertEqual(actions["GCA_000404065.3"], "skip-existing")
-        self.assertEqual(actions["GCA_016271365.2"], "skip-existing")
-        self.assertEqual(actions["GCA_018294505.1"], "publish")
+        self.assertEqual(actions["GCA_000404065.3"], "skip-policy")
+        self.assertEqual(actions["GCA_016271365.2"], "skip-policy")
+        self.assertEqual(actions["GCA_054660815.1"], "publish")
+
+    def test_never_publish_policy_does_not_depend_on_the_live_catalog(self):
+        campaign = benchmark.load_manifest(
+            ROOT / ".github" / "benchmarks" / "large-genomes-2026.json"
+        )
+
+        actions = {
+            row["accession"]: row["publication"]
+            for row in benchmark.plan_campaign(campaign, {"flat": []})
+        }
+
+        self.assertEqual(actions["GCA_000404065.3"], "skip-policy")
+        self.assertEqual(actions["GCA_016271365.2"], "skip-policy")
 
     def test_payload_cli_emits_a_repository_dispatch_request(self):
         catalog = {
@@ -165,7 +186,7 @@ class ManifestTests(unittest.TestCase):
         request = json.loads(result.stdout)
         self.assertEqual(request["event_type"], "build_bsgenome")
         payload = request["client_payload"]
-        self.assertEqual(payload["job_id"], "large-genomes-2026-09-12345")
+        self.assertEqual(payload["job_id"], "large-genomes-2026-02-12345")
         self.assertFalse(payload["extra"]["publish_to_index"])
 
     def test_payload_cli_can_force_a_benchmark_only_nonpublishing_run(self):
@@ -188,7 +209,7 @@ class ManifestTests(unittest.TestCase):
                     "--catalog",
                     handle.name,
                     "--accession",
-                    "GCA_963921465.1",
+                    "GCA_054660815.1",
                     "--run-token",
                     "rerun",
                     "--no-publish",
@@ -222,10 +243,11 @@ class ManifestTests(unittest.TestCase):
         )
 
         matrix = json.loads(result.stdout)
-        self.assertEqual(len(matrix["include"]), 16)
-        self.assertEqual(matrix["include"][0]["accession"], "GCA_963921465.1")
-        self.assertEqual(matrix["include"][1]["accession"], "GCA_002915635.3")
-        self.assertEqual(matrix["include"][-1]["order"], 16)
+        self.assertEqual(len(matrix["include"]), 20)
+        self.assertEqual(matrix["include"][0]["accession"], "GCA_054660815.1")
+        self.assertEqual(matrix["include"][1]["accession"], "GCA_000404065.3")
+        self.assertEqual(matrix["include"][-1]["accession"], "GCA_963277665.1")
+        self.assertEqual(matrix["include"][-1]["order"], 20)
 
     def test_summary_keeps_missing_runs_visible(self):
         campaign = benchmark.load_manifest(
@@ -246,13 +268,13 @@ class ManifestTests(unittest.TestCase):
 
         summary = benchmark.summarize_campaign(campaign, reports)
 
-        self.assertEqual(len(summary), 16)
+        self.assertEqual(len(summary), 20)
         by_accession = {row["accession"]: row for row in summary}
         self.assertTrue(by_accession["GCA_000404065.3"]["build_complete"])
         self.assertEqual(
             by_accession["GCA_000404065.3"]["elapsed_seconds"], 2100
         )
-        self.assertFalse(by_accession["GCA_060040675.1"]["report_available"])
+        self.assertFalse(by_accession["GCA_963277665.1"]["report_available"])
 
     def test_summarize_cli_writes_json_csv_and_markdown(self):
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -262,7 +284,7 @@ class ManifestTests(unittest.TestCase):
             (report_dir / "build-report.json").write_text(
                 json.dumps(
                     {
-                        "benchmark": {"accession": "GCA_963921465.1"},
+                        "benchmark": {"accession": "GCA_054660815.1"},
                         "outcome": {
                             "build_complete": True,
                             "build_sla_exceeded": False,
@@ -299,7 +321,7 @@ class ManifestTests(unittest.TestCase):
             self.assertTrue((output_dir / "results.json").exists())
             self.assertTrue((output_dir / "results.csv").exists())
             markdown = (output_dir / "results.md").read_text()
-            self.assertIn("GCA_963921465.1", markdown)
+            self.assertIn("GCA_054660815.1", markdown)
             self.assertIn("8 min 20 s", markdown)
 
 

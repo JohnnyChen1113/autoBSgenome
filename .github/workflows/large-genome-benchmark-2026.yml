@@ -11,7 +11,7 @@ jobs:
   genome-01:
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_963921465.1
+      accession: GCA_054660815.1
       campaign_run_token: ${{ github.run_id }}
 
   genome-02:
@@ -19,7 +19,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_002915635.3
+      accession: GCA_000404065.3
       campaign_run_token: ${{ github.run_id }}
 
   genome-03:
@@ -27,7 +27,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_019776745.2
+      accession: GCA_050662955.1
       campaign_run_token: ${{ github.run_id }}
 
   genome-04:
@@ -35,7 +35,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_900067695.1
+      accession: GCA_963921515.1
       campaign_run_token: ${{ github.run_id }}
 
   genome-05:
@@ -43,7 +43,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_004151065.3
+      accession: GCA_964261635.2
       campaign_run_token: ${{ github.run_id }}
 
   genome-06:
@@ -51,7 +51,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_018294505.1
+      accession: GCA_964263255.2
       campaign_run_token: ${{ github.run_id }}
 
   genome-07:
@@ -59,7 +59,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_030765085.1
+      accession: GCA_031772625.1
       campaign_run_token: ${{ github.run_id }}
 
   genome-08:
@@ -67,7 +67,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_031143425.1
+      accession: GCA_009831015.1
       campaign_run_token: ${{ github.run_id }}
 
   genome-09:
@@ -75,7 +75,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_000404065.3
+      accession: GCA_007258455.2
       campaign_run_token: ${{ github.run_id }}
 
   genome-10:
@@ -83,7 +83,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_031772625.1
+      accession: GCA_000966675.3
       campaign_run_token: ${{ github.run_id }}
 
   genome-11:
@@ -91,7 +91,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_007258455.2
+      accession: GCA_001447015.2
       campaign_run_token: ${{ github.run_id }}
 
   genome-12:
@@ -99,7 +99,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_000966675.3
+      accession: GCA_034641835.3
       campaign_run_token: ${{ github.run_id }}
 
   genome-13:
@@ -107,7 +107,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_001447015.2
+      accession: GCA_002915635.3
       campaign_run_token: ${{ github.run_id }}
 
   genome-14:
@@ -115,7 +115,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_016271365.2
+      accession: GCA_047292645.1
       campaign_run_token: ${{ github.run_id }}
 
   genome-15:
@@ -123,7 +123,7 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
-      accession: GCA_019279795.1
+      accession: GCA_016271365.2
       campaign_run_token: ${{ github.run_id }}
 
   genome-16:
@@ -131,7 +131,39 @@ jobs:
     if: always()
     uses: ./.github/workflows/run-large-genome-benchmark-item.yml
     with:
+      accession: GCA_051903835.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-17:
+    needs: genome-16
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_040939525.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-18:
+    needs: genome-17
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
       accession: GCA_060040675.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-19:
+    needs: genome-18
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_040581445.1
+      campaign_run_token: ${{ github.run_id }}
+
+  genome-20:
+    needs: genome-19
+    if: always()
+    uses: ./.github/workflows/run-large-genome-benchmark-item.yml
+    with:
+      accession: GCA_963277665.1
       campaign_run_token: ${{ github.run_id }}
 
   collect-results:
@@ -152,6 +184,10 @@ jobs:
       - genome-14
       - genome-15
       - genome-16
+      - genome-17
+      - genome-18
+      - genome-19
+      - genome-20
     if: always()
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -178,9 +214,13 @@ jobs:
           RUN_14: ${{ needs.genome-14.outputs.build_run_id }}
           RUN_15: ${{ needs.genome-15.outputs.build_run_id }}
           RUN_16: ${{ needs.genome-16.outputs.build_run_id }}
+          RUN_17: ${{ needs.genome-17.outputs.build_run_id }}
+          RUN_18: ${{ needs.genome-18.outputs.build_run_id }}
+          RUN_19: ${{ needs.genome-19.outputs.build_run_id }}
+          RUN_20: ${{ needs.genome-20.outputs.build_run_id }}
         run: |
           mkdir -p campaign-reports
-          for order in $(seq -w 1 16); do
+          for order in $(seq -w 1 20); do
             variable="RUN_${order}"
             run_id="${!variable}"
             if [ -z "$run_id" ]; then
