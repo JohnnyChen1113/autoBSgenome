@@ -206,6 +206,15 @@ jobs:
                     "${LONG_ARG[@]}"; then
                 STREAMED=true
                 break
+              else
+                PIPE_STATUSES=("${PIPESTATUS[@]}")
+                CURL_STATUS="${PIPE_STATUSES[0]}"
+                CONVERTER_STATUS="${PIPE_STATUSES[1]}"
+                if [ "$CONVERTER_STATUS" = "76" ]; then
+                  echo "ERROR: faToTwoBit failed; retries or a different download path cannot fix the converter process"
+                  exit 1
+                fi
+                echo "WARNING: stream statuses: curl=${CURL_STATUS}, converter=${CONVERTER_STATUS}"
               fi
               echo "WARNING: NCBI FTP streaming attempt ${attempt} failed"
               if [ "$attempt" != "3" ]; then
