@@ -414,6 +414,7 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
         self.assertIn("ncbi-ftp-stream", workflow)
         self.assertIn("ncbi-datasets-fallback", workflow)
         self.assertIn("datasets download genome accession", workflow)
+        self.assertIn("--no-progressbar", workflow)
         self.assertIn(
             "if: steps.params.outputs.fasta_source != 'ncbi'",
             workflow,
