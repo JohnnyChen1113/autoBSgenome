@@ -5,7 +5,9 @@ on:
     paths:
       - ".github/docker/Dockerfile"
       - ".github/workflows/build-docker.yml"
+      - ".github/workflows/build-bsgenome.yml"
       - "scripts/stream_fasta_to_2bit.py"
+      - "tests/test_large_genome_benchmark.py"
       - "tests/test_stream_fasta_to_2bit.py"
   workflow_dispatch:
 
@@ -18,8 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Test streaming converter diagnostics
-        run: python3 -m unittest discover -s tests -p 'test_stream_fasta_to_2bit.py'
+      - name: Test builder pipeline
+        run: |
+          python3 -m unittest discover -s tests -p 'test_stream_fasta_to_2bit.py'
+          python3 -m unittest discover -s tests -p 'test_large_genome_benchmark.py'
 
       - name: Lowercase owner name
         id: owner

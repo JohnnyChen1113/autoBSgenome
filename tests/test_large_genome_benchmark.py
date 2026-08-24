@@ -419,6 +419,19 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
             workflow,
         )
 
+    def test_ncbi_stream_stops_after_a_converter_process_failure(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+
+        self.assertIn('CONVERTER_STATUS="${PIPE_STATUSES[1]}"', workflow)
+        self.assertIn('[ "$CONVERTER_STATUS" = "76" ]', workflow)
+        self.assertIn(
+            "faToTwoBit failed; retries or a different download path cannot fix "
+            "the converter process",
+            workflow,
+        )
+
     def test_builder_streams_every_non_ncbi_source_directly_to_2bit(self):
         workflow = (
             ROOT / ".github" / "workflows" / "build-bsgenome.yml"
