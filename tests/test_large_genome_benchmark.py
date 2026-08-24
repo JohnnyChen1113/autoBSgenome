@@ -346,6 +346,22 @@ class ManifestTests(unittest.TestCase):
             self.assertIn("8 min 20 s", markdown)
 
 
+class BuilderImageContractTests(unittest.TestCase):
+    def test_ncbi_datasets_cli_is_pinned_to_release_18_36_0(self):
+        dockerfile = (ROOT / ".github" / "docker" / "Dockerfile").read_text()
+
+        self.assertIn(
+            "https://github.com/ncbi/datasets/releases/download/"
+            "v18.36.0/linux-amd64.cli.package.zip",
+            dockerfile,
+        )
+        self.assertIn(
+            "32003304f61e70ebeb58b09a69ea1cef6f4f159683ced7eba063fcb8bb16f0ea",
+            dockerfile,
+        )
+        self.assertIn('grep -F "datasets version: 18.36.0"', dockerfile)
+
+
 class WorkflowRuntimeContractTests(unittest.TestCase):
     def test_github_actions_use_node24_releases(self):
         workflows = "\n".join(
