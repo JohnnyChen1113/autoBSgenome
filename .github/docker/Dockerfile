@@ -1,3 +1,5 @@
+FROM ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d AS previous-builder
+
 FROM rocker/r-ver:4.4.0
 
 # System dependencies — zlib1g-dev is needed by XVector and Rhtslib
@@ -20,8 +22,12 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | d
     && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
     && apt-get update -qq && apt-get install -y gh && rm -rf /var/lib/apt/lists/*
 
-# Install faToTwoBit
-RUN curl -sL https://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit -o /usr/local/bin/faToTwoBit \
+# Preserve the exact faToTwoBit binary from builder v1.0.0. The upstream
+# rolling binary changed, so copying from the immutable image avoids an
+# unrelated converter upgrade in this release.
+COPY --from=previous-builder /usr/local/bin/faToTwoBit /usr/local/bin/faToTwoBit
+RUN echo "01f8c5a6900c88febf33e3b4cb4a8ee56bf3446e76784fce5ba00a1abd1d42a6  /usr/local/bin/faToTwoBit" \
+        | sha256sum --check --status \
     && chmod +x /usr/local/bin/faToTwoBit
 
 # Install a fixed NCBI Datasets release and verify the official release asset.
