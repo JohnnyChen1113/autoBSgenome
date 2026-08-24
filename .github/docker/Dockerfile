@@ -24,9 +24,16 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | d
 RUN curl -sL https://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit -o /usr/local/bin/faToTwoBit \
     && chmod +x /usr/local/bin/faToTwoBit
 
-# Install NCBI datasets CLI
-RUN curl -sL https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/v2/linux-amd64/datasets -o /usr/local/bin/datasets \
-    && chmod +x /usr/local/bin/datasets
+# Install a fixed NCBI Datasets release and verify the official release asset.
+RUN curl -fsSL \
+        https://github.com/ncbi/datasets/releases/download/v18.36.0/linux-amd64.cli.package.zip \
+        -o /tmp/ncbi-datasets.zip \
+    && echo "32003304f61e70ebeb58b09a69ea1cef6f4f159683ced7eba063fcb8bb16f0ea  /tmp/ncbi-datasets.zip" \
+        | sha256sum --check --status \
+    && unzip -jo /tmp/ncbi-datasets.zip datasets -d /usr/local/bin \
+    && rm -f /tmp/ncbi-datasets.zip \
+    && chmod +x /usr/local/bin/datasets \
+    && datasets version | grep -F "datasets version: 18.36.0"
 
 # Install R packages — update matrixStats first (>= 1.4.1 required by MatrixGenerics)
 RUN Rscript -e ' \
