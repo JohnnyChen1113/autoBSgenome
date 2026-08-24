@@ -21,12 +21,12 @@ Outputs are written to `reproduced/`.
 
 ## Builder identity
 
-The fixed image metadata are stored in `reproducibility/builder-image.env`. Exact software versions and binary checksums are recorded in `reproducibility/builder-v1.0.0-versions.txt`.
+The fixed image metadata are stored in `reproducibility/builder-image.env`. Exact software versions and binary checksums are recorded in `reproducibility/builder-v1.1.0-versions.txt`.
 
 The image can also be retrieved directly.
 
 ```bash
-docker pull ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d
+docker pull ghcr.io/johnnychen1113/autobsgenome-builder@sha256:6e347d533e7db4bd0a65c38d884184884590664ad3b5e47a14401079f3625e95
 ```
 
 UCSC faToTwoBit does not expose a version string. The release record therefore identifies the exact binary by its SHA256 checksum and ELF Build ID.

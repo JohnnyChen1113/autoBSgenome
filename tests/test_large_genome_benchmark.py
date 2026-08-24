@@ -347,7 +347,28 @@ class ManifestTests(unittest.TestCase):
 
 
 class BuilderImageContractTests(unittest.TestCase):
-    def test_fa_to_two_bit_is_copied_from_the_previous_pinned_builder(self):
+    def test_production_builder_is_pinned_to_release_v1_1_0(self):
+        digest = (
+            "sha256:"
+            "6e347d533e7db4bd0a65c38d884184884590664ad3b5e47a14401079f3625e95"
+        )
+        metadata = (ROOT / "reproducibility" / "builder-image.env").read_text()
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+        reproduce = (ROOT / "scripts" / "reproduce-test-build.sh").read_text()
+
+        self.assertIn("BUILDER_VERSION=v1.1.0", metadata)
+        self.assertIn(f"BUILDER_DIGEST={digest}", metadata)
+        self.assertEqual(workflow.count(digest), 3)
+        self.assertIn("EXPECTED_DATASETS=18.36.0", reproduce)
+        self.assertIn(
+            "EXPECTED_DATASETS_SHA256="
+            "2240faf73ca17f56f25d8009f5d50c76a7d77883a78f0287d990b417a23bf393",
+            reproduce,
+        )
+
+    def test_fa_to_two_bit_is_inherited_from_the_previous_pinned_builder(self):
         dockerfile = (ROOT / ".github" / "docker" / "Dockerfile").read_text()
 
         self.assertIn(
