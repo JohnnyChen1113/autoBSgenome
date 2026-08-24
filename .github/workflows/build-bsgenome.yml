@@ -230,7 +230,8 @@ jobs:
             rm -rf ncbi_dataset README.md md5sum.txt
             for attempt in 1 2 3; do
               rm -f genome.zip
-              if datasets download genome accession "${ACCESSION}" --include genome --filename genome.zip; then
+              if datasets download genome accession "${ACCESSION}" \
+                  --include genome --filename genome.zip --no-progressbar; then
                 break
               fi
               if [ "$attempt" = "3" ]; then
