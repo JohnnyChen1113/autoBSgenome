@@ -238,7 +238,8 @@ class StreamFastaToTwoBitCliTests(unittest.TestCase):
                 capture_output=True,
             )
 
-            self.assertEqual(result.returncode, 1)
+            self.assertEqual(result.returncode, 76)
+            self.assertIn(b"CONVERTER_FAILED", result.stderr)
             self.assertIn(b"faToTwoBit exited with status 7", result.stderr)
             self.assertFalse(output.exists())
 
