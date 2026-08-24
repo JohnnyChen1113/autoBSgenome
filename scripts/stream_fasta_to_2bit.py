@@ -8,6 +8,7 @@ import gzip
 import hashlib
 import json
 import resource
+import signal
 import subprocess
 import sys
 import time
@@ -17,10 +18,77 @@ from inspect_fasta import CHUNK_SIZE, FastaStreamInspector
 
 VALID_SOURCES = {"ncbi", "ensembl", "url", "upload"}
 LONG_FORMAT_RETRY_EXIT_CODE = 75
+CONVERTER_FAILURE_EXIT_CODE = 76
 
 
 class LongFormatRequired(RuntimeError):
     pass
+
+
+class ConverterFailed(RuntimeError):
+    pass
+
+
+def read_cgroup_oom_kills() -> int | None:
+    """Return this cgroup's OOM-kill count when Linux exposes it."""
+    for path in (
+        Path("/sys/fs/cgroup/memory.events.local"),
+        Path("/sys/fs/cgroup/memory.events"),
+    ):
+        try:
+            values = dict(
+                line.split(maxsplit=1)
+                for line in path.read_text(encoding="utf-8").splitlines()
+                if line.strip()
+            )
+            if "oom_kill" in values:
+                return int(values["oom_kill"])
+        except (OSError, ValueError):
+            continue
+    return None
+
+
+def collect_converter_result(
+    process: subprocess.Popen,
+) -> tuple[int, bytes]:
+    """Close converter input, wait for it, and retain its real failure."""
+    if process.stdin is not None and not process.stdin.closed:
+        try:
+            process.stdin.close()
+        except BrokenPipeError:
+            pass
+    converter_stderr = b""
+    if process.stderr is not None:
+        converter_stderr = process.stderr.read()
+    return process.wait(), converter_stderr
+
+
+def describe_converter_failure(
+    return_code: int, oom_kills_before: int | None, oom_kills_after: int | None
+) -> str:
+    if return_code < 0:
+        signal_number = -return_code
+        try:
+            signal_name = signal.Signals(signal_number).name
+        except ValueError:
+            signal_name = f"signal {signal_number}"
+        if signal_number == signal.SIGKILL:
+            if (
+                oom_kills_before is not None
+                and oom_kills_after is not None
+                and oom_kills_after > oom_kills_before
+            ):
+                return (
+                    f"faToTwoBit terminated by {signal_name}; cgroup oom_kill "
+                    f"increased from {oom_kills_before} to {oom_kills_after} "
+                    "(out of memory)"
+                )
+            return (
+                f"faToTwoBit terminated by {signal_name} "
+                "(possible out-of-memory kill)"
+            )
+        return f"faToTwoBit terminated by {signal_name}"
+    return f"faToTwoBit exited with status {return_code}"
 
 
 class HashingReader:
@@ -102,6 +170,7 @@ def main() -> int:
     wall_started = time.monotonic()
     python_cpu_started = time.process_time()
     child_usage_started = resource.getrusage(resource.RUSAGE_CHILDREN)
+    oom_kills_before = read_cgroup_oom_kills()
     try:
         hashing_reader = HashingReader(sys.stdin.buffer)
         inspector = FastaStreamInspector(args.source)
@@ -123,10 +192,20 @@ def main() -> int:
         with fasta_stream:
             while chunk := fasta_stream.read(CHUNK_SIZE):
                 inspector.feed(chunk)
-                process.stdin.write(chunk)
-        process.stdin.close()
-        converter_stderr = process.stderr.read()
-        return_code = process.wait()
+                try:
+                    process.stdin.write(chunk)
+                except BrokenPipeError:
+                    return_code, converter_stderr = collect_converter_result(process)
+                    if converter_stderr:
+                        sys.stderr.buffer.write(converter_stderr)
+                    raise ConverterFailed(
+                        describe_converter_failure(
+                            return_code,
+                            oom_kills_before,
+                            read_cgroup_oom_kills(),
+                        )
+                    ) from None
+        return_code, converter_stderr = collect_converter_result(process)
         if converter_stderr:
             sys.stderr.buffer.write(converter_stderr)
         if return_code != 0:
@@ -135,7 +214,13 @@ def main() -> int:
                 or b"use -long option" in converter_stderr
             ):
                 raise LongFormatRequired("faToTwoBit requires 64-bit index offsets")
-            raise RuntimeError(f"faToTwoBit exited with status {return_code}")
+            raise ConverterFailed(
+                describe_converter_failure(
+                    return_code,
+                    oom_kills_before,
+                    read_cgroup_oom_kills(),
+                )
+            )
 
         actual_md5 = hashing_reader.md5.hexdigest()
         if args.expected_md5 and actual_md5.lower() != args.expected_md5.lower():
@@ -174,6 +259,12 @@ def main() -> int:
             args.json.unlink(missing_ok=True)
         print(f"LONG_2BIT_REQUIRED: {exc}", file=sys.stderr)
         return LONG_FORMAT_RETRY_EXIT_CODE
+    except ConverterFailed as exc:
+        output.unlink(missing_ok=True)
+        if args.json:
+            args.json.unlink(missing_ok=True)
+        print(f"CONVERTER_FAILED: {exc}", file=sys.stderr)
+        return CONVERTER_FAILURE_EXIT_CODE
     except Exception as exc:
         if process is not None and process.poll() is None:
             process.terminate()

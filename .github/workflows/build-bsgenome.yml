@@ -24,8 +24,8 @@ jobs:
       run:
         shell: bash
     container:
-      # Builder release v1.0.0. The digest keeps every build on the same image.
-      image: ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d
+      # Builder release v1.1.0. The digest keeps every build on the same image.
+      image: ghcr.io/johnnychen1113/autobsgenome-builder@sha256:6e347d533e7db4bd0a65c38d884184884590664ad3b5e47a14401079f3625e95
 
     steps:
       - name: Checkout repository
@@ -206,6 +206,15 @@ jobs:
                     "${LONG_ARG[@]}"; then
                 STREAMED=true
                 break
+              else
+                PIPE_STATUSES=("${PIPESTATUS[@]}")
+                CURL_STATUS="${PIPE_STATUSES[0]}"
+                CONVERTER_STATUS="${PIPE_STATUSES[1]}"
+                if [ "$CONVERTER_STATUS" = "76" ]; then
+                  echo "ERROR: faToTwoBit failed; retries or a different download path cannot fix the converter process"
+                  exit 1
+                fi
+                echo "WARNING: stream statuses: curl=${CURL_STATUS}, converter=${CONVERTER_STATUS}"
               fi
               echo "WARNING: NCBI FTP streaming attempt ${attempt} failed"
               if [ "$attempt" != "3" ]; then
@@ -221,7 +230,8 @@ jobs:
             rm -rf ncbi_dataset README.md md5sum.txt
             for attempt in 1 2 3; do
               rm -f genome.zip
-              if datasets download genome accession "${ACCESSION}" --include genome --filename genome.zip; then
+              if datasets download genome accession "${ACCESSION}" \
+                  --include genome --filename genome.zip --no-progressbar; then
                 break
               fi
               if [ "$attempt" = "3" ]; then
@@ -670,7 +680,7 @@ jobs:
           fi
           BUILT_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           WORKFLOW_RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d"
+          BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder@sha256:6e347d533e7db4bd0a65c38d884184884590664ad3b5e47a14401079f3625e95"
           PACKAGE_SHA256="${{ steps.archive_validation.outputs.package_sha256 }}"
           DESCRIPTION_SHA256=$(PACKAGE="$PACKAGE" TARBALL="$TARBALL" python3 <<'PYEOF'
           import hashlib
@@ -825,7 +835,7 @@ jobs:
           fi
           BUILT_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           WORKFLOW_RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-          BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder@sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d"
+          BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder@sha256:6e347d533e7db4bd0a65c38d884184884590664ad3b5e47a14401079f3625e95"
           PACKAGE_SHA256="${{ steps.archive_validation.outputs.package_sha256 }}"
           DESCRIPTION_SHA256=$(PACKAGE="$PACKAGE" TARBALL="$TARBALL" python3 <<'PYEOF'
           import hashlib

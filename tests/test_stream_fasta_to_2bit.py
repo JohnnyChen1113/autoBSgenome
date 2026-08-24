@@ -238,8 +238,46 @@ class StreamFastaToTwoBitCliTests(unittest.TestCase):
                 capture_output=True,
             )
 
-            self.assertEqual(result.returncode, 1)
+            self.assertEqual(result.returncode, 76)
+            self.assertIn(b"CONVERTER_FAILED", result.stderr)
             self.assertIn(b"faToTwoBit exited with status 7", result.stderr)
+            self.assertFalse(output.exists())
+
+    def test_converter_killed_while_streaming_reports_the_child_failure(self):
+        fasta = b">chr1\n" + (b"A" * (2 * 1024 * 1024)) + b"\n"
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmp = pathlib.Path(tmpdir)
+            converter = tmp / "killed-faToTwoBit"
+            converter.write_text(
+                "#!/usr/bin/env python3\n"
+                "import os, signal\n"
+                "os.kill(os.getpid(), signal.SIGKILL)\n"
+            )
+            converter.chmod(0o755)
+            output = tmp / "genome.2bit"
+
+            result = subprocess.run(
+                [
+                    "python3",
+                    str(SCRIPT),
+                    "--source",
+                    "url",
+                    "--compression",
+                    "plain",
+                    "--output",
+                    str(output),
+                    "--converter",
+                    str(converter),
+                ],
+                input=fasta,
+                capture_output=True,
+            )
+
+            self.assertEqual(result.returncode, 76)
+            self.assertIn(b"CONVERTER_FAILED", result.stderr)
+            self.assertIn(b"terminated by SIGKILL", result.stderr)
+            self.assertNotIn(b"Broken pipe", result.stderr)
             self.assertFalse(output.exists())
 
     def test_index_overflow_requests_a_long_format_retry(self):

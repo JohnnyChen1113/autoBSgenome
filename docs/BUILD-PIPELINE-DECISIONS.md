@@ -149,6 +149,13 @@ the previous NCBI Datasets ZIP path as a compatibility fallback. The fallback
 materializes `genome.fa`, performs the same inspection, converts it, and then
 removes the FASTA.
 
+NCBI documents a different path when a Datasets package exceeds 15 GB:
+download a metadata-only dehydrated ZIP, unzip it, and run `datasets rehydrate`
+to retrieve the listed files. Adopting
+`rehydrate --gzip --max-workers 1 --no-progressbar` is under evaluation for
+the large-file fallback. It is not yet implemented and does not address
+converter memory by itself.
+
 Resolution is a separate observable workflow step. Metrics distinguish
 resolver wall time, total stream wall time, Python decompression/inspection
 CPU, `faToTwoBit` CPU, attempt count, and fallback mode without splitting the
@@ -239,6 +246,12 @@ size metadata to select `-long`. For a custom stream whose uncompressed size is
 unknown, the ordinary version-0 format is attempted first; only UCSC's specific
 index-overflow result triggers one complete retry with `-long`.
 
+A converter process that exits while its input pipe is being written is
+reported by exit status or signal instead of being reduced to `Broken pipe`.
+Confirmed cgroup OOM kills are identified explicitly. Converter failure is
+terminal for that attempt and does not enter a different download path that
+would invoke the same converter again.
+
 Purpose:
 
 - produce the compact indexed sequence representation consumed by BSgenome.
@@ -247,7 +260,10 @@ Potential improvements:
 
 - validate the 12-GB heuristic against the actual 2bit addressing constraint;
 - consider always selecting `-long` above a conservative assembly-size cutoff;
-- expose converter errors directly in public build status.
+- implement bounded 4-6-Gbp `faToTwoBit` shards and merge their raw sequence
+  records under one version-1 64-bit index;
+- expose the converter exit signal and confirmed OOM category in public build
+  status.
 
 ## 8. Seed generation
 
@@ -496,6 +512,10 @@ support treating the difference as normal hosted-runner/transfer variation.
 - Native or parallel decompression in the acquisition stream.
 - Hardlink/reflink substitution for BSgenomeForge's copy behavior.
 - Hashing and validation during archive creation.
+- Adding an NCBI API key as a response to the 87-94-Gbp failures. Those
+  failures were converter memory, runner disk, and transfer integrity failures,
+  not request-rate limiting; the primary Genomes FTP stream does not use the
+  Datasets API key.
 
 ### Needs a product decision
 

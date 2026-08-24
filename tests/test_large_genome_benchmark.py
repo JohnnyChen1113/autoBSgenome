@@ -346,6 +346,56 @@ class ManifestTests(unittest.TestCase):
             self.assertIn("8 min 20 s", markdown)
 
 
+class BuilderImageContractTests(unittest.TestCase):
+    def test_production_builder_is_pinned_to_release_v1_1_0(self):
+        digest = (
+            "sha256:"
+            "6e347d533e7db4bd0a65c38d884184884590664ad3b5e47a14401079f3625e95"
+        )
+        metadata = (ROOT / "reproducibility" / "builder-image.env").read_text()
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+        reproduce = (ROOT / "scripts" / "reproduce-test-build.sh").read_text()
+
+        self.assertIn("BUILDER_VERSION=v1.1.0", metadata)
+        self.assertIn(f"BUILDER_DIGEST={digest}", metadata)
+        self.assertEqual(workflow.count(digest), 3)
+        self.assertIn("EXPECTED_DATASETS=18.36.0", reproduce)
+        self.assertIn(
+            "EXPECTED_DATASETS_SHA256="
+            "2240faf73ca17f56f25d8009f5d50c76a7d77883a78f0287d990b417a23bf393",
+            reproduce,
+        )
+
+    def test_fa_to_two_bit_is_inherited_from_the_previous_pinned_builder(self):
+        dockerfile = (ROOT / ".github" / "docker" / "Dockerfile").read_text()
+
+        self.assertIn(
+            "ghcr.io/johnnychen1113/autobsgenome-builder@"
+            "sha256:17163ade2f837065af6790ed231dab16c0226c964b7a093a0fcca568c57f328d",
+            dockerfile,
+        )
+        self.assertIn(
+            "01f8c5a6900c88febf33e3b4cb4a8ee56bf3446e76784fce5ba00a1abd1d42a6",
+            dockerfile,
+        )
+
+    def test_ncbi_datasets_cli_is_pinned_to_release_18_36_0(self):
+        dockerfile = (ROOT / ".github" / "docker" / "Dockerfile").read_text()
+
+        self.assertIn(
+            "https://github.com/ncbi/datasets/releases/download/"
+            "v18.36.0/linux-amd64.cli.package.zip",
+            dockerfile,
+        )
+        self.assertIn(
+            "32003304f61e70ebeb58b09a69ea1cef6f4f159683ced7eba063fcb8bb16f0ea",
+            dockerfile,
+        )
+        self.assertIn('grep -F "datasets version: 18.36.0"', dockerfile)
+
+
 class WorkflowRuntimeContractTests(unittest.TestCase):
     def test_github_actions_use_node24_releases(self):
         workflows = "\n".join(
@@ -414,8 +464,22 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
         self.assertIn("ncbi-ftp-stream", workflow)
         self.assertIn("ncbi-datasets-fallback", workflow)
         self.assertIn("datasets download genome accession", workflow)
+        self.assertIn("--no-progressbar", workflow)
         self.assertIn(
             "if: steps.params.outputs.fasta_source != 'ncbi'",
+            workflow,
+        )
+
+    def test_ncbi_stream_stops_after_a_converter_process_failure(self):
+        workflow = (
+            ROOT / ".github" / "workflows" / "build-bsgenome.yml"
+        ).read_text()
+
+        self.assertIn('CONVERTER_STATUS="${PIPE_STATUSES[1]}"', workflow)
+        self.assertIn('[ "$CONVERTER_STATUS" = "76" ]', workflow)
+        self.assertIn(
+            "faToTwoBit failed; retries or a different download path cannot fix "
+            "the converter process",
             workflow,
         )
 
