@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - ".github/docker/Dockerfile"
+      - ".github/workflows/build-docker.yml"
+      - "scripts/stream_fasta_to_2bit.py"
+      - "tests/test_stream_fasta_to_2bit.py"
   workflow_dispatch:
 
 permissions:
@@ -14,6 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+
+      - name: Test streaming converter diagnostics
+        run: python3 -m unittest discover -s tests -p 'test_stream_fasta_to_2bit.py'
 
       - name: Lowercase owner name
         id: owner
