@@ -221,14 +221,15 @@ transfer variability, not as evidence of an added materialization pass.
 
 ## Diagnosed: the monolithic faToTwoBit memory ceiling
 
-The 2026 large-genome campaign established a hosted-runner conversion ceiling,
-not a fragmentation or NCBI rate-limit ceiling. The 48.15-Gbp
-`GCA_060040675.1` build succeeded with peak process RSS of 15.46 GB. The
-87.22-Gbp `GCA_040581445.1` and 94.26-Gbp `GCA_963277665.1` streams both lost
-their downstream converter at repeatable elapsed times while total process RSS
-reached the approximately 16-GB runner limit. In UCSC's implementation,
-`faToTwoBit` constructs the packed representation of every sequence before it
-writes the file; `-long` changes index-offset width but does not bound memory.
+The 2026 large-genome campaign diagnosed a hosted-runner memory failure mode,
+not a fragmentation or NCBI rate-limit ceiling. It does not establish a fixed
+genome-size cutoff. The largest completed build, 48.15-Gbp
+`GCA_060040675.1`, succeeded with peak process RSS of 15.46 GB, already close
+to the approximately 16-GB runner limit. The 87.22-Gbp `GCA_040581445.1` and
+94.26-Gbp `GCA_963277665.1` streams both lost their downstream converter when
+memory reached that limit. In UCSC's implementation, `faToTwoBit` constructs
+the packed representation of every sequence before it writes the file;
+`-long` changes index-offset width but does not bound memory.
 
 Implemented follow-up:
 
@@ -241,35 +242,30 @@ Implemented follow-up:
   the same converter failure;
 - NCBI Datasets is fixed at 18.36.0 and fallback progress bars are disabled.
 
-### Recommended next implementation: sharded UCSC conversion and lossless merge
+### Rejected: sharded UCSC conversion and lossless merge
 
-Keep UCSC conversion semantics but cap each `faToTwoBit` invocation at a
-bounded shard, for example 4-6 Gbp of complete FASTA records. Each shard yields
-a small version-0 2bit file. A new merger then writes one version-1 header and
-64-bit index and copies each already-packed sequence record without decoding or
-re-encoding it. UCSC's format implementation confirms that version 1 changes
-the index offsets from 32 to 64 bits while the sequence-record representation
-is unchanged.
+The evaluated design would cap each `faToTwoBit` invocation at a bounded shard,
+for example 4-6 Gbp of complete FASTA records, and introduce a new merger that
+writes a version-1 header and 64-bit index around the already-packed sequence
+records. This could bound converter memory while retaining UCSC's record
+encoding.
 
-This is preferred over a clean-room converter because it preserves UCSC's
-handling of hard masks, soft masks, ambiguous bases, and record ordering while
-bounding peak memory. The merger can keep its index manifest on disk so even
-multi-million-record assemblies do not create a large Python object graph.
-Acceptance requires byte-level record comparison with UCSC output, round trips
-through `twoBitInfo` and `twoBitToFa`, BSgenome install/load/getSeq tests, and a
-no-publish rerun of the 87.22- and 94.26-Gbp failures.
+The proposal was rejected on 2026-08-23. It adds a custom binary-format merger,
+substantial correctness testing, and long-term maintenance solely to extend an
+extreme-genome boundary that is not required by the current product. Do not
+implement it. The workflow will retain the standard monolithic UCSC
+`faToTwoBit` conversion and report its failure clearly when a build exceeds the
+hosted runner's available memory.
 
-The principal cost is temporary disk: shard 2bit files and the final merged
-2bit coexist during the final copy. This is approximately twice the final
-2bit size, but avoids materializing the uncompressed 87-94-GB FASTA. Package
-forge and compression still need a separate disk-budget audit at this scale.
+The rejected design would also require the shard files and final 2bit to coexist
+during the merge, approximately doubling 2bit disk demand. Package forge and
+compression would still need a separate disk-budget audit at this scale.
 
-### Other converter options considered
+### Other converter options rejected or not adopted
 
 - A clean-room, disk-spooled Rust version-1 2bit writer can be fully streaming
-  and memory-bounded, but has a larger correctness surface than the sharded
-  merger. It remains the long-term fallback if sharding exposes a format
-  limitation.
+  and memory-bounded, but has an even larger correctness and maintenance
+  surface. It is not planned.
 - The MIT-licensed Rust `twobit` crate is not a drop-in solution: its current
   writer emits version 0, stores masking metadata from a first FASTA scan, and
   requires seekable input for later sequence reads.
@@ -279,16 +275,16 @@ forge and compression still need a separate disk-budget audit at this scale.
 - Splitting one assembly into multiple BSgenome packages is rejected because
   it changes the user-visible genome identity and installation model.
 
-### Large NCBI fallback under evaluation: dehydrated then rehydrate
+### Rejected: NCBI dehydrated then rehydrate
 
 NCBI's documented path for data packages over 15 GB first downloads a small
 dehydrated ZIP containing metadata and the locations listed in `fetch.txt`,
 then unzips it and runs `datasets rehydrate` to retrieve the actual files.
-Using `rehydrate --gzip --max-workers 1 --no-progressbar` would keep the genome
-compressed on disk and avoid the giant direct ZIP download and validation step
-that exhausted disk in the 94.26-Gbp run. This is not implemented yet; it does
-not solve `faToTwoBit` memory usage by itself and should be integrated after or
-with the bounded converter.
+This was rejected on 2026-08-23. It adds an extra metadata-package,
+unpack, and rehydrate lifecycle without improving the primary FTP stream or
+solving the observed `faToTwoBit` memory ceiling. Do not implement it. The
+current direct NCBI Datasets ZIP remains the compatibility fallback when the
+primary Genomes FTP stream cannot be used.
 
 An NCBI API key is intentionally not part of this work. It raises request-rate
 limits for Datasets API calls, but the observed failures were converter memory,

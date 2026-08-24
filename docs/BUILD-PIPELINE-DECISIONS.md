@@ -149,12 +149,11 @@ the previous NCBI Datasets ZIP path as a compatibility fallback. The fallback
 materializes `genome.fa`, performs the same inspection, converts it, and then
 removes the FASTA.
 
-NCBI documents a different path when a Datasets package exceeds 15 GB:
-download a metadata-only dehydrated ZIP, unzip it, and run `datasets rehydrate`
-to retrieve the listed files. Adopting
-`rehydrate --gzip --max-workers 1 --no-progressbar` is under evaluation for
-the large-file fallback. It is not yet implemented and does not address
-converter memory by itself.
+NCBI also documents a dehydrated-package and `datasets rehydrate` path for
+large data packages. That path was evaluated and rejected: it adds another
+metadata-package, unpack, and retrieval lifecycle without improving the primary
+FTP stream or addressing converter memory. The direct Datasets ZIP remains the
+compatibility fallback.
 
 Resolution is a separate observable workflow step. Metrics distinguish
 resolver wall time, total stream wall time, Python decompression/inspection
@@ -260,8 +259,6 @@ Potential improvements:
 
 - validate the 12-GB heuristic against the actual 2bit addressing constraint;
 - consider always selecting `-long` above a conservative assembly-size cutoff;
-- implement bounded 4-6-Gbp `faToTwoBit` shards and merge their raw sequence
-  records under one version-1 64-bit index;
 - expose the converter exit signal and confirmed OOM category in public build
   status.
 
@@ -512,6 +509,12 @@ support treating the difference as normal hosted-runner/transfer variation.
 - Native or parallel decompression in the acquisition stream.
 - Hardlink/reflink substitution for BSgenomeForge's copy behavior.
 - Hashing and validation during archive creation.
+- NCBI dehydrated packages followed by `datasets rehydrate`; this adds an
+  unnecessary acquisition lifecycle and does not improve the primary FTP
+  stream or solve converter memory.
+- Sharded `faToTwoBit` conversion plus a custom lossless 2bit merger; the added
+  binary-format correctness and maintenance surface is not justified for the
+  current product.
 - Adding an NCBI API key as a response to the 87-94-Gbp failures. Those
   failures were converter memory, runner disk, and transfer integrity failures,
   not request-rate limiting; the primary Genomes FTP stream does not use the
