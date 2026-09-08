@@ -503,10 +503,11 @@ jobs:
           start_resource_sampler forge
           trap stop_resource_sampler EXIT
           START=$(date +%s)
+          python3 scripts/build_input.py --prepare-forge-seed "${PACKAGE}.seed"
           Rscript --vanilla -e "
             suppressPackageStartupMessages(library(BSgenome))
             tryCatch({
-              BSgenomeForge::forgeBSgenomeDataPkg('${PACKAGE}.seed')
+              BSgenomeForge::forgeBSgenomeDataPkg('${PACKAGE}.forge.seed')
             }, error = function(e) {
               message('forgeBSgenomeDataPkg error: ', e\$message)
               message('Attempting manual package creation (mv instead of copy)...')
