@@ -183,11 +183,20 @@ cython_debug/
 
 # Local manuscript drafts and generated figure/document artifacts
 /paper/
+/figures/
+/literature/
+/analysis/
+/data/
+/results/
 /output/
 /outputs/
 /uploads/
 /scripts/format_manuscript_docx.py
 **/~$*.docx
+
+# Local session notes include manuscript work
+/docs/SESSION-SUMMARY-*.md
+/docs/TODO-NEXT-SESSION.md
 
 # Local Wisp project metadata
 /.wisp/

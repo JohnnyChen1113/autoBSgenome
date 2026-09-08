@@ -116,7 +116,7 @@ interesting test: it isolates how much of the long tail survives at the
 ## Related
 
 - `LARGE-GENOME-BENCHMARKS.md` — empirical basis for needing this feature.
-- `paper/draft-v4-outline.md` R4 controlled large-genome benchmark — use the
-  campaign results to decide whether this feature addresses an observed limit.
+- `.github/benchmarks/large-genomes-2026.json` controlled large-genome campaign
+  — use the results to decide whether this feature addresses an observed limit.
 - `docs/SELF-HOSTED-RUNNER-PLAN.md` — alternative path (more memory rather
   than less input) for the same problem.
