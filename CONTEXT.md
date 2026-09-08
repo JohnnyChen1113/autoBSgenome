@@ -22,6 +22,12 @@ Ensembl, but the package is still built locally. If upstream lookup fails, the
 CLI preserves any values already collected and lets the user complete the
 remaining fields manually.
 
+After metadata review, users choose between downloading the official upstream
+FASTA and selecting a local FASTA file. NCBI and Ensembl official downloads
+use their public HTTPS genome archives and are verified against upstream
+checksums when available. This choice does not change the local nature of the
+package build.
+
 ## Genome Release Date
 
 `release_date` means the upstream genome assembly release date. It must not

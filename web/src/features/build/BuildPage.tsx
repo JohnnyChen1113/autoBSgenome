@@ -36,6 +36,9 @@ import {
 import {
   extractEnsemblSpecies,
   fetchEnsemblAssemblyInfo,
+  normalizeEnsemblGroup,
+  inferEnsemblGroup,
+  ensemblSourceUrl,
 } from "@/lib/ensembl";
 import {
   completeUploadSession,
@@ -167,35 +170,6 @@ function formatDuration(seconds?: number) {
 function normalizeSubmittedAccession(input: string, source: DataSource) {
   const trimmed = input.trim();
   return source === "ncbi" ? extractAccession(trimmed) ?? trimmed : trimmed;
-}
-
-function normalizeEnsemblGroup(value?: string | null): string {
-  const normalized = (value ?? "").toLowerCase();
-  if (["bacteria", "fungi", "metazoa", "plants", "protists"].includes(normalized)) {
-    return normalized;
-  }
-  return "vertebrates";
-}
-
-function ensemblSourceUrl(species: string, group: string): string {
-  const hosts: Record<string, string> = {
-    bacteria: "bacteria.ensembl.org",
-    fungi: "fungi.ensembl.org",
-    metazoa: "metazoa.ensembl.org",
-    plants: "plants.ensembl.org",
-    protists: "protists.ensembl.org",
-    vertebrates: "www.ensembl.org",
-  };
-  const host = hosts[normalizeEnsemblGroup(group)] ?? hosts.vertebrates;
-  const path = species.charAt(0).toUpperCase() + species.slice(1);
-  return `https://${host}/${path}/Info/Index`;
-}
-
-function inferEnsemblGroup(input: string): string {
-  const match = input.match(
-    /https?:\/\/(bacteria|fungi|metazoa|plants|protists)\.ensembl\.org/i
-  );
-  return match ? normalizeEnsemblGroup(match[1]) : "vertebrates";
 }
 
 function deriveEnsemblSpecies(
@@ -471,6 +445,9 @@ export default function Home() {
 
       if (dataSource === "ensembl") {
         // ── Ensembl path ──
+        const group = ensemblSpecies || ensemblAssemblyAccession
+          ? ensemblGroup
+          : inferEnsemblGroup(accessionInput.trim());
         let species =
           ensemblSpecies || extractEnsemblSpecies(accessionInput.trim()) || "";
         const catalogAccession = extractAccession(ensemblAssemblyAccession);
@@ -498,7 +475,7 @@ export default function Home() {
           if (!species) {
             species = deriveEnsemblSpecies(
               organism,
-              ensemblGroup,
+              group,
               catalogAccession
             );
           }
@@ -508,6 +485,7 @@ export default function Home() {
           commonName = ensInfo.commonName;
           assemblyName = ensInfo.assemblyName;
           assemblyAccession = ensInfo.assemblyAccession;
+          releaseDate = ensInfo.releaseDate;
         }
 
         const packageName = buildBSgenomePackageName(
@@ -534,12 +512,13 @@ export default function Home() {
           version: "1.0.0",
           title: `Full genome sequences for ${organism} (Ensembl version ${assemblyName})`,
           description: `Full genome sequences for ${organism}${commonName ? ` (${commonName})` : ""} as provided by Ensembl (${assemblyName}) and stored in Biostrings objects.`,
-          sourceUrl: ensemblSourceUrl(species, ensemblGroup),
+          sourceUrl: ensemblSourceUrl(species, group),
           fastaSource: "ncbi",
           fastaUrl: "",
         };
 
         setEnsemblSpecies(species);
+        setEnsemblGroup(group);
         setEnsemblAssemblyAccession(assemblyAccession);
       } else {
         // ── NCBI path ──

@@ -26,7 +26,10 @@ instructions from <https://autobsgenome.org/skill.md>.
 
 ## CLI Tool
 
-A user-friendly, interactive command-line tool for building R BSgenome packages. This script turns the complex process of creating a BSgenome package into a simple, guided questionnaire.
+The standalone CLI builds BSgenome packages on your own computer. Give it an
+NCBI accession/URL or an official Ensembl species URL and it prefills the
+interactive questionnaire with upstream metadata. Every value remains
+editable. Other data sources use fully manual metadata entry.
 
 ### Why use autoBSgenome?
 
@@ -38,36 +41,62 @@ While official tools like `BSgenomeForge` exist, `autoBSgenome` provides a smoot
 
 ### Features
 
-- **Interactive Wizard:** A step-by-step guided process for entering all the necessary metadata.
+- **Official metadata prefill:** Accepts NCBI `GCF_`/`GCA_` accessions and URLs,
+  plus official Ensembl, Ensembl Plants, Fungi, Bacteria, Protists, and Metazoa
+  species URLs.
+- **Interactive Wizard:** Review each prefilled value, press Enter to accept it,
+  or type a replacement.
 - **Flexible Navigation:** Made a mistake? No problem. You can type `back` at any prompt to return to the previous question and correct your input.
-- **Automatic Dependency Checking:** The script automatically checks for required command-line tools (`faToTwoBit`) and R packages (`BSgenome`, `BSgenomeForge`) and will prompt you to install them if they are missing.
-- **Generates All Necessary Files:** Automatically creates the `.seed` file and the `build.R` script required for the final package.
+- **FASTA choice:** Download the official NCBI/Ensembl FASTA or select a local
+  `.fa`, `.fasta`, `.fna`, or gzip-compressed FASTA file.
+- **Correct genome dates:** Automatic mode uses the upstream assembly release
+  date, never the date on which the package is built.
+- **Safe local build:** Work happens in an isolated temporary directory and
+  stops immediately if conversion, forging, or `R CMD build` fails.
 
 ### Requirements
 
-- Python 3.x
-- An R environment
+- Python 3.10 or newer; the CLI has no third-party Python dependencies
+- R with the `BSgenome` and `BSgenomeForge` packages
+- UCSC `faToTwoBit`
 
-The script will handle the installation of all other Python and R package dependencies for you.
+NCBI and Ensembl official FASTA downloads use Python's standard HTTPS support
+and do not require an additional download tool. NCBI downloads are resolved
+from `ftp.ncbi.nlm.nih.gov` over HTTPS and checked against the published MD5
+when available. Missing system or R dependencies are reported with a clear
+error; the CLI does not silently install binaries.
 
 ### Usage
 
-1.  **Clone the repository:**
+1.  **Install the command:**
     ```bash
     git clone https://github.com/JohnnyChen1113/autoBSgenome.git
     cd autoBSgenome
+    python -m pip install .
     ```
 
-2.  **Run the script:**
+    The source remains a standalone file, so running it directly is also
+    supported:
+
     ```bash
-    python autoBSgenome.py
+    python autoBSgenome.py GCF_003254395.2
     ```
 
-3.  **Follow the interactive prompts:**
-    - The script will first check for all required dependencies and ask for permission to install any that are missing.
-    - It will then guide you through entering the metadata for your BSgenome package.
-    - At any point during metadata entry, you can type `back` to return to the previous question.
-    - Once all information is gathered, the script will generate the necessary files and ask if you want to proceed with the build and installation.
+2.  **Build from NCBI or Ensembl:**
+
+    ```bash
+    autobsgenome GCF_003254395.2
+    autobsgenome https://fungi.ensembl.org/Aaosphaeria_arxii_cbs_175_79_gca_010015735/Info/Index
+    ```
+
+3.  **Or enter metadata manually:**
+
+    ```bash
+    autobsgenome --manual
+    ```
+
+Use `--no-install` to leave the completed source tarball in the current
+directory without installing it into the local R library.
 
 ## Architecture (Web Tool)
 

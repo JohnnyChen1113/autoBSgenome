@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   ChevronDown,
   Copy,
@@ -1037,6 +1037,7 @@ export function RepositoryBrowser() {
   const [metadataShards, setMetadataShards] = useState<
     Record<string, SpeciesMetadataShardState>
   >({});
+  const metadataMounted = useRef(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [query, setQuery] = useState(initialSearchQuery);
@@ -1050,6 +1051,13 @@ export function RepositoryBrowser() {
   });
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
   const [copied, setCopied] = useState("");
+
+  useEffect(() => {
+    metadataMounted.current = true;
+    return () => {
+      metadataMounted.current = false;
+    };
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -1204,7 +1212,6 @@ export function RepositoryBrowser() {
 
   useEffect(() => {
     if (missingMetadataShardKeys.length === 0) return;
-    let cancelled = false;
 
     setMetadataShards((previous) => {
       const next = { ...previous };
@@ -1226,7 +1233,9 @@ export function RepositoryBrowser() {
         })
       );
 
-      if (cancelled) return;
+      // Marking shards as loading changes this effect's dependencies.
+      // Keep their results unless the component itself has unmounted.
+      if (!metadataMounted.current) return;
       setMetadataShards((previous) => {
         const next = { ...previous };
         for (const [key, shard] of results) {
@@ -1237,10 +1246,6 @@ export function RepositoryBrowser() {
     }
 
     void loadShards();
-
-    return () => {
-      cancelled = true;
-    };
   }, [missingMetadataShardKey, missingMetadataShardKeys, metadataShardPaths]);
 
   function toggleExpanded(key: string) {
