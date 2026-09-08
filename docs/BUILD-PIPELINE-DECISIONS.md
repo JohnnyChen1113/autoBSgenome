@@ -1,6 +1,10 @@
 # AutoBSgenome build pipeline and decision log
 
-Last updated: 2026-08-23
+Last updated: 2026-09-08
+
+The 2026-09-08 audit changes below are implemented locally and await deployment
+and hosted acceptance testing. They do not describe a verified production
+rollout. See [the pre-submission audit](PRE-SUBMISSION-CODE-AUDIT-2026-09-08.md).
 
 This document describes the production build path from a browser request to an
 installable BSgenome source package. It separates required package-building
@@ -72,9 +76,11 @@ Open improvements:
 ## 2. User FASTA upload staging
 
 Local files are uploaded in multipart chunks to a temporary Cloudflare R2
-object. The API signs the upload/download URLs and verifies that the object
-exists before dispatching a build. The build deletes the R2 object after a
-successful download on a best-effort basis.
+object. New upload/download signatures bind the declared byte size. The API
+validates the part sequence and actual completed object size, then checks the
+stored object again before dispatching a build. Invalid completed objects are
+deleted; earlier signed URLs remain accepted. The build deletes the R2 object
+after a successful download on a best-effort basis.
 
 Purpose:
 
@@ -271,18 +277,26 @@ Purpose:
 
 - describe the R package that BSgenomeForge must create.
 
-Known correctness and security work:
+Implemented in the 2026-09-08 audit:
 
-- the submitted Description is currently not parsed by the workflow and is
-  replaced with a generated description;
-- several parsed values are interpolated back into shell code and a heredoc.
-  Generate the seed with Python/R from environment variables to escape quotes,
-  newlines, colons, and shell metacharacters safely.
+- submitted Description reaches the seed, with a generated default when empty;
+- parsed values enter shell steps through environment bindings, with no
+  interpolation of step outputs into executable shell text;
+- Python validates identifiers and single-line metadata before writing the
+  seed. Control characters cannot introduce additional workflow outputs or
+  DCF fields; shell metacharacters remain literal metadata.
 
 ## 9. Forge the package directory
 
-The workflow invokes `forgeBSgenomeDataPkg()` and places the 2bit file under
-`inst/extdata/single_sequences.2bit`.
+The workflow invokes `BSgenomeForge::forgeBSgenomeDataPkg()` and places the
+2bit file under `inst/extdata/single_sequences.2bit`.
+
+Before building, both hosted and CLI paths regenerate the R loader and Rd help
+from installed BSgenomeForge templates, with context-specific literal escaping.
+This prevents quotes in metadata from becoming R expressions and prevents Rd
+`\Sexpr` directives in title/description from executing during the build.
+R subprocesses also bypass startup profiles that could change the build
+directory.
 
 Purpose:
 
@@ -291,8 +305,6 @@ Purpose:
 
 Open improvements:
 
-- call `BSgenomeForge::forgeBSgenomeDataPkg()` directly; the current namespace
-  emits a deprecation warning;
 - narrow the catch-all fallback so real metadata/forge errors are not masked as
   large-file copy failures.
 
@@ -381,9 +393,11 @@ provenance.
 
 Open improvements:
 
-- reconcile cases where storage succeeds but index update fails;
-- compare accession, SHA-256, and size when deciding whether an existing
-  release can be reused.
+- reconcile cases where storage succeeds but index update fails.
+
+The audit added exact filename, size, and SHA-256 checks before reusing an
+existing release asset. A mismatch preserves the existing release and stops
+the index update, so newly built provenance cannot describe different bytes.
 
 ### Benchmark build
 
@@ -412,12 +426,15 @@ Purpose:
 - give users a stable project-domain endpoint rather than exposing GitHub API
   details or a workers.dev URL.
 
+The audit makes completed failed, cancelled, and timed-out runs terminal even
+without a failure-marker Release. A successful completed run whose temporary
+artifact has expired reports that expiry. Success requires a published,
+nonempty BSgenome tarball asset.
+
 Known improvements:
 
 - persist `job_id -> run_id/status` rather than scanning up to 300 workflow runs
   on every poll;
-- treat completed failure/cancelled/timed-out workflows as terminal even when a
-  failure-marker Release could not be created;
 - return recorded CPU/transfer diagnostics through a durable status store if
   users eventually need completed-run telemetry beyond GitHub step wall time.
 
@@ -528,8 +545,7 @@ support treating the difference as normal hosted-runner/transfer variation.
 
 ### Engineering work without a product-policy decision
 
-- Safe seed generation and Description propagation.
-- Durable status storage and terminal failure reporting.
-- Narrow forge fallback and update the BSgenomeForge call.
+- Durable status storage beyond the recent-workflow lookup window.
+- Narrow forge fallback.
 - Preflight disk estimation and upstream checksum handling.
 - Explicit benchmark pause control and improved metrics completeness.

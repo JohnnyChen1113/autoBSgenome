@@ -1,4 +1,4 @@
-import { buildBSgenomePackageName, cleanOrganismName } from "@/lib/package-name";
+import { buildBSgenomePackageName, cleanOrganismName } from "./package-name.ts";
 
 const DATASETS_BASE = "https://api.ncbi.nlm.nih.gov/datasets/v2/genome/accession";
 
@@ -17,13 +17,16 @@ export function extractAccession(input: string): string | null {
   return match ? match[1] : null;
 }
 
-function formatReleaseDate(isoDate: string): string {
-  const date = new Date(isoDate);
+export function formatReleaseDate(isoDate: string): string {
+  const match = isoDate.match(/^(\d{4})-(\d{2})(?:-|$)/);
+  if (!match) return "";
+  const month = Number(match[2]);
+  if (month < 1 || month > 12) return "";
   const months = [
     "Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.",
     "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec.",
   ];
-  return `${months[date.getMonth()]} ${date.getFullYear()}`;
+  return `${months[month - 1]} ${match[1]}`;
 }
 
 export function generatePackageName(info: NCBIAssemblyInfo): string {

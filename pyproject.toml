@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoBSgenome"
+version = "0.8.0"
+description = "Interactive local builder for BSgenome R packages"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-only" }
+authors = [{ name = "Junhao Chen" }]
+dependencies = []
+
+[project.scripts]
+autobsgenome = "autoBSgenome:main"
+
+[tool.setuptools]
+py-modules = ["autoBSgenome"]

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -8,11 +8,18 @@ import { Label } from "@/components/ui/label";
 import {
   extractAccession,
   fetchAssemblyInfo,
+  generatePackageName,
+  generateTitle,
+  generateDescription,
 } from "@/lib/ncbi";
 import {
   extractEnsemblSpecies,
   fetchEnsemblAssemblyInfo,
+  inferEnsemblGroup,
+  ensemblSourceUrl,
 } from "@/lib/ensembl";
+import { buildBSgenomePackageName } from "@/lib/package-name";
+import { summarizeBatchProgress } from "./batch-progress";
 import {
   fetchBuildStatus,
   startBuild,
@@ -42,6 +49,9 @@ interface BatchItem {
   description: string;
   sourceUrl: string;
   fastaSource: string;
+  speciesUrl: string;
+  ensemblGroup: string;
+  releaseDate: string;
   error: string;
   jobId: string;
   downloadUrl: string;
@@ -109,6 +119,9 @@ function createBatchItem(rawInput: string, index: number): BatchItem {
     description: "",
     sourceUrl: "",
     fastaSource: "ncbi",
+    speciesUrl: "",
+    ensemblGroup: inferEnsemblGroup(rawInput),
+    releaseDate: "",
     error: type === "invalid" ? "Could not detect a valid accession or species name" : "",
     jobId: "",
     downloadUrl: "",
@@ -123,6 +136,16 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [fetchingAll, setFetchingAll] = useState(false);
   const pollIntervals = useRef<Record<string, ReturnType<typeof setInterval>>>({});
+  const activeRef = useRef(false);
+
+  useEffect(() => {
+    activeRef.current = true;
+    const intervals = pollIntervals.current;
+    return () => {
+      activeRef.current = false;
+      Object.values(intervals).forEach(clearInterval);
+    };
+  }, []);
 
   // Parse textarea into batch items
   const parseInput = () => {
@@ -154,38 +177,40 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
         }
 
         const info = await fetchEnsemblAssemblyInfo(species);
-        const orgParts = info.organism.trim().split(/\s+/);
-        const abbrev = orgParts.length >= 2 ? orgParts[0][0].toUpperCase() + orgParts[1].toLowerCase() : orgParts[0];
-        const assembly = info.assemblyName.replace(/\./g, "").replace(/[^a-zA-Z0-9]/g, "");
+        if (/^GC[AF]_\d+\.\d+$/.test(item.accession) && info.assemblyAccession !== item.accession) {
+          throw new Error(`Ensembl resolved ${info.assemblyAccession || "an unknown accession"}, which does not match ${item.accession}. Use the exact Ensembl species URL or select NCBI.`);
+        }
+        const packageName = buildBSgenomePackageName(info.organism, "Ensembl", info.assemblyName);
+        if (!packageName.name) throw new Error(packageName.reason);
 
         return {
           status: "ready",
+          accession: info.assemblyAccession,
           organism: info.organism,
           commonName: info.commonName,
           assembly: info.assemblyName,
           provider: "Ensembl",
-          packageName: `BSgenome.${abbrev}.Ensembl.${assembly}`,
+          packageName: packageName.name,
           title: `Full genome sequences for ${info.organism} (Ensembl version ${info.assemblyName})`,
           description: `Full genome sequences for ${info.organism} (${info.commonName}) as provided by Ensembl (${info.assemblyName}) and stored in Biostrings objects.`,
-          sourceUrl: `https://www.ensembl.org/${species.charAt(0).toUpperCase() + species.slice(1)}/Info/Index`,
+          sourceUrl: ensemblSourceUrl(species, item.ensemblGroup),
+          speciesUrl: species,
+          releaseDate: info.releaseDate,
           fastaSource: "ncbi",
         };
       } else {
         // NCBI path
         const info = await fetchAssemblyInfo(item.accession);
-        const orgParts = info.organism.trim().split(/\s+/);
-        const abbrev = orgParts.length >= 2 ? orgParts[0][0].toUpperCase() + orgParts[1].toLowerCase() : orgParts[0];
-        const assembly = info.assemblyName.replace(/\./g, "").replace(/[^a-zA-Z0-9]/g, "");
-
         return {
           status: "ready",
           organism: info.organism,
           commonName: info.commonName,
           assembly: info.assemblyName,
           provider: info.provider || "NCBI",
-          packageName: `BSgenome.${abbrev}.${info.provider || "NCBI"}.${assembly}`,
-          title: `Full genome sequences for ${info.organism} (${info.provider} version ${info.assemblyName})`,
-          description: `Full genome sequences for ${info.organism} (${info.commonName}) as provided by ${info.provider} (${info.assemblyName}) and stored in Biostrings objects.`,
+          packageName: generatePackageName(info),
+          title: generateTitle(info),
+          description: generateDescription(info, info.commonName),
+          releaseDate: info.releaseDate,
           sourceUrl: `https://www.ncbi.nlm.nih.gov/datasets/genome/${item.accession}/`,
           fastaSource: "ncbi",
         };
@@ -204,6 +229,7 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
     const fetchable = items.filter(i => i.status !== "error" && i.status !== "ready");
 
     for (const item of fetchable) {
+      if (!activeRef.current) break;
       updateItem(item.id, { status: "fetching" });
       const result = await fetchItem(item);
       updateItem(item.id, result);
@@ -223,7 +249,7 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
         common_name: item.commonName,
         genome: item.assembly,
         provider: item.provider,
-        release_date: "",
+        release_date: item.releaseDate,
         version: item.version,
         title: item.title,
         description: item.description,
@@ -231,10 +257,12 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
         accession: item.accession,
         fasta_source: item.fastaSource,
         data_source: item.selectedSource,
+        species_url: item.speciesUrl,
+        ensembl_group: item.ensemblGroup,
       });
 
       updateItem(item.id, { jobId: data.job_id });
-      startPolling(item.id, data.job_id);
+      if (activeRef.current) startPolling(item.id, data.job_id);
     } catch (e) {
       updateItem(item.id, {
         status: "failed",
@@ -246,7 +274,10 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
   // Poll build status
   const startPolling = (itemId: string, jobId: string) => {
     const startTime = Date.now();
+    let checking = false;
     const interval = setInterval(async () => {
+      if (checking || !activeRef.current) return;
+      checking = true;
       try {
         const data = await fetchBuildStatus(jobId);
 
@@ -263,11 +294,13 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
           delete pollIntervals.current[itemId];
           updateItem(itemId, {
             status: "failed",
-            error: data.error || "Build failed",
+            error: data.message || data.error || "Build failed",
           });
         }
       } catch {
         // Network error, keep polling
+      } finally {
+        checking = false;
       }
     }, 15000);
     pollIntervals.current[itemId] = interval;
@@ -278,6 +311,7 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
     setPhase("building");
     const ready = items.filter(i => i.status === "ready");
     for (const item of ready) {
+      if (!activeRef.current) break;
       await buildItem(item);
       // 10s delay between dispatches
       await new Promise(r => setTimeout(r, 10000));
@@ -287,9 +321,10 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
   // Counts
   const readyCount = items.filter(i => i.status === "ready").length;
   const errorCount = items.filter(i => i.status === "error").length;
-  const buildingCount = items.filter(i => i.status === "building").length;
-  const doneCount = items.filter(i => i.status === "done").length;
-  const totalValid = items.filter(i => i.status !== "error" && i.detectedType !== "invalid").length;
+  const progress = summarizeBatchProgress(items);
+  const buildingCount = progress.building;
+  const doneCount = progress.done;
+  const totalValid = progress.total;
 
   // ── Render ──
 
@@ -331,7 +366,7 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
           <div>
             <h3 className="text-lg font-semibold">
               {phase === "review" && "Review & Build"}
-              {phase === "building" && "Building..."}
+              {phase === "building" && (progress.allFinished ? "Builds Finished" : "Building...")}
               {phase === "results" && "Results"}
             </h3>
             <p className="text-sm text-muted-foreground">
@@ -345,12 +380,12 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
                 <Button size="sm" onClick={fetchAll} disabled={fetchingAll}>
                   {fetchingAll ? "Fetching..." : "Fetch All"}
                 </Button>
-                <Button size="sm" onClick={buildAll} disabled={readyCount === 0}>
+                <Button size="sm" onClick={buildAll} disabled={readyCount === 0 || fetchingAll}>
                   Build All ({readyCount})
                 </Button>
               </>
             )}
-            {phase === "building" && doneCount + errorCount >= totalValid && (
+            {phase === "building" && progress.allFinished && (
               <Button size="sm" onClick={() => setPhase("results")}>View Results</Button>
             )}
           </div>
@@ -360,13 +395,13 @@ export default function BatchMode({ onExit }: { onExit: () => void }) {
         {(phase === "building" || phase === "results") && (
           <div className="mb-4">
             <div className="flex justify-between text-xs text-muted-foreground mb-1">
-              <span>{doneCount}/{totalValid} complete</span>
+              <span>{progress.finished}/{totalValid} finished{progress.failed > 0 ? ` (${progress.failed} failed)` : ""}</span>
               {buildingCount > 0 && <span>{buildingCount} building...</span>}
             </div>
             <div className="w-full h-2 bg-muted rounded-full overflow-hidden">
               <div
                 className="h-full bg-primary rounded-full transition-all duration-500"
-                style={{ width: `${totalValid > 0 ? (doneCount / totalValid) * 100 : 0}%` }}
+                style={{ width: `${totalValid > 0 ? (progress.finished / totalValid) * 100 : 0}%` }}
               />
             </div>
           </div>

@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import os
 import pathlib
 import re
 import subprocess
@@ -432,7 +433,11 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
 
         self.assertIn("benchmark_publication_action", workflow)
         self.assertIn(
-            "benchmark.publication_action \"${{ steps.params.outputs.benchmark_publication_action }}\"",
+            "BUILD_PARAM_BENCHMARK_PUBLICATION_ACTION: ${{ steps.params.outputs.benchmark_publication_action }}",
+            workflow,
+        )
+        self.assertIn(
+            'benchmark.publication_action "$BUILD_PARAM_BENCHMARK_PUBLICATION_ACTION"',
             workflow,
         )
         self.assertIn(
@@ -525,7 +530,18 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
         self.assertNotIn("detect_circular_sequences.py", workflow)
         self.assertNotIn("sequence_report.jsonl", workflow)
         self.assertNotIn("nuccore", workflow.lower())
-        self.assertIn("circ_seqs: character(0)", workflow)
+        self.assertIn("python3 scripts/build_input.py", workflow)
+        with tempfile.TemporaryDirectory() as tmpdir:
+            result = subprocess.run(
+                ["python3", str(ROOT / "scripts" / "build_input.py")],
+                cwd=tmpdir,
+                env=dict(os.environ, BUILD_PARAM_PACKAGE_NAME="BSgenome.Test.NCBI.One",
+                         BUILD_PARAM_VERSION="1.0.0", BUILD_PARAM_ORGANISM="Test species"),
+                text=True, capture_output=True,
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+            seed = pathlib.Path(tmpdir) / "BSgenome.Test.NCBI.One.seed"
+            self.assertIn("circ_seqs: character(0)\n", seed.read_text())
 
     def test_web_build_forms_do_not_request_or_display_circular_metadata(self):
         paths = [
@@ -577,9 +593,10 @@ class WorkflowRuntimeContractTests(unittest.TestCase):
         publish_end = workflow.index("- name: Finalize benchmark report", publish_start)
         publish_step = workflow[publish_start:publish_end]
         self.assertIn(
-            '--job-id "${{ steps.params.outputs.job_id }}"',
+            'JOB_ID: ${{ steps.params.outputs.job_id }}',
             publish_step,
         )
+        self.assertIn('--job-id "$JOB_ID"', publish_step)
         self.assertIn('--status-file "$ZENODO_STATUS"', publish_step)
         self.assertIn('ZENODO_RC=$?', publish_step)
         self.assertIn('python3 scripts/record_metric.py current_stage "$ZENODO_FAILURE_STAGE"', publish_step)

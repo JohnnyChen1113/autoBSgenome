@@ -54,8 +54,10 @@ jobs:
           # 'Ashbya aceri'"). toJSON serializes safely as a single env value.
           PAYLOAD: ${{ toJSON(github.event.client_payload) }}
         run: |
-          python3 <<'PYEOF' >> $GITHUB_OUTPUT
-          import json, os
+          python3 <<'PYEOF' >> "$GITHUB_OUTPUT"
+          import json, os, sys
+          sys.path.insert(0, 'scripts')
+          from build_input import complete_ensembl_identity, validate_fields
           p = json.loads(os.environ['PAYLOAD'])
           extra = p.get('extra') or {}
           if isinstance(extra, str):
@@ -77,6 +79,7 @@ jobs:
               'fasta_file_size': extra.get('fasta_file_size', ''),
               'release_date': extra.get('release_date', ''),
               'title': extra.get('title', ''),
+              'description': extra.get('description', ''),
               'source_url': extra.get('source_url', ''),
               'species_url': extra.get('species_url', ''),
               'ensembl_group': extra.get('ensembl_group', ''),
@@ -96,35 +99,47 @@ jobs:
               'ncbi_number_of_scaffolds': (extra.get('ncbi_assembly_stats') or {}).get('number_of_scaffolds', ''),
               'ncbi_scaffold_n50': (extra.get('ncbi_assembly_stats') or {}).get('scaffold_n50', ''),
           }
-          for k, v in fields.items():
-              v = '' if v is None else str(v)
-              if '\n' in v:
-                  print(f'{k}<<__GHA_EOF__')
-                  print(v)
-                  print('__GHA_EOF__')
-              else:
-                  print(f'{k}={v}')
+          # Validate the entire payload before emitting any workflow outputs.
+          fields = complete_ensembl_identity(validate_fields(fields))
+          for k, v in validate_fields(fields).items():
+              print(f'{k}={v}')
           PYEOF
 
       - name: Record benchmark definition
         if: steps.params.outputs.benchmark_mode == 'true'
+        env:
+          BUILD_PARAM_BENCHMARK_CAMPAIGN: ${{ steps.params.outputs.benchmark_campaign }}
+          BUILD_PARAM_BENCHMARK_ORDER: ${{ steps.params.outputs.benchmark_order }}
+          BUILD_PARAM_ACCESSION: ${{ steps.params.outputs.accession }}
+          BUILD_PARAM_ORGANISM: ${{ steps.params.outputs.organism }}
+          BUILD_PARAM_GENOME: ${{ steps.params.outputs.genome }}
+          BUILD_PARAM_PROVIDER: ${{ steps.params.outputs.provider }}
+          BUILD_PARAM_PACKAGE_NAME: ${{ steps.params.outputs.package_name }}
+          BUILD_PARAM_METADATA_SNAPSHOT_DATE: ${{ steps.params.outputs.metadata_snapshot_date }}
+          BUILD_PARAM_BUILD_SLA_SECONDS: ${{ steps.params.outputs.build_sla_seconds }}
+          BUILD_PARAM_BENCHMARK_PUBLICATION_ACTION: ${{ steps.params.outputs.benchmark_publication_action }}
+          BUILD_PARAM_NCBI_ASSEMBLY_LEVEL: ${{ steps.params.outputs.ncbi_assembly_level }}
+          BUILD_PARAM_NCBI_TOTAL_SEQUENCE_LENGTH: ${{ steps.params.outputs.ncbi_total_sequence_length }}
+          BUILD_PARAM_NCBI_TOTAL_UNGAPPED_LENGTH: ${{ steps.params.outputs.ncbi_total_ungapped_length }}
+          BUILD_PARAM_NCBI_NUMBER_OF_SCAFFOLDS: ${{ steps.params.outputs.ncbi_number_of_scaffolds }}
+          BUILD_PARAM_NCBI_SCAFFOLD_N50: ${{ steps.params.outputs.ncbi_scaffold_n50 }}
         run: |
           python3 scripts/record_metric.py current_stage benchmark_definition
-          python3 scripts/record_metric.py benchmark.campaign "${{ steps.params.outputs.benchmark_campaign }}"
-          python3 scripts/record_metric.py benchmark.order "${{ steps.params.outputs.benchmark_order }}"
-          python3 scripts/record_metric.py benchmark.accession "${{ steps.params.outputs.accession }}"
-          python3 scripts/record_metric.py benchmark.organism "${{ steps.params.outputs.organism }}"
-          python3 scripts/record_metric.py benchmark.assembly "${{ steps.params.outputs.genome }}"
-          python3 scripts/record_metric.py benchmark.provider "${{ steps.params.outputs.provider }}"
-          python3 scripts/record_metric.py benchmark.package_name "${{ steps.params.outputs.package_name }}"
-          python3 scripts/record_metric.py benchmark.metadata_snapshot_date "${{ steps.params.outputs.metadata_snapshot_date }}"
-          python3 scripts/record_metric.py benchmark.build_sla_seconds "${{ steps.params.outputs.build_sla_seconds }}"
-          python3 scripts/record_metric.py benchmark.publication_action "${{ steps.params.outputs.benchmark_publication_action }}"
-          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.assembly_level "${{ steps.params.outputs.ncbi_assembly_level }}"
-          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.total_sequence_length "${{ steps.params.outputs.ncbi_total_sequence_length }}"
-          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.total_ungapped_length "${{ steps.params.outputs.ncbi_total_ungapped_length }}"
-          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.number_of_scaffolds "${{ steps.params.outputs.ncbi_number_of_scaffolds }}"
-          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.scaffold_n50 "${{ steps.params.outputs.ncbi_scaffold_n50 }}"
+          python3 scripts/record_metric.py benchmark.campaign "$BUILD_PARAM_BENCHMARK_CAMPAIGN"
+          python3 scripts/record_metric.py benchmark.order "$BUILD_PARAM_BENCHMARK_ORDER"
+          python3 scripts/record_metric.py benchmark.accession "$BUILD_PARAM_ACCESSION"
+          python3 scripts/record_metric.py benchmark.organism "$BUILD_PARAM_ORGANISM"
+          python3 scripts/record_metric.py benchmark.assembly "$BUILD_PARAM_GENOME"
+          python3 scripts/record_metric.py benchmark.provider "$BUILD_PARAM_PROVIDER"
+          python3 scripts/record_metric.py benchmark.package_name "$BUILD_PARAM_PACKAGE_NAME"
+          python3 scripts/record_metric.py benchmark.metadata_snapshot_date "$BUILD_PARAM_METADATA_SNAPSHOT_DATE"
+          python3 scripts/record_metric.py benchmark.build_sla_seconds "$BUILD_PARAM_BUILD_SLA_SECONDS"
+          python3 scripts/record_metric.py benchmark.publication_action "$BUILD_PARAM_BENCHMARK_PUBLICATION_ACTION"
+          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.assembly_level "$BUILD_PARAM_NCBI_ASSEMBLY_LEVEL"
+          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.total_sequence_length "$BUILD_PARAM_NCBI_TOTAL_SEQUENCE_LENGTH"
+          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.total_ungapped_length "$BUILD_PARAM_NCBI_TOTAL_UNGAPPED_LENGTH"
+          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.number_of_scaffolds "$BUILD_PARAM_NCBI_NUMBER_OF_SCAFFOLDS"
+          python3 scripts/record_metric.py benchmark.ncbi_assembly_stats.scaffold_n50 "$BUILD_PARAM_NCBI_SCAFFOLD_N50"
 
       - name: Resolve NCBI source
         id: ncbi_source
@@ -311,6 +326,7 @@ jobs:
           SPECIES_URL: ${{ steps.params.outputs.species_url }}
           ENSEMBL_GROUP: ${{ steps.params.outputs.ensembl_group }}
           ACCESSION: ${{ steps.params.outputs.accession }}
+          EXPECTED_ASSEMBLY: ${{ steps.params.outputs.genome }}
         run: |
           set -o pipefail
           python3 scripts/record_metric.py current_stage fasta_stream_to_2bit
@@ -325,7 +341,7 @@ jobs:
                 exit 1
               fi
               echo "Resolving Ensembl FASTA: species_url=$SPECIES_URL group=$ENSEMBL_GROUP accession=$ACCESSION"
-              SOURCE_URL=$(python3 scripts/resolve_ensembl_fasta.py "$SPECIES_URL" "$ENSEMBL_GROUP" "$ACCESSION")
+              SOURCE_URL=$(python3 scripts/resolve_ensembl_fasta.py "$SPECIES_URL" "$ENSEMBL_GROUP" "$ACCESSION" "$EXPECTED_ASSEMBLY")
               ;;
             url)
               SOURCE_URL="$FASTA_URL"
@@ -460,54 +476,37 @@ jobs:
           echo "fasta_size=${FASTA_SIZE}" >> "$GITHUB_OUTPUT"
 
       - name: Generate seed file
+        env:
+          BUILD_PARAM_PACKAGE_NAME: ${{ steps.params.outputs.package_name }}
+          BUILD_PARAM_TITLE: ${{ steps.params.outputs.title }}
+          BUILD_PARAM_DESCRIPTION: ${{ steps.params.outputs.description }}
+          BUILD_PARAM_ORGANISM: ${{ steps.params.outputs.organism }}
+          BUILD_PARAM_COMMON_NAME: ${{ steps.params.outputs.common_name }}
+          BUILD_PARAM_GENOME: ${{ steps.params.outputs.genome }}
+          BUILD_PARAM_PROVIDER: ${{ steps.params.outputs.provider }}
+          BUILD_PARAM_RELEASE_DATE: ${{ steps.params.outputs.release_date }}
+          BUILD_PARAM_VERSION: ${{ steps.params.outputs.version }}
+          BUILD_PARAM_SOURCE_URL: ${{ steps.params.outputs.source_url }}
         run: |
           python3 scripts/record_metric.py current_stage seed_generation
           START=$(date +%s)
-          PACKAGE="${{ steps.params.outputs.package_name }}"
-          TITLE="${{ steps.params.outputs.title }}"
-          ORGANISM="${{ steps.params.outputs.organism }}"
-          COMMON="${{ steps.params.outputs.common_name }}"
-          GENOME="${{ steps.params.outputs.genome }}"
-          PROVIDER="${{ steps.params.outputs.provider }}"
-          RELEASE_DATE="${{ steps.params.outputs.release_date }}"
-          VERSION="${{ steps.params.outputs.version }}"
-          SOURCE_URL="${{ steps.params.outputs.source_url }}"
-          OBJNAME=$(echo "$PACKAGE" | cut -d. -f2)
-
-          cat > "${PACKAGE}.seed" <<SEED
-          Package: ${PACKAGE}
-          Title: ${TITLE:-Full genome sequences for ${ORGANISM} (${PROVIDER} version ${GENOME})}
-          Description: Full genome sequences for ${ORGANISM} (${COMMON}) as provided by ${PROVIDER} (${GENOME}, ${RELEASE_DATE}) and stored in Biostrings objects.
-          Version: ${VERSION}
-          organism: ${ORGANISM}
-          common_name: ${COMMON}
-          genome: ${GENOME}
-          provider: ${PROVIDER}
-          release_date: ${RELEASE_DATE}
-          source_url: ${SOURCE_URL}
-          organism_biocview: $(echo "${ORGANISM}" | tr ' ' '_')
-          BSgenomeObjname: ${OBJNAME}
-          circ_seqs: character(0)
-          seqs_srcdir: $(pwd)
-          seqfile_name: genome.2bit
-          SEED
-          sed -i 's/^          //' "${PACKAGE}.seed"
-          echo "=== Seed file ===" && cat "${PACKAGE}.seed"
+          python3 scripts/build_input.py
           END=$(date +%s)
           python3 scripts/record_metric.py timings_sec.seed_generation $((END - START))
 
       - name: Forge BSgenome data package (R)
+        env:
+          PACKAGE: ${{ steps.params.outputs.package_name }}
         run: |
           python3 scripts/record_metric.py current_stage forge
           source scripts/resource_sampler.sh
           start_resource_sampler forge
           trap stop_resource_sampler EXIT
-          PACKAGE="${{ steps.params.outputs.package_name }}"
           START=$(date +%s)
-          Rscript -e "
+          Rscript --vanilla -e "
             suppressPackageStartupMessages(library(BSgenome))
             tryCatch({
-              forgeBSgenomeDataPkg('${PACKAGE}.seed')
+              BSgenomeForge::forgeBSgenomeDataPkg('${PACKAGE}.seed')
             }, error = function(e) {
               message('forgeBSgenomeDataPkg error: ', e\$message)
               message('Attempting manual package creation (mv instead of copy)...')
@@ -522,6 +521,7 @@ jobs:
             hwm <- grep('^VmHWM:', status, value = TRUE)
             if (length(hwm)) cat(sprintf('METRIC_FORGE_HWM_KB=%s\n', sub('[^0-9]*([0-9]+).*', '\\\\1', hwm)))
           " 2>&1 | tee /tmp/forge.log
+          python3 scripts/build_input.py --rewrite-forged-metadata "${PACKAGE}.seed"
 
           if [ -f genome.2bit ] && [ -f "./${PACKAGE}/inst/extdata/single_sequences.2bit" ]; then
             echo "Removing source genome.2bit (already copied into package)"
@@ -537,6 +537,7 @@ jobs:
 
       - name: R CMD build (assemble tarball)
         env:
+          PACKAGE: ${{ steps.params.outputs.package_name }}
           # R's built-in utils::tar() rejects files > 8 GB. Force use of the
           # external GNU tar binary, which has no such limit. Discovered via
           # Neoceratodus forsteri 34.56 GB (2bit ~8.6 GB, tarball ~8 GB).
@@ -546,7 +547,6 @@ jobs:
           source scripts/resource_sampler.sh
           start_resource_sampler rcmd_build
           trap stop_resource_sampler EXIT
-          PACKAGE="${{ steps.params.outputs.package_name }}"
           START=$(date +%s)
           # Wrap with GNU time if available, so we capture Max RSS across the
           # whole R-CMD-build subprocess tree (plain R cannot self-report its
@@ -578,12 +578,13 @@ jobs:
 
       - name: Validate package archive
         id: archive_validation
+        env:
+          PACKAGE: ${{ steps.params.outputs.package_name }}
         run: |
           python3 scripts/record_metric.py current_stage archive_validation
           source scripts/resource_sampler.sh
           start_resource_sampler archive_validation
           trap stop_resource_sampler EXIT
-          PACKAGE="${{ steps.params.outputs.package_name }}"
           START=$(date +%s)
           TARBALL=$(find . -maxdepth 1 -type f -name "${PACKAGE}_*.tar.gz" -print -quit)
           PACKAGE_SHA256=$(bash scripts/validate_package_archive.sh "$TARBALL" "$PACKAGE")
@@ -595,11 +596,12 @@ jobs:
 
       - name: Determine storage backend
         id: storage
+        env:
+          PACKAGE: ${{ steps.params.outputs.package_name }}
+          VERSION: ${{ steps.params.outputs.version }}
         run: |
           python3 scripts/record_metric.py current_stage storage_selection
           START=$(date +%s)
-          PACKAGE="${{ steps.params.outputs.package_name }}"
-          VERSION="${{ steps.params.outputs.version }}"
           TARBALL="${PACKAGE}_${VERSION}.tar.gz"
           SIZE=$(stat -c%s "${TARBALL}" 2>/dev/null || stat -f%z "${TARBALL}" 2>/dev/null || echo "0")
           # GitHub Releases hard-cap is 2 GiB per asset. Use Zenodo above 1.9 GiB
@@ -626,11 +628,11 @@ jobs:
         if: steps.storage.outputs.backend == 'github' && steps.params.outputs.publish_to_index != 'true' && steps.params.outputs.benchmark_mode != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JOB_ID: ${{ steps.params.outputs.job_id }}
+          PACKAGE: ${{ steps.params.outputs.package_name }}
+          VERSION: ${{ steps.params.outputs.version }}
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          JOB_ID="${{ steps.params.outputs.job_id }}"
-          PACKAGE="${{ steps.params.outputs.package_name }}"
-          VERSION="${{ steps.params.outputs.version }}"
           TAG="build-${JOB_ID}"
           TARBALL="${PACKAGE}_${VERSION}.tar.gz"
 
@@ -654,6 +656,18 @@ jobs:
         if: steps.storage.outputs.backend == 'github' && steps.params.outputs.publish_to_index == 'true' && (steps.params.outputs.fasta_source == 'ncbi' || steps.params.outputs.fasta_source == 'ensembl')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PACKAGE: ${{ steps.params.outputs.package_name }}
+          VERSION: ${{ steps.params.outputs.version }}
+          ORGANISM: ${{ steps.params.outputs.organism }}
+          ASSEMBLY: ${{ steps.params.outputs.genome }}
+          PROVIDER: ${{ steps.params.outputs.provider }}
+          ACCESSION: ${{ steps.params.outputs.accession }}
+          RELEASE_DATE: ${{ steps.params.outputs.release_date }}
+          SOURCE_URL: ${{ steps.params.outputs.source_url }}
+          DATA_SOURCE: ${{ steps.params.outputs.data_source }}
+          PACKAGE_SHA256: ${{ steps.archive_validation.outputs.package_sha256 }}
+          SEQ_IDS: ${{ steps.fasta_info.outputs.seq_ids }}
+          SEQ_COUNT: ${{ steps.fasta_info.outputs.seq_count }}
         run: |
           python3 scripts/record_metric.py current_stage publication_github
           source scripts/resource_sampler.sh
@@ -661,18 +675,10 @@ jobs:
           trap stop_resource_sampler EXIT
           PUBLISH_START=$(date +%s)
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          PACKAGE="${{ steps.params.outputs.package_name }}"
-          VERSION="${{ steps.params.outputs.version }}"
-          ORGANISM="${{ steps.params.outputs.organism }}"
-          ASSEMBLY="${{ steps.params.outputs.genome }}"
-          PROVIDER="${{ steps.params.outputs.provider }}"
           TARBALL="${PACKAGE}_${VERSION}.tar.gz"
           PERM_TAG="pkg-${PACKAGE}"
-          ACCESSION="${{ steps.params.outputs.accession }}"
-          RELEASE_DATE="${{ steps.params.outputs.release_date }}"
-          SOURCE_URL="${{ steps.params.outputs.source_url }}"
           if [ -z "$SOURCE_URL" ]; then
-            if [ "${{ steps.params.outputs.data_source }}" = "ensembl" ]; then
+            if [ "$DATA_SOURCE" = "ensembl" ]; then
               SOURCE_URL="https://www.ensembl.org/"
             else
               SOURCE_URL="https://www.ncbi.nlm.nih.gov/datasets/genome/${ACCESSION}/"
@@ -681,7 +687,6 @@ jobs:
           BUILT_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           WORKFLOW_RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder@sha256:6e347d533e7db4bd0a65c38d884184884590664ad3b5e47a14401079f3625e95"
-          PACKAGE_SHA256="${{ steps.archive_validation.outputs.package_sha256 }}"
           DESCRIPTION_SHA256=$(PACKAGE="$PACKAGE" TARBALL="$TARBALL" python3 <<'PYEOF'
           import hashlib
           import os
@@ -700,13 +705,10 @@ jobs:
           )
           LOCAL_SIZE=$(stat -c%s "${TARBALL}" 2>/dev/null || stat -f%z "${TARBALL}" 2>/dev/null || echo "0")
 
-          # Inspect any existing release. A draft means a prior upload was
-          # interrupted — delete so we can retry cleanly. A non-draft release
-          # with the same asset size is already good; skip the re-upload to
-          # save ~500 MB-2 GB of redundant bandwidth on large genomes.
+          # Reuse published bytes only after verifying filename, size, and hash.
+          # Preserve a differing published artifact for an explicit curator decision.
           EXISTING=$(gh release view "${PERM_TAG}" --json isDraft,assets,body 2>/dev/null || echo '{}')
           IS_DRAFT=$(echo "$EXISTING" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('isDraft', 'missing'))")
-          EXISTING_SIZE=$(echo "$EXISTING" | python3 -c "import json,sys; d=json.load(sys.stdin); a=d.get('assets',[]); print(a[0].get('size',0) if a else 0)")
           EXISTING_ACCESSION=$(echo "$EXISTING" | python3 -c "import json,re,sys; d=json.load(sys.stdin); m=re.search(r'GC[AF]_[0-9]+\.[0-9]+', d.get('body','')); print(m.group(0) if m else '')")
 
           if [ "$IS_DRAFT" = "False" ] && [ -z "$EXISTING_ACCESSION" ]; then
@@ -722,12 +724,11 @@ jobs:
           if [ "$IS_DRAFT" = "True" ]; then
             echo "Existing release is a draft (orphan from interrupted upload); deleting and re-uploading"
             gh release delete "${PERM_TAG}" --yes --cleanup-tag 2>/dev/null || true
-          elif [ "$IS_DRAFT" = "False" ] && [ "$EXISTING_SIZE" = "$LOCAL_SIZE" ]; then
-            echo "Release already published with matching tarball size ($EXISTING_SIZE bytes); skipping re-upload"
-            SKIP_UPLOAD=1
           elif [ "$IS_DRAFT" = "False" ]; then
-            echo "Existing release has different asset size ($EXISTING_SIZE vs local $LOCAL_SIZE); replacing"
-            gh release delete "${PERM_TAG}" --yes --cleanup-tag 2>/dev/null || true
+            EXISTING_RELEASE="$EXISTING" python3 scripts/verify_release_asset.py \
+              "$PERM_TAG" "$TARBALL" "$LOCAL_SIZE" "$PACKAGE_SHA256"
+            echo "Published tarball matches filename, size, and SHA-256; skipping re-upload"
+            SKIP_UPLOAD=1
           fi
 
           if [ "${SKIP_UPLOAD:-0}" != "1" ]; then
@@ -759,8 +760,6 @@ jobs:
           # Trigger index update on gh-pages. Pack seq_ids + metrics into
           # storage_info to stay under the 10-property client_payload cap.
           FILESIZE=$(stat -c%s "${TARBALL}" 2>/dev/null || stat -f%z "${TARBALL}" 2>/dev/null || echo "0")
-          SEQ_IDS="${{ steps.fasta_info.outputs.seq_ids }}"
-          SEQ_COUNT="${{ steps.fasta_info.outputs.seq_count }}"
           # Record seq_count in metrics too so it lives alongside the rest.
           python3 scripts/record_metric.py seq_count "${SEQ_COUNT:-0}"
           STORAGE_INFO=$(SEQ_IDS="$SEQ_IDS" SOURCE_URL="$SOURCE_URL" RELEASE_DATE="$RELEASE_DATE" PROVIDER="$PROVIDER" ACCESSION="$ACCESSION" BUILT_AT="$BUILT_AT" WORKFLOW_RUN_ID="${{ github.run_id }}" WORKFLOW_RUN_URL="$WORKFLOW_RUN_URL" BUILDER_IMAGE="$BUILDER_IMAGE" PACKAGE_SHA256="$PACKAGE_SHA256" DESCRIPTION_SHA256="$DESCRIPTION_SHA256" python3 -c "
@@ -807,27 +806,31 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+          PACKAGE: ${{ steps.params.outputs.package_name }}
+          VERSION: ${{ steps.params.outputs.version }}
+          ORGANISM: ${{ steps.params.outputs.organism }}
+          ASSEMBLY: ${{ steps.params.outputs.genome }}
+          PROVIDER: ${{ steps.params.outputs.provider }}
+          ACCESSION: ${{ steps.params.outputs.accession }}
+          RELEASE_DATE: ${{ steps.params.outputs.release_date }}
+          SOURCE_URL: ${{ steps.params.outputs.source_url }}
+          DATA_SOURCE: ${{ steps.params.outputs.data_source }}
+          JOB_ID: ${{ steps.params.outputs.job_id }}
+          PACKAGE_SHA256: ${{ steps.archive_validation.outputs.package_sha256 }}
+          SEQ_IDS: ${{ steps.fasta_info.outputs.seq_ids }}
+          SEQ_COUNT: ${{ steps.fasta_info.outputs.seq_count }}
+          FILESIZE: ${{ steps.storage.outputs.tarball_size }}
         run: |
           python3 scripts/record_metric.py current_stage publication_zenodo
           source scripts/resource_sampler.sh
           start_resource_sampler publication_zenodo
           trap stop_resource_sampler EXIT
           PUBLISH_START=$(date +%s)
-          PACKAGE="${{ steps.params.outputs.package_name }}"
-          VERSION="${{ steps.params.outputs.version }}"
-          ORGANISM="${{ steps.params.outputs.organism }}"
-          ASSEMBLY="${{ steps.params.outputs.genome }}"
-          PROVIDER="${{ steps.params.outputs.provider }}"
-          ACCESSION="${{ steps.params.outputs.accession }}"
-          RELEASE_DATE="${{ steps.params.outputs.release_date }}"
           TARBALL="${PACKAGE}_${VERSION}.tar.gz"
-          SEQ_IDS="${{ steps.fasta_info.outputs.seq_ids }}"
-          SEQ_COUNT="${{ steps.fasta_info.outputs.seq_count }}"
 
           # Source URL points at NCBI or Ensembl depending on the data source
-          SOURCE_URL="${{ steps.params.outputs.source_url }}"
           if [ -z "$SOURCE_URL" ]; then
-            if [ "${{ steps.params.outputs.data_source }}" = "ensembl" ]; then
+            if [ "$DATA_SOURCE" = "ensembl" ]; then
               SOURCE_URL="https://www.ensembl.org/"
             else
               SOURCE_URL="https://www.ncbi.nlm.nih.gov/datasets/genome/${ACCESSION}/"
@@ -836,7 +839,6 @@ jobs:
           BUILT_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           WORKFLOW_RUN_URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           BUILDER_IMAGE="ghcr.io/johnnychen1113/autobsgenome-builder@sha256:6e347d533e7db4bd0a65c38d884184884590664ad3b5e47a14401079f3625e95"
-          PACKAGE_SHA256="${{ steps.archive_validation.outputs.package_sha256 }}"
           DESCRIPTION_SHA256=$(PACKAGE="$PACKAGE" TARBALL="$TARBALL" python3 <<'PYEOF'
           import hashlib
           import os
@@ -869,7 +871,7 @@ jobs:
             --community "autobsgenome" \
             --keywords "BSgenome,Bioconductor,${ORGANISM},${PROVIDER},${ASSEMBLY},autoBSgenome,R package,reference genome,eukaryote" \
             --related "${SOURCE_URL},https://github.com/${{ github.repository }},https://autobsgenome.org" \
-            --job-id "${{ steps.params.outputs.job_id }}" \
+            --job-id "$JOB_ID" \
             --status-file "$ZENODO_STATUS" \
             > /tmp/zenodo.json
           ZENODO_RC=$?
@@ -889,7 +891,6 @@ jobs:
           cat /tmp/zenodo.json
           DOI=$(python3 -c "import json;print(json.load(open('/tmp/zenodo.json'))['doi'] or '')")
           URL=$(python3 -c "import json;print(json.load(open('/tmp/zenodo.json'))['download_url'])")
-          FILESIZE="${{ steps.storage.outputs.tarball_size }}"
 
           echo "Zenodo DOI: $DOI"
           echo "Zenodo URL: $URL"
@@ -961,8 +962,9 @@ jobs:
 
       - name: Remove benchmark package artifact
         if: always() && steps.params.outputs.benchmark_mode == 'true'
+        env:
+          PACKAGE: ${{ steps.params.outputs.package_name }}
         run: |
-          PACKAGE="${{ steps.params.outputs.package_name }}"
           TARBALL=$(find . -maxdepth 1 -type f -name "${PACKAGE}_*.tar.gz" -print -quit)
           if [ -n "$TARBALL" ]; then
             rm -f -- "$TARBALL"
@@ -981,12 +983,12 @@ jobs:
           if-no-files-found: error
 
       - name: Report failure
-        if: failure() && steps.params.outputs.benchmark_mode != 'true'
+        if: failure() && steps.params.outcome == 'success' && steps.params.outputs.benchmark_mode != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JOB_ID: ${{ steps.params.outputs.job_id }}
         run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          JOB_ID="${{ steps.params.outputs.job_id }}"
           TAG="build-${JOB_ID}"
           gh release create "${TAG}" \
             --title "Build Failed - ${JOB_ID}" \

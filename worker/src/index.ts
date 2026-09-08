@@ -149,6 +149,7 @@ type BuildProgress = {
   workflow_run_url?: string;
   workflow_status?: string;
   workflow_conclusion?: string | null;
+  workflow_completed_at?: string;
   total_seconds?: number;
 };
 
@@ -203,9 +204,11 @@ async function uploadToken(
   uploadId: string,
   fileName: string,
   expiresAt: number,
-  r2UploadId = ""
+  r2UploadId = "",
+  declaredSize?: number
 ): Promise<string> {
-  const suffix = r2UploadId ? `:${r2UploadId}` : "";
+  const suffix = (r2UploadId ? `:${r2UploadId}` : "") +
+    (declaredSize === undefined ? "" : `:${declaredSize}`);
   return hmacHex(uploadSecret(env), `${uploadId}:${fileName}:${expiresAt}${suffix}`);
 }
 
@@ -216,7 +219,7 @@ function uploadKey(uploadId: string, fileName: string): string {
 async function verifyUploadUrl(
   env: Env,
   url: URL
-): Promise<{ uploadId: string; fileName: string; key: string; r2UploadId: string } | null> {
+): Promise<{ uploadId: string; fileName: string; key: string; r2UploadId: string; declaredSize?: number } | null> {
   const match = url.pathname.match(
     /^\/api\/uploads\/([a-zA-Z0-9-]+)(?:\/(?:parts\/[0-9]+|complete))?$/
   );
@@ -224,6 +227,9 @@ async function verifyUploadUrl(
   const token = url.searchParams.get("token") ?? "";
   const expiresAt = Number(url.searchParams.get("exp") ?? "0");
   const r2UploadId = url.searchParams.get("r2") ?? "";
+  const declaredSize = url.searchParams.has("size")
+    ? Number(url.searchParams.get("size"))
+    : undefined;
 
   if (!match || !fileName || !token || !Number.isFinite(expiresAt)) {
     return null;
@@ -231,8 +237,12 @@ async function verifyUploadUrl(
   if (expiresAt < Math.floor(Date.now() / 1000)) {
     return null;
   }
+  if (declaredSize !== undefined &&
+      (!Number.isSafeInteger(declaredSize) || declaredSize <= 0 || declaredSize > MAX_FASTA_UPLOAD_BYTES)) {
+    return null;
+  }
 
-  const expected = await uploadToken(env, match[1], fileName, expiresAt, r2UploadId);
+  const expected = await uploadToken(env, match[1], fileName, expiresAt, r2UploadId, declaredSize);
   if (!constantTimeEqual(token, expected)) {
     return null;
   }
@@ -242,7 +252,23 @@ async function verifyUploadUrl(
     fileName,
     key: uploadKey(match[1], fileName),
     r2UploadId,
+    declaredSize,
   };
+}
+
+function uploadedSizeError(
+  object: { size: number; customMetadata?: Record<string, string> },
+  signedSize?: number
+): { error: string; status: number } | null {
+  if (object.size > MAX_FASTA_UPLOAD_BYTES) {
+    return { error: "FASTA upload is too large", status: 413 };
+  }
+  const declaredSize = signedSize ?? Number(object.customMetadata?.declared_size);
+  if (!Number.isSafeInteger(object.size) || object.size <= 0 ||
+      (Number.isFinite(declaredSize) && object.size !== declaredSize)) {
+    return { error: "Uploaded FASTA size does not match the declared file_size", status: 400 };
+  }
+  return null;
 }
 
 export default {
@@ -402,7 +428,7 @@ async function handleCreateUpload(
       env.ALLOWED_ORIGIN
     );
   }
-  if (!Number.isFinite(fileSize) || fileSize <= 0) {
+  if (!Number.isSafeInteger(fileSize) || fileSize <= 0) {
     return jsonResponse(
       { error: "Missing or invalid file_size" },
       400,
@@ -435,11 +461,12 @@ async function handleCreateUpload(
   });
   const r2UploadId = multipart.uploadId;
   const expiresAt = Math.floor(Date.now() / 1000) + UPLOAD_URL_TTL_SECONDS;
-  const token = await uploadToken(env, uploadId, fileName, expiresAt, r2UploadId);
+  const token = await uploadToken(env, uploadId, fileName, expiresAt, r2UploadId, fileSize);
   const objectUrl = new URL(`/api/uploads/${uploadId}`, request.url);
   objectUrl.searchParams.set("name", fileName);
   objectUrl.searchParams.set("exp", String(expiresAt));
   objectUrl.searchParams.set("r2", r2UploadId);
+  objectUrl.searchParams.set("size", String(fileSize));
   objectUrl.searchParams.set("token", token);
   const partUrlTemplate = new URL(`/api/uploads/${uploadId}/parts/{part_number}`, request.url);
   partUrlTemplate.search = objectUrl.search;
@@ -483,7 +510,8 @@ async function handleUploadPart(
       env.ALLOWED_ORIGIN
     );
   }
-  if (!Number.isInteger(partNumber) || partNumber < 1 || partNumber > 10000) {
+  if (!Number.isInteger(partNumber) || partNumber < 1 ||
+      partNumber > Math.ceil(MAX_FASTA_UPLOAD_BYTES / FASTA_UPLOAD_PART_SIZE_BYTES)) {
     return jsonResponse({ error: "Invalid part number" }, 400, origin, env.ALLOWED_ORIGIN);
   }
 
@@ -498,8 +526,16 @@ async function handleUploadPart(
     );
   }
 
-  const contentLength = Number(request.headers.get("Content-Length") ?? "0");
-  if (contentLength > FASTA_UPLOAD_PART_SIZE_BYTES) {
+  if (verified.declaredSize !== undefined &&
+      partNumber > Math.ceil(verified.declaredSize / FASTA_UPLOAD_PART_SIZE_BYTES)) {
+    return jsonResponse({ error: "Part number exceeds the declared file_size" }, 400, origin, env.ALLOWED_ORIGIN);
+  }
+  const lengthHeader = request.headers.get("Content-Length");
+  const contentLength = lengthHeader === null ? undefined : Number(lengthHeader);
+  if (contentLength !== undefined && (!Number.isSafeInteger(contentLength) || contentLength <= 0)) {
+    return jsonResponse({ error: "Invalid upload part Content-Length" }, 400, origin, env.ALLOWED_ORIGIN);
+  }
+  if (contentLength !== undefined && contentLength > FASTA_UPLOAD_PART_SIZE_BYTES) {
     return jsonResponse(
       {
         error: "FASTA upload part is too large",
@@ -509,6 +545,12 @@ async function handleUploadPart(
       origin,
       env.ALLOWED_ORIGIN
     );
+  }
+  const expectedLength = verified.declaredSize === undefined
+    ? undefined
+    : Math.min(FASTA_UPLOAD_PART_SIZE_BYTES, verified.declaredSize - (partNumber - 1) * FASTA_UPLOAD_PART_SIZE_BYTES);
+  if (contentLength !== undefined && expectedLength !== undefined && contentLength !== expectedLength) {
+    return jsonResponse({ error: "Upload part size does not match the declared file_size" }, 400, origin, env.ALLOWED_ORIGIN);
   }
   if (!request.body) {
     return jsonResponse({ error: "Missing upload part body" }, 400, origin, env.ALLOWED_ORIGIN);
@@ -558,23 +600,36 @@ async function handleCompleteUpload(
   const body = await request.json<{
     parts?: { part_number?: number; partNumber?: number; etag?: string }[];
   }>().catch(() => ({}));
-  const parts = (body.parts ?? [])
+  if (!body || !Array.isArray(body.parts) || body.parts.some((part) => !part || typeof part !== "object")) {
+    return jsonResponse({ error: "Invalid upload parts" }, 400, origin, env.ALLOWED_ORIGIN);
+  }
+  const parts = body.parts
     .map((part) => ({
       partNumber: Number(part.partNumber ?? part.part_number ?? 0),
       etag: String(part.etag ?? ""),
     }))
-    .filter((part) => Number.isInteger(part.partNumber) && part.partNumber > 0 && part.etag)
     .sort((a, b) => a.partNumber - b.partNumber);
 
-  if (parts.length === 0) {
-    return jsonResponse({ error: "No upload parts supplied" }, 400, origin, env.ALLOWED_ORIGIN);
+  const expectedParts = verified.declaredSize === undefined
+    ? undefined
+    : Math.ceil(verified.declaredSize / FASTA_UPLOAD_PART_SIZE_BYTES);
+  if (parts.length === 0 ||
+      parts.length > Math.ceil(MAX_FASTA_UPLOAD_BYTES / FASTA_UPLOAD_PART_SIZE_BYTES) ||
+      (expectedParts !== undefined && parts.length !== expectedParts) ||
+      parts.some((part, index) => part.partNumber !== index + 1 || !part.etag)) {
+    return jsonResponse({ error: "Upload parts must include each expected part exactly once" }, 400, origin, env.ALLOWED_ORIGIN);
   }
 
   const multipart = env.FASTA_UPLOADS.resumeMultipartUpload(
     verified.key,
     verified.r2UploadId
   );
-  await multipart.complete(parts);
+  const uploaded = await multipart.complete(parts);
+  const sizeError = uploadedSizeError(uploaded, verified.declaredSize);
+  if (sizeError) {
+    await env.FASTA_UPLOADS.delete(verified.key);
+    return jsonResponse({ error: sizeError.error }, sizeError.status, origin, env.ALLOWED_ORIGIN);
+  }
 
   return jsonResponse(
     {
@@ -823,6 +878,10 @@ async function handleBuild(
         origin,
         env.ALLOWED_ORIGIN
       );
+    }
+    const sizeError = uploadedSizeError(uploaded, verified.declaredSize);
+    if (sizeError) {
+      return jsonResponse({ error: sizeError.error }, sizeError.status, origin, env.ALLOWED_ORIGIN);
     }
 
     fastaUploadUrl = uploadUrl.toString();
@@ -1080,7 +1139,36 @@ async function getBuildProgress(
     workflow_run_url: run.html_url,
     workflow_status: run.status,
     workflow_conclusion: run.conclusion,
+    workflow_completed_at: run.status === "completed" ? run.updated_at : undefined,
     total_seconds: totalSeconds,
+  };
+}
+
+function statusWithoutArtifact(jobId: string, progress: BuildProgress | null) {
+  if (progress?.workflow_status !== "completed") {
+    return { job_id: jobId, status: "building", ...(progress ?? {}) };
+  }
+
+  const completedAt = parseGitHubTime(progress.workflow_completed_at);
+  const expired = progress.workflow_conclusion === "success" &&
+    completedAt !== null &&
+    Date.now() - completedAt >= BUILD_RETENTION_DAYS * 24 * 60 * 60 * 1000;
+  const failedStep = progress.build_steps.find((step) => step.status === "failed");
+  const message = expired
+    ? "The temporary package download has expired. Submit a new build to download it again."
+    : progress.workflow_conclusion === "cancelled"
+    ? "BUILD_FAILED: The build was cancelled."
+    : progress.workflow_conclusion === "timed_out"
+    ? "BUILD_FAILED: The build exceeded its time limit."
+    : failedStep
+    ? `BUILD_FAILED: ${failedStep.label} failed. Check the linked GitHub Actions run for detailed logs.`
+    : "BUILD_FAILED: The build finished without an available package download.";
+  return {
+    job_id: jobId,
+    status: "failed",
+    message,
+    ...(expired ? { reason: "expired" } : {}),
+    ...progress,
   };
 }
 
@@ -1099,10 +1187,9 @@ async function handleStatus(
   );
 
   if (ghResponse.status === 404) {
-    // Release doesn't exist yet — still building
     const progress = await getBuildProgress(jobId, env, false).catch(() => null);
     return jsonResponse(
-      { job_id: jobId, status: "building", ...(progress ?? {}) },
+      statusWithoutArtifact(jobId, progress),
       200,
       origin,
       env.ALLOWED_ORIGIN
@@ -1128,12 +1215,13 @@ async function handleStatus(
     name: string;
     body: string;
     created_at: string;
-    assets: { name: string; browser_download_url: string; size: number }[];
+    draft?: boolean;
+    assets: { name: string; browser_download_url: string; size: number; state?: string }[];
   }>();
 
   // Check if it's a failure marker
   if (release.body?.startsWith("BUILD_FAILED")) {
-    const progress = await getBuildProgress(jobId, env, true).catch(() => null);
+    const progress = await getBuildProgress(jobId, env, false).catch(() => null);
     const failedStep = progress?.build_steps.find((step) => step.status === "failed");
     const message = failedStep
       ? `BUILD_FAILED: ${failedStep.label} failed. Check the linked GitHub Actions run for detailed logs.`
@@ -1146,8 +1234,20 @@ async function handleStatus(
     );
   }
 
-  // Success — return download info
-  const asset = release.assets?.[0];
+  const asset = !release.draft && release.assets?.find((candidate) =>
+    /^BSgenome\..+_[0-9][A-Za-z0-9._-]*\.tar\.gz$/.test(candidate.name) &&
+    candidate.size > 0 && candidate.browser_download_url &&
+    (!candidate.state || candidate.state === "uploaded")
+  );
+  if (!asset) {
+    const progress = await getBuildProgress(jobId, env, false).catch(() => null);
+    return jsonResponse(
+      statusWithoutArtifact(jobId, progress),
+      200,
+      origin,
+      env.ALLOWED_ORIGIN
+    );
+  }
 
   const progress = await getBuildProgress(jobId, env, true).catch(() => null);
 

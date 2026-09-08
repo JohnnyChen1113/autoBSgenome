@@ -57,9 +57,25 @@ class ResourcePeakTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmpdir:
             metrics_path = pathlib.Path(tmpdir) / "metrics.json"
             metrics_path.write_text('{"schema_version":2}')
+            ready_path = pathlib.Path(tmpdir) / "ready"
+            # Signal only after the sampler has installed handlers and sampled once.
+            wrapper = """
+import pathlib, runpy, sys, time
+ready = pathlib.Path(sys.argv.pop(1))
+sleep = time.sleep
+def ready_sleep(seconds):
+    ready.touch()
+    sleep(seconds)
+time.sleep = ready_sleep
+sys.argv = sys.argv[1:]
+runpy.run_path(sys.argv[0], run_name="__main__")
+"""
             process = subprocess.Popen(
                 [
                     "python3",
+                    "-c",
+                    wrapper,
+                    str(ready_path),
                     str(ROOT / "scripts" / "resource_sampler.py"),
                     "--stage",
                     "download",
@@ -71,9 +87,17 @@ class ResourcePeakTests(unittest.TestCase):
                     "0.1",
                 ]
             )
-            time.sleep(0.25)
-            process.terminate()
-            self.assertEqual(process.wait(timeout=5), 0)
+            try:
+                deadline = time.monotonic() + 10
+                while not ready_path.exists() and process.poll() is None and time.monotonic() < deadline:
+                    time.sleep(0.02)
+                self.assertTrue(ready_path.exists(), "Sampler did not finish its first sample")
+                process.terminate()
+                self.assertEqual(process.wait(timeout=5), 0)
+            finally:
+                if process.poll() is None:
+                    process.kill()
+                    process.wait(timeout=5)
 
             metrics = json.loads(metrics_path.read_text())
             stage = metrics["resource_peaks"]["stages"]["download"]
