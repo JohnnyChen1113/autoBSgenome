@@ -2,9 +2,9 @@
 
 Last updated: 2026-09-08
 
-The 2026-09-08 audit changes below are implemented locally and await deployment
-and hosted acceptance testing. They do not describe a verified production
-rollout. See [the pre-submission audit](PRE-SUBMISSION-CODE-AUDIT-2026-09-08.md).
+The 2026-09-08 audit changes below have been deployed. Deployment versions and
+hosted acceptance evidence are recorded in
+[the pre-submission audit](PRE-SUBMISSION-CODE-AUDIT-2026-09-08.md).
 
 This document describes the production build path from a browser request to an
 installable BSgenome source package. It separates required package-building
@@ -291,6 +291,9 @@ Implemented in the 2026-09-08 audit:
 The workflow invokes `BSgenomeForge::forgeBSgenomeDataPkg()` and places the
 2bit file under `inst/extdata/single_sequences.2bit`.
 
+Before forging, both paths prepare a separate seed that protects literal
+`@...@` metadata from upstream template expansion. The original seed is retained
+and its metadata is restored after forging, including whitespace in paths.
 Before building, both hosted and CLI paths regenerate the R loader and Rd help
 from installed BSgenomeForge templates, with context-specific literal escaping.
 This prevents quotes in metadata from becoming R expressions and prevents Rd
