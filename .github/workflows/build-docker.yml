@@ -6,7 +6,10 @@ on:
       - ".github/docker/Dockerfile"
       - ".github/workflows/build-docker.yml"
       - ".github/workflows/build-bsgenome.yml"
+      - "autoBSgenome.py"
+      - "scripts/build_input.py"
       - "scripts/stream_fasta_to_2bit.py"
+      - "tests/test_safe_forged_loader.py"
       - "tests/test_large_genome_benchmark.py"
       - "tests/test_stream_fasta_to_2bit.py"
   workflow_dispatch:
@@ -58,3 +61,13 @@ jobs:
             | docker run --rm -i "$IMAGE_REF" sha256sum --check --status
           docker run --rm "$IMAGE_REF" Rscript -e \
             "stopifnot(as.character(packageVersion('BSgenome')) == '1.74.0'); stopifnot(as.character(packageVersion('BSgenomeForge')) == '1.6.0')"
+
+      - name: Test real forge metadata handling in the builder
+        env:
+          IMAGE: ghcr.io/${{ steps.owner.outputs.name }}/autobsgenome-builder
+          DIGEST: ${{ steps.build.outputs.digest }}
+        run: |
+          docker run --rm \
+            -v "$GITHUB_WORKSPACE:/workspace:ro" -w /workspace \
+            -e PYTHONDONTWRITEBYTECODE=1 "${IMAGE}@${DIGEST}" \
+            python3 -m unittest discover -s tests -p 'test_safe_forged_loader.py' -v

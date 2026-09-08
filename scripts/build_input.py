@@ -88,12 +88,16 @@ def write_seed(environment):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--rewrite-forged-metadata", type=Path)
+    parser.add_argument("--prepare-forge-seed", type=Path)
     args = parser.parse_args()
     try:
-        if args.rewrite_forged_metadata:
+        if args.rewrite_forged_metadata or args.prepare_forge_seed:
             sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-            from autoBSgenome import rewrite_forged_metadata
-            rewrite_forged_metadata(args.rewrite_forged_metadata, Path.cwd())
+            from autoBSgenome import prepare_forge_seed, rewrite_forged_metadata
+            if args.prepare_forge_seed:
+                prepare_forge_seed(args.prepare_forge_seed, Path.cwd())
+            else:
+                rewrite_forged_metadata(args.rewrite_forged_metadata, Path.cwd())
         else:
             write_seed(os.environ)
     except ValueError as exc:

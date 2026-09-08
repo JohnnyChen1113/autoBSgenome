@@ -713,6 +713,32 @@ def write_seed(draft: BuildDraft, workspace: Path) -> Path:
     return seed
 
 
+def _run_r_script(code: str, workspace: Path, *arguments: Path) -> None:
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".R", encoding="utf-8") as script:
+        script.write(code)
+        script.flush()
+        subprocess.run(
+            ["Rscript", "--vanilla", script.name, *(str(argument) for argument in arguments)],
+            cwd=workspace, check=True,
+        )
+
+
+def prepare_forge_seed(seed: Path, workspace: Path) -> Path:
+    """Keep literal metadata tokens out of upstream recursive template expansion."""
+    forge_seed = seed.with_name(seed.stem + ".forge.seed")
+    code = '''
+    args <- commandArgs(TRUE)
+    metadata <- read.dcf(args[1])
+    fields <- intersect(colnames(metadata), c("Title", "Description", "organism",
+        "common_name", "genome", "provider", "release_date", "source_url", "organism_biocview"))
+    for (name in fields)
+        metadata[1L, name] <- gsub("@", "[at]", metadata[1L, name], fixed=TRUE)
+    write.dcf(metadata, args[2], keep.white=colnames(metadata))
+    '''
+    _run_r_script(code, workspace, seed, forge_seed)
+    return forge_seed
+
+
 def rewrite_forged_metadata(seed: Path, workspace: Path) -> None:
     """Rebuild executable R and Rd files using literals from the original DCF data."""
     code = r'''
@@ -737,12 +763,19 @@ def rewrite_forged_metadata(seed: Path, workspace: Path) -> None:
     description_path <- file.path(package_dir, "DESCRIPTION")
     description <- read.dcf(description_path)[1L, ]
     description_changed <- FALSE
-    for (name in c("Title", "Description")) {
+    metadata_fields <- c("Title", "Description", "organism", "common_name", "genome",
+                         "provider", "release_date", "source_url")
+    for (name in intersect(metadata_fields, names(seed))) {
         value <- field(seed, name)
-        if (nzchar(value) && !identical(value, field(description, name))) {
+        if (!identical(value, field(description, name))) {
             description[[name]] <- value
             description_changed <- TRUE
         }
+    }
+    biocviews <- paste0("AnnotationData, Genetics, BSgenome, ", field(seed, "organism_biocview"))
+    if (!identical(biocviews, field(description, "biocViews"))) {
+        description[["biocViews"]] <- biocviews
+        description_changed <- TRUE
     }
 
     # Match only the original trusted template so inserted placeholder-like text
@@ -786,14 +819,9 @@ def rewrite_forged_metadata(seed: Path, workspace: Path) -> None:
     writeLines(rd_text, output_rd, useBytes=TRUE)
     if (description_changed)
         write.dcf(as.data.frame(as.list(description), check.names=FALSE),
-                  description_path, keep.white=c("Title", "Description"))
+                  description_path, keep.white=c(metadata_fields, "biocViews"))
     '''
-    with tempfile.NamedTemporaryFile(mode="w", suffix=".R", encoding="utf-8") as script:
-        script.write(code)
-        script.flush()
-        subprocess.run(
-            ["Rscript", "--vanilla", script.name, str(seed)], cwd=workspace, check=True,
-        )
+    _run_r_script(code, workspace, seed)
 
 
 def check_local_dependencies() -> tuple[str, str]:
@@ -827,11 +855,12 @@ def build_package(draft: BuildDraft, fasta: Path, workspace: Path, *, install: b
     seed = write_seed(draft, workspace)
     print("\nSeed file:\n")
     print(seed.read_text())
+    forge_seed = prepare_forge_seed(seed, workspace)
     forge_code = (
         "suppressPackageStartupMessages(library(BSgenome)); "
         "BSgenomeForge::forgeBSgenomeDataPkg(commandArgs(trailingOnly=TRUE)[1])"
     )
-    subprocess.run(["Rscript", "--vanilla", "-e", forge_code, str(seed)], cwd=workspace, check=True)
+    subprocess.run(["Rscript", "--vanilla", "-e", forge_code, str(forge_seed)], cwd=workspace, check=True)
     package_dir = workspace / draft.package_name
     if not package_dir.is_dir():
         raise AutoBSgenomeError("BSgenomeForge did not create the expected package directory")

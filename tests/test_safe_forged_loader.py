@@ -20,6 +20,49 @@ class SafeForgedLoaderTests(unittest.TestCase):
         if result.returncode:
             raise unittest.SkipTest("BSgenomeForge is not installed")
 
+    def test_real_forge_preserves_literal_template_tokens(self):
+        with tempfile.TemporaryDirectory(prefix="forge  metadata ") as tmpdir:
+            workspace = pathlib.Path(tmpdir)
+            draft = cli.BuildDraft(
+                package_name="BSgenome.Test.NCBI.One",
+                organism="Test @GENOME@ species",
+                common_name="Common @ORGANISM@ name",
+                genome="Assembly @PROVIDER@",
+                provider="NCBI",
+                release_date="Sep. 2026",
+                source_url="https://example.org/user@example.org/",
+                title="Literal @PKGNAME@ title",
+                description='Quoted "description" with @PKGTITLE@ and @UNKNOWN@ tokens.',
+            ).generated()
+            # Advanced forge copies this file; sequence reading is tested separately.
+            (workspace / "genome.2bit").write_bytes(b"metadata-only forge fixture")
+            seed = cli.write_seed(draft, workspace)
+            original_seed = seed.read_bytes()
+            forge_seed = cli.prepare_forge_seed(seed, workspace)
+            result = subprocess.run(
+                ["Rscript", "--vanilla", "-e",
+                 "BSgenomeForge::forgeBSgenomeDataPkg(commandArgs(TRUE)[1])", str(forge_seed)],
+                cwd=workspace, text=True, capture_output=True,
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+            cli.rewrite_forged_metadata(seed, workspace)
+            self.assertEqual(seed.read_bytes(), original_seed)
+            check = '''
+            args <- commandArgs(TRUE)
+            seed <- read.dcf(args[1])[1L, ]
+            description <- read.dcf(args[2])[1L, ]
+            for (name in c("Title", "Description", "organism", "common_name", "genome",
+                           "provider", "release_date", "source_url"))
+                stopifnot(identical(seed[[name]], description[[name]]))
+            stopifnot(endsWith(description[["biocViews"]], seed[["organism_biocview"]]))
+            '''
+            result = subprocess.run(
+                ["Rscript", "--vanilla", "-e", check, str(seed),
+                 str(workspace / draft.package_name / "DESCRIPTION")],
+                text=True, capture_output=True,
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+
     def test_quotes_backslashes_and_placeholder_text_remain_literal_in_r(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             workspace = pathlib.Path(tmpdir)
